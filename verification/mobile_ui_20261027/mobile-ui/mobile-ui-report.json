@@ -1,0 +1,2886 @@
+{
+	"checks": [
+		{
+			"message": "setup: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "setup: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "setup: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "setup: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "setup: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "setup: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "setup: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "setup: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "setup: content fits width",
+			"ok": true
+		},
+		{
+			"message": "setup: action label fits horizontally: 轻装连击",
+			"ok": true
+		},
+		{
+			"message": "setup: action label fits horizontally: 守势反击",
+			"ok": true
+		},
+		{
+			"message": "setup: action label fits horizontally: 教学",
+			"ok": true
+		},
+		{
+			"message": "setup: action label fits horizontally: 标准",
+			"ok": true
+		},
+		{
+			"message": "setup: action label fits horizontally: 出发",
+			"ok": true
+		},
+		{
+			"message": "tutorial progress and skip are available in independent guide",
+			"ok": true
+		},
+		{
+			"message": "explicit guide skip persists tutorial progress",
+			"ok": true
+		},
+		{
+			"message": "routes: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "routes: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "routes: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "routes: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "routes: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "routes: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "routes: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "routes: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "routes: content fits width",
+			"ok": true
+		},
+		{
+			"message": "routes: action label fits horizontally: 查看敌情",
+			"ok": true
+		},
+		{
+			"message": "routes: action label fits horizontally: 查看敌情",
+			"ok": true
+		},
+		{
+			"message": "routes: action label fits horizontally: 1",
+			"ok": true
+		},
+		{
+			"message": "routes: action label fits horizontally: 2",
+			"ok": true
+		},
+		{
+			"message": "battle action is prominent",
+			"ok": true
+		},
+		{
+			"message": "shop hero is enlarged",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: action label fits horizontally: 常用",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: action label fits horizontally: 按键",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: action label fits horizontally: 简体中文  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: action label fits horizontally: 100%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: action label fits horizontally: 窗口  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: action label fits horizontally: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: 常用",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: 按键",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Q / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: E / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: F / 🎮 2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: R / 🎮 4",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Space / 🎮 6",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Space",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Ctrl+Z / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Ctrl+Y / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Tab",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Shift+Tab",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Ctrl / 🎮 3",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Shift / 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Enter / 🎮 0",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Escape / 🎮 1",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: Down / 🎮 12",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: 🎮 L2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: action label fits horizontally: 恢复默认按键",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 向左旋转",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 向右旋转",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 锁定商品",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 刷新商店",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 开始战斗／离开商人",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 暂停／继续战斗",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 继续战斗播放",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 加快战斗播放",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 减慢战斗播放",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 撤销",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 重做",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 切换区域／下个控件",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 上一区域 / 上一焦点",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 送入仓库",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 显示关系",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 确认",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 返回／取消",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 网格向左",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 网格向右",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 网格向上",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 网格向下",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 切换下一区域",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.0: binding label is readable: 切换上一区域",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: 物品",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: 背包",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: 合成",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: 敌人",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: 规则",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: 记录",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: ‹",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.0: action label fits horizontally: ›",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: action label fits horizontally: 常用",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: action label fits horizontally: 按键",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: action label fits horizontally: 简体中文  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: action label fits horizontally: 140%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: action label fits horizontally: 窗口  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: action label fits horizontally: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: 常用",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: 按键",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Q / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: E / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: F / 🎮 2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: R / 🎮 4",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Space / 🎮 6",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Space",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Ctrl+Z / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Ctrl+Y / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Tab",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Shift+Tab",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Ctrl / 🎮 3",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Shift / 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Enter / 🎮 0",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Escape / 🎮 1",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: Down / 🎮 12",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: 🎮 L2",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: action label fits horizontally: 恢复默认按键",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 向左旋转",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 向右旋转",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 锁定商品",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 刷新商店",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 开始战斗／离开商人",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 暂停／继续战斗",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 继续战斗播放",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 加快战斗播放",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 减慢战斗播放",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 撤销",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 重做",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 切换区域／下个控件",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 上一区域 / 上一焦点",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 送入仓库",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 显示关系",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 确认",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 返回／取消",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 网格向左",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 网格向右",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 网格向上",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 网格向下",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 切换下一区域",
+			"ok": true
+		},
+		{
+			"message": "controlszh_CN1.4: binding label is readable: 切换上一区域",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: 物品",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: 背包",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: 合成",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: 敌人",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: 规则",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: 记录",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: ‹",
+			"ok": true
+		},
+		{
+			"message": "libraryzh_CN1.4: action label fits horizontally: ›",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: action label fits horizontally: General",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: action label fits horizontally: Controls",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: action label fits horizontally: English  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: action label fits horizontally: 100%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: action label fits horizontally: Window  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: action label fits horizontally: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: General",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Controls",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Q / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: E / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: F / 🎮 2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: R / 🎮 4",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Space / 🎮 6",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Space",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Ctrl+Z / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Ctrl+Y / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Tab",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Shift+Tab",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Ctrl / 🎮 3",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Shift / 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Enter / 🎮 0",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Escape / 🎮 1",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Down / 🎮 12",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: 🎮 L2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: action label fits horizontally: Restore default bindings",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Rotate left",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Rotate right",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Lock offer",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Refresh shop",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Start battle / leave merchant",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Pause / resume combat",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Resume battle playback",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Increase playback speed",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Decrease playback speed",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Undo",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Redo",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Next region / control",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Previous region / focus",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Send to storage",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Show relationships",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Confirm",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Back / cancel",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Grid left",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Grid right",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Grid up",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Grid down",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Next region",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.0: binding label is readable: Previous region",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: Items",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: Bags",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: Recipes",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: Enemies",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: Rules",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: Records",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: ‹",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.0: action label fits horizontally: ›",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: content fits width",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: action label fits horizontally: General",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: action label fits horizontally: Controls",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: action label fits horizontally: English  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: action label fits horizontally: 140%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: action label fits horizontally: Window  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: action label fits horizontally: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: General",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Controls",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Q / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: E / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: F / 🎮 2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: R / 🎮 4",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Space / 🎮 6",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Space",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Ctrl+Z / 🎮 9",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Ctrl+Y / 🎮 10",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Tab",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Shift+Tab",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Ctrl / 🎮 3",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Shift / 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Enter / 🎮 0",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Escape / 🎮 1",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Left / 🎮 13",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Right / 🎮 14",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Up / 🎮 11",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Down / 🎮 12",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: 🎮 R2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: 🎮 L2",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: key button stays horizontal",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: complete primary bindings fit between button caps",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: action label fits horizontally: Restore default bindings",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Rotate left",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Rotate right",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Lock offer",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Refresh shop",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Start battle / leave merchant",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Pause / resume combat",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Resume battle playback",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Increase playback speed",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Decrease playback speed",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Undo",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Redo",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Next region / control",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Previous region / focus",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Send to storage",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Show relationships",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Confirm",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Back / cancel",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Grid left",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Grid right",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Grid up",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Grid down",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Next region",
+			"ok": true
+		},
+		{
+			"message": "controlsen1.4: binding label is readable: Previous region",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: Items",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: Bags",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: Recipes",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: Enemies",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: Rules",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: Records",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: ‹",
+			"ok": true
+		},
+		{
+			"message": "libraryen1.4: action label fits horizontally: ›",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: content fits width",
+			"ok": true
+		},
+		{
+			"message": "crafting: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "crafting: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "crafting: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "crafting: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "crafting: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "crafting: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "crafting: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "crafting: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "crafting: content fits width",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: Items",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: Bags",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: Recipes",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: Enemies",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: Rules",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: Records",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: ‹",
+			"ok": true
+		},
+		{
+			"message": "crafting: action label fits horizontally: ›",
+			"ok": true
+		},
+		{
+			"message": "navigation never edits inventory",
+			"ok": true
+		},
+		{
+			"message": "saved setup: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "saved setup: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "saved setup: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "saved setup: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "saved setup: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "saved setup: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "saved setup: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "saved setup: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "saved setup: content fits width",
+			"ok": true
+		},
+		{
+			"message": "saved setup: action label fits horizontally: Light Arsenal",
+			"ok": true
+		},
+		{
+			"message": "saved setup: action label fits horizontally: Guard Line",
+			"ok": true
+		},
+		{
+			"message": "saved setup: action label fits horizontally: Tutorial",
+			"ok": true
+		},
+		{
+			"message": "saved setup: action label fits horizontally: Standard",
+			"ok": true
+		},
+		{
+			"message": "saved setup: action label fits horizontally: Begin expedition",
+			"ok": true
+		},
+		{
+			"message": "saved setup: action label fits horizontally: Continue expedition",
+			"ok": true
+		},
+		{
+			"message": "new game requires visible inline archive consent",
+			"ok": true
+		},
+		{
+			"message": "begin without consent preserves current run",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): no popup choices",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): content fits width",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): no popup choices",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): content fits width",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): no popup choices",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): content fits width",
+			"ok": true
+		},
+		{
+			"message": "automatic result still opens after menu rewrite",
+			"ok": true
+		},
+		{
+			"message": "result: entire frame stays on screen",
+			"ok": true
+		},
+		{
+			"message": "result: scrolling content stays inside frame",
+			"ok": true
+		},
+		{
+			"message": "result: same single panel instance",
+			"ok": true
+		},
+		{
+			"message": "result: depth exactly one",
+			"ok": true
+		},
+		{
+			"message": "result: no popup choices",
+			"ok": true
+		},
+		{
+			"message": "result: no nested dropdown",
+			"ok": true
+		},
+		{
+			"message": "result: fixed icon navigation",
+			"ok": true
+		},
+		{
+			"message": "result: navigation never scrolls out of view",
+			"ok": true
+		},
+		{
+			"message": "result: content fits width",
+			"ok": true
+		},
+		{
+			"message": "result: action label fits horizontally: 确认结果",
+			"ok": true
+		}
+	],
+	"failures": [],
+	"ok": true
+}

@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-23",
+  "revision": "core_flow_and_lighting",
+  "engine": "4.7-stable",
+  "content_version": "0.1.3",
+  "save_schema": 2,
+  "root_cause": "Dirty state was confused with a queued deferred render. A native drop could permanently strand the pending flag while data kept changing.",
+  "portable_processes": 31,
+  "portable_assertions": 23517,
+  "all_portable_exit_zero_stderr_empty": true,
+  "before_reproduction_checks": 18,
+  "before_reproduction_failures": 7,
+  "core_flow_checks": 30,
+  "copied_player_save_checks": 29,
+  "physical_pointer_checks": {
+    "automatic_result": true,
+    "battle_started": true,
+    "continued_combat": true,
+    "new_game_routes": true,
+    "new_game_setup": true,
+    "next_to_rewards": true,
+    "refreshed_visible_items": true,
+    "saved_combat_to_title": true
+  },
+  "physical_pointer_passed": true,
+  "physical_pointer_scope": "Real mouse refresh, fight, automatic result, next, combat save-to-title, continue and new-game controls. Scenario setup and 4x playback automated in an isolated fixture.",
+  "powershell51_processes": 2,
+  "powershell51_additional_assertions": 77,
+  "player_saves_unchanged": true,
+  "rule_files_unchanged": 152,
+  "existing_resource_files_unchanged": 3385,
+  "user_main_scene_and_preexisting_art_edits_preserved": true,
+  "independent_runtime_files": 10520,
+  "project_engine_tools_identical_to_independent_directory": true,
+  "current_internal_source_match_percent": 28.353,
+  "lighting_comparison": {
+    "baseline_shader_supplied": true,
+    "checks": 8,
+    "failures": [],
+    "ok": true,
+    "order": "baseline-enhanced-enhanced-baseline",
+    "samples": [
+      {
+        "draw_calls_median": 93.0,
+        "frames": 1264,
+        "kind": "baseline",
+        "median_ms": 1.133,
+        "p95_ms": 1.496,
+        "pass": 0,
+        "texture_mib": 408.738508224487
+      },
+      {
+        "draw_calls_median": 93.0,
+        "frames": 1281,
+        "kind": "enhanced",
+        "median_ms": 1.127,
+        "p95_ms": 1.443,
+        "pass": 0,
+        "texture_mib": 408.738508224487
+      },
+      {
+        "draw_calls_median": 93.0,
+        "frames": 1267,
+        "kind": "enhanced",
+        "median_ms": 1.135,
+        "p95_ms": 1.423,
+        "pass": 1,
+        "texture_mib": 408.738508224487
+      },
+      {
+        "draw_calls_median": 93.0,
+        "frames": 1255,
+        "kind": "baseline",
+        "median_ms": 1.136,
+        "p95_ms": 1.426,
+        "pass": 1,
+        "texture_mib": 408.738508224487
+      }
+    ],
+    "scope": "Windows same scene; not a phone-device certification",
+    "vsync": "disabled during comparison"
+  },
+  "desktop_profile": {
+    "initialized_ms": 6927,
+    "samples": [
+      {
+        "label": "title_initial",
+        "orphan_nodes": 17.0,
+        "resident_item_scenes": 0,
+        "static_bytes": 454107103.0,
+        "texture_bytes": 377028190.0
+      },
+      {
+        "label": "title_idle",
+        "orphan_nodes": 15.0,
+        "resident_item_scenes": 0,
+        "static_bytes": 463960515.0,
+        "texture_bytes": 373055491.0
+      },
+      {
+        "label": "shop",
+        "orphan_nodes": 17.0,
+        "resident_item_scenes": 0,
+        "static_bytes": 470651775.0,
+        "texture_bytes": 430535511.0
+      },
+      {
+        "label": "codex",
+        "orphan_nodes": 17.0,
+        "resident_item_scenes": 0,
+        "static_bytes": 474864605.0,
+        "texture_bytes": 448862803.0
+      },
+      {
+        "label": "codex_closed",
+        "orphan_nodes": 13.0,
+        "resident_item_scenes": 0,
+        "static_bytes": 471449587.0,
+        "texture_bytes": 430666583.0
+      },
+      {
+        "label": "title_returned",
+        "orphan_nodes": 19.0,
+        "resident_item_scenes": 0,
+        "static_bytes": 468665597.0,
+        "texture_bytes": 385185229.0
+      }
+    ]
+  },
+  "qa_fixture_only_revision": {
+    "file": "project/PvE/tests/LoadingContractsQA.gd",
+    "before": "27b149fcb83b9c82fea19034313d18b6cc1cba1d25963d41ccf6d8a4bfb0a98a",
+    "after": "29e91684bb3899d58736ba3e76b093f0d1594cf09b08d2a14c043df120fb249c",
+    "reason": "Await asynchronous return-to-title before cancelling a resource that title decoration may hold. Production unchanged; retain five prior successful cases."
+  },
+  "post_suite_visual_only_fix": {
+    "files_changed_after_full_suite_and_pointer": [
+      "project/PvE/Art/UISkin.gd"
+    ],
+    "before": "40955862db3db9e78f1d2bf164f961ddbcb0768533183b61b86f00013a45284e",
+    "after": "83715bc7acac7b0ba961c26fa2285ff5155ee3e5f21e1842ec886700aa7181b3",
+    "scope": "Visual checkbox/toggle background only. Input callbacks, geometry, rules and saves unchanged. Recheck core flow, art and multi-resolution layout; public launcher checks follow."
+  },
+  "post_style_recheck_processes": 3,
+  "post_style_recheck_assertions": 1905,
+  "limits": [
+    "Windows desktop validation only; no Android/iOS hardware or other GPU certification.",
+    "Short same-scene frame-interval measurements are not isolated GPU timings or a zero-cost guarantee.",
+    "2D lighting and alpha convex shadows approximate shape; no physical normal maps.",
+    "No long-duration or physical-controller certification."
+  ]
+}

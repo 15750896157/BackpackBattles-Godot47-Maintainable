@@ -1,0 +1,7 @@
+id,character_id,name_key,description_key,primary_tags,counter_tags,shop_bias_weight
+combo_arsenal,armorer,archetype.combo_arsenal.name,archetype.combo_arsenal.desc,combo|weapon|stamina,armor,1
+armor_counter,armorer,archetype.armor_counter.name,archetype.armor_counter.desc,armor|counter,poison|burn,1
+heavy_charge,armorer,archetype.heavy_charge.name,archetype.heavy_charge.desc,heavy|weapon|spatial,slow|armor,1
+toxin_stack,alchemist,archetype.toxin_stack.name,archetype.toxin_stack.desc,poison|potion|tempo,cleanse|burst,1
+burn_rhythm,alchemist,archetype.burn_rhythm.name,archetype.burn_rhythm.desc,burn|tempo|spatial,healing|cleanse,1
+healing_conversion,alchemist,archetype.healing_conversion.name,archetype.healing_conversion.desc,healing|herb|combo,heavy|burst,1

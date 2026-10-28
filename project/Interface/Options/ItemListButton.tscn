@@ -1,0 +1,114 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Interface/Options/ItemListButton.gd" type="Script" id=1]
+[ext_resource path="res://Interface/Options/OptionsFont.tres" type="FontVariation" id=2]
+[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=3]
+
+[sub_resource type="StyleBoxFlat" id=5]
+content_margin_left = 8.0
+content_margin_top = 6.0
+bg_color = Color( 0.913725, 0.796078, 0.647059, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 1, 0.890196, 0.215686, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+expand_margin_left = 6.0
+
+[sub_resource type="StyleBoxFlat" id=3]
+content_margin_left = 8.0
+content_margin_top = 6.0
+bg_color = Color( 0.913725, 0.796078, 0.647059, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 1, 0.890196, 0.215686, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+expand_margin_left = 4.0
+expand_margin_right = 4.0
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id=4]
+content_margin_left = 7.0
+content_margin_top = 6.0
+bg_color = Color( 0.914063, 0.797685, 0.648056, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+expand_margin_left = 4.0
+expand_margin_right = 2.0
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 7.0
+content_margin_top = 6.0
+bg_color = Color( 0.8, 0.654902, 0.47451, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+expand_margin_left = 4.0
+expand_margin_right = 6.0
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+
+[node name="Button" type="Button"]
+offset_right = 417.0
+offset_bottom = 51.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_focus_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.890196, 0.0784314, 1 )
+theme_override_fonts/font = ExtResource( 2 )
+theme_override_styles/focus = ExtResource( 3 )
+text = "Button Text"
+flat = true
+script = ExtResource( 1 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+alignment = 0
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_left = 7.0
+offset_top = 48.0
+offset_right = 209.0
+offset_bottom = 125.0
+clip_contents = false
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color_selected = Color( 1, 0.84745, 0.0917969, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 2 )
+theme_override_styles/cursor = SubResource( 5 )
+theme_override_styles/selected_focus = SubResource( 3 )
+theme_override_styles/focus = ExtResource( 3 )
+theme_override_styles/cursor_unfocused = SubResource( 4 )
+theme_override_styles/selected = SubResource( 3 )
+theme_override_styles/bg = SubResource( 1 )
+allow_reselect = true
+auto_height = true
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[connection signal="item_selected" from="ItemList" to="." method="onItemSelected"]

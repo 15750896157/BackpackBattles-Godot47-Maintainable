@@ -1,0 +1,2 @@
+id,slots,discount_slots,discount_pct,lock_limit,bag_pity_count,pool_public_weight,pool_character_weight,pool_archetype_weight,duplicate_decay
+standard,5,1,0.25,2,3,0.6,0.25,0.15,0.35

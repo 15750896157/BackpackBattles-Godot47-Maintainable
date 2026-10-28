@@ -1,0 +1,7 @@
+config_version=5
+[application]
+config/name="M0 independent namespace probe"
+[autoload]
+SceneRouter="*res://SceneRouter.gd"
+[rendering]
+renderer/rendering_method="gl_compatibility"

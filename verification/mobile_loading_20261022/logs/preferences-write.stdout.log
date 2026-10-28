@@ -1,0 +1,17 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+-Shell Totem has no animation
+-Staff of Unhealing has no animation
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+SETTING LOCALE TO en
+received Steam: 32
+NATIVE_PREFERENCES_QA {"checks":93,"failures":[],"stage":"write"}

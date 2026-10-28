@@ -1,0 +1,50 @@
+[
+  {
+    "key": "battle",
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-8b4f3bb4-460d-410c-81db-4dd12030e4ee.png",
+    "destination": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project\\Art\\Mobile20261027\\battle.png",
+    "limit": 640,
+    "bytes": 360808,
+    "sha256": "4609b3a257216ec4a0b3909c454faa17a002fc4d246cbaaa1ef2eeda6efa892f"
+  },
+  {
+    "key": "guide",
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-eaa3d3c6-85a7-4328-b78a-e75bf9e36657.png",
+    "destination": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project\\Art\\Mobile20261027\\guide.png",
+    "limit": 256,
+    "bytes": 100861,
+    "sha256": "da6967c872d68d28c4faafebf24bd31ce8bba2f99d971b0cab7e3d3d13a7aa45"
+  },
+  {
+    "key": "codex",
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-aafaa69e-83c3-4f7c-a9d9-4707a073b693.png",
+    "destination": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project\\Art\\Mobile20261027\\codex.png",
+    "limit": 256,
+    "bytes": 118881,
+    "sha256": "a17bcaa026a0bebc439242e5378725edcc7c87b9e11dc3d4c2bdc0fd466deee9"
+  },
+  {
+    "key": "journey",
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-aa451652-f7bb-4718-86e9-8be6c8d6ee66.png",
+    "destination": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project\\Art\\Mobile20261027\\journey.png",
+    "limit": 256,
+    "bytes": 120537,
+    "sha256": "e5048bcbb4e9306af7e88126dce228d2119348d3477599147bd9cbcd7c08b6af"
+  },
+  {
+    "key": "settings",
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-028a50a5-f142-4221-a4b5-34915a14966b.png",
+    "destination": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project\\Art\\Mobile20261027\\settings.png",
+    "limit": 256,
+    "bytes": 111829,
+    "sha256": "6d172ee3efa643083fa2d6e879d3d593218f3ed268331678600dd515d143d290"
+  },
+  {
+    "key": "home",
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-2fe95ace-03de-46bd-ae74-2833130d8d37.png",
+    "destination": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project\\Art\\Mobile20261027\\home.png",
+    "limit": 256,
+    "bytes": 113135,
+    "sha256": "0308de2e311d79ada1bcc183c77b3c9c88b3e19a81b8957903e16fe8aa713ecc"
+  }
+]

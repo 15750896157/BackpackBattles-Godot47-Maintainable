@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Banner1.png" type="Texture2D" id=1]
+[ext_resource path="res://Items/Animations/CraftingPreviewBond.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Noise/SparkleNoise.png" type="Texture2D" id=3]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+
+uniform float wobbliness : hint_range(0, 1) = 0.5;
+uniform float centralityFactor : hint_range(0, 4) = 2.0;
+
+
+
+uniform sampler2D gradient : repeat_disable, filter_linear;
+uniform sampler2D thicknessCurve : repeat_disable, filter_linear;
+
+uniform sampler2D NOISE_PATTERN : repeat_enable, filter_linear;
+uniform sampler2D NOISE_PATTERN2 : repeat_enable, filter_linear;
+
+
+uniform vec2 scroll1 = vec2(1 , 0.4);
+uniform vec2 scroll2 = vec2(0.2, 1.2);
+uniform float laserSize: hint_range(-1.0, 1.0) = 0.2;
+uniform float yStretch = 0.1;
+uniform float xStretch = 1.0;
+
+void fragment() {
+\tvec2 stretched_UV = UV;
+\tstretched_UV.y *= yStretch;
+\tstretched_UV.x *= xStretch;
+
+\tfloat intensity1 = texture(NOISE_PATTERN, stretched_UV + bb_shader_time * scroll1).r;
+\tfloat intensity2 = texture(NOISE_PATTERN2, stretched_UV + bb_shader_time * scroll2).r;
+\tfloat thickness = texture(thicknessCurve, UV).r;
+\tfloat intensity = (intensity1 * intensity2);
+\t
+\tfloat centrality = (1.0 - abs(UV.y - 0.5))* 0.5;
+\tCOLOR = texture(gradient, vec2((intensity * wobbliness + centrality * centrality * centralityFactor + laserSize) * thickness));
+
+}"
+
+[sub_resource type="Gradient" id=10]
+offsets = PackedFloat32Array( 0.430686, 0.46568, 0.508748 )
+colors = PackedColorArray( 0, 0.753906, 1, 0, 0.0627451, 0.901961, 1, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture1D" id=11]
+gradient = SubResource( 10 )
+width = 100
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0, 0.468182 ), 0.0, 0.428846, 0, 0, Vector2( 1, 0.477273 ), -0.177831, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=6]
+width = 100
+curve = SubResource( 5 )
+
+[sub_resource type="ShaderMaterial" id=12]
+resource_local_to_scene = true
+shader = SubResource( 1 )
+shader_parameter/wobbliness = 0.178
+shader_parameter/centralityFactor = 2.464
+shader_parameter/scroll1 = Vector2( 0.174, 0.01 )
+shader_parameter/scroll2 = Vector2( 0.12, 0 )
+shader_parameter/laserSize = 0.27
+shader_parameter/yStretch = 0.2617
+shader_parameter/xStretch = 1.1341
+shader_parameter/gradient = SubResource( 11 )
+shader_parameter/thicknessCurve = SubResource( 6 )
+shader_parameter/NOISE_PATTERN = ExtResource( 3 )
+shader_parameter/NOISE_PATTERN2 = ExtResource( 3 )
+
+[node name="Bond" type="Node2D"]
+z_as_relative = false
+script = ExtResource( 2 )
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color( 1.2, 1.2, 1.2, 1 )
+material = SubResource( 12 )
+position = Vector2( 0, -27 )
+scale = Vector2( 1, 0.5 )
+texture = ExtResource( 1 )
+centered = false

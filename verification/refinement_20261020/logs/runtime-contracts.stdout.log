@@ -1,0 +1,17 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+-Shell Totem has no animation
+-Staff of Unhealing has no animation
+-Book of Ice New has no scene
+-Time Pendant has no scene
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+{"checks":2625,"differences":[],"failures":[],"ok":true,"reference_mode":"recorded_behavior_fixture","trace_lengths":{"Interface/InputBlocker.gd":3,"Utility/BalancedRandom.gd":1040,"Utility/BalancedRange.gd":400,"Utility/BitStream.gd":165,"Utility/Counter.gd":241,"Utility/EventBus.gd":4,"Utility/ObjectPool.gd":6,"Utility/Util.gd":116,"Utility/WeightedBag.gd":640}}

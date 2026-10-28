@@ -1,0 +1,1944 @@
+{
+  "content_version": "0.1.3",
+  "conventions": {
+    "crafted_only": "recipe result excluded from random shop, but explicit event/reward grants allowed",
+    "ignore_chapter_gate": "Boss reward only",
+    "intel_tags": "preview vocabulary, never extra item mechanics",
+    "parameter_separator": "split first colon only",
+    "raw_pipe_fields": "String",
+    "rotation": "clockwise + normalize minimum x/y",
+    "upgrade_item": "defined tier-1 result to referenced tier-2 recipe result; otherwise next-shop 20% coupon"
+  },
+  "foreign_keys": [
+    {
+      "allow": [],
+      "column": "rarity",
+      "optional": false,
+      "table": "items",
+      "target": "rarities",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "shape_id",
+      "optional": false,
+      "table": "items",
+      "target": "item_shapes",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "tags",
+      "optional": false,
+      "table": "items",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "item_id",
+      "optional": false,
+      "table": "item_effects",
+      "target": "items",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "trigger_id",
+      "optional": false,
+      "table": "item_effects",
+      "target": "trigger_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "condition_id",
+      "optional": false,
+      "table": "item_effects",
+      "target": "condition_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "spatial_template_id",
+      "optional": false,
+      "table": "item_effects",
+      "target": "spatial_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "effect_type",
+      "optional": false,
+      "table": "item_effects",
+      "target": "effect_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "passive_id",
+      "optional": false,
+      "table": "characters",
+      "target": "character_passives",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "exclusive_tags",
+      "optional": false,
+      "table": "characters",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "character_id",
+      "optional": false,
+      "table": "character_passives",
+      "target": "characters",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "trigger_id",
+      "optional": false,
+      "table": "character_passives",
+      "target": "trigger_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "condition_id",
+      "optional": false,
+      "table": "character_passives",
+      "target": "condition_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "effect_type",
+      "optional": false,
+      "table": "character_passives",
+      "target": "effect_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "character_id",
+      "optional": false,
+      "table": "character_archetypes",
+      "target": "characters",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "primary_tags",
+      "optional": false,
+      "table": "character_archetypes",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "counter_tags",
+      "optional": false,
+      "table": "character_archetypes",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "character_id",
+      "optional": false,
+      "table": "character_loadouts",
+      "target": "characters",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "archetype_hint",
+      "optional": false,
+      "table": "character_loadouts",
+      "target": "character_archetypes",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "starting_items",
+      "optional": false,
+      "table": "character_loadouts",
+      "target": "items",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "starting_bag_id",
+      "optional": false,
+      "table": "character_loadouts",
+      "target": "bags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "loadout_id",
+      "optional": false,
+      "table": "starting_build_items",
+      "target": "character_loadouts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "item_id",
+      "optional": false,
+      "table": "starting_build_items",
+      "target": "items",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "rarity",
+      "optional": false,
+      "table": "bags",
+      "target": "rarities",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "shape_id",
+      "optional": false,
+      "table": "bags",
+      "target": "bag_shapes",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "result_item_id",
+      "optional": false,
+      "table": "recipes",
+      "target": "items",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "recipe_id",
+      "optional": false,
+      "table": "recipe_ingredients",
+      "target": "recipes",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "item_id",
+      "optional": false,
+      "table": "recipe_ingredients",
+      "target": "items",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "shop_rule_id",
+      "optional": false,
+      "table": "shop_slot_rules",
+      "target": "shop_rules",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "act_id",
+      "optional": false,
+      "table": "shop_rarity_curve",
+      "target": "acts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "act_id",
+      "optional": false,
+      "table": "economy_curve",
+      "target": "acts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "act_id",
+      "optional": false,
+      "table": "act_progression",
+      "target": "acts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "reward_table_id",
+      "optional": false,
+      "table": "node_templates",
+      "target": "reward_tables",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "act_id",
+      "optional": false,
+      "table": "route_templates",
+      "target": "acts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "allowed_nodes",
+      "optional": false,
+      "table": "route_templates",
+      "target": "node_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "required_nodes",
+      "optional": true,
+      "table": "route_templates",
+      "target": "node_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "threat_tags",
+      "optional": false,
+      "table": "enemy_archetypes",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "weakness_tags",
+      "optional": false,
+      "table": "enemy_archetypes",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "act_id",
+      "optional": false,
+      "table": "enemy_builds",
+      "target": "acts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "archetype_id",
+      "optional": false,
+      "table": "enemy_builds",
+      "target": "enemy_archetypes",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "difficulty_min",
+      "optional": false,
+      "table": "enemy_builds",
+      "target": "difficulty_levels",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "difficulty_max",
+      "optional": false,
+      "table": "enemy_builds",
+      "target": "difficulty_levels",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "threat_tags",
+      "optional": false,
+      "table": "enemy_builds",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "weakness_tags",
+      "optional": false,
+      "table": "enemy_builds",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "enemy_build_id",
+      "optional": false,
+      "table": "enemy_build_bags",
+      "target": "enemy_builds",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "bag_id",
+      "optional": false,
+      "table": "enemy_build_bags",
+      "target": "bags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "enemy_build_id",
+      "optional": false,
+      "table": "enemy_build_items",
+      "target": "enemy_builds",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "item_id",
+      "optional": false,
+      "table": "enemy_build_items",
+      "target": "items",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "trigger_id",
+      "optional": false,
+      "table": "encounter_affixes",
+      "target": "trigger_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "effect_type",
+      "optional": false,
+      "table": "encounter_affixes",
+      "target": "effect_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "act_id",
+      "optional": false,
+      "table": "encounter_templates",
+      "target": "acts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "node_type",
+      "optional": false,
+      "table": "encounter_templates",
+      "target": "node_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "enemy_build_pool",
+      "optional": false,
+      "table": "encounter_templates",
+      "target": "enemy_builds",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "reward_table_id",
+      "optional": false,
+      "table": "encounter_templates",
+      "target": "reward_tables",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "act_id",
+      "optional": false,
+      "table": "bosses",
+      "target": "acts",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "reward_table_id",
+      "optional": false,
+      "table": "bosses",
+      "target": "reward_tables",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "threat_tags",
+      "optional": false,
+      "table": "bosses",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "weakness_tags",
+      "optional": false,
+      "table": "bosses",
+      "target": "tags",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "boss_id",
+      "optional": false,
+      "table": "boss_phases",
+      "target": "bosses",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "boss_id",
+      "optional": false,
+      "table": "boss_build_items",
+      "target": "bosses",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "item_id",
+      "optional": false,
+      "table": "boss_build_items",
+      "target": "items",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "reward_table_id",
+      "optional": false,
+      "table": "reward_entries",
+      "target": "reward_tables",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "reward_type",
+      "optional": false,
+      "table": "reward_entries",
+      "target": "run_effect_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "event_id",
+      "optional": false,
+      "table": "event_choices",
+      "target": "events",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "choice_id",
+      "optional": false,
+      "table": "event_choice_effects",
+      "target": "event_choices",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "effect_type",
+      "optional": false,
+      "table": "event_choice_effects",
+      "target": "run_effect_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "rest_action_id",
+      "optional": false,
+      "table": "rest_action_effects",
+      "target": "rest_actions",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "effect_type",
+      "optional": false,
+      "table": "rest_action_effects",
+      "target": "run_effect_templates",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "stat_key",
+      "optional": false,
+      "table": "achievements",
+      "target": "stat_definitions",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "source_metric",
+      "optional": false,
+      "table": "stat_definitions",
+      "target": "telemetry_metrics",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "affix_id",
+      "optional": true,
+      "table": "enemy_builds",
+      "target": "encounter_affixes",
+      "target_column": "id"
+    },
+    {
+      "allow": [],
+      "column": "affix_pool",
+      "optional": true,
+      "table": "encounter_templates",
+      "target": "encounter_affixes",
+      "target_column": "id"
+    },
+    {
+      "allow": [
+        "none"
+      ],
+      "column": "shop_rule_id",
+      "optional": false,
+      "table": "node_templates",
+      "target": "shop_rules",
+      "target_column": "id"
+    }
+  ],
+  "schema_version": 1,
+  "tables": {
+    "achievements": {
+      "comparison": [
+        "str"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "hidden": [
+        "bool"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "stat_key": [
+        "str"
+      ],
+      "steam_api_name": [
+        "str"
+      ],
+      "target_value": [
+        "int"
+      ]
+    },
+    "act_progression": {
+      "act_id": [
+        "str"
+      ],
+      "checkpoint": [
+        "str"
+      ],
+      "expected_gold_max": [
+        "int"
+      ],
+      "expected_gold_min": [
+        "int"
+      ],
+      "target_item_max": [
+        "int"
+      ],
+      "target_item_min": [
+        "int"
+      ],
+      "tier1_recipe_max": [
+        "int"
+      ],
+      "tier1_recipe_min": [
+        "int"
+      ],
+      "tier2_recipe_max": [
+        "int"
+      ],
+      "tier2_recipe_min": [
+        "int"
+      ]
+    },
+    "acts": {
+      "boss_node_count": [
+        "int"
+      ],
+      "elite_min_candidates": [
+        "int"
+      ],
+      "enemy_budget_max": [
+        "int"
+      ],
+      "enemy_budget_min": [
+        "int"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "order": [
+        "int"
+      ],
+      "regular_node_count": [
+        "int"
+      ],
+      "storage_slots_gain": [
+        "int"
+      ],
+      "target_cells_max": [
+        "int"
+      ],
+      "target_cells_min": [
+        "int"
+      ]
+    },
+    "bag_shapes": {
+      "allowed_rotations": [
+        "str"
+      ],
+      "cell_count": [
+        "int"
+      ],
+      "cells": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ]
+    },
+    "bags": {
+      "availability": [
+        "str"
+      ],
+      "base_price": [
+        "int"
+      ],
+      "chapter_min": [
+        "int"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "icon_ref": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "power_score": [
+        "float",
+        "int"
+      ],
+      "rarity": [
+        "str"
+      ],
+      "shape_id": [
+        "str"
+      ],
+      "special_cell_type": [
+        "str"
+      ],
+      "special_cells": [
+        "str"
+      ],
+      "special_effect": [
+        "str"
+      ]
+    },
+    "boss_build_items": {
+      "boss_id": [
+        "str"
+      ],
+      "instance_id": [
+        "str"
+      ],
+      "item_id": [
+        "str"
+      ],
+      "origin_x": [
+        "int"
+      ],
+      "origin_y": [
+        "int"
+      ],
+      "phase": [
+        "int"
+      ],
+      "rotation": [
+        "int"
+      ]
+    },
+    "boss_phases": {
+      "boss_id": [
+        "str"
+      ],
+      "effect_params": [
+        "str"
+      ],
+      "health_threshold_pct": [
+        "float",
+        "int"
+      ],
+      "phase": [
+        "int"
+      ],
+      "rule_id": [
+        "str"
+      ],
+      "telegraph_seconds": [
+        "int"
+      ]
+    },
+    "bosses": {
+      "act_id": [
+        "str"
+      ],
+      "bag_layout": [
+        "str"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "max_health": [
+        "int"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "persistent_rule_id": [
+        "str"
+      ],
+      "reward_table_id": [
+        "str"
+      ],
+      "stamina_max": [
+        "int"
+      ],
+      "stamina_regen": [
+        "float",
+        "int"
+      ],
+      "threat_tags": [
+        "str"
+      ],
+      "weakness_tags": [
+        "str"
+      ]
+    },
+    "challenge_modifiers": {
+      "challenge_level": [
+        "int"
+      ],
+      "cumulative": [
+        "bool"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "params": [
+        "str"
+      ],
+      "rule_type": [
+        "str"
+      ]
+    },
+    "character_archetypes": {
+      "character_id": [
+        "str"
+      ],
+      "counter_tags": [
+        "str"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "primary_tags": [
+        "str"
+      ],
+      "shop_bias_weight": [
+        "int"
+      ]
+    },
+    "character_loadouts": {
+      "archetype_hint": [
+        "str"
+      ],
+      "character_id": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "starting_bag_id": [
+        "str"
+      ],
+      "starting_gold": [
+        "int"
+      ],
+      "starting_items": [
+        "str"
+      ]
+    },
+    "character_passives": {
+      "character_id": [
+        "str"
+      ],
+      "condition_id": [
+        "str"
+      ],
+      "condition_params": [
+        "str"
+      ],
+      "effect_params": [
+        "str"
+      ],
+      "effect_type": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "per_combat_limit": [
+        "int"
+      ],
+      "trigger_id": [
+        "str"
+      ]
+    },
+    "characters": {
+      "base_crit_chance": [
+        "float"
+      ],
+      "base_crit_multiplier": [
+        "float"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "exclusive_tags": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "max_health": [
+        "int"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "passive_id": [
+        "str"
+      ],
+      "stamina_max": [
+        "int"
+      ],
+      "stamina_regen_per_sec": [
+        "float"
+      ],
+      "starting_health": [
+        "int"
+      ]
+    },
+    "combat_rules": {
+      "boss_max_seconds": [
+        "int"
+      ],
+      "boss_min_seconds": [
+        "int"
+      ],
+      "elite_max_seconds": [
+        "int"
+      ],
+      "elite_min_seconds": [
+        "int"
+      ],
+      "event_order": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "normal_max_seconds": [
+        "int"
+      ],
+      "normal_min_seconds": [
+        "int"
+      ],
+      "simultaneous_death_result": [
+        "str"
+      ]
+    },
+    "condition_templates": {
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "param_format": [
+        "str"
+      ]
+    },
+    "config_manifest": {
+      "description": [
+        "str"
+      ],
+      "file": [
+        "str"
+      ],
+      "load_order": [
+        "int"
+      ],
+      "primary_key_hint": [
+        "str"
+      ],
+      "row_count": [
+        "int"
+      ],
+      "schema_version": [
+        "str"
+      ]
+    },
+    "difficulty_levels": {
+      "challenge_modifier_count": [
+        "int"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "enemy_damage_scalar": [
+        "float",
+        "int"
+      ],
+      "enemy_health_scalar": [
+        "float",
+        "int"
+      ],
+      "enemy_status_scalar": [
+        "float",
+        "int"
+      ],
+      "gold_reward_scalar": [
+        "float",
+        "int"
+      ],
+      "id": [
+        "str"
+      ],
+      "mode": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "post_battle_heal_scalar": [
+        "float",
+        "int"
+      ],
+      "refresh_cost_delta": [
+        "int"
+      ],
+      "shop_price_scalar": [
+        "float",
+        "int"
+      ],
+      "sort_order": [
+        "int"
+      ],
+      "tutorial_prompts": [
+        "bool"
+      ]
+    },
+    "economy_curve": {
+      "act_id": [
+        "str"
+      ],
+      "boss_gold": [
+        "int"
+      ],
+      "elite_bonus_gold": [
+        "int"
+      ],
+      "interest_cap": [
+        "int"
+      ],
+      "interest_step": [
+        "int"
+      ],
+      "normal_gold": [
+        "int"
+      ],
+      "post_battle_heal_pct": [
+        "float"
+      ],
+      "reward_skip_gold": [
+        "int"
+      ]
+    },
+    "effect_templates": {
+      "combat_only": [
+        "bool"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "param_format": [
+        "str"
+      ]
+    },
+    "encounter_affixes": {
+      "budget_scalar": [
+        "float"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "effect_params": [
+        "str"
+      ],
+      "effect_type": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "trigger_id": [
+        "str"
+      ]
+    },
+    "encounter_templates": {
+      "act_id": [
+        "str"
+      ],
+      "affix_pool": [
+        "str"
+      ],
+      "enemy_build_pool": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "node_type": [
+        "str"
+      ],
+      "preview_detail": [
+        "str"
+      ],
+      "repeat_limit": [
+        "int"
+      ],
+      "reward_table_id": [
+        "str"
+      ]
+    },
+    "enemy_archetypes": {
+      "behavior_summary": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "threat_tags": [
+        "str"
+      ],
+      "weakness_tags": [
+        "str"
+      ]
+    },
+    "enemy_build_bags": {
+      "bag_id": [
+        "str"
+      ],
+      "enemy_build_id": [
+        "str"
+      ],
+      "instance_id": [
+        "str"
+      ],
+      "origin_x": [
+        "int"
+      ],
+      "origin_y": [
+        "int"
+      ],
+      "rotation": [
+        "int"
+      ]
+    },
+    "enemy_build_items": {
+      "enemy_build_id": [
+        "str"
+      ],
+      "instance_id": [
+        "str"
+      ],
+      "item_id": [
+        "str"
+      ],
+      "origin_x": [
+        "int"
+      ],
+      "origin_y": [
+        "int"
+      ],
+      "rotation": [
+        "int"
+      ]
+    },
+    "enemy_builds": {
+      "act_id": [
+        "str"
+      ],
+      "affix_id": [
+        "str"
+      ],
+      "archetype_id": [
+        "str"
+      ],
+      "difficulty_max": [
+        "str"
+      ],
+      "difficulty_min": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "layout_version": [
+        "int"
+      ],
+      "max_health": [
+        "int"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "node_type": [
+        "str"
+      ],
+      "power_budget": [
+        "int"
+      ],
+      "stamina_max": [
+        "int"
+      ],
+      "stamina_regen": [
+        "float",
+        "int"
+      ],
+      "threat_tags": [
+        "str"
+      ],
+      "tier": [
+        "int"
+      ],
+      "weakness_tags": [
+        "str"
+      ]
+    },
+    "event_choice_effects": {
+      "choice_id": [
+        "str"
+      ],
+      "effect_type": [
+        "str"
+      ],
+      "params": [
+        "str"
+      ],
+      "sequence": [
+        "int"
+      ]
+    },
+    "event_choices": {
+      "effect_count": [
+        "int"
+      ],
+      "event_id": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "requirements": [
+        "str"
+      ],
+      "text_key": [
+        "str"
+      ]
+    },
+    "events": {
+      "act_max": [
+        "int"
+      ],
+      "act_min": [
+        "int"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "once_per_run": [
+        "bool"
+      ],
+      "preview_tags": [
+        "str"
+      ],
+      "title_key": [
+        "str"
+      ],
+      "weight": [
+        "int"
+      ]
+    },
+    "game_rules": {
+      "description": [
+        "str"
+      ],
+      "key": [
+        "str"
+      ],
+      "scope": [
+        "str"
+      ],
+      "value": [
+        "float",
+        "int",
+        "str"
+      ],
+      "value_type": [
+        "str"
+      ]
+    },
+    "item_effects": {
+      "chain_depth_cost": [
+        "int"
+      ],
+      "condition_id": [
+        "str"
+      ],
+      "condition_params": [
+        "str"
+      ],
+      "effect_params": [
+        "str"
+      ],
+      "effect_type": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "internal_cooldown": [
+        "float",
+        "int"
+      ],
+      "item_id": [
+        "str"
+      ],
+      "sequence": [
+        "int"
+      ],
+      "spatial_template_id": [
+        "str"
+      ],
+      "target_selector": [
+        "str"
+      ],
+      "trigger_id": [
+        "str"
+      ]
+    },
+    "item_shapes": {
+      "allowed_rotations": [
+        "str"
+      ],
+      "cell_count": [
+        "int"
+      ],
+      "cells": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ]
+    },
+    "items": {
+      "base_price": [
+        "int"
+      ],
+      "chapter_min": [
+        "int"
+      ],
+      "cooldown": [
+        "float",
+        "int"
+      ],
+      "crafted_only": [
+        "bool"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "icon_ref": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "owner_pool": [
+        "str"
+      ],
+      "power_score": [
+        "float",
+        "int"
+      ],
+      "rarity": [
+        "str"
+      ],
+      "shape_id": [
+        "str"
+      ],
+      "shop_enabled": [
+        "bool"
+      ],
+      "stamina_cost": [
+        "int"
+      ],
+      "tags": [
+        "str"
+      ],
+      "vfx_ref": [
+        "str"
+      ]
+    },
+    "localization_en": {
+      "key": [
+        "str"
+      ],
+      "text": [
+        "str"
+      ]
+    },
+    "localization_zh_cn": {
+      "key": [
+        "str"
+      ],
+      "text": [
+        "str"
+      ]
+    },
+    "node_templates": {
+      "enemy_budget_scalar": [
+        "float",
+        "int"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "node_type": [
+        "str"
+      ],
+      "reward_table_id": [
+        "str"
+      ],
+      "shop_rule_id": [
+        "str"
+      ]
+    },
+    "rarities": {
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "power_scalar": [
+        "float",
+        "int"
+      ],
+      "price_max": [
+        "int"
+      ],
+      "price_min": [
+        "int"
+      ],
+      "sort_order": [
+        "int"
+      ]
+    },
+    "recipe_ingredients": {
+      "consume": [
+        "bool"
+      ],
+      "item_id": [
+        "str"
+      ],
+      "recipe_id": [
+        "str"
+      ],
+      "slot": [
+        "int"
+      ]
+    },
+    "recipes": {
+      "chapter_min": [
+        "int"
+      ],
+      "discovery_mode": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "manual_confirm": [
+        "bool"
+      ],
+      "placement_rule": [
+        "str"
+      ],
+      "result_item_id": [
+        "str"
+      ],
+      "tier": [
+        "int"
+      ]
+    },
+    "rest_action_effects": {
+      "effect_type": [
+        "str"
+      ],
+      "params": [
+        "str"
+      ],
+      "rest_action_id": [
+        "str"
+      ],
+      "sequence": [
+        "int"
+      ]
+    },
+    "rest_actions": {
+      "description_key": [
+        "str"
+      ],
+      "effect_count": [
+        "int"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "requirements": [
+        "str"
+      ],
+      "uses_per_node": [
+        "int"
+      ]
+    },
+    "reward_entries": {
+      "act_max": [
+        "int"
+      ],
+      "act_min": [
+        "int"
+      ],
+      "content_id": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "params": [
+        "str"
+      ],
+      "reward_table_id": [
+        "str"
+      ],
+      "reward_type": [
+        "str"
+      ],
+      "weight": [
+        "int"
+      ]
+    },
+    "reward_tables": {
+      "allow_skip": [
+        "bool"
+      ],
+      "choice_count": [
+        "int"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "pick_count": [
+        "int"
+      ],
+      "selection_policy": [
+        "str"
+      ],
+      "skip_gold": [
+        "int"
+      ]
+    },
+    "route_templates": {
+      "act_id": [
+        "str"
+      ],
+      "allowed_nodes": [
+        "str"
+      ],
+      "candidate_count_max": [
+        "int"
+      ],
+      "candidate_count_min": [
+        "int"
+      ],
+      "forbid_previous_types": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "required_nodes": [
+        "str"
+      ],
+      "step": [
+        "int"
+      ]
+    },
+    "run_effect_templates": {
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "param_format": [
+        "str"
+      ]
+    },
+    "shop_pool_weights": {
+      "id": [
+        "str"
+      ],
+      "max_effective_weight": [
+        "float"
+      ],
+      "requires_detected_archetype": [
+        "bool"
+      ],
+      "source_pool": [
+        "str"
+      ],
+      "weight": [
+        "float"
+      ]
+    },
+    "shop_rarity_curve": {
+      "act_id": [
+        "str"
+      ],
+      "common_weight": [
+        "float"
+      ],
+      "legendary_weight": [
+        "float",
+        "int"
+      ],
+      "rare_weight": [
+        "float"
+      ]
+    },
+    "shop_rules": {
+      "bag_pity_count": [
+        "int"
+      ],
+      "discount_pct": [
+        "float"
+      ],
+      "discount_slots": [
+        "int"
+      ],
+      "duplicate_decay": [
+        "float"
+      ],
+      "id": [
+        "str"
+      ],
+      "lock_limit": [
+        "int"
+      ],
+      "pool_archetype_weight": [
+        "float"
+      ],
+      "pool_character_weight": [
+        "float"
+      ],
+      "pool_public_weight": [
+        "float"
+      ],
+      "slots": [
+        "int"
+      ]
+    },
+    "shop_slot_rules": {
+      "allowed_content": [
+        "str"
+      ],
+      "discount_eligible": [
+        "bool"
+      ],
+      "locked_persists": [
+        "bool"
+      ],
+      "shop_rule_id": [
+        "str"
+      ],
+      "slot_index": [
+        "int"
+      ]
+    },
+    "spatial_templates": {
+      "id": [
+        "str"
+      ],
+      "range": [
+        "int"
+      ],
+      "relation_type": [
+        "str"
+      ],
+      "relative_cells": [
+        "str"
+      ],
+      "rotates_with_source": [
+        "bool"
+      ]
+    },
+    "starting_build_items": {
+      "instance_id": [
+        "str"
+      ],
+      "item_id": [
+        "str"
+      ],
+      "loadout_id": [
+        "str"
+      ],
+      "origin_x": [
+        "int"
+      ],
+      "origin_y": [
+        "int"
+      ],
+      "rotation": [
+        "int"
+      ]
+    },
+    "stat_definitions": {
+      "aggregation": [
+        "str"
+      ],
+      "default_value": [
+        "int"
+      ],
+      "description": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "reset_policy": [
+        "str"
+      ],
+      "scope": [
+        "str"
+      ],
+      "source_metric": [
+        "str"
+      ],
+      "value_type": [
+        "str"
+      ]
+    },
+    "statuses": {
+      "decay_rule": [
+        "str"
+      ],
+      "default_duration": [
+        "int"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "polarity": [
+        "str"
+      ],
+      "stack_cap": [
+        "int"
+      ],
+      "tick_interval": [
+        "float",
+        "int"
+      ],
+      "tick_rule": [
+        "str"
+      ],
+      "value_per_stack": [
+        "float",
+        "int"
+      ]
+    },
+    "tags": {
+      "category": [
+        "str"
+      ],
+      "description_key": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ]
+    },
+    "telemetry_metrics": {
+      "aggregation": [
+        "str"
+      ],
+      "description": [
+        "str"
+      ],
+      "enabled_in_release": [
+        "bool"
+      ],
+      "id": [
+        "str"
+      ],
+      "privacy_class": [
+        "str"
+      ],
+      "scope": [
+        "str"
+      ],
+      "value_type": [
+        "str"
+      ]
+    },
+    "trigger_templates": {
+      "default_internal_cooldown": [
+        "float",
+        "int"
+      ],
+      "id": [
+        "str"
+      ],
+      "name_key": [
+        "str"
+      ],
+      "priority": [
+        "int"
+      ]
+    },
+    "tutorial_steps": {
+      "blocking": [
+        "bool"
+      ],
+      "body_key": [
+        "str"
+      ],
+      "id": [
+        "str"
+      ],
+      "required_action": [
+        "str"
+      ],
+      "scene_scope": [
+        "str"
+      ],
+      "step_order": [
+        "int"
+      ],
+      "title_key": [
+        "str"
+      ],
+      "trigger": [
+        "str"
+      ]
+    },
+    "unlock_rules": {
+      "id": [
+        "str"
+      ],
+      "requirement_params": [
+        "str"
+      ],
+      "requirement_type": [
+        "str"
+      ],
+      "target_id": [
+        "str"
+      ],
+      "unlock_type": [
+        "str"
+      ],
+      "visible_before_unlock": [
+        "bool"
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+	"checks": 24,
+	"failures": [],
+	"implementation": "current",
+	"observations": [
+		{
+			"cycle": 0,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": true,
+			"title_playing": false,
+			"volume_db": 0.0
+		},
+		{
+			"cycle": 1,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": true,
+			"title_playing": false,
+			"volume_db": 0.0
+		},
+		{
+			"cycle": 2,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": true,
+			"title_playing": false,
+			"volume_db": 0.0
+		},
+		{
+			"cycle": 3,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": true,
+			"title_playing": false,
+			"volume_db": 0.0
+		},
+		{
+			"cycle": 4,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": true,
+			"title_playing": false,
+			"volume_db": 0.0
+		}
+	],
+	"ok": true
+}

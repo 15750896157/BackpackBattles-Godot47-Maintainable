@@ -1,0 +1,14 @@
+﻿[
+    {
+        "scene":  "ArtPolishMain",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    },
+    {
+        "scene":  "NativeMain",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    }
+]

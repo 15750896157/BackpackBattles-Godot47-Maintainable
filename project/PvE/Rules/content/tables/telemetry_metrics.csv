@@ -1,0 +1,25 @@
+id,scope,value_type,aggregation,enabled_in_release,privacy_class,description
+run_started,run,counter,count,true,local,角色、难度与开局配置选择
+run_ended,run,event,last,true,local,胜负、章节、节点数和时长
+combat_result,combat,event,last,true,local,敌人、时长、剩余生命与主要伤害来源
+item_purchased,shop,event,count,true,local,物品、价格、章节与槽位
+item_sold,shop,event,count,true,local,物品、售价与是否参战
+shop_refreshed,shop,counter,sum,true,local,刷新次数和实际费用
+shop_locked,shop,counter,sum,true,local,锁定数量和最终购买结果
+shop_offer_generated,shop,event,count,false,development,池来源、稀有度、促销和保底
+interest_awarded,economy,number,sum,true,local,单局利息金币
+reward_selected,reward,event,count,true,local,奖励表、候选与选择
+reward_skipped,reward,counter,sum,true,local,跳过次数和补偿金币
+recipe_discovered,craft,event,count,true,local,配方与发现章节
+recipe_crafted,craft,event,count,true,local,配方、层级与节点
+placement_failed,backpack,event,count,false,development,越界、无效格或重叠原因
+used_cell_count,backpack,number,max,true,local,出战时已使用有效格
+storage_usage,backpack,number,average,true,local,节点离开时仓库占用
+chain_limit_reached,combat,counter,sum,false,development,触发链保护触发次数
+effect_activation,combat,event,count,false,development,物品效果激活与贡献
+event_choice,event,event,count,true,local,事件选择和资源变化
+route_choice,route,event,count,true,local,候选节点和实际选择
+boss_phase_time,combat,number,average,false,development,Boss 阶段切换时间
+difficulty_clear,run,event,count,true,local,角色和难度通关
+tutorial_step,tutorial,event,last,true,local,教学完成位置
+config_validation_error,system,event,count,false,development,开发构建配置错误

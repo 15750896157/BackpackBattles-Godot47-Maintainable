@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Noise/PoisonNoise.png" type="Texture2D" id=1]
+[ext_resource path="res://Shader/Booze.gdshader" type="Shader" id=2]
+
+[sub_resource type="Gradient" id=12]
+offsets = PackedFloat32Array( 0.430998, 0.475584, 0.57508, 0.752577, 0.984536 )
+colors = PackedColorArray( 1, 1, 1, 0, 0.632813, 1, 0.68158, 1, 0.0822449, 0.429688, 0.12839, 0.807843, 0.111134, 0.729492, 0.18239, 0.878431, 0.0693066, 0.46, 0.00919999, 0.788235 )
+
+[sub_resource type="GradientTexture1D" id=13]
+resource_local_to_scene = true
+gradient = SubResource( 12 )
+width = 200
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_parameter/direction = Vector2( -0.2538, 2.3444 )
+shader_parameter/angle = 1.5708
+shader_parameter/noiseScale = Vector2( 7, 4 )
+shader_parameter/foaminess = 0.0624
+shader_parameter/foamOffset = Vector2( -0.0238175, 66.4237 )
+shader_parameter/levelOffset = 0.287
+shader_parameter/gradient = SubResource( 13 )
+shader_parameter/bubbleNoise = ExtResource( 1 )

@@ -1,0 +1,20 @@
+{
+	"case": "result",
+	"checks": 10,
+	"details": {
+		"last_error": "",
+		"load_validation": {
+			"error": "",
+			"ok": true
+		},
+		"restored_state": "COMBAT_RESULT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\structural_rewrite_20261020\\persistence-result\\saves/",
+		"title_continue_disabled": false,
+		"title_continue_visible": false
+	},
+	"failures": [
+		"continue entrance visible after fresh launch"
+	],
+	"ok": false,
+	"stage": "reopen"
+}

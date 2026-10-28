@@ -1,0 +1,131 @@
+{
+  "ok": true,
+  "date": "2026-10-22",
+  "source_mappings": 19,
+  "supplied_pngs": 13,
+  "active_supplied_pngs": 8,
+  "reserved_supplied_pngs": 4,
+  "reference_pngs": 1,
+  "generated_pngs": 6,
+  "all_sources_and_copies_byte_identical": true,
+  "rules_files_unchanged": 152,
+  "original_media_files_unchanged": 3337,
+  "player_files_unchanged": {
+    "profile.save": true,
+    "profile_backup.save": true,
+    "run.save": true,
+    "run_backup.save": true,
+    "settings.save": true,
+    "settings_backup.save": true,
+    "telemetry.jsonl": true
+  },
+  "independent_runtime_files_identical": 10512,
+  "bags": [
+    {
+      "id": "bag_canvas_frame",
+      "cells": 9,
+      "bounds": [
+        3,
+        3
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_corner_satchel",
+      "cells": 9,
+      "bounds": [
+        3,
+        4
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_tool_roll",
+      "cells": 6,
+      "bounds": [
+        3,
+        2
+      ],
+      "replacement": "bag6.png",
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_guard_harness",
+      "cells": 7,
+      "bounds": [
+        3,
+        4
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_herbal_tray",
+      "cells": 7,
+      "bounds": [
+        3,
+        3
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_gear_sling",
+      "cells": 6,
+      "bounds": [
+        4,
+        3
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_cross_brace",
+      "cells": 9,
+      "bounds": [
+        3,
+        5
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_hollow_ring",
+      "cells": 8,
+      "bounds": [
+        3,
+        3
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_step_case",
+      "cells": 8,
+      "bounds": [
+        4,
+        3
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    },
+    {
+      "id": "bag_twin_wing",
+      "cells": 8,
+      "bounds": [
+        3,
+        3
+      ],
+      "replacement": null,
+      "rotations": "0|90|180|270"
+    }
+  ],
+  "reserved_bags": [
+    "bag1.png",
+    "bag2.png",
+    "bag4.png",
+    "bag5.png"
+  ]
+}

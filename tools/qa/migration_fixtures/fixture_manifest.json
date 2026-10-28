@@ -1,0 +1,377 @@
+{
+	"captures": {
+		"combat": {
+			"act": 1,
+			"build": {
+				"bags": [
+					{
+						"definition_id": "bag_canvas_frame",
+						"purchase_price": 0,
+						"purchased_visit": -1,
+						"rotation": 0,
+						"uid": "starting_bag",
+						"used": false,
+						"x": 0,
+						"y": 0
+					}
+				],
+				"height": 7,
+				"items": [
+					{
+						"definition_id": "utility_knife",
+						"purchase_price": 0,
+						"purchased_visit": -1,
+						"rotation": 0,
+						"uid": "armorer_blades_item_1",
+						"used": false,
+						"x": 2,
+						"y": 0
+					},
+					{
+						"definition_id": "twin_needles",
+						"purchase_price": 0,
+						"purchased_visit": -1,
+						"rotation": 0,
+						"uid": "armorer_blades_item_2",
+						"used": false,
+						"x": 0,
+						"y": 0
+					},
+					{
+						"definition_id": "focus_prism",
+						"purchase_price": 4,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_10",
+						"used": false,
+						"x": 0,
+						"y": 1
+					},
+					{
+						"definition_id": "lucky_coin",
+						"purchase_price": 2,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_11",
+						"used": false,
+						"x": 1,
+						"y": 1
+					},
+					{
+						"definition_id": "utility_knife",
+						"purchase_price": 1,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_12",
+						"used": false,
+						"x": 2,
+						"y": 1
+					},
+					{
+						"definition_id": "bandage_roll",
+						"purchase_price": 1,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_13",
+						"used": false,
+						"x": 2,
+						"y": 2
+					}
+				],
+				"storage": [],
+				"storage_capacity": 2,
+				"width": 9
+			},
+			"checkpoint_seed": 3479706218,
+			"gold": 0,
+			"health": 105.0,
+			"logs": [],
+			"ok": true,
+			"rng": {
+				"combat": 3479706218,
+				"reward": 3416765048,
+				"route": 2457401109,
+				"shop": 884127981
+			},
+			"shown_types": [
+				"normal_combat",
+				"danger_combat"
+			],
+			"state": "COMBAT_RUNNING",
+			"step": 1
+		},
+		"route": {
+			"act": 1,
+			"build": {
+				"bags": [
+					{
+						"definition_id": "bag_canvas_frame",
+						"purchase_price": 0,
+						"purchased_visit": -1,
+						"rotation": 0,
+						"uid": "starting_bag",
+						"used": true,
+						"x": 0,
+						"y": 0
+					}
+				],
+				"height": 7,
+				"items": [
+					{
+						"definition_id": "utility_knife",
+						"purchase_price": 0,
+						"purchased_visit": -1,
+						"rotation": 0,
+						"uid": "armorer_blades_item_1",
+						"used": true,
+						"x": 2,
+						"y": 0
+					},
+					{
+						"definition_id": "twin_needles",
+						"purchase_price": 0,
+						"purchased_visit": -1,
+						"rotation": 0,
+						"uid": "armorer_blades_item_2",
+						"used": true,
+						"x": 0,
+						"y": 0
+					},
+					{
+						"definition_id": "focus_prism",
+						"purchase_price": 4,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_10",
+						"used": true,
+						"x": 0,
+						"y": 1
+					},
+					{
+						"definition_id": "lucky_coin",
+						"purchase_price": 2,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_11",
+						"used": true,
+						"x": 1,
+						"y": 1
+					},
+					{
+						"definition_id": "utility_knife",
+						"purchase_price": 1,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_12",
+						"used": true,
+						"x": 2,
+						"y": 1
+					},
+					{
+						"definition_id": "bandage_roll",
+						"purchase_price": 1,
+						"purchased_visit": 1,
+						"rotation": 0,
+						"uid": "1792054334_923_67731_13",
+						"used": true,
+						"x": 2,
+						"y": 2
+					}
+				],
+				"storage": [
+					{
+						"definition_id": "spiked_guard",
+						"purchase_price": 0,
+						"purchased_visit": -1,
+						"rotation": 0,
+						"uid": "instance_14",
+						"used": false,
+						"x": 0,
+						"y": 0
+					}
+				],
+				"storage_capacity": 2,
+				"width": 9
+			},
+			"checkpoint_seed": -1,
+			"gold": 2,
+			"health": 105.0,
+			"logs": [
+				{
+					"digest": "7f5fbfdb37302597874ace2661730aea2c80f12656f49416c59189f265854499",
+					"health": 105.0,
+					"item_stats_by_instance_id": {
+						"1792054334_923_67731_10": {
+							"armor": 0.0,
+							"damage": 0.0,
+							"def_id": "focus_prism",
+							"healing": 0.0,
+							"health_damage": 0.0,
+							"instance_id": "1792054334_923_67731_10",
+							"side": 0,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 1
+						},
+						"1792054334_923_67731_11": {
+							"armor": 0.0,
+							"damage": 0.0,
+							"def_id": "lucky_coin",
+							"healing": 0.0,
+							"health_damage": 0.0,
+							"instance_id": "1792054334_923_67731_11",
+							"side": 0,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 1
+						},
+						"1792054334_923_67731_12": {
+							"armor": 0.0,
+							"damage": 33.6,
+							"def_id": "utility_knife",
+							"healing": 0.0,
+							"health_damage": 31.6,
+							"instance_id": "1792054334_923_67731_12",
+							"side": 0,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 4
+						},
+						"1792054334_923_67731_13": {
+							"armor": 0.0,
+							"damage": 0.0,
+							"def_id": "bandage_roll",
+							"healing": 0.0,
+							"health_damage": 0.0,
+							"instance_id": "1792054334_923_67731_13",
+							"side": 0,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 1
+						},
+						"__passive__:armorer_shape_mastery": {
+							"armor": 0.0,
+							"damage": 0.0,
+							"def_id": "armorer_shape_mastery",
+							"healing": 0.0,
+							"health_damage": 0.0,
+							"instance_id": "__passive__:armorer_shape_mastery",
+							"side": 0,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 10
+						},
+						"armorer_blades_item_1": {
+							"armor": 0.0,
+							"damage": 17.0,
+							"def_id": "utility_knife",
+							"healing": 0.0,
+							"health_damage": 17.0,
+							"instance_id": "armorer_blades_item_1",
+							"side": 0,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 3
+						},
+						"armorer_blades_item_2": {
+							"armor": 0.0,
+							"damage": 22.0,
+							"def_id": "twin_needles",
+							"healing": 0.0,
+							"health_damage": 16.0,
+							"instance_id": "armorer_blades_item_2",
+							"side": 0,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 4
+						},
+						"enemy:camp_mender_item_1": {
+							"armor": 8.0,
+							"damage": 0.0,
+							"def_id": "plated_vest",
+							"healing": 0.0,
+							"health_damage": 0.0,
+							"instance_id": "camp_mender_item_1",
+							"side": 1,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 1
+						},
+						"enemy:camp_mender_item_2": {
+							"armor": 0.0,
+							"damage": 0.0,
+							"def_id": "healing_herb",
+							"healing": 4.0,
+							"health_damage": 0.0,
+							"instance_id": "camp_mender_item_2",
+							"side": 1,
+							"stamina_starvation": 0.0,
+							"status_applied": 0,
+							"triggers": 1
+						},
+						"enemy:camp_mender_item_3": {
+							"armor": 0.0,
+							"damage": 0.0,
+							"def_id": "regeneration_leaf",
+							"healing": 3.0,
+							"health_damage": 0.0,
+							"instance_id": "camp_mender_item_3",
+							"side": 1,
+							"stamina_starvation": 0.0,
+							"status_applied": 2,
+							"triggers": 1
+						}
+					},
+					"key_events": [
+						{
+							"depth": 0,
+							"event_id": "e000000057",
+							"event_type": "DEATH",
+							"reason": "enemy_dead",
+							"root_event_id": "e000000057",
+							"source": "__character__",
+							"source_side": 0,
+							"target": 1,
+							"target_side": 1,
+							"tick": 192,
+							"time": 9.6,
+							"type": "DEATH",
+							"value": 0,
+							"winner_side": 0
+						}
+					],
+					"node": {
+						"affix_id": "",
+						"boss_id": "",
+						"candidate_id": "1_1_0",
+						"enemy_id": "camp_mender",
+						"event_id": "",
+						"name_key": "node.normal_combat.name",
+						"repeat_limit": 2,
+						"reward_table_id": "reward_normal",
+						"step": 1,
+						"type": "normal_combat"
+					},
+					"time": 9.6,
+					"winner": 0
+				}
+			],
+			"ok": true,
+			"rng": {
+				"combat": 3479706218,
+				"reward": 3921129772,
+				"route": 2457401109,
+				"shop": 884127981
+			},
+			"shown_types": [
+				"normal_combat",
+				"danger_combat"
+			],
+			"state": "ROUTE_SELECT",
+			"step": 3
+		}
+	},
+	"ok": true,
+	"old_content_sha256": "d57d5fbaa99dbf7faada01fb6eac3c2293131e820ad77cdfbe8ebb8597c8a0aa",
+	"old_content_version": "0.1.2"
+}

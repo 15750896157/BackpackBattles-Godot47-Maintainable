@@ -1,0 +1,14 @@
+{
+	"case": "reward",
+	"checks": 14,
+	"details": {
+		"before_menu_state": "REWARD_SELECT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\structural_rewrite_20261020\\release-checks\\persist-reward-saves/",
+		"saved_state": "REWARD_SELECT",
+		"title_continue_disabled": false,
+		"title_continue_visible": true
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "write"
+}

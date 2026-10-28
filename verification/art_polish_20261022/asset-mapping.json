@@ -1,0 +1,116 @@
+[
+  {
+    "source": "Z:\\背包游戏散件\\商店\\敌情.png",
+    "destination": "project/Art/Polish20261022/intel.png",
+    "reference_only": false,
+    "sha256": "5217f3fa22864b5c1ac66d401e736bdefc6689f549ac6d2c09fcf281c38f7b8c"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\商店\\桌面.png",
+    "destination": "project/Art/Polish20261022/table.png",
+    "reference_only": false,
+    "sha256": "262b1754be8a0d74c6897facdac506888375c62ef7b7d58f6028e91f3538a2a7"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\商店\\货架 (1).png",
+    "destination": "project/Art/Polish20261022/shelf_top.png",
+    "reference_only": false,
+    "sha256": "31a6db05b6bd771cef8eef71227a6bf1292f863059ba5072a2b8166f4766f910"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\商店\\货架 (2).png",
+    "destination": "project/Art/Polish20261022/shelf_bottom.png",
+    "reference_only": false,
+    "sha256": "1f5908d5af922f49c37619a93c6904a5c4472603ff4e4376ab96835970e78c30"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\战斗背景\\战斗场景1.png",
+    "destination": "project/Art/Polish20261022/forest.png",
+    "reference_only": false,
+    "sha256": "0046f986d219f663b3b531c8dfa19af3710cfbda96109c01af48cbff3504f9a4"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\战斗背景\\战斗场景2.png",
+    "destination": "project/Art/Polish20261022/desert.png",
+    "reference_only": false,
+    "sha256": "9772b0657d9f809e5e4c25e1173fb10e79a4b8d5663353f69c2c26cdd1d3585c"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\战斗背景\\战斗场景3.png",
+    "destination": "project/Art/Polish20261022/volcano.png",
+    "reference_only": false,
+    "sha256": "45d4c514382d5d42c462a3bf7763a979edfbf1720c86d001c85e67fedf7d06b5"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\战斗背景\\战斗场景排版参考.png",
+    "destination": "inputs/新美术布局参考/战斗场景排版参考_散件.png",
+    "reference_only": true,
+    "sha256": "f80539b4d40b3c6b5775a31af44233810124503bacfa9dbd70b43edabac9cd5c"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\背包\\1格背包.png",
+    "destination": "project/Art/Polish20261022/bag1.png",
+    "reference_only": false,
+    "sha256": "ddbf9a3044fca23ea2a30ed56d857e5fdd8a9fda2f36de226c3bfd0ee445e892"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\背包\\2格背包.png",
+    "destination": "project/Art/Polish20261022/bag2.png",
+    "reference_only": false,
+    "sha256": "19aa8d63f0877e0227078dc52f22081301c45743c96fca1236a53da0b5362e7a"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\背包\\4格背包.png",
+    "destination": "project/Art/Polish20261022/bag4.png",
+    "reference_only": false,
+    "sha256": "e0f776332c6f001ae1dc50cb43014cb1603f1d80d603df608dc3ad8388c68687"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\背包\\5格背包.png",
+    "destination": "project/Art/Polish20261022/bag5.png",
+    "reference_only": false,
+    "sha256": "86553eaf73b7096325d59a219f4913bf0337948f99af02a22d0c65493d005127"
+  },
+  {
+    "source": "Z:\\背包游戏散件\\背包\\6格背包.png",
+    "destination": "project/Art/Polish20261022/bag6.png",
+    "reference_only": false,
+    "sha256": "78dc62c91f508c2657a1d862c340ab234d044b96a5cdf6dd88f6662aed7ff61b"
+  },
+  {
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-655b615d-c786-4057-b59d-b19cb2d63463.png",
+    "destination": "project/Art/Polish20261022/window.png",
+    "generated": true,
+    "sha256": "69d345a9dea66c80625d3998da3071b2dbd3d59728437f58f25f25b1b4cd6935"
+  },
+  {
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-cc52556d-1d92-4095-baa4-df11eaa82a66.png",
+    "destination": "project/Art/Polish20261022/button.png",
+    "generated": true,
+    "sha256": "9ae5302a17f3289fe564fa00b2b1a6213e53c11dab966acd014fef69bf79ddac"
+  },
+  {
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-e60095b4-1276-4c08-b2af-d26d7b8a0f64.png",
+    "destination": "project/Art/Polish20261022/cloud.png",
+    "generated": true,
+    "sha256": "854e8a7a739d6631e97114b1053fb8629d391fcc886c0ef052be0c48bfcbd174"
+  },
+  {
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-148375e1-cb17-4999-8814-b81abff74cbd.png",
+    "destination": "project/Art/Polish20261022/undo.png",
+    "generated": true,
+    "sha256": "09748fe7f647b268786ca0f9ddf6d2b3e5d0a2777808aa3b7ca399abe9f0b28b"
+  },
+  {
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-5f970dbf-15b9-4d92-b7e7-0a8e6ce18651.png",
+    "destination": "project/Art/Polish20261022/redo.png",
+    "generated": true,
+    "sha256": "e0e7f3f1f3db4e0196e6bb324cdc9762672828785bd45eb50fd2fdb36468246b"
+  },
+  {
+    "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-542498fa-02c7-4d46-9ecc-e472900b0ff5.png",
+    "destination": "project/Art/Polish20261022/tooltip.png",
+    "generated": true,
+    "sha256": "2b9a5be6dfd6f6dbf4c51ee9a712857e9edbf910cc494d51a4caf7efc444fd7f"
+  }
+]

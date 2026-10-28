@@ -1,0 +1,14 @@
+{
+	"case": "shop",
+	"checks": 12,
+	"details": {
+		"before_menu_state": "SHOP_PREPARE",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\touch_ui_20261027\\release-checks\\persist-shop-saves_164242/",
+		"saved_state": "SHOP_PREPARE",
+		"title_continue_disabled": true,
+		"title_continue_visible": false
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "write"
+}

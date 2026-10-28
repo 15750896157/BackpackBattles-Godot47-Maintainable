@@ -1,0 +1,6 @@
+{
+  "file": "project/PvE/tests/LoadingContractsQA.gd",
+  "before": "27b149fcb83b9c82fea19034313d18b6cc1cba1d25963d41ccf6d8a4bfb0a98a",
+  "after": "29e91684bb3899d58736ba3e76b093f0d1594cf09b08d2a14c043df120fb249c",
+  "reason": "Await asynchronous return-to-title before cancelling a resource that title decoration may hold. Production unchanged; retain five prior successful cases."
+}

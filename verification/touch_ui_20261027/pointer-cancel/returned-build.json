@@ -1,0 +1,40 @@
+{
+	"bags": [
+		{
+			"definition_id": "bag_canvas_frame",
+			"purchase_price": 0,
+			"purchased_visit": -1,
+			"rotation": 0,
+			"uid": "starting_bag",
+			"used": false,
+			"x": 3,
+			"y": 2
+		}
+	],
+	"height": 7,
+	"items": [
+		{
+			"definition_id": "utility_knife",
+			"purchase_price": 0,
+			"purchased_visit": -1,
+			"rotation": 0,
+			"uid": "armorer_blades_item_1",
+			"used": false,
+			"x": 5,
+			"y": 2
+		},
+		{
+			"definition_id": "twin_needles",
+			"purchase_price": 0,
+			"purchased_visit": -1,
+			"rotation": 0,
+			"uid": "armorer_blades_item_2",
+			"used": false,
+			"x": 3,
+			"y": 2
+		}
+	],
+	"storage": [],
+	"storage_capacity": 2,
+	"width": 9
+}

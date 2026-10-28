@@ -1,0 +1,5 @@
+id,character_id,name_key,archetype_hint,starting_items,starting_bag_id,starting_gold
+armorer_blades,armorer,loadout.armorer_blades.name,combo_arsenal,utility_knife|twin_needles,bag_canvas_frame,8
+armorer_guard,armorer,loadout.armorer_guard.name,armor_counter,buckler|iron_nail,bag_corner_satchel,8
+alchemist_toxin,alchemist,loadout.alchemist_toxin.name,toxin_stack,venom_needle|healing_herb,bag_canvas_frame,8
+alchemist_ember,alchemist,loadout.alchemist_ember.name,burn_rhythm,ember_stone|bandage_roll,bag_corner_satchel,8

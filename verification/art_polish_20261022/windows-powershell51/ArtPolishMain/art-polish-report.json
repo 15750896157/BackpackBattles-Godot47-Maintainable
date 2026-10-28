@@ -1,0 +1,162 @@
+{
+	"captures": [
+		"codex-zh",
+		"codex-tabs-zh_Hans_CN",
+		"codex-tabs-en",
+		"item-tooltip-zh_Hans_CN",
+		"item-tooltip-en",
+		"shop-final",
+		"wipe-midpoint-act-1",
+		"combat-forest",
+		"wipe-midpoint-act-2",
+		"combat-desert",
+		"wipe-midpoint-act-3",
+		"combat-volcano"
+	],
+	"checks": 101,
+	"failures": [],
+	"ok": true,
+	"transitions": [
+		[
+			{
+				"phase": "covered",
+				"reason": "enter_shop",
+				"time_ms": 7718
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 9626
+			},
+			{
+				"phase": "covered",
+				"reason": "shop_to_combat",
+				"time_ms": 17504
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 22397
+			}
+		],
+		[
+			{
+				"phase": "covered",
+				"reason": "enter_shop",
+				"time_ms": 7718
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 9626
+			},
+			{
+				"phase": "covered",
+				"reason": "shop_to_combat",
+				"time_ms": 17504
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 22397
+			},
+			{
+				"phase": "covered",
+				"reason": "return_to_title",
+				"time_ms": 24477
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 25037
+			},
+			{
+				"phase": "covered",
+				"reason": "enter_shop",
+				"time_ms": 25517
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 27050
+			},
+			{
+				"phase": "covered",
+				"reason": "shop_to_combat",
+				"time_ms": 27824
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 32717
+			}
+		],
+		[
+			{
+				"phase": "covered",
+				"reason": "enter_shop",
+				"time_ms": 7718
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 9626
+			},
+			{
+				"phase": "covered",
+				"reason": "shop_to_combat",
+				"time_ms": 17504
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 22397
+			},
+			{
+				"phase": "covered",
+				"reason": "return_to_title",
+				"time_ms": 24477
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 25037
+			},
+			{
+				"phase": "covered",
+				"reason": "enter_shop",
+				"time_ms": 25517
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 27050
+			},
+			{
+				"phase": "covered",
+				"reason": "shop_to_combat",
+				"time_ms": 27824
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 32717
+			},
+			{
+				"phase": "covered",
+				"reason": "return_to_title",
+				"time_ms": 33463
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 34023
+			},
+			{
+				"phase": "covered",
+				"reason": "enter_shop",
+				"time_ms": 34516
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 36036
+			},
+			{
+				"phase": "covered",
+				"reason": "shop_to_combat",
+				"time_ms": 36823
+			},
+			{
+				"phase": "revealed",
+				"time_ms": 41689
+			}
+		]
+	]
+}

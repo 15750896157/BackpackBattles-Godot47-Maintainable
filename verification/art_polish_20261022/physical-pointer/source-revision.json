@@ -1,0 +1,17 @@
+{
+  "current_final_hashes_for_changed_files": {
+    "project/PvE/NativeDetailViews.gd": "7b67052d91a29ade73efbcc7be04335b3fc8eccb987c508af80e9612fa39475c",
+    "project/PvE/NativeTransitions.gd": "9158899a1954c2fbcda8439ea5582c4ed547b1662e629c4fcb5239c975355323",
+    "project/PvE/Art/SceneCurtain.gd": "d492483d05afb459f096e5a06e1bde231d9edd33aaeae7c940efa1aa4bf2600b",
+    "project/PvE/tests/ArtPolishQA.gd": "13621bbf1dc78da221ae7b682d7b6c12be5f9666fc6093eee016bba9d929ba35",
+    "project/PvE/tests/LoadingBarrier.gd": "1b05b02809413c4ec564371e0ce5dea767c7e203dfe73e653c59a2d5176401a1"
+  },
+  "hashes_when_pointer_tested": {
+    "project/PvE/NativeDetailViews.gd": "18178f228942a3f55ba1ae79f91c967e4e4ca431f406911af3a1c7557ba19b8a",
+    "project/PvE/NativeTransitions.gd": "63494a082958503d74d46a05eb0a20593c8ae583efee1187c5812d37e081bfdc",
+    "project/PvE/Art/SceneCurtain.gd": "b733faf01cdcfae89ff477d62eccd79334ea12903f6bbaf70d47891a4a178f89",
+    "project/PvE/tests/ArtPolishQA.gd": "7daddf712b04d04224a6acabb99552d010fdee21a7281629a4cf8e00c1318560",
+    "project/PvE/tests/LoadingBarrier.gd": "6ed1cfda2cf4a0f014e7b1572c2ed903d5d933af9115ea91abf47a9e42485f8e"
+  },
+  "note": "Bag-only empty grid, bag release, storage, sale, undo, redo, settings; isolated saves. Subsequent category layout and modal fade cleanup were verified in final automatic runs."
+}

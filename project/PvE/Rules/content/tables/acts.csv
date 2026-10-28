@@ -1,0 +1,4 @@
+id,name_key,order,regular_node_count,boss_node_count,storage_slots_gain,enemy_budget_min,enemy_budget_max,target_cells_min,target_cells_max,elite_min_candidates
+act_1,act.act_1.name,1,4,1,0,38,58,12,16,0
+act_2,act.act_2.name,2,4,1,1,58,82,16,21,1
+act_3,act.act_3.name,3,4,1,1,82,112,20,26,1

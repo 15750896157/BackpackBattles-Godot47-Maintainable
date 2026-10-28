@@ -1,0 +1,3 @@
+id,character_id,trigger_id,condition_id,condition_params,effect_type,effect_params,per_combat_limit
+armorer_shape_mastery,armorer,attack_hit,build_tag_count,distinct_weapon_shapes:1,modify_damage_flat,value:1|max_stacks:3,3
+alchemist_first_reaction,alchemist,status_applied,trigger_count_max,new_negative_status_only:true,heal,value:2,3

@@ -1,0 +1,364 @@
+{
+  "git_head": "9ce0943 Initial upload Backpack Battles Godot project",
+  "git_revision": "9ce09433c4dc75fb3e22622fc5c8dd56f987b685",
+  "git_status_counts": {
+    " D": 4854,
+    " M": 373,
+    "??": 670
+  },
+  "git_status_entries": 5897,
+  "gd_files": 795,
+  "gd_lines": 67558,
+  "tscn_files": 335,
+  "class_name_declarations": 110,
+  "key_lines": {
+    "Core/Main.tscn": 15072,
+    "Core/Game.gd": 2118,
+    "Items/Item.gd": 3043,
+    "Core/Character.gd": 899,
+    "PvE/NativeExpedition.gd": 844
+  },
+  "autoload": [
+    "ShaderClock=\"*res://Compatibility/ShaderClock.gd\"",
+    "FontSizeBinder=\"*res://Compatibility/FontSizeBinder.gd\"",
+    "LocalServices=\"*res://LocalServices/LocalStore.gd\"",
+    "Steam=\"*res://LocalServices/LocalSteam.gd\"",
+    "ControllerIcons=\"*res://addons/controller_icons/ControllerIcons.gd\"",
+    "Util=\"*res://Utility/Util.gd\"",
+    "AssetStream=\"*res://Runtime/Loading/AssetStream.gd\"",
+    "SteamHelper=\"*res://Utility/SteamHelper.gd\"",
+    "Settings=\"*res://Utility/Settings.gd\"",
+    "InputMapping=\"*res://Interface/Options/InputMapping.gd\"",
+    "SilentWolf=\"*res://addons/silent_wolf/SilentWolf.gd\"",
+    "ItemBook=\"*res://Sheets/ItemBook.gd\"",
+    "SkinBook=\"*res://Utility/SkinBook.gd\"",
+    "Game=\"*res://Core/Game.gd\"",
+    "ObjectPool=\"*res://Utility/ObjectPool.gd\"",
+    "RunDatabase=\"*res://Core/RunDatabase.gd\"",
+    "Sound=\"*res://Utility/Sound.tscn\"",
+    "CrazySDK=\"*res://Utility/CrazySDK.gd\"",
+    "CraftingManager=\"*res://Core/CraftingManager.gd\"",
+    "MaterialCompiler=\"*res://Utility/MaterialCompiler.gd\"",
+    "EventBus=\"*res://Utility/EventBus.gd\"",
+    "CustomRules=\"*res://Utility/CustomRules.gd\"",
+    "InputBlocker=\"*res://Interface/InputBlocker.tscn\"",
+    "Expedition=\"*res://PvE/NativeExpedition.gd\""
+  ],
+  "autoload_count": 24,
+  "default_stages": [
+    "TouchPagesMain",
+    "CombatAnchorsMain",
+    "BoundAssetsMain",
+    "CoreFlowMain",
+    "NativeMain",
+    "NativeInventoryQA",
+    "SaveSafetyMain",
+    "LoadingContractsMain",
+    "LoadingProfileMain",
+    "NativeFeedbackMain",
+    "NativePreferencesWrite",
+    "NativePreferencesReopen",
+    "PersistenceRouteWrite",
+    "PersistenceRouteReopen",
+    "PersistenceShopWrite",
+    "PersistenceShopReopen",
+    "PersistenceCombatWrite",
+    "PersistenceCombatReopen",
+    "PersistenceResultWrite",
+    "PersistenceResultReopen",
+    "PersistenceRewardWrite",
+    "PersistenceRewardReopen"
+  ],
+  "default_stage_count": 22,
+  "runtime_tree": [
+    {
+      "path": "Audio/",
+      "direct_files": [
+        "SceneMusic.gd",
+        "SceneMusic.gd.uid"
+      ],
+      "children": []
+    },
+    {
+      "path": "Behavior/",
+      "direct_files": [],
+      "children": [
+        {
+          "path": "Assets/",
+          "direct_files": 0
+        },
+        {
+          "path": "CharacterClasses/",
+          "direct_files": 2
+        },
+        {
+          "path": "Compatibility/",
+          "direct_files": 2
+        },
+        {
+          "path": "Core/",
+          "direct_files": 20
+        },
+        {
+          "path": "Features/",
+          "direct_files": 0
+        },
+        {
+          "path": "Game/",
+          "direct_files": 8
+        },
+        {
+          "path": "Interface/",
+          "direct_files": 30
+        },
+        {
+          "path": "Items/",
+          "direct_files": 32
+        },
+        {
+          "path": "LocalServices/",
+          "direct_files": 8
+        },
+        {
+          "path": "Shader/",
+          "direct_files": 0
+        },
+        {
+          "path": "Sheets/",
+          "direct_files": 4
+        },
+        {
+          "path": "Utility/",
+          "direct_files": 32
+        }
+      ]
+    },
+    {
+      "path": "Callbacks/",
+      "direct_files": [],
+      "children": [
+        {
+          "path": "CharacterClasses/",
+          "direct_files": 0
+        },
+        {
+          "path": "Compatibility/",
+          "direct_files": 6
+        },
+        {
+          "path": "Core/",
+          "direct_files": 2
+        },
+        {
+          "path": "Interface/",
+          "direct_files": 26
+        },
+        {
+          "path": "Items/",
+          "direct_files": 18
+        },
+        {
+          "path": "Utility/",
+          "direct_files": 10
+        }
+      ]
+    },
+    {
+      "path": "Collections/",
+      "direct_files": [
+        "CountLedger.gd",
+        "CountLedger.gd.uid",
+        "SequenceOps.gd",
+        "SequenceOps.gd.uid"
+      ],
+      "children": []
+    },
+    {
+      "path": "Events/",
+      "direct_files": [
+        "CombatDispatch.gd",
+        "CombatDispatch.gd.uid"
+      ],
+      "children": []
+    },
+    {
+      "path": "Loading/",
+      "direct_files": [
+        "AssetStream.gd",
+        "AssetStream.gd.uid",
+        "item_effects.json",
+        "LazyCatalog.gd",
+        "LazyCatalog.gd.uid",
+        "LazyPanel.gd",
+        "LazyPanel.gd.uid",
+        "SceneResidency.gd",
+        "SceneResidency.gd.uid"
+      ],
+      "children": [
+        {
+          "path": "Scenes/",
+          "direct_files": 5
+        }
+      ]
+    },
+    {
+      "path": "Random/",
+      "direct_files": [
+        "ChanceDebt.gd",
+        "ChanceDebt.gd.uid",
+        "PrefixSampler.gd",
+        "PrefixSampler.gd.uid",
+        "RangeDebt.gd",
+        "RangeDebt.gd.uid"
+      ],
+      "children": []
+    },
+    {
+      "path": "Scene/",
+      "direct_files": [
+        "LeasePool.gd",
+        "LeasePool.gd.uid"
+      ],
+      "children": []
+    },
+    {
+      "path": "Serialization/",
+      "direct_files": [
+        "BitPacket.gd",
+        "BitPacket.gd.uid"
+      ],
+      "children": []
+    },
+    {
+      "path": "UI/",
+      "direct_files": [
+        "InputLocks.gd",
+        "InputLocks.gd.uid"
+      ],
+      "children": []
+    }
+  ],
+  "reports": [
+    {
+      "path": "manifest.json",
+      "modified": "2026-10-27T17:16:49+08:00"
+    },
+    {
+      "path": "UI与结构改良报告_20261020.txt",
+      "modified": "2026-10-20T12:07:53+08:00"
+    },
+    {
+      "path": "代码重构与兼容性报告.txt",
+      "modified": "2026-10-27T17:10:46+08:00"
+    },
+    {
+      "path": "增量更新说明.txt",
+      "modified": "2026-10-27T17:10:46+08:00"
+    },
+    {
+      "path": "开始使用.txt",
+      "modified": "2026-10-27T17:10:46+08:00"
+    },
+    {
+      "path": "异步加载与轻量化优化记录_20261022.txt",
+      "modified": "2026-10-22T10:27:19+08:00"
+    },
+    {
+      "path": "新美术替换与布局核验_20261022.md",
+      "modified": "2026-10-22T17:04:00+08:00"
+    },
+    {
+      "path": "新美术替换与布局核验_20261022.txt",
+      "modified": "2026-10-22T17:04:00+08:00"
+    },
+    {
+      "path": "核心流程修复与光影优化_20261023.md",
+      "modified": "2026-10-23T11:19:42+08:00"
+    },
+    {
+      "path": "核心流程修复与光影优化_20261023.txt",
+      "modified": "2026-10-23T11:19:42+08:00"
+    },
+    {
+      "path": "点击翻页与继续入口重制_20261027.md",
+      "modified": "2026-10-27T17:10:46+08:00"
+    },
+    {
+      "path": "点击翻页与继续入口重制_20261027.txt",
+      "modified": "2026-10-27T17:10:46+08:00"
+    },
+    {
+      "path": "移动端UI重构与瘦身说明_20261027.md",
+      "modified": "2026-10-27T15:30:15+08:00"
+    },
+    {
+      "path": "移动端UI重构与瘦身说明_20261027.txt",
+      "modified": "2026-10-27T15:30:15+08:00"
+    },
+    {
+      "path": "美术与过渡优化说明_20261022.md",
+      "modified": "2026-10-22T17:07:16+08:00"
+    },
+    {
+      "path": "美术与过渡优化说明_20261022.txt",
+      "modified": "2026-10-22T17:07:16+08:00"
+    },
+    {
+      "path": "进一步重构报告_20261021.txt",
+      "modified": "2026-10-21T11:03:26+08:00"
+    },
+    {
+      "path": "docs\\20261015_开始使用.txt",
+      "modified": "2026-10-15T19:13:50+08:00"
+    },
+    {
+      "path": "docs\\20261015_架构重置与错误修复报告.txt",
+      "modified": "2026-10-15T19:21:22+08:00"
+    },
+    {
+      "path": "docs\\20261020_第二轮UI与结构改良报告.txt",
+      "modified": "2026-10-20T12:07:53+08:00"
+    },
+    {
+      "path": "docs\\20261020_首轮代码重构与兼容性报告.txt",
+      "modified": "2026-10-20T10:46:54+08:00"
+    },
+    {
+      "path": "docs\\20261021_进一步重构报告.txt",
+      "modified": "2026-10-21T11:03:26+08:00"
+    },
+    {
+      "path": "docs\\M0_文档核对与最小修正建议_20261027.md",
+      "modified": "2026-10-27T17:14:28+08:00"
+    },
+    {
+      "path": "docs\\代码维护索引.json",
+      "modified": "2026-10-27T15:23:47+08:00"
+    },
+    {
+      "path": "docs\\后续更新指南.txt",
+      "modified": "2026-10-27T17:10:46+08:00"
+    },
+    {
+      "path": "docs\\异步加载维护指南.txt",
+      "modified": "2026-10-22T10:27:19+08:00"
+    },
+    {
+      "path": "docs\\新美术接入与维护说明.txt",
+      "modified": "2026-10-22T12:45:42+08:00"
+    },
+    {
+      "path": "docs\\生成素材提示词_20261022.md",
+      "modified": "2026-10-22T17:07:16+08:00"
+    }
+  ],
+  "present_bundle_files": [
+    "launch-game.cmd",
+    "verify-project.cmd",
+    "tools/verify_native.ps1",
+    "tools/ensure_art_imports.ps1",
+    "engine/Godot_v4.7-stable_win64.exe"
+  ],
+  "reference_461_exists": true,
+  "python": "3.9.13"
+}

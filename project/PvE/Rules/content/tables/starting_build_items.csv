@@ -1,0 +1,9 @@
+loadout_id,instance_id,item_id,origin_x,origin_y,rotation
+armorer_blades,armorer_blades_item_1,utility_knife,2,0,0
+armorer_blades,armorer_blades_item_2,twin_needles,0,0,0
+armorer_guard,armorer_guard_item_1,buckler,0,0,0
+armorer_guard,armorer_guard_item_2,iron_nail,2,0,0
+alchemist_toxin,alchemist_toxin_item_1,venom_needle,0,0,0
+alchemist_toxin,alchemist_toxin_item_2,healing_herb,1,0,0
+alchemist_ember,alchemist_ember_item_1,ember_stone,0,0,0
+alchemist_ember,alchemist_ember_item_2,bandage_roll,2,0,0

@@ -1,0 +1,12 @@
+{
+  "Combat/Background": {
+    "nodes": 22,
+    "path": "res://Runtime/Loading/Scenes/CombatBackdrop.tscn",
+    "resource_dependencies": 24
+  },
+  "Shop/Background": {
+    "nodes": 3,
+    "path": "res://Runtime/Loading/Scenes/ShopBackdrop.tscn",
+    "resource_dependencies": 3
+  }
+}

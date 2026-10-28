@@ -1,0 +1,720 @@
+{
+  "checks": 206,
+  "content_sha256": "b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1",
+  "engine": "4.7-stable (official)",
+  "entry": "res://Core/Main.tscn",
+  "failures": [],
+  "snapshots": [
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "MAIN_MENU",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 0,
+      "phase": "01-title-role-switches",
+      "player": {
+        "animation": "",
+        "class": 1,
+        "combat_anchor": "(0.0, 0.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (350.8002, 603.8422), S: (479.448, 468.2497)]",
+          "count": 23,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "SHOP_PREPARE",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 1,
+      "phase": "02-armorer-shop",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(0.0, 0.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (408.9891, 595.0546), S: (282.4822, 493.9651)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 7528960306682,
+        "inventory_id": 7560350478634,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (1562.082, 603.1676), S: (284.929, 493.8521)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(1570.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 9,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "enemy_characters": 1,
+      "enemy_inventories": 1,
+      "flow_state": "COMBAT_RUNNING",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 2,
+      "phase": "03-armorer-combat",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (72.98911, 600.6566), S: (285.3365, 496.363)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "MAIN_MENU",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 0,
+      "phase": "04-title-from-paused-combat",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (408.9891, 592.0262), S: (285.459, 496.9935)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 9418578162720,
+        "inventory_id": 9449968334672,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (1562.6, 603.7065), S: (284.4106, 493.3131)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(1570.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 9,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "enemy_characters": 1,
+      "enemy_inventories": 1,
+      "flow_state": "COMBAT_RUNNING",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 2,
+      "phase": "05-continued-combat",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (72.98911, 603.706), S: (284.2339, 493.3137)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 10189961007217,
+        "inventory_id": 10221351179169,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (1558.95, 614.017), S: (293.0104, 471.0798)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(1570.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 9,
+        "sprite_modulate": "(0.991, 0.5728, 0.5728, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.029992, 0.955011)",
+        "visible": true
+      },
+      "enemy_characters": 1,
+      "enemy_inventories": 1,
+      "flow_state": "COMBAT_RESULT",
+      "input_sources": 1024,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 2,
+      "phase": "05b-continued-result",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (72.98911, 593.4802), S: (282.4998, 502.5795)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.2127, 1.2127, 1.1418, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "SHOP_PREPARE",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 1,
+      "phase": "06-second-shop",
+      "player": {
+        "animation": "EnterShopFromCombat",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (249.8629, 598.997), S: (283.292, 493.8113)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(64.87386, -52.21128)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 10796054719333,
+        "inventory_id": 10827444891305,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (1562.061, 603.0773), S: (284.9501, 493.9424)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(1570.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 9,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "enemy_characters": 1,
+      "enemy_inventories": 1,
+      "flow_state": "COMBAT_RUNNING",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 2,
+      "phase": "07-second-combat",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (72.98911, 603.671), S: (284.1493, 493.3487)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "SHOP_PREPARE",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 1,
+      "phase": "08-new-alchemist-shop",
+      "player": {
+        "animation": "",
+        "class": 1,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (337.3585, 615.5466), S: (503.9307, 456.5453)]",
+          "count": 23,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 11605958045076,
+        "inventory_id": 11637348209081,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (1562.026, 602.9277), S: (284.9852, 494.092)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(1570.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 9,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "enemy_characters": 1,
+      "enemy_inventories": 1,
+      "flow_state": "COMBAT_RUNNING",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 2,
+      "phase": "09-alchemist-combat",
+      "player": {
+        "animation": "",
+        "class": 1,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": true,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (14.6191, 615.5903), S: (479.7809, 464.5016)]",
+          "count": 23,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(-112.0, -48.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "SHOP_PREPARE",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 1,
+      "phase": "10-new-armorer-shop",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (408.9891, 595.0897), S: (282.5187, 493.9299)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "MAIN_MENU",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 0,
+      "phase": "11-title-final",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (408.9891, 595.0399), S: (282.5292, 493.9797)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "SHOP_PREPARE",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 1,
+      "phase": "12-shop-after-rapid-cancellation",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (408.9891, 595.0549), S: (282.6732, 493.9647)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    },
+    {
+      "enemy": {
+        "exists": false
+      },
+      "enemy_characters": 0,
+      "enemy_inventories": 0,
+      "flow_state": "MAIN_MENU",
+      "input_sources": 0,
+      "menus": {
+        "buildHistory": false,
+        "itemLibrary": false,
+        "options": false,
+        "recipeBook": false,
+        "wardrobe": false
+      },
+      "native_state": 0,
+      "phase": "13-title-after-cancelled-battle",
+      "player": {
+        "animation": "",
+        "class": 2,
+        "combat_anchor": "(-112.0, -48.0)",
+        "exists": true,
+        "id": 2843872359520,
+        "inventory_id": 2904018679946,
+        "opponent_is_valid": false,
+        "parent_position": "(0.0, 0.0)",
+        "parts": {
+          "bounds": "[P: (408.9891, 595.2549), S: (283.4332, 493.7648)]",
+          "count": 17,
+          "on_screen": true
+        },
+        "position": "(350.0, 880.0)",
+        "process_mode": 0,
+        "sprite_children": 11,
+        "sprite_modulate": "(1.0, 1.0, 1.0, 1.0)",
+        "sprite_position": "(224.0, -56.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "visible": true
+      },
+      "player_characters": 1,
+      "player_inventories": 1,
+      "scene_animation": "",
+      "time_scale": 1.0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+id,source_pool,weight,max_effective_weight,requires_detected_archetype
+public,public,0.6,0.7,false
+character,character,0.25,0.35,false
+archetype,archetype,0.15,0.25,true

@@ -1,0 +1,18 @@
+{
+  "pid": 15188,
+  "args": [
+    "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\engine\\Godot_v4.7-stable_win64.exe",
+    "--path",
+    "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project",
+    "--rendering-method",
+    "gl_compatibility",
+    "--windowed",
+    "--resolution",
+    "1280x720",
+    "res://PvE/tests/CoreFlowMain.tscn",
+    "--",
+    "--qa-save-directory=C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\core_flow_20261023\\qa-saves\\verified-player",
+    "--qa-output=C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\core_flow_20261023\\checks\\verified-player",
+    "--core-flow-player-copy"
+  ]
+}

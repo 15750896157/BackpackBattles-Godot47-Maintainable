@@ -1,0 +1,47 @@
+{
+	"baseline_shader_supplied": true,
+	"checks": 8,
+	"failures": [],
+	"ok": true,
+	"order": "baseline-enhanced-enhanced-baseline",
+	"samples": [
+		{
+			"draw_calls_median": 93.0,
+			"frames": 1264,
+			"kind": "baseline",
+			"median_ms": 1.133,
+			"p95_ms": 1.496,
+			"pass": 0,
+			"texture_mib": 408.738508224487
+		},
+		{
+			"draw_calls_median": 93.0,
+			"frames": 1281,
+			"kind": "enhanced",
+			"median_ms": 1.127,
+			"p95_ms": 1.443,
+			"pass": 0,
+			"texture_mib": 408.738508224487
+		},
+		{
+			"draw_calls_median": 93.0,
+			"frames": 1267,
+			"kind": "enhanced",
+			"median_ms": 1.135,
+			"p95_ms": 1.423,
+			"pass": 1,
+			"texture_mib": 408.738508224487
+		},
+		{
+			"draw_calls_median": 93.0,
+			"frames": 1255,
+			"kind": "baseline",
+			"median_ms": 1.136,
+			"p95_ms": 1.426,
+			"pass": 1,
+			"texture_mib": 408.738508224487
+		}
+	],
+	"scope": "Windows same scene; not a phone-device certification",
+	"vsync": "disabled during comparison"
+}

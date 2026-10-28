@@ -1,0 +1,3307 @@
+{
+  "note": "Whitespace cleanup only; never counted as a change to normalized token similarity. Comments and vendor addons retained.",
+  "changed_files": 550,
+  "removed_blank_lines": 3986,
+  "files": [
+    {
+      "path": "Assets/Decoration/FlowerVase.gd",
+      "lines_before": 85,
+      "lines_after": 71,
+      "only_whitespace": true
+    },
+    {
+      "path": "Assets/Decoration/Lamp.gd",
+      "lines_before": 79,
+      "lines_after": 76,
+      "only_whitespace": true
+    },
+    {
+      "path": "Assets/Decoration/Shelf.gd",
+      "lines_before": 16,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Assets/Decoration/UmbrellaBasket.gd",
+      "lines_before": 66,
+      "lines_after": 63,
+      "only_whitespace": true
+    },
+    {
+      "path": "CharacterClasses/CharacterClass.gd",
+      "lines_before": 107,
+      "lines_after": 106,
+      "only_whitespace": true
+    },
+    {
+      "path": "CharacterClasses/Ranger/Skins/Normal/Yuki/YukiSnowball.gd",
+      "lines_before": 23,
+      "lines_after": 23,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/Buff.gd",
+      "lines_before": 361,
+      "lines_after": 334,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/Character.gd",
+      "lines_before": 1767,
+      "lines_after": 1669,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/Combat.gd",
+      "lines_before": 848,
+      "lines_after": 811,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/CombatEvent.gd",
+      "lines_before": 208,
+      "lines_after": 192,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/CombatLog.gd",
+      "lines_before": 1259,
+      "lines_after": 1194,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/CombatSnapshot.gd",
+      "lines_before": 35,
+      "lines_after": 31,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/CombatStatLogger.gd",
+      "lines_before": 152,
+      "lines_after": 144,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/CraftingManager.gd",
+      "lines_before": 102,
+      "lines_after": 101,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/Game.gd",
+      "lines_before": 4672,
+      "lines_after": 4364,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/Inventory.gd",
+      "lines_before": 1238,
+      "lines_after": 1148,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/Player.gd",
+      "lines_before": 2,
+      "lines_after": 1,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/RunDatabase.gd",
+      "lines_before": 645,
+      "lines_after": 589,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/Shop.gd",
+      "lines_before": 580,
+      "lines_after": 540,
+      "only_whitespace": true
+    },
+    {
+      "path": "Core/StatHistory.gd",
+      "lines_before": 41,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/AchievementPopup.gd",
+      "lines_before": 13,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/BaseSlider.gd",
+      "lines_before": 37,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/BlackLayer.gd",
+      "lines_before": 23,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/BuildHistory/BuildEntry.gd",
+      "lines_before": 277,
+      "lines_after": 262,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/BuildHistory/BuildEntryPlaceholder.gd",
+      "lines_before": 38,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/BuildHistory/BuildHistory.gd",
+      "lines_before": 413,
+      "lines_after": 394,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/BuildHistory/BuildHistoryData.gd",
+      "lines_before": 110,
+      "lines_after": 105,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/BuildHistory/RoundResultButton.gd",
+      "lines_before": 32,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ChestnutTrade.gd",
+      "lines_before": 219,
+      "lines_after": 208,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ClassLabel.gd",
+      "lines_before": 34,
+      "lines_after": 31,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CoinParticles.gd",
+      "lines_before": 15,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Combat/BlockHud.gd",
+      "lines_before": 149,
+      "lines_after": 148,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Combat/CharacterStatIcon.gd",
+      "lines_before": 117,
+      "lines_after": 116,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Combat/CharacterStatsDisplay.gd",
+      "lines_before": 71,
+      "lines_after": 70,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Combat/CombatTugBar.gd",
+      "lines_before": 20,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Combat/HideUIButton.gd",
+      "lines_before": 57,
+      "lines_after": 55,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogFilterButton.gd",
+      "lines_before": 16,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogFilterButtonWithStylebox.gd",
+      "lines_before": 37,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogFilterPanel.gd",
+      "lines_before": 140,
+      "lines_after": 138,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogLine.gd",
+      "lines_before": 108,
+      "lines_after": 101,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CombatTimer/CombatTimer.gd",
+      "lines_before": 207,
+      "lines_after": 205,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CompositeButton.gd",
+      "lines_before": 72,
+      "lines_after": 72,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ConnectingLabel.gd",
+      "lines_before": 24,
+      "lines_after": 23,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Cursor.gd",
+      "lines_before": 34,
+      "lines_after": 34,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/CustomRulesIcon.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeter.gd",
+      "lines_before": 326,
+      "lines_after": 315,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeterEntry.gd",
+      "lines_before": 161,
+      "lines_after": 160,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeterPlot.gd",
+      "lines_before": 178,
+      "lines_after": 163,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeterTotal.gd",
+      "lines_before": 19,
+      "lines_after": 19,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DamageMeter/PlotLine.gd",
+      "lines_before": 44,
+      "lines_after": 44,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DamageNumbers/BuffLabel.gd",
+      "lines_before": 266,
+      "lines_after": 257,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DamageNumbers/DamageNumber.gd",
+      "lines_before": 76,
+      "lines_after": 64,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/DraggableScrollContainer.gd",
+      "lines_before": 61,
+      "lines_after": 58,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/EditModeAnimation.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/EditModeButtons.gd",
+      "lines_before": 56,
+      "lines_after": 55,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/FocusGrabbingButton.gd",
+      "lines_before": 59,
+      "lines_after": 59,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/FocusGrabbingControl.gd",
+      "lines_before": 47,
+      "lines_after": 46,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/FocusGrabbingTextureButton.gd",
+      "lines_before": 105,
+      "lines_after": 103,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/GoldCounter.gd",
+      "lines_before": 68,
+      "lines_after": 65,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/GridStorage.gd",
+      "lines_before": 150,
+      "lines_after": 149,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/GridStorageEntry.gd",
+      "lines_before": 98,
+      "lines_after": 94,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Healthbar.gd",
+      "lines_before": 61,
+      "lines_after": 57,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/HistoryButton.gd",
+      "lines_before": 27,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/IngameCharacterHUD.gd",
+      "lines_before": 42,
+      "lines_after": 41,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/InputEaterRect.gd",
+      "lines_before": 14,
+      "lines_after": 5,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Inventory/CraftingProgressLabel.gd",
+      "lines_before": 92,
+      "lines_after": 78,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ItemLibrary/InfoPanel.gd",
+      "lines_before": 287,
+      "lines_after": 269,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemFilterButton.gd",
+      "lines_before": 59,
+      "lines_after": 54,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemLibrary.gd",
+      "lines_before": 954,
+      "lines_after": 894,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemRecordIcons.gd",
+      "lines_before": 33,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemRecordStar.gd",
+      "lines_before": 64,
+      "lines_after": 54,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ItemLibrary/TreasureItemFilterButton.gd",
+      "lines_before": 25,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ItemLibrary/TypeButton.gd",
+      "lines_before": 71,
+      "lines_after": 66,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/CreateLobbyUI.gd",
+      "lines_before": 194,
+      "lines_after": 194,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/CustomRulesInput.gd",
+      "lines_before": 54,
+      "lines_after": 54,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/CustomUnrankedUI.gd",
+      "lines_before": 42,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/JoinLobbyUI.gd",
+      "lines_before": 213,
+      "lines_after": 200,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbyBuildViewer.gd",
+      "lines_before": 124,
+      "lines_after": 119,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbyMemberData.gd",
+      "lines_before": 149,
+      "lines_after": 122,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbyMemberList.gd",
+      "lines_before": 36,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbyResultEntry.gd",
+      "lines_before": 88,
+      "lines_after": 79,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbyScoreboard.gd",
+      "lines_before": 87,
+      "lines_after": 85,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbyScoreboardEntry.gd",
+      "lines_before": 93,
+      "lines_after": 89,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbySpeed.gd",
+      "lines_before": 26,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/LobbyTimer.gd",
+      "lines_before": 276,
+      "lines_after": 255,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/OtherModesUI.gd",
+      "lines_before": 134,
+      "lines_after": 131,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/ResultButton.gd",
+      "lines_before": 2,
+      "lines_after": 1,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/StartTimer.gd",
+      "lines_before": 36,
+      "lines_after": 35,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Lobbies/SwitchModeUnrankedUI.gd",
+      "lines_before": 30,
+      "lines_after": 30,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/LobbyButton.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/MaxHealthLabel.gd",
+      "lines_before": 51,
+      "lines_after": 48,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/MovingCounter.gd",
+      "lines_before": 60,
+      "lines_after": 57,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/NameLineEdit.gd",
+      "lines_before": 55,
+      "lines_after": 55,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Options/ControllerKeyBind.gd",
+      "lines_before": 112,
+      "lines_after": 74,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Options/InputMapping.gd",
+      "lines_before": 51,
+      "lines_after": 47,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Options/ItemListButton.gd",
+      "lines_before": 214,
+      "lines_after": 200,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Options/KeyBind.gd",
+      "lines_before": 212,
+      "lines_after": 196,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Options/Options.gd",
+      "lines_before": 196,
+      "lines_after": 183,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Options/OptionsButton.gd",
+      "lines_before": 31,
+      "lines_after": 31,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Options/SoundSlider.gd",
+      "lines_before": 8,
+      "lines_after": 7,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/PaintingCanvas.gd",
+      "lines_before": 48,
+      "lines_after": 48,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/PatchNotes.gd",
+      "lines_before": 71,
+      "lines_after": 70,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/PhysicsRope.gd",
+      "lines_before": 226,
+      "lines_after": 212,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/PullButton.gd",
+      "lines_before": 68,
+      "lines_after": 67,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/PushToStorageButton.gd",
+      "lines_before": 66,
+      "lines_after": 66,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RankingUI.gd",
+      "lines_before": 26,
+      "lines_after": 23,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RankSeason3Popup.gd",
+      "lines_before": 55,
+      "lines_after": 54,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RankSeasonPopup.gd",
+      "lines_before": 40,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RarityHint.gd",
+      "lines_before": 71,
+      "lines_after": 71,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ReactiveButton.gd",
+      "lines_before": 20,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RecipeBook.gd",
+      "lines_before": 170,
+      "lines_after": 153,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ReleaseCounter.gd",
+      "lines_before": 28,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RerollRope.gd",
+      "lines_before": 182,
+      "lines_after": 172,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RerollRopeTag.gd",
+      "lines_before": 41,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ResizableControl.gd",
+      "lines_before": 118,
+      "lines_after": 112,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RiseUpTextEffect.gd",
+      "lines_before": 30,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RopeSegment.gd",
+      "lines_before": 76,
+      "lines_after": 74,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RotateHint.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/RunAchievement.gd",
+      "lines_before": 126,
+      "lines_after": 122,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/SColorTextEffect.gd",
+      "lines_before": 21,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/SelectionBox.gd",
+      "lines_before": 347,
+      "lines_after": 317,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Sellbox.gd",
+      "lines_before": 349,
+      "lines_after": 315,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Shopkeeper.gd",
+      "lines_before": 303,
+      "lines_after": 283,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ShopOffer.gd",
+      "lines_before": 496,
+      "lines_after": 465,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ShopRarityChart.gd",
+      "lines_before": 60,
+      "lines_after": 48,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/ShopToolbar.gd",
+      "lines_before": 182,
+      "lines_after": 177,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/SimpleClassLabel.gd",
+      "lines_before": 19,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/SliderProperty.gd",
+      "lines_before": 16,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/SpeechBubble.gd",
+      "lines_before": 95,
+      "lines_after": 91,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/StackFilterButton.gd",
+      "lines_before": 68,
+      "lines_after": 63,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Staminabar.gd",
+      "lines_before": 47,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/StaminaUseCounter.gd",
+      "lines_before": 64,
+      "lines_after": 63,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/StartCombatButton.gd",
+      "lines_before": 178,
+      "lines_after": 167,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Storagebox.gd",
+      "lines_before": 197,
+      "lines_after": 186,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/StorageShakeButton.gd",
+      "lines_before": 39,
+      "lines_after": 33,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/SwitchModeUI.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Textbox.gd",
+      "lines_before": 167,
+      "lines_after": 156,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Title.gd",
+      "lines_before": 15,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/TitleScreen.gd",
+      "lines_before": 540,
+      "lines_after": 513,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/TooltipLabel.gd",
+      "lines_before": 25,
+      "lines_after": 23,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/BuildIntoRecipe.gd",
+      "lines_before": 179,
+      "lines_after": 161,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/BuildIntoRecipesTooltip.gd",
+      "lines_before": 139,
+      "lines_after": 132,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/ClassTooltip.gd",
+      "lines_before": 10,
+      "lines_after": 9,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/CustomRulesTooltip.gd",
+      "lines_before": 60,
+      "lines_after": 58,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/Ingredient.gd",
+      "lines_before": 61,
+      "lines_after": 60,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/ItemNameEffect.gd",
+      "lines_before": 273,
+      "lines_after": 268,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/ItemTooltip.gd",
+      "lines_before": 576,
+      "lines_after": 529,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/RecipeTooltip.gd",
+      "lines_before": 139,
+      "lines_after": 129,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/RelatedItems.gd",
+      "lines_before": 50,
+      "lines_after": 49,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/SubclassSubtooltip.gd",
+      "lines_before": 20,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/Tooltip.gd",
+      "lines_before": 259,
+      "lines_after": 229,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/TooltipItemLayout.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/TooltipProperty.gd",
+      "lines_before": 52,
+      "lines_after": 51,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Tooltips/UniqueTooltip.gd",
+      "lines_before": 59,
+      "lines_after": 56,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Trail.gd",
+      "lines_before": 40,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Trophy.gd",
+      "lines_before": 37,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/TugofWarAnimation.gd",
+      "lines_before": 59,
+      "lines_after": 57,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/VersionLabel.gd",
+      "lines_before": 42,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Wardrobe/DressUpSprite.gd",
+      "lines_before": 94,
+      "lines_after": 79,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Wardrobe/SkinSlotButton.gd",
+      "lines_before": 102,
+      "lines_after": 100,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Wardrobe/Wardrobe.gd",
+      "lines_before": 184,
+      "lines_after": 177,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/Wardrobe/WardrobeButton.gd",
+      "lines_before": 24,
+      "lines_after": 24,
+      "only_whitespace": true
+    },
+    {
+      "path": "Interface/WishlistButton.gd",
+      "lines_before": 39,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/AceofSpades.gd",
+      "lines_before": 18,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/CardConnector.gd",
+      "lines_before": 31,
+      "lines_after": 31,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/CraftingPreviewBond.gd",
+      "lines_before": 53,
+      "lines_after": 52,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/DestroyParticles.gd",
+      "lines_before": 35,
+      "lines_after": 33,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/ItemAnimation.gd",
+      "lines_before": 38,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/NotInChainMark.gd",
+      "lines_before": 17,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/PotionConnector.gd",
+      "lines_before": 46,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/SquishySprite.gd",
+      "lines_before": 87,
+      "lines_after": 85,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Animations/Zap.gd",
+      "lines_before": 37,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Bag.gd",
+      "lines_before": 306,
+      "lines_after": 278,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/BagofStones.gd",
+      "lines_before": 12,
+      "lines_after": 11,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/BloodyDagger.gd",
+      "lines_before": 22,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Bow.gd",
+      "lines_before": 23,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/BowandArrow.gd",
+      "lines_before": 40,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/BoxofRiches.gd",
+      "lines_before": 52,
+      "lines_after": 50,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Broom.gd",
+      "lines_before": 37,
+      "lines_after": 33,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Card.gd",
+      "lines_before": 164,
+      "lines_after": 155,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Carrot.gd",
+      "lines_before": 9,
+      "lines_after": 9,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/CarrotGoobert.gd",
+      "lines_before": 34,
+      "lines_after": 34,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/CorruptedArmor.gd",
+      "lines_before": 40,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/CraftingBond.gd",
+      "lines_before": 112,
+      "lines_after": 99,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/CritwoodStaff.gd",
+      "lines_before": 45,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Crossblades.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Crown.gd",
+      "lines_before": 68,
+      "lines_after": 68,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/CursedDagger.gd",
+      "lines_before": 25,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/CursedHairComb.gd",
+      "lines_before": 34,
+      "lines_after": 23,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/DeathScythe.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/DeckofCards.gd",
+      "lines_before": 110,
+      "lines_after": 106,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/DemonicFlask.gd",
+      "lines_before": 36,
+      "lines_after": 35,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/DjinnLamp.gd",
+      "lines_before": 77,
+      "lines_after": 77,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/DragonEgg.gd",
+      "lines_before": 85,
+      "lines_after": 82,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Eggscalibur.gd",
+      "lines_before": 13,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ElectricalCharge.gd",
+      "lines_before": 274,
+      "lines_after": 249,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/EvilCap.gd",
+      "lines_before": 42,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/AcornAce.gd",
+      "lines_before": 77,
+      "lines_after": 76,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/AmuletofAgility.gd",
+      "lines_before": 46,
+      "lines_after": 46,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/AmuletofDarkness.gd",
+      "lines_before": 40,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/AmuletofLight.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/AmuletoftheWild.gd",
+      "lines_before": 23,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/AmuletUnidentified.gd",
+      "lines_before": 44,
+      "lines_after": 44,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Animations/AffectsLine.gd",
+      "lines_before": 63,
+      "lines_after": 57,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Animations/CanAffectVisual.gd",
+      "lines_before": 50,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Animations/GooglyEye.gd",
+      "lines_before": 102,
+      "lines_after": 83,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Anvil.gd",
+      "lines_before": 38,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ArcaneBoots.gd",
+      "lines_before": 45,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ArcaneIntellect.gd",
+      "lines_before": 17,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ArmoredPowerPuppy.gd",
+      "lines_before": 16,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ArtifactStoneDeath.gd",
+      "lines_before": 25,
+      "lines_after": 24,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Automanaton.gd",
+      "lines_before": 92,
+      "lines_after": 91,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BadgerRune.gd",
+      "lines_before": 46,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BadgerSpirit.gd",
+      "lines_before": 34,
+      "lines_after": 34,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BagofGiving.gd",
+      "lines_before": 92,
+      "lines_after": 82,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Bagtacular.gd",
+      "lines_before": 11,
+      "lines_after": 11,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Battery.gd",
+      "lines_before": 28,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Bazooka.gd",
+      "lines_before": 43,
+      "lines_after": 43,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Bewitchment.gd",
+      "lines_before": 54,
+      "lines_after": 54,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BionicArmor.gd",
+      "lines_before": 40,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BismuthCube.gd",
+      "lines_before": 52,
+      "lines_after": 52,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Bomb.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BookofBasics.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BowlofTreats.gd",
+      "lines_before": 42,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BoxofProsperity.gd",
+      "lines_before": 48,
+      "lines_after": 43,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Broccotree.gd",
+      "lines_before": 24,
+      "lines_after": 23,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BurningBanner.gd",
+      "lines_before": 53,
+      "lines_after": 24,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BurningSpikes.gd",
+      "lines_before": 33,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BurningSword.gd",
+      "lines_before": 36,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/BuytheHolyLight.gd",
+      "lines_before": 64,
+      "lines_after": 59,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/CatSpirit.gd",
+      "lines_before": 31,
+      "lines_after": 30,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Cauldron.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Chainsaw.gd",
+      "lines_before": 72,
+      "lines_after": 72,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ChargeSplitter.gd",
+      "lines_before": 41,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackBishop.gd",
+      "lines_before": 13,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackPawn.gd",
+      "lines_before": 13,
+      "lines_after": 10,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Chess/ChessPiece.gd",
+      "lines_before": 147,
+      "lines_after": 141,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteKnight.gd",
+      "lines_before": 15,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteQueen.gd",
+      "lines_before": 14,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteRook.gd",
+      "lines_before": 14,
+      "lines_after": 14,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ChessBoard.gd",
+      "lines_before": 214,
+      "lines_after": 209,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ChessMaster.gd",
+      "lines_before": 38,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ChiliPepper.gd",
+      "lines_before": 9,
+      "lines_after": 9,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ChromeCube.gd",
+      "lines_before": 26,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/CogBadge.gd",
+      "lines_before": 50,
+      "lines_after": 49,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Coil.gd",
+      "lines_before": 51,
+      "lines_after": 17,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ConTrapTron.gd",
+      "lines_before": 61,
+      "lines_after": 59,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/CriticalPoison.gd",
+      "lines_before": 26,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Crow.gd",
+      "lines_before": 40,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Cthulhu.gd",
+      "lines_before": 38,
+      "lines_after": 30,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Cube.gd",
+      "lines_before": 19,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Cubert.gd",
+      "lines_before": 50,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Cupcake.gd",
+      "lines_before": 25,
+      "lines_after": 9,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/CupcakeDragon.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/CupcakeGoobert.gd",
+      "lines_before": 28,
+      "lines_after": 7,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/CupcakeStaff.gd",
+      "lines_before": 36,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DarkLantern.gd",
+      "lines_before": 80,
+      "lines_after": 75,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DeathLotus.gd",
+      "lines_before": 22,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DeerTotem.gd",
+      "lines_before": 47,
+      "lines_after": 47,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DivinePotion.gd",
+      "lines_before": 16,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DoubleAxe.gd",
+      "lines_before": 19,
+      "lines_after": 19,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DoubleRainbow.gd",
+      "lines_before": 19,
+      "lines_after": 19,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DraconicOrb.gd",
+      "lines_before": 28,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DragonClaws.gd",
+      "lines_before": 21,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DragonNest.gd",
+      "lines_before": 26,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DragonSet.gd",
+      "lines_before": 94,
+      "lines_after": 84,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DragonskinBoots.gd",
+      "lines_before": 14,
+      "lines_after": 14,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/DualWielding.gd",
+      "lines_before": 44,
+      "lines_after": 44,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Eat-o-matic.gd",
+      "lines_before": 106,
+      "lines_after": 103,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/EchoingBattlecry.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ElectricTorch.gd",
+      "lines_before": 51,
+      "lines_after": 48,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ElephantRune.gd",
+      "lines_before": 49,
+      "lines_after": 48,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/EmeraldEgg.gd",
+      "lines_before": 10,
+      "lines_after": 8,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/EnergyConversion.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/EngineerBox.gd",
+      "lines_before": 26,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Everburning.gd",
+      "lines_before": 26,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/EvilHat.gd",
+      "lines_before": 55,
+      "lines_after": 55,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ExtraAngy.gd",
+      "lines_before": 30,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ExtraBags.gd",
+      "lines_before": 29,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Fedora.gd",
+      "lines_before": 40,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FirePit.gd",
+      "lines_before": 34,
+      "lines_after": 19,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FlameBadge.gd",
+      "lines_before": 22,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FlameWhip.gd",
+      "lines_before": 19,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ForestFriend.gd",
+      "lines_before": 11,
+      "lines_after": 10,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FortunasKiss.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FriendlyFire.gd",
+      "lines_before": 44,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FrogPrince.gd",
+      "lines_before": 63,
+      "lines_after": 63,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Frostbite.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FrozenFlame.gd",
+      "lines_before": 72,
+      "lines_after": 72,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FullBodyProtection.gd",
+      "lines_before": 58,
+      "lines_after": 58,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/FurciferPrime.gd",
+      "lines_before": 69,
+      "lines_after": 68,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Generator.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Gigawatz.gd",
+      "lines_before": 30,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/GirlPower.gd",
+      "lines_before": 34,
+      "lines_after": 34,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/GoldArmor.gd",
+      "lines_before": 30,
+      "lines_after": 30,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/GoldCounter.gd",
+      "lines_before": 54,
+      "lines_after": 50,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/GoldCube.gd",
+      "lines_before": 25,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Halberd.gd",
+      "lines_before": 34,
+      "lines_after": 34,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Hardwood.gd",
+      "lines_before": 39,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/HawkRune.gd",
+      "lines_before": 18,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/HeartShield.gd",
+      "lines_before": 60,
+      "lines_after": 59,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/HeavyDrinking.gd",
+      "lines_before": 52,
+      "lines_after": 52,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Hedgehog.gd",
+      "lines_before": 44,
+      "lines_after": 43,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/HeroShield.gd",
+      "lines_before": 14,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/HogusBogus.gd",
+      "lines_before": 46,
+      "lines_after": 43,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/HolyCollar.gd",
+      "lines_before": 25,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Hypercube.gd",
+      "lines_before": 60,
+      "lines_after": 50,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/IceArmor.gd",
+      "lines_before": 13,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/IceFlower.gd",
+      "lines_before": 30,
+      "lines_after": 30,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/InnerPower.gd",
+      "lines_before": 47,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/InvestmentOpportunity.gd",
+      "lines_before": 30,
+      "lines_after": 30,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Joker.gd",
+      "lines_before": 86,
+      "lines_after": 85,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/JustStats.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/JynxStaff.gd",
+      "lines_before": 37,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/KingCrown.gd",
+      "lines_before": 16,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/KingGoobert.gd",
+      "lines_before": 65,
+      "lines_after": 65,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/KingoftheBling.gd",
+      "lines_before": 84,
+      "lines_after": 83,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/KnifetoMeetYou.gd",
+      "lines_before": 45,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Laboratory.gd",
+      "lines_before": 151,
+      "lines_after": 130,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/LeafBadge.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/LevelUp.gd",
+      "lines_before": 27,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/LightFlower.gd",
+      "lines_before": 22,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/LightningPotion.gd",
+      "lines_before": 39,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/LightningStaff.gd",
+      "lines_before": 42,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/LongSpear.gd",
+      "lines_before": 32,
+      "lines_after": 30,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Lootbox.gd",
+      "lines_before": 76,
+      "lines_after": 73,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/LuckyCat.gd",
+      "lines_before": 90,
+      "lines_after": 80,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MageHat.gd",
+      "lines_before": 26,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MagicBadge.gd",
+      "lines_before": 26,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MagicMirror.gd",
+      "lines_before": 16,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MagicRing.gd",
+      "lines_before": 321,
+      "lines_after": 306,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ManaCrystal.gd",
+      "lines_before": 33,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Mananana.gd",
+      "lines_before": 21,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MechaBat.gd",
+      "lines_before": 55,
+      "lines_after": 55,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MegaClover.gd",
+      "lines_before": 39,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MercuryElemental.gd",
+      "lines_before": 45,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MissFortune.gd",
+      "lines_before": 14,
+      "lines_after": 13,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MoltenGreatsword.gd",
+      "lines_before": 23,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MoltenSpear2.gd",
+      "lines_before": 43,
+      "lines_after": 43,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/MushroomFarm.gd",
+      "lines_before": 53,
+      "lines_after": 49,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/NullBlade.gd",
+      "lines_before": 43,
+      "lines_after": 43,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ObsidianDragon.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/OwlSpirit.gd",
+      "lines_before": 31,
+      "lines_after": 31,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ParadiseBirb.gd",
+      "lines_before": 42,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PerpetuumMobile.gd",
+      "lines_before": 48,
+      "lines_after": 48,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Phoenix.gd",
+      "lines_before": 44,
+      "lines_after": 44,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PineProtector.gd",
+      "lines_before": 24,
+      "lines_after": 24,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PlasticCube.gd",
+      "lines_before": 20,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PoisonFrog.gd",
+      "lines_before": 60,
+      "lines_after": 59,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PoisonGrenade.gd",
+      "lines_before": 51,
+      "lines_after": 49,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PoisonSpear.gd",
+      "lines_before": 24,
+      "lines_after": 24,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PortableAltar.gd",
+      "lines_before": 91,
+      "lines_after": 85,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Pot.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PoweroftheMoon.gd",
+      "lines_before": 54,
+      "lines_after": 54,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PowerPuppy.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PrismaticSword.gd",
+      "lines_before": 46,
+      "lines_after": 44,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PrismaticWand.gd",
+      "lines_before": 25,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/PuzzlebagT.gd",
+      "lines_before": 34,
+      "lines_after": 34,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowBadge.gd",
+      "lines_before": 25,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertAdventurer.gd",
+      "lines_before": 12,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertBerserker.gd",
+      "lines_before": 12,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertEngineer.gd",
+      "lines_before": 19,
+      "lines_after": 19,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertMage.gd",
+      "lines_before": 12,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertPyromancer.gd",
+      "lines_before": 12,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowOrb.gd",
+      "lines_before": 51,
+      "lines_after": 49,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RainbowPotion.gd",
+      "lines_before": 111,
+      "lines_after": 103,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RandomLoadoutBag.gd",
+      "lines_before": 155,
+      "lines_after": 150,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Rat.gd",
+      "lines_before": 35,
+      "lines_after": 35,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RatChef.gd",
+      "lines_before": 31,
+      "lines_after": 31,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Recombobulator.gd",
+      "lines_before": 100,
+      "lines_after": 96,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Resistor.gd",
+      "lines_before": 47,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Reverse.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Robodog.gd",
+      "lines_before": 101,
+      "lines_after": 94,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Rope.gd",
+      "lines_before": 41,
+      "lines_after": 41,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/RotationSpring.gd",
+      "lines_before": 126,
+      "lines_after": 108,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Sandbag.gd",
+      "lines_before": 28,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Scale.gd",
+      "lines_before": 100,
+      "lines_after": 100,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ScholarBag.gd",
+      "lines_before": 16,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Scissorswords.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SealtheDeal.gd",
+      "lines_before": 30,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SerpentStaff.gd",
+      "lines_before": 29,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ShamanMask.gd",
+      "lines_before": 26,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Shielded.gd",
+      "lines_before": 37,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ShinyMantle.gd",
+      "lines_before": 120,
+      "lines_after": 97,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SkullBadge.gd",
+      "lines_before": 17,
+      "lines_after": 17,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Sloth.gd",
+      "lines_before": 64,
+      "lines_after": 63,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SmellyBarrier.gd",
+      "lines_before": 48,
+      "lines_after": 47,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SmithingForDummies.gd",
+      "lines_before": 39,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Snake.gd",
+      "lines_before": 74,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Snowcake.gd",
+      "lines_before": 18,
+      "lines_after": 17,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Snowman.gd",
+      "lines_before": 52,
+      "lines_after": 52,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Snowmaster.gd",
+      "lines_before": 22,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Solaris.gd",
+      "lines_before": 59,
+      "lines_after": 51,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpeakwithAnimals.gd",
+      "lines_before": 59,
+      "lines_after": 59,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollDark.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollFrostbolt.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollIce.gd",
+      "lines_before": 38,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollLight.gd",
+      "lines_before": 16,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollNature.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpicyBanana.gd",
+      "lines_before": 50,
+      "lines_after": 50,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpintoWin.gd",
+      "lines_before": 82,
+      "lines_after": 71,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpiritCompanion.gd",
+      "lines_before": 8,
+      "lines_after": 8,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpringLoader.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SpringloaderVisual.gd",
+      "lines_before": 103,
+      "lines_after": 84,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Squirrel.gd",
+      "lines_before": 18,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/StoneArmor.gd",
+      "lines_before": 39,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/StoneBadge.gd",
+      "lines_before": 60,
+      "lines_after": 57,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Stoned.gd",
+      "lines_before": 75,
+      "lines_after": 71,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/StoneGloves.gd",
+      "lines_before": 22,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/StoneGolem.gd",
+      "lines_before": 67,
+      "lines_after": 67,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/StoneShoes.gd",
+      "lines_before": 50,
+      "lines_after": 50,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/StrongDivinePotion.gd",
+      "lines_before": 6,
+      "lines_after": 5,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/StrongVampiricPotion.gd",
+      "lines_before": 31,
+      "lines_after": 31,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SunArmor.gd",
+      "lines_before": 36,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/SunShield.gd",
+      "lines_before": 42,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/TeslaCoil.gd",
+      "lines_before": 94,
+      "lines_after": 94,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Thornbloom.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Thornburst.gd",
+      "lines_before": 24,
+      "lines_after": 24,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ThorsHammer.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ThunderDrake.gd",
+      "lines_before": 81,
+      "lines_after": 80,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/TimeDilator.gd",
+      "lines_before": 41,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Toad.gd",
+      "lines_before": 61,
+      "lines_after": 61,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/ToastGoobert.gd",
+      "lines_before": 12,
+      "lines_after": 11,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Toolbox.gd",
+      "lines_before": 36,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Ukulele.gd",
+      "lines_before": 94,
+      "lines_after": 91,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Ultima.gd",
+      "lines_before": 56,
+      "lines_after": 55,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/UnidentifiedSkill.gd",
+      "lines_before": 76,
+      "lines_after": 73,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/UniquelyUnique.gd",
+      "lines_before": 37,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/VampiricCollar.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/VampiricPotion.gd",
+      "lines_before": 26,
+      "lines_after": 24,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/VineweaveBasket.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Wand.gd",
+      "lines_before": 25,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/WandofDissonance.gd",
+      "lines_before": 41,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/WaterElemental.gd",
+      "lines_before": 106,
+      "lines_after": 102,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/WingedBoots.gd",
+      "lines_before": 26,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Wisp.gd",
+      "lines_before": 66,
+      "lines_after": 66,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/WolfBadge.gd",
+      "lines_before": 45,
+      "lines_after": 44,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/WolfEmblem.gd",
+      "lines_before": 32,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Exclusive/Wrench.gd",
+      "lines_before": 17,
+      "lines_after": 17,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/FalconBlade.gd",
+      "lines_before": 42,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/FancyFencingRapier.gd",
+      "lines_before": 22,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Fanfare.gd",
+      "lines_before": 47,
+      "lines_after": 32,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/FannyPack.gd",
+      "lines_before": 20,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Flute.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Food.gd",
+      "lines_before": 9,
+      "lines_after": 9,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Garlic.gd",
+      "lines_before": 16,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Gems/CorruptedCrystal.gd",
+      "lines_before": 62,
+      "lines_after": 53,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Gems/Gem.gd",
+      "lines_before": 429,
+      "lines_after": 418,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Gems/Sapphire.gd",
+      "lines_before": 46,
+      "lines_after": 46,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/GemSocket.gd",
+      "lines_before": 69,
+      "lines_after": 64,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/GingerbreadMan.gd",
+      "lines_before": 29,
+      "lines_after": 29,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/GlovesofHaste.gd",
+      "lines_before": 11,
+      "lines_after": 11,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Goobert.gd",
+      "lines_before": 57,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Greatsword.gd",
+      "lines_before": 48,
+      "lines_after": 46,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HealthPotion.gd",
+      "lines_before": 20,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HeartContainer.gd",
+      "lines_before": 35,
+      "lines_after": 35,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HeartofDarkness.gd",
+      "lines_before": 43,
+      "lines_after": 43,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HeroicPotion.gd",
+      "lines_before": 14,
+      "lines_after": 14,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HoloFireLizard.gd",
+      "lines_before": 18,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HolyArmor.gd",
+      "lines_before": 28,
+      "lines_after": 17,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HolySpear.gd",
+      "lines_before": 88,
+      "lines_after": 87,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/HungryBlade.gd",
+      "lines_before": 26,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Item.gd",
+      "lines_before": 6655,
+      "lines_after": 6223,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ItemDescriptor.gd",
+      "lines_before": 364,
+      "lines_after": 342,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ItemPushZone.gd",
+      "lines_before": 27,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Jynxtorquilla.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/LeatherBoots.gd",
+      "lines_before": 22,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/LeatherHelm.gd",
+      "lines_before": 55,
+      "lines_after": 44,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/LightGoobert.gd",
+      "lines_before": 36,
+      "lines_after": 35,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Lightsaber.gd",
+      "lines_before": 60,
+      "lines_after": 58,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/LuckyBow.gd",
+      "lines_before": 37,
+      "lines_after": 36,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/MagicTorch.gd",
+      "lines_before": 20,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ManaOrb.gd",
+      "lines_before": 54,
+      "lines_after": 53,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ManaPotion.gd",
+      "lines_before": 29,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Manathirst.gd",
+      "lines_before": 46,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/MoonShield.gd",
+      "lines_before": 29,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/MrStruggles.gd",
+      "lines_before": 94,
+      "lines_after": 87,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Pandamonium.gd",
+      "lines_before": 25,
+      "lines_after": 25,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/PestilenceFlask.gd",
+      "lines_before": 23,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/PiercingArrow.gd",
+      "lines_before": 28,
+      "lines_after": 28,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Piggybank.gd",
+      "lines_before": 83,
+      "lines_after": 81,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/PlatinCustomerCard.gd",
+      "lines_before": 15,
+      "lines_after": 15,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/PoisonBow.gd",
+      "lines_before": 48,
+      "lines_after": 47,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/PoisonIvy.gd",
+      "lines_before": 44,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Potion.gd",
+      "lines_before": 203,
+      "lines_after": 189,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/PotionBelt.gd",
+      "lines_before": 47,
+      "lines_after": 39,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Present.gd",
+      "lines_before": 78,
+      "lines_after": 52,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ProtectivePurse.gd",
+      "lines_before": 9,
+      "lines_after": 9,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/RainbowGoobert.gd",
+      "lines_before": 12,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/RainbowGoobertRanger.gd",
+      "lines_before": 12,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/RangerBag.gd",
+      "lines_before": 18,
+      "lines_after": 18,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/RubyChonk.gd",
+      "lines_before": 70,
+      "lines_after": 70,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/RubyEgg.gd",
+      "lines_before": 17,
+      "lines_after": 16,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Shield.gd",
+      "lines_before": 34,
+      "lines_after": 33,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ShieldofValor.gd",
+      "lines_before": 15,
+      "lines_after": 14,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Shovel.gd",
+      "lines_before": 88,
+      "lines_after": 87,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Spear.gd",
+      "lines_before": 17,
+      "lines_after": 17,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/StaffofUnhealing.gd",
+      "lines_before": 46,
+      "lines_after": 46,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Stone.gd",
+      "lines_before": 44,
+      "lines_after": 42,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/StoneSkinPotion.gd",
+      "lines_before": 14,
+      "lines_after": 14,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/StrongDemonicFlask.gd",
+      "lines_before": 51,
+      "lines_after": 50,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/StrongStoneSkinPotion.gd",
+      "lines_before": 8,
+      "lines_after": 8,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/TheFool.gd",
+      "lines_before": 18,
+      "lines_after": 17,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/TheLovers.gd",
+      "lines_before": 21,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/ThornBow.gd",
+      "lines_before": 47,
+      "lines_after": 47,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Tiles/BagBorder.gd",
+      "lines_before": 41,
+      "lines_after": 37,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/VampiricArmor.gd",
+      "lines_before": 10,
+      "lines_after": 10,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/VampiricGloves.gd",
+      "lines_before": 34,
+      "lines_after": 33,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Whetstone.gd",
+      "lines_before": 13,
+      "lines_after": 11,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/Wolpertinger.gd",
+      "lines_before": 22,
+      "lines_after": 21,
+      "only_whitespace": true
+    },
+    {
+      "path": "Items/YggdrasilLeaf.gd",
+      "lines_before": 27,
+      "lines_after": 27,
+      "only_whitespace": true
+    },
+    {
+      "path": "PvE/NativeExpedition.gd",
+      "lines_before": 1031,
+      "lines_after": 1030,
+      "only_whitespace": true
+    },
+    {
+      "path": "Shader/BottleOfBooze.gd",
+      "lines_before": 73,
+      "lines_after": 71,
+      "only_whitespace": true
+    },
+    {
+      "path": "Shader/DustParticles.gd",
+      "lines_before": 23,
+      "lines_after": 22,
+      "only_whitespace": true
+    },
+    {
+      "path": "Sheets/ItemBook.gd",
+      "lines_before": 1900,
+      "lines_after": 1631,
+      "only_whitespace": true
+    },
+    {
+      "path": "Sheets/Table.gd",
+      "lines_before": 124,
+      "lines_after": 118,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/AutoHideCPUParticles.gd",
+      "lines_before": 41,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/AutoHideParticles.gd",
+      "lines_before": 39,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/CustomRules.gd",
+      "lines_before": 229,
+      "lines_after": 210,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/DamageResult.gd",
+      "lines_before": 70,
+      "lines_after": 69,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/DamageSource.gd",
+      "lines_before": 171,
+      "lines_after": 168,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/DraggableRichTextLabel.gd",
+      "lines_before": 36,
+      "lines_after": 35,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/FontData.gd",
+      "lines_before": 42,
+      "lines_after": 40,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/InputBlockRect.gd",
+      "lines_before": 12,
+      "lines_after": 12,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/ItemBoundChecker.gd",
+      "lines_before": 118,
+      "lines_after": 110,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/ItemPool.gd",
+      "lines_before": 80,
+      "lines_after": 78,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/ItemRain.gd",
+      "lines_before": 47,
+      "lines_after": 45,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/JumpTextEffect.gd",
+      "lines_before": 29,
+      "lines_after": 26,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/LoanAudioStreamPlayer.gd",
+      "lines_before": 21,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/Lobbies.gd",
+      "lines_before": 1820,
+      "lines_after": 1601,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/LocalizedControl.gd",
+      "lines_before": 205,
+      "lines_after": 192,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/MaterialCompiler.gd",
+      "lines_before": 56,
+      "lines_after": 49,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/MerchButton.gd",
+      "lines_before": 54,
+      "lines_after": 54,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/MultiTimer.gd",
+      "lines_before": 49,
+      "lines_after": 34,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/PooledScene.gd",
+      "lines_before": 10,
+      "lines_after": 9,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/Profanity.gd",
+      "lines_before": 345,
+      "lines_after": 345,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/Recipe.gd",
+      "lines_before": 310,
+      "lines_after": 288,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/RunData.gd",
+      "lines_before": 579,
+      "lines_after": 545,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/Settings.gd",
+      "lines_before": 309,
+      "lines_after": 281,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/ShardEmitter.gd",
+      "lines_before": 101,
+      "lines_after": 83,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/SkinBook.gd",
+      "lines_before": 87,
+      "lines_after": 78,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/Sound.gd",
+      "lines_before": 285,
+      "lines_after": 270,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/StartButtonArea.gd",
+      "lines_before": 21,
+      "lines_after": 20,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/SteamHelper.gd",
+      "lines_before": 213,
+      "lines_after": 175,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/TimedParticles.gd",
+      "lines_before": 9,
+      "lines_after": 8,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/Tools/TilePathRecording.gd",
+      "lines_before": 43,
+      "lines_after": 38,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/TooltipArea.gd",
+      "lines_before": 51,
+      "lines_after": 51,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/UGCItem.gd",
+      "lines_before": 149,
+      "lines_after": 131,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/UndoStack.gd",
+      "lines_before": 311,
+      "lines_after": 294,
+      "only_whitespace": true
+    },
+    {
+      "path": "Utility/Util.gd",
+      "lines_before": 1611,
+      "lines_after": 1473,
+      "only_whitespace": true
+    }
+  ]
+}

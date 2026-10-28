@@ -1,0 +1,54 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "key": "window",
+      "prompt": "One EMPTY rectangular journal panel, about 16:10 landscape. Very slim dark walnut border with a little moss-green leather binding, warm ivory low-detail paper center taking 90% of panel, four gently rounded corners. Flat uninterrupted sides suitable for nine-slice UI. Entire empty center opaque and light for dark text. Panel nearly fills image, no objects or tabs.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-97a894b4-2968-447a-9fe5-454c51633c88.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-97a894b4-2968-447a-9fe5-454c51633c88.png"
+    },
+    {
+      "key": "button",
+      "prompt": "One EMPTY horizontal rounded rectangular button about 4:1, deep forest teal painted wood or leather face, very slim warm tan rim and dark brown outline, a tiny soft lower shadow. Large clean solid dark center for ivory text overlay. No icon or text. Straight stretchable middle, modest rounded end caps. Not a 3D perspective object.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-418c97b6-94ae-43a0-b507-bb7c6ad3910c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-418c97b6-94ae-43a0-b507-bb7c6ad3910c.png"
+    },
+    {
+      "key": "card",
+      "prompt": "One EMPTY rounded rectangular item card about 4:5 portrait, pale desaturated sage parchment surface and slim dark forest outline with a small tan corner stitch. Large flat empty center for an item icon and text; four straight edges. Keep decoration very restrained. Opaque card with transparent exterior.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-65f62f64-2d72-4a83-8b3f-035c11b52032.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-65f62f64-2d72-4a83-8b3f-035c11b52032.png"
+    },
+    {
+      "key": "close",
+      "prompt": "One round terracotta-red leather button bearing ONE large ivory carved X symbol for closing a window, thick dark brown outline, simple and friendly, softly shaded matte face, fully transparent exterior. Bold X nearly fills button. No letters, no border panel.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-ad2e55b4-c5c4-4743-99e2-0d84bc11bf11.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-ad2e55b4-c5c4-4743-99e2-0d84bc11bf11.png"
+    },
+    {
+      "key": "previous",
+      "prompt": "One round forest-teal leather button bearing ONE bold ivory left-pointing chevron, thick dark brown outline, simple and friendly matte surface, very legible at 48 pixels. Actual transparent exterior. No letters.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-574200db-999f-4ae8-b12f-4ea05f1855fd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-574200db-999f-4ae8-b12f-4ea05f1855fd.png"
+    },
+    {
+      "key": "next",
+      "prompt": "One round forest-teal leather button bearing ONE bold ivory right-pointing chevron, thick dark brown outline, simple and friendly matte surface, very legible at 48 pixels. Actual transparent exterior. No letters.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-cf837438-8786-403e-8791-accdf365d1e5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-cf837438-8786-403e-8791-accdf365d1e5.png"
+    },
+    {
+      "key": "continue",
+      "prompt": "One compact icon for resume adventure: a small upright closed forest-green travel journal with a single large ivory forward triangle on the cover and a tan bookmark, dark brown broad outline, friendly simplified hand-painted fantasy inventory art. Fully transparent exterior. No lettering and no outer medallion.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-0d7034c8-bd17-467a-986c-59c86b94d73b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-0d7034c8-bd17-467a-986c-59c86b94d73b.png"
+    },
+    {
+      "key": "new_run",
+      "prompt": "One compact icon for new adventure: a small tan travel backpack with a rolled ivory map and one bright fresh green leaf, dark brown broad outline, friendly simplified hand-painted fantasy inventory art. Fully transparent exterior. No lettering and no outer medallion.",
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-7c65ccb7-74ae-49bc-ae68-7db963cb0825.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-7c65ccb7-74ae-49bc-ae68-7db963cb0825.png"
+    }
+  ]
+}

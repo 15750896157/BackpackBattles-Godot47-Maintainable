@@ -1,0 +1,544 @@
+key,text
+tag.weapon.name,武器
+tag.weapon.desc,可主动造成物理伤害的物品
+tag.armor.name,护甲
+tag.armor.desc,生成护甲或依赖护甲的物品
+tag.stamina.name,耐力
+tag.stamina.desc,生成、节省或消耗耐力的物品
+tag.tempo.name,节奏
+tag.tempo.desc,修改冷却、推进或触发频率的物品
+tag.heavy.name,重型
+tag.heavy.desc,高伤害、高占格或长冷却物品
+tag.combo.name,连击
+tag.combo.desc,依靠多次命中与连续激活的物品
+tag.counter.name,反击
+tag.counter.desc,在受击、获得护甲或格挡后触发
+tag.poison.name,毒素
+tag.poison.desc,施加或利用毒层数
+tag.burn.name,灼烧
+tag.burn.desc,施加或利用灼烧层数
+tag.healing.name,治疗
+tag.healing.desc,恢复生命、再生或治疗转化
+tag.cleanse.name,净化
+tag.cleanse.desc,移除负面状态
+tag.potion.name,药剂
+tag.potion.desc,调配师常用的消耗与状态容器
+tag.herb.name,草药
+tag.herb.desc,恢复、毒素与合成材料
+tag.spatial.name,空间
+tag.spatial.desc,依赖邻接、方向、同行、同列或星位
+tag.economy.name,经济
+tag.economy.desc,影响金币、商店、刷新或出售
+tag.utility.name,工具
+tag.utility.desc,提供通用构筑功能
+trigger.combat_start.name,战斗开始
+trigger.cooldown_ready.name,冷却完成
+trigger.attack_hit.name,攻击命中
+trigger.critical_hit.name,造成暴击
+trigger.target_activated.name,目标激活后
+trigger.damage_taken.name,受到伤害
+trigger.armor_gained.name,获得护甲
+trigger.status_applied.name,施加状态
+trigger.first_low_health.name,首次低生命
+trigger.interval.name,定时
+trigger.fatigue_start.name,疲劳开始
+condition.always.name,始终满足
+condition.source_has_tag.name,来源拥有标签
+condition.target_has_tag.name,目标拥有标签
+condition.spatial_target_count.name,空间目标数量
+condition.health_below_pct.name,生命低于比例
+condition.health_above_pct.name,生命高于比例
+condition.resource_at_least.name,资源不少于
+condition.status_stacks_at_least.name,状态层数不少于
+condition.trigger_count_max.name,触发次数上限
+condition.build_tag_count.name,构筑标签数量
+condition.enemy_has_status.name,敌人拥有状态
+condition.overheal_positive.name,存在溢出治疗
+effect.physical_damage.name,造成物理伤害
+effect.true_damage.name,造成真实伤害
+effect.gain_armor.name,获得护甲
+effect.heal.name,恢复生命
+effect.gain_stamina.name,获得耐力
+effect.apply_status.name,施加状态
+effect.remove_status.name,移除状态
+effect.convert_status.name,转化状态
+effect.modify_cooldown_pct.name,修改冷却比例
+effect.modify_damage_flat.name,修改伤害
+effect.modify_crit_chance.name,修改暴击率
+effect.modify_status_power.name,修改状态强度
+effect.advance_cooldown.name,推进目标冷却
+effect.gain_gold.name,获得金币
+effect.free_refresh.name,获得免费刷新
+effect.max_health.name,修改最大生命
+rarity.common.name,普通
+rarity.rare.name,稀有
+rarity.legendary.name,传奇
+status.poison.name,毒
+status.poison.desc,毒的统一战斗规则。
+status.burn.name,灼烧
+status.burn.desc,灼烧的统一战斗规则。
+status.slow.name,减速
+status.slow.desc,减速的统一战斗规则。
+status.regeneration.name,再生
+status.regeneration.desc,再生的统一战斗规则。
+status.lifesteal.name,吸血
+status.lifesteal.desc,吸血的统一战斗规则。
+status.vulnerable.name,易伤
+status.vulnerable.desc,易伤的统一战斗规则。
+status.haste.name,加速
+status.haste.desc,加速的统一战斗规则。
+status.fortified.name,坚固
+status.fortified.desc,坚固的统一战斗规则。
+item.utility_knife.name,便携小刀
+item.utility_knife.desc,每 2.4 秒：造成 4 点物理伤害。消耗 1 耐力。
+item.iron_sword.name,铁脊长剑
+item.iron_sword.desc,每 3.4 秒：造成 10 点物理伤害。作用范围：front_1；条件：spatial_target_count>=1；消耗 2 耐力。
+item.broad_axe.name,宽刃斧
+item.broad_axe.desc,每 5.5 秒：造成 14 点物理伤害。消耗 3 耐力。
+item.stone_hammer.name,石击锤
+item.stone_hammer.desc,每 6.2 秒：造成 16 点物理伤害。消耗 3 耐力。
+item.hunting_spear.name,猎路长矛
+item.hunting_spear.desc,每 4.5 秒：造成 11 点物理伤害。作用范围：front_2；消耗 2 耐力。
+item.twin_needles.name,双针
+item.twin_needles.desc,每 2.1 秒：造成 4 点物理伤害。消耗 1 耐力。
+item.sling.name,机索投带
+item.sling.desc,每 3.0 秒：造成 6 点物理伤害。消耗 1 耐力。
+item.heavy_cleaver.name,断梁重刃
+item.heavy_cleaver.desc,每 6.8 秒：造成 24 点物理伤害。作用范围：front_1；消耗 4 耐力。
+item.buckler.name,圆扣盾
+item.buckler.desc,每 4.0 秒：获得 5 点护甲。
+item.plated_vest.name,拼片甲
+item.plated_vest.desc,每 5.0 秒：获得 8 点护甲。
+item.tower_shield.name,高壁盾
+item.tower_shield.desc,每 6.5 秒：获得 13 点护甲。
+item.spiked_guard.name,棘面护板
+item.spiked_guard.desc,受到伤害后：造成 4 点物理伤害。条件：trigger_count_max:8。
+item.leather_wrap.name,韧皮缠带
+item.leather_wrap.desc,每 5.0 秒：获得 4 点护甲。作用范围：adjacent_4。
+item.repair_kit.name,修缮包
+item.repair_kit.desc,每 6.0 秒：恢复 4 点生命。作用范围：adjacent_4；条件：target_has_tag:armor。
+item.stamina_flask.name,耐力壶
+item.stamina_flask.desc,每 5.0 秒：获得 3 点耐力。
+item.travel_ration.name,行军口粮
+item.travel_ration.desc,每 7.0 秒：恢复 4 点生命。
+item.bandage_roll.name,绷带卷
+item.bandage_roll.desc,每 6.0 秒：恢复 3 点生命。
+item.cleansing_salt.name,澄净盐
+item.cleansing_salt.desc,每 8.0 秒：移除 3 层负面状态。
+item.sharpening_stone.name,磨锋石
+item.sharpening_stone.desc,战斗开始：使目标伤害改变 2。作用范围：adjacent_4；条件：target_has_tag:weapon。
+item.clockwork_spring.name,发条簧
+item.clockwork_spring.desc,战斗开始：使目标冷却改变 -0.08。作用范围：adjacent_4。
+item.lucky_coin.name,缺角幸运币
+item.lucky_coin.desc,战斗开始：战后获得 1 金币。条件：health_above_pct:0.5。
+item.scout_lens.name,斥候镜
+item.scout_lens.desc,战斗开始：使目标暴击率改变 0.06。作用范围：front_2；条件：target_has_tag:weapon。
+item.merchant_token.name,商路筹码
+item.merchant_token.desc,战斗开始：获得 1 次免费刷新。条件：trigger_count_max:1。
+item.storage_hook.name,仓储挂钩
+item.storage_hook.desc,战斗开始：获得 2 点护甲。作用范围：same_bag；条件：spatial_target_count>=3。
+item.gear_link.name,联动齿节
+item.gear_link.desc,作用目标激活后：推进目标 0.25 秒冷却。作用范围：adjacent_4；条件：trigger_count_max:10。
+item.focus_prism.name,聚焦棱镜
+item.focus_prism.desc,战斗开始：使目标伤害改变 3。作用范围：front_3；条件：target_has_tag:weapon。
+item.row_banner.name,横列旗
+item.row_banner.desc,战斗开始：使目标伤害改变 1。作用范围：same_row。
+item.column_standard.name,纵阵标
+item.column_standard.desc,战斗开始：获得 2 点护甲。作用范围：same_column。
+item.star_compass.name,星位罗盘
+item.star_compass.desc,战斗开始：使目标冷却改变 -0.12。作用范围：star_cell。
+item.compact_rack.name,紧凑支架
+item.compact_rack.desc,战斗开始：获得 3 点护甲。作用范围：adjacent_8；条件：spatial_target_count>=4。
+item.resonant_bell.name,共鸣铃
+item.resonant_bell.desc,作用目标激活后：获得 1 点耐力。作用范围：adjacent_4；条件：trigger_count_max:8。
+item.counterweight.name,平衡配重
+item.counterweight.desc,战斗开始：使目标伤害改变 4。作用范围：front_1；条件：target_has_tag:heavy。
+item.venom_needle.name,毒刺针
+item.venom_needle.desc,每 3.5 秒：施加 poison:2。消耗 1 耐力。
+item.ember_stone.name,余烬石
+item.ember_stone.desc,每 4.0 秒：施加 burn:2。
+item.healing_herb.name,愈合草
+item.healing_herb.desc,每 5.5 秒：恢复 4 点生命。
+item.regeneration_leaf.name,复生叶
+item.regeneration_leaf.desc,每 6.0 秒：施加 regeneration:3。
+item.fracture_charm.name,裂痕符
+item.fracture_charm.desc,每 4.5 秒：施加 vulnerable:1。
+item.quicksand_vial.name,流沙瓶
+item.quicksand_vial.desc,每 6.0 秒：施加 slow:2。
+item.blood_cup.name,赤液杯
+item.blood_cup.desc,攻击命中后：施加 lifesteal:1。条件：trigger_count_max:6。
+item.cooling_fan.name,散热扇
+item.cooling_fan.desc,施加状态后：推进目标 0.3 秒冷却。作用范围：front_2；条件：enemy_has_status:burn。
+item.iron_nail.name,铆接铁钉
+item.iron_nail.desc,获得护甲后：造成 2 点物理伤害。条件：trigger_count_max:8。
+item.glass_bead.name,折光玻珠
+item.glass_bead.desc,战斗开始：使目标状态强度改变 0.1。作用范围：adjacent_8。
+item.field_manual.name,随军手册
+item.field_manual.desc,战斗开始：使目标伤害改变 1。作用范围：global_same_tag；条件：build_tag_count:4。
+item.salvage_pouch.name,回收钱袋
+item.salvage_pouch.desc,战斗开始：战后获得 2 金币。条件：health_above_pct:0.6。
+item.arsenal_bracer.name,武库腕轮
+item.arsenal_bracer.desc,战斗开始：使目标暴击率改变 0.04。作用范围：adjacent_4；条件：target_has_tag:weapon。
+item.chain_blade.name,链节刃
+item.chain_blade.desc,每 3.0 秒：造成 11 点物理伤害。作用范围：adjacent_4；条件：spatial_target_count>=2；消耗 2 耐力。
+item.repeater_crossbow.name,轮转弩
+item.repeater_crossbow.desc,每 2.0 秒：造成 7 点物理伤害。作用范围：front_2；消耗 1 耐力。
+item.crescent_glaive.name,新月战镰
+item.crescent_glaive.desc,每 5.8 秒：造成 21 点物理伤害。作用范围：front_3；条件：spatial_target_count>=1；消耗 3 耐力。
+item.siege_maul.name,攻城槌
+item.siege_maul.desc,每 7.5 秒：造成 30 点物理伤害。作用范围：front_1；消耗 5 耐力。
+item.momentum_gear.name,势能齿轮
+item.momentum_gear.desc,作用目标激活后：获得 1 点耐力。作用范围：adjacent_4；条件：trigger_count_max:8。
+item.duelist_mark.name,决斗印记
+item.duelist_mark.desc,暴击后：推进目标 0.5 秒冷却。作用范围：same_row；条件：trigger_count_max:6。
+item.overdrive_ratchet.name,超载棘轮
+item.overdrive_ratchet.desc,攻击命中后：推进目标 0.2 秒冷却。作用范围：adjacent_8；条件：trigger_count_max:12。
+item.bastion_core.name,壁垒核心
+item.bastion_core.desc,每 4.0 秒：获得 12 点护甲。作用范围：same_bag；条件：build_tag_count:3。
+item.layered_plates.name,叠层甲片
+item.layered_plates.desc,每 5.0 秒：获得 10 点护甲。作用范围：adjacent_4；条件：target_has_tag:armor。
+item.retaliation_spikes.name,回击尖刺
+item.retaliation_spikes.desc,获得护甲后：造成 5 点物理伤害。条件：trigger_count_max:8。
+item.guardian_standard.name,守阵旗
+item.guardian_standard.desc,战斗开始：获得 3 点护甲。作用范围：same_column；条件：target_has_tag:armor。
+item.charging_weight.name,蓄势铁坠
+item.charging_weight.desc,每 6.0 秒：获得 4 点耐力。
+item.execution_anvil.name,终击砧
+item.execution_anvil.desc,战斗开始：使目标伤害改变 8。作用范围：front_1；条件：target_has_tag:heavy。
+item.toxin_bottle.name,毒素瓶
+item.toxin_bottle.desc,每 4.0 秒：施加 poison:4。
+item.thorn_extract.name,棘刺萃液
+item.thorn_extract.desc,施加状态后：施加 poison:1。作用范围：adjacent_4；条件：target_has_tag:poison。
+item.spore_jar.name,孢尘罐
+item.spore_jar.desc,每 6.0 秒：施加 poison:6。
+item.venom_distiller.name,剧毒蒸馏器
+item.venom_distiller.desc,施加状态后：推进目标 0.4 秒冷却。作用范围：adjacent_4；条件：enemy_has_status:poison。
+item.plague_retort.name,瘴雾曲颈瓶
+item.plague_retort.desc,每 5.0 秒：施加 poison:10。作用范围：same_bag；条件：build_tag_count:4。
+item.caustic_coil.name,蚀液盘管
+item.caustic_coil.desc,施加状态后：造成 2 点真实伤害。作用范围：adjacent_8；条件：enemy_has_status:poison。
+item.ember_phial.name,焰芯瓶
+item.ember_phial.desc,每 3.5 秒：施加 burn:4。
+item.coal_burner.name,炭火炉
+item.coal_burner.desc,每 5.0 秒：施加 burn:5。作用范围：front_2。
+item.ignition_lens.name,引燃透镜
+item.ignition_lens.desc,施加状态后：推进目标 0.35 秒冷却。作用范围：front_3；条件：enemy_has_status:burn。
+item.wildfire_alembic.name,野火蒸馏釜
+item.wildfire_alembic.desc,每 4.5 秒：施加 burn:9。作用范围：adjacent_8；条件：spatial_target_count>=3。
+item.tonic_bottle.name,复元补剂
+item.tonic_bottle.desc,每 5.0 秒：恢复 7 点生命。
+item.renewal_mortar.name,生息研钵
+item.renewal_mortar.desc,施加状态后：施加 regeneration:1。作用范围：adjacent_4；条件：source_has_tag:healing。
+item.transfusion_tube.name,回流导管
+item.transfusion_tube.desc,攻击命中后：恢复 2 点生命。作用范围：adjacent_4；条件：trigger_count_max:8。
+item.philosophers_kettle.name,回生炼釜
+item.philosophers_kettle.desc,首次低生命时：恢复 24 点生命。作用范围：same_bag；条件：trigger_count_max:1。
+character.armorer.name,铸阵师
+character.armorer.desc,使用武器形状、护甲与耐力联动建立稳定阵线。
+character.alchemist.name,调律师
+character.alchemist.desc,使用毒、灼烧和治疗转化控制战斗节奏。
+archetype.combo_arsenal.name,连击武库
+archetype.combo_arsenal.desc,围绕连击武库构建空间与经济决策。
+archetype.armor_counter.name,护甲反击
+archetype.armor_counter.desc,围绕护甲反击构建空间与经济决策。
+archetype.heavy_charge.name,重击蓄力
+archetype.heavy_charge.desc,围绕重击蓄力构建空间与经济决策。
+archetype.toxin_stack.name,毒素累积
+archetype.toxin_stack.desc,围绕毒素累积构建空间与经济决策。
+archetype.burn_rhythm.name,灼烧节奏
+archetype.burn_rhythm.desc,围绕灼烧节奏构建空间与经济决策。
+archetype.healing_conversion.name,治疗转化
+archetype.healing_conversion.desc,围绕治疗转化构建空间与经济决策。
+loadout.armorer_blades.name,轻装连击
+loadout.armorer_guard.name,守势反击
+loadout.alchemist_toxin.name,毒素起手
+loadout.alchemist_ember.name,火愈循环
+bag.bag_canvas_frame.name,帆布方框
+bag.bag_canvas_frame.desc,帆布方框提供固定有效格，并带有无空间效果。
+bag.bag_corner_satchel.name,折角挎包
+bag.bag_corner_satchel.desc,折角挎包提供固定有效格，并带有无空间效果。
+bag.bag_tool_roll.name,工具卷袋
+bag.bag_tool_roll.desc,工具卷袋提供固定有效格，并带有enhanced_cell空间效果。
+bag.bag_guard_harness.name,守阵挂架
+bag.bag_guard_harness.desc,守阵挂架提供固定有效格，并带有star_cell空间效果。
+bag.bag_herbal_tray.name,草药托盘
+bag.bag_herbal_tray.desc,草药托盘提供固定有效格，并带有enhanced_cell空间效果。
+bag.bag_gear_sling.name,齿轮吊带
+bag.bag_gear_sling.desc,齿轮吊带提供固定有效格；与星位或其四向邻格关联的同包物品，冷却时间缩短5%。
+bag.bag_cross_brace.name,十字撑架
+bag.bag_cross_brace.desc,十字撑架提供固定有效格，并带有enhanced_cell空间效果。
+bag.bag_hollow_ring.name,空心环袋
+bag.bag_hollow_ring.desc,空心环袋提供固定有效格，并带有star_cell空间效果。
+bag.bag_step_case.name,阶梯匣
+bag.bag_step_case.desc,阶梯匣提供固定有效格，并带有enhanced_cell空间效果。
+bag.bag_twin_wing.name,双翼背架
+bag.bag_twin_wing.desc,双翼背架提供固定有效格，并带有star_cell空间效果。
+act.act_1.name,锈林边境
+act.act_2.name,熔渠工坊
+act.act_3.name,星炉深庭
+node.normal_combat.name,普通战
+node.danger_combat.name,危险战
+node.elite_combat.name,精英战
+node.merchant.name,商人
+node.rest.name,休息
+node.event.name,事件
+node.boss.name,Boss
+enemy_archetype.quick_striker.name,急袭者
+enemy_archetype.shield_line.name,盾阵者
+enemy_archetype.heavy_breaker.name,重击者
+enemy_archetype.venom_brewer.name,毒酿者
+enemy_archetype.ember_runner.name,逐焰者
+enemy_archetype.field_mender.name,战地医师
+enemy_archetype.gear_conductor.name,齿轮指挥
+enemy_archetype.mixed_raider.name,混编掠夺者
+enemy_archetype.toxic_guard.name,毒甲守卫
+enemy_archetype.burning_bastion.name,燃烧壁垒
+enemy_archetype.blood_engine.name,回流机关
+enemy_archetype.star_artillery.name,星位炮阵
+enemy.rust_scout_a.name,锈林斥候·轻装
+enemy.rust_scout_b.name,锈林斥候·连击
+enemy.road_guard_a.name,道路守卫·圆盾
+enemy.road_guard_b.name,道路守卫·板甲
+enemy.trail_breaker.name,荒径破阵者
+enemy.marsh_brewer.name,沼地毒酿师
+enemy.cinder_runner.name,余烬疾行者
+enemy.camp_mender.name,营地修补师
+enemy.gear_hunter_elite.name,精英·齿轮猎手
+enemy.thorn_wall_elite.name,精英·棘墙守卫
+enemy.furnace_duelist.name,熔炉决斗者
+enemy.plate_warden.name,叠甲监工
+enemy.slag_breaker.name,炉渣粉碎者
+enemy.coil_brewer.name,盘管毒酿师
+enemy.kiln_runner.name,窑火疾行者
+enemy.red_medic.name,赤衣医师
+enemy.relay_captain.name,传动队长
+enemy.foundry_raider.name,铸坊掠夺者
+enemy.cinder_bastion_elite.name,精英·烬火壁垒
+enemy.blood_loom_elite.name,精英·血织机
+enemy.court_blades.name,深庭刃舞队
+enemy.astral_guard.name,星辉守卫
+enemy.anvil_judge.name,铁砧裁决者
+enemy.pale_distiller.name,苍白蒸馏师
+enemy.wildfire_choir.name,野火合唱团
+enemy.revival_circle.name,回生环阵
+enemy.star_gunner.name,星位炮手
+enemy.court_raider.name,深庭掠袭者
+enemy.plague_oracle_elite.name,精英·疫雾先知
+enemy.starbreaker_elite.name,精英·碎星者
+affix.accelerated_opening.name,急速开场
+affix.accelerated_opening.desc,急速开场会公开改变本场敌人的战斗参数。
+affix.armored_start.name,披甲
+affix.armored_start.desc,披甲会公开改变本场敌人的战斗参数。
+affix.reactive_armor.name,反应装甲
+affix.reactive_armor.desc,反应装甲会公开改变本场敌人的战斗参数。
+affix.healing_surge.name,治疗涌流
+affix.healing_surge.desc,治疗涌流会公开改变本场敌人的战斗参数。
+affix.status_echo.name,状态回响
+affix.status_echo.desc,状态回响会公开改变本场敌人的战斗参数。
+affix.precision_opening.name,精准开场
+affix.precision_opening.desc,精准开场会公开改变本场敌人的战斗参数。
+affix.thick_hide.name,厚皮
+affix.thick_hide.desc,厚皮会公开改变本场敌人的战斗参数。
+affix.restless.name,不息
+affix.restless.desc,不息会公开改变本场敌人的战斗参数。
+boss.boss_iron_beast.name,铆甲巨兽
+boss.boss_iron_beast.desc,铆甲巨兽拥有公开的阶段规则与可针对弱点。
+boss.boss_cinder_engine.name,熔流机心
+boss.boss_cinder_engine.desc,熔流机心拥有公开的阶段规则与可针对弱点。
+boss.boss_star_regent.name,星炉执政
+boss.boss_star_regent.desc,星炉执政拥有公开的阶段规则与可针对弱点。
+run_effect.gold.name,金币变更
+run_effect.heal_flat.name,固定治疗
+run_effect.heal_pct.name,比例治疗
+run_effect.damage_pct.name,比例失去生命
+run_effect.item_pool.name,物品池奖励
+run_effect.bag_pool.name,背包池奖励
+run_effect.specific_item.name,指定物品
+run_effect.remove_item.name,移除物品
+run_effect.upgrade_item.name,配方升级或折扣券
+run_effect.free_refresh.name,免费刷新
+run_effect.shop_discount.name,商店折扣
+run_effect.sell_ratio_bonus.name,出售加成
+run_effect.interest_cap_delta.name,利息上限变更
+run_effect.storage_slot.name,仓库扩容
+run_effect.recipe_discovery.name,发现配方
+run_effect.execute_recipe.name,执行配方
+run_effect.cleanse_run_debuff.name,清除单局减益
+reward.reward_none.name,无额外奖励
+reward.reward_normal.name,普通战奖励
+reward.reward_danger.name,危险战奖励
+reward.reward_elite.name,精英战奖励
+reward.reward_boss.name,Boss 奖励
+event.event_abandoned_cart.title,遗弃货车
+event.event_abandoned_cart.desc,一辆倾覆的货车仍有可用货物。
+event.event_field_smith.title,流动铁匠
+event.event_field_smith.desc,铁匠愿意用生命补给换取一次紧急加工。
+event.event_cracked_vault.title,裂隙钱箱
+event.event_cracked_vault.desc,钱箱的锁已经损坏，但机关仍在运作。
+event.event_herbal_camp.title,草药营地
+event.event_herbal_camp.desc,临时营地留下了药草与干净水源。
+event.event_barter_table.title,交换桌
+event.event_barter_table.desc,一张无人看守的交换桌遵循等价交换规则。
+event.event_broken_satchel.title,破损挎包
+event.event_broken_satchel.desc,修好挎包可以增加携带能力，也可以直接拆卖。
+event.event_clockwork_stall.title,停摆齿轮摊
+event.event_clockwork_stall.desc,停摆机关里还存着一次可释放的动能。
+event.event_fume_chamber.title,雾剂密室
+event.event_fume_chamber.desc,密室中的药雾能强化药剂，也会伤害闯入者。
+event.event_quiet_ledger.title,无声账本
+event.event_quiet_ledger.desc,账本记录着一套短期获利的方法。
+event.event_star_map.title,残缺星图
+event.event_star_map.desc,星图标注着稀有构件和危险捷径。
+event.event_echo_forge.title,回声锻炉
+event.event_echo_forge.desc,锻炉能把旧构件压制成更稳定的版本。
+event.event_final_merchant.title,终途商队
+event.event_final_merchant.desc,商队只停留片刻，交易条件明确且昂贵。
+event_choice.event_abandoned_cart_search.text,仔细搜寻
+event_choice.event_abandoned_cart_strip.text,拆下零件
+event_choice.event_abandoned_cart_repair.text,花 3 金币修复货箱
+event_choice.event_field_smith_forge.text,支付 4 金币加工一件物品（按二阶配方，无适用对象时给20%商店折扣券）
+event_choice.event_field_smith_trade_health.text,提供补给换取配方
+event_choice.event_field_smith_leave.text,离开
+event_choice.event_cracked_vault_force.text,强行打开
+event_choice.event_cracked_vault_tool.text,消耗一件工具类物品拆除机关
+event_choice.event_cracked_vault_leave.text,保持谨慎
+event_choice.event_herbal_camp_rest.text,饮水休整
+event_choice.event_herbal_camp_gather.text,采集草药
+event_choice.event_herbal_camp_distill.text,支付 2 金币就地调配
+event_choice.event_barter_table_swap.text,交出一件普通物品换取稀有候选
+event_choice.event_barter_table_sell.text,按较高价格出售一件物品
+event_choice.event_barter_table_leave.text,不做交换
+event_choice.event_broken_satchel_repair.text,支付 5 金币修复仓库槽
+event_choice.event_broken_satchel_salvage.text,拆卖金属件
+event_choice.event_clockwork_stall_release.text,释放机关动能
+event_choice.event_clockwork_stall_study.text,支付 3 金币研究结构
+event_choice.event_clockwork_stall_break.text,直接拆卖
+event_choice.event_fume_chamber_inhale.text,承受药雾并带走药剂
+event_choice.event_fume_chamber_vent.text,支付 3 金币启动排风
+event_choice.event_fume_chamber_leave.text,封闭入口
+event_choice.event_quiet_ledger_invest.text,投入 5 金币提高三场利息上限
+event_choice.event_quiet_ledger_coupon.text,取走折扣券
+event_choice.event_quiet_ledger_cash.text,出售账本
+event_choice.event_star_map_decode.text,支付 4 金币解读星图
+event_choice.event_star_map_shortcut.text,走危险捷径
+event_choice.event_star_map_sell.text,卖出星图
+event_choice.event_echo_forge_temper.text,损失 10% 生命升级一件物品（按二阶配方，无适用对象时给20%商店折扣券）
+event_choice.event_echo_forge_melt.text,熔解一件物品并获得 10 金币
+event_choice.event_echo_forge_warm.text,利用余温恢复
+event_choice.event_final_merchant_legend.text,支付 12 金币购买传奇候选
+event_choice.event_final_merchant_bag.text,支付 8 金币购买稀有背包
+event_choice.event_final_merchant_service.text,支付 5 金币获得三次免费刷新
+rest.rest_recover.name,扎营恢复
+rest.rest_recover.desc,恢复 25% 最大生命。
+rest.rest_field_craft.name,配方升级 / 折扣券
+rest.rest_field_craft.desc,免费把已有一阶配方成品转化为引用它的二阶配方结果；没有符合条件的物品时，获得下次商店20%折扣券。
+difficulty.tutorial.name,教学
+difficulty.tutorial.desc,教学难度采用公开的固定修正。
+difficulty.standard.name,标准
+difficulty.standard.desc,标准难度采用公开的固定修正。
+difficulty.advanced.name,进阶
+difficulty.advanced.desc,进阶难度采用公开的固定修正。
+difficulty.challenge_1.name,挑战 1
+difficulty.challenge_1.desc,挑战 1难度采用公开的固定修正。
+difficulty.challenge_2.name,挑战 2
+difficulty.challenge_2.desc,挑战 2难度采用公开的固定修正。
+difficulty.challenge_3.name,挑战 3
+difficulty.challenge_3.desc,挑战 3难度采用公开的固定修正。
+difficulty.challenge_4.name,挑战 4
+difficulty.challenge_4.desc,挑战 4难度采用公开的固定修正。
+difficulty.challenge_5.name,挑战 5
+difficulty.challenge_5.desc,挑战 5难度采用公开的固定修正。
+challenge.challenge_rule_1.name,敌势增强
+challenge.challenge_rule_1.desc,敌人生命与伤害提高，战后恢复降低。
+challenge.challenge_rule_2.name,昂贵搜索
+challenge.challenge_rule_2.desc,商店刷新费用增加 1。
+challenge.challenge_rule_3.name,紧缩补给
+challenge.challenge_rule_3.desc,战斗金币减少 5%，事件收益不变。
+challenge.challenge_rule_4.name,精英复合词缀
+challenge.challenge_rule_4.desc,第二章起精英战额外获得一个不同词缀。
+challenge.challenge_rule_5.name,终局压迫
+challenge.challenge_rule_5.desc,利息上限减少 1，Boss 第二阶段提前 5% 生命触发。
+tutorial.tutorial_01_pickup.title,拿起物品
+tutorial.tutorial_01_pickup.body,从商店或背包中拿起一个物品。
+tutorial.tutorial_02_rotate.title,旋转物品
+tutorial.tutorial_02_rotate.body,旋转物品以适应背包形状。
+tutorial.tutorial_03_place.title,完成放置
+tutorial.tutorial_03_place.body,把物品放入全部有效的格子中。
+tutorial.tutorial_04_invalid.title,查看非法原因
+tutorial.tutorial_04_invalid.body,查看越界或重叠提示。
+tutorial.tutorial_05_buy.title,确认购买
+tutorial.tutorial_05_buy.body,确认购买并观察金币变化。
+tutorial.tutorial_06_info.title,查看详情
+tutorial.tutorial_06_info.body,打开物品详情查看触发、范围和标签。
+tutorial.tutorial_07_enemy.title,查看敌人
+tutorial.tutorial_07_enemy.body,查看敌人构筑、威胁标签和弱点。
+tutorial.tutorial_08_combat.title,观察激活
+tutorial.tutorial_08_combat.body,观察冷却、耐力和一次完整结算。
+tutorial.tutorial_09_result.title,查看统计
+tutorial.tutorial_09_result.body,查看伤害、治疗和触发次数。
+tutorial.tutorial_10_reward.title,选择奖励
+tutorial.tutorial_10_reward.body,选择一个奖励或领取跳过补偿。
+tutorial.tutorial_11_refresh.title,刷新商店
+tutorial.tutorial_11_refresh.body,支付递增费用刷新五个商品槽。
+tutorial.tutorial_12_lock.title,锁定商品
+tutorial.tutorial_12_lock.body,锁定商品使其保留到下一次标准商店。
+tutorial.tutorial_13_storage.title,使用仓库
+tutorial.tutorial_13_storage.body,仓库物品不参与战斗或空间关系。
+tutorial.tutorial_14_recipe.title,确认合成
+tutorial.tutorial_14_recipe.body,相邻材料只标记候选，必须手动确认。
+tutorial.tutorial_15_route.title,选择路线
+tutorial.tutorial_15_route.body,比较风险标签、节点类型和奖励倾向。
+tutorial.tutorial_16_complete.title,教学完成
+tutorial.tutorial_16_complete.body,标准难度现已可自由游玩。
+achievement.first_victory.name,初次凯旋
+achievement.first_victory.desc,完成一次标准或更高难度的 Run。
+achievement.forge_clear.name,铸阵通关
+achievement.forge_clear.desc,使用铸阵师通关。
+achievement.alchemy_clear.name,调律通关
+achievement.alchemy_clear.desc,使用调律师通关。
+achievement.challenge_three.name,压力测试
+achievement.challenge_three.desc,完成挑战 3。
+achievement.challenge_five.name,终局构筑
+achievement.challenge_five.desc,完成挑战 5。
+achievement.master_packer.name,严丝合缝
+achievement.master_packer.desc,单场战斗前使用至少 24 个有效格。
+achievement.first_recipe.name,首次加工
+achievement.first_recipe.desc,完成第一次合成。
+achievement.recipe_chain.name,二级成品
+achievement.recipe_chain.desc,完成一个二级配方。
+achievement.recipe_book.name,工艺手册
+achievement.recipe_book.desc,发现全部 24 个配方。
+achievement.frugal.name,精打细算
+achievement.frugal.desc,单次 Run 获得 8 枚利息金币。
+achievement.shop_regular.name,常客
+achievement.shop_regular.desc,累计刷新商店 50 次。
+achievement.collector.name,行囊收藏
+achievement.collector.desc,在图鉴中发现 60 件普通物品。
+achievement.poison_finish.name,毒尽
+achievement.poison_finish.desc,让毒素完成一次 Boss 击杀。
+achievement.burn_finish.name,燃尽
+achievement.burn_finish.desc,让灼烧完成一次 Boss 击杀。
+achievement.armor_peak.name,不动阵线
+achievement.armor_peak.desc,单场战斗中达到 100 点护甲。
+achievement.healing_peak.name,回生循环
+achievement.healing_peak.desc,单场战斗累计恢复 120 点生命。
+achievement.fast_boss.name,迅速拆解
+achievement.fast_boss.desc,在 45 秒内击败任意 Boss。
+achievement.one_health.name,险胜
+achievement.one_health.desc,以 1 点生命赢得战斗。
+achievement.no_refresh.name,就地取材
+achievement.no_refresh.desc,不刷新商店完成标准难度 Run。
+achievement.all_events.name,旅途见闻
+achievement.all_events.desc,见过全部 12 个事件。
+tag.slow.name,减速
+tag.slow.desc,用减速打断高频触发。
+tag.vulnerable.name,易伤
+tag.vulnerable.desc,用易伤放大生命伤害。
+tag.true_damage.name,真实伤害
+tag.true_damage.desc,穿过护甲直接造成伤害。
+tag.burst.name,爆发
+tag.burst.desc,集中伤害压制恢复与累积效果。
+tag.focused_build.name,专注流派
+tag.focused_build.desc,用一致的流派协同对抗分散构筑。
+content_changed,内容已更新，路线选项已重新生成。
+route_no_longer_available,此路线已不符合当前章节规则，选项已重新生成。

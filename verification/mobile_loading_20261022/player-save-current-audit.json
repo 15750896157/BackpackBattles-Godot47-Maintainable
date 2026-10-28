@@ -1,0 +1,53 @@
+{
+  "equal_to_start": {
+    "profile.save": false,
+    "profile_backup.save": false,
+    "run.save": false,
+    "run_backup.save": false,
+    "settings.save": true,
+    "settings_backup.save": true,
+    "telemetry.jsonl": false
+  },
+  "metadata": {
+    "profile.save": {
+      "bytes": 4213,
+      "modified_local": "2026-10-21T16:36:06.369443"
+    },
+    "profile_backup.save": {
+      "bytes": 4213,
+      "modified_local": "2026-10-21T16:36:06.370442"
+    },
+    "run.save": {
+      "bytes": 7606,
+      "modified_local": "2026-10-21T16:36:06.361789"
+    },
+    "run_backup.save": {
+      "bytes": 7606,
+      "modified_local": "2026-10-21T16:36:06.368442"
+    },
+    "settings.save": {
+      "bytes": 401,
+      "modified_local": "2026-10-16T10:44:01.054941"
+    },
+    "settings_backup.save": {
+      "bytes": 399,
+      "modified_local": "2026-10-16T10:44:01.060567"
+    },
+    "telemetry.jsonl": {
+      "bytes": 54043,
+      "modified_local": "2026-10-21T14:52:43.941745"
+    }
+  },
+  "current_sha256": {
+    "profile.save": "9374eafa9f4ed8d8977ffa463c8fb6c568f4a415cea7f94586746942f5aeaf5c",
+    "profile_backup.save": "9374eafa9f4ed8d8977ffa463c8fb6c568f4a415cea7f94586746942f5aeaf5c",
+    "run.save": "7d00fab27327b4a007d6c6e506087421488c4d5d328a00fb90376939631f5b9d",
+    "run_backup.save": "e8f8f674bfb1e769d916dcfedfe15dd0be104467e32b74ef531c5c15f43df60f",
+    "settings.save": "df95798554e100b595bbeeb78b93a54f746aafbc2b7db30b3d12f4b0a055a0a0",
+    "settings_backup.save": "d76fad7169a183463b5cb0057fc3e80c1cff386875e312a416772138b24bf6e7",
+    "telemetry.jsonl": "890b7707158e4086020d5403ee0fff10a6838f4172ff595f03cee58771e4c90b"
+  },
+  "all_current_envelopes_valid": true,
+  "no_rollback_performed": true,
+  "note": "Five files differ from the Oct21 starting snapshot; their latest writes predate the Oct22 final checks. Current progress was preserved instead of restoring the old snapshot."
+}

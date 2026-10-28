@@ -1,0 +1,6 @@
+id,name_key,choice_count,pick_count,allow_skip,skip_gold,selection_policy
+reward_none,reward.reward_none.name,0,0,false,0,none
+reward_normal,reward.reward_normal.name,3,1,true,2,weighted_without_replacement
+reward_danger,reward.reward_danger.name,3,1,true,3,weighted_without_replacement
+reward_elite,reward.reward_elite.name,3,1,true,4,quality_shift_once
+reward_boss,reward.reward_boss.name,3,1,false,0,boss_unique_first

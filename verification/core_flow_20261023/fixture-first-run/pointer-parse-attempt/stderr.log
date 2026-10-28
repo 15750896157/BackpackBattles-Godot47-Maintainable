@@ -1,0 +1,4 @@
+SCRIPT ERROR: Parse Error: Member "ready" redefined (original in native class 'Node')
+   at: GDScript::reload (res://PvE/tests/_TransientPointer.gd:4)
+ERROR: Failed to load script "res://PvE/tests/_TransientPointer.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)

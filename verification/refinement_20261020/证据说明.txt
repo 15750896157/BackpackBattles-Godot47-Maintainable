@@ -1,0 +1,13 @@
+本目录为2026-10-20第二轮（38%目标、UI与动画）的最终证据。
+process-results.json及reports/是独立中文空格目录的25个验收进程，logs/是各自输出。
+real-pointer/是真实系统鼠标验收，用户允许后执行，90项通过，包含拖动惯性和取消后回正。
+visual-refinement报告逐一列出82种道具的原纹理完整性/原比例/原方向、四向格子、商店悬停、全部10种背包、售出金币和减少动作。
+初次视觉策略被用户指出裁切和自动转向不自然，已撤销；保持原图不裁切，受影响的10个验收阶段在最终策略下重新实跑。
+screenshots/为当前程序实际截图；user-reported-before/为用户本次提交的原截图。
+source-metrics.json列出全部生产GDScript的结构指标，原接口和新实现都在分母内。
+compatibility-audit.json核对接口、媒体、场景、配置和实际存档；不存在无调用的Behavior模块。
+player-save-timeline.json说明初始快照后有一次早于本轮首个QA进程的外部存档写入，保留了较新档案，没有用旧快照回滚它。
+portable-file-check.json是最终工程、引擎与工具在主目录和独立验证目录的逐文件哈希。
+windows-powershell51/是最终一键工具在Windows PowerShell5.1下实跑新视觉检查和模块检查的证据。
+不包含玩家存档或测试存档。开发过程中的失败和未采用方案保留在work，未计入最终通过。
+较早的structural_rewrite_20261020和maintainability_20261019为历史证据。

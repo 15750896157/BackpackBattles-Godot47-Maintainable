@@ -1,0 +1,4 @@
+act_id,normal_gold,elite_bonus_gold,boss_gold,post_battle_heal_pct,interest_step,interest_cap,reward_skip_gold
+act_1,5,2,0,0.05,5,2,2
+act_2,6,2,0,0.04,5,2,2
+act_3,7,2,0,0.03,5,2,3

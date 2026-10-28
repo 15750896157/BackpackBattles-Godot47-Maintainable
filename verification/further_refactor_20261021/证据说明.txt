@@ -1,0 +1,12 @@
+2026-10-21进一步重构的最终验收证据。
+process-results.json为独立中文空格目录的26个新进程，全部使用隔离存档；reports和logs为对应结果。
+refactor-contracts逐项核对回调运行时签名、枚举编号及720个文字效果样本；baseline夹具只有元数据和行为结果，没有旧实现源码。
+visual-refinement复测82种原道具、10种背包、四向格子、货架完整原图、悬停格子和售出金币等。
+五种远征状态分别通过两个进程写入、关闭、重开并点击继续，排除只在内存保留进度的情况。
+本轮没有再次接管系统鼠标；2026-10-20的真实鼠标90项记录属于历史证据，没有计入本轮断言。
+windows-powershell51为最终一键工具实跑RefactorContractsMain和BehaviorServices的两个进程。
+compatibility-audit核对迁移方法、状态字段、公开签名、资源、规则内容和玩家存档；source-metrics覆盖全部生产GDScript接口与实现。
+portable-file-check为主目录与独立验证目录的project/engine/tools逐文件一致性证据。
+开发时的失败验收保留在work中，没有混入本目录的通过结果，也没有计入通过断言。
+初版候选的异步void返回与特殊文件名命名空间问题已修正；另修正测试场景缺少Main、JSON数值比较及测试脚本缩进问题。
+本目录不包含玩家或测试存档。旧日期证据保持为历史记录。

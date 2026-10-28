@@ -1,0 +1,288 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Interface/FocusGrabbingControl.gd" type="Script" id=1]
+[ext_resource path="res://Interface/Options/OptionsSheet.png" type="Texture2D" id=2]
+[ext_resource path="res://Interface/BoughtNothingWarning.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" type="FontFile" id=4]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="FontFile" id=5]
+[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=6]
+[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=7]
+[ext_resource path="res://Interface/Options/OptionsFont.tres" type="FontVariation" id=8]
+
+[ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
+
+[sub_resource type="Animation" id=166]
+resource_name = "Hide"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 1.41421, 0.594604 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sheet:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 1.41421, 0.594604 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -1200 ) ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0.5 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "onClosed"
+} ]
+}
+
+[sub_resource type="Animation" id=167]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ColorRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sheet:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=168]
+resource_name = "Show"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 0.594604, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sheet:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 0.594604, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -1200 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="FontVariation" id=161]
+script = ExtResource( "LegacyFontMigration" )
+size = 28
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_glyph = 1
+base_font = ExtResource( 5 )
+
+[sub_resource type="FontVariation" id=206]
+script = ExtResource( "LegacyFontMigration" )
+size = 24
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+base_font = ExtResource( 4 )
+
+[node name="Warning" type="Node2D"]
+process_mode = 3
+visible = false
+script = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Hide = SubResource( 166 )
+anims/RESET = SubResource( 167 )
+anims/Show = SubResource( 168 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+offset_right = 1914.0
+offset_bottom = 1057.0
+color = Color( 0, 0, 0, 0.47451 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sheet" type="Node2D" parent="."]
+
+[node name="Sheet" type="NinePatchRect" parent="Sheet"]
+offset_left = 592.0
+offset_top = 184.0
+offset_right = 1399.0
+offset_bottom = 846.0
+texture = ExtResource( 2 )
+patch_margin_left = 89
+patch_margin_top = 80
+patch_margin_right = 118
+patch_margin_bottom = 109
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sheet"]
+offset_left = 656.0
+offset_top = 296.0
+offset_right = 1333.0
+offset_bottom = 751.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sheet/VBoxContainer"]
+offset_right = 677.0
+offset_bottom = 165.0
+clip_contents = false
+theme_override_colors/default_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_fonts/bold_font = SubResource( 161 )
+theme_override_fonts/normal_font = SubResource( 206 )
+bbcode_enabled = true
+text = "[center]You have not bought anything!
+
+If there is nothing in the shop that you like, you can pull the golden reroll-rope.
+"
+text = "You have not bought anything!
+
+If there is nothing in the shop that you like, you can pull the golden reroll-rope.
+"
+fit_content = true
+scroll_active = false
+script = ExtResource( 6 )
+translationKey = "HINT_BoughtNothing"
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/normal_font_size = 24
+theme_override_constants/outline_size = 0
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="Control" type="Control" parent="Sheet/VBoxContainer"]
+offset_top = 173.0
+offset_right = 677.0
+offset_bottom = 347.0
+custom_minimum_size = Vector2( 0, 50 )
+size_flags_vertical = 3
+
+[node name="CancelButton" type="Button" parent="Sheet/VBoxContainer"]
+offset_top = 355.0
+offset_right = 677.0
+offset_bottom = 401.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 8 )
+theme_override_styles/focus = ExtResource( 7 )
+text = "Cancel"
+flat = true
+script = ExtResource( 1 )
+translationKey = "BUTTON_Cancel"
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="ConfirmButton" type="Button" parent="Sheet/VBoxContainer"]
+offset_top = 409.0
+offset_right = 677.0
+offset_bottom = 455.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 8 )
+theme_override_styles/focus = ExtResource( 7 )
+text = "I know what I'm doing"
+flat = true
+script = ExtResource( 1 )
+translationKey = "BUTTON_Confirm"
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[connection signal="pressed" from="Sheet/VBoxContainer/CancelButton" to="." method="onCancelPressed"]
+[connection signal="pressed" from="Sheet/VBoxContainer/ConfirmButton" to="." method="onConfirmPressed"]

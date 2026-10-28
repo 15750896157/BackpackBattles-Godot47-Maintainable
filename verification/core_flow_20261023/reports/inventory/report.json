@@ -1,0 +1,355 @@
+{
+  "checks": 37,
+  "details": {
+    "large_textures": [
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/CombatTimer/Panel",
+        "pve": "",
+        "size": "(602.0, 281.0)",
+        "sprite_scale": "(0.704352, 0.665018)",
+        "texture": "res://Interface/CombatTimer/TimerPanel.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/Win/BlueBanner",
+        "pve": "",
+        "size": "(618.0, 226.0)",
+        "sprite_scale": "(0.00001, 0.00001)",
+        "texture": "res://Assets/BlueBanner.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/Lose/RedBanner",
+        "pve": "",
+        "size": "(477.0, 619.0)",
+        "sprite_scale": "(0.00001, 0.00001)",
+        "texture": "res://Assets/RedBanner.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/Trophies/Banner1",
+        "pve": "",
+        "size": "(1920.0, 325.0)",
+        "sprite_scale": "(0.920052, 0.532308)",
+        "texture": "res://Assets/Banner3.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/Hearts/Banner1",
+        "pve": "",
+        "size": "(1105.0, 388.0)",
+        "sprite_scale": "(0.898642, 0.701031)",
+        "texture": "res://Assets/PinkBanner.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/Ranked/TooltipBase2",
+        "pve": "",
+        "size": "(940.0, 534.0)",
+        "sprite_scale": "(1.11468, 1.13037)",
+        "texture": "res://Interface/Combat/RankedSheet.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/Ranked/LeagueProgressBar",
+        "pve": "",
+        "size": "(585.0, 50.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "texture": "res://Assets/Progressbar_filled.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/Ranked/LeagueProgressBar/EmptyProgressBar",
+        "pve": "",
+        "size": "(585.0, 50.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "texture": "res://Assets/Progressbar_empty.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/10Wins/CombatSheetNameBanner",
+        "pve": "",
+        "size": "(610.0, 224.0)",
+        "sprite_scale": "(0.00001, 0.000012)",
+        "texture": "res://Assets/Character/CombatSheet_NameBanner.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/PerfectRun/Banner",
+        "pve": "",
+        "size": "(610.0, 224.0)",
+        "sprite_scale": "(1.44149, 1.18304)",
+        "texture": "res://Assets/Character/CombatSheet_NameBanner.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/TriesLeft/Banner",
+        "pve": "",
+        "size": "(610.0, 224.0)",
+        "sprite_scale": "(0.000009, 0.000012)",
+        "texture": "res://Assets/Character/CombatSheet_NameBanner.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Combat/UI/LobbyResult/ResultsPanel",
+        "pve": "",
+        "size": "(798.0, 464.0)",
+        "sprite_scale": "(0.922414, 0.922414)",
+        "texture": "res://Interface/Lobbies/ResultsPanel.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/Background",
+        "pve": "",
+        "size": "(1980.0, 1080.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "texture": "res://Assets/Shop/Shop.png",
+        "visible": true
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/ShopSign",
+        "pve": "",
+        "size": "(608.0, 332.0)",
+        "sprite_scale": "(0.336, 0.295)",
+        "texture": "res://Assets/Shop/Sign2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/InventorySign",
+        "pve": "",
+        "size": "(608.0, 332.0)",
+        "sprite_scale": "(0.336, 0.295)",
+        "texture": "res://Assets/Shop/Sign2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/Shelf2/Shelf",
+        "pve": "",
+        "size": "(751.0, 103.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "texture": "res://Assets/Shop/Shelf2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/Shelf3/Shelf",
+        "pve": "",
+        "size": "(751.0, 103.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "texture": "res://Assets/Shop/Shelf2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/Reroll/RopeHint/Background",
+        "pve": "",
+        "size": "(448.0, 617.0)",
+        "sprite_scale": "(0.399553, 0.307942)",
+        "texture": "res://Interface/Tooltips/TooltipBase2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/SpeechBubble/Speechbubble",
+        "pve": "",
+        "size": "(816.0, 249.0)",
+        "sprite_scale": "(0.000007, 0.000007)",
+        "texture": "res://Assets/Shop/Shopkeeper/Speechbubble2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/Banner1",
+        "pve": "",
+        "size": "(518.0, 111.0)",
+        "sprite_scale": "(1.0526, 1.01633)",
+        "texture": "res://Assets/Banner1.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/RarityHint/Background",
+        "pve": "",
+        "size": "(448.0, 617.0)",
+        "sprite_scale": "(0.696624, 0.503083)",
+        "texture": "res://Interface/Tooltips/TooltipBase2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Shop/PushToStorageHint/Background",
+        "pve": "",
+        "size": "(448.0, 617.0)",
+        "sprite_scale": "(0.36408, 0.308486)",
+        "texture": "res://Interface/Tooltips/TooltipBase2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Player/Character/Mirroring/Sprite2D/Sprite2D/Body",
+        "pve": "",
+        "size": "(1261.0, 1336.0)",
+        "sprite_scale": "(0.172156, 0.172156)",
+        "texture": "res://Art/20261022/hero.png",
+        "visible": true
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Player/Character/CombatUI/Sheet",
+        "pve": "",
+        "size": "(580.0, 506.0)",
+        "sprite_scale": "(0.987085, 1.0)",
+        "texture": "res://Assets/Character/CombatSheet.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Player/Character/CombatUI/Sheet/NameBanner",
+        "pve": "",
+        "size": "(505.0, 125.0)",
+        "sprite_scale": "(0.987085, 1.0)",
+        "texture": "res://Interface/Combat/NameBanner_Berserker.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Player/Character/NamePanel",
+        "pve": "",
+        "size": "(518.0, 111.0)",
+        "sprite_scale": "(0.599099, 0.599099)",
+        "texture": "res://Assets/Banner1.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Player/Character/ShopUI/Sheet2",
+        "pve": "",
+        "size": "(479.0, 528.0)",
+        "sprite_scale": "(0.9841, 0.986742)",
+        "texture": "res://Assets/Character/CharacterSheet.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Player/Character/ShopUI/Title/LeagueProgress/LeagueProgressBar",
+        "pve": "",
+        "size": "(585.0, 50.0)",
+        "sprite_scale": "(0.415468, 0.535714)",
+        "texture": "res://Assets/Progressbar_filled.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/Player/Character/ShopUI/Title/LeagueProgress/LeagueProgressBar/EmptyProgressBar",
+        "pve": "",
+        "size": "(585.0, 50.0)",
+        "sprite_scale": "(0.415468, 0.535714)",
+        "texture": "res://Assets/Progressbar_empty.png",
+        "visible": false
+      },
+      {
+        "item": "Scissorswords",
+        "node": "/root/Main/Player/Scissorswords/Icon",
+        "pve": "twin_needles",
+        "size": "(628.0, 502.0)",
+        "sprite_scale": "(0.138923, 0.138923)",
+        "texture": "res://Items/Exclusive/Sprites/ScissorSwords.png",
+        "visible": true
+      },
+      {
+        "item": "Scissorswords",
+        "node": "/root/Main/Player/Scissorswords/Icon/LightsaberGlow",
+        "pve": "twin_needles",
+        "size": "(209.0, 586.0)",
+        "sprite_scale": "(0.138923, 0.138923)",
+        "texture": "res://Items/Sprites/Lightsaber_glow.png",
+        "visible": true
+      },
+      {
+        "item": "Scissorswords",
+        "node": "/root/Main/Player/Scissorswords/Shadow",
+        "pve": "twin_needles",
+        "size": "(628.0, 502.0)",
+        "sprite_scale": "(0.138923, 0.138923)",
+        "texture": "res://Items/Exclusive/Sprites/ScissorSwords.png",
+        "visible": true
+      },
+      {
+        "item": "",
+        "node": "/root/Main/TitleScreen/Paper1",
+        "pve": "",
+        "size": "(1920.0, 1080.0)",
+        "sprite_scale": "(1.05885, 1.09306)",
+        "texture": "res://Assets/Paper1.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/TitleScreen/Node2D/Background",
+        "pve": "",
+        "size": "(1937.0, 1288.0)",
+        "sprite_scale": "(1.05, 1.05)",
+        "texture": "res://Assets/TitleScreen/Titlescreen.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/TitleScreen/ButtonsNode/Panel2",
+        "pve": "",
+        "size": "(258.0, 861.0)",
+        "sprite_scale": "(0.907669, 1.07665)",
+        "texture": "res://Assets/TitleScreen/ButtonPanel.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/TitleScreen/TitleNode/Title",
+        "pve": "",
+        "size": "(1280.0, 720.0)",
+        "sprite_scale": "(0.669548, 0.669548)",
+        "texture": "res://Assets/TitleScreen/Title.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/TitleScreen/AboveBlackLayer/Class/Panel",
+        "pve": "",
+        "size": "(840.0, 375.0)",
+        "sprite_scale": "(0.942559, 1.0)",
+        "texture": "res://Assets/TitleScreen/ClassPanel2.png",
+        "visible": false
+      },
+      {
+        "item": "",
+        "node": "/root/Main/UI/Frame",
+        "pve": "",
+        "size": "(1920.0, 1080.0)",
+        "sprite_scale": "(1.0, 1.0)",
+        "texture": "res://Assets/Frame2.png",
+        "visible": false
+      }
+    ],
+    "model_gold": 6,
+    "native_gold": 6,
+    "native_items": 4
+  },
+  "engine": "4.7-stable (official)",
+  "failures": [],
+  "scope": "original Main.tscn + real Item.pickup/drop/reactToDropResult; no injected currency or health"
+}

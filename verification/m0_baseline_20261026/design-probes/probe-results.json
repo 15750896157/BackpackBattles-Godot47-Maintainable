@@ -1,0 +1,26 @@
+{
+  "isolated_expected_failures": true,
+  "rows": [
+    {
+      "name": "router-name-collision",
+      "exit_code": 0,
+      "stderr_bytes": 432,
+      "stderr": "SCRIPT ERROR: Parse Error: Class \"SceneRouter\" hides an autoload singleton.\r\n   at: GDScript::reload (res://SceneRouter.gd:1)\r\nERROR: Failed to load script \"res://SceneRouter.gd\" with error \"Parse error\".\r\n   at: load (modules/gdscript/gdscript_resource_format.cpp:46)\r\nERROR: Failed to create an autoload, script 'res://SceneRouter.gd' is not compiling.\r\n   at: _create_autoload (editor/settings/editor_autoload_settings.cpp:340)\r\n",
+      "args": [
+        "--editor",
+        "--import",
+        "--quit"
+      ]
+    },
+    {
+      "name": "vm-expected-error",
+      "exit_code": 0,
+      "stderr_bytes": 225,
+      "stderr": "ERROR: EXPECTED_VM_BASE_SNAPSHOT\r\n   at: push_error (core/variant/variant_utility.cpp:1023)\r\n   GDScript backtrace (most recent call first):\r\n       [0] snapshot (res://probe.gd:4)\r\n       [1] _initialize (res://probe.gd:7)\r\n",
+      "args": [
+        "--script",
+        "probe.gd"
+      ]
+    }
+  ]
+}

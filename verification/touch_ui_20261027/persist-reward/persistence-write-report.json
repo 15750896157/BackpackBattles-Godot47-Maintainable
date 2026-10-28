@@ -1,0 +1,14 @@
+{
+	"case": "reward",
+	"checks": 15,
+	"details": {
+		"before_menu_state": "REWARD_SELECT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\touch_ui_20261027\\release-checks\\persist-reward-saves_164242/",
+		"saved_state": "REWARD_SELECT",
+		"title_continue_disabled": true,
+		"title_continue_visible": false
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "write"
+}

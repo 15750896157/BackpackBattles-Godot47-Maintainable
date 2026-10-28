@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "manifest_files_checked": 5567,
+  "m0_facts_repeated_equal": true,
+  "m0_project_hashes_unchanged": true,
+  "head": "9ce09433c4dc75fb3e22622fc5c8dd56f987b685",
+  "ui_processes": 23,
+  "ui_assertions": 1932,
+  "real_mouse_checks": 12,
+  "cancel_edge_checks": 4,
+  "player_save_hashes_unchanged": true,
+  "step2_started": false,
+  "git_commit_created": false
+}

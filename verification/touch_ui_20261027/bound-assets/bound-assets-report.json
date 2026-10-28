@@ -1,0 +1,1359 @@
+{
+	"checks": [
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop1.tscn: chapter background loads",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop1.tscn: chapter scene constructs",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop1.tscn: image and animation dependencies retained",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop2.tscn: chapter background loads",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop2.tscn: chapter scene constructs",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop2.tscn: image and animation dependencies retained",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop3.tscn: chapter background loads",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop3.tscn: chapter scene constructs",
+			"ok": true
+		},
+		{
+			"message": "res://Runtime/Loading/Scenes/CombatBackdrop3.tscn: image and animation dependencies retained",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "stone_hammer: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "stone_hammer: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "stone_hammer: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "stone_hammer: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "twin_needles: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "twin_needles: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "twin_needles: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "twin_needles: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "sling: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "sling: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "sling: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "sling: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "buckler: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "buckler: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "buckler: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "buckler: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "spiked_guard: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "spiked_guard: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "spiked_guard: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "spiked_guard: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "repair_kit: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "repair_kit: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "repair_kit: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "repair_kit: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "stamina_flask: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "stamina_flask: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "stamina_flask: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "stamina_flask: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bandage_roll: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bandage_roll: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bandage_roll: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bandage_roll: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "cleansing_salt: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "cleansing_salt: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "cleansing_salt: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "cleansing_salt: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "clockwork_spring: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "clockwork_spring: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "clockwork_spring: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "clockwork_spring: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "lucky_coin: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "lucky_coin: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "lucky_coin: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "lucky_coin: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "scout_lens: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "scout_lens: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "scout_lens: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "scout_lens: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "storage_hook: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "storage_hook: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "storage_hook: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "storage_hook: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "gear_link: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "gear_link: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "gear_link: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "gear_link: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "row_banner: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "row_banner: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "row_banner: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "row_banner: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "column_standard: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "column_standard: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "column_standard: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "column_standard: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "star_compass: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "star_compass: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "star_compass: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "star_compass: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "compact_rack: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "compact_rack: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "compact_rack: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "compact_rack: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "resonant_bell: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "resonant_bell: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "resonant_bell: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "resonant_bell: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "counterweight: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "counterweight: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "counterweight: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "counterweight: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "venom_needle: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "venom_needle: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "venom_needle: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "venom_needle: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "healing_herb: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "healing_herb: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "healing_herb: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "healing_herb: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "regeneration_leaf: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "regeneration_leaf: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "regeneration_leaf: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "regeneration_leaf: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "fracture_charm: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "fracture_charm: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "fracture_charm: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "fracture_charm: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "quicksand_vial: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "quicksand_vial: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "quicksand_vial: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "quicksand_vial: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "blood_cup: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "blood_cup: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "blood_cup: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "blood_cup: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "cooling_fan: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "cooling_fan: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "cooling_fan: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "cooling_fan: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "iron_nail: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "iron_nail: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "iron_nail: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "iron_nail: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "field_manual: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "field_manual: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "field_manual: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "field_manual: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "arsenal_bracer: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "arsenal_bracer: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "arsenal_bracer: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "arsenal_bracer: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "chain_blade: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "chain_blade: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "chain_blade: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "chain_blade: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "repeater_crossbow: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "repeater_crossbow: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "repeater_crossbow: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "repeater_crossbow: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "crescent_glaive: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "crescent_glaive: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "crescent_glaive: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "crescent_glaive: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "siege_maul: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "siege_maul: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "siege_maul: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "siege_maul: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "momentum_gear: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "momentum_gear: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "momentum_gear: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "momentum_gear: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "overdrive_ratchet: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "overdrive_ratchet: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "overdrive_ratchet: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "overdrive_ratchet: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bastion_core: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bastion_core: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bastion_core: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bastion_core: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "guardian_standard: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "guardian_standard: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "guardian_standard: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "guardian_standard: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "charging_weight: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "charging_weight: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "charging_weight: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "charging_weight: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "execution_anvil: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "execution_anvil: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "execution_anvil: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "execution_anvil: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "toxin_bottle: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "toxin_bottle: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "toxin_bottle: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "toxin_bottle: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "thorn_extract: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "thorn_extract: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "thorn_extract: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "thorn_extract: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "spore_jar: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "spore_jar: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "spore_jar: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "spore_jar: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "venom_distiller: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "venom_distiller: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "venom_distiller: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "venom_distiller: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "plague_retort: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "plague_retort: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "plague_retort: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "plague_retort: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "caustic_coil: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "caustic_coil: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "caustic_coil: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "caustic_coil: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "ember_phial: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "ember_phial: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "ember_phial: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "ember_phial: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "coal_burner: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "coal_burner: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "coal_burner: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "coal_burner: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "ignition_lens: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "ignition_lens: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "ignition_lens: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "ignition_lens: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "wildfire_alembic: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "wildfire_alembic: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "wildfire_alembic: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "wildfire_alembic: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "tonic_bottle: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "tonic_bottle: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "tonic_bottle: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "tonic_bottle: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "renewal_mortar: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "renewal_mortar: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "renewal_mortar: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "renewal_mortar: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "transfusion_tube: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "transfusion_tube: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "transfusion_tube: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "transfusion_tube: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "philosophers_kettle: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "philosophers_kettle: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "philosophers_kettle: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "philosophers_kettle: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_canvas_frame: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_canvas_frame: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_canvas_frame: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_canvas_frame: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_corner_satchel: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_corner_satchel: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_corner_satchel: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_corner_satchel: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_tool_roll: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_tool_roll: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_tool_roll: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_tool_roll: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_guard_harness: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_guard_harness: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_guard_harness: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_guard_harness: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_herbal_tray: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_herbal_tray: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_herbal_tray: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_herbal_tray: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_gear_sling: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_gear_sling: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_gear_sling: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_gear_sling: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_cross_brace: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_cross_brace: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_cross_brace: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_cross_brace: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_hollow_ring: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_hollow_ring: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_hollow_ring: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_hollow_ring: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_step_case: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_step_case: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_step_case: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_step_case: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "bag_twin_wing: asynchronous scene dependencies",
+			"ok": true
+		},
+		{
+			"message": "bag_twin_wing: scene instantiates",
+			"ok": true
+		},
+		{
+			"message": "bag_twin_wing: visible item texture",
+			"ok": true
+		},
+		{
+			"message": "bag_twin_wing: catalog thumbnail",
+			"ok": true
+		},
+		{
+			"message": "no native asset-binding failures",
+			"ok": true
+		}
+	],
+	"definitions": 82,
+	"failures": [],
+	"ok": true
+}

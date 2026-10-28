@@ -1,0 +1,13 @@
+id,title_key,description_key,act_min,act_max,weight,once_per_run,preview_tags
+event_abandoned_cart,event.event_abandoned_cart.title,event.event_abandoned_cart.desc,1,3,10,false,economy|item
+event_field_smith,event.event_field_smith.title,event.event_field_smith.desc,1,3,9,false,craft|health
+event_cracked_vault,event.event_cracked_vault.title,event.event_cracked_vault.desc,1,2,8,true,risk|gold
+event_herbal_camp,event.event_herbal_camp.title,event.event_herbal_camp.desc,1,3,10,false,healing|item
+event_barter_table,event.event_barter_table.title,event.event_barter_table.desc,1,3,8,false,item|economy
+event_broken_satchel,event.event_broken_satchel.title,event.event_broken_satchel.desc,1,2,7,true,bag|storage
+event_clockwork_stall,event.event_clockwork_stall.title,event.event_clockwork_stall.desc,2,3,8,false,tempo|shop
+event_fume_chamber,event.event_fume_chamber.title,event.event_fume_chamber.desc,2,3,7,true,potion|risk
+event_quiet_ledger,event.event_quiet_ledger.title,event.event_quiet_ledger.desc,2,3,8,true,economy
+event_star_map,event.event_star_map.title,event.event_star_map.desc,2,3,7,true,recipe|risk
+event_echo_forge,event.event_echo_forge.title,event.event_echo_forge.desc,3,3,6,true,upgrade|health
+event_final_merchant,event.event_final_merchant.title,event.event_final_merchant.desc,3,3,6,true,shop|legendary

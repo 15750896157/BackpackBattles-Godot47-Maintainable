@@ -1,0 +1,20 @@
+id,source_metric,aggregation,scope,value_type,reset_policy,default_value,description
+runs_cleared,run_ended,count_if:result=clear,profile,integer,never,0,累计通关次数。
+armorer_clears,difficulty_clear,count_if:character_id=armorer,profile,integer,never,0,铸阵师累计通关次数。
+alchemist_clears,difficulty_clear,count_if:character_id=alchemist,profile,integer,never,0,调律师累计通关次数。
+highest_challenge_clear,difficulty_clear,max:challenge_level,profile,integer,never,0,已通关的最高挑战等级。
+max_used_cells,used_cell_count,max:value,profile,integer,never,0,任意战斗前的最大有效格占用。
+recipes_crafted,recipe_crafted,count,profile,integer,never,0,累计完成配方次数。
+tier2_recipes_crafted,recipe_crafted,count_if:tier=2,profile,integer,never,0,累计完成二级配方次数。
+recipes_discovered,recipe_discovered,distinct_count:recipe_id,profile,integer,never,0,已发现的不同配方数量。
+run_interest_gold,interest_awarded,sum:value,run,integer,run_start,0,当前单局累计获得的利息金币。
+shop_refreshes,shop_refreshed,sum:value,profile,integer,never,0,累计商店刷新次数。
+items_discovered,item_purchased|reward_selected|recipe_crafted,distinct_count:item_id_or_result_item_id,profile,integer,never,0,图鉴中已发现的不同普通物品数量。
+boss_kill_poison,combat_result,count_if:enemy_type=boss&final_damage=poison,profile,integer,never,0,由毒素完成最后一击的 Boss 数量。
+boss_kill_burn,combat_result,count_if:enemy_type=boss&final_damage=burn,profile,integer,never,0,由灼烧完成最后一击的 Boss 数量。
+max_armor,combat_result,max:peak_armor,profile,integer,never,0,单场战斗达到的最高护甲。
+max_combat_healing,combat_result,max:total_healing,profile,integer,never,0,单场战斗累计治疗量的最高值。
+fastest_boss_seconds,combat_result,min_if:enemy_type=boss:duration_seconds,profile,float,never,999999,Boss 战最短胜利时间；无记录时使用大哨兵值。
+wins_at_one_health,combat_result,count_if:result=win&remaining_health=1,profile,integer,never,0,以 1 点生命取胜的战斗次数。
+standard_clear_no_refresh,run_ended|shop_refreshed,count_if:difficulty=standard&result=clear&run_refreshes=0,profile,integer,never,0,标准难度零刷新通关次数。
+events_seen,event_choice,distinct_count:event_id,profile,integer,never,0,已见过的不同事件数量。

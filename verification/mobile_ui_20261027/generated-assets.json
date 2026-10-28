@@ -1,0 +1,32 @@
+{
+  "prompts": {
+    "battle": "one single prominent crossed-swords battle-start button. Rounded horizontal shield plaque with deep crimson red enamel/leather center, two large bright silver crossed swords, small gold sunburst behind the blades, sturdy restrained aged gold rim. Entire silhouette approx 1.65:1, plenty of separation around swords. A clear strong red call to action.",
+    "guide": "one single circular UI tutorial/help button: an open ivory parchment book with one large deep teal question-mark emblem embossed on its right page. Restrained aged gold rim around a dark warm walnut circular backing. Clear simple silhouette.",
+    "codex": "one single circular inventory encyclopedia and crafting button: a closed forest-green leather book with a bright ivory-gold alchemy diamond emblem and a tiny copper clasp. Restrained aged gold rim around a dark warm walnut circular backing. Clear simple silhouette.",
+    "journey": "one single circular route/enemy intelligence button: a rolled parchment map and a bold deep teal compass needle on top, small crossed pin marker. Restrained aged gold rim around a dark warm walnut circular backing. Clear simple silhouette.",
+    "settings": "one single circular settings button: one large aged brass cog with a dark teal central circle, tactile but only eight broad readable teeth. Restrained aged gold rim around a dark warm walnut circular backing. Clear simple silhouette.",
+    "home": "one single circular save-and-return-home button: a tiny welcoming medieval tavern with a teal roof and a warm glowing doorway, one small outward curved arrow below. Restrained aged gold rim around a dark warm walnut circular backing. Clear simple silhouette."
+  },
+  "metadata": {
+    "battle": {
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-8b4f3bb4-460d-410c-81db-4dd12030e4ee.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "guide": {
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-eaa3d3c6-85a7-4328-b78a-e75bf9e36657.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "codex": {
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-aafaa69e-83c3-4f7c-a9d9-4707a073b693.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "journey": {
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-aa451652-f7bb-4718-86e9-8be6c8d6ee66.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "settings": {
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-028a50a5-f142-4221-a4b5-34915a14966b.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    "home": {
+      "output_hint": "Generated images are saved to C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8 as C:\\Users\\Asus\\.codex\\generated_images\\01a12dc5-f482-7581-a29f-84ac06c8f2f8\\exec-2fe95ace-03de-46bd-ae74-2833130d8d37.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  },
+  "tool": "built-in image_gen",
+  "transparent": true
+}

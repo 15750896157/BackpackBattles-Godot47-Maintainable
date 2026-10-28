@@ -1,0 +1,18 @@
+{
+	"checks": 7057,
+	"differences": [],
+	"failures": [],
+	"ok": true,
+	"reference_mode": "live_previous_build",
+	"trace_lengths": {
+		"Interface/InputBlocker.gd": 3,
+		"Utility/BalancedRandom.gd": 1040,
+		"Utility/BalancedRange.gd": 400,
+		"Utility/BitStream.gd": 165,
+		"Utility/Counter.gd": 241,
+		"Utility/EventBus.gd": 4,
+		"Utility/ObjectPool.gd": 6,
+		"Utility/Util.gd": 116,
+		"Utility/WeightedBag.gd": 640
+	}
+}

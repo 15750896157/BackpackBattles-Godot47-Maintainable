@@ -1,0 +1,25 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://Shader/SmoothFadeGradient.tres" type="Texture2D" id=1]
+
+[sub_resource type="Gradient" id=12]
+colors = PackedColorArray( 0.382813, 0.317683, 0.21608, 1, 0.882813, 0.840818, 0.632797, 1 )
+
+[sub_resource type="GradientTexture1D" id=13]
+gradient = SubResource( 12 )
+width = 200
+
+[resource]
+emission_shape = 1
+emission_sphere_radius = 22.0
+particle_flag_disable_z = true
+gravity = Vector3( 0, 150, 0 )
+color_ramp = ExtResource( 1 )
+color_initial_ramp = SubResource( 13 )
+angle_min = 0
+angle_max = 720
+orbit_velocity_min = 0
+orbit_velocity_max = 0
+scale_min = 3.585
+scale_max = 6.5
+

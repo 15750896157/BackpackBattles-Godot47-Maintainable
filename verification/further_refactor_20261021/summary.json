@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-21",
+  "engine": "4.7-stable",
+  "content_version": "0.1.3",
+  "status": "listed_checks_passed",
+  "structural_match_before_percent": 36.31,
+  "structural_match_after_percent": 29.603,
+  "same_comparison_method": true,
+  "matched_window_reduction": 25714,
+  "newly_modularized_methods": 411,
+  "owners": 336,
+  "new_callback_modules": 80,
+  "typed_callback_namespaces": 289,
+  "extended_behavior_modules": 47,
+  "stable_enum_ids": 320,
+  "stable_enums": 42,
+  "text_effect_styles": 21,
+  "text_effect_samples": 720,
+  "maintenance_index_methods": 1854,
+  "independent_portable_cases": 26,
+  "portable_assertions": 21854,
+  "powershell51_additional_assertions": 12438,
+  "physical_pointer_newly_run": false,
+  "original_82_native_bindings_and_10_bags_checked": true,
+  "original_footprint_and_texture_rendering_unchanged": true,
+  "protected_resources_and_content_verified": 4761,
+  "player_save_hashes_preserved": true,
+  "limits": [
+    "This is a fixed internal structural comparison; not an independent authorship percentage or a score guaranteed for other tools.",
+    "No mathematical minimum is claimed. Public interfaces, stable IDs, original resources and some short callbacks intentionally remain.",
+    "This round did not take control of the physical pointer or retest physical controllers, other hardware/OS, or long-term balance."
+  ]
+}

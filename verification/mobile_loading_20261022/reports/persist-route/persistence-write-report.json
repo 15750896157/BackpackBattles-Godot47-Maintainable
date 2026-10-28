@@ -1,0 +1,14 @@
+{
+	"case": "route",
+	"checks": 12,
+	"details": {
+		"before_menu_state": "ROUTE_SELECT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\mobile_loading_20261021\\release-checks\\persist-route-saves/",
+		"saved_state": "ROUTE_SELECT",
+		"title_continue_disabled": false,
+		"title_continue_visible": true
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "write"
+}

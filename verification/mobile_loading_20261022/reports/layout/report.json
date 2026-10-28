@@ -1,0 +1,6 @@
+{
+  "checks": 1765,
+  "failures": [],
+  "ok": true,
+  "scope": "Original Main: modal input, focus, tutorial/notification exclusion, class icon spacing, merchant exit, both languages, four text scales, twelve events/rest/input settings, five window sizes"
+}

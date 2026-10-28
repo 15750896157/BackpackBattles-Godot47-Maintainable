@@ -1,0 +1,7 @@
+{
+  "powershell": "5.1.26100.9711",
+  "processes": 2,
+  "assertions": 5703,
+  "all_exit_zero": true,
+  "all_stderr_empty": true
+}

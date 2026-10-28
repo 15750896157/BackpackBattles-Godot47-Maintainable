@@ -1,0 +1,5619 @@
+{
+  "format": "native-backpack-pve-assets",
+  "version": "0.1.2",
+  "source_project": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot461_Local\\project",
+  "bindings": {
+    "utility_knife": {
+      "name": "Dagger",
+      "scene": "res://Items/Dagger.tscn",
+      "png": "res://Items/Sprites/Dagger.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/Dagger.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Animations/DaggerAnimation.tscn",
+      "scene_sha256": "3e2fd9a0407394de9608748cf4db834b9e56ce9762ef49caa13295fe51fe1cac",
+      "definition_id": "utility_knife",
+      "kind": "item",
+      "reason": "短匕首刀刃与轻型近战用途一致",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "2",
+        "maxDam": "5",
+        "cd": "3.5",
+        "staminaCost": "0",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "1966e21409c299ab1d44217c2e7e16e2ec8ad719d812c289d9c132c4b6ad2cfa"
+    },
+    "iron_sword": {
+      "name": "Hero Sword",
+      "scene": "res://Items/HeroSword.tscn",
+      "png": "res://Items/Sprites/HeroSword.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/HeroSword.png",
+        "res://Assets/Particles/GlowingDot_small.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/HeroSwordDragParticles.material"
+      ],
+      "animation": "res://Items/Animations/HeroSwordAnimation.tscn",
+      "scene_sha256": "e4dd71d663b526ea268f981a608b78f11f7bdd48f2d6a72182530c843743dbf9",
+      "definition_id": "iron_sword",
+      "kind": "item",
+      "reason": "原金属长剑；同属直剑近战武器",
+      "planned_shape_id": "shape_3_i",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "2",
+        "maxDam": "4",
+        "cd": "1.4",
+        "staminaCost": "0.7",
+        "block": "",
+        "p1": "1:dam",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "e26d7b6ac88028fb75e5ca7d5c5bdaff13bac80dedb648738a89c0cf3afb8fcf"
+    },
+    "broad_axe": {
+      "name": "Axe",
+      "scene": "res://Items/Exclusive/Axe.tscn",
+      "png": "res://Items/Exclusive/Sprites/Axe.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Axe.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Exclusive/Animations/AxeAnimation.tscn",
+      "scene_sha256": "ed3e35464a681626dd7691593373751fe10eb1f9f1e10cf5aeedd772b411a8f5",
+      "definition_id": "broad_axe",
+      "kind": "item",
+      "reason": "原斧头，斧刃轮廓与重武器类别一致",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "3",
+        "maxDam": "6",
+        "cd": "2",
+        "staminaCost": "1.4",
+        "block": "",
+        "p1": "1",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "2804e20be899bf1c2275af0921fe584a18cadf104c346026dadf4bd5d1413c7c"
+    },
+    "stone_hammer": {
+      "name": "Hammer",
+      "scene": "res://Items/Hammer.tscn",
+      "png": "res://Items/Sprites/Hammer.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 5,
+      "all_icon_textures": [
+        "res://Items/Sprites/Hammer.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Animations/HammerAnimation.tscn",
+      "scene_sha256": "3c21f87b34309a27050042ae3c306db5e37d822c51ca3a89312a720d2a1bb617",
+      "definition_id": "stone_hammer",
+      "kind": "item",
+      "reason": "原锤类重武器；不宣称原图材质是石头",
+      "planned_shape_id": "shape_3_i",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "10",
+        "maxDam": "13",
+        "cd": "2",
+        "staminaCost": "3",
+        "block": "",
+        "p1": "0.5:dur_stun",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "7f2e70010712ace3e8b5445a17a111a35bfb7b6a0a8d06541f504284fe268f23"
+    },
+    "hunting_spear": {
+      "name": "Spear",
+      "scene": "res://Items/Spear.tscn",
+      "png": "res://Items/Sprites/Spear.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Sprites/Spear.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Animations/SpearAnimation.tscn",
+      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "definition_id": "hunting_spear",
+      "kind": "item",
+      "reason": "原长矛，同类长柄刺击轮廓",
+      "planned_shape_id": "shape_3_i",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "Block",
+        "minDam": "3",
+        "maxDam": "8",
+        "cd": "1.5",
+        "staminaCost": "1",
+        "block": "",
+        "p1": "4:blockremoval",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "efb6a706bd3f6e7a9442cb4ddcb3be9f0e2e0a422eaf5e9f22ac02faa7c7cc70"
+    },
+    "twin_needles": {
+      "name": "Scissorswords",
+      "scene": "res://Items/Exclusive/Scissorswords.tscn",
+      "png": "res://Items/Exclusive/Sprites/ScissorSwords.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/ScissorSwords.png",
+        "res://Items/Sprites/Lightsaber_glow.png",
+        "res://Assets/Particles/GlowingDot_small.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/ScissorSwordsDragParticles.material",
+        "res://Items/Particles/LightsaberActivationParticles.tres",
+        "res://Shader/AdditiveCanvasItemMaterial.tres"
+      ],
+      "animation": "res://Items/Exclusive/Animations/ScissorswordsAnimation.tscn",
+      "scene_sha256": "e5b7aa7f9c2ca112f4c8a6e88662a3cfcfea7b2f09fbba09ce8f4ff6a81c897f",
+      "definition_id": "twin_needles",
+      "kind": "item",
+      "reason": "原成对细刃；保留原剪剑造型，不宣称已有双针图",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "Holy",
+        "tags": "",
+        "gain": "Lucky,Regeneration,Blind",
+        "use": "Lucky,Regeneration",
+        "remove": "",
+        "minDam": "16",
+        "maxDam": "22",
+        "cd": "1.4",
+        "staminaCost": "1",
+        "block": "",
+        "p1": "3:regent",
+        "p2": "1:dam_blind",
+        "p3": "10:blind",
+        "p4": "5:dur_blind",
+        "p5": "3:luckt"
+      },
+      "png_sha256": "ab043f152cbf38cd98b598a3745e33d4c5a8199b374b62a8d5564e95fed37608"
+    },
+    "sling": {
+      "name": "Bag of Stones",
+      "scene": "res://Items/BagofStones.tscn",
+      "png": "res://Items/Sprites/BagofStones.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/BagofStones.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "c20c11cef27ee2c39534103b77ed836e27e9c342f641ba480696667e0e02104d",
+      "definition_id": "sling",
+      "kind": "item",
+      "reason": "原投石袋，同属投石远程装具；原库无独立弹弓贴图",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "ebfbeb469783edd831b78b6882411502e570ba89f2f5e73b2529479c2a861225"
+    },
+    "heavy_cleaver": {
+      "name": "Double Axe",
+      "scene": "res://Items/Exclusive/DoubleAxe.tscn",
+      "png": "res://Items/Exclusive/Sprites/DoubleAxe.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "native_cell_count": 8,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/DoubleAxe.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Exclusive/Animations/DoubleAxeAnimation.tscn",
+      "scene_sha256": "25b0772cf67d9501091c7b034a41c033224637d19a8b9623fb8b3e896732d6ed",
+      "definition_id": "heavy_cleaver",
+      "kind": "item",
+      "reason": "原双刃大斧，强化后的重型刃武器",
+      "planned_shape_id": "shape_4_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "6",
+        "maxDam": "12",
+        "cd": "1.8",
+        "staminaCost": "2",
+        "block": "",
+        "p1": "2",
+        "p2": "3",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "83cc4e3a6f469eb9825551f6c6f2720acfd2a574f4aaedd2c1141089609a2cd5"
+    },
+    "buckler": {
+      "name": "Wooden Buckler",
+      "scene": "res://Items/WoodenBuckler.tscn",
+      "png": "res://Items/Sprites/WoodenBuckler.png",
+      "native_type": "Shield",
+      "native_shape": [],
+      "native_cell_count": 0,
+      "all_icon_textures": [
+        "res://Items/Sprites/WoodenBuckler.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "e23d33e1e147f80987db40cce48d3d1c8d29e1ee894a83d9b7fa5010f84b4b16",
+      "definition_id": "buckler",
+      "kind": "item",
+      "reason": "原圆形小盾，同类防御物品",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shield",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "7:damblock",
+        "p2": "0.3",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "965a667b8462da5e3df4f15d9049c6dd8375666b754c8afa9adc7e0ce1b002bc"
+    },
+    "plated_vest": {
+      "name": "Stone Armor",
+      "scene": "res://Items/Exclusive/StoneArmor.tscn",
+      "png": "res://Items/Exclusive/Sprites/StoneArmor.png",
+      "native_type": "Armor",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/StoneArmor.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "52c156a0404eb2e695294ff253bf15f51495e7bd205486a9b05a2564b5985eff",
+      "definition_id": "plated_vest",
+      "kind": "item",
+      "reason": "原硬质护甲，护甲机制与装甲轮廓",
+      "planned_shape_id": "shape_4_o",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Armor",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "Spikes",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "4",
+        "staminaCost": "",
+        "block": "120",
+        "p1": "1:spikes",
+        "p2": "2:empower",
+        "p3": "50:healtht",
+        "p4": "20:staminacost",
+        "p5": "40:blockperhealth"
+      },
+      "png_sha256": "09968d012d35172c86dda15b990b1902f095f851a2b1e9a6295fa453c4fd0508"
+    },
+    "tower_shield": {
+      "name": "Shield of Valor",
+      "scene": "res://Items/ShieldofValor.tscn",
+      "png": "res://Items/Sprites/ShieldofValor.png",
+      "native_type": "Shield",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Sprites/ShieldofValor.png",
+        "res://Assets/Particles/GlowingDot_small.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/HolyArmorDragParticles.tres"
+      ],
+      "animation": null,
+      "scene_sha256": "4f82f59e57a15d24629b9a956873a479b22131fbf3738e403fc557a5be9131cf",
+      "definition_id": "tower_shield",
+      "kind": "item",
+      "reason": "原大型盾牌，同类长盾防御物品",
+      "planned_shape_id": "shape_4_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shield",
+        "extraTypes": "Holy",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "14:damblock",
+        "p2": "0.7:stamina",
+        "p3": "30:block",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "7e4d2150543894c1a4043d6c6480389a3f5f4bf7fefd9707ec3832e90d03f81e"
+    },
+    "spiked_guard": {
+      "name": "Spiked Shield",
+      "scene": "res://Items/SpikedShield.tscn",
+      "png": "res://Items/Sprites/SpikedShield.png",
+      "native_type": "Shield",
+      "native_shape": [],
+      "native_cell_count": 0,
+      "all_icon_textures": [
+        "res://Items/Sprites/SpikedShield.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "bd998a4060f0c1a2369fa7087eca3155db2284167675189584d80a8f3ffbf8fb",
+      "definition_id": "spiked_guard",
+      "kind": "item",
+      "reason": "原尖刺盾，防御反击机制与尖刺轮廓",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shield",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Spikes",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "9:damblock",
+        "p2": "0.3:stamina",
+        "p3": "1:spikes",
+        "p4": "5:maxspikes",
+        "p5": ""
+      },
+      "png_sha256": "b6237c05d6c7d28224f66c2a988f123ba6f6407abe290ddcceee29c04b2cc6f7"
+    },
+    "leather_wrap": {
+      "name": "Leather Armor",
+      "scene": "res://Items/LeatherArmor.tscn",
+      "png": "res://Items/Sprites/LeatherArmor.png",
+      "native_type": "Armor",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Sprites/LeatherArmor.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "213236085cda0fc2d9a6ff4f946823cebb2362ebea5b7263772842de693b9836",
+      "definition_id": "leather_wrap",
+      "kind": "item",
+      "reason": "原皮甲，皮革防护类别；保持原皮甲外观",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Armor",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "45",
+        "p1": "3:resist",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "b76fdbc0ae28ceaa2dc95d8388f7d2837e64fe899fc5ccc67cb225614ace2ccb"
+    },
+    "repair_kit": {
+      "name": "Wrench",
+      "scene": "res://Items/Exclusive/Wrench.tscn",
+      "png": "res://Items/Exclusive/Sprites/Wrench.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Wrench.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Exclusive/Animations/WrenchAnimation.tscn",
+      "scene_sha256": "c7810b1bc447b1cb6e2e10875469aced268e4ca0cd2df8afad5dfabaff14327e",
+      "definition_id": "repair_kit",
+      "kind": "item",
+      "reason": "原维修扳手工具；维修用途一致，保留扳手造型",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "3",
+        "maxDam": "7",
+        "cd": "2.2",
+        "staminaCost": "1",
+        "block": "",
+        "p1": "10:block",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "b7063494b876aa083706bd6cda4ce1d3fcb64859d5d9770407f108d8edc42275"
+    },
+    "stamina_flask": {
+      "name": "Heroic Potion",
+      "scene": "res://Items/HeroicPotion.tscn",
+      "png": "res://Items/Sprites/Flask5.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/Flask5.png",
+        "res://Items/Masks/Flask5_Mask.png",
+        "res://Items/Sprites/Flask5_Overlay.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Animations/HeroicPotionAnimation.tscn",
+      "scene_sha256": "931502a9113435f9e1d9a8e7fcf8bcec32ad63d88c83990acaed0663087f05e4",
+      "definition_id": "stamina_flask",
+      "kind": "item",
+      "reason": "原耐力药水，同类耐力补给瓶",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Empower",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2",
+        "p2": "1",
+        "p3": "1",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "fcc8b9f627075e4226ee90bb469aa43e2a8b1979cd0fcc511d20718d8980ddb6"
+    },
+    "travel_ration": {
+      "name": "Slice of Bread",
+      "scene": "res://Items/Exclusive/SliceofBread.tscn",
+      "png": "res://Items/Exclusive/Sprites/SliceofBread.png",
+      "native_type": "Food",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/SliceofBread.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "f1a381a01c30daeb43ab6439913f0cb31f71a2794236c0dd7320495f59e4c89d",
+      "definition_id": "travel_ration",
+      "kind": "item",
+      "reason": "原食物补给，旅行口粮对应面包",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Food",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "5",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2.5:staminat",
+        "p2": "0.5:stamina",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "1784f3e195b1578b5c21cf5ea2f00afe036b2cb34b1dd0df7321c5ef7b9ef4d4"
+    },
+    "bandage_roll": {
+      "name": "Healing Herbs",
+      "scene": "res://Items/HealingHerbs.tscn",
+      "png": "res://Items/Sprites/HealingHerbs.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/HealingHerbs.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "definition_id": "bandage_roll",
+      "kind": "item",
+      "reason": "原低阶治疗耗材；原库无绷带卷，不伪造布卷图",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Nature",
+        "tags": "",
+        "gain": "Regeneration",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "746e611267fea2863f88dde055f6b34b87d756314eb14e31a7e9a02ee83d5f48"
+    },
+    "cleansing_salt": {
+      "name": "Divine Potion",
+      "scene": "res://Items/Exclusive/DivinePotion.tscn",
+      "png": "res://Items/Exclusive/Sprites/HolyPotion_flask.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/HolyPotion_flask.png",
+        "res://Items/Exclusive/Sprites/Masks/HolyPotion_mask.png",
+        "res://Items/Exclusive/Sprites/HolyPotion_overlay.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Materials/DivinePotion.material"
+      ],
+      "animation": "res://Items/Exclusive/Animations/DivinePotionAnimation.tscn",
+      "scene_sha256": "513560124bc74e881716ebac4aeb645295c8ec839e8eac3c55eb70275694ae53",
+      "definition_id": "cleansing_salt",
+      "kind": "item",
+      "reason": "原净化型神圣药水；保留净化药瓶外观而非伪造盐罐",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "extraTypes": "Holy",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "Debuff",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "10:debufft",
+        "p2": "10:cleanses",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "c6fcc247e5115c4f2ebd6769552bb98019b2c9840a66feb3b586ab54bc221bae"
+    },
+    "sharpening_stone": {
+      "name": "Whetstone",
+      "scene": "res://Items/Whetstone.tscn",
+      "png": "res://Items/Sprites/Whetstone.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/Whetstone.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "f18f4927989468185baed745952efbf9d7b1e7c5e47318d38c1d26ed0145774d",
+      "definition_id": "sharpening_stone",
+      "kind": "item",
+      "reason": "原磨刀石，同名同用途",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1:dam",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "bdf8f5299f47d99ccca421b4dd441eeb7534653ec4496249999caf19b96d669f"
+    },
+    "clockwork_spring": {
+      "name": "Spring Loader",
+      "scene": "res://Items/Exclusive/SpringLoader.tscn",
+      "png": "res://Items/Exclusive/Sprites/Springloader_shield.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Springloader_shield.png",
+        "res://Items/Exclusive/Sprites/Springloader_spring.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "4773eb91390e4821c248d2d458cff3b976cf4a3945d0cec576cfe288d4ac192d",
+      "definition_id": "clockwork_spring",
+      "kind": "item",
+      "reason": "原弹簧装置，有独立弹簧与护盾组合精灵",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "7.2",
+        "staminaCost": "",
+        "block": "",
+        "p1": "10:speed",
+        "p2": "2:cdadvance",
+        "p3": "35:speed2",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "47920146cb0b38d5a4387bc6a6ee8db306eb2da8466ba93610073a25b041fb05"
+    },
+    "lucky_coin": {
+      "name": "Lucky Clover",
+      "scene": "res://Items/LuckyClover.tscn",
+      "png": "res://Items/Sprites/LuckyClover.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/LuckyClover.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "bbb7a665cfc458ee9cd7284cdae9476dc7f09fdf82d1f22e73650864319bf746",
+      "definition_id": "lucky_coin",
+      "kind": "item",
+      "reason": "原幸运饰物；币形图无可购原descriptor时使用幸运三叶草，不伪称硬币",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Nature",
+        "tags": "",
+        "gain": "Lucky",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "3354e1995cddecd2677676a1ea3f24b16f78cb483c3d564dfd1975c9581333ff"
+    },
+    "scout_lens": {
+      "name": "Magic Mirror",
+      "scene": "res://Items/Exclusive/MagicMirror.tscn",
+      "png": "res://Items/Exclusive/Sprites/MagicMirror.png",
+      "native_type": "Spell",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/MagicMirror.png",
+        "res://Assets/Particles/Spot1.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/FrozenFlameParticles.material",
+        "res://Items/Exclusive/Particles/FrozenFlame.material"
+      ],
+      "animation": null,
+      "scene_sha256": "419a83fd27f93dcb2bd2a94a6b9486f2b4b7ff7abff6da6c9c6856d4beba8600",
+      "definition_id": "scout_lens",
+      "kind": "item",
+      "reason": "原光学镜面器具，光学辅助类别；原外观为镜子",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Spell",
+        "extraTypes": "Holy,Ice,Magic",
+        "tags": "",
+        "gain": "Buff",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "6",
+        "staminaCost": "",
+        "block": "",
+        "p1": "20:buffs",
+        "p2": "20:max",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "20d80b1b977f1a02d5c423ca8eb63de3e1d784e6f97afc83ac9fb288dc2ee9b1"
+    },
+    "merchant_token": {
+      "name": "Customer Card",
+      "scene": "res://Items/CustomerCard.tscn",
+      "png": "res://Items/Sprites/CustomerCard.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/CustomerCard.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "910f5cd20a839b6d8afaf59134f211b57d6d5c9d1d5138ee6568f2774bab0e02",
+      "definition_id": "merchant_token",
+      "kind": "item",
+      "reason": "原顾客卡，商店经济辅助用途一致",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "bed5723f14b0c2a16822938cb6c6151b125dfb8c467220ec86cb721de789d3c2"
+    },
+    "storage_hook": {
+      "name": "Rope",
+      "scene": "res://Items/Exclusive/Rope.tscn",
+      "png": "res://Items/Exclusive/Sprites/Rope.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Rope.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "b35aa89490d4a3ccd5136e7d326a02fa701e4e9711c5357728b8ce87297749f8",
+      "definition_id": "storage_hook",
+      "kind": "item",
+      "reason": "原绳索工具，收纳挂载用途近似；原库无专属挂钩图",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "10:speed",
+        "p2": "6:dur",
+        "p3": "50:max",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "26e1ca0aac65a5a1632a1b44827dae27e3e94630352e2a147775151c31893eb5"
+    },
+    "gear_link": {
+      "name": "Cog",
+      "scene": "res://Items/Exclusive/Cog.tscn",
+      "png": "res://Items/Exclusive/Sprites/Cog.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Cog.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "615a8fa28adee346d9fa5e694f990f0b036564515f2125523d26157cf2c85a13",
+      "definition_id": "gear_link",
+      "kind": "item",
+      "reason": "原齿轮，同类机械连接件",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "5",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "8e6141e2a78865b85d5f68134f5cddf93c5019cf13a2b0cd5571a86b2bb7e5a1"
+    },
+    "focus_prism": {
+      "name": "Perfect Amethyst",
+      "scene": "res://Items/Gems/PerfectAmethyst.tscn",
+      "png": "res://Items/Gems/Sprites/PerfectAmethyst.png",
+      "native_type": "Gem",
+      "native_shape": [],
+      "native_cell_count": 0,
+      "all_icon_textures": [
+        "res://Items/Gems/Sprites/PerfectAmethyst.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "c1fafef7527a7360ab7eec8c2a3469b889c2933bbb2b8c9d7569ff85a80140e0",
+      "definition_id": "focus_prism",
+      "kind": "item",
+      "reason": "原晶体宝石，可复用棱镜轮廓；保留原紫晶色彩",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Gem",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "Debuff",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "1",
+        "staminaCost": "",
+        "block": "",
+        "p1": "45",
+        "p2": "2:buffs",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "666c862f073733bec13d7c4788955295b0e6f25595658386084363f60f15ff70"
+    },
+    "row_banner": {
+      "name": "Burning Banner",
+      "scene": "res://Items/Exclusive/BurningBanner.tscn",
+      "png": "res://Items/Exclusive/Sprites/BurningBanner.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/BurningBanner.png",
+        "res://Assets/Particles/FireParticle2.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "definition_id": "row_banner",
+      "kind": "item",
+      "reason": "原战旗，按行支援仍使用原旗帜与火焰材质",
+      "planned_shape_id": "shape_3_i",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Holy,Fire",
+        "tags": "",
+        "gain": "Regeneration,Blind",
+        "use": "",
+        "remove": "Buff",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "4.2",
+        "staminaCost": "",
+        "block": "",
+        "p1": "5:dur_blind",
+        "p2": "2:buffs",
+        "p3": "2:regen",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df"
+    },
+    "column_standard": {
+      "name": "Burning Banner",
+      "scene": "res://Items/Exclusive/BurningBanner.tscn",
+      "png": "res://Items/Exclusive/Sprites/BurningBanner.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/BurningBanner.png",
+        "res://Assets/Particles/FireParticle2.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "definition_id": "column_standard",
+      "kind": "item",
+      "reason": "原战旗；列式防御属于PvE规则，视觉不另造蓝旗",
+      "planned_shape_id": "shape_3_i",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Holy,Fire",
+        "tags": "",
+        "gain": "Regeneration,Blind",
+        "use": "",
+        "remove": "Buff",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "4.2",
+        "staminaCost": "",
+        "block": "",
+        "p1": "5:dur_blind",
+        "p2": "2:buffs",
+        "p3": "2:regen",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df"
+    },
+    "star_compass": {
+      "name": "Star of Courage",
+      "scene": "res://Items/Exclusive/StarofCourage.tscn",
+      "png": "res://Items/Exclusive/Sprites/StarofCourage.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/StarofCourage.png",
+        "res://Assets/Star.png",
+        "res://Assets/Light/CircleLight.png"
+      ],
+      "material_refs": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Exclusive/Particles/StarofCourageDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "4e125fa79dabb198db6a58597273b398b6f0b2be7b2e17c27b16ce424d00d00e",
+      "definition_id": "star_compass",
+      "kind": "item",
+      "reason": "原星形支援器具，星位作用视觉一致；原库无罗盘",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "5:uniques",
+        "p2": "5:stamina",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "f7a1c65e106845e90bc6a2fdf0ba69dec9e2df68dd24c0a2871a6f32bad8fcbe"
+    },
+    "compact_rack": {
+      "name": "Box of Riches",
+      "scene": "res://Items/BoxofRiches.tscn",
+      "png": "res://Items/Sprites/BoxofRiches.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/BoxofRiches.png",
+        "res://Assets/Particles/GlowingDot_small.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/BoxofRichesDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "63dfb9af95f8ed85ea723f5a4248693ff62bc25715bf5d2d74eccb5541432bb4",
+      "definition_id": "compact_rack",
+      "kind": "item",
+      "reason": "原紧凑收纳盒，保留原箱体轮廓；使用普通Item而非Toolbox背包类",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "30",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "dae7a3806b152f90207c5eb3b296333bad6970d474a59de972f1f080dc299018"
+    },
+    "resonant_bell": {
+      "name": "Spirit Bells",
+      "scene": "res://Items/Exclusive/SpiritBells.tscn",
+      "png": "res://Items/Exclusive/Sprites/SpiritBells.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/SpiritBells.png",
+        "res://Assets/Particles/GlowingDot.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/CapofResilienceAuraParticles.material",
+        "res://Items/Exclusive/Particles/TimeMelting.material",
+        "res://Items/Exclusive/Particles/SpiritBellsDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "a2a239e69622327c9cad1e7ae8efca6a6c421287339eba70788014de02f60126",
+      "definition_id": "resonant_bell",
+      "kind": "item",
+      "reason": "原铃铛，同类共鸣铃器",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Magic",
+        "tags": "",
+        "gain": "Buff",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "8",
+        "staminaCost": "",
+        "block": "",
+        "p1": "30:damreduction",
+        "p2": "2:dur_base",
+        "p3": "1:dur_bonus",
+        "p4": "30:buffs",
+        "p5": ""
+      },
+      "png_sha256": "875e4a421ac449426d2ee17fea75db85c451495e05acb9835e345bf02da6c051"
+    },
+    "counterweight": {
+      "name": "Sandbag",
+      "scene": "res://Items/Exclusive/Sandbag.tscn",
+      "png": "res://Items/Exclusive/Sprites/SirSand.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/SirSand.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/CapofResilienceAuraParticles.material",
+        "res://Items/Exclusive/Particles/SandbagDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "41002ad5a677cc60ba3713dfd73964364ee4acd6ad40a957b357d3fb7ec985ee",
+      "definition_id": "counterweight",
+      "kind": "item",
+      "reason": "原沙袋配重，同类重量装具",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Blind",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "25:damreduction",
+        "p2": "7:dur",
+        "p3": "3:blind",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "f27f0867ca1c924eae10ff85b4adb3c2ecabd45e29aaab7ae626280286e20b8a"
+    },
+    "venom_needle": {
+      "name": "Poison Dagger",
+      "scene": "res://Items/PoisonDagger.tscn",
+      "png": "res://Items/Sprites/PoisonDagger.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/PoisonDagger.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/PoisonDaggerDragParticles.tres"
+      ],
+      "animation": "res://Items/Animations/PoisonDaggerAnimation.tscn",
+      "scene_sha256": "51850460b0c2ecb9b69343a2b9d2926779e0fbd34bef3f81618e06d879c7521a",
+      "definition_id": "venom_needle",
+      "kind": "item",
+      "reason": "原毒匕首，毒刃机制一致",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Poison",
+        "use": "",
+        "remove": "",
+        "minDam": "5",
+        "maxDam": "7",
+        "cd": "1.9",
+        "staminaCost": "0",
+        "block": "",
+        "p1": "2",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "7a3c6022d46a622a754adb027461a000d100db0aa65e9f046a9a6348efc6936a"
+    },
+    "ember_stone": {
+      "name": "Burning Coal",
+      "scene": "res://Items/Gems/BurningCoal.tscn",
+      "png": "res://Items/Sprites/BurningCoal.png",
+      "native_type": "Gem",
+      "native_shape": [],
+      "native_cell_count": 0,
+      "all_icon_textures": [
+        "res://Items/Sprites/BurningCoal.png",
+        "res://Assets/Particles/SparkParticle1.png",
+        "res://Items/Sprites/TorchLight.png"
+      ],
+      "material_refs": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/BurningCoalDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "537c1b3333cc58ebcd1abfa4dd5a15ad507ca50d9e9c337f5ac487666d6bf343",
+      "definition_id": "ember_stone",
+      "kind": "item",
+      "reason": "原燃烧煤块，同类灼烧石块",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Gem",
+        "extraTypes": "Fire",
+        "tags": "",
+        "gain": "Heat",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "5",
+        "staminaCost": "",
+        "block": "12",
+        "p1": "6",
+        "p2": "1",
+        "p3": "7:coldresist",
+        "p4": "2",
+        "p5": "3"
+      },
+      "png_sha256": "4097ec0008cf624178c85a9c44fa417a16241ee3421ab64b875640693d324649"
+    },
+    "healing_herb": {
+      "name": "Healing Herbs",
+      "scene": "res://Items/HealingHerbs.tscn",
+      "png": "res://Items/Sprites/HealingHerbs.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/HealingHerbs.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "definition_id": "healing_herb",
+      "kind": "item",
+      "reason": "原治疗草药，同名同用途",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Nature",
+        "tags": "",
+        "gain": "Regeneration",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "746e611267fea2863f88dde055f6b34b87d756314eb14e31a7e9a02ee83d5f48"
+    },
+    "regeneration_leaf": {
+      "name": "Yggdrasil Leaf",
+      "scene": "res://Items/YggdrasilLeaf.tscn",
+      "png": "res://Items/Sprites/YggdrasilLeaf.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/YggdrasilLeaf.png",
+        "res://Assets/Light/CircleLight.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "045521cc0458532bc07f8519ab55cb73516158053e7977aa5aa4590b0afbd736",
+      "definition_id": "regeneration_leaf",
+      "kind": "item",
+      "reason": "原恢复型叶片，草药再生类别一致",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Nature,Magic",
+        "tags": "",
+        "gain": "Mana,Regeneration",
+        "use": "",
+        "remove": "Debuff",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2:mana",
+        "p2": "1:regen",
+        "p3": "5:manat",
+        "p4": "20:heal",
+        "p5": "2:cleanse"
+      },
+      "png_sha256": "4d05bfa47a1385c0d4133fc5ea44770ab17108a2560def814668eaefc67e3297"
+    },
+    "fracture_charm": {
+      "name": "Cursed Hair Comb",
+      "scene": "res://Items/CursedHairComb.tscn",
+      "png": "res://Items/Sprites/VampiricHairComb.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/VampiricHairComb.png",
+        "res://Assets/Particles/GlowingDot_small.png",
+        "res://Items/Sprites/AmuletGlow.png"
+      ],
+      "material_refs": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres"
+      ],
+      "animation": null,
+      "scene_sha256": "21a1270519d391da92bf24672a7f3cef70a797eb37a79c7c472359aff714a6d5",
+      "definition_id": "fracture_charm",
+      "kind": "item",
+      "reason": "原诅咒饰物，负面状态辅助类别；保留骨梳原貌",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Vampiric",
+        "tags": "",
+        "gain": "Vampirism",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "6:vampirism",
+        "p2": "25:lifesteal",
+        "p3": "30:healamp",
+        "p4": "",
+        "p5": "8:lifesteal_scaling"
+      },
+      "png_sha256": "5efe01ef648e9c0710f961e669b521b545714164269baa3bf6481d139efa3ebf"
+    },
+    "quicksand_vial": {
+      "name": "Pocket Sand",
+      "scene": "res://Items/PocketSand.tscn",
+      "png": "res://Items/Sprites/PocketSand.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/PocketSand.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/PocketSandDragParticles.tres"
+      ],
+      "animation": null,
+      "scene_sha256": "3d955f8c5ab93e06167091bd88cca166f71df8bf004baef205d6f23c8dc0a868",
+      "definition_id": "quicksand_vial",
+      "kind": "item",
+      "reason": "原沙类减益耗材；原图为沙堆，不假称玻璃瓶",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Nature",
+        "tags": "",
+        "gain": "Blind",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "24081b43403cf90b51504ec1b9bef90d3d7401716490916ee0b69ce8488d277b"
+    },
+    "blood_cup": {
+      "name": "Vampiric Potion",
+      "scene": "res://Items/Exclusive/VampiricPotion.tscn",
+      "png": "res://Items/Exclusive/Sprites/VampiricPotion_flask.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/VampiricPotion_flask.png",
+        "res://Items/Exclusive/Sprites/Masks/VampiricPotion_mask.png",
+        "res://Items/Exclusive/Sprites/VampiricPotion_overlay.png",
+        "res://Assets/Buffs/Vampirism.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Materials/VampiricPotion.material"
+      ],
+      "animation": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
+      "scene_sha256": "f3af5f763268ce420dd0bc6711795f3b7f47a932ccdef988d553aed0d9391b83",
+      "definition_id": "blood_cup",
+      "kind": "item",
+      "reason": "原吸血药水，血液与吸血用途一致",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "extraTypes": "Vampiric",
+        "tags": "Lifesteal",
+        "gain": "Vampirism",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "80:healtht",
+        "p2": "3:vampirism",
+        "p3": "15:dam",
+        "p4": "100:lifesteal",
+        "p5": ""
+      },
+      "png_sha256": "bed59f4d004c2e744fe8a16e41add12e7c9e5632f138bba37c17866c9a19d5c7"
+    },
+    "cooling_fan": {
+      "name": "Time Dilator",
+      "scene": "res://Items/Exclusive/TimeDilator.tscn",
+      "png": "res://Items/Exclusive/Sprites/TimeDilator.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/TimeDilator.png",
+        "res://Assets/Light/RingLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/CapofResilienceAuraParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "78a3b72e8d67703cb8401467c13befe3b632659d863d217d2c98900d84b3e253",
+      "definition_id": "cooling_fan",
+      "kind": "item",
+      "reason": "原节奏调节机械装置；原库无风扇，不生成风扇图",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "1",
+        "staminaCost": "",
+        "block": "",
+        "p1": "30:slow",
+        "p2": "6:speed",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "e22228eba512a378756e7c1b287942c0e5ebc922d1858132e084442c2ef1053f"
+    },
+    "iron_nail": {
+      "name": "Walrus Tusk",
+      "scene": "res://Items/WalrusTusk.tscn",
+      "png": "res://Items/Sprites/WalrusTusk.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/WalrusTusk.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "affb6efe4e978466e106daac7d85384098773951860f694d9e0e5a5ebcb82efd",
+      "definition_id": "iron_nail",
+      "kind": "item",
+      "reason": "原尖刺形伤害组件；保留獠牙外观，不假称金属钉",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Nature",
+        "tags": "",
+        "gain": "Spikes",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "edd3551e24798b56b9c4e12182bef555131af1141a863d3e4cb2a6f7a7543b04"
+    },
+    "glass_bead": {
+      "name": "Regular Sapphire",
+      "scene": "res://Items/Gems/RegularSapphire.tscn",
+      "png": "res://Items/Gems/Sprites/RegularSapphire.png",
+      "native_type": "Gem",
+      "native_shape": [],
+      "native_cell_count": 0,
+      "all_icon_textures": [
+        "res://Items/Gems/Sprites/RegularSapphire.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "371bbbb6d217cf7e16076fa7e7f3e7e4aa48ce14eb4b08e2655545080d420681",
+      "definition_id": "glass_bead",
+      "kind": "item",
+      "reason": "原小型珠状宝石，玻璃珠状轮廓",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Gem",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Cold",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "4",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1",
+        "p2": "5",
+        "p3": "4",
+        "p4": "1",
+        "p5": "4"
+      },
+      "png_sha256": "b2bf045a6722cf612d7a557819b463cf4a717cd2426875c0926ef1987b6b22ae"
+    },
+    "field_manual": {
+      "name": "Smithing For Dummies",
+      "scene": "res://Items/Exclusive/SmithingForDummies.tscn",
+      "png": "res://Items/Exclusive/Sprites/SmithingForDummies.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/SmithingForDummies.png",
+        "res://Assets/Particles/SparkParticle1.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/SmithingForDummiesDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "3b6771ea17ddb64a0dfd574761a16bce5bd3cc1b17cc17ce39ca4d73609ab45d",
+      "definition_id": "field_manual",
+      "kind": "item",
+      "reason": "原锻造手册，同类武器支援书籍",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1:dam",
+        "p2": "40:stamina",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "cafcd4d4cabafe85566a9e2c4b94ec121322c27acff07abcd2aaf476ccfced08"
+    },
+    "salvage_pouch": {
+      "name": "Piggybank",
+      "scene": "res://Items/Piggybank.tscn",
+      "png": "res://Items/Sprites/Piggybank.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/Piggybank.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "025c82aec318f3897e869a562c0a6f4d0e3c041064c89bc7c521b17276296f85",
+      "definition_id": "salvage_pouch",
+      "kind": "item",
+      "reason": "原存钱器，经济收集机制；使用普通Item而非ProtectivePurse背包类",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1",
+        "p2": "2:maxhealth",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "3377fde1ba58b7131df695c586dd4a677cca65f80c5ab4a04f49fd013c2ab1a5"
+    },
+    "arsenal_bracer": {
+      "name": "Claws of Attack",
+      "scene": "res://Items/ClawsofAttack.tscn",
+      "png": "res://Items/Sprites/ClawsofAttack.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/ClawsofAttack.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Animations/ClawsofAttackAnimation.tscn",
+      "scene_sha256": "4b93868528d6ee770946c768d973aae06858bbb6bb989b9c95262b642c79944d",
+      "definition_id": "arsenal_bracer",
+      "kind": "item",
+      "reason": "原手部攻击增益装具，同类武器增强护腕",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Empower",
+        "use": "",
+        "remove": "",
+        "minDam": "4",
+        "maxDam": "5",
+        "cd": "1.6",
+        "staminaCost": "0.5",
+        "block": "",
+        "p1": "5:speedperspike",
+        "p2": "1000:maxspeed",
+        "p3": "4:attackst",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "a49becad534bd79d0c5f39eba775f2ac0375262082e00ba5d1ea4dc8d13da557"
+    },
+    "chain_blade": {
+      "name": "Chainsaw",
+      "scene": "res://Items/Exclusive/Chainsaw.tscn",
+      "png": "res://Items/Exclusive/Sprites/Chainsaw0.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Chainsaw0.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Exclusive/Animations/ChainsawAnimation.tscn",
+      "scene_sha256": "47aacd189a1f66e30b8cf3f936bc255bbd8be5563b4394bb6b8ae5375d26d44e",
+      "definition_id": "chain_blade",
+      "kind": "item",
+      "reason": "原链锯，链式刃具轮廓和机械攻击类别一致",
+      "planned_shape_id": "shape_4_z",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Buff",
+        "use": "",
+        "remove": "Buff",
+        "minDam": "8",
+        "maxDam": "10",
+        "cd": "1.2",
+        "staminaCost": "0.7",
+        "block": "",
+        "p1": "5:buffs",
+        "p2": "5:slow",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "27b251fcbb5dc5acf1cff0f17909553e20ca4354bbe96670b7a31b71581fcb64"
+    },
+    "repeater_crossbow": {
+      "name": "Repeater",
+      "scene": "res://Items/Exclusive/Repeater.tscn",
+      "png": "res://Items/Exclusive/Sprites/Repeater.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Repeater.png",
+        "res://Assets/Particles/GlowingDot.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/RepeaterDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "02150dc178b2c7ab119379e6884509940d710199cd25a4b9d43be68a397523d6",
+      "definition_id": "repeater_crossbow",
+      "kind": "item",
+      "reason": "原连发弩，同名同类武器",
+      "planned_shape_id": "shape_4_t",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "12",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "0f6050f8d28a77023f922e13d98b38ae07a7fd3420b9df5f49cb7e9f84277d18"
+    },
+    "crescent_glaive": {
+      "name": "Halberd",
+      "scene": "res://Items/Exclusive/Halberd.tscn",
+      "png": "res://Items/Exclusive/Sprites/Halberd.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Halberd.png",
+        "res://CharacterClasses/Pyromancer/Skins/Normal/Default/Flame.png",
+        "res://Items/Exclusive/Sprites/HalberdShineMask.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Materials/SteelShine.material"
+      ],
+      "animation": "res://Items/Exclusive/Animations/HalberdAnimation.tscn",
+      "scene_sha256": "5bb8630a49f5c45a70a1ca770f3757986517978915e3240f62740e89e4ecf24d",
+      "definition_id": "crescent_glaive",
+      "kind": "item",
+      "reason": "原戟，月刃长柄武器类别一致",
+      "planned_shape_id": "shape_5_p",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "3",
+        "maxDam": "6",
+        "cd": "2",
+        "staminaCost": "1.4",
+        "block": "",
+        "p1": "1:dam",
+        "p2": "4:blockremoval",
+        "p3": "35:blockfactor",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "2d9597624d81aa5aa0a2d902374e86c678eb4d85c100e97a6d8b1421eef22110"
+    },
+    "siege_maul": {
+      "name": "Thors Hammer",
+      "scene": "res://Items/Exclusive/ThorsHammer.tscn",
+      "png": "res://Items/Exclusive/Sprites/ThorsHammer.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 5,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/ThorsHammer.png",
+        "res://Items/Exclusive/Sprites/ThorsHammer_active.png",
+        "res://Assets/Particles/GlowingDot.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/ThorsHammerDragParticles.material",
+        "res://Items/Exclusive/Particles/TimeMelting.material"
+      ],
+      "animation": "res://Items/Exclusive/Animations/ThorsHammerAnimation.tscn",
+      "scene_sha256": "53e065b944efe8da0f3adcb1067da58675751ceb80c5a1d10a739774f6a5b612",
+      "definition_id": "siege_maul",
+      "kind": "item",
+      "reason": "原高阶重锤，保留原雷神锤动画",
+      "planned_shape_id": "shape_5_p",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "Magic",
+        "tags": "",
+        "gain": "Blind",
+        "use": "Mana",
+        "remove": "",
+        "minDam": "10",
+        "maxDam": "13",
+        "cd": "2",
+        "staminaCost": "3",
+        "block": "",
+        "p1": "0.5:dur_stun",
+        "p2": "2:manat",
+        "p3": "12:dam",
+        "p4": "5:blind",
+        "p5": "2:dur_blind"
+      },
+      "png_sha256": "ffeb78a42ddf7bcfa170d958673718b856789aff5abaea8219d25c80ed662ec1"
+    },
+    "momentum_gear": {
+      "name": "Generator",
+      "scene": "res://Items/Exclusive/Generator.tscn",
+      "png": "res://Items/Exclusive/Sprites/Generator.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Generator.png",
+        "res://Assets/Particles/LineParticle2.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Materials/BatteryLightning.material",
+        "res://Items/Exclusive/Particles/BatteryDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "88176b2095d736840807e4994724a208efd8aa5117679d673ed1c4465cadec8f",
+      "definition_id": "momentum_gear",
+      "kind": "item",
+      "reason": "原机械发电装置，动力/节奏支援类别",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "4.5",
+        "staminaCost": "0.8",
+        "block": "",
+        "p1": "2:dur",
+        "p2": "10:speed",
+        "p3": "5:speed2",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "729489fc33688133d7ef039cc53025ed9c166f0cfd4006a86c1b00c6b6bb8bc9"
+    },
+    "duelist_mark": {
+      "name": "Stone Badge",
+      "scene": "res://Items/Exclusive/StoneBadge.tscn",
+      "png": "res://Items/Exclusive/Sprites/StoneBadge.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/StoneBadge.png",
+        "res://Assets/Particles/GlowingDot_small.png",
+        "res://Assets/Light/CircleLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/StoneBadgeDragParticles.material",
+        "res://Shader/AdditiveCanvasItemMaterial.tres"
+      ],
+      "animation": null,
+      "scene_sha256": "8675b70a81f71ab1e8f8042017516b427315976c37927a21c5bd038ed50272eb",
+      "definition_id": "duelist_mark",
+      "kind": "item",
+      "reason": "原战斗徽记，同属小型战斗支援标记",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "3",
+        "staminaCost": "",
+        "block": "4",
+        "p1": "1:goldvalue",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "294ad4d275d7b4a36115a4c33a20d7a44e3abf9f38ea4e6b6ba807dee0bb3eca"
+    },
+    "overdrive_ratchet": {
+      "name": "Perpetuum Mobile",
+      "scene": "res://Items/Exclusive/PerpetuumMobile.tscn",
+      "png": "res://Items/Exclusive/Sprites/PerpetuumMobile.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/PerpetuumMobile.png",
+        "res://Assets/Particles/GlowingDot_small.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/PerpetuumMobileDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "70d0623a53b2b35c28d07ccec6988b373b2daaa104128819f83048cadcbe583c",
+      "definition_id": "overdrive_ratchet",
+      "kind": "item",
+      "reason": "原高阶动力机械，节奏增强类别",
+      "planned_shape_id": "shape_4_t",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Buff",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "8",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2:stamina",
+        "p2": "30:refund_buffs",
+        "p3": "30:refund_stamina",
+        "p4": "30:speed",
+        "p5": ""
+      },
+      "png_sha256": "fdde8a989bc8cd14be6d7bb4b8d1889f76cf9c099bf1516f58c019ca4a1a95e0"
+    },
+    "bastion_core": {
+      "name": "Bionic Armor",
+      "scene": "res://Items/Exclusive/BionicArmor.tscn",
+      "png": "res://Items/Exclusive/Sprites/BionicArmor.png",
+      "native_type": "Armor",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/BionicArmor.png",
+        "res://Assets/Shine1.png",
+        "res://Assets/Light/CircleLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/SunShieldDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "70b58a5d22d14743f81459200464ebfdfd1d6d97dc7bae1dc6add7d6e1e8d769",
+      "definition_id": "bastion_core",
+      "kind": "item",
+      "reason": "原高阶机械护甲，防御核心类别",
+      "planned_shape_id": "shape_4_o",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Armor",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Empower",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "3",
+        "staminaCost": "",
+        "block": "100",
+        "p1": "100:staminaregen",
+        "p2": "10:healtht",
+        "p3": "0.2:maxstamina",
+        "p4": "5:staminat1",
+        "p5": "30:block"
+      },
+      "png_sha256": "1020194191b5019c11e118f28b72a758bdfe3d09cfc84041f442ce77a061d7b7"
+    },
+    "layered_plates": {
+      "name": "Dragonscale Armor",
+      "scene": "res://Items/Exclusive/DragonscaleArmor.tscn",
+      "png": "res://Items/Exclusive/Sprites/DragonscaleArmor.png",
+      "native_type": "Armor",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/DragonscaleArmor.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "08bf99219c3752897b2512027d7ab8983aec7360b10b888109cc070bde588e49",
+      "definition_id": "layered_plates",
+      "kind": "item",
+      "reason": "原层叠鳞甲，同类层叠护甲",
+      "planned_shape_id": "shape_4_z",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Armor",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "55",
+        "p1": "8:damreduction",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "02642fee38f22d8c1bd992059baf8b4fe8f76f1c7d3994ae99bd9d13754596b1"
+    },
+    "retaliation_spikes": {
+      "name": "Spiked Wall",
+      "scene": "res://Items/Exclusive/SpikedWall.tscn",
+      "png": "res://Items/Exclusive/Sprites/SpikeWall.png",
+      "native_type": "Shield",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/SpikeWall.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "de3571d4d47d9b5282a4fc75c90f90d65ce1b63606b4e3d275f8610c849f8e38",
+      "definition_id": "retaliation_spikes",
+      "kind": "item",
+      "reason": "原尖刺防御器，尖刺反击用途一致",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shield",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Spikes",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "15:damblock",
+        "p2": "0.3:stamina",
+        "p3": "3:spikes",
+        "p4": "12:maxspikes",
+        "p5": "30:staminaregen"
+      },
+      "png_sha256": "7bb680f67a011122ddf1eaf7cc7c017a3fc7f042683d4f0e2cfa581f1e7533a0"
+    },
+    "guardian_standard": {
+      "name": "Burning Banner",
+      "scene": "res://Items/Exclusive/BurningBanner.tscn",
+      "png": "res://Items/Exclusive/Sprites/BurningBanner.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/BurningBanner.png",
+        "res://Assets/Particles/FireParticle2.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "definition_id": "guardian_standard",
+      "kind": "item",
+      "reason": "原旗帜支援器，保留原旗帜材质；无新守护旗图",
+      "planned_shape_id": "shape_3_i",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Holy,Fire",
+        "tags": "",
+        "gain": "Regeneration,Blind",
+        "use": "",
+        "remove": "Buff",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "4.2",
+        "staminaCost": "",
+        "block": "",
+        "p1": "5:dur_blind",
+        "p2": "2:buffs",
+        "p3": "2:regen",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df"
+    },
+    "charging_weight": {
+      "name": "Battery",
+      "scene": "res://Items/Exclusive/Battery.tscn",
+      "png": "res://Items/Exclusive/Sprites/Battery.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Battery.png",
+        "res://Assets/Particles/LineParticle2.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/BatteryDragParticles.material",
+        "res://Items/Exclusive/Materials/BatteryLightning.material"
+      ],
+      "animation": null,
+      "scene_sha256": "61b52c3291c05762decb258c1f52e8d9d5cc54b676dd437e7415b1134c687d26",
+      "definition_id": "charging_weight",
+      "kind": "item",
+      "reason": "原蓄能器，耐力/充能用途对应；保留电池外观",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2:dur",
+        "p2": "10:speed",
+        "p3": "5:speed2",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "c6ea12150ef276c85d110663f3d6f77efcb1b51756acec39beb82835fdd70a52"
+    },
+    "execution_anvil": {
+      "name": "Anvil",
+      "scene": "res://Items/Exclusive/Anvil.tscn",
+      "png": "res://Items/Exclusive/Sprites/Anvil.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Anvil.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "e5393a77ed1223e614e3421a2258ad2db546fa29256883b9446216a025954f9d",
+      "definition_id": "execution_anvil",
+      "kind": "item",
+      "reason": "原铁砧，同名同用途",
+      "planned_shape_id": "shape_5_p",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1:bonusdam",
+        "p2": "5:stamina",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "4e6ab3e8183449f687f5f58e62ad3c17c363b85bb3d126b781d1e3286cbb14fc"
+    },
+    "toxin_bottle": {
+      "name": "Pestilence Flask",
+      "scene": "res://Items/PestilenceFlask.tscn",
+      "png": "res://Items/Sprites/Flask2.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/Flask2.png",
+        "res://Items/Masks/Flask2_Mask.png",
+        "res://Items/Sprites/Flask2_Overlay.png",
+        "res://Assets/Buffs/Poison.png"
+      ],
+      "material_refs": [
+        "res://Shader/PestilenceFlask.Material.tres"
+      ],
+      "animation": "res://Items/Animations/PestilenceFlaskAnimation.tscn",
+      "scene_sha256": "09bf8656814562aabe71da15f490e5f01155acfdc76d551fc0cacaa90cb674c3",
+      "definition_id": "toxin_bottle",
+      "kind": "item",
+      "reason": "原毒药瓶，同类毒瓶",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Poison",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "3",
+        "p2": "1",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "b018539658431d0344b6f9e7f32785a157423aa5be651f8779f0f27c2d8df7d9"
+    },
+    "thorn_extract": {
+      "name": "Poison Ivy",
+      "scene": "res://Items/PoisonIvy.tscn",
+      "png": "res://Items/Sprites/PoisonIvy.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/PoisonIvy.png",
+        "res://Assets/Light/CircleLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Particles/PoisonIvyActivationParticles.material",
+        "res://Items/Particles/PoisonIvyDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "cb1cbc15e72c7ed7b641a2ba8a3b8aabbaaae0cd5c0f16cb1b207fb68a0815c6",
+      "definition_id": "thorn_extract",
+      "kind": "item",
+      "reason": "原毒藤，同类毒性植物萃取原料",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Nature",
+        "tags": "",
+        "gain": "Poison",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "18:poisont",
+        "p2": "25:damfactor",
+        "p3": "",
+        "p4": "2:poisonperspike",
+        "p5": ""
+      },
+      "png_sha256": "360de06e93b8f86c266d5116515756726bafd522d68ac41272611248063adfdc"
+    },
+    "spore_jar": {
+      "name": "Fly Agaric",
+      "scene": "res://Items/FlyAgaric.tscn",
+      "png": "res://Items/Sprites/FlyAgaric.png",
+      "native_type": "Food",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/FlyAgaric.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "4830ed374ecf3927ee368fc3d6c4489aca508cec1865bfa1c30a09e868e612d3",
+      "definition_id": "spore_jar",
+      "kind": "item",
+      "reason": "原毒蘑菇，孢子毒素类别；无新罐子图",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Food",
+        "extraTypes": "Nature",
+        "tags": "",
+        "gain": "Poison",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "3.5",
+        "staminaCost": "",
+        "block": "",
+        "p1": "1",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "5b1ac689f2479d146b70d21595af40b3740f9e386776f0315804c9a829a7554d"
+    },
+    "venom_distiller": {
+      "name": "Laboratory",
+      "scene": "res://Items/Exclusive/Laboratory.tscn",
+      "png": "res://Items/Exclusive/Sprites/Laboratory.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 3,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Laboratory.png",
+        "res://Items/Exclusive/Sprites/Laboratory_Mask.png",
+        "res://Items/Exclusive/Sprites/Laboratory_Front.png",
+        "res://Assets/Light/RingLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/LaboratoryDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "e5a089da3b0fca28617d613872f3f7ad240f131f30e79d7d330b1486b9f54b41",
+      "definition_id": "venom_distiller",
+      "kind": "item",
+      "reason": "原炼金蒸馏实验装置，多层原精灵和材质",
+      "planned_shape_id": "shape_4_t",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Heat,Spikes,Regeneration,Vampirism,Empower",
+        "use": "Heat,Spikes,Regeneration,Vampirism,Lucky",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "2,4,6,8,12",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "ed71e32c904d237dd26e501cc1b0ca18b0291e4ae22fb8511092bc3c32dfde1e"
+    },
+    "plague_retort": {
+      "name": "Strong Pestilence Flask",
+      "scene": "res://Items/StrongPestilenceFlask.tscn",
+      "png": "res://Items/Sprites/StrongPestilenceFlask_flask.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/StrongPestilenceFlask_flask.png",
+        "res://Items/Masks/StrongPestilenceFlask_mask.png",
+        "res://Items/Sprites/StrongPestilenceFlask_overlay.png",
+        "res://Assets/Buffs/Poison.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Items/Animations/StrongPestilenceFlaskAnimation.tscn",
+      "scene_sha256": "65dfbb755b6d0af5e2c1d8467f15abf13635bef2615f21658f07bcf74edc263e",
+      "definition_id": "plague_retort",
+      "kind": "item",
+      "reason": "原高阶瘟疫药瓶，保留原强化毒瓶组合",
+      "planned_shape_id": "shape_5_p",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Poison",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "3",
+        "p2": "1",
+        "p3": "3.5:delay",
+        "p4": "3",
+        "p5": ""
+      },
+      "png_sha256": "dbead7e94329a8b64990d9ae6de6af024b20201d9d115c20b15c6c05cb201cc1"
+    },
+    "caustic_coil": {
+      "name": "Coil",
+      "scene": "res://Items/Exclusive/Coil.tscn",
+      "png": "res://Items/Exclusive/Sprites/Coil.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Coil.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "962fe9ce52b27307fbc567813499d5be52a409fc3a1fc990aa644b025e5423e3",
+      "definition_id": "caustic_coil",
+      "kind": "item",
+      "reason": "原线圈，同类盘绕装具；毒素逻辑只来自PvE规则",
+      "planned_shape_id": "shape_4_z",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Buff",
+        "use": "",
+        "remove": "Buff",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2:buffs",
+        "p2": "10:max",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "c14250b5fef1c1146d766c08cc9b6fbf65f74eeeeccdfafe0bae55bc5271b98e"
+    },
+    "ember_phial": {
+      "name": "Demonic Flask",
+      "scene": "res://Items/DemonicFlask.tscn",
+      "png": "res://Items/Sprites/Flask4.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/Flask4.png",
+        "res://Items/Masks/Flask4_Mask.png",
+        "res://Items/Sprites/Flask4_Overlay.png"
+      ],
+      "material_refs": [
+        "res://Shader/DemonicFlask.material"
+      ],
+      "animation": "res://Items/Animations/DemonicFlaskAnimation.tscn",
+      "scene_sha256": "4811e573163fd1ac5361878d8f8a3b8472cc5ef3b0be983d7f0570293e6e62e5",
+      "definition_id": "ember_phial",
+      "kind": "item",
+      "reason": "原恶魔药瓶，热色液体与灼烧瓶用途近似",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "extraTypes": "Dark",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "50",
+        "p2": "0.3:dam",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "ecdd66e7e0ee5e8df498af971a2856fbea198ab61a158a0521c70f587c55f7a6"
+    },
+    "coal_burner": {
+      "name": "Burning Torch",
+      "scene": "res://Items/BurningTorch.tscn",
+      "png": "res://Items/Sprites/BurningTorch.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/BurningTorch.png",
+        "res://Items/Sprites/TorchLight.png",
+        "res://Assets/Particles/FireParticle2.png"
+      ],
+      "material_refs": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/RubyEggMaterial.material",
+        "res://Items/Particles/BurningTorchParticles.material"
+      ],
+      "animation": "res://Items/Animations/BurningTorchAnimation.tscn",
+      "scene_sha256": "376a12dfc0103ebecd39e1fe9ee37181332cfabf377dc0b6c6e3a3a811ab01c7",
+      "definition_id": "coal_burner",
+      "kind": "item",
+      "reason": "原燃烧火炬，同属持续火焰器具；FirePit是背包而非普通Item",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "Fire",
+        "tags": "",
+        "gain": "Heat",
+        "use": "",
+        "remove": "",
+        "minDam": "2",
+        "maxDam": "3",
+        "cd": "1.4",
+        "staminaCost": "1",
+        "block": "",
+        "p1": "2:heat",
+        "p2": "1:damagegain",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "06796ffb65f7644510be8f83073a0587711cbf360145923db89b6419edb49547"
+    },
+    "ignition_lens": {
+      "name": "Oil Lamp",
+      "scene": "res://Items/Exclusive/OilLamp.tscn",
+      "png": "res://Items/Exclusive/Sprites/OilLamp.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/OilLamp.png",
+        "res://Items/Sprites/TorchLight.png",
+        "res://Assets/Particles/FireParticle2.png"
+      ],
+      "material_refs": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/FlameDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "b9b4d54ebc9357fc9b12225bcb2c89e2caab5ece699b6e9c863539540dfc6132",
+      "definition_id": "ignition_lens",
+      "kind": "item",
+      "reason": "原玻璃灯器，点火/聚光类别",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Fire",
+        "tags": "",
+        "gain": "Heat",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "3.4",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2:heat",
+        "p2": "1:dam",
+        "p3": "5:accuracy",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "a3b1690bc9266c02352fd80289f64fe2920afc920f483e614fa8fd918f5d30b3"
+    },
+    "wildfire_alembic": {
+      "name": "Cauldron",
+      "scene": "res://Items/Exclusive/Cauldron.tscn",
+      "png": "res://Items/Exclusive/Sprites/Cauldron.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Cauldron.png",
+        "res://Assets/Light/RingLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/CauldronDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "774b2a376a774370ba74ca766c4c412eb8b1e9081e51acb51d55c12b8209e0e7",
+      "definition_id": "wildfire_alembic",
+      "kind": "item",
+      "reason": "原炼金锅，大型炼金器具，保留完整原材质",
+      "planned_shape_id": "shape_5_p",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Magic",
+        "tags": "",
+        "gain": "Mana,Heat",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "2.6",
+        "staminaCost": "",
+        "block": "",
+        "p1": "20:heal",
+        "p2": "6:mana",
+        "p3": "5:heat",
+        "p4": "15:speedbonus",
+        "p5": ""
+      },
+      "png_sha256": "a9edf0b414d0701558ec347b2150e7022c72f370a73d550ef0c9a81ac30e4b6c"
+    },
+    "tonic_bottle": {
+      "name": "Health Potion",
+      "scene": "res://Items/HealthPotion.tscn",
+      "png": "res://Items/Sprites/Flask1.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Items/Sprites/Flask1.png",
+        "res://Items/Masks/HealthPotionMask.png",
+        "res://Items/Sprites/Flask1_Overlay.png"
+      ],
+      "material_refs": [
+        "res://Shader/HealthPotion.material"
+      ],
+      "animation": "res://Items/Animations/HealthPotionAnimation.tscn",
+      "scene_sha256": "9ae2e74cc8573171a94a150b8e883202accacf0c671c096918b1f1c8ba4ed949",
+      "definition_id": "tonic_bottle",
+      "kind": "item",
+      "reason": "原治疗药瓶，同类恢复药水",
+      "planned_shape_id": "shape_2_h",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "Poison",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "50",
+        "p2": "12:heal",
+        "p3": "4",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "40ae45c56da74da30dd86480ae0475b08a4a90c929c31e51309fef7f459d65da"
+    },
+    "renewal_mortar": {
+      "name": "Pot",
+      "scene": "res://Items/Exclusive/Pot.tscn",
+      "png": "res://Items/Exclusive/Sprites/Pot.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Pot.png",
+        "res://Assets/Light/RingLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/PotDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "63acb0c4a4921a2e4e3819916939f6bc544b376bc1e4e2cbfff88c85c22dd83d",
+      "definition_id": "renewal_mortar",
+      "kind": "item",
+      "reason": "原草药烹调容器；保留锅的原貌，非伪造石臼",
+      "planned_shape_id": "shape_3_l",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Heat,Regeneration",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "15",
+        "staminaCost": "",
+        "block": "",
+        "p1": "10:heal",
+        "p2": "3:heal_food",
+        "p3": "6:heat",
+        "p4": "6:regen",
+        "p5": "50:speed"
+      },
+      "png_sha256": "92008f0ed4cb33e80a7140280a3058ab6f7ae23af1f734562756f99c21526949"
+    },
+    "transfusion_tube": {
+      "name": "Blood Amulet",
+      "scene": "res://Items/BloodAmulet.tscn",
+      "png": "res://Items/Sprites/BloodAmulet.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Items/Sprites/BloodAmulet.png",
+        "res://Assets/Particles/GlowingDot_small.png",
+        "res://Items/Sprites/AmuletGlow.png"
+      ],
+      "material_refs": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/BloodAmuletDragParticles.tres"
+      ],
+      "animation": null,
+      "scene_sha256": "ce9b8e7e0db4a6279b5dfc5479c19bb9574843e6043873dec7d109e7676a39c0",
+      "definition_id": "transfusion_tube",
+      "kind": "item",
+      "reason": "原血液恢复饰物；原库无输液管，保留原血护符",
+      "planned_shape_id": "shape_4_z",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Vampiric",
+        "tags": "",
+        "gain": "Vampirism",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "2:vampirism",
+        "p2": "20:maxhealth",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "9b63de7a4b82560d41205ef0e8a947446a53e4075d35c27963f2cb8090962b50"
+    },
+    "philosophers_kettle": {
+      "name": "Cauldron",
+      "scene": "res://Items/Exclusive/Cauldron.tscn",
+      "png": "res://Items/Exclusive/Sprites/Cauldron.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Cauldron.png",
+        "res://Assets/Light/RingLight.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/CauldronDragParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "774b2a376a774370ba74ca766c4c412eb8b1e9081e51acb51d55c12b8209e0e7",
+      "definition_id": "philosophers_kettle",
+      "kind": "item",
+      "reason": "原炼金锅，同类锅炉与恢复炼金器具",
+      "planned_shape_id": "shape_4_o",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "extraTypes": "Magic",
+        "tags": "",
+        "gain": "Mana,Heat",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "2.6",
+        "staminaCost": "",
+        "block": "",
+        "p1": "20:heal",
+        "p2": "6:mana",
+        "p3": "5:heat",
+        "p4": "15:speedbonus",
+        "p5": ""
+      },
+      "png_sha256": "a9edf0b414d0701558ec347b2150e7022c72f370a73d550ef0c9a81ac30e4b6c"
+    },
+    "bag_canvas_frame": {
+      "name": "Leather Bag",
+      "scene": "res://Items/LeatherBag.tscn",
+      "png": "res://Items/Sprites/LeatherBag.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Sprites/LeatherBag.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "definition_id": "bag_canvas_frame",
+      "kind": "bag",
+      "reason": "原基础皮袋，纯空间背包",
+      "planned_shape_id": "bag_shape_rect_3x3",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "c7ea9a4675e474c75f8deee67fa78d201184d81cb1b09439739a255a1589e313"
+    },
+    "bag_corner_satchel": {
+      "name": "Puzzlebag L",
+      "scene": "res://Items/Exclusive/PuzzlebagL.tscn",
+      "png": "res://Items/Exclusive/Sprites/PuzzlebagL.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/PuzzlebagL.png",
+        "res://Items/Exclusive/Borders/PuzzlebagL_Border.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "c80c5851a278409a7c2537af63a2f59ea30454834fa4ea73af0cbf89e3d59b41",
+      "definition_id": "bag_corner_satchel",
+      "kind": "bag",
+      "reason": "原L形拼图袋，转角拓扑",
+      "planned_shape_id": "bag_shape_corner_9",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "20:healamp",
+        "p2": "7:maxhealth",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "dfb142ab9a76feec25b9490517e927ee4a0d2aea6b5d7936ef50815e23407bc3"
+    },
+    "bag_tool_roll": {
+      "name": "Holdall",
+      "scene": "res://Items/Exclusive/Holdall.tscn",
+      "png": "res://Items/Exclusive/Sprites/Holdall.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/Holdall.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "9653778ba8f20174bc37ab0835c59b2ca6ea69957488e274e45984800abaeb11",
+      "definition_id": "bag_tool_roll",
+      "kind": "bag",
+      "reason": "原三乘二六格收纳袋，实际占格与规划卷袋完全一致",
+      "planned_shape_id": "bag_shape_strip_6",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "8",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "82e9b7c26a0c097bc96bf0f3364a0ec5900fad403d530bedca8ed32fb200ff6e"
+    },
+    "bag_guard_harness": {
+      "name": "Berserker Bag",
+      "scene": "res://Items/Exclusive/BerserkerBag.tscn",
+      "png": "res://Items/Exclusive/Sprites/DuffleBag.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "native_cell_count": 6,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/DuffleBag.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "8e9aefd63bc2e47aaa7a7f6814c2480f09673fda0132a820d7ec556691e16dde",
+      "definition_id": "bag_guard_harness",
+      "kind": "bag",
+      "reason": "原战士职业袋，战斗防护装具",
+      "planned_shape_id": "bag_shape_l_7",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "BattleRage",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "50:healtht",
+        "p2": "5.5:dur_rage",
+        "p3": "35:speed_rage",
+        "p4": "25:damresistance",
+        "p5": ""
+      },
+      "png_sha256": "3b128d642fec297ad306943602b1bf2cd94bbcbda01c1b9da2116068a5313976"
+    },
+    "bag_herbal_tray": {
+      "name": "Vineweave Basket",
+      "scene": "res://Items/Exclusive/VineweaveBasket.tscn",
+      "png": "res://Items/Exclusive/Sprites/VineweaveBasket.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "native_cell_count": 9,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/VineweaveBasket.png",
+        "res://Items/Exclusive/Borders/Firepit_Border.png",
+        "res://Assets/Particles/GlowingDot.png"
+      ],
+      "material_refs": [
+        "res://Items/Exclusive/Particles/VineweaveBasketSaleParticles.material"
+      ],
+      "animation": null,
+      "scene_sha256": "d496573b78eda5efebb47ed8de23c3e7b5f4b61d066e7d53e95d542cf9e5c610",
+      "definition_id": "bag_herbal_tray",
+      "kind": "bag",
+      "reason": "原藤编篮，草药篮形容器",
+      "planned_shape_id": "bag_shape_t_7",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "12:healamp",
+        "p2": "5:ampbonus",
+        "p3": "20:sales",
+        "p4": "1:round1",
+        "p5": "10:round2"
+      },
+      "png_sha256": "d5f00753072380885b3b4381c10a2c56da67a8123d25e6eadb5fdf3b4b210230"
+    },
+    "bag_gear_sling": {
+      "name": "Engineer Bag 2",
+      "scene": "res://Items/Exclusive/EngineerBag2.tscn",
+      "png": "res://Items/Exclusive/Sprites/BoxofCogs.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "native_cell_count": 8,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/BoxofCogs.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "c2ffd28a580159427563bf19cec3157c4620d8fc0a606ffcceca678b58fe2123",
+      "definition_id": "bag_gear_sling",
+      "kind": "bag",
+      "reason": "原工程师机械包，机械空间与增益类别",
+      "planned_shape_id": "bag_shape_z_6",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "119b0ce23e4b8d1d1ae816de97d04f80b31833f3cb2a74fb91eed45c32cf7c0d"
+    },
+    "bag_cross_brace": {
+      "name": "Puzzlebag T",
+      "scene": "res://Items/Exclusive/PuzzlebagT.tscn",
+      "png": "res://Items/Exclusive/Sprites/PuzzlebagT.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/PuzzlebagT.png",
+        "res://Items/Exclusive/Borders/PuzzlebagT_Border.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "4f4d7296c129449d414013950bb6235ffc38b1eb3d7052a2baa4862a8ce96675",
+      "definition_id": "bag_cross_brace",
+      "kind": "bag",
+      "reason": "原T形拼图袋，分支拓扑",
+      "planned_shape_id": "bag_shape_cross_9",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "Buff",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "25:buff",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "ccb064240a70c97099444cf59b4409600a8895074c0d1a72a6a3242df4635922"
+    },
+    "bag_hollow_ring": {
+      "name": "Toolbox",
+      "scene": "res://Items/Exclusive/Toolbox.tscn",
+      "png": "res://Items/Exclusive/Sprites/UtilityPouch.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "native_cell_count": 8,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/UtilityPouch.png",
+        "res://Items/Exclusive/Borders/Toolbox_Border.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "1bfbe658402761258e6b420a42bb676d1a3c358c5aadb0afe5802890cdba273e",
+      "definition_id": "bag_hollow_ring",
+      "kind": "bag",
+      "reason": "原八格三乘三工具箱带缺口，接近八格环围；缺口位置与规划不同明确记录",
+      "planned_shape_id": "bag_shape_ring_8",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "BattleRage",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "5",
+        "staminaCost": "",
+        "block": "",
+        "p1": "30:dambonus",
+        "p2": "30:speedreduction",
+        "p3": "5.5:dur_rage",
+        "p4": "35:lifesteal",
+        "p5": ""
+      },
+      "png_sha256": "5aaaf32ce05f146b8f4ec4cf5066d3649e75c67514ae730fab15047d0c9de1d0"
+    },
+    "bag_step_case": {
+      "name": "Puzzlebag Z",
+      "scene": "res://Items/Exclusive/PuzzlebagZ.tscn",
+      "png": "res://Items/Exclusive/Sprites/PuzzlebagZ.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/PuzzlebagZ.png",
+        "res://Items/Exclusive/Borders/PuzzlebagS_Border.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "555dea7210e747108c470c9e384bb3eeb2d89b220f7cf463c7ab31f057b9e9c6",
+      "definition_id": "bag_step_case",
+      "kind": "bag",
+      "reason": "原阶梯Z形拼图袋，阶梯拓扑",
+      "planned_shape_id": "bag_shape_step_8",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "3cd5c1e6b0d52a40d704bbb9b4a30d79b61e9402321f4014bd40f83babf4dd15"
+    },
+    "bag_twin_wing": {
+      "name": "Puzzlebag S",
+      "scene": "res://Items/Exclusive/PuzzlebagS.tscn",
+      "png": "res://Items/Exclusive/Sprites/PuzzlebagS.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Items/Exclusive/Sprites/PuzzlebagS.png",
+        "res://Items/Exclusive/Borders/PuzzlebagS_Border.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "a1bfdb79cd7b7f962b713a8c764dd10160d51da1f9133a244372aa540a590d92",
+      "definition_id": "bag_twin_wing",
+      "kind": "bag",
+      "reason": "原双翼折线S形拼图袋，双翼拓扑",
+      "planned_shape_id": "bag_shape_wing_8",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "5d3f3f83eb764f8b9f77da4507976478625c31c8c38e591891f046fe6f558e8d"
+    }
+  },
+  "roles": {
+    "armorer": {
+      "native_class": "Berserker",
+      "class_index": 2,
+      "normal_skin": "res://CharacterClasses/Berserker/Skins/Normal/Default/Default.tscn"
+    },
+    "alchemist": {
+      "native_class": "Reaper",
+      "class_index": 1,
+      "normal_skin": "res://CharacterClasses/Reaper/Skins/Normal/Default/Default.tscn"
+    }
+  },
+  "notes": [
+    "IDs and logic remain PvE definitions. Scene, descriptor, art, material, sound and animation are original assets.",
+    "Actual and planned collision shapes are recorded separately. NativeBuildBridge owns the logical geometry override.",
+    "Where no literal source drawing exists, correspondence uses an explicit same-category analogue and documents its different appearance."
+  ]
+}

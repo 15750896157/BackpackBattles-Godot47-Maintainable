@@ -1,0 +1,18 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+-Shell Totem has no animation
+-Staff of Unhealing has no animation
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+SETTING LOCALE TO zh_Hans_CN
+received Steam: 32
+SETTING LOCALE TO en
+CONTENT_CLUES_QA {"checks":314,"content_sha256":"b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1","entry":"res://Core/Main.tscn","evidence":{"en":{"boss_ids":["boss_iron_beast","boss_cinder_engine","boss_star_regent"],"unknown_recipes":24},"zh_CN":{"boss_ids":["boss_iron_beast","boss_cinder_engine","boss_star_regent"],"unknown_recipes":24}},"failures":[],"ok":true,"source_sha256":{"NativeDetailViews.gd":"5f6a991d33c51cf27f23fa54ca25eaf0ac58b9c8820442c52e1ffcfc9b552abc","NativeExpedition.gd":"0fa18f9b7489727cad1f05ea3dba11ebc3f38dff60ef35523d8ed7df8d99ea4e"}}

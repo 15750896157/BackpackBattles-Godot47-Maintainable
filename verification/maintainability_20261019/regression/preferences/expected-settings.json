@@ -1,0 +1,486 @@
+{
+  "bindings": {
+    "combat_pause": [
+      {
+        "alt": false,
+        "code": 32,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 0,
+        "type": "joy"
+      }
+    ],
+    "combat_speed_down": [
+      {
+        "alt": false,
+        "code": 4194319,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 13,
+        "type": "joy"
+      }
+    ],
+    "rotate_left_button": [
+      {
+        "alt": false,
+        "code": 75,
+        "ctrl": true,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "rotate_left_button_controller": [
+      {
+        "axis": 2,
+        "type": "axis",
+        "value": -1
+      }
+    ],
+    "start_battle": [
+      {
+        "alt": false,
+        "code": 32,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "ui_focus_prev": [
+      {
+        "alt": false,
+        "code": 4194306,
+        "ctrl": false,
+        "shift": true,
+        "type": "key"
+      }
+    ],
+    "ui_left": [
+      {
+        "button": 13,
+        "type": "joy"
+      },
+      {
+        "alt": false,
+        "code": 4194319,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "ui_up": [
+      {
+        "alt": false,
+        "code": 73,
+        "ctrl": true,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "axis": 1,
+        "type": "axis",
+        "value": -1
+      }
+    ]
+  },
+  "default_bindings": {
+    "combat_pause": [
+      {
+        "alt": false,
+        "code": 32,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "combat_play": [
+      {
+        "alt": false,
+        "code": 4194320,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 11,
+        "type": "joy"
+      }
+    ],
+    "combat_speed_down": [
+      {
+        "alt": false,
+        "code": 4194319,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 13,
+        "type": "joy"
+      },
+      {
+        "button": 9,
+        "type": "joy"
+      }
+    ],
+    "combat_speed_up": [
+      {
+        "alt": false,
+        "code": 4194321,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 14,
+        "type": "joy"
+      },
+      {
+        "button": 10,
+        "type": "joy"
+      }
+    ],
+    "push_to_storage": [
+      {
+        "alt": false,
+        "code": 4194326,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "push_to_storage_controller": [
+      {
+        "button": 3,
+        "type": "joy"
+      }
+    ],
+    "pve_next_region": [
+      {
+        "axis": 5,
+        "type": "axis",
+        "value": 1
+      }
+    ],
+    "pve_prev_region": [
+      {
+        "axis": 4,
+        "type": "axis",
+        "value": 1
+      }
+    ],
+    "redo": [
+      {
+        "alt": false,
+        "code": 89,
+        "ctrl": true,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "redo_controller": [
+      {
+        "button": 10,
+        "type": "joy"
+      }
+    ],
+    "reroll": [
+      {
+        "alt": false,
+        "code": 82,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "reroll_controller": [
+      {
+        "button": 4,
+        "type": "joy"
+      }
+    ],
+    "reserve": [
+      {
+        "alt": false,
+        "code": 70,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "reserve_controller": [
+      {
+        "button": 2,
+        "type": "joy"
+      }
+    ],
+    "rotate_left_button": [
+      {
+        "alt": false,
+        "code": 81,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "rotate_left_button_controller": [
+      {
+        "button": 9,
+        "type": "joy"
+      }
+    ],
+    "rotate_right_button": [
+      {
+        "alt": false,
+        "code": 69,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "rotate_right_button_controller": [
+      {
+        "button": 10,
+        "type": "joy"
+      }
+    ],
+    "show_hints": [
+      {
+        "alt": false,
+        "code": 4194325,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "show_hints_controller": [
+      {
+        "axis": 5,
+        "type": "axis",
+        "value": 1
+      }
+    ],
+    "start_battle": [
+      {
+        "alt": false,
+        "code": 32,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "start_battle_controller": [
+      {
+        "button": 6,
+        "type": "joy"
+      }
+    ],
+    "ui_accept": [
+      {
+        "alt": false,
+        "code": 4194309,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 0,
+        "type": "joy"
+      }
+    ],
+    "ui_cancel": [
+      {
+        "alt": false,
+        "code": 4194305,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 1,
+        "type": "joy"
+      }
+    ],
+    "ui_down": [
+      {
+        "alt": false,
+        "code": 4194322,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 12,
+        "type": "joy"
+      }
+    ],
+    "ui_focus_next": [
+      {
+        "alt": false,
+        "code": 4194306,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "ui_focus_prev": [
+      {
+        "alt": false,
+        "code": 4194306,
+        "ctrl": false,
+        "shift": true,
+        "type": "key"
+      }
+    ],
+    "ui_left": [
+      {
+        "alt": false,
+        "code": 4194319,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 13,
+        "type": "joy"
+      }
+    ],
+    "ui_right": [
+      {
+        "alt": false,
+        "code": 4194321,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 14,
+        "type": "joy"
+      }
+    ],
+    "ui_up": [
+      {
+        "alt": false,
+        "code": 4194320,
+        "ctrl": false,
+        "shift": false,
+        "type": "key"
+      },
+      {
+        "button": 11,
+        "type": "joy"
+      }
+    ],
+    "undo": [
+      {
+        "alt": false,
+        "code": 90,
+        "ctrl": true,
+        "shift": false,
+        "type": "key"
+      }
+    ],
+    "undo_controller": [
+      {
+        "button": 9,
+        "type": "joy"
+      }
+    ]
+  },
+  "defaults": {
+    "ambient": 0.3,
+    "combat": 0.6,
+    "high_contrast": false,
+    "inputs": {},
+    "language": "zh_CN",
+    "music": 0.3,
+    "reduce_effects": false,
+    "reduce_flash": false,
+    "reduce_motion": false,
+    "resolution": "1280x720",
+    "ui": 0.7,
+    "ui_scale": 1.0,
+    "window_mode": "windowed"
+  },
+  "settings": {
+    "ambient": 0.31,
+    "combat": 0.57,
+    "high_contrast": true,
+    "inputs": {
+      "combat_pause": {
+        "controller": {
+          "joy": 0
+        }
+      },
+      "combat_speed_down": {
+        "controller": {
+          "joy": 13
+        }
+      },
+      "rotate_left_button": {
+        "keyboard": {
+          "alt": false,
+          "ctrl": true,
+          "key": 75,
+          "shift": false
+        }
+      },
+      "rotate_left_button_controller": {
+        "controller": {
+          "axis": 2,
+          "value": -1.0
+        }
+      },
+      "start_battle": {
+        "keyboard": {
+          "alt": false,
+          "ctrl": false,
+          "key": 32,
+          "shift": false
+        }
+      },
+      "ui_focus_prev": {
+        "keyboard": {
+          "alt": false,
+          "ctrl": false,
+          "key": 4194306,
+          "shift": true
+        }
+      },
+      "ui_left": {
+        "keyboard": {
+          "alt": false,
+          "ctrl": false,
+          "key": 4194319,
+          "shift": false
+        }
+      },
+      "ui_up": {
+        "controller": {
+          "axis": 1,
+          "value": -1.0
+        },
+        "keyboard": {
+          "alt": false,
+          "ctrl": true,
+          "key": 73,
+          "shift": false
+        }
+      }
+    },
+    "language": "en",
+    "music": 0.19,
+    "reduce_effects": true,
+    "reduce_flash": true,
+    "reduce_motion": true,
+    "resolution": "1600x900",
+    "ui": 0.43,
+    "ui_scale": 1.2,
+    "window_mode": "borderless"
+  }
+}

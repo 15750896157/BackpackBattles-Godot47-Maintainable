@@ -1,0 +1,6117 @@
+[
+  {
+    "path": "CharacterClasses/CharacterClass.gd",
+    "module": "Runtime/Behavior/CharacterClasses/CharacterClassBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "loadFiles",
+        "module": "Runtime/Behavior/CharacterClasses/CharacterClassBehavior.gd",
+        "namespace": "",
+        "args": [
+          "classIdentifier"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "CharacterClasses/Ranger/Skins/Normal/Yuki/YukiSnowball.gd",
+    "module": "Runtime/Callbacks/CharacterClasses/Ranger/Skins/Normal/Yuki/CallbacksY.gd",
+    "namespace": "ForYukiSnowball",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/CharacterClasses/Ranger/Skins/Normal/Yuki/CallbacksY.gd",
+        "namespace": "ForYukiSnowball",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "resize",
+        "module": "Runtime/Callbacks/CharacterClasses/Ranger/Skins/Normal/Yuki/CallbacksY.gd",
+        "namespace": "ForYukiSnowball",
+        "args": [
+          "instant"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Compatibility/FontSizeBinder.gd",
+    "module": "Runtime/Callbacks/Compatibility/CallbacksF.gd",
+    "namespace": "ForFontSizeBinder",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_bind_id",
+        "module": "Runtime/Callbacks/Compatibility/CallbacksF.gd",
+        "namespace": "ForFontSizeBinder",
+        "args": [
+          "node_id"
+        ],
+        "await": false
+      },
+      {
+        "name": "_apply_ids",
+        "module": "Runtime/Callbacks/Compatibility/CallbacksF.gd",
+        "namespace": "ForFontSizeBinder",
+        "args": [
+          "node_id",
+          "key",
+          "font_id"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Compatibility/LegacyDirectory.gd",
+    "module": "Runtime/Callbacks/Compatibility/CallbacksL.gd",
+    "namespace": "ForLegacyDirectory",
+    "moved": 3,
+    "methods": [
+      {
+        "name": "make_dir_recursive",
+        "module": "Runtime/Callbacks/Compatibility/CallbacksL.gd",
+        "namespace": "ForLegacyDirectory",
+        "args": [
+          "path"
+        ],
+        "await": false
+      },
+      {
+        "name": "rename",
+        "module": "Runtime/Callbacks/Compatibility/CallbacksL.gd",
+        "namespace": "ForLegacyDirectory",
+        "args": [
+          "from",
+          "to"
+        ],
+        "await": false
+      },
+      {
+        "name": "copy",
+        "module": "Runtime/Callbacks/Compatibility/CallbacksL.gd",
+        "namespace": "ForLegacyDirectory",
+        "args": [
+          "from",
+          "to"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Compatibility/LegacyTween.gd",
+    "module": "Runtime/Behavior/Compatibility/LegacyTweenBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "interpolate_method",
+        "module": "Runtime/Behavior/Compatibility/LegacyTweenBehavior.gd",
+        "namespace": "",
+        "args": [
+          "object",
+          "method",
+          "initial_value",
+          "final_value",
+          "duration",
+          "transition",
+          "ease",
+          "delay"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Compatibility/ShaderClock.gd",
+    "module": "Runtime/Callbacks/Compatibility/CallbacksS.gd",
+    "namespace": "ForShaderClock",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_process",
+        "module": "Runtime/Callbacks/Compatibility/CallbacksS.gd",
+        "namespace": "ForShaderClock",
+        "args": [
+          "_delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/CombatEvent.gd",
+    "module": "Runtime/Behavior/Core/CombatEventBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setTarget",
+        "module": "Runtime/Behavior/Core/CombatEventBehavior.gd",
+        "namespace": "",
+        "args": [
+          "_target"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/CombatStatLogger.gd",
+    "module": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "printItemHistories",
+        "module": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getValuesForMetricAt",
+        "module": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+        "namespace": "",
+        "args": [
+          "metric",
+          "eventNum"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/StatHistory.gd",
+    "module": "Runtime/Callbacks/Core/CallbacksS.gd",
+    "namespace": "ForStatHistory",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "addValue",
+        "module": "Runtime/Callbacks/Core/CallbacksS.gd",
+        "namespace": "ForStatHistory",
+        "args": [
+          "eventNum",
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "getValueAt",
+        "module": "Runtime/Callbacks/Core/CallbacksS.gd",
+        "namespace": "ForStatHistory",
+        "args": [
+          "eventNum"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/SteamWorkshop.gd",
+    "module": "Runtime/Behavior/Core/SteamWorkshopBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_read_local_board",
+        "module": "Runtime/Behavior/Core/SteamWorkshopBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pushScore",
+        "module": "Runtime/Behavior/Core/SteamWorkshopBehavior.gd",
+        "namespace": "",
+        "args": [
+          "metadata_text",
+          "sequence"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/BoughtNothingWarning.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksB.gd",
+    "namespace": "ForBoughtNothingWarning",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "open",
+        "module": "Runtime/Callbacks/Interface/CallbacksB.gd",
+        "namespace": "ForBoughtNothingWarning",
+        "args": [
+          "textKey",
+          "confirmKey",
+          "cancelKey"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/BuildHistory/BuildEntry.gd",
+    "module": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onEntryPressed",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ChestnutTrade.gd",
+    "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "setTrade",
+        "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+        "namespace": "",
+        "args": [
+          "wantItemIndex",
+          "giveItemIndex",
+          "giveData"
+        ],
+        "await": false
+      },
+      {
+        "name": "reset",
+        "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Combat/CombatTugBar.gd",
+    "module": "Runtime/Callbacks/Interface/Combat/CallbacksC.gd",
+    "namespace": "ForCombatTugBar",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_process",
+        "module": "Runtime/Callbacks/Interface/Combat/CallbacksC.gd",
+        "namespace": "ForCombatTugBar",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/CombatLog/CombatLogFilterButtonWithStylebox.gd",
+    "module": "Runtime/Callbacks/Interface/CombatLog/CallbacksC.gd",
+    "namespace": "ForCombatLogFilterButtonWithStylebox",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateStyleboxes",
+        "module": "Runtime/Callbacks/Interface/CombatLog/CallbacksC.gd",
+        "namespace": "ForCombatLogFilterButtonWithStylebox",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Cursor.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksC.gd",
+    "namespace": "ForCursor",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_process",
+        "module": "Runtime/Callbacks/Interface/CallbacksC.gd",
+        "namespace": "ForCursor",
+        "args": [
+          "_delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/DamageMeter/DamageMeter.gd",
+    "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onMetricSelected",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+        "namespace": "",
+        "args": [
+          "index",
+          "text"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/DamageMeter/DamageMeterTotal.gd",
+    "module": "Runtime/Callbacks/Interface/DamageMeter/CallbacksD.gd",
+    "namespace": "ForDamageMeterTotal",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "init",
+        "module": "Runtime/Callbacks/Interface/DamageMeter/CallbacksD.gd",
+        "namespace": "ForDamageMeterTotal",
+        "args": [
+          "absValue",
+          "dps"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/FocusGrabbingControl.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksF.gd",
+    "namespace": "ForFocusGrabbingControl",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "enable",
+        "module": "Runtime/Callbacks/Interface/CallbacksF.gd",
+        "namespace": "ForFocusGrabbingControl",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "disable",
+        "module": "Runtime/Callbacks/Interface/CallbacksF.gd",
+        "namespace": "ForFocusGrabbingControl",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/GridStorage.gd",
+    "module": "Runtime/Behavior/Interface/GridStorageBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getScore",
+        "module": "Runtime/Behavior/Interface/GridStorageBehavior.gd",
+        "namespace": "",
+        "args": [
+          "descriptor"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/GridStorageEntry.gd",
+    "module": "Runtime/Behavior/Interface/GridStorageEntryBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_gui_input",
+        "module": "Runtime/Behavior/Interface/GridStorageEntryBehavior.gd",
+        "namespace": "",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Heart.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksH.gd",
+    "namespace": "ForHeart",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "heal",
+        "module": "Runtime/Callbacks/Interface/CallbacksH.gd",
+        "namespace": "ForHeart",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/IngameCharacterHUD.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksI.gd",
+    "namespace": "ForIngameCharacterHUD",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateLabels",
+        "module": "Runtime/Callbacks/Interface/CallbacksI.gd",
+        "namespace": "ForIngameCharacterHUD",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ItemLibrary/InfoPanel.gd",
+    "module": "Runtime/Behavior/Interface/ItemLibrary/InfoPanelBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateNameAndFlavorText",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/InfoPanelBehavior.gd",
+        "namespace": "",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ItemLibrary/ItemFilterButton.gd",
+    "module": "Runtime/Callbacks/Interface/ItemLibrary/CallbacksI.gd",
+    "namespace": "ForItemFilterButton",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "toggleGroup",
+        "module": "Runtime/Callbacks/Interface/ItemLibrary/CallbacksI.gd",
+        "namespace": "ForItemFilterButton",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ItemLibrary/ItemRecordIcons.gd",
+    "module": "Runtime/Callbacks/Interface/ItemLibrary/CallbacksI.gd",
+    "namespace": "ForItemRecordIcons",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setItem",
+        "module": "Runtime/Callbacks/Interface/ItemLibrary/CallbacksI.gd",
+        "namespace": "ForItemRecordIcons",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ItemLibrary/ItemRecordStar.gd",
+    "module": "Runtime/Callbacks/Interface/ItemLibrary/CallbacksI.gd",
+    "namespace": "ForItemRecordStar",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "setStarType",
+        "module": "Runtime/Callbacks/Interface/ItemLibrary/CallbacksI.gd",
+        "namespace": "ForItemRecordStar",
+        "args": [
+          "starType"
+        ],
+        "await": false
+      },
+      {
+        "name": "setItem",
+        "module": "Runtime/Callbacks/Interface/ItemLibrary/CallbacksI.gd",
+        "namespace": "ForItemRecordStar",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/LeagueProgressUI.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksL.gd",
+    "namespace": "ForLeagueProgressUI",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateUI",
+        "module": "Runtime/Callbacks/Interface/CallbacksL.gd",
+        "namespace": "ForLeagueProgressUI",
+        "args": [
+          "charClass"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/CustomUnrankedUI.gd",
+    "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksC.gd",
+    "namespace": "ForCustomUnrankedUI",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksC.gd",
+        "namespace": "ForCustomUnrankedUI",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksC.gd",
+        "namespace": "ForCustomUnrankedUI",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/LobbyBuildViewer.gd",
+    "module": "Runtime/Behavior/Interface/Lobbies/LobbyBuildViewerBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateMember",
+        "module": "Runtime/Behavior/Interface/Lobbies/LobbyBuildViewerBehavior.gd",
+        "namespace": "",
+        "args": [
+          "steamId"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/LobbyMemberList.gd",
+    "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksL.gd",
+    "namespace": "ForLobbyMemberList",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksL.gd",
+        "namespace": "ForLobbyMemberList",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/LobbyScoreboard.gd",
+    "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksL.gd",
+    "namespace": "ForLobbyScoreboard",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "updateMember",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksL.gd",
+        "namespace": "ForLobbyScoreboard",
+        "args": [
+          "memberId"
+        ],
+        "await": false
+      },
+      {
+        "name": "onScrollbarVisibilityChanged",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksL.gd",
+        "namespace": "ForLobbyScoreboard",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/LobbySpeed.gd",
+    "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksL.gd",
+    "namespace": "ForLobbySpeed",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onSpeedChanged",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksL.gd",
+        "namespace": "ForLobbySpeed",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/MemberCounter.gd",
+    "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksM.gd",
+    "namespace": "ForMemberCounter",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksM.gd",
+        "namespace": "ForMemberCounter",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/OtherModesUI.gd",
+    "module": "Runtime/Behavior/Interface/Lobbies/OtherModesUIBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Lobbies/OtherModesUIBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/StartTimer.gd",
+    "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksS.gd",
+    "namespace": "ForStartTimer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onTimeout",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksS.gd",
+        "namespace": "ForStartTimer",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/SwitchModeUnrankedUI.gd",
+    "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksS.gd",
+    "namespace": "ForSwitchModeUnrankedUI",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Callbacks/Interface/Lobbies/CallbacksS.gd",
+        "namespace": "ForSwitchModeUnrankedUI",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/MaxStaminaLabel.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksM.gd",
+    "namespace": "ForMaxStaminaLabel",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksM.gd",
+        "namespace": "ForMaxStaminaLabel",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/MovingCounter.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksM.gd",
+    "namespace": "ForMovingCounter",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Callbacks/Interface/CallbacksM.gd",
+        "namespace": "ForMovingCounter",
+        "args": [
+          "_delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/NameLineEdit.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksN.gd",
+    "namespace": "ForNameLineEdit",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksN.gd",
+        "namespace": "ForNameLineEdit",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Options/InputMapping.gd",
+    "module": "Runtime/Callbacks/Interface/Options/CallbacksI.gd",
+    "namespace": "ForInputMapping",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/Options/CallbacksI.gd",
+        "namespace": "ForInputMapping",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Options/KeyBind.gd",
+    "module": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "defaultPressed",
+        "module": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Options/Options.gd",
+    "module": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "canOpen",
+        "module": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "close",
+        "module": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Options/OptionsLineEdit.gd",
+    "module": "Runtime/Callbacks/Interface/Options/CallbacksO.gd",
+    "namespace": "ForOptionsLineEdit",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/Options/CallbacksO.gd",
+        "namespace": "ForOptionsLineEdit",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/PhysicsRope.gd",
+    "module": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getClampedMousePos",
+        "module": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/PopupMessage.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksP.gd",
+    "namespace": "ForPopupMessage",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setText",
+        "module": "Runtime/Callbacks/Interface/CallbacksP.gd",
+        "namespace": "ForPopupMessage",
+        "args": [
+          "key"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/PullButton.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksP.gd",
+    "namespace": "ForPullButton",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Callbacks/Interface/CallbacksP.gd",
+        "namespace": "ForPullButton",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/PushToStorageButton.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksP.gd",
+    "namespace": "ForPushToStorageButton",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Callbacks/Interface/CallbacksP.gd",
+        "namespace": "ForPushToStorageButton",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "trigger",
+        "module": "Runtime/Callbacks/Interface/CallbacksP.gd",
+        "namespace": "ForPushToStorageButton",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RankingUI.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+    "namespace": "ForRankingUI",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+        "namespace": "ForRankingUI",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+        "namespace": "ForRankingUI",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RankSeasonPopup.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+    "namespace": "ForRankSeasonPopup",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+        "namespace": "ForRankSeasonPopup",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RerollRopeTag.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+    "namespace": "ForRerollRopeTag",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getColor",
+        "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+        "namespace": "ForRerollRopeTag",
+        "args": [
+          "cost"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ResizableControl.gd",
+    "module": "Runtime/Behavior/Interface/ResizableControlBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/ResizableControlBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RopeSegment.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+    "namespace": "ForRopeSegment",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+        "namespace": "ForRopeSegment",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_integrate_forces",
+        "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+        "namespace": "ForRopeSegment",
+        "args": [
+          "state"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RotateHint.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+    "namespace": "ForRotateHint",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Callbacks/Interface/CallbacksR.gd",
+        "namespace": "ForRotateHint",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RunAchievement.gd",
+    "module": "Runtime/Behavior/Interface/RunAchievementBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/RunAchievementBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/RunAchievementBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/SeasonClassRank.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+    "namespace": "ForSeasonClassRank",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setLeague",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForSeasonClassRank",
+        "args": [
+          "classI",
+          "leagueExact"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ShopOffer.gd",
+    "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "canChangeReserveState",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ShopRarityChart.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+    "namespace": "ForShopRarityChart",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onShopOpened",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForShopRarityChart",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/SnowGlobe.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+    "namespace": "ForSnowGlobe",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForSnowGlobe",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Staminabar.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+    "namespace": "ForStaminabar",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForStaminabar",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_process",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForStaminabar",
+        "args": [
+          "_delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/StaminaGainCounter.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+    "namespace": "ForStaminaGainCounter",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForStaminaGainCounter",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/StaminaUseCounter.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+    "namespace": "ForStaminaUseCounter",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForStaminaUseCounter",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/StartCombatButton.gd",
+    "module": "Runtime/Behavior/Interface/StartCombatButtonBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "disable",
+        "module": "Runtime/Behavior/Interface/StartCombatButtonBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/SwitchModeUI.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+    "namespace": "ForSwitchModeUI",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "startGame",
+        "module": "Runtime/Callbacks/Interface/CallbacksS.gd",
+        "namespace": "ForSwitchModeUI",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/TooltipLabel.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksT.gd",
+    "namespace": "ForTooltipLabel",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "positionLabel",
+        "module": "Runtime/Callbacks/Interface/CallbacksT.gd",
+        "namespace": "ForTooltipLabel",
+        "args": [
+          "control",
+          "offset"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/BuildIntoRecipe.gd",
+    "module": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipeBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "center",
+        "module": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipeBehavior.gd",
+        "namespace": "",
+        "args": [
+          "totalWidth"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/BuildIntoRecipesTooltip.gd",
+    "module": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipesTooltipBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onTooltipLocked",
+        "module": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipesTooltipBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/ItemTooltip.gd",
+    "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "scolor_movePunctuation",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "namespace": "",
+        "args": [
+          "text"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/RecipeTooltip.gd",
+    "module": "Runtime/Behavior/Interface/Tooltips/RecipeTooltipBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "updateSize",
+        "module": "Runtime/Behavior/Interface/Tooltips/RecipeTooltipBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/RelatedItems.gd",
+    "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksR.gd",
+    "namespace": "ForRelatedItems",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setItem",
+        "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksR.gd",
+        "namespace": "ForRelatedItems",
+        "args": [
+          "item",
+          "tooltip"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/SimpleTooltip.gd",
+    "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksS.gd",
+    "namespace": "ForSimpleTooltip",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setParams",
+        "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksS.gd",
+        "namespace": "ForSimpleTooltip",
+        "args": [
+          "header",
+          "description"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/SubclassSubtooltip.gd",
+    "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksS.gd",
+    "namespace": "ForSubclassSubtooltip",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setSubclass",
+        "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksS.gd",
+        "namespace": "ForSubclassSubtooltip",
+        "args": [
+          "descriptor"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/Tooltip.gd",
+    "module": "Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd",
+    "namespace": "",
+    "moved": 3,
+    "methods": [
+      {
+        "name": "updateSize",
+        "module": "Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "findClosingBracket",
+        "module": "Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd",
+        "namespace": "",
+        "args": [
+          "inText",
+          "fromPos"
+        ],
+        "await": false,
+        "static": true
+      },
+      {
+        "name": "highlight",
+        "module": "Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd",
+        "namespace": "",
+        "args": [
+          "text",
+          "wave",
+          "bold"
+        ],
+        "await": false,
+        "static": true
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/TooltipItemLayout.gd",
+    "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksT.gd",
+    "namespace": "ForTooltipItemLayout",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "addItem",
+        "module": "Runtime/Callbacks/Interface/Tooltips/CallbacksT.gd",
+        "namespace": "ForTooltipItemLayout",
+        "args": [
+          "descriptor",
+          "maxSize",
+          "tooltip",
+          "defaultScaling"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Trophy.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksT.gd",
+    "namespace": "ForTrophy",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "moveToPos",
+        "module": "Runtime/Callbacks/Interface/CallbacksT.gd",
+        "namespace": "ForTrophy",
+        "args": [
+          "pos"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/TugofWarAnimation.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksT.gd",
+    "namespace": "ForTugofWarAnimation",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Callbacks/Interface/CallbacksT.gd",
+        "namespace": "ForTugofWarAnimation",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Wardrobe/DressUpSprite.gd",
+    "module": "Runtime/Behavior/Interface/Wardrobe/DressUpSpriteBehavior.gd",
+    "namespace": "",
+    "moved": 3,
+    "methods": [
+      {
+        "name": "findIdleAnis",
+        "module": "Runtime/Behavior/Interface/Wardrobe/DressUpSpriteBehavior.gd",
+        "namespace": "",
+        "args": [
+          "node"
+        ],
+        "await": false
+      },
+      {
+        "name": "syncIdleAnis",
+        "module": "Runtime/Behavior/Interface/Wardrobe/DressUpSpriteBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "visitNode",
+        "module": "Runtime/Behavior/Interface/Wardrobe/DressUpSpriteBehavior.gd",
+        "namespace": "",
+        "args": [
+          "slot",
+          "node"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Wardrobe/SkinSlotButton.gd",
+    "module": "Runtime/Behavior/Interface/Wardrobe/SkinSlotButtonBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "init",
+        "module": "Runtime/Behavior/Interface/Wardrobe/SkinSlotButtonBehavior.gd",
+        "namespace": "",
+        "args": [
+          "_skin",
+          "_slot"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/WishlistButton.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksW.gd",
+    "namespace": "ForWishlistButton",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Interface/CallbacksW.gd",
+        "namespace": "ForWishlistButton",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/WishlistPopup.gd",
+    "module": "Runtime/Callbacks/Interface/CallbacksW.gd",
+    "namespace": "ForWishlistPopup",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "close",
+        "module": "Runtime/Callbacks/Interface/CallbacksW.gd",
+        "namespace": "ForWishlistPopup",
+        "args": [],
+        "await": true
+      }
+    ]
+  },
+  {
+    "path": "Items/Animations/PotionConnector.gd",
+    "module": "Runtime/Callbacks/Items/Animations/CallbacksP.gd",
+    "namespace": "ForPotionConnector",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Callbacks/Items/Animations/CallbacksP.gd",
+        "namespace": "ForPotionConnector",
+        "args": [
+          "_delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Animations/Zap.gd",
+    "module": "Runtime/Callbacks/Items/Animations/CallbacksZ.gd",
+    "namespace": "ForZap",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "zap",
+        "module": "Runtime/Callbacks/Items/Animations/CallbacksZ.gd",
+        "namespace": "ForZap",
+        "args": [
+          "startPos",
+          "endPos",
+          "style"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/ArtifactStoneHeat.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksA.gd",
+    "namespace": "ForArtifactStoneHeat",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onHeatChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksA.gd",
+        "namespace": "ForArtifactStoneHeat",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Bag.gd",
+    "module": "Runtime/Behavior/Items/BagBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getAffectedItemsInside",
+        "module": "Runtime/Behavior/Items/BagBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Bloodthorne.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+    "namespace": "ForBloodthorne",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBloodthorne",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/BloodyDagger.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+    "namespace": "ForBloodyDagger",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBloodyDagger",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/BowandArrow.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+    "namespace": "ForBowandArrow",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onWeaponAttacked",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBowandArrow",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      },
+      {
+        "name": "onStateChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBowandArrow",
+        "args": [
+          "_bonusDmg"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/BoxofRiches.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+    "namespace": "ForBoxofRiches",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBoxofRiches",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getGatedDescriptor",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBoxofRiches",
+        "args": [
+          "rarityOdds",
+          "numHighRolls"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Broom.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+    "namespace": "ForBroom",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBroom",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/BurningTorch.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+    "namespace": "ForBurningTorch",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksB.gd",
+        "namespace": "ForBurningTorch",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/CarrotGoobert.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+    "namespace": "ForCarrotGoobert",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCarrotGoobert",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/ClawsofAttack.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+    "namespace": "ForClawsofAttack",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onSpikesChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForClawsofAttack",
+        "args": [
+          "_amount",
+          "_event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/CorruptedArmor.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+    "namespace": "ForCorruptedArmor",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "reactToItemTypeChange",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCorruptedArmor",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCorruptedArmor",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/CraftingBond.gd",
+    "module": "Runtime/Behavior/Items/CraftingBondBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "breakBond",
+        "module": "Runtime/Behavior/Items/CraftingBondBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/CritwoodStaff.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+    "namespace": "ForCritwoodStaff",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCritwoodStaff",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Crossblades.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+    "namespace": "ForCrossblades",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onCombatStart",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCrossblades",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getCraftingOffset",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCrossblades",
+        "args": [
+          "forDirection"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/CursedDagger.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+    "namespace": "ForCursedDagger",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onOpponentDebuffsChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCursedDagger",
+        "args": [
+          "amount",
+          "_event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/CursedHairComb.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+    "namespace": "ForCursedHairComb",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onAffectedAttacked",
+        "module": "Runtime/Callbacks/Items/CallbacksC.gd",
+        "namespace": "ForCursedHairComb",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/DeathScythe.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksD.gd",
+    "namespace": "ForDeathScythe",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onOpponentPoisonChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksD.gd",
+        "namespace": "ForDeathScythe",
+        "args": [
+          "_amount",
+          "_event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/DeckofCards.gd",
+    "module": "Runtime/Behavior/Items/DeckofCardsBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onCombatStart",
+        "module": "Runtime/Behavior/Items/DeckofCardsBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/DemonicFlask.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksD.gd",
+    "namespace": "ForDemonicFlask",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/CallbacksD.gd",
+        "namespace": "ForDemonicFlask",
+        "args": [
+          "healthChange",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Eggscalibur.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksE.gd",
+    "namespace": "ForEggscalibur",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/CallbacksE.gd",
+        "namespace": "ForEggscalibur",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/EvilCap.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksE.gd",
+    "namespace": "ForEvilCap",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onCombatStart",
+        "module": "Runtime/Callbacks/Items/CallbacksE.gd",
+        "namespace": "ForEvilCap",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/AcornAce.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForAcornAce",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onAddToInventory_deferred",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAcornAce",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/AmuletofAgility.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForAmuletofAgility",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onBuffChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAmuletofAgility",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/AmuletofAlchemy.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForAmuletofAlchemy",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPotionEmptied",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAmuletofAlchemy",
+        "args": [
+          "potion"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/AmuletofDarkness.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForAmuletofDarkness",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onItemActivated",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAmuletofDarkness",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "onOpponentDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAmuletofDarkness",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/AmuletofLight.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForAmuletofLight",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onItemActivated",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAmuletofLight",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/AmuletUnidentified.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForAmuletUnidentified",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "identifyAmulet",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAmuletUnidentified",
+        "args": [
+          "dropResult"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Animations/AffectsLine.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/Animations/CallbacksA.gd",
+    "namespace": "ForAffectsLine",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "setPositions",
+        "module": "Runtime/Callbacks/Items/Exclusive/Animations/CallbacksA.gd",
+        "namespace": "ForAffectsLine",
+        "args": [
+          "item",
+          "end"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Animations/AmuletOfAlchemyAni.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/Animations/CallbacksA.gd",
+    "namespace": "ForAmuletOfAlchemyAni",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "moveTo",
+        "module": "Runtime/Callbacks/Items/Exclusive/Animations/CallbacksA.gd",
+        "namespace": "ForAmuletOfAlchemyAni",
+        "args": [
+          "pos",
+          "duration"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Anvil.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForAnvil",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreCombatStart",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForAnvil",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ArcaneBoots.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForArcaneBoots",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForArcaneBoots",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ArmoredPowerPuppy.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForArmoredPowerPuppy",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForArmoredPowerPuppy",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ArtifactStoneDeath.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+    "namespace": "ForArtifactStoneDeath",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onFatigueDamageChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksA.gd",
+        "namespace": "ForArtifactStoneDeath",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BadgerRune.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBadgerRune",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "preTakeDamage",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBadgerRune",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BadgerSpirit.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBadgerSpirit",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBadgerSpirit",
+        "args": [
+          "_healthChange",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBadgerSpirit",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BagofGiving.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBagofGiving",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBagofGiving",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getRelatedItems",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBagofGiving",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BerserkerBag.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBerserkerBag",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBerserkerBag",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Bewitchment.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBewitchment",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBewitchment",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BigBloodthorne.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBigBloodthorne",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBigBloodthorne",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BionicArmor.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBionicArmor",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBionicArmor",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onHealOrBlockChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBionicArmor",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BismuthCube.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBismuthCube",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onBuffsChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBismuthCube",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Bomb.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBomb",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBomb",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BookofBasics.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBookofBasics",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofBasics",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onSaleRoll",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofBasics",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BookofDarkness.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBookofDarkness",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofDarkness",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofDarkness",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BookofIce.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBookofIce",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofIce",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BookofLight.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBookofLight",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofLight",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofLight",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BookofNature.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBookofNature",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBookofNature",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Boomerang.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBoomerang",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBoomerang",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BowlofTreats.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBowlofTreats",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBowlofTreats",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getGatedDescriptor",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBowlofTreats",
+        "args": [
+          "rarity"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BoxofProsperity.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBoxofProsperity",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBoxofProsperity",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BrassKnuckles.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBrassKnuckles",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBrassKnuckles",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BurningBanner.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBurningBanner",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBurningBanner",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BurningSpikes.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBurningSpikes",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onSpikesChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBurningSpikes",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/BurningSword.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+    "namespace": "ForBurningSword",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onHeatChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksB.gd",
+        "namespace": "ForBurningSword",
+        "args": [
+          "amount",
+          "_event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Cauldron.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForCauldron",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForCauldron",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ChainWhip.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForChainWhip",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onOpponentBuffsChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForChainWhip",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ChargeSplitter.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForChargeSplitter",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForChargeSplitter",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "emitCharge",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForChargeSplitter",
+        "args": [
+          "speedFactor"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ChessMaster.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForChessMaster",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForChessMaster",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ChromeCube.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForChromeCube",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForChromeCube",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Cog.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForCog",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onSold",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForCog",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/CriticalPoison.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForCriticalPoison",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onWeaponAttacked",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForCriticalPoison",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Crow.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForCrow",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForCrow",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Cthulhu.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForCthulhu",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForCthulhu",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Cubert.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForCubert",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onItemActivated2",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForCubert",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/CupcakeDragon.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+    "namespace": "ForCupcakeDragon",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksC.gd",
+        "namespace": "ForCupcakeDragon",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Daggerang.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+    "namespace": "ForDaggerang",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+        "namespace": "ForDaggerang",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/DeathLotus.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+    "namespace": "ForDeathLotus",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+        "namespace": "ForDeathLotus",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/DeerTotem.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+    "namespace": "ForDeerTotem",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+        "namespace": "ForDeerTotem",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/DraconicOrb.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+    "namespace": "ForDraconicOrb",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+        "namespace": "ForDraconicOrb",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/DragonClaws.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+    "namespace": "ForDragonClaws",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+        "namespace": "ForDragonClaws",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/DragonSet.gd",
+    "module": "Runtime/Behavior/Items/Exclusive/DragonSetBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "checkItems",
+        "module": "Runtime/Behavior/Items/Exclusive/DragonSetBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onOpponentDamaged",
+        "module": "Runtime/Behavior/Items/Exclusive/DragonSetBehavior.gd",
+        "namespace": "",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/DualWielding.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+    "namespace": "ForDualWielding",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "checkItems",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+        "namespace": "ForDualWielding",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksD.gd",
+        "namespace": "ForDualWielding",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/EchoingBattlecry.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+    "namespace": "ForEchoingBattlecry",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+        "namespace": "ForEchoingBattlecry",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ElephantRune.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+    "namespace": "ForElephantRune",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onAttack",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+        "namespace": "ForElephantRune",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/EnergyConversion.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+    "namespace": "ForEnergyConversion",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+        "namespace": "ForEnergyConversion",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Everburning.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+    "namespace": "ForEverburning",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksE.gd",
+        "namespace": "ForEverburning",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Fedora.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+    "namespace": "ForFedora",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onCombatStart",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFedora",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFedora",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/FirePit.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+    "namespace": "ForFirePit",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFirePit",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/FlameBadge.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+    "namespace": "ForFlameBadge",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFlameBadge",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/FlameWhip.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+    "namespace": "ForFlameWhip",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFlameWhip",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/FrozenFlame.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+    "namespace": "ForFrozenFlame",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onHeatChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFrozenFlame",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/FullBodyProtection.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+    "namespace": "ForFullBodyProtection",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "checkItems",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFullBodyProtection",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/FurciferPrime.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+    "namespace": "ForFurciferPrime",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFurciferPrime",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getGatedDescriptor",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksF.gd",
+        "namespace": "ForFurciferPrime",
+        "args": [
+          "rarity"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/GirlPower.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksG.gd",
+    "namespace": "ForGirlPower",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksG.gd",
+        "namespace": "ForGirlPower",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/GoldCube.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksG.gd",
+    "namespace": "ForGoldCube",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksG.gd",
+        "namespace": "ForGoldCube",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Halberd.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+    "namespace": "ForHalberd",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_late",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHalberd",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Hardwood.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+    "namespace": "ForHardwood",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onItemsCounted",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHardwood",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/HeartShield.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+    "namespace": "ForHeartShield",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHeartShield",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onRegenChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHeartShield",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/HeavyDrinking.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+    "namespace": "ForHeavyDrinking",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHeavyDrinking",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHeavyDrinking",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/HolyCollar.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+    "namespace": "ForHolyCollar",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHolyCollar",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/HyperHedgehog.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+    "namespace": "ForHyperHedgehog",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksH.gd",
+        "namespace": "ForHyperHedgehog",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/IceArmor.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+    "namespace": "ForIceArmor",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+        "namespace": "ForIceArmor",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/IceDragon.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+    "namespace": "ForIceDragon",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onOpponentColdChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+        "namespace": "ForIceDragon",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/IceFlower.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+    "namespace": "ForIceFlower",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+        "namespace": "ForIceFlower",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/InnerPower.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+    "namespace": "ForInnerPower",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onLuckChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+        "namespace": "ForInnerPower",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "onEmpowerChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+        "namespace": "ForInnerPower",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/InvestmentOpportunity.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+    "namespace": "ForInvestmentOpportunity",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onBuffChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksI.gd",
+        "namespace": "ForInvestmentOpportunity",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/JynxStaff.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksJ.gd",
+    "namespace": "ForJynxStaff",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksJ.gd",
+        "namespace": "ForJynxStaff",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/KingoftheBling.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksK.gd",
+    "namespace": "ForKingoftheBling",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onSaleRoll",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksK.gd",
+        "namespace": "ForKingoftheBling",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "getRestockItem",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksK.gd",
+        "namespace": "ForKingoftheBling",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Laboratory.gd",
+    "module": "Runtime/Behavior/Items/Exclusive/LaboratoryBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "getDescription",
+        "module": "Runtime/Behavior/Items/Exclusive/LaboratoryBehavior.gd",
+        "namespace": "",
+        "args": [
+          "wrapInColor"
+        ],
+        "await": false
+      },
+      {
+        "name": "canAffect",
+        "module": "Runtime/Behavior/Items/Exclusive/LaboratoryBehavior.gd",
+        "namespace": "",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/LightFlower.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+    "namespace": "ForLightFlower",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+        "namespace": "ForLightFlower",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/LightningPotion.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+    "namespace": "ForLightningPotion",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onTriggerPotion",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+        "namespace": "ForLightningPotion",
+        "args": [
+          "triggerEvent"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/LightningStaff.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+    "namespace": "ForLightningStaff",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+        "namespace": "ForLightningStaff",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/LittleMimic.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+    "namespace": "ForLittleMimic",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getCounterValue",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+        "namespace": "ForLittleMimic",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/LuckyCat.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+    "namespace": "ForLuckyCat",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+        "namespace": "ForLuckyCat",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updatePaws",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksL.gd",
+        "namespace": "ForLuckyCat",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MageHat.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMageHat",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onCombatStart",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMageHat",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MagicCollar.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMagicCollar",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onWeaponAttacked",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMagicCollar",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MagiteccArmor.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMagiteccArmor",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMagiteccArmor",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ManaCrystal.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForManaCrystal",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onChargeEnteredCell",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForManaCrystal",
+        "args": [
+          "charge",
+          "cellIndex"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Mananana.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMananana",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMananana",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MechaBat.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMechaBat",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMechaBat",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onOpponentDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMechaBat",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MegaClover.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMegaClover",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onLuckyChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMegaClover",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MercuryElemental.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMercuryElemental",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onStaminaUsed",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMercuryElemental",
+        "args": [
+          "amount"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MoltenDagger.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMoltenDagger",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMoltenDagger",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MoltenGreatsword.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMoltenGreatsword",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMoltenGreatsword",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MoltenSpear.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMoltenSpear",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMoltenSpear",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MoltenSpear2.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMoltenSpear2",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMoltenSpear2",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MoreStats.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMoreStats",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onCombatStart",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMoreStats",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MushroomFarm.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+    "namespace": "ForMushroomFarm",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onItemRoll",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksM.gd",
+        "namespace": "ForMushroomFarm",
+        "args": [
+          "descr"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/NullBlade.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksN.gd",
+    "namespace": "ForNullBlade",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksN.gd",
+        "namespace": "ForNullBlade",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ObsidianDragon.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksO.gd",
+    "namespace": "ForObsidianDragon",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onHeatChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksO.gd",
+        "namespace": "ForObsidianDragon",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/OwlSpirit.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksO.gd",
+    "namespace": "ForOwlSpirit",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksO.gd",
+        "namespace": "ForOwlSpirit",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ParadiseBirb.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForParadiseBirb",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForParadiseBirb",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Phoenix.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPhoenix",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPhoenix",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPhoenix",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PlasticCube.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPlasticCube",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPlasticCube",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PoisonFrog.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPoisonFrog",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onBuffsChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPoisonFrog",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PoisonGrenade.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPoisonGrenade",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onLuckChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPoisonGrenade",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "onStateChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPoisonGrenade",
+        "args": [
+          "_poisonCritActive"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PoisonShortbow.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPoisonShortbow",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPoisonShortbow",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Pop.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPop",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onManaChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPop",
+        "args": [
+          "_amount",
+          "_event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PortableAltar.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPortableAltar",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onRecipesUpdated",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPortableAltar",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Pot.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPot",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPot",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PoweroftheMoon.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPoweroftheMoon",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPoweroftheMoon",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PowerPuppy.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPowerPuppy",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPowerPuppy",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/PrismaticWand.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+    "namespace": "ForPrismaticWand",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksP.gd",
+        "namespace": "ForPrismaticWand",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RainbowBadge.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRainbowBadge",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getRelatedItems",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRainbowBadge",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RainbowGoobertAdventurer.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRainbowGoobertAdventurer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRainbowGoobertAdventurer",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RainbowGoobertBerserker.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRainbowGoobertBerserker",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRainbowGoobertBerserker",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RainbowGoobertEngineer.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRainbowGoobertEngineer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRainbowGoobertEngineer",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RainbowGoobertMage.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRainbowGoobertMage",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRainbowGoobertMage",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RainbowGoobertPyromancer.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRainbowGoobertPyromancer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRainbowGoobertPyromancer",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RandomLoadoutBag.gd",
+    "module": "Runtime/Behavior/Items/Exclusive/RandomLoadoutBagBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "addItemWherePossible",
+        "module": "Runtime/Behavior/Items/Exclusive/RandomLoadoutBagBehavior.gd",
+        "namespace": "",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Rat.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRat",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRat",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RatChef.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRatChef",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getCraftingOffset",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRatChef",
+        "args": [
+          "forDirection"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Resistor.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForResistor",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onChargeReceived",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForResistor",
+        "args": [
+          "_charge"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Reverse.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForReverse",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getCardDescription",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForReverse",
+        "args": [
+          "descr"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Robodog.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+    "namespace": "ForRobodog",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksR.gd",
+        "namespace": "ForRobodog",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RotationSpring.gd",
+    "module": "Runtime/Behavior/Items/Exclusive/RotationSpringBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "init",
+        "module": "Runtime/Behavior/Items/Exclusive/RotationSpringBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SapphireWhelp.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSapphireWhelp",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSapphireWhelp",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ScholarBag.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForScholarBag",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForScholarBag",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Scissorswords.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForScissorswords",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForScissorswords",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SealtheDeal.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSealtheDeal",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSealtheDeal",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SerpentStaff.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSerpentStaff",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSerpentStaff",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ShellTotem.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForShellTotem",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForShellTotem",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ShepherdsCrook.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForShepherdsCrook",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForShepherdsCrook",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ShinyMantle.gd",
+    "module": "Runtime/Behavior/Items/Exclusive/ShinyMantleBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getCounterValue",
+        "module": "Runtime/Behavior/Items/Exclusive/ShinyMantleBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SmellyBarrier.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSmellyBarrier",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSmellyBarrier",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Snowcake.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSnowcake",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSnowcake",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SnowStick.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSnowStick",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSnowStick",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Solaris.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSolaris",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSolaris",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpeakwithAnimals.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpeakwithAnimals",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getGatedDescriptor",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpeakwithAnimals",
+        "args": [
+          "rarity"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpellScrollDark.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpellScrollDark",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpellScrollDark",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpellScrollFrostbolt.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpellScrollFrostbolt",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpellScrollFrostbolt",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpellScrollIce.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpellScrollIce",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onCharacterAttacked",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpellScrollIce",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpellScrollNature.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpellScrollNature",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onItemUsedStamina",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpellScrollNature",
+        "args": [
+          "amount"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpicyBanana.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpicyBanana",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onStaminaUsed",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpicyBanana",
+        "args": [
+          "amount"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpikedStaff.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpikedStaff",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpikedStaff",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SpintoWin.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSpintoWin",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpintoWin",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "gainsStack",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSpintoWin",
+        "args": [
+          "stackType"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/StaffofFire.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForStaffofFire",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStaffofFire",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/StoneArmor.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForStoneArmor",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStoneArmor",
+        "args": [
+          "_healthChange",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/StoneBadge.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForStoneBadge",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStoneBadge",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getItemsMaxCost",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStoneBadge",
+        "args": [
+          "maxCost"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Stoned.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForStoned",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStoned",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "checkBlock",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStoned",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/StoneShoes.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForStoneShoes",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStoneShoes",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/StrongVampiricPotion.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForStrongVampiricPotion",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onTriggerPotion",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStrongVampiricPotion",
+        "args": [
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "onOpponentDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForStrongVampiricPotion",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SunArmor.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSunArmor",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "reactToItemTypeChange",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSunArmor",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSunArmor",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/SunShield.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+    "namespace": "ForSunShield",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onItemGaveBlock",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksS.gd",
+        "namespace": "ForSunShield",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/TeslaCoil.gd",
+    "module": "Runtime/Behavior/Items/Exclusive/TeslaCoilBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Behavior/Items/Exclusive/TeslaCoilBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Thornbloom.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+    "namespace": "ForThornbloom",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForThornbloom",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ThorsHammer.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+    "namespace": "ForThorsHammer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForThorsHammer",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/TigerRune.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+    "namespace": "ForTigerRune",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onBuffsChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForTigerRune",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/TimeDilator.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+    "namespace": "ForTimeDilator",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForTimeDilator",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForTimeDilator",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Toad.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+    "namespace": "ForToad",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onBuffsChanged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForToad",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Toolbox.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+    "namespace": "ForToolbox",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onOpponentDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForToolbox",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Twine.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+    "namespace": "ForTwine",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onTriggerItemActivated",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksT.gd",
+        "namespace": "ForTwine",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/VampiricCollar.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksV.gd",
+    "namespace": "ForVampiricCollar",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksV.gd",
+        "namespace": "ForVampiricCollar",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onOpponentAttacked",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksV.gd",
+        "namespace": "ForVampiricCollar",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/VampiricPotion.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksV.gd",
+    "namespace": "ForVampiricPotion",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPlayerDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksV.gd",
+        "namespace": "ForVampiricPotion",
+        "args": [
+          "_healthChange",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Wand.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWand",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWand",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/WandofDissonance.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWandofDissonance",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWandofDissonance",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWandofDissonance",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/WarScythe.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWarScythe",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWarScythe",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/WingedBoots.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWingedBoots",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWingedBoots",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Wisp.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWisp",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onAttack",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWisp",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWisp",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/WolfBadge.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWolfBadge",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWolfBadge",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/WolfEmblem.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWolfEmblem",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWolfEmblem",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Wrench.gd",
+    "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+    "namespace": "ForWrench",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/Exclusive/CallbacksW.gd",
+        "namespace": "ForWrench",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/FalconBlade.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+    "namespace": "ForFalconBlade",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+        "namespace": "ForFalconBlade",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getCraftingOffset",
+        "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+        "namespace": "ForFalconBlade",
+        "args": [
+          "forDirection"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/FancyFencingRapier.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+    "namespace": "ForFancyFencingRapier",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+        "namespace": "ForFancyFencingRapier",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Fanfare.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+    "namespace": "ForFanfare",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+        "namespace": "ForFanfare",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/FannyPack.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+    "namespace": "ForFannyPack",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onCombatStart",
+        "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+        "namespace": "ForFannyPack",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Flute.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+    "namespace": "ForFlute",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksF.gd",
+        "namespace": "ForFlute",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Gems/Skull.gd",
+    "module": "Runtime/Callbacks/Items/Gems/CallbacksS.gd",
+    "namespace": "ForSkull",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onOpponentDamaged",
+        "module": "Runtime/Callbacks/Items/Gems/CallbacksS.gd",
+        "namespace": "ForSkull",
+        "args": [
+          "_healthChange",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/GemSocket.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+    "namespace": "ForGemSocket",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDropGem",
+        "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+        "namespace": "ForGemSocket",
+        "args": [
+          "droppedGem"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/GingerbreadMan.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+    "namespace": "ForGingerbreadMan",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+        "namespace": "ForGingerbreadMan",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Goobert.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+    "namespace": "ForGoobert",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onItemActivated",
+        "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+        "namespace": "ForGoobert",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Greatsword.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+    "namespace": "ForGreatsword",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "empowerChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksG.gd",
+        "namespace": "ForGreatsword",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Hammer.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+    "namespace": "ForHammer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+        "namespace": "ForHammer",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/HeartContainer.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+    "namespace": "ForHeartContainer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onRegenChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+        "namespace": "ForHeartContainer",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/HeroLongsword.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+    "namespace": "ForHeroLongsword",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getCraftingOffset",
+        "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+        "namespace": "ForHeroLongsword",
+        "args": [
+          "forDirection"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/HoloFireLizard.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+    "namespace": "ForHoloFireLizard",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doRevealEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+        "namespace": "ForHoloFireLizard",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/HungryBlade.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+    "namespace": "ForHungryBlade",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksH.gd",
+        "namespace": "ForHungryBlade",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/ItemPushZone.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksI.gd",
+    "namespace": "ForItemPushZone",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onBodyEntered",
+        "module": "Runtime/Callbacks/Items/CallbacksI.gd",
+        "namespace": "ForItemPushZone",
+        "args": [
+          "body"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Jynxtorquilla.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksJ.gd",
+    "namespace": "ForJynxtorquilla",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksJ.gd",
+        "namespace": "ForJynxtorquilla",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/LeatherBoots.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksL.gd",
+    "namespace": "ForLeatherBoots",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Callbacks/Items/CallbacksL.gd",
+        "namespace": "ForLeatherBoots",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/LightGoobert.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksL.gd",
+    "namespace": "ForLightGoobert",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksL.gd",
+        "namespace": "ForLightGoobert",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/LuckyBow.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksL.gd",
+    "namespace": "ForLuckyBow",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksL.gd",
+        "namespace": "ForLuckyBow",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/MagicStaff.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+    "namespace": "ForMagicStaff",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+        "namespace": "ForMagicStaff",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/MagicTorch.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+    "namespace": "ForMagicTorch",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+        "namespace": "ForMagicTorch",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/ManaOrb.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+    "namespace": "ForManaOrb",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onManaChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+        "namespace": "ForManaOrb",
+        "args": [
+          "amount",
+          "triggerEvent"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/ManaPotion.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+    "namespace": "ForManaPotion",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onManaChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksM.gd",
+        "namespace": "ForManaPotion",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Pandamonium.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+    "namespace": "ForPandamonium",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getCraftingOffset",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPandamonium",
+        "args": [
+          "forDirection"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/PestilenceFlask.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+    "namespace": "ForPestilenceFlask",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onOpponentHeal",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPestilenceFlask",
+        "args": [
+          "_amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/PiercingArrow.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+    "namespace": "ForPiercingArrow",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPiercingArrow",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/PoisonIvy.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+    "namespace": "ForPoisonIvy",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPoisonIvy",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onOpponentPoisonChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPoisonIvy",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/PotionBelt.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+    "namespace": "ForPotionBelt",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPotionBelt",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onPotionEmptied",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPotionBelt",
+        "args": [
+          "_potion"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Present.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+    "namespace": "ForPresent",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPresent",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Pumpkin.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+    "namespace": "ForPumpkin",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Callbacks/Items/CallbacksP.gd",
+        "namespace": "ForPumpkin",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/RainbowGoobert.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksR.gd",
+    "namespace": "ForRainbowGoobert",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksR.gd",
+        "namespace": "ForRainbowGoobert",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/RainbowGoobertRanger.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksR.gd",
+    "namespace": "ForRainbowGoobertRanger",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksR.gd",
+        "namespace": "ForRainbowGoobertRanger",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/RangerBag.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksR.gd",
+    "namespace": "ForRangerBag",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Callbacks/Items/CallbacksR.gd",
+        "namespace": "ForRangerBag",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Shovel.gd",
+    "module": "Runtime/Behavior/Items/ShovelBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Behavior/Items/ShovelBehavior.gd",
+        "namespace": "",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/SpectralDagger.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+    "namespace": "ForSpectralDagger",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+        "namespace": "ForSpectralDagger",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/StaffofUnhealing.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+    "namespace": "ForStaffofUnhealing",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+        "namespace": "ForStaffofUnhealing",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Stone.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+    "namespace": "ForStone",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+        "namespace": "ForStone",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/StrongDemonicFlask.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+    "namespace": "ForStrongDemonicFlask",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "onTriggerPotion",
+        "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+        "namespace": "ForStrongDemonicFlask",
+        "args": [
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "drinkStrongDemonicFlask",
+        "module": "Runtime/Callbacks/Items/CallbacksS.gd",
+        "namespace": "ForStrongDemonicFlask",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/TheFool.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksT.gd",
+    "namespace": "ForTheFool",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doRevealEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksT.gd",
+        "namespace": "ForTheFool",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/TheLovers.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksT.gd",
+    "namespace": "ForTheLovers",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doRevealEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksT.gd",
+        "namespace": "ForTheLovers",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Torch.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksT.gd",
+    "namespace": "ForTorch",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onPreDealDamage_early",
+        "module": "Runtime/Callbacks/Items/CallbacksT.gd",
+        "namespace": "ForTorch",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/VampiricScythe.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksV.gd",
+    "namespace": "ForVampiricScythe",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onVampirismChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksV.gd",
+        "namespace": "ForVampiricScythe",
+        "args": [
+          "_amount",
+          "_event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/White-EyesBlueDragon.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksW.gd",
+    "namespace": "ForWhite_EyesBlueDragon",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "doRevealEffect",
+        "module": "Runtime/Callbacks/Items/CallbacksW.gd",
+        "namespace": "ForWhite_EyesBlueDragon",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/YggdrasilLeaf.gd",
+    "module": "Runtime/Callbacks/Items/CallbacksY.gd",
+    "namespace": "ForYggdrasilLeaf",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onManaChanged",
+        "module": "Runtime/Callbacks/Items/CallbacksY.gd",
+        "namespace": "ForYggdrasilLeaf",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/CrazySDK.gd",
+    "module": "Runtime/Callbacks/Utility/CallbacksC.gd",
+    "namespace": "ForCrazySDK",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_record",
+        "module": "Runtime/Callbacks/Utility/CallbacksC.gd",
+        "namespace": "ForCrazySDK",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/CustomRules.gd",
+    "module": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "pullRule_noSet",
+        "module": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+        "namespace": "",
+        "args": [
+          "rule",
+          "bitStream"
+        ],
+        "await": false
+      },
+      {
+        "name": "isSwitchModeNoLoad",
+        "module": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+        "namespace": "",
+        "args": [
+          "serialized"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/DamageResult.gd",
+    "module": "Runtime/Callbacks/Utility/CallbacksD.gd",
+    "namespace": "ForDamageResult",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "applyDamageReduction",
+        "module": "Runtime/Callbacks/Utility/CallbacksD.gd",
+        "namespace": "ForDamageResult",
+        "args": [
+          "amount",
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/DamageSource.gd",
+    "module": "Runtime/Behavior/Utility/DamageSourceBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "fromDamageSource",
+        "module": "Runtime/Behavior/Utility/DamageSourceBehavior.gd",
+        "namespace": "",
+        "args": [
+          "otherDamSource"
+        ],
+        "await": false
+      },
+      {
+        "name": "randDamage",
+        "module": "Runtime/Behavior/Utility/DamageSourceBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/ItemBoundChecker.gd",
+    "module": "Runtime/Behavior/Utility/ItemBoundCheckerBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onIndicatorPressed",
+        "module": "Runtime/Behavior/Utility/ItemBoundCheckerBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/ItemPool.gd",
+    "module": "Runtime/Callbacks/Utility/CallbacksI.gd",
+    "namespace": "ForItemPool",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "setPrice",
+        "module": "Runtime/Callbacks/Utility/CallbacksI.gd",
+        "namespace": "ForItemPool",
+        "args": [
+          "price"
+        ],
+        "await": false
+      },
+      {
+        "name": "getItem",
+        "module": "Runtime/Callbacks/Utility/CallbacksI.gd",
+        "namespace": "ForItemPool",
+        "args": [
+          "index"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/LocalHistoryStore.gd",
+    "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+    "namespace": "",
+    "moved": 3,
+    "methods": [
+      {
+        "name": "read_runs",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "write_run",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "namespace": "",
+        "args": [
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "_is_integer",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "namespace": "",
+        "args": [
+          "value"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/LocalizedControl.gd",
+    "module": "Runtime/Behavior/Utility/LocalizedControlBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "collectFonts",
+        "module": "Runtime/Behavior/Utility/LocalizedControlBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/MaterialCompiler.gd",
+    "module": "Runtime/Callbacks/Utility/CallbacksM.gd",
+    "namespace": "ForMaterialCompiler",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Utility/CallbacksM.gd",
+        "namespace": "ForMaterialCompiler",
+        "args": [],
+        "await": true
+      }
+    ]
+  },
+  {
+    "path": "Utility/MerchButton.gd",
+    "module": "Runtime/Callbacks/Utility/CallbacksM.gd",
+    "namespace": "ForMerchButton",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Callbacks/Utility/CallbacksM.gd",
+        "namespace": "ForMerchButton",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/MultiTimer.gd",
+    "module": "Runtime/Callbacks/Utility/CallbacksM.gd",
+    "namespace": "ForMultiTimer",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "onTimeout",
+        "module": "Runtime/Callbacks/Utility/CallbacksM.gd",
+        "namespace": "ForMultiTimer",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/ShardEmitter.gd",
+    "module": "Runtime/Behavior/Utility/ShardEmitterBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "shatter",
+        "module": "Runtime/Behavior/Utility/ShardEmitterBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_draw",
+        "module": "Runtime/Behavior/Utility/ShardEmitterBehavior.gd",
+        "namespace": "",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/SkinBook.gd",
+    "module": "Runtime/Behavior/Utility/SkinBookBehavior.gd",
+    "namespace": "",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "getRandomSkinFor",
+        "module": "Runtime/Behavior/Utility/SkinBookBehavior.gd",
+        "namespace": "",
+        "args": [
+          "classI",
+          "style",
+          "slot"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/UGCItem.gd",
+    "module": "Runtime/Behavior/Utility/UGCItemBehavior.gd",
+    "namespace": "",
+    "moved": 3,
+    "methods": [
+      {
+        "name": "set_visibility",
+        "module": "Runtime/Behavior/Utility/UGCItemBehavior.gd",
+        "namespace": "",
+        "args": [
+          "p_visibility"
+        ],
+        "await": false
+      },
+      {
+        "name": "_on_item_created_lobbies",
+        "module": "Runtime/Behavior/Utility/UGCItemBehavior.gd",
+        "namespace": "",
+        "args": [
+          "result",
+          "_file_id",
+          "_accept_tos"
+        ],
+        "await": false
+      },
+      {
+        "name": "_on_item_updated",
+        "module": "Runtime/Behavior/Utility/UGCItemBehavior.gd",
+        "namespace": "",
+        "args": [
+          "result",
+          "_accept_tos"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/Inventory.gd",
+    "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+    "namespace": "",
+    "moved": 2,
+    "methods": [
+      {
+        "name": "getCellsInLine",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "namespace": "",
+        "args": [
+          "cells",
+          "direction",
+          "distance"
+        ],
+        "await": false,
+        "static": true
+      },
+      {
+        "name": "getAdjacentCells",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "namespace": "",
+        "args": [
+          "cells"
+        ],
+        "await": false,
+        "static": true
+      }
+    ]
+  },
+  {
+    "path": "Utility/Profanity.gd",
+    "module": "Runtime/Callbacks/Utility/CallbacksP.gd",
+    "namespace": "ForProfanity",
+    "moved": 1,
+    "methods": [
+      {
+        "name": "flatten",
+        "module": "Runtime/Callbacks/Utility/CallbacksP.gd",
+        "namespace": "ForProfanity",
+        "args": [
+          "word"
+        ],
+        "await": false,
+        "static": true
+      }
+    ]
+  },
+  {
+    "path": "Utility/RunData.gd",
+    "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+    "namespace": "",
+    "moved": 5,
+    "methods": [
+      {
+        "name": "serializeCharacterData",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "namespace": "",
+        "args": [
+          "addToBitstream",
+          "withNewClasses"
+        ],
+        "await": false,
+        "static": true
+      },
+      {
+        "name": "deserializeCharacterData",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "namespace": "",
+        "args": [
+          "bitStream",
+          "withNewClasses"
+        ],
+        "await": false,
+        "static": true
+      },
+      {
+        "name": "deserializeItems",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "namespace": "",
+        "args": [
+          "metadataString",
+          "version"
+        ],
+        "await": false,
+        "static": true
+      },
+      {
+        "name": "createRoundDict",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "namespace": "",
+        "args": [
+          "metadataString",
+          "_characterClass",
+          "_loadout",
+          "_name",
+          "_chibiStyle",
+          "_skins",
+          "version",
+          "nameIsEncoded"
+        ],
+        "await": false,
+        "static": true
+      },
+      {
+        "name": "deserializeStream",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "namespace": "",
+        "args": [
+          "bitStream",
+          "version"
+        ],
+        "await": false,
+        "static": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,598 @@
+{
+	"initialized_ms": 7146,
+	"samples": [
+		{
+			"backgrounds": [],
+			"cached_pool_nodes": 0,
+			"draw_calls": 67.0,
+			"frame_median_ms": 13.312,
+			"frame_p95_ms": 13.791,
+			"frame_p99_ms": 14.194,
+			"geometry_cache": 0,
+			"label": "title_initial",
+			"nodes": 1636.0,
+			"objects": 9274.0,
+			"orphan_nodes": 17.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2160.0,
+			"static_bytes": 459427480.0,
+			"static_peak_bytes": 479523861.0,
+			"stream": {
+				"budget_overruns": 0,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 0,
+				"job_costs": {},
+				"job_max_us": 0,
+				"jobs": 0,
+				"loaded": 1,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 1,
+				"resident": 1,
+				"scopes": 1,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 382172085.0,
+			"texture_cache": 0,
+			"time_ms": 7155,
+			"tree_nodes": 1636,
+			"video_bytes": 388617725.0
+		},
+		{
+			"backgrounds": [],
+			"cached_pool_nodes": 2,
+			"draw_calls": 86.0,
+			"frame_median_ms": 13.305,
+			"frame_p95_ms": 13.739,
+			"frame_p99_ms": 13.83,
+			"geometry_cache": 0,
+			"label": "title_idle",
+			"nodes": 1750.0,
+			"objects": 9787.0,
+			"orphan_nodes": 15.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2311.0,
+			"static_bytes": 468176782.0,
+			"static_peak_bytes": 479523861.0,
+			"stream": {
+				"budget_overruns": 1,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 6,
+				"job_costs": {
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 1299,
+						"total_us": 1299
+					},
+					"res://Items/Gems/ChippedEmerald.tscn": {
+						"count": 1,
+						"max_us": 1219,
+						"total_us": 1219
+					},
+					"res://Items/Gems/CorruptedCrystal.tscn": {
+						"count": 1,
+						"max_us": 9258,
+						"total_us": 9258
+					},
+					"res://Items/Gems/FlawedRuby.tscn": {
+						"count": 1,
+						"max_us": 1287,
+						"total_us": 1287
+					},
+					"res://Items/Stone.tscn": {
+						"count": 1,
+						"max_us": 1139,
+						"total_us": 1139
+					},
+					"res://Items/Whetstone.tscn": {
+						"count": 1,
+						"max_us": 1085,
+						"total_us": 1085
+					}
+				},
+				"job_max_us": 9258,
+				"jobs": 0,
+				"loaded": 9,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 9,
+				"resident": 9,
+				"scopes": 2,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 379578806.0,
+			"texture_cache": 0,
+			"time_ms": 20448,
+			"tree_nodes": 1750,
+			"video_bytes": 396713822.0
+		},
+		{
+			"backgrounds": [
+				"shop"
+			],
+			"cached_pool_nodes": 4,
+			"draw_calls": 96.0,
+			"frame_median_ms": 13.273,
+			"frame_p95_ms": 13.902,
+			"frame_p99_ms": 13.938,
+			"geometry_cache": 0,
+			"label": "shop",
+			"nodes": 2027.0,
+			"objects": 10694.0,
+			"orphan_nodes": 17.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2567.0,
+			"static_bytes": 475228490.0,
+			"static_peak_bytes": 522226594.0,
+			"stream": {
+				"budget_overruns": 3,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 439,
+						"total_us": 439
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 412,
+						"total_us": 412
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 9085,
+						"total_us": 9085
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 455,
+						"total_us": 455
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 568,
+						"total_us": 568
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 1299,
+						"total_us": 1299
+					},
+					"res://Items/Gems/ChippedEmerald.tscn": {
+						"count": 1,
+						"max_us": 1219,
+						"total_us": 1219
+					},
+					"res://Items/Gems/CorruptedCrystal.tscn": {
+						"count": 1,
+						"max_us": 9258,
+						"total_us": 9258
+					},
+					"res://Items/Gems/FlawedRuby.tscn": {
+						"count": 1,
+						"max_us": 1287,
+						"total_us": 1287
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 530,
+						"total_us": 530
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5340,
+						"total_us": 5340
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 470,
+						"total_us": 470
+					},
+					"res://Items/Stone.tscn": {
+						"count": 1,
+						"max_us": 1139,
+						"total_us": 1139
+					},
+					"res://Items/Whetstone.tscn": {
+						"count": 1,
+						"max_us": 1085,
+						"total_us": 1085
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 22,
+						"total_us": 22
+					}
+				},
+				"job_max_us": 9258,
+				"jobs": 0,
+				"loaded": 60,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 60,
+				"resident": 60,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 438338639.0,
+			"texture_cache": 0,
+			"time_ms": 28275,
+			"tree_nodes": 2027,
+			"video_bytes": 455631567.0
+		},
+		{
+			"backgrounds": [
+				"shop"
+			],
+			"cached_pool_nodes": 2,
+			"draw_calls": 140.0,
+			"frame_median_ms": 13.304,
+			"frame_p95_ms": 13.883,
+			"frame_p99_ms": 13.922,
+			"geometry_cache": 0,
+			"label": "codex",
+			"nodes": 2257.0,
+			"objects": 11237.0,
+			"orphan_nodes": 15.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2626.0,
+			"static_bytes": 479487088.0,
+			"static_peak_bytes": 522226594.0,
+			"stream": {
+				"budget_overruns": 3,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 439,
+						"total_us": 439
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 412,
+						"total_us": 412
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 9085,
+						"total_us": 9085
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 455,
+						"total_us": 455
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 568,
+						"total_us": 568
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 1299,
+						"total_us": 1299
+					},
+					"res://Items/Gems/ChippedEmerald.tscn": {
+						"count": 1,
+						"max_us": 1219,
+						"total_us": 1219
+					},
+					"res://Items/Gems/CorruptedCrystal.tscn": {
+						"count": 1,
+						"max_us": 9258,
+						"total_us": 9258
+					},
+					"res://Items/Gems/FlawedRuby.tscn": {
+						"count": 1,
+						"max_us": 1287,
+						"total_us": 1287
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 530,
+						"total_us": 530
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5340,
+						"total_us": 5340
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 470,
+						"total_us": 470
+					},
+					"res://Items/Stone.tscn": {
+						"count": 1,
+						"max_us": 1139,
+						"total_us": 1139
+					},
+					"res://Items/Whetstone.tscn": {
+						"count": 1,
+						"max_us": 1085,
+						"total_us": 1085
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 22,
+						"total_us": 22
+					}
+				},
+				"job_max_us": 9258,
+				"jobs": 0,
+				"loaded": 128,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 128,
+				"resident": 128,
+				"scopes": 9,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 456665931.0,
+			"texture_cache": 0,
+			"time_ms": 31568,
+			"tree_nodes": 2257,
+			"video_bytes": 473952083.0
+		},
+		{
+			"backgrounds": [
+				"shop"
+			],
+			"cached_pool_nodes": 0,
+			"draw_calls": 96.0,
+			"frame_median_ms": 13.296,
+			"frame_p95_ms": 13.91,
+			"frame_p99_ms": 13.937,
+			"geometry_cache": 0,
+			"label": "codex_closed",
+			"nodes": 2027.0,
+			"objects": 10706.0,
+			"orphan_nodes": 13.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2567.0,
+			"static_bytes": 476092718.0,
+			"static_peak_bytes": 522226594.0,
+			"stream": {
+				"budget_overruns": 3,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 439,
+						"total_us": 439
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 412,
+						"total_us": 412
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 9085,
+						"total_us": 9085
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 455,
+						"total_us": 455
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 568,
+						"total_us": 568
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 1299,
+						"total_us": 1299
+					},
+					"res://Items/Gems/ChippedEmerald.tscn": {
+						"count": 1,
+						"max_us": 1219,
+						"total_us": 1219
+					},
+					"res://Items/Gems/CorruptedCrystal.tscn": {
+						"count": 1,
+						"max_us": 9258,
+						"total_us": 9258
+					},
+					"res://Items/Gems/FlawedRuby.tscn": {
+						"count": 1,
+						"max_us": 1287,
+						"total_us": 1287
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 530,
+						"total_us": 530
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5340,
+						"total_us": 5340
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 470,
+						"total_us": 470
+					},
+					"res://Items/Stone.tscn": {
+						"count": 1,
+						"max_us": 1139,
+						"total_us": 1139
+					},
+					"res://Items/Whetstone.tscn": {
+						"count": 1,
+						"max_us": 1085,
+						"total_us": 1085
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 22,
+						"total_us": 22
+					}
+				},
+				"job_max_us": 9258,
+				"jobs": 0,
+				"loaded": 128,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 68,
+				"requested": 128,
+				"resident": 60,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 438469711.0,
+			"texture_cache": 0,
+			"time_ms": 34807,
+			"tree_nodes": 2027,
+			"video_bytes": 455725663.0
+		},
+		{
+			"backgrounds": [],
+			"cached_pool_nodes": 2,
+			"draw_calls": 85.0,
+			"frame_median_ms": 13.342,
+			"frame_p95_ms": 13.847,
+			"frame_p99_ms": 13.903,
+			"geometry_cache": 0,
+			"label": "title_returned",
+			"nodes": 1750.0,
+			"objects": 9917.0,
+			"orphan_nodes": 19.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2367.0,
+			"static_bytes": 473215642.0,
+			"static_peak_bytes": 522226594.0,
+			"stream": {
+				"budget_overruns": 3,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 439,
+						"total_us": 439
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 412,
+						"total_us": 412
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 9085,
+						"total_us": 9085
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 455,
+						"total_us": 455
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 568,
+						"total_us": 568
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 1299,
+						"total_us": 1299
+					},
+					"res://Items/Gems/ChippedEmerald.tscn": {
+						"count": 1,
+						"max_us": 1219,
+						"total_us": 1219
+					},
+					"res://Items/Gems/CorruptedCrystal.tscn": {
+						"count": 1,
+						"max_us": 9258,
+						"total_us": 9258
+					},
+					"res://Items/Gems/FlawedRuby.tscn": {
+						"count": 1,
+						"max_us": 1287,
+						"total_us": 1287
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 530,
+						"total_us": 530
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5340,
+						"total_us": 5340
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 470,
+						"total_us": 470
+					},
+					"res://Items/Stone.tscn": {
+						"count": 1,
+						"max_us": 1139,
+						"total_us": 1139
+					},
+					"res://Items/Whetstone.tscn": {
+						"count": 1,
+						"max_us": 1085,
+						"total_us": 1085
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 22,
+						"total_us": 22
+					}
+				},
+				"job_max_us": 9258,
+				"jobs": 0,
+				"loaded": 128,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 119,
+				"requested": 128,
+				"resident": 9,
+				"scopes": 2,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 391795924.0,
+			"texture_cache": 0,
+			"time_ms": 38847,
+			"tree_nodes": 1750,
+			"video_bytes": 408922848.0
+		}
+	]
+}

@@ -1,0 +1,6526 @@
+{
+  "method": "Same 25-token window method as 2026-10-19; identifiers, literals and numbers normalized; comments and formatting ignored. Facades and implementations both included. No padded code or test code in the denominator.",
+  "scope": "Production GDScript; not a percentage of independent authorship or a promise about other comparison tools.",
+  "excludes": [
+    ".godot",
+    "addons",
+    "tests",
+    "verification"
+  ],
+  "original": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot461_Local\\project",
+  "current": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\outputs\\BackpackBattles_Godot47_Maintainable\\project",
+  "after": {
+    "files": 973,
+    "bytes": 2341450,
+    "lines": 71432,
+    "nonblank_lines": 57090,
+    "exact_original_files": 231,
+    "normalized_25_token_windows": 435198,
+    "matched_original_windows": 209509,
+    "original_window_match_percent": 48.141
+  },
+  "groups": {
+    "Assets": {
+      "windows": 886,
+      "matched": 836,
+      "files": 4,
+      "match_percent": 94.357
+    },
+    "CharacterClasses": {
+      "windows": 536,
+      "matched": 502,
+      "files": 3,
+      "match_percent": 93.657
+    },
+    "Compatibility": {
+      "windows": 2454,
+      "matched": 2370,
+      "files": 7,
+      "match_percent": 96.577
+    },
+    "Core": {
+      "windows": 33934,
+      "matched": 25543,
+      "files": 15,
+      "match_percent": 75.273
+    },
+    "Interface": {
+      "windows": 50537,
+      "matched": 42338,
+      "files": 184,
+      "match_percent": 83.776
+    },
+    "Items": {
+      "windows": 93145,
+      "matched": 87537,
+      "files": 527,
+      "match_percent": 93.979
+    },
+    "LocalServices": {
+      "windows": 4019,
+      "matched": 3403,
+      "files": 6,
+      "match_percent": 84.673
+    },
+    "PvE": {
+      "windows": 81444,
+      "matched": 520,
+      "files": 45,
+      "match_percent": 0.638
+    },
+    "Runtime": {
+      "windows": 138368,
+      "matched": 21455,
+      "files": 129,
+      "match_percent": 15.506
+    },
+    "Shader": {
+      "windows": 462,
+      "matched": 462,
+      "files": 2,
+      "match_percent": 100.0
+    },
+    "Sheets": {
+      "windows": 4063,
+      "matched": 3366,
+      "files": 2,
+      "match_percent": 82.845
+    },
+    "Utility": {
+      "windows": 25350,
+      "matched": 21177,
+      "files": 49,
+      "match_percent": 83.538
+    }
+  },
+  "files": [
+    {
+      "path": "Assets/Decoration/FlowerVase.gd",
+      "windows": 116,
+      "matched": 66,
+      "match_percent": 56.897
+    },
+    {
+      "path": "Assets/Decoration/Lamp.gd",
+      "windows": 359,
+      "matched": 359,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Assets/Decoration/Shelf.gd",
+      "windows": 59,
+      "matched": 59,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Assets/Decoration/UmbrellaBasket.gd",
+      "windows": 352,
+      "matched": 352,
+      "match_percent": 100.0
+    },
+    {
+      "path": "CharacterClasses/CharacterClass.gd",
+      "windows": 400,
+      "matched": 366,
+      "match_percent": 91.5
+    },
+    {
+      "path": "CharacterClasses/Ranger/Skins/Normal/Yuki/YukiSnowball.gd",
+      "windows": 113,
+      "matched": 113,
+      "match_percent": 100.0
+    },
+    {
+      "path": "CharacterClasses/StartingItem.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Compatibility/FontSizeBinder.gd",
+      "windows": 383,
+      "matched": 383,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Compatibility/LegacyDirectory.gd",
+      "windows": 447,
+      "matched": 447,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Compatibility/LegacyFile.gd",
+      "windows": 918,
+      "matched": 918,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Compatibility/LegacyFont.gd",
+      "windows": 227,
+      "matched": 227,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Compatibility/LegacyGrid.gd",
+      "windows": 113,
+      "matched": 113,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Compatibility/LegacyTween.gd",
+      "windows": 278,
+      "matched": 194,
+      "match_percent": 69.784
+    },
+    {
+      "path": "Compatibility/ShaderClock.gd",
+      "windows": 88,
+      "matched": 88,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Core/Buff.gd",
+      "windows": 411,
+      "matched": 239,
+      "match_percent": 58.151
+    },
+    {
+      "path": "Core/Character.gd",
+      "windows": 5823,
+      "matched": 4864,
+      "match_percent": 83.531
+    },
+    {
+      "path": "Core/Combat.gd",
+      "windows": 2675,
+      "matched": 2006,
+      "match_percent": 74.991
+    },
+    {
+      "path": "Core/CombatEvent.gd",
+      "windows": 337,
+      "matched": 327,
+      "match_percent": 97.033
+    },
+    {
+      "path": "Core/CombatLog.gd",
+      "windows": 4066,
+      "matched": 3370,
+      "match_percent": 82.882
+    },
+    {
+      "path": "Core/CombatSnapshot.gd",
+      "windows": 134,
+      "matched": 134,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Core/CombatStatLogger.gd",
+      "windows": 810,
+      "matched": 731,
+      "match_percent": 90.247
+    },
+    {
+      "path": "Core/CraftingManager.gd",
+      "windows": 741,
+      "matched": 33,
+      "match_percent": 4.453
+    },
+    {
+      "path": "Core/Game.gd",
+      "windows": 12411,
+      "matched": 9266,
+      "match_percent": 74.66
+    },
+    {
+      "path": "Core/Inventory.gd",
+      "windows": 2966,
+      "matched": 1990,
+      "match_percent": 67.094
+    },
+    {
+      "path": "Core/Player.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Core/RunDatabase.gd",
+      "windows": 1163,
+      "matched": 801,
+      "match_percent": 68.874
+    },
+    {
+      "path": "Core/Shop.gd",
+      "windows": 1819,
+      "matched": 1243,
+      "match_percent": 68.334
+    },
+    {
+      "path": "Core/StatHistory.gd",
+      "windows": 178,
+      "matched": 178,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Core/SteamWorkshop.gd",
+      "windows": 400,
+      "matched": 361,
+      "match_percent": 90.25
+    },
+    {
+      "path": "Interface/AchievementPopup.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/BaseSlider.gd",
+      "windows": 141,
+      "matched": 141,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/BlackLayer.gd",
+      "windows": 86,
+      "matched": 86,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/BoughtNothingWarning.gd",
+      "windows": 180,
+      "matched": 180,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/BuildHistory/BuildEntry.gd",
+      "windows": 400,
+      "matched": 251,
+      "match_percent": 62.75
+    },
+    {
+      "path": "Interface/BuildHistory/BuildEntryPlaceholder.gd",
+      "windows": 125,
+      "matched": 125,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/BuildHistory/BuildHistory.gd",
+      "windows": 963,
+      "matched": 688,
+      "match_percent": 71.443
+    },
+    {
+      "path": "Interface/BuildHistory/BuildHistoryData.gd",
+      "windows": 507,
+      "matched": 473,
+      "match_percent": 93.294
+    },
+    {
+      "path": "Interface/BuildHistory/RoundResultButton.gd",
+      "windows": 93,
+      "matched": 93,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ChestnutTrade.gd",
+      "windows": 456,
+      "matched": 307,
+      "match_percent": 67.325
+    },
+    {
+      "path": "Interface/ClassLabel.gd",
+      "windows": 177,
+      "matched": 70,
+      "match_percent": 39.548
+    },
+    {
+      "path": "Interface/CoinParticles.gd",
+      "windows": 41,
+      "matched": 41,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Combat/BlockHud.gd",
+      "windows": 1107,
+      "matched": 265,
+      "match_percent": 23.939
+    },
+    {
+      "path": "Interface/Combat/CharacterStatIcon.gd",
+      "windows": 411,
+      "matched": 340,
+      "match_percent": 82.725
+    },
+    {
+      "path": "Interface/Combat/CharacterStatsDisplay.gd",
+      "windows": 392,
+      "matched": 392,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Combat/CombatTugBar.gd",
+      "windows": 56,
+      "matched": 56,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Combat/HideUIButton.gd",
+      "windows": 218,
+      "matched": 218,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Combat/StackHudWithAnimation.gd",
+      "windows": 14,
+      "matched": 14,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Combat/WinLabel.gd",
+      "windows": 13,
+      "matched": 13,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogFilterButton.gd",
+      "windows": 36,
+      "matched": 36,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogFilterButtonWithStylebox.gd",
+      "windows": 155,
+      "matched": 155,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogFilterPanel.gd",
+      "windows": 589,
+      "matched": 589,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogLine.gd",
+      "windows": 371,
+      "matched": 371,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CombatTimer/CombatTimer.gd",
+      "windows": 821,
+      "matched": 297,
+      "match_percent": 36.175
+    },
+    {
+      "path": "Interface/CompositeButton.gd",
+      "windows": 294,
+      "matched": 294,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ConnectingLabel.gd",
+      "windows": 69,
+      "matched": 69,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CooldownStack.gd",
+      "windows": 127,
+      "matched": 127,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Cursor.gd",
+      "windows": 150,
+      "matched": 150,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CursorWarpTrail.gd",
+      "windows": 42,
+      "matched": 42,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/CustomRulesIcon.gd",
+      "windows": 92,
+      "matched": 92,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeter.gd",
+      "windows": 887,
+      "matched": 697,
+      "match_percent": 78.579
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeterEntry.gd",
+      "windows": 465,
+      "matched": 388,
+      "match_percent": 83.441
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeterPlot.gd",
+      "windows": 473,
+      "matched": 404,
+      "match_percent": 85.412
+    },
+    {
+      "path": "Interface/DamageMeter/DamageMeterTotal.gd",
+      "windows": 59,
+      "matched": 59,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/DamageMeter/PlotLine.gd",
+      "windows": 157,
+      "matched": 157,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/DamageMeter/PlotLinePoint.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/DamageNumbers/BuffLabel.gd",
+      "windows": 208,
+      "matched": 118,
+      "match_percent": 56.731
+    },
+    {
+      "path": "Interface/DamageNumbers/DamageNumber.gd",
+      "windows": 295,
+      "matched": 295,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/DraggableScrollContainer.gd",
+      "windows": 269,
+      "matched": 269,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/EditModeAnimation.gd",
+      "windows": 104,
+      "matched": 104,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/EditModeButtons.gd",
+      "windows": 318,
+      "matched": 318,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/FocusGrabbingButton.gd",
+      "windows": 275,
+      "matched": 275,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/FocusGrabbingControl.gd",
+      "windows": 209,
+      "matched": 209,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/FocusGrabbingTextureButton.gd",
+      "windows": 456,
+      "matched": 456,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/GoldCounter.gd",
+      "windows": 348,
+      "matched": 348,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/GridStorage.gd",
+      "windows": 422,
+      "matched": 356,
+      "match_percent": 84.36
+    },
+    {
+      "path": "Interface/GridStorageEntry.gd",
+      "windows": 254,
+      "matched": 215,
+      "match_percent": 84.646
+    },
+    {
+      "path": "Interface/Healthbar.gd",
+      "windows": 295,
+      "matched": 295,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Heart.gd",
+      "windows": 135,
+      "matched": 135,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/HistoryButton.gd",
+      "windows": 81,
+      "matched": 75,
+      "match_percent": 92.593
+    },
+    {
+      "path": "Interface/HoverArea.gd",
+      "windows": 33,
+      "matched": 33,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/IngameCharacterHUD.gd",
+      "windows": 220,
+      "matched": 105,
+      "match_percent": 47.727
+    },
+    {
+      "path": "Interface/InputBlocker.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/InputEaterRect.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/Inventory/AffectedStarAnimation.gd",
+      "windows": 5,
+      "matched": 5,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Inventory/CraftingLockLabel.gd",
+      "windows": 62,
+      "matched": 62,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Inventory/CraftingProgressLabel.gd",
+      "windows": 363,
+      "matched": 363,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ItemLibrary/InfoPanel.gd",
+      "windows": 439,
+      "matched": 411,
+      "match_percent": 93.622
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemFilterButton.gd",
+      "windows": 203,
+      "matched": 203,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemLibrary.gd",
+      "windows": 2065,
+      "matched": 1524,
+      "match_percent": 73.801
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemLibraryButton.gd",
+      "windows": 122,
+      "matched": 82,
+      "match_percent": 67.213
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemRecordIcons.gd",
+      "windows": 111,
+      "matched": 111,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ItemLibrary/ItemRecordStar.gd",
+      "windows": 321,
+      "matched": 321,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ItemLibrary/TreasureItemFilterButton.gd",
+      "windows": 85,
+      "matched": 85,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ItemLibrary/TypeButton.gd",
+      "windows": 268,
+      "matched": 268,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/LeagueEmblem.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/LeagueProgressUI.gd",
+      "windows": 110,
+      "matched": 110,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/LoadoutButton.gd",
+      "windows": 114,
+      "matched": 114,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/CreateLobbyUI.gd",
+      "windows": 690,
+      "matched": 591,
+      "match_percent": 85.652
+    },
+    {
+      "path": "Interface/Lobbies/CustomRulesInput.gd",
+      "windows": 328,
+      "matched": 328,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/CustomUnrankedUI.gd",
+      "windows": 170,
+      "matched": 170,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/ForceSpeedAnimation.gd",
+      "windows": 4,
+      "matched": 4,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/JoinLobbyUI.gd",
+      "windows": 689,
+      "matched": 577,
+      "match_percent": 83.745
+    },
+    {
+      "path": "Interface/Lobbies/LobbyBuildViewer.gd",
+      "windows": 314,
+      "matched": 248,
+      "match_percent": 78.981
+    },
+    {
+      "path": "Interface/Lobbies/LobbyMemberData.gd",
+      "windows": 461,
+      "matched": 449,
+      "match_percent": 97.397
+    },
+    {
+      "path": "Interface/Lobbies/LobbyMemberEntry.gd",
+      "windows": 163,
+      "matched": 163,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/LobbyMemberList.gd",
+      "windows": 168,
+      "matched": 168,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/LobbyResultEntry.gd",
+      "windows": 381,
+      "matched": 381,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/LobbyScoreboard.gd",
+      "windows": 404,
+      "matched": 404,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/LobbyScoreboardEntry.gd",
+      "windows": 389,
+      "matched": 389,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/LobbySpeed.gd",
+      "windows": 76,
+      "matched": 76,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/LobbyTimer.gd",
+      "windows": 841,
+      "matched": 740,
+      "match_percent": 87.99
+    },
+    {
+      "path": "Interface/Lobbies/MemberCounter.gd",
+      "windows": 98,
+      "matched": 98,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/OtherModesUI.gd",
+      "windows": 438,
+      "matched": 374,
+      "match_percent": 85.388
+    },
+    {
+      "path": "Interface/Lobbies/ResultButton.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/Lobbies/StartTimer.gd",
+      "windows": 115,
+      "matched": 115,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Lobbies/SwitchModeUnrankedUI.gd",
+      "windows": 128,
+      "matched": 128,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/LobbyButton.gd",
+      "windows": 111,
+      "matched": 111,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/LocalizedControlWithNBS.gd",
+      "windows": 21,
+      "matched": 21,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/MaxHealthLabel.gd",
+      "windows": 261,
+      "matched": 70,
+      "match_percent": 26.82
+    },
+    {
+      "path": "Interface/MaxStaminaLabel.gd",
+      "windows": 45,
+      "matched": 45,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/MovingCounter.gd",
+      "windows": 190,
+      "matched": 190,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/NameLineEdit.gd",
+      "windows": 209,
+      "matched": 209,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/NonLocalized_KeepFont.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/NonLocalizedControl.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/NotEnoughGoldLabel.gd",
+      "windows": 28,
+      "matched": 28,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Options/CheckButton.gd",
+      "windows": 66,
+      "matched": 66,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Options/CombatSpeedLabel.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/Options/ControllerKeyBind.gd",
+      "windows": 303,
+      "matched": 303,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Options/InputMapping.gd",
+      "windows": 292,
+      "matched": 259,
+      "match_percent": 88.699
+    },
+    {
+      "path": "Interface/Options/ItemListButton.gd",
+      "windows": 648,
+      "matched": 497,
+      "match_percent": 76.698
+    },
+    {
+      "path": "Interface/Options/KeyBind.gd",
+      "windows": 472,
+      "matched": 341,
+      "match_percent": 72.246
+    },
+    {
+      "path": "Interface/Options/Options.gd",
+      "windows": 603,
+      "matched": 528,
+      "match_percent": 87.562
+    },
+    {
+      "path": "Interface/Options/OptionsButton.gd",
+      "windows": 157,
+      "matched": 88,
+      "match_percent": 56.051
+    },
+    {
+      "path": "Interface/Options/OptionsLineEdit.gd",
+      "windows": 122,
+      "matched": 122,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Options/OptionsSlider.gd",
+      "windows": 24,
+      "matched": 24,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Options/SoundSlider.gd",
+      "windows": 5,
+      "matched": 5,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/PaintingCanvas.gd",
+      "windows": 249,
+      "matched": 249,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/PatchNotes.gd",
+      "windows": 361,
+      "matched": 361,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/PhysicsRope.gd",
+      "windows": 377,
+      "matched": 226,
+      "match_percent": 59.947
+    },
+    {
+      "path": "Interface/PopupMessage.gd",
+      "windows": 98,
+      "matched": 98,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/PullButton.gd",
+      "windows": 253,
+      "matched": 253,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/PushToStorageButton.gd",
+      "windows": 295,
+      "matched": 295,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RankingUI.gd",
+      "windows": 126,
+      "matched": 126,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RankSeason3Popup.gd",
+      "windows": 262,
+      "matched": 262,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RankSeasonPopup.gd",
+      "windows": 184,
+      "matched": 184,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RarityHint.gd",
+      "windows": 276,
+      "matched": 228,
+      "match_percent": 82.609
+    },
+    {
+      "path": "Interface/ReactiveButton.gd",
+      "windows": 85,
+      "matched": 85,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RecipeBook.gd",
+      "windows": 411,
+      "matched": 272,
+      "match_percent": 66.18
+    },
+    {
+      "path": "Interface/RecipeBookButton.gd",
+      "windows": 129,
+      "matched": 89,
+      "match_percent": 68.992
+    },
+    {
+      "path": "Interface/ReleaseCounter.gd",
+      "windows": 78,
+      "matched": 78,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RerollRope.gd",
+      "windows": 892,
+      "matched": 892,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RerollRopeTag.gd",
+      "windows": 226,
+      "matched": 162,
+      "match_percent": 71.681
+    },
+    {
+      "path": "Interface/ResizableControl.gd",
+      "windows": 283,
+      "matched": 213,
+      "match_percent": 75.265
+    },
+    {
+      "path": "Interface/RiseUpTextEffect.gd",
+      "windows": 131,
+      "matched": 131,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RopeSegment.gd",
+      "windows": 270,
+      "matched": 270,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RotateHint.gd",
+      "windows": 133,
+      "matched": 133,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RoundCounter.gd",
+      "windows": 55,
+      "matched": 55,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/RunAchievement.gd",
+      "windows": 418,
+      "matched": 388,
+      "match_percent": 92.823
+    },
+    {
+      "path": "Interface/SColorTextEffect.gd",
+      "windows": 30,
+      "matched": 30,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/SeasonClassRank.gd",
+      "windows": 52,
+      "matched": 52,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/SelectionBox.gd",
+      "windows": 650,
+      "matched": 445,
+      "match_percent": 68.462
+    },
+    {
+      "path": "Interface/Sellbox.gd",
+      "windows": 817,
+      "matched": 574,
+      "match_percent": 70.257
+    },
+    {
+      "path": "Interface/Shopkeeper.gd",
+      "windows": 638,
+      "matched": 421,
+      "match_percent": 65.987
+    },
+    {
+      "path": "Interface/ShopOffer.gd",
+      "windows": 842,
+      "matched": 408,
+      "match_percent": 48.456
+    },
+    {
+      "path": "Interface/ShopRarityChart.gd",
+      "windows": 236,
+      "matched": 236,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/ShopToolbar.gd",
+      "windows": 645,
+      "matched": 579,
+      "match_percent": 89.767
+    },
+    {
+      "path": "Interface/SimpleClassLabel.gd",
+      "windows": 63,
+      "matched": 12,
+      "match_percent": 19.048
+    },
+    {
+      "path": "Interface/SliderProperty.gd",
+      "windows": 58,
+      "matched": 58,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/SnowGlobe.gd",
+      "windows": 103,
+      "matched": 103,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/SpeechBubble.gd",
+      "windows": 463,
+      "matched": 463,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/StackFilterButton.gd",
+      "windows": 261,
+      "matched": 261,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Staminabar.gd",
+      "windows": 205,
+      "matched": 205,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/StaminaGainCounter.gd",
+      "windows": 43,
+      "matched": 43,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/StaminaUseCounter.gd",
+      "windows": 283,
+      "matched": 283,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/StartCombatButton.gd",
+      "windows": 630,
+      "matched": 446,
+      "match_percent": 70.794
+    },
+    {
+      "path": "Interface/Storagebox.gd",
+      "windows": 780,
+      "matched": 425,
+      "match_percent": 54.487
+    },
+    {
+      "path": "Interface/StorageShakeButton.gd",
+      "windows": 136,
+      "matched": 136,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/SwitchModeUI.gd",
+      "windows": 100,
+      "matched": 100,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Textbox.gd",
+      "windows": 785,
+      "matched": 785,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Title.gd",
+      "windows": 32,
+      "matched": 32,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/TitleScreen.gd",
+      "windows": 1498,
+      "matched": 913,
+      "match_percent": 60.948
+    },
+    {
+      "path": "Interface/TooltipLabel.gd",
+      "windows": 103,
+      "matched": 103,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/BuildIntoRecipe.gd",
+      "windows": 146,
+      "matched": 109,
+      "match_percent": 74.658
+    },
+    {
+      "path": "Interface/Tooltips/BuildIntoRecipesTooltip.gd",
+      "windows": 214,
+      "matched": 177,
+      "match_percent": 82.71
+    },
+    {
+      "path": "Interface/Tooltips/ClassTooltip.gd",
+      "windows": 20,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Interface/Tooltips/CustomRulesTooltip.gd",
+      "windows": 240,
+      "matched": 228,
+      "match_percent": 95.0
+    },
+    {
+      "path": "Interface/Tooltips/Ingredient.gd",
+      "windows": 349,
+      "matched": 349,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/ItemNameEffect.gd",
+      "windows": 1722,
+      "matched": 1722,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/ItemTooltip.gd",
+      "windows": 663,
+      "matched": 416,
+      "match_percent": 62.745
+    },
+    {
+      "path": "Interface/Tooltips/RecipeTooltip.gd",
+      "windows": 226,
+      "matched": 174,
+      "match_percent": 76.991
+    },
+    {
+      "path": "Interface/Tooltips/RelatedItems.gd",
+      "windows": 231,
+      "matched": 231,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/SimpleTooltip.gd",
+      "windows": 76,
+      "matched": 26,
+      "match_percent": 34.211
+    },
+    {
+      "path": "Interface/Tooltips/SubclassSubtooltip.gd",
+      "windows": 79,
+      "matched": 79,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/Tooltip.gd",
+      "windows": 561,
+      "matched": 483,
+      "match_percent": 86.096
+    },
+    {
+      "path": "Interface/Tooltips/TooltipClassIcon.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/TooltipItemLayout.gd",
+      "windows": 99,
+      "matched": 99,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/TooltipProperty.gd",
+      "windows": 250,
+      "matched": 250,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Tooltips/UniqueTooltip.gd",
+      "windows": 325,
+      "matched": 325,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Trail.gd",
+      "windows": 152,
+      "matched": 152,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/TriesCounter.gd",
+      "windows": 74,
+      "matched": 74,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Trophy.gd",
+      "windows": 201,
+      "matched": 201,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/TrophyCounter.gd",
+      "windows": 14,
+      "matched": 14,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/TugofWarAnimation.gd",
+      "windows": 268,
+      "matched": 175,
+      "match_percent": 65.299
+    },
+    {
+      "path": "Interface/VersionLabel.gd",
+      "windows": 123,
+      "matched": 123,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Wardrobe/ChibiButton.gd",
+      "windows": 61,
+      "matched": 61,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Wardrobe/DressUpSprite.gd",
+      "windows": 207,
+      "matched": 170,
+      "match_percent": 82.126
+    },
+    {
+      "path": "Interface/Wardrobe/SkinHeader.gd",
+      "windows": 60,
+      "matched": 60,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/Wardrobe/SkinSlotButton.gd",
+      "windows": 310,
+      "matched": 267,
+      "match_percent": 86.129
+    },
+    {
+      "path": "Interface/Wardrobe/Wardrobe.gd",
+      "windows": 587,
+      "matched": 492,
+      "match_percent": 83.816
+    },
+    {
+      "path": "Interface/Wardrobe/WardrobeButton.gd",
+      "windows": 106,
+      "matched": 106,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/WinCounter.gd",
+      "windows": 76,
+      "matched": 76,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/WishlistButton.gd",
+      "windows": 156,
+      "matched": 156,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Interface/WishlistPopup.gd",
+      "windows": 79,
+      "matched": 79,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/AceofSpades.gd",
+      "windows": 51,
+      "matched": 51,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/AcornCollar.gd",
+      "windows": 36,
+      "matched": 36,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/CardConnector.gd",
+      "windows": 121,
+      "matched": 121,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/CraftingPreviewBond.gd",
+      "windows": 235,
+      "matched": 235,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/DestroyParticles.gd",
+      "windows": 187,
+      "matched": 187,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/FlickerAnimation.gd",
+      "windows": 74,
+      "matched": 74,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/ItemAnimation.gd",
+      "windows": 189,
+      "matched": 189,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/NotInChainMark.gd",
+      "windows": 16,
+      "matched": 16,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/PotionConnector.gd",
+      "windows": 173,
+      "matched": 173,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/SquishySprite.gd",
+      "windows": 361,
+      "matched": 361,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/TimeDilatorAni.gd",
+      "windows": 5,
+      "matched": 5,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Animations/Zap.gd",
+      "windows": 139,
+      "matched": 139,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ArtifactStoneCold.gd",
+      "windows": 43,
+      "matched": 43,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ArtifactStoneHeat.gd",
+      "windows": 95,
+      "matched": 95,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Bag.gd",
+      "windows": 1261,
+      "matched": 1158,
+      "match_percent": 91.832
+    },
+    {
+      "path": "Items/BagofStones.gd",
+      "windows": 36,
+      "matched": 36,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Banana.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/BloodAmulet.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/BloodGoobert.gd",
+      "windows": 35,
+      "matched": 35,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Bloodthorne.gd",
+      "windows": 125,
+      "matched": 125,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/BloodyDagger.gd",
+      "windows": 74,
+      "matched": 74,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Blueberries.gd",
+      "windows": 10,
+      "matched": 10,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Bow.gd",
+      "windows": 65,
+      "matched": 65,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/BowandArrow.gd",
+      "windows": 154,
+      "matched": 154,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/BoxofRiches.gd",
+      "windows": 197,
+      "matched": 197,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Broom.gd",
+      "windows": 130,
+      "matched": 130,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/BurningCoal.gd",
+      "windows": 126,
+      "matched": 126,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/BurningTorch.gd",
+      "windows": 54,
+      "matched": 54,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Card.gd",
+      "windows": 533,
+      "matched": 482,
+      "match_percent": 90.432
+    },
+    {
+      "path": "Items/Carrot.gd",
+      "windows": 13,
+      "matched": 13,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/CarrotGoobert.gd",
+      "windows": 114,
+      "matched": 114,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ClawsofAttack.gd",
+      "windows": 103,
+      "matched": 103,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/CorruptedArmor.gd",
+      "windows": 234,
+      "matched": 234,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/CraftingBond.gd",
+      "windows": 269,
+      "matched": 216,
+      "match_percent": 80.297
+    },
+    {
+      "path": "Items/CritwoodStaff.gd",
+      "windows": 180,
+      "matched": 180,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Crossblades.gd",
+      "windows": 137,
+      "matched": 137,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Crown.gd",
+      "windows": 287,
+      "matched": 287,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/CursedDagger.gd",
+      "windows": 93,
+      "matched": 93,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/CursedHairComb.gd",
+      "windows": 104,
+      "matched": 104,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/CustomerCard.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Dagger.gd",
+      "windows": 10,
+      "matched": 10,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/DancingDragon.gd",
+      "windows": 86,
+      "matched": 86,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/DarkestLotus.gd",
+      "windows": 18,
+      "matched": 18,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Darksaber.gd",
+      "windows": 40,
+      "matched": 40,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/DeathScythe.gd",
+      "windows": 129,
+      "matched": 129,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/DeckofCards.gd",
+      "windows": 261,
+      "matched": 196,
+      "match_percent": 75.096
+    },
+    {
+      "path": "Items/DemonicFlask.gd",
+      "windows": 142,
+      "matched": 142,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/DjinnLamp.gd",
+      "windows": 77,
+      "matched": 30,
+      "match_percent": 38.961
+    },
+    {
+      "path": "Items/DragonEgg.gd",
+      "windows": 352,
+      "matched": 352,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Eggscalibur.gd",
+      "windows": 38,
+      "matched": 38,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ElectricalCharge.gd",
+      "windows": 454,
+      "matched": 347,
+      "match_percent": 76.432
+    },
+    {
+      "path": "Items/EvilCap.gd",
+      "windows": 150,
+      "matched": 150,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AcornAce.gd",
+      "windows": 301,
+      "matched": 301,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmethystEgg.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/AmethystWhelp.gd",
+      "windows": 14,
+      "matched": 14,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofAgility.gd",
+      "windows": 218,
+      "matched": 218,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofAlchemy.gd",
+      "windows": 181,
+      "matched": 181,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofDarkness.gd",
+      "windows": 182,
+      "matched": 182,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofFeasting.gd",
+      "windows": 116,
+      "matched": 116,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofFortune.gd",
+      "windows": 84,
+      "matched": 84,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofLife.gd",
+      "windows": 36,
+      "matched": 36,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofLight.gd",
+      "windows": 133,
+      "matched": 133,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletofSteel.gd",
+      "windows": 119,
+      "matched": 119,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletoftheWild.gd",
+      "windows": 79,
+      "matched": 79,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AmuletUnidentified.gd",
+      "windows": 198,
+      "matched": 198,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/AngelCrystal.gd",
+      "windows": 119,
+      "matched": 119,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Animations/AffectsLine.gd",
+      "windows": 289,
+      "matched": 289,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Animations/AmuletOfAlchemyAni.gd",
+      "windows": 71,
+      "matched": 71,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Animations/CanAffectVisual.gd",
+      "windows": 209,
+      "matched": 209,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Animations/GooglyEye.gd",
+      "windows": 376,
+      "matched": 376,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Anvil.gd",
+      "windows": 201,
+      "matched": 201,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ArcaneBoots.gd",
+      "windows": 217,
+      "matched": 217,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ArcaneIntellect.gd",
+      "windows": 54,
+      "matched": 54,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ArmoredCouragePuppy.gd",
+      "windows": 11,
+      "matched": 11,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ArmoredPowerPuppy.gd",
+      "windows": 77,
+      "matched": 77,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ArmoredWisdomPuppy.gd",
+      "windows": 31,
+      "matched": 31,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ArtifactStoneDeath.gd",
+      "windows": 91,
+      "matched": 91,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Automanaton.gd",
+      "windows": 338,
+      "matched": 283,
+      "match_percent": 83.728
+    },
+    {
+      "path": "Items/Exclusive/Axe.gd",
+      "windows": 8,
+      "matched": 8,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BadgerRune.gd",
+      "windows": 173,
+      "matched": 173,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BadgerSpirit.gd",
+      "windows": 191,
+      "matched": 191,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BagofGiving.gd",
+      "windows": 355,
+      "matched": 355,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Bagtacular.gd",
+      "windows": 32,
+      "matched": 32,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Battery.gd",
+      "windows": 157,
+      "matched": 157,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Bazooka.gd",
+      "windows": 252,
+      "matched": 252,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BerserkerBag.gd",
+      "windows": 190,
+      "matched": 190,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Bewitchment.gd",
+      "windows": 347,
+      "matched": 347,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BigBloodthorne.gd",
+      "windows": 135,
+      "matched": 135,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BionicArmor.gd",
+      "windows": 190,
+      "matched": 190,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BismuthCube.gd",
+      "windows": 217,
+      "matched": 217,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BloodManipulation.gd",
+      "windows": 107,
+      "matched": 107,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Bomb.gd",
+      "windows": 136,
+      "matched": 136,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BookofBasics.gd",
+      "windows": 134,
+      "matched": 134,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BookofDarkness.gd",
+      "windows": 129,
+      "matched": 129,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BookofIce.gd",
+      "windows": 106,
+      "matched": 106,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BookofLight.gd",
+      "windows": 115,
+      "matched": 115,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BookofNature.gd",
+      "windows": 124,
+      "matched": 124,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Boomerang.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BowlofTreats.gd",
+      "windows": 171,
+      "matched": 171,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BoxofProsperity.gd",
+      "windows": 204,
+      "matched": 204,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BrassKnuckles.gd",
+      "windows": 151,
+      "matched": 151,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Broccoli.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BroccoliGoobert.gd",
+      "windows": 41,
+      "matched": 41,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Broccotree.gd",
+      "windows": 102,
+      "matched": 102,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BurningBanner.gd",
+      "windows": 109,
+      "matched": 109,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BurningBlade.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/BurningSpikes.gd",
+      "windows": 140,
+      "matched": 140,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BurningSword.gd",
+      "windows": 146,
+      "matched": 146,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BustedBlade.gd",
+      "windows": 106,
+      "matched": 106,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/BuytheHolyLight.gd",
+      "windows": 364,
+      "matched": 364,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CapofBrilliance.gd",
+      "windows": 50,
+      "matched": 50,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CatSpirit.gd",
+      "windows": 149,
+      "matched": 149,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Cauldron.gd",
+      "windows": 159,
+      "matched": 159,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chainsaw.gd",
+      "windows": 310,
+      "matched": 310,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ChainWhip.gd",
+      "windows": 78,
+      "matched": 78,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ChargeSplitter.gd",
+      "windows": 302,
+      "matched": 302,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Cheese.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/CheeseGoobert.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackBishop.gd",
+      "windows": 46,
+      "matched": 46,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackKing.gd",
+      "windows": 84,
+      "matched": 84,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackKnight.gd",
+      "windows": 30,
+      "matched": 30,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackPawn.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackQueen.gd",
+      "windows": 27,
+      "matched": 27,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/BlackRook.gd",
+      "windows": 46,
+      "matched": 46,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/ChessPiece.gd",
+      "windows": 599,
+      "matched": 599,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteBishop.gd",
+      "windows": 26,
+      "matched": 26,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteKing.gd",
+      "windows": 68,
+      "matched": 68,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteKnight.gd",
+      "windows": 30,
+      "matched": 30,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhitePawn.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteQueen.gd",
+      "windows": 45,
+      "matched": 45,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Chess/WhiteRook.gd",
+      "windows": 41,
+      "matched": 41,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ChessBoard.gd",
+      "windows": 563,
+      "matched": 446,
+      "match_percent": 79.218
+    },
+    {
+      "path": "Items/Exclusive/ChessMaster.gd",
+      "windows": 238,
+      "matched": 238,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ChiliGoobert.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/ChiliPepper.gd",
+      "windows": 13,
+      "matched": 13,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ChromeCube.gd",
+      "windows": 91,
+      "matched": 91,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Cog.gd",
+      "windows": 83,
+      "matched": 83,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CogBadge.gd",
+      "windows": 318,
+      "matched": 318,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Coil.gd",
+      "windows": 45,
+      "matched": 45,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ConTrapTron.gd",
+      "windows": 380,
+      "matched": 380,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CouragePuppy.gd",
+      "windows": 93,
+      "matched": 93,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CriticalPoison.gd",
+      "windows": 117,
+      "matched": 117,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Crow.gd",
+      "windows": 190,
+      "matched": 190,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Cthulhu.gd",
+      "windows": 154,
+      "matched": 154,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Cube.gd",
+      "windows": 80,
+      "matched": 80,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Cubert.gd",
+      "windows": 183,
+      "matched": 183,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Cupcake.gd",
+      "windows": 5,
+      "matched": 5,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CupcakeDragon.gd",
+      "windows": 158,
+      "matched": 158,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CupcakeGoobert.gd",
+      "windows": 2,
+      "matched": 2,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/CupcakeStaff.gd",
+      "windows": 67,
+      "matched": 67,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Daggerang.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DarkLantern.gd",
+      "windows": 360,
+      "matched": 360,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DarkRitual.gd",
+      "windows": 149,
+      "matched": 149,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DeathLotus.gd",
+      "windows": 103,
+      "matched": 103,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DeerTotem.gd",
+      "windows": 162,
+      "matched": 162,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DevouringSphere.gd",
+      "windows": 162,
+      "matched": 162,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DigDeeper.gd",
+      "windows": 41,
+      "matched": 41,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DivinePotion.gd",
+      "windows": 40,
+      "matched": 40,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DoomCap.gd",
+      "windows": 21,
+      "matched": 21,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DoubleAxe.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DoubleRainbow.gd",
+      "windows": 59,
+      "matched": 59,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DraconicOrb.gd",
+      "windows": 122,
+      "matched": 122,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DragonClaws.gd",
+      "windows": 77,
+      "matched": 77,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DragonKnight.gd",
+      "windows": 53,
+      "matched": 53,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DragonNest.gd",
+      "windows": 110,
+      "matched": 110,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DragonscaleArmor.gd",
+      "windows": 49,
+      "matched": 49,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DragonSet.gd",
+      "windows": 316,
+      "matched": 271,
+      "match_percent": 85.759
+    },
+    {
+      "path": "Items/Exclusive/DragonskinBoots.gd",
+      "windows": 48,
+      "matched": 48,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/DualWielding.gd",
+      "windows": 179,
+      "matched": 179,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Eat-o-matic.gd",
+      "windows": 347,
+      "matched": 335,
+      "match_percent": 96.542
+    },
+    {
+      "path": "Items/Exclusive/EchoingBattlecry.gd",
+      "windows": 98,
+      "matched": 98,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ElectricTorch.gd",
+      "windows": 191,
+      "matched": 191,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ElephantRune.gd",
+      "windows": 199,
+      "matched": 199,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/EmeraldEgg.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/EmeraldWhelp.gd",
+      "windows": 16,
+      "matched": 16,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/EmployeeUniform.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/EnchantedWeapons.gd",
+      "windows": 34,
+      "matched": 34,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/EnergyConversion.gd",
+      "windows": 128,
+      "matched": 128,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/EngineerBag2.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/EngineerBox.gd",
+      "windows": 99,
+      "matched": 99,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Everburning.gd",
+      "windows": 106,
+      "matched": 106,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/EvilHat.gd",
+      "windows": 294,
+      "matched": 294,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ExtraAngy.gd",
+      "windows": 96,
+      "matched": 96,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ExtraBags.gd",
+      "windows": 121,
+      "matched": 121,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FalseLife.gd",
+      "windows": 84,
+      "matched": 84,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Fedora.gd",
+      "windows": 214,
+      "matched": 214,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FirePit.gd",
+      "windows": 79,
+      "matched": 79,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FireShelly.gd",
+      "windows": 4,
+      "matched": 4,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Flame.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/FlameBadge.gd",
+      "windows": 78,
+      "matched": 78,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FlameWhip.gd",
+      "windows": 67,
+      "matched": 67,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ForestDragon.gd",
+      "windows": 97,
+      "matched": 97,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ForestFriend.gd",
+      "windows": 33,
+      "matched": 33,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ForgingHammer.gd",
+      "windows": 9,
+      "matched": 9,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FortunasKiss.gd",
+      "windows": 108,
+      "matched": 108,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FriendlyFire.gd",
+      "windows": 227,
+      "matched": 227,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FrogPrince.gd",
+      "windows": 264,
+      "matched": 264,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Frostbite.gd",
+      "windows": 130,
+      "matched": 130,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FrozenBuckler.gd",
+      "windows": 29,
+      "matched": 29,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FrozenFlame.gd",
+      "windows": 330,
+      "matched": 330,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FullBodyProtection.gd",
+      "windows": 244,
+      "matched": 244,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/FurciferPrime.gd",
+      "windows": 299,
+      "matched": 299,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Generator.gd",
+      "windows": 197,
+      "matched": 197,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Ghost.gd",
+      "windows": 117,
+      "matched": 117,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Gigawatz.gd",
+      "windows": 113,
+      "matched": 113,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/GirlPower.gd",
+      "windows": 145,
+      "matched": 145,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/GoldArmor.gd",
+      "windows": 135,
+      "matched": 135,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/GoldCounter.gd",
+      "windows": 218,
+      "matched": 218,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/GoldCube.gd",
+      "windows": 92,
+      "matched": 92,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Halberd.gd",
+      "windows": 153,
+      "matched": 153,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Hardwood.gd",
+      "windows": 164,
+      "matched": 164,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HawkRune.gd",
+      "windows": 66,
+      "matched": 66,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HeartoftheCards.gd",
+      "windows": 85,
+      "matched": 85,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HeartShield.gd",
+      "windows": 309,
+      "matched": 309,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HeavyDrinking.gd",
+      "windows": 234,
+      "matched": 234,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Hedgehog.gd",
+      "windows": 187,
+      "matched": 187,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HeroShield.gd",
+      "windows": 37,
+      "matched": 37,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HogusBogus.gd",
+      "windows": 204,
+      "matched": 204,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Holdall.gd",
+      "windows": 17,
+      "matched": 17,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HolyCollar.gd",
+      "windows": 109,
+      "matched": 109,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Hypercube.gd",
+      "windows": 310,
+      "matched": 310,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/HyperHedgehog.gd",
+      "windows": 147,
+      "matched": 147,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/IceArmor.gd",
+      "windows": 35,
+      "matched": 35,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/IceDragon.gd",
+      "windows": 97,
+      "matched": 97,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/IceFlower.gd",
+      "windows": 158,
+      "matched": 158,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/InnerPower.gd",
+      "windows": 233,
+      "matched": 233,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/InvestmentOpportunity.gd",
+      "windows": 114,
+      "matched": 114,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Joker.gd",
+      "windows": 92,
+      "matched": 27,
+      "match_percent": 29.348
+    },
+    {
+      "path": "Items/Exclusive/JustStats.gd",
+      "windows": 125,
+      "matched": 125,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/JynxStaff.gd",
+      "windows": 177,
+      "matched": 177,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Katana.gd",
+      "windows": 58,
+      "matched": 58,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/KingCrown.gd",
+      "windows": 43,
+      "matched": 43,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/KingGoobert.gd",
+      "windows": 296,
+      "matched": 296,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/KingoftheBling.gd",
+      "windows": 336,
+      "matched": 336,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/KnifetoMeetYou.gd",
+      "windows": 179,
+      "matched": 179,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Laboratory.gd",
+      "windows": 356,
+      "matched": 304,
+      "match_percent": 85.393
+    },
+    {
+      "path": "Items/Exclusive/LeafBadge.gd",
+      "windows": 100,
+      "matched": 100,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LevelUp.gd",
+      "windows": 80,
+      "matched": 80,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LightFlower.gd",
+      "windows": 120,
+      "matched": 120,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LightningPotion.gd",
+      "windows": 163,
+      "matched": 163,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LightningStaff.gd",
+      "windows": 259,
+      "matched": 259,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LittleMimic.gd",
+      "windows": 100,
+      "matched": 100,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LongSpear.gd",
+      "windows": 147,
+      "matched": 147,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Lootbox.gd",
+      "windows": 391,
+      "matched": 391,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LuckyCat.gd",
+      "windows": 351,
+      "matched": 351,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/LuckyShortbow.gd",
+      "windows": 16,
+      "matched": 16,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MageHat.gd",
+      "windows": 127,
+      "matched": 127,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MagicBadge.gd",
+      "windows": 88,
+      "matched": 88,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MagicCollar.gd",
+      "windows": 66,
+      "matched": 66,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MagicMirror.gd",
+      "windows": 57,
+      "matched": 57,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MagicRing.gd",
+      "windows": 1213,
+      "matched": 1091,
+      "match_percent": 89.942
+    },
+    {
+      "path": "Items/Exclusive/MagiteccArmor.gd",
+      "windows": 114,
+      "matched": 114,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ManaCrystal.gd",
+      "windows": 233,
+      "matched": 233,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ManaMastery.gd",
+      "windows": 177,
+      "matched": 177,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Mananana.gd",
+      "windows": 108,
+      "matched": 108,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Markswoman.gd",
+      "windows": 60,
+      "matched": 60,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MechaBat.gd",
+      "windows": 268,
+      "matched": 268,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MegaClover.gd",
+      "windows": 176,
+      "matched": 176,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MercuryElemental.gd",
+      "windows": 212,
+      "matched": 212,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MissFortune.gd",
+      "windows": 41,
+      "matched": 41,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MoltenDagger.gd",
+      "windows": 49,
+      "matched": 49,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MoltenGreatsword.gd",
+      "windows": 102,
+      "matched": 102,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MoltenSpear.gd",
+      "windows": 129,
+      "matched": 129,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MoltenSpear2.gd",
+      "windows": 208,
+      "matched": 208,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MoonArmor.gd",
+      "windows": 53,
+      "matched": 53,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MoreStats.gd",
+      "windows": 150,
+      "matched": 150,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MrsStruggles.gd",
+      "windows": 51,
+      "matched": 51,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/MushroomFarm.gd",
+      "windows": 223,
+      "matched": 223,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/NoRushPlease.gd",
+      "windows": 47,
+      "matched": 47,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/NullBlade.gd",
+      "windows": 239,
+      "matched": 239,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ObsidianDragon.gd",
+      "windows": 108,
+      "matched": 108,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/OilLamp.gd",
+      "windows": 50,
+      "matched": 50,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/OnionCutter.gd",
+      "windows": 50,
+      "matched": 50,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/OwlSpirit.gd",
+      "windows": 160,
+      "matched": 160,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ParadiseBirb.gd",
+      "windows": 200,
+      "matched": 200,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PerpetuumMobile.gd",
+      "windows": 217,
+      "matched": 217,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Phoenix.gd",
+      "windows": 206,
+      "matched": 206,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Phoenix2.gd",
+      "windows": 58,
+      "matched": 58,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PiggyofRiches.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PiggyPinata.gd",
+      "windows": 52,
+      "matched": 52,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PineProtector.gd",
+      "windows": 100,
+      "matched": 100,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PlasticCube.gd",
+      "windows": 61,
+      "matched": 61,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PoisonFrog.gd",
+      "windows": 282,
+      "matched": 282,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PoisonGrenade.gd",
+      "windows": 244,
+      "matched": 244,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PoisonShortbow.gd",
+      "windows": 67,
+      "matched": 67,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PoisonSpear.gd",
+      "windows": 83,
+      "matched": 83,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Pop.gd",
+      "windows": 120,
+      "matched": 120,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PortableAltar.gd",
+      "windows": 348,
+      "matched": 348,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Pot.gd",
+      "windows": 123,
+      "matched": 123,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PoweroftheMoon.gd",
+      "windows": 236,
+      "matched": 236,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PowerPuppy.gd",
+      "windows": 130,
+      "matched": 130,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PrismaticSword.gd",
+      "windows": 293,
+      "matched": 293,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PrismaticWand.gd",
+      "windows": 140,
+      "matched": 140,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PuzzleBadge.gd",
+      "windows": 99,
+      "matched": 99,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PuzzlebagJ.gd",
+      "windows": 68,
+      "matched": 68,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PuzzlebagL.gd",
+      "windows": 66,
+      "matched": 66,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PuzzlebagS.gd",
+      "windows": 10,
+      "matched": 10,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PuzzlebagT.gd",
+      "windows": 174,
+      "matched": 174,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/PuzzlebagZ.gd",
+      "windows": 10,
+      "matched": 10,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Puzzlebox.gd",
+      "windows": 90,
+      "matched": 90,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowBadge.gd",
+      "windows": 89,
+      "matched": 89,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertAdventurer.gd",
+      "windows": 29,
+      "matched": 29,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertBerserker.gd",
+      "windows": 30,
+      "matched": 30,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertEngineer.gd",
+      "windows": 79,
+      "matched": 79,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertMage.gd",
+      "windows": 29,
+      "matched": 29,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowGoobertPyromancer.gd",
+      "windows": 30,
+      "matched": 30,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowOrb.gd",
+      "windows": 295,
+      "matched": 295,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RainbowPotion.gd",
+      "windows": 374,
+      "matched": 305,
+      "match_percent": 81.551
+    },
+    {
+      "path": "Items/Exclusive/RandomLoadoutBag.gd",
+      "windows": 421,
+      "matched": 351,
+      "match_percent": 83.373
+    },
+    {
+      "path": "Items/Exclusive/Rat.gd",
+      "windows": 165,
+      "matched": 165,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RatChef.gd",
+      "windows": 107,
+      "matched": 107,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Recombobulator.gd",
+      "windows": 418,
+      "matched": 418,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RelicCase.gd",
+      "windows": 45,
+      "matched": 45,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Repeater.gd",
+      "windows": 10,
+      "matched": 10,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Resistor.gd",
+      "windows": 42,
+      "matched": 42,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Reverse.gd",
+      "windows": 122,
+      "matched": 122,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Robodog.gd",
+      "windows": 407,
+      "matched": 407,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Rope.gd",
+      "windows": 204,
+      "matched": 204,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/RotationSpring.gd",
+      "windows": 297,
+      "matched": 261,
+      "match_percent": 87.879
+    },
+    {
+      "path": "Items/Exclusive/Sandbag.gd",
+      "windows": 95,
+      "matched": 95,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SapphireEgg.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/SapphireWhelp.gd",
+      "windows": 69,
+      "matched": 69,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Scale.gd",
+      "windows": 500,
+      "matched": 500,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ScholarBag.gd",
+      "windows": 59,
+      "matched": 59,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Scissorswords.gd",
+      "windows": 175,
+      "matched": 175,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SealtheDeal.gd",
+      "windows": 170,
+      "matched": 170,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SerpentStaff.gd",
+      "windows": 140,
+      "matched": 140,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SewingCase.gd",
+      "windows": 41,
+      "matched": 41,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ShamanMask.gd",
+      "windows": 97,
+      "matched": 97,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ShellTotem.gd",
+      "windows": 61,
+      "matched": 61,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Shelly.gd",
+      "windows": 67,
+      "matched": 67,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ShepherdsCrook.gd",
+      "windows": 60,
+      "matched": 60,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Shielded.gd",
+      "windows": 151,
+      "matched": 151,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ShinyMantle.gd",
+      "windows": 386,
+      "matched": 353,
+      "match_percent": 91.451
+    },
+    {
+      "path": "Items/Exclusive/ShinyShell.gd",
+      "windows": 21,
+      "matched": 21,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SkullBadge.gd",
+      "windows": 38,
+      "matched": 38,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SliceofBread.gd",
+      "windows": 19,
+      "matched": 19,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SliceofToast.gd",
+      "windows": 37,
+      "matched": 37,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SlimeTime.gd",
+      "windows": 63,
+      "matched": 63,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Sloth.gd",
+      "windows": 292,
+      "matched": 292,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SmellyBarrier.gd",
+      "windows": 202,
+      "matched": 202,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SmithingForDummies.gd",
+      "windows": 151,
+      "matched": 151,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Snake.gd",
+      "windows": 177,
+      "matched": 177,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Snowball.gd",
+      "windows": 27,
+      "matched": 27,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Snowcake.gd",
+      "windows": 80,
+      "matched": 80,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Snowman.gd",
+      "windows": 285,
+      "matched": 285,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Snowmaster.gd",
+      "windows": 87,
+      "matched": 87,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SnowStick.gd",
+      "windows": 50,
+      "matched": 50,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Solaris.gd",
+      "windows": 231,
+      "matched": 231,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpeakwithAnimals.gd",
+      "windows": 295,
+      "matched": 295,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollDark.gd",
+      "windows": 112,
+      "matched": 112,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollFrostbolt.gd",
+      "windows": 129,
+      "matched": 129,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollIce.gd",
+      "windows": 208,
+      "matched": 208,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollLight.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpellScrollNature.gd",
+      "windows": 109,
+      "matched": 109,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpicyBanana.gd",
+      "windows": 212,
+      "matched": 212,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpikedCollar.gd",
+      "windows": 31,
+      "matched": 31,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpikedStaff.gd",
+      "windows": 47,
+      "matched": 47,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpikedWall.gd",
+      "windows": 73,
+      "matched": 73,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpintoWin.gd",
+      "windows": 370,
+      "matched": 370,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpiritBells.gd",
+      "windows": 153,
+      "matched": 153,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpiritCompanion.gd",
+      "windows": 17,
+      "matched": 17,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpringLoader.gd",
+      "windows": 129,
+      "matched": 129,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SpringloaderVisual.gd",
+      "windows": 394,
+      "matched": 394,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Squirrel.gd",
+      "windows": 70,
+      "matched": 70,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SquirrelArcher.gd",
+      "windows": 49,
+      "matched": 49,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StaffofFire.gd",
+      "windows": 134,
+      "matched": 134,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StarofCourage.gd",
+      "windows": 15,
+      "matched": 15,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SteelDragon.gd",
+      "windows": 85,
+      "matched": 85,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StoneArmor.gd",
+      "windows": 170,
+      "matched": 170,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StoneBadge.gd",
+      "windows": 235,
+      "matched": 235,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Stoned.gd",
+      "windows": 316,
+      "matched": 316,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StoneGloves.gd",
+      "windows": 89,
+      "matched": 89,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StoneGolem.gd",
+      "windows": 321,
+      "matched": 321,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StoneShoes.gd",
+      "windows": 240,
+      "matched": 240,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/StrongDivinePotion.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Exclusive/StrongVampiricPotion.gd",
+      "windows": 141,
+      "matched": 141,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SunArmor.gd",
+      "windows": 208,
+      "matched": 208,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/SunShield.gd",
+      "windows": 184,
+      "matched": 184,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/TeslaCoil.gd",
+      "windows": 259,
+      "matched": 192,
+      "match_percent": 74.131
+    },
+    {
+      "path": "Items/Exclusive/Thornbloom.gd",
+      "windows": 144,
+      "matched": 144,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Thornburst.gd",
+      "windows": 83,
+      "matched": 83,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ThornElemental.gd",
+      "windows": 63,
+      "matched": 63,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ThornShortbow.gd",
+      "windows": 20,
+      "matched": 20,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ThorsHammer.gd",
+      "windows": 164,
+      "matched": 164,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ThunderDrake.gd",
+      "windows": 367,
+      "matched": 367,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/TigerRune.gd",
+      "windows": 199,
+      "matched": 199,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/TimeDilator.gd",
+      "windows": 192,
+      "matched": 192,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/TimeMelting.gd",
+      "windows": 56,
+      "matched": 56,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Toad.gd",
+      "windows": 314,
+      "matched": 314,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/ToastGoobert.gd",
+      "windows": 34,
+      "matched": 34,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Toolbox.gd",
+      "windows": 137,
+      "matched": 137,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Turtle.gd",
+      "windows": 100,
+      "matched": 100,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Twine.gd",
+      "windows": 74,
+      "matched": 74,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/TwineBadge.gd",
+      "windows": 79,
+      "matched": 79,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Ukulele.gd",
+      "windows": 194,
+      "matched": 128,
+      "match_percent": 65.979
+    },
+    {
+      "path": "Items/Exclusive/Ultima.gd",
+      "windows": 337,
+      "matched": 337,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/UnidentifiedSkill.gd",
+      "windows": 354,
+      "matched": 354,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/UniquelyUnique.gd",
+      "windows": 162,
+      "matched": 162,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/VampiricCollar.gd",
+      "windows": 155,
+      "matched": 155,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/VampiricPotion.gd",
+      "windows": 106,
+      "matched": 106,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/VineweaveBasket.gd",
+      "windows": 155,
+      "matched": 155,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Wand.gd",
+      "windows": 149,
+      "matched": 149,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/WandofDissonance.gd",
+      "windows": 222,
+      "matched": 222,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/WarScythe.gd",
+      "windows": 87,
+      "matched": 87,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/WaterElemental.gd",
+      "windows": 397,
+      "matched": 341,
+      "match_percent": 85.894
+    },
+    {
+      "path": "Items/Exclusive/Whetstone3.gd",
+      "windows": 32,
+      "matched": 32,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/WingedBoots.gd",
+      "windows": 114,
+      "matched": 114,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/WisdomPuppy.gd",
+      "windows": 70,
+      "matched": 70,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Wisp.gd",
+      "windows": 338,
+      "matched": 338,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/WolfBadge.gd",
+      "windows": 213,
+      "matched": 213,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/WolfEmblem.gd",
+      "windows": 128,
+      "matched": 128,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Exclusive/Wrench.gd",
+      "windows": 63,
+      "matched": 63,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/FalconBlade.gd",
+      "windows": 185,
+      "matched": 185,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/FancyFencingRapier.gd",
+      "windows": 111,
+      "matched": 111,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Fanfare.gd",
+      "windows": 131,
+      "matched": 131,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/FannyPack.gd",
+      "windows": 69,
+      "matched": 69,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Flute.gd",
+      "windows": 131,
+      "matched": 131,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/FlyAgaric.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Food.gd",
+      "windows": 20,
+      "matched": 20,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Garlic.gd",
+      "windows": 27,
+      "matched": 27,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/Amethyst.gd",
+      "windows": 128,
+      "matched": 128,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/CorruptedCrystal.gd",
+      "windows": 254,
+      "matched": 254,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/Emerald.gd",
+      "windows": 78,
+      "matched": 78,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/Gem.gd",
+      "windows": 1804,
+      "matched": 1768,
+      "match_percent": 98.004
+    },
+    {
+      "path": "Items/Gems/LumpofCoal.gd",
+      "windows": 109,
+      "matched": 109,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/Ruby.gd",
+      "windows": 86,
+      "matched": 86,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/Sapphire.gd",
+      "windows": 202,
+      "matched": 202,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/Skull.gd",
+      "windows": 153,
+      "matched": 153,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Gems/Topaz.gd",
+      "windows": 58,
+      "matched": 58,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/GemSocket.gd",
+      "windows": 232,
+      "matched": 232,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/GingerbreadMan.gd",
+      "windows": 132,
+      "matched": 132,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/GlovesofHaste.gd",
+      "windows": 21,
+      "matched": 21,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Goobert.gd",
+      "windows": 163,
+      "matched": 163,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Greatsword.gd",
+      "windows": 196,
+      "matched": 196,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Hammer.gd",
+      "windows": 50,
+      "matched": 50,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HealingHerbs.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/HealthPotion.gd",
+      "windows": 73,
+      "matched": 73,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HeartContainer.gd",
+      "windows": 151,
+      "matched": 151,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HeartofDarkness.gd",
+      "windows": 218,
+      "matched": 218,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HeroicPotion.gd",
+      "windows": 43,
+      "matched": 43,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HeroLongsword.gd",
+      "windows": 65,
+      "matched": 65,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HeroSword.gd",
+      "windows": 22,
+      "matched": 22,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HoloFireLizard.gd",
+      "windows": 77,
+      "matched": 77,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HolyArmor.gd",
+      "windows": 37,
+      "matched": 37,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HolySpear.gd",
+      "windows": 388,
+      "matched": 388,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/HungryBlade.gd",
+      "windows": 118,
+      "matched": 118,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Item.gd",
+      "windows": 18674,
+      "matched": 14609,
+      "match_percent": 78.232
+    },
+    {
+      "path": "Items/ItemDescriptor.gd",
+      "windows": 1400,
+      "matched": 1260,
+      "match_percent": 90.0
+    },
+    {
+      "path": "Items/ItemPushZone.gd",
+      "windows": 149,
+      "matched": 149,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Jynxtorquilla.gd",
+      "windows": 87,
+      "matched": 87,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/LeatherArmor.gd",
+      "windows": 4,
+      "matched": 4,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/LeatherBoots.gd",
+      "windows": 85,
+      "matched": 85,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/LeatherHelm.gd",
+      "windows": 155,
+      "matched": 155,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/LightGoobert.gd",
+      "windows": 123,
+      "matched": 123,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Lightsaber.gd",
+      "windows": 272,
+      "matched": 272,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/LuckyBow.gd",
+      "windows": 131,
+      "matched": 131,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/LuckyClover.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/LuckyPiggy.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/MagicStaff.gd",
+      "windows": 61,
+      "matched": 61,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/MagicTorch.gd",
+      "windows": 84,
+      "matched": 84,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ManaOrb.gd",
+      "windows": 251,
+      "matched": 251,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ManaPotion.gd",
+      "windows": 115,
+      "matched": 115,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Manathirst.gd",
+      "windows": 251,
+      "matched": 251,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/MoonShield.gd",
+      "windows": 114,
+      "matched": 114,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/MrStruggles.gd",
+      "windows": 433,
+      "matched": 433,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Pan.gd",
+      "windows": 12,
+      "matched": 12,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Pandamonium.gd",
+      "windows": 91,
+      "matched": 91,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/PestilenceFlask.gd",
+      "windows": 72,
+      "matched": 72,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/PiercingArrow.gd",
+      "windows": 110,
+      "matched": 110,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Piggybank.gd",
+      "windows": 384,
+      "matched": 384,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Pineapple.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/PlatinCustomerCard.gd",
+      "windows": 36,
+      "matched": 36,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/PocketSand.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/PoisonBow.gd",
+      "windows": 202,
+      "matched": 202,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/PoisonDagger.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/PoisonGoobert.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/PoisonIvy.gd",
+      "windows": 162,
+      "matched": 162,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Potion.gd",
+      "windows": 663,
+      "matched": 620,
+      "match_percent": 93.514
+    },
+    {
+      "path": "Items/PotionBelt.gd",
+      "windows": 130,
+      "matched": 130,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Present.gd",
+      "windows": 214,
+      "matched": 214,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ProtectivePurse.gd",
+      "windows": 15,
+      "matched": 15,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Pumpkin.gd",
+      "windows": 163,
+      "matched": 163,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RainbowGoobert.gd",
+      "windows": 29,
+      "matched": 29,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RainbowGoobertRanger.gd",
+      "windows": 29,
+      "matched": 29,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RangerBag.gd",
+      "windows": 62,
+      "matched": 62,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RangerCollar.gd",
+      "windows": 43,
+      "matched": 43,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RibSawBlade.gd",
+      "windows": 67,
+      "matched": 67,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RubyChonk.gd",
+      "windows": 331,
+      "matched": 331,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RubyEgg.gd",
+      "windows": 42,
+      "matched": 42,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/RubyWhelp.gd",
+      "windows": 6,
+      "matched": 6,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Shield.gd",
+      "windows": 121,
+      "matched": 121,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ShieldofValor.gd",
+      "windows": 42,
+      "matched": 42,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Shovel.gd",
+      "windows": 292,
+      "matched": 259,
+      "match_percent": 88.699
+    },
+    {
+      "path": "Items/SocketsNode.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Spear.gd",
+      "windows": 31,
+      "matched": 31,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/SpectralDagger.gd",
+      "windows": 49,
+      "matched": 49,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/SpikedShield.gd",
+      "windows": 70,
+      "matched": 70,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StaffofUnhealing.gd",
+      "windows": 180,
+      "matched": 180,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StaminaSack.gd",
+      "windows": 76,
+      "matched": 76,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/SteelGoobert.gd",
+      "windows": 47,
+      "matched": 47,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Stone.gd",
+      "windows": 129,
+      "matched": 129,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StoneHelm.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/StoneSkinPotion.gd",
+      "windows": 44,
+      "matched": 44,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StorageCoffin.gd",
+      "windows": 35,
+      "matched": 35,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StrongDemonicFlask.gd",
+      "windows": 249,
+      "matched": 249,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StrongHealthPotion.gd",
+      "windows": 14,
+      "matched": 14,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StrongPestilenceFlask.gd",
+      "windows": 28,
+      "matched": 28,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/StrongStoneSkinPotion.gd",
+      "windows": 25,
+      "matched": 25,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/TheFool.gd",
+      "windows": 42,
+      "matched": 42,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/TheLovers.gd",
+      "windows": 75,
+      "matched": 75,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ThornBow.gd",
+      "windows": 211,
+      "matched": 211,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/ThornWhip.gd",
+      "windows": 43,
+      "matched": 43,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Tiles/BagBorder.gd",
+      "windows": 196,
+      "matched": 196,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Torch.gd",
+      "windows": 34,
+      "matched": 34,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/VampiricArmor.gd",
+      "windows": 20,
+      "matched": 20,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/VampiricGloves.gd",
+      "windows": 106,
+      "matched": 106,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/VampiricScythe.gd",
+      "windows": 81,
+      "matched": 81,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/VillainSword.gd",
+      "windows": 24,
+      "matched": 24,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/WalrusTusk.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/Weapon.gd",
+      "windows": 46,
+      "matched": 46,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Whetstone.gd",
+      "windows": 20,
+      "matched": 20,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/White-EyesBlueDragon.gd",
+      "windows": 36,
+      "matched": 36,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/Wolpertinger.gd",
+      "windows": 73,
+      "matched": 73,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/WoodenBuckler.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Items/WoodenSword.gd",
+      "windows": 30,
+      "matched": 30,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Items/YggdrasilLeaf.gd",
+      "windows": 131,
+      "matched": 131,
+      "match_percent": 100.0
+    },
+    {
+      "path": "LocalServices/LocalAuth.gd",
+      "windows": 622,
+      "matched": 510,
+      "match_percent": 81.994
+    },
+    {
+      "path": "LocalServices/LocalMultiplayer.gd",
+      "windows": 81,
+      "matched": 81,
+      "match_percent": 100.0
+    },
+    {
+      "path": "LocalServices/LocalPlayers.gd",
+      "windows": 342,
+      "matched": 342,
+      "match_percent": 100.0
+    },
+    {
+      "path": "LocalServices/LocalScores.gd",
+      "windows": 559,
+      "matched": 520,
+      "match_percent": 93.023
+    },
+    {
+      "path": "LocalServices/LocalSteam.gd",
+      "windows": 1592,
+      "matched": 1479,
+      "match_percent": 92.902
+    },
+    {
+      "path": "LocalServices/LocalStore.gd",
+      "windows": 823,
+      "matched": 471,
+      "match_percent": 57.23
+    },
+    {
+      "path": "PvE/NativeAssetBindings.gd",
+      "windows": 623,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/NativeBuildBridge.gd",
+      "windows": 6266,
+      "matched": 5,
+      "match_percent": 0.08
+    },
+    {
+      "path": "PvE/NativeDetailViews.gd",
+      "windows": 2789,
+      "matched": 8,
+      "match_percent": 0.287
+    },
+    {
+      "path": "PvE/NativeExpedition.gd",
+      "windows": 12248,
+      "matched": 48,
+      "match_percent": 0.392
+    },
+    {
+      "path": "PvE/NativePreferences.gd",
+      "windows": 2673,
+      "matched": 56,
+      "match_percent": 2.095
+    },
+    {
+      "path": "PvE/Rules/app/GameFlow.gd",
+      "windows": 7227,
+      "matched": 59,
+      "match_percent": 0.816
+    },
+    {
+      "path": "PvE/Rules/app/TutorialService.gd",
+      "windows": 364,
+      "matched": 3,
+      "match_percent": 0.824
+    },
+    {
+      "path": "PvE/Rules/combat/CombatEngine.gd",
+      "windows": 11003,
+      "matched": 82,
+      "match_percent": 0.745
+    },
+    {
+      "path": "PvE/Rules/combat/CombatEventQueue.gd",
+      "windows": 375,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/combat/EffectResolver.gd",
+      "windows": 850,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/combat/SnapshotBuilder.gd",
+      "windows": 2426,
+      "matched": 8,
+      "match_percent": 0.33
+    },
+    {
+      "path": "PvE/Rules/combat/StatusController.gd",
+      "windows": 890,
+      "matched": 11,
+      "match_percent": 1.236
+    },
+    {
+      "path": "PvE/Rules/content/ContentDB.gd",
+      "windows": 1582,
+      "matched": 53,
+      "match_percent": 3.35
+    },
+    {
+      "path": "PvE/Rules/content/ContentValidator.gd",
+      "windows": 1793,
+      "matched": 8,
+      "match_percent": 0.446
+    },
+    {
+      "path": "PvE/Rules/content/definitions/BagDefinition.gd",
+      "windows": 110,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/CharacterDefinition.gd",
+      "windows": 110,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/ContentDefinition.gd",
+      "windows": 147,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/DifficultyDefinition.gd",
+      "windows": 110,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/EncounterDefinition.gd",
+      "windows": 84,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/EnemyBuildDefinition.gd",
+      "windows": 110,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/EventDefinition.gd",
+      "windows": 58,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/ItemDefinition.gd",
+      "windows": 188,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/RecipeDefinition.gd",
+      "windows": 84,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/RewardDefinition.gd",
+      "windows": 58,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/definitions/StatusDefinition.gd",
+      "windows": 162,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/content/RuleText.gd",
+      "windows": 4406,
+      "matched": 3,
+      "match_percent": 0.068
+    },
+    {
+      "path": "PvE/Rules/core/DeterministicRNG.gd",
+      "windows": 176,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/inventory/BuildState.gd",
+      "windows": 486,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/inventory/PlacementService.gd",
+      "windows": 2332,
+      "matched": 26,
+      "match_percent": 1.115
+    },
+    {
+      "path": "PvE/Rules/inventory/SpatialQueryService.gd",
+      "windows": 2403,
+      "matched": 26,
+      "match_percent": 1.082
+    },
+    {
+      "path": "PvE/Rules/persistence/SaveService.gd",
+      "windows": 1755,
+      "matched": 22,
+      "match_percent": 1.254
+    },
+    {
+      "path": "PvE/Rules/platform/PlatformService.gd",
+      "windows": 136,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/platform/ProfileService.gd",
+      "windows": 1340,
+      "matched": 4,
+      "match_percent": 0.299
+    },
+    {
+      "path": "PvE/Rules/platform/TelemetryService.gd",
+      "windows": 219,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/run/CraftingService.gd",
+      "windows": 1805,
+      "matched": 9,
+      "match_percent": 0.499
+    },
+    {
+      "path": "PvE/Rules/run/EconomyService.gd",
+      "windows": 1601,
+      "matched": 3,
+      "match_percent": 0.187
+    },
+    {
+      "path": "PvE/Rules/run/EncounterDirector.gd",
+      "windows": 2218,
+      "matched": 5,
+      "match_percent": 0.225
+    },
+    {
+      "path": "PvE/Rules/run/RewardService.gd",
+      "windows": 572,
+      "matched": 4,
+      "match_percent": 0.699
+    },
+    {
+      "path": "PvE/Rules/run/RunEffectService.gd",
+      "windows": 1806,
+      "matched": 4,
+      "match_percent": 0.221
+    },
+    {
+      "path": "PvE/Rules/run/RunState.gd",
+      "windows": 44,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/run/ShopGenerator.gd",
+      "windows": 2629,
+      "matched": 9,
+      "match_percent": 0.342
+    },
+    {
+      "path": "PvE/Rules/run/ShopState.gd",
+      "windows": 140,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/tools/BatchCLI.gd",
+      "windows": 444,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "PvE/Rules/tools/DeveloperTools.gd",
+      "windows": 2755,
+      "matched": 25,
+      "match_percent": 0.907
+    },
+    {
+      "path": "PvE/Rules/tools/DeveloperToolService.gd",
+      "windows": 1847,
+      "matched": 39,
+      "match_percent": 2.112
+    },
+    {
+      "path": "Runtime/Audio/SceneMusic.gd",
+      "windows": 216,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Assets/Decoration/FlowerVaseBehavior.gd",
+      "windows": 386,
+      "matched": 22,
+      "match_percent": 5.699
+    },
+    {
+      "path": "Runtime/Behavior/CharacterClasses/CharacterClassBehavior.gd",
+      "windows": 194,
+      "matched": 60,
+      "match_percent": 30.928
+    },
+    {
+      "path": "Runtime/Behavior/Compatibility/LegacyTweenBehavior.gd",
+      "windows": 336,
+      "matched": 124,
+      "match_percent": 36.905
+    },
+    {
+      "path": "Runtime/Behavior/Core/BuffBehavior.gd",
+      "windows": 1562,
+      "matched": 63,
+      "match_percent": 4.033
+    },
+    {
+      "path": "Runtime/Behavior/Core/CharacterBehavior.gd",
+      "windows": 5268,
+      "matched": 566,
+      "match_percent": 10.744
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatBehavior.gd",
+      "windows": 2543,
+      "matched": 454,
+      "match_percent": 17.853
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatEventBehavior.gd",
+      "windows": 741,
+      "matched": 17,
+      "match_percent": 2.294
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+      "windows": 3500,
+      "matched": 391,
+      "match_percent": 11.171
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+      "windows": 304,
+      "matched": 59,
+      "match_percent": 19.408
+    },
+    {
+      "path": "Runtime/Behavior/Core/InventoryBehavior.gd",
+      "windows": 5431,
+      "matched": 870,
+      "match_percent": 16.019
+    },
+    {
+      "path": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+      "windows": 2725,
+      "matched": 1258,
+      "match_percent": 46.165
+    },
+    {
+      "path": "Runtime/Behavior/Core/ShopBehavior.gd",
+      "windows": 1386,
+      "matched": 206,
+      "match_percent": 14.863
+    },
+    {
+      "path": "Runtime/Behavior/Core/SteamWorkshopBehavior.gd",
+      "windows": 77,
+      "matched": 11,
+      "match_percent": 14.286
+    },
+    {
+      "path": "Runtime/Behavior/Game/Presentation.gd",
+      "windows": 4047,
+      "matched": 547,
+      "match_percent": 13.516
+    },
+    {
+      "path": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+      "windows": 3978,
+      "matched": 1063,
+      "match_percent": 26.722
+    },
+    {
+      "path": "Runtime/Behavior/Game/RunFlow.gd",
+      "windows": 4212,
+      "matched": 555,
+      "match_percent": 13.177
+    },
+    {
+      "path": "Runtime/Behavior/Game/Session.gd",
+      "windows": 1623,
+      "matched": 221,
+      "match_percent": 13.617
+    },
+    {
+      "path": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+      "windows": 1415,
+      "matched": 66,
+      "match_percent": 4.664
+    },
+    {
+      "path": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+      "windows": 1803,
+      "matched": 345,
+      "match_percent": 19.135
+    },
+    {
+      "path": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryDataBehavior.gd",
+      "windows": 77,
+      "matched": 9,
+      "match_percent": 11.688
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+      "windows": 753,
+      "matched": 222,
+      "match_percent": 29.482
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Combat/CharacterStatIconBehavior.gd",
+      "windows": 235,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/CombatTimer/CombatTimerBehavior.gd",
+      "windows": 331,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+      "windows": 1066,
+      "matched": 179,
+      "match_percent": 16.792
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageMeter/DamageMeterEntryBehavior.gd",
+      "windows": 424,
+      "matched": 18,
+      "match_percent": 4.245
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageMeter/DamageMeterPlotBehavior.gd",
+      "windows": 439,
+      "matched": 116,
+      "match_percent": 26.424
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageNumbers/BuffLabelBehavior.gd",
+      "windows": 1344,
+      "matched": 266,
+      "match_percent": 19.792
+    },
+    {
+      "path": "Runtime/Behavior/Interface/GridStorageBehavior.gd",
+      "windows": 319,
+      "matched": 5,
+      "match_percent": 1.567
+    },
+    {
+      "path": "Runtime/Behavior/Interface/GridStorageEntryBehavior.gd",
+      "windows": 285,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ItemLibrary/InfoPanelBehavior.gd",
+      "windows": 1403,
+      "matched": 384,
+      "match_percent": 27.37
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+      "windows": 3715,
+      "matched": 432,
+      "match_percent": 11.629
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/CreateLobbyUIBehavior.gd",
+      "windows": 434,
+      "matched": 21,
+      "match_percent": 4.839
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/JoinLobbyUIBehavior.gd",
+      "windows": 507,
+      "matched": 12,
+      "match_percent": 2.367
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/LobbyBuildViewerBehavior.gd",
+      "windows": 336,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/LobbyMemberDataBehavior.gd",
+      "windows": 113,
+      "matched": 5,
+      "match_percent": 4.425
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/LobbyTimerBehavior.gd",
+      "windows": 560,
+      "matched": 20,
+      "match_percent": 3.571
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/OtherModesUIBehavior.gd",
+      "windows": 198,
+      "matched": 22,
+      "match_percent": 11.111
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+      "windows": 694,
+      "matched": 7,
+      "match_percent": 1.009
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+      "windows": 572,
+      "matched": 138,
+      "match_percent": 24.126
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+      "windows": 601,
+      "matched": 79,
+      "match_percent": 13.145
+    },
+    {
+      "path": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+      "windows": 1002,
+      "matched": 221,
+      "match_percent": 22.056
+    },
+    {
+      "path": "Runtime/Behavior/Interface/RarityHintBehavior.gd",
+      "windows": 201,
+      "matched": 72,
+      "match_percent": 35.821
+    },
+    {
+      "path": "Runtime/Behavior/Interface/RecipeBookBehavior.gd",
+      "windows": 616,
+      "matched": 206,
+      "match_percent": 33.442
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ResizableControlBehavior.gd",
+      "windows": 338,
+      "matched": 13,
+      "match_percent": 3.846
+    },
+    {
+      "path": "Runtime/Behavior/Interface/RunAchievementBehavior.gd",
+      "windows": 309,
+      "matched": 32,
+      "match_percent": 10.356
+    },
+    {
+      "path": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+      "windows": 1280,
+      "matched": 234,
+      "match_percent": 18.281
+    },
+    {
+      "path": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+      "windows": 1591,
+      "matched": 191,
+      "match_percent": 12.005
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+      "windows": 1606,
+      "matched": 722,
+      "match_percent": 44.956
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+      "windows": 2736,
+      "matched": 140,
+      "match_percent": 5.117
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ShopToolbarBehavior.gd",
+      "windows": 371,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/StartCombatButtonBehavior.gd",
+      "windows": 264,
+      "matched": 73,
+      "match_percent": 27.652
+    },
+    {
+      "path": "Runtime/Behavior/Interface/StorageboxBehavior.gd",
+      "windows": 558,
+      "matched": 3,
+      "match_percent": 0.538
+    },
+    {
+      "path": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+      "windows": 2332,
+      "matched": 173,
+      "match_percent": 7.419
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipeBehavior.gd",
+      "windows": 928,
+      "matched": 228,
+      "match_percent": 24.569
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipesTooltipBehavior.gd",
+      "windows": 522,
+      "matched": 153,
+      "match_percent": 29.31
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/CustomRulesTooltipBehavior.gd",
+      "windows": 218,
+      "matched": 7,
+      "match_percent": 3.211
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+      "windows": 3407,
+      "matched": 332,
+      "match_percent": 9.745
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/RecipeTooltipBehavior.gd",
+      "windows": 494,
+      "matched": 96,
+      "match_percent": 19.433
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd",
+      "windows": 707,
+      "matched": 287,
+      "match_percent": 40.594
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Wardrobe/DressUpSpriteBehavior.gd",
+      "windows": 243,
+      "matched": 54,
+      "match_percent": 22.222
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Wardrobe/SkinSlotButtonBehavior.gd",
+      "windows": 207,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Wardrobe/WardrobeBehavior.gd",
+      "windows": 547,
+      "matched": 64,
+      "match_percent": 11.7
+    },
+    {
+      "path": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+      "windows": 3271,
+      "matched": 200,
+      "match_percent": 6.114
+    },
+    {
+      "path": "Runtime/Behavior/Items/BagBehavior.gd",
+      "windows": 144,
+      "matched": 12,
+      "match_percent": 8.333
+    },
+    {
+      "path": "Runtime/Behavior/Items/CardBehavior.gd",
+      "windows": 167,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/CombatEffects.gd",
+      "windows": 1741,
+      "matched": 130,
+      "match_percent": 7.467
+    },
+    {
+      "path": "Runtime/Behavior/Items/CombatState.gd",
+      "windows": 2086,
+      "matched": 105,
+      "match_percent": 5.034
+    },
+    {
+      "path": "Runtime/Behavior/Items/CraftingBondBehavior.gd",
+      "windows": 337,
+      "matched": 14,
+      "match_percent": 4.154
+    },
+    {
+      "path": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+      "windows": 2345,
+      "matched": 222,
+      "match_percent": 9.467
+    },
+    {
+      "path": "Runtime/Behavior/Items/CraftingQueries.gd",
+      "windows": 276,
+      "matched": 29,
+      "match_percent": 10.507
+    },
+    {
+      "path": "Runtime/Behavior/Items/DeckofCardsBehavior.gd",
+      "windows": 252,
+      "matched": 14,
+      "match_percent": 5.556
+    },
+    {
+      "path": "Runtime/Behavior/Items/DjinnLampBehavior.gd",
+      "windows": 516,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/ElectricalChargeBehavior.gd",
+      "windows": 1145,
+      "matched": 40,
+      "match_percent": 3.493
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/AutomanatonBehavior.gd",
+      "windows": 241,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/ChessBoardBehavior.gd",
+      "windows": 629,
+      "matched": 146,
+      "match_percent": 23.211
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/DragonSetBehavior.gd",
+      "windows": 191,
+      "matched": 6,
+      "match_percent": 3.141
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/Eat-o-maticBehavior.gd",
+      "windows": 183,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/JokerBehavior.gd",
+      "windows": 463,
+      "matched": 18,
+      "match_percent": 3.888
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/LaboratoryBehavior.gd",
+      "windows": 610,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/MagicRingBehavior.gd",
+      "windows": 773,
+      "matched": 173,
+      "match_percent": 22.38
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/RainbowPotionBehavior.gd",
+      "windows": 223,
+      "matched": 51,
+      "match_percent": 22.87
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/RandomLoadoutBagBehavior.gd",
+      "windows": 631,
+      "matched": 159,
+      "match_percent": 25.198
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/RotationSpringBehavior.gd",
+      "windows": 246,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/ShinyMantleBehavior.gd",
+      "windows": 128,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/TeslaCoilBehavior.gd",
+      "windows": 224,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/UkuleleBehavior.gd",
+      "windows": 385,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/WaterElementalBehavior.gd",
+      "windows": 237,
+      "matched": 9,
+      "match_percent": 3.797
+    },
+    {
+      "path": "Runtime/Behavior/Items/Gems/GemBehavior.gd",
+      "windows": 88,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/GridGeometry.gd",
+      "windows": 809,
+      "matched": 118,
+      "match_percent": 14.586
+    },
+    {
+      "path": "Runtime/Behavior/Items/Interaction.gd",
+      "windows": 5315,
+      "matched": 152,
+      "match_percent": 2.86
+    },
+    {
+      "path": "Runtime/Behavior/Items/ItemDescriptorBehavior.gd",
+      "windows": 448,
+      "matched": 31,
+      "match_percent": 6.92
+    },
+    {
+      "path": "Runtime/Behavior/Items/LifecycleAndText.gd",
+      "windows": 2100,
+      "matched": 277,
+      "match_percent": 13.19
+    },
+    {
+      "path": "Runtime/Behavior/Items/Placement.gd",
+      "windows": 1880,
+      "matched": 139,
+      "match_percent": 7.394
+    },
+    {
+      "path": "Runtime/Behavior/Items/PotionBehavior.gd",
+      "windows": 362,
+      "matched": 72,
+      "match_percent": 19.89
+    },
+    {
+      "path": "Runtime/Behavior/Items/ShovelBehavior.gd",
+      "windows": 153,
+      "matched": 49,
+      "match_percent": 32.026
+    },
+    {
+      "path": "Runtime/Behavior/Items/StatusEffects.gd",
+      "windows": 874,
+      "matched": 466,
+      "match_percent": 53.318
+    },
+    {
+      "path": "Runtime/Behavior/LocalServices/LocalAuthBehavior.gd",
+      "windows": 276,
+      "matched": 21,
+      "match_percent": 7.609
+    },
+    {
+      "path": "Runtime/Behavior/LocalServices/LocalScoresBehavior.gd",
+      "windows": 98,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/LocalServices/LocalSteamBehavior.gd",
+      "windows": 335,
+      "matched": 88,
+      "match_percent": 26.269
+    },
+    {
+      "path": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+      "windows": 1231,
+      "matched": 408,
+      "match_percent": 33.144
+    },
+    {
+      "path": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+      "windows": 7073,
+      "matched": 1655,
+      "match_percent": 23.399
+    },
+    {
+      "path": "Runtime/Behavior/Sheets/TableBehavior.gd",
+      "windows": 229,
+      "matched": 102,
+      "match_percent": 44.541
+    },
+    {
+      "path": "Runtime/Behavior/Utility/BuildHistoryDBBehavior.gd",
+      "windows": 683,
+      "matched": 451,
+      "match_percent": 66.032
+    },
+    {
+      "path": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+      "windows": 314,
+      "matched": 15,
+      "match_percent": 4.777
+    },
+    {
+      "path": "Runtime/Behavior/Utility/DamageSourceBehavior.gd",
+      "windows": 201,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Utility/ItemBoundCheckerBehavior.gd",
+      "windows": 252,
+      "matched": 79,
+      "match_percent": 31.349
+    },
+    {
+      "path": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+      "windows": 5013,
+      "matched": 390,
+      "match_percent": 7.78
+    },
+    {
+      "path": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+      "windows": 2165,
+      "matched": 663,
+      "match_percent": 30.624
+    },
+    {
+      "path": "Runtime/Behavior/Utility/LocalizedControlBehavior.gd",
+      "windows": 1003,
+      "matched": 16,
+      "match_percent": 1.595
+    },
+    {
+      "path": "Runtime/Behavior/Utility/RecipeBehavior.gd",
+      "windows": 1050,
+      "matched": 434,
+      "match_percent": 41.333
+    },
+    {
+      "path": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+      "windows": 1684,
+      "matched": 187,
+      "match_percent": 11.105
+    },
+    {
+      "path": "Runtime/Behavior/Utility/SettingsBehavior.gd",
+      "windows": 849,
+      "matched": 97,
+      "match_percent": 11.425
+    },
+    {
+      "path": "Runtime/Behavior/Utility/ShardEmitterBehavior.gd",
+      "windows": 430,
+      "matched": 156,
+      "match_percent": 36.279
+    },
+    {
+      "path": "Runtime/Behavior/Utility/SkinBookBehavior.gd",
+      "windows": 319,
+      "matched": 209,
+      "match_percent": 65.517
+    },
+    {
+      "path": "Runtime/Behavior/Utility/SoundBehavior.gd",
+      "windows": 740,
+      "matched": 20,
+      "match_percent": 2.703
+    },
+    {
+      "path": "Runtime/Behavior/Utility/SteamHelperBehavior.gd",
+      "windows": 389,
+      "matched": 19,
+      "match_percent": 4.884
+    },
+    {
+      "path": "Runtime/Behavior/Utility/UGCItemBehavior.gd",
+      "windows": 100,
+      "matched": 4,
+      "match_percent": 4.0
+    },
+    {
+      "path": "Runtime/Behavior/Utility/UndoStackBehavior.gd",
+      "windows": 486,
+      "matched": 14,
+      "match_percent": 2.881
+    },
+    {
+      "path": "Runtime/Behavior/Utility/UtilBehavior.gd",
+      "windows": 3123,
+      "matched": 1053,
+      "match_percent": 33.718
+    },
+    {
+      "path": "Runtime/Collections/CountLedger.gd",
+      "windows": 462,
+      "matched": 140,
+      "match_percent": 30.303
+    },
+    {
+      "path": "Runtime/Collections/SequenceOps.gd",
+      "windows": 755,
+      "matched": 18,
+      "match_percent": 2.384
+    },
+    {
+      "path": "Runtime/Events/CombatDispatch.gd",
+      "windows": 401,
+      "matched": 90,
+      "match_percent": 22.444
+    },
+    {
+      "path": "Runtime/Random/ChanceDebt.gd",
+      "windows": 337,
+      "matched": 34,
+      "match_percent": 10.089
+    },
+    {
+      "path": "Runtime/Random/PrefixSampler.gd",
+      "windows": 132,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Random/RangeDebt.gd",
+      "windows": 74,
+      "matched": 22,
+      "match_percent": 29.73
+    },
+    {
+      "path": "Runtime/Scene/LeasePool.gd",
+      "windows": 571,
+      "matched": 116,
+      "match_percent": 20.315
+    },
+    {
+      "path": "Runtime/Serialization/BitPacket.gd",
+      "windows": 942,
+      "matched": 99,
+      "match_percent": 10.51
+    },
+    {
+      "path": "Runtime/UI/InputLocks.gd",
+      "windows": 548,
+      "matched": 89,
+      "match_percent": 16.241
+    },
+    {
+      "path": "Shader/BottleOfBooze.gd",
+      "windows": 399,
+      "matched": 399,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Shader/DustParticles.gd",
+      "windows": 63,
+      "matched": 63,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Sheets/ItemBook.gd",
+      "windows": 3522,
+      "matched": 2897,
+      "match_percent": 82.254
+    },
+    {
+      "path": "Sheets/Table.gd",
+      "windows": 541,
+      "matched": 469,
+      "match_percent": 86.691
+    },
+    {
+      "path": "Utility/AutoHideCPUParticles.gd",
+      "windows": 111,
+      "matched": 111,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/AutoHideParticles.gd",
+      "windows": 111,
+      "matched": 111,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/BalancedRandom.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/BalancedRange.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/BitStream.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/BuildHistoryDB.gd",
+      "windows": 257,
+      "matched": 165,
+      "match_percent": 64.202
+    },
+    {
+      "path": "Utility/CharacterSkin.gd",
+      "windows": 23,
+      "matched": 23,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/Counter.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/CrazySDK.gd",
+      "windows": 227,
+      "matched": 227,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/CursorPoint.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/CustomRules.gd",
+      "windows": 850,
+      "matched": 759,
+      "match_percent": 89.294
+    },
+    {
+      "path": "Utility/DamageResult.gd",
+      "windows": 286,
+      "matched": 286,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/DamageSource.gd",
+      "windows": 634,
+      "matched": 597,
+      "match_percent": 94.164
+    },
+    {
+      "path": "Utility/DataValidator.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/DraggableRichTextLabel.gd",
+      "windows": 180,
+      "matched": 180,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/EventBus.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/FontData.gd",
+      "windows": 134,
+      "matched": 134,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/GrabZone.gd",
+      "windows": 30,
+      "matched": 30,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/InputBlockRect.gd",
+      "windows": 39,
+      "matched": 39,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/ItemBoundChecker.gd",
+      "windows": 329,
+      "matched": 262,
+      "match_percent": 79.635
+    },
+    {
+      "path": "Utility/ItemPool.gd",
+      "windows": 372,
+      "matched": 372,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/ItemRain.gd",
+      "windows": 261,
+      "matched": 261,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/JumpTextEffect.gd",
+      "windows": 134,
+      "matched": 134,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/LinkButton.gd",
+      "windows": 29,
+      "matched": 29,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/LoanAudioStreamPlayer.gd",
+      "windows": 60,
+      "matched": 60,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/Lobbies.gd",
+      "windows": 4402,
+      "matched": 3483,
+      "match_percent": 79.123
+    },
+    {
+      "path": "Utility/LocalHistoryStore.gd",
+      "windows": 662,
+      "matched": 248,
+      "match_percent": 37.462
+    },
+    {
+      "path": "Utility/LocalizedControl.gd",
+      "windows": 289,
+      "matched": 171,
+      "match_percent": 59.17
+    },
+    {
+      "path": "Utility/MaterialCompiler.gd",
+      "windows": 204,
+      "matched": 204,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/MerchButton.gd",
+      "windows": 303,
+      "matched": 303,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/MultiTimer.gd",
+      "windows": 117,
+      "matched": 117,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/ObjectPool.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/PooledScene.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Utility/Profanity.gd",
+      "windows": 876,
+      "matched": 876,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/Recipe.gd",
+      "windows": 632,
+      "matched": 462,
+      "match_percent": 73.101
+    },
+    {
+      "path": "Utility/RunData.gd",
+      "windows": 1635,
+      "matched": 1437,
+      "match_percent": 87.89
+    },
+    {
+      "path": "Utility/Settings.gd",
+      "windows": 729,
+      "matched": 607,
+      "match_percent": 83.265
+    },
+    {
+      "path": "Utility/ShardEmitter.gd",
+      "windows": 223,
+      "matched": 191,
+      "match_percent": 85.65
+    },
+    {
+      "path": "Utility/SkinBook.gd",
+      "windows": 166,
+      "matched": 133,
+      "match_percent": 80.12
+    },
+    {
+      "path": "Utility/Sound.gd",
+      "windows": 1133,
+      "matched": 693,
+      "match_percent": 61.165
+    },
+    {
+      "path": "Utility/StartButtonArea.gd",
+      "windows": 51,
+      "matched": 51,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/SteamHelper.gd",
+      "windows": 598,
+      "matched": 498,
+      "match_percent": 83.278
+    },
+    {
+      "path": "Utility/TimedParticles.gd",
+      "windows": 7,
+      "matched": 7,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/Tools/TilePathRecording.gd",
+      "windows": 195,
+      "matched": 195,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/TooltipArea.gd",
+      "windows": 282,
+      "matched": 282,
+      "match_percent": 100.0
+    },
+    {
+      "path": "Utility/UGCItem.gd",
+      "windows": 987,
+      "matched": 951,
+      "match_percent": 96.353
+    },
+    {
+      "path": "Utility/UndoStack.gd",
+      "windows": 1296,
+      "matched": 1016,
+      "match_percent": 78.395
+    },
+    {
+      "path": "Utility/Util.gd",
+      "windows": 6496,
+      "matched": 5472,
+      "match_percent": 84.236
+    },
+    {
+      "path": "Utility/WeightedBag.gd",
+      "windows": 0,
+      "matched": 0,
+      "match_percent": 0.0
+    }
+  ],
+  "target_percent": 50.0,
+  "target_met": true,
+  "modules_at_or_below_30": [
+    {
+      "path": "Runtime/Audio/SceneMusic.gd",
+      "windows": 216,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Assets/Decoration/FlowerVaseBehavior.gd",
+      "windows": 386,
+      "matched": 22,
+      "match_percent": 5.699
+    },
+    {
+      "path": "Runtime/Behavior/Core/BuffBehavior.gd",
+      "windows": 1562,
+      "matched": 63,
+      "match_percent": 4.033
+    },
+    {
+      "path": "Runtime/Behavior/Core/CharacterBehavior.gd",
+      "windows": 5268,
+      "matched": 566,
+      "match_percent": 10.744
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatBehavior.gd",
+      "windows": 2543,
+      "matched": 454,
+      "match_percent": 17.853
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatEventBehavior.gd",
+      "windows": 741,
+      "matched": 17,
+      "match_percent": 2.294
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+      "windows": 3500,
+      "matched": 391,
+      "match_percent": 11.171
+    },
+    {
+      "path": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+      "windows": 304,
+      "matched": 59,
+      "match_percent": 19.408
+    },
+    {
+      "path": "Runtime/Behavior/Core/InventoryBehavior.gd",
+      "windows": 5431,
+      "matched": 870,
+      "match_percent": 16.019
+    },
+    {
+      "path": "Runtime/Behavior/Core/ShopBehavior.gd",
+      "windows": 1386,
+      "matched": 206,
+      "match_percent": 14.863
+    },
+    {
+      "path": "Runtime/Behavior/Game/Presentation.gd",
+      "windows": 4047,
+      "matched": 547,
+      "match_percent": 13.516
+    },
+    {
+      "path": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+      "windows": 3978,
+      "matched": 1063,
+      "match_percent": 26.722
+    },
+    {
+      "path": "Runtime/Behavior/Game/RunFlow.gd",
+      "windows": 4212,
+      "matched": 555,
+      "match_percent": 13.177
+    },
+    {
+      "path": "Runtime/Behavior/Game/Session.gd",
+      "windows": 1623,
+      "matched": 221,
+      "match_percent": 13.617
+    },
+    {
+      "path": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+      "windows": 1415,
+      "matched": 66,
+      "match_percent": 4.664
+    },
+    {
+      "path": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+      "windows": 1803,
+      "matched": 345,
+      "match_percent": 19.135
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+      "windows": 753,
+      "matched": 222,
+      "match_percent": 29.482
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Combat/CharacterStatIconBehavior.gd",
+      "windows": 235,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/CombatTimer/CombatTimerBehavior.gd",
+      "windows": 331,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+      "windows": 1066,
+      "matched": 179,
+      "match_percent": 16.792
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageMeter/DamageMeterEntryBehavior.gd",
+      "windows": 424,
+      "matched": 18,
+      "match_percent": 4.245
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageMeter/DamageMeterPlotBehavior.gd",
+      "windows": 439,
+      "matched": 116,
+      "match_percent": 26.424
+    },
+    {
+      "path": "Runtime/Behavior/Interface/DamageNumbers/BuffLabelBehavior.gd",
+      "windows": 1344,
+      "matched": 266,
+      "match_percent": 19.792
+    },
+    {
+      "path": "Runtime/Behavior/Interface/GridStorageBehavior.gd",
+      "windows": 319,
+      "matched": 5,
+      "match_percent": 1.567
+    },
+    {
+      "path": "Runtime/Behavior/Interface/GridStorageEntryBehavior.gd",
+      "windows": 285,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ItemLibrary/InfoPanelBehavior.gd",
+      "windows": 1403,
+      "matched": 384,
+      "match_percent": 27.37
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+      "windows": 3715,
+      "matched": 432,
+      "match_percent": 11.629
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/CreateLobbyUIBehavior.gd",
+      "windows": 434,
+      "matched": 21,
+      "match_percent": 4.839
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/JoinLobbyUIBehavior.gd",
+      "windows": 507,
+      "matched": 12,
+      "match_percent": 2.367
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/LobbyBuildViewerBehavior.gd",
+      "windows": 336,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Lobbies/LobbyTimerBehavior.gd",
+      "windows": 560,
+      "matched": 20,
+      "match_percent": 3.571
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+      "windows": 694,
+      "matched": 7,
+      "match_percent": 1.009
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+      "windows": 572,
+      "matched": 138,
+      "match_percent": 24.126
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+      "windows": 601,
+      "matched": 79,
+      "match_percent": 13.145
+    },
+    {
+      "path": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+      "windows": 1002,
+      "matched": 221,
+      "match_percent": 22.056
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ResizableControlBehavior.gd",
+      "windows": 338,
+      "matched": 13,
+      "match_percent": 3.846
+    },
+    {
+      "path": "Runtime/Behavior/Interface/RunAchievementBehavior.gd",
+      "windows": 309,
+      "matched": 32,
+      "match_percent": 10.356
+    },
+    {
+      "path": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+      "windows": 1280,
+      "matched": 234,
+      "match_percent": 18.281
+    },
+    {
+      "path": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+      "windows": 1591,
+      "matched": 191,
+      "match_percent": 12.005
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+      "windows": 2736,
+      "matched": 140,
+      "match_percent": 5.117
+    },
+    {
+      "path": "Runtime/Behavior/Interface/ShopToolbarBehavior.gd",
+      "windows": 371,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/StartCombatButtonBehavior.gd",
+      "windows": 264,
+      "matched": 73,
+      "match_percent": 27.652
+    },
+    {
+      "path": "Runtime/Behavior/Interface/StorageboxBehavior.gd",
+      "windows": 558,
+      "matched": 3,
+      "match_percent": 0.538
+    },
+    {
+      "path": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+      "windows": 2332,
+      "matched": 173,
+      "match_percent": 7.419
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipeBehavior.gd",
+      "windows": 928,
+      "matched": 228,
+      "match_percent": 24.569
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipesTooltipBehavior.gd",
+      "windows": 522,
+      "matched": 153,
+      "match_percent": 29.31
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/CustomRulesTooltipBehavior.gd",
+      "windows": 218,
+      "matched": 7,
+      "match_percent": 3.211
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+      "windows": 3407,
+      "matched": 332,
+      "match_percent": 9.745
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Tooltips/RecipeTooltipBehavior.gd",
+      "windows": 494,
+      "matched": 96,
+      "match_percent": 19.433
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Wardrobe/DressUpSpriteBehavior.gd",
+      "windows": 243,
+      "matched": 54,
+      "match_percent": 22.222
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Wardrobe/SkinSlotButtonBehavior.gd",
+      "windows": 207,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Interface/Wardrobe/WardrobeBehavior.gd",
+      "windows": 547,
+      "matched": 64,
+      "match_percent": 11.7
+    },
+    {
+      "path": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+      "windows": 3271,
+      "matched": 200,
+      "match_percent": 6.114
+    },
+    {
+      "path": "Runtime/Behavior/Items/CombatEffects.gd",
+      "windows": 1741,
+      "matched": 130,
+      "match_percent": 7.467
+    },
+    {
+      "path": "Runtime/Behavior/Items/CombatState.gd",
+      "windows": 2086,
+      "matched": 105,
+      "match_percent": 5.034
+    },
+    {
+      "path": "Runtime/Behavior/Items/CraftingBondBehavior.gd",
+      "windows": 337,
+      "matched": 14,
+      "match_percent": 4.154
+    },
+    {
+      "path": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+      "windows": 2345,
+      "matched": 222,
+      "match_percent": 9.467
+    },
+    {
+      "path": "Runtime/Behavior/Items/CraftingQueries.gd",
+      "windows": 276,
+      "matched": 29,
+      "match_percent": 10.507
+    },
+    {
+      "path": "Runtime/Behavior/Items/DeckofCardsBehavior.gd",
+      "windows": 252,
+      "matched": 14,
+      "match_percent": 5.556
+    },
+    {
+      "path": "Runtime/Behavior/Items/DjinnLampBehavior.gd",
+      "windows": 516,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/ElectricalChargeBehavior.gd",
+      "windows": 1145,
+      "matched": 40,
+      "match_percent": 3.493
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/AutomanatonBehavior.gd",
+      "windows": 241,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/ChessBoardBehavior.gd",
+      "windows": 629,
+      "matched": 146,
+      "match_percent": 23.211
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/JokerBehavior.gd",
+      "windows": 463,
+      "matched": 18,
+      "match_percent": 3.888
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/LaboratoryBehavior.gd",
+      "windows": 610,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/MagicRingBehavior.gd",
+      "windows": 773,
+      "matched": 173,
+      "match_percent": 22.38
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/RainbowPotionBehavior.gd",
+      "windows": 223,
+      "matched": 51,
+      "match_percent": 22.87
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/RandomLoadoutBagBehavior.gd",
+      "windows": 631,
+      "matched": 159,
+      "match_percent": 25.198
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/RotationSpringBehavior.gd",
+      "windows": 246,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/TeslaCoilBehavior.gd",
+      "windows": 224,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/UkuleleBehavior.gd",
+      "windows": 385,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Items/Exclusive/WaterElementalBehavior.gd",
+      "windows": 237,
+      "matched": 9,
+      "match_percent": 3.797
+    },
+    {
+      "path": "Runtime/Behavior/Items/GridGeometry.gd",
+      "windows": 809,
+      "matched": 118,
+      "match_percent": 14.586
+    },
+    {
+      "path": "Runtime/Behavior/Items/Interaction.gd",
+      "windows": 5315,
+      "matched": 152,
+      "match_percent": 2.86
+    },
+    {
+      "path": "Runtime/Behavior/Items/ItemDescriptorBehavior.gd",
+      "windows": 448,
+      "matched": 31,
+      "match_percent": 6.92
+    },
+    {
+      "path": "Runtime/Behavior/Items/LifecycleAndText.gd",
+      "windows": 2100,
+      "matched": 277,
+      "match_percent": 13.19
+    },
+    {
+      "path": "Runtime/Behavior/Items/Placement.gd",
+      "windows": 1880,
+      "matched": 139,
+      "match_percent": 7.394
+    },
+    {
+      "path": "Runtime/Behavior/Items/PotionBehavior.gd",
+      "windows": 362,
+      "matched": 72,
+      "match_percent": 19.89
+    },
+    {
+      "path": "Runtime/Behavior/LocalServices/LocalAuthBehavior.gd",
+      "windows": 276,
+      "matched": 21,
+      "match_percent": 7.609
+    },
+    {
+      "path": "Runtime/Behavior/LocalServices/LocalSteamBehavior.gd",
+      "windows": 335,
+      "matched": 88,
+      "match_percent": 26.269
+    },
+    {
+      "path": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+      "windows": 7073,
+      "matched": 1655,
+      "match_percent": 23.399
+    },
+    {
+      "path": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+      "windows": 314,
+      "matched": 15,
+      "match_percent": 4.777
+    },
+    {
+      "path": "Runtime/Behavior/Utility/DamageSourceBehavior.gd",
+      "windows": 201,
+      "matched": 0,
+      "match_percent": 0.0
+    },
+    {
+      "path": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+      "windows": 5013,
+      "matched": 390,
+      "match_percent": 7.78
+    },
+    {
+      "path": "Runtime/Behavior/Utility/LocalizedControlBehavior.gd",
+      "windows": 1003,
+      "matched": 16,
+      "match_percent": 1.595
+    },
+    {
+      "path": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+      "windows": 1684,
+      "matched": 187,
+      "match_percent": 11.105
+    },
+    {
+      "path": "Runtime/Behavior/Utility/SettingsBehavior.gd",
+      "windows": 849,
+      "matched": 97,
+      "match_percent": 11.425
+    },
+    {
+      "path": "Runtime/Behavior/Utility/SoundBehavior.gd",
+      "windows": 740,
+      "matched": 20,
+      "match_percent": 2.703
+    },
+    {
+      "path": "Runtime/Behavior/Utility/SteamHelperBehavior.gd",
+      "windows": 389,
+      "matched": 19,
+      "match_percent": 4.884
+    },
+    {
+      "path": "Runtime/Behavior/Utility/UndoStackBehavior.gd",
+      "windows": 486,
+      "matched": 14,
+      "match_percent": 2.881
+    },
+    {
+      "path": "Runtime/Collections/SequenceOps.gd",
+      "windows": 755,
+      "matched": 18,
+      "match_percent": 2.384
+    },
+    {
+      "path": "Runtime/Events/CombatDispatch.gd",
+      "windows": 401,
+      "matched": 90,
+      "match_percent": 22.444
+    },
+    {
+      "path": "Runtime/Random/ChanceDebt.gd",
+      "windows": 337,
+      "matched": 34,
+      "match_percent": 10.089
+    },
+    {
+      "path": "Runtime/Scene/LeasePool.gd",
+      "windows": 571,
+      "matched": 116,
+      "match_percent": 20.315
+    },
+    {
+      "path": "Runtime/Serialization/BitPacket.gd",
+      "windows": 942,
+      "matched": 99,
+      "match_percent": 10.51
+    },
+    {
+      "path": "Runtime/UI/InputLocks.gd",
+      "windows": 548,
+      "matched": 89,
+      "match_percent": 16.241
+    }
+  ],
+  "before": {
+    "files": 854,
+    "bytes": 2131004,
+    "lines": 68966,
+    "nonblank_lines": 55341,
+    "exact_original_files": 239,
+    "normalized_25_token_windows": 401468,
+    "matched_original_windows": 300790,
+    "original_window_match_percent": 74.923
+  }
+}

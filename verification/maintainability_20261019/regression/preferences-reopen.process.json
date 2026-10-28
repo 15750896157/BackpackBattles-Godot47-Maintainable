@@ -1,0 +1,18 @@
+{
+  "pid": 10612,
+  "args": [
+    "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\中文 可搬移目录\\BackpackBattles_Godot47_Maintainable\\engine\\Godot_v4.7-stable_win64.exe",
+    "--path",
+    "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\中文 可搬移目录\\BackpackBattles_Godot47_Maintainable\\project",
+    "--rendering-method",
+    "gl_compatibility",
+    "--windowed",
+    "--resolution",
+    "1280x720",
+    "res://PvE/tests/NativePreferencesMain.tscn",
+    "--",
+    "--qa-save-directory=C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\checks\\preferences_saves",
+    "--qa-output=C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\checks\\preferences",
+    "--preferences-stage=reopen"
+  ]
+}

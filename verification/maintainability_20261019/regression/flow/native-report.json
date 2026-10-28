@@ -1,0 +1,9 @@
+{
+  "battle_digest": "9ea76b0fcdfe4ba238208e827f18495654993d2a4d8a6d4ca7a14f3536d5db55",
+  "checks": 47,
+  "content_sha256": "b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1",
+  "engine": "4.7-stable (official)",
+  "entry": "res://Core/Main.tscn",
+  "failures": [],
+  "mode": "actual original root scene with PVE adapter; public UI and rule methods"
+}

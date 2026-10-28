@@ -1,0 +1,6 @@
+shop_rule_id,slot_index,allowed_content,discount_eligible,locked_persists
+standard,1,item|bag,true,true
+standard,2,item|bag,true,true
+standard,3,item|bag,true,true
+standard,4,item|bag,true,true
+standard,5,item|bag,true,true

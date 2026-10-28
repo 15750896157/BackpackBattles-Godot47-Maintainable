@@ -1,0 +1,29 @@
+{
+  "method": "Renamed-identifier-insensitive 25-token windows; strings/numbers normalized; comments/spacing ignored. Not an external plagiarism score.",
+  "excludes": [
+    "addons",
+    "tests",
+    "verification",
+    ".godot"
+  ],
+  "before": {
+    "files": 844,
+    "bytes": 2196373,
+    "lines": 75782,
+    "nonblank_lines": 57357,
+    "exact_original_files": 760,
+    "normalized_25_token_windows": 414710,
+    "matched_original_windows": 316453,
+    "original_window_match_percent": 76.307
+  },
+  "after": {
+    "files": 854,
+    "bytes": 2131004,
+    "lines": 68966,
+    "nonblank_lines": 55341,
+    "exact_original_files": 239,
+    "normalized_25_token_windows": 401468,
+    "matched_original_windows": 300790,
+    "original_window_match_percent": 74.923
+  }
+}

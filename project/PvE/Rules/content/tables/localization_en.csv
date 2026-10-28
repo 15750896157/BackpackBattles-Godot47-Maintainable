@@ -1,0 +1,544 @@
+key,text
+tag.weapon.name,Weapon
+tag.weapon.desc,Items that actively deal physical damage.
+tag.armor.name,Armor
+tag.armor.desc,Items that generate or depend on armor.
+tag.stamina.name,Stamina
+tag.stamina.desc,"Items that generate, save, or consume stamina."
+tag.tempo.name,Tempo
+tag.tempo.desc,"Items that change cooldowns, cooldown advancement, or trigger frequency."
+tag.heavy.name,Heavy
+tag.heavy.desc,"Items with high damage, large shapes, or long cooldowns."
+tag.combo.name,Combo
+tag.combo.desc,Items built around repeated hits and consecutive activations.
+tag.counter.name,Counter
+tag.counter.desc,"Items triggered by damage taken, armor gained, or blocking."
+tag.poison.name,Poison
+tag.poison.desc,Items that apply or use poison stacks.
+tag.burn.name,Burn
+tag.burn.desc,Items that apply or use burn stacks.
+tag.healing.name,Healing
+tag.healing.desc,"Items that heal, regenerate, or convert healing."
+tag.cleanse.name,Cleanse
+tag.cleanse.desc,Items that remove negative statuses.
+tag.potion.name,Potion
+tag.potion.desc,Consumable and status containers used by the alchemist.
+tag.herb.name,Herb
+tag.herb.desc,"Materials used for healing, poison, and crafting."
+tag.spatial.name,Spatial
+tag.spatial.desc,"Items that depend on adjacency, direction, rows, columns, or star cells."
+tag.economy.name,Economy
+tag.economy.desc,"Items that affect gold, shops, refreshes, or selling."
+tag.utility.name,Utility
+tag.utility.desc,Items that provide general build tools.
+trigger.combat_start.name,Combat Start
+trigger.cooldown_ready.name,Cooldown Ready
+trigger.attack_hit.name,Attack Hit
+trigger.critical_hit.name,Critical Hit
+trigger.target_activated.name,Target Activated
+trigger.damage_taken.name,Damage Taken
+trigger.armor_gained.name,Armor Gained
+trigger.status_applied.name,Status Applied
+trigger.first_low_health.name,First Low Health
+trigger.interval.name,Interval
+trigger.fatigue_start.name,Fatigue Start
+condition.always.name,Always
+condition.source_has_tag.name,Source Has Tag
+condition.target_has_tag.name,Target Has Tag
+condition.spatial_target_count.name,Spatial Target Count
+condition.health_below_pct.name,Health Below Percent
+condition.health_above_pct.name,Health Above Percent
+condition.resource_at_least.name,Resource At Least
+condition.status_stacks_at_least.name,Status Stacks At Least
+condition.trigger_count_max.name,Trigger Count Maximum
+condition.build_tag_count.name,Build Tag Count
+condition.enemy_has_status.name,Enemy Has Status
+condition.overheal_positive.name,Overheal Positive
+effect.physical_damage.name,Deal Physical Damage
+effect.true_damage.name,Deal True Damage
+effect.gain_armor.name,Gain Armor
+effect.heal.name,Heal
+effect.gain_stamina.name,Gain Stamina
+effect.apply_status.name,Apply Status
+effect.remove_status.name,Remove Status
+effect.convert_status.name,Convert Status
+effect.modify_cooldown_pct.name,Modify Cooldown Percent
+effect.modify_damage_flat.name,Modify Damage
+effect.modify_crit_chance.name,Modify Critical Chance
+effect.modify_status_power.name,Modify Status Power
+effect.advance_cooldown.name,Advance Target Cooldown
+effect.gain_gold.name,Gain Gold
+effect.free_refresh.name,Gain Free Refresh
+effect.max_health.name,Modify Maximum Health
+rarity.common.name,Common
+rarity.rare.name,Rare
+rarity.legendary.name,Legendary
+status.poison.name,Poison
+status.poison.desc,Poison uses the shared combat status rule.
+status.burn.name,Burn
+status.burn.desc,Burn uses the shared combat status rule.
+status.slow.name,Slow
+status.slow.desc,Slow uses the shared combat status rule.
+status.regeneration.name,Regeneration
+status.regeneration.desc,Regeneration uses the shared combat status rule.
+status.lifesteal.name,Lifesteal
+status.lifesteal.desc,Lifesteal uses the shared combat status rule.
+status.vulnerable.name,Vulnerable
+status.vulnerable.desc,Vulnerable uses the shared combat status rule.
+status.haste.name,Haste
+status.haste.desc,Haste uses the shared combat status rule.
+status.fortified.name,Fortified
+status.fortified.desc,Fortified uses the shared combat status rule.
+item.utility_knife.name,Utility Knife
+item.utility_knife.desc,Every 2.4s: deal 4 physical damage. costs 1 stamina.
+item.iron_sword.name,Ironspine Sword
+item.iron_sword.desc,Every 3.4s: deal 10 physical damage. area: front_1; condition: spatial_target_count>=1; costs 2 stamina.
+item.broad_axe.name,Broad Axe
+item.broad_axe.desc,Every 5.5s: deal 14 physical damage. costs 3 stamina.
+item.stone_hammer.name,Stone Hammer
+item.stone_hammer.desc,Every 6.2s: deal 16 physical damage. costs 3 stamina.
+item.hunting_spear.name,Trail Spear
+item.hunting_spear.desc,Every 4.5s: deal 11 physical damage. area: front_2; costs 2 stamina.
+item.twin_needles.name,Twin Needles
+item.twin_needles.desc,Every 2.1s: deal 4 physical damage. costs 1 stamina.
+item.sling.name,Gear Sling
+item.sling.desc,Every 3.0s: deal 6 physical damage. costs 1 stamina.
+item.heavy_cleaver.name,Beam Cleaver
+item.heavy_cleaver.desc,Every 6.8s: deal 24 physical damage. area: front_1; costs 4 stamina.
+item.buckler.name,Round Buckler
+item.buckler.desc,Every 4.0s: gain 5 armor.
+item.plated_vest.name,Patchplate Vest
+item.plated_vest.desc,Every 5.0s: gain 8 armor.
+item.tower_shield.name,Highwall Shield
+item.tower_shield.desc,Every 6.5s: gain 13 armor.
+item.spiked_guard.name,Spiked Guard
+item.spiked_guard.desc,After taking damage: deal 4 physical damage. condition: trigger_count_max:8.
+item.leather_wrap.name,Tough Wrap
+item.leather_wrap.desc,Every 5.0s: gain 4 armor. area: adjacent_4.
+item.repair_kit.name,Repair Kit
+item.repair_kit.desc,Every 6.0s: heal 4. area: adjacent_4; condition: target_has_tag:armor.
+item.stamina_flask.name,Stamina Flask
+item.stamina_flask.desc,Every 5.0s: gain 3 stamina.
+item.travel_ration.name,Trail Ration
+item.travel_ration.desc,Every 7.0s: heal 4.
+item.bandage_roll.name,Bandage Roll
+item.bandage_roll.desc,Every 6.0s: heal 3.
+item.cleansing_salt.name,Cleansing Salt
+item.cleansing_salt.desc,Every 8.0s: remove 3 negative stacks.
+item.sharpening_stone.name,Sharpening Stone
+item.sharpening_stone.desc,Combat start: change target damage by 2. area: adjacent_4; condition: target_has_tag:weapon.
+item.clockwork_spring.name,Clockwork Spring
+item.clockwork_spring.desc,Combat start: change target cooldown by -0.08. area: adjacent_4.
+item.lucky_coin.name,Notched Lucky Coin
+item.lucky_coin.desc,Combat start: gain 1 gold after combat. condition: health_above_pct:0.5.
+item.scout_lens.name,Scout Lens
+item.scout_lens.desc,Combat start: change target critical chance by 0.06. area: front_2; condition: target_has_tag:weapon.
+item.merchant_token.name,Trade Token
+item.merchant_token.desc,Combat start: gain 1 free refresh. condition: trigger_count_max:1.
+item.storage_hook.name,Storage Hook
+item.storage_hook.desc,Combat start: gain 2 armor. area: same_bag; condition: spatial_target_count>=3.
+item.gear_link.name,Gear Link
+item.gear_link.desc,After a target activates: advance target cooldown by 0.25s. area: adjacent_4; condition: trigger_count_max:10.
+item.focus_prism.name,Focus Prism
+item.focus_prism.desc,Combat start: change target damage by 3. area: front_3; condition: target_has_tag:weapon.
+item.row_banner.name,Row Banner
+item.row_banner.desc,Combat start: change target damage by 1. area: same_row.
+item.column_standard.name,Column Standard
+item.column_standard.desc,Combat start: gain 2 armor. area: same_column.
+item.star_compass.name,Star Compass
+item.star_compass.desc,Combat start: change target cooldown by -0.12. area: star_cell.
+item.compact_rack.name,Compact Rack
+item.compact_rack.desc,Combat start: gain 3 armor. area: adjacent_8; condition: spatial_target_count>=4.
+item.resonant_bell.name,Resonant Bell
+item.resonant_bell.desc,After a target activates: gain 1 stamina. area: adjacent_4; condition: trigger_count_max:8.
+item.counterweight.name,Counterweight
+item.counterweight.desc,Combat start: change target damage by 4. area: front_1; condition: target_has_tag:heavy.
+item.venom_needle.name,Venom Needle
+item.venom_needle.desc,Every 3.5s: apply poison:2. costs 1 stamina.
+item.ember_stone.name,Ember Stone
+item.ember_stone.desc,Every 4.0s: apply burn:2.
+item.healing_herb.name,Mending Herb
+item.healing_herb.desc,Every 5.5s: heal 4.
+item.regeneration_leaf.name,Renewal Leaf
+item.regeneration_leaf.desc,Every 6.0s: apply regeneration:3.
+item.fracture_charm.name,Fracture Charm
+item.fracture_charm.desc,Every 4.5s: apply vulnerable:1.
+item.quicksand_vial.name,Quicksand Vial
+item.quicksand_vial.desc,Every 6.0s: apply slow:2.
+item.blood_cup.name,Crimson Cup
+item.blood_cup.desc,After hitting: apply lifesteal:1. condition: trigger_count_max:6.
+item.cooling_fan.name,Cooling Fan
+item.cooling_fan.desc,After applying a status: advance target cooldown by 0.3s. area: front_2; condition: enemy_has_status:burn.
+item.iron_nail.name,Rivet Nail
+item.iron_nail.desc,After gaining armor: deal 2 physical damage. condition: trigger_count_max:8.
+item.glass_bead.name,Refracting Bead
+item.glass_bead.desc,Combat start: change target status power by 0.1. area: adjacent_8.
+item.field_manual.name,Field Manual
+item.field_manual.desc,Combat start: change target damage by 1. area: global_same_tag; condition: build_tag_count:4.
+item.salvage_pouch.name,Salvage Pouch
+item.salvage_pouch.desc,Combat start: gain 2 gold after combat. condition: health_above_pct:0.6.
+item.arsenal_bracer.name,Arsenal Bracer
+item.arsenal_bracer.desc,Combat start: change target critical chance by 0.04. area: adjacent_4; condition: target_has_tag:weapon.
+item.chain_blade.name,Chain Blade
+item.chain_blade.desc,Every 3.0s: deal 11 physical damage. area: adjacent_4; condition: spatial_target_count>=2; costs 2 stamina.
+item.repeater_crossbow.name,Repeater Crossbow
+item.repeater_crossbow.desc,Every 2.0s: deal 7 physical damage. area: front_2; costs 1 stamina.
+item.crescent_glaive.name,Crescent Glaive
+item.crescent_glaive.desc,Every 5.8s: deal 21 physical damage. area: front_3; condition: spatial_target_count>=1; costs 3 stamina.
+item.siege_maul.name,Siege Maul
+item.siege_maul.desc,Every 7.5s: deal 30 physical damage. area: front_1; costs 5 stamina.
+item.momentum_gear.name,Momentum Gear
+item.momentum_gear.desc,After a target activates: gain 1 stamina. area: adjacent_4; condition: trigger_count_max:8.
+item.duelist_mark.name,Duelist Mark
+item.duelist_mark.desc,After a critical hit: advance target cooldown by 0.5s. area: same_row; condition: trigger_count_max:6.
+item.overdrive_ratchet.name,Overdrive Ratchet
+item.overdrive_ratchet.desc,After hitting: advance target cooldown by 0.2s. area: adjacent_8; condition: trigger_count_max:12.
+item.bastion_core.name,Bastion Core
+item.bastion_core.desc,Every 4.0s: gain 12 armor. area: same_bag; condition: build_tag_count:3.
+item.layered_plates.name,Layered Plates
+item.layered_plates.desc,Every 5.0s: gain 10 armor. area: adjacent_4; condition: target_has_tag:armor.
+item.retaliation_spikes.name,Retaliation Spikes
+item.retaliation_spikes.desc,After gaining armor: deal 5 physical damage. condition: trigger_count_max:8.
+item.guardian_standard.name,Guardian Standard
+item.guardian_standard.desc,Combat start: gain 3 armor. area: same_column; condition: target_has_tag:armor.
+item.charging_weight.name,Charging Weight
+item.charging_weight.desc,Every 6.0s: gain 4 stamina.
+item.execution_anvil.name,Execution Anvil
+item.execution_anvil.desc,Combat start: change target damage by 8. area: front_1; condition: target_has_tag:heavy.
+item.toxin_bottle.name,Toxin Bottle
+item.toxin_bottle.desc,Every 4.0s: apply poison:4.
+item.thorn_extract.name,Thorn Extract
+item.thorn_extract.desc,After applying a status: apply poison:1. area: adjacent_4; condition: target_has_tag:poison.
+item.spore_jar.name,Spore Jar
+item.spore_jar.desc,Every 6.0s: apply poison:6.
+item.venom_distiller.name,Venom Distiller
+item.venom_distiller.desc,After applying a status: advance target cooldown by 0.4s. area: adjacent_4; condition: enemy_has_status:poison.
+item.plague_retort.name,Plague Retort
+item.plague_retort.desc,Every 5.0s: apply poison:10. area: same_bag; condition: build_tag_count:4.
+item.caustic_coil.name,Caustic Coil
+item.caustic_coil.desc,After applying a status: deal 2 true damage. area: adjacent_8; condition: enemy_has_status:poison.
+item.ember_phial.name,Ember Phial
+item.ember_phial.desc,Every 3.5s: apply burn:4.
+item.coal_burner.name,Coal Burner
+item.coal_burner.desc,Every 5.0s: apply burn:5. area: front_2.
+item.ignition_lens.name,Ignition Lens
+item.ignition_lens.desc,After applying a status: advance target cooldown by 0.35s. area: front_3; condition: enemy_has_status:burn.
+item.wildfire_alembic.name,Wildfire Alembic
+item.wildfire_alembic.desc,Every 4.5s: apply burn:9. area: adjacent_8; condition: spatial_target_count>=3.
+item.tonic_bottle.name,Restorative Tonic
+item.tonic_bottle.desc,Every 5.0s: heal 7.
+item.renewal_mortar.name,Renewal Mortar
+item.renewal_mortar.desc,After applying a status: apply regeneration:1. area: adjacent_4; condition: source_has_tag:healing.
+item.transfusion_tube.name,Transfusion Tube
+item.transfusion_tube.desc,After hitting: heal 2. area: adjacent_4; condition: trigger_count_max:8.
+item.philosophers_kettle.name,Revival Kettle
+item.philosophers_kettle.desc,The first time health is low: heal 24. area: same_bag; condition: trigger_count_max:1.
+character.armorer.name,Forge Warden
+character.armorer.desc,"Builds stable formations through weapon shapes, armor, and stamina links."
+character.alchemist.name,Field Alchemist
+character.alchemist.desc,"Controls combat tempo with poison, burn, and healing conversion."
+archetype.combo_arsenal.name,Combo Arsenal
+archetype.combo_arsenal.desc,Build spatial and economic decisions around Combo Arsenal.
+archetype.armor_counter.name,Armor Counter
+archetype.armor_counter.desc,Build spatial and economic decisions around Armor Counter.
+archetype.heavy_charge.name,Heavy Charge
+archetype.heavy_charge.desc,Build spatial and economic decisions around Heavy Charge.
+archetype.toxin_stack.name,Toxin Stack
+archetype.toxin_stack.desc,Build spatial and economic decisions around Toxin Stack.
+archetype.burn_rhythm.name,Burn Rhythm
+archetype.burn_rhythm.desc,Build spatial and economic decisions around Burn Rhythm.
+archetype.healing_conversion.name,Healing Conversion
+archetype.healing_conversion.desc,Build spatial and economic decisions around Healing Conversion.
+loadout.armorer_blades.name,Light Arsenal
+loadout.armorer_guard.name,Guard Line
+loadout.alchemist_toxin.name,Toxin Start
+loadout.alchemist_ember.name,Ember Cycle
+bag.bag_canvas_frame.name,Canvas Frame
+bag.bag_canvas_frame.desc,Canvas Frame provides fixed valid cells and a none spatial rule.
+bag.bag_corner_satchel.name,Corner Satchel
+bag.bag_corner_satchel.desc,Corner Satchel provides fixed valid cells and a none spatial rule.
+bag.bag_tool_roll.name,Tool Roll
+bag.bag_tool_roll.desc,Tool Roll provides fixed valid cells and a enhanced_cell spatial rule.
+bag.bag_guard_harness.name,Guard Harness
+bag.bag_guard_harness.desc,Guard Harness provides fixed valid cells and a star_cell spatial rule.
+bag.bag_herbal_tray.name,Herbal Tray
+bag.bag_herbal_tray.desc,Herbal Tray provides fixed valid cells and a enhanced_cell spatial rule.
+bag.bag_gear_sling.name,Gear Sling Bag
+bag.bag_gear_sling.desc,Gear Sling Bag provides fixed valid cells. Items in this bag linked to its star cell or orthogonal neighbors have 5% shorter cooldowns.
+bag.bag_cross_brace.name,Cross Brace
+bag.bag_cross_brace.desc,Cross Brace provides fixed valid cells and a enhanced_cell spatial rule.
+bag.bag_hollow_ring.name,Hollow Ring
+bag.bag_hollow_ring.desc,Hollow Ring provides fixed valid cells and a star_cell spatial rule.
+bag.bag_step_case.name,Step Case
+bag.bag_step_case.desc,Step Case provides fixed valid cells and a enhanced_cell spatial rule.
+bag.bag_twin_wing.name,Twin Wing Rig
+bag.bag_twin_wing.desc,Twin Wing Rig provides fixed valid cells and a star_cell spatial rule.
+act.act_1.name,Rustwood Verge
+act.act_2.name,Cinderworks
+act.act_3.name,Starforge Court
+node.normal_combat.name,Normal Combat
+node.danger_combat.name,Danger Combat
+node.elite_combat.name,Elite Combat
+node.merchant.name,Merchant
+node.rest.name,Rest
+node.event.name,Event
+node.boss.name,Boss
+enemy_archetype.quick_striker.name,Quick Striker
+enemy_archetype.shield_line.name,Shield Line
+enemy_archetype.heavy_breaker.name,Heavy Breaker
+enemy_archetype.venom_brewer.name,Venom Brewer
+enemy_archetype.ember_runner.name,Ember Runner
+enemy_archetype.field_mender.name,Field Mender
+enemy_archetype.gear_conductor.name,Gear Conductor
+enemy_archetype.mixed_raider.name,Mixed Raider
+enemy_archetype.toxic_guard.name,Toxic Guard
+enemy_archetype.burning_bastion.name,Burning Bastion
+enemy_archetype.blood_engine.name,Blood Engine
+enemy_archetype.star_artillery.name,Star Artillery
+enemy.rust_scout_a.name,Rustwood Scout A
+enemy.rust_scout_b.name,Rustwood Scout B
+enemy.road_guard_a.name,Road Guard A
+enemy.road_guard_b.name,Road Guard B
+enemy.trail_breaker.name,Trail Breaker
+enemy.marsh_brewer.name,Marsh Brewer
+enemy.cinder_runner.name,Cinder Runner
+enemy.camp_mender.name,Camp Mender
+enemy.gear_hunter_elite.name,Elite Gear Hunter
+enemy.thorn_wall_elite.name,Elite Thorn Wall
+enemy.furnace_duelist.name,Furnace Duelist
+enemy.plate_warden.name,Plate Warden
+enemy.slag_breaker.name,Slag Breaker
+enemy.coil_brewer.name,Coil Brewer
+enemy.kiln_runner.name,Kiln Runner
+enemy.red_medic.name,Red Medic
+enemy.relay_captain.name,Relay Captain
+enemy.foundry_raider.name,Foundry Raider
+enemy.cinder_bastion_elite.name,Elite Cinder Bastion
+enemy.blood_loom_elite.name,Elite Blood Loom
+enemy.court_blades.name,Court Blades
+enemy.astral_guard.name,Astral Guard
+enemy.anvil_judge.name,Anvil Judge
+enemy.pale_distiller.name,Pale Distiller
+enemy.wildfire_choir.name,Wildfire Choir
+enemy.revival_circle.name,Revival Circle
+enemy.star_gunner.name,Star Gunner
+enemy.court_raider.name,Court Raider
+enemy.plague_oracle_elite.name,Elite Plague Oracle
+enemy.starbreaker_elite.name,Elite Starbreaker
+affix.accelerated_opening.name,Accelerated Opening
+affix.accelerated_opening.desc,Accelerated Opening openly modifies this encounter.
+affix.armored_start.name,Armored Start
+affix.armored_start.desc,Armored Start openly modifies this encounter.
+affix.reactive_armor.name,Reactive Armor
+affix.reactive_armor.desc,Reactive Armor openly modifies this encounter.
+affix.healing_surge.name,Healing Surge
+affix.healing_surge.desc,Healing Surge openly modifies this encounter.
+affix.status_echo.name,Status Echo
+affix.status_echo.desc,Status Echo openly modifies this encounter.
+affix.precision_opening.name,Precision Opening
+affix.precision_opening.desc,Precision Opening openly modifies this encounter.
+affix.thick_hide.name,Thick Hide
+affix.thick_hide.desc,Thick Hide openly modifies this encounter.
+affix.restless.name,Restless
+affix.restless.desc,Restless openly modifies this encounter.
+boss.boss_iron_beast.name,Rivetback Colossus
+boss.boss_iron_beast.desc,Rivetback Colossus has an openly previewed phase rule and exploitable weakness.
+boss.boss_cinder_engine.name,Cinderflow Engine
+boss.boss_cinder_engine.desc,Cinderflow Engine has an openly previewed phase rule and exploitable weakness.
+boss.boss_star_regent.name,Starforge Regent
+boss.boss_star_regent.desc,Starforge Regent has an openly previewed phase rule and exploitable weakness.
+run_effect.gold.name,Gold Change
+run_effect.heal_flat.name,Flat Healing
+run_effect.heal_pct.name,Percent Healing
+run_effect.damage_pct.name,Percent Health Loss
+run_effect.item_pool.name,Item Pool Reward
+run_effect.bag_pool.name,Bag Pool Reward
+run_effect.specific_item.name,Specific Item
+run_effect.remove_item.name,Remove Item
+run_effect.upgrade_item.name,Recipe Upgrade or Discount Coupon
+run_effect.free_refresh.name,Free Refresh
+run_effect.shop_discount.name,Shop Discount
+run_effect.sell_ratio_bonus.name,Sell Ratio Bonus
+run_effect.interest_cap_delta.name,Interest Cap Change
+run_effect.storage_slot.name,Storage Slot
+run_effect.recipe_discovery.name,Recipe Discovery
+run_effect.execute_recipe.name,Execute Recipe
+run_effect.cleanse_run_debuff.name,Cleanse Run Debuff
+reward.reward_none.name,No Extra Reward
+reward.reward_normal.name,Normal Combat Reward
+reward.reward_danger.name,Danger Combat Reward
+reward.reward_elite.name,Elite Combat Reward
+reward.reward_boss.name,Boss Reward
+event.event_abandoned_cart.title,Abandoned Cart
+event.event_abandoned_cart.desc,An overturned cart still holds usable goods.
+event.event_field_smith.title,Field Smith
+event.event_field_smith.desc,A field smith offers emergency work in exchange for supplies.
+event.event_cracked_vault.title,Cracked Strongbox
+event.event_cracked_vault.desc,"The lock is broken, but the trap still works."
+event.event_herbal_camp.title,Herbal Camp
+event.event_herbal_camp.desc,A temporary camp holds herbs and clean water.
+event.event_barter_table.title,Barter Table
+event.event_barter_table.desc,An unattended barter table follows an honor system.
+event.event_broken_satchel.title,Broken Satchel
+event.event_broken_satchel.desc,The satchel can be repaired for capacity or stripped for value.
+event.event_clockwork_stall.title,Stalled Gear Stand
+event.event_clockwork_stall.desc,A stalled mechanism still stores one useful impulse.
+event.event_fume_chamber.title,Fume Chamber
+event.event_fume_chamber.desc,The chamber fumes empower mixtures while harming intruders.
+event.event_quiet_ledger.title,Silent Ledger
+event.event_quiet_ledger.desc,The ledger records a short-term profit scheme.
+event.event_star_map.title,Fractured Star Map
+event.event_star_map.desc,The map marks rare components and a dangerous shortcut.
+event.event_echo_forge.title,Echo Forge
+event.event_echo_forge.desc,The forge can press an old component into a steadier form.
+event.event_final_merchant.title,Final Caravan
+event.event_final_merchant.desc,The caravan stops briefly with clear and costly terms.
+event_choice.event_abandoned_cart_search.text,Search carefully
+event_choice.event_abandoned_cart_strip.text,Strip the fittings
+event_choice.event_abandoned_cart_repair.text,Pay 3 gold to repair the crate
+event_choice.event_field_smith_forge.text,Pay 4 gold to improve an item (defined tier-2 recipe; otherwise a 20% shop coupon)
+event_choice.event_field_smith_trade_health.text,Trade supplies for a recipe
+event_choice.event_field_smith_leave.text,Leave
+event_choice.event_cracked_vault_force.text,Force it open
+event_choice.event_cracked_vault_tool.text,Consume a utility item to disarm it
+event_choice.event_cracked_vault_leave.text,Walk away
+event_choice.event_herbal_camp_rest.text,Rest and drink
+event_choice.event_herbal_camp_gather.text,Gather herbs
+event_choice.event_herbal_camp_distill.text,Pay 2 gold to distill
+event_choice.event_barter_table_swap.text,Trade a common item for a rare offer
+event_choice.event_barter_table_sell.text,Sell one item at a premium
+event_choice.event_barter_table_leave.text,Make no trade
+event_choice.event_broken_satchel_repair.text,Pay 5 gold to repair a storage slot
+event_choice.event_broken_satchel_salvage.text,Salvage the fittings
+event_choice.event_clockwork_stall_release.text,Release the stored impulse
+event_choice.event_clockwork_stall_study.text,Pay 3 gold to study it
+event_choice.event_clockwork_stall_break.text,Break it for parts
+event_choice.event_fume_chamber_inhale.text,Endure the fumes and take a mixture
+event_choice.event_fume_chamber_vent.text,Pay 3 gold to vent the room
+event_choice.event_fume_chamber_leave.text,Seal the entrance
+event_choice.event_quiet_ledger_invest.text,Invest 5 gold to raise the interest cap for three wins
+event_choice.event_quiet_ledger_coupon.text,Take the discount note
+event_choice.event_quiet_ledger_cash.text,Sell the ledger
+event_choice.event_star_map_decode.text,Pay 4 gold to decode the map
+event_choice.event_star_map_shortcut.text,Take the dangerous shortcut
+event_choice.event_star_map_sell.text,Sell the map
+event_choice.event_echo_forge_temper.text,Lose 10% health to temper an item (defined tier-2 recipe; otherwise a 20% shop coupon)
+event_choice.event_echo_forge_melt.text,Melt an item for 10 gold
+event_choice.event_echo_forge_warm.text,Use the residual warmth
+event_choice.event_final_merchant_legend.text,Pay 12 gold for a legendary offer
+event_choice.event_final_merchant_bag.text,Pay 8 gold for a rare bag
+event_choice.event_final_merchant_service.text,Pay 5 gold for three free refreshes
+rest.rest_recover.name,Make Camp
+rest.rest_recover.desc,Restore 25% of maximum health.
+rest.rest_field_craft.name,Recipe Upgrade / Coupon
+rest.rest_field_craft.desc,"Upgrade an owned tier-1 recipe result into a defined tier-2 result. If none is eligible, gain a 20% discount for the next shop."
+difficulty.tutorial.name,Tutorial
+difficulty.tutorial.desc,Tutorial uses openly listed fixed modifiers.
+difficulty.standard.name,Standard
+difficulty.standard.desc,Standard uses openly listed fixed modifiers.
+difficulty.advanced.name,Advanced
+difficulty.advanced.desc,Advanced uses openly listed fixed modifiers.
+difficulty.challenge_1.name,Challenge 1
+difficulty.challenge_1.desc,Challenge 1 uses openly listed fixed modifiers.
+difficulty.challenge_2.name,Challenge 2
+difficulty.challenge_2.desc,Challenge 2 uses openly listed fixed modifiers.
+difficulty.challenge_3.name,Challenge 3
+difficulty.challenge_3.desc,Challenge 3 uses openly listed fixed modifiers.
+difficulty.challenge_4.name,Challenge 4
+difficulty.challenge_4.desc,Challenge 4 uses openly listed fixed modifiers.
+difficulty.challenge_5.name,Challenge 5
+difficulty.challenge_5.desc,Challenge 5 uses openly listed fixed modifiers.
+challenge.challenge_rule_1.name,Enemy Momentum
+challenge.challenge_rule_1.desc,Enemies gain health and damage while post-battle healing is reduced.
+challenge.challenge_rule_2.name,Costly Search
+challenge.challenge_rule_2.desc,Shop refreshes cost 1 more gold.
+challenge.challenge_rule_3.name,Tight Supplies
+challenge.challenge_rule_3.desc,Combat gold is reduced by 5%; event rewards are unchanged.
+challenge.challenge_rule_4.name,Elite Dual Affix
+challenge.challenge_rule_4.desc,Elites from Act 2 onward gain one additional distinct affix.
+challenge.challenge_rule_5.name,Final Pressure
+challenge.challenge_rule_5.desc,Interest cap is reduced by 1 and boss phase two starts 5% earlier.
+tutorial.tutorial_01_pickup.title,Pick Up an Item
+tutorial.tutorial_01_pickup.body,Pick up an item from the shop or backpack.
+tutorial.tutorial_02_rotate.title,Rotate the Item
+tutorial.tutorial_02_rotate.body,Rotate the item to fit the backpack shape.
+tutorial.tutorial_03_place.title,Place the Item
+tutorial.tutorial_03_place.body,Place the item entirely inside valid cells.
+tutorial.tutorial_04_invalid.title,Inspect Invalid Placement
+tutorial.tutorial_04_invalid.body,Inspect the out-of-bounds or overlap warning.
+tutorial.tutorial_05_buy.title,Confirm Purchase
+tutorial.tutorial_05_buy.body,Confirm the purchase and observe the gold change.
+tutorial.tutorial_06_info.title,Inspect Details
+tutorial.tutorial_06_info.body,"Open item details to inspect triggers, area, and tags."
+tutorial.tutorial_07_enemy.title,Preview the Enemy
+tutorial.tutorial_07_enemy.body,"Inspect the enemy build, threat tags, and weaknesses."
+tutorial.tutorial_08_combat.title,Watch an Activation
+tutorial.tutorial_08_combat.body,"Watch cooldown, stamina, and one complete resolution."
+tutorial.tutorial_09_result.title,Review Statistics
+tutorial.tutorial_09_result.body,"Review damage, healing, and activation counts."
+tutorial.tutorial_10_reward.title,Choose a Reward
+tutorial.tutorial_10_reward.body,Choose a reward or take the skip compensation.
+tutorial.tutorial_11_refresh.title,Refresh the Shop
+tutorial.tutorial_11_refresh.body,Pay the increasing cost to refresh five shop slots.
+tutorial.tutorial_12_lock.title,Lock an Offer
+tutorial.tutorial_12_lock.body,Lock an offer so it persists to the next standard shop.
+tutorial.tutorial_13_storage.title,Use Storage
+tutorial.tutorial_13_storage.body,Stored items do not join combat or spatial checks.
+tutorial.tutorial_14_recipe.title,Confirm Crafting
+tutorial.tutorial_14_recipe.body,Adjacent ingredients only mark a candidate; confirm it manually.
+tutorial.tutorial_15_route.title,Choose a Route
+tutorial.tutorial_15_route.body,"Compare risk tags, node types, and reward tendencies."
+tutorial.tutorial_16_complete.title,Tutorial Complete
+tutorial.tutorial_16_complete.body,Standard difficulty is now available for unrestricted play.
+achievement.first_victory.name,First Victory
+achievement.first_victory.desc,Clear a run on Standard or higher.
+achievement.forge_clear.name,Forge Clear
+achievement.forge_clear.desc,Clear a run with the Forge Warden.
+achievement.alchemy_clear.name,Alchemy Clear
+achievement.alchemy_clear.desc,Clear a run with the Field Alchemist.
+achievement.challenge_three.name,Pressure Test
+achievement.challenge_three.desc,Clear Challenge 3.
+achievement.challenge_five.name,Final Build
+achievement.challenge_five.desc,Clear Challenge 5.
+achievement.master_packer.name,Perfect Packing
+achievement.master_packer.desc,Use at least 24 valid cells before one combat.
+achievement.first_recipe.name,First Craft
+achievement.first_recipe.desc,Complete the first recipe.
+achievement.recipe_chain.name,Tier Two
+achievement.recipe_chain.desc,Complete a tier-2 recipe.
+achievement.recipe_book.name,Recipe Book
+achievement.recipe_book.desc,Discover all 24 recipes.
+achievement.frugal.name,Careful Saver
+achievement.frugal.desc,Earn 8 interest gold in one run.
+achievement.shop_regular.name,Regular Customer
+achievement.shop_regular.desc,Refresh shops 50 times.
+achievement.collector.name,Pack Collector
+achievement.collector.desc,Discover 60 regular items in the compendium.
+achievement.poison_finish.name,Venom Finish
+achievement.poison_finish.desc,Defeat a boss with poison damage.
+achievement.burn_finish.name,Burn Finish
+achievement.burn_finish.desc,Defeat a boss with burn damage.
+achievement.armor_peak.name,Unbroken Line
+achievement.armor_peak.desc,Reach 100 armor in one combat.
+achievement.healing_peak.name,Renewal Loop
+achievement.healing_peak.desc,Heal 120 health in one combat.
+achievement.fast_boss.name,Rapid Dismantling
+achievement.fast_boss.desc,Defeat any boss within 45 seconds.
+achievement.one_health.name,Narrow Victory
+achievement.one_health.desc,Win a combat with exactly 1 health.
+achievement.no_refresh.name,Use What You Find
+achievement.no_refresh.desc,Clear Standard without refreshing the shop.
+achievement.all_events.name,Road Stories
+achievement.all_events.desc,See all 12 events.
+tag.slow.name,Slow
+tag.slow.desc,Slow disrupts frequent activations.
+tag.vulnerable.name,Vulnerable
+tag.vulnerable.desc,Vulnerable amplifies health damage.
+tag.true_damage.name,True Damage
+tag.true_damage.desc,Damage that bypasses armor.
+tag.burst.name,Burst
+tag.burst.desc,Concentrated damage counters recovery and scaling.
+tag.focused_build.name,Focused Build
+tag.focused_build.desc,A focused synergy counters a scattered build.
+content_changed,Content updated. Route choices have been refreshed.
+route_no_longer_available,This route no longer meets the chapter rules. Choices have been refreshed.

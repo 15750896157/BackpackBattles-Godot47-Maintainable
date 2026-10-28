@@ -1,0 +1,7 @@
+boss_id,phase,health_threshold_pct,rule_id,effect_params,telegraph_seconds
+boss_iron_beast,1,1,armor_break_frenzy,armor_gain:8|interval:5,0
+boss_iron_beast,2,0.5,armor_break_frenzy,armor_gain:5|damage_flat:3|interval:4,2
+boss_cinder_engine,1,1,heat_cycle,burn:3|interval:5,0
+boss_cinder_engine,2,0.45,heat_cycle,burn:4|cooldown_pct:-0.12|interval:4,2
+boss_star_regent,1,1,star_alignment,front_damage_flat:4|interval:6,0
+boss_star_regent,2,0.4,star_alignment,front_damage_flat:7|heal:6|interval:5,3

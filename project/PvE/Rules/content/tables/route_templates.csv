@@ -1,0 +1,16 @@
+id,act_id,step,candidate_count_min,candidate_count_max,allowed_nodes,required_nodes,forbid_previous_types
+act_1_step_1,act_1,1,2,2,normal_combat|danger_combat,normal_combat,
+act_1_step_2,act_1,2,2,2,normal_combat|danger_combat|event|merchant,,shop|event|rest
+act_1_step_3,act_1,3,2,3,normal_combat|danger_combat|event|rest,,shop|event|rest
+act_1_step_4,act_1,4,2,3,normal_combat|elite_combat|rest|merchant|event,elite_combat,shop|event|rest
+act_1_boss,act_1,5,1,1,boss,boss,
+act_2_step_1,act_2,1,2,2,normal_combat|danger_combat,normal_combat,
+act_2_step_2,act_2,2,2,2,normal_combat|danger_combat|event|merchant,,shop|event|rest
+act_2_step_3,act_2,3,2,3,normal_combat|danger_combat|elite_combat|event|rest,elite_combat,shop|event|rest
+act_2_step_4,act_2,4,2,3,normal_combat|elite_combat|rest|merchant|event,elite_combat,shop|event|rest
+act_2_boss,act_2,5,1,1,boss,boss,
+act_3_step_1,act_3,1,2,2,normal_combat|danger_combat,normal_combat,
+act_3_step_2,act_3,2,2,2,normal_combat|danger_combat|event|merchant,,shop|event|rest
+act_3_step_3,act_3,3,2,3,normal_combat|danger_combat|elite_combat|event|rest,elite_combat,shop|event|rest
+act_3_step_4,act_3,4,2,3,normal_combat|elite_combat|rest|merchant|event,elite_combat,shop|event|rest
+act_3_boss,act_3,5,1,1,boss,boss,

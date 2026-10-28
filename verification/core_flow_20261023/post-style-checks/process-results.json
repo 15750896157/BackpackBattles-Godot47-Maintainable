@@ -1,0 +1,26 @@
+[
+  {
+    "case": "core-flow",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 47.78,
+    "assertions": 30,
+    "report": "core-flow/core-flow-report.json"
+  },
+  {
+    "case": "polish",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 42.97,
+    "assertions": 101,
+    "report": "polish/art-polish-report.json"
+  },
+  {
+    "case": "layout",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 42.05,
+    "assertions": 1774,
+    "report": "layout/report.json"
+  }
+]

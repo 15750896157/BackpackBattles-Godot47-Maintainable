@@ -1,0 +1,32 @@
+{
+	"checks": 1933,
+	"content_sha256": "b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1",
+	"entry": "res://Core/Main.tscn",
+	"evidence": {
+		"en": {
+			"events": 209,
+			"pages": 5,
+			"status_rows": 2,
+			"status_samples": [
+				"3.50 s · Player · Venom Needle → Enemy · Status applied · Poison · 2.0",
+				"3.50 s · Enemy · Venom Needle → Player · Status applied · Poison · 1.0",
+				"4.50 s · Player · Venom Needle → Enemy · Status damage · Poison · 2.0"
+			],
+			"visited_event_count": 209
+		},
+		"zh_CN": {
+			"events": 209,
+			"pages": 5,
+			"status_rows": 2,
+			"status_samples": [
+				"3.50 s · 我方 · 毒刺针 → 敌方 · 施加状态 · 毒 · 2.0",
+				"3.50 s · 敌方 · 毒刺针 → 我方 · 施加状态 · 毒 · 1.0",
+				"4.50 s · 我方 · 毒刺针 → 敌方 · 状态伤害 · 毒 · 2.0"
+			],
+			"visited_event_count": 209
+		}
+	},
+	"failures": [],
+	"ok": true,
+	"source_sha256": "1314032cd6c2535a1f947056a90e28395500e5eef94d988cb60dcfb07f028129"
+}

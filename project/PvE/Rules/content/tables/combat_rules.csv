@@ -1,0 +1,2 @@
+id,normal_min_seconds,normal_max_seconds,elite_min_seconds,elite_max_seconds,boss_min_seconds,boss_max_seconds,event_order,simultaneous_death_result
+default,30,60,45,75,60,90,time|priority|side|instance_id,player_loss

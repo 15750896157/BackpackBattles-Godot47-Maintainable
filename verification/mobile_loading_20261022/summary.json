@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-22",
+  "work_started": "2026-10-21",
+  "engine": "4.7-stable",
+  "content_version": "0.1.3",
+  "status": "listed_desktop_checks_passed",
+  "overall_structural_match_percent": 29.004,
+  "previous_match_percent": 29.603,
+  "portable_test_processes": 27,
+  "portable_assertions": 21981,
+  "powershell51_additional_processes": 2,
+  "powershell51_additional_assertions": 174,
+  "performance_final_processes": 2,
+  "loader_contract_assertions": 127,
+  "loader_sync_misses": 0,
+  "max_background_reads": 1,
+  "main_thread_instances_per_frame": 1,
+  "instance_soft_budget_us": 2500,
+  "pool_caps": {
+    "per_scene": 2,
+    "global": 24,
+    "ttl_seconds": 8
+  },
+  "protected_files_verified": 6915,
+  "original_other_scenes_unchanged": 1025,
+  "original_item_descriptors_verified": 519,
+  "all_player_save_envelopes_currently_valid": true,
+  "old_player_snapshot_not_restored": true,
+  "player_progress_different_from_starting_snapshot": true,
+  "physical_pointer_newly_run": false,
+  "limits": [
+    "Desktop Windows measurements only; no Android/iOS export, physical-device memory/power or thermal acceptance.",
+    "Common Main UI/animation anchors remain resident; backgrounds, item views and optional panels are streamed.",
+    "PackedScene.instantiate is atomic: 2.5 ms is a soft queue budget. Final profile observed single jobs up to 25.1 ms; it is not a no-hitch guarantee.",
+    "Memory numbers are Godot static monitor and separate texture memory, not OS process working set.",
+    "Startup varied 6.703-16.101 seconds; no guaranteed cold-start speedup or FPS gain.",
+    "Internal structural comparison is not independent authorship or a third-party similarity guarantee."
+  ]
+}

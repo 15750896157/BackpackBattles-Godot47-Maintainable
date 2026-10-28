@@ -1,0 +1,8 @@
+id,name_key,node_type,enemy_budget_scalar,reward_table_id,shop_rule_id
+normal_combat,node.normal_combat.name,combat,1,reward_normal,standard
+danger_combat,node.danger_combat.name,combat,1.15,reward_danger,standard
+elite_combat,node.elite_combat.name,combat,1.25,reward_elite,standard
+merchant,node.merchant.name,shop,0,reward_none,standard
+rest,node.rest.name,rest,0,reward_none,none
+event,node.event.name,event,0,reward_none,none
+boss,node.boss.name,boss,1.5,reward_boss,standard

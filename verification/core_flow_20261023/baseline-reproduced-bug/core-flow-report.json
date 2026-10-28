@@ -1,0 +1,657 @@
+{
+	"checks": [
+		{
+			"message": "new isolated run",
+			"ok": true
+		},
+		{
+			"message": "route enters shop",
+			"ok": true
+		},
+		{
+			"message": "initial visible shelf matches authoritative offers",
+			"ok": true
+		},
+		{
+			"message": "native drag and drop commits through original interaction",
+			"ok": true
+		},
+		{
+			"message": "drop resumes its deferred presentation update",
+			"ok": false
+		},
+		{
+			"message": "refresh changes authoritative offers 0",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 0",
+			"ok": false
+		},
+		{
+			"message": "refresh changes authoritative offers 1",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 1",
+			"ok": false
+		},
+		{
+			"message": "refresh changes authoritative offers 2",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 2",
+			"ok": false
+		},
+		{
+			"message": "no stranded render request after refresh",
+			"ok": false
+		},
+		{
+			"message": "start battle through visible art control",
+			"ok": true
+		},
+		{
+			"message": "ordinary playback reaches battle end",
+			"ok": true
+		},
+		{
+			"message": "result automatically opens without touching intel",
+			"ok": false
+		},
+		{
+			"message": "title has no transition or menu input shield",
+			"ok": true
+		},
+		{
+			"message": "new-game title banner opens setup after battle",
+			"ok": true
+		},
+		{
+			"message": "new game actually leaves setup and shows routes",
+			"ok": false
+		}
+	],
+	"failures": [
+		"drop resumes its deferred presentation update",
+		"refresh swaps visible item scenes with their prices 0",
+		"refresh swaps visible item scenes with their prices 1",
+		"refresh swaps visible item scenes with their prices 2",
+		"no stranded render request after refresh",
+		"result automatically opens without touching intel",
+		"new game actually leaves setup and shows routes"
+	],
+	"observations": [
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "01-shop",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 10,
+				"job_costs": {
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 402,
+						"total_us": 402
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 447,
+						"total_us": 1197
+					},
+					"res://Items/Exclusive/IceArmor.tscn": {
+						"count": 1,
+						"max_us": 3798,
+						"total_us": 3798
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8558,
+						"total_us": 8558
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 395,
+						"total_us": 395
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 459,
+						"total_us": 459
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 492,
+						"total_us": 492
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8558,
+				"jobs": 0,
+				"loaded": 53,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 53,
+				"resident": 53,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": true,
+			"phase": "01b-after-native-drop",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 10,
+				"job_costs": {
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 402,
+						"total_us": 402
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 447,
+						"total_us": 1197
+					},
+					"res://Items/Exclusive/IceArmor.tscn": {
+						"count": 1,
+						"max_us": 3798,
+						"total_us": 3798
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8558,
+						"total_us": 8558
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 395,
+						"total_us": 395
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 459,
+						"total_us": 459
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 492,
+						"total_us": 492
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8558,
+				"jobs": 0,
+				"loaded": 53,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 53,
+				"resident": 53,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": true,
+			"phase": "02-refresh-0",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 10,
+				"job_costs": {
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 402,
+						"total_us": 402
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 447,
+						"total_us": 1197
+					},
+					"res://Items/Exclusive/IceArmor.tscn": {
+						"count": 1,
+						"max_us": 3798,
+						"total_us": 3798
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8558,
+						"total_us": 8558
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 395,
+						"total_us": 395
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 459,
+						"total_us": 459
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 492,
+						"total_us": 492
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8558,
+				"jobs": 0,
+				"loaded": 53,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 53,
+				"resident": 53,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": true,
+			"phase": "02-refresh-1",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 10,
+				"job_costs": {
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 402,
+						"total_us": 402
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 447,
+						"total_us": 1197
+					},
+					"res://Items/Exclusive/IceArmor.tscn": {
+						"count": 1,
+						"max_us": 3798,
+						"total_us": 3798
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8558,
+						"total_us": 8558
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 395,
+						"total_us": 395
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 459,
+						"total_us": 459
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 492,
+						"total_us": 492
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8558,
+				"jobs": 0,
+				"loaded": 53,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 53,
+				"resident": 53,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": true,
+			"phase": "02-refresh-2",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 10,
+				"job_costs": {
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 402,
+						"total_us": 402
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 447,
+						"total_us": 1197
+					},
+					"res://Items/Exclusive/IceArmor.tscn": {
+						"count": 1,
+						"max_us": 3798,
+						"total_us": 3798
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8558,
+						"total_us": 8558
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 395,
+						"total_us": 395
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 459,
+						"total_us": 459
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 492,
+						"total_us": 492
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8558,
+				"jobs": 0,
+				"loaded": 53,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 53,
+				"resident": 53,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 2,
+			"page": "",
+			"panel": false,
+			"pending": true,
+			"phase": "03-automatic-result",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "COMBAT_RESULT",
+			"stream": {
+				"budget_overruns": 3,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 17,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 1,
+						"max_us": 370,
+						"total_us": 370
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 2,
+						"max_us": 468,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 447,
+						"total_us": 1197
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 1,
+						"max_us": 537,
+						"total_us": 537
+					},
+					"res://Items/Exclusive/IceArmor.tscn": {
+						"count": 1,
+						"max_us": 3798,
+						"total_us": 3798
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 2,
+						"max_us": 8558,
+						"total_us": 9037
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 395,
+						"total_us": 395
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 4996,
+						"total_us": 4996
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 524,
+						"total_us": 983
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 492,
+						"total_us": 492
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 1,
+						"max_us": 32,
+						"total_us": 32
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8558,
+				"jobs": 0,
+				"loaded": 79,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 34,
+				"requested": 79,
+				"resident": 45,
+				"scopes": 8,
+				"sync_misses": 1,
+				"sync_paths": {
+					"res://Art/20261022/bat.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 0,
+			"page": "",
+			"panel": false,
+			"pending": true,
+			"phase": "04-title-after-result",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "MAIN_MENU",
+			"stream": {
+				"budget_overruns": 3,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 17,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 1,
+						"max_us": 370,
+						"total_us": 370
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 2,
+						"max_us": 468,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 447,
+						"total_us": 1197
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 1,
+						"max_us": 537,
+						"total_us": 537
+					},
+					"res://Items/Exclusive/IceArmor.tscn": {
+						"count": 1,
+						"max_us": 3798,
+						"total_us": 3798
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 2,
+						"max_us": 8558,
+						"total_us": 9037
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 395,
+						"total_us": 395
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 4996,
+						"total_us": 4996
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 524,
+						"total_us": 983
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 492,
+						"total_us": 492
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 1,
+						"max_us": 32,
+						"total_us": 32
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8558,
+				"jobs": 0,
+				"loaded": 79,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 75,
+				"requested": 79,
+				"resident": 4,
+				"scopes": 2,
+				"sync_misses": 1,
+				"sync_paths": {
+					"res://Art/20261022/bat.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 0
+		}
+	],
+	"ok": false
+}

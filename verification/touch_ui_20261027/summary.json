@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-27",
+  "phase": "UI changes before M0 Step 1",
+  "engine": "4.7-stable",
+  "portable_processes": [
+    {
+      "case": "entry",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 7.64
+    },
+    {
+      "case": "touch-pages",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 47.42,
+      "assertions": 916,
+      "report": "touch-pages\\touch-pages-report.json"
+    },
+    {
+      "case": "anchors",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 20.3,
+      "assertions": 16,
+      "report": "anchors\\combat-anchors-report.json"
+    },
+    {
+      "case": "bound-assets",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 18.3,
+      "assertions": 338,
+      "report": "bound-assets\\bound-assets-report.json"
+    },
+    {
+      "case": "core-flow",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 47.66,
+      "assertions": 32,
+      "report": "core-flow\\core-flow-report.json"
+    },
+    {
+      "case": "flow",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 34.75,
+      "assertions": 123,
+      "report": "flow\\native-report.json"
+    },
+    {
+      "case": "inventory",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 14.28,
+      "assertions": 37,
+      "report": "inventory\\report.json"
+    },
+    {
+      "case": "save-safety",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 9.11,
+      "assertions": 18,
+      "report": "save-safety\\save-safety-report.json"
+    },
+    {
+      "case": "loading-contracts",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 66.81,
+      "assertions": 128,
+      "report": "loading-contracts\\loading-contracts-report.json"
+    },
+    {
+      "case": "loading-profile",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 40.5,
+      "assertions": 0,
+      "report": "loading-profile\\loading-profile.json"
+    },
+    {
+      "case": "feedback",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 26.66,
+      "assertions": 32,
+      "report": "feedback\\feedback-report.json"
+    },
+    {
+      "case": "preferences-write",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 17.16,
+      "assertions": 93,
+      "report": "preferences\\write-report.json"
+    },
+    {
+      "case": "preferences-reopen",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 9.08,
+      "assertions": 76,
+      "report": "preferences\\reopen-report.json"
+    },
+    {
+      "case": "persist-route-write",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 10.95,
+      "assertions": 10,
+      "report": "persist-route\\persistence-write-report.json"
+    },
+    {
+      "case": "persist-route-reopen",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 9.95,
+      "assertions": 11,
+      "report": "persist-route\\persistence-reopen-report.json"
+    },
+    {
+      "case": "persist-shop-write",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 17.0,
+      "assertions": 12,
+      "report": "persist-shop\\persistence-write-report.json"
+    },
+    {
+      "case": "persist-shop-reopen",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 17.8,
+      "assertions": 11,
+      "report": "persist-shop\\persistence-reopen-report.json"
+    },
+    {
+      "case": "persist-combat-write",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 23.02,
+      "assertions": 13,
+      "report": "persist-combat\\persistence-write-report.json"
+    },
+    {
+      "case": "persist-combat-reopen",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 17.88,
+      "assertions": 12,
+      "report": "persist-combat\\persistence-reopen-report.json"
+    },
+    {
+      "case": "persist-result-write",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 23.22,
+      "assertions": 15,
+      "report": "persist-result\\persistence-write-report.json"
+    },
+    {
+      "case": "persist-result-reopen",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 17.99,
+      "assertions": 12,
+      "report": "persist-result\\persistence-reopen-report.json"
+    },
+    {
+      "case": "persist-reward-write",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 23.22,
+      "assertions": 15,
+      "report": "persist-reward\\persistence-write-report.json"
+    },
+    {
+      "case": "persist-reward-reopen",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 9.95,
+      "assertions": 12,
+      "report": "persist-reward\\persistence-reopen-report.json"
+    }
+  ],
+  "portable_assertions": 1932,
+  "pointer_checks": {
+    "close_graphical": true,
+    "continued_shop": true,
+    "list_next": true,
+    "list_previous": true,
+    "new_draft": true,
+    "new_game_routes": true,
+    "open_guide": true,
+    "real_drag_drop": true,
+    "resume_choice": true,
+    "return_held": true,
+    "rotate_held": true,
+    "saved_to_title": true
+  },
+  "pointer_process": {
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 472.7
+  },
+  "player_saves_unchanged": [
+    "profile.save",
+    "profile_backup.save",
+    "run.save",
+    "run_backup.save",
+    "settings.save",
+    "settings_backup.save",
+    "telemetry.jsonl"
+  ],
+  "main_scene_unchanged": true,
+  "rules_files_unchanged": 152,
+  "old_art_files_unchanged": 107,
+  "new_art_files": 8,
+  "deleted_files": [],
+  "limits": [
+    "Windows GL Compatibility, no Android/iOS device acceptance",
+    "Not M0 Step 2 or a new M0 performance baseline"
+  ],
+  "initial_qa_corrections": [
+    "CoreFlowQA now locates Save in the fixed header and returns boolean from assertion helper. Failed attempts retained in work/touch_ui_20261027.",
+    "Journey node labels received fixed width and entire enemy build layout was rechecked."
+  ],
+  "pointer_return_recheck": {
+    "checks": {
+      "picked_up": true,
+      "returned_original_placement": true,
+      "rotated_while_held": true,
+      "valid_build_after_return": true
+    },
+    "process": {
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 119.36
+    },
+    "reason": "First monitor had a sticky was_held flag; return result is accepted only from the immediate-edge isolated check, not a later new-run comparison."
+  }
+}

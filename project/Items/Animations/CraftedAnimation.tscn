@@ -1,0 +1,262 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Assets/NormalMap_Circle_Soft.png" type="Texture2D" id=1]
+[ext_resource path="res://Items/Animations/Shockwave.material" type="Material" id=2]
+[ext_resource path="res://Assets/Noise/SparkleNoise.png" type="Texture2D" id=3]
+[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Light/CircleLight.png" type="Texture2D" id=5]
+
+[sub_resource type="Shader" id=16]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+
+uniform sampler2D tone_mapping : repeat_disable, filter_linear;
+
+uniform sampler2D NOISE_PATTERN : repeat_enable, filter_linear;
+uniform sampler2D NOISE_PATTERN2 : repeat_enable, filter_linear;
+uniform vec2 scroll1 = vec2(1 , 0.4);
+uniform vec2 scroll2 = vec2(0.2, 1.2);
+
+uniform float baseIntensity : hint_range(0.0,0.5) = 0.1;
+uniform float intensityFactor : hint_range(0.0,5.0) = 1.5;
+
+uniform vec2 noise1Scale = vec2(1,1);
+uniform vec2 noise2Scale = vec2(1,1);
+uniform float blur : hint_range(0.0, 7.0) = 3.0;
+
+uniform float staticFactor : hint_range(-1,1) = 0.5;
+
+uniform float zoomLevel : hint_range(0.0, 10.0) = 1.;
+uniform vec2 cen = vec2(0.5);
+
+vec2 polar_coordinates(vec2 uv, vec2 center, float zoom, float repeat)
+{
+\tvec2 dir = uv - center;
+\tfloat radius = length(dir) * 2.0;
+\tfloat angle = atan(dir.y, dir.x) * 1.0/(3.1416 * 2.0);
+\treturn mod(vec2(radius * zoom, angle * repeat), 1.0);
+}
+
+void fragment() {
+\tvec2 polar_uv = polar_coordinates(UV.xy, cen, zoomLevel, 1.0);
+
+\tvec4 texVal = textureLod(TEXTURE, UV, blur);
+\tfloat texAlpha = texVal.a;
+\t
+\tfloat intensity1 = textureLod(NOISE_PATTERN, polar_uv * noise1Scale + bb_shader_time * scroll1, 0.0).r;
+\tfloat intensity2 = textureLod(NOISE_PATTERN2, polar_uv * noise2Scale + bb_shader_time * scroll2, 0.0).r;
+\tfloat intensity= ((intensity1 * intensity2) + baseIntensity+ texVal.r * staticFactor) * intensityFactor * texAlpha;
+\t
+\tCOLOR = textureLod(tone_mapping, vec2(intensity), 0.0);
+}"
+
+[sub_resource type="Gradient" id=21]
+offsets = PackedFloat32Array( 0.0366379, 0.165948, 0.258621 )
+colors = PackedColorArray( 0.257812, 0.257812, 0.257812, 0, 0.832031, 0.832031, 0.832031, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture1D" id=22]
+gradient = SubResource( 21 )
+width = 100
+
+[sub_resource type="ShaderMaterial" id=23]
+shader = SubResource( 16 )
+shader_parameter/scroll1 = Vector2( -0.152, -0.031 )
+shader_parameter/scroll2 = Vector2( -0.243, 0.086 )
+shader_parameter/baseIntensity = 0.338
+shader_parameter/intensityFactor = 0.0
+shader_parameter/noise1Scale = Vector2( 1.134, 1 )
+shader_parameter/noise2Scale = Vector2( 0.938, 2 )
+shader_parameter/blur = 0.0
+shader_parameter/staticFactor = -0.15
+shader_parameter/zoomLevel = 1.0
+shader_parameter/cen = Vector2( 0.5, 0.5 )
+shader_parameter/tone_mapping = SubResource( 22 )
+shader_parameter/NOISE_PATTERN = ExtResource( 3 )
+shader_parameter/NOISE_PATTERN2 = ExtResource( 3 )
+
+[sub_resource type="Animation" id=24]
+resource_name = "Crafted"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:material:shader_parameter/refractionMagnitude")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.173552, 0.240325 ),
+"transitions": PackedFloat32Array( 0.5, 0.594604, 1 ),
+"update": 0,
+"values": [ 0.0, 0.017, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.294449 ),
+"transitions": PackedFloat32Array( 0.732043, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 1.3, 1.3 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0.3 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "returnToObjectPool"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite2D/Light3D:material:shader_parameter/intensityFactor")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.0929812, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.168, 0.0 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Shockwave"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:material:shader_parameter/refractionMagnitude")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.173552, 0.240325 ),
+"transitions": PackedFloat32Array( 0.5, 0.594604, 1 ),
+"update": 0,
+"values": [ 0.0, 0.017, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.294449 ),
+"transitions": PackedFloat32Array( 0.732043, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 1.3, 1.3 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0.3 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "returnToObjectPool"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite2D/Light3D:material:shader_parameter/intensityFactor")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.0929812, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.168, 0.0 ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "Suck"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2D:material:shader_parameter/refractionMagnitude")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0.0596745, 0.161142, 0.3 ),
+"transitions": PackedFloat32Array( 1, 0.594604, 1 ),
+"update": 0,
+"values": [ 0.0, 0.008, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0.00555116, 0.3 ),
+"transitions": PackedFloat32Array( 1, 0.732043 ),
+"update": 0,
+"values": [ Vector2( 1.3, 1.3 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0.3 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "returnToObjectPool"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite2D/Light3D:material:shader_parameter/intensityFactor")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.207019, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.168, 0.0 ]
+}
+
+[node name="Node2D" type="Node2D"]
+z_index = -1
+script = ExtResource( 4 )
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource( 2 )
+scale = Vector2( 1.3, 1.3 )
+texture = ExtResource( 1 )
+
+[node name="Light3D" type="Sprite2D" parent="Sprite2D"]
+modulate = Color( 3, 3, 3, 1 )
+self_modulate = Color( 0.588235, 0.909804, 1, 0.819608 )
+material = SubResource( 23 )
+z_index = -2
+texture = ExtResource( 5 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 0.6
+anims/Crafted = SubResource( 24 )
+anims/Shockwave = SubResource( 4 )
+anims/Suck = SubResource( 20 )

@@ -1,0 +1,2651 @@
+{
+  "format": 1,
+  "items": {
+    "Ace of Spades": {
+      "animation": "",
+      "scene": "res://Items/AceofSpades.tscn",
+      "sockets": 0
+    },
+    "Acorn Ace": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AcornAce.tscn",
+      "sockets": 0
+    },
+    "Acorn Collar": {
+      "animation": "",
+      "scene": "res://Items/AcornCollar.tscn",
+      "sockets": 0
+    },
+    "Amethyst Egg": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmethystEgg.tscn",
+      "sockets": 0
+    },
+    "Amethyst Whelp": {
+      "animation": "res://Items/Exclusive/Animations/AmethystWhelpAnimation.tscn",
+      "scene": "res://Items/Exclusive/AmethystWhelp.tscn",
+      "sockets": 1
+    },
+    "Amulet Unidentified": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletUnidentified.tscn",
+      "sockets": 0
+    },
+    "Amulet of Agility": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofAgility.tscn",
+      "sockets": 0
+    },
+    "Amulet of Alchemy": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofAlchemy.tscn",
+      "sockets": 0
+    },
+    "Amulet of Darkness": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofDarkness.tscn",
+      "sockets": 0
+    },
+    "Amulet of Feasting": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofFeasting.tscn",
+      "sockets": 0
+    },
+    "Amulet of Fortune": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofFortune.tscn",
+      "sockets": 0
+    },
+    "Amulet of Life": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofLife.tscn",
+      "sockets": 0
+    },
+    "Amulet of Light": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofLight.tscn",
+      "sockets": 0
+    },
+    "Amulet of Steel": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletofSteel.tscn",
+      "sockets": 0
+    },
+    "Amulet of the Wild": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AmuletoftheWild.tscn",
+      "sockets": 0
+    },
+    "Angel Crystal": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/AngelCrystal.tscn",
+      "sockets": 0
+    },
+    "Anvil": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Anvil.tscn",
+      "sockets": 0
+    },
+    "Arcane Boots": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ArcaneBoots.tscn",
+      "sockets": 1
+    },
+    "Arcane Intellect": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ArcaneIntellect.tscn",
+      "sockets": 0
+    },
+    "Armored Courage Puppy": {
+      "animation": "res://Items/Exclusive/Animations/ArmoredCouragePuppyAnimation.tscn",
+      "scene": "res://Items/Exclusive/ArmoredCouragePuppy.tscn",
+      "sockets": 0
+    },
+    "Armored Power Puppy": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ArmoredPowerPuppy.tscn",
+      "sockets": 0
+    },
+    "Armored Wisdom Puppy": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ArmoredWisdomPuppy.tscn",
+      "sockets": 0
+    },
+    "Artifact Stone Cold": {
+      "animation": "res://Items/Animations/ArtifactStoneColdAnimation.tscn",
+      "scene": "res://Items/ArtifactStoneCold.tscn",
+      "sockets": 0
+    },
+    "Artifact Stone Death": {
+      "animation": "res://Items/Exclusive/Animations/ArtifactStoneDeathAnimation.tscn",
+      "scene": "res://Items/Exclusive/ArtifactStoneDeath.tscn",
+      "sockets": 0
+    },
+    "Artifact Stone Heat": {
+      "animation": "res://Items/Animations/ArtifactStoneHeatAnimation.tscn",
+      "scene": "res://Items/ArtifactStoneHeat.tscn",
+      "sockets": 0
+    },
+    "Automanaton": {
+      "animation": "res://Items/Exclusive/Animations/AutomanatonAnimation.tscn",
+      "scene": "res://Items/Exclusive/Automanaton.tscn",
+      "sockets": 4
+    },
+    "Axe": {
+      "animation": "res://Items/Exclusive/Animations/AxeAnimation.tscn",
+      "scene": "res://Items/Exclusive/Axe.tscn",
+      "sockets": 2
+    },
+    "Badger Rune": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BadgerRune.tscn",
+      "sockets": 0
+    },
+    "Badger Spirit": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BadgerSpirit.tscn",
+      "sockets": 0
+    },
+    "Bag of Giving": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BagofGiving.tscn",
+      "sockets": 0
+    },
+    "Bag of Stones": {
+      "animation": "",
+      "scene": "res://Items/BagofStones.tscn",
+      "sockets": 0
+    },
+    "Bagtacular": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Bagtacular.tscn",
+      "sockets": 0
+    },
+    "Banana": {
+      "animation": "",
+      "scene": "res://Items/Banana.tscn",
+      "sockets": 0
+    },
+    "Battery": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Battery.tscn",
+      "sockets": 0
+    },
+    "Bazooka": {
+      "animation": "res://Items/Exclusive/Animations/BazookaAnimation.tscn",
+      "scene": "res://Items/Exclusive/Bazooka.tscn",
+      "sockets": 2
+    },
+    "Berserker Bag": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BerserkerBag.tscn",
+      "sockets": 0
+    },
+    "Bewitchment": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Bewitchment.tscn",
+      "sockets": 0
+    },
+    "Big Bloodthorne": {
+      "animation": "res://Items/Exclusive/Animations/BigBloodthorneAnimation.tscn",
+      "scene": "res://Items/Exclusive/BigBloodthorne.tscn",
+      "sockets": 5
+    },
+    "Bionic Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BionicArmor.tscn",
+      "sockets": 6
+    },
+    "Bismuth Cube": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BismuthCube.tscn",
+      "sockets": 0
+    },
+    "Black Bishop": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/BlackBishop.tscn",
+      "sockets": 0
+    },
+    "Black King": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/BlackKing.tscn",
+      "sockets": 0
+    },
+    "Black Knight": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/BlackKnight.tscn",
+      "sockets": 0
+    },
+    "Black Pawn": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/BlackPawn.tscn",
+      "sockets": 0
+    },
+    "Black Queen": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/BlackQueen.tscn",
+      "sockets": 0
+    },
+    "Black Rook": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/BlackRook.tscn",
+      "sockets": 0
+    },
+    "Blood Amulet": {
+      "animation": "",
+      "scene": "res://Items/BloodAmulet.tscn",
+      "sockets": 0
+    },
+    "Blood Goobert": {
+      "animation": "",
+      "scene": "res://Items/BloodGoobert.tscn",
+      "sockets": 0
+    },
+    "Blood Manipulation": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BloodManipulation.tscn",
+      "sockets": 0
+    },
+    "Bloodthorne": {
+      "animation": "res://Items/Animations/BloodthorneAnimation.tscn",
+      "scene": "res://Items/Bloodthorne.tscn",
+      "sockets": 2
+    },
+    "Bloody Dagger": {
+      "animation": "res://Items/Animations/BloodyDaggerAnimation.tscn",
+      "scene": "res://Items/BloodyDagger.tscn",
+      "sockets": 1
+    },
+    "Blueberries": {
+      "animation": "",
+      "scene": "res://Items/Blueberries.tscn",
+      "sockets": 0
+    },
+    "Bomb": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Bomb.tscn",
+      "sockets": 0
+    },
+    "Book of Basics": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BookofBasics.tscn",
+      "sockets": 0
+    },
+    "Book of Darkness": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BookofDarkness.tscn",
+      "sockets": 0
+    },
+    "Book of Ice": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BookofIce.tscn",
+      "sockets": 0
+    },
+    "Book of Ice New": {
+      "animation": "",
+      "scene": "",
+      "sockets": 0
+    },
+    "Book of Light": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BookofLight.tscn",
+      "sockets": 0
+    },
+    "Book of Nature": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BookofNature.tscn",
+      "sockets": 0
+    },
+    "Boomerang": {
+      "animation": "res://Items/Exclusive/Animations/BoomerangAnimation.tscn",
+      "scene": "res://Items/Exclusive/Boomerang.tscn",
+      "sockets": 2
+    },
+    "Bow and Arrow": {
+      "animation": "res://Items/Animations/BowandArrowAnimation.tscn",
+      "scene": "res://Items/BowandArrow.tscn",
+      "sockets": 1
+    },
+    "Bowl of Treats": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BowlofTreats.tscn",
+      "sockets": 0
+    },
+    "Box of Prosperity": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BoxofProsperity.tscn",
+      "sockets": 0
+    },
+    "Box of Riches": {
+      "animation": "",
+      "scene": "res://Items/BoxofRiches.tscn",
+      "sockets": 0
+    },
+    "Brass Knuckles": {
+      "animation": "res://Items/Exclusive/Animations/BrassKnucklesAnimation.tscn",
+      "scene": "res://Items/Exclusive/BrassKnuckles.tscn",
+      "sockets": 0
+    },
+    "Broccoli": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Broccoli.tscn",
+      "sockets": 0
+    },
+    "Broccoli Goobert": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BroccoliGoobert.tscn",
+      "sockets": 0
+    },
+    "Broccotree": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Broccotree.tscn",
+      "sockets": 0
+    },
+    "Broom": {
+      "animation": "res://Items/Animations/BroomAnimation.tscn",
+      "scene": "res://Items/Broom.tscn",
+      "sockets": 1
+    },
+    "Burning Banner": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BurningBanner.tscn",
+      "sockets": 0
+    },
+    "Burning Blade": {
+      "animation": "res://Items/Exclusive/Animations/BurningBladeAnimation.tscn",
+      "scene": "res://Items/Exclusive/BurningBlade.tscn",
+      "sockets": 2
+    },
+    "Burning Coal": {
+      "animation": "",
+      "scene": "res://Items/Gems/BurningCoal.tscn",
+      "sockets": 0
+    },
+    "Burning Spikes": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BurningSpikes.tscn",
+      "sockets": 0
+    },
+    "Burning Sword": {
+      "animation": "res://Items/Exclusive/Animations/BurningSwordAnimation.tscn",
+      "scene": "res://Items/Exclusive/BurningSword.tscn",
+      "sockets": 1
+    },
+    "Burning Torch": {
+      "animation": "res://Items/Animations/BurningTorchAnimation.tscn",
+      "scene": "res://Items/BurningTorch.tscn",
+      "sockets": 1
+    },
+    "Busted Blade": {
+      "animation": "res://Items/Exclusive/Animations/BustedBladeAnimation.tscn",
+      "scene": "res://Items/Exclusive/BustedBlade.tscn",
+      "sockets": 6
+    },
+    "Buy the Holy Light": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/BuytheHolyLight.tscn",
+      "sockets": 0
+    },
+    "Cap of Brilliance": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/CapofBrilliance.tscn",
+      "sockets": 1
+    },
+    "Carrot": {
+      "animation": "",
+      "scene": "res://Items/Carrot.tscn",
+      "sockets": 0
+    },
+    "Carrot Goobert": {
+      "animation": "",
+      "scene": "res://Items/CarrotGoobert.tscn",
+      "sockets": 0
+    },
+    "Cat Spirit": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/CatSpirit.tscn",
+      "sockets": 0
+    },
+    "Cauldron": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Cauldron.tscn",
+      "sockets": 0
+    },
+    "Chain Whip": {
+      "animation": "res://Items/Exclusive/Animations/ChainWhipAnimation.tscn",
+      "scene": "res://Items/Exclusive/ChainWhip.tscn",
+      "sockets": 2
+    },
+    "Chainsaw": {
+      "animation": "res://Items/Exclusive/Animations/ChainsawAnimation.tscn",
+      "scene": "res://Items/Exclusive/Chainsaw.tscn",
+      "sockets": 3
+    },
+    "Charge Splitter": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ChargeSplitter.tscn",
+      "sockets": 0
+    },
+    "Cheese": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Cheese.tscn",
+      "sockets": 0
+    },
+    "Cheese Goobert": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/CheeseGoobert.tscn",
+      "sockets": 0
+    },
+    "Chess Board": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ChessBoard.tscn",
+      "sockets": 0
+    },
+    "Chess Master": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ChessMaster.tscn",
+      "sockets": 0
+    },
+    "Chili Goobert": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ChiliGoobert.tscn",
+      "sockets": 0
+    },
+    "Chili Pepper": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ChiliPepper.tscn",
+      "sockets": 0
+    },
+    "Chipped Amethyst": {
+      "animation": "",
+      "scene": "res://Items/Gems/ChippedAmethyst.tscn",
+      "sockets": 0
+    },
+    "Chipped Emerald": {
+      "animation": "",
+      "scene": "res://Items/Gems/ChippedEmerald.tscn",
+      "sockets": 0
+    },
+    "Chipped Ruby": {
+      "animation": "",
+      "scene": "res://Items/Gems/ChippedRuby.tscn",
+      "sockets": 0
+    },
+    "Chipped Sapphire": {
+      "animation": "",
+      "scene": "res://Items/Gems/ChippedSapphire.tscn",
+      "sockets": 0
+    },
+    "Chipped Topaz": {
+      "animation": "",
+      "scene": "res://Items/Gems/ChippedTopaz.tscn",
+      "sockets": 0
+    },
+    "Chrome Cube": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ChromeCube.tscn",
+      "sockets": 0
+    },
+    "Claws of Attack": {
+      "animation": "res://Items/Animations/ClawsofAttackAnimation.tscn",
+      "scene": "res://Items/ClawsofAttack.tscn",
+      "sockets": 1
+    },
+    "Cog": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Cog.tscn",
+      "sockets": 0
+    },
+    "Cog Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/CogBadge.tscn",
+      "sockets": 0
+    },
+    "Coil": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Coil.tscn",
+      "sockets": 0
+    },
+    "Coins": {
+      "animation": "",
+      "scene": "res://Items/Coins.tscn",
+      "sockets": 0
+    },
+    "Con-Trap-Tron": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Con-Trap-Tron.tscn",
+      "sockets": 0
+    },
+    "Corrupted Armor": {
+      "animation": "",
+      "scene": "res://Items/CorruptedArmor.tscn",
+      "sockets": 3
+    },
+    "Corrupted Crystal": {
+      "animation": "",
+      "scene": "res://Items/Gems/CorruptedCrystal.tscn",
+      "sockets": 0
+    },
+    "Courage Puppy": {
+      "animation": "res://Items/Exclusive/Animations/CouragePuppyAnimation.tscn",
+      "scene": "res://Items/Exclusive/CouragePuppy.tscn",
+      "sockets": 0
+    },
+    "Critical Poison": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/CriticalPoison.tscn",
+      "sockets": 0
+    },
+    "Critwood Staff": {
+      "animation": "res://Items/Animations/CritwoodStaffAnimation.tscn",
+      "scene": "res://Items/CritwoodStaff.tscn",
+      "sockets": 1
+    },
+    "Crossblades": {
+      "animation": "res://Items/Animations/CrossbladesAnimation.tscn",
+      "scene": "res://Items/Crossblades.tscn",
+      "sockets": 3
+    },
+    "Crow": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Crow.tscn",
+      "sockets": 0
+    },
+    "Crown": {
+      "animation": "",
+      "scene": "res://Items/Crown.tscn",
+      "sockets": 1
+    },
+    "Cthulhu": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Cthulhu.tscn",
+      "sockets": 0
+    },
+    "Cubert": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Cubert.tscn",
+      "sockets": 0
+    },
+    "Cupcake": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Cupcake.tscn",
+      "sockets": 0
+    },
+    "Cupcake Dragon": {
+      "animation": "res://Items/Exclusive/Animations/CupcakeDragonAnimation.tscn",
+      "scene": "res://Items/Exclusive/CupcakeDragon.tscn",
+      "sockets": 2
+    },
+    "Cupcake Goobert": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/CupcakeGoobert.tscn",
+      "sockets": 0
+    },
+    "Cupcake Staff": {
+      "animation": "res://Items/Exclusive/Animations/CupcakeStaffAnimation.tscn",
+      "scene": "res://Items/Exclusive/CupcakeStaff.tscn",
+      "sockets": 1
+    },
+    "Cursed Dagger": {
+      "animation": "res://Items/Animations/CursedDaggerAnimation.tscn",
+      "scene": "res://Items/CursedDagger.tscn",
+      "sockets": 1
+    },
+    "Cursed Hair Comb": {
+      "animation": "",
+      "scene": "res://Items/CursedHairComb.tscn",
+      "sockets": 0
+    },
+    "Customer Card": {
+      "animation": "",
+      "scene": "res://Items/CustomerCard.tscn",
+      "sockets": 0
+    },
+    "Dagger": {
+      "animation": "res://Items/Animations/DaggerAnimation.tscn",
+      "scene": "res://Items/Dagger.tscn",
+      "sockets": 1
+    },
+    "Daggerang": {
+      "animation": "res://Items/Exclusive/Animations/DaggerangAnimation.tscn",
+      "scene": "res://Items/Exclusive/Daggerang.tscn",
+      "sockets": 2
+    },
+    "Dancing Dragon": {
+      "animation": "res://Items/Animations/DancingDragonAnimation.tscn",
+      "scene": "res://Items/DancingDragon.tscn",
+      "sockets": 2
+    },
+    "Dark Lantern": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DarkLantern.tscn",
+      "sockets": 0
+    },
+    "Dark Ritual": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DarkRitual.tscn",
+      "sockets": 0
+    },
+    "Darkest Lotus": {
+      "animation": "",
+      "scene": "res://Items/DarkestLotus.tscn",
+      "sockets": 0
+    },
+    "Darksaber": {
+      "animation": "res://Items/Animations/DarksaberAnimation.tscn",
+      "scene": "res://Items/Darksaber.tscn",
+      "sockets": 2
+    },
+    "Death Lotus": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DeathLotus.tscn",
+      "sockets": 0
+    },
+    "Death Scythe": {
+      "animation": "res://Items/Animations/DeathScytheAnimation.tscn",
+      "scene": "res://Items/DeathScythe.tscn",
+      "sockets": 3
+    },
+    "Deck of Cards": {
+      "animation": "",
+      "scene": "res://Items/DeckofCards.tscn",
+      "sockets": 0
+    },
+    "Deer Totem": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DeerTotem.tscn",
+      "sockets": 0
+    },
+    "Demonic Flask": {
+      "animation": "res://Items/Animations/DemonicFlaskAnimation.tscn",
+      "scene": "res://Items/DemonicFlask.tscn",
+      "sockets": 0
+    },
+    "Devouring Sphere": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DevouringSphere.tscn",
+      "sockets": 0
+    },
+    "Dig Deeper": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DigDeeper.tscn",
+      "sockets": 0
+    },
+    "Divine Potion": {
+      "animation": "res://Items/Exclusive/Animations/DivinePotionAnimation.tscn",
+      "scene": "res://Items/Exclusive/DivinePotion.tscn",
+      "sockets": 0
+    },
+    "Djinn Lamp": {
+      "animation": "",
+      "scene": "res://Items/DjinnLamp.tscn",
+      "sockets": 0
+    },
+    "Doom Cap": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DoomCap.tscn",
+      "sockets": 0
+    },
+    "Double Axe": {
+      "animation": "res://Items/Exclusive/Animations/DoubleAxeAnimation.tscn",
+      "scene": "res://Items/Exclusive/DoubleAxe.tscn",
+      "sockets": 5
+    },
+    "Double Rainbow": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DoubleRainbow.tscn",
+      "sockets": 0
+    },
+    "Draconic Orb": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DraconicOrb.tscn",
+      "sockets": 0
+    },
+    "Dragon Claws": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DragonClaws.tscn",
+      "sockets": 0
+    },
+    "Dragon Knight": {
+      "animation": "res://Items/Exclusive/Animations/DragonKnightAnimation.tscn",
+      "scene": "res://Items/Exclusive/DragonKnight.tscn",
+      "sockets": 2
+    },
+    "Dragon Nest": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DragonNest.tscn",
+      "sockets": 0
+    },
+    "Dragon Set": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DragonSet.tscn",
+      "sockets": 0
+    },
+    "Dragonscale Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DragonscaleArmor.tscn",
+      "sockets": 3
+    },
+    "Dragonskin Boots": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DragonskinBoots.tscn",
+      "sockets": 1
+    },
+    "Dual Wielding": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/DualWielding.tscn",
+      "sockets": 0
+    },
+    "Eat-o-matic": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Eat-o-matic.tscn",
+      "sockets": 0
+    },
+    "Echoing Battlecry": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EchoingBattlecry.tscn",
+      "sockets": 0
+    },
+    "Eggscalibur": {
+      "animation": "res://Items/Animations/EggscaliburAnimation.tscn",
+      "scene": "res://Items/Eggscalibur.tscn",
+      "sockets": 2
+    },
+    "Electric Torch": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ElectricTorch.tscn",
+      "sockets": 0
+    },
+    "Elephant Rune": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ElephantRune.tscn",
+      "sockets": 0
+    },
+    "Emerald Egg": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EmeraldEgg.tscn",
+      "sockets": 0
+    },
+    "Emerald Whelp": {
+      "animation": "res://Items/Exclusive/Animations/EmeraldWhelpAnimation.tscn",
+      "scene": "res://Items/Exclusive/EmeraldWhelp.tscn",
+      "sockets": 1
+    },
+    "Employee Uniform": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EmployeeUniform.tscn",
+      "sockets": 2
+    },
+    "Enchanted Weapons": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EnchantedWeapons.tscn",
+      "sockets": 0
+    },
+    "Energy Conversion": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EnergyConversion.tscn",
+      "sockets": 0
+    },
+    "Engineer Bag 2": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EngineerBag2.tscn",
+      "sockets": 0
+    },
+    "Engineer Box": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EngineerBox.tscn",
+      "sockets": 0
+    },
+    "Everburning": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Everburning.tscn",
+      "sockets": 0
+    },
+    "Evil Cap": {
+      "animation": "",
+      "scene": "res://Items/EvilCap.tscn",
+      "sockets": 1
+    },
+    "Evil Hat": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/EvilHat.tscn",
+      "sockets": 0
+    },
+    "Extra Angy": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ExtraAngy.tscn",
+      "sockets": 0
+    },
+    "Extra Bags": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ExtraBags.tscn",
+      "sockets": 0
+    },
+    "Falcon Blade": {
+      "animation": "res://Items/Animations/FalconBladeAnimation.tscn",
+      "scene": "res://Items/FalconBlade.tscn",
+      "sockets": 2
+    },
+    "False Life": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FalseLife.tscn",
+      "sockets": 0
+    },
+    "Fancy Fencing Rapier": {
+      "animation": "res://Items/Animations/FancyFencingRapierAnimation.tscn",
+      "scene": "res://Items/FancyFencingRapier.tscn",
+      "sockets": 1
+    },
+    "Fanfare": {
+      "animation": "",
+      "scene": "res://Items/Fanfare.tscn",
+      "sockets": 0
+    },
+    "Fanny Pack": {
+      "animation": "",
+      "scene": "res://Items/FannyPack.tscn",
+      "sockets": 0
+    },
+    "Fedora": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Fedora.tscn",
+      "sockets": 0
+    },
+    "Fire Pit": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FirePit.tscn",
+      "sockets": 0
+    },
+    "Fire Shelly": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FireShelly.tscn",
+      "sockets": 0
+    },
+    "Flame": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Flame.tscn",
+      "sockets": 0
+    },
+    "Flame Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FlameBadge.tscn",
+      "sockets": 0
+    },
+    "Flame Whip": {
+      "animation": "res://Items/Exclusive/Animations/FlameWhipAnimation.tscn",
+      "scene": "res://Items/Exclusive/FlameWhip.tscn",
+      "sockets": 2
+    },
+    "Flawed Amethyst": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawedAmethyst.tscn",
+      "sockets": 0
+    },
+    "Flawed Emerald": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawedEmerald.tscn",
+      "sockets": 0
+    },
+    "Flawed Ruby": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawedRuby.tscn",
+      "sockets": 0
+    },
+    "Flawed Sapphire": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawedSapphire.tscn",
+      "sockets": 0
+    },
+    "Flawed Topaz": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawedTopaz.tscn",
+      "sockets": 0
+    },
+    "Flawless Amethyst": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawlessAmethyst.tscn",
+      "sockets": 0
+    },
+    "Flawless Emerald": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawlessEmerald.tscn",
+      "sockets": 0
+    },
+    "Flawless Ruby": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawlessRuby.tscn",
+      "sockets": 0
+    },
+    "Flawless Sapphire": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawlessSapphire.tscn",
+      "sockets": 0
+    },
+    "Flawless Topaz": {
+      "animation": "",
+      "scene": "res://Items/Gems/FlawlessTopaz.tscn",
+      "sockets": 0
+    },
+    "Flute": {
+      "animation": "",
+      "scene": "res://Items/Flute.tscn",
+      "sockets": 0
+    },
+    "Fly Agaric": {
+      "animation": "",
+      "scene": "res://Items/FlyAgaric.tscn",
+      "sockets": 0
+    },
+    "Forest Dragon": {
+      "animation": "res://Items/Exclusive/Animations/ForestDragonAnimation.tscn",
+      "scene": "res://Items/Exclusive/ForestDragon.tscn",
+      "sockets": 2
+    },
+    "Forging Hammer": {
+      "animation": "res://Items/Exclusive/Animations/ForgingHammerAnimation.tscn",
+      "scene": "res://Items/Exclusive/ForgingHammer.tscn",
+      "sockets": 1
+    },
+    "Fortunas Kiss": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FortunasKiss.tscn",
+      "sockets": 0
+    },
+    "Friendly Fire": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FriendlyFire.tscn",
+      "sockets": 0
+    },
+    "Frog Prince": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FrogPrince.tscn",
+      "sockets": 0
+    },
+    "Frostbite": {
+      "animation": "res://Items/Exclusive/Animations/FrostbiteAnimation.tscn",
+      "scene": "res://Items/Exclusive/Frostbite.tscn",
+      "sockets": 2
+    },
+    "Frozen Buckler": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FrozenBuckler.tscn",
+      "sockets": 1
+    },
+    "Frozen Flame": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FrozenFlame.tscn",
+      "sockets": 0
+    },
+    "Full Body Protection": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FullBodyProtection.tscn",
+      "sockets": 0
+    },
+    "Furcifer Prime": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/FurciferPrime.tscn",
+      "sockets": 0
+    },
+    "Garlic": {
+      "animation": "",
+      "scene": "res://Items/Garlic.tscn",
+      "sockets": 0
+    },
+    "Generator": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Generator.tscn",
+      "sockets": 0
+    },
+    "Ghost": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Ghost.tscn",
+      "sockets": 0
+    },
+    "Gigawatz": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Gigawatz.tscn",
+      "sockets": 0
+    },
+    "Gingerbread Man": {
+      "animation": "",
+      "scene": "res://Items/GingerbreadMan.tscn",
+      "sockets": 0
+    },
+    "Girl Power": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/GirlPower.tscn",
+      "sockets": 0
+    },
+    "Gloves of Haste": {
+      "animation": "",
+      "scene": "res://Items/GlovesofHaste.tscn",
+      "sockets": 0
+    },
+    "Gold Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/GoldArmor.tscn",
+      "sockets": 3
+    },
+    "Gold Cube": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/GoldCube.tscn",
+      "sockets": 0
+    },
+    "Goobert": {
+      "animation": "",
+      "scene": "res://Items/Goobert.tscn",
+      "sockets": 0
+    },
+    "Goobling": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Goobling.tscn",
+      "sockets": 0
+    },
+    "Greatsword": {
+      "animation": "res://Items/Animations/GreatswordAnimation.tscn",
+      "scene": "res://Items/Greatsword.tscn",
+      "sockets": 4
+    },
+    "Halberd": {
+      "animation": "res://Items/Exclusive/Animations/HalberdAnimation.tscn",
+      "scene": "res://Items/Exclusive/Halberd.tscn",
+      "sockets": 3
+    },
+    "Hammer": {
+      "animation": "res://Items/Animations/HammerAnimation.tscn",
+      "scene": "res://Items/Hammer.tscn",
+      "sockets": 2
+    },
+    "Hardwood": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Hardwood.tscn",
+      "sockets": 0
+    },
+    "Hawk Rune": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HawkRune.tscn",
+      "sockets": 0
+    },
+    "Healing Herbs": {
+      "animation": "",
+      "scene": "res://Items/HealingHerbs.tscn",
+      "sockets": 0
+    },
+    "Health Potion": {
+      "animation": "res://Items/Animations/HealthPotionAnimation.tscn",
+      "scene": "res://Items/HealthPotion.tscn",
+      "sockets": 0
+    },
+    "Heart Container": {
+      "animation": "",
+      "scene": "res://Items/HeartContainer.tscn",
+      "sockets": 1
+    },
+    "Heart Shield": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HeartShield.tscn",
+      "sockets": 2
+    },
+    "Heart of Darkness": {
+      "animation": "",
+      "scene": "res://Items/HeartofDarkness.tscn",
+      "sockets": 1
+    },
+    "Heart of the Cards": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HeartoftheCards.tscn",
+      "sockets": 0
+    },
+    "Heavy Drinking": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HeavyDrinking.tscn",
+      "sockets": 0
+    },
+    "Hedgehog": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Hedgehog.tscn",
+      "sockets": 0
+    },
+    "Hero Longsword": {
+      "animation": "res://Items/Animations/HeroLongswordAnimation.tscn",
+      "scene": "res://Items/HeroLongsword.tscn",
+      "sockets": 2
+    },
+    "Hero Shield": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HeroShield.tscn",
+      "sockets": 1
+    },
+    "Hero Sword": {
+      "animation": "res://Items/Animations/HeroSwordAnimation.tscn",
+      "scene": "res://Items/HeroSword.tscn",
+      "sockets": 1
+    },
+    "Heroic Potion": {
+      "animation": "res://Items/Animations/HeroicPotionAnimation.tscn",
+      "scene": "res://Items/HeroicPotion.tscn",
+      "sockets": 0
+    },
+    "Hogus Bogus": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HogusBogus.tscn",
+      "sockets": 0
+    },
+    "Holdall": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Holdall.tscn",
+      "sockets": 0
+    },
+    "Holo Fire Lizard": {
+      "animation": "",
+      "scene": "res://Items/HoloFireLizard.tscn",
+      "sockets": 0
+    },
+    "Holy Armor": {
+      "animation": "",
+      "scene": "res://Items/HolyArmor.tscn",
+      "sockets": 3
+    },
+    "Holy Collar": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HolyCollar.tscn",
+      "sockets": 0
+    },
+    "Holy Spear": {
+      "animation": "res://Items/Animations/HolySpearAnimation.tscn",
+      "scene": "res://Items/HolySpear.tscn",
+      "sockets": 2
+    },
+    "Hungry Blade": {
+      "animation": "res://Items/Animations/HungryBladeAnimation.tscn",
+      "scene": "res://Items/HungryBlade.tscn",
+      "sockets": 1
+    },
+    "Hyper Hedgehog": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/HyperHedgehog.tscn",
+      "sockets": 0
+    },
+    "Hypercube": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Hypercube.tscn",
+      "sockets": 0
+    },
+    "Ice Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/IceArmor.tscn",
+      "sockets": 2
+    },
+    "Ice Dragon": {
+      "animation": "res://Items/Exclusive/Animations/IceDragonAnimation.tscn",
+      "scene": "res://Items/Exclusive/IceDragon.tscn",
+      "sockets": 2
+    },
+    "Ice Flower": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/IceFlower.tscn",
+      "sockets": 0
+    },
+    "Inner Power": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/InnerPower.tscn",
+      "sockets": 0
+    },
+    "Investment Opportunity": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/InvestmentOpportunity.tscn",
+      "sockets": 0
+    },
+    "Joker": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Joker.tscn",
+      "sockets": 0
+    },
+    "Just Stats": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/JustStats.tscn",
+      "sockets": 0
+    },
+    "Jynx Staff": {
+      "animation": "res://Items/Exclusive/Animations/JynxStaffAnimation.tscn",
+      "scene": "res://Items/Exclusive/JynxStaff.tscn",
+      "sockets": 1
+    },
+    "Jynx torquilla": {
+      "animation": "",
+      "scene": "res://Items/Jynxtorquilla.tscn",
+      "sockets": 0
+    },
+    "Katana": {
+      "animation": "res://Items/Exclusive/Animations/KatanaAnimation.tscn",
+      "scene": "res://Items/Exclusive/Katana.tscn",
+      "sockets": 3
+    },
+    "King Crown": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/KingCrown.tscn",
+      "sockets": 2
+    },
+    "King Goobert": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/KingGoobert.tscn",
+      "sockets": 2
+    },
+    "King of the Bling": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/KingoftheBling.tscn",
+      "sockets": 0
+    },
+    "Knife to Meet You": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/KnifetoMeetYou.tscn",
+      "sockets": 0
+    },
+    "Laboratory": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Laboratory.tscn",
+      "sockets": 0
+    },
+    "Leaf Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/LeafBadge.tscn",
+      "sockets": 0
+    },
+    "Leather Armor": {
+      "animation": "",
+      "scene": "res://Items/LeatherArmor.tscn",
+      "sockets": 2
+    },
+    "Leather Bag": {
+      "animation": "",
+      "scene": "res://Items/LeatherBag.tscn",
+      "sockets": 0
+    },
+    "Leather Boots": {
+      "animation": "",
+      "scene": "res://Items/LeatherBoots.tscn",
+      "sockets": 1
+    },
+    "Leather Helm": {
+      "animation": "",
+      "scene": "res://Items/LeatherHelm.tscn",
+      "sockets": 1
+    },
+    "Level Up": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/LevelUp.tscn",
+      "sockets": 0
+    },
+    "Light Flower": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/LightFlower.tscn",
+      "sockets": 0
+    },
+    "Light Goobert": {
+      "animation": "",
+      "scene": "res://Items/LightGoobert.tscn",
+      "sockets": 0
+    },
+    "Lightning Potion": {
+      "animation": "res://Items/Exclusive/Animations/LightningPotionAnimation.tscn",
+      "scene": "res://Items/Exclusive/LightningPotion.tscn",
+      "sockets": 0
+    },
+    "Lightning Staff": {
+      "animation": "res://Items/Exclusive/Animations/LightningStaffAnimation.tscn",
+      "scene": "res://Items/Exclusive/LightningStaff.tscn",
+      "sockets": 1
+    },
+    "Lightsaber": {
+      "animation": "res://Items/Animations/LightsaberAnimation.tscn",
+      "scene": "res://Items/Lightsaber.tscn",
+      "sockets": 2
+    },
+    "Little Mimic": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/LittleMimic.tscn",
+      "sockets": 0
+    },
+    "Long Spear": {
+      "animation": "res://Items/Exclusive/Animations/LongSpearAnimation.tscn",
+      "scene": "res://Items/Exclusive/LongSpear.tscn",
+      "sockets": 4
+    },
+    "Lootbox": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Lootbox.tscn",
+      "sockets": 0
+    },
+    "Lucky Bow": {
+      "animation": "res://Items/Animations/LuckyBowAnimation.tscn",
+      "scene": "res://Items/LuckyBow.tscn",
+      "sockets": 1
+    },
+    "Lucky Cat": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/LuckyCat.tscn",
+      "sockets": 0
+    },
+    "Lucky Clover": {
+      "animation": "",
+      "scene": "res://Items/LuckyClover.tscn",
+      "sockets": 0
+    },
+    "Lucky Piggy": {
+      "animation": "",
+      "scene": "res://Items/LuckyPiggy.tscn",
+      "sockets": 0
+    },
+    "Lucky Shortbow": {
+      "animation": "res://Items/Exclusive/Animations/LuckyShortbowAnimation.tscn",
+      "scene": "res://Items/Exclusive/LuckyShortbow.tscn",
+      "sockets": 1
+    },
+    "Lump of Coal": {
+      "animation": "",
+      "scene": "res://Items/Gems/LumpofCoal.tscn",
+      "sockets": 0
+    },
+    "Mage Hat": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MageHat.tscn",
+      "sockets": 2
+    },
+    "Magic Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MagicBadge.tscn",
+      "sockets": 0
+    },
+    "Magic Collar": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MagicCollar.tscn",
+      "sockets": 0
+    },
+    "Magic Mirror": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MagicMirror.tscn",
+      "sockets": 0
+    },
+    "Magic Ring": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MagicRing.tscn",
+      "sockets": 0
+    },
+    "Magic Staff": {
+      "animation": "res://Items/Animations/MagicStaffAnimation.tscn",
+      "scene": "res://Items/MagicStaff.tscn",
+      "sockets": 1
+    },
+    "Magic Torch": {
+      "animation": "res://Items/Animations/MagicTorchAnimation.tscn",
+      "scene": "res://Items/MagicTorch.tscn",
+      "sockets": 1
+    },
+    "Magitecc Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MagiteccArmor.tscn",
+      "sockets": 3
+    },
+    "Mana Crystal": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ManaCrystal.tscn",
+      "sockets": 0
+    },
+    "Mana Mastery": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ManaMastery.tscn",
+      "sockets": 0
+    },
+    "Mana Orb": {
+      "animation": "",
+      "scene": "res://Items/ManaOrb.tscn",
+      "sockets": 0
+    },
+    "Mana Potion": {
+      "animation": "res://Items/Animations/ManaPotionAnimation.tscn",
+      "scene": "res://Items/ManaPotion.tscn",
+      "sockets": 0
+    },
+    "Mananana": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Mananana.tscn",
+      "sockets": 0
+    },
+    "Manathirst": {
+      "animation": "res://Items/Animations/ManathirstAnimation.tscn",
+      "scene": "res://Items/Manathirst.tscn",
+      "sockets": 1
+    },
+    "Markswoman": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Markswoman.tscn",
+      "sockets": 0
+    },
+    "Mecha Bat": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MechaBat.tscn",
+      "sockets": 0
+    },
+    "Mega Clover": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MegaClover.tscn",
+      "sockets": 0
+    },
+    "Mercury Elemental": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MercuryElemental.tscn",
+      "sockets": 1
+    },
+    "Miss Fortune": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MissFortune.tscn",
+      "sockets": 0
+    },
+    "Molten Dagger": {
+      "animation": "res://Items/Exclusive/Animations/MoltenDaggerAnimation.tscn",
+      "scene": "res://Items/Exclusive/MoltenDagger.tscn",
+      "sockets": 1
+    },
+    "Molten Greatsword": {
+      "animation": "res://Items/Exclusive/Animations/MoltenGreatswordAnimation.tscn",
+      "scene": "res://Items/Exclusive/MoltenGreatsword.tscn",
+      "sockets": 4
+    },
+    "Molten Spear": {
+      "animation": "res://Items/Exclusive/Animations/MoltenSpearAnimation.tscn",
+      "scene": "res://Items/Exclusive/MoltenSpear.tscn",
+      "sockets": 1
+    },
+    "Molten Spear2": {
+      "animation": "res://Items/Exclusive/Animations/MoltenSpear2Animation.tscn",
+      "scene": "res://Items/Exclusive/MoltenSpear2.tscn",
+      "sockets": 2
+    },
+    "Moon Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MoonArmor.tscn",
+      "sockets": 3
+    },
+    "Moon Shield": {
+      "animation": "",
+      "scene": "res://Items/MoonShield.tscn",
+      "sockets": 2
+    },
+    "More Stats": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MoreStats.tscn",
+      "sockets": 0
+    },
+    "Mr Struggles": {
+      "animation": "",
+      "scene": "res://Items/MrStruggles.tscn",
+      "sockets": 0
+    },
+    "Mrs Struggles": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MrsStruggles.tscn",
+      "sockets": 0
+    },
+    "Mushroom Farm": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/MushroomFarm.tscn",
+      "sockets": 0
+    },
+    "No Rush Please": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/NoRushPlease.tscn",
+      "sockets": 0
+    },
+    "Null Blade": {
+      "animation": "res://Items/Exclusive/Animations/NullBladeAnimation.tscn",
+      "scene": "res://Items/Exclusive/NullBlade.tscn",
+      "sockets": 2
+    },
+    "Obsidian Dragon": {
+      "animation": "res://Items/Exclusive/Animations/ObsidianDragonAnimation.tscn",
+      "scene": "res://Items/Exclusive/ObsidianDragon.tscn",
+      "sockets": 2
+    },
+    "Oil Lamp": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/OilLamp.tscn",
+      "sockets": 0
+    },
+    "Onion Cutter": {
+      "animation": "res://Items/Exclusive/Animations/OnionCutterAnimation.tscn",
+      "scene": "res://Items/Exclusive/OnionCutter.tscn",
+      "sockets": 1
+    },
+    "Owl Spirit": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/OwlSpirit.tscn",
+      "sockets": 0
+    },
+    "Pan": {
+      "animation": "res://Items/Animations/PanAnimation.tscn",
+      "scene": "res://Items/Pan.tscn",
+      "sockets": 1
+    },
+    "Pandamonium": {
+      "animation": "res://Items/Animations/PandamoniumAnimation.tscn",
+      "scene": "res://Items/Pandamonium.tscn",
+      "sockets": 2
+    },
+    "Paradise Birb": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ParadiseBirb.tscn",
+      "sockets": 0
+    },
+    "Perfect Amethyst": {
+      "animation": "",
+      "scene": "res://Items/Gems/PerfectAmethyst.tscn",
+      "sockets": 0
+    },
+    "Perfect Emerald": {
+      "animation": "",
+      "scene": "res://Items/Gems/PerfectEmerald.tscn",
+      "sockets": 0
+    },
+    "Perfect Ruby": {
+      "animation": "",
+      "scene": "res://Items/Gems/PerfectRuby.tscn",
+      "sockets": 0
+    },
+    "Perfect Sapphire": {
+      "animation": "",
+      "scene": "res://Items/Gems/PerfectSapphire.tscn",
+      "sockets": 0
+    },
+    "Perfect Topaz": {
+      "animation": "",
+      "scene": "res://Items/Gems/PerfectTopaz.tscn",
+      "sockets": 0
+    },
+    "Perpetuum Mobile": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PerpetuumMobile.tscn",
+      "sockets": 0
+    },
+    "Pestilence Flask": {
+      "animation": "res://Items/Animations/PestilenceFlaskAnimation.tscn",
+      "scene": "res://Items/PestilenceFlask.tscn",
+      "sockets": 0
+    },
+    "Phoenix": {
+      "animation": "res://Items/Exclusive/Animations/PhoenixAnimation.tscn",
+      "scene": "res://Items/Exclusive/Phoenix.tscn",
+      "sockets": 1
+    },
+    "Phoenix2": {
+      "animation": "res://Items/Exclusive/Animations/Phoenix2Animation.tscn",
+      "scene": "res://Items/Exclusive/Phoenix2.tscn",
+      "sockets": 2
+    },
+    "Piercing Arrow": {
+      "animation": "",
+      "scene": "res://Items/PiercingArrow.tscn",
+      "sockets": 0
+    },
+    "Piggy Pinata": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PiggyPinata.tscn",
+      "sockets": 0
+    },
+    "Piggy of Riches": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PiggyofRiches.tscn",
+      "sockets": 0
+    },
+    "Piggybank": {
+      "animation": "",
+      "scene": "res://Items/Piggybank.tscn",
+      "sockets": 0
+    },
+    "Pine Protector": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PineProtector.tscn",
+      "sockets": 1
+    },
+    "Pineapple": {
+      "animation": "",
+      "scene": "res://Items/Pineapple.tscn",
+      "sockets": 0
+    },
+    "Plastic Cube": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PlasticCube.tscn",
+      "sockets": 0
+    },
+    "Platin Customer Card": {
+      "animation": "",
+      "scene": "res://Items/PlatinCustomerCard.tscn",
+      "sockets": 0
+    },
+    "Pocket Sand": {
+      "animation": "",
+      "scene": "res://Items/PocketSand.tscn",
+      "sockets": 0
+    },
+    "Poison Bow": {
+      "animation": "res://Items/Animations/PoisonBowAnimation.tscn",
+      "scene": "res://Items/PoisonBow.tscn",
+      "sockets": 1
+    },
+    "Poison Dagger": {
+      "animation": "res://Items/Animations/PoisonDaggerAnimation.tscn",
+      "scene": "res://Items/PoisonDagger.tscn",
+      "sockets": 1
+    },
+    "Poison Frog": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PoisonFrog.tscn",
+      "sockets": 0
+    },
+    "Poison Goobert": {
+      "animation": "",
+      "scene": "res://Items/PoisonGoobert.tscn",
+      "sockets": 0
+    },
+    "Poison Grenade": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PoisonGrenade.tscn",
+      "sockets": 0
+    },
+    "Poison Ivy": {
+      "animation": "",
+      "scene": "res://Items/PoisonIvy.tscn",
+      "sockets": 0
+    },
+    "Poison Shortbow": {
+      "animation": "res://Items/Exclusive/Animations/PoisonShortbowAnimation.tscn",
+      "scene": "res://Items/Exclusive/PoisonShortbow.tscn",
+      "sockets": 1
+    },
+    "Poison Spear": {
+      "animation": "res://Items/Exclusive/Animations/PoisonSpearAnimation.tscn",
+      "scene": "res://Items/Exclusive/PoisonSpear.tscn",
+      "sockets": 1
+    },
+    "Pop": {
+      "animation": "res://Items/Exclusive/Animations/PopAnimation.tscn",
+      "scene": "res://Items/Exclusive/Pop.tscn",
+      "sockets": 4
+    },
+    "Portable Altar": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PortableAltar.tscn",
+      "sockets": 0
+    },
+    "Pot": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Pot.tscn",
+      "sockets": 1
+    },
+    "Potion Belt": {
+      "animation": "",
+      "scene": "res://Items/PotionBelt.tscn",
+      "sockets": 0
+    },
+    "Power Puppy": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PowerPuppy.tscn",
+      "sockets": 0
+    },
+    "Power of the Moon": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PoweroftheMoon.tscn",
+      "sockets": 0
+    },
+    "Present": {
+      "animation": "",
+      "scene": "res://Items/Present.tscn",
+      "sockets": 0
+    },
+    "Prismatic Sword": {
+      "animation": "res://Items/Exclusive/Animations/PrismaticSwordAnimation.tscn",
+      "scene": "res://Items/Exclusive/PrismaticSword.tscn",
+      "sockets": 2
+    },
+    "Prismatic Wand": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PrismaticWand.tscn",
+      "sockets": 0
+    },
+    "Protective Purse": {
+      "animation": "",
+      "scene": "res://Items/ProtectivePurse.tscn",
+      "sockets": 0
+    },
+    "Pumpkin": {
+      "animation": "res://Items/Animations/PumpkinAnimation.tscn",
+      "scene": "res://Items/Pumpkin.tscn",
+      "sockets": 2
+    },
+    "Puzzle Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PuzzleBadge.tscn",
+      "sockets": 0
+    },
+    "Puzzlebag J": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PuzzlebagJ.tscn",
+      "sockets": 0
+    },
+    "Puzzlebag L": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PuzzlebagL.tscn",
+      "sockets": 0
+    },
+    "Puzzlebag S": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PuzzlebagS.tscn",
+      "sockets": 0
+    },
+    "Puzzlebag T": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PuzzlebagT.tscn",
+      "sockets": 0
+    },
+    "Puzzlebag Z": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/PuzzlebagZ.tscn",
+      "sockets": 0
+    },
+    "Puzzlebox": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Puzzlebox.tscn",
+      "sockets": 0
+    },
+    "Rainbow Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RainbowBadge.tscn",
+      "sockets": 0
+    },
+    "Rainbow Goobert": {
+      "animation": "",
+      "scene": "res://Items/RainbowGoobert.tscn",
+      "sockets": 0
+    },
+    "Rainbow Goobert Adventurer": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RainbowGoobertAdventurer.tscn",
+      "sockets": 0
+    },
+    "Rainbow Goobert Berserker": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RainbowGoobertBerserker.tscn",
+      "sockets": 0
+    },
+    "Rainbow Goobert Engineer": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RainbowGoobertEngineer.tscn",
+      "sockets": 0
+    },
+    "Rainbow Goobert Mage": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RainbowGoobertMage.tscn",
+      "sockets": 0
+    },
+    "Rainbow Goobert Pyromancer": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RainbowGoobertPyromancer.tscn",
+      "sockets": 0
+    },
+    "Rainbow Goobert Ranger": {
+      "animation": "",
+      "scene": "res://Items/RainbowGoobertRanger.tscn",
+      "sockets": 0
+    },
+    "Rainbow Orb": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RainbowOrb.tscn",
+      "sockets": 0
+    },
+    "Rainbow Potion": {
+      "animation": "res://Items/Exclusive/Animations/RainbowPotionAnimation.tscn",
+      "scene": "res://Items/Exclusive/RainbowPotion.tscn",
+      "sockets": 0
+    },
+    "Random Loadout Bag": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RandomLoadoutBag.tscn",
+      "sockets": 0
+    },
+    "Ranger Bag": {
+      "animation": "",
+      "scene": "res://Items/RangerBag.tscn",
+      "sockets": 0
+    },
+    "Rat": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Rat.tscn",
+      "sockets": 0
+    },
+    "Rat Chef": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RatChef.tscn",
+      "sockets": 0
+    },
+    "Regular Amethyst": {
+      "animation": "",
+      "scene": "res://Items/Gems/RegularAmethyst.tscn",
+      "sockets": 0
+    },
+    "Regular Emerald": {
+      "animation": "",
+      "scene": "res://Items/Gems/RegularEmerald.tscn",
+      "sockets": 0
+    },
+    "Regular Ruby": {
+      "animation": "",
+      "scene": "res://Items/Gems/RegularRuby.tscn",
+      "sockets": 0
+    },
+    "Regular Sapphire": {
+      "animation": "",
+      "scene": "res://Items/Gems/RegularSapphire.tscn",
+      "sockets": 0
+    },
+    "Regular Topaz": {
+      "animation": "",
+      "scene": "res://Items/Gems/RegularTopaz.tscn",
+      "sockets": 0
+    },
+    "Relic Case": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/RelicCase.tscn",
+      "sockets": 0
+    },
+    "Repeater": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Repeater.tscn",
+      "sockets": 0
+    },
+    "Resistor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Resistor.tscn",
+      "sockets": 0
+    },
+    "Reverse": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Reverse.tscn",
+      "sockets": 0
+    },
+    "Rib Saw Blade": {
+      "animation": "res://Items/Animations/RibSawBladeAnimation.tscn",
+      "scene": "res://Items/RibSawBlade.tscn",
+      "sockets": 3
+    },
+    "Robodog": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Robodog.tscn",
+      "sockets": 0
+    },
+    "Rope": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Rope.tscn",
+      "sockets": 0
+    },
+    "Ruby Chonk": {
+      "animation": "res://Items/Animations/RubyChonkAnimation.tscn",
+      "scene": "res://Items/RubyChonk.tscn",
+      "sockets": 2
+    },
+    "Ruby Egg": {
+      "animation": "",
+      "scene": "res://Items/RubyEgg.tscn",
+      "sockets": 0
+    },
+    "Ruby Whelp": {
+      "animation": "res://Items/Animations/RubyWhelpAnimation.tscn",
+      "scene": "res://Items/RubyWhelp.tscn",
+      "sockets": 1
+    },
+    "Sandbag": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Sandbag.tscn",
+      "sockets": 0
+    },
+    "Sapphire Egg": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SapphireEgg.tscn",
+      "sockets": 0
+    },
+    "Sapphire Whelp": {
+      "animation": "res://Items/Exclusive/Animations/SapphireWhelpAnimation.tscn",
+      "scene": "res://Items/Exclusive/SapphireWhelp.tscn",
+      "sockets": 1
+    },
+    "Scale": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Scale.tscn",
+      "sockets": 0
+    },
+    "Scholar Bag": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ScholarBag.tscn",
+      "sockets": 0
+    },
+    "Scissorswords": {
+      "animation": "res://Items/Exclusive/Animations/ScissorswordsAnimation.tscn",
+      "scene": "res://Items/Exclusive/Scissorswords.tscn",
+      "sockets": 3
+    },
+    "Seal the Deal": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SealtheDeal.tscn",
+      "sockets": 0
+    },
+    "Serpent Staff": {
+      "animation": "res://Items/Exclusive/Animations/SerpentStaffAnimation.tscn",
+      "scene": "res://Items/Exclusive/SerpentStaff.tscn",
+      "sockets": 1
+    },
+    "Sewing Case": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SewingCase.tscn",
+      "sockets": 0
+    },
+    "Shaman Mask": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ShamanMask.tscn",
+      "sockets": 0
+    },
+    "Shell Totem": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ShellTotem.tscn",
+      "sockets": 0
+    },
+    "Shelly": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Shelly.tscn",
+      "sockets": 0
+    },
+    "Shepherds Crook": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ShepherdsCrook.tscn",
+      "sockets": 0
+    },
+    "Shield of Valor": {
+      "animation": "",
+      "scene": "res://Items/ShieldofValor.tscn",
+      "sockets": 2
+    },
+    "Shielded": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Shielded.tscn",
+      "sockets": 0
+    },
+    "Shiny Mantle": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ShinyMantle.tscn",
+      "sockets": 6
+    },
+    "Shiny Shell": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ShinyShell.tscn",
+      "sockets": 0
+    },
+    "Shortbow": {
+      "animation": "res://Items/Exclusive/Animations/ShortbowAnimation.tscn",
+      "scene": "res://Items/Exclusive/Shortbow.tscn",
+      "sockets": 1
+    },
+    "Shovel": {
+      "animation": "res://Items/Animations/ShovelAnimation.tscn",
+      "scene": "res://Items/Shovel.tscn",
+      "sockets": 1
+    },
+    "Skull": {
+      "animation": "",
+      "scene": "res://Items/Gems/Skull.tscn",
+      "sockets": 0
+    },
+    "Skull Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SkullBadge.tscn",
+      "sockets": 0
+    },
+    "Slice of Bread": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SliceofBread.tscn",
+      "sockets": 0
+    },
+    "Slice of Toast": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SliceofToast.tscn",
+      "sockets": 0
+    },
+    "Slime Time": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SlimeTime.tscn",
+      "sockets": 0
+    },
+    "Sloth": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Sloth.tscn",
+      "sockets": 0
+    },
+    "Smelly Barrier": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SmellyBarrier.tscn",
+      "sockets": 0
+    },
+    "Smithing For Dummies": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SmithingForDummies.tscn",
+      "sockets": 0
+    },
+    "Snake": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Snake.tscn",
+      "sockets": 0
+    },
+    "Snow Stick": {
+      "animation": "res://Items/Exclusive/Animations/SnowStickAnimation.tscn",
+      "scene": "res://Items/Exclusive/SnowStick.tscn",
+      "sockets": 1
+    },
+    "Snowball": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Snowball.tscn",
+      "sockets": 0
+    },
+    "Snowcake": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Snowcake.tscn",
+      "sockets": 0
+    },
+    "Snowman": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Snowman.tscn",
+      "sockets": 0
+    },
+    "Snowmaster": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Snowmaster.tscn",
+      "sockets": 0
+    },
+    "Solaris": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Solaris.tscn",
+      "sockets": 0
+    },
+    "Speak with Animals": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpeakwithAnimals.tscn",
+      "sockets": 0
+    },
+    "Spear": {
+      "animation": "res://Items/Animations/SpearAnimation.tscn",
+      "scene": "res://Items/Spear.tscn",
+      "sockets": 1
+    },
+    "Spectral Dagger": {
+      "animation": "res://Items/Animations/SpectralDaggerAnimation.tscn",
+      "scene": "res://Items/SpectralDagger.tscn",
+      "sockets": 1
+    },
+    "Spell Scroll Dark": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpellScrollDark.tscn",
+      "sockets": 0
+    },
+    "Spell Scroll Frostbolt": {
+      "animation": "res://Items/Exclusive/Animations/SpellScrollFrostboltAnimation.tscn",
+      "scene": "res://Items/Exclusive/SpellScrollFrostbolt.tscn",
+      "sockets": 0
+    },
+    "Spell Scroll Ice": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpellScrollIce.tscn",
+      "sockets": 0
+    },
+    "Spell Scroll Light": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpellScrollLight.tscn",
+      "sockets": 0
+    },
+    "Spell Scroll Nature": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpellScrollNature.tscn",
+      "sockets": 0
+    },
+    "Spicy Banana": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpicyBanana.tscn",
+      "sockets": 0
+    },
+    "Spiked Collar": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpikedCollar.tscn",
+      "sockets": 0
+    },
+    "Spiked Shield": {
+      "animation": "",
+      "scene": "res://Items/SpikedShield.tscn",
+      "sockets": 1
+    },
+    "Spiked Staff": {
+      "animation": "res://Items/Exclusive/Animations/SpikedStaffAnimation.tscn",
+      "scene": "res://Items/Exclusive/SpikedStaff.tscn",
+      "sockets": 1
+    },
+    "Spiked Wall": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpikedWall.tscn",
+      "sockets": 4
+    },
+    "Spin to Win": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpintoWin.tscn",
+      "sockets": 0
+    },
+    "Spirit Bells": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpiritBells.tscn",
+      "sockets": 0
+    },
+    "Spring Loader": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SpringLoader.tscn",
+      "sockets": 1
+    },
+    "Squirrel": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Squirrel.tscn",
+      "sockets": 0
+    },
+    "Squirrel Archer": {
+      "animation": "res://Items/Exclusive/Animations/SquirrelArcherAnimation.tscn",
+      "scene": "res://Items/Exclusive/SquirrelArcher.tscn",
+      "sockets": 0
+    },
+    "Stable Recombobulator": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/StableRecombobulator.tscn",
+      "sockets": 0
+    },
+    "Staff of Fire": {
+      "animation": "res://Items/Exclusive/Animations/StaffofFireAnimation.tscn",
+      "scene": "res://Items/Exclusive/StaffofFire.tscn",
+      "sockets": 1
+    },
+    "Staff of Unhealing": {
+      "animation": "",
+      "scene": "res://Items/StaffofUnhealing.tscn",
+      "sockets": 0
+    },
+    "Stamina Sack": {
+      "animation": "",
+      "scene": "res://Items/StaminaSack.tscn",
+      "sockets": 0
+    },
+    "Star of Courage": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/StarofCourage.tscn",
+      "sockets": 0
+    },
+    "Steel Dragon": {
+      "animation": "res://Items/Exclusive/Animations/SteelDragonAnimation.tscn",
+      "scene": "res://Items/Exclusive/SteelDragon.tscn",
+      "sockets": 2
+    },
+    "Steel Goobert": {
+      "animation": "",
+      "scene": "res://Items/SteelGoobert.tscn",
+      "sockets": 0
+    },
+    "Stone": {
+      "animation": "res://Items/Animations/StoneAnimation.tscn",
+      "scene": "res://Items/Stone.tscn",
+      "sockets": 0
+    },
+    "Stone Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/StoneArmor.tscn",
+      "sockets": 2
+    },
+    "Stone Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/StoneBadge.tscn",
+      "sockets": 0
+    },
+    "Stone Gloves": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/StoneGloves.tscn",
+      "sockets": 0
+    },
+    "Stone Golem": {
+      "animation": "res://Items/Exclusive/Animations/StoneGolemAnimation.tscn",
+      "scene": "res://Items/Exclusive/StoneGolem.tscn",
+      "sockets": 1
+    },
+    "Stone Helm": {
+      "animation": "",
+      "scene": "res://Items/StoneHelm.tscn",
+      "sockets": 1
+    },
+    "Stone Shoes": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/StoneShoes.tscn",
+      "sockets": 1
+    },
+    "Stone Skin Potion": {
+      "animation": "res://Items/Animations/StoneSkinPotionAnimation.tscn",
+      "scene": "res://Items/StoneSkinPotion.tscn",
+      "sockets": 0
+    },
+    "Stoned": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Stoned.tscn",
+      "sockets": 0
+    },
+    "Storage Coffin": {
+      "animation": "",
+      "scene": "res://Items/StorageCoffin.tscn",
+      "sockets": 0
+    },
+    "Strong Demonic Flask": {
+      "animation": "res://Items/Animations/StrongDemonicFlaskAnimation.tscn",
+      "scene": "res://Items/StrongDemonicFlask.tscn",
+      "sockets": 0
+    },
+    "Strong Divine Potion": {
+      "animation": "res://Items/Exclusive/Animations/StrongDivinePotionAnimation.tscn",
+      "scene": "res://Items/Exclusive/StrongDivinePotion.tscn",
+      "sockets": 0
+    },
+    "Strong Health Potion": {
+      "animation": "res://Items/Animations/StrongHealthPotionAnimation.tscn",
+      "scene": "res://Items/StrongHealthPotion.tscn",
+      "sockets": 0
+    },
+    "Strong Heroic Potion": {
+      "animation": "res://Items/Animations/StrongHeroicPotionAnimation.tscn",
+      "scene": "res://Items/StrongHeroicPotion.tscn",
+      "sockets": 0
+    },
+    "Strong Mana Potion": {
+      "animation": "res://Items/Exclusive/Animations/StrongManaPotionAnimation.tscn",
+      "scene": "res://Items/Exclusive/StrongManaPotion.tscn",
+      "sockets": 0
+    },
+    "Strong Pestilence Flask": {
+      "animation": "res://Items/Animations/StrongPestilenceFlaskAnimation.tscn",
+      "scene": "res://Items/StrongPestilenceFlask.tscn",
+      "sockets": 0
+    },
+    "Strong Stone Skin Potion": {
+      "animation": "res://Items/Animations/StrongStoneSkinPotionAnimation.tscn",
+      "scene": "res://Items/StrongStoneSkinPotion.tscn",
+      "sockets": 0
+    },
+    "Strong Vampiric Potion": {
+      "animation": "res://Items/Exclusive/Animations/StrongVampiricPotionAnimation.tscn",
+      "scene": "res://Items/Exclusive/StrongVampiricPotion.tscn",
+      "sockets": 0
+    },
+    "Sun Armor": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SunArmor.tscn",
+      "sockets": 3
+    },
+    "Sun Shield": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SunShield.tscn",
+      "sockets": 2
+    },
+    "Superior Ring": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/SuperiorRing.tscn",
+      "sockets": 0
+    },
+    "Tesla Coil": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/TeslaCoil.tscn",
+      "sockets": 0
+    },
+    "The Fool": {
+      "animation": "",
+      "scene": "res://Items/TheFool.tscn",
+      "sockets": 0
+    },
+    "The Lovers": {
+      "animation": "",
+      "scene": "res://Items/TheLovers.tscn",
+      "sockets": 0
+    },
+    "Thorn Bow": {
+      "animation": "res://Items/Animations/ThornBowAnimation.tscn",
+      "scene": "res://Items/ThornBow.tscn",
+      "sockets": 1
+    },
+    "Thorn Elemental": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ThornElemental.tscn",
+      "sockets": 2
+    },
+    "Thorn Shortbow": {
+      "animation": "res://Items/Exclusive/Animations/ThornShortbowAnimation.tscn",
+      "scene": "res://Items/Exclusive/ThornShortbow.tscn",
+      "sockets": 1
+    },
+    "Thorn Whip": {
+      "animation": "res://Items/Animations/ThornWhipAnimation.tscn",
+      "scene": "res://Items/ThornWhip.tscn",
+      "sockets": 2
+    },
+    "Thornbloom": {
+      "animation": "res://Items/Exclusive/Animations/ThornbloomAnimation.tscn",
+      "scene": "res://Items/Exclusive/Thornbloom.tscn",
+      "sockets": 2
+    },
+    "Thornburst": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Thornburst.tscn",
+      "sockets": 0
+    },
+    "Thors Hammer": {
+      "animation": "res://Items/Exclusive/Animations/ThorsHammerAnimation.tscn",
+      "scene": "res://Items/Exclusive/ThorsHammer.tscn",
+      "sockets": 3
+    },
+    "Thunder Drake": {
+      "animation": "res://Items/Exclusive/Animations/ThunderDrakeAnimation.tscn",
+      "scene": "res://Items/Exclusive/ThunderDrake.tscn",
+      "sockets": 1
+    },
+    "Tiger Rune": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/TigerRune.tscn",
+      "sockets": 0
+    },
+    "Time Dilator": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/TimeDilator.tscn",
+      "sockets": 0
+    },
+    "Time Melting": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/TimeMelting.tscn",
+      "sockets": 0
+    },
+    "Time Pendant": {
+      "animation": "",
+      "scene": "",
+      "sockets": 0
+    },
+    "Toad": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Toad.tscn",
+      "sockets": 0
+    },
+    "Toast Goobert": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/ToastGoobert.tscn",
+      "sockets": 0
+    },
+    "Toolbox": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Toolbox.tscn",
+      "sockets": 0
+    },
+    "Torch": {
+      "animation": "res://Items/Animations/TorchAnimation.tscn",
+      "scene": "res://Items/Torch.tscn",
+      "sockets": 1
+    },
+    "Turtle": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Turtle.tscn",
+      "sockets": 0
+    },
+    "Twine": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Twine.tscn",
+      "sockets": 0
+    },
+    "Twine Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/TwineBadge.tscn",
+      "sockets": 0
+    },
+    "Ukulele": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Ukulele.tscn",
+      "sockets": 0
+    },
+    "Ultima": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Ultima.tscn",
+      "sockets": 0
+    },
+    "Unidentified Skill": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/UnidentifiedSkill.tscn",
+      "sockets": 0
+    },
+    "Uniquely Unique": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/UniquelyUnique.tscn",
+      "sockets": 0
+    },
+    "Unstable Recombobulator": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/UnstableRecombobulator.tscn",
+      "sockets": 0
+    },
+    "Vampiric Armor": {
+      "animation": "",
+      "scene": "res://Items/VampiricArmor.tscn",
+      "sockets": 2
+    },
+    "Vampiric Collar": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/VampiricCollar.tscn",
+      "sockets": 0
+    },
+    "Vampiric Gloves": {
+      "animation": "",
+      "scene": "res://Items/VampiricGloves.tscn",
+      "sockets": 0
+    },
+    "Vampiric Potion": {
+      "animation": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
+      "scene": "res://Items/Exclusive/VampiricPotion.tscn",
+      "sockets": 0
+    },
+    "Vampiric Scythe": {
+      "animation": "res://Items/Animations/VampiricScytheAnimation.tscn",
+      "scene": "res://Items/VampiricScythe.tscn",
+      "sockets": 3
+    },
+    "Villain Sword": {
+      "animation": "res://Items/Animations/VillainSwordAnimation.tscn",
+      "scene": "res://Items/VillainSword.tscn",
+      "sockets": 1
+    },
+    "Vineweave Basket": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/VineweaveBasket.tscn",
+      "sockets": 0
+    },
+    "Walrus Tusk": {
+      "animation": "",
+      "scene": "res://Items/WalrusTusk.tscn",
+      "sockets": 0
+    },
+    "Wand": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Wand.tscn",
+      "sockets": 0
+    },
+    "Wand of Dissonance": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/WandofDissonance.tscn",
+      "sockets": 0
+    },
+    "War Scythe": {
+      "animation": "res://Items/Exclusive/Animations/WarScytheAnimation.tscn",
+      "scene": "res://Items/Exclusive/WarScythe.tscn",
+      "sockets": 4
+    },
+    "Water Elemental": {
+      "animation": "res://Items/Exclusive/Animations/WaterElementalAnimation.tscn",
+      "scene": "res://Items/Exclusive/WaterElemental.tscn",
+      "sockets": 1
+    },
+    "Whetstone": {
+      "animation": "",
+      "scene": "res://Items/Whetstone.tscn",
+      "sockets": 0
+    },
+    "Whetstone2": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Whetstone2.tscn",
+      "sockets": 0
+    },
+    "Whetstone3": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Whetstone3.tscn",
+      "sockets": 0
+    },
+    "White Bishop": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/WhiteBishop.tscn",
+      "sockets": 0
+    },
+    "White King": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/WhiteKing.tscn",
+      "sockets": 0
+    },
+    "White Knight": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/WhiteKnight.tscn",
+      "sockets": 0
+    },
+    "White Pawn": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/WhitePawn.tscn",
+      "sockets": 0
+    },
+    "White Queen": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/WhiteQueen.tscn",
+      "sockets": 0
+    },
+    "White Rook": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Chess/WhiteRook.tscn",
+      "sockets": 0
+    },
+    "White-Eyes Blue Dragon": {
+      "animation": "",
+      "scene": "res://Items/White-EyesBlueDragon.tscn",
+      "sockets": 0
+    },
+    "Winged Boots": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/WingedBoots.tscn",
+      "sockets": 1
+    },
+    "Wisdom Puppy": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/WisdomPuppy.tscn",
+      "sockets": 0
+    },
+    "Wisp": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/Wisp.tscn",
+      "sockets": 0
+    },
+    "Wolf Badge": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/WolfBadge.tscn",
+      "sockets": 0
+    },
+    "Wolf Emblem": {
+      "animation": "",
+      "scene": "res://Items/Exclusive/WolfEmblem.tscn",
+      "sockets": 0
+    },
+    "Wolpertinger": {
+      "animation": "",
+      "scene": "res://Items/Wolpertinger.tscn",
+      "sockets": 0
+    },
+    "Wooden Buckler": {
+      "animation": "",
+      "scene": "res://Items/WoodenBuckler.tscn",
+      "sockets": 1
+    },
+    "Wooden Sword": {
+      "animation": "res://Items/Animations/WoodenSwordAnimation.tscn",
+      "scene": "res://Items/WoodenSword.tscn",
+      "sockets": 1
+    },
+    "Wrench": {
+      "animation": "res://Items/Exclusive/Animations/WrenchAnimation.tscn",
+      "scene": "res://Items/Exclusive/Wrench.tscn",
+      "sockets": 2
+    },
+    "Yggdrasil Leaf": {
+      "animation": "",
+      "scene": "res://Items/YggdrasilLeaf.tscn",
+      "sockets": 0
+    }
+  },
+  "appropriation_pets": [
+    "Rat",
+    "Squirrel",
+    "Rat Chef",
+    "Hedgehog",
+    "Squirrel Archer",
+    "Hyper Hedgehog",
+    "Carrot Goobert",
+    "Snowmaster",
+    "Forest Dragon",
+    "Toad",
+    "Poison Goobert",
+    "Poison Frog",
+    "Ruby Chonk",
+    "Frog Prince",
+    "Crow",
+    "Ice Dragon",
+    "Courage Puppy",
+    "Wisdom Puppy",
+    "Power Puppy",
+    "Armored Courage Puppy",
+    "Armored Wisdom Puppy",
+    "Armored Power Puppy",
+    "Cheese Goobert",
+    "Steel Dragon",
+    "Chili Goobert",
+    "Fire Shelly",
+    "Phoenix",
+    "Phoenix2",
+    "Emerald Whelp",
+    "Sapphire Whelp",
+    "Amethyst Whelp",
+    "Obsidian Dragon",
+    "Cat Spirit",
+    "Owl Spirit",
+    "Badger Spirit",
+    "Cupcake Goobert",
+    "Cupcake Dragon",
+    "Broccoli Goobert",
+    "Dragon Knight",
+    "Jynx Staff",
+    "Robodog",
+    "Toast Goobert",
+    "Mecha Bat",
+    "Thunder Drake",
+    "Goobling",
+    "Shelly",
+    "Steel Goobert",
+    "Blood Goobert",
+    "Ruby Whelp"
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  "longTo2Ints",
+  "twoIntsToLong",
+  "getArrayElement",
+  "nDimArrayGet",
+  "findAll",
+  "filterDuplicates",
+  "hasDuplicates",
+  "countDuplicates",
+  "filterNull",
+  "subtractArr",
+  "subtractDictFromArray",
+  "flatten",
+  "invertDictionary",
+  "dictAdd",
+  "dictSub",
+  "dictAddDict",
+  "dictAppend",
+  "dictErase",
+  "dictPop"
+]

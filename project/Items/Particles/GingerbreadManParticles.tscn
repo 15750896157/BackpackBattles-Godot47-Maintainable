@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Particles/ScrapParticles.png" type="Texture2D" id=1]
+[ext_resource path="res://Shader/SmoothFadeGradient.tres" type="Texture2D" id=2]
+[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=3]
+
+[sub_resource type="CanvasItemMaterial" id=3]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 4
+particles_anim_loop = false
+
+[sub_resource type="Curve" id=4]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.506579, 0.882954 ), -0.436616, -0.436616, 0, 0, Vector2( 1, 0.404545 ), -0.789611, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+width = 100
+curve = SubResource( 4 )
+
+[sub_resource type="ParticleProcessMaterial" id=6]
+lifetime_randomness = 0.1
+emission_shape = 2
+emission_box_extents = Vector3( 10, 30, 1 )
+particle_flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 63.41
+gravity = Vector3( 0, 300, 0 )
+scale_curve = SubResource( 5 )
+color_ramp = ExtResource( 2 )
+initial_velocity_min = 212.7384
+initial_velocity_max = 295.47
+angle_min = 0
+angle_max = 720
+angular_velocity_min = -409.09
+angular_velocity_max = 409.09
+orbit_velocity_min = 0
+orbit_velocity_max = 0
+scale_min = 0.65
+scale_max = 0.72
+anim_offset_min = 0
+anim_offset_max = 1
+
+[node name="ActivationParticles" type="GPUParticles2D"]
+modulate = Color( 1, 0.827451, 0.52549, 1 )
+material = SubResource( 3 )
+z_index = 1
+emitting = false
+amount = 14
+one_shot = true
+explosiveness = 0.72
+process_material = SubResource( 6 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )

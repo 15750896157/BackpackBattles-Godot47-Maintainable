@@ -1,0 +1,13 @@
+id,unlock_type,target_id,requirement_type,requirement_params,visible_before_unlock
+unlock_armorer,character,armorer,default,,true
+unlock_alchemist,character,alchemist,default,,true
+unlock_armorer_blades,loadout,armorer_blades,default,,true
+unlock_alchemist_toxin,loadout,alchemist_toxin,default,,true
+unlock_armorer_guard,loadout,armorer_guard,default,,true
+unlock_alchemist_ember,loadout,alchemist_ember,default,,true
+unlock_advanced,difficulty,advanced,run_clear,difficulty:standard,true
+unlock_challenge_1,difficulty,challenge_1,run_clear,difficulty:advanced,true
+unlock_challenge_2,difficulty,challenge_2,run_clear,difficulty:challenge_1,true
+unlock_challenge_3,difficulty,challenge_3,run_clear,difficulty:challenge_2,true
+unlock_challenge_4,difficulty,challenge_4,run_clear,difficulty:challenge_3,true
+unlock_challenge_5,difficulty,challenge_5,run_clear,difficulty:challenge_4,true

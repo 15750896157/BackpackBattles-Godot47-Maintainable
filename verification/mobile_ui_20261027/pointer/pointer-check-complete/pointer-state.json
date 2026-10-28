@@ -1,0 +1,24 @@
+{
+	"all_passed": true,
+	"changing": false,
+	"checks": {
+		"automatic_result": true,
+		"battle_started": true,
+		"codex_icon": true,
+		"continued_combat": true,
+		"guide_icon": true,
+		"new_game_routes": true,
+		"new_game_setup": true,
+		"next_to_rewards": true,
+		"real_drag_drop": true,
+		"refreshed_visible_items": true,
+		"saved_combat_to_title": true,
+		"settings_icon": true
+	},
+	"input_sources": 1024,
+	"page": "ROUTE_SELECT",
+	"pending": false,
+	"phase": "new_game",
+	"ready": true,
+	"screen": "ROUTE_SELECT"
+}

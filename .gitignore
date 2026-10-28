@@ -1,0 +1,12 @@
+# Generated caches and local metadata
+**/.godot/
+**/.import/
+**/.git/
+**/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+.env
+.env.*

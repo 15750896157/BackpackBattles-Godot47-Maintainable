@@ -1,0 +1,17 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+NATIVE_STEP shop transition; paused=false scale=1.0
+NATIVE_STEP shop timer finished
+NATIVE_PVE_QA {"battle_digest":"9ee7b57b8709deea52b5da75abe2d43f6cfb0414903eaf98e026ab2a1ae35276","checks":123,"content_sha256":"b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1","engine":"4.7-stable (official)","entry":"res://Core/Main.tscn","failures":[],"mode":"actual original root scene with PVE adapter; public UI and rule methods"}

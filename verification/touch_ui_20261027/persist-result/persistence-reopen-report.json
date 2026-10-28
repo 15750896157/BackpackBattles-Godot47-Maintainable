@@ -1,0 +1,18 @@
+{
+	"case": "result",
+	"checks": 12,
+	"details": {
+		"last_error": "",
+		"load_validation": {
+			"error": "",
+			"ok": true
+		},
+		"restored_state": "COMBAT_RESULT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\touch_ui_20261027\\release-checks\\persist-result-saves_164242/",
+		"title_continue_disabled": true,
+		"title_continue_visible": false
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "reopen"
+}

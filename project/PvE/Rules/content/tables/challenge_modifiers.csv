@@ -1,0 +1,6 @@
+id,challenge_level,name_key,description_key,rule_type,params,cumulative
+challenge_rule_1,1,challenge.challenge_rule_1.name,challenge.challenge_rule_1.desc,difficulty_scalars,source:difficulty_levels,true
+challenge_rule_2,2,challenge.challenge_rule_2.name,challenge.challenge_rule_2.desc,refresh_cost_delta,amount:1,true
+challenge_rule_3,3,challenge.challenge_rule_3.name,challenge.challenge_rule_3.desc,gold_reward_scalar,amount:0.95,true
+challenge_rule_4,4,challenge.challenge_rule_4.name,challenge.challenge_rule_4.desc,elite_affix_count,act_min:2|extra:1,true
+challenge_rule_5,5,challenge.challenge_rule_5.name,challenge.challenge_rule_5.desc,boss_and_interest,interest_cap_delta:-1|boss_threshold_offset:0.05,true

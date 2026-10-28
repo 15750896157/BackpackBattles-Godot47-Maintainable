@@ -1,0 +1,635 @@
+[
+  {
+    "path": "Core/Combat.gd",
+    "before_sha256": "f5252c31e3b1489e593a78d460756e02cbd93512f947aa99eadb8e30c073e47e",
+    "after_sha256": "b3ebfab1fe1b40e7de9851d702936c3cb8b3d050ef77cbd83a87066dc44d0d10",
+    "methods": [
+      {
+        "method": "func onSwitchingToCombat():",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func onCombatEnd(roundResult):",
+        "obsolete_tail_lines": 47
+      },
+      {
+        "method": "func reactToRoundResult():",
+        "obsolete_tail_lines": 66
+      },
+      {
+        "method": "func skipRoundResult():",
+        "obsolete_tail_lines": 37
+      },
+      {
+        "method": "func switchBackToShop():",
+        "obsolete_tail_lines": 3
+      },
+      {
+        "method": "func endRun():",
+        "obsolete_tail_lines": 47
+      },
+      {
+        "method": "func skipRunResult():",
+        "obsolete_tail_lines": 22
+      },
+      {
+        "method": "func forceSwitchToShop():",
+        "obsolete_tail_lines": 8
+      },
+      {
+        "method": "func forceReturnToTitle():",
+        "obsolete_tail_lines": 15
+      }
+    ]
+  },
+  {
+    "path": "Core/CombatLog.gd",
+    "before_sha256": "9870ab9b32a6afd53ed14d6b066c075d77f79fbdcd9828d983e39be18af6902a",
+    "after_sha256": "8de4f916c75d0987e1d10ef80b76c1a7a2b9c7b3f5db100e289af00cb70555f9",
+    "methods": [
+      {
+        "method": "func onButtonPressed():",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func open() -> void :",
+        "obsolete_tail_lines": 20
+      }
+    ]
+  },
+  {
+    "path": "Core/CraftingManager.gd",
+    "before_sha256": "5526f4b165789066a44664e6c4c6ad55b7ce87254dbe6355534bd20379467543",
+    "after_sha256": "222922ffad0a5a7696edb2905515b8b93fe4faf6260f8021f1e067f1656b3f52",
+    "methods": [
+      {
+        "method": "func itemAdded(item):",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func itemRemoved(item):",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func updateRecipes():",
+        "obsolete_tail_lines": 149
+      },
+      {
+        "method": "func previewFusionToItem(baseItem):",
+        "obsolete_tail_lines": 4
+      },
+      {
+        "method": "func createFusionPreview(item1, item2, focusItem):",
+        "obsolete_tail_lines": 16
+      }
+    ]
+  },
+  {
+    "path": "Core/Game.gd",
+    "before_sha256": "1e82a199f9a446105e7de47ce6ec09df5d1ae2567f724cc8f0f26a296563d1d4",
+    "after_sha256": "9d05b7025b642cfc7d52a905086cdfe221b5b4bcc824e47d15ca63036c127bad",
+    "methods": [
+      {
+        "method": "func getLastRoundResult():",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func getTries():",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func saveRunState():",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func actuallySaveRunState():",
+        "obsolete_tail_lines": 161
+      },
+      {
+        "method": "func continueLastRun(mode):",
+        "obsolete_tail_lines": 69
+      },
+      {
+        "method": "func getSubclass():",
+        "obsolete_tail_lines": 14
+      },
+      {
+        "method": "func getClassName(charClass = curClass) -> String:",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func isClassUnlocked(charClass = curClass) -> bool:",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func setLoadout(loadout: int):",
+        "obsolete_tail_lines": 4
+      },
+      {
+        "method": "func getConfiguredLoadout() -> int:",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func initStartInventory(loadout = 0):",
+        "obsolete_tail_lines": 25
+      },
+      {
+        "method": "func startFreshRun(mode):",
+        "obsolete_tail_lines": 43
+      },
+      {
+        "method": "func startRun():",
+        "obsolete_tail_lines": 20
+      },
+      {
+        "method": "func isShopActive() -> bool:",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func isSwitchToCombatPossible() -> bool:",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func cancelSwitch():",
+        "obsolete_tail_lines": 9
+      },
+      {
+        "method": "func finishSwitchingToCombat():",
+        "obsolete_tail_lines": 105
+      },
+      {
+        "method": "func closeAllMenus():",
+        "obsolete_tail_lines": 11
+      },
+      {
+        "method": "func endCombat():",
+        "obsolete_tail_lines": 29
+      },
+      {
+        "method": "func combatEndDeferred():",
+        "obsolete_tail_lines": 66
+      },
+      {
+        "method": "func forceLoseCombat():",
+        "obsolete_tail_lines": 8
+      },
+      {
+        "method": "func runOver():",
+        "obsolete_tail_lines": 16
+      },
+      {
+        "method": "func switchToShop():",
+        "obsolete_tail_lines": 32
+      },
+      {
+        "method": "func playShopBGM():",
+        "obsolete_tail_lines": 32
+      },
+      {
+        "method": "func onSceneAnimationFinished(aniName):",
+        "obsolete_tail_lines": 41
+      },
+      {
+        "method": "func startRound():",
+        "obsolete_tail_lines": 96
+      },
+      {
+        "method": "func endRun(commit = true, showAchievements = true):",
+        "obsolete_tail_lines": 89
+      },
+      {
+        "method": "func returnToTitle_afterRun():",
+        "obsolete_tail_lines": 34
+      },
+      {
+        "method": "func returnedToTitle_afterRun():",
+        "obsolete_tail_lines": 31
+      },
+      {
+        "method": "func returnToTitle_midRun():",
+        "obsolete_tail_lines": 33
+      },
+      {
+        "method": "func returnedToTitle_midRun():",
+        "obsolete_tail_lines": 21
+      }
+    ]
+  },
+  {
+    "path": "Core/Inventory.gd",
+    "before_sha256": "560fd80f8ef02abfdffcd01aefb6ad2e9199073212cbce71c750051bc6b092e4",
+    "after_sha256": "b5c4ed20df3ba12c25dbd1760ca44f3d66712ca7c434313366ca2270eaf24422",
+    "methods": [
+      {
+        "method": "func pushFloatingItemsToStorage():",
+        "obsolete_tail_lines": 6
+      },
+      {
+        "method": "func shift(direction: Vector2):",
+        "obsolete_tail_lines": 29
+      }
+    ]
+  },
+  {
+    "path": "Core/Shop.gd",
+    "before_sha256": "49310af7969579b3a1615cff2043f147cd37da4361a44cc701f4e5ebbca9d2ec",
+    "after_sha256": "f5bbe8695ecd0c6bae478277d457249acecbf0055145b59688737f9d2283aa0a",
+    "methods": [
+      {
+        "method": "func getRerollCost() -> int:",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func enteringShop():",
+        "obsolete_tail_lines": 9
+      },
+      {
+        "method": "func openShop():",
+        "obsolete_tail_lines": 48
+      },
+      {
+        "method": "func closeShop():",
+        "obsolete_tail_lines": 25
+      },
+      {
+        "method": "func showNormalShop():",
+        "obsolete_tail_lines": 11
+      },
+      {
+        "method": "func rollItems(highRollBuckets = [0, 0, 0, 0, 0], uniqueSlots = [], triggeringSubclassItem = null):",
+        "obsolete_tail_lines": 124
+      },
+      {
+        "method": "func reroll():",
+        "obsolete_tail_lines": 41
+      },
+      {
+        "method": "func onItemPickedUp():",
+        "obsolete_tail_lines": 12
+      },
+      {
+        "method": "func onItemDropped(item, dropResult: int):",
+        "obsolete_tail_lines": 11
+      },
+      {
+        "method": "func onBannerTimerTimeout():",
+        "obsolete_tail_lines": 6
+      },
+      {
+        "method": "func onItemBought(item, slot):",
+        "obsolete_tail_lines": 89
+      }
+    ]
+  },
+  {
+    "path": "Interface/BuildHistory/BuildHistory.gd",
+    "before_sha256": "fee1f796868a1f84b4df87abbd526d4839d28fc106348a27dd93c96c4dc33a73",
+    "after_sha256": "2bfc2a6dcba2b2f5fd3c82a470b3785978d6450d56ca4e73b9d4786111777783",
+    "methods": [
+      {
+        "method": "func open(fromCombat = false):",
+        "obsolete_tail_lines": 38
+      }
+    ]
+  },
+  {
+    "path": "Interface/ClassLabel.gd",
+    "before_sha256": "ab8a0f35f7ebc1f44f919c7353c8909b4eb22a38decc59d7a137ff3f37eaa4f5",
+    "after_sha256": "b2a24ac1a67b742bfeb1b38ffa9db8ef81b3a0107903e8164c6d1bc8b85811d7",
+    "methods": [
+      {
+        "method": "func updateText(subclass = \"\"):",
+        "obsolete_tail_lines": 35
+      },
+      {
+        "method": "func onItemBought(item, _onSale):",
+        "obsolete_tail_lines": 5
+      }
+    ]
+  },
+  {
+    "path": "Interface/CombatTimer/CombatTimer.gd",
+    "before_sha256": "c3597ef224ce96a574299d32165b8d23b8943976cd4acd51ec1e35a23f40265d",
+    "after_sha256": "c74d08f1d0719fc9a1167cbb3a3a81624f0962087620ee43eff11c64a316d43d",
+    "methods": [
+      {
+        "method": "func initialize():",
+        "obsolete_tail_lines": 23
+      },
+      {
+        "method": "func onCombatSceneEntered():",
+        "obsolete_tail_lines": 13
+      },
+      {
+        "method": "func start():",
+        "obsolete_tail_lines": 6
+      },
+      {
+        "method": "func _physics_process(delta: float) -> void :",
+        "obsolete_tail_lines": 3
+      },
+      {
+        "method": "func startFatigue():",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func dealFatigueDamage():",
+        "obsolete_tail_lines": 27
+      },
+      {
+        "method": "func onSpeedChanged(value: float) -> void :",
+        "obsolete_tail_lines": 6
+      },
+      {
+        "method": "func onPauseButtonPressed():",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func pause():",
+        "obsolete_tail_lines": 4
+      },
+      {
+        "method": "func unpause():",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func onFastButtonPressed():",
+        "obsolete_tail_lines": 3
+      },
+      {
+        "method": "func speedUp(amount):",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func speedDown(amount):",
+        "obsolete_tail_lines": 2
+      }
+    ]
+  },
+  {
+    "path": "Interface/DamageMeter/DamageMeter.gd",
+    "before_sha256": "055d3bbc0fc28e449f210843a5ba84e77c47f276050d34cb6e23bc069e7f63bb",
+    "after_sha256": "5cda585a9608e66dd3c05c8a51f711ffc64520441dc98c8637c68f3146f16b51",
+    "methods": [
+      {
+        "method": "func open():",
+        "obsolete_tail_lines": 24
+      }
+    ]
+  },
+  {
+    "path": "Interface/HistoryButton.gd",
+    "before_sha256": "535b5104db6f0eeca947517730f80c9586d27b625e2010aef18619448db30c00",
+    "after_sha256": "5a68d440be7105079683e31f71165daf4fd47e1468ba26eeffe815e463e0c481",
+    "methods": [
+      {
+        "method": "func onPressed():",
+        "obsolete_tail_lines": 3
+      }
+    ]
+  },
+  {
+    "path": "Interface/IngameCharacterHUD.gd",
+    "before_sha256": "efd5378cdf0b62b148aaa6a8af0dbdce3be68690860b64de7f01f21447ddaacc",
+    "after_sha256": "844ef8109d44a6fee9f270405a8ae65ca2fb3ac9304b2e486ff609f3742bb5e5",
+    "methods": [
+      {
+        "method": "func updateLabels():",
+        "obsolete_tail_lines": 54
+      },
+      {
+        "method": "func updateLocale():",
+        "obsolete_tail_lines": 6
+      }
+    ]
+  },
+  {
+    "path": "Interface/ItemLibrary/ItemLibraryButton.gd",
+    "before_sha256": "454f27519c6ddd2397639076ed0257ab0fb0f2becdcacdfb8653edea405d3744",
+    "after_sha256": "d6c2a66298c11ee425de7ff22524b8be79ba6c1dadb59eeeb0b434f2d28769aa",
+    "methods": [
+      {
+        "method": "func onPressed():",
+        "obsolete_tail_lines": 5
+      }
+    ]
+  },
+  {
+    "path": "Interface/MaxHealthLabel.gd",
+    "before_sha256": "235c6c3427770a23768c2346e2bd22555b71779d849a22819b4010f7d2c43374",
+    "after_sha256": "5b86d0aaa419338fd8b0f4f7496083e5c288e1dd9a220d560e0e5e85a0d6d189",
+    "methods": [
+      {
+        "method": "func updateFromRunstate():",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func updateTooltip(forRound):",
+        "obsolete_tail_lines": 4
+      },
+      {
+        "method": "func showBonus(amount):",
+        "obsolete_tail_lines": 11
+      }
+    ]
+  },
+  {
+    "path": "Interface/RecipeBookButton.gd",
+    "before_sha256": "564338380366de4da768d9382f689decd898b72ceab8dcee894d2cf2416a3a2b",
+    "after_sha256": "42c6090f25fb0aea46549b6ccbb7909bf13b57200928d590eb74e6c116a54cd7",
+    "methods": [
+      {
+        "method": "func onPressed():",
+        "obsolete_tail_lines": 5
+      }
+    ]
+  },
+  {
+    "path": "Interface/Sellbox.gd",
+    "before_sha256": "f23e54f8eff4008116071dfd1f8fd8c9a960cf842879e720306e3912fdbabd52",
+    "after_sha256": "3853db7702c300f8052bf982c9146da6897b73c071aa4fa4c4bc6113b6bb79f6",
+    "methods": [
+      {
+        "method": "func rollTrades():",
+        "obsolete_tail_lines": 5
+      }
+    ]
+  },
+  {
+    "path": "Interface/ShopOffer.gd",
+    "before_sha256": "beadfad713c71add4cd936c91965652dc00fba48ea98db940e2946b961a144f3",
+    "after_sha256": "ce622ea2d1ddabd1311da54ee68e5dbecc834146ca44e25fca3ddc5151dd5762",
+    "methods": [
+      {
+        "method": "func buy():",
+        "obsolete_tail_lines": 34
+      },
+      {
+        "method": "func resetFull():",
+        "obsolete_tail_lines": 4
+      }
+    ]
+  },
+  {
+    "path": "Interface/StartCombatButton.gd",
+    "before_sha256": "a5571488844a84495c4cd963a21a7943563f58a3a07ffbe8c0fa555f6ca15ce5",
+    "after_sha256": "9a86b9543a9fbcbede8b0d1d6ae10d54992b47fb30a9b1ab7903bab36199bd3f",
+    "methods": [
+      {
+        "method": "func activateButton():",
+        "obsolete_tail_lines": 45
+      }
+    ]
+  },
+  {
+    "path": "Interface/Storagebox.gd",
+    "before_sha256": "e5ec118f939d8b731434a69c71b40b2ca4e782cfbf611ed8d1ac22f8f974ce77",
+    "after_sha256": "628e7fb4e6a2f4118ecef7ac712387af532c12a735a4f788b84505ba1d814247",
+    "methods": [
+      {
+        "method": "func onShopOpenFinished():",
+        "obsolete_tail_lines": 4
+      },
+      {
+        "method": "func pushAllToStorage():",
+        "obsolete_tail_lines": 7
+      },
+      {
+        "method": "func pushItemsToStorage(itemList):",
+        "obsolete_tail_lines": 15
+      },
+      {
+        "method": "func checkIfItemIsInStorageArea(item):",
+        "obsolete_tail_lines": 36
+      }
+    ]
+  },
+  {
+    "path": "Interface/TitleScreen.gd",
+    "before_sha256": "1e4bfa79b0fcc6ce3a63d7aab2f206f5cc7860d0c29a5afa8b0492c133f650f0",
+    "after_sha256": "e2c5d9562d640f3d6ac928603cd7e681cc74702e47f15e715d765a14b18b133f",
+    "methods": [
+      {
+        "method": "func updateClassNodes(curClass, randomCharacter):",
+        "obsolete_tail_lines": 9
+      },
+      {
+        "method": "func updateLoadoutLocale(classI):",
+        "obsolete_tail_lines": 4
+      },
+      {
+        "method": "func startRankedPressed() -> void :",
+        "obsolete_tail_lines": 10
+      },
+      {
+        "method": "func startUnrankedPressed() -> void :",
+        "obsolete_tail_lines": 10
+      },
+      {
+        "method": "func checkSavedRunState() -> void :",
+        "obsolete_tail_lines": 61
+      },
+      {
+        "method": "func updateLocale():",
+        "obsolete_tail_lines": 9
+      },
+      {
+        "method": "func onContinuePressed():",
+        "obsolete_tail_lines": 4
+      },
+      {
+        "method": "func onConcedePressed():",
+        "obsolete_tail_lines": 10
+      },
+      {
+        "method": "func _on_WikiButton_pressed():",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func _on_ChineseWikiButton_pressed():",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func _on_ChineseItemSearch_pressed():",
+        "obsolete_tail_lines": 4
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/ClassTooltip.gd",
+    "before_sha256": "25b4557096cb352c3e7fd4dbc013c0e2a928157090714536da807b2bc8cde4fc",
+    "after_sha256": "31df781e860e3697118d838af5874805e886ceee17e4d2bcdb46e70546baee34",
+    "methods": [
+      {
+        "method": "func setParams(header, description):",
+        "obsolete_tail_lines": 6
+      }
+    ]
+  },
+  {
+    "path": "Items/Item.gd",
+    "before_sha256": "8c05a61ca30cd578f019ac0d829558781fa8720cf0142322577b94c00855c7f6",
+    "after_sha256": "35575969161c647b81a5ca7804cbb2342dff1f177592e182efb1953912f827ad",
+    "methods": [
+      {
+        "method": "func startFusing_inShop():",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func startFusing(delay = PRE_FUSE_DUR):",
+        "obsolete_tail_lines": 10
+      },
+      {
+        "method": "func previewFusions():",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func finishFusing():",
+        "obsolete_tail_lines": 34
+      }
+    ]
+  },
+  {
+    "path": "Utility/UndoStack.gd",
+    "before_sha256": "e392c52a4b783d8e2e5a1d33787b46081b40416f582400b89da88c5d3ba1c4d5",
+    "after_sha256": "f0989289c17a3ac69bc419734a9f3fe5b8997bf334c2678ea4b2270495475d2a",
+    "methods": [
+      {
+        "method": "func _unhandled_input(event):",
+        "obsolete_tail_lines": 27
+      },
+      {
+        "method": "func queueSnapshot():",
+        "obsolete_tail_lines": 5
+      },
+      {
+        "method": "func makeSnapshot():",
+        "obsolete_tail_lines": 20
+      },
+      {
+        "method": "func canUndo() -> bool:",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func undo():",
+        "obsolete_tail_lines": 11
+      },
+      {
+        "method": "func canRedo() -> bool:",
+        "obsolete_tail_lines": 2
+      },
+      {
+        "method": "func redo():",
+        "obsolete_tail_lines": 10
+      },
+      {
+        "method": "func makeManualSnapshot(index):",
+        "obsolete_tail_lines": 9
+      },
+      {
+        "method": "func restoreSnapshop(index):",
+        "obsolete_tail_lines": 6
+      }
+    ]
+  }
+]

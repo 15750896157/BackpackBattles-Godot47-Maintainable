@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "previous_build_scripts_unchanged": true,
+  "baseline_changes": [],
+  "media": {
+    "count": 3021,
+    "unchanged": 3021,
+    "modified": [],
+    "added": [],
+    "missing": []
+  },
+  "original_scene_changes": [],
+  "license_changes": [],
+  "unexpected_semantic_changes": [],
+  "missing_method_names_outside_inherited_facades": [],
+  "rules_source_tokens_unchanged": true,
+  "rules_changes": [],
+  "compiled_content_unchanged": true,
+  "content_version": "0.1.3",
+  "content_sha256": "b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1",
+  "save_directory_unchanged": "BackpackBattles_Local47_PvE",
+  "source_metrics": "source-metrics.json"
+}

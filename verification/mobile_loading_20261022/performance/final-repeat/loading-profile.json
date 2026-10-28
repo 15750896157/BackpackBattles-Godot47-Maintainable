@@ -1,0 +1,578 @@
+{
+	"initialized_ms": 6703,
+	"samples": [
+		{
+			"backgrounds": [],
+			"cached_pool_nodes": 0,
+			"draw_calls": 69.0,
+			"frame_median_ms": 13.336,
+			"frame_p95_ms": 13.674,
+			"frame_p99_ms": 14.079,
+			"geometry_cache": 0,
+			"label": "title_initial",
+			"nodes": 1830.0,
+			"objects": 9510.0,
+			"orphan_nodes": 58.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2181.0,
+			"static_bytes": 454073813.0,
+			"static_peak_bytes": 454846094.0,
+			"stream": {
+				"budget_overruns": 0,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 0,
+				"job_costs": {},
+				"job_max_us": 0,
+				"jobs": 0,
+				"loaded": 2,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 2,
+				"resident": 2,
+				"scopes": 1,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 366982694.0,
+			"texture_cache": 0,
+			"time_ms": 6712,
+			"tree_nodes": 1830,
+			"video_bytes": 373428334.0
+		},
+		{
+			"backgrounds": [],
+			"cached_pool_nodes": 2,
+			"draw_calls": 133.0,
+			"frame_median_ms": 13.325,
+			"frame_p95_ms": 13.681,
+			"frame_p99_ms": 13.703,
+			"geometry_cache": 0,
+			"label": "title_idle",
+			"nodes": 1775.0,
+			"objects": 9923.0,
+			"orphan_nodes": 15.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2358.0,
+			"static_bytes": 463012948.0,
+			"static_peak_bytes": 465979424.0,
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 6,
+				"job_costs": {
+					"res://Items/EvilCap.tscn": {
+						"count": 1,
+						"max_us": 508,
+						"total_us": 508
+					},
+					"res://Items/Exclusive/Goobling.tscn": {
+						"count": 1,
+						"max_us": 509,
+						"total_us": 509
+					},
+					"res://Items/Exclusive/Snowcake.tscn": {
+						"count": 1,
+						"max_us": 526,
+						"total_us": 526
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 5611,
+						"total_us": 5611
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3752,
+						"total_us": 3752
+					},
+					"res://Items/StoneHelm.tscn": {
+						"count": 1,
+						"max_us": 538,
+						"total_us": 538
+					}
+				},
+				"job_max_us": 5611,
+				"jobs": 0,
+				"loaded": 10,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 10,
+				"resident": 10,
+				"scopes": 2,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 365871987.0,
+			"texture_cache": 0,
+			"time_ms": 20023,
+			"tree_nodes": 1775,
+			"video_bytes": 372356043.0
+		},
+		{
+			"backgrounds": [
+				"shop"
+			],
+			"cached_pool_nodes": 4,
+			"draw_calls": 205.0,
+			"frame_median_ms": 13.326,
+			"frame_p95_ms": 13.518,
+			"frame_p99_ms": 13.693,
+			"geometry_cache": 0,
+			"label": "shop",
+			"nodes": 1985.0,
+			"objects": 10549.0,
+			"orphan_nodes": 17.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2573.0,
+			"static_bytes": 468460389.0,
+			"static_peak_bytes": 515443393.0,
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 372,
+						"total_us": 372
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 416,
+						"total_us": 416
+					},
+					"res://Items/EvilCap.tscn": {
+						"count": 1,
+						"max_us": 508,
+						"total_us": 508
+					},
+					"res://Items/Exclusive/Goobling.tscn": {
+						"count": 1,
+						"max_us": 509,
+						"total_us": 509
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8909,
+						"total_us": 8909
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 454,
+						"total_us": 454
+					},
+					"res://Items/Exclusive/Snowcake.tscn": {
+						"count": 1,
+						"max_us": 526,
+						"total_us": 526
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 498,
+						"total_us": 498
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 5611,
+						"total_us": 5611
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 515,
+						"total_us": 515
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5190,
+						"total_us": 5190
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3752,
+						"total_us": 4212
+					},
+					"res://Items/StoneHelm.tscn": {
+						"count": 1,
+						"max_us": 538,
+						"total_us": 538
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 26,
+						"total_us": 26
+					}
+				},
+				"job_max_us": 8909,
+				"jobs": 0,
+				"loaded": 36,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 36,
+				"resident": 36,
+				"scopes": 7,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 412751285.0,
+			"texture_cache": 0,
+			"time_ms": 27835,
+			"tree_nodes": 1985,
+			"video_bytes": 421386325.0
+		},
+		{
+			"backgrounds": [
+				"shop"
+			],
+			"cached_pool_nodes": 2,
+			"draw_calls": 242.0,
+			"frame_median_ms": 13.321,
+			"frame_p95_ms": 13.553,
+			"frame_p99_ms": 13.731,
+			"geometry_cache": 0,
+			"label": "codex",
+			"nodes": 2214.0,
+			"objects": 11078.0,
+			"orphan_nodes": 15.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2633.0,
+			"static_bytes": 472405703.0,
+			"static_peak_bytes": 515443393.0,
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 372,
+						"total_us": 372
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 416,
+						"total_us": 416
+					},
+					"res://Items/EvilCap.tscn": {
+						"count": 1,
+						"max_us": 508,
+						"total_us": 508
+					},
+					"res://Items/Exclusive/Goobling.tscn": {
+						"count": 1,
+						"max_us": 509,
+						"total_us": 509
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8909,
+						"total_us": 8909
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 454,
+						"total_us": 454
+					},
+					"res://Items/Exclusive/Snowcake.tscn": {
+						"count": 1,
+						"max_us": 526,
+						"total_us": 526
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 498,
+						"total_us": 498
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 5611,
+						"total_us": 5611
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 515,
+						"total_us": 515
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5190,
+						"total_us": 5190
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3752,
+						"total_us": 4212
+					},
+					"res://Items/StoneHelm.tscn": {
+						"count": 1,
+						"max_us": 538,
+						"total_us": 538
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 26,
+						"total_us": 26
+					}
+				},
+				"job_max_us": 8909,
+				"jobs": 0,
+				"loaded": 104,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 104,
+				"resident": 104,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 430947505.0,
+			"texture_cache": 0,
+			"time_ms": 31115,
+			"tree_nodes": 2214,
+			"video_bytes": 439583185.0
+		},
+		{
+			"backgrounds": [
+				"shop"
+			],
+			"cached_pool_nodes": 0,
+			"draw_calls": 205.0,
+			"frame_median_ms": 13.322,
+			"frame_p95_ms": 13.588,
+			"frame_p99_ms": 13.641,
+			"geometry_cache": 0,
+			"label": "codex_closed",
+			"nodes": 1985.0,
+			"objects": 10549.0,
+			"orphan_nodes": 13.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2573.0,
+			"static_bytes": 469031965.0,
+			"static_peak_bytes": 515443393.0,
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 372,
+						"total_us": 372
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 416,
+						"total_us": 416
+					},
+					"res://Items/EvilCap.tscn": {
+						"count": 1,
+						"max_us": 508,
+						"total_us": 508
+					},
+					"res://Items/Exclusive/Goobling.tscn": {
+						"count": 1,
+						"max_us": 509,
+						"total_us": 509
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8909,
+						"total_us": 8909
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 454,
+						"total_us": 454
+					},
+					"res://Items/Exclusive/Snowcake.tscn": {
+						"count": 1,
+						"max_us": 526,
+						"total_us": 526
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 498,
+						"total_us": 498
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 5611,
+						"total_us": 5611
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 515,
+						"total_us": 515
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5190,
+						"total_us": 5190
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3752,
+						"total_us": 4212
+					},
+					"res://Items/StoneHelm.tscn": {
+						"count": 1,
+						"max_us": 538,
+						"total_us": 538
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 26,
+						"total_us": 26
+					}
+				},
+				"job_max_us": 8909,
+				"jobs": 0,
+				"loaded": 104,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 68,
+				"requested": 104,
+				"resident": 36,
+				"scopes": 7,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 412751285.0,
+			"texture_cache": 0,
+			"time_ms": 34355,
+			"tree_nodes": 1985,
+			"video_bytes": 421349349.0
+		},
+		{
+			"backgrounds": [],
+			"cached_pool_nodes": 2,
+			"draw_calls": 147.0,
+			"frame_median_ms": 13.301,
+			"frame_p95_ms": 13.774,
+			"frame_p99_ms": 14.154,
+			"geometry_cache": 0,
+			"label": "title_returned",
+			"nodes": 1775.0,
+			"objects": 10010.0,
+			"orphan_nodes": 19.0,
+			"prepared_instances": 0,
+			"resident_item_scenes": 0,
+			"resources": 2411.0,
+			"static_bytes": 467072018.0,
+			"static_peak_bytes": 515443393.0,
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 15,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 1,
+						"max_us": 372,
+						"total_us": 372
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 416,
+						"total_us": 416
+					},
+					"res://Items/EvilCap.tscn": {
+						"count": 1,
+						"max_us": 508,
+						"total_us": 508
+					},
+					"res://Items/Exclusive/Goobling.tscn": {
+						"count": 1,
+						"max_us": 509,
+						"total_us": 509
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8909,
+						"total_us": 8909
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 1,
+						"max_us": 454,
+						"total_us": 454
+					},
+					"res://Items/Exclusive/Snowcake.tscn": {
+						"count": 1,
+						"max_us": 526,
+						"total_us": 526
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 1,
+						"max_us": 498,
+						"total_us": 498
+					},
+					"res://Items/Gems/ChippedAmethyst.tscn": {
+						"count": 1,
+						"max_us": 5611,
+						"total_us": 5611
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 515,
+						"total_us": 515
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5190,
+						"total_us": 5190
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3752,
+						"total_us": 4212
+					},
+					"res://Items/StoneHelm.tscn": {
+						"count": 1,
+						"max_us": 538,
+						"total_us": 538
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 26,
+						"total_us": 26
+					}
+				},
+				"job_max_us": 8909,
+				"jobs": 0,
+				"loaded": 104,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 94,
+				"requested": 104,
+				"resident": 10,
+				"scopes": 2,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"texture_bytes": 368163415.0,
+			"texture_cache": 0,
+			"time_ms": 38395,
+			"tree_nodes": 1775,
+			"video_bytes": 376769571.0
+		}
+	]
+}

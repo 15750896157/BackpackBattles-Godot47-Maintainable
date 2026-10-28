@@ -1,0 +1,401 @@
+{
+  "ok": true,
+  "date": "2026-10-22",
+  "runtime_pngs": 29,
+  "reference_pngs": 4,
+  "source_bytes_unchanged": true,
+  "runtime_image_bytes": 6661222,
+  "rules_files_unchanged": 152,
+  "existing_media_files_unchanged": 3337,
+  "old_media_deleted": false,
+  "supplied_originals_not_modified": true,
+  "player_files_unchanged": {
+    "profile.save": true,
+    "profile_backup.save": true,
+    "run.save": true,
+    "run_backup.save": true,
+    "settings.save": true,
+    "settings_backup.save": true,
+    "telemetry.jsonl": true
+  },
+  "existing_files_changed": [
+    "launch-game.cmd",
+    "project/Core/Character.gd",
+    "project/Core/Character.tscn",
+    "project/PvE/NativeBuildBridge.gd",
+    "project/PvE/NativeExpedition.gd",
+    "project/Runtime/Behavior/CharacterClasses/CharacterClassBehavior.gd",
+    "project/Runtime/Behavior/Features/Interface/StorageboxBehavior.gd",
+    "project/Runtime/Behavior/Interface/StorageboxBehavior.gd",
+    "project/Runtime/Loading/AssetStream.gd",
+    "project/Runtime/Loading/Scenes/CombatBackdrop.tscn",
+    "project/Runtime/Loading/Scenes/ShopBackdrop.tscn",
+    "tools/verify_native.ps1"
+  ],
+  "assets": [
+    {
+      "source": "Z:\\角色\\主角1 战士.png",
+      "destination": "project/Art/20261022/hero.png",
+      "source_sha256": "030eba1205d055cba2c46f44c0efc60846af51fddc1c0e0dc5321f5b784b31f5",
+      "source_bytes_unchanged": true,
+      "size": [
+        1261,
+        1336
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\角色\\反派1 蝙蝠.png",
+      "destination": "project/Art/20261022/bat.png",
+      "source_sha256": "3c16f647b696478b5fe5736baf8f5c1e4a5325a63f528aabbbb1b1998d155219",
+      "source_bytes_unchanged": true,
+      "size": [
+        951,
+        725
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\角色\\反派2 哥布林.png",
+      "destination": "project/Art/20261022/goblin.png",
+      "source_sha256": "c786121a3e59313db80fdadcf1705a1c65c275eac1eca0f1ec520b20dcb33d60",
+      "source_bytes_unchanged": true,
+      "size": [
+        734,
+        868
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\角色\\反派3 骷髅.png",
+      "destination": "project/Art/20261022/skeleton.png",
+      "source_sha256": "50fa322bf58193e7dcb43e88da64e27cb5cd1a7de5db30b6330d0083361a21ec",
+      "source_bytes_unchanged": true,
+      "size": [
+        934,
+        1047
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\角色\\商人.png",
+      "destination": "project/Art/20261022/merchant.png",
+      "source_sha256": "b15f6b5230b514b4c5f904a6bbf9f143991cfd1d40c6be8bd7b81d741e30476e",
+      "source_bytes_unchanged": true,
+      "size": [
+        1251,
+        1223
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\仓库放置物品区域.png",
+      "destination": "project/Art/20261022/storage_mat.png",
+      "source_sha256": "fd2299b5dd02315d98d7aa9949500c127db7eba5dbe2baa3cb207f353f5702e5",
+      "source_bytes_unchanged": true,
+      "size": [
+        1165,
+        244
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\仓库格子.png",
+      "destination": "project/Art/20261022/cell.png",
+      "source_sha256": "ef3b198bb280fba2b983452debc6e91f2580e3729175fe8fdc4f53f450f8f61e",
+      "source_bytes_unchanged": true,
+      "size": [
+        76,
+        77
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\价格标签.png",
+      "destination": "project/Art/20261022/price.png",
+      "source_sha256": "b3274bf96fe2ffb191596ff479e6c46502d601c6f0b721944208d0d3754e349a",
+      "source_bytes_unchanged": true,
+      "size": [
+        79,
+        69
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\出售.png",
+      "destination": "project/Art/20261022/sell.png",
+      "source_sha256": "f0f64e79e3f5a9ce7d50d279b32e3500fe6df341f36a65cdd19c9f19ff191abc",
+      "source_bytes_unchanged": true,
+      "size": [
+        312,
+        242
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\合成表按钮.png",
+      "destination": "project/Art/20261022/craft.png",
+      "source_sha256": "5db00c0d9d955fbca98660ae8e57c1597bd5a7936ed2f6bff383231bda4d66f6",
+      "source_bytes_unchanged": true,
+      "size": [
+        243,
+        119
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\商品刷新.png",
+      "destination": "project/Art/20261022/refresh.png",
+      "source_sha256": "784ddc93660794c37778a9768a5665c783bcc88bc01744154555d9f7c7f26dea",
+      "source_bytes_unchanged": true,
+      "size": [
+        121,
+        244
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\战斗开始 和 关卡数.png",
+      "destination": "project/Art/20261022/stage.png",
+      "source_sha256": "96ae2481a0c3d956e67935bba9d9ebf5c625f1c1e7f8482fba7b5c9f24c3eb9e",
+      "source_bytes_unchanged": true,
+      "size": [
+        239,
+        310
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\折扣价标签.png",
+      "destination": "project/Art/20261022/sale.png",
+      "source_sha256": "0ef05923493a289d5a2751e07247a1a1677205d80d271db1081ccd803aec2c0e",
+      "source_bytes_unchanged": true,
+      "size": [
+        96,
+        122
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\桌面.png",
+      "destination": "project/Art/20261022/table.png",
+      "source_sha256": "262b1754be8a0d74c6897facdac506888375c62ef7b7d58f6028e91f3538a2a7",
+      "source_bytes_unchanged": true,
+      "size": [
+        1942,
+        221
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\游戏内新美术参考图1.png",
+      "destination": "inputs/新美术布局参考/游戏内新美术参考图1.png",
+      "source_sha256": "1c113f9ac6606e49500dea4caa569e766611ca9d7e718bb99186a9316f000501",
+      "source_bytes_unchanged": true,
+      "size": [
+        1942,
+        1123
+      ],
+      "reference_only": true
+    },
+    {
+      "source": "Z:\\商店\\游戏内新美术参考图2.png",
+      "destination": "inputs/新美术布局参考/游戏内新美术参考图2.png",
+      "source_sha256": "c44e42b412f67800c9003fe5e3cda4d665e39e2399ad4f2094913ef63b046e0e",
+      "source_bytes_unchanged": true,
+      "size": [
+        1942,
+        1123
+      ],
+      "reference_only": true
+    },
+    {
+      "source": "Z:\\商店\\游戏内新美术参考图3.png",
+      "destination": "inputs/新美术布局参考/游戏内新美术参考图3.png",
+      "source_sha256": "9bca0a347d05ed6a550b65225e2a6597f57c12eb90be43e39d569bb624085c24",
+      "source_bytes_unchanged": true,
+      "size": [
+        1942,
+        1123
+      ],
+      "reference_only": true
+    },
+    {
+      "source": "Z:\\商店\\背包参考格子参考图.png",
+      "destination": "inputs/新美术布局参考/背包参考格子参考图.png",
+      "source_sha256": "ab2efbb2b7f0ab156adcefe529e37368271be57a6c57910ffee02ed680f9053f",
+      "source_bytes_unchanged": true,
+      "size": [
+        708,
+        550
+      ],
+      "reference_only": true
+    },
+    {
+      "source": "Z:\\商店\\设置按钮.png",
+      "destination": "project/Art/20261022/shop_settings.png",
+      "source_sha256": "fc8312d48b29358b09c9be6ccd20591b4e211e8d4cb83665ae2a99160b6d4d9c",
+      "source_bytes_unchanged": true,
+      "size": [
+        62,
+        63
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\商店\\货架.png",
+      "destination": "project/Art/20261022/shelf.png",
+      "source_sha256": "339018ad4ff14b1b52c40d90081c7790c74a8baf9fbf29cdd1fefa82f19a5df2",
+      "source_bytes_unchanged": true,
+      "size": [
+        1024,
+        80
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\名称.png",
+      "destination": "project/Art/20261022/name.png",
+      "source_sha256": "971d57af0171f1089b0530fce85d36e7cf9633cddd0f577cfa84c156851a3904",
+      "source_bytes_unchanged": true,
+      "size": [
+        342,
+        46
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\开始按钮.png",
+      "destination": "project/Art/20261022/play.png",
+      "source_sha256": "60fe3f1970c1cd8502029b1b3e4c52e31ff41e176e0f3cb5b4b5534e54b70a10",
+      "source_bytes_unchanged": true,
+      "size": [
+        32,
+        36
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\投影.png",
+      "destination": "project/Art/20261022/shadow.png",
+      "source_sha256": "8fdf8788cbf668c27e64cfe3d709ee2c0dcd639922113916bcb35d564ac0ddea",
+      "source_bytes_unchanged": true,
+      "size": [
+        409,
+        69
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\暂停按钮.png",
+      "destination": "project/Art/20261022/pause.png",
+      "source_sha256": "72743819cce362fbfdc9d56cbf1492dfd767bf6053ac6a8a1e91c80cf05afc1b",
+      "source_bytes_unchanged": true,
+      "size": [
+        37,
+        36
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\沙漠.png",
+      "destination": "project/Art/20261022/desert.png",
+      "source_sha256": "ff80788e976f91c6928403636c19a594c624d03b4a289e6fdebf3079e9d48231",
+      "source_bytes_unchanged": true,
+      "size": [
+        1920,
+        1080
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\生命.png",
+      "destination": "project/Art/20261022/health.png",
+      "source_sha256": "0d7d5a172850752a4e1bfa7018e3075270936bdd9efa4c2ae329cf50e4812911",
+      "source_bytes_unchanged": true,
+      "size": [
+        205,
+        36
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\耐力.png",
+      "destination": "project/Art/20261022/stamina.png",
+      "source_sha256": "18c01e2d87c86aaefd17b1df7ea4a5d28b556ab50a14b9d40b1ba63a0d7ea15d",
+      "source_bytes_unchanged": true,
+      "size": [
+        205,
+        36
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\背版1.png",
+      "destination": "project/Art/20261022/plate1.png",
+      "source_sha256": "ab66203342db826f11d3c76bda150eba46dae72ac1099f4e9c5ca72216f8dac3",
+      "source_bytes_unchanged": true,
+      "size": [
+        201,
+        70
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\背版2.png",
+      "destination": "project/Art/20261022/plate2.png",
+      "source_sha256": "fd83f188ba43e832f2144d4fdcc36add8dd9952a6ed91be6e9bc4bc836042182",
+      "source_bytes_unchanged": true,
+      "size": [
+        568,
+        152
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\背版3.png",
+      "destination": "project/Art/20261022/plate3.png",
+      "source_sha256": "98d2d7d7f43169d338b83fbffd9ff51bee5893c00b2a258e428a791d5978eb54",
+      "source_bytes_unchanged": true,
+      "size": [
+        205,
+        36
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\设置按钮.png",
+      "destination": "project/Art/20261022/combat_settings.png",
+      "source_sha256": "5131f491167f62e4cda15821a0532760e92866f93e6cfd8d3e2c09047fb18525",
+      "source_bytes_unchanged": true,
+      "size": [
+        73,
+        73
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\进度条1.png",
+      "destination": "project/Art/20261022/timeline_base.png",
+      "source_sha256": "6b0d1b5ba1249cb102f964ed7abf1e549bf186149f712650c6fcf886f98de7a3",
+      "source_bytes_unchanged": true,
+      "size": [
+        560,
+        70
+      ],
+      "reference_only": false
+    },
+    {
+      "source": "Z:\\战斗\\进度条2.png",
+      "destination": "project/Art/20261022/timeline_fill.png",
+      "source_sha256": "68a84ee0ac1b9c3f29ef2b1c0918b7f79a036b6af6177eae3122f2649548b3ee",
+      "source_bytes_unchanged": true,
+      "size": [
+        560,
+        20
+      ],
+      "reference_only": false
+    }
+  ],
+  "scope": "Current Z:/角色, Z:/商店, Z:/战斗 only; earlier directory and PSD request superseded by explicit user reply."
+}

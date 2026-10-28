@@ -1,0 +1,19 @@
+{
+	"all_passed": true,
+	"checks": {
+		"bag_grid_hides_after_drop": true,
+		"bag_grid_visible_while_dragged": true,
+		"entered_storage": true,
+		"redo_sold": true,
+		"settings_opened": true,
+		"sold_from_new_scroll": true,
+		"undo_restored": true
+	},
+	"current_page": "SETTINGS",
+	"gold": 9,
+	"items": 1,
+	"mouse": "(1843.5, 297.0)",
+	"ready": true,
+	"sale_rect": "[P: (133.6364, 835.0), S: (212.7273, 165.0)]",
+	"storage": 0
+}

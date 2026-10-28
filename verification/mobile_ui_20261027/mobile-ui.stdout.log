@@ -1,0 +1,44 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+received Steam: 32
+MOBILE_BOUNDS setup [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS routes [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+SETTING LOCALE TO zh_Hans_CN
+MOBILE_BOUNDS settingszh_CN1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS controlszh_CN1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS guidezh_CN1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS libraryzh_CN1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS intelzh_CN1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS settingszh_CN1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS controlszh_CN1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS guidezh_CN1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS libraryzh_CN1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS intelzh_CN1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+SETTING LOCALE TO en
+MOBILE_BOUNDS settingsen1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS controlsen1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS guideen1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS libraryen1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS intelen1.0 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS settingsen1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS controlsen1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS guideen1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS libraryen1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS intelen1.4 [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS crafting [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS saved setup [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS viewport (960, 540) [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS viewport (1280, 1024) [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+MOBILE_BOUNDS viewport (2400, 1080) [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)
+SETTING LOCALE TO zh_Hans_CN
+MOBILE_BOUNDS result [P: (110.0, 20.0), S: (1700.0, 1040.0)] min (0.0, 0.0)

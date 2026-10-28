@@ -1,0 +1,8 @@
+{
+  "powershell_version": "5.1.26100.9711",
+  "tested_script": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\中文 可搬移目录\\BackpackBattles_Godot47_Maintainable\\tools\\verify_native.ps1",
+  "scene": "AudioRequests",
+  "checks": 24,
+  "exit_code": 0,
+  "stderr_bytes": 0
+}

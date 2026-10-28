@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Buffs/Poison.png" type="Texture2D" id=1]
+[ext_resource path="res://Shader/BottleOfBooze.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Noise/LavaNoise.png" type="Texture2D" id=3]
+
+[sub_resource type="Shader" id=78]
+code = "shader_type canvas_item;
+
+uniform vec2 direction = vec2(0.5, 0.5);
+uniform float angle : hint_range(0.0, 6.5, 0.1);
+uniform sampler2D gradient : repeat_disable, filter_linear;
+uniform sampler2D bubbleNoise : repeat_enable, filter_linear;
+uniform vec2 noiseScale = vec2(1,1);
+uniform float foaminess = 0.2;
+uniform vec2 foamOffset = vec2(0,0);
+
+vec2 rotate(vec2 uv, vec2 pivot, float r)
+{
+\tmat2 rotation = mat2(vec2(sin(r), -cos(r)),
+\t\t\t\t\t\tvec2(cos(r), sin(r)));
+\t
+\tuv -= pivot;
+\tuv = uv * rotation;
+\tuv += pivot;
+\treturn uv;
+}
+
+void fragment()
+{
+\tvec2 rotated_uv = rotate(UV, vec2(0.5), angle);
+\tCOLOR = texture(TEXTURE, UV);
+//\tfloat dotPr = dot(direction, UV);
+//\tif (dotPr < 1.0) {
+//\t\tCOLOR.a = 0.0;
+//\t}
+\t//COORDINATE SPACE FOR FOAM OFFSET?
+\t//COORDINATE SPACE FOR FOAM OFFSET?
+
+\t//float bubbles = texture(bubbleNoise, rotated_uv * noiseScale + foamOffset).r;
+\tfloat bubbles = texture(bubbleNoise, (SCREEN_UV- foamOffset) * noiseScale ).r;
+\t
+\tfloat borderBonus = abs(rotated_uv.x - 0.5);
+\tborderBonus = pow(borderBonus, 4) * 2.0;
+\tvec4 gr = texture(gradient, rotated_uv.yy+ bubbles * foaminess + borderBonus);
+
+\t//COLOR.rgb = mix(COLOR.rgb, gr.rgb, gr.a);
+\tif (COLOR.a > 0.0)
+\t\t//COLOR.a = 1.0;
+\t\tCOLOR = gr;
+\t//if (rotated_uv.y < 0.5) {COLOR.a = 0.0;}
+\t//COLOR.a *= step(dotPr, 1.0);
+}"
+
+[sub_resource type="Gradient" id=80]
+offsets = PackedFloat32Array( 0.430998, 0.475584, 0.57508, 0.674121, 1 )
+colors = PackedColorArray( 1, 1, 1, 0, 1, 0.632813, 0.632813, 1, 0.905882, 0.0156863, 0.0156863, 0.666667, 1, 0.277344, 0.277344, 0.741176, 0.45098, 0.00784314, 0.00784314, 0.788235 )
+
+[sub_resource type="GradientTexture1D" id=81]
+gradient = SubResource( 80 )
+width = 2041
+
+[sub_resource type="ShaderMaterial" id=79]
+resource_local_to_scene = true
+shader = SubResource( 78 )
+shader_parameter/direction = Vector2( -0.2538, 2.3444 )
+shader_parameter/angle = 0.802964
+shader_parameter/noiseScale = Vector2( 1, 1 )
+shader_parameter/foaminess = 0.0591904
+shader_parameter/foamOffset = Vector2( 0, 3.02841 )
+shader_parameter/gradient = SubResource( 81 )
+shader_parameter/bubbleNoise = ExtResource( 3 )
+
+[node name="BottleOfBooze" type="Sprite2D"]
+process_mode = 3
+material = SubResource( 79 )
+rotation = -5.51524
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+friction = 0.975

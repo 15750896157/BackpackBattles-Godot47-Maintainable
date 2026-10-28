@@ -1,0 +1,96 @@
+[
+  {
+    "case": "entry",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 21.89
+  },
+  {
+    "case": "runtime-contracts",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 14.77,
+    "assertions": 2625,
+    "report": "runtime-contracts\\runtime-contracts-report.json"
+  },
+  {
+    "case": "audio-requests",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 16.5,
+    "assertions": 24,
+    "report": "audio-requests\\audio-requests-report.json"
+  },
+  {
+    "case": "flow",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 36.42,
+    "assertions": 47,
+    "report": "flow\\native-report.json"
+  },
+  {
+    "case": "inventory",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 22.06,
+    "assertions": 37,
+    "report": "inventory\\report.json"
+  },
+  {
+    "case": "lifecycle",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 63.91,
+    "assertions": 206,
+    "report": "lifecycle\\lifecycle-report.json"
+  },
+  {
+    "case": "layout",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 37.56,
+    "assertions": 1765,
+    "report": "layout\\report.json"
+  },
+  {
+    "case": "combat-log",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 29.47,
+    "assertions": 1933,
+    "report": "combat-log\\combat-log-report.json"
+  },
+  {
+    "case": "content-clues",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 18.62,
+    "assertions": 314,
+    "report": "content-clues\\content-clues-report.json"
+  },
+  {
+    "case": "feedback",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 26.09,
+    "assertions": 32,
+    "report": "feedback\\feedback-report.json"
+  },
+  {
+    "case": "preferences-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 20.69,
+    "assertions": 93,
+    "report": "preferences\\write-report.json"
+  },
+  {
+    "case": "preferences-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 16.09,
+    "assertions": 76,
+    "report": "preferences\\reopen-report.json"
+  }
+]

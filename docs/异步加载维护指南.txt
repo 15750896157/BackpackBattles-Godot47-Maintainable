@@ -1,0 +1,41 @@
+异步加载维护指南（2026-10-22）
+
+设计与入口
+project/Runtime/Loading/AssetStream.gd为自动加载服务。仅资源读取在低优先级Thread中进行；Node构造、SceneTree增删与角色/界面修改都在主线程。
+MAX_IO=1；每帧最多构造1个原PackedScene；INSTANCE_BUDGET_US=2500是开始下个任务前检查的软预算。单个instantiate不可中途抢占，复杂原场景仍可能超过预算。
+不要将add_child、角色配置或UI绘制放到工作线程。官方线程安全说明：https://docs.godotengine.org/en/latest/tutorials/performance/thread_safe_apis.html
+资源读取/缓存API：https://docs.godotengine.org/en/stable/classes/class_resourceloader.html
+当前固定4.7运行时的实验发现线程加载令牌退出残留；最终改用显式Thread读取并在完成后join，退出前停止队列并drain。不要把实验版API直接替回生产而跳过退出日志验收。
+
+资源作用域
+prepare(paths, scope)替换该scope的需求并await完成；hold只登记需求；request_resource追加同页各个缩略图，不能用prepare反复替换同页scope。
+instantiate_path(path, scope)只用于已准备的PackedScene；返回null表示失败/取消，需要保留旧画面或退出该次操作，不能继续访问节点。
+每次重建/切页使用revision/epoch；异步返回后再次检查作用域、popup_epoch和is_instance_valid。过期Node释放，迟到缩略图通过weakref安全忽略。
+release(scope)在离开/关闭/换页时调用；仅取消逻辑持有，已经开始的文件读取结束后再释放，不能强制杀线程。
+actor-player/enemy负责当前角色皮肤；build-player/enemy负责构筑；shop负责货架；popup负责图鉴/敌情；wardrobe/wardrobe-icons负责衣柜；decor-shop/combat负责原背景；fx-shared/fx-shop负责当前表现资源。
+同一资源被其它scope或活跃Node引用时不会被错误释放。release_metadata解除描述表的强引用；不影响存档中的物品数据。
+resolve保留兼容同步路径，会增加sync_misses；正常本地流程应先prepare对应scope，最终验收覆盖的加载流程sync_misses为0。
+
+原场景与节点
+Core/Main.tscn保留常用UI、角色容器和动画锚点；Runtime/Loading/Scenes保存从Main抽出的原Shop/Combat背景，未改美术节点属性。
+SceneResidency.ensure_view在切换动画开始前装载原背景；trim_inactive等待切换结束才卸载背景，清理货架视图并停用非活动根节点和循环粒子。
+修改背景动画/节点时同时检查Main的路径和两个按需场景，不能删掉原动画需要的锚点。不要假定Main已经彻底拆为三个独立根场景。
+NativeBuildBridge按uid复用原道具，只实例化新uid；销毁的是呈现Node，权威run/build/storage留在GameFlow和本地SaveService。
+返回主菜单先保存，再取消未完成请求、清除构筑/商店视图。关闭图鉴/敌情和衣柜会实际移除、queue_free并清理资源与几何缓存，不再永久缓存完整面板。
+原贴图完整拟合、货架正向、拖动惯性、手动旋转和金币动画继续由NativeFootprintLayout/NativeTransitions及原脚本负责。
+
+新增内容
+修改道具场景/镶嵌槽后运行：py tools/rebuild_asset_catalog.py --write；只检查时不带--write。
+该工具解析原CSV和TSCN，更新PvE/asset_catalog.json，不为统计槽位而实例化全部场景。新增场景没有目录元数据时仅允许显式请求的单项回退，正常交付前应重建。
+Items/Item.gd的公共表现资源改为按需属性；Runtime/Loading/item_effects.json列出通用和商店常用特效。新增常用效果加入对应列表，避免每个道具又重复装载全套提示/特效。
+CharacterSkin/CharacterClass保留原API，描述表存路径；选职业/衣柜页只加载当前职业、样式和所需解锁皮肤，不恢复全职业预热。
+LeasePool上限每种2个、总数24个、闲置8秒；回收从自身信号返回的对象使用queue_free，不能同步free锁定对象。扩容应以数据证明需求。
+标题装饰雨由30个降为6个，仅影响装饰密度；不缩减商店商品、库存、配置表或玩法。
+
+验证
+建议先用PowerShell运行：.\tools\verify_native.ps1 -Scenes LoadingContractsMain,NativeMain,QualityLifecycleMain
+性能单独运行：.\tools\verify_native.ps1 -Scenes LoadingProfileMain
+verify-project.cmd完整默认28阶段，含真实鼠标NativeInteractionQA；那一阶段会移动系统指针，请安排无人操作的时间。此次没有执行该物理鼠标阶段。
+所有QA指定隔离存档，不可把测试输出合并到真实pve目录。五种Persistence写入/重开成对运行；不能只测内存内返回标题。
+重点看退出0、stderr为空、sync_misses、jobs/inflight清零、scopes/资源释放、8轮静态内存是否持续增长，而非只看窗口能打开。
+正式证据在verification/mobile_loading_20261022。手机端还要另做Android/iOS导出、触控、纹理压缩与分辨率档位、真机内存/发热/功耗和低内存恢复测试；本次未认证这些结果。

@@ -1,0 +1,552 @@
+[
+  {
+    "path": "addons\\controller_icons\\Mapper.gd",
+    "line": 2,
+    "text": "class_name ControllerMapper"
+  },
+  {
+    "path": "addons\\controller_icons\\objects\\Button.gd",
+    "line": 3,
+    "text": "class_name ControllerButton"
+  },
+  {
+    "path": "addons\\controller_icons\\objects\\Sprite.gd",
+    "line": 3,
+    "text": "class_name ControllerSprite"
+  },
+  {
+    "path": "addons\\controller_icons\\objects\\Sprite3D.gd",
+    "line": 3,
+    "text": "class_name ControllerSprite3D"
+  },
+  {
+    "path": "addons\\controller_icons\\objects\\TextureRect.gd",
+    "line": 3,
+    "text": "class_name ControllerTextureRect"
+  },
+  {
+    "path": "addons\\controller_icons\\Settings.gd",
+    "line": 3,
+    "text": "class_name ControllerSettings"
+  },
+  {
+    "path": "CharacterClasses\\CharacterClass.gd",
+    "line": 2,
+    "text": "class_name CharacterClass"
+  },
+  {
+    "path": "CharacterClasses\\StartingItem.gd",
+    "line": 2,
+    "text": "class_name StartingItem"
+  },
+  {
+    "path": "Compatibility\\LegacyDirectory.gd",
+    "line": 2,
+    "text": "class_name LegacyDirectory"
+  },
+  {
+    "path": "Compatibility\\LegacyFile.gd",
+    "line": 2,
+    "text": "class_name File"
+  },
+  {
+    "path": "Compatibility\\LegacyFont.gd",
+    "line": 2,
+    "text": "class_name LegacyFont"
+  },
+  {
+    "path": "Compatibility\\LegacyGrid.gd",
+    "line": 2,
+    "text": "class_name LegacyGrid"
+  },
+  {
+    "path": "Compatibility\\LegacyTween.gd",
+    "line": 2,
+    "text": "class_name LegacyTween"
+  },
+  {
+    "path": "Core\\Buff.gd",
+    "line": 2,
+    "text": "class_name Buff"
+  },
+  {
+    "path": "Core\\Character.gd",
+    "line": 2,
+    "text": "class_name Character"
+  },
+  {
+    "path": "Core\\CombatEvent.gd",
+    "line": 2,
+    "text": "class_name CombatEvent"
+  },
+  {
+    "path": "Core\\CombatStatLogger.gd",
+    "line": 2,
+    "text": "class_name CombatStatLogger"
+  },
+  {
+    "path": "Core\\StatHistory.gd",
+    "line": 2,
+    "text": "class_name StatHistory"
+  },
+  {
+    "path": "Core\\SteamWorkshop.gd",
+    "line": 2,
+    "text": "class_name SteamLeaderboard"
+  },
+  {
+    "path": "Interface\\BaseSlider.gd",
+    "line": 2,
+    "text": "class_name BaseSlider"
+  },
+  {
+    "path": "Interface\\BuildHistory\\BuildHistoryData.gd",
+    "line": 2,
+    "text": "class_name BuildHistoryData"
+  },
+  {
+    "path": "Interface\\Combat\\CharacterStatIcon.gd",
+    "line": 2,
+    "text": "class_name CharacterStatIcon"
+  },
+  {
+    "path": "Interface\\CombatLog\\CombatLogLine.gd",
+    "line": 2,
+    "text": "class_name CombatLogLine"
+  },
+  {
+    "path": "Interface\\DamageMeter\\DamageMeterPlot.gd",
+    "line": 2,
+    "text": "class_name DamageMeterPlot"
+  },
+  {
+    "path": "Interface\\DamageMeter\\PlotLine.gd",
+    "line": 2,
+    "text": "class_name PlotLine"
+  },
+  {
+    "path": "Interface\\DamageNumbers\\DamageNumber.gd",
+    "line": 2,
+    "text": "class_name NumberLabel"
+  },
+  {
+    "path": "Interface\\FocusGrabbingButton.gd",
+    "line": 2,
+    "text": "class_name FocusGrabbingButton"
+  },
+  {
+    "path": "Interface\\FocusGrabbingControl.gd",
+    "line": 2,
+    "text": "class_name FocusGrabbingControl"
+  },
+  {
+    "path": "Interface\\FocusGrabbingTextureButton.gd",
+    "line": 2,
+    "text": "class_name FocusGrabbingTextureButton"
+  },
+  {
+    "path": "Interface\\Lobbies\\LobbyMemberData.gd",
+    "line": 2,
+    "text": "class_name LobbyMemberData"
+  },
+  {
+    "path": "Interface\\Options\\ItemListButton.gd",
+    "line": 2,
+    "text": "class_name ItemListButton"
+  },
+  {
+    "path": "Interface\\PullButton.gd",
+    "line": 2,
+    "text": "class_name PullButton"
+  },
+  {
+    "path": "Interface\\ResizableControl.gd",
+    "line": 2,
+    "text": "class_name ResizableControl"
+  },
+  {
+    "path": "Interface\\Tooltips\\ItemTooltip.gd",
+    "line": 2,
+    "text": "class_name ItemToolTip"
+  },
+  {
+    "path": "Interface\\Tooltips\\Tooltip.gd",
+    "line": 2,
+    "text": "class_name ToolTip"
+  },
+  {
+    "path": "Items\\Animations\\SquishySprite.gd",
+    "line": 2,
+    "text": "class_name SquishySprite"
+  },
+  {
+    "path": "Items\\Bag.gd",
+    "line": 2,
+    "text": "class_name Bag"
+  },
+  {
+    "path": "Items\\Bow.gd",
+    "line": 2,
+    "text": "class_name Bow"
+  },
+  {
+    "path": "Items\\Card.gd",
+    "line": 2,
+    "text": "class_name Card"
+  },
+  {
+    "path": "Items\\Dagger.gd",
+    "line": 2,
+    "text": "class_name Dagger"
+  },
+  {
+    "path": "Items\\Exclusive\\Animations\\GooglyEye.gd",
+    "line": 3,
+    "text": "class_name Eye"
+  },
+  {
+    "path": "Items\\Exclusive\\Chess\\ChessPiece.gd",
+    "line": 2,
+    "text": "class_name ChessPiece"
+  },
+  {
+    "path": "Items\\Exclusive\\Cube.gd",
+    "line": 2,
+    "text": "class_name Cube"
+  },
+  {
+    "path": "Items\\Exclusive\\SpiritCompanion.gd",
+    "line": 2,
+    "text": "class_name SpiritCompanion"
+  },
+  {
+    "path": "Items\\Food.gd",
+    "line": 2,
+    "text": "class_name Food"
+  },
+  {
+    "path": "Items\\Gems\\Gem.gd",
+    "line": 2,
+    "text": "class_name Gem"
+  },
+  {
+    "path": "Items\\GemSocket.gd",
+    "line": 2,
+    "text": "class_name Socket"
+  },
+  {
+    "path": "Items\\Goobert.gd",
+    "line": 2,
+    "text": "class_name Goobert"
+  },
+  {
+    "path": "Items\\Item.gd",
+    "line": 2,
+    "text": "class_name Item"
+  },
+  {
+    "path": "Items\\ItemDescriptor.gd",
+    "line": 2,
+    "text": "class_name ItemDescriptor"
+  },
+  {
+    "path": "Items\\Potion.gd",
+    "line": 2,
+    "text": "class_name Potion"
+  },
+  {
+    "path": "Items\\RangerCollar.gd",
+    "line": 2,
+    "text": "class_name RangerCollar"
+  },
+  {
+    "path": "Items\\Shield.gd",
+    "line": 2,
+    "text": "class_name Shield"
+  },
+  {
+    "path": "Items\\Weapon.gd",
+    "line": 2,
+    "text": "class_name Weapon"
+  },
+  {
+    "path": "PvE\\NativeAssetBindings.gd",
+    "line": 1,
+    "text": "class_name NativeAssetBindings"
+  },
+  {
+    "path": "PvE\\NativeBuildBridge.gd",
+    "line": 1,
+    "text": "class_name NativeBuildBridge"
+  },
+  {
+    "path": "PvE\\Rules\\app\\GameFlow.gd",
+    "line": 1,
+    "text": "class_name GameFlow"
+  },
+  {
+    "path": "PvE\\Rules\\app\\TutorialService.gd",
+    "line": 1,
+    "text": "class_name TutorialService"
+  },
+  {
+    "path": "PvE\\Rules\\combat\\CombatEngine.gd",
+    "line": 1,
+    "text": "class_name CombatEngine"
+  },
+  {
+    "path": "PvE\\Rules\\combat\\CombatEventQueue.gd",
+    "line": 1,
+    "text": "class_name CombatEventQueue"
+  },
+  {
+    "path": "PvE\\Rules\\combat\\EffectResolver.gd",
+    "line": 1,
+    "text": "class_name EffectResolver"
+  },
+  {
+    "path": "PvE\\Rules\\combat\\SnapshotBuilder.gd",
+    "line": 1,
+    "text": "class_name SnapshotBuilder"
+  },
+  {
+    "path": "PvE\\Rules\\combat\\StatusController.gd",
+    "line": 1,
+    "text": "class_name StatusController"
+  },
+  {
+    "path": "PvE\\Rules\\content\\ContentDB.gd",
+    "line": 1,
+    "text": "class_name ContentDB"
+  },
+  {
+    "path": "PvE\\Rules\\content\\ContentValidator.gd",
+    "line": 1,
+    "text": "class_name ContentValidator"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\BagDefinition.gd",
+    "line": 1,
+    "text": "class_name BagDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\CharacterDefinition.gd",
+    "line": 1,
+    "text": "class_name CharacterDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\ContentDefinition.gd",
+    "line": 1,
+    "text": "class_name ContentDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\DifficultyDefinition.gd",
+    "line": 1,
+    "text": "class_name DifficultyDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\EncounterDefinition.gd",
+    "line": 1,
+    "text": "class_name EncounterDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\EnemyBuildDefinition.gd",
+    "line": 1,
+    "text": "class_name EnemyBuildDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\EventDefinition.gd",
+    "line": 1,
+    "text": "class_name EventDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\ItemDefinition.gd",
+    "line": 1,
+    "text": "class_name ItemDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\RecipeDefinition.gd",
+    "line": 1,
+    "text": "class_name RecipeDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\RewardDefinition.gd",
+    "line": 1,
+    "text": "class_name RewardDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\definitions\\StatusDefinition.gd",
+    "line": 1,
+    "text": "class_name StatusDefinition"
+  },
+  {
+    "path": "PvE\\Rules\\content\\RuleText.gd",
+    "line": 1,
+    "text": "class_name RuleText"
+  },
+  {
+    "path": "PvE\\Rules\\core\\DeterministicRNG.gd",
+    "line": 1,
+    "text": "class_name DeterministicRNG"
+  },
+  {
+    "path": "PvE\\Rules\\inventory\\BuildState.gd",
+    "line": 1,
+    "text": "class_name BuildState"
+  },
+  {
+    "path": "PvE\\Rules\\inventory\\PlacementService.gd",
+    "line": 1,
+    "text": "class_name PlacementService"
+  },
+  {
+    "path": "PvE\\Rules\\inventory\\SpatialQueryService.gd",
+    "line": 1,
+    "text": "class_name SpatialQueryService"
+  },
+  {
+    "path": "PvE\\Rules\\persistence\\SaveService.gd",
+    "line": 1,
+    "text": "class_name SaveService"
+  },
+  {
+    "path": "PvE\\Rules\\platform\\PlatformService.gd",
+    "line": 1,
+    "text": "class_name PlatformService"
+  },
+  {
+    "path": "PvE\\Rules\\platform\\ProfileService.gd",
+    "line": 1,
+    "text": "class_name ProfileService"
+  },
+  {
+    "path": "PvE\\Rules\\platform\\TelemetryService.gd",
+    "line": 1,
+    "text": "class_name TelemetryService"
+  },
+  {
+    "path": "PvE\\Rules\\run\\CraftingService.gd",
+    "line": 1,
+    "text": "class_name CraftingService"
+  },
+  {
+    "path": "PvE\\Rules\\run\\EconomyService.gd",
+    "line": 1,
+    "text": "class_name EconomyService"
+  },
+  {
+    "path": "PvE\\Rules\\run\\EncounterDirector.gd",
+    "line": 1,
+    "text": "class_name EncounterDirector"
+  },
+  {
+    "path": "PvE\\Rules\\run\\RewardService.gd",
+    "line": 1,
+    "text": "class_name RewardService"
+  },
+  {
+    "path": "PvE\\Rules\\run\\RunEffectService.gd",
+    "line": 1,
+    "text": "class_name RunEffectService"
+  },
+  {
+    "path": "PvE\\Rules\\run\\RunState.gd",
+    "line": 1,
+    "text": "class_name RunState"
+  },
+  {
+    "path": "PvE\\Rules\\run\\ShopGenerator.gd",
+    "line": 1,
+    "text": "class_name ShopGenerator"
+  },
+  {
+    "path": "PvE\\Rules\\run\\ShopState.gd",
+    "line": 1,
+    "text": "class_name ShopState"
+  },
+  {
+    "path": "PvE\\Rules\\tools\\DeveloperToolService.gd",
+    "line": 1,
+    "text": "class_name PvEDeveloperToolService"
+  },
+  {
+    "path": "Sheets\\Table.gd",
+    "line": 2,
+    "text": "class_name Table"
+  },
+  {
+    "path": "Utility\\BalancedRandom.gd",
+    "line": 2,
+    "text": "class_name BalancedRng"
+  },
+  {
+    "path": "Utility\\BalancedRange.gd",
+    "line": 2,
+    "text": "class_name BalancedRange"
+  },
+  {
+    "path": "Utility\\BitStream.gd",
+    "line": 2,
+    "text": "class_name BitStream"
+  },
+  {
+    "path": "Utility\\CharacterSkin.gd",
+    "line": 2,
+    "text": "class_name CharacterSkin"
+  },
+  {
+    "path": "Utility\\Counter.gd",
+    "line": 2,
+    "text": "class_name Counter"
+  },
+  {
+    "path": "Utility\\DamageResult.gd",
+    "line": 2,
+    "text": "class_name DamageResult"
+  },
+  {
+    "path": "Utility\\DamageSource.gd",
+    "line": 2,
+    "text": "class_name DamageSource"
+  },
+  {
+    "path": "Utility\\FontData.gd",
+    "line": 2,
+    "text": "class_name FontData"
+  },
+  {
+    "path": "Utility\\ItemPool.gd",
+    "line": 2,
+    "text": "class_name ItemPool"
+  },
+  {
+    "path": "Utility\\LocalizedControl.gd",
+    "line": 2,
+    "text": "class_name LocalizedControl"
+  },
+  {
+    "path": "Utility\\Profanity.gd",
+    "line": 2,
+    "text": "class_name Profanity"
+  },
+  {
+    "path": "Utility\\Recipe.gd",
+    "line": 2,
+    "text": "class_name Recipe"
+  },
+  {
+    "path": "Utility\\RunData.gd",
+    "line": 2,
+    "text": "class_name RunData"
+  },
+  {
+    "path": "Utility\\UGCItem.gd",
+    "line": 2,
+    "text": "class_name UGCItem"
+  },
+  {
+    "path": "Utility\\WeightedBag.gd",
+    "line": 2,
+    "text": "class_name WeightedBag"
+  }
+]

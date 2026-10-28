@@ -1,0 +1,17 @@
+{
+	"all_passed": true,
+	"checks": {
+		"entered_storage": true,
+		"redo_sold": true,
+		"settings_opened": true,
+		"sold_from_new_scroll": true,
+		"undo_restored": true
+	},
+	"current_page": "SETTINGS",
+	"gold": 10,
+	"items": 1,
+	"mouse": "(1843.5, 298.5)",
+	"ready": true,
+	"sale_rect": "[P: (133.6364, 835.0), S: (212.7273, 165.0)]",
+	"storage": 0
+}

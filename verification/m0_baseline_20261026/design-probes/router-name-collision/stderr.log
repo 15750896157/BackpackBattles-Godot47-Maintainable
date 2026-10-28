@@ -1,0 +1,6 @@
+SCRIPT ERROR: Parse Error: Class "SceneRouter" hides an autoload singleton.
+   at: GDScript::reload (res://SceneRouter.gd:1)
+ERROR: Failed to load script "res://SceneRouter.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+ERROR: Failed to create an autoload, script 'res://SceneRouter.gd' is not compiling.
+   at: _create_autoload (editor/settings/editor_autoload_settings.cpp:340)

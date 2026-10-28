@@ -1,0 +1,4 @@
+id,name_key,sort_order,price_min,price_max,power_scalar
+common,rarity.common.name,1,2,6,1
+rare,rarity.rare.name,2,6,9,1.35
+legendary,rarity.legendary.name,3,10,14,1.75

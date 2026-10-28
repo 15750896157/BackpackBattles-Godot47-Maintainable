@@ -1,0 +1,228 @@
+{
+  "checks": 93,
+  "engine": "4.7-stable (official)",
+  "entry": "res://Core/Main.tscn",
+  "evidence": {
+    "accepted_captures": [
+      {
+        "action": "ui_focus_prev",
+        "bindings": [
+          {
+            "alt": false,
+            "code": 4194306,
+            "ctrl": false,
+            "shift": true,
+            "type": "key"
+          }
+        ],
+        "capture_finished": true,
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Shift+Tab"
+      },
+      {
+        "action": "start_battle",
+        "bindings": [
+          {
+            "alt": false,
+            "code": 32,
+            "ctrl": false,
+            "shift": false,
+            "type": "key"
+          }
+        ],
+        "capture_finished": true,
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Space"
+      },
+      {
+        "action": "ui_left",
+        "bindings": [
+          {
+            "button": 13,
+            "type": "joy"
+          },
+          {
+            "alt": false,
+            "code": 4194319,
+            "ctrl": false,
+            "shift": false,
+            "type": "key"
+          }
+        ],
+        "capture_finished": true,
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Left"
+      },
+      {
+        "action": "combat_pause",
+        "bindings": [
+          {
+            "alt": false,
+            "code": 32,
+            "ctrl": false,
+            "shift": false,
+            "type": "key"
+          },
+          {
+            "button": 0,
+            "type": "joy"
+          }
+        ],
+        "capture_finished": true,
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Joypad Button 0 (Bottom Action, Sony Cross, Xbox A, Nintendo B)"
+      },
+      {
+        "action": "combat_speed_down",
+        "bindings": [
+          {
+            "alt": false,
+            "code": 4194319,
+            "ctrl": false,
+            "shift": false,
+            "type": "key"
+          },
+          {
+            "button": 13,
+            "type": "joy"
+          }
+        ],
+        "capture_finished": true,
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Joypad Button 13 (D-pad Left)"
+      }
+    ],
+    "cancelled_captures": [
+      {
+        "bindings_after_sha256": "0060127d2820fd1c9b3b5998f15848a00337d3b63c3bac83de996aa60cc540b9",
+        "bindings_before_sha256": "0060127d2820fd1c9b3b5998f15848a00337d3b63c3bac83de996aa60cc540b9",
+        "capture_action": "",
+        "capture_button_is_null": true,
+        "driver": "native Back Button.pressed",
+        "exit": "back",
+        "settings_after_sha256": "7de1938f470e2500b27eea03872a2aed4c6ad71ffdad18c382844f7f651a3edc",
+        "settings_before_sha256": "7de1938f470e2500b27eea03872a2aed4c6ad71ffdad18c382844f7f651a3edc",
+        "subsequent_event": "F8"
+      },
+      {
+        "bindings_after_sha256": "0060127d2820fd1c9b3b5998f15848a00337d3b63c3bac83de996aa60cc540b9",
+        "bindings_before_sha256": "0060127d2820fd1c9b3b5998f15848a00337d3b63c3bac83de996aa60cc540b9",
+        "capture_action": "",
+        "capture_button_is_null": true,
+        "driver": "NativeExpedition.close_popup",
+        "exit": "close_popup",
+        "settings_after_sha256": "7de1938f470e2500b27eea03872a2aed4c6ad71ffdad18c382844f7f651a3edc",
+        "settings_before_sha256": "7de1938f470e2500b27eea03872a2aed4c6ad71ffdad18c382844f7f651a3edc",
+        "subsequent_event": "F8"
+      }
+    ],
+    "conflict_captures": [
+      {
+        "action": "combat_speed_down",
+        "bindings_after_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "bindings_before_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "conflict": "combat_speed_up",
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Right",
+        "feedback": "This input conflicts with Increase playback speed. Your previous binding was kept. Choose another input.",
+        "settings_after_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "settings_before_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "values_unchanged": true
+      },
+      {
+        "action": "combat_speed_down",
+        "bindings_after_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "bindings_before_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "conflict": "combat_speed_up",
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Ctrl+Right",
+        "feedback": "此键位与“加快战斗播放”冲突，已保留原绑定。请换一个键位。",
+        "settings_after_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "settings_before_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "values_unchanged": true
+      },
+      {
+        "action": "combat_play",
+        "bindings_after_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "bindings_before_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "conflict": "combat_pause",
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Space",
+        "feedback": "This input conflicts with Pause / resume combat. Your previous binding was kept. Choose another input.",
+        "settings_after_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "settings_before_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "values_unchanged": true
+      },
+      {
+        "action": "combat_pause",
+        "bindings_after_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "bindings_before_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "conflict": "combat_play",
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Joypad Button 11 (D-pad Up)",
+        "feedback": "This input conflicts with Resume battle playback. Your previous binding was kept. Choose another input.",
+        "settings_after_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "settings_before_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "values_unchanged": true
+      },
+      {
+        "action": "combat_speed_down",
+        "bindings_after_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "bindings_before_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "conflict": "combat_speed_up",
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Joypad Button 10 (Right Shoulder, Sony R1, Xbox RB)",
+        "feedback": "This input conflicts with Increase playback speed. Your previous binding was kept. Choose another input.",
+        "settings_after_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "settings_before_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "values_unchanged": true
+      },
+      {
+        "action": "ui_focus_prev",
+        "bindings_after_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "bindings_before_sha256": "d698746ef6a21a0506aaf30bcbd31b41bd06c0cb355c7feedeb4c24a7417aa6d",
+        "conflict": "ui_focus_next",
+        "driver": "native binding row Button.pressed -> Input.parse_input_event",
+        "event": "Tab",
+        "feedback": "This input conflicts with Next region / control. Your previous binding was kept. Choose another input.",
+        "settings_after_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "settings_before_sha256": "27553d7cd258b87f3568b6e9895f88de79a82bb3b823d3baa73042d78bee7b0e",
+        "values_unchanged": true
+      }
+    ],
+    "rest_bus": "PvEAmbient",
+    "rest_fixture": "Valid generated run; REST/current_node are explicit rendering/audio fixtures, not proof of campaign progression.",
+    "rest_stream": "res://Assets/Sound/BGM/Ambient 6.ogg",
+    "route_bus": "BGM",
+    "route_stream": "res://Assets/Sound/BGM/Song_of_Heroes.ogg",
+    "volumes": [
+      {
+        "actual": 0.190000005894244,
+        "bus": "BGM",
+        "expected": 0.19,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.31000001397277,
+        "bus": "PvEAmbient",
+        "expected": 0.31,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.430000005403134,
+        "bus": "PvEUI",
+        "expected": 0.43,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.56999999041014,
+        "bus": "PvECombat",
+        "expected": 0.57,
+        "legacy_initializing": false
+      }
+    ]
+  },
+  "failures": [],
+  "save_path": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\core_flow_20261023\\release-checks\\preferences_saves/",
+  "stage": "write"
+}

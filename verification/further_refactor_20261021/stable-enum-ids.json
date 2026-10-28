@@ -1,0 +1,641 @@
+{
+  "enums": [
+    {
+      "path": "Core/Character.gd",
+      "enum": "Stat",
+      "entries": {
+        "Health": 0,
+        "MaxHealth": 1,
+        "Stamina": 2,
+        "MaxStamina": 3,
+        "Invulnerable": 4,
+        "Stunned": 5,
+        "BattleRage": 6,
+        "ReflectStacks": 7,
+        "DebuffResistStacks": 8,
+        "CritStacks": 9,
+        "DodgeStacks": 10,
+        "CritResistStacks": 11,
+        "CritResistance": 12,
+        "StunResistance": 13,
+        "HealEfficiency": 14,
+        "DamageResistance": 15,
+        "MeleeDmgFactor": 16,
+        "RangedDmgFactor": 17,
+        "EffectDmgFactor": 18,
+        "Unhealing": 19,
+        "StaminaRegen": 20,
+        "MaxHealthGain": 21
+      },
+      "new_explicit_ids": 22
+    },
+    {
+      "path": "Core/Character.gd",
+      "enum": "StaminaResult",
+      "entries": {
+        "Sufficient": 0,
+        "Insufficient": 1
+      },
+      "new_explicit_ids": 2
+    },
+    {
+      "path": "Core/Combat.gd",
+      "enum": "Phase",
+      "entries": {
+        "Combat": 0,
+        "OffScreen": 1,
+        "RoundResult": 2,
+        "RoundResultSkippable": 3,
+        "RunResult": 4,
+        "RunResultSkippable": 5
+      },
+      "new_explicit_ids": 6
+    },
+    {
+      "path": "Core/CombatEvent.gd",
+      "enum": "Target",
+      "entries": {
+        "Player": 0,
+        "Opponent": 1
+      },
+      "new_explicit_ids": 2
+    },
+    {
+      "path": "Core/CombatLog.gd",
+      "enum": "ActivationsState",
+      "entries": {
+        "Hide": 0,
+        "Minimized": 1,
+        "Show": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "State",
+      "entries": {
+        "Title": 0,
+        "Shop": 1,
+        "Combat": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "ContinueState",
+      "entries": {
+        "NotContinued": 0,
+        "FromShop": 1,
+        "FromCombat": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "RoundResult",
+      "entries": {
+        "Win": 0,
+        "Loss": 1,
+        "Draw": 2,
+        "RunOver": 3
+      },
+      "new_explicit_ids": 4
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "EventType",
+      "entries": {
+        "Activation": 0,
+        "DealDamage": 1,
+        "CriticalDamage": 2,
+        "MissedAttack": 3,
+        "TakeDamage": 4,
+        "LoseHealth": 5,
+        "AttackSpeed": 6,
+        "InvulnerableStart": 7,
+        "InvulnerableEnd": 8,
+        "Stun": 9,
+        "StunResisted": 10,
+        "CriticalResisted": 11,
+        "Health": 12,
+        "Stamina": 13,
+        "DrainStamina": 14,
+        "OutofStamina": 15,
+        "DamageBuff": 16,
+        "DamReduction": 17,
+        "DamIncrease": 18,
+        "TemporaryMaxHealth": 19,
+        "TemporaryMaxStamina": 20,
+        "BattleRageStart": 21,
+        "BattleRageEnd": 22,
+        "Reincarnate": 23,
+        "CooldownAdvance": 24,
+        "Unhealing": 98,
+        "Fatigue": 99,
+        "Block": 100,
+        "Lucky": 101,
+        "Regeneration": 102,
+        "Vampirism": 103,
+        "Spikes": 104,
+        "Mana": 105,
+        "Empower": 106,
+        "Heat": 107,
+        "Poison": 108,
+        "Blind": 109,
+        "Cold": 110,
+        "Win": 111,
+        "Loss": 112
+      },
+      "new_explicit_ids": 26
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "ItemMetrics",
+      "entries": {
+        "Damage": 0,
+        "Heal": 1,
+        "Overheal": 2,
+        "Misses": 3,
+        "Activations": 4,
+        "DamageBlocked": 5,
+        "MaxHealth": 6,
+        "OutOfStamina": 7,
+        "Stamina": 8,
+        "Block": 9,
+        "Lucky": 10,
+        "Regeneration": 11,
+        "Vampirism": 12,
+        "Spikes": 13,
+        "Mana": 14,
+        "Empower": 15,
+        "Heat": 16,
+        "Poison": 17,
+        "Blind": 18,
+        "Cold": 19
+      },
+      "new_explicit_ids": 20
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "ItemRecordStar",
+      "entries": {
+        "Bronze": 0,
+        "Silver": 1,
+        "Gold": 2,
+        "Diamond": 3
+      },
+      "new_explicit_ids": 4
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "SaleMode",
+      "entries": {
+        "Roll": 0,
+        "Sale": 1,
+        "NoSale": 2,
+        "Free": 3
+      },
+      "new_explicit_ids": 4
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "InventoryEditMode",
+      "entries": {
+        "Default": 0,
+        "BagLayer": 1,
+        "ItemLayer": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "RunStateLoadResult",
+      "entries": {
+        "LoadedRun": 0,
+        "NoRun": 1,
+        "FileCorrupt": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Core/Game.gd",
+      "enum": "ShopBGM",
+      "entries": {
+        "Default": 0,
+        "Lobby": 1,
+        "Survival": 2,
+        "SwitchMode": 3,
+        "Subclass": 4,
+        "LastTry": 5
+      },
+      "new_explicit_ids": 6
+    },
+    {
+      "path": "Interface/CombatLog/CombatLogLine.gd",
+      "enum": "State",
+      "entries": {
+        "Normal": 0,
+        "Hovered": 1,
+        "Connected": 2,
+        "Tooltip": 3
+      },
+      "new_explicit_ids": 4
+    },
+    {
+      "path": "Interface/DamageNumbers/BuffLabel.gd",
+      "enum": "ChangeType",
+      "entries": {
+        "Gain": 0,
+        "Resisted": 1,
+        "Protected": 2,
+        "Reflected": 3
+      },
+      "new_explicit_ids": 4
+    },
+    {
+      "path": "Interface/Tooltips/Tooltip.gd",
+      "enum": "Alignment",
+      "entries": {
+        "Top": 0,
+        "Center": 1,
+        "Bottom": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Items/CraftingBond.gd",
+      "enum": "BondType",
+      "entries": {
+        "Normal": 0,
+        "Catalyst": 1
+      },
+      "new_explicit_ids": 2
+    },
+    {
+      "path": "Items/Crown.gd",
+      "enum": "CrownState",
+      "entries": {
+        "Inactive": 0,
+        "Active": 1,
+        "Used": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Items/Exclusive/Eat-o-matic.gd",
+      "enum": "ArmState",
+      "entries": {
+        "Off": 0,
+        "Slow": 1,
+        "Fast": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Items/Exclusive/FrogPrince.gd",
+      "enum": "FrogState",
+      "entries": {
+        "Inactive": 0,
+        "Active": 1,
+        "Used": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Items/Exclusive/KingGoobert.gd",
+      "enum": "CrownState",
+      "entries": {
+        "Inactive": 0,
+        "Active": 1,
+        "Used": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Items/Gems/Gem.gd",
+      "enum": "GemMode",
+      "entries": {
+        "Weapon": 0,
+        "Armor": 1,
+        "Inventory": 2,
+        "Inactive": 3
+      },
+      "new_explicit_ids": 1
+    },
+    {
+      "path": "Items/HolySpear.gd",
+      "enum": "SpearState",
+      "entries": {
+        "Inactive": 0,
+        "Active": 1,
+        "Used": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "Owner",
+      "entries": {
+        "Shop": 0,
+        "PlayerInventory": 1,
+        "PlayerStorageBox": 2,
+        "Opponent": 3,
+        "Title": 4,
+        "RecipeBook": 5,
+        "Tooltip": 6,
+        "Socket": 7,
+        "ItemLibrary": 8,
+        "InfoPanelIcon": 9,
+        "BuildViewer": 10,
+        "BuildViewerIcon": 11,
+        "GridStorage": 12,
+        "Undefined": 13
+      },
+      "new_explicit_ids": 14
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "Type",
+      "entries": {
+        "Bag": 0,
+        "Consumable": 1,
+        "Food": 2,
+        "Pet": 3,
+        "Weapon": 4,
+        "Shield": 5,
+        "Armor": 6,
+        "Gloves": 7,
+        "Shoes": 8,
+        "Helmet": 9,
+        "Accessory": 10,
+        "Potion": 11,
+        "Card": 12,
+        "Gem": 13,
+        "Scroll": 14,
+        "Book": 15,
+        "Skill": 16,
+        "ChessPiece": 17,
+        "Spell": 18,
+        "Melee": 19,
+        "Ranged": 20,
+        "Effect": 21,
+        "Holy": 22,
+        "Magic": 23,
+        "Vampiric": 24,
+        "Dark": 25,
+        "Nature": 26,
+        "Fire": 27,
+        "Ice": 28,
+        "Musical": 29
+      },
+      "new_explicit_ids": 30
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "Mat",
+      "entries": {
+        "Default": 0,
+        "Wood": 1,
+        "Metal": 2,
+        "Leather": 3,
+        "Glass": 4,
+        "Stone": 5,
+        "Squishy": 6,
+        "Jewelry": 7,
+        "Sand": 8,
+        "Paper": 9,
+        "Slime": 10,
+        "Ice": 11,
+        "Fire": 12,
+        "Dragon": 13,
+        "Bird": 14,
+        "Leaf": 15
+      },
+      "new_explicit_ids": 16
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "Physics",
+      "entries": {
+        "Default": 0,
+        "Light": 1,
+        "Slime": 2,
+        "Dense": 3,
+        "VeryDense": 4,
+        "Floaty": 5,
+        "Sand": 6,
+        "Plush": 7,
+        "BouncyDense": 8,
+        "Ice": 9,
+        "Ghost": 10,
+        "BlackHole": 11
+      },
+      "new_explicit_ids": 12
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "DropResult",
+      "entries": {
+        "AddedToInventory": 0,
+        "Hotswap": 1,
+        "InventoryCollision": 2,
+        "OutsideInventory": 3,
+        "AddedToStorageBox": 4,
+        "Sold": 5,
+        "Socketed": 6,
+        "SocketHotswap": 7,
+        "Failed": 8
+      },
+      "new_explicit_ids": 9
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "PickupType",
+      "entries": {
+        "Grabbed": 0,
+        "Hotswap": 1,
+        "MultiSelect": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "ActivationAni",
+      "entries": {
+        "Scale": 0,
+        "Jump": 1,
+        "SquishyJump": 2,
+        "VerySquishyJump": 3,
+        "Slash": 4,
+        "Stab": 5,
+        "Bonk": 6,
+        "ReverseBonk": 7,
+        "Chop": 8,
+        "Squish": 9,
+        "Block": 10,
+        "Wave": 11,
+        "Potion": 12,
+        "Sweep": 13,
+        "Spin": 14,
+        "Throw": 15,
+        "Shoot": 16,
+        "Struggle": 17,
+        "ReverseStab": 18,
+        "Hiss": 19,
+        "Tackle": 20,
+        "DoubleSlash": 21,
+        "Flash": 22
+      },
+      "new_explicit_ids": 23
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "Stat",
+      "entries": {
+        "MinDamage": 0,
+        "MaxDamage": 1,
+        "StaminaCost": 2,
+        "Speed": 3,
+        "BaseCooldown": 4,
+        "Accuracy": 5,
+        "CritChance": 6,
+        "Chance": 7,
+        "Chance2": 8,
+        "Cooldown": 9
+      },
+      "new_explicit_ids": 10
+    },
+    {
+      "path": "Items/Item.gd",
+      "enum": "StackChangeType",
+      "entries": {
+        "Added_Player": 0,
+        "Added_Opponent": 1,
+        "Removed_Player": 2,
+        "Removed_Opponent": 3,
+        "Used_Player": 4,
+        "Used_Opponent": 5
+      },
+      "new_explicit_ids": 6
+    },
+    {
+      "path": "Items/ItemDescriptor.gd",
+      "enum": "ReleaseState",
+      "entries": {
+        "Demo": 0,
+        "Full": 1,
+        "Unreleased": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Utility/DamageSource.gd",
+      "enum": "Type",
+      "entries": {
+        "Melee": 0,
+        "Ranged": 1,
+        "Effect": 2,
+        "SelfDamage": 3,
+        "Unhealing": 98,
+        "Spikes": 104,
+        "Poison": 108,
+        "Fatigue": 99
+      },
+      "new_explicit_ids": 4
+    },
+    {
+      "path": "Utility/Lobbies.gd",
+      "enum": "JoinResult",
+      "entries": {
+        "Confirmed": 0,
+        "Unconfirmed": 1,
+        "Restricted_AlreadyStarted": 2,
+        "Restricted_HostLeft": 3,
+        "Restricted_Banned": 4,
+        "Error_CodeInvalid": 5,
+        "Error_VersionMismatch": 6
+      },
+      "new_explicit_ids": 7
+    },
+    {
+      "path": "Utility/Lobbies.gd",
+      "enum": "PartyState",
+      "entries": {
+        "NoParty": 0,
+        "Hosting": 1,
+        "Connecting": 2,
+        "Connected": 3,
+        "Reconnecting": 4
+      },
+      "new_explicit_ids": 5
+    },
+    {
+      "path": "Utility/Lobbies.gd",
+      "enum": "MatchMaking",
+      "entries": {
+        "Random": 0,
+        "Elimination": 1,
+        "RoundRobin": 2,
+        "EvenStats": 3,
+        "Strongest": 4,
+        "PrioritizeHost": 16
+      },
+      "new_explicit_ids": 5
+    },
+    {
+      "path": "Utility/RunData.gd",
+      "enum": "DeserializeResult",
+      "entries": {
+        "VERSION_TOO_NEW": 0,
+        "VERSION_TOO_OLD": 1,
+        "VERSION_OK": 2
+      },
+      "new_explicit_ids": 3
+    },
+    {
+      "path": "Utility/RunData.gd",
+      "enum": "Validity",
+      "entries": {
+        "Ok": 0,
+        "Questionable": 1,
+        "Invalid": 2,
+        "TooManyUniques": 3
+      },
+      "new_explicit_ids": 4
+    },
+    {
+      "path": "Utility/Settings.gd",
+      "enum": "Setting",
+      "entries": {
+        "language": 0,
+        "opponent_chibis": 1,
+        "hide_names": 2,
+        "combat_speed": 3,
+        "highlight_slots": 4,
+        "bag_hotswapping": 5,
+        "damage_numbers": 6,
+        "stat_icons": 7,
+        "buff_labels": 8,
+        "text_effects": 9,
+        "pick_offset": 10,
+        "window_mode": 11,
+        "vsync": 12,
+        "resolution": 13,
+        "fps_limit": 14,
+        "reduce_fps_unfocused": 15,
+        "software_cursor": 16,
+        "cursor_size": 17,
+        "cursor_speed": 18,
+        "bgm_muted": 19,
+        "sfx_muted": 20,
+        "voice_muted": 21,
+        "bgm_volume": 22,
+        "sfx_volume": 23,
+        "voice_volume": 24,
+        "mute_unfocused": 25
+      },
+      "new_explicit_ids": 26
+    }
+  ],
+  "skipped": []
+}

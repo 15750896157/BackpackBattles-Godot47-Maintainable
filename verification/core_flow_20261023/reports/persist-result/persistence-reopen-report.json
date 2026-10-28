@@ -1,0 +1,18 @@
+{
+	"case": "result",
+	"checks": 13,
+	"details": {
+		"last_error": "",
+		"load_validation": {
+			"error": "",
+			"ok": true
+		},
+		"restored_state": "COMBAT_RESULT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\core_flow_20261023\\release-checks\\persist-result-saves/",
+		"title_continue_disabled": false,
+		"title_continue_visible": true
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "reopen"
+}

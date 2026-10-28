@@ -1,0 +1,3 @@
+id,name_key,description_key,requirements,effect_count,uses_per_node
+rest_recover,rest.rest_recover.name,rest.rest_recover.desc,always,1,1
+rest_field_craft,rest.rest_field_craft.name,rest.rest_field_craft.desc,always,1,1

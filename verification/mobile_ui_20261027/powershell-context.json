@@ -1,0 +1,19 @@
+{
+  "directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\中文 可搬移目录\\BackpackBattles_Godot47_Maintainable\\verification\\local_check_20261027_122314_609",
+  "powershell": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "processes": [
+    {
+      "scene": "CoreFlowMain",
+      "exit_code": 0,
+      "stderr_empty": true,
+      "ok": true
+    },
+    {
+      "scene": "MobileUIMain",
+      "exit_code": 0,
+      "stderr_empty": true,
+      "ok": true
+    }
+  ],
+  "wrapper_exit_code": 0
+}

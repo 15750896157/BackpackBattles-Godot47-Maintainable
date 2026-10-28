@@ -1,0 +1,24 @@
+﻿{
+    "ok":  true,
+    "powershell":  "5.1.26100.9711",
+    "git_head":  "9ce0943 Initial upload Backpack Battles Godot project",
+    "git_status":  {
+                       " D":  4854,
+                       " M":  373,
+                       "??":  670
+                   },
+    "gd_files":  795,
+    "gd_lines":  67558,
+    "tscn_files":  335,
+    "class_names":  110,
+    "key_lines":  {
+                      "Core/Main.tscn":  15072,
+                      "Core/Game.gd":  2118,
+                      "Items/Item.gd":  3043,
+                      "Core/Character.gd":  899,
+                      "PvE/NativeExpedition.gd":  844
+                  },
+    "autoload_count":  24,
+    "default_stage_count":  22,
+    "reference_461_exists":  true
+}

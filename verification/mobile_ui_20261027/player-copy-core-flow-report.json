@@ -1,0 +1,1620 @@
+{
+	"checks": [
+		{
+			"message": "initial visible shelf matches authoritative offers",
+			"ok": true
+		},
+		{
+			"message": "native drag and drop commits through original interaction",
+			"ok": true
+		},
+		{
+			"message": "drop resumes its deferred presentation update",
+			"ok": true
+		},
+		{
+			"message": "refresh changes authoritative offers 0",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 0",
+			"ok": true
+		},
+		{
+			"message": "refresh changes authoritative offers 1",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 1",
+			"ok": true
+		},
+		{
+			"message": "refresh changes authoritative offers 2",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 2",
+			"ok": true
+		},
+		{
+			"message": "no stranded render request after refresh",
+			"ok": true
+		},
+		{
+			"message": "start battle through visible art control",
+			"ok": true
+		},
+		{
+			"message": "ordinary playback reaches battle end",
+			"ok": true
+		},
+		{
+			"message": "result automatically opens without touching intel",
+			"ok": true
+		},
+		{
+			"message": "next step is on the first visible page above long statistics",
+			"ok": true
+		},
+		{
+			"message": "result next button is available",
+			"ok": true
+		},
+		{
+			"message": "result next reaches rewards or run result",
+			"ok": true
+		},
+		{
+			"message": "title has no transition or menu input shield",
+			"ok": true
+		},
+		{
+			"message": "new-game title banner opens setup after battle",
+			"ok": true
+		},
+		{
+			"message": "new game actually leaves setup and shows routes",
+			"ok": true
+		},
+		{
+			"message": "second fresh run",
+			"ok": true
+		},
+		{
+			"message": "save current shop through settings",
+			"ok": true
+		},
+		{
+			"message": "title continue restores saved shop without a manual redraw",
+			"ok": true
+		},
+		{
+			"message": "second combat entered",
+			"ok": true
+		},
+		{
+			"message": "pause button stops playback before exit",
+			"ok": true
+		},
+		{
+			"message": "save and exit button in live combat settings",
+			"ok": true
+		},
+		{
+			"message": "combat exit finishes title transition",
+			"ok": true
+		},
+		{
+			"message": "title buttons accept real pointer input after combat exit",
+			"ok": true
+		},
+		{
+			"message": "continue button reconstructs exited combat",
+			"ok": true
+		}
+	],
+	"failures": [],
+	"observations": [
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "01-shop",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 36,
+				"job_costs": {
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 1,
+						"max_us": 448,
+						"total_us": 448
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 1,
+						"max_us": 439,
+						"total_us": 439
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 484,
+						"total_us": 1392
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 1,
+						"max_us": 462,
+						"total_us": 462
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 1,
+						"max_us": 581,
+						"total_us": 581
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 5,
+						"max_us": 8818,
+						"total_us": 10959
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 2,
+						"max_us": 5092,
+						"total_us": 5671
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 10,
+						"max_us": 618,
+						"total_us": 4316
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3822,
+						"total_us": 3822
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 1,
+						"max_us": 466,
+						"total_us": 466
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 21,
+						"total_us": 21
+					}
+				},
+				"job_max_us": 8818,
+				"jobs": 0,
+				"loaded": 68,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 68,
+				"resident": 68,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "01b-after-native-drop",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 36,
+				"job_costs": {
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 1,
+						"max_us": 448,
+						"total_us": 448
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 1,
+						"max_us": 439,
+						"total_us": 439
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 484,
+						"total_us": 1392
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 1,
+						"max_us": 462,
+						"total_us": 462
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 1,
+						"max_us": 581,
+						"total_us": 581
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 5,
+						"max_us": 8818,
+						"total_us": 10959
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 2,
+						"max_us": 5092,
+						"total_us": 5671
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 10,
+						"max_us": 618,
+						"total_us": 4316
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3822,
+						"total_us": 3822
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 1,
+						"max_us": 466,
+						"total_us": 466
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 21,
+						"total_us": 21
+					}
+				},
+				"job_max_us": 8818,
+				"jobs": 0,
+				"loaded": 68,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 68,
+				"resident": 68,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "02-refresh-0",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 41,
+				"job_costs": {
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 448,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 1,
+						"max_us": 439,
+						"total_us": 439
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 484,
+						"total_us": 1392
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 2,
+						"max_us": 462,
+						"total_us": 918
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 1,
+						"max_us": 581,
+						"total_us": 581
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 5,
+						"max_us": 8818,
+						"total_us": 10959
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 3,
+						"max_us": 5092,
+						"total_us": 6365
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 1,
+						"max_us": 1815,
+						"total_us": 1815
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 10,
+						"max_us": 618,
+						"total_us": 4316
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3822,
+						"total_us": 3822
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 466,
+						"total_us": 896
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 21,
+						"total_us": 21
+					}
+				},
+				"job_max_us": 8818,
+				"jobs": 0,
+				"loaded": 69,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 4,
+				"requested": 69,
+				"resident": 65,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "02-refresh-1",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 5,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 46,
+				"job_costs": {
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 448,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 2,
+						"max_us": 455,
+						"total_us": 894
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 484,
+						"total_us": 1392
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 3,
+						"max_us": 513,
+						"total_us": 1431
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 1,
+						"max_us": 581,
+						"total_us": 581
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 5,
+						"max_us": 8818,
+						"total_us": 10959
+					},
+					"res://Items/Exclusive/SmithingForDummies.tscn": {
+						"count": 1,
+						"max_us": 3856,
+						"total_us": 3856
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 4,
+						"max_us": 5092,
+						"total_us": 6948
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/FlyAgaric.tscn": {
+						"count": 1,
+						"max_us": 369,
+						"total_us": 369
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 1,
+						"max_us": 1815,
+						"total_us": 1815
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 10,
+						"max_us": 618,
+						"total_us": 4316
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3822,
+						"total_us": 3822
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 466,
+						"total_us": 896
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 21,
+						"total_us": 21
+					}
+				},
+				"job_max_us": 8818,
+				"jobs": 0,
+				"loaded": 72,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 5,
+				"requested": 72,
+				"resident": 67,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "02-refresh-2",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 8,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 51,
+				"job_costs": {
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3759,
+						"total_us": 3759
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 448,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 2,
+						"max_us": 455,
+						"total_us": 894
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 484,
+						"total_us": 1392
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 4,
+						"max_us": 513,
+						"total_us": 1891
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 2,
+						"max_us": 581,
+						"total_us": 1023
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 5,
+						"max_us": 8818,
+						"total_us": 10959
+					},
+					"res://Items/Exclusive/SmithingForDummies.tscn": {
+						"count": 1,
+						"max_us": 3856,
+						"total_us": 3856
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 4,
+						"max_us": 5092,
+						"total_us": 6948
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/FlyAgaric.tscn": {
+						"count": 1,
+						"max_us": 369,
+						"total_us": 369
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 5112,
+						"total_us": 5112
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 1,
+						"max_us": 1815,
+						"total_us": 1815
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 10,
+						"max_us": 618,
+						"total_us": 4316
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3822,
+						"total_us": 3822
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/PoisonIvy.tscn": {
+						"count": 1,
+						"max_us": 3636,
+						"total_us": 3636
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 466,
+						"total_us": 896
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 21,
+						"total_us": 21
+					}
+				},
+				"job_max_us": 8818,
+				"jobs": 0,
+				"loaded": 76,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 8,
+				"requested": 76,
+				"resident": 68,
+				"scopes": 8,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 1024,
+			"native": 2,
+			"page": "COMBAT_RESULT",
+			"panel": true,
+			"pending": false,
+			"phase": "03-automatic-result",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "COMBAT_RESULT",
+			"stream": {
+				"budget_overruns": 9,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 58,
+				"job_costs": {
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3759,
+						"total_us": 3759
+					},
+					"res://Items/Exclusive/Anvil.tscn": {
+						"count": 1,
+						"max_us": 428,
+						"total_us": 428
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 448,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 2,
+						"max_us": 455,
+						"total_us": 894
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 484,
+						"total_us": 1392
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 4,
+						"max_us": 513,
+						"total_us": 1891
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 3,
+						"max_us": 581,
+						"total_us": 1488
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 5,
+						"max_us": 8818,
+						"total_us": 10959
+					},
+					"res://Items/Exclusive/SmithingForDummies.tscn": {
+						"count": 1,
+						"max_us": 3856,
+						"total_us": 3856
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 2,
+						"max_us": 407,
+						"total_us": 801
+					},
+					"res://Items/Exclusive/ThorsHammer.tscn": {
+						"count": 1,
+						"max_us": 5472,
+						"total_us": 5472
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 4,
+						"max_us": 5092,
+						"total_us": 6948
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/FlyAgaric.tscn": {
+						"count": 1,
+						"max_us": 369,
+						"total_us": 369
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 1,
+						"max_us": 555,
+						"total_us": 555
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 5112,
+						"total_us": 5112
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 1,
+						"max_us": 1815,
+						"total_us": 1815
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 10,
+						"max_us": 618,
+						"total_us": 4316
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3822,
+						"total_us": 4286
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/PoisonIvy.tscn": {
+						"count": 1,
+						"max_us": 3636,
+						"total_us": 3636
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 466,
+						"total_us": 896
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop3.tscn": {
+						"count": 1,
+						"max_us": 59,
+						"total_us": 59
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 21,
+						"total_us": 21
+					}
+				},
+				"job_max_us": 8818,
+				"jobs": 0,
+				"loaded": 99,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 40,
+				"requested": 99,
+				"resident": 59,
+				"scopes": 8,
+				"sync_misses": 1,
+				"sync_paths": {
+					"res://Art/20261022/skeleton.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 0,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "04-title-after-result",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "MAIN_MENU",
+			"stream": {
+				"budget_overruns": 9,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 58,
+				"job_costs": {
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3759,
+						"total_us": 3759
+					},
+					"res://Items/Exclusive/Anvil.tscn": {
+						"count": 1,
+						"max_us": 428,
+						"total_us": 428
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 448,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 2,
+						"max_us": 455,
+						"total_us": 894
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 484,
+						"total_us": 1392
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 4,
+						"max_us": 513,
+						"total_us": 1891
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 3,
+						"max_us": 581,
+						"total_us": 1488
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 5,
+						"max_us": 8818,
+						"total_us": 10959
+					},
+					"res://Items/Exclusive/SmithingForDummies.tscn": {
+						"count": 1,
+						"max_us": 3856,
+						"total_us": 3856
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 2,
+						"max_us": 407,
+						"total_us": 801
+					},
+					"res://Items/Exclusive/ThorsHammer.tscn": {
+						"count": 1,
+						"max_us": 5472,
+						"total_us": 5472
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 4,
+						"max_us": 5092,
+						"total_us": 6948
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/FlyAgaric.tscn": {
+						"count": 1,
+						"max_us": 369,
+						"total_us": 369
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 1,
+						"max_us": 555,
+						"total_us": 555
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 5112,
+						"total_us": 5112
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 1,
+						"max_us": 1815,
+						"total_us": 1815
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 10,
+						"max_us": 618,
+						"total_us": 4316
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3822,
+						"total_us": 4286
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/PoisonIvy.tscn": {
+						"count": 1,
+						"max_us": 3636,
+						"total_us": 3636
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 466,
+						"total_us": 896
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop3.tscn": {
+						"count": 1,
+						"max_us": 59,
+						"total_us": 59
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 21,
+						"total_us": 21
+					}
+				},
+				"job_max_us": 8818,
+				"jobs": 0,
+				"loaded": 101,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 94,
+				"requested": 101,
+				"resident": 7,
+				"scopes": 2,
+				"sync_misses": 1,
+				"sync_paths": {
+					"res://Art/20261022/skeleton.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 0
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 0,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "05-title-after-combat-exit",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "MAIN_MENU",
+			"stream": {
+				"budget_overruns": 17,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 82,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 2,
+						"max_us": 408,
+						"total_us": 800
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3759,
+						"total_us": 3759
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 2,
+						"max_us": 418,
+						"total_us": 824
+					},
+					"res://Items/Exclusive/Anvil.tscn": {
+						"count": 1,
+						"max_us": 428,
+						"total_us": 428
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 448,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 2,
+						"max_us": 455,
+						"total_us": 894
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 4,
+						"max_us": 484,
+						"total_us": 1865
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 4,
+						"max_us": 513,
+						"total_us": 1891
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 3,
+						"max_us": 581,
+						"total_us": 1488
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 7,
+						"max_us": 8958,
+						"total_us": 28577
+					},
+					"res://Items/Exclusive/SmithingForDummies.tscn": {
+						"count": 1,
+						"max_us": 3856,
+						"total_us": 3856
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 2,
+						"max_us": 407,
+						"total_us": 801
+					},
+					"res://Items/Exclusive/ThorsHammer.tscn": {
+						"count": 1,
+						"max_us": 5472,
+						"total_us": 5472
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 1,
+						"max_us": 4352,
+						"total_us": 4352
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 4,
+						"max_us": 5092,
+						"total_us": 6948
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/FlyAgaric.tscn": {
+						"count": 1,
+						"max_us": 369,
+						"total_us": 369
+					},
+					"res://Items/Gems/BurningCoal.tscn": {
+						"count": 1,
+						"max_us": 4121,
+						"total_us": 4121
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 3,
+						"max_us": 4968,
+						"total_us": 10205
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 5112,
+						"total_us": 5112
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 1,
+						"max_us": 1815,
+						"total_us": 1815
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 11,
+						"max_us": 618,
+						"total_us": 4731
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 5,
+						"max_us": 3822,
+						"total_us": 12229
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 2,
+						"max_us": 542,
+						"total_us": 1053
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/PoisonIvy.tscn": {
+						"count": 1,
+						"max_us": 3636,
+						"total_us": 3636
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/Spear.tscn": {
+						"count": 2,
+						"max_us": 423,
+						"total_us": 828
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 4,
+						"max_us": 466,
+						"total_us": 1758
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 1,
+						"max_us": 47,
+						"total_us": 47
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop3.tscn": {
+						"count": 1,
+						"max_us": 59,
+						"total_us": 59
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 3,
+						"max_us": 49,
+						"total_us": 88
+					}
+				},
+				"job_max_us": 8958,
+				"jobs": 0,
+				"loaded": 229,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 222,
+				"requested": 232,
+				"resident": 7,
+				"scopes": 2,
+				"sync_misses": 2,
+				"sync_paths": {
+					"res://Art/20261022/bat.png": 1,
+					"res://Art/20261022/skeleton.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 0
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 2,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "06-continue",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "COMBAT_RUNNING",
+			"stream": {
+				"budget_overruns": 21,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 97,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 3,
+						"max_us": 408,
+						"total_us": 1182
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3759,
+						"total_us": 3759
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 3,
+						"max_us": 519,
+						"total_us": 1343
+					},
+					"res://Items/Exclusive/Anvil.tscn": {
+						"count": 1,
+						"max_us": 428,
+						"total_us": 428
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 1,
+						"max_us": 425,
+						"total_us": 425
+					},
+					"res://Items/Exclusive/BerserkerBag.tscn": {
+						"count": 1,
+						"max_us": 413,
+						"total_us": 413
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 448,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/Cauldron.tscn": {
+						"count": 1,
+						"max_us": 2104,
+						"total_us": 2104
+					},
+					"res://Items/Exclusive/Coil.tscn": {
+						"count": 1,
+						"max_us": 411,
+						"total_us": 411
+					},
+					"res://Items/Exclusive/EngineerBag2.tscn": {
+						"count": 2,
+						"max_us": 455,
+						"total_us": 894
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 5,
+						"max_us": 593,
+						"total_us": 2458
+					},
+					"res://Items/Exclusive/Pot.tscn": {
+						"count": 4,
+						"max_us": 513,
+						"total_us": 1891
+					},
+					"res://Items/Exclusive/PuzzlebagT.tscn": {
+						"count": 3,
+						"max_us": 581,
+						"total_us": 1488
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 8,
+						"max_us": 8958,
+						"total_us": 37254
+					},
+					"res://Items/Exclusive/SmithingForDummies.tscn": {
+						"count": 1,
+						"max_us": 3856,
+						"total_us": 3856
+					},
+					"res://Items/Exclusive/StarofCourage.tscn": {
+						"count": 2,
+						"max_us": 407,
+						"total_us": 801
+					},
+					"res://Items/Exclusive/ThorsHammer.tscn": {
+						"count": 1,
+						"max_us": 5472,
+						"total_us": 5472
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 2,
+						"max_us": 4352,
+						"total_us": 5676
+					},
+					"res://Items/Exclusive/VampiricPotion.tscn": {
+						"count": 4,
+						"max_us": 5092,
+						"total_us": 6948
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 438,
+						"total_us": 867
+					},
+					"res://Items/FlyAgaric.tscn": {
+						"count": 1,
+						"max_us": 369,
+						"total_us": 369
+					},
+					"res://Items/Gems/BurningCoal.tscn": {
+						"count": 2,
+						"max_us": 4121,
+						"total_us": 8084
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 4,
+						"max_us": 4968,
+						"total_us": 14953
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 1,
+						"max_us": 5112,
+						"total_us": 5112
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 1,
+						"max_us": 1815,
+						"total_us": 1815
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 12,
+						"max_us": 618,
+						"total_us": 5097
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 7,
+						"max_us": 3822,
+						"total_us": 16387
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 3,
+						"max_us": 542,
+						"total_us": 1549
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 1,
+						"max_us": 1910,
+						"total_us": 1910
+					},
+					"res://Items/PoisonIvy.tscn": {
+						"count": 1,
+						"max_us": 3636,
+						"total_us": 3636
+					},
+					"res://Items/ShieldofValor.tscn": {
+						"count": 1,
+						"max_us": 3900,
+						"total_us": 3900
+					},
+					"res://Items/Spear.tscn": {
+						"count": 3,
+						"max_us": 423,
+						"total_us": 1249
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 5,
+						"max_us": 466,
+						"total_us": 2179
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 2,
+						"max_us": 47,
+						"total_us": 85
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop3.tscn": {
+						"count": 1,
+						"max_us": 59,
+						"total_us": 59
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 4,
+						"max_us": 49,
+						"total_us": 128
+					}
+				},
+				"job_max_us": 8958,
+				"jobs": 0,
+				"loaded": 304,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 255,
+				"requested": 307,
+				"resident": 49,
+				"scopes": 8,
+				"sync_misses": 3,
+				"sync_paths": {
+					"res://Art/20261022/bat.png": 2,
+					"res://Art/20261022/skeleton.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 4
+		}
+	],
+	"ok": true
+}

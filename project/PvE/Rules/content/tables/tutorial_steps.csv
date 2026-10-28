@@ -1,0 +1,17 @@
+id,step_order,scene_scope,trigger,blocking,required_action,title_key,body_key
+tutorial_01_pickup,1,shop,first_shop_open,true,pick_up_item,tutorial.tutorial_01_pickup.title,tutorial.tutorial_01_pickup.body
+tutorial_02_rotate,2,shop,item_held,true,rotate_item,tutorial.tutorial_02_rotate.title,tutorial.tutorial_02_rotate.body
+tutorial_03_place,3,shop,item_rotated,true,place_item_valid,tutorial.tutorial_03_place.title,tutorial.tutorial_03_place.body
+tutorial_04_invalid,4,shop,first_invalid_hover,false,inspect_invalid_reason,tutorial.tutorial_04_invalid.title,tutorial.tutorial_04_invalid.body
+tutorial_05_buy,5,shop,valid_shop_item_placed,true,confirm_purchase,tutorial.tutorial_05_buy.title,tutorial.tutorial_05_buy.body
+tutorial_06_info,6,shop,purchase_complete,false,open_item_details,tutorial.tutorial_06_info.title,tutorial.tutorial_06_info.body
+tutorial_07_enemy,7,shop,combat_available,true,open_enemy_preview,tutorial.tutorial_07_enemy.title,tutorial.tutorial_07_enemy.body
+tutorial_08_combat,8,combat,combat_started,false,wait_for_first_activation,tutorial.tutorial_08_combat.title,tutorial.tutorial_08_combat.body
+tutorial_09_result,9,result,combat_won,true,open_combat_stats,tutorial.tutorial_09_result.title,tutorial.tutorial_09_result.body
+tutorial_10_reward,10,reward,reward_open,true,select_reward,tutorial.tutorial_10_reward.title,tutorial.tutorial_10_reward.body
+tutorial_11_refresh,11,shop,second_shop_open,true,refresh_shop,tutorial.tutorial_11_refresh.title,tutorial.tutorial_11_refresh.body
+tutorial_12_lock,12,shop,after_refresh,false,lock_shop_item,tutorial.tutorial_12_lock.title,tutorial.tutorial_12_lock.body
+tutorial_13_storage,13,shop,storage_available,false,move_item_to_storage,tutorial.tutorial_13_storage.title,tutorial.tutorial_13_storage.body
+tutorial_14_recipe,14,shop,recipe_candidate_found,true,confirm_recipe,tutorial.tutorial_14_recipe.title,tutorial.tutorial_14_recipe.body
+tutorial_15_route,15,route,route_open,true,select_route_node,tutorial.tutorial_15_route.title,tutorial.tutorial_15_route.body
+tutorial_16_complete,16,run,tutorial_boss_won,false,acknowledge,tutorial.tutorial_16_complete.title,tutorial.tutorial_16_complete.body

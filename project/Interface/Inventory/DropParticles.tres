@@ -1,0 +1,31 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://Shader/VerySmoothFadeGradient.tres" type="Texture2D" id=1]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 0.326136 ), 0.0, 1.6007, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+width = 50
+curve = SubResource( 1 )
+
+[resource]
+lifetime_randomness = 0.15
+particle_flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 150, 0 )
+scale_curve = SubResource( 2 )
+color_ramp = ExtResource( 1 )
+initial_velocity_min = 349.8367
+initial_velocity_max = 421.49
+angle_min = 0
+angle_max = 720
+angular_velocity_min = -43.61
+angular_velocity_max = 43.61
+orbit_velocity_min = 0
+orbit_velocity_max = 0
+damping_min = 1000
+damping_max = 1000
+scale_min = 0.12
+scale_max = 0.4104
+

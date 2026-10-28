@@ -1,0 +1,10 @@
+{
+	"all_passed": true,
+	"checks": {
+		"picked_up": true,
+		"returned_original_placement": true,
+		"rotated_while_held": true,
+		"valid_build_after_return": true
+	},
+	"held": false
+}

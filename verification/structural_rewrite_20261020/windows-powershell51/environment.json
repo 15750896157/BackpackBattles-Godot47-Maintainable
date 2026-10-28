@@ -1,0 +1,8 @@
+{
+  "powershell_version": "5.1.26100.9711",
+  "scenes": 4,
+  "assertions": 1750,
+  "all_exit_zero": true,
+  "all_stderr_empty": true,
+  "portable_path_includes_chinese_and_spaces": true
+}

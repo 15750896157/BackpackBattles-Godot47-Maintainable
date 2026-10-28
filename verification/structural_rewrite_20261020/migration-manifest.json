@@ -1,0 +1,6373 @@
+[
+  {
+    "path": "Core/Game.gd",
+    "moved": 72,
+    "qualified_references": 960,
+    "skipped": {
+      "small-boundary": 274,
+      "native-object-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "pause",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [
+          "pauseSource"
+        ],
+        "await": false
+      },
+      {
+        "name": "globalPosToScreenPos",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [
+          "pos"
+        ],
+        "await": false
+      },
+      {
+        "name": "getLastRoundResult",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "expandPath",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [
+          "format",
+          "steamID",
+          "full"
+        ],
+        "await": false
+      },
+      {
+        "name": "makeBaseDir",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getLoadPath",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [
+          "format",
+          "isFile"
+        ],
+        "await": false
+      },
+      {
+        "name": "actuallySaveGame",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "findBackups",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [
+          "isLoad"
+        ],
+        "await": false
+      },
+      {
+        "name": "loadGame",
+        "module": "Runtime/Behavior/Game/Session.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getFileContent",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "path"
+        ],
+        "await": false
+      },
+      {
+        "name": "calcTempPath",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "loadRunStateFromPath",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "path",
+          "mode"
+        ],
+        "await": false
+      },
+      {
+        "name": "validateRun",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "mode"
+        ],
+        "await": false
+      },
+      {
+        "name": "loadRunState",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "mode",
+          "instanceRunState"
+        ],
+        "await": false
+      },
+      {
+        "name": "initPlayerFromRunstate",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "mode"
+        ],
+        "await": false
+      },
+      {
+        "name": "readRoundResultsFromRunState",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "mode"
+        ],
+        "await": false
+      },
+      {
+        "name": "concedeLastRun",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "initPlayer",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getLeague_exact",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "rating"
+        ],
+        "await": false
+      },
+      {
+        "name": "_enter_tree",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "ready_deferred",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": true
+      },
+      {
+        "name": "onReconnectedToLobby",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "loadArenaRunAndStartOnTitle",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "instanceCharacter",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "characterClass"
+        ],
+        "await": false
+      },
+      {
+        "name": "addLoadoutAni_jump",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "bag"
+        ],
+        "await": false
+      },
+      {
+        "name": "addLoadoutAni",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "node",
+          "isBag"
+        ],
+        "await": false
+      },
+      {
+        "name": "startHistoryRun",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [
+          "runData",
+          "roundNum",
+          "opponentData",
+          "opponentRoundNum"
+        ],
+        "await": false
+      },
+      {
+        "name": "endHistoryRun",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "isSoftballRound",
+        "module": "Runtime/Behavior/Game/RunFlow.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "switchToCombat",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "forceSwitchToCombat",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onWaitingForMembersTimeout",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "forceLeaveLobby",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "initOpponent",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "roundReduction",
+          "droppedItems"
+        ],
+        "await": false
+      },
+      {
+        "name": "initHistoryOpponent",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addOpponentItem",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "tuple",
+          "item",
+          "checkValidity"
+        ],
+        "await": false
+      },
+      {
+        "name": "_input",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "showAffectedLines",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setInventoryEditMode",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "editMode"
+        ],
+        "await": false
+      },
+      {
+        "name": "lockTooltip",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "addTranslation",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "becomeOpponent",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "finishBecomeOpponent",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "offset"
+        ],
+        "await": false
+      },
+      {
+        "name": "becomeOpponent_old",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_close_legacy_menus",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "clear_transition"
+        ],
+        "await": false
+      },
+      {
+        "name": "_pve_restore_actor_parents",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_prepare_title",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "freeOpponent",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onSceneAnimationFinished",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "aniName"
+        ],
+        "await": false
+      },
+      {
+        "name": "calcRunRating",
+        "module": "Runtime/Behavior/Game/Presentation.gd",
+        "args": [
+          "curRating",
+          "numWins",
+          "numLosses",
+          "triesLeft",
+          "survival",
+          "perfectRunBeforeSurvival"
+        ],
+        "await": false
+      },
+      {
+        "name": "itemHovered",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "onItemBought",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "item",
+          "onSale"
+        ],
+        "await": false
+      },
+      {
+        "name": "onItemCrafted",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "itemDescriptor"
+        ],
+        "await": false
+      },
+      {
+        "name": "getNextTutorialText",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "changeCursorSize",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "newSize"
+        ],
+        "await": false
+      },
+      {
+        "name": "recalculateCursor",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getCursorType",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "addControlOfInterest",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "control",
+          "offset",
+          "scrollContainer",
+          "childToScrollTo",
+          "layer"
+        ],
+        "await": false
+      },
+      {
+        "name": "addItemOfInterest",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "item",
+          "layer"
+        ],
+        "await": false
+      },
+      {
+        "name": "warp",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "input"
+        ],
+        "await": false
+      },
+      {
+        "name": "ensureScrollVisibility",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "scrollContainer",
+          "child"
+        ],
+        "await": false
+      },
+      {
+        "name": "incrementItemStatistic",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [
+          "statistic",
+          "descriptor",
+          "increment"
+        ],
+        "await": false
+      },
+      {
+        "name": "onPatchNotesClosed",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "fuseAll",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "checkForInventoryAchievements",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "writeoutState",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "saveWindowSettings",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "checkProcesses",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_exit_tree",
+        "module": "Runtime/Behavior/Game/ProgressAndRewards.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Item.gd",
+    "moved": 89,
+    "qualified_references": 1838,
+    "skipped": {
+      "small-boundary": 543,
+      "native-object-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "ready_deferred",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "initPhysicsMaterial",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getDescription",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [
+          "wrapInColor"
+        ],
+        "await": false
+      },
+      {
+        "name": "insertParameters",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [
+          "descr",
+          "wrapInColor"
+        ],
+        "await": false
+      },
+      {
+        "name": "insertParameter",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [
+          "descr",
+          "paramName",
+          "value",
+          "modified",
+          "checkZero",
+          "wrapInColor"
+        ],
+        "await": false
+      },
+      {
+        "name": "getModeDescription",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [
+          "text",
+          "colors",
+          "center",
+          "wrapInColor"
+        ],
+        "await": false
+      },
+      {
+        "name": "getBagEffect",
+        "module": "Runtime/Behavior/Items/LifecycleAndText.gd",
+        "args": [
+          "number"
+        ],
+        "await": false
+      },
+      {
+        "name": "setEditMode",
+        "module": "Runtime/Behavior/Items/GridGeometry.gd",
+        "args": [
+          "active"
+        ],
+        "await": false
+      },
+      {
+        "name": "getNormalizedCollisionCells",
+        "module": "Runtime/Behavior/Items/GridGeometry.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getTopLeftGlobal",
+        "module": "Runtime/Behavior/Items/GridGeometry.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getBottomRightGlobal",
+        "module": "Runtime/Behavior/Items/GridGeometry.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "previewCells",
+        "module": "Runtime/Behavior/Items/GridGeometry.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addToInventory",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [
+          "_inventory",
+          "_occupiedCells",
+          "_placedByPlayer"
+        ],
+        "await": false
+      },
+      {
+        "name": "removeFromInventory",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "playAffectedPlacedAnimation",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [
+          "newItemIsAffected"
+        ],
+        "await": false
+      },
+      {
+        "name": "onItemAdded",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "onItemTypeChanged",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "previewCanAffect",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addToStorageBox",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [
+          "addImpulse",
+          "tweenBouncyness",
+          "checkCollisions",
+          "targetPos",
+          "speed",
+          "secondCheck"
+        ],
+        "await": false
+      },
+      {
+        "name": "moveToFreeSpaceInStorage",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [
+          "targetPos",
+          "addImpulse",
+          "speed",
+          "secondCheck",
+          "tweenBouncyness"
+        ],
+        "await": false
+      },
+      {
+        "name": "findFreeSpace",
+        "module": "Runtime/Behavior/Items/Placement.gd",
+        "args": [
+          "startPos"
+        ],
+        "await": false
+      },
+      {
+        "name": "_process",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "rotateTo",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [
+          "targetRotation",
+          "duration"
+        ],
+        "await": false
+      },
+      {
+        "name": "respondToHover",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "canShowBuildIntoRecipesTooltip",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showBuildIntoRecipesTooltip",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "respondToHoverEnd",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "hover",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pickup",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [
+          "pickupType"
+        ],
+        "await": false
+      },
+      {
+        "name": "reactToDropResult",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [
+          "result"
+        ],
+        "await": false
+      },
+      {
+        "name": "drop",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "cancelDrag",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "dropIntoInventory",
+        "module": "Runtime/Behavior/Items/Interaction.gd",
+        "args": [
+          "hotswap"
+        ],
+        "await": false
+      },
+      {
+        "name": "setGemData",
+        "module": "Runtime/Behavior/Items/CombatState.gd",
+        "args": [
+          "gemData"
+        ],
+        "await": false
+      },
+      {
+        "name": "getTouchedBagsCounted",
+        "module": "Runtime/Behavior/Items/CombatState.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "playPickupSound",
+        "module": "Runtime/Behavior/Items/CombatState.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "playDropSound",
+        "module": "Runtime/Behavior/Items/CombatState.gd",
+        "args": [
+          "volume"
+        ],
+        "await": false
+      },
+      {
+        "name": "_input",
+        "module": "Runtime/Behavior/Items/CombatState.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "resetSprite",
+        "module": "Runtime/Behavior/Items/CombatState.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "shopEntered",
+        "module": "Runtime/Behavior/Items/CombatState.gd",
+        "args": [
+          "craft"
+        ],
+        "await": false
+      },
+      {
+        "name": "getRarity",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getMinDamage",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "damSource"
+        ],
+        "await": false
+      },
+      {
+        "name": "getMaxDamage",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "damSource"
+        ],
+        "await": false
+      },
+      {
+        "name": "getSpeed",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "adjustCooldown",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addBonusDamage",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "damage",
+          "removable"
+        ],
+        "await": false
+      },
+      {
+        "name": "playOutOfStaminaAnimation",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "useStamina",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "amount"
+        ],
+        "await": false
+      },
+      {
+        "name": "discard",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "discardGems"
+        ],
+        "await": false
+      },
+      {
+        "name": "popIn",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "withParticles",
+          "speed",
+          "jump"
+        ],
+        "await": false
+      },
+      {
+        "name": "createParticles",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "scene",
+          "baseScale"
+        ],
+        "await": false
+      },
+      {
+        "name": "dropImpulse",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "direction",
+          "tweenBouncyness"
+        ],
+        "await": false
+      },
+      {
+        "name": "playActivationAnimation_Jump",
+        "module": "Runtime/Behavior/Items/CombatEffects.gd",
+        "args": [
+          "height",
+          "maxScale"
+        ],
+        "await": false
+      },
+      {
+        "name": "playActivationAnimation_JumpSquash",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "height",
+          "intensity"
+        ],
+        "await": false
+      },
+      {
+        "name": "playActivationAnimation",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "aniType",
+          "consume"
+        ],
+        "await": false
+      },
+      {
+        "name": "activate",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "damageRes",
+          "playCombatAni",
+          "consume",
+          "animationOverride"
+        ],
+        "await": false
+      },
+      {
+        "name": "activateFromEvent",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "getStat",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "stat"
+        ],
+        "await": false
+      },
+      {
+        "name": "stackChanged",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "stackType",
+          "amount",
+          "onPlayer",
+          "used"
+        ],
+        "await": false
+      },
+      {
+        "name": "giveBlock",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "amount",
+          "canTriggerEffects",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "giveMana_capped",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "amount",
+          "maximum",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "sendCharge",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "durPerTile",
+          "cells",
+          "speedFactor",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "changeChargedItemStat",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "charge",
+          "cellIndex",
+          "flatVal",
+          "valPerTile"
+        ],
+        "await": false
+      },
+      {
+        "name": "getSizeInCells",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "initSpriteMaterial",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateShaderRotation",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showCooldownSmooth",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [
+          "progress",
+          "fill"
+        ],
+        "await": false
+      },
+      {
+        "name": "createAnimation",
+        "module": "Runtime/Behavior/Items/AnimationAndEffects.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pickRandomStacks",
+        "module": "Runtime/Behavior/Items/StatusEffects.gd",
+        "args": [
+          "stackTypes",
+          "numStacks",
+          "target",
+          "priorityStack"
+        ],
+        "await": false
+      },
+      {
+        "name": "useRandomBuffs",
+        "module": "Runtime/Behavior/Items/StatusEffects.gd",
+        "args": [
+          "numBuffs",
+          "triggerEvent",
+          "availableBuffs"
+        ],
+        "await": false
+      },
+      {
+        "name": "stealRandomBuff",
+        "module": "Runtime/Behavior/Items/StatusEffects.gd",
+        "args": [
+          "numBuffs",
+          "triggerEvent",
+          "possibleBuffs",
+          "priorityBuff"
+        ],
+        "await": false
+      },
+      {
+        "name": "getLeastStacks",
+        "module": "Runtime/Behavior/Items/StatusEffects.gd",
+        "args": [
+          "numStacks",
+          "target",
+          "availableStacks"
+        ],
+        "await": false
+      },
+      {
+        "name": "getMostStacks",
+        "module": "Runtime/Behavior/Items/StatusEffects.gd",
+        "args": [
+          "target",
+          "availableStacks"
+        ],
+        "await": false
+      },
+      {
+        "name": "removeMostBuffs",
+        "module": "Runtime/Behavior/Items/StatusEffects.gd",
+        "args": [
+          "numBuffs",
+          "triggerEvent",
+          "use",
+          "availableBuffs"
+        ],
+        "await": false
+      },
+      {
+        "name": "getStackFraction",
+        "module": "Runtime/Behavior/Items/StatusEffects.gd",
+        "args": [
+          "target",
+          "fraction",
+          "limit",
+          "availableStacks"
+        ],
+        "await": false
+      },
+      {
+        "name": "placeGeneratedItem",
+        "module": "Runtime/Behavior/Items/CraftingQueries.gd",
+        "args": [
+          "item",
+          "candidateCells"
+        ],
+        "await": false
+      },
+      {
+        "name": "shift",
+        "module": "Runtime/Behavior/Items/CraftingQueries.gd",
+        "args": [
+          "direction"
+        ],
+        "await": false
+      },
+      {
+        "name": "considerAsBond",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [
+          "neighbor"
+        ],
+        "await": false
+      },
+      {
+        "name": "playBondAnimation",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showLockLabel",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "previewRecipeIngredients",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "hasShopItemCraftCandidates",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showProgressLabel",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "createBondVisual",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [
+          "bondNeighbor"
+        ],
+        "await": false
+      },
+      {
+        "name": "fuse",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "createCraftedShockwave",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [
+          "fusedItem"
+        ],
+        "await": false
+      },
+      {
+        "name": "getNextFreeLabelPosition",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "findBondsWithAffectedItems",
+        "module": "Runtime/Behavior/Items/CraftingLifecycle.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Sheets/ItemBook.gd",
+    "moved": 22,
+    "qualified_references": 447,
+    "skipped": {
+      "small-boundary": 81
+    },
+    "methods": [
+      {
+        "name": "instantiateItem",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "descriptorOrName"
+        ],
+        "await": false
+      },
+      {
+        "name": "countItems",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "randomItemOfRarity",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "rarity",
+          "excluded",
+          "encountered",
+          "numRolls"
+        ],
+        "await": false
+      },
+      {
+        "name": "randomBagOfRarity",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "rarity",
+          "excludeDescriptors"
+        ],
+        "await": false
+      },
+      {
+        "name": "getRandomTreasureDescriptor",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "maxPrice"
+        ],
+        "await": false
+      },
+      {
+        "name": "getRandomItemWithRarityOdds",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "_rarityOdds"
+        ],
+        "await": false
+      },
+      {
+        "name": "validateResources",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addCauldronRecipes",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "calcClassAvailability",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "initDescriptionKeys",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "detectMentionedStacks",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getOnScreenUniques",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "withShop"
+        ],
+        "await": false
+      },
+      {
+        "name": "getMaxUniques",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "canBeGenerated",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "descriptor",
+          "filters"
+        ],
+        "await": false
+      },
+      {
+        "name": "cleanOwnableItems",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "printOwnableItems",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateClass",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "triggeringItem"
+        ],
+        "await": false
+      },
+      {
+        "name": "canGetForgingHammer",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "inventoryDict"
+        ],
+        "await": false
+      },
+      {
+        "name": "getSkillPool",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getRandomSkills",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [
+          "num"
+        ],
+        "await": false
+      },
+      {
+        "name": "_exit_tree",
+        "module": "Runtime/Behavior/Sheets/ItemBookBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/Character.gd",
+    "moved": 28,
+    "qualified_references": 417,
+    "skipped": {
+      "small-boundary": 184,
+      "inheritance": 1
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setSprite",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "classResource",
+          "_chibi"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_apply_role_stats",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_set_combat_anchor",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_reset_presentation",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "scene_name"
+        ],
+        "await": false
+      },
+      {
+        "name": "prepare",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "cleanse",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onTick",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "replayEvent",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "playAttackAnimation",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "distance"
+        ],
+        "await": false
+      },
+      {
+        "name": "playActivateAnimation",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "takeDamage",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "damageSource",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "spawnLabel",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "type",
+          "damage",
+          "item",
+          "pos",
+          "direction"
+        ],
+        "await": false
+      },
+      {
+        "name": "applySpikes",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      },
+      {
+        "name": "applyVampirism",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      },
+      {
+        "name": "heal",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "amount",
+          "origin",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "gainStamina",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "amount",
+          "item",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "useStamina",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "amount"
+        ],
+        "await": false
+      },
+      {
+        "name": "loseHealth",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "amount",
+          "item",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "gainMaxStaminaTemporary",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "amount",
+          "item",
+          "triggerEvent",
+          "filled"
+        ],
+        "await": false
+      },
+      {
+        "name": "levelUp",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "makeInvulnerable",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "invuDur",
+          "item",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "stun",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "duration",
+          "item",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "changeTypedDamageFactor",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "damageType",
+          "amount"
+        ],
+        "await": false
+      },
+      {
+        "name": "changeEffectDamageFactor",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "amount"
+        ],
+        "await": false
+      },
+      {
+        "name": "onSpriteClicked",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "startBattleRage",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "item",
+          "duration",
+          "triggerEvent",
+          "applyBonus"
+        ],
+        "await": false
+      },
+      {
+        "name": "getStat",
+        "module": "Runtime/Behavior/Core/CharacterBehavior.gd",
+        "args": [
+          "stat"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/Util.gd",
+    "moved": 20,
+    "qualified_references": 98,
+    "skipped": {
+      "small-boundary": 160
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "prepareFonts",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "eprint",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "text",
+          "arg1",
+          "arg2",
+          "arg3"
+        ],
+        "await": false
+      },
+      {
+        "name": "addDirectoryContents",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "dir",
+          "files",
+          "directories"
+        ],
+        "await": false
+      },
+      {
+        "name": "hasDLL",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "dllName"
+        ],
+        "await": false
+      },
+      {
+        "name": "removeDollarCommands",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "text"
+        ],
+        "await": false
+      },
+      {
+        "name": "loadSheetAsArray",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "filepath"
+        ],
+        "await": false
+      },
+      {
+        "name": "findFirstNonLatinLetterOrNumber",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "string",
+          "startIndex"
+        ],
+        "await": false
+      },
+      {
+        "name": "findHighlightEnd",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "string",
+          "startIndex"
+        ],
+        "await": false
+      },
+      {
+        "name": "laterOrEqual",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "saveStateVersion",
+          "breakingVersion"
+        ],
+        "await": false
+      },
+      {
+        "name": "moveParable",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "tween",
+          "node",
+          "xMovement",
+          "yOffset",
+          "dur",
+          "phase1Factor"
+        ],
+        "await": false
+      },
+      {
+        "name": "hashDictionary",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "dict"
+        ],
+        "await": false
+      },
+      {
+        "name": "spawnLabelOnItem",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "type",
+          "item",
+          "amount"
+        ],
+        "await": false
+      },
+      {
+        "name": "spawnStatLabelOnItem",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "stat",
+          "item",
+          "amount",
+          "onOpponent"
+        ],
+        "await": false
+      },
+      {
+        "name": "spawnBuffLabel_item",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "type",
+          "item",
+          "amount",
+          "appliedToOpponent"
+        ],
+        "await": false
+      },
+      {
+        "name": "localizeFonts",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "node"
+        ],
+        "await": false
+      },
+      {
+        "name": "setCorrespondingFont",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "node",
+          "defaultFontData"
+        ],
+        "await": false
+      },
+      {
+        "name": "logSteamDeck",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "arg1",
+          "arg2",
+          "arg3",
+          "arg4"
+        ],
+        "await": false
+      },
+      {
+        "name": "getTextForEvent",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "event",
+          "translate"
+        ],
+        "await": false
+      },
+      {
+        "name": "openLocalLink",
+        "module": "Runtime/Behavior/Utility/UtilBehavior.gd",
+        "args": [
+          "url"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/Lobbies.gd",
+    "moved": 29,
+    "qualified_references": 440,
+    "skipped": {
+      "small-boundary": 105
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_save_local_room_clock",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_restore_local_room_clock",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "idToString",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "id"
+        ],
+        "await": false
+      },
+      {
+        "name": "idFromString",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "idAsString"
+        ],
+        "await": false
+      },
+      {
+        "name": "setRoundAndTimeMetadata",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "roundI"
+        ],
+        "await": false
+      },
+      {
+        "name": "onOpponentQueryCompleted",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "handle",
+          "result",
+          "results_returned",
+          "total_matching",
+          "cached"
+        ],
+        "await": false
+      },
+      {
+        "name": "getNextOpponentData",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onLobbyCreated",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "result",
+          "lobbyId"
+        ],
+        "await": false
+      },
+      {
+        "name": "onHostUgcQueryCompleted",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "handle",
+          "result",
+          "results_returned",
+          "total_matching",
+          "cached"
+        ],
+        "await": false
+      },
+      {
+        "name": "onLobbyJoined",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "lobbyId",
+          "_permissions",
+          "locked",
+          "response"
+        ],
+        "await": false
+      },
+      {
+        "name": "resetState",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onLobbyChatUpdate",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "lobbyId",
+          "changedId",
+          "makingChangeId",
+          "chatState"
+        ],
+        "await": false
+      },
+      {
+        "name": "chatMessageReceived",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "lobbyId",
+          "memberId",
+          "buffer",
+          "chatType"
+        ],
+        "await": false
+      },
+      {
+        "name": "onLobbyDataUpdate",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "success",
+          "lobbyId",
+          "memberId"
+        ],
+        "await": false
+      },
+      {
+        "name": "onMemberListChanged",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "prepareMemberData",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "steamId",
+          "ugcId"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateMemberData",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "steamId",
+          "metadata",
+          "ugcId"
+        ],
+        "await": false
+      },
+      {
+        "name": "onGameDataUpdated",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateHostUgc",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "collectRoundData",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pickOpponent",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getRematchPenalty",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "opponentData",
+          "penalties"
+        ],
+        "await": false
+      },
+      {
+        "name": "onConfigUpdated",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getRoundDuration",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "roundNum"
+        ],
+        "await": false
+      },
+      {
+        "name": "onFightFinished",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "roundResult"
+        ],
+        "await": false
+      },
+      {
+        "name": "recalculateRanking",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_ensure_local_guest",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_finish_local_guest_round",
+        "module": "Runtime/Behavior/Utility/LobbiesBehavior.gd",
+        "args": [
+          "result"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/CombatLog.gd",
+    "moved": 21,
+    "qualified_references": 242,
+    "skipped": {
+      "inheritance": 5,
+      "small-boundary": 70
+    },
+    "methods": [
+      {
+        "name": "clear",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onCombatEnd",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "roundResult"
+        ],
+        "await": false
+      },
+      {
+        "name": "addLogLine",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "unhighlightItem",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "modulateItem"
+        ],
+        "await": false
+      },
+      {
+        "name": "replayCombat",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "fromStart",
+          "speed"
+        ],
+        "await": false
+      },
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateDisplayCooldowns",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "onLineHovered",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "logLine"
+        ],
+        "await": false
+      },
+      {
+        "name": "replayLogLineEvent",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "logLine"
+        ],
+        "await": false
+      },
+      {
+        "name": "createEvent_Attack",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "damageRes",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "createEvent_Damage",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "damageRes",
+          "damagingPlayerId",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "createEvent_Stack",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "type",
+          "item",
+          "amount",
+          "playerId",
+          "triggerEvent",
+          "used",
+          "reflected"
+        ],
+        "await": false
+      },
+      {
+        "name": "createEvent_DamChange",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "item",
+          "amount",
+          "isPercent",
+          "duration",
+          "type",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateIdle",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "isLineMinimized",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "line"
+        ],
+        "await": false
+      },
+      {
+        "name": "getLastVisibleLine",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onFilterChanged",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onCursorWarp",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "logElectricalCharge",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "emitterEvent",
+          "duration",
+          "cells"
+        ],
+        "await": false
+      },
+      {
+        "name": "replayElectricalCharges",
+        "module": "Runtime/Behavior/Core/CombatLogBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/Inventory.gd",
+    "moved": 24,
+    "qualified_references": 284,
+    "skipped": {
+      "small-boundary": 53,
+      "native-object-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "actuallyRecalculateTilemap",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "cleanUp",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "canAddItem",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item",
+          "checkCollision",
+          "checkBags"
+        ],
+        "await": false
+      },
+      {
+        "name": "previewItem",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "previewAffectedCells",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "getAffectedCells",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item",
+          "color"
+        ],
+        "await": false
+      },
+      {
+        "name": "tryAddItem",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item",
+          "hotswapAllowed"
+        ],
+        "await": false
+      },
+      {
+        "name": "addItemByTopLeft",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item",
+          "topLeftCell"
+        ],
+        "await": false
+      },
+      {
+        "name": "addItem",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item",
+          "cells",
+          "placedByPlayer"
+        ],
+        "await": false
+      },
+      {
+        "name": "replaceItem",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "item",
+          "newItem"
+        ],
+        "await": false
+      },
+      {
+        "name": "getRightBorder",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "canShift",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "direction"
+        ],
+        "await": false
+      },
+      {
+        "name": "playShiftCollisionAni",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "direction"
+        ],
+        "await": false
+      },
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "getMultiSelectItems",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "createFromItemTuples",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "itemTuples",
+          "ownerType"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_nav_ready",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_selected_item",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_place_held",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_navigate",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "direction"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_activate_selection",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_input",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_update_navigation",
+        "module": "Runtime/Behavior/Core/InventoryBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ItemLibrary/ItemLibrary.gd",
+    "moved": 18,
+    "qualified_references": 318,
+    "skipped": {
+      "small-boundary": 38
+    },
+    "methods": [
+      {
+        "name": "init",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateGroupingList",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "resetFilters",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "refresh",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "popIn"
+        ],
+        "await": false
+      },
+      {
+        "name": "addItem",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "item",
+          "popIn"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open_late3",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "close",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateZoom",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "switchToTab",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "tab"
+        ],
+        "await": false
+      },
+      {
+        "name": "setSpotlightItem",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "setSpotlightItem_deferred",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "tooltipExists"
+        ],
+        "await": false
+      },
+      {
+        "name": "movebackSpotlightItem",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "nextItemQueued"
+        ],
+        "await": false
+      },
+      {
+        "name": "getSortScore",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "onCursorWarp",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/ItemLibraryBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/Combat.gd",
+    "moved": 15,
+    "qualified_references": 155,
+    "skipped": {
+      "small-boundary": 58
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onSwitchingToCombat",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "clashSwords",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "pve_clash_swords",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [
+          "epoch",
+          "opponent_id"
+        ],
+        "await": false
+      },
+      {
+        "name": "showSurvivalPrompt",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "givePerfectRunBonus",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "giveMaxWinsBonus",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "playRankedAnimation",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "feedTrophies",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setNewRanking",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [
+          "leagueExact"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateLeague",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [
+          "league",
+          "rankedUp",
+          "ranking"
+        ],
+        "await": false
+      },
+      {
+        "name": "reset",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "hideUI",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onShowUI",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onCursorWarp",
+        "module": "Runtime/Behavior/Core/CombatBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/RunDatabase.gd",
+    "moved": 13,
+    "qualified_references": 87,
+    "skipped": {
+      "small-boundary": 21
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "ready_deferred",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "parseSingleScore",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [
+          "score",
+          "steam",
+          "lobbyMode"
+        ],
+        "await": false
+      },
+      {
+        "name": "onSteamRunsReceived",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getNextOpponentData",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [
+          "roundReduction"
+        ],
+        "await": false
+      },
+      {
+        "name": "getDarkReflectionData",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "sortOpponents",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "serializeRound",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "serializeMetadata",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getRunDict",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_seed_local_opponents",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_make_local_run",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [
+          "player_name",
+          "player_id"
+        ],
+        "await": false
+      },
+      {
+        "name": "_record_local_snapshot",
+        "module": "Runtime/Behavior/Core/RunDatabaseBehavior.gd",
+        "args": [
+          "source"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/RunData.gd",
+    "moved": 6,
+    "qualified_references": 107,
+    "skipped": {
+      "small-boundary": 13
+    },
+    "methods": [
+      {
+        "name": "fromSerialized",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "args": [
+          "data"
+        ],
+        "await": false
+      },
+      {
+        "name": "deserializeMetadata",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "args": [
+          "string"
+        ],
+        "await": false
+      },
+      {
+        "name": "countItems",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "args": [
+          "untilRound"
+        ],
+        "await": false
+      },
+      {
+        "name": "isValid",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "args": [
+          "currentRound"
+        ],
+        "await": false
+      },
+      {
+        "name": "isRoundValid",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "args": [
+          "roundNum",
+          "currentRound"
+        ],
+        "await": false
+      },
+      {
+        "name": "fromData",
+        "module": "Runtime/Behavior/Utility/RunDataBehavior.gd",
+        "args": [
+          "playername",
+          "run",
+          "lobbyMode"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/Shop.gd",
+    "moved": 9,
+    "qualified_references": 78,
+    "skipped": {
+      "small-boundary": 46
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "stashItems",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "unstashItems",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showSubclassShop",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showSkillShop",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getUniqueSlots",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getUniqueChance",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getHighRollBuckets",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "rollSale",
+        "module": "Runtime/Behavior/Core/ShopBehavior.gd",
+        "args": [
+          "slot"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/ItemTooltip.gd",
+    "moved": 9,
+    "qualified_references": 240,
+    "skipped": {
+      "small-boundary": 7
+    },
+    "methods": [
+      {
+        "name": "preset",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setItem",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [
+          "_item"
+        ],
+        "await": false
+      },
+      {
+        "name": "_set_pve_identity",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateTooltip",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [
+          "init"
+        ],
+        "await": false
+      },
+      {
+        "name": "_update_pve_properties",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addReferenceExplanations",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [
+          "refs"
+        ],
+        "await": false
+      },
+      {
+        "name": "addSubDescription",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [
+          "text",
+          "darken"
+        ],
+        "await": false
+      },
+      {
+        "name": "addProperty",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [
+          "stat",
+          "_name",
+          "value",
+          "modified",
+          "perSecond",
+          "perSecondModified"
+        ],
+        "await": false
+      },
+      {
+        "name": "discard",
+        "module": "Runtime/Behavior/Interface/Tooltips/ItemTooltipBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/BuildHistory/BuildHistory.gd",
+    "moved": 9,
+    "qualified_references": 117,
+    "skipped": {
+      "small-boundary": 17
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addEntries",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "close",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [
+          "fight"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateBuild",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [
+          "roundNum",
+          "buildEntry"
+        ],
+        "await": false
+      },
+      {
+        "name": "addAni",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [
+          "node",
+          "isBag"
+        ],
+        "await": false
+      },
+      {
+        "name": "fightBuild",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "addDropDownClasses",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onCursorWarp",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/TitleScreen.gd",
+    "moved": 15,
+    "qualified_references": 151,
+    "skipped": {
+      "small-boundary": 39
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "ready_deferred",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateClassNodes",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [
+          "curClass",
+          "randomCharacter"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateLoadoutLocale",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [
+          "classI"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateSocialButtons",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "selectClass",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [
+          "classI",
+          "randomCharacter",
+          "visualOnly"
+        ],
+        "await": false
+      },
+      {
+        "name": "onRandomClassToggled",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [
+          "pressed"
+        ],
+        "await": false
+      },
+      {
+        "name": "showTitle",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "dropItem",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [
+          "_item"
+        ],
+        "await": false
+      },
+      {
+        "name": "applyImpulse",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "_pve_refresh_title",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": true
+      },
+      {
+        "name": "_pve_refresh_continue",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "otherModesUIPressed",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onCursorWarp",
+        "module": "Runtime/Behavior/Interface/TitleScreenBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/LocalHistoryStore.gd",
+    "moved": 15,
+    "qualified_references": 95,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 6
+    },
+    "methods": [
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "read_rounds",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "update_run",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "run_id",
+          "fields"
+        ],
+        "await": false
+      },
+      {
+        "name": "write_round",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "prune",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "max_runs",
+          "minimum_run_id"
+        ],
+        "await": false
+      },
+      {
+        "name": "_commit",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "runs",
+          "rounds"
+        ],
+        "await": false
+      },
+      {
+        "name": "_snapshot",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "runs",
+          "rounds",
+          "revision"
+        ],
+        "await": false
+      },
+      {
+        "name": "_apply_snapshot",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "snapshot"
+        ],
+        "await": false
+      },
+      {
+        "name": "_read_snapshot",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "file_path"
+        ],
+        "await": false
+      },
+      {
+        "name": "_normalize_snapshot",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "_normalize_run",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "_normalize_round",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "_write_snapshot",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "snapshot",
+          "file_path"
+        ],
+        "await": false
+      },
+      {
+        "name": "_replace_file",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "source",
+          "destination"
+        ],
+        "await": false
+      },
+      {
+        "name": "_preserve_corrupt_file",
+        "module": "Runtime/Behavior/Utility/LocalHistoryStoreBehavior.gd",
+        "args": [
+          "file_path"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Shopkeeper.gd",
+    "moved": 8,
+    "qualified_references": 44,
+    "skipped": {
+      "small-boundary": 17
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onShopOpened",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onBuy_tutorial",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [
+          "item",
+          "onSale",
+          "sequenceNum"
+        ],
+        "await": false
+      },
+      {
+        "name": "onLoss",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onBuy",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [
+          "item",
+          "onSale"
+        ],
+        "await": false
+      },
+      {
+        "name": "onCraft",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [
+          "_itemDescriptor"
+        ],
+        "await": false
+      },
+      {
+        "name": "giveLockHint",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onDecorationDestructed",
+        "module": "Runtime/Behavior/Interface/ShopkeeperBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ShopOffer.gd",
+    "moved": 14,
+    "qualified_references": 258,
+    "skipped": {
+      "small-boundary": 14
+    },
+    "methods": [
+      {
+        "name": "_input",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setItem",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [
+          "_item",
+          "_saleMode"
+        ],
+        "await": false
+      },
+      {
+        "name": "checkCrafting",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setBannerText",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [
+          "text"
+        ],
+        "await": false
+      },
+      {
+        "name": "calcPrice",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updatePrice",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "checkMoney",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [
+          "_goldChange"
+        ],
+        "await": false
+      },
+      {
+        "name": "buy",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "reset",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "throwOut",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setReserved",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [
+          "state"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_sync",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [
+          "data"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_reset",
+        "module": "Runtime/Behavior/Interface/ShopOfferBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Sellbox.gd",
+    "moved": 8,
+    "qualified_references": 114,
+    "skipped": {
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onItemDropped",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [
+          "item",
+          "dropResult"
+        ],
+        "await": false
+      },
+      {
+        "name": "eatGold",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [
+          "amount"
+        ],
+        "await": false
+      },
+      {
+        "name": "_process",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateText",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "sellItem",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "_gui_input",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "spawnDust",
+        "module": "Runtime/Behavior/Interface/SellboxBehavior.gd",
+        "args": [
+          "strength"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Gems/Gem.gd",
+    "moved": 1,
+    "qualified_references": 15,
+    "skipped": {
+      "inheritance": 26,
+      "small-boundary": 28
+    },
+    "methods": [
+      {
+        "name": "returnToSocket",
+        "module": "Runtime/Behavior/Items/Gems/GemBehavior.gd",
+        "args": [
+          "movebackDur"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/MagicRing.gd",
+    "moved": 4,
+    "qualified_references": 45,
+    "skipped": {
+      "small-boundary": 20,
+      "inheritance": 4
+    },
+    "methods": [
+      {
+        "name": "giveStacksFromEffect",
+        "module": "Runtime/Behavior/Items/Exclusive/MagicRingBehavior.gd",
+        "args": [
+          "effect",
+          "triggerEvent"
+        ],
+        "await": false
+      },
+      {
+        "name": "sortEffects",
+        "module": "Runtime/Behavior/Items/Exclusive/MagicRingBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "randEffects",
+        "module": "Runtime/Behavior/Items/Exclusive/MagicRingBehavior.gd",
+        "args": [
+          "clearIfOnlyDisplay"
+        ],
+        "await": false
+      },
+      {
+        "name": "getDescription",
+        "module": "Runtime/Behavior/Items/Exclusive/MagicRingBehavior.gd",
+        "args": [
+          "wrapInColor"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "LocalServices/LocalSteam.gd",
+    "moved": 3,
+    "qualified_references": 10,
+    "skipped": {
+      "small-boundary": 52
+    },
+    "methods": [
+      {
+        "name": "downloadLeaderboardEntries",
+        "module": "Runtime/Behavior/LocalServices/LocalSteamBehavior.gd",
+        "args": [
+          "_start",
+          "maximum",
+          "_type",
+          "handle"
+        ],
+        "await": false
+      },
+      {
+        "name": "uploadLeaderboardScore",
+        "module": "Runtime/Behavior/LocalServices/LocalSteamBehavior.gd",
+        "args": [
+          "score",
+          "_keep_best",
+          "details",
+          "handle"
+        ],
+        "await": false
+      },
+      {
+        "name": "getQueryUGCMetadata",
+        "module": "Runtime/Behavior/LocalServices/LocalSteamBehavior.gd",
+        "args": [
+          "handle",
+          "index"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/ItemNameEffect.gd",
+    "skipped": "native-base:RichTextEffect"
+  },
+  {
+    "path": "Interface/ItemLibrary/InfoPanel.gd",
+    "moved": 1,
+    "qualified_references": 65,
+    "skipped": {
+      "small-boundary": 5
+    },
+    "methods": [
+      {
+        "name": "setItem",
+        "module": "Runtime/Behavior/Interface/ItemLibrary/InfoPanelBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/ItemDescriptor.gd",
+    "moved": 4,
+    "qualified_references": 36,
+    "skipped": {
+      "small-boundary": 45
+    },
+    "methods": [
+      {
+        "name": "addNamedParam",
+        "module": "Runtime/Behavior/Items/ItemDescriptorBehavior.gd",
+        "args": [
+          "paramName",
+          "paramVal"
+        ],
+        "await": false
+      },
+      {
+        "name": "calcClassAvailability",
+        "module": "Runtime/Behavior/Items/ItemDescriptorBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getThresholdWeight",
+        "module": "Runtime/Behavior/Items/ItemDescriptorBehavior.gd",
+        "args": [
+          "itemCounter"
+        ],
+        "await": false
+      },
+      {
+        "name": "getFlavorText",
+        "module": "Runtime/Behavior/Items/ItemDescriptorBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/DamageMeter/DamageMeter.gd",
+    "moved": 6,
+    "qualified_references": 68,
+    "skipped": {
+      "inheritance": 2,
+      "small-boundary": 16
+    },
+    "methods": [
+      {
+        "name": "updateMetricList",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updatePlot",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getSubMetrics",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateMeter",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+        "args": [
+          "event",
+          "statLogger"
+        ],
+        "await": false
+      },
+      {
+        "name": "addMeter",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+        "args": [
+          "dmgMeter",
+          "combatTime",
+          "plot"
+        ],
+        "await": false
+      },
+      {
+        "name": "close",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/SelectionBox.gd",
+    "moved": 8,
+    "qualified_references": 68,
+    "skipped": {
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "canStart",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_input",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "findTouchedItems",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [
+          "atPos"
+        ],
+        "await": false
+      },
+      {
+        "name": "findTouchedItem",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [
+          "atPos"
+        ],
+        "await": false
+      },
+      {
+        "name": "onItemAreaEntered",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [
+          "itemArea"
+        ],
+        "await": false
+      },
+      {
+        "name": "_process",
+        "module": "Runtime/Behavior/Interface/SelectionBoxBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "LocalServices/LocalStore.gd",
+    "moved": 11,
+    "qualified_references": 45,
+    "skipped": {
+      "small-boundary": 12
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "reload",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_read",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "collection",
+          "fallback"
+        ],
+        "await": false
+      },
+      {
+        "name": "commit",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "collection"
+        ],
+        "await": false
+      },
+      {
+        "name": "scores",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "board",
+          "maximum"
+        ],
+        "await": false
+      },
+      {
+        "name": "persist_score",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "board",
+          "player_name",
+          "score",
+          "metadata",
+          "source"
+        ],
+        "await": false
+      },
+      {
+        "name": "delete_score",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "id"
+        ],
+        "await": false
+      },
+      {
+        "name": "create_room",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "owner",
+          "capacity"
+        ],
+        "await": false
+      },
+      {
+        "name": "join_room",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "id",
+          "member"
+        ],
+        "await": false
+      },
+      {
+        "name": "member_data",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "id",
+          "member",
+          "key",
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "append_chat",
+        "module": "Runtime/Behavior/LocalServices/LocalStoreBehavior.gd",
+        "args": [
+          "id",
+          "member",
+          "message"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/Buff.gd",
+    "moved": 5,
+    "qualified_references": 118,
+    "skipped": {
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "init",
+        "module": "Runtime/Behavior/Core/BuffBehavior.gd",
+        "args": [
+          "_type",
+          "_character",
+          "_counter",
+          "_signalName"
+        ],
+        "await": false
+      },
+      {
+        "name": "gainTemporary",
+        "module": "Runtime/Behavior/Core/BuffBehavior.gd",
+        "args": [
+          "amount",
+          "duration",
+          "item",
+          "triggerEvent",
+          "reflect"
+        ],
+        "await": false
+      },
+      {
+        "name": "loseStacks",
+        "module": "Runtime/Behavior/Core/BuffBehavior.gd",
+        "args": [
+          "amount",
+          "item",
+          "triggerEvent",
+          "used"
+        ],
+        "await": false
+      },
+      {
+        "name": "changeCurrentLogShowLabel",
+        "module": "Runtime/Behavior/Core/BuffBehavior.gd",
+        "args": [
+          "isTimeout",
+          "amount",
+          "item",
+          "triggerEvent",
+          "used"
+        ],
+        "await": false
+      },
+      {
+        "name": "onTimeout",
+        "module": "Runtime/Behavior/Core/BuffBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/Recipe.gd",
+    "moved": 5,
+    "qualified_references": 35,
+    "skipped": {
+      "small-boundary": 17
+    },
+    "methods": [
+      {
+        "name": "fromString",
+        "module": "Runtime/Behavior/Utility/RecipeBehavior.gd",
+        "args": [
+          "baseItem_",
+          "string"
+        ],
+        "await": false
+      },
+      {
+        "name": "init",
+        "module": "Runtime/Behavior/Utility/RecipeBehavior.gd",
+        "args": [
+          "baseItem_",
+          "ingredients_",
+          "catalyst_",
+          "fusedItem_"
+        ],
+        "await": false
+      },
+      {
+        "name": "getCurIngredientsCounter",
+        "module": "Runtime/Behavior/Utility/RecipeBehavior.gd",
+        "args": [
+          "curBonds"
+        ],
+        "await": false
+      },
+      {
+        "name": "checkNeighbor",
+        "module": "Runtime/Behavior/Utility/RecipeBehavior.gd",
+        "args": [
+          "curBonds",
+          "neighbor"
+        ],
+        "await": false
+      },
+      {
+        "name": "fuse",
+        "module": "Runtime/Behavior/Utility/RecipeBehavior.gd",
+        "args": [
+          "bItem",
+          "curBonds"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/BuildHistory/BuildEntry.gd",
+    "moved": 5,
+    "qualified_references": 141,
+    "skipped": {
+      "small-boundary": 10
+    },
+    "methods": [
+      {
+        "name": "preset",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setHistoryData",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+        "args": [
+          "_data"
+        ],
+        "await": false
+      },
+      {
+        "name": "instanceSpecialItems",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "initItem",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+        "args": [
+          "itemIndex",
+          "parent",
+          "maxSize"
+        ],
+        "await": false
+      },
+      {
+        "name": "clearItems",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildEntryBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/UndoStack.gd",
+    "moved": 4,
+    "qualified_references": 38,
+    "skipped": {
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "ready_deferred",
+        "module": "Runtime/Behavior/Utility/UndoStackBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Behavior/Utility/UndoStackBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "showLabel",
+        "module": "Runtime/Behavior/Utility/UndoStackBehavior.gd",
+        "args": [
+          "undo"
+        ],
+        "await": false
+      },
+      {
+        "name": "showLabelManual",
+        "module": "Runtime/Behavior/Utility/UndoStackBehavior.gd",
+        "args": [
+          "slot",
+          "restore"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/Settings.gd",
+    "moved": 4,
+    "qualified_references": 80,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 24
+    },
+    "methods": [
+      {
+        "name": "initDefaults",
+        "module": "Runtime/Behavior/Utility/SettingsBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setVal",
+        "module": "Runtime/Behavior/Utility/SettingsBehavior.gd",
+        "args": [
+          "setting",
+          "value"
+        ],
+        "await": false
+      },
+      {
+        "name": "setWindowMode",
+        "module": "Runtime/Behavior/Utility/SettingsBehavior.gd",
+        "args": [
+          "fullscreen",
+          "borderless"
+        ],
+        "await": false
+      },
+      {
+        "name": "clipToScreen",
+        "module": "Runtime/Behavior/Utility/SettingsBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Bag.gd",
+    "moved": 1,
+    "qualified_references": 7,
+    "skipped": {
+      "inheritance": 16,
+      "small-boundary": 19
+    },
+    "methods": [
+      {
+        "name": "previewCanAffect",
+        "module": "Runtime/Behavior/Items/BagBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/DamageNumbers/BuffLabel.gd",
+    "moved": 3,
+    "qualified_references": 81,
+    "skipped": {
+      "small-boundary": 3
+    },
+    "methods": [
+      {
+        "name": "spawnLabel",
+        "module": "Runtime/Behavior/Interface/DamageNumbers/BuffLabelBehavior.gd",
+        "args": [
+          "type",
+          "amount",
+          "changeType",
+          "appliedToOpponent"
+        ],
+        "await": false
+      },
+      {
+        "name": "spawnLabelOnItem",
+        "module": "Runtime/Behavior/Interface/DamageNumbers/BuffLabelBehavior.gd",
+        "args": [
+          "type",
+          "amount"
+        ],
+        "await": false
+      },
+      {
+        "name": "spawnStatLabelOnItem",
+        "module": "Runtime/Behavior/Interface/DamageNumbers/BuffLabelBehavior.gd",
+        "args": [
+          "stat",
+          "amount",
+          "onOpponent"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/ElectricalCharge.gd",
+    "moved": 3,
+    "qualified_references": 122,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 8
+    },
+    "methods": [
+      {
+        "name": "preset",
+        "module": "Runtime/Behavior/Items/ElectricalChargeBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "start",
+        "module": "Runtime/Behavior/Items/ElectricalChargeBehavior.gd",
+        "args": [
+          "_item",
+          "_cells",
+          "_duration",
+          "replaying"
+        ],
+        "await": false
+      },
+      {
+        "name": "onNewCellEntered",
+        "module": "Runtime/Behavior/Items/ElectricalChargeBehavior.gd",
+        "args": [
+          "cellIndex"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/LobbyTimer.gd",
+    "moved": 3,
+    "qualified_references": 52,
+    "skipped": {
+      "small-boundary": 17,
+      "native-object-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Lobbies/LobbyTimerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateTime",
+        "module": "Runtime/Behavior/Interface/Lobbies/LobbyTimerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setFont",
+        "module": "Runtime/Behavior/Interface/Lobbies/LobbyTimerBehavior.gd",
+        "args": [
+          "font",
+          "color"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/Sound.gd",
+    "moved": 6,
+    "qualified_references": 48,
+    "skipped": {
+      "small-boundary": 27
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Utility/SoundBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "fadeOutBGM",
+        "module": "Runtime/Behavior/Utility/SoundBehavior.gd",
+        "args": [
+          "fadeOutTime"
+        ],
+        "await": false
+      },
+      {
+        "name": "playBGM_loop",
+        "module": "Runtime/Behavior/Utility/SoundBehavior.gd",
+        "args": [
+          "loop",
+          "intro",
+          "volume",
+          "delay"
+        ],
+        "await": false
+      },
+      {
+        "name": "playRising",
+        "module": "Runtime/Behavior/Utility/SoundBehavior.gd",
+        "args": [
+          "stream",
+          "volume",
+          "pitch",
+          "process_when_paused"
+        ],
+        "await": false
+      },
+      {
+        "name": "playLooping",
+        "module": "Runtime/Behavior/Utility/SoundBehavior.gd",
+        "args": [
+          "stream",
+          "duration",
+          "volume",
+          "pitch"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_bus",
+        "module": "Runtime/Behavior/Utility/SoundBehavior.gd",
+        "args": [
+          "stream"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/Tooltip.gd",
+    "moved": 2,
+    "qualified_references": 30,
+    "skipped": {
+      "small-boundary": 8
+    },
+    "methods": [
+      {
+        "name": "align",
+        "module": "Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd",
+        "args": [
+          "toolPos",
+          "toolSize",
+          "alignment"
+        ],
+        "await": false
+      },
+      {
+        "name": "replaceReferences",
+        "module": "Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd",
+        "args": [
+          "text",
+          "iconSize"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/PhysicsRope.gd",
+    "moved": 5,
+    "qualified_references": 69,
+    "skipped": {
+      "small-boundary": 7
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "addSegment",
+        "module": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+        "args": [
+          "segment"
+        ],
+        "await": false
+      },
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "gui_input_segment",
+        "module": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+        "args": [
+          "event",
+          "segment"
+        ],
+        "await": false
+      },
+      {
+        "name": "catmull_rom_spline",
+        "module": "Runtime/Behavior/Interface/PhysicsRopeBehavior.gd",
+        "args": [
+          "_points",
+          "resolution",
+          "extrapolate_end_points"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Options/ItemListButton.gd",
+    "moved": 6,
+    "qualified_references": 65,
+    "skipped": {
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "widen",
+        "module": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+        "args": [
+          "toFitText",
+          "iconToFit"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateText",
+        "module": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+        "args": [
+          "index"
+        ],
+        "await": false
+      },
+      {
+        "name": "_process",
+        "module": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+        "args": [
+          "_delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "onCursorWarp",
+        "module": "Runtime/Behavior/Interface/Options/ItemListButtonBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Options/Options.gd",
+    "moved": 3,
+    "qualified_references": 38,
+    "skipped": {
+      "small-boundary": 17
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onCursorWarp",
+        "module": "Runtime/Behavior/Interface/Options/OptionsBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/CustomRules.gd",
+    "moved": 3,
+    "qualified_references": 21,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 22
+    },
+    "methods": [
+      {
+        "name": "pushRule",
+        "module": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+        "args": [
+          "rule",
+          "bitStream"
+        ],
+        "await": false
+      },
+      {
+        "name": "serialize",
+        "module": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "fromString",
+        "module": "Runtime/Behavior/Utility/CustomRulesBehavior.gd",
+        "args": [
+          "serialized"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/UGCItem.gd",
+    "moved": 1,
+    "qualified_references": 10,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 13
+    },
+    "methods": [
+      {
+        "name": "_on_item_created",
+        "module": "Runtime/Behavior/Utility/UGCItemBehavior.gd",
+        "args": [
+          "result",
+          "_file_id",
+          "_accept_tos"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ChessBoard.gd",
+    "moved": 5,
+    "qualified_references": 33,
+    "skipped": {
+      "small-boundary": 10,
+      "inheritance": 2
+    },
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Behavior/Items/Exclusive/ChessBoardBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Behavior/Items/Exclusive/ChessBoardBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "findPieceToCapture",
+        "module": "Runtime/Behavior/Items/Exclusive/ChessBoardBehavior.gd",
+        "args": [
+          "activePieces"
+        ],
+        "await": false
+      },
+      {
+        "name": "findBestPieceToCapture",
+        "module": "Runtime/Behavior/Items/Exclusive/ChessBoardBehavior.gd",
+        "args": [
+          "activePieces"
+        ],
+        "await": false
+      },
+      {
+        "name": "getGatedDescriptor",
+        "module": "Runtime/Behavior/Items/Exclusive/ChessBoardBehavior.gd",
+        "args": [
+          "rarity"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ChestnutTrade.gd",
+    "moved": 5,
+    "qualified_references": 43,
+    "skipped": {
+      "small-boundary": 12
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "startTrade",
+        "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+        "args": [
+          "bonusValue"
+        ],
+        "await": false
+      },
+      {
+        "name": "initItem",
+        "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+        "args": [
+          "descriptor",
+          "parent"
+        ],
+        "await": false
+      },
+      {
+        "name": "clearItem",
+        "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+        "args": [
+          "item",
+          "instant"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateColor",
+        "module": "Runtime/Behavior/Interface/ChestnutTradeBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/JoinLobbyUI.gd",
+    "moved": 4,
+    "qualified_references": 54,
+    "skipped": {
+      "small-boundary": 18
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Lobbies/JoinLobbyUIBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "setConnected",
+        "module": "Runtime/Behavior/Interface/Lobbies/JoinLobbyUIBehavior.gd",
+        "args": [
+          "connected"
+        ],
+        "await": false
+      },
+      {
+        "name": "onSearchbarTextChanged",
+        "module": "Runtime/Behavior/Interface/Lobbies/JoinLobbyUIBehavior.gd",
+        "args": [
+          "newText"
+        ],
+        "await": false
+      },
+      {
+        "name": "onConfigChanged",
+        "module": "Runtime/Behavior/Interface/Lobbies/JoinLobbyUIBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/CombatStatLogger.gd",
+    "moved": 3,
+    "qualified_references": 15,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 16
+    },
+    "methods": [
+      {
+        "name": "clear",
+        "module": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "prepareItem",
+        "module": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "getStatHistoriesForMetric",
+        "module": "Runtime/Behavior/Core/CombatStatLoggerBehavior.gd",
+        "args": [
+          "metric"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Wardrobe/Wardrobe.gd",
+    "moved": 4,
+    "qualified_references": 35,
+    "skipped": {
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Wardrobe/WardrobeBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/Wardrobe/WardrobeBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "initSkins",
+        "module": "Runtime/Behavior/Interface/Wardrobe/WardrobeBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showPriceTag",
+        "module": "Runtime/Behavior/Interface/Wardrobe/WardrobeBehavior.gd",
+        "args": [
+          "price"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/CreateLobbyUI.gd",
+    "moved": 3,
+    "qualified_references": 50,
+    "skipped": {
+      "small-boundary": 19
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Lobbies/CreateLobbyUIBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/Lobbies/CreateLobbyUIBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onStartGamePressed",
+        "module": "Runtime/Behavior/Interface/Lobbies/CreateLobbyUIBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RandomLoadoutBag.gd",
+    "moved": 2,
+    "qualified_references": 28,
+    "skipped": {
+      "inheritance": 1,
+      "small-boundary": 3
+    },
+    "methods": [
+      {
+        "name": "addBagWherePossible",
+        "module": "Runtime/Behavior/Items/Exclusive/RandomLoadoutBagBehavior.gd",
+        "args": [
+          "bag",
+          "startPos"
+        ],
+        "await": false
+      },
+      {
+        "name": "shopOpened",
+        "module": "Runtime/Behavior/Items/Exclusive/RandomLoadoutBagBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/BuildIntoRecipe.gd",
+    "moved": 1,
+    "qualified_references": 51,
+    "skipped": {
+      "small-boundary": 1,
+      "inheritance": 1
+    },
+    "methods": [
+      {
+        "name": "setRecipe",
+        "module": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipeBehavior.gd",
+        "args": [
+          "recipe",
+          "tooltip"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Core/CombatEvent.gd",
+    "moved": 1,
+    "qualified_references": 61,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 11
+    },
+    "methods": [
+      {
+        "name": "asText",
+        "module": "Runtime/Behavior/Core/CombatEventBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Potion.gd",
+    "moved": 2,
+    "qualified_references": 28,
+    "skipped": {
+      "inheritance": 6,
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "updateConnector",
+        "module": "Runtime/Behavior/Items/PotionBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getStarPosition",
+        "module": "Runtime/Behavior/Items/PotionBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ShopToolbar.gd",
+    "moved": 2,
+    "qualified_references": 39,
+    "skipped": {
+      "small-boundary": 20
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/ShopToolbarBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/ShopToolbarBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Compatibility/LegacyFile.gd",
+    "moved": 0,
+    "skipped": {
+      "small-boundary": 41
+    }
+  },
+  {
+    "path": "Interface/RerollRope.gd",
+    "skipped": "native-base:TextureButton"
+  },
+  {
+    "path": "Interface/RecipeBook.gd",
+    "moved": 5,
+    "qualified_references": 26,
+    "skipped": {
+      "small-boundary": 8
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/RecipeBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "checkCrafted",
+        "module": "Runtime/Behavior/Interface/RecipeBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showClassFolder",
+        "module": "Runtime/Behavior/Interface/RecipeBookBehavior.gd",
+        "args": [
+          "classI"
+        ],
+        "await": false
+      },
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/RecipeBookBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "close",
+        "module": "Runtime/Behavior/Interface/RecipeBookBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Options/KeyBind.gd",
+    "moved": 4,
+    "qualified_references": 34,
+    "skipped": {
+      "small-boundary": 17
+    },
+    "methods": [
+      {
+        "name": "updateKey",
+        "module": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "isSameAsOther",
+        "module": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+        "args": [
+          "index",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "setKey",
+        "module": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+        "args": [
+          "event",
+          "eventCode"
+        ],
+        "await": false
+      },
+      {
+        "name": "_input",
+        "module": "Runtime/Behavior/Interface/Options/KeyBindBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/Profanity.gd",
+    "moved": 0,
+    "skipped": {}
+  },
+  {
+    "path": "Utility/SteamHelper.gd",
+    "moved": 3,
+    "qualified_references": 38,
+    "skipped": {
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Utility/SteamHelperBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateRichPresence",
+        "module": "Runtime/Behavior/Utility/SteamHelperBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "unlockAchievement",
+        "module": "Runtime/Behavior/Utility/SteamHelperBehavior.gd",
+        "args": [
+          "aName",
+          "allowInCustom"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/BuildHistoryDB.gd",
+    "moved": 4,
+    "qualified_references": 10,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 5
+    },
+    "methods": [
+      {
+        "name": "addRunEntry",
+        "module": "Runtime/Behavior/Utility/BuildHistoryDBBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onSpecialItemBought",
+        "module": "Runtime/Behavior/Utility/BuildHistoryDBBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "addRoundEntry",
+        "module": "Runtime/Behavior/Utility/BuildHistoryDBBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "readRunHistory",
+        "module": "Runtime/Behavior/Utility/BuildHistoryDBBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/DamageMeter/DamageMeterPlot.gd",
+    "moved": 2,
+    "qualified_references": 23,
+    "skipped": {
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "setMetric",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterPlotBehavior.gd",
+        "args": [
+          "metric"
+        ],
+        "await": false
+      },
+      {
+        "name": "getColor",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterPlotBehavior.gd",
+        "args": [
+          "source"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/LocalizedControl.gd",
+    "moved": 3,
+    "qualified_references": 123,
+    "skipped": {
+      "small-boundary": 7,
+      "native-object-boundary": 2
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Utility/LocalizedControlBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateText",
+        "module": "Runtime/Behavior/Utility/LocalizedControlBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "shrinkIfTooBig",
+        "module": "Runtime/Behavior/Utility/LocalizedControlBehavior.gd",
+        "args": [
+          "newText"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Textbox.gd",
+    "skipped": "native-base:RichTextLabel"
+  },
+  {
+    "path": "LocalServices/LocalAuth.gd",
+    "moved": 3,
+    "qualified_references": 15,
+    "skipped": {
+      "small-boundary": 19
+    },
+    "methods": [
+      {
+        "name": "_register",
+        "module": "Runtime/Behavior/LocalServices/LocalAuthBehavior.gd",
+        "args": [
+          "player_name",
+          "email",
+          "password",
+          "confirmation",
+          "succeeded"
+        ],
+        "await": false
+      },
+      {
+        "name": "login_player",
+        "module": "Runtime/Behavior/LocalServices/LocalAuthBehavior.gd",
+        "args": [
+          "username",
+          "password",
+          "_remember"
+        ],
+        "await": false
+      },
+      {
+        "name": "reset_player_password",
+        "module": "Runtime/Behavior/LocalServices/LocalAuthBehavior.gd",
+        "args": [
+          "name",
+          "code",
+          "password",
+          "confirmation"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Laboratory.gd",
+    "moved": 2,
+    "qualified_references": 83,
+    "skipped": {
+      "inheritance": 2,
+      "small-boundary": 5
+    },
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Behavior/Items/Exclusive/LaboratoryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onStateChanged",
+        "module": "Runtime/Behavior/Items/Exclusive/LaboratoryBehavior.gd",
+        "args": [
+          "_phase"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/DamageSource.gd",
+    "moved": 1,
+    "qualified_references": 26,
+    "skipped": {
+      "small-boundary": 22
+    },
+    "methods": [
+      {
+        "name": "setItem",
+        "module": "Runtime/Behavior/Utility/DamageSourceBehavior.gd",
+        "args": [
+          "item",
+          "_type"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/DamageMeter/DamageMeterEntry.gd",
+    "moved": 3,
+    "qualified_references": 40,
+    "skipped": {
+      "small-boundary": 8,
+      "inheritance": 2
+    },
+    "methods": [
+      {
+        "name": "init",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterEntryBehavior.gd",
+        "args": [
+          "_player",
+          "_source",
+          "_absValue",
+          "_dps",
+          "relValue",
+          "relToLargest",
+          "_plot",
+          "_damageMeter"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterEntryBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_gui_input",
+        "module": "Runtime/Behavior/Interface/DamageMeter/DamageMeterEntryBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/StartCombatButton.gd",
+    "moved": 2,
+    "qualified_references": 10,
+    "skipped": {
+      "inheritance": 3,
+      "small-boundary": 17
+    },
+    "methods": [
+      {
+        "name": "finishSwitchingToCombat",
+        "module": "Runtime/Behavior/Interface/StartCombatButtonBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "showStorageHint",
+        "module": "Runtime/Behavior/Interface/StartCombatButtonBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Sheets/Table.gd",
+    "moved": 2,
+    "qualified_references": 5,
+    "skipped": {
+      "small-boundary": 12
+    },
+    "methods": [
+      {
+        "name": "loadFromCsv",
+        "module": "Runtime/Behavior/Sheets/TableBehavior.gd",
+        "args": [
+          "filepath",
+          "key"
+        ],
+        "await": false
+      },
+      {
+        "name": "fill",
+        "module": "Runtime/Behavior/Sheets/TableBehavior.gd",
+        "args": [
+          "owner",
+          "attribute",
+          "line"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RunAchievement.gd",
+    "moved": 1,
+    "qualified_references": 19,
+    "skipped": {
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "updateRecord",
+        "module": "Runtime/Behavior/Interface/RunAchievementBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/GridStorage.gd",
+    "moved": 2,
+    "qualified_references": 27,
+    "skipped": {
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/GridStorageBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "actuallyRebuild",
+        "module": "Runtime/Behavior/Interface/GridStorageBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/BuildIntoRecipesTooltip.gd",
+    "moved": 1,
+    "qualified_references": 35,
+    "skipped": {
+      "inheritance": 1,
+      "small-boundary": 2
+    },
+    "methods": [
+      {
+        "name": "setItem",
+        "module": "Runtime/Behavior/Interface/Tooltips/BuildIntoRecipesTooltipBehavior.gd",
+        "args": [
+          "item",
+          "asSubTooltip"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/RecipeTooltip.gd",
+    "moved": 2,
+    "qualified_references": 32,
+    "skipped": {
+      "small-boundary": 3,
+      "inheritance": 2
+    },
+    "methods": [
+      {
+        "name": "setItem",
+        "module": "Runtime/Behavior/Interface/Tooltips/RecipeTooltipBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      },
+      {
+        "name": "createItemTooltip",
+        "module": "Runtime/Behavior/Interface/Tooltips/RecipeTooltipBehavior.gd",
+        "args": [
+          "item"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Card.gd",
+    "moved": 2,
+    "qualified_references": 18,
+    "skipped": {
+      "small-boundary": 12,
+      "inheritance": 6
+    },
+    "methods": [
+      {
+        "name": "notifyChainPosition",
+        "module": "Runtime/Behavior/Items/CardBehavior.gd",
+        "args": [
+          "_deck",
+          "_chainPos",
+          "chainLength"
+        ],
+        "await": false
+      },
+      {
+        "name": "getCardDescription",
+        "module": "Runtime/Behavior/Items/CardBehavior.gd",
+        "args": [
+          "descr"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "LocalServices/LocalScores.gd",
+    "moved": 1,
+    "qualified_references": 12,
+    "skipped": {
+      "small-boundary": 11
+    },
+    "methods": [
+      {
+        "name": "get_scores_around",
+        "module": "Runtime/Behavior/LocalServices/LocalScoresBehavior.gd",
+        "args": [
+          "value",
+          "maximum",
+          "board"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/ShardEmitter.gd",
+    "moved": 1,
+    "qualified_references": 15,
+    "skipped": {
+      "small-boundary": 4
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Utility/ShardEmitterBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Chess/ChessPiece.gd",
+    "moved": 0,
+    "skipped": {
+      "small-boundary": 16,
+      "inheritance": 4
+    }
+  },
+  {
+    "path": "Interface/CombatLog/CombatLogFilterPanel.gd",
+    "moved": 0,
+    "skipped": {
+      "inheritance": 1,
+      "small-boundary": 15
+    }
+  },
+  {
+    "path": "Interface/Lobbies/OtherModesUI.gd",
+    "moved": 2,
+    "qualified_references": 17,
+    "skipped": {
+      "small-boundary": 14
+    },
+    "methods": [
+      {
+        "name": "open",
+        "module": "Runtime/Behavior/Interface/Lobbies/OtherModesUIBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "close",
+        "module": "Runtime/Behavior/Interface/Lobbies/OtherModesUIBehavior.gd",
+        "args": [
+          "cancel"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/BuildHistory/BuildHistoryData.gd",
+    "moved": 1,
+    "qualified_references": 4,
+    "skipped": {
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "getSurvivalStartRound",
+        "module": "Runtime/Behavior/Interface/BuildHistory/BuildHistoryDataBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "CharacterClasses/CharacterClass.gd",
+    "moved": 1,
+    "qualified_references": 8,
+    "skipped": {
+      "small-boundary": 11
+    },
+    "methods": [
+      {
+        "name": "loadSounds",
+        "module": "Runtime/Behavior/CharacterClasses/CharacterClassBehavior.gd",
+        "args": [
+          "classIdentifier"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/LobbyBuildViewer.gd",
+    "moved": 2,
+    "qualified_references": 32,
+    "skipped": {
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Interface/Lobbies/LobbyBuildViewerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "updateBuild",
+        "module": "Runtime/Behavior/Interface/Lobbies/LobbyBuildViewerBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Combat/CharacterStatIcon.gd",
+    "moved": 2,
+    "qualified_references": 31,
+    "skipped": {
+      "small-boundary": 6
+    },
+    "methods": [
+      {
+        "name": "setStat",
+        "module": "Runtime/Behavior/Interface/Combat/CharacterStatIconBehavior.gd",
+        "args": [
+          "_stat"
+        ],
+        "await": false
+      },
+      {
+        "name": "updateLabel",
+        "module": "Runtime/Behavior/Interface/Combat/CharacterStatIconBehavior.gd",
+        "args": [
+          "value"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Lobbies/LobbyMemberData.gd",
+    "moved": 1,
+    "qualified_references": 7,
+    "skipped": {
+      "native-object-boundary": 1,
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "setResultsFromString",
+        "module": "Runtime/Behavior/Interface/Lobbies/LobbyMemberDataBehavior.gd",
+        "args": [
+          "results"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RainbowPotion.gd",
+    "moved": 2,
+    "qualified_references": 14,
+    "skipped": {
+      "small-boundary": 12
+    },
+    "methods": [
+      {
+        "name": "onTriggerPotion",
+        "module": "Runtime/Behavior/Items/Exclusive/RainbowPotionBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "getStarPosition",
+        "module": "Runtime/Behavior/Items/Exclusive/RainbowPotionBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/WaterElemental.gd",
+    "moved": 2,
+    "qualified_references": 31,
+    "skipped": {
+      "inheritance": 2,
+      "small-boundary": 7
+    },
+    "methods": [
+      {
+        "name": "onManaChanged",
+        "module": "Runtime/Behavior/Items/Exclusive/WaterElementalBehavior.gd",
+        "args": [
+          "amount",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Behavior/Items/Exclusive/WaterElementalBehavior.gd",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/ItemBoundChecker.gd",
+    "moved": 2,
+    "qualified_references": 12,
+    "skipped": {
+      "small-boundary": 12
+    },
+    "methods": [
+      {
+        "name": "cleanUp",
+        "module": "Runtime/Behavior/Utility/ItemBoundCheckerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onBodyExited",
+        "module": "Runtime/Behavior/Utility/ItemBoundCheckerBehavior.gd",
+        "args": [
+          "body"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Storagebox.gd",
+    "moved": 3,
+    "qualified_references": 24,
+    "skipped": {
+      "small-boundary": 18
+    },
+    "methods": [
+      {
+        "name": "shake",
+        "module": "Runtime/Behavior/Interface/StorageboxBehavior.gd",
+        "args": [
+          "collisionPoint",
+          "strong"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_slot_rect",
+        "module": "Runtime/Behavior/Interface/StorageboxBehavior.gd",
+        "args": [
+          "index"
+        ],
+        "await": false
+      },
+      {
+        "name": "pve_refresh_slots",
+        "module": "Runtime/Behavior/Interface/StorageboxBehavior.gd",
+        "args": [
+          "build"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Compatibility/LegacyTween.gd",
+    "moved": 2,
+    "qualified_references": 12,
+    "skipped": {
+      "small-boundary": 5
+    },
+    "methods": [
+      {
+        "name": "interpolate_property",
+        "module": "Runtime/Behavior/Compatibility/LegacyTweenBehavior.gd",
+        "args": [
+          "object",
+          "property",
+          "initial_value",
+          "final_value",
+          "duration",
+          "transition",
+          "ease",
+          "delay"
+        ],
+        "await": false
+      },
+      {
+        "name": "start",
+        "module": "Runtime/Behavior/Compatibility/LegacyTweenBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/CraftingBond.gd",
+    "moved": 2,
+    "qualified_references": 34,
+    "skipped": {
+      "small-boundary": 7
+    },
+    "methods": [
+      {
+        "name": "_process",
+        "module": "Runtime/Behavior/Items/CraftingBondBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "flash",
+        "module": "Runtime/Behavior/Items/CraftingBondBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/ResizableControl.gd",
+    "moved": 2,
+    "qualified_references": 43,
+    "skipped": {
+      "small-boundary": 8,
+      "native-object-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "_process",
+        "module": "Runtime/Behavior/Interface/ResizableControlBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      },
+      {
+        "name": "_input",
+        "module": "Runtime/Behavior/Interface/ResizableControlBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Scale.gd",
+    "moved": 0,
+    "skipped": {
+      "inheritance": 3,
+      "small-boundary": 13
+    }
+  },
+  {
+    "path": "Items/Exclusive/Automanaton.gd",
+    "moved": 2,
+    "qualified_references": 28,
+    "skipped": {
+      "inheritance": 2,
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "onDealtDamage",
+        "module": "Runtime/Behavior/Items/Exclusive/AutomanatonBehavior.gd",
+        "args": [
+          "damageRes"
+        ],
+        "await": false
+      },
+      {
+        "name": "onDamaged",
+        "module": "Runtime/Behavior/Items/Exclusive/AutomanatonBehavior.gd",
+        "args": [
+          "_damage",
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Eat-o-matic.gd",
+    "moved": 1,
+    "qualified_references": 25,
+    "skipped": {
+      "small-boundary": 8,
+      "inheritance": 1
+    },
+    "methods": [
+      {
+        "name": "onStateChanged",
+        "module": "Runtime/Behavior/Items/Exclusive/Eat-o-maticBehavior.gd",
+        "args": [
+          "_armState"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Utility/SkinBook.gd",
+    "moved": 1,
+    "qualified_references": 5,
+    "skipped": {
+      "small-boundary": 4
+    },
+    "methods": [
+      {
+        "name": "_ready",
+        "module": "Runtime/Behavior/Utility/SkinBookBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/ShinyMantle.gd",
+    "moved": 1,
+    "qualified_references": 22,
+    "skipped": {
+      "small-boundary": 9,
+      "inheritance": 2
+    },
+    "methods": [
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Behavior/Items/Exclusive/ShinyMantleBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/SpeechBubble.gd",
+    "moved": 0,
+    "skipped": {
+      "small-boundary": 12
+    }
+  },
+  {
+    "path": "Interface/GridStorageEntry.gd",
+    "moved": 1,
+    "qualified_references": 29,
+    "skipped": {
+      "small-boundary": 5,
+      "inheritance": 3
+    },
+    "methods": [
+      {
+        "name": "setItems",
+        "module": "Runtime/Behavior/Interface/GridStorageEntryBehavior.gd",
+        "args": [
+          "itemList",
+          "wasJustAdded",
+          "itemMaxScale"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/RotationSpring.gd",
+    "moved": 1,
+    "qualified_references": 39,
+    "skipped": {
+      "small-boundary": 9
+    },
+    "methods": [
+      {
+        "name": "_physics_process",
+        "module": "Runtime/Behavior/Items/Exclusive/RotationSpringBehavior.gd",
+        "args": [
+          "delta"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/FocusGrabbingTextureButton.gd",
+    "skipped": "native-base:TextureButton"
+  },
+  {
+    "path": "Items/Exclusive/Ukulele.gd",
+    "moved": 3,
+    "qualified_references": 41,
+    "skipped": {
+      "small-boundary": 4
+    },
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Behavior/Items/Exclusive/UkuleleBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onItemActivated",
+        "module": "Runtime/Behavior/Items/Exclusive/UkuleleBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Behavior/Items/Exclusive/UkuleleBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Wardrobe/SkinSlotButton.gd",
+    "moved": 2,
+    "qualified_references": 23,
+    "skipped": {
+      "small-boundary": 10
+    },
+    "methods": [
+      {
+        "name": "onPressed",
+        "module": "Runtime/Behavior/Interface/Wardrobe/SkinSlotButtonBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "unlock",
+        "module": "Runtime/Behavior/Interface/Wardrobe/SkinSlotButtonBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/DeckofCards.gd",
+    "moved": 2,
+    "qualified_references": 18,
+    "skipped": {
+      "small-boundary": 10,
+      "inheritance": 2
+    },
+    "methods": [
+      {
+        "name": "updateCards",
+        "module": "Runtime/Behavior/Items/DeckofCardsBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getGatedDescriptor",
+        "module": "Runtime/Behavior/Items/DeckofCardsBehavior.gd",
+        "args": [
+          "rarity"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Compatibility/LegacyDirectory.gd",
+    "moved": 0,
+    "skipped": {
+      "small-boundary": 14
+    }
+  },
+  {
+    "path": "Core/SteamWorkshop.gd",
+    "moved": 1,
+    "qualified_references": 2,
+    "skipped": {
+      "small-boundary": 15
+    },
+    "methods": [
+      {
+        "name": "parseMetadata",
+        "module": "Runtime/Behavior/Core/SteamWorkshopBehavior.gd",
+        "args": [
+          "handle",
+          "results_returned",
+          "runArr",
+          "lobbyMode"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/DragonSet.gd",
+    "moved": 2,
+    "qualified_references": 21,
+    "skipped": {
+      "inheritance": 3,
+      "small-boundary": 6
+    },
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Behavior/Items/Exclusive/DragonSetBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onItemRoll",
+        "module": "Runtime/Behavior/Items/Exclusive/DragonSetBehavior.gd",
+        "args": [
+          "descr"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/MrStruggles.gd",
+    "moved": 0,
+    "skipped": {
+      "small-boundary": 12,
+      "inheritance": 1
+    }
+  },
+  {
+    "path": "Items/DjinnLamp.gd",
+    "moved": 3,
+    "qualified_references": 60,
+    "skipped": {
+      "small-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Behavior/Items/DjinnLampBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "checkStacks",
+        "module": "Runtime/Behavior/Items/DjinnLampBehavior.gd",
+        "args": [
+          "changeAmount",
+          "event"
+        ],
+        "await": false
+      },
+      {
+        "name": "doCooldownEffect",
+        "module": "Runtime/Behavior/Items/DjinnLampBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Tooltips/CustomRulesTooltip.gd",
+    "moved": 1,
+    "qualified_references": 12,
+    "skipped": {
+      "small-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "updateRules",
+        "module": "Runtime/Behavior/Interface/Tooltips/CustomRulesTooltipBehavior.gd",
+        "args": [
+          "_customRules"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Shovel.gd",
+    "moved": 1,
+    "qualified_references": 8,
+    "skipped": {
+      "inheritance": 1,
+      "small-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "onShopEntered",
+        "module": "Runtime/Behavior/Items/ShovelBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/RarityHint.gd",
+    "moved": 2,
+    "qualified_references": 12,
+    "skipped": {
+      "small-boundary": 3,
+      "inheritance": 2
+    },
+    "methods": [
+      {
+        "name": "updateLocale",
+        "module": "Runtime/Behavior/Interface/RarityHintBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "onShopOpened",
+        "module": "Runtime/Behavior/Interface/RarityHintBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Assets/Decoration/FlowerVase.gd",
+    "moved": 2,
+    "qualified_references": 28,
+    "skipped": {
+      "inheritance": 1,
+      "small-boundary": 1
+    },
+    "methods": [
+      {
+        "name": "_on_FlowerVase_button_down",
+        "module": "Runtime/Behavior/Assets/Decoration/FlowerVaseBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_gui_input",
+        "module": "Runtime/Behavior/Assets/Decoration/FlowerVaseBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Recombobulator.gd",
+    "moved": 0,
+    "skipped": {
+      "inheritance": 4,
+      "small-boundary": 4
+    }
+  },
+  {
+    "path": "Interface/CombatTimer/CombatTimer.gd",
+    "moved": 3,
+    "qualified_references": 34,
+    "skipped": {
+      "small-boundary": 26
+    },
+    "methods": [
+      {
+        "name": "initialize",
+        "module": "Runtime/Behavior/Interface/CombatTimer/CombatTimerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "combatEnd",
+        "module": "Runtime/Behavior/Interface/CombatTimer/CombatTimerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "_unhandled_input",
+        "module": "Runtime/Behavior/Interface/CombatTimer/CombatTimerBehavior.gd",
+        "args": [
+          "event"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/Joker.gd",
+    "moved": 3,
+    "qualified_references": 46,
+    "skipped": {
+      "inheritance": 1
+    },
+    "methods": [
+      {
+        "name": "countChain",
+        "module": "Runtime/Behavior/Items/Exclusive/JokerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "doRevealEffect",
+        "module": "Runtime/Behavior/Items/Exclusive/JokerBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "getCardDescription",
+        "module": "Runtime/Behavior/Items/Exclusive/JokerBehavior.gd",
+        "args": [
+          "descr"
+        ],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Items/Exclusive/TeslaCoil.gd",
+    "moved": 2,
+    "qualified_references": 25,
+    "skipped": {
+      "inheritance": 1,
+      "small-boundary": 7
+    },
+    "methods": [
+      {
+        "name": "onPrepare",
+        "module": "Runtime/Behavior/Items/Exclusive/TeslaCoilBehavior.gd",
+        "args": [],
+        "await": false
+      },
+      {
+        "name": "advanceItem",
+        "module": "Runtime/Behavior/Items/Exclusive/TeslaCoilBehavior.gd",
+        "args": [],
+        "await": false
+      }
+    ]
+  },
+  {
+    "path": "Interface/Wardrobe/DressUpSprite.gd",
+    "moved": 1,
+    "qualified_references": 15,
+    "skipped": {
+      "small-boundary": 5
+    },
+    "methods": [
+      {
+        "name": "setSkin",
+        "module": "Runtime/Behavior/Interface/Wardrobe/DressUpSpriteBehavior.gd",
+        "args": [
+          "slot",
+          "skinId"
+        ],
+        "await": false
+      }
+    ]
+  }
+]

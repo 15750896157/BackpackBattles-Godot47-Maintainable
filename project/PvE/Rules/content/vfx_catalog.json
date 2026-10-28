@@ -1,0 +1,603 @@
+{
+  "format": "native-source-vfx",
+  "generated_visuals": false,
+  "items": {
+    "utility_knife": {
+      "original_item_scene": "res://Items/Dagger.tscn",
+      "original_animation_scene": "res://Items/Animations/DaggerAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "iron_sword": {
+      "original_item_scene": "res://Items/HeroSword.tscn",
+      "original_animation_scene": "res://Items/Animations/HeroSwordAnimation.tscn",
+      "original_materials": [
+        "res://Items/Particles/HeroSwordDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "broad_axe": {
+      "original_item_scene": "res://Items/Exclusive/Axe.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/AxeAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "stone_hammer": {
+      "original_item_scene": "res://Items/Hammer.tscn",
+      "original_animation_scene": "res://Items/Animations/HammerAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "hunting_spear": {
+      "original_item_scene": "res://Items/Spear.tscn",
+      "original_animation_scene": "res://Items/Animations/SpearAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "twin_needles": {
+      "original_item_scene": "res://Items/Exclusive/Scissorswords.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/ScissorswordsAnimation.tscn",
+      "original_materials": [
+        "res://Items/Exclusive/Particles/ScissorSwordsDragParticles.material",
+        "res://Items/Particles/LightsaberActivationParticles.tres",
+        "res://Shader/AdditiveCanvasItemMaterial.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "sling": {
+      "original_item_scene": "res://Items/BagofStones.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "heavy_cleaver": {
+      "original_item_scene": "res://Items/Exclusive/DoubleAxe.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/DoubleAxeAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "buckler": {
+      "original_item_scene": "res://Items/WoodenBuckler.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "plated_vest": {
+      "original_item_scene": "res://Items/Exclusive/StoneArmor.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "tower_shield": {
+      "original_item_scene": "res://Items/ShieldofValor.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Particles/HolyArmorDragParticles.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "spiked_guard": {
+      "original_item_scene": "res://Items/SpikedShield.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "leather_wrap": {
+      "original_item_scene": "res://Items/LeatherArmor.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "repair_kit": {
+      "original_item_scene": "res://Items/Exclusive/Wrench.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/WrenchAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "stamina_flask": {
+      "original_item_scene": "res://Items/HeroicPotion.tscn",
+      "original_animation_scene": "res://Items/Animations/HeroicPotionAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "travel_ration": {
+      "original_item_scene": "res://Items/Exclusive/SliceofBread.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "bandage_roll": {
+      "original_item_scene": "res://Items/HealingHerbs.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "cleansing_salt": {
+      "original_item_scene": "res://Items/Exclusive/DivinePotion.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/DivinePotionAnimation.tscn",
+      "original_materials": [
+        "res://Items/Exclusive/Materials/DivinePotion.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "sharpening_stone": {
+      "original_item_scene": "res://Items/Whetstone.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "clockwork_spring": {
+      "original_item_scene": "res://Items/Exclusive/SpringLoader.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "lucky_coin": {
+      "original_item_scene": "res://Items/LuckyClover.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "scout_lens": {
+      "original_item_scene": "res://Items/Exclusive/MagicMirror.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/FrozenFlameParticles.material",
+        "res://Items/Exclusive/Particles/FrozenFlame.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "merchant_token": {
+      "original_item_scene": "res://Items/CustomerCard.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "storage_hook": {
+      "original_item_scene": "res://Items/Exclusive/Rope.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "gear_link": {
+      "original_item_scene": "res://Items/Exclusive/Cog.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "focus_prism": {
+      "original_item_scene": "res://Items/Gems/PerfectAmethyst.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "row_banner": {
+      "original_item_scene": "res://Items/Exclusive/BurningBanner.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "column_standard": {
+      "original_item_scene": "res://Items/Exclusive/BurningBanner.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "star_compass": {
+      "original_item_scene": "res://Items/Exclusive/StarofCourage.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Exclusive/Particles/StarofCourageDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "compact_rack": {
+      "original_item_scene": "res://Items/BoxofRiches.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/BoxofRichesDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "resonant_bell": {
+      "original_item_scene": "res://Items/Exclusive/SpiritBells.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Particles/CapofResilienceAuraParticles.material",
+        "res://Items/Exclusive/Particles/TimeMelting.material",
+        "res://Items/Exclusive/Particles/SpiritBellsDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "counterweight": {
+      "original_item_scene": "res://Items/Exclusive/Sandbag.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Particles/CapofResilienceAuraParticles.material",
+        "res://Items/Exclusive/Particles/SandbagDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "venom_needle": {
+      "original_item_scene": "res://Items/PoisonDagger.tscn",
+      "original_animation_scene": "res://Items/Animations/PoisonDaggerAnimation.tscn",
+      "original_materials": [
+        "res://Items/Particles/PoisonDaggerDragParticles.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "ember_stone": {
+      "original_item_scene": "res://Items/Gems/BurningCoal.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/BurningCoalDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "healing_herb": {
+      "original_item_scene": "res://Items/HealingHerbs.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "regeneration_leaf": {
+      "original_item_scene": "res://Items/YggdrasilLeaf.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "fracture_charm": {
+      "original_item_scene": "res://Items/CursedHairComb.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "quicksand_vial": {
+      "original_item_scene": "res://Items/PocketSand.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Particles/PocketSandDragParticles.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "blood_cup": {
+      "original_item_scene": "res://Items/Exclusive/VampiricPotion.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
+      "original_materials": [
+        "res://Items/Exclusive/Materials/VampiricPotion.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "cooling_fan": {
+      "original_item_scene": "res://Items/Exclusive/TimeDilator.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Particles/CapofResilienceAuraParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "iron_nail": {
+      "original_item_scene": "res://Items/WalrusTusk.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "glass_bead": {
+      "original_item_scene": "res://Items/Gems/RegularSapphire.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "field_manual": {
+      "original_item_scene": "res://Items/Exclusive/SmithingForDummies.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/SmithingForDummiesDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "salvage_pouch": {
+      "original_item_scene": "res://Items/Piggybank.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "arsenal_bracer": {
+      "original_item_scene": "res://Items/ClawsofAttack.tscn",
+      "original_animation_scene": "res://Items/Animations/ClawsofAttackAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "chain_blade": {
+      "original_item_scene": "res://Items/Exclusive/Chainsaw.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/ChainsawAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "repeater_crossbow": {
+      "original_item_scene": "res://Items/Exclusive/Repeater.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/RepeaterDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "crescent_glaive": {
+      "original_item_scene": "res://Items/Exclusive/Halberd.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/HalberdAnimation.tscn",
+      "original_materials": [
+        "res://Items/Exclusive/Materials/SteelShine.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "siege_maul": {
+      "original_item_scene": "res://Items/Exclusive/ThorsHammer.tscn",
+      "original_animation_scene": "res://Items/Exclusive/Animations/ThorsHammerAnimation.tscn",
+      "original_materials": [
+        "res://Items/Exclusive/Particles/ThorsHammerDragParticles.material",
+        "res://Items/Exclusive/Particles/TimeMelting.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "momentum_gear": {
+      "original_item_scene": "res://Items/Exclusive/Generator.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Materials/BatteryLightning.material",
+        "res://Items/Exclusive/Particles/BatteryDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "duelist_mark": {
+      "original_item_scene": "res://Items/Exclusive/StoneBadge.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/StoneBadgeDragParticles.material",
+        "res://Shader/AdditiveCanvasItemMaterial.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "overdrive_ratchet": {
+      "original_item_scene": "res://Items/Exclusive/PerpetuumMobile.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/PerpetuumMobileDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "bastion_core": {
+      "original_item_scene": "res://Items/Exclusive/BionicArmor.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/SunShieldDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "layered_plates": {
+      "original_item_scene": "res://Items/Exclusive/DragonscaleArmor.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "retaliation_spikes": {
+      "original_item_scene": "res://Items/Exclusive/SpikedWall.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "guardian_standard": {
+      "original_item_scene": "res://Items/Exclusive/BurningBanner.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "charging_weight": {
+      "original_item_scene": "res://Items/Exclusive/Battery.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/BatteryDragParticles.material",
+        "res://Items/Exclusive/Materials/BatteryLightning.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "execution_anvil": {
+      "original_item_scene": "res://Items/Exclusive/Anvil.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "toxin_bottle": {
+      "original_item_scene": "res://Items/PestilenceFlask.tscn",
+      "original_animation_scene": "res://Items/Animations/PestilenceFlaskAnimation.tscn",
+      "original_materials": [
+        "res://Shader/PestilenceFlask.Material.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "thorn_extract": {
+      "original_item_scene": "res://Items/PoisonIvy.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Particles/PoisonIvyActivationParticles.material",
+        "res://Items/Particles/PoisonIvyDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "spore_jar": {
+      "original_item_scene": "res://Items/FlyAgaric.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "venom_distiller": {
+      "original_item_scene": "res://Items/Exclusive/Laboratory.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/LaboratoryDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "plague_retort": {
+      "original_item_scene": "res://Items/StrongPestilenceFlask.tscn",
+      "original_animation_scene": "res://Items/Animations/StrongPestilenceFlaskAnimation.tscn",
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "caustic_coil": {
+      "original_item_scene": "res://Items/Exclusive/Coil.tscn",
+      "original_animation_scene": null,
+      "original_materials": [],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "ember_phial": {
+      "original_item_scene": "res://Items/DemonicFlask.tscn",
+      "original_animation_scene": "res://Items/Animations/DemonicFlaskAnimation.tscn",
+      "original_materials": [
+        "res://Shader/DemonicFlask.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "coal_burner": {
+      "original_item_scene": "res://Items/BurningTorch.tscn",
+      "original_animation_scene": "res://Items/Animations/BurningTorchAnimation.tscn",
+      "original_materials": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/RubyEggMaterial.material",
+        "res://Items/Particles/BurningTorchParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "ignition_lens": {
+      "original_item_scene": "res://Items/Exclusive/OilLamp.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/FlameDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "wildfire_alembic": {
+      "original_item_scene": "res://Items/Exclusive/Cauldron.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/CauldronDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "tonic_bottle": {
+      "original_item_scene": "res://Items/HealthPotion.tscn",
+      "original_animation_scene": "res://Items/Animations/HealthPotionAnimation.tscn",
+      "original_materials": [
+        "res://Shader/HealthPotion.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "renewal_mortar": {
+      "original_item_scene": "res://Items/Exclusive/Pot.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/PotDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "transfusion_tube": {
+      "original_item_scene": "res://Items/BloodAmulet.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Shader/AdditiveCanvasItemMaterial.tres",
+        "res://Items/Particles/BloodAmuletDragParticles.tres"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    },
+    "philosophers_kettle": {
+      "original_item_scene": "res://Items/Exclusive/Cauldron.tscn",
+      "original_animation_scene": null,
+      "original_materials": [
+        "res://Items/Exclusive/Particles/CauldronDragParticles.material"
+      ],
+      "mode": "native_scene_activation",
+      "generated_visuals": false
+    }
+  }
+}

@@ -1,0 +1,3 @@
+id,name_key,description_key,max_health,starting_health,stamina_max,stamina_regen_per_sec,base_crit_chance,base_crit_multiplier,passive_id,exclusive_tags
+armorer,character.armorer.name,character.armorer.desc,105,105,10,1.7,0.05,1.5,armorer_shape_mastery,weapon|armor|tempo
+alchemist,character.alchemist.name,character.alchemist.desc,95,95,10,1.8,0.05,1.5,alchemist_first_reaction,potion|poison|burn|healing

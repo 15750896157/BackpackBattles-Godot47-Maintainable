@@ -1,0 +1,26 @@
+﻿[
+    {
+        "scene":  "BehaviorServices",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    },
+    {
+        "scene":  "SaveSafetyMain",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    },
+    {
+        "scene":  "PersistenceRouteWrite",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    },
+    {
+        "scene":  "PersistenceRouteReopen",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    }
+]

@@ -1,0 +1,9 @@
+后续换图入口
+
+1. 直接替换 project/Art/20261022 中对应英文文件；中文原始文件名与英文目标名的关系见逐项CSV。catalog.json统一登记29项路径。
+2. 角色比例/朝向与整体动作在 project/PvE/Art/Portrait.gd；敌人复用表在 enemy_art()。只有在提供第二主角或专属Boss图后再增加独立绑定，不改存档中的职业/敌人ID。
+3. 商店位置、按钮、HUD与缩放在 project/PvE/Art/Presentation.gd；格子在 Board.gd、合法/非法落点提示在 Hover.gd。所有坐标均基于1920×1080。
+4. 背景分别为 project/Runtime/Loading/Scenes/ShopBackdrop.tscn、CombatBackdrop.tscn，继续通过SceneResidency按需管理。增减界面新图同时维护Presentation的SHOP_KEYS/COMBAT_KEYS，防止同步回退或资源不释放。
+5. 仓库渲染由StorageboxBehavior的槽位图与NativeBuildBridge的物品图案适配共同负责；更改图块大小时同时检查98单位图案预算、点击范围和2/4容量，不能只改一张贴图。
+6. launch-game.cmd先调用tools/ensure_art_imports.ps1，检查新图源文件、导入路径及时间；缺缓存或源图更新时先由随包Godot生成缓存，再启动游戏。不要只拷贝.png.import而漏掉PNG；也不需要把别人机器的整份.godot复制过来。
+7. tools/verify_native.ps1 -Scenes NewArtMain,NativeInventoryQA,NativeQualityMain,QualityLifecycleMain可做针对性复验。默认完整检查另含物理鼠标阶段，运行该阶段时安排无人操作的时间。本轮没有执行该默认阶段，使用独立的新美术鼠标复验场景，实际通过情况见验收记录和physical_pointer_newly_run字段。

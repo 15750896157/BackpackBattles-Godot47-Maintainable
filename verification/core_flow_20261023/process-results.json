@@ -1,0 +1,248 @@
+[
+  {
+    "case": "entry",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 8.27
+  },
+  {
+    "case": "core-flow",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 47.19,
+    "assertions": 30,
+    "report": "core-flow\\core-flow-report.json"
+  },
+  {
+    "case": "lighting-quality",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 19.67,
+    "assertions": 8,
+    "report": "lighting-quality\\lighting-quality-report.json"
+  },
+  {
+    "case": "polish",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 42.16,
+    "assertions": 101,
+    "report": "polish\\art-polish-report.json"
+  },
+  {
+    "case": "new-art",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 45.75,
+    "assertions": 1388,
+    "report": "new-art\\new-art-report.json"
+  },
+  {
+    "case": "loading-contracts",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 72.78,
+    "assertions": 128,
+    "report": "loading-contracts\\loading-contracts-report.json"
+  },
+  {
+    "case": "runtime-contracts",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 7.38,
+    "assertions": 2625,
+    "report": "runtime-contracts\\runtime-contracts-report.json"
+  },
+  {
+    "case": "refactor-contracts",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 12.31,
+    "assertions": 8702,
+    "report": "refactor-contracts\\refactor-contracts-report.json"
+  },
+  {
+    "case": "behavior-services",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 10.06,
+    "assertions": 3736,
+    "report": "behavior-services\\behavior-services-report.json"
+  },
+  {
+    "case": "save-safety",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.3,
+    "assertions": 17,
+    "report": "save-safety\\save-safety-report.json"
+  },
+  {
+    "case": "visual-refinement",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 26.3,
+    "assertions": 2108,
+    "report": "visual-refinement\\visual-refinement-report.json"
+  },
+  {
+    "case": "audio",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.08,
+    "assertions": 24,
+    "report": "audio\\audio-requests-report.json"
+  },
+  {
+    "case": "flow",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 34.06,
+    "assertions": 47,
+    "report": "flow\\native-report.json"
+  },
+  {
+    "case": "inventory",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 14.22,
+    "assertions": 37,
+    "report": "inventory\\report.json"
+  },
+  {
+    "case": "lifecycle",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 85.0,
+    "assertions": 206,
+    "report": "lifecycle\\lifecycle-report.json"
+  },
+  {
+    "case": "layout",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 41.61,
+    "assertions": 1774,
+    "report": "layout\\report.json"
+  },
+  {
+    "case": "combat-log",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 25.86,
+    "assertions": 1933,
+    "report": "combat-log\\combat-log-report.json"
+  },
+  {
+    "case": "clues",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 17.05,
+    "assertions": 314,
+    "report": "clues\\content-clues-report.json"
+  },
+  {
+    "case": "feedback",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 26.52,
+    "assertions": 32,
+    "report": "feedback\\feedback-report.json"
+  },
+  {
+    "case": "preferences-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 17.83,
+    "assertions": 93,
+    "report": "preferences\\write-report.json"
+  },
+  {
+    "case": "preferences-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.17,
+    "assertions": 76,
+    "report": "preferences\\reopen-report.json"
+  },
+  {
+    "case": "persist-route-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 10.59,
+    "assertions": 12,
+    "report": "persist-route\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-route-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.61,
+    "assertions": 12,
+    "report": "persist-route\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-shop-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 16.45,
+    "assertions": 14,
+    "report": "persist-shop\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-shop-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 17.48,
+    "assertions": 12,
+    "report": "persist-shop\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-combat-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 22.38,
+    "assertions": 15,
+    "report": "persist-combat\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-combat-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 17.58,
+    "assertions": 13,
+    "report": "persist-combat\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-result-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 22.62,
+    "assertions": 17,
+    "report": "persist-result\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-result-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 17.66,
+    "assertions": 13,
+    "report": "persist-result\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-reward-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 22.64,
+    "assertions": 17,
+    "report": "persist-reward\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-reward-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.66,
+    "assertions": 13,
+    "report": "persist-reward\\persistence-reopen-report.json"
+  }
+]

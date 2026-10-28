@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Interface/Combat/StatIcons/Unhealing.png" type="Texture2D" id=1]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="FontFile" id=2]
+[ext_resource path="res://Interface/Combat/CharacterStatIcon.gd" type="Script" id=3]
+[ext_resource path="res://Utility/TooltipArea.gd" type="Script" id=4]
+[ext_resource path="res://Interface/NonLocalized_KeepFont.gd" type="Script" id=5]
+
+[ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
+
+[sub_resource type="FontVariation" id=1]
+script = ExtResource( "LegacyFontMigration" )
+size = 20
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+base_font = ExtResource( 2 )
+
+[node name="Stat" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -27.5
+offset_top = -27.5
+offset_right = 27.5
+offset_bottom = 27.5
+custom_minimum_size = Vector2( 55, 55 )
+texture = ExtResource( 1 )
+expand_mode = 1
+stretch_mode = 6
+script = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+offset_left = -11.0
+offset_top = 6.0
+offset_right = 49.0
+offset_bottom = 32.0
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource( 1 )
+text = "20%"
+script = ExtResource( 5 )
+theme_override_font_sizes/font_size = 20
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+

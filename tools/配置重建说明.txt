@@ -1,0 +1,32 @@
+本工具用于原游戏工程基础的 Godot 4.7 PvE 配置维护，只需要 Python 3.10 或更高版本的标准库。
+
+检查配置，不写入任何文件：
+  python tools/import_content.py --validate-only
+
+重建运行时配置缓存：
+  python tools/import_content.py
+
+工具默认以自身所在交付包的 project 目录为目标，整个交付包移动位置后仍可使用。
+也可指定另一份同结构工程：
+  python tools/import_content.py --project "另一份工程/project"
+缓存输出位置可用 --output 指定；未指定时只写 project/PvE/Rules/content/compiled 中的 content.json 与 manifest.json。
+
+事实源是 project/PvE/Rules/content/tables 中的 56 张内容 CSV 与 config_manifest.csv。
+脚本只读取这些 CSV、schema.json、PvE/asset_bindings.json、vfx_catalog.json 和已有原素材；不更改事实源。
+CSV 可为 UTF-8 或带 BOM 的 UTF-8；字段、类型、主键、清单行数和版本必须符合 schema 与清单。
+物品数值、形状、开局、敌人、Boss、配方、文本与引用都经过独立验证，包括40个实际布局和90个奖励/事件池。
+错误会使工具退出失败，输出目录不会产生半份新缓存。
+
+已有 content/definitions 下的只读 Godot Resource 定义由 ContentDB 从缓存构造，不需要另外生成 .tres。
+此工具不会创建图标、SVG、PNG、音效、音乐、字体、动画、特效或其他替代素材。
+72物品与10背包必须逐一对应 asset_bindings.json 的原 PNG 与场景；源 PNG/场景有字节改动会明确报错。
+icon_ref 使用原工程根目录 res://Items/... 路径，不能加 PvE/Rules 前缀。
+vfx_ref 使用原动画场景或原物品场景；vfx_catalog 仅记录这些来源，不绘制新特效。
+绑定清单中的原占格和规划占格可能不同，逻辑格由 NativeBuildBridge 处理，不可把原外观占格当作新规则。
+
+内容SHA256来自全部类型化表的规范JSON；相同CSV编译所得SHA与缓存字节可复现。
+若增加或删改配置行，需同步 config_manifest.csv 的 row_count；增加字段需同步 schema 和对应 Godot 定义/使用代码。
+内容版本需要同时更新 game_rules.content_version、config_manifest.schema_version 和 schema.content_version。
+当前0.1.3使用game_rules.max_noncombat_nodes_per_act=1：每章最多一个纯商人、事件或休息节点，三章完整流程12至15场战斗。普通步骤2至3候选；第5步为唯一必经Boss。验证器会阻断不满足此范围的配置。
+修改已有原素材不是规则表维护范围；需要有意更新绑定来源及其SHA后才能重新编译。
+工具不会运行原 Game、写入用户存档，或联网下载内容。

@@ -1,0 +1,24 @@
+{
+	"all_passed": false,
+	"changing": false,
+	"checks": {
+		"automatic_result": true,
+		"battle_started": true,
+		"codex_icon": true,
+		"continued_combat": false,
+		"guide_icon": true,
+		"new_game_routes": false,
+		"new_game_setup": false,
+		"next_to_rewards": true,
+		"real_drag_drop": true,
+		"refreshed_visible_items": true,
+		"saved_combat_to_title": true,
+		"settings_icon": true
+	},
+	"input_sources": 0,
+	"page": "",
+	"pending": false,
+	"phase": "continue_combat",
+	"ready": true,
+	"screen": "MAIN_MENU"
+}

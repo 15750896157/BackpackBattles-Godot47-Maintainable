@@ -1,0 +1,33 @@
+[gd_resource type="ShaderMaterial" load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Noise/SparkleNoise.png" type="Texture2D" id=1]
+[ext_resource path="res://Shader/Laser.gdshader" type="Shader" id=2]
+
+[sub_resource type="Gradient" id=3]
+offsets = PackedFloat32Array( 0.430686, 0.46568, 0.508748 )
+colors = PackedColorArray( 1, 0.5625, 0, 0, 1, 0.908638, 0.0644531, 1, 1, 1, 1, 1 )
+
+[sub_resource type="GradientTexture1D" id=4]
+gradient = SubResource( 3 )
+width = 100
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0, 0.468182 ), 0.0, 0.428846, 0, 0, Vector2( 1, 0.477273 ), -0.177831, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=6]
+width = 100
+curve = SubResource( 5 )
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_parameter/wobbliness = 0.178
+shader_parameter/centralityFactor = 2.464
+shader_parameter/scroll1 = Vector2( 0.174, 0.01 )
+shader_parameter/scroll2 = Vector2( 0.12, 0 )
+shader_parameter/yStretch = 0.2617
+shader_parameter/xStretch = 1.1341
+shader_parameter/gradient = SubResource( 4 )
+shader_parameter/thicknessCurve = SubResource( 6 )
+shader_parameter/NOISE_PATTERN = ExtResource( 1 )
+shader_parameter/NOISE_PATTERN2 = ExtResource( 1 )

@@ -1,0 +1,150 @@
+{
+  "checks": 76,
+  "engine": "4.7-stable (official)",
+  "entry": "res://Core/Main.tscn",
+  "evidence": {
+    "default_settings_restored": true,
+    "loaded_bindings": {
+      "combat_pause": [
+        {
+          "alt": false,
+          "code": 32,
+          "ctrl": false,
+          "shift": false,
+          "type": "key"
+        },
+        {
+          "button": 0,
+          "type": "joy"
+        }
+      ],
+      "combat_speed_down": [
+        {
+          "alt": false,
+          "code": 4194319,
+          "ctrl": false,
+          "shift": false,
+          "type": "key"
+        },
+        {
+          "button": 13,
+          "type": "joy"
+        }
+      ],
+      "rotate_left_button": [
+        {
+          "alt": false,
+          "code": 75,
+          "ctrl": true,
+          "shift": false,
+          "type": "key"
+        }
+      ],
+      "rotate_left_button_controller": [
+        {
+          "axis": 2,
+          "type": "axis",
+          "value": -1
+        }
+      ],
+      "start_battle": [
+        {
+          "alt": false,
+          "code": 32,
+          "ctrl": false,
+          "shift": false,
+          "type": "key"
+        }
+      ],
+      "ui_focus_prev": [
+        {
+          "alt": false,
+          "code": 4194306,
+          "ctrl": false,
+          "shift": true,
+          "type": "key"
+        }
+      ],
+      "ui_left": [
+        {
+          "button": 13,
+          "type": "joy"
+        },
+        {
+          "alt": false,
+          "code": 4194319,
+          "ctrl": false,
+          "shift": false,
+          "type": "key"
+        }
+      ],
+      "ui_up": [
+        {
+          "alt": false,
+          "code": 73,
+          "ctrl": true,
+          "shift": false,
+          "type": "key"
+        },
+        {
+          "axis": 1,
+          "type": "axis",
+          "value": -1
+        }
+      ]
+    },
+    "volumes": [
+      {
+        "actual": 0.190000005894244,
+        "bus": "BGM",
+        "expected": 0.19,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.31000001397277,
+        "bus": "PvEAmbient",
+        "expected": 0.31,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.430000005403134,
+        "bus": "PvEUI",
+        "expected": 0.43,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.56999999041014,
+        "bus": "PvECombat",
+        "expected": 0.57,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.300000002115376,
+        "bus": "BGM",
+        "expected": 0.3,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.300000002115376,
+        "bus": "PvEAmbient",
+        "expected": 0.3,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.700000003987361,
+        "bus": "PvEUI",
+        "expected": 0.7,
+        "legacy_initializing": false
+      },
+      {
+        "actual": 0.599999999311871,
+        "bus": "PvECombat",
+        "expected": 0.6,
+        "legacy_initializing": false
+      }
+    ]
+  },
+  "failures": [],
+  "save_path": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\checks\\preferences_saves/",
+  "stage": "reopen"
+}

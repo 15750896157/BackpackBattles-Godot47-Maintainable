@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "candidate": false,
+  "migrated_methods": 411,
+  "owners": 336,
+  "signatures_checked": 3759,
+  "explicit_enum_ids": 320,
+  "enum_contracts": 42,
+  "errors": [],
+  "unreferenced_modules": [],
+  "protected_resource_and_content_files": 4761,
+  "changed_protected_files": [],
+  "player_files_unchanged": {
+    "profile.save": true,
+    "profile_backup.save": true,
+    "run.save": true,
+    "run_backup.save": true,
+    "settings.save": true,
+    "settings_backup.save": true,
+    "telemetry.jsonl": true
+  }
+}

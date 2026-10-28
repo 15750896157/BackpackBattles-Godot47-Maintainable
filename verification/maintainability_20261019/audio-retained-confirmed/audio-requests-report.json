@@ -1,0 +1,59 @@
+{
+	"checks": 25,
+	"failures": [
+		"latest shop request survives a pending title transition 0",
+		"cancelled transition restores requested volume 0",
+		"latest shop request survives a pending title transition 1",
+		"cancelled transition restores requested volume 1",
+		"latest shop request survives a pending title transition 2",
+		"cancelled transition restores requested volume 2",
+		"latest shop request survives a pending title transition 3",
+		"cancelled transition restores requested volume 3",
+		"latest shop request survives a pending title transition 4",
+		"cancelled transition restores requested volume 4"
+	],
+	"implementation": "retained_previous_build",
+	"observations": [
+		{
+			"cycle": 0,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": false,
+			"title_playing": true,
+			"volume_db": -23.5133609771729
+		},
+		{
+			"cycle": 1,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": false,
+			"title_playing": true,
+			"volume_db": -23.0063304901123
+		},
+		{
+			"cycle": 2,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": false,
+			"title_playing": true,
+			"volume_db": -22.8068008422852
+		},
+		{
+			"cycle": 3,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": false,
+			"title_playing": true,
+			"volume_db": -21.7029228210449
+		},
+		{
+			"cycle": 4,
+			"playing": true,
+			"second_playing": false,
+			"shop_playing": false,
+			"title_playing": true,
+			"volume_db": -22.0347137451172
+		}
+	],
+	"ok": false
+}

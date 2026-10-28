@@ -1,0 +1,2903 @@
+{
+	"checks": 1388,
+	"failures": [],
+	"layouts": [
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1280x720-zh_CN",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1280x720-en",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1366x768-zh_CN",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1366x768-en",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1920x1080-zh_CN",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1920x1080-en",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1280x1024-zh_CN",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-1280x1024-en",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-2560x1080-zh_CN",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-2560x1080-en",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (445.0, 690.0), S: (205.0, 110.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (780.0, 670.0), S: (112.0, 156.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_undo",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1110.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/undo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_redo",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1230.0, 690.0), S: (88.0, 88.0)]",
+			"source_size": "(160.0, 160.0)",
+			"texture": "res://Art/Polish20261022/redo.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_refresh",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (805.0, 0.0), S: (120.0, 244.0)]",
+			"source_size": "(121.0, 244.0)",
+			"texture": "res://Art/20261022/refresh.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtStartBattle",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1710.0, 0.0), S: (185.0, 245.0)]",
+			"source_size": "(239.0, 310.0)",
+			"texture": "res://Art/20261022/stage.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_shop_settings",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1802.0, 258.0), S: (84.0, 84.0)]",
+			"source_size": "(62.0, 63.0)",
+			"texture": "res://Art/20261022/shop_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate1",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1400.0, 45.0), S: (240.0, 70.0)]",
+			"source_size": "(201.0, 70.0)",
+			"texture": "res://Art/20261022/plate1.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_price",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (315.0, 230.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@375",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (705.0, 182.0), S: (86.0, 110.0)]",
+			"source_size": "(96.0, 122.0)",
+			"texture": "res://Art/20261022/sale.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@378",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (315.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@383",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (625.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureButton@388",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (915.0, 530.0), S: (82.0, 72.0)]",
+			"source_size": "(79.0, 69.0)",
+			"texture": "res://Art/20261022/price.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1515.0, 650.0), S: (385.0, 157.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1525.0, 657.0), S: (365.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@394",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1620.0, 703.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@397",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@398",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (1620.0, 750.0), S: (267.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_top",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (15.0, 300.0), S: (815.0, 84.0)]",
+			"source_size": "(775.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_top.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_shelf_bottom",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (15.0, 600.0), S: (951.0, 80.0)]",
+			"source_size": "(951.0, 80.0)",
+			"texture": "res://Art/Polish20261022/shelf_bottom.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_merchant",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (5.0, 650.0), S: (425.0, 416.0)]",
+			"source_size": "(1251.0, 1223.0)",
+			"texture": "res://Art/20261022/merchant.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_table",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (0.0, 861.0), S: (1920.0, 219.0)]",
+			"source_size": "(1942.0, 221.0)",
+			"texture": "res://Art/Polish20261022/table.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_storage_mat",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (490.0, 788.0), S: (1060.0, 222.0)]",
+			"source_size": "(1165.0, 244.0)",
+			"texture": "res://Art/20261022/storage_mat.png"
+		},
+		{
+			"node": "/root/Main/Shop/SuppliedArtScenery/Art_sell",
+			"phase": "shop-expanded-four",
+			"rect": "[P: (95.0, 835.0), S: (290.0, 165.0)]",
+			"source_size": "(312.0, 242.0)",
+			"texture": "res://Art/20261022/sell.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "rust_scout_a",
+			"rect": "[P: (480.0, 820.0), S: (420.0, 150.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "rust_scout_a",
+			"rect": "[P: (490.0, 827.0), S: (400.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "rust_scout_a",
+			"rect": "[P: (585.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1119",
+			"phase": "rust_scout_a",
+			"rect": "[P: (585.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1122",
+			"phase": "rust_scout_a",
+			"rect": "[P: (585.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1123",
+			"phase": "rust_scout_a",
+			"rect": "[P: (585.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1127",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1020.0, 820.0), S: (420.0, 150.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1128",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1030.0, 827.0), S: (400.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1130",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1125.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1131",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1125.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1134",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1125.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1135",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1125.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_timeline_base",
+			"phase": "rust_scout_a",
+			"rect": "[P: (680.0, 34.0), S: (560.0, 70.0)]",
+			"source_size": "(560.0, 70.0)",
+			"texture": "res://Art/20261022/timeline_base.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtTimeline",
+			"phase": "rust_scout_a",
+			"rect": "[P: (680.0, 46.0), S: (560.0, 20.0)]",
+			"source_size": "(560.0, 20.0)",
+			"texture": "res://Art/20261022/timeline_fill.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_pause",
+			"phase": "rust_scout_a",
+			"rect": "[P: (758.0, 110.0), S: (78.0, 78.0)]",
+			"source_size": "(37.0, 36.0)",
+			"texture": "res://Art/20261022/pause.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_play",
+			"phase": "rust_scout_a",
+			"rect": "[P: (880.0, 110.0), S: (78.0, 78.0)]",
+			"source_size": "(32.0, 36.0)",
+			"texture": "res://Art/20261022/play.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_combat_settings",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1810.0, 28.0), S: (73.0, 73.0)]",
+			"source_size": "(73.0, 73.0)",
+			"texture": "res://Art/20261022/combat_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "rust_scout_a",
+			"rect": "[P: (815.0, 330.0), S: (205.0, 108.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "rust_scout_a",
+			"rect": "[P: (890.0, 495.0), S: (88.0, 122.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Main/Combat/SuppliedArtScenery/Art_shadow",
+			"phase": "rust_scout_a",
+			"rect": "[P: (200.0, 980.0), S: (260.0, 44.0)]",
+			"source_size": "(409.0, 69.0)",
+			"texture": "res://Art/20261022/shadow.png"
+		},
+		{
+			"node": "/root/Main/Combat/SuppliedArtScenery/@TextureRect@1139",
+			"phase": "rust_scout_a",
+			"rect": "[P: (1460.0, 980.0), S: (260.0, 44.0)]",
+			"source_size": "(409.0, 69.0)",
+			"texture": "res://Art/20261022/shadow.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "marsh_brewer",
+			"rect": "[P: (480.0, 820.0), S: (420.0, 150.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "marsh_brewer",
+			"rect": "[P: (490.0, 827.0), S: (400.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "marsh_brewer",
+			"rect": "[P: (585.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1479",
+			"phase": "marsh_brewer",
+			"rect": "[P: (585.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1482",
+			"phase": "marsh_brewer",
+			"rect": "[P: (585.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1483",
+			"phase": "marsh_brewer",
+			"rect": "[P: (585.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1487",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1020.0, 820.0), S: (420.0, 150.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1488",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1030.0, 827.0), S: (400.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1490",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1125.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1491",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1125.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1494",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1125.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1495",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1125.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_timeline_base",
+			"phase": "marsh_brewer",
+			"rect": "[P: (680.0, 34.0), S: (560.0, 70.0)]",
+			"source_size": "(560.0, 70.0)",
+			"texture": "res://Art/20261022/timeline_base.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtTimeline",
+			"phase": "marsh_brewer",
+			"rect": "[P: (680.0, 46.0), S: (560.0, 20.0)]",
+			"source_size": "(560.0, 20.0)",
+			"texture": "res://Art/20261022/timeline_fill.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_pause",
+			"phase": "marsh_brewer",
+			"rect": "[P: (758.0, 110.0), S: (78.0, 78.0)]",
+			"source_size": "(37.0, 36.0)",
+			"texture": "res://Art/20261022/pause.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_play",
+			"phase": "marsh_brewer",
+			"rect": "[P: (880.0, 110.0), S: (78.0, 78.0)]",
+			"source_size": "(32.0, 36.0)",
+			"texture": "res://Art/20261022/play.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_combat_settings",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1810.0, 28.0), S: (73.0, 73.0)]",
+			"source_size": "(73.0, 73.0)",
+			"texture": "res://Art/20261022/combat_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "marsh_brewer",
+			"rect": "[P: (815.0, 330.0), S: (205.0, 108.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "marsh_brewer",
+			"rect": "[P: (890.0, 495.0), S: (88.0, 122.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Main/Combat/SuppliedArtScenery/Art_shadow",
+			"phase": "marsh_brewer",
+			"rect": "[P: (200.0, 980.0), S: (260.0, 44.0)]",
+			"source_size": "(409.0, 69.0)",
+			"texture": "res://Art/20261022/shadow.png"
+		},
+		{
+			"node": "/root/Main/Combat/SuppliedArtScenery/@TextureRect@1499",
+			"phase": "marsh_brewer",
+			"rect": "[P: (1460.0, 980.0), S: (260.0, 44.0)]",
+			"source_size": "(409.0, 69.0)",
+			"texture": "res://Art/20261022/shadow.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate2",
+			"phase": "road_guard_a",
+			"rect": "[P: (480.0, 820.0), S: (420.0, 150.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_name",
+			"phase": "road_guard_a",
+			"rect": "[P: (490.0, 827.0), S: (400.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_plate3",
+			"phase": "road_guard_a",
+			"rect": "[P: (585.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1834",
+			"phase": "road_guard_a",
+			"rect": "[P: (585.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1837",
+			"phase": "road_guard_a",
+			"rect": "[P: (585.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1838",
+			"phase": "road_guard_a",
+			"rect": "[P: (585.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1842",
+			"phase": "road_guard_a",
+			"rect": "[P: (1020.0, 820.0), S: (420.0, 150.0)]",
+			"source_size": "(568.0, 152.0)",
+			"texture": "res://Art/20261022/plate2.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1843",
+			"phase": "road_guard_a",
+			"rect": "[P: (1030.0, 827.0), S: (400.0, 33.0)]",
+			"source_size": "(342.0, 46.0)",
+			"texture": "res://Art/20261022/name.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1845",
+			"phase": "road_guard_a",
+			"rect": "[P: (1125.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1846",
+			"phase": "road_guard_a",
+			"rect": "[P: (1125.0, 873.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/health.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@NinePatchRect@1849",
+			"phase": "road_guard_a",
+			"rect": "[P: (1125.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/plate3.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/@TextureProgressBar@1850",
+			"phase": "road_guard_a",
+			"rect": "[P: (1125.0, 920.0), S: (302.0, 31.0)]",
+			"source_size": "(205.0, 36.0)",
+			"texture": "res://Art/20261022/stamina.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Art_timeline_base",
+			"phase": "road_guard_a",
+			"rect": "[P: (680.0, 34.0), S: (560.0, 70.0)]",
+			"source_size": "(560.0, 70.0)",
+			"texture": "res://Art/20261022/timeline_base.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/ArtTimeline",
+			"phase": "road_guard_a",
+			"rect": "[P: (680.0, 46.0), S: (560.0, 20.0)]",
+			"source_size": "(560.0, 20.0)",
+			"texture": "res://Art/20261022/timeline_fill.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_pause",
+			"phase": "road_guard_a",
+			"rect": "[P: (758.0, 110.0), S: (78.0, 78.0)]",
+			"source_size": "(37.0, 36.0)",
+			"texture": "res://Art/20261022/pause.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_play",
+			"phase": "road_guard_a",
+			"rect": "[P: (880.0, 110.0), S: (78.0, 78.0)]",
+			"source_size": "(32.0, 36.0)",
+			"texture": "res://Art/20261022/play.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_combat_settings",
+			"phase": "road_guard_a",
+			"rect": "[P: (1810.0, 28.0), S: (73.0, 73.0)]",
+			"source_size": "(73.0, 73.0)",
+			"texture": "res://Art/20261022/combat_settings.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_craft",
+			"phase": "road_guard_a",
+			"rect": "[P: (815.0, 330.0), S: (205.0, 108.0)]",
+			"source_size": "(243.0, 119.0)",
+			"texture": "res://Art/20261022/craft.png"
+		},
+		{
+			"node": "/root/Expedition/@Node@344/@CanvasLayer@345/SuppliedArtHUD/Action_intel",
+			"phase": "road_guard_a",
+			"rect": "[P: (890.0, 495.0), S: (88.0, 122.0)]",
+			"source_size": "(116.0, 161.0)",
+			"texture": "res://Art/Polish20261022/intel.png"
+		},
+		{
+			"node": "/root/Main/Combat/SuppliedArtScenery/Art_shadow",
+			"phase": "road_guard_a",
+			"rect": "[P: (200.0, 980.0), S: (260.0, 44.0)]",
+			"source_size": "(409.0, 69.0)",
+			"texture": "res://Art/20261022/shadow.png"
+		},
+		{
+			"node": "/root/Main/Combat/SuppliedArtScenery/@TextureRect@1854",
+			"phase": "road_guard_a",
+			"rect": "[P: (1460.0, 980.0), S: (260.0, 44.0)]",
+			"source_size": "(409.0, 69.0)",
+			"texture": "res://Art/20261022/shadow.png"
+		}
+	],
+	"ok": true,
+	"runtime_assets_seen": [
+		"res://Art/20261022/craft.png",
+		"res://Art/Polish20261022/intel.png",
+		"res://Art/Polish20261022/undo.png",
+		"res://Art/Polish20261022/redo.png",
+		"res://Art/20261022/refresh.png",
+		"res://Art/20261022/stage.png",
+		"res://Art/20261022/shop_settings.png",
+		"res://Art/20261022/plate1.png",
+		"res://Art/20261022/price.png",
+		"res://Art/20261022/sale.png",
+		"res://Art/20261022/plate2.png",
+		"res://Art/20261022/name.png",
+		"res://Art/20261022/plate3.png",
+		"res://Art/20261022/health.png",
+		"res://Art/20261022/stamina.png",
+		"res://Art/Polish20261022/shelf_top.png",
+		"res://Art/Polish20261022/shelf_bottom.png",
+		"res://Art/20261022/merchant.png",
+		"res://Art/Polish20261022/table.png",
+		"res://Art/20261022/storage_mat.png",
+		"res://Art/20261022/sell.png",
+		"res://Art/20261022/hero.png",
+		"res://Art/20261022/cell.png",
+		"res://Items/Sprites/Dagger.png",
+		"res://Items/Sprites/HeroSword.png",
+		"res://Items/Exclusive/Sprites/Axe.png",
+		"res://Items/Sprites/Hammer.png",
+		"res://Items/Sprites/Spear.png",
+		"res://Items/Exclusive/Sprites/ScissorSwords.png",
+		"res://Items/Sprites/BagofStones.png",
+		"res://Items/Exclusive/Sprites/DoubleAxe.png",
+		"res://Items/Sprites/WoodenBuckler.png",
+		"res://Items/Exclusive/Sprites/StoneArmor.png",
+		"res://Items/Sprites/ShieldofValor.png",
+		"res://Items/Sprites/SpikedShield.png",
+		"res://Items/Sprites/LeatherArmor.png",
+		"res://Items/Exclusive/Sprites/Wrench.png",
+		"res://Items/Sprites/Flask5.png",
+		"res://Items/Exclusive/Sprites/SliceofBread.png",
+		"res://Items/Sprites/HealingHerbs.png",
+		"res://Items/Exclusive/Sprites/HolyPotion_flask.png",
+		"res://Items/Sprites/Whetstone.png",
+		"res://Items/Exclusive/Sprites/Springloader_shield.png",
+		"res://Items/Sprites/LuckyClover.png",
+		"res://Items/Exclusive/Sprites/MagicMirror.png",
+		"res://Items/Sprites/CustomerCard.png",
+		"res://Items/Exclusive/Sprites/Rope.png",
+		"res://Items/Exclusive/Sprites/Cog.png",
+		"res://Items/Gems/Sprites/PerfectAmethyst.png",
+		"res://Items/Exclusive/Sprites/BurningBanner.png",
+		"res://Items/Exclusive/Sprites/StarofCourage.png",
+		"res://Items/Sprites/BoxofRiches.png",
+		"res://Items/Exclusive/Sprites/SpiritBells.png",
+		"res://Items/Exclusive/Sprites/SirSand.png",
+		"res://Items/Sprites/PoisonDagger.png",
+		"res://Items/Sprites/BurningCoal.png",
+		"res://Items/Sprites/YggdrasilLeaf.png",
+		"res://Items/Sprites/VampiricHairComb.png",
+		"res://Items/Sprites/PocketSand.png",
+		"res://Items/Exclusive/Sprites/VampiricPotion_flask.png",
+		"res://Items/Exclusive/Sprites/TimeDilator.png",
+		"res://Items/Sprites/WalrusTusk.png",
+		"res://Items/Gems/Sprites/RegularSapphire.png",
+		"res://Items/Exclusive/Sprites/SmithingForDummies.png",
+		"res://Items/Sprites/Piggybank.png",
+		"res://Items/Sprites/ClawsofAttack.png",
+		"res://Items/Exclusive/Sprites/Chainsaw0.png",
+		"res://Items/Exclusive/Sprites/Repeater.png",
+		"res://Items/Exclusive/Sprites/Halberd.png",
+		"res://Items/Exclusive/Sprites/ThorsHammer.png",
+		"res://Items/Exclusive/Sprites/Generator.png",
+		"res://Items/Exclusive/Sprites/StoneBadge.png",
+		"res://Items/Exclusive/Sprites/PerpetuumMobile.png",
+		"res://Items/Exclusive/Sprites/BionicArmor.png",
+		"res://Items/Exclusive/Sprites/DragonscaleArmor.png",
+		"res://Items/Exclusive/Sprites/SpikeWall.png",
+		"res://Items/Exclusive/Sprites/Battery.png",
+		"res://Items/Exclusive/Sprites/Anvil.png",
+		"res://Items/Sprites/Flask2.png",
+		"res://Items/Sprites/PoisonIvy.png",
+		"res://Items/Sprites/FlyAgaric.png",
+		"res://Items/Exclusive/Sprites/Laboratory.png",
+		"res://Items/Sprites/StrongPestilenceFlask_flask.png",
+		"res://Items/Exclusive/Sprites/Coil.png",
+		"res://Items/Sprites/Flask4.png",
+		"res://Items/Sprites/BurningTorch.png",
+		"res://Items/Exclusive/Sprites/OilLamp.png",
+		"res://Items/Exclusive/Sprites/Cauldron.png",
+		"res://Items/Sprites/Flask1.png",
+		"res://Items/Exclusive/Sprites/Pot.png",
+		"res://Items/Sprites/BloodAmulet.png",
+		"res://Items/Sprites/LeatherBag.png",
+		"res://Items/Exclusive/Sprites/PuzzlebagL.png",
+		"res://Art/Polish20261022/bag6.png",
+		"res://Items/Exclusive/Sprites/DuffleBag.png",
+		"res://Items/Exclusive/Sprites/VineweaveBasket.png",
+		"res://Items/Exclusive/Sprites/BoxofCogs.png",
+		"res://Items/Exclusive/Sprites/PuzzlebagT.png",
+		"res://Items/Exclusive/Sprites/UtilityPouch.png",
+		"res://Items/Exclusive/Sprites/PuzzlebagZ.png",
+		"res://Items/Exclusive/Sprites/PuzzlebagS.png",
+		"res://Art/20261022/timeline_base.png",
+		"res://Art/20261022/timeline_fill.png",
+		"res://Art/20261022/pause.png",
+		"res://Art/20261022/play.png",
+		"res://Art/20261022/combat_settings.png",
+		"res://Art/20261022/shadow.png",
+		"res://Art/20261022/bat.png",
+		"res://Art/Polish20261022/forest.png",
+		"res://Art/20261022/goblin.png",
+		"res://Art/Polish20261022/desert.png",
+		"res://Art/20261022/skeleton.png",
+		"res://Art/Polish20261022/volcano.png",
+		"res://Art/Polish20261022/window.png",
+		"res://Art/Polish20261022/button.png",
+		"res://Art/Polish20261022/cloud.png"
+	],
+	"storage_fits": [
+		{
+			"definition_id": "utility_knife",
+			"source": "res://Items/Sprites/Dagger.png",
+			"visual_size": "(33.22361, 92.12)"
+		},
+		{
+			"definition_id": "iron_sword",
+			"source": "res://Items/Sprites/HeroSword.png",
+			"visual_size": "(41.54431, 92.12)"
+		},
+		{
+			"definition_id": "broad_axe",
+			"source": "res://Items/Exclusive/Sprites/Axe.png",
+			"visual_size": "(49.0, 92.12)"
+		},
+		{
+			"definition_id": "stone_hammer",
+			"source": "res://Items/Sprites/Hammer.png",
+			"visual_size": "(74.14536, 92.12)"
+		},
+		{
+			"definition_id": "hunting_spear",
+			"source": "res://Items/Sprites/Spear.png",
+			"visual_size": "(18.424, 92.12)"
+		},
+		{
+			"definition_id": "twin_needles",
+			"source": "res://Items/Exclusive/Sprites/ScissorSwords.png",
+			"visual_size": "(92.12, 82.2008)"
+		},
+		{
+			"definition_id": "sling",
+			"source": "res://Items/Sprites/BagofStones.png",
+			"visual_size": "(92.12, 48.06261)"
+		},
+		{
+			"definition_id": "heavy_cleaver",
+			"source": "res://Items/Exclusive/Sprites/DoubleAxe.png",
+			"visual_size": "(56.84, 92.12)"
+		},
+		{
+			"definition_id": "buckler",
+			"source": "res://Items/Sprites/WoodenBuckler.png",
+			"visual_size": "(92.12, 92.12)"
+		},
+		{
+			"definition_id": "plated_vest",
+			"source": "res://Items/Exclusive/Sprites/StoneArmor.png",
+			"visual_size": "(66.99637, 92.12)"
+		},
+		{
+			"definition_id": "tower_shield",
+			"source": "res://Items/Sprites/ShieldofValor.png",
+			"visual_size": "(57.84279, 92.12)"
+		},
+		{
+			"definition_id": "spiked_guard",
+			"source": "res://Items/Sprites/SpikedShield.png",
+			"visual_size": "(87.27158, 92.12)"
+		},
+		{
+			"definition_id": "leather_wrap",
+			"source": "res://Items/Sprites/LeatherArmor.png",
+			"visual_size": "(74.14536, 92.12)"
+		},
+		{
+			"definition_id": "repair_kit",
+			"source": "res://Items/Exclusive/Sprites/Wrench.png",
+			"visual_size": "(28.23032, 92.12)"
+		},
+		{
+			"definition_id": "stamina_flask",
+			"source": "res://Items/Sprites/Flask5.png",
+			"visual_size": "(45.15981, 92.12)"
+		},
+		{
+			"definition_id": "travel_ration",
+			"source": "res://Items/Exclusive/Sprites/SliceofBread.png",
+			"visual_size": "(92.12, 89.14839)"
+		},
+		{
+			"definition_id": "bandage_roll",
+			"source": "res://Items/Sprites/HealingHerbs.png",
+			"visual_size": "(75.15053, 92.12)"
+		},
+		{
+			"definition_id": "cleansing_salt",
+			"source": "res://Items/Exclusive/Sprites/HolyPotion_flask.png",
+			"visual_size": "(41.39363, 92.12)"
+		},
+		{
+			"definition_id": "sharpening_stone",
+			"source": "res://Items/Sprites/Whetstone.png",
+			"visual_size": "(92.12, 83.20516)"
+		},
+		{
+			"definition_id": "clockwork_spring",
+			"source": "res://Items/Exclusive/Sprites/Springloader_shield.png",
+			"visual_size": "(92.12, 84.31502)"
+		},
+		{
+			"definition_id": "lucky_coin",
+			"source": "res://Items/Sprites/LuckyClover.png",
+			"visual_size": "(67.8779, 92.12)"
+		},
+		{
+			"definition_id": "scout_lens",
+			"source": "res://Items/Exclusive/Sprites/MagicMirror.png",
+			"visual_size": "(41.71472, 92.12)"
+		},
+		{
+			"definition_id": "merchant_token",
+			"source": "res://Items/Sprites/CustomerCard.png",
+			"visual_size": "(92.12, 64.73297)"
+		},
+		{
+			"definition_id": "storage_hook",
+			"source": "res://Items/Exclusive/Sprites/Rope.png",
+			"visual_size": "(92.12, 41.71472)"
+		},
+		{
+			"definition_id": "gear_link",
+			"source": "res://Items/Exclusive/Sprites/Cog.png",
+			"visual_size": "(92.12, 92.12)"
+		},
+		{
+			"definition_id": "focus_prism",
+			"source": "res://Items/Gems/Sprites/PerfectAmethyst.png",
+			"visual_size": "(62.80909, 92.12)"
+		},
+		{
+			"definition_id": "row_banner",
+			"source": "res://Items/Exclusive/Sprites/BurningBanner.png",
+			"visual_size": "(48.76941, 92.12)"
+		},
+		{
+			"definition_id": "column_standard",
+			"source": "res://Items/Exclusive/Sprites/BurningBanner.png",
+			"visual_size": "(48.76941, 92.12)"
+		},
+		{
+			"definition_id": "star_compass",
+			"source": "res://Items/Exclusive/Sprites/StarofCourage.png",
+			"visual_size": "(92.12, 92.11999)"
+		},
+		{
+			"definition_id": "compact_rack",
+			"source": "res://Items/Sprites/BoxofRiches.png",
+			"visual_size": "(92.12, 52.92)"
+		},
+		{
+			"definition_id": "resonant_bell",
+			"source": "res://Items/Exclusive/Sprites/SpiritBells.png",
+			"visual_size": "(45.19094, 92.12)"
+		},
+		{
+			"definition_id": "counterweight",
+			"source": "res://Items/Exclusive/Sprites/SirSand.png",
+			"visual_size": "(41.94498, 92.12)"
+		},
+		{
+			"definition_id": "venom_needle",
+			"source": "res://Items/Sprites/PoisonDagger.png",
+			"visual_size": "(34.73377, 92.12)"
+		},
+		{
+			"definition_id": "ember_stone",
+			"source": "res://Items/Sprites/BurningCoal.png",
+			"visual_size": "(84.86207, 92.12)"
+		},
+		{
+			"definition_id": "healing_herb",
+			"source": "res://Items/Sprites/HealingHerbs.png",
+			"visual_size": "(75.15053, 92.12)"
+		},
+		{
+			"definition_id": "regeneration_leaf",
+			"source": "res://Items/Sprites/YggdrasilLeaf.png",
+			"visual_size": "(92.12, 92.12)"
+		},
+		{
+			"definition_id": "fracture_charm",
+			"source": "res://Items/Sprites/VampiricHairComb.png",
+			"visual_size": "(92.12, 84.52158)"
+		},
+		{
+			"definition_id": "quicksand_vial",
+			"source": "res://Items/Sprites/PocketSand.png",
+			"visual_size": "(92.12, 71.64889)"
+		},
+		{
+			"definition_id": "blood_cup",
+			"source": "res://Items/Exclusive/Sprites/VampiricPotion_flask.png",
+			"visual_size": "(33.74845, 92.12)"
+		},
+		{
+			"definition_id": "cooling_fan",
+			"source": "res://Items/Exclusive/Sprites/TimeDilator.png",
+			"visual_size": "(69.09, 92.12)"
+		},
+		{
+			"definition_id": "iron_nail",
+			"source": "res://Items/Sprites/WalrusTusk.png",
+			"visual_size": "(23.03, 92.12)"
+		},
+		{
+			"definition_id": "glass_bead",
+			"source": "res://Items/Gems/Sprites/RegularSapphire.png",
+			"visual_size": "(89.04934, 92.12)"
+		},
+		{
+			"definition_id": "field_manual",
+			"source": "res://Items/Exclusive/Sprites/SmithingForDummies.png",
+			"visual_size": "(92.12, 85.94219)"
+		},
+		{
+			"definition_id": "salvage_pouch",
+			"source": "res://Items/Sprites/Piggybank.png",
+			"visual_size": "(92.12, 51.41581)"
+		},
+		{
+			"definition_id": "arsenal_bracer",
+			"source": "res://Items/Sprites/ClawsofAttack.png",
+			"visual_size": "(92.12, 48.06261)"
+		},
+		{
+			"definition_id": "chain_blade",
+			"source": "res://Items/Exclusive/Sprites/Chainsaw0.png",
+			"visual_size": "(25.51015, 92.12)"
+		},
+		{
+			"definition_id": "repeater_crossbow",
+			"source": "res://Items/Exclusive/Sprites/Repeater.png",
+			"visual_size": "(89.41059, 92.12)"
+		},
+		{
+			"definition_id": "crescent_glaive",
+			"source": "res://Items/Exclusive/Sprites/Halberd.png",
+			"visual_size": "(45.83532, 92.12)"
+		},
+		{
+			"definition_id": "siege_maul",
+			"source": "res://Items/Exclusive/Sprites/ThorsHammer.png",
+			"visual_size": "(82.42316, 92.12)"
+		},
+		{
+			"definition_id": "momentum_gear",
+			"source": "res://Items/Exclusive/Sprites/Generator.png",
+			"visual_size": "(45.15687, 92.12)"
+		},
+		{
+			"definition_id": "duelist_mark",
+			"source": "res://Items/Exclusive/Sprites/StoneBadge.png",
+			"visual_size": "(92.12, 92.12)"
+		},
+		{
+			"definition_id": "overdrive_ratchet",
+			"source": "res://Items/Exclusive/Sprites/PerpetuumMobile.png",
+			"visual_size": "(92.12, 92.12)"
+		},
+		{
+			"definition_id": "bastion_core",
+			"source": "res://Items/Exclusive/Sprites/BionicArmor.png",
+			"visual_size": "(65.15805, 92.12)"
+		},
+		{
+			"definition_id": "layered_plates",
+			"source": "res://Items/Exclusive/Sprites/DragonscaleArmor.png",
+			"visual_size": "(68.55441, 92.12)"
+		},
+		{
+			"definition_id": "retaliation_spikes",
+			"source": "res://Items/Exclusive/Sprites/SpikeWall.png",
+			"visual_size": "(92.12, 65.8)"
+		},
+		{
+			"definition_id": "guardian_standard",
+			"source": "res://Items/Exclusive/Sprites/BurningBanner.png",
+			"visual_size": "(48.76941, 92.12)"
+		},
+		{
+			"definition_id": "charging_weight",
+			"source": "res://Items/Exclusive/Sprites/Battery.png",
+			"visual_size": "(56.29556, 92.12)"
+		},
+		{
+			"definition_id": "execution_anvil",
+			"source": "res://Items/Exclusive/Sprites/Anvil.png",
+			"visual_size": "(92.12, 45.19094)"
+		},
+		{
+			"definition_id": "toxin_bottle",
+			"source": "res://Items/Sprites/Flask2.png",
+			"visual_size": "(46.12608, 92.12)"
+		},
+		{
+			"definition_id": "thorn_extract",
+			"source": "res://Items/Sprites/PoisonIvy.png",
+			"visual_size": "(92.12, 81.28235)"
+		},
+		{
+			"definition_id": "spore_jar",
+			"source": "res://Items/Sprites/FlyAgaric.png",
+			"visual_size": "(49.0, 92.12)"
+		},
+		{
+			"definition_id": "venom_distiller",
+			"source": "res://Items/Exclusive/Sprites/Laboratory.png",
+			"visual_size": "(92.12, 86.98112)"
+		},
+		{
+			"definition_id": "plague_retort",
+			"source": "res://Items/Sprites/StrongPestilenceFlask_flask.png",
+			"visual_size": "(45.03164, 92.12)"
+		},
+		{
+			"definition_id": "caustic_coil",
+			"source": "res://Items/Exclusive/Sprites/Coil.png",
+			"visual_size": "(92.12, 81.592)"
+		},
+		{
+			"definition_id": "ember_phial",
+			"source": "res://Items/Sprites/Flask4.png",
+			"visual_size": "(46.1997, 92.12)"
+		},
+		{
+			"definition_id": "coal_burner",
+			"source": "res://Items/Sprites/BurningTorch.png",
+			"visual_size": "(33.93895, 92.12)"
+		},
+		{
+			"definition_id": "ignition_lens",
+			"source": "res://Items/Exclusive/Sprites/OilLamp.png",
+			"visual_size": "(43.35059, 92.12)"
+		},
+		{
+			"definition_id": "wildfire_alembic",
+			"source": "res://Items/Exclusive/Sprites/Cauldron.png",
+			"visual_size": "(92.12, 79.67135)"
+		},
+		{
+			"definition_id": "tonic_bottle",
+			"source": "res://Items/Sprites/Flask1.png",
+			"visual_size": "(41.74489, 92.12)"
+		},
+		{
+			"definition_id": "renewal_mortar",
+			"source": "res://Items/Exclusive/Sprites/Pot.png",
+			"visual_size": "(92.12, 82.42316)"
+		},
+		{
+			"definition_id": "transfusion_tube",
+			"source": "res://Items/Sprites/BloodAmulet.png",
+			"visual_size": "(92.12, 91.47325)"
+		},
+		{
+			"definition_id": "philosophers_kettle",
+			"source": "res://Items/Exclusive/Sprites/Cauldron.png",
+			"visual_size": "(92.12, 79.67135)"
+		},
+		{
+			"definition_id": "bag_canvas_frame",
+			"source": "res://Items/Sprites/LeatherBag.png",
+			"visual_size": "(92.12, 84.44334)"
+		},
+		{
+			"definition_id": "bag_corner_satchel",
+			"source": "res://Items/Exclusive/Sprites/PuzzlebagL.png",
+			"visual_size": "(92.12, 66.99636)"
+		},
+		{
+			"definition_id": "bag_tool_roll",
+			"source": "res://Art/Polish20261022/bag6.png",
+			"visual_size": "(98.0, 90.72489)"
+		},
+		{
+			"definition_id": "bag_guard_harness",
+			"source": "res://Items/Exclusive/Sprites/DuffleBag.png",
+			"visual_size": "(92.12, 65.8)"
+		},
+		{
+			"definition_id": "bag_herbal_tray",
+			"source": "res://Items/Exclusive/Sprites/VineweaveBasket.png",
+			"visual_size": "(89.56111, 92.12)"
+		},
+		{
+			"definition_id": "bag_gear_sling",
+			"source": "res://Items/Exclusive/Sprites/BoxofCogs.png",
+			"visual_size": "(92.12, 69.65171)"
+		},
+		{
+			"definition_id": "bag_cross_brace",
+			"source": "res://Items/Exclusive/Sprites/PuzzlebagT.png",
+			"visual_size": "(92.12, 64.26977)"
+		},
+		{
+			"definition_id": "bag_hollow_ring",
+			"source": "res://Items/Exclusive/Sprites/UtilityPouch.png",
+			"visual_size": "(87.27158, 92.12)"
+		},
+		{
+			"definition_id": "bag_step_case",
+			"source": "res://Items/Exclusive/Sprites/PuzzlebagZ.png",
+			"visual_size": "(92.12, 63.60667)"
+		},
+		{
+			"definition_id": "bag_twin_wing",
+			"source": "res://Items/Exclusive/Sprites/PuzzlebagS.png",
+			"visual_size": "(92.12, 61.41333)"
+		}
+	]
+}

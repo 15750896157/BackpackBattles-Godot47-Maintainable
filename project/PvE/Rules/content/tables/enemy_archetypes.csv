@@ -1,0 +1,13 @@
+id,name_key,threat_tags,weakness_tags,behavior_summary
+quick_striker,enemy_archetype.quick_striker.name,combo|weapon,armor,high_frequency
+shield_line,enemy_archetype.shield_line.name,armor|counter,poison|burn,armor_growth
+heavy_breaker,enemy_archetype.heavy_breaker.name,heavy|weapon,tempo,burst
+venom_brewer,enemy_archetype.venom_brewer.name,poison|potion,cleanse,poison_stack
+ember_runner,enemy_archetype.ember_runner.name,burn|tempo,healing|cleanse,burn_stack
+field_mender,enemy_archetype.field_mender.name,healing|armor,heavy|vulnerable,sustain
+gear_conductor,enemy_archetype.gear_conductor.name,tempo|spatial,heavy,cooldown_chain
+mixed_raider,enemy_archetype.mixed_raider.name,weapon|utility,focused_build,balanced
+toxic_guard,enemy_archetype.toxic_guard.name,poison|armor,cleanse|heavy,attrition
+burning_bastion,enemy_archetype.burning_bastion.name,burn|armor,poison|true_damage,counter_burn
+blood_engine,enemy_archetype.blood_engine.name,healing|combo,burst,lifesteal
+star_artillery,enemy_archetype.star_artillery.name,spatial|heavy,tempo,directional_burst

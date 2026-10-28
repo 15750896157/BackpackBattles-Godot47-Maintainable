@@ -1,0 +1,82 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Items/Tiles/AffectedTile.png" type="Texture2D" id=1]
+[ext_resource path="res://Items/Tiles/AffectedTile_secondary.png" type="Texture2D" id=2]
+[ext_resource path="res://Core/Inventory.gd" type="Script" id=3]
+[ext_resource path="res://Items/Tiles/FilledSlot.png" type="Texture2D" id=4]
+[ext_resource path="res://Items/Tiles/Hover.png" type="Texture2D" id=5]
+[ext_resource path="res://Items/Tiles/Slot.png" type="Texture2D" id=6]
+[ext_resource path="res://Items/Tiles/AffectedTile_tertiary.png" type="Texture2D" id=7]
+[ext_resource path="res://Items/Tiles/CanAdd.png" type="Texture2D" id=8]
+[ext_resource path="res://Items/Tiles/PotentialSpace.png" type="Texture2D" id=9]
+[ext_resource path="res://Items/Tiles/AffectedTile_noEffect.png" type="Texture2D" id=10]
+[ext_resource path="res://Items/Tiles/CantAdd_outside.png" type="Texture2D" id=11]
+[ext_resource path="res://Items/Tiles/AffectedTile_secondary_noEffect.png" type="Texture2D" id=12]
+[ext_resource path="res://Items/Tiles/Collision.png" type="Texture2D" id=13]
+[ext_resource path="res://Items/Tiles/CantAdd.png" type="Texture2D" id=14]
+[ext_resource path="res://Items/Tiles/PotentialSpace_invisible.png" type="Texture2D" id=15]
+[ext_resource path="res://Items/Tiles/CanAddBag.png" type="Texture2D" id=16]
+[ext_resource path="res://Items/Tiles/CantAddBag.png" type="Texture2D" id=17]
+[ext_resource path="res://Items/Tiles/AffectedTile_tertiary_noEffect.png" type="Texture2D" id=18]
+[ext_resource path="res://Items/Tiles/AffectsInside.png" type="Texture2D" id=19]
+[ext_resource path="res://Items/Tiles/AffectedTile_lightning.png" type="Texture2D" id=20]
+[ext_resource path="res://Items/Tiles/AffectedTile_lightning_noEffect.png" type="Texture2D" id=21]
+
+[ext_resource type="TileSet" path="res://Compatibility/TileSets/5f8355228894f855b205.tres" id="MigratedTileSet_1"]
+
+[ext_resource type="TileSet" path="res://Compatibility/TileSets/040d9dfbf5865f6ae4e7.tres" id="MigratedTileSet_2"]
+
+[node name="Inventory" type="Node2D" groups=["Inventory"]]
+z_index = -1
+script = ExtResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+modulate = Color( 1, 1, 1, 0.6 )
+tile_set = ExtResource( "MigratedTileSet_1" )
+format = 2
+layer_0/tile_data = PackedInt32Array( 0, 7, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 65536, 7, 0, 65537, 7, 0, 65538, 7, 0, 65539, 7, 0, 65540, 7, 0, 65541, 7, 0, 65542, 7, 0, 65543, 7, 0, 65544, 7, 0, 131072, 7, 0, 131073, 7, 0, 131074, 7, 0, 131075, 7, 0, 131076, 7, 0, 131077, 7, 0, 131078, 7, 0, 131079, 7, 0, 131080, 7, 0, 196608, 7, 0, 196609, 7, 0, 196610, 7, 0, 196611, 7, 0, 196612, 7, 0, 196613, 7, 0, 196614, 7, 0, 196615, 7, 0, 196616, 7, 0, 262144, 7, 0, 262145, 7, 0, 262146, 7, 0, 262147, 7, 0, 262148, 7, 0, 262149, 7, 0, 262150, 7, 0, 262151, 7, 0, 262152, 7, 0, 327680, 7, 0, 327681, 7, 0, 327682, 7, 0, 327683, 7, 0, 327684, 7, 0, 327685, 7, 0, 327686, 7, 0, 327687, 7, 0, 327688, 7, 0, 393216, 7, 0, 393217, 7, 0, 393218, 7, 0, 393219, 7, 0, 393220, 7, 0, 393221, 7, 0, 393222, 7, 0, 393223, 7, 0, 393224, 7, 0 )
+
+[node name="Above" type="TileMap" parent="."]
+z_index = 4
+tile_set = ExtResource( "MigratedTileSet_2" )
+format = 2
+layer_0/tile_data = PackedInt32Array(  )
+
+[node name="Labels" type="Node2D" parent="."]
+visible = false
+z_index = 10
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = 18.0
+offset_top = 30.0
+offset_right = 64.0
+offset_bottom = 55.0
+text = "(0,0)"
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 661.0
+offset_top = 27.0
+offset_right = 707.0
+offset_bottom = 52.0
+text = "(8,0)"
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 660.0
+offset_top = 511.0
+offset_right = 706.0
+offset_bottom = 536.0
+text = "(8,6)"
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 339.0
+offset_top = 268.0
+offset_right = 385.0
+offset_bottom = 293.0
+text = "(4,3)"
+
+[node name="Label5" type="Label" parent="Labels"]
+offset_left = 497.0
+offset_top = 268.0
+offset_right = 543.0
+offset_bottom = 293.0
+text = "(6,3)"

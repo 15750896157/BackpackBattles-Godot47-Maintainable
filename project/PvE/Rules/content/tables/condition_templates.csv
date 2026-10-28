@@ -1,0 +1,13 @@
+id,name_key,param_format
+always,condition.always.name,
+source_has_tag,condition.source_has_tag.name,key:value
+target_has_tag,condition.target_has_tag.name,key:value
+spatial_target_count,condition.spatial_target_count.name,key:value
+health_below_pct,condition.health_below_pct.name,key:value
+health_above_pct,condition.health_above_pct.name,key:value
+resource_at_least,condition.resource_at_least.name,key:value
+status_stacks_at_least,condition.status_stacks_at_least.name,key:value
+trigger_count_max,condition.trigger_count_max.name,key:value
+build_tag_count,condition.build_tag_count.name,key:value
+enemy_has_status,condition.enemy_has_status.name,key:value
+overheal_positive,condition.overheal_positive.name,key:value

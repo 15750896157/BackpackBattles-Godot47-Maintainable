@@ -1,0 +1,20 @@
+﻿来源,工程目录,状态,替换位置或未使用原因,控制文件_相对project,SHA256
+Z:\背包游戏散件\商店\敌情.png,project/Art/Polish20261022/intel.png,已接入,商店通缉令；敌情窗口包含路线总览,PvE/Art/Presentation.gd,5217f3fa22864b5c1ac66d401e736bdefc6689f549ac6d2c09fcf281c38f7b8c
+Z:\背包游戏散件\商店\桌面.png,project/Art/Polish20261022/table.png,已接入,商店下方桌面，仓库桌垫及角色正确叠放,PvE/Art/Presentation.gd,262b1754be8a0d74c6897facdac506888375c62ef7b7d58f6028e91f3538a2a7
+Z:\背包游戏散件\商店\货架 (1).png,project/Art/Polish20261022/shelf_top.png,已接入,商店上货架，两个商品位,PvE/Art/Presentation.gd,31a6db05b6bd771cef8eef71227a6bf1292f863059ba5072a2b8166f4766f910
+Z:\背包游戏散件\商店\货架 (2).png,project/Art/Polish20261022/shelf_bottom.png,已接入,商店下货架，三个商品位,PvE/Art/Presentation.gd,1f5908d5af922f49c37619a93c6904a5c4472603ff4e4376ab96835970e78c30
+Z:\背包游戏散件\战斗背景\战斗场景1.png,project/Art/Polish20261022/forest.png,已接入,第1章战斗背景，按章异步读取,Runtime/Loading/Scenes/CombatBackdrop1.tscn,0046f986d219f663b3b531c8dfa19af3710cfbda96109c01af48cbff3504f9a4
+Z:\背包游戏散件\战斗背景\战斗场景2.png,project/Art/Polish20261022/desert.png,已接入,第2章战斗背景，按章异步读取,Runtime/Loading/Scenes/CombatBackdrop2.tscn,9772b0657d9f809e5e4c25e1173fb10e79a4b8d5663353f69c2c26cdd1d3585c
+Z:\背包游戏散件\战斗背景\战斗场景3.png,project/Art/Polish20261022/volcano.png,已接入,第3章战斗背景，按章异步读取,Runtime/Loading/Scenes/CombatBackdrop3.tscn,45d4c514382d5d42c462a3bf7763a979edfbf1720c86d001c85e67fedf7d06b5
+Z:\背包游戏散件\战斗背景\战斗场景排版参考.png,inputs/新美术布局参考/战斗场景排版参考_散件.png,布局参考,仅用于核对战斗布局，不裁切成按钮或图标,参考图,f80539b4d40b3c6b5775a31af44233810124503bacfa9dbd70b43edabac9cd5c
+Z:\背包游戏散件\背包\1格背包.png,project/Art/Polish20261022/bag1.png,保留待用,策划没有1格背包，按用户要求保留现有玩法,PvE/Art/BagArt.gd,ddbf9a3044fca23ea2a30ed56d857e5fdd8a9fda2f36de226c3bfd0ee445e892
+Z:\背包游戏散件\背包\2格背包.png,project/Art/Polish20261022/bag2.png,保留待用,策划没有2格背包，不擅自改变容量,PvE/Art/BagArt.gd,19aa8d63f0877e0227078dc52f22081301c45743c96fca1236a53da0b5362e7a
+Z:\背包游戏散件\背包\4格背包.png,project/Art/Polish20261022/bag4.png,保留待用,当前权威配置没有2×2四格包；旧场景的四格记录不能作为规则,PvE/Art/BagArt.gd,e0f776332c6f001ae1dc50cb43014cb1603f1d80d603df608dc3ad8388c68687
+Z:\背包游戏散件\背包\5格背包.png,project/Art/Polish20261022/bag5.png,保留待用,策划没有5格背包，不套用到7/8/9格异形包,PvE/Art/BagArt.gd,86553eaf73b7096325d59a219f4913bf0337948f99af02a22d0c65493d005127
+Z:\背包游戏散件\背包\6格背包.png,project/Art/Polish20261022/bag6.png,匹配接入,bag_tool_roll 的规则3×2占格；商店、背包、图鉴一致,PvE/Art/BagArt.gd; PvE/NativeAssetBindings.gd,78dc62c91f508c2657a1d862c340ab234d044b96a5cdf6dd88f6662aed7ff61b
+C:\Users\Asus\.codex\generated_images\01a12dc5-f482-7581-a29f-84ac06c8f2f8\exec-655b615d-c786-4057-b59d-b19cb2d63463.png,project/Art/Polish20261022/window.png,AI生成并接入,木框羊皮纸通用弹窗；替代旧背板的窗口用途,PvE/Art/UISkin.gd,69d345a9dea66c80625d3998da3071b2dbd3d59728437f58f25f25b1b4cd6935
+C:\Users\Asus\.codex\generated_images\01a12dc5-f482-7581-a29f-84ac06c8f2f8\exec-cc52556d-1d92-4095-baa4-df11eaa82a66.png,project/Art/Polish20261022/button.png,AI生成并接入,木纹黄铜按钮；固定端部装饰，中央区延展,PvE/Art/UISkin.gd,9ae5302a17f3289fe564fa00b2b1a6213e53c11dab966acd014fef69bf79ddac
+C:\Users\Asus\.codex\generated_images\01a12dc5-f482-7581-a29f-84ac06c8f2f8\exec-e60095b4-1276-4c08-b2af-d26d7b8a0f64.png,project/Art/Polish20261022/cloud.png,AI生成并接入,从右向左的白云遮幕，切换完成后解除,PvE/Art/SceneCurtain.gd; PvE/Art/CloudWipe.gdshader,854e8a7a739d6631e97114b1053fb8629d391fcc886c0ef052be0c48bfcbd174
+C:\Users\Asus\.codex\generated_images\01a12dc5-f482-7581-a29f-84ac06c8f2f8\exec-148375e1-cb17-4999-8814-b81abff74cbd.png,project/Art/Polish20261022/undo.png,AI生成并接入,商店背包下方撤销图标,PvE/Art/Presentation.gd,09748fe7f647b268786ca0f9ddf6d2b3e5d0a2777808aa3b7ca399abe9f0b28b
+C:\Users\Asus\.codex\generated_images\01a12dc5-f482-7581-a29f-84ac06c8f2f8\exec-5f970dbf-15b9-4d92-b7e7-0a8e6ce18651.png,project/Art/Polish20261022/redo.png,AI生成并接入,商店背包下方重做图标,PvE/Art/Presentation.gd,e0e7f3f1f3db4e0196e6bb324cdc9762672828785bd45eb50fd2fdb36468246b
+C:\Users\Asus\.codex\generated_images\01a12dc5-f482-7581-a29f-84ac06c8f2f8\exec-542498fa-02c7-4d46-9ecc-e472900b0ff5.png,project/Art/Polish20261022/tooltip.png,AI生成并接入,独立细皮革纸质物品提示；不复用厚木窗口,PvE/Art/TooltipSkin.gd,2b9a5be6dfd6f6dbf4c51ee9a712857e9edbf910cc494d51a4caf7efc444fd7f

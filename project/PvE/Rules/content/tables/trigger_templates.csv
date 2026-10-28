@@ -1,0 +1,12 @@
+id,name_key,priority,default_internal_cooldown
+combat_start,trigger.combat_start.name,10,0
+cooldown_ready,trigger.cooldown_ready.name,50,0
+attack_hit,trigger.attack_hit.name,60,0.5
+critical_hit,trigger.critical_hit.name,70,0
+target_activated,trigger.target_activated.name,80,0.5
+damage_taken,trigger.damage_taken.name,90,0.5
+armor_gained,trigger.armor_gained.name,100,0.5
+status_applied,trigger.status_applied.name,110,0.5
+first_low_health,trigger.first_low_health.name,120,0
+interval,trigger.interval.name,130,0
+fatigue_start,trigger.fatigue_start.name,140,0

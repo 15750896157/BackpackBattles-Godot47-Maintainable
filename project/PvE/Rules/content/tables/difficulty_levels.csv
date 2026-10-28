@@ -1,0 +1,9 @@
+id,name_key,description_key,sort_order,mode,enemy_health_scalar,enemy_damage_scalar,enemy_status_scalar,gold_reward_scalar,shop_price_scalar,refresh_cost_delta,post_battle_heal_scalar,challenge_modifier_count,tutorial_prompts
+tutorial,difficulty.tutorial.name,difficulty.tutorial.desc,0,tutorial,0.72,0.7,0.75,1.15,0.9,-1,1.5,0,true
+standard,difficulty.standard.name,difficulty.standard.desc,1,standard,1,1,1,1,1,0,1,0,false
+advanced,difficulty.advanced.name,difficulty.advanced.desc,2,advanced,1.08,1.06,1.08,1,1,0,0.9,0,false
+challenge_1,difficulty.challenge_1.name,difficulty.challenge_1.desc,3,challenge,1.12,1.08,1.1,1,1,0,0.85,1,false
+challenge_2,difficulty.challenge_2.name,difficulty.challenge_2.desc,4,challenge,1.16,1.11,1.13,1,1,1,0.82,2,false
+challenge_3,difficulty.challenge_3.name,difficulty.challenge_3.desc,5,challenge,1.2,1.14,1.16,0.95,1,1,0.78,3,false
+challenge_4,difficulty.challenge_4.name,difficulty.challenge_4.desc,6,challenge,1.25,1.17,1.2,0.95,1.05,1,0.74,4,false
+challenge_5,difficulty.challenge_5.name,difficulty.challenge_5.desc,7,challenge,1.3,1.2,1.24,0.9,1.05,1,0.7,5,false

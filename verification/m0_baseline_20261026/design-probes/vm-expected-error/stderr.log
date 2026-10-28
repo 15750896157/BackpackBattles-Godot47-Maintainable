@@ -1,0 +1,5 @@
+ERROR: EXPECTED_VM_BASE_SNAPSHOT
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] snapshot (res://probe.gd:4)
+       [1] _initialize (res://probe.gd:7)

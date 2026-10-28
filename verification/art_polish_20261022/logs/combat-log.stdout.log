@@ -1,0 +1,20 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+-Shell Totem has no animation
+-Staff of Unhealing has no animation
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+SETTING LOCALE TO en
+SETTING LOCALE TO zh_Hans_CN
+SETTING LOCALE TO en
+COMBAT_LOG_QA {"checks":1933,"content_sha256":"b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1","entry":"res://Core/Main.tscn","evidence":{"en":{"events":209,"pages":5,"status_rows":2,"status_samples":["3.50 s · Player · Venom Needle → Enemy · Status applied · Poison · 2.0","3.50 s · Enemy · Venom Needle → Player · Status applied · Poison · 1.0","4.50 s · Player · Venom Needle → Enemy · Status damage · Poison · 2.0"],"visited_event_count":209},"zh_CN":{"events":209,"pages":5,"status_rows":2,"status_samples":["3.50 s · 我方 · 毒刺针 → 敌方 · 施加状态 · 毒 · 2.0","3.50 s · 敌方 · 毒刺针 → 我方 · 施加状态 · 毒 · 1.0","4.50 s · 我方 · 毒刺针 → 敌方 · 状态伤害 · 毒 · 2.0"],"visited_event_count":209}},"failures":[],"ok":true,"source_sha256":"6c886ba70664438ca3ed916f1658940ae7eac959b27da83ebcf7519af1867e16"}

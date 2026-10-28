@@ -1,0 +1,14 @@
+{
+	"case": "result",
+	"checks": 17,
+	"details": {
+		"before_menu_state": "COMBAT_RESULT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\structural_rewrite_20261020\\release-checks\\persist-result-saves_ui_final/",
+		"saved_state": "COMBAT_RESULT",
+		"title_continue_disabled": false,
+		"title_continue_visible": true
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "write"
+}

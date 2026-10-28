@@ -1,0 +1,3 @@
+@echo off
+py -3 "%~dp0tools\import_content.py"
+pause

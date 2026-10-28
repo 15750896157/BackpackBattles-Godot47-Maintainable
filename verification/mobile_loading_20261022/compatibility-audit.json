@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "protected_media_engine_and_rule_files": 6915,
+  "protected_files_changed": [],
+  "unchanged_other_production_scenes": 1025,
+  "unchanged_existing_script_uids": 1032,
+  "original_descriptor_rows_and_socket_counts": 519,
+  "original_backdrop_extraction": {
+    "Combat/Background": {
+      "nodes": 22,
+      "node_properties_preserved": true,
+      "animation_anchor_preserved": true
+    },
+    "Shop/Background": {
+      "nodes": 3,
+      "node_properties_preserved": true,
+      "animation_anchor_preserved": true
+    }
+  },
+  "all_other_main_node_properties_preserved": true,
+  "player_files_equal_to_start": {
+    "profile.save": false,
+    "profile_backup.save": false,
+    "run.save": false,
+    "run_backup.save": false,
+    "settings.save": true,
+    "settings_backup.save": true,
+    "telemetry.jsonl": false
+  },
+  "current_player_envelopes_valid": true,
+  "no_player_save_rollback": true,
+  "portable_source_engine_tools_identical_files": 10378,
+  "content_version_unchanged": "0.1.3",
+  "save_schema_unchanged": 2,
+  "physical_pointer_newly_run": false
+}

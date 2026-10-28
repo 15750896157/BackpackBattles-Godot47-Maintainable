@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Interface/Options/OptionsFont.tres" type="FontVariation" id=1]
+[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=2]
+[ext_resource path="res://Interface/NameLineEdit.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=207]
+content_margin_left = 8.0
+content_margin_right = 10.0
+content_margin_top = 0.0
+content_margin_bottom = 0.0
+bg_color = Color( 0.376471, 0.227451, 0.160784, 0.305882 )
+draw_center = false
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 4
+border_color = Color( 0.109804, 0.0666667, 0.0470588, 0.819608 )
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+
+[node name="Searchbar" type="LineEdit"]
+offset_left = 1391.0
+offset_top = 790.0
+offset_right = 1681.0
+offset_bottom = 842.0
+mouse_default_cursor_shape = 2
+theme_override_colors/selection_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/cursor_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/clear_button_color_pressed = Color( 1, 0.890196, 0, 1 )
+theme_override_colors/font_color_selected = Color( 1, 0.890196, 0.0784314, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/clear_button_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_constants/minimum_spaces = 1
+theme_override_fonts/font = ExtResource( 1 )
+theme_override_styles/read_only = ExtResource( 2 )
+theme_override_styles/focus = ExtResource( 2 )
+theme_override_styles/normal = SubResource( 207 )
+max_length = 22
+context_menu_enabled = false
+virtual_keyboard_enabled = false
+clear_button_enabled = true
+middle_mouse_paste_enabled = false
+deselect_on_focus_loss_enabled = false
+placeholder_text = "Search..."
+placeholder_alpha = 0.858
+caret_blink = true
+caret_blink_interval = 0.5
+script = ExtResource( 3 )
+placeholderKey = "FILTER_Search"
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+

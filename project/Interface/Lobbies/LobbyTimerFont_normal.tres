@@ -1,0 +1,12 @@
+[gd_resource type="FontVariation" load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="FontFile" id=1]
+
+[ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
+
+[resource]
+script = ExtResource( "LegacyFontMigration" )
+size = 60
+outline_color = Color( 1, 0.92549, 0.831373, 1 )
+base_font = ExtResource( 1 )
+

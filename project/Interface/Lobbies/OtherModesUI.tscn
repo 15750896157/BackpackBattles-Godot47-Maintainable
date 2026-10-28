@@ -1,0 +1,1998 @@
+[gd_scene load_steps=67 format=2]
+
+[ext_resource path="res://Interface/LobbyUI.png" type="Texture2D" id=1]
+[ext_resource path="res://Interface/Lobbies/JoinLobbyUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Interface/Lobbies/OtherModesUI.gd" type="Script" id=3]
+[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_disabled.tres" type="StyleBox" id=4]
+[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_normal.tres" type="StyleBox" id=5]
+[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_pressed.tres" type="StyleBox" id=6]
+[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_hovered.tres" type="StyleBox" id=7]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="FontFile" id=8]
+[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=9]
+[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=10]
+[ext_resource path="res://Interface/Lobbies/CreateLobbyUI.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Assets/Fonts/Milonga-Regular.ttf" type="FontFile" id=12]
+[ext_resource path="res://Items/Particles/SubtractiveCanvasItem.material" type="Material" id=13]
+[ext_resource path="res://Assets/Patch3.png" type="Texture2D" id=14]
+[ext_resource path="res://Assets/Leagues/League_Diamond.png" type="Texture2D" id=15]
+[ext_resource path="res://Assets/Leagues/League_Bronze.png" type="Texture2D" id=16]
+[ext_resource path="res://Assets/Leagues/League_Master.png" type="Texture2D" id=17]
+[ext_resource path="res://Assets/Leagues/League_Silver.png" type="Texture2D" id=18]
+[ext_resource path="res://Assets/Leagues/League_Gold.png" type="Texture2D" id=19]
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" type="FontFile" id=20]
+[ext_resource path="res://Interface/Lobbies/CustomUnrankedUI.gd" type="Script" id=21]
+[ext_resource path="res://Interface/LoadoutButton.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Interface/SidePanel.png" type="Texture2D" id=23]
+[ext_resource path="res://Assets/Leagues/League_Platinum.png" type="Texture2D" id=24]
+[ext_resource path="res://Interface/Options/OptionsFont.tres" type="FontVariation" id=25]
+[ext_resource path="res://Interface/SliderProperty.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Interface/Lobbies/CustomRulesInput.gd" type="Script" id=27]
+[ext_resource path="res://Interface/Tooltips/ImageFont.tres" type="FontFile" id=28]
+[ext_resource path="res://Interface/FocusGrabbingTextureButton.gd" type="Script" id=29]
+[ext_resource path="res://Interface/Options/Unchecked.png" type="Texture2D" id=30]
+[ext_resource path="res://Assets/Divider1.png" type="Texture2D" id=31]
+[ext_resource path="res://Interface/Lobbies/CustomIcon.png" type="Texture2D" id=32]
+[ext_resource path="res://Interface/Lobbies/LobbyIcon_Host.png" type="Texture2D" id=33]
+[ext_resource path="res://Interface/Lobbies/LobbyIcon_Member.png" type="Texture2D" id=34]
+[ext_resource path="res://Interface/CompositeButton.gd" type="Script" id=35]
+[ext_resource path="res://Interface/Lobbies/LobbyIcon_Host_hovered.png" type="Texture2D" id=36]
+[ext_resource path="res://Interface/Lobbies/LobbyIcon_Member_hovered.png" type="Texture2D" id=37]
+[ext_resource path="res://Interface/Lobbies/CustomIcon_hovered.png" type="Texture2D" id=38]
+[ext_resource path="res://Interface/Lobbies/CustomIcon_disabled.png" type="Texture2D" id=39]
+[ext_resource path="res://Interface/Options/Checked.png" type="Texture2D" id=40]
+[ext_resource path="res://Interface/RedXButton.png" type="Texture2D" id=41]
+[ext_resource path="res://Interface/RedXButton_hovered.png" type="Texture2D" id=42]
+[ext_resource path="res://Interface/Options/ResetButton.png" type="Texture2D" id=43]
+[ext_resource path="res://Interface/SwitchModeUI.gd" type="Script" id=44]
+[ext_resource path="res://Utility/TooltipArea.tscn" type="PackedScene" id=45]
+[ext_resource path="res://Interface/LeagueProgressUI.tscn" type="PackedScene" id=46]
+[ext_resource path="res://Interface/Lobbies/SwitchModeUnrankedUI.gd" type="Script" id=47]
+[ext_resource path="res://Interface/SwitchModeIcon.png" type="Texture2D" id=48]
+[ext_resource path="res://Interface/FocusGrabbingControl.gd" type="Script" id=49]
+[ext_resource path="res://Interface/SwitchModeIcon_hovered.png" type="Texture2D" id=50]
+[ext_resource path="res://Interface/SwitchModeIcon_disabled.png" type="Texture2D" id=51]
+
+[ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Close"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0.5 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "closed"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 2.54912, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -1000 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Open"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0.5 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "opened"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 0.5, 2.54912 ),
+"update": 0,
+"values": [ Vector2( 0, -1000 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="FontVariation" id=346]
+script = ExtResource( "LegacyFontMigration" )
+size = 36
+outline_size = 4
+outline_color = Color( 0.24, 0.15, 0.11, 1 )
+use_filter = true
+base_font = ExtResource( 12 )
+
+[sub_resource type="FontVariation" id=15]
+script = ExtResource( "LegacyFontMigration" )
+size = 24
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_top = -3
+spacing_bottom = -3
+base_font = ExtResource( 8 )
+
+[sub_resource type="FontVariation" id=14]
+script = ExtResource( "LegacyFontMigration" )
+size = 26
+outline_size = 3
+outline_color = Color( 0.24, 0.15, 0.11, 1 )
+use_filter = true
+base_font = ExtResource( 8 )
+
+[sub_resource type="FontVariation" id=19]
+script = ExtResource( "LegacyFontMigration" )
+size = 22
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_bottom = -8
+base_font = ExtResource( 20 )
+
+[sub_resource type="FontVariation" id=345]
+script = ExtResource( "LegacyFontMigration" )
+size = 22
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+base_font = ExtResource( 20 )
+
+[sub_resource type="ButtonGroup" id=17]
+
+[sub_resource type="ButtonGroup" id=18]
+
+[sub_resource type="FontVariation" id=348]
+script = ExtResource( "LegacyFontMigration" )
+size = 22
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_bottom = 2
+base_font = ExtResource( 8 )
+
+[sub_resource type="FontVariation" id=4]
+script = ExtResource( "LegacyFontMigration" )
+size = 36
+outline_size = 4
+outline_color = Color( 0.24, 0.15, 0.11, 1 )
+use_filter = true
+base_font = ExtResource( 12 )
+
+[sub_resource type="FontVariation" id=3]
+script = ExtResource( "LegacyFontMigration" )
+size = 26
+outline_size = 3
+outline_color = Color( 0.24, 0.15, 0.11, 1 )
+use_filter = true
+base_font = ExtResource( 8 )
+
+[sub_resource type="FontVariation" id=344]
+script = ExtResource( "LegacyFontMigration" )
+size = 26
+outline_size = 3
+outline_color = Color( 0.24, 0.15, 0.11, 1 )
+use_filter = true
+spacing_top = -1
+spacing_bottom = -5
+base_font = ExtResource( 8 )
+
+[sub_resource type="FontVariation" id=347]
+script = ExtResource( "LegacyFontMigration" )
+size = 21
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_mipmaps = true
+use_filter = true
+spacing_bottom = -8
+base_font = ExtResource( 20 )
+
+[node name="OtherModesUI" type="Node2D"]
+z_index = 5
+script = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Close = SubResource( 1 )
+anims/Open = SubResource( 2 )
+
+[node name="Panel" type="Sprite2D" parent="."]
+position = Vector2( 1131, 347 )
+texture = ExtResource( 1 )
+
+[node name="JoinLobbyUI" parent="." instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 0, 13 )
+
+[node name="CreateLobbyUI" parent="." instance=ExtResource( 11 )]
+visible = false
+position = Vector2( 0, 13 )
+
+[node name="CustomUnrankedUI" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 21 )
+
+[node name="Header" type="RichTextLabel" parent="CustomUnrankedUI"]
+offset_left = 964.0
+offset_top = 62.0
+offset_right = 1302.0
+offset_bottom = 112.0
+grow_vertical = 0
+custom_minimum_size = Vector2( 333, 0 )
+clip_contents = false
+theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/normal_font = SubResource( 346 )
+bbcode_enabled = true
+text = "[center]Custom Unranked"
+text = "Custom Unranked"
+fit_content = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "BUTTON_CustomUnranked"
+prefix = "[center]"
+maxSize = 333.0
+maxSizeY = 71.0
+theme_override_font_sizes/normal_font_size = 36
+theme_override_constants/outline_size = 4
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CustomUnrankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+offset_left = 679.0
+offset_top = 141.0
+offset_right = 969.0
+offset_bottom = 601.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="CustomUnrankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+offset_left = 987.0
+offset_top = 141.0
+offset_right = 1584.0
+offset_bottom = 503.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="MatchAgainst" type="Label" parent="CustomUnrankedUI"]
+offset_left = 674.0
+offset_top = 144.0
+offset_right = 961.0
+offset_bottom = 192.0
+grow_horizontal = 2
+pivot_offset = Vector2( 142, 21.5085 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource( 15 )
+text = "Match against"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "UI_UnrankedMatch"
+theme_override_font_sizes/font_size = 24
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CustomRules" type="Label" parent="CustomUnrankedUI"]
+offset_left = 1040.0
+offset_top = 138.0
+offset_right = 1536.0
+offset_bottom = 186.0
+grow_horizontal = 2
+pivot_offset = Vector2( 142, 21.5085 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource( 15 )
+text = "Custom Rules"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "UI_CustomRules"
+theme_override_font_sizes/font_size = 24
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SidePanel" type="Sprite2D" parent="CustomUnrankedUI"]
+position = Vector2( 1129, 687.5 )
+texture = ExtResource( 23 )
+
+[node name="StartGameButton" type="Button" parent="CustomUnrankedUI"]
+offset_left = 1014.0
+offset_top = 649.0
+offset_right = 1244.0
+offset_bottom = 693.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+text = "Start Game"
+flat = true
+script = ExtResource( 9 )
+translationKey = "BUTTON_StartGame"
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="CancelButton" type="Button" parent="CustomUnrankedUI"]
+offset_left = 1328.0
+offset_top = 645.0
+offset_right = 1608.0
+offset_bottom = 691.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 14 )
+theme_override_styles/focus = ExtResource( 10 )
+flat = true
+icon_alignment = 1
+script = ExtResource( 35 )
+labelPath = NodePath("../CancelLabel")
+iconPath = NodePath("../CancelIcon")
+iconHovered = ExtResource( 42 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+alignment = 0
+
+[node name="CancelLabel" type="Label" parent="CustomUnrankedUI"]
+offset_left = 1388.0
+offset_top = 650.0
+offset_right = 1598.0
+offset_bottom = 684.0
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+text = "Cancel"
+script = ExtResource( 9 )
+translationKey = "BUTTON_Cancel"
+maxSize = 210.0
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="CancelIcon" type="Sprite2D" parent="CustomUnrankedUI"]
+position = Vector2( 1361, 667 )
+texture = ExtResource( 41 )
+
+[node name="HoverHint" type="Label" parent="CustomUnrankedUI"]
+offset_left = 988.0
+offset_top = 530.0
+offset_right = 1590.0
+offset_bottom = 597.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color( 0.447059, 0.321569, 0.270588, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_fonts/font = SubResource( 19 )
+text = "No players are matched against custom runs."
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "HINT_CustomGames"
+theme_override_font_sizes/font_size = 22
+theme_override_constants/outline_size = 0
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Rules" type="VBoxContainer" parent="CustomUnrankedUI"]
+offset_left = 994.0
+offset_top = 195.0
+offset_right = 1556.0
+offset_bottom = 483.0
+theme_override_constants/separation = 8
+script = ExtResource( 27 )
+
+[node name="BonusGold" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_right = 562.0
+translationKey = "UI_BonusGold"
+
+[node name="Property" parent="CustomUnrankedUI/Rules/BonusGold" index="0"]
+offset_right = 242.0
+
+[node name="Control" parent="CustomUnrankedUI/Rules/BonusGold" index="1"]
+offset_left = 250.0
+offset_right = 484.0
+
+[node name="Spacer" parent="CustomUnrankedUI/Rules/BonusGold" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/BonusGold" index="3"]
+offset_left = 492.0
+offset_right = 562.0
+
+[node name="SalesChance" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 44.0
+offset_right = 562.0
+offset_bottom = 78.0
+translationKey = "UI_SalesChance"
+
+[node name="Property" parent="CustomUnrankedUI/Rules/SalesChance" index="0"]
+offset_right = 242.0
+offset_bottom = 34.0
+text = "[right]Sale chance"
+text = "Sale chance"
+
+[node name="Control" parent="CustomUnrankedUI/Rules/SalesChance" index="1"]
+offset_left = 250.0
+offset_right = 484.0
+offset_bottom = 34.0
+
+[node name="Spacer" parent="CustomUnrankedUI/Rules/SalesChance" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+offset_bottom = 34.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/SalesChance" index="3"]
+offset_left = 492.0
+offset_top = 0.0
+offset_right = 562.0
+offset_bottom = 34.0
+
+[node name="TradeChance" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 86.0
+offset_right = 562.0
+offset_bottom = 120.0
+translationKey = "UI_TradeChance"
+
+[node name="Property" parent="CustomUnrankedUI/Rules/TradeChance" index="0"]
+offset_right = 242.0
+offset_bottom = 34.0
+text = "[right]Trade chance"
+text = "Trade chance"
+
+[node name="Control" parent="CustomUnrankedUI/Rules/TradeChance" index="1"]
+offset_left = 250.0
+offset_right = 484.0
+offset_bottom = 34.0
+
+[node name="Spacer" parent="CustomUnrankedUI/Rules/TradeChance" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+offset_bottom = 34.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/TradeChance" index="3"]
+offset_left = 492.0
+offset_top = 0.0
+offset_right = 562.0
+offset_bottom = 34.0
+
+[node name="BonusTreasures" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 128.0
+offset_right = 562.0
+offset_bottom = 164.0
+translationKey = "UI_BonusTreasure"
+
+[node name="Property" parent="CustomUnrankedUI/Rules/BonusTreasures" index="0"]
+offset_right = 242.0
+text = "[right]Bonus [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] chance"
+text = "Bonus  chance"
+
+[node name="Control" parent="CustomUnrankedUI/Rules/BonusTreasures" index="1"]
+offset_left = 250.0
+offset_right = 484.0
+
+[node name="Spacer" parent="CustomUnrankedUI/Rules/BonusTreasures" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/BonusTreasures" index="3"]
+offset_left = 492.0
+offset_right = 562.0
+
+[node name="TreasureLimit" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 172.0
+offset_right = 562.0
+offset_bottom = 208.0
+translationKey = "UI_TreasureLimit"
+
+[node name="Property" parent="CustomUnrankedUI/Rules/TreasureLimit" index="0"]
+offset_right = 242.0
+text = "[right] [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] limit"
+text = "  limit"
+
+[node name="Control" parent="CustomUnrankedUI/Rules/TreasureLimit" index="1"]
+offset_left = 250.0
+offset_right = 484.0
+
+[node name="Spacer" parent="CustomUnrankedUI/Rules/TreasureLimit" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/TreasureLimit" index="3"]
+offset_left = 492.0
+offset_right = 562.0
+
+[node name="HealthMultiplier" parent="CustomUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 216.0
+offset_right = 562.0
+offset_bottom = 250.0
+translationKey = "UI_BonusHealth"
+
+[node name="Property" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="0"]
+offset_right = 242.0
+offset_bottom = 34.0
+text = "[right]Max. health"
+text = "Max. health"
+
+[node name="Control" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="1"]
+offset_left = 250.0
+offset_right = 484.0
+offset_bottom = 34.0
+
+[node name="Spacer" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="2"]
+offset_bottom = 34.0
+
+[node name="Value" parent="CustomUnrankedUI/Rules/HealthMultiplier" index="3"]
+offset_left = 492.0
+offset_top = 0.0
+offset_right = 562.0
+offset_bottom = 34.0
+
+[node name="CannotPickBags" type="HBoxContainer" parent="CustomUnrankedUI/Rules"]
+offset_top = 258.0
+offset_right = 562.0
+offset_bottom = 288.0
+
+[node name="CannotPickBags" type="RichTextLabel" parent="CustomUnrankedUI/Rules/CannotPickBags"]
+offset_right = 476.0
+offset_bottom = 30.0
+grow_horizontal = 0
+custom_minimum_size = Vector2( 270, 0 )
+clip_contents = false
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/italics_font = ExtResource( 28 )
+theme_override_fonts/normal_font = SubResource( 345 )
+bbcode_enabled = true
+text = "[center]Place bags permanently"
+text = "Place bags permanently"
+fit_content = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "UI_CannotPickBags"
+prefix = "[center]"
+theme_override_font_sizes/normal_font_size = 22
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="Checkbox" type="TextureButton" parent="CustomUnrankedUI/Rules/CannotPickBags"]
+offset_left = 484.0
+offset_right = 514.0
+offset_bottom = 30.0
+custom_minimum_size = Vector2( 30, 0 )
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource( 30 )
+texture_pressed = ExtResource( 40 )
+stretch_mode = 5
+script = ExtResource( 29 )
+ignore_texture_size = true
+
+[node name="Spacer" type="Control" parent="CustomUnrankedUI/Rules/CannotPickBags"]
+offset_left = 522.0
+offset_right = 562.0
+offset_bottom = 30.0
+custom_minimum_size = Vector2( 40, 0 )
+
+[node name="Leagues" type="VBoxContainer" parent="CustomUnrankedUI"]
+offset_left = 697.0
+offset_top = 213.0
+offset_right = 950.0
+offset_bottom = 556.0
+theme_override_constants/separation = 2
+
+[node name="Unranked" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_right = 253.0
+group = SubResource( 17 )
+text = "Unranked"
+translationKey = "UI_Unranked"
+
+[node name="Bronze" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 50.0
+offset_right = 253.0
+offset_bottom = 98.0
+group = SubResource( 18 )
+text = "Bronze"
+icon = ExtResource( 16 )
+translationKey = "LEAGUE_Bronze"
+
+[node name="Silver" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 100.0
+offset_right = 253.0
+offset_bottom = 148.0
+group = SubResource( 18 )
+text = "Silver"
+icon = ExtResource( 18 )
+translationKey = "LEAGUE_Silver"
+
+[node name="Gold" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 150.0
+offset_right = 253.0
+offset_bottom = 198.0
+group = SubResource( 18 )
+text = "Gold"
+icon = ExtResource( 19 )
+translationKey = "LEAGUE_Gold"
+
+[node name="Platinum" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 200.0
+offset_right = 253.0
+offset_bottom = 248.0
+group = SubResource( 18 )
+text = "Platinum"
+icon = ExtResource( 24 )
+translationKey = "LEAGUE_Platinum"
+
+[node name="Diamond" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 250.0
+offset_right = 253.0
+offset_bottom = 298.0
+group = SubResource( 18 )
+text = "Diamond"
+icon = ExtResource( 15 )
+translationKey = "LEAGUE_Diamond"
+
+[node name="Master" parent="CustomUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 300.0
+offset_right = 253.0
+offset_bottom = 348.0
+group = SubResource( 18 )
+text = "Master+"
+icon = ExtResource( 17 )
+translationKey = "LEAGUE_Master"
+
+[node name="Divider1" type="Sprite2D" parent="CustomUnrankedUI"]
+position = Vector2( 1283, 190 )
+scale = Vector2( 1.92218, 0.824999 )
+texture = ExtResource( 31 )
+
+[node name="Divider2" type="Sprite2D" parent="CustomUnrankedUI"]
+position = Vector2( 824, 190 )
+scale = Vector2( 1.03502, 0.824999 )
+texture = ExtResource( 31 )
+
+[node name="LobbyIconMember" type="Sprite2D" parent="CustomUnrankedUI"]
+position = Vector2( 938.625, 79.375 )
+scale = Vector2( 0.418333, 0.418333 )
+texture = ExtResource( 32 )
+
+[node name="SwitchModeRankedUI" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 44 )
+
+[node name="Header" type="RichTextLabel" parent="SwitchModeRankedUI"]
+offset_left = 964.0
+offset_top = 60.0
+offset_right = 1297.0
+offset_bottom = 112.0
+custom_minimum_size = Vector2( 333, 0 )
+clip_contents = false
+theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/normal_font = SubResource( 346 )
+bbcode_enabled = true
+text = "[center]Switch Mode"
+text = "Switch Mode"
+fit_content = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "BUTTON_SwitchMode"
+prefix = "[center]"
+maxSize = 333.0
+theme_override_font_sizes/normal_font_size = 36
+theme_override_constants/outline_size = 4
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="SidePanel" type="Sprite2D" parent="SwitchModeRankedUI"]
+position = Vector2( 1129, 687.5 )
+texture = ExtResource( 23 )
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="SwitchModeRankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+offset_left = 679.0
+offset_top = 173.0
+offset_right = 1591.0
+offset_bottom = 289.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="Rules2" type="Label" parent="SwitchModeRankedUI"]
+offset_left = 688.0
+offset_top = 176.0
+offset_right = 789.0
+offset_bottom = 224.0
+grow_horizontal = 2
+pivot_offset = Vector2( -2, 2 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource( 15 )
+text = "Rules:"
+script = ExtResource( 9 )
+translationKey = "UI_Rules"
+maxSize = 100.0
+theme_override_font_sizes/font_size = 24
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+vertical_alignment = 1
+
+[node name="Hint" type="RichTextLabel" parent="SwitchModeRankedUI"]
+offset_left = 789.0
+offset_top = 179.0
+offset_right = 1589.0
+offset_bottom = 275.0
+grow_horizontal = 0
+grow_vertical = 2
+custom_minimum_size = Vector2( 800, 100 )
+mouse_filter = 2
+theme_override_colors/default_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_fonts/italics_font = ExtResource( 28 )
+theme_override_fonts/normal_font = SubResource( 348 )
+bbcode_enabled = true
+text = "o After each battle, you will take the opponent's backpack.
+o Items won’t fuse when entering the shop. Instead, generate a Cog.
+o $gold does not carry over to the next round."
+text = "o After each battle, you will take the opponent's backpack.
+o Items won’t fuse when entering the shop. Instead, generate a Cog.
+o $gold does not carry over to the next round."
+fit_content = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "HINT_SwitchMode"
+prefix = "[center]"
+maxSize = 800.0
+maxSizeY = 110.0
+theme_override_font_sizes/normal_font_size = 22
+theme_override_constants/outline_size = 0
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="StartGameButton" type="Button" parent="SwitchModeRankedUI"]
+offset_left = 1014.0
+offset_top = 649.0
+offset_right = 1244.0
+offset_bottom = 693.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+text = "Start Game"
+flat = true
+script = ExtResource( 49 )
+translationKey = "BUTTON_StartGame"
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="CancelButton" type="Button" parent="SwitchModeRankedUI"]
+offset_left = 1328.0
+offset_top = 645.0
+offset_right = 1608.0
+offset_bottom = 691.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 14 )
+theme_override_styles/focus = ExtResource( 10 )
+flat = true
+icon_alignment = 1
+script = ExtResource( 35 )
+labelPath = NodePath("../CancelLabel")
+iconPath = NodePath("../CancelIcon")
+iconHovered = ExtResource( 42 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+alignment = 0
+
+[node name="CancelLabel" type="Label" parent="SwitchModeRankedUI"]
+offset_left = 1388.0
+offset_top = 650.0
+offset_right = 1598.0
+offset_bottom = 684.0
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+text = "Cancel"
+script = ExtResource( 9 )
+translationKey = "BUTTON_Cancel"
+maxSize = 210.0
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="Ranked" type="Label" parent="SwitchModeRankedUI"]
+offset_left = 970.0
+offset_top = 122.0
+offset_right = 1286.0
+offset_bottom = 156.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2( 160, 11 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+text = "Ranked"
+script = ExtResource( 9 )
+translationKey = "UI_Ranked"
+maxSize = 210.0
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CancelIcon" type="Sprite2D" parent="SwitchModeRankedUI"]
+position = Vector2( 1361, 667 )
+texture = ExtResource( 41 )
+
+[node name="Icon" type="Sprite2D" parent="SwitchModeRankedUI"]
+position = Vector2( 938.625, 75.375 )
+scale = Vector2( 0.418333, 0.466805 )
+texture = ExtResource( 48 )
+
+[node name="Control" parent="SwitchModeRankedUI" instance=ExtResource( 45 )]
+visible = false
+offset_left = -138.0
+offset_top = 73.0
+offset_right = 236.0
+offset_bottom = 197.0
+keyword = "GBP"
+
+[node name="LeagueProgress" parent="SwitchModeRankedUI" instance=ExtResource( 46 )]
+position = Vector2( 1059, 303 )
+
+[node name="LeagueEmblem" parent="SwitchModeRankedUI/LeagueProgress" index="0"]
+position = Vector2( 67.0001, 107.25 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Ranking" parent="SwitchModeRankedUI/LeagueProgress" index="1"]
+offset_top = 81.2501
+offset_bottom = 131.25
+
+[node name="LeagueProgressBar" parent="SwitchModeRankedUI/LeagueProgress" index="2"]
+position = Vector2( 70, 232 )
+scale = Vector2( 0.685522, 0.883928 )
+
+[node name="League" parent="SwitchModeRankedUI/LeagueProgress" index="3"]
+offset_left = -41.9999
+offset_top = 198.25
+offset_right = 182.0
+offset_bottom = 230.25
+
+[node name="SwitchModeUnrankedUI" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 47 )
+
+[node name="Header" type="RichTextLabel" parent="SwitchModeUnrankedUI"]
+offset_left = 964.0
+offset_top = 60.0
+offset_right = 1297.0
+offset_bottom = 112.0
+custom_minimum_size = Vector2( 333, 0 )
+clip_contents = false
+theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/normal_font = SubResource( 346 )
+bbcode_enabled = true
+text = "[center]Switch Mode"
+text = "Switch Mode"
+fit_content = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "BUTTON_SwitchMode"
+prefix = "[center]"
+maxSize = 333.0
+theme_override_font_sizes/normal_font_size = 36
+theme_override_constants/outline_size = 4
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="SidePanel" type="Sprite2D" parent="SwitchModeUnrankedUI"]
+position = Vector2( 1129, 687.5 )
+texture = ExtResource( 23 )
+
+[node name="StartGameButton" type="Button" parent="SwitchModeUnrankedUI"]
+offset_left = 1014.0
+offset_top = 649.0
+offset_right = 1244.0
+offset_bottom = 693.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+text = "Start Game"
+flat = true
+script = ExtResource( 49 )
+translationKey = "BUTTON_StartGame"
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="Unranked" type="Button" parent="SwitchModeUnrankedUI"]
+visible = false
+offset_left = 1130.0
+offset_top = 156.0
+offset_right = 1360.0
+offset_bottom = 200.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+text = "Unranked"
+flat = true
+script = ExtResource( 9 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="Ranked" type="Button" parent="SwitchModeUnrankedUI"]
+visible = false
+offset_left = 897.0
+offset_top = 158.0
+offset_right = 1127.0
+offset_bottom = 202.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+text = "Ranked"
+flat = true
+script = ExtResource( 9 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="CancelButton" type="Button" parent="SwitchModeUnrankedUI"]
+offset_left = 1328.0
+offset_top = 645.0
+offset_right = 1608.0
+offset_bottom = 691.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 14 )
+theme_override_styles/focus = ExtResource( 10 )
+flat = true
+icon_alignment = 1
+script = ExtResource( 35 )
+labelPath = NodePath("../CancelLabel")
+iconPath = NodePath("../CancelIcon")
+iconHovered = ExtResource( 42 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+alignment = 0
+
+[node name="CancelLabel" type="Label" parent="SwitchModeUnrankedUI"]
+offset_left = 1388.0
+offset_top = 650.0
+offset_right = 1598.0
+offset_bottom = 684.0
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+text = "Cancel"
+script = ExtResource( 9 )
+translationKey = "BUTTON_Cancel"
+maxSize = 210.0
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="CancelIcon" type="Sprite2D" parent="SwitchModeUnrankedUI"]
+position = Vector2( 1361, 667 )
+texture = ExtResource( 41 )
+
+[node name="NinePatchRect3" type="NinePatchRect" parent="SwitchModeUnrankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+offset_left = 679.0
+offset_top = 126.0
+offset_right = 1591.0
+offset_bottom = 238.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="Rules2" type="Label" parent="SwitchModeUnrankedUI"]
+offset_left = 688.0
+offset_top = 124.0
+offset_right = 803.0
+offset_bottom = 172.0
+grow_horizontal = 2
+pivot_offset = Vector2( -2, 2 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource( 15 )
+text = "Rules:"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "UI_Rules"
+theme_override_font_sizes/font_size = 24
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+vertical_alignment = 1
+
+[node name="Hint" type="RichTextLabel" parent="SwitchModeUnrankedUI"]
+offset_left = 789.0
+offset_top = 131.0
+offset_right = 1589.0
+offset_bottom = 227.0
+grow_horizontal = 0
+grow_vertical = 2
+custom_minimum_size = Vector2( 800, 100 )
+mouse_filter = 2
+theme_override_colors/default_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_fonts/italics_font = ExtResource( 28 )
+theme_override_fonts/normal_font = SubResource( 348 )
+bbcode_enabled = true
+text = "After each battle, you will take the opponent's backpack.
+Items won’t fuse when entering the shop. Instead, generate a Cog.
+$gold does not carry over to the next round."
+text = "After each battle, you will take the opponent's backpack.
+Items won’t fuse when entering the shop. Instead, generate a Cog.
+$gold does not carry over to the next round."
+fit_content = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "HINT_SwitchMode"
+prefix = "[center]"
+maxSize = 800.0
+maxSizeY = 110.0
+theme_override_font_sizes/normal_font_size = 22
+theme_override_constants/outline_size = 0
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="SwitchModeUnrankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+offset_left = 679.0
+offset_top = 247.0
+offset_right = 969.0
+offset_bottom = 608.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="SwitchModeUnrankedUI"]
+modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
+material = ExtResource( 13 )
+offset_left = 987.0
+offset_top = 247.0
+offset_right = 1584.0
+offset_bottom = 609.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="Divider1" type="Sprite2D" parent="SwitchModeUnrankedUI"]
+position = Vector2( 1282, 296 )
+scale = Vector2( 1.92218, 0.824999 )
+texture = ExtResource( 31 )
+
+[node name="Divider2" type="Sprite2D" parent="SwitchModeUnrankedUI"]
+position = Vector2( 822.5, 296 )
+scale = Vector2( 1.0856, 0.824999 )
+texture = ExtResource( 31 )
+
+[node name="Leagues" type="VBoxContainer" parent="SwitchModeUnrankedUI"]
+offset_left = 697.0
+offset_top = 299.0
+offset_right = 950.0
+offset_bottom = 611.0
+theme_override_constants/separation = -4
+
+[node name="Unranked" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_right = 253.0
+group = SubResource( 17 )
+text = "Unranked"
+translationKey = "UI_Unranked"
+
+[node name="Bronze" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 44.0
+offset_right = 253.0
+offset_bottom = 92.0
+group = SubResource( 18 )
+text = "Bronze"
+icon = ExtResource( 16 )
+translationKey = "LEAGUE_Bronze"
+
+[node name="Silver" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 88.0
+offset_right = 253.0
+offset_bottom = 136.0
+group = SubResource( 18 )
+text = "Silver"
+icon = ExtResource( 18 )
+translationKey = "LEAGUE_Silver"
+
+[node name="Gold" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 132.0
+offset_right = 253.0
+offset_bottom = 180.0
+group = SubResource( 18 )
+text = "Gold"
+icon = ExtResource( 19 )
+translationKey = "LEAGUE_Gold"
+
+[node name="Platinum" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 176.0
+offset_right = 253.0
+offset_bottom = 224.0
+group = SubResource( 18 )
+text = "Platinum"
+icon = ExtResource( 24 )
+translationKey = "LEAGUE_Platinum"
+
+[node name="Diamond" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 220.0
+offset_right = 253.0
+offset_bottom = 268.0
+group = SubResource( 18 )
+text = "Diamond"
+icon = ExtResource( 15 )
+translationKey = "LEAGUE_Diamond"
+
+[node name="Master" parent="SwitchModeUnrankedUI/Leagues" instance=ExtResource( 22 )]
+offset_top = 264.0
+offset_right = 253.0
+offset_bottom = 312.0
+group = SubResource( 18 )
+text = "Master+"
+icon = ExtResource( 17 )
+translationKey = "LEAGUE_Master"
+
+[node name="MatchAgainst" type="Label" parent="SwitchModeUnrankedUI"]
+offset_left = 679.0
+offset_top = 247.0
+offset_right = 966.0
+offset_bottom = 295.0
+grow_horizontal = 2
+pivot_offset = Vector2( 142, 21.5085 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource( 15 )
+text = "Match against"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "UI_UnrankedMatch"
+theme_override_font_sizes/font_size = 24
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CustomRules" type="Label" parent="SwitchModeUnrankedUI"]
+offset_left = 1040.0
+offset_top = 247.0
+offset_right = 1536.0
+offset_bottom = 295.0
+grow_horizontal = 2
+pivot_offset = Vector2( 142, 21.5085 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource( 15 )
+text = "Custom Rules"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "UI_CustomRules"
+theme_override_font_sizes/font_size = 24
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rules" type="VBoxContainer" parent="SwitchModeUnrankedUI"]
+offset_left = 987.0
+offset_top = 308.0
+offset_right = 1522.0
+offset_bottom = 596.0
+theme_override_constants/separation = 8
+script = ExtResource( 27 )
+
+[node name="BonusGold" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_right = 535.0
+translationKey = "UI_BonusGold"
+
+[node name="Property" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="0"]
+offset_right = 215.0
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="1"]
+offset_left = 223.0
+offset_right = 457.0
+
+[node name="Spacer" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/BonusGold" index="3"]
+offset_left = 465.0
+offset_right = 535.0
+
+[node name="SalesChance" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 44.0
+offset_right = 535.0
+offset_bottom = 78.0
+translationKey = "UI_SalesChance"
+
+[node name="Property" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="0"]
+offset_right = 215.0
+offset_bottom = 34.0
+text = "[right]Sale chance"
+text = "Sale chance"
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="1"]
+offset_left = 223.0
+offset_right = 457.0
+offset_bottom = 34.0
+
+[node name="Spacer" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+offset_bottom = 34.0
+
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/SalesChance" index="3"]
+offset_left = 465.0
+offset_top = 0.0
+offset_right = 535.0
+offset_bottom = 34.0
+
+[node name="TradeChance" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 86.0
+offset_right = 535.0
+offset_bottom = 120.0
+translationKey = "UI_TradeChance"
+
+[node name="Property" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="0"]
+offset_right = 215.0
+offset_bottom = 34.0
+text = "[right]Trade chance"
+text = "Trade chance"
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="1"]
+offset_left = 223.0
+offset_right = 457.0
+offset_bottom = 34.0
+
+[node name="Spacer" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+offset_bottom = 34.0
+
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/TradeChance" index="3"]
+offset_left = 465.0
+offset_top = 0.0
+offset_right = 535.0
+offset_bottom = 34.0
+
+[node name="BonusTreasures" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 128.0
+offset_right = 535.0
+offset_bottom = 164.0
+translationKey = "UI_BonusTreasure"
+
+[node name="Property" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="0"]
+offset_right = 215.0
+text = "[right]Bonus [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] chance"
+text = "Bonus  chance"
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="1"]
+offset_left = 223.0
+offset_right = 457.0
+
+[node name="Spacer" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/BonusTreasures" index="3"]
+offset_left = 465.0
+offset_right = 535.0
+
+[node name="TreasureLimit" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 172.0
+offset_right = 535.0
+offset_bottom = 208.0
+translationKey = "UI_TreasureLimit"
+
+[node name="Property" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="0"]
+offset_right = 215.0
+text = "[right] [img=0x28]res://Interface/Tooltips/Icon_Treasure.png[/img] limit"
+text = "  limit"
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="1"]
+offset_left = 223.0
+offset_right = 457.0
+
+[node name="Spacer" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="2"]
+offset_left = 232.0
+offset_right = 252.0
+
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/TreasureLimit" index="3"]
+offset_left = 465.0
+offset_right = 535.0
+
+[node name="HealthMultiplier" parent="SwitchModeUnrankedUI/Rules" instance=ExtResource( 26 )]
+offset_top = 216.0
+offset_right = 535.0
+offset_bottom = 250.0
+translationKey = "UI_BonusHealth"
+
+[node name="Property" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="0"]
+offset_right = 215.0
+offset_bottom = 34.0
+text = "[right]Max. health"
+text = "Max. health"
+
+[node name="Control" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="1"]
+offset_left = 223.0
+offset_right = 457.0
+offset_bottom = 34.0
+
+[node name="Spacer" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="2"]
+offset_bottom = 34.0
+
+[node name="Value" parent="SwitchModeUnrankedUI/Rules/HealthMultiplier" index="3"]
+offset_left = 465.0
+offset_top = 0.0
+offset_right = 535.0
+offset_bottom = 34.0
+
+[node name="CannotPickBags" type="HBoxContainer" parent="SwitchModeUnrankedUI/Rules"]
+offset_top = 258.0
+offset_right = 535.0
+offset_bottom = 288.0
+
+[node name="CannotPickBags" type="RichTextLabel" parent="SwitchModeUnrankedUI/Rules/CannotPickBags"]
+offset_right = 497.0
+offset_bottom = 30.0
+grow_horizontal = 0
+custom_minimum_size = Vector2( 270, 0 )
+clip_contents = false
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/italics_font = ExtResource( 28 )
+theme_override_fonts/normal_font = SubResource( 345 )
+bbcode_enabled = true
+text = "[center]Place bags permanently"
+text = "Place bags permanently"
+fit_content = true
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "UI_CannotPickBags"
+prefix = "[center]"
+theme_override_font_sizes/normal_font_size = 22
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="Checkbox" type="TextureButton" parent="SwitchModeUnrankedUI/Rules/CannotPickBags"]
+offset_left = 505.0
+offset_right = 535.0
+offset_bottom = 30.0
+custom_minimum_size = Vector2( 30, 0 )
+toggle_mode = true
+texture_normal = ExtResource( 30 )
+texture_pressed = ExtResource( 40 )
+stretch_mode = 5
+script = ExtResource( 29 )
+ignore_texture_size = true
+
+[node name="Spacer" type="Control" parent="SwitchModeUnrankedUI/Rules/CannotPickBags"]
+visible = false
+offset_left = 516.0
+offset_right = 556.0
+offset_bottom = 30.0
+custom_minimum_size = Vector2( 40, 0 )
+
+[node name="Icon" type="Sprite2D" parent="SwitchModeUnrankedUI"]
+position = Vector2( 938.625, 75.375 )
+scale = Vector2( 0.418333, 0.466805 )
+texture = ExtResource( 48 )
+
+[node name="Buttons" type="Node2D" parent="."]
+
+[node name="CancelButton" type="Button" parent="Buttons"]
+offset_left = 1328.0
+offset_top = 645.0
+offset_right = 1608.0
+offset_bottom = 691.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 14 )
+theme_override_styles/focus = ExtResource( 10 )
+flat = true
+icon_alignment = 1
+script = ExtResource( 35 )
+labelPath = NodePath("../CancelLabel")
+iconPath = NodePath("../CancelIcon")
+iconHovered = ExtResource( 42 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+alignment = 0
+
+[node name="CancelLabel" type="Label" parent="Buttons"]
+offset_left = 1388.0
+offset_top = 650.0
+offset_right = 1598.0
+offset_bottom = 684.0
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = ExtResource( 25 )
+text = "Cancel"
+script = ExtResource( 9 )
+translationKey = "BUTTON_Cancel"
+maxSize = 210.0
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="CancelIcon" type="Sprite2D" parent="Buttons"]
+position = Vector2( 1361, 667 )
+texture = ExtResource( 41 )
+
+[node name="Header" type="RichTextLabel" parent="Buttons"]
+offset_left = 919.0
+offset_top = 60.0
+offset_right = 1344.0
+offset_bottom = 112.0
+clip_contents = false
+theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+text = "[center]Other Modes"
+text = "Other Modes"
+scroll_active = false
+script = ExtResource( 9 )
+translationKey = "UI_OtherModes"
+prefix = "[center]"
+theme_override_font_sizes/normal_font_size = 36
+theme_override_constants/outline_size = 4
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="JoinLobby" type="Node2D" parent="Buttons"]
+position = Vector2( 837, 237 )
+
+[node name="JoinLobbyButton2" type="Button" parent="Buttons/JoinLobby"]
+offset_left = -118.0
+offset_top = -78.0
+offset_right = 108.0
+offset_bottom = 119.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.768627, 0.72549, 0.670588, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 3 )
+theme_override_styles/focus = ExtResource( 10 )
+flat = true
+script = ExtResource( 35 )
+labelPath = NodePath("../JoinLobbyLabel")
+iconPath = NodePath("../LobbyIconMember")
+iconHovered = ExtResource( 37 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Buttons/JoinLobby/JoinLobbyButton2"]
+modulate = Color( 0.133333, 0.141176, 0.14902, 1 )
+material = ExtResource( 13 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="JoinLobbyLabel" type="Label" parent="Buttons/JoinLobby"]
+offset_left = -115.0
+offset_top = 52.0
+offset_right = 112.0
+offset_bottom = 122.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 344 )
+text = "Join a Lobby"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "BUTTON_JoinLobby"
+autoMaxSize = true
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LobbyIconMember" type="Sprite2D" parent="Buttons/JoinLobby"]
+position = Vector2( -4.5, -4.5 )
+scale = Vector2( 0.953333, 0.953333 )
+texture = ExtResource( 34 )
+
+[node name="HostLobby" type="Node2D" parent="Buttons"]
+position = Vector2( 831, 452 )
+
+[node name="HostLobbyButton2" type="Button" parent="Buttons/HostLobby"]
+offset_left = -111.0
+offset_top = -79.0
+offset_right = 115.0
+offset_bottom = 118.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.768627, 0.72549, 0.670588, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 3 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+flat = true
+script = ExtResource( 35 )
+labelPath = NodePath("../HostLobbyLabel")
+iconPath = NodePath("../LobbyIconHost")
+iconHovered = ExtResource( 36 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Buttons/HostLobby/HostLobbyButton2"]
+modulate = Color( 0.133333, 0.141176, 0.14902, 1 )
+material = ExtResource( 13 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="HostLobbyLabel" type="Label" parent="Buttons/HostLobby"]
+offset_left = -107.0
+offset_top = 50.0
+offset_right = 113.0
+offset_bottom = 120.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 344 )
+text = "Host a Lobby"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "BUTTON_HostLobby"
+autoMaxSize = true
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LobbyIconHost" type="Sprite2D" parent="Buttons/HostLobby"]
+position = Vector2( 1, -4 )
+scale = Vector2( 0.946667, 0.946667 )
+texture = ExtResource( 33 )
+
+[node name="CustomUnranked" type="Node2D" parent="Buttons"]
+position = Vector2( 1120, 313 )
+
+[node name="CustomUnrankedButton" type="Button" parent="Buttons/CustomUnranked"]
+offset_left = -108.0
+offset_top = -74.0
+offset_right = 118.0
+offset_bottom = 140.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.768627, 0.72549, 0.670588, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 3 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+flat = true
+script = ExtResource( 35 )
+labelPath = NodePath("../CustomUnrankedLabel")
+iconPath = NodePath("../CustomIcon")
+iconHovered = ExtResource( 38 )
+iconDisabled = ExtResource( 39 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Buttons/CustomUnranked/CustomUnrankedButton"]
+modulate = Color( 0.133333, 0.141176, 0.14902, 1 )
+material = ExtResource( 13 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CustomIcon" type="Sprite2D" parent="Buttons/CustomUnranked"]
+position = Vector2( 1.99996, -4 )
+scale = Vector2( 0.92, 0.92 )
+texture = ExtResource( 32 )
+
+[node name="CustomUnrankedLabel" type="Label" parent="Buttons/CustomUnranked"]
+offset_left = -105.0
+offset_top = 62.0
+offset_right = 115.0
+offset_bottom = 133.0
+grow_horizontal = 2
+custom_minimum_size = Vector2( 218, 70 )
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 344 )
+text = "Custom Unranked"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "BUTTON_CustomUnranked"
+autoMaxSize = true
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+horizontal_alignment = 1
+
+[node name="SwitchModeRanked" type="Node2D" parent="Buttons"]
+position = Vector2( 1411, 237 )
+
+[node name="Button" type="Button" parent="Buttons/SwitchModeRanked"]
+offset_left = -107.0
+offset_top = -74.0
+offset_right = 119.0
+offset_bottom = 123.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.768627, 0.72549, 0.670588, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 3 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+flat = true
+script = ExtResource( 35 )
+labelPath = NodePath("../Label")
+iconPath = NodePath("../Icon")
+iconHovered = ExtResource( 38 )
+iconDisabled = ExtResource( 39 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Buttons/SwitchModeRanked/Button"]
+modulate = Color( 0.133333, 0.141176, 0.14902, 1 )
+material = ExtResource( 13 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Icon" type="Sprite2D" parent="Buttons/SwitchModeRanked"]
+visible = false
+position = Vector2( -42, -14 )
+scale = Vector2( 0.753105, 0.753105 )
+texture = ExtResource( 43 )
+
+[node name="Label" type="Label" parent="Buttons/SwitchModeRanked"]
+offset_left = -105.0
+offset_top = 52.0
+offset_right = 117.0
+offset_bottom = 117.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 344 )
+text = "Switch Mode
+Ranked"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "BUTTON_SwitchModeRanked"
+autoMaxSize = true
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+horizontal_alignment = 1
+
+[node name="LeagueProgress" parent="Buttons/SwitchModeRanked" instance=ExtResource( 46 )]
+position = Vector2( -60, -162 )
+
+[node name="Ranking" parent="Buttons/SwitchModeRanked/LeagueProgress" index="1"]
+offset_top = 117.25
+offset_bottom = 167.25
+
+[node name="LeagueProgressBar" parent="Buttons/SwitchModeRanked/LeagueProgress" index="2"]
+visible = false
+
+[node name="League" parent="Buttons/SwitchModeRanked/LeagueProgress" index="3"]
+offset_top = 173.25
+offset_bottom = 205.25
+
+[node name="SwitchModeUnranked" type="Node2D" parent="Buttons"]
+position = Vector2( 1411, 448 )
+
+[node name="Button" type="Button" parent="Buttons/SwitchModeUnranked"]
+offset_left = -107.0
+offset_top = -74.0
+offset_right = 119.0
+offset_bottom = 123.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_disabled_color = Color( 0.768627, 0.72549, 0.670588, 1 )
+theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
+theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 3 )
+theme_override_styles/hover = ExtResource( 7 )
+theme_override_styles/pressed = ExtResource( 6 )
+theme_override_styles/focus = ExtResource( 10 )
+theme_override_styles/disabled = ExtResource( 4 )
+theme_override_styles/normal = ExtResource( 5 )
+flat = true
+script = ExtResource( 35 )
+labelPath = NodePath("../Label")
+iconPath = NodePath("../Icon")
+iconHovered = ExtResource( 50 )
+iconDisabled = ExtResource( 51 )
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Buttons/SwitchModeUnranked/Button"]
+modulate = Color( 0.133333, 0.141176, 0.14902, 1 )
+material = ExtResource( 13 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 14 )
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Icon" type="Sprite2D" parent="Buttons/SwitchModeUnranked"]
+position = Vector2( 3, -15 )
+scale = Vector2( 0.753105, 0.753105 )
+texture = ExtResource( 48 )
+
+[node name="Label" type="Label" parent="Buttons/SwitchModeUnranked"]
+offset_left = -104.0
+offset_top = 48.0
+offset_right = 117.0
+offset_bottom = 118.0
+grow_horizontal = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_fonts/font = SubResource( 344 )
+text = "Switch Mode
+Unranked"
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "BUTTON_SwitchModeUnranked"
+autoMaxSize = true
+theme_override_font_sizes/font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+horizontal_alignment = 1
+
+[node name="AchievementHint" type="Label" parent="Buttons"]
+offset_left = 706.0
+offset_top = 592.0
+offset_right = 1574.0
+offset_bottom = 621.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color( 0.447059, 0.321569, 0.270588, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_fonts/font = SubResource( 347 )
+text = "Achievements are disabled in these modes."
+autowrap_mode = 3
+script = ExtResource( 9 )
+translationKey = "HINT_Achievements"
+theme_override_font_sizes/font_size = 21
+theme_override_constants/outline_size = 0
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+
+[node name="Divider1" type="Sprite2D" parent="Buttons"]
+position = Vector2( 1135.5, 114.063 )
+scale = Vector2( 1.27237, 0.612503 )
+texture = ExtResource( 31 )
+
+[connection signal="pressed" from="CustomUnrankedUI/StartGameButton" to="CustomUnrankedUI" method="startGame"]
+[connection signal="pressed" from="CustomUnrankedUI/CancelButton" to="CustomUnrankedUI" method="onCancelPressed"]
+[connection signal="pressed" from="SwitchModeRankedUI/StartGameButton" to="SwitchModeRankedUI" method="startGame"]
+[connection signal="pressed" from="SwitchModeRankedUI/CancelButton" to="SwitchModeRankedUI" method="onCancelPressed"]
+[connection signal="pressed" from="SwitchModeUnrankedUI/StartGameButton" to="SwitchModeUnrankedUI" method="startGame"]
+[connection signal="pressed" from="SwitchModeUnrankedUI/CancelButton" to="SwitchModeUnrankedUI" method="onCancelPressed"]
+[connection signal="pressed" from="Buttons/CancelButton" to="." method="onCancelPressed"]
+[connection signal="pressed" from="Buttons/JoinLobby/JoinLobbyButton2" to="." method="onJoinLobbyPressed"]
+[connection signal="pressed" from="Buttons/HostLobby/HostLobbyButton2" to="." method="onHostLobbyPressed"]
+[connection signal="pressed" from="Buttons/CustomUnranked/CustomUnrankedButton" to="." method="onCustomUnrankedPressed"]
+[connection signal="pressed" from="Buttons/SwitchModeRanked/Button" to="." method="onSwitchModeRankedPressed"]
+[connection signal="pressed" from="Buttons/SwitchModeUnranked/Button" to="." method="onSwitchModeUnrankedPressed"]
+
+[editable path="CustomUnrankedUI/Rules/BonusGold"]
+[editable path="CustomUnrankedUI/Rules/SalesChance"]
+[editable path="CustomUnrankedUI/Rules/TradeChance"]
+[editable path="CustomUnrankedUI/Rules/BonusTreasures"]
+[editable path="CustomUnrankedUI/Rules/TreasureLimit"]
+[editable path="CustomUnrankedUI/Rules/HealthMultiplier"]
+[editable path="SwitchModeRankedUI/LeagueProgress"]
+[editable path="SwitchModeUnrankedUI/Rules/BonusGold"]
+[editable path="SwitchModeUnrankedUI/Rules/SalesChance"]
+[editable path="SwitchModeUnrankedUI/Rules/TradeChance"]
+[editable path="SwitchModeUnrankedUI/Rules/BonusTreasures"]
+[editable path="SwitchModeUnrankedUI/Rules/TreasureLimit"]
+[editable path="SwitchModeUnrankedUI/Rules/HealthMultiplier"]
+[editable path="Buttons/SwitchModeRanked/LeagueProgress"]

@@ -1,0 +1,17 @@
+{
+	"checks": 11,
+	"failures": [],
+	"observations": {
+		"restored_player": {
+			"bounds": "[P: (72.98911, 603.2005), S: (283.2667, 493.8192)]",
+			"count": 17,
+			"on_screen": true
+		},
+		"title_player": {
+			"bounds": "[P: (408.9891, 595.1306), S: (282.6265, 493.889)]",
+			"count": 17,
+			"on_screen": true
+		}
+	},
+	"ok": true
+}

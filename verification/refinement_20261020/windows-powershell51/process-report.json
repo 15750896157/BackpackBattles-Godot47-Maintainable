@@ -1,0 +1,14 @@
+﻿[
+    {
+        "scene":  "VisualRefinementMain",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    },
+    {
+        "scene":  "BehaviorServices",
+        "exit_code":  0,
+        "stderr_empty":  true,
+        "ok":  true
+    }
+]

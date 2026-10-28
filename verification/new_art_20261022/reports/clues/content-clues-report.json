@@ -1,0 +1,29 @@
+{
+	"checks": 314,
+	"content_sha256": "b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1",
+	"entry": "res://Core/Main.tscn",
+	"evidence": {
+		"en": {
+			"boss_ids": [
+				"boss_iron_beast",
+				"boss_cinder_engine",
+				"boss_star_regent"
+			],
+			"unknown_recipes": 24
+		},
+		"zh_CN": {
+			"boss_ids": [
+				"boss_iron_beast",
+				"boss_cinder_engine",
+				"boss_star_regent"
+			],
+			"unknown_recipes": 24
+		}
+	},
+	"failures": [],
+	"ok": true,
+	"source_sha256": {
+		"NativeDetailViews.gd": "5f6a991d33c51cf27f23fa54ca25eaf0ac58b9c8820442c52e1ffcfc9b552abc",
+		"NativeExpedition.gd": "1314032cd6c2535a1f947056a90e28395500e5eef94d988cb60dcfb07f028129"
+	}
+}

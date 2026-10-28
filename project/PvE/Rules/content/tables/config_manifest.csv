@@ -1,0 +1,57 @@
+file,schema_version,load_order,row_count,primary_key_hint,description
+tags.csv,0.1.3,1,21,id,物品、敌人和流派共用的标签字典。
+item_shapes.csv,0.1.3,2,10,id,普通物品形状模板。相对坐标使用 x:y，列表使用竖线分隔。
+spatial_templates.csv,0.1.3,3,11,id,首发允许使用的空间关系模板。
+trigger_templates.csv,0.1.3,4,11,id,战斗事件触发器模板。
+condition_templates.csv,0.1.3,5,12,id,触发条件模板。首发条件组合只支持全部满足。
+effect_templates.csv,0.1.3,6,16,id,通用效果模板。运行时由 EffectResolver 统一解释。
+rarities.csv,0.1.3,7,3,id,首发三档稀有度与内容制作边界。
+statuses.csv,0.1.3,8,8,id,持续状态配置。护甲与净化是即时战斗资源/效果，不在本表。
+items.csv,0.1.3,9,72,id,普通物品主定义。表现资源路径是待美术生产的稳定占位引用。
+item_effects.csv,0.1.3,10,72,id,物品触发器、条件、空间目标和效果明细。一个物品可通过追加行拥有第二效果。
+characters.csv,0.1.3,11,2,id,首发角色基础属性。
+character_passives.csv,0.1.3,12,2,id,角色常驻被动，全部使用通用触发和效果解释器。
+character_archetypes.csv,0.1.3,13,6,id,六种核心流派及商店倾向标签。
+character_loadouts.csv,0.1.3,14,4,id,每个角色两套开局配置。
+starting_build_items.csv,0.1.3,15,8,loadout_id|instance_id,开局普通物品的关系型布局。最终合法性由 Godot PlacementService 校验。
+bag_shapes.csv,0.1.3,16,10,id,背包提供有效格的形状模板。
+bags.csv,0.1.3,17,10,id,背包层配置。开局背包价格为 0 且不进入商店。
+recipes.csv,0.1.3,18,24,id,双材料、手动确认、最多两级的配方主表。
+recipe_ingredients.csv,0.1.3,19,48,recipe_id|slot,配方材料明细。
+game_rules.csv,0.1.3,20,25,key,全局规则常量，不应散落在代码中。
+combat_rules.csv,0.1.3,21,1,id,战斗时长与稳定排序规则。
+shop_rules.csv,0.1.3,22,1,id,标准商店生成参数。
+shop_slot_rules.csv,0.1.3,23,5,shop_rule_id|slot_index,五个标准商店槽的行为定义。
+shop_rarity_curve.csv,0.1.3,24,3,act_id,章节商店稀有度权重，每行总和必须为 1。
+shop_pool_weights.csv,0.1.3,25,3,id,商店池来源权重。
+economy_curve.csv,0.1.3,26,3,act_id,章节经济与战后恢复曲线。
+acts.csv,0.1.3,27,3,id,三章结构与成长目标。
+act_progression.csv,0.1.3,28,4,act_id|checkpoint,章节检查点的健康区间，不作为硬限制。
+node_templates.csv,0.1.3,29,7,id,路线候选节点类型。
+route_templates.csv,0.1.3,30,15,id,进入章节时一次性生成并保存的路线候选约束。
+enemy_archetypes.csv,0.1.3,31,12,id,敌人构筑模板的机制分类。
+enemy_builds.csv,0.1.3,32,30,id,24 套普通敌人与 6 套精英敌人构筑。
+enemy_build_bags.csv,0.1.3,33,60,enemy_build_id|instance_id,敌人构筑使用的背包实例布局。
+enemy_build_items.csv,0.1.3,34,99,enemy_build_id|instance_id,敌人普通物品布局。导入编辑器后应再次通过 PlacementService 验证。
+encounter_affixes.csv,0.1.3,35,8,id,危险战与精英可用的公开词缀。
+encounter_templates.csv,0.1.3,36,9,id,章节遭遇池与重复限制。
+bosses.csv,0.1.3,37,3,id,三个章节 Boss 主属性。
+boss_phases.csv,0.1.3,38,6,boss_id|phase,每个 Boss 最多一次生命阈值阶段变化。
+boss_build_items.csv,0.1.3,39,12,boss_id|phase|instance_id,Boss 固定构筑及第二阶段追加组件。
+run_effect_templates.csv,0.1.3,40,17,id,奖励、事件和休息节点使用的单局效果类型。
+reward_tables.csv,0.1.3,41,5,id,节点奖励选择规则。
+reward_entries.csv,0.1.3,42,20,reward_table_id|id,奖励池明细。weight 只在同一奖励表和合法章节范围内归一化。
+events.csv,0.1.3,43,12,id,路线事件主表。所有代价在确认前完整展示。
+event_choices.csv,0.1.3,44,35,id,事件选择及显示条件。
+event_choice_effects.csv,0.1.3,45,52,choice_id|sequence,事件选择的顺序化结果。空效果表示安全离开。
+rest_actions.csv,0.1.3,46,2,id,休息节点二选一：恢复生命或复用二阶配方升级，无法升级时提供商店折扣券。
+rest_action_effects.csv,0.1.3,47,2,rest_action_id|sequence,休息动作的顺序化效果。一次动作可以安全组合多个单局效果。
+difficulty_levels.csv,0.1.3,48,8,id,教学、标准、进阶与挑战 1 至 5 的完整难度曲线。
+challenge_modifiers.csv,0.1.3,49,5,id,挑战难度按等级累积启用的公开规则。
+unlock_rules.csv,0.1.3,50,12,id,轻量解锁规则。没有经验等级、货币树或长期数值成长。
+tutorial_steps.csv,0.1.3,51,16,id,首局分段教学。非阻塞步骤允许玩家继续操作。
+achievements.csv,0.1.3,52,20,id,Steam 成就与本地统计映射。Steam API 名称发布后不得修改。
+telemetry_metrics.csv,0.1.3,53,24,id,统计与平衡观测指标。release 默认仅保存在本地存档，不自动上传。
+stat_definitions.csv,0.1.3,54,19,id,由本地采集指标聚合得到的档案与单局统计定义，供成就和界面查询。
+localization_zh_cn.csv,0.1.3,55,543,key,简体中文文本。
+localization_en.csv,0.1.3,56,543,key,英文文本。

@@ -1,0 +1,224 @@
+[
+  {
+    "case": "entry",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 7.49
+  },
+  {
+    "case": "new-art",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 36.55,
+    "assertions": 1274,
+    "report": "new-art\\new-art-report.json"
+  },
+  {
+    "case": "loading-contracts",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 36.89,
+    "assertions": 127,
+    "report": "loading-contracts\\loading-contracts-report.json"
+  },
+  {
+    "case": "runtime-contracts",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 7.02,
+    "assertions": 2625,
+    "report": "runtime-contracts\\runtime-contracts-report.json"
+  },
+  {
+    "case": "refactor-contracts",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 11.3,
+    "assertions": 8702,
+    "report": "refactor-contracts\\refactor-contracts-report.json"
+  },
+  {
+    "case": "behavior-services",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.28,
+    "assertions": 3736,
+    "report": "behavior-services\\behavior-services-report.json"
+  },
+  {
+    "case": "save-safety",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 8.61,
+    "assertions": 17,
+    "report": "save-safety\\save-safety-report.json"
+  },
+  {
+    "case": "visual-refinement",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 24.99,
+    "assertions": 2109,
+    "report": "visual-refinement\\visual-refinement-report.json"
+  },
+  {
+    "case": "audio",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 8.48,
+    "assertions": 24,
+    "report": "audio\\audio-requests-report.json"
+  },
+  {
+    "case": "flow",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 29.11,
+    "assertions": 47,
+    "report": "flow\\native-report.json"
+  },
+  {
+    "case": "inventory",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 13.36,
+    "assertions": 37,
+    "report": "inventory\\report.json"
+  },
+  {
+    "case": "lifecycle",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 60.05,
+    "assertions": 206,
+    "report": "lifecycle\\lifecycle-report.json"
+  },
+  {
+    "case": "layout",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 30.83,
+    "assertions": 1765,
+    "report": "layout\\report.json"
+  },
+  {
+    "case": "combat-log",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 22.55,
+    "assertions": 1933,
+    "report": "combat-log\\combat-log-report.json"
+  },
+  {
+    "case": "clues",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 13.75,
+    "assertions": 314,
+    "report": "clues\\content-clues-report.json"
+  },
+  {
+    "case": "feedback",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 20.59,
+    "assertions": 32,
+    "report": "feedback\\feedback-report.json"
+  },
+  {
+    "case": "preferences-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 13.39,
+    "assertions": 93,
+    "report": "preferences\\write-report.json"
+  },
+  {
+    "case": "preferences-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 7.89,
+    "assertions": 76,
+    "report": "preferences\\reopen-report.json"
+  },
+  {
+    "case": "persist-route-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.17,
+    "assertions": 12,
+    "report": "persist-route\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-route-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.12,
+    "assertions": 12,
+    "report": "persist-route\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-shop-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 15.19,
+    "assertions": 14,
+    "report": "persist-shop\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-shop-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 16.09,
+    "assertions": 12,
+    "report": "persist-shop\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-combat-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 22.73,
+    "assertions": 15,
+    "report": "persist-combat\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-combat-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 16.58,
+    "assertions": 13,
+    "report": "persist-combat\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-result-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 21.34,
+    "assertions": 17,
+    "report": "persist-result\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-result-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 16.16,
+    "assertions": 13,
+    "report": "persist-result\\persistence-reopen-report.json"
+  },
+  {
+    "case": "persist-reward-write",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 21.2,
+    "assertions": 17,
+    "report": "persist-reward\\persistence-write-report.json"
+  },
+  {
+    "case": "persist-reward-reopen",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 9.12,
+    "assertions": 13,
+    "report": "persist-reward\\persistence-reopen-report.json"
+  }
+]

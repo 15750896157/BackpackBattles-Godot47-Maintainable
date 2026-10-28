@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "engine": "4.7-stable",
+  "content_version": "0.1.3",
+  "status": "listed_checks_passed",
+  "structural_match_before_percent": 48.141,
+  "structural_match_after_percent": 36.31,
+  "target_percent": 38,
+  "new_methods_modularized": 767,
+  "new_modules": 117,
+  "new_modules_at_or_below_30_with_200_windows": 86,
+  "independent_portable_cases": 25,
+  "portable_assertions": 13010,
+  "real_pointer_assertions": 90,
+  "total_primary_assertions": 13100,
+  "powershell51_additional_assertions": 5703,
+  "all_82_native_bindings_checked": true,
+  "four_rotations_checked": true,
+  "original_textures_retained_without_cropping_or_forced_rotation": true,
+  "affected_cases_rechecked_after_user_visual_correction": 10,
+  "new_ui_scene_checks": 2109,
+  "media_files_unchanged": 3021,
+  "existing_scenes_unchanged": 1040,
+  "latest_player_save_baseline_preserved": true,
+  "limits": [
+    "Internal fixed comparison method; not a universal third-party score or independent authorship percentage.",
+    "Some retained scripts remain highly similar.",
+    "Other hardware/OS and physical controllers not newly validated."
+  ]
+}

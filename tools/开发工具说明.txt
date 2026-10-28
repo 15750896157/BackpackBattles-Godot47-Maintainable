@@ -1,0 +1,38 @@
+这是开发者工具，普通游戏不会显示入口。它复用正式的 ContentDB、PlacementService、SnapshotBuilder 和 CombatEngine。
+所有界面用标准控件，中文字库来自原工程。不会生成替代图标、音效或动画。
+
+打开独立工具窗口：
+  python tools/developer_tools.py
+
+工具会在临时目录建立独立工作区；不加载原 Game、不写原用户存档，不修改交付工程事实源。
+整个交付包可以移动；默认引擎与工程相对工具位置定位。Python只需要标准库。
+可用 --engine 和 --project 指定引擎及另一份同结构工程。
+第一次启动会自动导入临时工作区的规则、原PNG和原字体。导出文件需主动选择保存位置。
+
+页面一：定义检查
+  从72物品和10背包中选择定义，查看中英文名称、占格、效果/触发器、原素材绑定和资源是否存在。
+  “检查全部内容”执行与正式运行一致的 ContentValidator，显示具体错误、布局和内容池检查数量。
+
+页面二：构筑编辑
+  选择玩家开局或30个敌人/3个Boss，以及难度。
+  从下拉列表选中物品或背包，输入X/Y与90度旋转，或点击9×7网格指定左上角，再点击应用。
+  所有编辑通过正式放置校验。非法操作保持原草稿，显示具体错误；背包移动不能造成普通物品悬空。
+  双方草稿均可导入/导出完整快照。敌人草稿JSON包含定义、物品布局、背包布局和可直接重放的快照。
+  EnemyBuildDefinition按钮导出真实Godot .tres定义，可由ResourceLoader重新加载。布局明细同时保存在草稿JSON。
+  Boss编辑保留阶段与常驻规则，所有阶段物品累计接受同一布局校验。
+  导出是草稿，不自动覆盖配置CSV。难度缩放后的数值明确留在快照里；制作正式敌人时建议使用标准难度。
+
+页面三：快照重放与批量模拟
+  左/右分别是玩家和敌人完整JSON，可粘贴快照或使用编辑器导入。
+  指定第一个种子和1至2000场，结果显示胜率、平均时间、剩余生命、每场事件量与replay_digest。
+  相同快照和种子可重复运行；每场单独初始化引擎，不修改双方快照。
+  JSON往返保留全部字段和数值；JSON解析对14.4等十进制小数可能有双精度最后一位舍入，但战斗重放摘要需精确一致。
+
+命令行批量模拟（不启动工具窗口）：
+  python tools/developer_tools.py --batch --loadout armorer_blades --enemy-id rust_scout_a --seed 100 --count 20 --output "战斗报告.json"
+  python tools/developer_tools.py --batch --player-file "玩家快照.json" --enemy-file "敌人快照.json" --seed 100 --count 20 --output "战斗报告.json"
+
+--difficulty 可选 tutorial/standard/advanced/challenge_1至challenge_5。
+--prepare-only 只准备并导入独立工作区，不启动窗口；--stage 可指定空目录或此前由该工具创建的工作区。
+工具拒绝把工程自身当作工作区，也拒绝覆盖已有的非工具目录。
+批量模拟输出是测试数据，不代表新玩家实际通关率，也不替代手柄、音频和人工试玩。

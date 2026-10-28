@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-22",
+  "revision": "art_polish",
+  "engine": "4.7-stable",
+  "content_version": "0.1.3",
+  "save_schema": 2,
+  "scope": "Latest Z:/背包游戏散件; existing matched character/shop art retained; missing UI and transition art generated",
+  "supplied_pngs": 13,
+  "active_supplied_pngs": 8,
+  "reserved_supplied_pngs": 4,
+  "reference_pngs": 1,
+  "generated_pngs": 6,
+  "portable_processes": 29,
+  "portable_assertions": 23478,
+  "polish_assertions": 101,
+  "new_art_assertions": 1388,
+  "all_portable_exit_zero_stderr_empty": true,
+  "qa_only_post_suite_recheck": {
+    "file": "project/PvE/tests/ArtPolishQA.gd",
+    "before_sha256": "52b0bc4d31eb7e67bed59f8a38ff43a39a4ed2b0f22e3a5b8ff0efb8ce5c6194",
+    "after_sha256": "13621bbf1dc78da221ae7b682d7b6c12be5f9666fc6093eee016bba9d929ba35",
+    "reason": "Use real tooltip.discard() instead of returning the parent directly; validate one class icon and recycled child rows. Runtime production code unchanged."
+  },
+  "powershell51_processes": 2,
+  "powershell51_additional_assertions": 148,
+  "physical_pointer_checks": {
+    "bag_grid_hides_after_drop": true,
+    "bag_grid_visible_while_dragged": true,
+    "entered_storage": true,
+    "redo_sold": true,
+    "settings_opened": true,
+    "sold_from_new_scroll": true,
+    "undo_restored": true
+  },
+  "physical_pointer_passed": true,
+  "physical_pointer_scope": "Bag-only empty grid, bag release, storage, sale, undo, redo, settings; isolated saves. Subsequent category layout and modal fade cleanup were verified in final automatic runs.",
+  "files_changed_after_pointer_run": [
+    "project/PvE/NativeDetailViews.gd",
+    "project/PvE/NativeTransitions.gd",
+    "project/PvE/Art/SceneCurtain.gd",
+    "project/PvE/tests/ArtPolishQA.gd",
+    "project/PvE/tests/LoadingBarrier.gd"
+  ],
+  "source_images_byte_identical": true,
+  "rules_files_unchanged": 152,
+  "original_resource_files_unchanged": 3337,
+  "real_player_pve_files_unchanged": true,
+  "project_engine_tools_identical_to_independent_directory": true,
+  "independent_runtime_files": 10512,
+  "current_internal_source_match_percent": 28.363,
+  "windows": [
+    "1280x720",
+    "1366x768",
+    "1920x1080",
+    "1280x1024",
+    "2560x1080"
+  ],
+  "languages": [
+    "zh_CN",
+    "en"
+  ],
+  "text_scales": [
+    0.8,
+    1.0,
+    1.2,
+    1.4
+  ],
+  "desktop_performance_sample": {
+    "runs": 1,
+    "viewport": "1280x720",
+    "initialized_ms": 7146,
+    "static_mib_by_stage": {
+      "title_initial": 438.14,
+      "title_idle": 446.49,
+      "shop": 453.21,
+      "codex": 457.27,
+      "codex_closed": 454.04,
+      "title_returned": 451.29
+    },
+    "texture_mib_by_stage": {
+      "title_initial": 364.47,
+      "title_idle": 361.99,
+      "shop": 418.03,
+      "codex": 435.51,
+      "codex_closed": 418.16,
+      "title_returned": 373.65
+    },
+    "scope": "Godot allocations, not process RSS; Windows, existing import/OS caches, no phone-device certification"
+  },
+  "limits": [
+    "Bags with incompatible footprints remain original; new 1/2/4/5-slot art is reserved by explicit user decision.",
+    "No new complete shop wall or complete item/audio replacement set was supplied; matching existing original art/audio retained.",
+    "Shared single supplied hero and three supplied enemy illustrations retain the previous single-image wardrobe and repeated species limitations.",
+    "2D lights and convex alpha silhouettes approximate illumination and shadow; no 3D normals or ray tracing.",
+    "No Android/iOS hardware, other GPU, physical controller or long-duration play certification."
+  ]
+}

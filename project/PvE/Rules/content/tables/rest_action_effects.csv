@@ -1,0 +1,3 @@
+rest_action_id,sequence,effect_type,params
+rest_recover,1,heal_pct,amount:0.25
+rest_field_craft,1,upgrade_item,mode:defined_recipe|selector:player_choice|tier_max:2|fallback_discount:0.20|duration_shops:1

@@ -1,0 +1,26 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+-Shell Totem has no animation
+-Staff of Unhealing has no animation
+-Book of Ice New has no scene
+-Time Pendant has no scene
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+PROFILE_INITIALIZED 12814
+-Resetting custom rules
+-runstate deleted
+received Steam: 32
+LOADING_PROFILE title_initial {"cached_pool_nodes":1030,"draw_calls":0.0,"frame_median_ms":13.377,"frame_p95_ms":13.785,"frame_p99_ms":59.438,"label":"title_initial","nodes":16346.0,"objects":52683.0,"orphan_nodes":7154.0,"prepared_instances":0,"resident_item_scenes":517,"resources":9096.0,"static_bytes":713950443.0,"static_peak_bytes":714722652.0,"texture_bytes":711064075.0,"texture_cache":0,"time_ms":12823,"tree_nodes":16346,"video_bytes":717487599.0}
+LOADING_PROFILE title_idle {"cached_pool_nodes":2100,"draw_calls":174.0,"frame_median_ms":13.315,"frame_p95_ms":13.98,"frame_p99_ms":14.18,"label":"title_idle","nodes":1998.0,"objects":81240.0,"orphan_nodes":38965.0,"prepared_instances":0,"resident_item_scenes":517,"resources":8956.0,"static_bytes":860759248.0,"static_peak_bytes":860893108.0,"texture_bytes":759813924.0,"texture_cache":0,"time_ms":26321,"tree_nodes":1998,"video_bytes":767253436.0}
+LOADING_PROFILE shop {"cached_pool_nodes":2172,"draw_calls":205.0,"frame_median_ms":13.318,"frame_p95_ms":13.878,"frame_p99_ms":13.935,"label":"shop","nodes":2226.0,"objects":93268.0,"orphan_nodes":46454.0,"prepared_instances":240,"resident_item_scenes":517,"resources":8961.0,"static_bytes":913421202.0,"static_peak_bytes":913433818.0,"texture_bytes":760132078.0,"texture_cache":0,"time_ms":34094,"tree_nodes":2226,"video_bytes":767601870.0}
+LOADING_PROFILE codex {"cached_pool_nodes":2172,"draw_calls":242.0,"frame_median_ms":13.329,"frame_p95_ms":13.875,"frame_p99_ms":13.961,"label":"codex","nodes":2421.0,"objects":99931.0,"orphan_nodes":50626.0,"prepared_instances":374,"resident_item_scenes":517,"resources":8961.0,"static_bytes":944819464.0,"static_peak_bytes":944832080.0,"texture_bytes":760157486.0,"texture_cache":72,"time_ms":37333,"tree_nodes":2421,"video_bytes":767634358.0}
+LOADING_PROFILE codex_closed {"cached_pool_nodes":2172,"draw_calls":205.0,"frame_median_ms":13.318,"frame_p95_ms":13.881,"frame_p99_ms":14.025,"label":"codex_closed","nodes":2421.0,"objects":106257.0,"orphan_nodes":54838.0,"prepared_instances":484,"resident_item_scenes":517,"resources":8961.0,"static_bytes":971839456.0,"static_peak_bytes":971852072.0,"texture_bytes":760179718.0,"texture_cache":72,"time_ms":40533,"tree_nodes":2421,"video_bytes":767652966.0}
+LOADING_PROFILE title_returned {"cached_pool_nodes":2162,"draw_calls":176.0,"frame_median_ms":13.323,"frame_p95_ms":14.022,"frame_p99_ms":14.257,"label":"title_returned","nodes":2357.0,"objects":108419.0,"orphan_nodes":56279.0,"prepared_instances":517,"resident_item_scenes":517,"resources":8961.0,"static_bytes":980918428.0,"static_peak_bytes":981848772.0,"texture_bytes":760137616.0,"texture_cache":72,"time_ms":44532,"tree_nodes":2357,"video_bytes":767640096.0}

@@ -1,0 +1,38 @@
+[
+  {
+    "scene_script": "Core/Game.gd",
+    "method": "switchToCombat",
+    "old": false,
+    "new": true
+  },
+  {
+    "scene_script": "Interface/TitleScreen.gd",
+    "method": "selectClass",
+    "old": false,
+    "new": true
+  },
+  {
+    "scene_script": "Interface/TitleScreen.gd",
+    "method": "dropItem",
+    "old": false,
+    "new": true
+  },
+  {
+    "scene_script": "Utility/UndoStack.gd",
+    "method": "ready_deferred",
+    "old": false,
+    "new": true
+  },
+  {
+    "scene_script": "Interface/Wardrobe/Wardrobe.gd",
+    "method": "initSkins",
+    "old": false,
+    "new": true
+  },
+  {
+    "scene_script": "Core/Game.gd",
+    "method": "quit",
+    "old": false,
+    "new": true
+  }
+]

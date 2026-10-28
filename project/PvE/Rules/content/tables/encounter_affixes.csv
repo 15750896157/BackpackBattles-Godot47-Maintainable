@@ -1,0 +1,9 @@
+id,name_key,description_key,trigger_id,effect_type,effect_params,budget_scalar
+accelerated_opening,affix.accelerated_opening.name,affix.accelerated_opening.desc,combat_start,modify_cooldown_pct,value:-0.1|duration:8,1.08
+armored_start,affix.armored_start.name,affix.armored_start.desc,combat_start,gain_armor,value:15,1.08
+reactive_armor,affix.reactive_armor.name,affix.reactive_armor.desc,damage_taken,gain_armor,value:2|limit:8,1.1
+healing_surge,affix.healing_surge.name,affix.healing_surge.desc,first_low_health,heal,value:18,1.1
+status_echo,affix.status_echo.name,affix.status_echo.desc,status_applied,apply_status,repeat_pct:0.25|limit:8,1.12
+precision_opening,affix.precision_opening.name,affix.precision_opening.desc,combat_start,modify_crit_chance,value:0.15|duration:10,1.12
+thick_hide,affix.thick_hide.name,affix.thick_hide.desc,combat_start,gain_armor,value:10,1.06
+restless,affix.restless.name,affix.restless.desc,fatigue_start,modify_damage_flat,value:4,1.07

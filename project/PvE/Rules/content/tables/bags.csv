@@ -1,0 +1,11 @@
+id,name_key,description_key,rarity,base_price,chapter_min,shape_id,special_cell_type,special_cells,special_effect,availability,power_score,icon_ref
+bag_canvas_frame,bag.bag_canvas_frame.name,bag.bag_canvas_frame.desc,common,0,1,bag_shape_rect_3x3,none,,,starter,9,res://Items/Sprites/LeatherBag.png
+bag_corner_satchel,bag.bag_corner_satchel.name,bag.bag_corner_satchel.desc,common,0,1,bag_shape_corner_9,none,,,starter,9,res://Items/Exclusive/Sprites/PuzzlebagL.png
+bag_tool_roll,bag.bag_tool_roll.name,bag.bag_tool_roll.desc,common,3,1,bag_shape_strip_6,enhanced_cell,1:0,cooldown_pct:-0.05,shop,7.5,res://Items/Exclusive/Sprites/Holdall.png
+bag_guard_harness,bag.bag_guard_harness.name,bag.bag_guard_harness.desc,common,4,1,bag_shape_l_7,star_cell,0:2,armor_on_start:3,shop,8.5,res://Items/Exclusive/Sprites/DuffleBag.png
+bag_herbal_tray,bag.bag_herbal_tray.name,bag.bag_herbal_tray.desc,common,4,1,bag_shape_t_7,enhanced_cell,1:1,status_power:0.08,shop,8.5,res://Items/Exclusive/Sprites/VineweaveBasket.png
+bag_gear_sling,bag.bag_gear_sling.name,bag.bag_gear_sling.desc,rare,6,2,bag_shape_z_6,star_cell,2:1,cooldown_pct:-0.05,shop,7.5,res://Items/Exclusive/Sprites/BoxofCogs.png
+bag_cross_brace,bag.bag_cross_brace.name,bag.bag_cross_brace.desc,rare,7,2,bag_shape_cross_9,enhanced_cell,1:2,damage_flat:1,shop,10.5,res://Items/Exclusive/Sprites/PuzzlebagT.png
+bag_hollow_ring,bag.bag_hollow_ring.name,bag.bag_hollow_ring.desc,rare,7,2,bag_shape_ring_8,star_cell,0:1|2:1,cooldown_pct:-0.06,shop,9.5,res://Items/Exclusive/Sprites/UtilityPouch.png
+bag_step_case,bag.bag_step_case.name,bag.bag_step_case.desc,legendary,8,3,bag_shape_step_8,enhanced_cell,1:1|2:2,crit_chance:0.04,boss_reward,9.5,res://Items/Exclusive/Sprites/PuzzlebagZ.png
+bag_twin_wing,bag.bag_twin_wing.name,bag.bag_twin_wing.desc,legendary,8,3,bag_shape_wing_8,star_cell,1:1,status_power:0.12,boss_reward,9.5,res://Items/Exclusive/Sprites/PuzzlebagS.png

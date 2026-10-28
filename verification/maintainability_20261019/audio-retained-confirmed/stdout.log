@@ -1,0 +1,20 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 - Build 32.0.101.7092 - Compatibility - Using Device: Intel - Intel(R) Iris(R) Xe Graphics
+
+-Resetting custom rules
+-sequence num: 0
+Local profile services ready: Local Player
+-Shell Totem has no animation
+-Staff of Unhealing has no animation
+-Book of Ice New has no scene
+-Time Pendant has no scene
+VERSION 1.1.8
+OS: Windows
+vsync on: true
+SETTING LOCALE TO en
+received Steam: 32
+SETTING LOCALE TO zh_Hans_CN
+-Resetting custom rules
+-runstate deleted
+received Steam: 32
+{"checks":25,"failures":["latest shop request survives a pending title transition 0","cancelled transition restores requested volume 0","latest shop request survives a pending title transition 1","cancelled transition restores requested volume 1","latest shop request survives a pending title transition 2","cancelled transition restores requested volume 2","latest shop request survives a pending title transition 3","cancelled transition restores requested volume 3","latest shop request survives a pending title transition 4","cancelled transition restores requested volume 4"],"implementation":"retained_previous_build","observations":[{"cycle":0,"playing":true,"second_playing":false,"shop_playing":false,"title_playing":true,"volume_db":-23.5133609771729},{"cycle":1,"playing":true,"second_playing":false,"shop_playing":false,"title_playing":true,"volume_db":-23.0063304901123},{"cycle":2,"playing":true,"second_playing":false,"shop_playing":false,"title_playing":true,"volume_db":-22.8068008422852},{"cycle":3,"playing":true,"second_playing":false,"shop_playing":false,"title_playing":true,"volume_db":-21.7029228210449},{"cycle":4,"playing":true,"second_playing":false,"shop_playing":false,"title_playing":true,"volume_db":-22.0347137451172}],"ok":false}

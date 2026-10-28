@@ -1,0 +1,14 @@
+{
+	"case": "route",
+	"checks": 12,
+	"details": {
+		"before_menu_state": "ROUTE_SELECT",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\maintainability_20261019\\portable_123051\\中文 可搬移目录\\BackpackBattles_Godot47_Maintainable\\verification\\local_check_20261020_103120_307\\persistence_route_saves/",
+		"saved_state": "ROUTE_SELECT",
+		"title_continue_disabled": false,
+		"title_continue_visible": true
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "write"
+}

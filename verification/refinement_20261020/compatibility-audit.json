@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "new_migrated_methods": 767,
+  "new_facades": 117,
+  "new_service_modules": 117,
+  "method_signatures_checked": 3346,
+  "api_state_forwarding_errors": [],
+  "unreferenced_behavior_modules": [],
+  "existing_media_verified": 3021,
+  "changed_media": [],
+  "existing_scenes_verified": 1040,
+  "changed_scenes": [],
+  "missing_original_files": [],
+  "compiled_content_tables_and_localizations_unchanged": true,
+  "real_player_files_unchanged_from_preserved_latest_baseline": {
+    "profile.save": true,
+    "profile_backup.save": true,
+    "run.save": true,
+    "run_backup.save": true,
+    "settings.save": true,
+    "settings_backup.save": true,
+    "telemetry.jsonl": true
+  },
+  "external_save_write_before_first_qa": {
+    "first_owned_test": "2026-10-20T11:16:17.980694",
+    "files": {
+      "profile.save": {
+        "changed_since_initial_snapshot": false,
+        "live_write_time": "2026-10-20T11:11:18.431165",
+        "write_precedes_first_owned_test": true,
+        "sha256": "bd94c22fc078597dd066e1f9ae7900168a87eded37bb918d5444f7eef23aa1a2"
+      },
+      "profile_backup.save": {
+        "changed_since_initial_snapshot": false,
+        "live_write_time": "2026-10-20T11:11:18.432165",
+        "write_precedes_first_owned_test": true,
+        "sha256": "bd94c22fc078597dd066e1f9ae7900168a87eded37bb918d5444f7eef23aa1a2"
+      },
+      "run.save": {
+        "changed_since_initial_snapshot": true,
+        "live_write_time": "2026-10-20T11:11:18.424150",
+        "write_precedes_first_owned_test": true,
+        "sha256": "28404576e523cbce1bf98250ee253cdc8792e477bc22a7524ae2a1b600e03eb3"
+      },
+      "run_backup.save": {
+        "changed_since_initial_snapshot": true,
+        "live_write_time": "2026-10-20T11:11:18.430165",
+        "write_precedes_first_owned_test": true,
+        "sha256": "28404576e523cbce1bf98250ee253cdc8792e477bc22a7524ae2a1b600e03eb3"
+      },
+      "settings.save": {
+        "changed_since_initial_snapshot": false,
+        "live_write_time": "2026-10-16T10:44:01.054941",
+        "write_precedes_first_owned_test": true,
+        "sha256": "df95798554e100b595bbeeb78b93a54f746aafbc2b7db30b3d12f4b0a055a0a0"
+      },
+      "settings_backup.save": {
+        "changed_since_initial_snapshot": false,
+        "live_write_time": "2026-10-16T10:44:01.060567",
+        "write_precedes_first_owned_test": true,
+        "sha256": "d76fad7169a183463b5cb0057fc3e80c1cff386875e312a416772138b24bf6e7"
+      },
+      "telemetry.jsonl": {
+        "changed_since_initial_snapshot": false,
+        "live_write_time": "2026-10-20T11:03:54.763633",
+        "write_precedes_first_owned_test": true,
+        "sha256": "994cac0d5c159c77cb5e050e50b1d43b180e6bdc6a259b392c0741ba6a200432"
+      }
+    },
+    "policy": "Preserve the newer external save; do not overwrite it with the earlier snapshot."
+  }
+}

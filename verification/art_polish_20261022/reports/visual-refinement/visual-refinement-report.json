@@ -1,0 +1,993 @@
+{
+	"checks": 2108,
+	"coin_bursts": 1,
+	"failures": [],
+	"fits": [
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.482622950819672,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "utility_knife",
+			"outside_fraction": 0.0,
+			"scale": "(0.241311, 0.241311)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.481045751633987,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "iron_sword",
+			"outside_fraction": 0.0,
+			"scale": "(0.240523, 0.240523)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.585531914893617,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "broad_axe",
+			"outside_fraction": 0.0,
+			"scale": "(0.292766, 0.292766)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.359024390243902,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "stone_hammer",
+			"outside_fraction": 0.0,
+			"scale": "(0.179512, 0.179512)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.245333333333333,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "hunting_spear",
+			"outside_fraction": 0.0,
+			"scale": "(0.122667, 0.122667)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.277845484480806,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "twin_needles",
+			"outside_fraction": 0.0,
+			"scale": "(0.138923, 0.138923)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.02222222222222,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "sling",
+			"outside_fraction": 0.0,
+			"scale": "(0.511111, 0.511111)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.392798690671031,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "heavy_cleaver",
+			"outside_fraction": 0.0,
+			"scale": "(0.196399, 0.196399)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.541176470588235,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "buckler",
+			"outside_fraction": 0.0,
+			"scale": "(0.270588, 0.270588)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.669090909090909,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "plated_vest",
+			"outside_fraction": 0.0,
+			"scale": "(0.334545, 0.334545)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.558139534883721,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "tower_shield",
+			"outside_fraction": 0.0,
+			"scale": "(0.27907, 0.27907)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.526315789473684,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "spiked_guard",
+			"outside_fraction": 0.0,
+			"scale": "(0.263158, 0.263158)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.326385809312639,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "leather_wrap",
+			"outside_fraction": 0.0,
+			"scale": "(0.163193, 0.163193)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.917562724014337,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "repair_kit",
+			"outside_fraction": 0.0,
+			"scale": "(0.412903, 0.412903)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.479478827361564,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "stamina_flask",
+			"outside_fraction": 0.0,
+			"scale": "(0.239739, 0.239739)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.13788863130395,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "travel_ration",
+			"outside_fraction": 0.0,
+			"scale": "(0.490667, 0.490667)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.968421052631579,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bandage_roll",
+			"outside_fraction": 0.0,
+			"scale": "(0.484211, 0.484211)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.499196227202427,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "cleansing_salt",
+			"outside_fraction": 0.0,
+			"scale": "(0.249598, 0.249598)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.18709677419355,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "sharpening_stone",
+			"outside_fraction": 0.0,
+			"scale": "(0.593548, 0.593548)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.548856424327173,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "clockwork_spring",
+			"outside_fraction": 0.0,
+			"scale": "(0.274428, 0.274428)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.842105263157895,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "lucky_coin",
+			"outside_fraction": 0.0,
+			"scale": "(0.421053, 0.421053)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.432704402515723,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "scout_lens",
+			"outside_fraction": 0.0,
+			"scale": "(0.216352, 0.216352)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.994594594594595,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "merchant_token",
+			"outside_fraction": 0.0,
+			"scale": "(0.497297, 0.497297)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.925786163522013,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "storage_hook",
+			"outside_fraction": 0.0,
+			"scale": "(0.462893, 0.462893)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.11160676157117,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "gear_link",
+			"outside_fraction": 0.0,
+			"scale": "(0.497297, 0.497297)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.76623391936212,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "focus_prism",
+			"outside_fraction": 0.0,
+			"scale": "(1.236364, 1.236364)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.481045751633987,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "row_banner",
+			"outside_fraction": 0.0,
+			"scale": "(0.240523, 0.240523)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.481045751633987,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "column_standard",
+			"outside_fraction": 0.0,
+			"scale": "(0.240523, 0.240523)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.21617501073137,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "star_compass",
+			"outside_fraction": 0.0,
+			"scale": "(0.790514, 0.790514)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.908641975308642,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "compact_rack",
+			"outside_fraction": 0.0,
+			"scale": "(0.454321, 0.454321)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.432704402515723,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "resonant_bell",
+			"outside_fraction": 0.0,
+			"scale": "(0.216352, 0.216352)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.804786699238952,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "counterweight",
+			"outside_fraction": 0.0,
+			"scale": "(0.330266, 0.362667)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.482622950819672,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "venom_needle",
+			"outside_fraction": 0.0,
+			"scale": "(0.241311, 0.241311)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.78424242424242,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "ember_stone",
+			"outside_fraction": 0.0,
+			"scale": "(0.892121, 0.892121)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.968421052631579,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "healing_herb",
+			"outside_fraction": 0.0,
+			"scale": "(0.484211, 0.484211)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.92,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "regeneration_leaf",
+			"outside_fraction": 0.0,
+			"scale": "(0.46, 0.46)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.822999664210581,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "fracture_charm",
+			"outside_fraction": 0.0,
+			"scale": "(0.4115, 0.4115)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.31428571428571,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "quicksand_vial",
+			"outside_fraction": 0.0,
+			"scale": "(0.657143, 0.657143)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.488028737892997,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "blood_cup",
+			"outside_fraction": 0.0,
+			"scale": "(0.244014, 0.229373)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.37777777777778,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "cooling_fan",
+			"outside_fraction": 0.0,
+			"scale": "(0.688889, 0.688889)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.458666666666667,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "iron_nail",
+			"outside_fraction": 0.0,
+			"scale": "(0.229333, 0.229333)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 2.04444444444444,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "glass_bead",
+			"outside_fraction": 0.0,
+			"scale": "(1.226667, 1.226667)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.12,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "field_manual",
+			"outside_fraction": 0.0,
+			"scale": "(0.56, 0.56)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.02222222222222,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "salvage_pouch",
+			"outside_fraction": 0.0,
+			"scale": "(0.511111, 0.511111)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.876190476190476,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "arsenal_bracer",
+			"outside_fraction": 0.0,
+			"scale": "(0.438095, 0.438095)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.503247863247863,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "chain_blade",
+			"outside_fraction": 0.0,
+			"scale": "(0.251624, 0.251624)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.45882352941176,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "repeater_crossbow",
+			"outside_fraction": 0.0,
+			"scale": "(0.729412, 0.729412)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.671219512195122,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "crescent_glaive",
+			"outside_fraction": 0.0,
+			"scale": "(0.33561, 0.33561)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.533333333333333,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "siege_maul",
+			"outside_fraction": 0.0,
+			"scale": "(0.266667, 0.266667)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.675381381489947,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "momentum_gear",
+			"outside_fraction": 0.0,
+			"scale": "(0.324183, 0.324183)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.898560955474521,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "duelist_mark",
+			"outside_fraction": 0.0,
+			"scale": "(0.44928, 0.44928)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.54381671500317,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "overdrive_ratchet",
+			"outside_fraction": 0.0,
+			"scale": "(0.64, 0.64)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.615822284866905,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bastion_core",
+			"outside_fraction": 0.0,
+			"scale": "(0.326386, 0.326386)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.419450317124736,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "layered_plates",
+			"outside_fraction": 0.0,
+			"scale": "(0.209725, 0.209725)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.429437229437229,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "retaliation_spikes",
+			"outside_fraction": 0.0,
+			"scale": "(0.214719, 0.214719)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.481045751633987,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "guardian_standard",
+			"outside_fraction": 0.0,
+			"scale": "(0.240523, 0.240523)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.37777777777778,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "charging_weight",
+			"outside_fraction": 0.0,
+			"scale": "(0.688889, 0.688889)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.925786163522013,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "execution_anvil",
+			"outside_fraction": 0.0,
+			"scale": "(0.462893, 0.462893)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.564794046784897,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "toxin_bottle",
+			"outside_fraction": 0.0,
+			"scale": "(0.282397, 0.282397)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.865882352941177,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "thorn_extract",
+			"outside_fraction": 0.0,
+			"scale": "(0.432941, 0.432941)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.907801418439716,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "spore_jar",
+			"outside_fraction": 0.0,
+			"scale": "(0.453901, 0.453901)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.543209850960727,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "venom_distiller",
+			"outside_fraction": 0.0,
+			"scale": "(0.244444, 0.244444)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.07403584650993,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "plague_retort",
+			"outside_fraction": 0.0,
+			"scale": "(0.483316, 0.483316)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.36042888093406,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "caustic_coil",
+			"outside_fraction": 0.0,
+			"scale": "(0.516129, 0.516129)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.51088763934504,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "ember_phial",
+			"outside_fraction": 0.0,
+			"scale": "(0.255444, 0.255444)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.860818713450292,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "coal_burner",
+			"outside_fraction": 0.0,
+			"scale": "(0.430409, 0.430409)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.02350154709811,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "ignition_lens",
+			"outside_fraction": 0.0,
+			"scale": "(0.481046, 0.481046)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.826426426426426,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "wildfire_alembic",
+			"outside_fraction": 0.0,
+			"scale": "(0.413213, 0.413213)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.512916965388403,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "tonic_bottle",
+			"outside_fraction": 0.0,
+			"scale": "(0.230813, 0.230813)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.526315789473684,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "renewal_mortar",
+			"outside_fraction": 0.0,
+			"scale": "(0.263158, 0.263158)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.983707383978318,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "transfusion_tube",
+			"outside_fraction": 0.0,
+			"scale": "(0.491854, 0.491854)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.884084084084084,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "philosophers_kettle",
+			"outside_fraction": 0.0,
+			"scale": "(0.442042, 0.442042)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 1.17948729485608,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_canvas_frame",
+			"outside_fraction": 0.00214018191546281,
+			"scale": "(0.507692, 0.507692)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.733884297520661,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_corner_satchel",
+			"outside_fraction": 0.256648936170213,
+			"scale": "(0.490909, 0.490909)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.791397849462366,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_tool_roll",
+			"outside_fraction": 0.0189370800244349,
+			"scale": "(1.074236, 0.773585)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.5623582636721,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_guard_harness",
+			"outside_fraction": 0.505766062602965,
+			"scale": "(0.404082, 0.404082)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.284444444444444,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_herbal_tray",
+			"outside_fraction": 0.213129496402878,
+			"scale": "(0.44, 0.44)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.309677419354839,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_gear_sling",
+			"outside_fraction": 0.496332518337408,
+			"scale": "(0.479032, 0.479032)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.688372093023256,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_cross_brace",
+			"outside_fraction": 0.384122919334187,
+			"scale": "(0.460465, 0.460465)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.288721804511278,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_hollow_ring",
+			"outside_fraction": 0.143233280674039,
+			"scale": "(0.446617, 0.446617)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.863492063492064,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_step_case",
+			"outside_fraction": 0.155613919894944,
+			"scale": "(0.628571, 0.628571)"
+		},
+		{
+			"fit": {
+				"bag_mask": false,
+				"factor": 0.704761904761905,
+				"mode": "upright_occupied_union",
+				"original_texture": true,
+				"turn": 0
+			},
+			"id": "bag_twin_wing",
+			"outside_fraction": 0.119922630560928,
+			"scale": "(0.471429, 0.471429)"
+		}
+	],
+	"ok": true,
+	"sales": 2
+}

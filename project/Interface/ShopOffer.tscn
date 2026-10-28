@@ -1,0 +1,1076 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="FontFile" id=1]
+[ext_resource path="res://Assets/Light/ShopLight.png" type="Texture2D" id=2]
+[ext_resource path="res://Interface/ShopOffer.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Shop/Pricesign.png" type="Texture2D" id=4]
+[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=5]
+[ext_resource path="res://Assets/Shop/ReservedTag.png" type="Texture2D" id=6]
+[ext_resource path="res://Assets/Shop/ReservedTag_front.png" type="Texture2D" id=7]
+[ext_resource path="res://Assets/Fonts/GlassAntiqua-Regular.ttf" type="FontFile" id=8]
+[ext_resource path="res://Assets/Shop/Saletag.png" type="Texture2D" id=9]
+[ext_resource path="res://Assets/Shop/PriceStrikethrough1.png" type="Texture2D" id=10]
+[ext_resource path="res://Assets/Shop/PriceStrikethrough2.png" type="Texture2D" id=11]
+[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=12]
+[ext_resource path="res://Shader/ShopOfferUniqueParticles.material" type="Material" id=13]
+[ext_resource path="res://Assets/Particles/GlowingDot_small.png" type="Texture2D" id=14]
+[ext_resource path="res://Interface/Banner3.png" type="Texture2D" id=15]
+[ext_resource path="res://Assets/Fonts/Milonga-Regular.ttf" type="FontFile" id=16]
+[ext_resource path="res://Shader/ClassBanner.material" type="Material" id=17]
+[ext_resource path="res://Shader/TextDissolveMaterial.tres" type="Material" id=18]
+[ext_resource path="res://Interface/FocusGrabbingButton.gd" type="Script" id=19]
+[ext_resource path="res://Items/Materials/DistortedLeafs.material" type="Material" id=20]
+
+[ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
+
+[sub_resource type="FontVariation" id=2]
+script = ExtResource( "LegacyFontMigration" )
+size = 40
+outline_size = 2
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+base_font = ExtResource( 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "AppearFromItem"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("PriceLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.11083, 0.262755 ),
+"transitions": PackedFloat32Array( 1, 3.36359, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0.11083 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "updatePrice"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Light3D:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.111184, 0.265368, 0.599532 ),
+"transitions": PackedFloat32Array( -2, 1, -2, -2 ),
+"update": 0,
+"values": [ Color( 2, 2, 2, 0.176471 ), Color( 2.71765, 2.71765, 2.71765, 0 ), Color( 6, 6, 6, 0.17 ), Color( 2, 2, 2, 0.176471 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "AppearFromNothing"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("PriceLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 3.36359, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"values": [ {
+"args": [  ],
+"method": "updatePrice"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Light3D:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.301256, 0.599264 ),
+"transitions": PackedFloat32Array( -2, -2, -2 ),
+"update": 0,
+"values": [ Color( 2, 2, 2, 0 ), Color( 6, 6, 6, 0.12 ), Color( 2, 2, 2, 0.176471 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("PriceLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.198906 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Light3D:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.20009 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 0,
+"values": [ Color( 2, 2, 2, 0.133333 ), Color( 4, 4, 4, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("PriceLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Light3D:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Color( 2, 2, 2, 0 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "Reserve"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light3D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 0,
+"values": [ Color( 2, 2, 2, 0.176471 ), Color( 3, 3, 3, 0.27 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "Unreserve"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light3D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 0,
+"values": [ Color( 3, 3, 3, 0.27 ), Color( 2, 2, 2, 0.176471 ) ]
+}
+
+[sub_resource type="FontVariation" id=7]
+script = ExtResource( "LegacyFontMigration" )
+size = 30
+outline_size = 3
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_top = -5
+base_font = ExtResource( 1 )
+
+[sub_resource type="FontVariation" id=8]
+script = ExtResource( "LegacyFontMigration" )
+size = 40
+outline_size = 1
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_top = -5
+base_font = ExtResource( 8 )
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector2( -159, -98 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ -22.9 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Reserve"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -177, -166 ), Vector2( -108, -28 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 0.5, 1 ),
+"update": 0,
+"values": [ -22.9, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.3 ),
+"transitions": PackedFloat32Array( 1.23114, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Unreserve"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 0.5 ),
+"update": 0,
+"values": [ Vector2( -108, -28 ), Vector2( -97, -166 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 0.5 ),
+"update": 0,
+"values": [ 0.0, 22.9 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.2 ),
+"transitions": PackedFloat32Array( 1, 1.23114 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Shader" id=30]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+render_mode blend_premul_alpha;
+
+uniform float Line_Smoothness : hint_range(0, 0.1) = 0.045;
+uniform float Line_Width : hint_range(0, 0.2) = 0.09;
+uniform float Brightness = 3.0;
+uniform float Rotation_deg : hint_range(-90, 90) = 30;
+uniform float Distortion : hint_range(1, 2) = 1.8;
+uniform float Speed = 0.7;
+uniform float Position : hint_range(-1, 2) = 0;
+uniform float Position_Min = 0.25;
+uniform float Position_Max = 0.5;
+uniform float Alpha : hint_range(0, 1) = 1;
+uniform sampler2D surface : repeat_disable, filter_linear;
+
+vec2 rotate_uv(vec2 uv, vec2 center, float rotation, bool use_degrees){
+\t\tfloat _angle = rotation;
+\t\tif(use_degrees){
+\t\t\t_angle = rotation * (3.1415926/180.0);
+\t\t}
+\t\tmat2 _rotation = mat2(
+\t\t\tvec2(cos(_angle), -sin(_angle)),
+\t\t\tvec2(sin(_angle), cos(_angle))
+\t\t);
+\t\tvec2 _delta = uv - center;
+\t\t_delta = _rotation * _delta;
+\t\treturn _delta + center;
+\t}
+
+void fragment() {
+\tvec2 center_uv = UV - vec2(0.5, 0.5);
+\tfloat gradient_to_edge = max(abs(center_uv.x), abs(center_uv.y));
+\tgradient_to_edge = gradient_to_edge * Distortion;
+\tgradient_to_edge = 1.0 - gradient_to_edge;
+\tvec2 rotaded_uv = rotate_uv(UV, vec2(0.5, 0.5), Rotation_deg, true);
+\t
+\tfloat remapped_position;
+\t{
+\t\tfloat output_range = Position_Max - Position_Min;
+\t\tremapped_position = Position_Min + output_range * Position;
+\t}
+\t
+\tfloat remapped_time = bb_shader_time * Speed + remapped_position;
+\tremapped_time = fract(remapped_time);
+\t{
+\t\tremapped_time = -2.0 + 4.0 * remapped_time;
+\t}
+\t
+\tvec2 offset_uv = vec2(rotaded_uv.xy) + vec2(remapped_time, 0.0);
+\tfloat line = vec3(offset_uv, 0.0).x;
+\tline = abs(line);
+\tline = gradient_to_edge * line;
+\tline = sqrt(line);
+\t
+\tfloat line_smoothness = clamp(Line_Smoothness, 0.001, 1.0);
+\tfloat offset_plus = Line_Width + line_smoothness;
+\tfloat offset_minus = Line_Width - line_smoothness;
+\t
+\tfloat remapped_line;
+\t{
+\t\tfloat input_range = offset_minus - offset_plus;
+\t\tremapped_line = (line - offset_plus) / input_range;
+\t}
+\tremapped_line *= Brightness;
+\tremapped_line = min(remapped_line, Alpha);
+\t
+\tvec4 surface_tex = texture(TEXTURE, UV);
+\tCOLOR.rgba *= vec4(clamp(remapped_line * surface_tex.a, 0.0, 1.0));
+\t
+//\tvec4 surface_tex = texture(TEXTURE, UV);
+//\tCOLOR = surface_tex;
+//\tfloat glow = remapped_line * surface_tex.a;
+//\t//COLOR.rgba *= vec4(remapped_line) * surface_tex.a;
+//\tglow = clamp(glow, 0.0, 2.0);
+//\tCOLOR.rgb += vec3(glow);
+}
+"
+
+[sub_resource type="ShaderMaterial" id=31]
+shader = SubResource( 30 )
+shader_parameter/Line_Smoothness = 0.045
+shader_parameter/Line_Width = 0.09
+shader_parameter/Brightness = 3.0
+shader_parameter/Rotation_deg = 45.002
+shader_parameter/Distortion = 1.8
+shader_parameter/Speed = 0.0
+shader_parameter/Position = -0.05
+shader_parameter/Position_Min = 0.25
+shader_parameter/Position_Max = 0.5
+shader_parameter/Alpha = 1.0
+
+[sub_resource type="FontVariation" id=12]
+script = ExtResource( "LegacyFontMigration" )
+size = 17
+outline_size = 2
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_glyph = -1
+base_font = ExtResource( 1 )
+
+[sub_resource type="Animation" id=13]
+resource_name = "OnSale"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("PriceStrikethrough:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 0.5, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sale:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 0.5, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sale:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 0.5, 1 ),
+"update": 0,
+"values": [ -53.3251, 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sale:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( -226, -219 ), Vector2( -157, -79 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Sale/SaleTag/Shine:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 1.06 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Sale/SaleTag/Shine:material:shader_parameter/Position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0, 0.39, 1.06 ),
+"transitions": PackedFloat32Array( 1, -3.03143, 1 ),
+"update": 0,
+"values": [ 1.26, 1.26, -0.05 ]
+}
+
+[sub_resource type="Animation" id=14]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("PriceStrikethrough:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sale:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sale:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sale:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Sale/SaleTag/Shine:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "RemoveSale"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("PriceStrikethrough:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 1.8025, 0.5 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sale:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1.8025, 0.5 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sale:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1.8025, 0.5 ),
+"update": 0,
+"values": [ 0.0, 53.3 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sale:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 1.8025, 0.5 ),
+"update": 0,
+"values": [ Vector2( -157, -79 ), Vector2( -50, -219 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Sale/SaleTag/Shine:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "SaleFromSale"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sale:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.1, 0.4 ),
+"transitions": PackedFloat32Array( -2, -2, 1.8025 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sale:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.1, 0.4 ),
+"transitions": PackedFloat32Array( -2, -2, 1.8025 ),
+"update": 0,
+"values": [ Vector2( -157, -79 ), Vector2( -157, -130 ), Vector2( -157, -79 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sale/SaleTag/Shine:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0.33, 1.03 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sale/SaleTag/Shine:material:shader_parameter/Position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.36, 1.03 ),
+"transitions": PackedFloat32Array( 1, -3.03143, 1 ),
+"update": 0,
+"values": [ 1.26, 1.26, -0.05 ]
+}
+
+[sub_resource type="FontVariation" id=28]
+script = ExtResource( "LegacyFontMigration" )
+size = 30
+outline_size = 2
+outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+use_filter = true
+spacing_top = -1
+spacing_bottom = -10
+base_font = ExtResource( 16 )
+
+[sub_resource type="Animation" id=27]
+resource_name = "Hide"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Subclass:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 0.732043, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Subclass:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.4 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=25]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Subclass:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Subclass:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "Show"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Subclass:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.5 ),
+"transitions": PackedFloat32Array( 0.63728, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Subclass:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=32]
+resource_name = "Roll"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pricetag:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.0838861, 0.421947 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -164, -25 ), Vector2( -164, -50 ), Vector2( -164, -25 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PriceLabel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.0822083, 0.420269 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -197, -47 ), Vector2( -197, -72 ), Vector2( -197, -47 ) ]
+}
+
+[node name="ShopOffer" type="Node2D"]
+z_index = 2
+script = ExtResource( 3 )
+
+[node name="Pricetag" type="Sprite2D" parent="."]
+position = Vector2( -164, -25 )
+scale = Vector2( 0.829984, 0.924247 )
+texture = ExtResource( 4 )
+
+[node name="PriceLabel" type="Label" parent="."]
+offset_left = -197.0
+offset_top = -47.0
+offset_right = -148.0
+offset_bottom = 3.0
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = -2
+theme_override_fonts/font = SubResource( 2 )
+text = "13"
+theme_override_font_sizes/font_size = 40
+theme_override_constants/outline_size = 2
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_process_mode = 0
+anims/AppearFromItem = SubResource( 4 )
+anims/AppearFromNothing = SubResource( 5 )
+anims/Bought = SubResource( 6 )
+anims/RESET = SubResource( 3 )
+anims/Reserve = SubResource( 17 )
+anims/Unreserve = SubResource( 18 )
+
+[node name="Light3D" type="Sprite2D" parent="."]
+self_modulate = Color( 2, 2, 2, 0 )
+z_index = -3
+texture = ExtResource( 2 )
+offset = Vector2( 1, -89 )
+
+[node name="UniqueParticles" type="GPUParticles2D" parent="."]
+modulate = Color( 3, 3, 3, 0.78 )
+material = ExtResource( 20 )
+position = Vector2( 0, 10 )
+z_index = -2
+emitting = false
+amount = 20
+lifetime = 0.75
+speed_scale = 1.88
+process_material = ExtResource( 13 )
+texture = ExtResource( 14 )
+
+[node name="ReserveHint" type="Node2D" parent="."]
+z_index = 2
+
+[node name="ReserveHintLabel" type="RichTextLabel" parent="ReserveHint" groups=["Tooltip"]]
+visible = false
+offset_left = -249.0
+offset_top = -130.0
+offset_right = -35.0
+offset_bottom = -58.0
+grow_horizontal = 2
+clip_contents = false
+mouse_filter = 2
+theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/normal_font = SubResource( 7 )
+bbcode_enabled = true
+text = "[center]Click to reserve"
+text = "Click to reserve"
+fit_content = true
+scroll_active = false
+script = ExtResource( 12 )
+translationKey = "HINT_Reserve"
+prefix = "[center]"
+theme_override_font_sizes/normal_font_size = 30
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="ReserveButton" type="Button" parent="."]
+offset_left = -218.0
+offset_top = -58.0
+offset_right = -45.0
+offset_bottom = 19.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = ExtResource( 5 )
+button_mask = 3
+flat = true
+script = ExtResource( 19 )
+
+[node name="ReservedTag" type="Sprite2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -159, -98 )
+rotation = -0.39968
+scale = Vector2( 0.6, 0.6 )
+z_index = -1
+texture = ExtResource( 6 )
+
+[node name="ReservedTagFront" type="Sprite2D" parent="ReservedTag"]
+self_modulate = Color( 1.2, 1.2, 1.2, 1 )
+position = Vector2( 11.6667, 0 )
+z_index = 1
+texture = ExtResource( 7 )
+
+[node name="Reserved" type="RichTextLabel" parent="ReservedTag/ReservedTagFront"]
+anchor_left = -0.0202443
+anchor_top = 0.00357141
+anchor_right = 0.0373473
+anchor_bottom = 0.00357141
+offset_left = -72.1333
+offset_top = -17.4
+offset_right = 80.8667
+offset_bottom = 28.6
+grow_horizontal = 2
+rotation = -1.7
+clip_contents = false
+mouse_filter = 2
+theme_override_colors/default_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_shadow_color = Color( 0.831373, 0.603922, 0.00784314, 1 )
+theme_override_constants/shadow_offset_x = -2
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/normal_font = SubResource( 8 )
+bbcode_enabled = true
+text = "[center]Reserved"
+text = "Reserved"
+fit_content = true
+scroll_active = false
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+translationKey = "UI_Reserved"
+prefix = "[center]"
+theme_override_font_sizes/normal_font_size = 40
+theme_override_constants/outline_size = 1
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ReservedTag"]
+playback_process_mode = 0
+anims/RESET = SubResource( 10 )
+anims/Reserve = SubResource( 9 )
+anims/Unreserve = SubResource( 11 )
+
+[node name="PriceStrikethrough" type="Sprite2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+self_modulate = Color( 1, 1, 1, 0.756863 )
+position = Vector2( -172, -24 )
+scale = Vector2( 0.792453, 0.792453 )
+texture = ExtResource( 11 )
+
+[node name="PriceStrikethrough1" type="Sprite2D" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.772549 )
+position = Vector2( -171.886, -24.75 )
+scale = Vector2( 0.663043, 0.663043 )
+texture = ExtResource( 10 )
+
+[node name="Sale" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="SaleTag" type="Sprite2D" parent="Sale"]
+position = Vector2( -1.3327, -1.21317 )
+scale = Vector2( 0.768721, 0.757561 )
+texture = ExtResource( 9 )
+
+[node name="Shine" type="Sprite2D" parent="Sale/SaleTag"]
+visible = false
+modulate = Color( 2, 2, 2, 0.78 )
+material = SubResource( 31 )
+z_index = 1
+texture = ExtResource( 9 )
+
+[node name="SalePrice" type="Label" parent="Sale"]
+offset_left = -27.0
+offset_top = -21.2132
+offset_right = 23.0
+offset_bottom = 28.7868
+theme_override_colors/font_color = Color( 1, 1, 1, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = -2
+theme_override_fonts/font = SubResource( 2 )
+text = "5"
+theme_override_font_sizes/font_size = 40
+theme_override_constants/outline_size = 2
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+
+[node name="Sale" type="Label" parent="Sale"]
+offset_left = -29.0
+offset_top = -48.0
+offset_right = 26.0
+offset_bottom = -22.0
+grow_horizontal = 2
+custom_minimum_size = Vector2( 55, 26 )
+theme_override_colors/font_color = Color( 1, 1, 1, 1 )
+theme_override_fonts/font = SubResource( 12 )
+text = "SALE"
+script = ExtResource( 12 )
+translationKey = "UI_Sale"
+capslock = true
+maxSize = 55.0
+theme_override_font_sizes/font_size = 17
+theme_override_constants/outline_size = 2
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sale"]
+root_node = NodePath("../..")
+playback_process_mode = 0
+anims/OnSale = SubResource( 13 )
+anims/RESET = SubResource( 14 )
+anims/RemoveSale = SubResource( 15 )
+anims/SaleFromSale = SubResource( 16 )
+
+[node name="Subclass" type="Label" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+material = ExtResource( 18 )
+offset_top = -198.0
+offset_right = 103.0
+offset_bottom = -143.0
+custom_minimum_size = Vector2( 0, 55 )
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = SubResource( 28 )
+text = "Hunter"
+theme_override_font_sizes/font_size = 30
+theme_override_constants/outline_size = 2
+theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubclassBanner" type="NinePatchRect" parent="Subclass"]
+show_behind_parent = true
+material = ExtResource( 17 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -30.0
+offset_top = -4.0
+offset_right = 36.0
+offset_bottom = 53.0
+texture = ExtResource( 15 )
+patch_margin_left = 61
+patch_margin_right = 63
+axis_stretch_horizontal = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Subclass"]
+root_node = NodePath("../..")
+anims/Hide = SubResource( 27 )
+anims/RESET = SubResource( 25 )
+anims/Show = SubResource( 26 )
+
+[node name="RollAnimation" type="AnimationPlayer" parent="."]
+anims/Roll = SubResource( 32 )

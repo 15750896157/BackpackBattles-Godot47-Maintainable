@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "engine": "4.7-stable",
+  "content_version": "0.1.3",
+  "status": "passed_for_listed_checks",
+  "independent_portable_processes": 24,
+  "independent_portable_assertions": 8998,
+  "real_pointer_processes": 1,
+  "real_pointer_assertions": 88,
+  "natural_startup_processes": 1,
+  "natural_startup_assertions": 11,
+  "total_primary_assertions": 9097,
+  "windows_powershell51_additional_processes": 4,
+  "windows_powershell51_additional_assertions": 1750,
+  "overall_structure_match_before": 74.923,
+  "overall_structure_match_after": 48.141,
+  "new_behavior_modules_at_or_below_30": 89,
+  "real_player_save_files_unchanged": 7,
+  "media_unchanged": 3021,
+  "existing_scenes_unchanged": 1037,
+  "limitations": [
+    "Fixed internal 25-token comparison, not a universal tool score or independent authorship percentage.",
+    "Some retained scripts and APIs remain highly similar.",
+    "Already overwritten progress with no remaining backups cannot be reconstructed.",
+    "Physical controllers, other computers/GPUs and long-term balance not newly validated."
+  ],
+  "test_timing_note": "Persistence fixture advances the main scene animation early. The normal startup probe waits for both the coordinator and the independent character entrance animation; natural character rendering passed."
+}

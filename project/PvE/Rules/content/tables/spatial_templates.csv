@@ -1,0 +1,12 @@
+id,relation_type,range,relative_cells,rotates_with_source
+none,none,0,0:0,false
+adjacent_4,adjacent_4,1,-1:0|1:0|0:-1|0:1,true
+adjacent_8,adjacent_8,1,-1:-1|0:-1|1:-1|-1:0|1:0|-1:1|0:1|1:1,true
+front_1,front,1,1:0,true
+front_2,front,2,1:0|2:0,true
+front_3,front,3,1:0|2:0|3:0,true
+same_row,same_row,9,,false
+same_column,same_column,7,,false
+star_cell,star_cell,1,,false
+same_bag,same_bag,0,,false
+global_same_tag,global_same_tag,0,,false

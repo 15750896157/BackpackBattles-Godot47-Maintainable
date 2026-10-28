@@ -1,0 +1,13 @@
+本目录为 2026-10-20 本轮最终正向验收证据。
+process-results.json 为独立中文空格目录的 24 个检查进程；reports/ 保存实际报告，logs/ 保存对应输出。
+pointer/ 为已获得用户允许后执行的真实系统鼠标检查：88 项通过，退出 0，错误输出为空。
+natural-boot/ 为额外正常启动检查：未强行推进场景或角色动画，启动和继续后的角色显示均通过。
+windows-powershell51/ 为最终一键验证工具在 Windows PowerShell 5.1 下的四阶段实跑，1750 项通过。
+screenshots/ 只选取少量实际截图，避免复制大量重复证据。自然启动截图展示最终正常进入标题的画面。
+source-metrics.json 列出全部生产脚本结果；接口脚本和新实现均参与分母，测试、插件、缓存不参与。
+compatibility-audit.json 包含媒体/原场景/接口/实际玩家存档保持检查。
+portable-file-check.json 记录最终工程、引擎与工具在原目录和已验证独立目录中的逐文件一致性。
+migration-manifest.json 与 docs/代码维护索引.json 可定位迁移方法。
+save-entry-before-fix-negative.json 是明确标记的修复前负例：存档有效但真实继续入口不可见。
+开发过程中的失败、旧 QA 数据及测试存档保留在 work；不作为本目录的最终通过证据。
+更早的 verification/maintainability_20261019 记录是历史证据，最终状态以本目录和根目录报告为准。

@@ -1,0 +1,17 @@
+id,name_key,param_format,combat_only
+physical_damage,effect.physical_damage.name,amount,true
+true_damage,effect.true_damage.name,amount,true
+gain_armor,effect.gain_armor.name,amount,true
+heal,effect.heal.name,amount,true
+gain_stamina,effect.gain_stamina.name,amount,true
+apply_status,effect.apply_status.name,status_id|stacks|duration,true
+remove_status,effect.remove_status.name,status_id|stacks,true
+convert_status,effect.convert_status.name,from|to|ratio,true
+modify_cooldown_pct,effect.modify_cooldown_pct.name,value|duration,true
+modify_damage_flat,effect.modify_damage_flat.name,value|duration,true
+modify_crit_chance,effect.modify_crit_chance.name,value|duration,true
+modify_status_power,effect.modify_status_power.name,value|duration,true
+advance_cooldown,effect.advance_cooldown.name,seconds,true
+gain_gold,effect.gain_gold.name,amount,false
+free_refresh,effect.free_refresh.name,count,false
+max_health,effect.max_health.name,amount,false

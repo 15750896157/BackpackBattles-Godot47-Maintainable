@@ -1,0 +1,1877 @@
+{
+  "clear_count": 2,
+  "content_sha256": "b930290dc9af366c5e1c910eec1209e5af9e6b739f1e6c4c3164bc4085600dd1",
+  "content_version": "0.1.3",
+  "errors": [],
+  "run_count": 4,
+  "runs": [
+    {
+      "battles": [
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "ae3cc1f6cc571379c13beb1444e93eb3a2bf45abef59f94406fdcbc7bb63256a",
+          "duration": 7.2,
+          "enemy_health_after": 0.0,
+          "enemy_id": "marsh_brewer",
+          "gold": 0,
+          "health_after": 101.0,
+          "health_before": 105.0,
+          "items": 6,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "d328f0536bb90b1f11de2bfb3b520e93a3ec37ac3e4efc73375874b9ba2fbef8",
+          "duration": 7.2,
+          "enemy_health_after": 0.0,
+          "enemy_id": "trail_breaker",
+          "gold": 0,
+          "health_after": 94.0,
+          "health_before": 105.0,
+          "items": 7,
+          "step": 3,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "b4d615e787bc1815ed97121259d30f904fe0f46d5b5d64ce5b849d5652b88951",
+          "duration": 7.2,
+          "enemy_health_after": 0.0,
+          "enemy_id": "road_guard_b",
+          "gold": 0,
+          "health_after": 105.0,
+          "health_before": 101.875,
+          "items": 9,
+          "step": 4,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "boss_iron_beast",
+          "defeat_reason": "enemy_dead",
+          "digest": "5faeae837187c3ce88a8f8d1e00973015d0504279587e7fcd60c6c4d950315c2",
+          "duration": 14.7,
+          "enemy_health_after": 0.0,
+          "enemy_id": "",
+          "gold": 0,
+          "health_after": 83.0,
+          "health_before": 105.0,
+          "items": 12,
+          "step": 5,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "aba55a3f3fd813405ce060f73b5072e3b1cf75ddb0b7b082cc010a2aca7ccc2f",
+          "duration": 7.2,
+          "enemy_health_after": 0.0,
+          "enemy_id": "slag_breaker",
+          "gold": 0,
+          "health_after": 86.875,
+          "health_before": 90.875,
+          "items": 12,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "98526786ec1ac5bd6165ec73adc31c389dfa15fd6f8305b04cdb256951876595",
+          "duration": 6.3,
+          "enemy_health_after": 0.0,
+          "enemy_id": "coil_brewer",
+          "gold": 4,
+          "health_after": 97.175,
+          "health_before": 93.175,
+          "items": 13,
+          "step": 3,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "74c8ecda5c6b33a1ce8c81192c156acd313fb63fae9f2ecfdc357f4106e19fc7",
+          "duration": 7.2,
+          "enemy_health_after": 0.0,
+          "enemy_id": "furnace_duelist",
+          "gold": 9,
+          "health_after": 105.0,
+          "health_before": 103.475,
+          "items": 14,
+          "step": 4,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "boss_cinder_engine",
+          "defeat_reason": "enemy_dead",
+          "digest": "485f967395de81e2eb801b193bb3db81ca4a08c943c1cb70363b88d18d7da131",
+          "duration": 11.5,
+          "enemy_health_after": 0.0,
+          "enemy_id": "",
+          "gold": 18,
+          "health_after": 99.0,
+          "health_before": 105.0,
+          "items": 14,
+          "step": 5,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "daf772f53ba21defdfdf8e22aa903d729b4275a9bcfce764f69fc58858a03baa",
+          "duration": 8.55,
+          "enemy_health_after": 0.0,
+          "enemy_id": "court_raider",
+          "gold": 17,
+          "health_after": 98.0,
+          "health_before": 105.0,
+          "items": 14,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "42fe9af345c55ead0b46c4c2ff51304d2cd6dc1de394fccebc75f35fb73b7be0",
+          "duration": 8.4,
+          "enemy_health_after": 0.0,
+          "enemy_id": "pale_distiller",
+          "gold": 29,
+          "health_after": 105.0,
+          "health_before": 102.725,
+          "items": 14,
+          "step": 2,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "e3cb08cdf888ccdef8b3c51c0b4060ce245e73b977bfa98decf8e74c19ca4714",
+          "duration": 7.2,
+          "enemy_health_after": 0.0,
+          "enemy_id": "court_blades",
+          "gold": 41,
+          "health_after": 100.0,
+          "health_before": 105.0,
+          "items": 14,
+          "step": 3,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "boss_star_regent",
+          "defeat_reason": "enemy_dead",
+          "digest": "ba037aa8a3938ad9934b5ec0cb1395de0163305f3c10a26d4ad8bacbc7c5bde9",
+          "duration": 12.6,
+          "enemy_health_after": 0.0,
+          "enemy_id": "",
+          "gold": 50,
+          "health_after": 83.0,
+          "health_before": 105.0,
+          "items": 15,
+          "step": 5,
+          "winner_side": 0
+        }
+      ],
+      "bosses_defeated": [
+        "boss_iron_beast",
+        "boss_cinder_engine",
+        "boss_star_regent"
+      ],
+      "character": "armorer",
+      "clear": true,
+      "completed_nodes": 15,
+      "crafts": [],
+      "difficulty": "tutorial",
+      "directory": "user://campaign_verification/1793070485_armorer_tutorial_67731/",
+      "final_gold": 50,
+      "final_health": 87.725,
+      "final_items": [
+        {
+          "definition_id": "utility_knife",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "armorer_blades_item_1",
+          "used": true,
+          "x": 5,
+          "y": 2
+        },
+        {
+          "definition_id": "twin_needles",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "armorer_blades_item_2",
+          "used": true,
+          "x": 3,
+          "y": 2
+        },
+        {
+          "definition_id": "focus_prism",
+          "purchase_price": 4,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_10",
+          "used": true,
+          "x": 3,
+          "y": 3
+        },
+        {
+          "definition_id": "utility_knife",
+          "purchase_price": 1,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_12",
+          "used": true,
+          "x": 5,
+          "y": 3
+        },
+        {
+          "definition_id": "bandage_roll",
+          "purchase_price": 1,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_13",
+          "used": true,
+          "x": 5,
+          "y": 4
+        },
+        {
+          "definition_id": "spiked_guard",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "instance_14",
+          "used": true,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "definition_id": "storage_hook",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "instance_16",
+          "used": true,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "definition_id": "bandage_roll",
+          "purchase_price": 1,
+          "purchased_visit": 3,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_18",
+          "used": true,
+          "x": 2,
+          "y": 1
+        },
+        {
+          "definition_id": "venom_needle",
+          "purchase_price": 2,
+          "purchased_visit": 4,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_19",
+          "used": true,
+          "x": 4,
+          "y": 3
+        },
+        {
+          "definition_id": "bandage_roll",
+          "purchase_price": 1,
+          "purchased_visit": 4,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_22",
+          "used": true,
+          "x": 6,
+          "y": 0
+        },
+        {
+          "definition_id": "focus_prism",
+          "purchase_price": 5,
+          "purchased_visit": 3,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_17",
+          "used": true,
+          "x": 0,
+          "y": 2
+        },
+        {
+          "definition_id": "sharpening_stone",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "instance_24",
+          "used": true,
+          "x": 6,
+          "y": 1
+        },
+        {
+          "definition_id": "guardian_standard",
+          "purchase_price": 4,
+          "purchased_visit": 4,
+          "rotation": 0,
+          "uid": "1793070485_835_67731_20",
+          "used": true,
+          "x": 0,
+          "y": 4
+        },
+        {
+          "definition_id": "sharpening_stone",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "instance_25",
+          "used": true,
+          "x": 2,
+          "y": 2
+        },
+        {
+          "definition_id": "repeater_crossbow",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 180,
+          "uid": "instance_26",
+          "used": true,
+          "x": 6,
+          "y": 2
+        }
+      ],
+      "max_act": 3,
+      "nodes": [
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_1_0",
+            "enemy_id": "marsh_brewer",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_2_1",
+            "enemy_id": "",
+            "event_id": "event_field_smith",
+            "name_key": "node.event.name",
+            "reward_table_id": "reward_none",
+            "step": 2,
+            "type": "event"
+          },
+          "step": 2
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_3_0",
+            "enemy_id": "trail_breaker",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 3,
+            "type": "normal_combat"
+          },
+          "step": 3
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_4_1",
+            "enemy_id": "road_guard_b",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 4,
+            "type": "normal_combat"
+          },
+          "step": 4
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "boss_iron_beast",
+            "candidate_id": "1_5_0",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.boss.name",
+            "reward_table_id": "reward_boss",
+            "step": 5,
+            "type": "boss"
+          },
+          "step": 5
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_1_0",
+            "enemy_id": "slag_breaker",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_2_1",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.merchant.name",
+            "reward_table_id": "reward_none",
+            "step": 2,
+            "type": "merchant"
+          },
+          "step": 2
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_3_1",
+            "enemy_id": "coil_brewer",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 3,
+            "type": "normal_combat"
+          },
+          "step": 3
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_4_1",
+            "enemy_id": "furnace_duelist",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 4,
+            "type": "normal_combat"
+          },
+          "step": 4
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "boss_cinder_engine",
+            "candidate_id": "2_5_0",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.boss.name",
+            "reward_table_id": "reward_boss",
+            "step": 5,
+            "type": "boss"
+          },
+          "step": 5
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_1_0",
+            "enemy_id": "court_raider",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_2_0",
+            "enemy_id": "pale_distiller",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 2,
+            "type": "normal_combat"
+          },
+          "step": 2
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_3_1",
+            "enemy_id": "court_blades",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 3,
+            "type": "normal_combat"
+          },
+          "step": 3
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_4_2",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.rest.name",
+            "reward_table_id": "reward_none",
+            "step": 4,
+            "type": "rest"
+          },
+          "step": 4
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "boss_star_regent",
+            "candidate_id": "3_5_0",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.boss.name",
+            "reward_table_id": "reward_boss",
+            "step": 5,
+            "type": "boss"
+          },
+          "step": 5
+        }
+      ],
+      "purchases": [
+        {
+          "act": 1,
+          "id": "focus_prism",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "lucky_coin",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "utility_knife",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "bandage_roll",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "bag_tool_roll",
+          "visit": 2
+        },
+        {
+          "act": 1,
+          "id": "focus_prism",
+          "visit": 3
+        },
+        {
+          "act": 1,
+          "id": "bandage_roll",
+          "visit": 3
+        },
+        {
+          "act": 1,
+          "id": "venom_needle",
+          "visit": 4
+        },
+        {
+          "act": 1,
+          "id": "guardian_standard",
+          "visit": 4
+        },
+        {
+          "act": 1,
+          "id": "bag_guard_harness",
+          "visit": 4
+        },
+        {
+          "act": 1,
+          "id": "bandage_roll",
+          "visit": 4
+        }
+      ],
+      "refreshes": 34,
+      "seed": 67731,
+      "start_gold": 8,
+      "start_health": 105.0,
+      "stop_reason": "clear"
+    },
+    {
+      "battles": [
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "8d174c814dc581a69923a4dcceb0b69a3d831049ba85f87dd6cc715a9eded3b7",
+          "duration": 11.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "marsh_brewer",
+          "gold": 0,
+          "health_after": 81.0,
+          "health_before": 95.0,
+          "items": 5,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "f0fa4ae5ebaf931ddc875c971c8a59071ac1408cfab0565cda6e0b86057390df",
+          "duration": 11.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "rust_scout_b",
+          "gold": 0,
+          "health_after": 75.125,
+          "health_before": 88.125,
+          "items": 7,
+          "step": 2,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "ed78ef2966f810ba0828ca0927fd545a47591fb18fb0202c799c1e56f88824a7",
+          "duration": 10.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "camp_mender",
+          "gold": 0,
+          "health_after": 84.25,
+          "health_before": 82.25,
+          "items": 9,
+          "step": 4,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "boss_iron_beast",
+          "defeat_reason": "enemy_dead",
+          "digest": "2861144880a031eac0ff69c339bbd9bef1576dba5a74218169a8b2c5ea7517a6",
+          "duration": 11.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "",
+          "gold": 2,
+          "health_after": 72.375,
+          "health_before": 91.375,
+          "items": 11,
+          "step": 5,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "f65a05b72151124219cdd8ef0b0aa01a487d8833ba67d2ab195faa13a7a316ce",
+          "duration": 9.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "relay_captain",
+          "gold": 1,
+          "health_after": 67.5,
+          "health_before": 79.5,
+          "items": 12,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "fabcee94e51dc190b2884c99962128c4bb33c9e3bf7790d7befee344fa9ee205",
+          "duration": 9.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "foundry_raider",
+          "gold": 8,
+          "health_after": 69.2,
+          "health_before": 73.2,
+          "items": 12,
+          "step": 3,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "76ca6f36737d6b8c5de82551764a12e6f2885496a133e8f4e71b1a369b420c3c",
+          "duration": 8.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "furnace_duelist",
+          "gold": 17,
+          "health_after": 76.9,
+          "health_before": 74.9,
+          "items": 12,
+          "step": 4,
+          "winner_side": 0
+        },
+        {
+          "act": 2,
+          "boss_id": "boss_cinder_engine",
+          "defeat_reason": "enemy_dead",
+          "digest": "5c19679ec331fcba6e1e01b2203baa11e831e5dddc0751ad9b97399af76d1740",
+          "duration": 12.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "",
+          "gold": 24,
+          "health_after": 73.6,
+          "health_before": 82.6,
+          "items": 13,
+          "step": 5,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "343a22a35ef9d851c06a7335da56e4ef427590a883a011004a99461a87301a66",
+          "duration": 9.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "pale_distiller",
+          "gold": 23,
+          "health_after": 83.3,
+          "health_before": 79.3,
+          "items": 13,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "d217581248c71492e6590da6081d114499f3a90719454599151292bd1288026a",
+          "duration": 9.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "court_raider",
+          "gold": 26,
+          "health_after": 80.575,
+          "health_before": 87.575,
+          "items": 14,
+          "step": 3,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "9d0015249194c33c1fc4d9340ee3e30710a48cdd2eb168a51733547be27d1d93",
+          "duration": 8.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "court_blades",
+          "gold": 35,
+          "health_after": 76.85,
+          "health_before": 84.85,
+          "items": 15,
+          "step": 4,
+          "winner_side": 0
+        },
+        {
+          "act": 3,
+          "boss_id": "boss_star_regent",
+          "defeat_reason": "enemy_dead",
+          "digest": "ac34cfb46682b72945bd89568be4baabf1b3ad21353288efb5198dfa73855ced",
+          "duration": 13.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "",
+          "gold": 44,
+          "health_after": 46.125,
+          "health_before": 81.125,
+          "items": 16,
+          "step": 5,
+          "winner_side": 0
+        }
+      ],
+      "bosses_defeated": [
+        "boss_iron_beast",
+        "boss_cinder_engine",
+        "boss_star_regent"
+      ],
+      "character": "alchemist",
+      "clear": true,
+      "completed_nodes": 15,
+      "crafts": [
+        "recipe_toxin_bottle"
+      ],
+      "difficulty": "tutorial",
+      "directory": "user://campaign_verification/1793070490_alchemist_tutorial_12345/",
+      "final_gold": 44,
+      "final_health": 50.4,
+      "final_items": [
+        {
+          "definition_id": "thorn_extract",
+          "purchase_price": 2,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_10",
+          "used": true,
+          "x": 5,
+          "y": 2
+        },
+        {
+          "definition_id": "sharpening_stone",
+          "purchase_price": 2,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_12",
+          "used": true,
+          "x": 4,
+          "y": 3
+        },
+        {
+          "definition_id": "storage_hook",
+          "purchase_price": 3,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_13",
+          "used": true,
+          "x": 3,
+          "y": 4
+        },
+        {
+          "craft_tier": 1,
+          "crafted": true,
+          "definition_id": "toxin_bottle",
+          "materials": [
+            {
+              "definition_id": "venom_needle",
+              "purchase_price": 0,
+              "purchased_visit": -1,
+              "rotation": 0,
+              "uid": "alchemist_toxin_item_1",
+              "used": false,
+              "x": 3,
+              "y": 2
+            },
+            {
+              "definition_id": "healing_herb",
+              "purchase_price": 0,
+              "purchased_visit": -1,
+              "rotation": 0,
+              "uid": "alchemist_toxin_item_2",
+              "used": false,
+              "x": 4,
+              "y": 2
+            }
+          ],
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_14",
+          "used": true,
+          "x": 3,
+          "y": 2
+        },
+        {
+          "definition_id": "iron_nail",
+          "purchase_price": 1,
+          "purchased_visit": 2,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_17",
+          "used": true,
+          "x": 5,
+          "y": 3
+        },
+        {
+          "definition_id": "spore_jar",
+          "purchase_price": 3,
+          "purchased_visit": 2,
+          "rotation": 180,
+          "uid": "1793070490_91_12345_16",
+          "used": true,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "definition_id": "thorn_extract",
+          "purchase_price": 3,
+          "purchased_visit": 3,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_22",
+          "used": true,
+          "x": 5,
+          "y": 4
+        },
+        {
+          "definition_id": "spore_jar",
+          "purchase_price": 4,
+          "purchased_visit": 3,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_23",
+          "used": true,
+          "x": 3,
+          "y": 0
+        },
+        {
+          "definition_id": "spore_jar",
+          "purchase_price": 3,
+          "purchased_visit": 4,
+          "rotation": 180,
+          "uid": "1793070490_91_12345_24",
+          "used": true,
+          "x": 4,
+          "y": 0
+        },
+        {
+          "definition_id": "sharpening_stone",
+          "purchase_price": 2,
+          "purchased_visit": 4,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_26",
+          "used": true,
+          "x": 3,
+          "y": 3
+        },
+        {
+          "definition_id": "counterweight",
+          "purchase_price": 3,
+          "purchased_visit": 2,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_15",
+          "used": true,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "definition_id": "iron_nail",
+          "purchase_price": 1,
+          "purchased_visit": 5,
+          "rotation": 0,
+          "uid": "1793070490_91_12345_28",
+          "used": true,
+          "x": 6,
+          "y": 0
+        },
+        {
+          "definition_id": "coal_burner",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "instance_29",
+          "used": true,
+          "x": 6,
+          "y": 1
+        },
+        {
+          "definition_id": "renewal_mortar",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 180,
+          "uid": "instance_31",
+          "used": true,
+          "x": 7,
+          "y": 1
+        },
+        {
+          "definition_id": "utility_knife",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "instance_33",
+          "used": true,
+          "x": 8,
+          "y": 0
+        },
+        {
+          "definition_id": "storage_hook",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "instance_34",
+          "used": true,
+          "x": 0,
+          "y": 2
+        }
+      ],
+      "max_act": 3,
+      "nodes": [
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_1_0",
+            "enemy_id": "marsh_brewer",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_2_0",
+            "enemy_id": "rust_scout_b",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 2,
+            "type": "normal_combat"
+          },
+          "step": 2
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_3_1",
+            "enemy_id": "",
+            "event_id": "event_abandoned_cart",
+            "name_key": "node.event.name",
+            "reward_table_id": "reward_none",
+            "step": 3,
+            "type": "event"
+          },
+          "step": 3
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_4_1",
+            "enemy_id": "camp_mender",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 4,
+            "type": "normal_combat"
+          },
+          "step": 4
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "boss_iron_beast",
+            "candidate_id": "1_5_0",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.boss.name",
+            "reward_table_id": "reward_boss",
+            "step": 5,
+            "type": "boss"
+          },
+          "step": 5
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_1_0",
+            "enemy_id": "relay_captain",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_2_1",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.merchant.name",
+            "reward_table_id": "reward_none",
+            "step": 2,
+            "type": "merchant"
+          },
+          "step": 2
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_3_1",
+            "enemy_id": "foundry_raider",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 3,
+            "type": "normal_combat"
+          },
+          "step": 3
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "2_4_1",
+            "enemy_id": "furnace_duelist",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 4,
+            "type": "normal_combat"
+          },
+          "step": 4
+        },
+        {
+          "act": 2,
+          "node": {
+            "act": 2,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "boss_cinder_engine",
+            "candidate_id": "2_5_0",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.boss.name",
+            "reward_table_id": "reward_boss",
+            "step": 5,
+            "type": "boss"
+          },
+          "step": 5
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_1_0",
+            "enemy_id": "pale_distiller",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_2_1",
+            "enemy_id": "",
+            "event_id": "event_barter_table",
+            "name_key": "node.event.name",
+            "reward_table_id": "reward_none",
+            "step": 2,
+            "type": "event"
+          },
+          "step": 2
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_3_1",
+            "enemy_id": "court_raider",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 3,
+            "type": "normal_combat"
+          },
+          "step": 3
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "3_4_1",
+            "enemy_id": "court_blades",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 4,
+            "type": "normal_combat"
+          },
+          "step": 4
+        },
+        {
+          "act": 3,
+          "node": {
+            "act": 3,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "boss_star_regent",
+            "candidate_id": "3_5_0",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.boss.name",
+            "reward_table_id": "reward_boss",
+            "step": 5,
+            "type": "boss"
+          },
+          "step": 5
+        }
+      ],
+      "purchases": [
+        {
+          "act": 1,
+          "id": "thorn_extract",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "utility_knife",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "sharpening_stone",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "storage_hook",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "counterweight",
+          "visit": 2
+        },
+        {
+          "act": 1,
+          "id": "spore_jar",
+          "visit": 2
+        },
+        {
+          "act": 1,
+          "id": "iron_nail",
+          "visit": 2
+        },
+        {
+          "act": 1,
+          "id": "bandage_roll",
+          "visit": 2
+        },
+        {
+          "act": 1,
+          "id": "bag_tool_roll",
+          "visit": 3
+        },
+        {
+          "act": 1,
+          "id": "thorn_extract",
+          "visit": 3
+        },
+        {
+          "act": 1,
+          "id": "spore_jar",
+          "visit": 3
+        },
+        {
+          "act": 1,
+          "id": "spore_jar",
+          "visit": 4
+        },
+        {
+          "act": 1,
+          "id": "bag_tool_roll",
+          "visit": 4
+        },
+        {
+          "act": 1,
+          "id": "sharpening_stone",
+          "visit": 4
+        },
+        {
+          "act": 2,
+          "id": "iron_nail",
+          "visit": 5
+        },
+        {
+          "act": 3,
+          "id": "bag_hollow_ring",
+          "visit": 11
+        }
+      ],
+      "refreshes": 34,
+      "seed": 12345,
+      "start_gold": 8,
+      "start_health": 95.0,
+      "stop_reason": "clear"
+    },
+    {
+      "battles": [
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "ae5eea4416baeffb3d49d0fbbb7230dce1b7614da412ff7ad64064224429de6b",
+          "duration": 14.7,
+          "enemy_health_after": 0.0,
+          "enemy_id": "marsh_brewer",
+          "gold": 1,
+          "health_after": 56.0,
+          "health_before": 105.0,
+          "items": 4,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "82183ad541d86a2d51d5e9bbcae5d28784c86ddca93c6dd2ab86d9fca3ff1421",
+          "duration": 10.5,
+          "enemy_health_after": 0.0,
+          "enemy_id": "cinder_runner",
+          "gold": 1,
+          "health_after": 78.25,
+          "health_before": 82.25,
+          "items": 4,
+          "step": 3,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "e7664a0179511d419ce7466b96e5347ae7bed4d15eb76a3712da8ecf2bc30c42",
+          "duration": 11.5,
+          "enemy_health_after": 0.0,
+          "enemy_id": "rust_scout_a",
+          "gold": 2,
+          "health_after": 45.5,
+          "health_before": 83.5,
+          "items": 6,
+          "step": 4,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "boss_iron_beast",
+          "defeat_reason": "player_dead",
+          "digest": "cef3afcc4e7889f2c0b0de3148582ef39e2c9ad6786f23cdb230a5d44ebbd957",
+          "duration": 12.4,
+          "enemy_health_after": 148.0,
+          "enemy_id": "",
+          "gold": 3,
+          "health_after": 0.0,
+          "health_before": 50.75,
+          "items": 6,
+          "step": 5,
+          "winner_side": 1
+        }
+      ],
+      "bosses_defeated": [],
+      "character": "armorer",
+      "clear": false,
+      "completed_nodes": 4,
+      "crafts": [],
+      "difficulty": "standard",
+      "directory": "user://campaign_verification/1793070500_armorer_standard_18421/",
+      "final_gold": 3,
+      "final_health": 0.0,
+      "final_items": [
+        {
+          "definition_id": "utility_knife",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "armorer_blades_item_1",
+          "used": true,
+          "x": 5,
+          "y": 2
+        },
+        {
+          "definition_id": "spiked_guard",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 180,
+          "uid": "instance_12",
+          "used": true,
+          "x": 4,
+          "y": 3
+        },
+        {
+          "definition_id": "venom_needle",
+          "purchase_price": 3,
+          "purchased_visit": 3,
+          "rotation": 0,
+          "uid": "1793070500_101_18421_16",
+          "used": true,
+          "x": 3,
+          "y": 2
+        },
+        {
+          "definition_id": "focus_prism",
+          "purchase_price": 4,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070500_101_18421_10",
+          "used": true,
+          "x": 3,
+          "y": 3
+        },
+        {
+          "definition_id": "focus_prism",
+          "purchase_price": 6,
+          "purchased_visit": 2,
+          "rotation": 0,
+          "uid": "1793070500_101_18421_13",
+          "used": true,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "definition_id": "focus_prism",
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 180,
+          "uid": "instance_14",
+          "used": true,
+          "x": 1,
+          "y": 0
+        }
+      ],
+      "max_act": 1,
+      "nodes": [
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_1_0",
+            "enemy_id": "marsh_brewer",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_2_1",
+            "enemy_id": "",
+            "event_id": "event_herbal_camp",
+            "name_key": "node.event.name",
+            "reward_table_id": "reward_none",
+            "step": 2,
+            "type": "event"
+          },
+          "step": 2
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_3_0",
+            "enemy_id": "cinder_runner",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 3,
+            "type": "normal_combat"
+          },
+          "step": 3
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_4_1",
+            "enemy_id": "rust_scout_a",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 4,
+            "type": "normal_combat"
+          },
+          "step": 4
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "boss_iron_beast",
+            "candidate_id": "1_5_0",
+            "enemy_id": "",
+            "event_id": "",
+            "name_key": "node.boss.name",
+            "reward_table_id": "reward_boss",
+            "step": 5,
+            "type": "boss"
+          },
+          "step": 5
+        }
+      ],
+      "purchases": [
+        {
+          "act": 1,
+          "id": "focus_prism",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "travel_ration",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "focus_prism",
+          "visit": 2
+        },
+        {
+          "act": 1,
+          "id": "bag_tool_roll",
+          "visit": 3
+        },
+        {
+          "act": 1,
+          "id": "venom_needle",
+          "visit": 3
+        },
+        {
+          "act": 1,
+          "id": "focus_prism",
+          "visit": 4
+        }
+      ],
+      "refreshes": 0,
+      "seed": 18421,
+      "start_gold": 8,
+      "start_health": 105.0,
+      "stop_reason": "real_combat_defeat"
+    },
+    {
+      "battles": [
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "enemy_dead",
+          "digest": "65fdb185cbbc08b98cbd94f768d6bd4fad5c69257017779919de7ccda406383b",
+          "duration": 16.0,
+          "enemy_health_after": 0.0,
+          "enemy_id": "marsh_brewer",
+          "gold": 0,
+          "health_after": 28.0,
+          "health_before": 95.0,
+          "items": 3,
+          "step": 1,
+          "winner_side": 0
+        },
+        {
+          "act": 1,
+          "boss_id": "",
+          "defeat_reason": "player_dead",
+          "digest": "0af88055535c4986809d972ca1377bc07f5de4bbef544157235d842fc2ef772a",
+          "duration": 10.5,
+          "enemy_health_after": 33.0,
+          "enemy_id": "rust_scout_b",
+          "gold": 0,
+          "health_after": 0.0,
+          "health_before": 32.75,
+          "items": 5,
+          "step": 2,
+          "winner_side": 1
+        }
+      ],
+      "bosses_defeated": [],
+      "character": "alchemist",
+      "clear": false,
+      "completed_nodes": 1,
+      "crafts": [
+        "recipe_toxin_bottle"
+      ],
+      "difficulty": "standard",
+      "directory": "user://campaign_verification/1793070502_alchemist_standard_31337/",
+      "final_gold": 0,
+      "final_health": 0.0,
+      "final_items": [
+        {
+          "definition_id": "thorn_extract",
+          "purchase_price": 4,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070502_946_31337_10",
+          "used": true,
+          "x": 5,
+          "y": 2
+        },
+        {
+          "definition_id": "thorn_extract",
+          "purchase_price": 4,
+          "purchased_visit": 1,
+          "rotation": 0,
+          "uid": "1793070502_946_31337_11",
+          "used": true,
+          "x": 3,
+          "y": 3
+        },
+        {
+          "craft_tier": 1,
+          "crafted": true,
+          "definition_id": "toxin_bottle",
+          "materials": [
+            {
+              "definition_id": "venom_needle",
+              "purchase_price": 0,
+              "purchased_visit": -1,
+              "rotation": 0,
+              "uid": "alchemist_toxin_item_1",
+              "used": false,
+              "x": 3,
+              "y": 2
+            },
+            {
+              "definition_id": "healing_herb",
+              "purchase_price": 0,
+              "purchased_visit": -1,
+              "rotation": 0,
+              "uid": "alchemist_toxin_item_2",
+              "used": false,
+              "x": 4,
+              "y": 2
+            }
+          ],
+          "purchase_price": 0,
+          "purchased_visit": -1,
+          "rotation": 0,
+          "uid": "1793070502_946_31337_12",
+          "used": true,
+          "x": 3,
+          "y": 2
+        },
+        {
+          "definition_id": "thorn_extract",
+          "purchase_price": 4,
+          "purchased_visit": 2,
+          "rotation": 0,
+          "uid": "1793070502_946_31337_13",
+          "used": true,
+          "x": 4,
+          "y": 3
+        },
+        {
+          "definition_id": "counterweight",
+          "purchase_price": 4,
+          "purchased_visit": 2,
+          "rotation": 270,
+          "uid": "1793070502_946_31337_14",
+          "used": true,
+          "x": 4,
+          "y": 3
+        }
+      ],
+      "max_act": 1,
+      "nodes": [
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_1_0",
+            "enemy_id": "marsh_brewer",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 1,
+            "type": "normal_combat"
+          },
+          "step": 1
+        },
+        {
+          "act": 1,
+          "node": {
+            "act": 1,
+            "affix_id": "",
+            "affix_ids": [],
+            "boss_id": "",
+            "candidate_id": "1_2_0",
+            "enemy_id": "rust_scout_b",
+            "event_id": "",
+            "name_key": "node.normal_combat.name",
+            "repeat_limit": 2,
+            "reward_table_id": "reward_normal",
+            "step": 2,
+            "type": "normal_combat"
+          },
+          "step": 2
+        }
+      ],
+      "purchases": [
+        {
+          "act": 1,
+          "id": "thorn_extract",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "thorn_extract",
+          "visit": 1
+        },
+        {
+          "act": 1,
+          "id": "thorn_extract",
+          "visit": 2
+        },
+        {
+          "act": 1,
+          "id": "counterweight",
+          "visit": 2
+        }
+      ],
+      "refreshes": 0,
+      "seed": 31337,
+      "start_gold": 8,
+      "start_health": 95.0,
+      "stop_reason": "real_combat_defeat"
+    }
+  ],
+  "runtime_seconds": 17.396
+}

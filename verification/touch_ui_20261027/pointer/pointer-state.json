@@ -1,0 +1,21 @@
+{
+	"all_passed": true,
+	"checks": {
+		"close_graphical": true,
+		"continued_shop": true,
+		"list_next": true,
+		"list_previous": true,
+		"new_draft": true,
+		"new_game_routes": true,
+		"open_guide": true,
+		"real_drag_drop": true,
+		"resume_choice": true,
+		"return_held": true,
+		"rotate_held": true,
+		"saved_to_title": true
+	},
+	"held": false,
+	"page": "ROUTE_SELECT",
+	"pending": false,
+	"screen": "ROUTE_SELECT"
+}

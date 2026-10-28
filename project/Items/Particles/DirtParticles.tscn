@@ -1,0 +1,62 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Particles/Dust1.png" type="Texture2D" id=3]
+
+[sub_resource type="Gradient" id=21]
+colors = PackedColorArray( 0.685547, 0.619394, 0.548973, 1, 0.609375, 0.461795, 0.290405, 1 )
+
+[sub_resource type="GradientTexture1D" id=22]
+gradient = SubResource( 21 )
+width = 30
+
+[sub_resource type="Gradient" id=14]
+offsets = PackedFloat32Array( 0, 0.039548, 0.514124, 1 )
+colors = PackedColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture1D" id=20]
+gradient = SubResource( 14 )
+width = 50
+
+[sub_resource type="Curve" id=16]
+max_value = 1.14
+_data = [ Vector2( 0, 0.576477 ), 0.0, 0.779221, 0, 0, Vector2( 1, 1.0843 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=19]
+width = 204
+curve = SubResource( 16 )
+
+[sub_resource type="ParticleProcessMaterial" id=23]
+lifetime_randomness = 0.26
+emission_shape = 1
+emission_sphere_radius = 15.85
+particle_flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 57.08
+gravity = Vector3( 0, 300, 0 )
+scale_curve = SubResource( 19 )
+color_ramp = SubResource( 20 )
+color_initial_ramp = SubResource( 22 )
+initial_velocity_min = 109.2807
+initial_velocity_max = 206.19
+angle_min = 0
+angle_max = 720
+angular_velocity_min = -22.45
+angular_velocity_max = 22.45
+orbit_velocity_min = 0
+orbit_velocity_max = 0
+scale_min = 0.14
+scale_max = 0.2776
+
+[node name="DirtParticles" type="GPUParticles2D"]
+z_index = 2
+emitting = false
+amount = 7
+lifetime = 0.84
+one_shot = true
+speed_scale = 1.16
+explosiveness = 0.93
+local_coords = false
+process_material = SubResource( 23 )
+texture = ExtResource( 3 )
+script = ExtResource( 1 )

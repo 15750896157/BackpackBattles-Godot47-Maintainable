@@ -1,0 +1,13 @@
+boss_id,phase,instance_id,item_id,origin_x,origin_y,rotation
+boss_iron_beast,1,b1,bastion_core,0,0,0
+boss_iron_beast,1,b2,retaliation_spikes,2,0,0
+boss_iron_beast,1,b3,stone_hammer,3,0,0
+boss_iron_beast,2,b4,charging_weight,6,0,0
+boss_cinder_engine,1,c1,wildfire_alembic,0,0,0
+boss_cinder_engine,1,c2,ignition_lens,2,0,0
+boss_cinder_engine,1,c3,coal_burner,4,0,0
+boss_cinder_engine,2,c4,cooling_fan,6,0,0
+boss_star_regent,1,s1,execution_anvil,0,0,0
+boss_star_regent,1,s2,crescent_glaive,2,0,0
+boss_star_regent,1,s3,philosophers_kettle,4,0,0
+boss_star_regent,2,s4,star_compass,6,0,0
