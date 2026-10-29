@@ -100,6 +100,8 @@ func texture_path(definition_id: String) -> String:
 	return png if not png.is_empty() else str(binding.get("scene", ""))
 
 func replacement_path(definition_id: String) -> String:
+	var supplied = preload("res://PvE/Art/SuppliedArt.gd").item_path(definition_id)
+	if not supplied.is_empty(): return supplied
 	var definition = db.get_row("bags",definition_id) if db != null else {}
 	if definition.is_empty(): return ""
 	var cells: Array = []
@@ -107,6 +109,7 @@ func replacement_path(definition_id: String) -> String:
 	if Expedition.flow != null:
 		cells = Expedition.flow.placement.local_cells({"definition_id":definition_id,"rotation":0})
 	var key = preload("res://PvE/Art/BagArt.gd").key_for(cells)
+	if key == "bag9": return preload("res://PvE/Art/SuppliedArt.gd").ui_path(key)
 	return "res://Art/Polish20261022/"+key+".png" if not key.is_empty() else ""
 
 func texture_async(definition_id: String) -> Texture2D:

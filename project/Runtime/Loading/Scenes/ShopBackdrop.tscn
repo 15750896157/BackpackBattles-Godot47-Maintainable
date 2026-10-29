@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3]
-[ext_resource type="Texture2D" path="res://Assets/Shop/Shop.png" id="1"]
+[ext_resource type="Texture2D" path="res://Art/Supplied20261028/ui/shop.png" id="1"]
 [node name="Background" type="Sprite2D"]
 texture = ExtResource("1")
 centered = false

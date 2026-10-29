@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "formal_save_files_unchanged": 24,
+  "source_files_match": 5981,
+  "manifest_files_checked": 6038,
+  "git_head_unchanged": "48b342c0cd981e9f6e7025c963b57869f02bef58",
+  "temporary_fixture_removed": true,
+  "physical_pointer_checks": 12
+}

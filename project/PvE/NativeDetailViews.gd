@@ -45,11 +45,11 @@ func grid(build: Dictionary, parent: Node) -> Control:
 	for y in 7:
 		for x in 9:
 			var tile = TextureRect.new()
-			tile.texture = load("res://Items/Tiles/Slot.png")
+			tile.texture = load("res://Art/Supplied20261028/ui/cell.png")
 			tile.position = Vector2(x, y) * 62
 			tile.size = Vector2(62, 62)
 			tile.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-			tile.modulate = Color.WHITE if supported.has(Vector2i(x, y)) else Color(0.25, 0.25, 0.25, 0.25)
+			tile.modulate = Color(1,1,1,0.38) if supported.has(Vector2i(x, y)) else Color(0.25, 0.25, 0.25, 0.12)
 			tile.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			canvas.add_child(tile)
 	for entry in build.items:
@@ -105,6 +105,12 @@ func fill_icon(target: WeakRef, id: String, epoch: int):
 	var icon = target.get_ref()
 	if epoch != owner.popup_epoch or not is_instance_valid(icon) or icon.is_queued_for_deletion(): return
 	icon.texture = texture
+
+func fill_supplied_picture(target: WeakRef, key: String, epoch: int):
+	var texture=await AssetStream.request_resource("res://Art/Supplied20261028/ui/"+key+".png","popup")
+	var icon=target.get_ref()
+	if epoch!=owner.popup_epoch or not is_instance_valid(icon) or icon.is_queued_for_deletion():return
+	icon.texture=texture
 
 func fill_grid_icon(target: WeakRef, entry: Dictionary, base_cells: Array, epoch: int):
 	var texture = await owner.bindings.texture_async(str(entry.definition_id))

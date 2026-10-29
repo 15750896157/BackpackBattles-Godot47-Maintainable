@@ -5,6 +5,7 @@ const SHOP_KEYS = ["merchant", "shelf", "table", "storage_mat", "cell", "sell", 
 const COMBAT_KEYS = ["name", "plate1", "plate2", "plate3", "health", "stamina", "play", "pause", "timeline_base", "timeline_fill", "shadow", "cell"]
 const OFFERS = [Vector2(240, 300), Vector2(625, 300), Vector2(240, 600), Vector2(550, 600), Vector2(840, 600)]
 const EXTRA = "res://Art/Polish20261022/"
+const CATALOG = preload("res://PvE/Art/SuppliedArt.gd")
 var curtain
 var lighting
 var ready_kind = ""
@@ -74,8 +75,9 @@ func _rebuild(kind: String):
 		return
 	var keys = SHOP_KEYS if kind == "shop" else COMBAT_KEYS
 	var paths: Array = []
-	for key in keys: paths.append(ROOT + key + ".png")
-	for key in ["intel","table","shelf_top","shelf_bottom","undo","redo"]: paths.append(EXTRA+key+".png")
+	for key in keys: paths.append(_art_path(key))
+	for key in ["intel","table","shelf_top","shelf_bottom","undo","redo","cell_empty","stamina_regen","cooldown"]: paths.append(_art_path(key))
+	for key in CATALOG.STATUS.values(): paths.append(CATALOG.ROOT+"status/"+key+".png")
 	if not await AssetStream.prepare(paths, "art-ui") or ticket != epoch: return
 	ui = Control.new(); ui.name = "SuppliedArtHUD"; ui.mouse_filter = Control.MOUSE_FILTER_IGNORE; layer.add_child(ui)
 	scenery = Node2D.new(); scenery.name = "SuppliedArtScenery"
@@ -87,8 +89,16 @@ func _rebuild(kind: String):
 	ready_kind = kind
 
 func texture(key: String) -> Texture2D:
-	if key in ["battle","guide","codex","journey","settings","home"]:return Expedition.menus.shell.image(key)
-	return AssetStream.resources.get(EXTRA+key+".png") if key in ["intel","table","shelf_top","shelf_bottom","undo","redo"] else AssetStream.resources.get(ROOT + key + ".png")
+	if key in ["guide","home"]:return Expedition.menus.shell.image(key)
+	return AssetStream.resources.get(_art_path(key))
+
+func _art_path(key: String) -> String:
+	if key == "sale": return CATALOG.ROOT+"ui/sale.png"
+	if key in ["shelf_top","shelf_bottom"]:return CATALOG.ui_path("shelf")
+	if key in ["stamina_regen","cooldown"]:return CATALOG.ROOT+"status/"+key+".png"
+	var supplied=CATALOG.ui_path(key)
+	if not supplied.is_empty():return supplied
+	return EXTRA+key+".png" if key in ["intel","undo","redo"] else ROOT+key+".png"
 
 func picture(key: String, rect: Rect2, parent: Node, stretch: bool = false):
 	var node = NinePatchRect.new() if stretch else TextureRect.new()
@@ -142,27 +152,26 @@ func local(value: String) -> String:
 func _build_shop():
 	picture("shelf_top", Rect2(15, 300, 815, 84), scenery)
 	picture("shelf_bottom", Rect2(15, 600, 951, 80), scenery)
-	var merchant = picture("merchant", Rect2(5, 650, 425, 416), scenery)
+	var merchant = picture("merchant", Rect2(0, 610, 470, 312), scenery)
 	merchant.z_index = 0
 	var desk = picture("table", Rect2(0, 861, 1920, 219), scenery)
 	desk.z_index = 0
 	picture("storage_mat", Rect2(490, 788, 1060, 222), scenery)
 	picture("sell", Rect2(95, 835, 290, 165), scenery)
-	text("出售", Rect2(115, 885, 230, 65), ui, 32)
 	text("仓库", Rect2(1100, 805, 300, 38), ui, 25)
-	button("codex", Rect2(450, 675, 135, 135), open_book)
+	button("codex", Rect2(440, 690, 245, 120), open_book)
 	button("journey", Rect2(785, 675, 135, 135), open_intel)
 	button("undo",Rect2(1110,690,88,88),func(): Expedition.perform(Expedition.flow.edit("undo"))).tooltip_text = local("撤销")
 	button("redo",Rect2(1230,690,88,88),func(): Expedition.perform(Expedition.flow.edit("redo"))).tooltip_text = local("重做")
-	button("refresh", Rect2(805, 0, 120, 244), _refresh_shop)
-	var refresh_caption = text("刷新", Rect2(820, 80, 90, 75), ui, 23)
+	button("refresh", Rect2(805, 0, 120, 317), _refresh_shop)
+	var refresh_caption = text("", Rect2(819, 182, 72, 35), ui, 22, Color("302114"))
 	refresh_caption.name = "RefreshCost"
-	var start = button("battle", Rect2(1555, 16, 340, 245), _start)
+	var start = button("battle", Rect2(1670, 0, 225, 347), _start)
 	start.name = "ArtStartBattle"
-	var stage = text("确认出战", Rect2(0, 208, 340, 50), start, 32)
+	var stage = text("确认出战", Rect2(15, 244, 195, 65), start, 40)
 	stage.name = "StageCaption"
-	button("settings", Rect2(1775, 294, 110, 110), Expedition.show_settings).name="Action_shop_settings"
-	button("guide", Rect2(1630, 294, 110, 110), Expedition.show_ui_guide)
+	button("settings", Rect2(1775, 365, 110, 110), Expedition.show_settings).name="Action_shop_settings"
+	button("guide", Rect2(1630, 365, 110, 110), Expedition.show_ui_guide)
 	# The supplied backplates belong to status displays, never generic windows.
 	picture("plate1", Rect2(1300, 50, 215, 65), ui)
 	var gold = text("", Rect2(1300, 50, 215, 65), ui, 32)
@@ -170,8 +179,8 @@ func _build_shop():
 	for index in 5:
 		var tag = button("price", Rect2(OFFERS[index] + Vector2(75, -70), Vector2(82, 72)), _lock.bind(index))
 		var label = text("", Rect2(0, 22, 82, 42), tag, 30, Color("301d13"))
-		var sale = button("sale", Rect2(OFFERS[index] + Vector2(80, -118), Vector2(86, 110)), _lock.bind(index))
-		var sale_label = text("", Rect2(OFFERS[index] + Vector2(92, -51), Vector2(46, 44)), ui, 28, Color("301d13"))
+		var sale = button("sale", Rect2(OFFERS[index] + Vector2(129, -83), Vector2(38, 38)), _lock.bind(index))
+		var sale_label = text("%", Rect2(OFFERS[index] + Vector2(129, -83), Vector2(38, 38)), ui, 20)
 		var locked = text("", Rect2(OFFERS[index] + Vector2(-95, 14), Vector2(190, 30)), ui, 22)
 		for node in [tag,sale,label,sale_label,locked]: node.z_index = 0
 		prices.append({"tag": tag, "label": label, "sale": sale, "sale_label": sale_label, "lock": locked})
@@ -195,10 +204,13 @@ func _hud(rect: Rect2, title: String) -> Dictionary:
 		bar.stretch_margin_left = 8; bar.stretch_margin_right = 8; bar.stretch_margin_top = 8; bar.stretch_margin_bottom = 8
 		bar.position = bar_rect.position; bar.size = bar_rect.size; bar.max_value = 100; ui.add_child(bar)
 		var label = text("", bar_rect, ui, 22)
-		text("生命" if index == 0 else "耐力", Rect2(rect.position + Vector2(10, 52 + index * 47), Vector2(90, 32)), ui, 23)
+		if index == 1: picture("stamina_regen",Rect2(rect.position+Vector2(10,99),Vector2(26,26)),ui)
+		text("生命" if index == 0 else "耐力", Rect2(rect.position + Vector2(32 if index == 1 else 10, 52 + index * 47), Vector2(68 if index == 1 else 90, 32)), ui, 23)
 		result["health" if index == 0 else "stamina"] = bar
 		result["hp_text" if index == 0 else "sp_text"] = label
-	result["statuses"] = text("", Rect2(rect.position + Vector2(0, rect.size.y), Vector2(rect.size.x, 28)), ui, 19)
+	var strip=HBoxContainer.new();strip.position=rect.position+Vector2(0,rect.size.y+4);strip.size=Vector2(rect.size.x,32);strip.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.add_child(strip)
+	result["status_icons"]=strip;result["status_signature"]=""
+	result["statuses"] = text("", Rect2(rect.position + Vector2(0, rect.size.y+36), Vector2(rect.size.x, 28)), ui, 19)
 	return result
 
 func _build_combat():
@@ -207,6 +219,7 @@ func _build_combat():
 	picture("shadow", Rect2(200, 980, 260, 44), scenery)
 	picture("shadow", Rect2(1460, 980, 260, 44), scenery)
 	picture("timeline_base", Rect2(680, 34, 560, 70), ui)
+	picture("cooldown",Rect2(634,48,32,32),ui)
 	var progress = TextureProgressBar.new(); progress.name = "ArtTimeline"
 	progress.texture_progress = texture("timeline_fill"); progress.nine_patch_stretch = true
 	progress.position = Vector2(680, 46); progress.size = Vector2(560, 20)
@@ -313,6 +326,7 @@ func _update_board(inventory, build: Dictionary):
 	if board == null and texture("cell") != null:
 		board = Node2D.new(); board.set_script(board_script); board.name = "SuppliedGrid"; board.z_index = -10; inventory.add_child(board)
 		board.cell_texture = texture("cell")
+		board.empty_texture = texture("cell_empty")
 	if board != null: board.configure(build)
 	if inventory.character == Game.PLAYER and inventory.get_node_or_null("SuppliedHover") == null:
 		var hover = Node2D.new(); hover.name = "SuppliedHover"; hover.set_script(preload("res://PvE/Art/Hover.gd")); hover.z_index = 100; inventory.add_child(hover)
@@ -330,15 +344,15 @@ func _refresh_data():
 	elif view == "shop":
 		var chinese = TranslationServer.get_locale().begins_with("zh")
 		ui.get_node("GoldValue").text = ("金币 %d" if chinese else "Gold %d") % int(Expedition.flow.run.gold)
-		ui.get_node("RefreshCost").text = ("刷新\n%d 金" if chinese else "Refresh\n%d G") % Game.shopSceneNode.getRerollCost()
+		ui.get_node("RefreshCost").text = ("%d 金" if chinese else "%d G") % Game.shopSceneNode.getRerollCost()
 		ui.get_node("ArtStartBattle/StageCaption").text = ("前进" if chinese else "Continue") if Expedition.flow.run.current_node.get("type", "") == "merchant" else ("开战" if chinese else "Battle")
 		for index in prices.size():
 			var data = Expedition.bridge.slot_data(index); var shown = not data.is_empty() and not bool(data.get("sold", false))
 			var item = Game.shopSceneNode.slots[index].item
 			shown = shown and is_instance_valid(item) and str(item.get_meta("pve_definition_id","")) == str(data.get("definition_id",""))
 			var sale = shown and bool(data.get("discounted", false))
-			prices[index].tag.visible = shown and not sale; prices[index].sale.visible = sale; prices[index].sale_label.visible = sale
-			prices[index].label.text = str(int(data.get("price", 0))); prices[index].sale_label.text = prices[index].label.text
+			prices[index].tag.visible = shown; prices[index].sale.visible = sale; prices[index].sale_label.visible = sale
+			prices[index].label.text = str(int(data.get("price", 0)))
 			prices[index].lock.text = ("已锁定" if chinese else "Locked") if bool(data.get("locked", false)) else ""
 			prices[index].tag.disabled = Expedition.syncing or is_instance_valid(Game.draggedItem)
 		var start = ui.get_node_or_null("ArtStartBattle")
@@ -373,8 +387,22 @@ func _update_hud(hud: Dictionary, actor, caption: String):
 	hud.hp_text.text = "%d / %d" % [ceili(actor.getCurrentHealth()), ceili(actor.getMaxHealth())]
 	hud.sp_text.text = "%.1f / %.1f" % [actor.curStamina, actor.maxStamina]
 	var status_text: Array[String] = []
+	var icon_statuses:Array=[]
 	for type in actor.buffs:
-		if actor.buffs[type].getStacks() > 0: status_text.append(Util.tra(Game.eventTypeKeys[type]) + " " + str(actor.buffs[type].getStacks()))
+		if actor.buffs[type].getStacks() <= 0:continue
+		var key=str(Game.eventTypeKeys[type])
+		if CATALOG.STATUS.has(key):icon_statuses.append([key,actor.buffs[type].getStacks()])
+		else:status_text.append(Util.tra(key)+" "+str(actor.buffs[type].getStacks()))
+	var signature=str(icon_statuses.map(func(value):return value[0]))
+	if signature!=hud.status_signature:
+		for child in hud.status_icons.get_children():hud.status_icons.remove_child(child);child.queue_free()
+		for value in icon_statuses:
+			var icon=TextureRect.new();icon.texture=AssetStream.resources.get(CATALOG.ROOT+"status/"+CATALOG.STATUS[value[0]]+".png");icon.custom_minimum_size=Vector2(30,30);icon.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;icon.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;icon.tooltip_text=Util.tra(value[0]);hud.status_icons.add_child(icon)
+			text(str(value[1]),Rect2(0,0,40,30),hud.status_icons,20)
+		hud.status_signature=signature
+	var number=0
+	for value in icon_statuses:
+		hud.status_icons.get_child(number*2+1).text=str(value[1]);number+=1
 	hud.statuses.text = " · ".join(status_text)
 	hud.statuses.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	hud.statuses.tooltip_text = hud.statuses.text

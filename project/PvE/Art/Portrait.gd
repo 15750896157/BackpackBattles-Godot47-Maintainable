@@ -6,16 +6,21 @@ var impact: float = 0.0
 var last_health: float = -1.0
 var bounce: float = 0.0
 var attack_motion: float = 0.0
+var full_texture: Texture2D
+var shop_texture: Texture2D
+var art_key = ""
+const CATALOG = preload("res://PvE/Art/SuppliedArt.gd")
 @onready var body: Sprite2D = $Body
 @onready var character = get_parent().get_parent().get_parent()
 
 func _ready():
 	top_level = true
 	z_index = 60
-	var key = "hero"
-	if character.playerId == Character.ID.OPPONENT: key = enemy_art()
-	var path = "res://Art/20261022/" + key + ".png"
-	if key != "hero": body.texture = AssetStream.resolve(path)
+	art_key = enemy_art() if character.playerId == Character.ID.OPPONENT else CATALOG.player_key(Game.curClass)
+	var path = CATALOG.actor_path(art_key)
+	full_texture = AssetStream.resolve(path)
+	shop_texture = AssetStream.resources.get(CATALOG.shop_actor_path(art_key))
+	body.texture = full_texture
 	set_meta("new_art_path", path)
 	var factor = 420.0 / body.texture.get_height()
 	body.scale = Vector2.ONE * factor
@@ -45,6 +50,7 @@ func _process(delta):
 	if not is_instance_valid(character): return
 	clock += delta
 	var combat = Game.state == Game.State.Combat
+	body.texture = shop_texture if Game.state == Game.State.Shop and shop_texture != null else full_texture
 	var target = Vector2(330, 1000) if character.playerId == Character.ID.PLAYER else Vector2(1590, 1000)
 	if Game.state == Game.State.Shop: target = Vector2(1720, 1060)
 	elif Game.state == Game.State.Title: target = Vector2(550, 1000)

@@ -1,0 +1,1082 @@
+{
+	"checks": [
+		{
+			"message": "new title art covers the entire viewport",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "field_manual: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "field_manual: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "field_manual: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "field_manual: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "field_manual: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "field_manual: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "field_manual: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "field_manual: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "field_manual: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "field_manual: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: async dependencies",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: real shelf sprite uses supplied PNG",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: entire single-frame image retained",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: shelf image is upright",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: shelf image fits display bounds",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: visible artwork lies over occupied cells",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: rotation 0 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: rotation 1 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: rotation 2 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: rotation 3 retains supplied texture",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "field_manual: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: activation retains replacement frame 0",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "field_manual: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: activation retains replacement frame 15",
+			"ok": true
+		},
+		{
+			"message": "utility_knife: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "iron_sword: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "broad_axe: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "heavy_cleaver: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "hunting_spear: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "plated_vest: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "leather_wrap: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "tower_shield: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "travel_ration: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "sharpening_stone: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "merchant_token: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "focus_prism: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "ember_stone: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "glass_bead: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "field_manual: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "salvage_pouch: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "duelist_mark: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "layered_plates: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "retaliation_spikes: activation retains replacement frame 39",
+			"ok": true
+		},
+		{
+			"message": "no unplanned item bindings",
+			"ok": true
+		},
+		{
+			"message": "armorer: public new run",
+			"ok": true
+		},
+		{
+			"message": "armorer: native shop entered",
+			"ok": true
+		},
+		{
+			"message": "armorer: distinct player illustration",
+			"ok": true
+		},
+		{
+			"message": "armorer: supplied shop portrait",
+			"ok": true
+		},
+		{
+			"message": "armorer: native battle entered",
+			"ok": true
+		},
+		{
+			"message": "armorer: full figure in combat",
+			"ok": true
+		},
+		{
+			"message": "alchemist: public new run",
+			"ok": true
+		},
+		{
+			"message": "alchemist: native shop entered",
+			"ok": true
+		},
+		{
+			"message": "alchemist: distinct player illustration",
+			"ok": true
+		},
+		{
+			"message": "alchemist: supplied shop portrait",
+			"ok": true
+		},
+		{
+			"message": "alchemist: native battle entered",
+			"ok": true
+		},
+		{
+			"message": "alchemist: full figure in combat",
+			"ok": true
+		},
+		{
+			"message": "chapter 1: streamed background",
+			"ok": true
+		},
+		{
+			"message": "chapter background mapping",
+			"ok": true
+		},
+		{
+			"message": "chapter 2: streamed background",
+			"ok": true
+		},
+		{
+			"message": "chapter background mapping",
+			"ok": true
+		},
+		{
+			"message": "chapter 3: streamed background",
+			"ok": true
+		},
+		{
+			"message": "chapter background mapping",
+			"ok": true
+		},
+		{
+			"message": "unused chapter scenery released",
+			"ok": true
+		},
+		{
+			"message": "rest camp loaded through guarded popup resource scope",
+			"ok": true
+		}
+	],
+	"failures": [],
+	"ok": true
+}

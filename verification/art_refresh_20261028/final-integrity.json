@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "manifest_files": 6038,
+  "sha256_verified": true,
+  "source_matches_tested_portable": true,
+  "formal_saves_unchanged": true,
+  "physical_pointer_pending": false,
+  "physical_pointer_checks_passed": 12
+}

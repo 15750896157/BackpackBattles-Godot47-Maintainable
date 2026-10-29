@@ -3,6 +3,7 @@ const ROOT = "res://Art/Polish20261022/"
 static func key_for(cells: Array) -> String:
 	var bounds = Vector2i.ZERO
 	for cell in cells: bounds = bounds.max(Vector2i(cell)+Vector2i.ONE)
+	if cells.size() == 9 and bounds == Vector2i(3,3): return "bag9"
 	if cells.size() == 4 and bounds == Vector2i(2,2): return "bag4"
 	if cells.size() == 6 and bounds == Vector2i(3,2): return "bag6"
 	return ""
@@ -11,7 +12,7 @@ static func apply(item, cells: Array, anchor: Vector2, size: Vector2, shop_view:
 	if not item.isBag(): return
 	var key = key_for(cells)
 	if not key.is_empty():
-		var path = ROOT+key+".png"
+		var path = preload("res://PvE/Art/SuppliedArt.gd").ui_path(key) if key == "bag9" else ROOT+key+".png"
 		item.sprite.texture = AssetStream.resources.get(path) if AssetStream.resources.has(path) else load(path)
 		item.sprite.centered = true; item.sprite.offset = Vector2.ZERO
 		for child in item.sprite.find_children("*","Sprite2D",true,false): child.hide()

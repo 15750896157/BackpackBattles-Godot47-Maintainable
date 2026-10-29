@@ -246,6 +246,15 @@ func fit_native_visual(item, storage_view: bool = false):
 	if not anchor.is_finite(): anchor = -size * 40.0
 	item.set_meta("pve_anchor", anchor)
 	item.set_meta("pve_size", size * 80.0)
+	var supplied_path = preload("res://PvE/Art/SuppliedArt.gd").item_path(str(entry.definition_id))
+	if not supplied_path.is_empty() and not item.has_meta("supplied_art_path"):
+		item.sprite.texture = AssetStream.resources[supplied_path]
+		item.sprite.region_enabled = false
+		item.sprite.hframes = 1; item.sprite.vframes = 1; item.sprite.frame = 0
+		item.sprite.centered = true; item.sprite.offset = Vector2.ZERO
+		item.spriteScale = Vector2.ONE; item.setSpriteScale(Vector2.ONE)
+		for child in item.sprite.find_children("*", "Sprite2D", true, false): child.hide()
+		item.set_meta("supplied_art_path", supplied_path)
 	if not item.has_meta("pve_original_scale"):
 		item.set_meta("pve_original_scale", item.spriteScale)
 		item.set_meta("pve_original_offset", item.sprite.offset)
@@ -270,7 +279,7 @@ func fit_native_visual(item, storage_view: bool = false):
 	var position = anchor + Vector2(layout.origin)
 	if storage_view or shop_view: position += size * 40.0 - target_size * 0.5
 	item.set_meta("pve_sprite_position", position)
-	item.set_meta("pve_visual_fit", {"turn": 0, "bag_mask": false, "original_texture": true, "mode": layout.mode, "factor": layout.factor})
+	item.set_meta("pve_visual_fit", {"turn": 0, "bag_mask": false, "original_texture": supplied_path.is_empty(), "mode": layout.mode, "factor": layout.factor})
 	var visual_bounds = Rect2(position + Vector2(geometry.minimum) * float(layout.factor), Vector2(geometry.size) * float(layout.factor))
 	item.set_meta("pve_visual_bounds", visual_bounds)
 	item.sprite.position = position

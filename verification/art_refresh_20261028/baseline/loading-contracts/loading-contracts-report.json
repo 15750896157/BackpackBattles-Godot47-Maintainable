@@ -1,0 +1,1060 @@
+{
+	"checks": 128,
+	"cycles": [
+		{
+			"label": "cycle_0",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 452712066.0,
+			"stream": {
+				"budget_overruns": 9,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 24,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 2,
+						"max_us": 387,
+						"total_us": 773
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 2,
+						"max_us": 407,
+						"total_us": 795
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 2,
+						"max_us": 8531,
+						"total_us": 17014
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 2,
+						"max_us": 522,
+						"total_us": 1026
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 2,
+						"max_us": 5101,
+						"total_us": 10060
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 2,
+						"max_us": 5046,
+						"total_us": 7916
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 8,
+						"max_us": 3954,
+						"total_us": 13819
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 2,
+						"max_us": 16,
+						"total_us": 31
+					}
+				},
+				"job_max_us": 8531,
+				"jobs": 0,
+				"loaded": 150,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 128,
+				"requested": 151,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		},
+		{
+			"label": "cycle_1",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 452975893.0,
+			"stream": {
+				"budget_overruns": 15,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 42,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 2,
+						"max_us": 387,
+						"total_us": 773
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 2,
+						"max_us": 3790,
+						"total_us": 7529
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 4,
+						"max_us": 427,
+						"total_us": 1633
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 380,
+						"total_us": 758
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 2,
+						"max_us": 525,
+						"total_us": 1036
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 4,
+						"max_us": 8664,
+						"total_us": 34157
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 458,
+						"total_us": 885
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 4,
+						"max_us": 522,
+						"total_us": 1903
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 2,
+						"max_us": 5101,
+						"total_us": 10060
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 2,
+						"max_us": 5046,
+						"total_us": 7916
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 10,
+						"max_us": 3954,
+						"total_us": 21310
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 4,
+						"max_us": 16,
+						"total_us": 61
+					}
+				},
+				"job_max_us": 8664,
+				"jobs": 0,
+				"loaded": 273,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 251,
+				"requested": 274,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		},
+		{
+			"label": "cycle_2",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 453230367.0,
+			"stream": {
+				"budget_overruns": 23,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 60,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 2,
+						"max_us": 387,
+						"total_us": 773
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 4,
+						"max_us": 3890,
+						"total_us": 15178
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 6,
+						"max_us": 490,
+						"total_us": 2602
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 2,
+						"max_us": 380,
+						"total_us": 758
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 2,
+						"max_us": 525,
+						"total_us": 1036
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 6,
+						"max_us": 8664,
+						"total_us": 51203
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 2,
+						"max_us": 459,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/StoneArmor.tscn": {
+						"count": 2,
+						"max_us": 456,
+						"total_us": 878
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 458,
+						"total_us": 885
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 4,
+						"max_us": 522,
+						"total_us": 1903
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 4,
+						"max_us": 5188,
+						"total_us": 11366
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 2,
+						"max_us": 5101,
+						"total_us": 10060
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 2,
+						"max_us": 5046,
+						"total_us": 7916
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 12,
+						"max_us": 3954,
+						"total_us": 28777
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 6,
+						"max_us": 16,
+						"total_us": 91
+					}
+				},
+				"job_max_us": 8664,
+				"jobs": 0,
+				"loaded": 396,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 374,
+				"requested": 397,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		},
+		{
+			"label": "cycle_3",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 453254391.0,
+			"stream": {
+				"budget_overruns": 29,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 78,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 4,
+						"max_us": 387,
+						"total_us": 1494
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 4,
+						"max_us": 3890,
+						"total_us": 15178
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 8,
+						"max_us": 490,
+						"total_us": 3433
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 4,
+						"max_us": 380,
+						"total_us": 1502
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 2,
+						"max_us": 525,
+						"total_us": 1036
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 8,
+						"max_us": 8719,
+						"total_us": 68524
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 2,
+						"max_us": 459,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/StoneArmor.tscn": {
+						"count": 2,
+						"max_us": 456,
+						"total_us": 878
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 458,
+						"total_us": 885
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 6,
+						"max_us": 522,
+						"total_us": 2893
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 6,
+						"max_us": 5188,
+						"total_us": 12433
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 4,
+						"max_us": 5101,
+						"total_us": 19916
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 2,
+						"max_us": 5046,
+						"total_us": 7916
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 14,
+						"max_us": 3954,
+						"total_us": 36172
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 8,
+						"max_us": 16,
+						"total_us": 121
+					}
+				},
+				"job_max_us": 8719,
+				"jobs": 0,
+				"loaded": 521,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 499,
+				"requested": 522,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		},
+		{
+			"label": "cycle_4",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 453431472.0,
+			"stream": {
+				"budget_overruns": 33,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 96,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 4,
+						"max_us": 387,
+						"total_us": 1494
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 4,
+						"max_us": 3890,
+						"total_us": 15178
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 10,
+						"max_us": 490,
+						"total_us": 4247
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 2,
+						"max_us": 403,
+						"total_us": 788
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 4,
+						"max_us": 380,
+						"total_us": 1502
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 4,
+						"max_us": 525,
+						"total_us": 2013
+					},
+					"res://Items/Exclusive/Rope.tscn": {
+						"count": 2,
+						"max_us": 391,
+						"total_us": 770
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 12,
+						"max_us": 8719,
+						"total_us": 86604
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 2,
+						"max_us": 459,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/StoneArmor.tscn": {
+						"count": 2,
+						"max_us": 456,
+						"total_us": 878
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 458,
+						"total_us": 885
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 6,
+						"max_us": 522,
+						"total_us": 2893
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 6,
+						"max_us": 5188,
+						"total_us": 12433
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 4,
+						"max_us": 5101,
+						"total_us": 19916
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 2,
+						"max_us": 427,
+						"total_us": 788
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 2,
+						"max_us": 5046,
+						"total_us": 7916
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 16,
+						"max_us": 3954,
+						"total_us": 43461
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 10,
+						"max_us": 16,
+						"total_us": 152
+					}
+				},
+				"job_max_us": 8719,
+				"jobs": 0,
+				"loaded": 643,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 621,
+				"requested": 644,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		},
+		{
+			"label": "cycle_5",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 453548473.0,
+			"stream": {
+				"budget_overruns": 39,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 114,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 4,
+						"max_us": 387,
+						"total_us": 1494
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 4,
+						"max_us": 3890,
+						"total_us": 15178
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 12,
+						"max_us": 490,
+						"total_us": 5066
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 2,
+						"max_us": 403,
+						"total_us": 788
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 6,
+						"max_us": 380,
+						"total_us": 2248
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 4,
+						"max_us": 525,
+						"total_us": 2013
+					},
+					"res://Items/Exclusive/Rope.tscn": {
+						"count": 2,
+						"max_us": 391,
+						"total_us": 770
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 14,
+						"max_us": 9130,
+						"total_us": 104344
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 2,
+						"max_us": 459,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/StoneArmor.tscn": {
+						"count": 2,
+						"max_us": 456,
+						"total_us": 878
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 458,
+						"total_us": 885
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 8,
+						"max_us": 522,
+						"total_us": 3755
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 8,
+						"max_us": 5188,
+						"total_us": 22562
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 4,
+						"max_us": 5101,
+						"total_us": 19916
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 2,
+						"max_us": 1842,
+						"total_us": 3677
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 2,
+						"max_us": 427,
+						"total_us": 788
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 2,
+						"max_us": 5046,
+						"total_us": 7916
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 18,
+						"max_us": 3954,
+						"total_us": 50952
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 431,
+						"total_us": 849
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 12,
+						"max_us": 17,
+						"total_us": 184
+					}
+				},
+				"job_max_us": 9130,
+				"jobs": 0,
+				"loaded": 766,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 744,
+				"requested": 767,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		},
+		{
+			"label": "cycle_6",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 453624561.0,
+			"stream": {
+				"budget_overruns": 45,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 132,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 4,
+						"max_us": 387,
+						"total_us": 1494
+					},
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 2,
+						"max_us": 460,
+						"total_us": 904
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 4,
+						"max_us": 3890,
+						"total_us": 15178
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 16,
+						"max_us": 490,
+						"total_us": 6652
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 2,
+						"max_us": 403,
+						"total_us": 788
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 8,
+						"max_us": 384,
+						"total_us": 3013
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 4,
+						"max_us": 525,
+						"total_us": 2013
+					},
+					"res://Items/Exclusive/Rope.tscn": {
+						"count": 2,
+						"max_us": 391,
+						"total_us": 770
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 16,
+						"max_us": 9130,
+						"total_us": 121344
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 2,
+						"max_us": 459,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/StoneArmor.tscn": {
+						"count": 2,
+						"max_us": 456,
+						"total_us": 878
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 458,
+						"total_us": 885
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 10,
+						"max_us": 522,
+						"total_us": 4575
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 10,
+						"max_us": 5188,
+						"total_us": 32290
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 4,
+						"max_us": 5101,
+						"total_us": 19916
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 2,
+						"max_us": 1842,
+						"total_us": 3677
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 2,
+						"max_us": 427,
+						"total_us": 788
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 2,
+						"max_us": 5046,
+						"total_us": 7916
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 20,
+						"max_us": 3954,
+						"total_us": 58529
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 431,
+						"total_us": 849
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 14,
+						"max_us": 17,
+						"total_us": 217
+					}
+				},
+				"job_max_us": 9130,
+				"jobs": 0,
+				"loaded": 887,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 865,
+				"requested": 888,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		},
+		{
+			"label": "cycle_7",
+			"nodes": 1659,
+			"orphans": 13.0,
+			"static_bytes": 453770007.0,
+			"stream": {
+				"budget_overruns": 55,
+				"cancelled": 2,
+				"failures": [],
+				"inflight": 0,
+				"instances": 150,
+				"job_costs": {
+					"res://Items/BagofStones.tscn": {
+						"count": 4,
+						"max_us": 387,
+						"total_us": 1494
+					},
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 2,
+						"max_us": 460,
+						"total_us": 904
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 4,
+						"max_us": 3890,
+						"total_us": 15178
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 18,
+						"max_us": 490,
+						"total_us": 7505
+					},
+					"res://Items/Exclusive/Axe.tscn": {
+						"count": 2,
+						"max_us": 403,
+						"total_us": 788
+					},
+					"res://Items/Exclusive/Battery.tscn": {
+						"count": 2,
+						"max_us": 3863,
+						"total_us": 7617
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 8,
+						"max_us": 384,
+						"total_us": 3013
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 4,
+						"max_us": 525,
+						"total_us": 2013
+					},
+					"res://Items/Exclusive/Rope.tscn": {
+						"count": 2,
+						"max_us": 391,
+						"total_us": 770
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 18,
+						"max_us": 9130,
+						"total_us": 138321
+					},
+					"res://Items/Exclusive/SliceofBread.tscn": {
+						"count": 2,
+						"max_us": 476,
+						"total_us": 870
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 2,
+						"max_us": 459,
+						"total_us": 877
+					},
+					"res://Items/Exclusive/StoneArmor.tscn": {
+						"count": 2,
+						"max_us": 456,
+						"total_us": 878
+					},
+					"res://Items/Exclusive/VineweaveBasket.tscn": {
+						"count": 2,
+						"max_us": 458,
+						"total_us": 885
+					},
+					"res://Items/Exclusive/Wrench.tscn": {
+						"count": 10,
+						"max_us": 522,
+						"total_us": 4575
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 14,
+						"max_us": 5188,
+						"total_us": 42876
+					},
+					"res://Items/Gems/RegularSapphire.tscn": {
+						"count": 4,
+						"max_us": 5101,
+						"total_us": 19916
+					},
+					"res://Items/Hammer.tscn": {
+						"count": 2,
+						"max_us": 1842,
+						"total_us": 3677
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 2,
+						"max_us": 427,
+						"total_us": 788
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 4,
+						"max_us": 5046,
+						"total_us": 13512
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 22,
+						"max_us": 3954,
+						"total_us": 65863
+					},
+					"res://Items/PoisonDagger.tscn": {
+						"count": 2,
+						"max_us": 1871,
+						"total_us": 3523
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 431,
+						"total_us": 849
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 16,
+						"max_us": 17,
+						"total_us": 248
+					}
+				},
+				"job_max_us": 9130,
+				"jobs": 0,
+				"loaded": 1008,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 986,
+				"requested": 1009,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 0,
+				"sync_paths": {}
+			}
+		}
+	],
+	"failures": [],
+	"limits": {
+		"budget_us": 2500,
+		"instances_per_frame": 1,
+		"io": 1,
+		"pool": 24
+	},
+	"stream": {
+		"budget_overruns": 55,
+		"cancelled": 2,
+		"failures": [],
+		"inflight": 0,
+		"instances": 150,
+		"job_costs": {
+			"res://Items/BagofStones.tscn": {
+				"count": 4,
+				"max_us": 387,
+				"total_us": 1494
+			},
+			"res://Items/ClawsofAttack.tscn": {
+				"count": 2,
+				"max_us": 460,
+				"total_us": 904
+			},
+			"res://Items/CursedHairComb.tscn": {
+				"count": 4,
+				"max_us": 3890,
+				"total_us": 15178
+			},
+			"res://Items/Dagger.tscn": {
+				"count": 18,
+				"max_us": 490,
+				"total_us": 7505
+			},
+			"res://Items/Exclusive/Axe.tscn": {
+				"count": 2,
+				"max_us": 403,
+				"total_us": 788
+			},
+			"res://Items/Exclusive/Battery.tscn": {
+				"count": 2,
+				"max_us": 3863,
+				"total_us": 7617
+			},
+			"res://Items/Exclusive/BurningBanner.tscn": {
+				"count": 8,
+				"max_us": 384,
+				"total_us": 3013
+			},
+			"res://Items/Exclusive/Holdall.tscn": {
+				"count": 4,
+				"max_us": 525,
+				"total_us": 2013
+			},
+			"res://Items/Exclusive/Rope.tscn": {
+				"count": 2,
+				"max_us": 391,
+				"total_us": 770
+			},
+			"res://Items/Exclusive/Scissorswords.tscn": {
+				"count": 18,
+				"max_us": 9130,
+				"total_us": 138321
+			},
+			"res://Items/Exclusive/SliceofBread.tscn": {
+				"count": 2,
+				"max_us": 476,
+				"total_us": 870
+			},
+			"res://Items/Exclusive/SpringLoader.tscn": {
+				"count": 2,
+				"max_us": 459,
+				"total_us": 877
+			},
+			"res://Items/Exclusive/StoneArmor.tscn": {
+				"count": 2,
+				"max_us": 456,
+				"total_us": 878
+			},
+			"res://Items/Exclusive/VineweaveBasket.tscn": {
+				"count": 2,
+				"max_us": 458,
+				"total_us": 885
+			},
+			"res://Items/Exclusive/Wrench.tscn": {
+				"count": 10,
+				"max_us": 522,
+				"total_us": 4575
+			},
+			"res://Items/Gems/PerfectAmethyst.tscn": {
+				"count": 14,
+				"max_us": 5188,
+				"total_us": 42876
+			},
+			"res://Items/Gems/RegularSapphire.tscn": {
+				"count": 4,
+				"max_us": 5101,
+				"total_us": 19916
+			},
+			"res://Items/Hammer.tscn": {
+				"count": 2,
+				"max_us": 1842,
+				"total_us": 3677
+			},
+			"res://Items/HealingHerbs.tscn": {
+				"count": 2,
+				"max_us": 427,
+				"total_us": 788
+			},
+			"res://Items/HeroicPotion.tscn": {
+				"count": 4,
+				"max_us": 5046,
+				"total_us": 13512
+			},
+			"res://Items/LeatherBag.tscn": {
+				"count": 22,
+				"max_us": 3954,
+				"total_us": 65863
+			},
+			"res://Items/PoisonDagger.tscn": {
+				"count": 2,
+				"max_us": 1871,
+				"total_us": 3523
+			},
+			"res://Items/YggdrasilLeaf.tscn": {
+				"count": 2,
+				"max_us": 431,
+				"total_us": 849
+			},
+			"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+				"count": 16,
+				"max_us": 17,
+				"total_us": 248
+			}
+		},
+		"job_max_us": 9130,
+		"jobs": 0,
+		"loaded": 1008,
+		"max_inflight": 1,
+		"pending": 0,
+		"released": 986,
+		"requested": 1009,
+		"resident": 22,
+		"scopes": 3,
+		"sync_misses": 0,
+		"sync_paths": {}
+	}
+}

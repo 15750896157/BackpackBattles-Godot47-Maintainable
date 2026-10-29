@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "checks": {
+    "continue_run": true,
+    "drag_to_storage": true,
+    "exit_pressed": true,
+    "guide_close": true,
+    "guide_open": true,
+    "left_blank_no_exit": true,
+    "refresh_instances": true,
+    "return_unchanged": true,
+    "rotate": true,
+    "save_title": true,
+    "sell": true,
+    "undo_sale": true
+  },
+  "check_count": 12,
+  "process": {
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 887.61
+  },
+  "actual_native_exit": true,
+  "formal_saves_unchanged": true,
+  "source_matches_tested_portable": true,
+  "input_method": "Computer Use sky physical mouse click/drag; fixture initializes an isolated run and observes results only",
+  "cases": [
+    "open/close supplied guide",
+    "rotate held item and return without changing build",
+    "move item into storage",
+    "drag from storage to supplied sale sign",
+    "undo sale and restore item/gold",
+    "refresh actual offer instances",
+    "save to title and continue same run",
+    "click blank left of exit without quitting",
+    "click visible exit lettering and observe normal process shutdown"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	"case": "combat",
+	"checks": 13,
+	"details": {
+		"before_menu_state": "COMBAT_RUNNING",
+		"save_directory": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\release-checks\\persist-combat-saves_120759/",
+		"saved_state": "COMBAT_RUNNING",
+		"title_continue_disabled": true,
+		"title_continue_visible": false
+	},
+	"failures": [],
+	"ok": true,
+	"stage": "write"
+}

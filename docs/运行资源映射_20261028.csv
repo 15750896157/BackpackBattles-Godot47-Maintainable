@@ -1,0 +1,72 @@
+﻿源文件,图层,运行资源,用途,策划名,处理
+A-商店&背包/切图/商人.png,,res://Art/Supplied20261028/ui/merchant.png,商店展示 / merchant,,原 PNG 逐字节复制
+A-商店&背包/切图/桌面.png,,res://Art/Supplied20261028/ui/table.png,商店展示 / table,,原 PNG 逐字节复制
+A-商店&背包/切图/货架.png,,res://Art/Supplied20261028/ui/shelf.png,商店展示 / shelf,,原 PNG 逐字节复制
+A-商店&背包/切图/放置物品.png,,res://Art/Supplied20261028/ui/storage_mat.png,商店展示 / storage_mat,,原 PNG 逐字节复制
+A-商店&背包/切图/出售单.png,,res://Art/Supplied20261028/ui/sell.png,商店展示 / sell,,原 PNG 逐字节复制
+A-商店&背包/切图/刷新铃铛.png,,res://Art/Supplied20261028/ui/refresh.png,商店展示 / refresh,,原 PNG 逐字节复制
+A-商店&背包/切图/正常报价.png,,res://Art/Supplied20261028/ui/price.png,商店展示 / price,,原 PNG 逐字节复制
+A-商店&背包/切图/红圆.png,,res://Art/Supplied20261028/ui/sale.png,商店展示 / sale,,原 PNG 逐字节复制
+A-商店&背包/切图/图鉴.png,,res://Art/Supplied20261028/ui/codex.png,商店展示 / codex,,原 PNG 逐字节复制
+A-商店&背包/切图/敌情.png,,res://Art/Supplied20261028/ui/journey.png,商店展示 / journey,,原 PNG 逐字节复制
+A-商店&背包/切图/开战决定挂牌.png,,res://Art/Supplied20261028/ui/battle.png,商店展示 / battle,,原 PNG 逐字节复制
+A-商店&背包/切图/商店武备师.png,,res://Art/Supplied20261028/ui/shop_armorer.png,商店展示 / shop_armorer,,原 PNG 逐字节复制
+A-商店&背包/切图/商店调配师.png,,res://Art/Supplied20261028/ui/shop_alchemist.png,商店展示 / shop_alchemist,,原 PNG 逐字节复制
+A-商店&背包/切图/商店背景.png,,res://Art/Supplied20261028/ui/shop.png,商店展示 / shop,,原 PNG 逐字节复制
+B-战斗/切图/名称.png,,res://Art/Supplied20261028/ui/name.png,战斗与商店状态展示 / name,,原 PNG 逐字节复制
+B-战斗/切图/背版1.png,,res://Art/Supplied20261028/ui/plate1.png,战斗与商店状态展示 / plate1,,原 PNG 逐字节复制
+B-战斗/切图/背版2.png,,res://Art/Supplied20261028/ui/plate2.png,战斗与商店状态展示 / plate2,,原 PNG 逐字节复制
+B-战斗/切图/背版3.png,,res://Art/Supplied20261028/ui/plate3.png,战斗与商店状态展示 / plate3,,原 PNG 逐字节复制
+B-战斗/切图/生命.png,,res://Art/Supplied20261028/ui/health.png,战斗与商店状态展示 / health,,原 PNG 逐字节复制
+B-战斗/切图/耐力.png,,res://Art/Supplied20261028/ui/stamina.png,战斗与商店状态展示 / stamina,,原 PNG 逐字节复制
+B-战斗/切图/开始.png,,res://Art/Supplied20261028/ui/play.png,战斗与商店状态展示 / play,,原 PNG 逐字节复制
+B-战斗/切图/暂停.png,,res://Art/Supplied20261028/ui/pause.png,战斗与商店状态展示 / pause,,原 PNG 逐字节复制
+B-战斗/切图/设置.png,,res://Art/Supplied20261028/ui/settings.png,战斗与商店状态展示 / settings,,原 PNG 逐字节复制
+B-战斗/切图/进度条1.png,,res://Art/Supplied20261028/ui/timeline_base.png,战斗与商店状态展示 / timeline_base,,原 PNG 逐字节复制
+B-战斗/切图/进度条2.png,,res://Art/Supplied20261028/ui/timeline_fill.png,战斗与商店状态展示 / timeline_fill,,原 PNG 逐字节复制
+B-战斗/切图/投影.png,,res://Art/Supplied20261028/ui/shadow.png,战斗与商店状态展示 / shadow,,原 PNG 逐字节复制
+B-战斗/切图/场景3.png,,res://Art/Supplied20261028/backgrounds/forest.png,第1章背景,,原 PNG 逐字节复制
+B-战斗/切图/沙漠.png,,res://Art/Supplied20261028/backgrounds/desert.png,第2章背景,,原 PNG 逐字节复制
+B-战斗/切图/场景2.png,,res://Art/Supplied20261028/backgrounds/volcano.png,第3章背景,,原 PNG 逐字节复制
+角色/输出/武备师.png,,res://Art/Supplied20261028/actors/armorer.png,已有角色 / armorer,,原 PNG 逐字节复制
+角色/输出/调配师.png,,res://Art/Supplied20261028/actors/alchemist.png,已有角色 / alchemist,,原 PNG 逐字节复制
+角色/输出/哥布林.png,,res://Art/Supplied20261028/actors/goblin.png,已有角色 / goblin,,原 PNG 逐字节复制
+角色/输出/蝙蝠.png,,res://Art/Supplied20261028/actors/bat.png,已有角色 / bat,,原 PNG 逐字节复制
+角色/输出/骷髅.png,,res://Art/Supplied20261028/actors/skeleton.png,已有角色 / skeleton,,原 PNG 逐字节复制
+A-商店&背包/背包/格子已使用.png,,res://Art/Supplied20261028/ui/cell.png,格线或匹配的 3×3 方形背包,,原 PNG 逐字节复制
+A-商店&背包/背包/格子未使用.png,,res://Art/Supplied20261028/ui/cell_empty.png,格线或匹配的 3×3 方形背包,,原 PNG 逐字节复制
+A-商店&背包/背包/背包4九格.png,,res://Art/Supplied20261028/ui/bag9.png,格线或匹配的 3×3 方形背包,,原 PNG 逐字节复制
+背包物品/匕首.png,,res://Art/Supplied20261028/items/utility_knife.png,已有物品 utility_knife：外观替换，名称/数值/占格不变,便携小刀,原 PNG 逐字节复制
+背包物品/铁质长剑.png,,res://Art/Supplied20261028/items/iron_sword.png,已有物品 iron_sword：外观替换，名称/数值/占格不变,铁脊长剑,原 PNG 逐字节复制
+背包物品/战斧.png,,res://Art/Supplied20261028/items/broad_axe.png,已有物品 broad_axe：外观替换，名称/数值/占格不变,宽刃斧,原 PNG 逐字节复制
+背包物品/双刃斧.png,,res://Art/Supplied20261028/items/heavy_cleaver.png,已有物品 heavy_cleaver：外观替换，名称/数值/占格不变,断梁重刃,原 PNG 逐字节复制
+背包物品/长矛.png,,res://Art/Supplied20261028/items/hunting_spear.png,已有物品 hunting_spear：外观替换，名称/数值/占格不变,猎路长矛,原 PNG 逐字节复制
+背包物品/板甲.png,,res://Art/Supplied20261028/items/plated_vest.png,已有物品 plated_vest：外观替换，名称/数值/占格不变,拼片甲,原 PNG 逐字节复制
+背包物品/皮甲.png,,res://Art/Supplied20261028/items/leather_wrap.png,已有物品 leather_wrap：外观替换，名称/数值/占格不变,韧皮缠带,原 PNG 逐字节复制
+背包物品/圣辉大盾.png,,res://Art/Supplied20261028/items/tower_shield.png,已有物品 tower_shield：外观替换，名称/数值/占格不变,高壁盾,原 PNG 逐字节复制
+背包物品/面包.png,,res://Art/Supplied20261028/items/travel_ration.png,已有物品 travel_ration：外观替换，名称/数值/占格不变,行军口粮,原 PNG 逐字节复制
+背包物品/磨刀石.png,,res://Art/Supplied20261028/items/sharpening_stone.png,已有物品 sharpening_stone：外观替换，名称/数值/占格不变,磨锋石,原 PNG 逐字节复制
+背包物品/打折卡.png,,res://Art/Supplied20261028/items/merchant_token.png,已有物品 merchant_token：外观替换，名称/数值/占格不变,商路筹码,原 PNG 逐字节复制
+背包物品/宝石紫.png,,res://Art/Supplied20261028/items/focus_prism.png,已有物品 focus_prism：外观替换，名称/数值/占格不变,聚焦棱镜,原 PNG 逐字节复制
+背包物品/打火石.png,,res://Art/Supplied20261028/items/ember_stone.png,已有物品 ember_stone：外观替换，名称/数值/占格不变,余烬石,原 PNG 逐字节复制
+背包物品/宝石蓝.png,,res://Art/Supplied20261028/items/glass_bead.png,已有物品 glass_bead：外观替换，名称/数值/占格不变,折光玻珠,原 PNG 逐字节复制
+背包物品/法典.png,,res://Art/Supplied20261028/items/field_manual.png,已有物品 field_manual：外观替换，名称/数值/占格不变,随军手册,原 PNG 逐字节复制
+背包物品/招财猫.png,,res://Art/Supplied20261028/items/salvage_pouch.png,已有物品 salvage_pouch：外观替换，名称/数值/占格不变,回收钱袋,原 PNG 逐字节复制
+背包物品/令牌.png,,res://Art/Supplied20261028/items/duelist_mark.png,已有物品 duelist_mark：外观替换，名称/数值/占格不变,决斗印记,原 PNG 逐字节复制
+背包物品/侍从铠甲.png,,res://Art/Supplied20261028/items/layered_plates.png,已有物品 layered_plates：外观替换，名称/数值/占格不变,叠层甲片,原 PNG 逐字节复制
+背包物品/荆棘刺甲.png,,res://Art/Supplied20261028/items/retaliation_spikes.png,已有物品 retaliation_spikes：外观替换，名称/数值/占格不变,回击尖刺,原 PNG 逐字节复制
+buff/中毒.png,,res://Art/Supplied20261028/status/poison.png,已有战斗反馈 / poison,,原 PNG 逐字节复制
+buff/反伤.png,,res://Art/Supplied20261028/status/spikes.png,已有战斗反馈 / spikes,,原 PNG 逐字节复制
+buff/吸血.png,,res://Art/Supplied20261028/status/lifesteal.png,已有战斗反馈 / lifesteal,,原 PNG 逐字节复制
+buff/护甲.png,,res://Art/Supplied20261028/status/armor.png,已有战斗反馈 / armor,,原 PNG 逐字节复制
+buff/抵抗.png,,res://Art/Supplied20261028/status/resistance.png,已有战斗反馈 / resistance,,原 PNG 逐字节复制
+buff/灼烧.png,,res://Art/Supplied20261028/status/burn.png,已有战斗反馈 / burn,,原 PNG 逐字节复制
+buff/物品冷却.png,,res://Art/Supplied20261028/status/cooldown.png,已有战斗反馈 / cooldown,,原 PNG 逐字节复制
+buff/耐力回复.png,,res://Art/Supplied20261028/status/stamina_regen.png,已有战斗反馈 / stamina_regen,,原 PNG 逐字节复制
+主页/手指.png,,res://Art/Supplied20261028/ui/hand.png,UI 教程指示,,原 PNG 逐字节复制
+主界面营地.png,,res://Art/Supplied20261028/ui/camp.png,已有休息节点的营地插画,,原 PNG 逐字节复制
+主页/主页.psd,4 / 图层 62,res://Art/Supplied20261028/ui/title.png,独立 PSD 图层 / title,,按图层原始像素导出，未合成文字
+主页/主页.psd,22 / 图层 52 拷贝,res://Art/Supplied20261028/ui/button.png,独立 PSD 图层 / button,,按图层原始像素导出，未合成文字
+主页/主页.psd,54 / 图层 56 拷贝,res://Art/Supplied20261028/ui/button_blue.png,独立 PSD 图层 / button_blue,,按图层原始像素导出，未合成文字
+主页/主页.psd,21 / 图层 55 拷贝 3,res://Art/Supplied20261028/ui/button_red.png,独立 PSD 图层 / button_red,,按图层原始像素导出，未合成文字
+选人界面/选人界面.psd,0 / 图层 1,res://Art/Supplied20261028/ui/selection.png,选人卡片房间背景,,独立房间图层，无预烘焙人物

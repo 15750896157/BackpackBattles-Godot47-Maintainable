@@ -41,7 +41,7 @@ func _process(delta):
 		signature = key
 		var act = int(Expedition.flow.run.get("act",1))
 		var position_hint = Vector2(960,100) if act == 1 else Vector2(1050,70) if act == 2 else Vector2(995,200)
-		if Game.state == Game.State.Shop: position_hint = Vector2(760,270)
+		if Game.state == Game.State.Shop: position_hint = Vector2(820,100)
 		key_light.position = position_hint; fill_light.position = Vector2(620,560)
 		fill_light.color = Color("ff9b43"); fill_light.energy = 0.12
 		var tint = Color("ffe5bd") if act != 1 or Game.state == Game.State.Shop else Color("dcebe0")

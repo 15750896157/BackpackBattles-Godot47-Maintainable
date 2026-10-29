@@ -14,10 +14,10 @@ func show_page():
 			ui.action(actions,ui.words("跳过引导","Skip guidance"),func():owner.flow.skip_tutorial();owner.view_return()).name="SkipTutorial"
 	var grid=ui.grid(owner.popup_content,3)
 	var entries=[
-		["battle","出战","Battle","整理好背包后，点红色双剑开始战斗。","Arrange your backpack, then tap the red crossed swords."],
+		["battle","出战","Battle","整理好背包后，点右上方开战挂牌。","Arrange your backpack, then tap the hanging battle sign."],
 		["codex","合成与图鉴","Craft & collect","点物品查看右侧详情；选配方后直接合成。","Tap an item for inline details. Select a recipe to craft."],
 		["journey","路线与敌情","Journey & enemies","路线卡片直接前进，敌人头像显示本页情报。","Route cards travel directly. Enemy portraits show inline intel."],
-		["previous","触摸与拖动","Move items","点按拿放，拿起后点左右箭头旋转、红叉放回；拖动背包才显示空格。","Pick and place. Use the arrows to rotate or the red cross to return a held item."],
+		["hand","触摸与拖动","Move items","点按拿放，拿起后点左右箭头旋转、红叉放回；拖动背包才显示空格。","Pick and place. Use the arrows to rotate or the red cross to return a held item."],
 		["continue","保存与继续","Save & continue","房屋图标保存返回；点标准或教学入口，再点继续游戏。","Save with the house. Open Standard or Tutorial, then choose Continue game."],
 		["guide","购买与出售","Buy & sell","商店物品拖入背包或仓库；拖到出售图案可卖出。","Move shop items to your bag or storage. Drop on the sale sign to sell."]]
 	for entry in entries:

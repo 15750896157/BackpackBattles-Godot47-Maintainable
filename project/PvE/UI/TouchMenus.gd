@@ -16,6 +16,8 @@ func _init(host):
 	guide=preload("res://PvE/UI/GuidePage.gd").new(host,shell)
 func prepare_icons():
 	var paths:Array=[]
-	for key in ["battle","guide","codex","journey","settings","home"]:paths.append(shell.ART+key+".png")
-	for key in ["window","button","card","close","previous","next","continue","new_run"]:paths.append(shell.TOUCH_ART+key+".png")
+	for key in ["battle","guide","codex","journey","settings","home","window","button","card","close","previous","next","continue","new_run","hand","button_blue","button_red"]:
+		var supplied=preload("res://PvE/Art/SuppliedArt.gd").ui_path(key) if key in ["battle","codex","journey","settings","button","hand","button_blue","button_red"] else ""
+		paths.append(supplied if not supplied.is_empty() else (shell.TOUCH_ART if key in ["window","button","card","close","previous","next","continue","new_run"] else shell.ART)+key+".png")
 	await AssetStream.prepare(paths,"mobile-ui-icons")
+	await AssetStream.prepare(["res://Art/Supplied20261028/ui/selection.png",preload("res://PvE/Art/SuppliedArt.gd").actor_path("armorer"),preload("res://PvE/Art/SuppliedArt.gd").actor_path("alchemist")],"role-ui")

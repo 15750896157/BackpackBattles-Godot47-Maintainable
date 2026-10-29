@@ -75,7 +75,10 @@ func request_resource(path: String, scope: String):
 func prepare_actor(character_class: int, chibi: bool, scope: String, include_skins: bool) -> bool:
 	if Expedition.enabled:
 		var supplied: Array = ["res://PvE/Art/Portrait.tscn"]
-		if scope == "actor-enemy": supplied.append("res://Art/20261022/" + preload("res://PvE/Art/Portrait.gd").enemy_art() + ".png")
+		var catalog = preload("res://PvE/Art/SuppliedArt.gd")
+		var key = preload("res://PvE/Art/Portrait.gd").enemy_art() if scope == "actor-enemy" else catalog.player_key(character_class)
+		supplied.append(catalog.actor_path(key))
+		if scope != "actor-enemy": supplied.append(catalog.shop_actor_path(key))
 		return await prepare(supplied, scope)
 	var actor: CharacterClass = Game.classResources[character_class]
 	var paths: Array = [actor.chibi_path if chibi else actor.sprite_path]

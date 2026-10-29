@@ -1,0 +1,1074 @@
+{
+	"checks": [
+		{
+			"message": "new isolated run",
+			"ok": true
+		},
+		{
+			"message": "route enters shop",
+			"ok": true
+		},
+		{
+			"message": "initial visible shelf matches authoritative offers",
+			"ok": true
+		},
+		{
+			"message": "native drag and drop commits through original interaction",
+			"ok": true
+		},
+		{
+			"message": "drop resumes its deferred presentation update",
+			"ok": true
+		},
+		{
+			"message": "refresh changes authoritative offers 0",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 0",
+			"ok": true
+		},
+		{
+			"message": "refresh changes authoritative offers 1",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 1",
+			"ok": true
+		},
+		{
+			"message": "refresh changes authoritative offers 2",
+			"ok": true
+		},
+		{
+			"message": "refresh swaps visible item scenes with their prices 2",
+			"ok": true
+		},
+		{
+			"message": "no stranded render request after refresh",
+			"ok": true
+		},
+		{
+			"message": "start battle through visible art control",
+			"ok": true
+		},
+		{
+			"message": "ordinary playback reaches battle end",
+			"ok": true
+		},
+		{
+			"message": "result automatically opens without touching intel",
+			"ok": true
+		},
+		{
+			"message": "next step is on the first visible page above long statistics",
+			"ok": true
+		},
+		{
+			"message": "result next button is available",
+			"ok": true
+		},
+		{
+			"message": "result next reaches rewards or run result",
+			"ok": true
+		},
+		{
+			"message": "title has no transition or menu input shield",
+			"ok": true
+		},
+		{
+			"message": "new-game title banner opens setup after battle",
+			"ok": true
+		},
+		{
+			"message": "new game actually leaves setup and shows routes",
+			"ok": true
+		},
+		{
+			"message": "second fresh run",
+			"ok": true
+		},
+		{
+			"message": "save current shop through settings",
+			"ok": true
+		},
+		{
+			"message": "standard entrance offers saved run",
+			"ok": true
+		},
+		{
+			"message": "title continue restores saved shop without a manual redraw",
+			"ok": true
+		},
+		{
+			"message": "second combat entered",
+			"ok": true
+		},
+		{
+			"message": "pause button stops playback before exit",
+			"ok": true
+		},
+		{
+			"message": "save and exit button in live combat settings",
+			"ok": true
+		},
+		{
+			"message": "combat exit finishes title transition",
+			"ok": true
+		},
+		{
+			"message": "title buttons accept real pointer input after combat exit",
+			"ok": true
+		},
+		{
+			"message": "standard entrance offers saved run",
+			"ok": true
+		},
+		{
+			"message": "continue button reconstructs exited combat",
+			"ok": true
+		}
+	],
+	"failures": [],
+	"observations": [
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "01-shop",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 9,
+				"job_costs": {
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 433,
+						"total_us": 1146
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8606,
+						"total_us": 8606
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3807,
+						"total_us": 3807
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 489,
+						"total_us": 489
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8606,
+				"jobs": 0,
+				"loaded": 78,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 78,
+				"resident": 78,
+				"scopes": 9,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "01b-after-native-drop",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 2,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 9,
+				"job_costs": {
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 433,
+						"total_us": 1146
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 1,
+						"max_us": 8606,
+						"total_us": 8606
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3807,
+						"total_us": 3807
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 489,
+						"total_us": 489
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8606,
+				"jobs": 0,
+				"loaded": 78,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 0,
+				"requested": 78,
+				"resident": 78,
+				"scopes": 9,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "02-refresh-0",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 3,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 14,
+				"job_costs": {
+					"res://Items/CustomerCard.tscn": {
+						"count": 1,
+						"max_us": 463,
+						"total_us": 463
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 433,
+						"total_us": 1146
+					},
+					"res://Items/Exclusive/MagicMirror.tscn": {
+						"count": 1,
+						"max_us": 381,
+						"total_us": 381
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 2,
+						"max_us": 8606,
+						"total_us": 9070
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 2,
+						"max_us": 4836,
+						"total_us": 5321
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3807,
+						"total_us": 3807
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 1,
+						"max_us": 489,
+						"total_us": 489
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8606,
+				"jobs": 0,
+				"loaded": 83,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 3,
+				"requested": 83,
+				"resident": 80,
+				"scopes": 9,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "02-refresh-1",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 4,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 18,
+				"job_costs": {
+					"res://Items/CustomerCard.tscn": {
+						"count": 1,
+						"max_us": 463,
+						"total_us": 463
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 3,
+						"max_us": 433,
+						"total_us": 1146
+					},
+					"res://Items/Exclusive/MagicMirror.tscn": {
+						"count": 1,
+						"max_us": 381,
+						"total_us": 381
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 2,
+						"max_us": 8606,
+						"total_us": 9070
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 1,
+						"max_us": 4159,
+						"total_us": 4159
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 3,
+						"max_us": 4836,
+						"total_us": 5825
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 1,
+						"max_us": 351,
+						"total_us": 351
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3807,
+						"total_us": 3807
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 2,
+						"max_us": 489,
+						"total_us": 862
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8606,
+				"jobs": 0,
+				"loaded": 86,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 6,
+				"requested": 86,
+				"resident": 80,
+				"scopes": 9,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 1,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "02-refresh-2",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "SHOP_PREPARE",
+			"stream": {
+				"budget_overruns": 5,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 23,
+				"job_costs": {
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3664,
+						"total_us": 3664
+					},
+					"res://Items/CustomerCard.tscn": {
+						"count": 1,
+						"max_us": 463,
+						"total_us": 463
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 4,
+						"max_us": 433,
+						"total_us": 1576
+					},
+					"res://Items/Exclusive/MagicMirror.tscn": {
+						"count": 1,
+						"max_us": 381,
+						"total_us": 381
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 3,
+						"max_us": 8606,
+						"total_us": 9529
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 1,
+						"max_us": 4159,
+						"total_us": 4159
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 4,
+						"max_us": 4836,
+						"total_us": 6343
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 1,
+						"max_us": 351,
+						"total_us": 351
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 1,
+						"max_us": 3807,
+						"total_us": 3807
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 3,
+						"max_us": 489,
+						"total_us": 1238
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8606,
+				"jobs": 0,
+				"loaded": 88,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 8,
+				"requested": 88,
+				"resident": 80,
+				"scopes": 9,
+				"sync_misses": 0,
+				"sync_paths": {}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 1024,
+			"native": 2,
+			"page": "COMBAT_RESULT",
+			"panel": true,
+			"pending": false,
+			"phase": "03-automatic-result",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "COMBAT_RESULT",
+			"stream": {
+				"budget_overruns": 6,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 30,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 1,
+						"max_us": 376,
+						"total_us": 376
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3664,
+						"total_us": 3664
+					},
+					"res://Items/CustomerCard.tscn": {
+						"count": 1,
+						"max_us": 463,
+						"total_us": 463
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 2,
+						"max_us": 411,
+						"total_us": 818
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 4,
+						"max_us": 433,
+						"total_us": 1576
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/MagicMirror.tscn": {
+						"count": 1,
+						"max_us": 381,
+						"total_us": 381
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 4,
+						"max_us": 8606,
+						"total_us": 10000
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 1,
+						"max_us": 4159,
+						"total_us": 4159
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 4,
+						"max_us": 4836,
+						"total_us": 6343
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 1,
+						"max_us": 351,
+						"total_us": 351
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5142,
+						"total_us": 5142
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3807,
+						"total_us": 4273
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 3,
+						"max_us": 489,
+						"total_us": 1238
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 1,
+						"max_us": 38,
+						"total_us": 38
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8606,
+				"jobs": 0,
+				"loaded": 120,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 47,
+				"requested": 120,
+				"resident": 73,
+				"scopes": 9,
+				"sync_misses": 1,
+				"sync_paths": {
+					"res://Art/Supplied20261028/actors/bat.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 4
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 0,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "04-title-after-result",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "MAIN_MENU",
+			"stream": {
+				"budget_overruns": 6,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 30,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 1,
+						"max_us": 376,
+						"total_us": 376
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3664,
+						"total_us": 3664
+					},
+					"res://Items/CustomerCard.tscn": {
+						"count": 1,
+						"max_us": 463,
+						"total_us": 463
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 2,
+						"max_us": 411,
+						"total_us": 818
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 4,
+						"max_us": 433,
+						"total_us": 1576
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 1,
+						"max_us": 407,
+						"total_us": 407
+					},
+					"res://Items/Exclusive/MagicMirror.tscn": {
+						"count": 1,
+						"max_us": 381,
+						"total_us": 381
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 4,
+						"max_us": 8606,
+						"total_us": 10000
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 1,
+						"max_us": 4159,
+						"total_us": 4159
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 4,
+						"max_us": 4836,
+						"total_us": 6343
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 1,
+						"max_us": 351,
+						"total_us": 351
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5142,
+						"total_us": 5142
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 2,
+						"max_us": 3807,
+						"total_us": 4273
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 3,
+						"max_us": 489,
+						"total_us": 1238
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 1,
+						"max_us": 38,
+						"total_us": 38
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 1,
+						"max_us": 16,
+						"total_us": 16
+					}
+				},
+				"job_max_us": 8606,
+				"jobs": 0,
+				"loaded": 121,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 99,
+				"requested": 121,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 1,
+				"sync_paths": {
+					"res://Art/Supplied20261028/actors/bat.png": 1
+				}
+			},
+			"syncing": false,
+			"title_mode": 0
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 0,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "05-title-after-combat-exit",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "MAIN_MENU",
+			"stream": {
+				"budget_overruns": 13,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 54,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 3,
+						"max_us": 376,
+						"total_us": 1068
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3664,
+						"total_us": 3664
+					},
+					"res://Items/CustomerCard.tscn": {
+						"count": 1,
+						"max_us": 463,
+						"total_us": 463
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 4,
+						"max_us": 430,
+						"total_us": 1651
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 4,
+						"max_us": 433,
+						"total_us": 1576
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 2,
+						"max_us": 418,
+						"total_us": 825
+					},
+					"res://Items/Exclusive/MagicMirror.tscn": {
+						"count": 1,
+						"max_us": 381,
+						"total_us": 381
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 6,
+						"max_us": 8635,
+						"total_us": 27206
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 2,
+						"max_us": 4159,
+						"total_us": 5458
+					},
+					"res://Items/Gems/BurningCoal.tscn": {
+						"count": 1,
+						"max_us": 3852,
+						"total_us": 3852
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 6,
+						"max_us": 4842,
+						"total_us": 15876
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 2,
+						"max_us": 402,
+						"total_us": 753
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5142,
+						"total_us": 5142
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 5,
+						"max_us": 3807,
+						"total_us": 12102
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 5,
+						"max_us": 492,
+						"total_us": 2209
+					},
+					"res://Items/Spear.tscn": {
+						"count": 2,
+						"max_us": 416,
+						"total_us": 816
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 2,
+						"max_us": 385,
+						"total_us": 764
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 2,
+						"max_us": 38,
+						"total_us": 72
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 3,
+						"max_us": 16,
+						"total_us": 48
+					}
+				},
+				"job_max_us": 8635,
+				"jobs": 0,
+				"loaded": 275,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 253,
+				"requested": 275,
+				"resident": 22,
+				"scopes": 3,
+				"sync_misses": 2,
+				"sync_paths": {
+					"res://Art/Supplied20261028/actors/bat.png": 2
+				}
+			},
+			"syncing": false,
+			"title_mode": 0
+		},
+		{
+			"curtain": false,
+			"input_sources": 0,
+			"native": 2,
+			"page": "",
+			"panel": false,
+			"pending": false,
+			"phase": "06-continue",
+			"ranked_disabled": false,
+			"ranked_filter": 0,
+			"scene_animation": "",
+			"screen": "COMBAT_RUNNING",
+			"stream": {
+				"budget_overruns": 17,
+				"cancelled": 0,
+				"failures": [],
+				"inflight": 0,
+				"instances": 69,
+				"job_costs": {
+					"res://Items/ClawsofAttack.tscn": {
+						"count": 4,
+						"max_us": 392,
+						"total_us": 1460
+					},
+					"res://Items/CursedHairComb.tscn": {
+						"count": 1,
+						"max_us": 3664,
+						"total_us": 3664
+					},
+					"res://Items/CustomerCard.tscn": {
+						"count": 1,
+						"max_us": 463,
+						"total_us": 463
+					},
+					"res://Items/Dagger.tscn": {
+						"count": 5,
+						"max_us": 430,
+						"total_us": 2064
+					},
+					"res://Items/Exclusive/BurningBanner.tscn": {
+						"count": 4,
+						"max_us": 433,
+						"total_us": 1576
+					},
+					"res://Items/Exclusive/Holdall.tscn": {
+						"count": 3,
+						"max_us": 418,
+						"total_us": 1242
+					},
+					"res://Items/Exclusive/MagicMirror.tscn": {
+						"count": 1,
+						"max_us": 381,
+						"total_us": 381
+					},
+					"res://Items/Exclusive/Scissorswords.tscn": {
+						"count": 7,
+						"max_us": 8635,
+						"total_us": 35820
+					},
+					"res://Items/Exclusive/SpringLoader.tscn": {
+						"count": 1,
+						"max_us": 404,
+						"total_us": 404
+					},
+					"res://Items/Exclusive/TimeDilator.tscn": {
+						"count": 3,
+						"max_us": 4159,
+						"total_us": 6736
+					},
+					"res://Items/Gems/BurningCoal.tscn": {
+						"count": 2,
+						"max_us": 3852,
+						"total_us": 7652
+					},
+					"res://Items/Gems/PerfectAmethyst.tscn": {
+						"count": 7,
+						"max_us": 4855,
+						"total_us": 20731
+					},
+					"res://Items/HealingHerbs.tscn": {
+						"count": 3,
+						"max_us": 402,
+						"total_us": 1109
+					},
+					"res://Items/HeroicPotion.tscn": {
+						"count": 1,
+						"max_us": 5142,
+						"total_us": 5142
+					},
+					"res://Items/LeatherBag.tscn": {
+						"count": 7,
+						"max_us": 3807,
+						"total_us": 16222
+					},
+					"res://Items/LuckyClover.tscn": {
+						"count": 6,
+						"max_us": 492,
+						"total_us": 2676
+					},
+					"res://Items/Spear.tscn": {
+						"count": 3,
+						"max_us": 443,
+						"total_us": 1259
+					},
+					"res://Items/YggdrasilLeaf.tscn": {
+						"count": 3,
+						"max_us": 385,
+						"total_us": 1146
+					},
+					"res://Runtime/Loading/Scenes/CombatBackdrop1.tscn": {
+						"count": 3,
+						"max_us": 43,
+						"total_us": 115
+					},
+					"res://Runtime/Loading/Scenes/ShopBackdrop.tscn": {
+						"count": 4,
+						"max_us": 16,
+						"total_us": 64
+					}
+				},
+				"job_max_us": 8635,
+				"jobs": 0,
+				"loaded": 369,
+				"max_inflight": 1,
+				"pending": 0,
+				"released": 294,
+				"requested": 369,
+				"resident": 75,
+				"scopes": 9,
+				"sync_misses": 3,
+				"sync_paths": {
+					"res://Art/Supplied20261028/actors/bat.png": 3
+				}
+			},
+			"syncing": false,
+			"title_mode": 4
+		}
+	],
+	"ok": true
+}

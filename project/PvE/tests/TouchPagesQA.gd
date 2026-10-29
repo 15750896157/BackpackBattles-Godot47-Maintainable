@@ -68,7 +68,8 @@ func run_tests():
 	if skip!=null:await click(skip)
 	await settle();check(Expedition.flow.profile_service.profile.tutorial_completed.size()==Expedition.db.rows("tutorial_steps").size(),"guide skip persists tutorial completion")
 	Expedition.flow.choose_route(0);await settle();await snapshot("03-shop")
-	check(Expedition.art.ui.get_node("ArtStartBattle").size.x>=330,"prominent battle button preserved")
+	var battle_button=Expedition.art.ui.get_node("ArtStartBattle")
+	check(battle_button.size.x>=210 and battle_button.size.y>=300 and battle_button.size.x*battle_button.size.y>=70000,"supplied hanging battle sign remains a prominent touch target without stretching")
 	check(Game.PLAYER.sprite.body.texture.get_height()*Game.PLAYER.sprite.body.scale.y>=340,"enlarged shop character preserved")
 	var item=Game.PLAYER.INVENTORY.getItems().filter(func(value):return not value.isBag())[0]
 	var original=Expedition.flow.run.build.duplicate(true);item.pickup();await settle()

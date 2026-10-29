@@ -37,7 +37,13 @@ func new_setup():
 	var roles=ui.row()
 	for id in ["armorer","alchemist"]:
 		var data=owner.db.get_row("characters",id)
-		var button=ui.card(roles,owner.t(data.name_key),load("res://Art/20261022/hero.png"),func():role=id;loadout="";setup(),"♥ "+str(data.max_health))
+		var button=ui.card(roles,owner.t(data.name_key),load(preload("res://PvE/Art/SuppliedArt.gd").actor_path(id)),func():role=id;loadout="";setup(),"♥ "+str(data.max_health))
+		button.custom_minimum_size.y=310
+		button.get_child(0).get_child(0).custom_minimum_size.y=180
+		for state in ["normal","hover","pressed","disabled"]:
+			var skin=StyleBoxTexture.new();skin.texture=load("res://Art/Supplied20261028/ui/selection.png");skin.set_content_margin_all(14);button.add_theme_stylebox_override(state,skin)
+		for label in button.find_children("*","Label",true,false):
+			label.add_theme_color_override("font_color",Color("fff0ce"));label.add_theme_color_override("font_outline_color",Color("20120b"));label.add_theme_constant_override("outline_size",3)
 		button.modulate=Color.WHITE if role==id else Color(0.76,0.76,0.76)
 	var choices=ui.row()
 	for data in owner.db.rows("character_loadouts"):
@@ -54,6 +60,9 @@ func new_setup():
 		if seed_value<0 or seed_value>4294967295:owner.notice("ui.invalid_seed");return
 		owner.perform(owner.flow.new_run(role,loadout,difficulty,seed_value,true)))
 	begin.name="BeginExpedition"
+	for state in ["normal","hover","pressed","disabled"]:
+		var skin=owner.ui_theme.get_stylebox(state,"Button").duplicate();skin.texture=load("res://Art/Supplied20261028/ui/button_red.png");begin.add_theme_stylebox_override(state,skin)
+	for state in ["font_color","font_hover_color","font_pressed_color"]:begin.add_theme_color_override(state,Color("fff4d7"))
 func confirm_new(new_role: String,new_loadout: String,new_difficulty: String,new_seed: int):
 	role=new_role;loadout=new_loadout;seed_value=new_seed
 	difficulty=new_difficulty
@@ -103,6 +112,9 @@ func event():
 	if rest:Sound.playBGM(Sound.postFightBGM_survival,-8)
 	var event=owner.db.get_row("events",str(owner.flow.run.current_node.get("event_id","")))
 	ui.open(owner.flow.screen_state,owner.t("ui.rest") if rest else owner.t(event.title_key))
+	if rest:
+		var camp=ui.picture(ui.row(),null,Vector2(560,190));camp.name="RestCampArt"
+		owner.detail_views.fill_supplied_picture(weakref(camp),"camp",owner.popup_epoch)
 	if not rest:owner.label(owner.t(event.description_key),null,24)
 	var grid=ui.grid(owner.popup_content,2)
 	for choice in owner.db.rows("rest_actions" if rest else "event_choices"):

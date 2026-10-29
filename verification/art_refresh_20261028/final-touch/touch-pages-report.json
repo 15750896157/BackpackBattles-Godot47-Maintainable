@@ -1,0 +1,3670 @@
+{
+	"checks": [
+		{
+			"message": "no standalone continue banner",
+			"ok": true
+		},
+		{
+			"message": "setup: single menu level",
+			"ok": true
+		},
+		{
+			"message": "setup: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "setup: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "setup: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "setup: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "setup: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "setup: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "setup: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "setup: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "setup: button page 0",
+			"ok": true
+		},
+		{
+			"message": "setup: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "setup: complete button text fits: 轻装连击",
+			"ok": true
+		},
+		{
+			"message": "setup: complete button text fits: 守势反击",
+			"ok": true
+		},
+		{
+			"message": "setup: complete button text fits: 教学",
+			"ok": true
+		},
+		{
+			"message": "setup: complete button text fits: 标准",
+			"ok": true
+		},
+		{
+			"message": "setup: complete button text fits: 换一张地图",
+			"ok": true
+		},
+		{
+			"message": "setup: complete button text fits: 出发",
+			"ok": true
+		},
+		{
+			"message": "no save goes directly to setup",
+			"ok": true
+		},
+		{
+			"message": "independent guide preserves tutorial skip",
+			"ok": true
+		},
+		{
+			"message": "guide skip persists tutorial completion",
+			"ok": true
+		},
+		{
+			"message": "supplied hanging battle sign remains a prominent touch target without stretching",
+			"ok": true
+		},
+		{
+			"message": "enlarged shop character preserved",
+			"ok": true
+		},
+		{
+			"message": "on-screen rotation appears only while holding",
+			"ok": true
+		},
+		{
+			"message": "mouse rotate button rotates held item without accidental drop",
+			"ok": true
+		},
+		{
+			"message": "return button restores held item and saved placement",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: complete button text fits: 画面与操作",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: complete button text fits: 声音",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: complete button text fits: 简体中文  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: complete button text fits: 100%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: complete button text fits: 窗口  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: complete button text fits: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: complete button text fits: 画面与操作",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.0: complete button text fits: 声音",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: complete button text fits: 可以合成",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.0: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 成就",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 历程",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.0: complete button text fits: 战斗记录",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: complete button text fits: 能力",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: entire enemy build fits one sheet",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: complete button text fits: 能力",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.0: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: complete button text fits: 画面与操作",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: complete button text fits: 声音",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: complete button text fits: 简体中文  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: complete button text fits: 140%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: complete button text fits: 窗口  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: complete button text fits: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "settingszh_CN1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: complete button text fits: 画面与操作",
+			"ok": true
+		},
+		{
+			"message": "soundzh_CN1.4: complete button text fits: 声音",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "guidezh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemszh_CN1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagszh_CN1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: complete button text fits: 可以合成",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "recipeszh_CN1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 全部",
+			"ok": true
+		},
+		{
+			"message": "enemieszh_CN1.4: complete button text fits: 已发现",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "ruleszh_CN1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 物品",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 合成",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 敌人",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 规则",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 记录",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 成就",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 历程",
+			"ok": true
+		},
+		{
+			"message": "recordszh_CN1.4: complete button text fits: 战斗记录",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: complete button text fits: 能力",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelzh_CN1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: entire enemy build fits one sheet",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: complete button text fits: 能力",
+			"ok": true
+		},
+		{
+			"message": "enemy-buildzh_CN1.4: complete button text fits: 背包",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: complete button text fits: Display & play",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: complete button text fits: Sound",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: complete button text fits: English  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: complete button text fits: 100%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: complete button text fits: Window  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: complete button text fits: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: complete button text fits: Display & play",
+			"ok": true
+		},
+		{
+			"message": "sounden1.0: complete button text fits: Sound",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "guideen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: complete button text fits: Craftable",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.0: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Achievements",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: History",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.0: complete button text fits: Battle record",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: complete button text fits: Abilities",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: complete button text fits: Backpack",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelen1.0: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: entire enemy build fits one sheet",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: complete button text fits: Abilities",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.0: complete button text fits: Backpack",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: complete button text fits: Display & play",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: complete button text fits: Sound",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: complete button text fits: English  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: complete button text fits: 140%  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: complete button text fits: Window  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: complete button text fits: 1280×720  ›",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "settingsen1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: complete button text fits: Display & play",
+			"ok": true
+		},
+		{
+			"message": "sounden1.4: complete button text fits: Sound",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "guideen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "itemsen1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "bagsen1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: complete button text fits: Craftable",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "recipesen1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: All",
+			"ok": true
+		},
+		{
+			"message": "enemiesen1.4: complete button text fits: Discovered",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "rulesen1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Items",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Bags",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Recipes",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Enemies",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Rules",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Records",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Achievements",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: History",
+			"ok": true
+		},
+		{
+			"message": "recordsen1.4: complete button text fits: Battle record",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: complete button text fits: Abilities",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: complete button text fits: Backpack",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: long description fits horizontally",
+			"ok": true
+		},
+		{
+			"message": "intelen1.4: text pages retain complete description",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: single menu level",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: button page 0",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: entire enemy build fits one sheet",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: complete button text fits: Abilities",
+			"ok": true
+		},
+		{
+			"message": "enemy-builden1.4: complete button text fits: Backpack",
+			"ok": true
+		},
+		{
+			"message": "UI paging never edits inventory",
+			"ok": true
+		},
+		{
+			"message": "viewport mouse click advances item sheet",
+			"ok": true
+		},
+		{
+			"message": "viewport mouse click returns item sheet",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): single menu level",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): button page 0",
+			"ok": true
+		},
+		{
+			"message": "viewport (960, 540): wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): single menu level",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): button page 0",
+			"ok": true
+		},
+		{
+			"message": "viewport (1280, 1024): wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): single menu level",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): button page 0",
+			"ok": true
+		},
+		{
+			"message": "viewport (2400, 1080): wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "saved run still has no standalone banner",
+			"ok": true
+		},
+		{
+			"message": "resume choice: single menu level",
+			"ok": true
+		},
+		{
+			"message": "resume choice: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "resume choice: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "resume choice: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "resume choice: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "resume choice: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "resume choice: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "resume choice: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "resume choice: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "resume choice: button page 0",
+			"ok": true
+		},
+		{
+			"message": "resume choice: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "standard entrance offers continue",
+			"ok": true
+		},
+		{
+			"message": "standard entrance offers new game",
+			"ok": true
+		},
+		{
+			"message": "opening entrance preserves previous run",
+			"ok": true
+		},
+		{
+			"message": "continue preserves run identity",
+			"ok": true
+		},
+		{
+			"message": "tutorial entrance also offers saved run",
+			"ok": true
+		},
+		{
+			"message": "new game needs no archive checkbox",
+			"ok": true
+		},
+		{
+			"message": "draft selection does not destroy progress",
+			"ok": true
+		},
+		{
+			"message": "explicit new game replaces run and reaches routes",
+			"ok": true
+		},
+		{
+			"message": "new routes: single menu level",
+			"ok": true
+		},
+		{
+			"message": "new routes: no nested drop-down",
+			"ok": true
+		},
+		{
+			"message": "new routes: contents fit viewport width",
+			"ok": true
+		},
+		{
+			"message": "new routes: fixed navigation remains reachable",
+			"ok": true
+		},
+		{
+			"message": "new routes: fixed panel stays in viewport",
+			"ok": true
+		},
+		{
+			"message": "new routes: content viewport inside frame",
+			"ok": true
+		},
+		{
+			"message": "new routes: page arrows inside frame",
+			"ok": true
+		},
+		{
+			"message": "new routes: no keyboard entry required",
+			"ok": true
+		},
+		{
+			"message": "new routes: no scrollbar",
+			"ok": true
+		},
+		{
+			"message": "new routes: button page 0",
+			"ok": true
+		},
+		{
+			"message": "new routes: wheel cannot change page",
+			"ok": true
+		},
+		{
+			"message": "new routes: complete button text fits: Intel",
+			"ok": true
+		},
+		{
+			"message": "new routes: complete button text fits: Intel",
+			"ok": true
+		},
+		{
+			"message": "new routes: complete button text fits: Act boss",
+			"ok": true
+		}
+	],
+	"failures": [],
+	"ok": true
+}

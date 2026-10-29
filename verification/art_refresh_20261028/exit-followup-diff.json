@@ -1,0 +1,13 @@
+{
+  "baseline_tests_passed": 24,
+  "changed_after_baseline": [
+    "project/Core/Main.tscn",
+    "tools/ensure_art_imports.ps1"
+  ],
+  "only_change": "Exit hit region rotation 21.4129 rad -> 0.378736 rad",
+  "followup": [
+    "TouchPagesMain",
+    "SuppliedArtMain",
+    "real mouse exit"
+  ]
+}

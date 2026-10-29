@@ -7,7 +7,7 @@ func portrait(node:Dictionary)->Texture2D:
 	var enemy=owner.db.get_row("enemy_builds",str(node.get("enemy_id","")))
 	var archetype=str(enemy.get("archetype_id",""))
 	var key="goblin" if archetype in ["venom_brewer","field_mender","toxic_guard"] else "bat" if archetype in ["ember_runner","quick_striker","gear_conductor"] else "skeleton"
-	return load("res://Art/20261022/"+key+".png")
+	return load(preload("res://PvE/Art/SuppliedArt.gd").actor_path(key))
 func choose_route():
 	ui.open("ROUTE_SELECT",ui.words("选择路线","Choose route"))
 	var choices=ui.row()

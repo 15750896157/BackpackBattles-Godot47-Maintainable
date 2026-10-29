@@ -1,0 +1,1917 @@
+[
+  {
+    "path": "A-商店&背包/147.png",
+    "bytes": 1507961,
+    "sha256": "649f2dcf396547d50b6302a6dbb746d489f13804775c215f55e8b0ad7ce231d1",
+    "size": [
+      1942,
+      1123
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1942,
+      1123
+    ]
+  },
+  {
+    "path": "A-商店&背包/Thumbs.db",
+    "bytes": 9728,
+    "sha256": "140cd4d005e6e7021a758102eec1779103203311ef63fd5e87db76698213373f",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\A-商店&背包\\\\Thumbs.db'"
+  },
+  {
+    "path": "A-商店&背包/切图/Thumbs.db",
+    "bytes": 19968,
+    "sha256": "131033da5eb4b4fad3035d8788252a8db53a279e65372644ee22af280a7d065c",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\A-商店&背包\\\\切图\\\\Thumbs.db'"
+  },
+  {
+    "path": "A-商店&背包/切图/出售单.png",
+    "bytes": 46252,
+    "sha256": "e8519a449f28dc9a45b0b4852321cc89f410314f2898fb5863ca5c36f8baa4cb",
+    "size": [
+      312,
+      251
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      312,
+      251
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/刷新铃铛.png",
+    "bytes": 24606,
+    "sha256": "acc5252ce94e5921a6b515b3e5619811649104227abccdaf1cd1d2d905dd5733",
+    "size": [
+      122,
+      322
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      122,
+      322
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/商人.png",
+    "bytes": 184904,
+    "sha256": "76b5cb65d0ca253e0e5e317077f50d8b752f57ce7fedbd8da6c6293ed2d86184",
+    "size": [
+      483,
+      320
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      483,
+      320
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/商店射手师.png",
+    "bytes": 226957,
+    "sha256": "8bcd7504a40f7a78af0e47e70c5872f3d99033268e90e6fb6adeda67409572e1",
+    "size": [
+      514,
+      429
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      9,
+      0,
+      514,
+      429
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/商店武备师.png",
+    "bytes": 244750,
+    "sha256": "1adab366c1115eca7637047d2fcc77b0a3f9b4ba1702f95e0976376821dc25fd",
+    "size": [
+      448,
+      436
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      448,
+      436
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/商店背景.png",
+    "bytes": 701923,
+    "sha256": "a7f892f138e6a932b9237d484e765148c9cc063a487a24a51160f130f9bbac27",
+    "size": [
+      1942,
+      1123
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1942,
+      1123
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/商店调配师.png",
+    "bytes": 260332,
+    "sha256": "5d2cc0509d63f801cd351543f81788887e64c950cf7cce7af294273af23af210",
+    "size": [
+      514,
+      406
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      514,
+      406
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/图鉴.png",
+    "bytes": 30447,
+    "sha256": "90082589d61afe52e595f92df97d784e5569cbd6739f39ef550215bcbcc1bed6",
+    "size": [
+      243,
+      119
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      6,
+      0,
+      235,
+      113
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/开战决定挂牌.png",
+    "bytes": 26165,
+    "sha256": "2a644af9100eb41e20867650b64530d40351830869644c39754f12d1e0b22961",
+    "size": [
+      234,
+      361
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      232,
+      361
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/放置物品.png",
+    "bytes": 107640,
+    "sha256": "561bd36cc46a40cc737aa12c79bba99eacfe27e95563d568fe7f2e4e7458d69e",
+    "size": [
+      1165,
+      230
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1165,
+      230
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/敌情.png",
+    "bytes": 37463,
+    "sha256": "f199d6fcd496b01d2c28ae6e61c04bbb58bb517b5bc798f5a7b74275128e1723",
+    "size": [
+      169,
+      237
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      169,
+      236
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/桌面.png",
+    "bytes": 48180,
+    "sha256": "3077fae8484f8d57a6f4804cbaabc07fd8297ef8b689e8bbb926061372b56cc2",
+    "size": [
+      1942,
+      222
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1942,
+      222
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/正常报价.png",
+    "bytes": 3806,
+    "sha256": "90b70c0c1a403aeddc12410e1a5d4b7a8c3ab5b4d67241fbf54725c3c6bac0b3",
+    "size": [
+      90,
+      59
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      90,
+      59
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/红圆.png",
+    "bytes": 1305,
+    "sha256": "cf0f4ed9eb7dd1719c54948e85760718aaaf56c619147b46360c649aeb568904",
+    "size": [
+      50,
+      50
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      50,
+      50
+    ]
+  },
+  {
+    "path": "A-商店&背包/切图/货架.png",
+    "bytes": 39268,
+    "sha256": "41d5af19808399540077b84e1b1d4a0a8c31d31a6cbda3af54a3f56026348494",
+    "size": [
+      1056,
+      112
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      6,
+      6,
+      1050,
+      106
+    ]
+  },
+  {
+    "path": "A-商店&背包/商店.psd",
+    "bytes": 9780185,
+    "sha256": "950cf7ad9889af7d5cc185e8e90b073e2ab1703d703861733d88af3f90e6c806",
+    "size": [
+      1942,
+      1123
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\A-商店&背包\\商店.png"
+  },
+  {
+    "path": "A-商店&背包/背包/Thumbs.db",
+    "bytes": 4096,
+    "sha256": "6b650c0c0e3cc674016ef8947ceb3b4ff2fa10dc5cc338fdc878925bed3b1cbd",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\A-商店&背包\\\\背包\\\\Thumbs.db'"
+  },
+  {
+    "path": "A-商店&背包/背包/格子已使用.png",
+    "bytes": 5866,
+    "sha256": "53bb7adb0bb8f4364869fa6eaf1f7b80526a6c3ea1696362ce8a60c7ecef6ced",
+    "size": [
+      64,
+      63
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      64,
+      63
+    ]
+  },
+  {
+    "path": "A-商店&背包/背包/格子未使用.png",
+    "bytes": 6234,
+    "sha256": "ca936cd177a9e545a3c75f42009c63d6efa9bbe7f35eb8d3d7f0944014e7f374",
+    "size": [
+      63,
+      63
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      63,
+      63
+    ]
+  },
+  {
+    "path": "A-商店&背包/背包/背包1两格.png",
+    "bytes": 15794,
+    "sha256": "cf044326fe6a878ea914e22de82a916c58550afbfb5eadf312e3df49d84cd7ca",
+    "size": [
+      83,
+      160
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      83,
+      160
+    ]
+  },
+  {
+    "path": "A-商店&背包/背包/背包2一格.png",
+    "bytes": 14027,
+    "sha256": "6e1f6efc146a02abae339f48a1f5f5020f0920d368e4e2ff6eb5225bf38b4acc",
+    "size": [
+      91,
+      91
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      91,
+      90
+    ]
+  },
+  {
+    "path": "A-商店&背包/背包/背包3八格.png",
+    "bytes": 59034,
+    "sha256": "156311869332b1ef4b746cb24c70ba90d3b13f3ff53942d9258193d86a329994",
+    "size": [
+      176,
+      241
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      175,
+      241
+    ]
+  },
+  {
+    "path": "A-商店&背包/背包/背包4九格.png",
+    "bytes": 67697,
+    "sha256": "5372e6a30dbbb6a66047275ff2d10f501a06a9ad4cd26a91d905fb7b7808cee9",
+    "size": [
+      243,
+      247
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      243,
+      246
+    ]
+  },
+  {
+    "path": "A-商店&背包/背包/背包5四格.png",
+    "bytes": 28684,
+    "sha256": "18f370c7d691af01dab7548c5427c2818e3dfc2ca2a998e68510d2292f2ed78c",
+    "size": [
+      173,
+      166
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      173,
+      166
+    ]
+  },
+  {
+    "path": "A-商店&背包/背包.psd",
+    "bytes": 9835198,
+    "sha256": "08b628e7ac8b1afd67530bc0524fab53be80f06107dd5e322dee485c378a831a",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\A-商店&背包\\背包.png"
+  },
+  {
+    "path": "B-战斗/Thumbs.db",
+    "bytes": 10240,
+    "sha256": "0db405709b99acc2557ffab28e13ee30a0c132cc7cf8d5da2fc6a1e9016af0bf",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\B-战斗\\\\Thumbs.db'"
+  },
+  {
+    "path": "B-战斗/切图/Thumbs.db",
+    "bytes": 14848,
+    "sha256": "41433c1997504b0fe1a07ba58b79d22000b36592a5fe870736f31cec325d75e0",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\B-战斗\\\\切图\\\\Thumbs.db'"
+  },
+  {
+    "path": "B-战斗/切图/名称.png",
+    "bytes": 4714,
+    "sha256": "971d57af0171f1089b0530fce85d36e7cf9633cddd0f577cfa84c156851a3904",
+    "size": [
+      342,
+      46
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      319,
+      46
+    ]
+  },
+  {
+    "path": "B-战斗/切图/场景1.png",
+    "bytes": 1230874,
+    "sha256": "9e760fea65b37a79515e98359dcff6b895f30dc8a3da53ff83054d91b8a56941",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1081
+    ]
+  },
+  {
+    "path": "B-战斗/切图/场景2.png",
+    "bytes": 1081220,
+    "sha256": "b5712143d9c60ece96e460a9f7e056958ead09c3edba187355bb4a4de698113a",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1081
+    ]
+  },
+  {
+    "path": "B-战斗/切图/场景3.png",
+    "bytes": 1072841,
+    "sha256": "eef35b6c0300f01c4763b2772ca3feca85813b0e3001ae0af6c6edb7f5b4c74c",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1081
+    ]
+  },
+  {
+    "path": "B-战斗/切图/开始.png",
+    "bytes": 1459,
+    "sha256": "60fe3f1970c1cd8502029b1b3e4c52e31ff41e176e0f3cb5b4b5534e54b70a10",
+    "size": [
+      32,
+      36
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      32,
+      36
+    ]
+  },
+  {
+    "path": "B-战斗/切图/投影.png",
+    "bytes": 6736,
+    "sha256": "0c0c2738fc1a2b62aac0601653e5a3f66c871fd6246797074c83dcf7975ca7aa",
+    "size": [
+      344,
+      98
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      10,
+      11,
+      334,
+      87
+    ]
+  },
+  {
+    "path": "B-战斗/切图/暂停.png",
+    "bytes": 1206,
+    "sha256": "72743819cce362fbfdc9d56cbf1492dfd767bf6053ac6a8a1e91c80cf05afc1b",
+    "size": [
+      37,
+      36
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      37,
+      36
+    ]
+  },
+  {
+    "path": "B-战斗/切图/沙漠.png",
+    "bytes": 1778802,
+    "sha256": "d1f48641602e9221c49b704b94414ae5370f1ed5f900c01266694dda9dcd431d",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1081
+    ]
+  },
+  {
+    "path": "B-战斗/切图/生命.png",
+    "bytes": 824,
+    "sha256": "0d7d5a172850752a4e1bfa7018e3075270936bdd9efa4c2ae329cf50e4812911",
+    "size": [
+      205,
+      36
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      205,
+      36
+    ]
+  },
+  {
+    "path": "B-战斗/切图/示意图.png",
+    "bytes": 1491124,
+    "sha256": "961400cd7a2a95a2db873dc8f7bb7153a3aa6f092421e2305646588ba358f33b",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1081
+    ]
+  },
+  {
+    "path": "B-战斗/切图/耐力.png",
+    "bytes": 897,
+    "sha256": "18c01e2d87c86aaefd17b1df7ea4a5d28b556ab50a14b9d40b1ba63a0d7ea15d",
+    "size": [
+      205,
+      36
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      205,
+      36
+    ]
+  },
+  {
+    "path": "B-战斗/切图/背版1.png",
+    "bytes": 488,
+    "sha256": "ab66203342db826f11d3c76bda150eba46dae72ac1099f4e9c5ca72216f8dac3",
+    "size": [
+      201,
+      70
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      201,
+      70
+    ]
+  },
+  {
+    "path": "B-战斗/切图/背版2.png",
+    "bytes": 1074,
+    "sha256": "fd83f188ba43e832f2144d4fdcc36add8dd9952a6ed91be6e9bc4bc836042182",
+    "size": [
+      568,
+      152
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      568,
+      152
+    ]
+  },
+  {
+    "path": "B-战斗/切图/背版3.png",
+    "bytes": 588,
+    "sha256": "98d2d7d7f43169d338b83fbffd9ff51bee5893c00b2a258e428a791d5978eb54",
+    "size": [
+      205,
+      36
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      205,
+      36
+    ]
+  },
+  {
+    "path": "B-战斗/切图/设置.png",
+    "bytes": 4784,
+    "sha256": "5131f491167f62e4cda15821a0532760e92866f93e6cfd8d3e2c09047fb18525",
+    "size": [
+      73,
+      73
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      72,
+      73
+    ]
+  },
+  {
+    "path": "B-战斗/切图/进度条1.png",
+    "bytes": 1375,
+    "sha256": "6b0d1b5ba1249cb102f964ed7abf1e549bf186149f712650c6fcf886f98de7a3",
+    "size": [
+      560,
+      70
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      560,
+      70
+    ]
+  },
+  {
+    "path": "B-战斗/切图/进度条2.png",
+    "bytes": 783,
+    "sha256": "68a84ee0ac1b9c3f29ef2b1c0918b7f79a036b6af6177eae3122f2649548b3ee",
+    "size": [
+      560,
+      20
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      560,
+      20
+    ]
+  },
+  {
+    "path": "B-战斗/战斗界面参考.psd",
+    "bytes": 11117708,
+    "sha256": "325eb0c77736cd495c54d45108ec79b7392d219d05e7a5cbf60f8896f1c62230",
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\B-战斗\\战斗界面参考.png"
+  },
+  {
+    "path": "buff/BUFF.psd",
+    "bytes": 1954754,
+    "sha256": "647811c6a8715b68179745d8d0108e63f56572059849ba77e1eac8ccd302305f",
+    "size": [
+      400,
+      400
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\buff\\BUFF.png"
+  },
+  {
+    "path": "buff/Thumbs.db",
+    "bytes": 3584,
+    "sha256": "2cddcbe4934a5a71f00eb9815decf5accbad99f339a0cacc3e6bd332db9a0795",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\buff\\\\Thumbs.db'"
+  },
+  {
+    "path": "buff/中毒.png",
+    "bytes": 5524,
+    "sha256": "bc15fb63ae3b86e0ee0291d757fc238670f03ab8043eb5efff2d52ea22ae0526",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      2,
+      3,
+      31,
+      29
+    ]
+  },
+  {
+    "path": "buff/反伤.png",
+    "bytes": 5331,
+    "sha256": "6f09629e02bfd9253ac347f9ee1b0d81b66a3a08aa437c42b143624c1ebf8d9d",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      1,
+      3,
+      31,
+      30
+    ]
+  },
+  {
+    "path": "buff/吸血.png",
+    "bytes": 5284,
+    "sha256": "8e02acbb81442dfcdee5a2378f33bf0c1353fdc4fb064f885e1ac21c55d37444",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      1,
+      3,
+      31,
+      29
+    ]
+  },
+  {
+    "path": "buff/护甲.png",
+    "bytes": 5475,
+    "sha256": "159b8de0d2016de34e7d9cc4d7176582b9173201a079ab4d2e3a3b7e208ac799",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      4,
+      2,
+      28,
+      31
+    ]
+  },
+  {
+    "path": "buff/抵抗.png",
+    "bytes": 5498,
+    "sha256": "f62b6d1ef245bb7254c9c26b178bfbd0a1385bcae8b06a4a178bfc3c5a62282b",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      3,
+      2,
+      30,
+      30
+    ]
+  },
+  {
+    "path": "buff/灼烧.png",
+    "bytes": 5423,
+    "sha256": "884b7a538ae94d68d4e66bab7c751319cf601448101511a39c34fd069f757bcd",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      5,
+      1,
+      28,
+      31
+    ]
+  },
+  {
+    "path": "buff/物品冷却.png",
+    "bytes": 4872,
+    "sha256": "8f4c0d34edf04b9891573f1cb29de4b885834d291085bbe1bb2a909cb1886930",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      5,
+      3,
+      27,
+      30
+    ]
+  },
+  {
+    "path": "buff/耐力回复.png",
+    "bytes": 5898,
+    "sha256": "37a37581072bd601ee1eddd7e3c11f7dc571fcf35e6ea5387f85700637318ff5",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      2,
+      3,
+      30,
+      30
+    ]
+  },
+  {
+    "path": "Thumbs.db",
+    "bytes": 20992,
+    "sha256": "9cf5aef8b1d9972b415dcaefe534f3a00d22b6dfe8cdc473c9e7ee873955962c",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\Thumbs.db'"
+  },
+  {
+    "path": "主界面营地.png",
+    "bytes": 1552459,
+    "sha256": "3dd1ab8ffa59fb6d12c0cb4d9e57fab04049051ede45ff6006fc6205e16283da",
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ]
+  },
+  {
+    "path": "主页/Thumbs.db",
+    "bytes": 12800,
+    "sha256": "b8c3b825c20ce553b6dd0c8538bc833528ad853cd0a1afb06f88bd1d8ef61bc1",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\主页\\\\Thumbs.db'"
+  },
+  {
+    "path": "主页/主页.psd",
+    "bytes": 44764808,
+    "sha256": "f9104f680d261f309d2a40cef0bc16f566dfac5360d993f24f36a24bab0f86c4",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\主页\\主页.png"
+  },
+  {
+    "path": "主页/手指.png",
+    "bytes": 16994,
+    "sha256": "85dc045312e7b5865c596d75378f9325fed5dd58b478484f0159b11d500c42a8",
+    "size": [
+      119,
+      121
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      119,
+      121
+    ]
+  },
+  {
+    "path": "场景.psd",
+    "bytes": 15938175,
+    "sha256": "a4a0106c6db4e6e7d57beebf9e25762134594a8dc266b7f0f2e4083509373e5e",
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\场景.png"
+  },
+  {
+    "path": "未标题-1.psd",
+    "bytes": 3829992,
+    "sha256": "2c582689f89361c7c34f65b28166ec57dbf1ed710f8e3ed1a47522dc638b5c73",
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\未标题-1.png"
+  },
+  {
+    "path": "背包物品/Thumbs.db",
+    "bytes": 9216,
+    "sha256": "7badbe6edc8b279abf530c20455a9d7ca5d249a5ca3ad1e7e07da6b297ed4e70",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\背包物品\\\\Thumbs.db'"
+  },
+  {
+    "path": "背包物品/令牌.png",
+    "bytes": 13599,
+    "sha256": "5a1654f41d41191a7de4975f4589062f1e6bbe78fa1cb7feeabf6d863bb1e87f",
+    "size": [
+      74,
+      124
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      16,
+      0,
+      74,
+      124
+    ]
+  },
+  {
+    "path": "背包物品/侍从铠甲.png",
+    "bytes": 53257,
+    "sha256": "2d77e6cdaa2963c87988cae5c90efd4a58b6ac208281067aebff4f75dd5c2263",
+    "size": [
+      146,
+      194
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      146,
+      194
+    ]
+  },
+  {
+    "path": "背包物品/匕首.png",
+    "bytes": 13158,
+    "sha256": "13899db2eee33767779aa87ba7d228b46e2fadac2a7c97aa7d569406b73e0fce",
+    "size": [
+      39,
+      150
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      39,
+      149
+    ]
+  },
+  {
+    "path": "背包物品/十字架.png",
+    "bytes": 4141,
+    "sha256": "e6267ac091eb48d9ecd4e8203bcd429a1d6965a18251a762c6ede54653991a17",
+    "size": [
+      56,
+      73
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      56,
+      73
+    ]
+  },
+  {
+    "path": "背包物品/双刃斧.png",
+    "bytes": 33055,
+    "sha256": "6a27153e3045e6a6151b4c93b3fb5747c7c8aa0c76713372ac35342614e5031b",
+    "size": [
+      141,
+      302
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      141,
+      300
+    ]
+  },
+  {
+    "path": "背包物品/圣光十字架.png",
+    "bytes": 35517,
+    "sha256": "9d954780d29910f82dd9e4b55ed8fa08a36588250a5876a9f16ec4a7cfd2d398",
+    "size": [
+      192,
+      279
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      1,
+      0,
+      192,
+      279
+    ]
+  },
+  {
+    "path": "背包物品/圣辉大盾.png",
+    "bytes": 43461,
+    "sha256": "42268334f000500fdc399f3721da7eda92cc6c9da27494c735a269036471bdc5",
+    "size": [
+      143,
+      144
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      143,
+      144
+    ]
+  },
+  {
+    "path": "背包物品/基础法杖.png",
+    "bytes": 9401,
+    "sha256": "ffeccc5045d889cd356bc318dc9b18429b9f79bfa6b4efc8ae2953a7a73cc75a",
+    "size": [
+      46,
+      145
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      46,
+      145
+    ]
+  },
+  {
+    "path": "背包物品/复合弓.png",
+    "bytes": 18437,
+    "sha256": "34b750b5e8c73f2ec3d06c09a1a941d365fd3194c3c5ac753c7e93d633106a70",
+    "size": [
+      65,
+      215
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      65,
+      215
+    ]
+  },
+  {
+    "path": "背包物品/学徒长袍.png",
+    "bytes": 53930,
+    "sha256": "c9f8604d506e6530ea97705b80407f5ab5676076c6914a16c3afde68a765402b",
+    "size": [
+      146,
+      212
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      146,
+      212
+    ]
+  },
+  {
+    "path": "背包物品/宝石紫.png",
+    "bytes": 6008,
+    "sha256": "fc69d6aa5645d9c784ad2a94375e04c7173d51bb570a87b847276e6b088f21d3",
+    "size": [
+      47,
+      70
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      47,
+      70
+    ]
+  },
+  {
+    "path": "背包物品/宝石红.png",
+    "bytes": 5865,
+    "sha256": "64faeac49736a768387577cf59f82b4b64dae2f43306dc2e699aa281d13bd3c4",
+    "size": [
+      47,
+      70
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      47,
+      70
+    ]
+  },
+  {
+    "path": "背包物品/宝石绿.png",
+    "bytes": 6435,
+    "sha256": "3afe0acab3518c0fd0eb51abab8bc7e29af041f8f9f27b95f3c836ac366e95da",
+    "size": [
+      59,
+      57
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      1,
+      59,
+      57
+    ]
+  },
+  {
+    "path": "背包物品/宝石蓝.png",
+    "bytes": 6641,
+    "sha256": "171f301ee3ff3edff42d21e4968bee74b08a19d495ed6ef4bd4601051e8317d8",
+    "size": [
+      52,
+      62
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      52,
+      62
+    ]
+  },
+  {
+    "path": "背包物品/宝石黄.png",
+    "bytes": 3997,
+    "sha256": "de92ee1e1dd14bfa5b14a2fcfde512dfde69b9aecad6b69973bb846c7e660bbd",
+    "size": [
+      54,
+      56
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      53,
+      56
+    ]
+  },
+  {
+    "path": "背包物品/巫毒法杖.png",
+    "bytes": 20811,
+    "sha256": "4bda4150b5ec6e8b0e1026c6cb55f6e31be2f257f65dd2f8eea17d6da00b0a3b",
+    "size": [
+      77,
+      225
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      77,
+      225
+    ]
+  },
+  {
+    "path": "背包物品/弓.png",
+    "bytes": 14538,
+    "sha256": "49a8d5e33baa84c598bd8f43bfa691100beeae5038c0ed19285e7ca1f5223b14",
+    "size": [
+      63,
+      302
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      63,
+      302
+    ]
+  },
+  {
+    "path": "背包物品/恶魔法典.png",
+    "bytes": 50644,
+    "sha256": "257de5e9dd6a273f85714fe71066d2e21b5e6bc4c254c90d800672d8546aed33",
+    "size": [
+      140,
+      201
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      140,
+      201
+    ]
+  },
+  {
+    "path": "背包物品/战斧.png",
+    "bytes": 21476,
+    "sha256": "c7d59ad7e99df70bf5d252bd768461ca848661dd526f1fcd60f4ebb60beffae3",
+    "size": [
+      118,
+      225
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      118,
+      225
+    ]
+  },
+  {
+    "path": "背包物品/打折卡.png",
+    "bytes": 8013,
+    "sha256": "fb95921ccdd96cd94328b876e043af4a0948f0c5fd9ea9192ddadc5576551240",
+    "size": [
+      75,
+      56
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      75,
+      56
+    ]
+  },
+  {
+    "path": "背包物品/打火石.png",
+    "bytes": 6381,
+    "sha256": "7b8dd7520f99e1f2149bd184fc1496a1b1f9836969c0ee782130ff979c180707",
+    "size": [
+      67,
+      52
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      2,
+      67,
+      52
+    ]
+  },
+  {
+    "path": "背包物品/招财猫.png",
+    "bytes": 19338,
+    "sha256": "f8ab25f34c4b6fbd1700e5b45de29508b7a65e2e85c409d89378729f7fddfa8d",
+    "size": [
+      77,
+      126
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      77,
+      126
+    ]
+  },
+  {
+    "path": "背包物品/木制小刀.png",
+    "bytes": 14131,
+    "sha256": "0d5f7749f2648cc4fa205e89232ecc794d239e541a10d03c0353b648e9e9c016",
+    "size": [
+      53,
+      151
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      1,
+      1,
+      52,
+      151
+    ]
+  },
+  {
+    "path": "背包物品/木弓.png",
+    "bytes": 6650,
+    "sha256": "06067d36041ef15bc80adf331718c9ba19f984cc03ffe9037a1c2524bf2ded49",
+    "size": [
+      43,
+      147
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      43,
+      147
+    ]
+  },
+  {
+    "path": "背包物品/木杖.png",
+    "bytes": 15701,
+    "sha256": "f505ca165e878818fea4d90e758f0431bda477f35a4fe89b93a9f4eb12afc7e2",
+    "size": [
+      56,
+      233
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      56,
+      233
+    ]
+  },
+  {
+    "path": "背包物品/木棍.png",
+    "bytes": 15570,
+    "sha256": "3957155364320dd07fbcb774966d0f2edb2a93a11b8426cfdb3bacc212b5e0db",
+    "size": [
+      37,
+      230
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      1,
+      37,
+      229
+    ]
+  },
+  {
+    "path": "背包物品/板甲.png",
+    "bytes": 47419,
+    "sha256": "c23d46decb97364ec5756fe50f75613b3cf9d3075cd4ad12d5f5d481b2fa83fa",
+    "size": [
+      142,
+      196
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      142,
+      196
+    ]
+  },
+  {
+    "path": "背包物品/果子.png",
+    "bytes": 7306,
+    "sha256": "6a882d01906e317204cb5db46d779e80b9b24928bce5cef99dc2d07fb13de88c",
+    "size": [
+      55,
+      59
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      55,
+      59
+    ]
+  },
+  {
+    "path": "背包物品/法典.png",
+    "bytes": 22881,
+    "sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+    "size": [
+      136,
+      128
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      135,
+      128
+    ]
+  },
+  {
+    "path": "背包物品/混沌法杖.png",
+    "bytes": 22730,
+    "sha256": "5e438785292657b5038cac9264ebcde5b6aa7accc6703daf3e8aa05af82aaad7",
+    "size": [
+      76,
+      294
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      76,
+      294
+    ]
+  },
+  {
+    "path": "背包物品/牧师徽章.png",
+    "bytes": 35015,
+    "sha256": "eec0ef61702178665de416d1a019f1e82cf26b1425bf822a5caca6d419b86f14",
+    "size": [
+      140,
+      147
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      1,
+      140,
+      147
+    ]
+  },
+  {
+    "path": "背包物品/王冠.png",
+    "bytes": 8389,
+    "sha256": "86543d72625c82c46b4b9b2c65a26f7f812b2d2333fdd527ca648dbc889077cc",
+    "size": [
+      69,
+      67
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      69,
+      67
+    ]
+  },
+  {
+    "path": "背包物品/皮甲.png",
+    "bytes": 38999,
+    "sha256": "a4b2790aca24525182d6c395a02f45ecca01ffd68d40a8e5cd196a79e14f4df9",
+    "size": [
+      147,
+      187
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      146,
+      187
+    ]
+  },
+  {
+    "path": "背包物品/盆栽.png",
+    "bytes": 12220,
+    "sha256": "001d125f707acaa78cd0a306e835c68a7d175d9412854a0aed03437d8dc5c10d",
+    "size": [
+      59,
+      124
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      59,
+      124
+    ]
+  },
+  {
+    "path": "背包物品/石头.png",
+    "bytes": 6021,
+    "sha256": "5cc57b53d910c4e617283e2e69b59b46d149fca4a86ddde7e3b38608f3c5a8e5",
+    "size": [
+      59,
+      56
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      59,
+      56
+    ]
+  },
+  {
+    "path": "背包物品/磨刀石.png",
+    "bytes": 19066,
+    "sha256": "4996867a845d5ea574c76fbb07244003c0913ad077e1dbcef766aa90058a267f",
+    "size": [
+      143,
+      110
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      143,
+      73
+    ]
+  },
+  {
+    "path": "背包物品/精灵弓.png",
+    "bytes": 16023,
+    "sha256": "5f26cbf11c65834ac543b7966de1a35cb9537b103b1b2407a0f1b9b9e7eb0800",
+    "size": [
+      50,
+      304
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      50,
+      304
+    ]
+  },
+  {
+    "path": "背包物品/精灵护符.png",
+    "bytes": 28537,
+    "sha256": "b7e9ffe9ac4c33c54b6defe17a9deea98a466122aedbf8e49726e1b932f9ab90",
+    "size": [
+      112,
+      142
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      112,
+      141
+    ]
+  },
+  {
+    "path": "背包物品/精灵结石.png",
+    "bytes": 8777,
+    "sha256": "06f8b9242d34c21cae709f6a1ff711e4f52bbba72ff2f2cb31ddea6636b89c56",
+    "size": [
+      70,
+      69
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      1,
+      70,
+      69
+    ]
+  },
+  {
+    "path": "背包物品/纯铜怀表.png",
+    "bytes": 7899,
+    "sha256": "05a8fff2758982a51513c11208dc5a137af9848d72a1871bcf70d06e2caf4e15",
+    "size": [
+      57,
+      70
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      57,
+      70
+    ]
+  },
+  {
+    "path": "背包物品/英雄弓.png",
+    "bytes": 21085,
+    "sha256": "9a5e287171e0ea2ccda7076529ed6f46220cc5701d6db10f1001ca3a8b727e01",
+    "size": [
+      69,
+      376
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      69,
+      376
+    ]
+  },
+  {
+    "path": "背包物品/荆棘刺甲.png",
+    "bytes": 53187,
+    "sha256": "09455ca6887918c43bc442563401ac665c40cd4d33d6444c48b6dbb559609dec",
+    "size": [
+      119,
+      196
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      119,
+      196
+    ]
+  },
+  {
+    "path": "背包物品/藤曼草环.png",
+    "bytes": 7501,
+    "sha256": "de104e1d170d0ecceff2f42c62489f6d7abaa7985add3d4c4d179cc77c38aeb6",
+    "size": [
+      73,
+      68
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      73,
+      68
+    ]
+  },
+  {
+    "path": "背包物品/藤蔓弓.png",
+    "bytes": 20398,
+    "sha256": "39105d59ac6443067694e123c01df210970013f5d01be4a9e0d6e661091ab3cc",
+    "size": [
+      68,
+      302
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      68,
+      302
+    ]
+  },
+  {
+    "path": "背包物品/血戒指.png",
+    "bytes": 8201,
+    "sha256": "f630d9b8648d45fe1120035fd03c7535a1b5bac093d49fda7ff414dfbe127478",
+    "size": [
+      61,
+      69
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      61,
+      69
+    ]
+  },
+  {
+    "path": "背包物品/血杏.png",
+    "bytes": 16176,
+    "sha256": "da3fb744552ec7a46e42c4c7d3a7f24e75ae1f68aad5f08bb221ef03148776e0",
+    "size": [
+      63,
+      220
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      63,
+      220
+    ]
+  },
+  {
+    "path": "背包物品/铁质长剑.png",
+    "bytes": 10558,
+    "sha256": "828acc4990f22d4a5f6a98316670648b4eb0f9cb687699ab304e49d599be3b2d",
+    "size": [
+      56,
+      229
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      56,
+      228
+    ]
+  },
+  {
+    "path": "背包物品/长矛.png",
+    "bytes": 22212,
+    "sha256": "0a41bb63bb2630ac52d2219d5ec579f1e67db2ce2b87eca863e4a68698963247",
+    "size": [
+      39,
+      305
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      1,
+      39,
+      305
+    ]
+  },
+  {
+    "path": "背包物品/面包.png",
+    "bytes": 17595,
+    "sha256": "d72135ca3a2f8d94f17a01ae61a84c22dd81e055033e677114d3ff30c0b1e051",
+    "size": [
+      169,
+      59
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      169,
+      59
+    ]
+  },
+  {
+    "path": "背包物品/魔法弓.png",
+    "bytes": 20858,
+    "sha256": "74fcf33982028e64cc61f8ccf96f1d9ff8c62e0cb91f3e42c3edd152b62083f6",
+    "size": [
+      67,
+      304
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      67,
+      304
+    ]
+  },
+  {
+    "path": "背包物品/鸢盾短剑.png",
+    "bytes": 42878,
+    "sha256": "6c10bb889f61be7f0a92747042d07a155f91b2864be1acf20112aa362a982644",
+    "size": [
+      152,
+      222
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      1,
+      0,
+      152,
+      222
+    ]
+  },
+  {
+    "path": "背包物品/黄昏长袍.png",
+    "bytes": 59231,
+    "sha256": "b34f1b2c6e9dc7f3eca2e48d1b3df0460a70083c933e3d9c18d3358446453175",
+    "size": [
+      144,
+      214
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      144,
+      214
+    ]
+  },
+  {
+    "path": "角色/Thumbs.db",
+    "bytes": 8192,
+    "sha256": "9894a0bc094fb087896d3eff788f7debb93f54c30a2b844dd8ae336d225ac33f",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\角色\\\\Thumbs.db'"
+  },
+  {
+    "path": "角色/角色源文件.psd",
+    "bytes": 63333667,
+    "sha256": "8a7c4d7df838b88a4c995e0366f06986b1b27baf142289e99bf9a76d83d852d5",
+    "size": [
+      9993,
+      5885
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\角色\\角色源文件.png"
+  },
+  {
+    "path": "角色/输出/boss.png",
+    "bytes": 201142,
+    "sha256": "ee32a721e2dd8246bcb46952394d9d68a5acd1b7e8a4e86a48958cf0b6c67320",
+    "size": [
+      413,
+      419
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      5,
+      2,
+      399,
+      419
+    ]
+  },
+  {
+    "path": "角色/输出/Thumbs.db",
+    "bytes": 101376,
+    "sha256": "09de24e8d24ed9135dace1d24db8770ec7c41fce9962cee83aafc73bf008e602",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\角色\\\\输出\\\\Thumbs.db'"
+  },
+  {
+    "path": "角色/输出/哥布林.png",
+    "bytes": 85327,
+    "sha256": "9d19993d1aaac382ee4e6fe52c0b5c760b341d85c499bfb600b143a7313ad439",
+    "size": [
+      245,
+      289
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      245,
+      289
+    ]
+  },
+  {
+    "path": "角色/输出/射手师.png",
+    "bytes": 163015,
+    "sha256": "d0dfba8a28491d25b66c280f3fef068b5c215cdc9d06cc6e14765d95af9eee64",
+    "size": [
+      398,
+      434
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      392,
+      434
+    ]
+  },
+  {
+    "path": "角色/输出/武备师.png",
+    "bytes": 205035,
+    "sha256": "9d2de26789dd5860959b869b01a2a69ea3affcfcc341b507b6845d0c6cf7760b",
+    "size": [
+      421,
+      458
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      421,
+      458
+    ]
+  },
+  {
+    "path": "角色/输出/蝙蝠.png",
+    "bytes": 79909,
+    "sha256": "9ec978f76ebe47b44a2c790770cc0df305a56d1d84b17c84392d3844db40db92",
+    "size": [
+      317,
+      241
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      317,
+      241
+    ]
+  },
+  {
+    "path": "角色/输出/调配师.png",
+    "bytes": 226535,
+    "sha256": "ed6aa46ea62a7f23f023ae6d8f41c58beacb54569753d83a90df92b0c4a7d276",
+    "size": [
+      432,
+      412
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      432,
+      412
+    ]
+  },
+  {
+    "path": "角色/输出/骷髅.png",
+    "bytes": 125288,
+    "sha256": "67c0330424c7ae43a343bf047577bbceb90de5c6a7ff79e5ad760b293619a32b",
+    "size": [
+      311,
+      350
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      0,
+      0,
+      311,
+      350
+    ]
+  },
+  {
+    "path": "选人界面/Thumbs.db",
+    "bytes": 8704,
+    "sha256": "df6e01869570d36354c0342009d98e39e447f6d4c5cd63302a35f063fe1e58ef",
+    "preview_error": "cannot identify image file 'C:\\\\Users\\\\Asus\\\\Downloads\\\\美术\\\\背包游戏\\\\选人界面\\\\Thumbs.db'"
+  },
+  {
+    "path": "选人界面/选人界面.psd",
+    "bytes": 7159722,
+    "sha256": "7580834a8f29c342a060e06f96a94a16a9dfb0e0cec20412207db5cfe14dc785",
+    "size": [
+      1920,
+      1081
+    ],
+    "mode": "RGB",
+    "preview": "C:\\Users\\Asus\\Documents\\Codex\\2026-10-12\\zhe\\work\\art_refresh_20261028\\psd-previews\\选人界面\\选人界面.png"
+  }
+]

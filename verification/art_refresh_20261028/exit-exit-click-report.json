@@ -1,0 +1,41 @@
+{
+	"actual_exit_signal": true,
+	"checks": [
+		{
+			"message": "visible label point inside native exit target: (0.0, 0.0)",
+			"ok": true
+		},
+		{
+			"message": "visible label point inside native exit target: (-60.0, 0.0)",
+			"ok": true
+		},
+		{
+			"message": "visible label point inside native exit target: (60.0, 0.0)",
+			"ok": true
+		},
+		{
+			"message": "visible label point inside native exit target: (0.0, -12.0)",
+			"ok": true
+		},
+		{
+			"message": "visible label point inside native exit target: (0.0, 12.0)",
+			"ok": true
+		},
+		{
+			"message": "left blank area is outside native exit target",
+			"ok": true
+		},
+		{
+			"message": "left blank click does not quit",
+			"ok": true
+		},
+		{
+			"message": "real native quit handler starts shutdown",
+			"ok": true
+		}
+	],
+	"failures": [],
+	"game_shutdown_started": true,
+	"input_kind": "Godot viewport mouse events; no physical pointer input",
+	"ok": true
+}

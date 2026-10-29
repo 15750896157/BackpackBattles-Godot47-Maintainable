@@ -1,0 +1,22 @@
+{
+	"all_passed": true,
+	"checks": {
+		"continue_run": true,
+		"drag_to_storage": true,
+		"exit_pressed": true,
+		"guide_close": true,
+		"guide_open": true,
+		"left_blank_no_exit": true,
+		"refresh_instances": true,
+		"return_unchanged": true,
+		"rotate": true,
+		"save_title": true,
+		"sell": true,
+		"undo_sale": true
+	},
+	"gold": 8.0,
+	"held": false,
+	"page": "",
+	"quitting": true,
+	"state": "MAIN_MENU"
+}

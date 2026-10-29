@@ -1,0 +1,610 @@
+[
+  {
+    "source": "A-商店&背包/切图/商人.png",
+    "target": "res://Art/Supplied20261028/ui/merchant.png",
+    "purpose": "商店展示 / merchant",
+    "sha256": "76b5cb65d0ca253e0e5e317077f50d8b752f57ce7fedbd8da6c6293ed2d86184",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 184904
+  },
+  {
+    "source": "A-商店&背包/切图/桌面.png",
+    "target": "res://Art/Supplied20261028/ui/table.png",
+    "purpose": "商店展示 / table",
+    "sha256": "3077fae8484f8d57a6f4804cbaabc07fd8297ef8b689e8bbb926061372b56cc2",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 48180
+  },
+  {
+    "source": "A-商店&背包/切图/货架.png",
+    "target": "res://Art/Supplied20261028/ui/shelf.png",
+    "purpose": "商店展示 / shelf",
+    "sha256": "41d5af19808399540077b84e1b1d4a0a8c31d31a6cbda3af54a3f56026348494",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 39268
+  },
+  {
+    "source": "A-商店&背包/切图/放置物品.png",
+    "target": "res://Art/Supplied20261028/ui/storage_mat.png",
+    "purpose": "商店展示 / storage_mat",
+    "sha256": "561bd36cc46a40cc737aa12c79bba99eacfe27e95563d568fe7f2e4e7458d69e",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 107640
+  },
+  {
+    "source": "A-商店&背包/切图/出售单.png",
+    "target": "res://Art/Supplied20261028/ui/sell.png",
+    "purpose": "商店展示 / sell",
+    "sha256": "e8519a449f28dc9a45b0b4852321cc89f410314f2898fb5863ca5c36f8baa4cb",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 46252
+  },
+  {
+    "source": "A-商店&背包/切图/刷新铃铛.png",
+    "target": "res://Art/Supplied20261028/ui/refresh.png",
+    "purpose": "商店展示 / refresh",
+    "sha256": "acc5252ce94e5921a6b515b3e5619811649104227abccdaf1cd1d2d905dd5733",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 24606
+  },
+  {
+    "source": "A-商店&背包/切图/正常报价.png",
+    "target": "res://Art/Supplied20261028/ui/price.png",
+    "purpose": "商店展示 / price",
+    "sha256": "90b70c0c1a403aeddc12410e1a5d4b7a8c3ab5b4d67241fbf54725c3c6bac0b3",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 3806
+  },
+  {
+    "source": "A-商店&背包/切图/红圆.png",
+    "target": "res://Art/Supplied20261028/ui/sale.png",
+    "purpose": "商店展示 / sale",
+    "sha256": "cf0f4ed9eb7dd1719c54948e85760718aaaf56c619147b46360c649aeb568904",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1305
+  },
+  {
+    "source": "A-商店&背包/切图/图鉴.png",
+    "target": "res://Art/Supplied20261028/ui/codex.png",
+    "purpose": "商店展示 / codex",
+    "sha256": "90082589d61afe52e595f92df97d784e5569cbd6739f39ef550215bcbcc1bed6",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 30447
+  },
+  {
+    "source": "A-商店&背包/切图/敌情.png",
+    "target": "res://Art/Supplied20261028/ui/journey.png",
+    "purpose": "商店展示 / journey",
+    "sha256": "f199d6fcd496b01d2c28ae6e61c04bbb58bb517b5bc798f5a7b74275128e1723",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 37463
+  },
+  {
+    "source": "A-商店&背包/切图/开战决定挂牌.png",
+    "target": "res://Art/Supplied20261028/ui/battle.png",
+    "purpose": "商店展示 / battle",
+    "sha256": "2a644af9100eb41e20867650b64530d40351830869644c39754f12d1e0b22961",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 26165
+  },
+  {
+    "source": "A-商店&背包/切图/商店武备师.png",
+    "target": "res://Art/Supplied20261028/ui/shop_armorer.png",
+    "purpose": "商店展示 / shop_armorer",
+    "sha256": "1adab366c1115eca7637047d2fcc77b0a3f9b4ba1702f95e0976376821dc25fd",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 244750
+  },
+  {
+    "source": "A-商店&背包/切图/商店调配师.png",
+    "target": "res://Art/Supplied20261028/ui/shop_alchemist.png",
+    "purpose": "商店展示 / shop_alchemist",
+    "sha256": "5d2cc0509d63f801cd351543f81788887e64c950cf7cce7af294273af23af210",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 260332
+  },
+  {
+    "source": "A-商店&背包/切图/商店背景.png",
+    "target": "res://Art/Supplied20261028/ui/shop.png",
+    "purpose": "商店展示 / shop",
+    "sha256": "a7f892f138e6a932b9237d484e765148c9cc063a487a24a51160f130f9bbac27",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 701923
+  },
+  {
+    "source": "B-战斗/切图/名称.png",
+    "target": "res://Art/Supplied20261028/ui/name.png",
+    "purpose": "战斗与商店状态展示 / name",
+    "sha256": "971d57af0171f1089b0530fce85d36e7cf9633cddd0f577cfa84c156851a3904",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 4714
+  },
+  {
+    "source": "B-战斗/切图/背版1.png",
+    "target": "res://Art/Supplied20261028/ui/plate1.png",
+    "purpose": "战斗与商店状态展示 / plate1",
+    "sha256": "ab66203342db826f11d3c76bda150eba46dae72ac1099f4e9c5ca72216f8dac3",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 488
+  },
+  {
+    "source": "B-战斗/切图/背版2.png",
+    "target": "res://Art/Supplied20261028/ui/plate2.png",
+    "purpose": "战斗与商店状态展示 / plate2",
+    "sha256": "fd83f188ba43e832f2144d4fdcc36add8dd9952a6ed91be6e9bc4bc836042182",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1074
+  },
+  {
+    "source": "B-战斗/切图/背版3.png",
+    "target": "res://Art/Supplied20261028/ui/plate3.png",
+    "purpose": "战斗与商店状态展示 / plate3",
+    "sha256": "98d2d7d7f43169d338b83fbffd9ff51bee5893c00b2a258e428a791d5978eb54",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 588
+  },
+  {
+    "source": "B-战斗/切图/生命.png",
+    "target": "res://Art/Supplied20261028/ui/health.png",
+    "purpose": "战斗与商店状态展示 / health",
+    "sha256": "0d7d5a172850752a4e1bfa7018e3075270936bdd9efa4c2ae329cf50e4812911",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 824
+  },
+  {
+    "source": "B-战斗/切图/耐力.png",
+    "target": "res://Art/Supplied20261028/ui/stamina.png",
+    "purpose": "战斗与商店状态展示 / stamina",
+    "sha256": "18c01e2d87c86aaefd17b1df7ea4a5d28b556ab50a14b9d40b1ba63a0d7ea15d",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 897
+  },
+  {
+    "source": "B-战斗/切图/开始.png",
+    "target": "res://Art/Supplied20261028/ui/play.png",
+    "purpose": "战斗与商店状态展示 / play",
+    "sha256": "60fe3f1970c1cd8502029b1b3e4c52e31ff41e176e0f3cb5b4b5534e54b70a10",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1459
+  },
+  {
+    "source": "B-战斗/切图/暂停.png",
+    "target": "res://Art/Supplied20261028/ui/pause.png",
+    "purpose": "战斗与商店状态展示 / pause",
+    "sha256": "72743819cce362fbfdc9d56cbf1492dfd767bf6053ac6a8a1e91c80cf05afc1b",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1206
+  },
+  {
+    "source": "B-战斗/切图/设置.png",
+    "target": "res://Art/Supplied20261028/ui/settings.png",
+    "purpose": "战斗与商店状态展示 / settings",
+    "sha256": "5131f491167f62e4cda15821a0532760e92866f93e6cfd8d3e2c09047fb18525",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 4784
+  },
+  {
+    "source": "B-战斗/切图/进度条1.png",
+    "target": "res://Art/Supplied20261028/ui/timeline_base.png",
+    "purpose": "战斗与商店状态展示 / timeline_base",
+    "sha256": "6b0d1b5ba1249cb102f964ed7abf1e549bf186149f712650c6fcf886f98de7a3",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1375
+  },
+  {
+    "source": "B-战斗/切图/进度条2.png",
+    "target": "res://Art/Supplied20261028/ui/timeline_fill.png",
+    "purpose": "战斗与商店状态展示 / timeline_fill",
+    "sha256": "68a84ee0ac1b9c3f29ef2b1c0918b7f79a036b6af6177eae3122f2649548b3ee",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 783
+  },
+  {
+    "source": "B-战斗/切图/投影.png",
+    "target": "res://Art/Supplied20261028/ui/shadow.png",
+    "purpose": "战斗与商店状态展示 / shadow",
+    "sha256": "0c0c2738fc1a2b62aac0601653e5a3f66c871fd6246797074c83dcf7975ca7aa",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 6736
+  },
+  {
+    "source": "B-战斗/切图/场景3.png",
+    "target": "res://Art/Supplied20261028/backgrounds/forest.png",
+    "purpose": "第1章背景",
+    "sha256": "eef35b6c0300f01c4763b2772ca3feca85813b0e3001ae0af6c6edb7f5b4c74c",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1072841
+  },
+  {
+    "source": "B-战斗/切图/沙漠.png",
+    "target": "res://Art/Supplied20261028/backgrounds/desert.png",
+    "purpose": "第2章背景",
+    "sha256": "d1f48641602e9221c49b704b94414ae5370f1ed5f900c01266694dda9dcd431d",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1778802
+  },
+  {
+    "source": "B-战斗/切图/场景2.png",
+    "target": "res://Art/Supplied20261028/backgrounds/volcano.png",
+    "purpose": "第3章背景",
+    "sha256": "b5712143d9c60ece96e460a9f7e056958ead09c3edba187355bb4a4de698113a",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1081220
+  },
+  {
+    "source": "角色/输出/武备师.png",
+    "target": "res://Art/Supplied20261028/actors/armorer.png",
+    "purpose": "已有角色 / armorer",
+    "sha256": "9d2de26789dd5860959b869b01a2a69ea3affcfcc341b507b6845d0c6cf7760b",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 205035
+  },
+  {
+    "source": "角色/输出/调配师.png",
+    "target": "res://Art/Supplied20261028/actors/alchemist.png",
+    "purpose": "已有角色 / alchemist",
+    "sha256": "ed6aa46ea62a7f23f023ae6d8f41c58beacb54569753d83a90df92b0c4a7d276",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 226535
+  },
+  {
+    "source": "角色/输出/哥布林.png",
+    "target": "res://Art/Supplied20261028/actors/goblin.png",
+    "purpose": "已有角色 / goblin",
+    "sha256": "9d19993d1aaac382ee4e6fe52c0b5c760b341d85c499bfb600b143a7313ad439",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 85327
+  },
+  {
+    "source": "角色/输出/蝙蝠.png",
+    "target": "res://Art/Supplied20261028/actors/bat.png",
+    "purpose": "已有角色 / bat",
+    "sha256": "9ec978f76ebe47b44a2c790770cc0df305a56d1d84b17c84392d3844db40db92",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 79909
+  },
+  {
+    "source": "角色/输出/骷髅.png",
+    "target": "res://Art/Supplied20261028/actors/skeleton.png",
+    "purpose": "已有角色 / skeleton",
+    "sha256": "67c0330424c7ae43a343bf047577bbceb90de5c6a7ff79e5ad760b293619a32b",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 125288
+  },
+  {
+    "source": "A-商店&背包/背包/格子已使用.png",
+    "target": "res://Art/Supplied20261028/ui/cell.png",
+    "purpose": "格线或匹配的 3×3 方形背包",
+    "sha256": "53bb7adb0bb8f4364869fa6eaf1f7b80526a6c3ea1696362ce8a60c7ecef6ced",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5866
+  },
+  {
+    "source": "A-商店&背包/背包/格子未使用.png",
+    "target": "res://Art/Supplied20261028/ui/cell_empty.png",
+    "purpose": "格线或匹配的 3×3 方形背包",
+    "sha256": "ca936cd177a9e545a3c75f42009c63d6efa9bbe7f35eb8d3d7f0944014e7f374",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 6234
+  },
+  {
+    "source": "A-商店&背包/背包/背包4九格.png",
+    "target": "res://Art/Supplied20261028/ui/bag9.png",
+    "purpose": "格线或匹配的 3×3 方形背包",
+    "sha256": "5372e6a30dbbb6a66047275ff2d10f501a06a9ad4cd26a91d905fb7b7808cee9",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 67697
+  },
+  {
+    "source": "背包物品/匕首.png",
+    "target": "res://Art/Supplied20261028/items/utility_knife.png",
+    "purpose": "已有物品 utility_knife：外观替换，名称/数值/占格不变",
+    "sha256": "13899db2eee33767779aa87ba7d228b46e2fadac2a7c97aa7d569406b73e0fce",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 13158
+  },
+  {
+    "source": "背包物品/铁质长剑.png",
+    "target": "res://Art/Supplied20261028/items/iron_sword.png",
+    "purpose": "已有物品 iron_sword：外观替换，名称/数值/占格不变",
+    "sha256": "828acc4990f22d4a5f6a98316670648b4eb0f9cb687699ab304e49d599be3b2d",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 10558
+  },
+  {
+    "source": "背包物品/战斧.png",
+    "target": "res://Art/Supplied20261028/items/broad_axe.png",
+    "purpose": "已有物品 broad_axe：外观替换，名称/数值/占格不变",
+    "sha256": "c7d59ad7e99df70bf5d252bd768461ca848661dd526f1fcd60f4ebb60beffae3",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 21476
+  },
+  {
+    "source": "背包物品/双刃斧.png",
+    "target": "res://Art/Supplied20261028/items/heavy_cleaver.png",
+    "purpose": "已有物品 heavy_cleaver：外观替换，名称/数值/占格不变",
+    "sha256": "6a27153e3045e6a6151b4c93b3fb5747c7c8aa0c76713372ac35342614e5031b",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 33055
+  },
+  {
+    "source": "背包物品/长矛.png",
+    "target": "res://Art/Supplied20261028/items/hunting_spear.png",
+    "purpose": "已有物品 hunting_spear：外观替换，名称/数值/占格不变",
+    "sha256": "0a41bb63bb2630ac52d2219d5ec579f1e67db2ce2b87eca863e4a68698963247",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 22212
+  },
+  {
+    "source": "背包物品/板甲.png",
+    "target": "res://Art/Supplied20261028/items/plated_vest.png",
+    "purpose": "已有物品 plated_vest：外观替换，名称/数值/占格不变",
+    "sha256": "c23d46decb97364ec5756fe50f75613b3cf9d3075cd4ad12d5f5d481b2fa83fa",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 47419
+  },
+  {
+    "source": "背包物品/皮甲.png",
+    "target": "res://Art/Supplied20261028/items/leather_wrap.png",
+    "purpose": "已有物品 leather_wrap：外观替换，名称/数值/占格不变",
+    "sha256": "a4b2790aca24525182d6c395a02f45ecca01ffd68d40a8e5cd196a79e14f4df9",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 38999
+  },
+  {
+    "source": "背包物品/圣辉大盾.png",
+    "target": "res://Art/Supplied20261028/items/tower_shield.png",
+    "purpose": "已有物品 tower_shield：外观替换，名称/数值/占格不变",
+    "sha256": "42268334f000500fdc399f3721da7eda92cc6c9da27494c735a269036471bdc5",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 43461
+  },
+  {
+    "source": "背包物品/面包.png",
+    "target": "res://Art/Supplied20261028/items/travel_ration.png",
+    "purpose": "已有物品 travel_ration：外观替换，名称/数值/占格不变",
+    "sha256": "d72135ca3a2f8d94f17a01ae61a84c22dd81e055033e677114d3ff30c0b1e051",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 17595
+  },
+  {
+    "source": "背包物品/磨刀石.png",
+    "target": "res://Art/Supplied20261028/items/sharpening_stone.png",
+    "purpose": "已有物品 sharpening_stone：外观替换，名称/数值/占格不变",
+    "sha256": "4996867a845d5ea574c76fbb07244003c0913ad077e1dbcef766aa90058a267f",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 19066
+  },
+  {
+    "source": "背包物品/打折卡.png",
+    "target": "res://Art/Supplied20261028/items/merchant_token.png",
+    "purpose": "已有物品 merchant_token：外观替换，名称/数值/占格不变",
+    "sha256": "fb95921ccdd96cd94328b876e043af4a0948f0c5fd9ea9192ddadc5576551240",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 8013
+  },
+  {
+    "source": "背包物品/宝石紫.png",
+    "target": "res://Art/Supplied20261028/items/focus_prism.png",
+    "purpose": "已有物品 focus_prism：外观替换，名称/数值/占格不变",
+    "sha256": "fc69d6aa5645d9c784ad2a94375e04c7173d51bb570a87b847276e6b088f21d3",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 6008
+  },
+  {
+    "source": "背包物品/打火石.png",
+    "target": "res://Art/Supplied20261028/items/ember_stone.png",
+    "purpose": "已有物品 ember_stone：外观替换，名称/数值/占格不变",
+    "sha256": "7b8dd7520f99e1f2149bd184fc1496a1b1f9836969c0ee782130ff979c180707",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 6381
+  },
+  {
+    "source": "背包物品/宝石蓝.png",
+    "target": "res://Art/Supplied20261028/items/glass_bead.png",
+    "purpose": "已有物品 glass_bead：外观替换，名称/数值/占格不变",
+    "sha256": "171f301ee3ff3edff42d21e4968bee74b08a19d495ed6ef4bd4601051e8317d8",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 6641
+  },
+  {
+    "source": "背包物品/法典.png",
+    "target": "res://Art/Supplied20261028/items/field_manual.png",
+    "purpose": "已有物品 field_manual：外观替换，名称/数值/占格不变",
+    "sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 22881
+  },
+  {
+    "source": "背包物品/招财猫.png",
+    "target": "res://Art/Supplied20261028/items/salvage_pouch.png",
+    "purpose": "已有物品 salvage_pouch：外观替换，名称/数值/占格不变",
+    "sha256": "f8ab25f34c4b6fbd1700e5b45de29508b7a65e2e85c409d89378729f7fddfa8d",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 19338
+  },
+  {
+    "source": "背包物品/令牌.png",
+    "target": "res://Art/Supplied20261028/items/duelist_mark.png",
+    "purpose": "已有物品 duelist_mark：外观替换，名称/数值/占格不变",
+    "sha256": "5a1654f41d41191a7de4975f4589062f1e6bbe78fa1cb7feeabf6d863bb1e87f",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 13599
+  },
+  {
+    "source": "背包物品/侍从铠甲.png",
+    "target": "res://Art/Supplied20261028/items/layered_plates.png",
+    "purpose": "已有物品 layered_plates：外观替换，名称/数值/占格不变",
+    "sha256": "2d77e6cdaa2963c87988cae5c90efd4a58b6ac208281067aebff4f75dd5c2263",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 53257
+  },
+  {
+    "source": "背包物品/荆棘刺甲.png",
+    "target": "res://Art/Supplied20261028/items/retaliation_spikes.png",
+    "purpose": "已有物品 retaliation_spikes：外观替换，名称/数值/占格不变",
+    "sha256": "09455ca6887918c43bc442563401ac665c40cd4d33d6444c48b6dbb559609dec",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 53187
+  },
+  {
+    "source": "buff/中毒.png",
+    "target": "res://Art/Supplied20261028/status/poison.png",
+    "purpose": "已有战斗反馈 / poison",
+    "sha256": "bc15fb63ae3b86e0ee0291d757fc238670f03ab8043eb5efff2d52ea22ae0526",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5524
+  },
+  {
+    "source": "buff/反伤.png",
+    "target": "res://Art/Supplied20261028/status/spikes.png",
+    "purpose": "已有战斗反馈 / spikes",
+    "sha256": "6f09629e02bfd9253ac347f9ee1b0d81b66a3a08aa437c42b143624c1ebf8d9d",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5331
+  },
+  {
+    "source": "buff/吸血.png",
+    "target": "res://Art/Supplied20261028/status/lifesteal.png",
+    "purpose": "已有战斗反馈 / lifesteal",
+    "sha256": "8e02acbb81442dfcdee5a2378f33bf0c1353fdc4fb064f885e1ac21c55d37444",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5284
+  },
+  {
+    "source": "buff/护甲.png",
+    "target": "res://Art/Supplied20261028/status/armor.png",
+    "purpose": "已有战斗反馈 / armor",
+    "sha256": "159b8de0d2016de34e7d9cc4d7176582b9173201a079ab4d2e3a3b7e208ac799",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5475
+  },
+  {
+    "source": "buff/抵抗.png",
+    "target": "res://Art/Supplied20261028/status/resistance.png",
+    "purpose": "已有战斗反馈 / resistance",
+    "sha256": "f62b6d1ef245bb7254c9c26b178bfbd0a1385bcae8b06a4a178bfc3c5a62282b",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5498
+  },
+  {
+    "source": "buff/灼烧.png",
+    "target": "res://Art/Supplied20261028/status/burn.png",
+    "purpose": "已有战斗反馈 / burn",
+    "sha256": "884b7a538ae94d68d4e66bab7c751319cf601448101511a39c34fd069f757bcd",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5423
+  },
+  {
+    "source": "buff/物品冷却.png",
+    "target": "res://Art/Supplied20261028/status/cooldown.png",
+    "purpose": "已有战斗反馈 / cooldown",
+    "sha256": "8f4c0d34edf04b9891573f1cb29de4b885834d291085bbe1bb2a909cb1886930",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 4872
+  },
+  {
+    "source": "buff/耐力回复.png",
+    "target": "res://Art/Supplied20261028/status/stamina_regen.png",
+    "purpose": "已有战斗反馈 / stamina_regen",
+    "sha256": "37a37581072bd601ee1eddd7e3c11f7dc571fcf35e6ea5387f85700637318ff5",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 5898
+  },
+  {
+    "source": "主页/手指.png",
+    "target": "res://Art/Supplied20261028/ui/hand.png",
+    "purpose": "UI 教程指示",
+    "sha256": "85dc045312e7b5865c596d75378f9325fed5dd58b478484f0159b11d500c42a8",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 16994
+  },
+  {
+    "source": "主界面营地.png",
+    "target": "res://Art/Supplied20261028/ui/camp.png",
+    "purpose": "已有休息节点的营地插画",
+    "sha256": "3dd1ab8ffa59fb6d12c0cb4d9e57fab04049051ede45ff6006fc6205e16283da",
+    "export": "原 PNG 逐字节复制",
+    "runtime_bytes": 1552459
+  },
+  {
+    "source": "主页/主页.psd",
+    "layer_index": 4,
+    "layer": "图层 62",
+    "bbox": [
+      0,
+      0,
+      1920,
+      1081
+    ],
+    "target": "res://Art/Supplied20261028/ui/title.png",
+    "purpose": "独立 PSD 图层 / title",
+    "export": "按图层原始像素导出，未合成文字",
+    "sha256": "217981a626a994fe880e058e8f6f226b8d19647f0f7b168430aec09b9d97d8c8",
+    "runtime_bytes": 2259904
+  },
+  {
+    "source": "主页/主页.psd",
+    "layer_index": 22,
+    "layer": "图层 52 拷贝",
+    "bbox": [
+      859,
+      570,
+      1207,
+      649
+    ],
+    "target": "res://Art/Supplied20261028/ui/button.png",
+    "purpose": "独立 PSD 图层 / button",
+    "export": "按图层原始像素导出，未合成文字",
+    "sha256": "73fd258c489dbc846d63b06df2cc70cc666e10657b15bfbc355e12894e0c283d",
+    "runtime_bytes": 6241
+  },
+  {
+    "source": "主页/主页.psd",
+    "layer_index": 54,
+    "layer": "图层 56 拷贝",
+    "bbox": [
+      859,
+      560,
+      1207,
+      639
+    ],
+    "target": "res://Art/Supplied20261028/ui/button_blue.png",
+    "purpose": "独立 PSD 图层 / button_blue",
+    "export": "按图层原始像素导出，未合成文字",
+    "sha256": "507c3c373be53ec5916f9c10a5e51da0060a3c66594b56e182f9404dcd5ed8b7",
+    "runtime_bytes": 6180
+  },
+  {
+    "source": "主页/主页.psd",
+    "layer_index": 21,
+    "layer": "图层 55 拷贝 3",
+    "bbox": [
+      845,
+      613,
+      1221,
+      686
+    ],
+    "target": "res://Art/Supplied20261028/ui/button_red.png",
+    "purpose": "独立 PSD 图层 / button_red",
+    "export": "按图层原始像素导出，未合成文字",
+    "sha256": "9e289dd88805dade26181834c86a0cf2f9a47061cca6b8c611c4ca573c1b28da",
+    "runtime_bytes": 5576
+  },
+  {
+    "source": "选人界面/选人界面.psd",
+    "layer_index": 0,
+    "layer": "图层 1",
+    "bbox": [
+      0,
+      0,
+      1920,
+      1081
+    ],
+    "target": "res://Art/Supplied20261028/ui/selection.png",
+    "purpose": "选人卡片房间背景",
+    "export": "独立房间图层，无预烘焙人物",
+    "sha256": "7948aae920c6bf2130533fbeb4bba4961caa18036c964c4c371db29f72029bb0",
+    "runtime_bytes": 1298579
+  }
+]

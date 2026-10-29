@@ -1,0 +1,16 @@
+[
+  {
+    "case": "final-touch",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "assertions": 916,
+    "seconds": 75.75
+  },
+  {
+    "case": "final-art",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "assertions": 269,
+    "seconds": 42.97
+  }
+]

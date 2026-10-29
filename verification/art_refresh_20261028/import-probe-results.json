@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "case": "valid-import",
+      "exit_code": 0,
+      "expected": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "newer-copy-with-identical-content",
+      "exit_code": 0,
+      "expected": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "changed-content-detected",
+      "exit_code": 3,
+      "expected": 3,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "missing-cache-detected",
+      "exit_code": 3,
+      "expected": 3,
+      "stderr_bytes": 0
+    }
+  ]
+}

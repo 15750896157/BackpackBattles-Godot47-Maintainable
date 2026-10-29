@@ -2,6 +2,7 @@ extends Node2D
 ## Display cells only. Placement validation still reads authoritative bag cells.
 var build: Dictionary = {}
 var cell_texture: Texture2D
+var empty_texture: Texture2D
 var active_cells: Dictionary = {}
 var showing_empty = false
 var seams: Dictionary = {}
@@ -22,6 +23,8 @@ func _draw():
 			var active = active_cells.has(Vector2i(x, y))
 			if not active and not showing_empty: continue
 			var tile = Rect2(Vector2(x,y)*80.0+Vector2(3,3),Vector2(74,74))
+			var image=cell_texture if active else empty_texture
+			if image!=null:draw_texture_rect(image,tile,false,Color(1,1,1,0.09 if active else 0.14))
 			# Fine translucent seams reveal the leather instead of a white tile fill.
 			draw_style_box(_seam(active),tile)
 

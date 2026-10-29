@@ -1,0 +1,23 @@
+{
+  "status": "not_performed_windows_desktop_locked",
+  "checks": {
+    "continue_run": false,
+    "drag_to_storage": false,
+    "exit_pressed": false,
+    "guide_close": false,
+    "guide_open": false,
+    "left_blank_no_exit": false,
+    "refresh_instances": false,
+    "return_unchanged": false,
+    "rotate": false,
+    "save_title": false,
+    "sell": false,
+    "undo_sale": false
+  },
+  "process": {
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 256.53
+  },
+  "reason": "Stopped mouse automation on the Windows sign-in/lock screen; user unlock requested. QA fixture closed without physical input."
+}

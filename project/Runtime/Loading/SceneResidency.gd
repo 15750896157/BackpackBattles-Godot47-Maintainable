@@ -23,7 +23,10 @@ func ensure_view(kind: String) -> bool:
 	loading.erase(kind)
 	if payload == null: return false
 	var anchor = Game.shopSceneNode.get_node("Background") if kind == "shop" else Game.combatSceneNode.backgroundNode
-	if payload is Sprite2D: anchor.texture = payload.texture
+	if payload is Sprite2D:
+		anchor.texture = payload.texture
+		anchor.position=Vector2.ZERO
+		anchor.scale=Vector2(1920,1080)/payload.texture.get_size()
 	var children = payload.get_children()
 	for child in children:
 		_clear_owner(child)

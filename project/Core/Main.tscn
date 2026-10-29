@@ -33,7 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Assets/Particles/Dust1.png" id="32"]
 [ext_resource type="Script" uid="uid://c10gnm4cbifci" path="res://Interface/TitleScreen.gd" id="33"]
 [ext_resource type="Texture2D" uid="uid://bod0c2qixsrea" path="res://Assets/TitleScreen/Title.png" id="35"]
-[ext_resource type="Texture2D" uid="uid://fnec1mvf6h7c" path="res://Assets/TitleScreen/Titlescreen.png" id="36"]
+[ext_resource type="Texture2D" path="res://Art/Supplied20261028/ui/title.png" id="36"]
 [ext_resource type="PackedScene" path="res://Interface/LoadoutButton.tscn" id="37"]
 [ext_resource type="Texture2D" uid="uid://7tmtpn0c6jpb" path="res://Assets/TitleScreen/QuitSign.png" id="38"]
 [ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://Interface/ItemLibrary/ItemLibraryButton.gd" id="39"]
@@ -12644,8 +12644,12 @@ position = Vector2(-30, -50)
 z_index = -10
 position = Vector2(1005, 489)
 scale = Vector2(1.05, 1.05)
-texture = ExtResource("36")
 offset = Vector2(-46, 179)
+
+[node name="SuppliedTitleBackdrop" type="Sprite2D" parent="TitleScreen/Node2D/Background"]
+top_level = true
+position = Vector2(960, 540)
+texture = ExtResource("36")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="TitleScreen/Node2D/Background" unique_id=1660688079 groups=["Wall"]]
 visible = false
@@ -12681,7 +12685,7 @@ offset_left = -85.0
 offset_top = -277.0
 offset_right = 170.0
 offset_bottom = -156.0
-rotation = 21.4129
+rotation = 0.378736
 mouse_default_cursor_shape = 2
 theme_override_styles/focus = SubResource("66")
 flat = true

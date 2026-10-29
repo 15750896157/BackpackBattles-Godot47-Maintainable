@@ -1,0 +1,103 @@
+{
+	"checks": 16,
+	"failures": [],
+	"ok": true,
+	"samples": [
+		{
+			"label": "shop",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_0",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 3.21116662025452,
+			"worst": {}
+		},
+		{
+			"label": "combat_10",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 8.76525497436523,
+			"worst": {}
+		},
+		{
+			"label": "combat_20",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_30",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_40",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_50",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_60",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_70",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_80",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_90",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_100",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "combat_110",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "reopened_0",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "reopened_15",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		},
+		{
+			"label": "reopened_30",
+			"max_error_px": 0.0,
+			"sprite_offset_px": 0.0,
+			"worst": {}
+		}
+	]
+}

@@ -1,0 +1,131 @@
+﻿源文件,状态,接入目录/资源路径,替换位置或未接入原因,源尺寸,源SHA256
+A-商店&背包/147.png,布局参考,,仅用于核对货架、角色、背包、状态栏的位置；不能作为一张带有烘焙 UI 的背景接入。,1942×1123,649f2dcf396547d50b6302a6dbb746d489f13804775c215f55e8b0ad7ce231d1
+A-商店&背包/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,140cd4d005e6e7021a758102eec1779103203311ef63fd5e87db76698213373f
+A-商店&背包/切图/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,131033da5eb4b4fad3035d8788252a8db53a279e65372644ee22af280a7d065c
+A-商店&背包/切图/出售单.png,已接入,res://Art/Supplied20261028/ui/sell.png,商店展示 / sell,312×251,e8519a449f28dc9a45b0b4852321cc89f410314f2898fb5863ca5c36f8baa4cb
+A-商店&背包/切图/刷新铃铛.png,已接入,res://Art/Supplied20261028/ui/refresh.png,商店展示 / refresh,122×322,acc5252ce94e5921a6b515b3e5619811649104227abccdaf1cd1d2d905dd5733
+A-商店&背包/切图/商人.png,已接入,res://Art/Supplied20261028/ui/merchant.png,商店展示 / merchant,483×320,76b5cb65d0ca253e0e5e317077f50d8b752f57ce7fedbd8da6c6293ed2d86184
+A-商店&背包/切图/商店射手师.png,暂未接入,,现行策划只有铸阵师（armorer）和调律师（alchemist），未定义射手职业。,514×429,8bcd7504a40f7a78af0e47e70c5872f3d99033268e90e6fb6adeda67409572e1
+A-商店&背包/切图/商店武备师.png,已接入,res://Art/Supplied20261028/ui/shop_armorer.png,商店展示 / shop_armorer,448×436,1adab366c1115eca7637047d2fcc77b0a3f9b4ba1702f95e0976376821dc25fd
+A-商店&背包/切图/商店背景.png,已接入,res://Art/Supplied20261028/ui/shop.png,商店展示 / shop,1942×1123,a7f892f138e6a932b9237d484e765148c9cc063a487a24a51160f130f9bbac27
+A-商店&背包/切图/商店调配师.png,已接入,res://Art/Supplied20261028/ui/shop_alchemist.png,商店展示 / shop_alchemist,514×406,5d2cc0509d63f801cd351543f81788887e64c950cf7cce7af294273af23af210
+A-商店&背包/切图/图鉴.png,已接入,res://Art/Supplied20261028/ui/codex.png,商店展示 / codex,243×119,90082589d61afe52e595f92df97d784e5569cbd6739f39ef550215bcbcc1bed6
+A-商店&背包/切图/开战决定挂牌.png,已接入,res://Art/Supplied20261028/ui/battle.png,商店展示 / battle,234×361,2a644af9100eb41e20867650b64530d40351830869644c39754f12d1e0b22961
+A-商店&背包/切图/放置物品.png,已接入,res://Art/Supplied20261028/ui/storage_mat.png,商店展示 / storage_mat,1165×230,561bd36cc46a40cc737aa12c79bba99eacfe27e95563d568fe7f2e4e7458d69e
+A-商店&背包/切图/敌情.png,已接入,res://Art/Supplied20261028/ui/journey.png,商店展示 / journey,169×237,f199d6fcd496b01d2c28ae6e61c04bbb58bb517b5bc798f5a7b74275128e1723
+A-商店&背包/切图/桌面.png,已接入,res://Art/Supplied20261028/ui/table.png,商店展示 / table,1942×222,3077fae8484f8d57a6f4804cbaabc07fd8297ef8b689e8bbb926061372b56cc2
+A-商店&背包/切图/正常报价.png,已接入,res://Art/Supplied20261028/ui/price.png,商店展示 / price,90×59,90b70c0c1a403aeddc12410e1a5d4b7a8c3ab5b4d67241fbf54725c3c6bac0b3
+A-商店&背包/切图/红圆.png,已接入,res://Art/Supplied20261028/ui/sale.png,商店展示 / sale,50×50,cf0f4ed9eb7dd1719c54948e85760718aaaf56c619147b46360c649aeb568904
+A-商店&背包/切图/货架.png,已接入,res://Art/Supplied20261028/ui/shelf.png,商店展示 / shelf,1056×112,41d5af19808399540077b84e1b1d4a0a8c31d31a6cbda3af54a3f56026348494
+A-商店&背包/商店.psd,源稿/参考,,已核对图层；已有独立 PNG 时优先使用 PNG，不把重复图层和整张参考稿载入游戏。,1942×1123,950cf7ad9889af7d5cc185e8e90b073e2ab1703d703861733d88af3f90e6c806
+A-商店&背包/背包/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,6b650c0c0e3cc674016ef8947ceb3b4ff2fa10dc5cc338fdc878925bed3b1cbd
+A-商店&背包/背包/格子已使用.png,已接入,res://Art/Supplied20261028/ui/cell.png,格线或匹配的 3×3 方形背包,64×63,53bb7adb0bb8f4364869fa6eaf1f7b80526a6c3ea1696362ce8a60c7ecef6ced
+A-商店&背包/背包/格子未使用.png,已接入,res://Art/Supplied20261028/ui/cell_empty.png,格线或匹配的 3×3 方形背包,63×63,ca936cd177a9e545a3c75f42009c63d6efa9bbe7f35eb8d3d7f0944014e7f374
+A-商店&背包/背包/背包1两格.png,暂未接入,,现有 1/2/4 格背包定义缺失；新 8 格图为完整矩形，现有 8 格均为环形、阶梯或缺角形。不能只按格数套图。,83×160,cf044326fe6a878ea914e22de82a916c58550afbfb5eadf312e3df49d84cd7ca
+A-商店&背包/背包/背包2一格.png,暂未接入,,现有 1/2/4 格背包定义缺失；新 8 格图为完整矩形，现有 8 格均为环形、阶梯或缺角形。不能只按格数套图。,91×91,6e1f6efc146a02abae339f48a1f5f5020f0920d368e4e2ff6eb5225bf38b4acc
+A-商店&背包/背包/背包3八格.png,暂未接入,,现有 1/2/4 格背包定义缺失；新 8 格图为完整矩形，现有 8 格均为环形、阶梯或缺角形。不能只按格数套图。,176×241,156311869332b1ef4b746cb24c70ba90d3b13f3ff53942d9258193d86a329994
+A-商店&背包/背包/背包4九格.png,已接入,res://Art/Supplied20261028/ui/bag9.png,格线或匹配的 3×3 方形背包,243×247,5372e6a30dbbb6a66047275ff2d10f501a06a9ad4cd26a91d905fb7b7808cee9
+A-商店&背包/背包/背包5四格.png,暂未接入,,现有 1/2/4 格背包定义缺失；新 8 格图为完整矩形，现有 8 格均为环形、阶梯或缺角形。不能只按格数套图。,173×166,18f370c7d691af01dab7548c5427c2818e3dfc2ca2a998e68510d2292f2ed78c
+A-商店&背包/背包.psd,源稿/参考,,已核对图层；已有独立 PNG 时优先使用 PNG，不把重复图层和整张参考稿载入游戏。,1920×1081,08b628e7ac8b1afd67530bc0524fab53be80f06107dd5e322dee485c378a831a
+B-战斗/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,0db405709b99acc2557ffab28e13ee30a0c132cc7cf8d5da2fc6a1e9016af0bf
+B-战斗/切图/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,41433c1997504b0fe1a07ba58b79d22000b36592a5fe870736f31cec325d75e0
+B-战斗/切图/名称.png,已接入,res://Art/Supplied20261028/ui/name.png,战斗与商店状态展示 / name,342×46,971d57af0171f1089b0530fce85d36e7cf9633cddd0f577cfa84c156851a3904
+B-战斗/切图/场景1.png,暂未接入,,冰窟/月夜场景目前无章节/节点指定；三章已对应森林、沙漠、熔岩，保留为候选。,1920×1081,9e760fea65b37a79515e98359dcff6b895f30dc8a3da53ff83054d91b8a56941
+B-战斗/切图/场景2.png,已接入,res://Art/Supplied20261028/backgrounds/volcano.png,第3章背景,1920×1081,b5712143d9c60ece96e460a9f7e056958ead09c3edba187355bb4a4de698113a
+B-战斗/切图/场景3.png,已接入,res://Art/Supplied20261028/backgrounds/forest.png,第1章背景,1920×1081,eef35b6c0300f01c4763b2772ca3feca85813b0e3001ae0af6c6edb7f5b4c74c
+B-战斗/切图/开始.png,已接入,res://Art/Supplied20261028/ui/play.png,战斗与商店状态展示 / play,32×36,60fe3f1970c1cd8502029b1b3e4c52e31ff41e176e0f3cb5b4b5534e54b70a10
+B-战斗/切图/投影.png,已接入,res://Art/Supplied20261028/ui/shadow.png,战斗与商店状态展示 / shadow,344×98,0c0c2738fc1a2b62aac0601653e5a3f66c871fd6246797074c83dcf7975ca7aa
+B-战斗/切图/暂停.png,已接入,res://Art/Supplied20261028/ui/pause.png,战斗与商店状态展示 / pause,37×36,72743819cce362fbfdc9d56cbf1492dfd767bf6053ac6a8a1e91c80cf05afc1b
+B-战斗/切图/沙漠.png,已接入,res://Art/Supplied20261028/backgrounds/desert.png,第2章背景,1920×1081,d1f48641602e9221c49b704b94414ae5370f1ed5f900c01266694dda9dcd431d
+B-战斗/切图/生命.png,已接入,res://Art/Supplied20261028/ui/health.png,战斗与商店状态展示 / health,205×36,0d7d5a172850752a4e1bfa7018e3075270936bdd9efa4c2ae329cf50e4812911
+B-战斗/切图/示意图.png,布局参考,,仅用于核对货架、角色、背包、状态栏的位置；不能作为一张带有烘焙 UI 的背景接入。,1920×1081,961400cd7a2a95a2db873dc8f7bb7153a3aa6f092421e2305646588ba358f33b
+B-战斗/切图/耐力.png,已接入,res://Art/Supplied20261028/ui/stamina.png,战斗与商店状态展示 / stamina,205×36,18c01e2d87c86aaefd17b1df7ea4a5d28b556ab50a14b9d40b1ba63a0d7ea15d
+B-战斗/切图/背版1.png,已接入,res://Art/Supplied20261028/ui/plate1.png,战斗与商店状态展示 / plate1,201×70,ab66203342db826f11d3c76bda150eba46dae72ac1099f4e9c5ca72216f8dac3
+B-战斗/切图/背版2.png,已接入,res://Art/Supplied20261028/ui/plate2.png,战斗与商店状态展示 / plate2,568×152,fd83f188ba43e832f2144d4fdcc36add8dd9952a6ed91be6e9bc4bc836042182
+B-战斗/切图/背版3.png,已接入,res://Art/Supplied20261028/ui/plate3.png,战斗与商店状态展示 / plate3,205×36,98d2d7d7f43169d338b83fbffd9ff51bee5893c00b2a258e428a791d5978eb54
+B-战斗/切图/设置.png,已接入,res://Art/Supplied20261028/ui/settings.png,战斗与商店状态展示 / settings,73×73,5131f491167f62e4cda15821a0532760e92866f93e6cfd8d3e2c09047fb18525
+B-战斗/切图/进度条1.png,已接入,res://Art/Supplied20261028/ui/timeline_base.png,战斗与商店状态展示 / timeline_base,560×70,6b0d1b5ba1249cb102f964ed7abf1e549bf186149f712650c6fcf886f98de7a3
+B-战斗/切图/进度条2.png,已接入,res://Art/Supplied20261028/ui/timeline_fill.png,战斗与商店状态展示 / timeline_fill,560×20,68a84ee0ac1b9c3f29ef2b1c0918b7f79a036b6af6177eae3122f2649548b3ee
+B-战斗/战斗界面参考.psd,源稿/参考,,已核对图层；已有独立 PNG 时优先使用 PNG，不把重复图层和整张参考稿载入游戏。,1920×1080,325eb0c77736cd495c54d45108ec79b7392d219d05e7a5cbf60f8896f1c62230
+buff/BUFF.psd,源稿/参考,,已核对图层；已有独立 PNG 时优先使用 PNG，不把重复图层和整张参考稿载入游戏。,400×400,647811c6a8715b68179745d8d0108e63f56572059849ba77e1eac8ccd302305f
+buff/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,2cddcbe4934a5a71f00eb9815decf5accbad99f339a0cacc3e6bd332db9a0795
+buff/中毒.png,已接入,res://Art/Supplied20261028/status/poison.png,已有战斗反馈 / poison,32×32,bc15fb63ae3b86e0ee0291d757fc238670f03ab8043eb5efff2d52ea22ae0526
+buff/反伤.png,已接入,res://Art/Supplied20261028/status/spikes.png,已有战斗反馈 / spikes,32×32,6f09629e02bfd9253ac347f9ee1b0d81b66a3a08aa437c42b143624c1ebf8d9d
+buff/吸血.png,已接入,res://Art/Supplied20261028/status/lifesteal.png,已有战斗反馈 / lifesteal,32×32,8e02acbb81442dfcdee5a2378f33bf0c1353fdc4fb064f885e1ac21c55d37444
+buff/护甲.png,已接入,res://Art/Supplied20261028/status/armor.png,已有战斗反馈 / armor,32×32,159b8de0d2016de34e7d9cc4d7176582b9173201a079ab4d2e3a3b7e208ac799
+buff/抵抗.png,已接入,res://Art/Supplied20261028/status/resistance.png,已有战斗反馈 / resistance,32×32,f62b6d1ef245bb7254c9c26b178bfbd0a1385bcae8b06a4a178bfc3c5a62282b
+buff/灼烧.png,已接入,res://Art/Supplied20261028/status/burn.png,已有战斗反馈 / burn,32×32,884b7a538ae94d68d4e66bab7c751319cf601448101511a39c34fd069f757bcd
+buff/物品冷却.png,已接入,res://Art/Supplied20261028/status/cooldown.png,已有战斗反馈 / cooldown,32×32,8f4c0d34edf04b9891573f1cb29de4b885834d291085bbe1bb2a909cb1886930
+buff/耐力回复.png,已接入,res://Art/Supplied20261028/status/stamina_regen.png,已有战斗反馈 / stamina_regen,32×32,37a37581072bd601ee1eddd7e3c11f7dc571fcf35e6ea5387f85700637318ff5
+Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,9cf5aef8b1d9972b415dcaefe534f3a00d22b6dfe8cdc473c9e7ee873955962c
+主界面营地.png,已接入,res://Art/Supplied20261028/ui/camp.png,已有休息节点的营地插画,1920×1080,3dd1ab8ffa59fb6d12c0cb4d9e57fab04049051ede45ff6006fc6205e16283da
+主页/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,b8c3b825c20ce553b6dd0c8538bc833528ad853cd0a1afb06f88bd1d8ef61bc1
+主页/主页.psd,已接入,res://Art/Supplied20261028/ui/title.png；res://Art/Supplied20261028/ui/button.png；res://Art/Supplied20261028/ui/button_blue.png；res://Art/Supplied20261028/ui/button_red.png,独立 PSD 图层 / title；独立 PSD 图层 / button；独立 PSD 图层 / button_blue；独立 PSD 图层 / button_red,1920×1081,f9104f680d261f309d2a40cef0bc16f566dfac5360d993f24f36a24bab0f86c4
+主页/手指.png,已接入,res://Art/Supplied20261028/ui/hand.png,UI 教程指示,119×121,85dc045312e7b5865c596d75378f9325fed5dd58b478484f0159b11d500c42a8
+场景.psd,源稿/参考,,已核对图层；已有独立 PNG 时优先使用 PNG，不把重复图层和整张参考稿载入游戏。,1920×1080,a4a0106c6db4e6e7d57beebf9e25762134594a8dc266b7f0f2e4083509373e5e
+未标题-1.psd,源稿/参考,,已核对图层；已有独立 PNG 时优先使用 PNG，不把重复图层和整张参考稿载入游戏。,1920×1080,2c582689f89361c7c34f65b28166ec57dbf1ed710f8e3ed1a47522dc638b5c73
+背包物品/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,7badbe6edc8b279abf530c20455a9d7ca5d249a5ca3ad1e7e07da6b297ed4e70
+背包物品/令牌.png,已接入,res://Art/Supplied20261028/items/duelist_mark.png,已有物品 duelist_mark：外观替换，名称/数值/占格不变,74×124,5a1654f41d41191a7de4975f4589062f1e6bbe78fa1cb7feeabf6d863bb1e87f
+背包物品/侍从铠甲.png,已接入,res://Art/Supplied20261028/items/layered_plates.png,已有物品 layered_plates：外观替换，名称/数值/占格不变,146×194,2d77e6cdaa2963c87988cae5c90efd4a58b6ac208281067aebff4f75dd5c2263
+背包物品/匕首.png,已接入,res://Art/Supplied20261028/items/utility_knife.png,已有物品 utility_knife：外观替换，名称/数值/占格不变,39×150,13899db2eee33767779aa87ba7d228b46e2fadac2a7c97aa7d569406b73e0fce
+背包物品/十字架.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,56×73,e6267ac091eb48d9ecd4e8203bcd429a1d6965a18251a762c6ede54653991a17
+背包物品/双刃斧.png,已接入,res://Art/Supplied20261028/items/heavy_cleaver.png,已有物品 heavy_cleaver：外观替换，名称/数值/占格不变,141×302,6a27153e3045e6a6151b4c93b3fb5747c7c8aa0c76713372ac35342614e5031b
+背包物品/圣光十字架.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,192×279,9d954780d29910f82dd9e4b55ed8fa08a36588250a5876a9f16ec4a7cfd2d398
+背包物品/圣辉大盾.png,已接入,res://Art/Supplied20261028/items/tower_shield.png,已有物品 tower_shield：外观替换，名称/数值/占格不变,143×144,42268334f000500fdc399f3721da7eda92cc6c9da27494c735a269036471bdc5
+背包物品/基础法杖.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,46×145,ffeccc5045d889cd356bc318dc9b18429b9f79bfa6b4efc8ae2953a7a73cc75a
+背包物品/复合弓.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,65×215,34b750b5e8c73f2ec3d06c09a1a941d365fd3194c3c5ac753c7e93d633106a70
+背包物品/学徒长袍.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,146×212,c9f8604d506e6530ea97705b80407f5ab5676076c6914a16c3afde68a765402b
+背包物品/宝石紫.png,已接入,res://Art/Supplied20261028/items/focus_prism.png,已有物品 focus_prism：外观替换，名称/数值/占格不变,47×70,fc69d6aa5645d9c784ad2a94375e04c7173d51bb570a87b847276e6b088f21d3
+背包物品/宝石红.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,47×70,64faeac49736a768387577cf59f82b4b64dae2f43306dc2e699aa281d13bd3c4
+背包物品/宝石绿.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,59×57,3afe0acab3518c0fd0eb51abab8bc7e29af041f8f9f27b95f3c836ac366e95da
+背包物品/宝石蓝.png,已接入,res://Art/Supplied20261028/items/glass_bead.png,已有物品 glass_bead：外观替换，名称/数值/占格不变,52×62,171f301ee3ff3edff42d21e4968bee74b08a19d495ed6ef4bd4601051e8317d8
+背包物品/宝石黄.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,54×56,de92ee1e1dd14bfa5b14a2fcfde512dfde69b9aecad6b69973bb846c7e660bbd
+背包物品/巫毒法杖.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,77×225,4bda4150b5ec6e8b0e1026c6cb55f6e31be2f257f65dd2f8eea17d6da00b0a3b
+背包物品/弓.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,63×302,49a8d5e33baa84c598bd8f43bfa691100beeae5038c0ed19285e7ca1f5223b14
+背包物品/恶魔法典.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,140×201,257de5e9dd6a273f85714fe71066d2e21b5e6bc4c254c90d800672d8546aed33
+背包物品/战斧.png,已接入,res://Art/Supplied20261028/items/broad_axe.png,已有物品 broad_axe：外观替换，名称/数值/占格不变,118×225,c7d59ad7e99df70bf5d252bd768461ca848661dd526f1fcd60f4ebb60beffae3
+背包物品/打折卡.png,已接入,res://Art/Supplied20261028/items/merchant_token.png,已有物品 merchant_token：外观替换，名称/数值/占格不变,75×56,fb95921ccdd96cd94328b876e043af4a0948f0c5fd9ea9192ddadc5576551240
+背包物品/打火石.png,已接入,res://Art/Supplied20261028/items/ember_stone.png,已有物品 ember_stone：外观替换，名称/数值/占格不变,67×52,7b8dd7520f99e1f2149bd184fc1496a1b1f9836969c0ee782130ff979c180707
+背包物品/招财猫.png,已接入,res://Art/Supplied20261028/items/salvage_pouch.png,已有物品 salvage_pouch：外观替换，名称/数值/占格不变,77×126,f8ab25f34c4b6fbd1700e5b45de29508b7a65e2e85c409d89378729f7fddfa8d
+背包物品/木制小刀.png,暂未接入,,图形像木剑，现有小刀采用匕首、铁剑采用铁质长剑；避免名称/形象混淆。,53×151,0d5f7749f2648cc4fa205e89232ecc794d239e541a10d03c0353b648e9e9c016
+背包物品/木弓.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,43×147,06067d36041ef15bc80adf331718c9ba19f984cc03ffe9037a1c2524bf2ded49
+背包物品/木杖.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,56×233,f505ca165e878818fea4d90e758f0431bda477f35a4fe89b93a9f4eb12afc7e2
+背包物品/木棍.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,37×230,3957155364320dd07fbcb774966d0f2edb2a93a11b8426cfdb3bacc212b5e0db
+背包物品/板甲.png,已接入,res://Art/Supplied20261028/items/plated_vest.png,已有物品 plated_vest：外观替换，名称/数值/占格不变,142×196,c23d46decb97364ec5756fe50f75613b3cf9d3075cd4ad12d5f5d481b2fa83fa
+背包物品/果子.png,暂未接入,,口粮已有更贴合的面包图；当前未单列水果定义，不为使用图片新增物品。,55×59,6a882d01906e317204cb5db46d779e80b9b24928bce5cef99dc2d07fb13de88c
+背包物品/法典.png,已接入,res://Art/Supplied20261028/items/field_manual.png,已有物品 field_manual：外观替换，名称/数值/占格不变,136×128,12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7
+背包物品/混沌法杖.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,76×294,5e438785292657b5038cac9264ebcde5b6aa7accc6703daf3e8aa05af82aaad7
+背包物品/牧师徽章.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,140×147,eec0ef61702178665de416d1a019f1e82cf26b1425bf822a5caca6d419b86f14
+背包物品/王冠.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,69×67,86543d72625c82c46b4b9b2c65a26f7f812b2d2333fdd527ca648dbc889077cc
+背包物品/皮甲.png,已接入,res://Art/Supplied20261028/items/leather_wrap.png,已有物品 leather_wrap：外观替换，名称/数值/占格不变,147×187,a4b2790aca24525182d6c395a02f45ecca01ffd68d40a8e5cd196a79e14f4df9
+背包物品/盆栽.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,59×124,001d125f707acaa78cd0a306e835c68a7d175d9412854a0aed03437d8dc5c10d
+背包物品/石头.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,59×56,5cc57b53d910c4e617283e2e69b59b46d149fca4a86ddde7e3b38608f3c5a8e5
+背包物品/磨刀石.png,已接入,res://Art/Supplied20261028/items/sharpening_stone.png,已有物品 sharpening_stone：外观替换，名称/数值/占格不变,143×110,4996867a845d5ea574c76fbb07244003c0913ad077e1dbcef766aa90058a267f
+背包物品/精灵弓.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,50×304,5f26cbf11c65834ac543b7966de1a35cb9537b103b1b2407a0f1b9b9e7eb0800
+背包物品/精灵护符.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,112×142,b7e9ffe9ac4c33c54b6defe17a9deea98a466122aedbf8e49726e1b932f9ab90
+背包物品/精灵结石.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,70×69,06f8b9242d34c21cae709f6a1ff711e4f52bbba72ff2f2cb31ddea6636b89c56
+背包物品/纯铜怀表.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,57×70,05a8fff2758982a51513c11208dc5a137af9848d72a1871bcf70d06e2caf4e15
+背包物品/英雄弓.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,69×376,9a5e287171e0ea2ccda7076529ed6f46220cc5701d6db10f1001ca3a8b727e01
+背包物品/荆棘刺甲.png,已接入,res://Art/Supplied20261028/items/retaliation_spikes.png,已有物品 retaliation_spikes：外观替换，名称/数值/占格不变,119×196,09455ca6887918c43bc442563401ac665c40cd4d33d6444c48b6dbb559609dec
+背包物品/藤曼草环.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,73×68,de104e1d170d0ecceff2f42c62489f6d7abaa7985add3d4c4d179cc77c38aeb6
+背包物品/藤蔓弓.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,68×302,39105d59ac6443067694e123c01df210970013f5d01be4a9e0d6e661091ab3cc
+背包物品/血戒指.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,61×69,f630d9b8648d45fe1120035fd03c7535a1b5bac093d49fda7ff414dfbe127478
+背包物品/血杏.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,63×220,da3fb744552ec7a46e42c4c7d3a7f24e75ae1f68aad5f08bb221ef03148776e0
+背包物品/铁质长剑.png,已接入,res://Art/Supplied20261028/items/iron_sword.png,已有物品 iron_sword：外观替换，名称/数值/占格不变,56×229,828acc4990f22d4a5f6a98316670648b4eb0f9cb687699ab304e49d599be3b2d
+背包物品/长矛.png,已接入,res://Art/Supplied20261028/items/hunting_spear.png,已有物品 hunting_spear：外观替换，名称/数值/占格不变,39×305,0a41bb63bb2630ac52d2219d5ec579f1e67db2ce2b87eca863e4a68698963247
+背包物品/面包.png,已接入,res://Art/Supplied20261028/items/travel_ration.png,已有物品 travel_ration：外观替换，名称/数值/占格不变,169×59,d72135ca3a2f8d94f17a01ae61a84c22dd81e055033e677114d3ff30c0b1e051
+背包物品/魔法弓.png,暂未接入,,当前没有对应弓系物品/射手内容；血杏虽命名像果实，实际是弓形图，不能作为食物。,67×304,74fcf33982028e64cc61f8ccf96f1d9ff8c62e0cb91f3e42c3edd152b62083f6
+背包物品/鸢盾短剑.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,152×222,6c10bb889f61be7f0a92747042d07a155f91b2864be1acf20112aa362a982644
+背包物品/黄昏长袍.png,暂未接入,,没有唯一且语义匹配的现有物品定义，或同类已有更贴合的新图；不把法杖、饰品、长袍等硬套到其他能力上。,144×214,b34f1b2c6e9dc7f3eca2e48d1b3df0460a70083c933e3d9c18d3358446453175
+角色/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,9894a0bc094fb087896d3eff788f7debb93f54c30a2b844dd8ae336d225ac33f
+角色/角色源文件.psd,源稿/参考,,已核对图层；已有独立 PNG 时优先使用 PNG，不把重复图层和整张参考稿载入游戏。,9993×5885,8a7c4d7df838b88a4c995e0366f06986b1b27baf142289e99bf9a76d83d852d5
+角色/输出/boss.png,暂未接入,,现有首领是铁兽、烬炉、星冠三种规则配置；新图为药剂巫师，未明确对应首领，不擅自改设定。,413×419,ee32a721e2dd8246bcb46952394d9d68a5acd1b7e8a4e86a48958cf0b6c67320
+角色/输出/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,09de24e8d24ed9135dace1d24db8770ec7c41fce9962cee83aafc73bf008e602
+角色/输出/哥布林.png,已接入,res://Art/Supplied20261028/actors/goblin.png,已有角色 / goblin,245×289,9d19993d1aaac382ee4e6fe52c0b5c760b341d85c499bfb600b143a7313ad439
+角色/输出/射手师.png,暂未接入,,现行策划只有铸阵师（armorer）和调律师（alchemist），未定义射手职业。,398×434,d0dfba8a28491d25b66c280f3fef068b5c215cdc9d06cc6e14765d95af9eee64
+角色/输出/武备师.png,已接入,res://Art/Supplied20261028/actors/armorer.png,已有角色 / armorer,421×458,9d2de26789dd5860959b869b01a2a69ea3affcfcc341b507b6845d0c6cf7760b
+角色/输出/蝙蝠.png,已接入,res://Art/Supplied20261028/actors/bat.png,已有角色 / bat,317×241,9ec978f76ebe47b44a2c790770cc0df305a56d1d84b17c84392d3844db40db92
+角色/输出/调配师.png,已接入,res://Art/Supplied20261028/actors/alchemist.png,已有角色 / alchemist,432×412,ed6aa46ea62a7f23f023ae6d8f41c58beacb54569753d83a90df92b0c4a7d276
+角色/输出/骷髅.png,已接入,res://Art/Supplied20261028/actors/skeleton.png,已有角色 / skeleton,311×350,67c0330424c7ae43a343bf047577bbceb90de5c6a7ff79e5ad760b293619a32b
+选人界面/Thumbs.db,忽略缓存,,Windows Thumbs.db 缩略图缓存，不是游戏资源。,,df6e01869570d36354c0342009d98e39e447f6d4c5cd63302a35f063fe1e58ef
+选人界面/选人界面.psd,已接入,res://Art/Supplied20261028/ui/selection.png,选人卡片房间背景,1920×1081,7580834a8f29c342a060e06f96a94a16a9dfb0e0cec20412207db5cfe14dc785

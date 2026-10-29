@@ -3,11 +3,21 @@ $ErrorActionPreference = 'Stop'
 $bundlePath = Split-Path -Parent $PSScriptRoot
 $projectPath = Join-Path $bundlePath 'project'
 $enginePath = Join-Path $bundlePath 'engine\Godot_v4.7-stable_win64.exe'
-$catalogPath = Join-Path $projectPath 'Art\20261022\catalog.json'
-$catalog = Get-Content -LiteralPath $catalogPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$catalog = @{}
+function Get-ArtworkSourceDigest($path) {
+    $digestAlgorithm = [System.Security.Cryptography.MD5]::Create()
+    $sourceStream = [System.IO.File]::OpenRead($path)
+    try { return ([System.BitConverter]::ToString($digestAlgorithm.ComputeHash($sourceStream))).Replace('-', '').ToLowerInvariant() }
+    finally { $sourceStream.Dispose(); $digestAlgorithm.Dispose() }
+}
+foreach ($catalogFile in @('Art\20261022\catalog.json', 'Art\Supplied20261028\catalog.json')) {
+    $catalogPath = Join-Path $projectPath $catalogFile
+    $sourceCatalog = Get-Content -LiteralPath $catalogPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    foreach ($property in $sourceCatalog.PSObject.Properties) { $catalog[$catalogFile + ':' + $property.Name] = $property.Value }
+}
 function Get-MissingArtworkImports {
     $missing = @()
-    foreach ($property in $catalog.PSObject.Properties) {
+    foreach ($property in $catalog.GetEnumerator()) {
         $relative = $property.Value.Substring(6)
         $source = Join-Path $projectPath $relative
         if (-not (Test-Path -LiteralPath $source)) { throw ('Missing artwork source: ' + $relative) }
@@ -17,7 +27,13 @@ function Get-MissingArtworkImports {
         if (-not $match.Success) { $missing += $relative; continue }
         $imported = Join-Path $projectPath $match.Groups[1].Value
         if (-not (Test-Path -LiteralPath $imported)) { $missing += $relative; continue }
-        if ((Get-Item -LiteralPath $source).LastWriteTimeUtc -gt (Get-Item -LiteralPath $imported).LastWriteTimeUtc) { $missing += $relative }
+        if ((Get-Item -LiteralPath $source).LastWriteTimeUtc -gt (Get-Item -LiteralPath $imported).LastWriteTimeUtc) {
+            # Godot keeps an identical cached texture when only the copy time changes.
+            $digestPath = [System.IO.Path]::ChangeExtension($imported, '.md5')
+            if (-not (Test-Path -LiteralPath $digestPath)) { $missing += $relative; continue }
+            $digest = [regex]::Match((Get-Content -LiteralPath $digestPath -Raw), '(?m)^source_md5="([0-9a-f]+)"')
+            if (-not $digest.Success -or $digest.Groups[1].Value -ine (Get-ArtworkSourceDigest $source)) { $missing += $relative }
+        }
     }
     return $missing
 }

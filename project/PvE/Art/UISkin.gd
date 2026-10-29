@@ -18,7 +18,7 @@ static func apply(theme: Theme):
 		panel.set_texture_margin(side,70)
 		panel.set_content_margin(side,60)
 	theme.set_stylebox("panel","PanelContainer",panel)
-	var wood=load(ROOT+"button.png")
+	var wood=load("res://Art/Supplied20261028/ui/button.png")
 	for state in ["normal","hover","pressed","disabled"]:
 		var style = StyleBoxTexture.new(); style.texture = wood
 		for side in [SIDE_LEFT,SIDE_RIGHT]:
@@ -46,9 +46,9 @@ static func apply(theme: Theme):
 	theme.set_color("selection_color","LineEdit",Color("725032"))
 	theme.set_color("font_selected_color","LineEdit",Color("fff4d7"))
 	for type in ["Button","OptionButton"]:
-		for state in ["font_color","font_hover_color","font_focus_color","font_pressed_color"]: theme.set_color(state,type,Color("fff4d7"))
-		theme.set_color("font_disabled_color",type,Color("efe0bd"))
-		theme.set_color("font_outline_color",type,Color("241509")); theme.set_constant("outline_size",type,2)
+		for state in ["font_color","font_hover_color","font_focus_color","font_pressed_color"]: theme.set_color(state,type,Color("302114"))
+		theme.set_color("font_disabled_color",type,Color("574532"))
+		theme.set_color("font_outline_color",type,Color("fff1c0")); theme.set_constant("outline_size",type,1)
 	var input = StyleBoxFlat.new(); input.bg_color = Color("f5deb7"); input.border_color = Color("8c623c"); input.set_border_width_all(2)
 	input.content_margin_left = 18; input.content_margin_right = 18; input.content_margin_top = 10; input.content_margin_bottom = 10
 	theme.set_stylebox("normal","LineEdit",input); theme.set_stylebox("focus","LineEdit",input)

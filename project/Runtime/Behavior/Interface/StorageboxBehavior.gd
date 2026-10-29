@@ -51,10 +51,10 @@ static func pve_refresh_slots(subject: Receiver, build: Dictionary):
 	for index in capacity:
 		var rect = subject.pve_slot_rect(index)
 		var slot = Sprite2D.new()
-		slot.texture = load("res://Art/20261022/cell.png")
+		slot.texture = load("res://Art/Supplied20261028/ui/cell.png")
 		slot.position = rect.get_center() if subject.has_meta("art_storage_rect") else subject.to_local(rect.get_center())
 		slot.scale = Vector2.ONE * minf(rect.size.x / slot.texture.get_width(), rect.size.y / slot.texture.get_height())
-		slot.modulate = Color(1.0, 0.95, 0.85, 0.92)
+		slot.modulate = Color(1.0, 0.95, 0.85, 0.32)
 		subject.pve_slot_root.add_child(slot)
 		var text = Label.new()
 		text.text = str(index + 1)

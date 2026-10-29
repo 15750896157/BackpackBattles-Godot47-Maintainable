@@ -8,6 +8,10 @@ var pager
 func _init(host): owner = host
 func words(zh: String, en: String) -> String: return owner.bilingual(zh,en)
 func image(key: String) -> Texture2D:
+	var supplied=preload("res://PvE/Art/SuppliedArt.gd").ui_path(key)
+	if key in ["battle","codex","journey","settings","button","hand"] and not supplied.is_empty():
+		if not textures.has(key):textures[key]=load(supplied)
+		return textures[key]
 	if not textures.has(key): textures[key] = load((TOUCH_ART if key in ["window","button","card","close","previous","next","continue","new_run"] else ART)+key+".png")
 	return textures[key]
 func open(page: String, title: String):
@@ -75,9 +79,9 @@ func segment(parent: Node,caption: String,callback: Callable,selected: bool = fa
 	button.add_theme_font_size_override("font_size",mini(26,roundi(23*owner.preferences.values.ui_scale)))
 	for state in ["normal","hover","pressed","disabled"]:
 		var skin=owner.ui_theme.get_stylebox("normal","Button").duplicate()
-		skin.modulate_color=Color(1.14,1.14,1.04) if selected else Color(0.75,0.86,0.8)
+		skin.texture=load("res://Art/Supplied20261028/ui/button_blue.png") if selected else image("button")
 		button.add_theme_stylebox_override(state,skin)
-	for state in ["font_color","font_hover_color","font_pressed_color","font_disabled_color"]:button.add_theme_color_override(state,Color("fff3d9"))
+	for state in ["font_color","font_hover_color","font_pressed_color","font_disabled_color"]:button.add_theme_color_override(state,Color("302114"))
 	return button
 func picture(parent: Node, texture: Texture2D, extent: Vector2 = Vector2(110,110)) -> TextureRect:
 	var icon = TextureRect.new();icon.texture = texture;icon.custom_minimum_size = extent
