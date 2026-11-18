@@ -43,7 +43,7 @@ func damage_number_count() -> int:
 	return Game.UINode.get_children().filter(func(node): return node is NumberLabel).size()
 
 func play_batch(index: int):
-	Expedition.last_event = index
+	Expedition.combat_vm.reset_event_cursor(index)
 	Expedition.flow.playback_time = float(Expedition.flow.combat_result.full_events[index].time)
 	Expedition._play_events()
 
@@ -64,6 +64,52 @@ func start_combat(reduced: bool) -> bool:
 	check(ready, "original start button enters native combat, reduced=" + str(reduced))
 	Expedition.set_process(false)
 	return ready
+
+func test_playback_adapter():
+	await frames()
+	var flow = Expedition.flow
+	var model = Expedition.combat_vm
+	var start_time: float = flow.playback_time
+	var start_cursor: int = model.next_event_index()
+	Expedition.set_playback(1.0, true)
+	Expedition._process(0.25)
+	check(flow.playback_time == start_time and model.next_event_index() == start_cursor, "pausing freezes the live clock and event cursor")
+	var events: Array = flow.combat_result.full_events
+	var activations := events.filter(func(event): return event.type == "ITEM_ACTIVATED")
+	check(not activations.is_empty(), "native adapter fixture has real item activations")
+	if activations.is_empty():
+		Expedition.set_playback(1.0, false)
+		return
+	var sample := maxf(start_time + 0.5, float(activations[0].time) + 0.01)
+	Expedition.set_playback(2.0, false)
+	Expedition._process((sample - start_time) / 2.0)
+	var clock: float = flow.playback_time
+	check(is_equal_approx(clock, sample) and model.snapshot().playback_time == clock and Game.combatTimer.combatTime == clock, "2x native update projects the single authoritative clock")
+	var due := events.filter(func(event): return float(event.time) <= clock).size()
+	check(model.next_event_index() == due, "live adapter consumes all due events in original order")
+	Expedition._process(0.0)
+	check(model.next_event_index() == due, "rendering again at the same time does not replay events")
+	var checked_items := 0
+	var cooldowns_match := true
+	for side in range(2):
+		var actor = Game.PLAYER if side == 0 else Game.OPPONENT
+		for item in actor.INVENTORY.getItems():
+			if item.isBag(): continue
+			var uid := str(item.get_meta("pve_uid", ""))
+			var previous := 0.0
+			var next := -1.0
+			for event in events:
+				if event.type != "ITEM_ACTIVATED" or int(event.source_side) != side or str(event.source) != uid: continue
+				if float(event.time) > clock:
+					next = float(event.time)
+					break
+				previous = float(event.time)
+			var expected := clampf((next - clock) / maxf(0.05, next - previous), 0.0, 1.0) if next >= 0.0 else 0.0
+			checked_items += int(next >= 0.0)
+			cooldowns_match = cooldowns_match and is_equal_approx(item.nonRotatedProgress, expected)
+	check(checked_items > 0 and cooldowns_match, "native item indicators match the linear cooldown reference")
+	evidence.playback_adapter = {"time": clock, "due_events": due, "items_with_future_activation": checked_items}
+	Expedition.set_playback(1.0, false)
 
 func test_feedback():
 	var result = Expedition.flow.combat_result
@@ -187,6 +233,7 @@ func run_tests():
 	check(await wait_for(func(): return Expedition.initialized, 90), "real original Main initializes")
 	var defaults = Expedition.preferences.values.duplicate(true)
 	if await start_combat(false):
+		await test_playback_adapter()
 		await test_feedback()
 		await test_status_timing()
 		var default_result = await settle(false)
@@ -194,6 +241,7 @@ func run_tests():
 		Expedition.return_to_title()
 		await frames()
 		check(old_hud.pve_timeline_status.is_empty(), "leaving native combat clears previous timeline tooltip state")
+		check(Expedition.combat_vm.snapshot().frame.is_empty() and Expedition.combat_vm.next_event_index() == 0, "title drops the previous replay projection")
 		if await start_combat(true):
 			var reduced_result = await settle(true)
 			check(default_result == reduced_result, "same-seed settlement summary is identical with all three feedback reductions")

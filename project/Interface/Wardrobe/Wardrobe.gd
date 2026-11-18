@@ -17,6 +17,8 @@ var playerZ
 
 var skin_revision: int = 0
 var skin_building: bool = false
+var closing: bool = false
+var model := preload("res://Runtime/ViewModel/WardrobeVM.gd").new(Game, SkinBook)
 var selectedSkins = []
 var isOpen = false
 var slotButtons = []
@@ -64,13 +66,14 @@ func getSlotButtons():
 func selectAndPreviewSkinSlots():
 	for slot in selectedSkins.size():
 		var button = getSkinSlotButton(slot, selectedSkins[slot])
+		if button == null: continue
 		button.select()
 		button.preview()
 
 const skinSlotNodeFormat = "{skin}/{slot}"
 
 func getSkinSlotButton(slot: int, skinId: int):
-	return hboxContainer.get_node(skinSlotNodeFormat.format(
+	return hboxContainer.get_node_or_null(skinSlotNodeFormat.format(
 		{"skin": skinId, "slot": slot}))
 
 func onSkinIconHovered(icon):
@@ -79,7 +82,7 @@ func onSkinIconHovered(icon):
 func onSkinIconUnhovered(icon):
 	for slot in Game.SkinSlot.size():
 		var button = getSkinSlotButton(slot, icon.skin.id)
-		button.onHoverEnd()
+		if button != null: button.onHoverEnd()
 
 func onSkinIconSelected(icon):
 	return load("res://Runtime/Behavior/Features/Interface/Wardrobe/WardrobeBehavior.gd").onSkinIconSelected(self, icon)
@@ -88,7 +91,9 @@ func onSlotHovered(slotButton):
 	unlockHint.global_position.y = min(slotButton.global_position.y, 900)
 
 func onSlotUnhovered(slotButton):
-	getSkinSlotButton(slotButton.slot, selectedSkins[slotButton.slot]).preview()
+	if closing or skin_building or slotButton.slot >= selectedSkins.size(): return
+	var button = getSkinSlotButton(slotButton.slot, selectedSkins[slotButton.slot])
+	if button != null: button.preview()
 	unlockHint.hide()
 
 func onSlotSelected(slotButton):

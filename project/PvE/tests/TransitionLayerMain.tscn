@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c65dasdhst7m0"]
+
+[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_main"]
+[ext_resource type="Script" path="res://PvE/tests/TransitionLayerQA.gd" id="2_qa"]
+
+[node name="Main" instance=ExtResource("1_main")]
+
+[node name="TransitionLayerQA" type="Node" parent="."]
+script = ExtResource("2_qa")

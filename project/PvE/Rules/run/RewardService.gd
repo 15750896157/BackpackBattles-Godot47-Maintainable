@@ -29,6 +29,10 @@ func generate(run: Dictionary, table_id: String) -> Array:
 				reward.definition_id = rng.choose(pool)
 			reward["kind"] = "bag" if chosen.reward_type == "bag_pool" else "item"
 		rewards.append(reward)
+	if db.release_run(run) and run.get("current_node",{}).get("type","")=="elite_combat":
+		var crests=content_pool(run,"item_pool",{"tag":"elite_loot","rarity":"legendary"})
+		if not crests.is_empty() and not rewards.is_empty():
+			rewards[-1]={"id":"elite_crest_choice","type":"item_pool","params":{"count":1},"definition_id":rng.choose(crests),"table_id":table_id,"kind":"item"}
 	run.rng.reward = rng.state
 	return rewards
 
@@ -36,6 +40,7 @@ func content_pool(run: Dictionary, type: String, params: Dictionary) -> Array:
 	var pool: Array = []
 	var is_bag = type == "bag_pool"
 	for row in db.rows("bags" if is_bag else "items"):
+		if db.release_contains("bags" if is_bag else "items",row.id)!=db.release_run(run):continue
 		if int(row.chapter_min) > int(run.act) and not bool(params.get("ignore_chapter_gate", false)): continue
 		var rarity = str(params.get("rarity", ""))
 		if not rarity.is_empty() and row.rarity not in rarity.split("_or_"): continue
@@ -46,6 +51,7 @@ func content_pool(run: Dictionary, type: String, params: Dictionary) -> Array:
 			elif owner == "public": owners = ["public"]
 			if row.owner_pool not in owners: continue
 			var tags: Array = db.list_values(row.tags)
+			if "elite_loot" in tags and run.get("current_node",{}).get("type","")!="elite_combat":continue
 			var filter = str(params.get("tag", ""))
 			if not filter.is_empty():
 				var match_tag = false

@@ -111,10 +111,12 @@ func detected_archetype(run: Dictionary) -> String:
 func _eligible(run: Dictionary) -> Array:
 	var result: Array = []
 	for row in db.rows("items"):
+		if db.release_contains("items",row.id)!=db.release_run(run):continue
 		if bool(row.get("shop_enabled", false)) and not bool(row.get("crafted_only", false)) and int(row.get("chapter_min", 1)) <= int(run.get("act", 1)) and (str(row.get("owner_pool", "public")) in ["public", str(run.get("character_id", ""))]):
 			row["kind"] = "item"
 			result.append(row)
 	for row in db.rows("bags"):
+		if db.release_contains("bags",row.id)!=db.release_run(run):continue
 		if str(row.get("availability", "")) == "shop" and int(row.get("chapter_min", 1)) <= int(run.get("act", 1)):
 			row["kind"] = "bag"
 			row["owner_pool"] = "public"

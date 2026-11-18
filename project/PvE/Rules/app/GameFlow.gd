@@ -107,6 +107,7 @@ func new_run(character_id: String, loadout_id: String, difficulty_id: String, se
 	var seeder = DeterministicRNG.new(seed_value)
 	run = {"schema_version": 2, "game_version": "0.2.0", "content_version": str(db.value("content_version", "0.1.1")), "run_id": str(Time.get_unix_time_from_system()).replace(".", "_") + "_" + str(seed_value), "run_seed": seed_value, "rng": {"route": seeder.next_int(), "shop": seeder.next_int(), "reward": seeder.next_int(), "combat": seeder.next_int()}, "character_id": character_id, "loadout_id": loadout_id, "difficulty_id": difficulty_id, "act": 1, "step": 1, "health": float(character.starting_health), "max_health": float(character.max_health), "gold": int(loadout.starting_gold), "build": {"width": int(db.value("grid_width", 9)), "height": int(db.value("grid_height", 7)), "bags": [], "items": [], "storage": [], "storage_capacity": int(db.value("storage_start", 2))}, "shop": {}, "visit": 0, "next_uid": 10, "state": "RUN_SETUP", "route_candidates": [], "current_node": {}, "completed_nodes": [], "pending_rewards": [], "combat_checkpoint": {}, "logs": [], "run_effects": [], "events_seen": [], "recipes_discovered": [], "refreshes_total": 0, "interest_total": 0, "free_refreshes": 0, "started_at": Time.get_unix_time_from_system()}
 	run.build.bags.append(_entry(loadout.starting_bag_id, "starting_bag", 0, 0, 0))
+	if db.release_loadout(loadout_id):run["content_track"]=db.release_catalog.id
 	run["content_sha256"] = db.content_sha256
 	for row in db.rows("starting_build_items"):
 		if row.loadout_id == loadout_id: run.build.items.append(_entry(row.item_id, row.instance_id, int(row.origin_x), int(row.origin_y), int(row.rotation)))
@@ -186,7 +187,8 @@ func go_main_menu() -> Dictionary:
 	return {"ok": saved, "error": "" if saved else "save_write_failed"}
 
 func choose_route(index: int) -> Dictionary:
-	if screen_state != "ROUTE_SELECT": return _fail("wrong_state")
+	var prepared_shop = screen_state == "SHOP_PREPARE" and bool(run.get("route_pending", false))
+	if screen_state != "ROUTE_SELECT" and not prepared_shop: return _fail("wrong_state")
 	if index < 0 or index >= run.route_candidates.size(): return _fail("invalid_route")
 	if not encounters.is_card_allowed(run, run.route_candidates[index]):
 		run.route_candidates = encounters.candidates(run)
@@ -194,15 +196,17 @@ func choose_route(index: int) -> Dictionary:
 		return _fail("route_no_longer_available")
 	var draft = run.duplicate(true)
 	draft.current_node = encounters.finalize_card(draft, draft.route_candidates[index])
+	draft.erase("route_pending")
 	var type = str(draft.current_node.type)
 	if type.ends_with("combat") or type in ["boss", "merchant"]:
-		draft.visit = int(draft.visit) + 1
-		var generated = shop_generator.generate(draft, false)
-		if not generated.ok: return _fail(str(generated.error))
+		if not prepared_shop:
+			draft.visit = int(draft.visit) + 1
+			var generated = shop_generator.generate(draft, false)
+			if not generated.ok: return _fail(str(generated.error))
 		if type == "merchant":
 			draft.free_refreshes = int(draft.get("free_refreshes", 0)) + 1
 			draft.erase("free_refresh_expiry")
-		if int(draft.get("shop_discount_remaining", 0)) > 0:
+		if not prepared_shop and int(draft.get("shop_discount_remaining", 0)) > 0:
 			draft.shop_discount_remaining = int(draft.shop_discount_remaining) - 1
 			if int(draft.shop_discount_remaining) == 0: draft.shop_discount = 0.0
 		run.clear()
@@ -210,10 +214,10 @@ func choose_route(index: int) -> Dictionary:
 		edit_history.begin_phase(run)
 		_transition("SHOP_PREPARE")
 	elif type == "event":
-		run.current_node = draft.current_node
+		run.clear(); run.merge(draft, true)
 		_transition("EVENT")
 	elif type == "rest":
-		run.current_node = draft.current_node
+		run.clear(); run.merge(draft, true)
 		_transition("REST")
 	else: return _fail("unknown_route_type")
 	mark_tutorial("select_route")
@@ -291,7 +295,7 @@ func edit(command: String, uid: String = "", options: Dictionary = {}) -> Dictio
 	var result: Dictionary
 	match command:
 		"move": result = placement.move(run.build, uid, int(options.get("x", 0)), int(options.get("y", 0)), int(options.get("rotation", 0)))
-		"store": result = placement.remove(run.build, uid, true)
+		"store": result = placement.remove(run.build, uid, true, int(options.get("storage_slot", -1)))
 		"restore": result = placement.restore(run.build, uid)
 		"swap": result = placement.swap(run.build, uid, str(options.get("other_uid", "")))
 		"undo": result = edit_history.undo(run)
@@ -346,6 +350,7 @@ func handle_pending(index: int, action: String) -> Dictionary:
 
 func start_combat() -> Dictionary:
 	if screen_state != "SHOP_PREPARE": return _fail("wrong_state")
+	if bool(run.get("route_pending", false)): return _fail("route_selection_required")
 	if not run.pending_rewards.is_empty(): return _fail("unhandled_rewards")
 	var valid = placement.validate(run.build)
 	if not valid.ok: return _fail(str(valid.error))
@@ -393,7 +398,7 @@ func item_preview(uid: String) -> Dictionary:
 	if run.is_empty(): return {}
 	var player = snapshots.player(run)
 	if not bool(player.get("ok", false)): return {}
-	var enemy = {} if run.current_node.get("type", "") == "merchant" else snapshot_enemy(run.current_node)
+	var enemy = {} if bool(run.get("route_pending", false)) or run.current_node.get("type", "") == "merchant" else snapshot_enemy(run.current_node)
 	var preview = CombatEngine.new(db).preview(player, enemy)
 	if not bool(preview.get("ok", false)): return {}
 	return preview.items.get(uid, {}).duplicate(true)
@@ -500,9 +505,54 @@ func _sync_discoveries():
 	for id in run.get("recipes_discovered", []): profile_service.recipe(id)
 	profile_service.check_achievements(run)
 
+## Preview on a copy: opening the combined loot page never consumes reward RNG.
+func loot_choices() -> Array:
+	if screen_state == "COMBAT_RESULT" and int(combat_result.get("winner_side", 1)) == 0:
+		return rewards.generate(run.duplicate(true), str(run.current_node.reward_table_id))
+	return run.get("reward_choices", []).duplicate(true)
+
+## A single UI action commits the reward, keeps overflow safe, and leaves battle.
+func claim_loot(index: int) -> Dictionary:
+	if screen_state == "COMBAT_RESULT":
+		if int(combat_result.get("winner_side", 1)) != 0: return _fail("wrong_state")
+		var confirmed = confirm_combat()
+		if not confirmed.ok: return confirmed
+	if screen_state != "REWARD_SELECT": return _fail("wrong_state")
+	if not bool(run.get("reward_selected", false)):
+		var selected = skip_reward(true) if index < 0 else choose_reward(index)
+		if not selected.ok: return selected
+	run["shop_first_routes"] = true
+	for pending_index in range(run.pending_rewards.size()-1, -1, -1):
+		var pending: Dictionary = run.pending_rewards[pending_index]
+		var trial = run.build.duplicate(true)
+		var probe = pending.get("entry", _entry(str(pending.get("definition_id", "")), "reward_fit_probe")).duplicate(true)
+		var action = "place" if placement.auto_place(trial, probe).ok else "storage" if run.build.storage.size() < int(run.build.storage_capacity) else ""
+		if not action.is_empty():
+			var handled = handle_pending(pending_index, action)
+			if not handled.ok: return handled
+	var result = complete_node()
+	if result.ok and screen_state == "ACT_RESULT": return next_act()
+	return result
+
+## Prepare one real shop before route selection; choosing combat reuses its stock.
+func _open_route_shop() -> Dictionary:
+	var draft = run.duplicate(true)
+	draft["route_pending"] = true
+	draft.current_node = {"type":"route_pending", "act":draft.act, "step":draft.step, "reward_table_id":"reward_none"}
+	draft.visit = int(draft.visit) + 1
+	var generated = shop_generator.generate(draft, false)
+	if not generated.ok: return _fail(str(generated.error))
+	if int(draft.get("shop_discount_remaining", 0)) > 0:
+		draft.shop_discount_remaining = int(draft.shop_discount_remaining) - 1
+		if int(draft.shop_discount_remaining) == 0: draft.shop_discount = 0.0
+	run.clear(); run.merge(draft, true)
+	edit_history.begin_phase(run)
+	_transition("SHOP_PREPARE")
+	return _update()
+
 func complete_node() -> Dictionary:
 	if screen_state == "REWARD_SELECT":
-		if not bool(run.get("reward_selected", false)) or not run.pending_rewards.is_empty(): return _fail("unhandled_rewards")
+		if not bool(run.get("reward_selected", false)) or (not run.pending_rewards.is_empty() and not bool(run.get("shop_first_routes", false))): return _fail("unhandled_rewards")
 	elif screen_state == "SHOP_PREPARE":
 		if run.current_node.type != "merchant" or not run.pending_rewards.is_empty(): return _fail("wrong_state")
 	elif screen_state not in ["EVENT", "REST"]: return _fail("wrong_state")
@@ -526,6 +576,7 @@ func complete_node() -> Dictionary:
 	else:
 		run.step = int(run.step) + 1
 		run.route_candidates = encounters.candidates(run)
+		if bool(run.get("shop_first_routes", false)): return _open_route_shop()
 		_transition("ROUTE_SELECT")
 	return _update()
 
@@ -539,6 +590,7 @@ func next_act() -> Dictionary:
 	run.clear()
 	run.merge(draft, true)
 	run.route_candidates = encounters.candidates(run)
+	if bool(run.get("shop_first_routes", false)): return _open_route_shop()
 	_transition("ROUTE_SELECT")
 	return _update()
 

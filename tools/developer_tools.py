@@ -61,7 +61,9 @@ def main() -> int:
     stage.mkdir(parents=True, exist_ok=True)
     (stage / '.pve_developer_workspace').write_text('Isolated Backpack PvE developer tools; source project is read-only.\n', encoding='utf8')
     stage_project(source_project, stage)
-    imported = subprocess.run([str(engine), '--headless', '--path', str(stage), '--editor', '--import', '--quit'], capture_output=True, text=True)
+    process_options = {'capture_output': True, 'text': True,
+                       'creationflags': subprocess.CREATE_NO_WINDOW if sys.platform == 'win32' else 0}
+    imported = subprocess.run([str(engine), '--headless', '--path', str(stage), '--editor', '--import', '--quit'], **process_options)
     diagnostics = imported.stdout + imported.stderr
     if imported.returncode or 'SCRIPT ERROR' in diagnostics or 'Parse Error' in diagnostics:
         sys.stderr.write(imported.stdout + imported.stderr); return imported.returncode or 1
@@ -75,7 +77,12 @@ def main() -> int:
             if value is not None: command += ['--' + option.replace('_', '-'), str(value.resolve())]
     else:
         command += ['--rendering-method', 'gl_compatibility', '--resolution', '1440x900']
-    return subprocess.run(command).returncode
+    completed = subprocess.run(command, **process_options)
+    sys.stdout.write(completed.stdout)
+    sys.stderr.write(completed.stderr)
+    if 'SCRIPT ERROR' in completed.stdout + completed.stderr or 'Parse Error' in completed.stdout + completed.stderr:
+        return completed.returncode or 1
+    return completed.returncode
 
 
 if __name__ == '__main__':

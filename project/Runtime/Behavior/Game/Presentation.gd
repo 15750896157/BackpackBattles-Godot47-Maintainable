@@ -3,6 +3,8 @@ extends RefCounted
 const Receiver = preload("res://Core/Game.gd")
 
 static func switchToCombat(subject: Receiver):
+	if Expedition.enabled and Expedition.native_routes != null:
+		return await Expedition.native_routes.change(&"combat", "shop_to_combat")
 	if Expedition.enabled:
 		var ticket = await Expedition.art.curtain.cover("shop_to_combat")
 		var epoch = Expedition.view_epoch
@@ -517,10 +519,10 @@ static func pve_prepare_title(subject: Receiver):
 	Sound.playBGM(Sound.titleBGM)
 	subject.emit_signal("return_to_title")
 
-static func freeOpponent(subject: Receiver):
+static func freeOpponent(subject: Receiver, notify: bool = true):
 	if subject.OPPONENT:
 		if Expedition.enabled:
-			subject.emit_signal("combat_scene_left")
+			if notify: subject.emit_signal("combat_scene_left")
 			subject.OPPONENT.combatEnd()
 			subject.OPPONENT.opponent = null
 			if is_instance_valid(subject.PLAYER): subject.PLAYER.opponent = null

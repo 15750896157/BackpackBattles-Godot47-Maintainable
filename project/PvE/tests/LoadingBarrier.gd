@@ -5,8 +5,9 @@ static func wait_idle(tree: SceneTree, timeout: float = 25.0) -> bool:
 	var stable = 0
 	while Time.get_ticks_msec() < deadline:
 		var busy = not AssetStream.pending.is_empty() or not AssetStream.inflight.is_empty() or not AssetStream.jobs.is_empty()
-		busy = busy or Expedition.syncing or Expedition.entering_shop or Expedition.combat_loading
+		busy = busy or Expedition.syncing or Expedition.entering_shop or Expedition.combat_loading or Expedition.route_in_progress()
 		if Expedition.art != null and Expedition.art.curtain != null: busy = busy or Expedition.art.curtain.busy
+		if is_instance_valid(Expedition.loading_screen):busy=busy or not Expedition.loading_screen.mode.is_empty()
 		if Expedition.transitions != null:
 			busy = busy or is_instance_valid(Expedition.transitions.closing_ghost)
 			var popup = Expedition.transitions.popup_tween

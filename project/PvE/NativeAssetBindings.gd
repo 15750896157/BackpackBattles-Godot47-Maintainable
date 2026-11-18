@@ -104,12 +104,14 @@ func replacement_path(definition_id: String) -> String:
 	if not supplied.is_empty(): return supplied
 	var definition = db.get_row("bags",definition_id) if db != null else {}
 	if definition.is_empty(): return ""
+	if str(definition.get("icon_ref","")).begins_with("res://Art/Supplied20261102/"):return definition.icon_ref
 	var cells: Array = []
 	# Authoritative dimensions, not the recovered native scene's different bag size.
 	if Expedition.flow != null:
 		cells = Expedition.flow.placement.local_cells({"definition_id":definition_id,"rotation":0})
 	var key = preload("res://PvE/Art/BagArt.gd").key_for(cells)
-	if key == "bag9": return preload("res://PvE/Art/SuppliedArt.gd").ui_path(key)
+	var supplied_bag=preload("res://PvE/Art/SuppliedArt.gd").ui_path(key)
+	if not supplied_bag.is_empty():return supplied_bag
 	return "res://Art/Polish20261022/"+key+".png" if not key.is_empty() else ""
 
 func texture_async(definition_id: String) -> Texture2D:

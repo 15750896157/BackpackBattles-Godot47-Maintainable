@@ -1,14 +1,14 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene format=3 uid="uid://b3i7x2dbwgrvk"]
 
-[ext_resource path="res://Interface/Tooltips/ImageFont.tres" type="FontFile" id=1]
+[ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="1_l6hxe"]
 
 [node name="RichTextLabel" type="RichTextLabel"]
 offset_right = 142.0
 offset_bottom = 27.0
 clip_contents = false
 mouse_filter = 2
-theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/italics_font = ExtResource( 1 )
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/italics_font = ExtResource("1_l6hxe")
 bbcode_enabled = true
 fit_content = true
 scroll_active = false

@@ -17,7 +17,7 @@ func execute():
 	DirAccess.make_dir_recursive_absolute(folder)
 	var db = load("res://PvE/Rules/content/ContentDB.gd").new()
 	check(db.errors.is_empty(), "缓存正常载入")
-	check(db.content_version == "0.1.3", "内容版本0.1.3")
+	check(db.content_version == "0.2.1", "内容版本0.2.1")
 	check(db.table_names().size() == 57, "全部56内容表及清单")
 	check(db.value("grid_width") is int and db.value("grid_width") == 9, "原生整数类型保留")
 	check(db.get_row("shop_rarity_curve", "act_1").common_weight == 0.8, "章节主键查找")
@@ -61,7 +61,7 @@ func execute():
 	var validator = load("res://PvE/Rules/content/ContentValidator.gd").new(db)
 	var valid = validator.validate()
 	check(valid.ok, "原生内容校验零错误：" + str(valid.errors))
-	check(valid.counts.native_layouts == 40, "全部40起始/敌人/Boss两阶段布局复验")
+	check(valid.counts.native_layouts == 44, "全部44起始/敌人/Boss两阶段布局复验（含四套新版开局）")
 	check(valid.counts.content_pool_checks >= 80, "奖励事件每角色每章节池验证")
 	for definition in db.rows("items") + db.rows("bags"):
 		var image = ResourceLoader.load(str(definition.icon_ref))

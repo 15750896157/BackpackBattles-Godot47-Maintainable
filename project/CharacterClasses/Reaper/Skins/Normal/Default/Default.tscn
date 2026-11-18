@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene format=3 uid="uid://crm0gnum8ysbr"]
 
-[ext_resource path="res://CharacterClasses/Reaper/ReaperSprite.tscn" type="PackedScene" id=1]
+[ext_resource type="PackedScene" path="res://CharacterClasses/Reaper/ReaperSprite.tscn" id="1_hgwpc"]
 
-[node name="Sprite2D" instance=ExtResource( 1 )]
+[node name="Sprite2D" instance=ExtResource("1_hgwpc")]
 script = null
 
 [node name="LeftShoe" parent="Body/LeftUpperLeg/LeftLowerLeg" index="1"]
-position = Vector2( 37.037, 198.148 )
+position = Vector2(37.037, 198.148)

@@ -1,18 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://cparo1hs601gm"]
 
-[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Particles/Dust1.png" type="Texture2D" id=2]
-[ext_resource path="res://Shader/DustParticles.tres" type="Material" id=3]
+[ext_resource type="Material" path="res://Shader/DustParticles.tres" id="1_tjykl"]
+[ext_resource type="Texture2D" path="res://Assets/Particles/Dust1.png" id="2_yrhr7"]
+[ext_resource type="Script" path="res://Utility/PooledScene.gd" id="3_htfqy"]
 
 [node name="GPUParticles2D" type="GPUParticles2D"]
-modulate = Color( 1, 0.890196, 0.819608, 0.658824 )
-scale = Vector2( 0.6, 0.6 )
+modulate = Color(1, 0.890196, 0.819608, 0.658824)
+scale = Vector2(0.6, 0.6)
 emitting = false
 amount = 12
 lifetime = 0.57
 one_shot = true
 speed_scale = 1.25
 explosiveness = 0.79
-process_material = ExtResource( 3 )
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
+process_material = ExtResource("1_tjykl")
+texture = ExtResource("2_yrhr7")
+script = ExtResource("3_htfqy")

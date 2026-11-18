@@ -9,3 +9,11 @@ bag_cross_brace,bag.bag_cross_brace.name,bag.bag_cross_brace.desc,rare,7,2,bag_s
 bag_hollow_ring,bag.bag_hollow_ring.name,bag.bag_hollow_ring.desc,rare,7,2,bag_shape_ring_8,star_cell,0:1|2:1,cooldown_pct:-0.06,shop,9.5,res://Items/Exclusive/Sprites/UtilityPouch.png
 bag_step_case,bag.bag_step_case.name,bag.bag_step_case.desc,legendary,8,3,bag_shape_step_8,enhanced_cell,1:1|2:2,crit_chance:0.04,boss_reward,9.5,res://Items/Exclusive/Sprites/PuzzlebagZ.png
 bag_twin_wing,bag.bag_twin_wing.name,bag.bag_twin_wing.desc,legendary,8,3,bag_shape_wing_8,star_cell,1:1,status_power:0.12,boss_reward,9.5,res://Items/Exclusive/Sprites/PuzzlebagS.png
+bag_release_journey,bag.bag_release_journey.name,bag.bag_release_journey.desc,common,2,1,release_1x2,none,,,shop,3,res://Art/Supplied20261102/bags/bag_02.png
+bag_release_satchel,bag.bag_release_satchel.name,bag.bag_release_satchel.desc,common,3,1,release_2x2,none,,,shop,4,res://Art/Supplied20261102/bags/bag_04.png
+bag_release_bedroll,bag.bag_release_bedroll.name,bag.bag_release_bedroll.desc,common,4,1,release_2x3,none,,,shop,5,res://Art/Supplied20261102/bags/bag_06.png
+bag_release_weapon,bag.bag_release_weapon.name,bag.bag_release_weapon.desc,common,5,1,release_2x3,enhanced_cell,0:1,target_tag:weapon|cooldown_pct:-0.05,shop,6,res://Art/Supplied20261102/bags/bag_06.png
+bag_release_herbal,bag.bag_release_herbal.name,bag.bag_release_herbal.desc,common,3,1,release_1x2,enhanced_cell,0:0,target_tag:potion|status_power:0.06,shop,4,res://Art/Supplied20261102/bags/bag_02.png
+bag_release_armor,bag.bag_release_armor.name,bag.bag_release_armor.desc,common,4,1,release_2x2,enhanced_cell,0:0,target_tag:armor|armor_on_start:3,shop,5,res://Art/Supplied20261102/bags/bag_04.png
+bag_release_transport,bag.bag_release_transport.name,bag.bag_release_transport.desc,rare,7,2,release_3x3,star_cell,1:1,cooldown_pct:-0.05,shop,8,res://Art/Supplied20261102/bags/bag_09_square.png
+bag_release_supply,bag.bag_release_supply.name,bag.bag_release_supply.desc,rare,7,2,release_3x3,enhanced_cell,1:1,damage_flat:1,shop,8,res://Art/Supplied20261102/bags/bag_09_wide.png

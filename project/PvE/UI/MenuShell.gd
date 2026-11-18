@@ -5,9 +5,16 @@ const TOUCH_ART = "res://Art/Touch20261027/"
 var owner
 var textures: Dictionary = {}
 var pager
+var canvas: Control
+const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 func _init(host): owner = host
 func words(zh: String, en: String) -> String: return owner.bilingual(zh,en)
 func image(key: String) -> Texture2D:
+	if key in ["guide","home"]:
+		return AssetStream.resources[REF.path(key)] if AssetStream.resources.has(REF.path(key)) else load(REF.path(key))
+	if key=="card":return load(preload("res://PvE/Art/SuppliedArt.gd").ui_path("settings_plate"))
+	if key in ["window", "button", "button_blue", "button_red", "close", "previous", "next", "settings", "codex", "journey", "battle", "hand", "loading_icon"]:
+		return AssetStream.resources[REF.path(key)] if AssetStream.resources.has(REF.path(key)) else load(REF.path(key))
 	var supplied=preload("res://PvE/Art/SuppliedArt.gd").ui_path(key)
 	if key in ["battle","codex","journey","settings","button","hand"] and not supplied.is_empty():
 		if not textures.has(key):textures[key]=load(supplied)
@@ -20,6 +27,30 @@ func open(page: String, title: String):
 	owner.back_action = owner.view_return
 	owner.panel.set_meta("menu_depth",1)
 	owner.panel.set_meta("mobile_ui",true)
+func reset_canvas():
+	if is_instance_valid(canvas):
+		owner.panel.remove_child(canvas); canvas.queue_free()
+	canvas = null
+	owner.modal_shield.color = Color(0.05, 0.025, 0.01, 0.48)
+	owner.panel.position = Vector2(110,20); owner.panel.size = Vector2(1700,1040)
+	owner.panel.add_theme_stylebox_override("panel",owner.ui_theme.get_stylebox("panel","PanelContainer"))
+	owner.popup_scroll.get_parent().show()
+func open_canvas(page: String, title: String, template: PackedScene = null) -> Control:
+	open(page,title)
+	clear(owner.menu_header); clear(owner.menu_nav)
+	if owner.transitions.popup_tween != null and owner.transitions.popup_tween.is_valid(): owner.transitions.popup_tween.kill()
+	owner.panel.position = Vector2.ZERO; owner.panel.size = Vector2(1920,1080)
+	owner.panel.modulate = Color.WHITE
+	owner.modal_shield.modulate = Color.WHITE
+	owner.modal_shield.color = Color(0.05, 0.025, 0.01, 0.48)
+	owner.panel.add_theme_stylebox_override("panel",StyleBoxEmpty.new())
+	owner.popup_scroll.get_parent().hide()
+	canvas = template.instantiate() if template != null else Control.new()
+	if template == null: canvas.name = "ReferencePage"
+	canvas.size = Vector2(1920,1080)
+	canvas.mouse_filter = Control.MOUSE_FILTER_STOP
+	owner.panel.add_child(canvas)
+	return canvas
 func chrome(title: String):
 	if pager!=null:pager.reset()
 	for parent in [owner.menu_header,owner.menu_nav]: clear(parent)
@@ -79,7 +110,7 @@ func segment(parent: Node,caption: String,callback: Callable,selected: bool = fa
 	button.add_theme_font_size_override("font_size",mini(26,roundi(23*owner.preferences.values.ui_scale)))
 	for state in ["normal","hover","pressed","disabled"]:
 		var skin=owner.ui_theme.get_stylebox("normal","Button").duplicate()
-		skin.texture=load("res://Art/Supplied20261028/ui/button_blue.png") if selected else image("button")
+		skin.texture=image("button_blue") if selected else image("button")
 		button.add_theme_stylebox_override(state,skin)
 	for state in ["font_color","font_hover_color","font_pressed_color","font_disabled_color"]:button.add_theme_color_override(state,Color("302114"))
 	return button

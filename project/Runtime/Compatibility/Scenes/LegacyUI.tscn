@@ -1,0 +1,2072 @@
+[gd_scene format=3 uid="uid://c1y56wqmt8v4d"]
+
+[ext_resource type="FontFile" uid="uid://7qphybp06aru" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="23"]
+[ext_resource type="FontFile" uid="uid://b5cgwoh27485q" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="27"]
+[ext_resource type="Texture2D" uid="uid://nv1j54jgc1sg" path="res://Assets/Heart.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://cl8ufe5ntpbpe" path="res://Interface/Options/OptionsButton.png" id="90"]
+[ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="Texture2D" uid="uid://dosh4tem3u812" path="res://Assets/Noise/Noise3.png" id="94"]
+[ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Assets/Particles/Spot1.png" id="95"]
+[ext_resource type="Script" uid="uid://banoet6ywadah" path="res://Interface/VersionLabel.gd" id="99"]
+[ext_resource type="Texture2D" uid="uid://cjwnf87milum2" path="res://Interface/Options/OptionsButton_hovered.png" id="117"]
+[ext_resource type="Texture2D" uid="uid://2eyaklehiffn" path="res://Assets/Frame2.png" id="119"]
+[ext_resource type="Texture2D" uid="uid://djy7ba53m2yri" path="res://Interface/DropdownArrow.png" id="127"]
+[ext_resource type="FontVariation" path="res://Interface/Options/OptionsFont.tres" id="133"]
+[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Shader/TextDissolveMaterial.tres" id="139"]
+[ext_resource type="Texture2D" uid="uid://ccu3t3mto58qi" path="res://Interface/VScrollbar_grabber.png" id="145"]
+[ext_resource type="Texture2D" uid="uid://d7yocxbe6qtu" path="res://Interface/VScrollbar.png" id="146"]
+[ext_resource type="Script" uid="uid://d2sujvy0oeb6u" path="res://Interface/SelectionBox.gd" id="154"]
+[ext_resource type="Texture2D" uid="uid://2p1m2j7cav4c" path="res://Interface/SelectBox.png" id="155"]
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://Interface/FocusGrabbingButton.gd" id="158"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://Interface/DraggableScrollContainer.gd" id="163"]
+[ext_resource type="Script" uid="uid://b7ucuqgtek05h" path="res://Core/CombatLog.gd" id="167"]
+[ext_resource type="Texture2D" uid="uid://ci7tom5cvdnku" path="res://Interface/Tooltips/TooltipBase.png" id="169"]
+[ext_resource type="StyleBox" path="res://Interface/CombatLog/LogLinePlayerStylebox.tres" id="172"]
+[ext_resource type="StyleBox" path="res://Interface/CombatLog/LogLineOpponentStylebox.tres" id="173"]
+[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://Interface/SmallArrow.png" id="175"]
+[ext_resource type="Texture2D" uid="uid://cgd7d65brf5bi" path="res://Interface/CombatLog/CloseButton.png" id="179"]
+[ext_resource type="Texture2D" uid="uid://bp8i4tush30sk" path="res://Interface/CombatLog/CloseButton_hovered.png" id="180"]
+[ext_resource type="PackedScene" uid="uid://ds6ys47qsesq5" path="res://Interface/Options/ItemListButton.tscn" id="181"]
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Utility/LocalizedControl.gd" id="182"]
+[ext_resource type="Script" uid="uid://buxnrmrd07ct4" path="res://Interface/ConnectingLabel.gd" id="183"]
+[ext_resource type="Texture2D" uid="uid://b4n8uhlaqc05i" path="res://Interface/SurvivalButton.png" id="184"]
+[ext_resource type="Texture2D" uid="uid://bkrc550l6x8vj" path="res://Interface/Combat/CancelSurvivalButton.png" id="185"]
+[ext_resource type="Texture2D" uid="uid://cr40qjy7g2x21" path="res://Assets/SurvivalSkull.png" id="188"]
+[ext_resource type="Texture2D" uid="uid://bmedq81qw3ort" path="res://Assets/SurvivalBones.png" id="190"]
+[ext_resource type="Script" uid="uid://bfi1u7fj6yx5n" path="res://Interface/ReactiveButton.gd" id="191"]
+[ext_resource type="Texture2D" uid="uid://bocbt7v4y2ocp" path="res://Interface/ArrowButton2.png" id="195"]
+[ext_resource type="Script" uid="uid://blw2bqk1vtqp0" path="res://Interface/DamageMeter/DamageMeter.gd" id="198"]
+[ext_resource type="Texture2D" uid="uid://xb8l32d6vy3l" path="res://Interface/DamageMeter/DamageMeterIcon.png" id="199"]
+[ext_resource type="Texture2D" uid="uid://b4a3pv716m4cw" path="res://Interface/DamageMeter/OpenButton_right.png" id="200"]
+[ext_resource type="Texture2D" uid="uid://1s0j362ae17" path="res://Interface/DamageMeter/OpenButton_right_hovered.png" id="201"]
+[ext_resource type="Script" uid="uid://dqggfmc7fca2w" path="res://Interface/Options/OptionsButton.gd" id="208"]
+[ext_resource type="PackedScene" uid="uid://tkwjs3qm7rv3" path="res://Interface/Searchbar.tscn" id="212"]
+[ext_resource type="Script" uid="uid://cjxjy3ngaxlau" path="res://Interface/CombatLog/CombatLogFilterPanel.gd" id="213"]
+[ext_resource type="Texture2D" uid="uid://1yolxem7adcf" path="res://Interface/CombatLog/Play_disabled.png" id="228"]
+[ext_resource type="Texture2D" uid="uid://cjkoq315mev2m" path="res://Interface/CombatLog/PlayFromStart_normal.png" id="229"]
+[ext_resource type="Texture2D" uid="uid://brpi3q01skekf" path="res://Interface/CombatLog/PlayFromStart_hover.png" id="230"]
+[ext_resource type="Texture2D" uid="uid://bxg8c3hn80pn7" path="res://Interface/CombatLog/Play_normal.png" id="236"]
+[ext_resource type="Texture2D" uid="uid://d037f5p3n0j62" path="res://Interface/CombatLog/PlayFromStart_disabled.png" id="240"]
+[ext_resource type="Texture2D" uid="uid://cigygfyyro3j" path="res://Interface/CombatLog/Play_hover.png" id="241"]
+[ext_resource type="Texture2D" uid="uid://b0db8oy7s58x2" path="res://Interface/NextOptionArrow.png" id="244"]
+[ext_resource type="Texture2D" uid="uid://d1nldfbsmte5o" path="res://Interface/CombatLog/Play_playing.png" id="245"]
+[ext_resource type="Texture2D" uid="uid://ckr2ds1yy8cru" path="res://Interface/CombatLog/PlayFromStart_playing.png" id="246"]
+[ext_resource type="Script" uid="uid://dkfm41ytvypeq" path="res://Interface/CombatLog/CombatLogFilterButton.gd" id="247"]
+[ext_resource type="Script" uid="uid://kwhpyuwjwr5" path="res://Interface/CombatLog/CombatLogFilterButtonWithStylebox.gd" id="248"]
+[ext_resource type="Script" uid="uid://do60tnyf6l77b" path="res://Utility/UndoStack.gd" id="249"]
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://Interface/NonLocalizedControl.gd" id="250"]
+[ext_resource type="Script" uid="uid://citm7h2d08nsr" path="res://Interface/EditModeButtons.gd" id="285"]
+[ext_resource type="Texture2D" uid="uid://cly5g1i512kmb" path="res://Interface/EditModeBags.png" id="287"]
+[ext_resource type="Texture2D" uid="uid://db3lf2bjdv2ms" path="res://Interface/EditModeItems.png" id="288"]
+[ext_resource type="Texture2D" uid="uid://bmknel5bqn6al" path="res://Interface/EditModeBags_hovered.png" id="289"]
+[ext_resource type="Texture2D" uid="uid://4f1eg7x7xyrw" path="res://Interface/EditModeItems_hovered.png" id="290"]
+[ext_resource type="Texture2D" uid="uid://iv0h6b6dj5dj" path="res://Interface/ArrowButton_up2_hovered.png" id="291"]
+[ext_resource type="Texture2D" uid="uid://buqi57avtialq" path="res://Interface/ArrowButton_up2.png" id="292"]
+[ext_resource type="Texture2D" uid="uid://kgyipd5hrp05" path="res://Interface/Undo.png" id="293"]
+[ext_resource type="Texture2D" uid="uid://c835eyv844o1h" path="res://Interface/PushToStorage_hovered.png" id="294"]
+[ext_resource type="Texture2D" uid="uid://bh422kvufntkf" path="res://Interface/Undo_hovered.png" id="295"]
+[ext_resource type="Script" uid="uid://qtu8mf5cadbn" path="res://Interface/ShopToolbar.gd" id="296"]
+[ext_resource type="Texture2D" uid="uid://qsq7tb83u0j5" path="res://Interface/ToolbarPanel.png" id="297"]
+[ext_resource type="Texture2D" uid="uid://bi4mw5urbyp1t" path="res://商店背景.png" id="297_y1jck"]
+[ext_resource type="Texture2D" uid="uid://ww1q8bxw6pc4" path="res://Assets/Patch3.png" id="298"]
+[ext_resource type="Material" path="res://Items/Particles/SubtractiveCanvasItem.material" id="299"]
+[ext_resource type="Texture2D" uid="uid://dd8yhfybnqma2" path="res://Interface/EditModeDefault.png" id="300"]
+[ext_resource type="Texture2D" uid="uid://bpc02kg2gv3vw" path="res://Interface/EditModeDefault_hovered.png" id="301"]
+[ext_resource type="Texture2D" uid="uid://dty7rpx2i2ibd" path="res://Interface/PushToStorage.png" id="302"]
+[ext_resource type="Texture2D" uid="uid://dotuwlq64a2oi" path="res://Interface/Undo_disabled.png" id="303"]
+[ext_resource type="Texture2D" uid="uid://cbb5ada23nxv" path="res://Interface/GridStorage_hovered.png" id="306"]
+[ext_resource type="Texture2D" uid="uid://dgx8m1ssv82ub" path="res://Interface/GridStorage.png" id="307"]
+[ext_resource type="Texture2D" uid="uid://ducg2muy3h3wk" path="res://Interface/GridStorage_pressed.png" id="308"]
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_80.tres" id="m7_shared_80"]
+[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_130.tres" id="m7_shared_130"]
+[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_207.tres" id="m7_shared_207"]
+[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_235.tres" id="m7_shared_235"]
+
+[sub_resource type="Animation" id="452"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="451"]
+resource_name = "Tutorial"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.3, 1.3, 1.3, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_32r38"]
+_data = {
+&"RESET": SubResource("452"),
+&"Tutorial": SubResource("451")
+}
+
+[sub_resource type="Animation" id="340"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="341"]
+resource_name = "RestoreSnapshot"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ayhut"]
+_data = {
+&"RESET": SubResource("340"),
+&"RestoreSnapshot": SubResource("341")
+}
+
+[sub_resource type="FontVariation" id="339"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 35
+outline_size = 4
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[sub_resource type="RectangleShape2D" id="324"]
+size = Vector2(282, 161)
+
+[sub_resource type="StyleBoxTexture" id="322"]
+texture = ExtResource("145")
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+region_rect = Rect2(-14.8741, 0, 70.4767, 64.1349)
+
+[sub_resource type="StyleBoxTexture" id="323"]
+texture = ExtResource("146")
+region_rect = Rect2(-6, 0.0862274, 57.0044, 461.484)
+
+[sub_resource type="Theme" id="205"]
+VScrollBar/styles/grabber = SubResource("322")
+VScrollBar/styles/grabber_highlight = SubResource("322")
+VScrollBar/styles/grabber_pressed = SubResource("322")
+VScrollBar/styles/scroll = SubResource("323")
+
+[sub_resource type="FontVariation" id="330"]
+base_font = ExtResource("27")
+script = ExtResource("LegacyFontMigration")
+size = 19
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[sub_resource type="StyleBoxFlat" id="331"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.145098, 0.129412, 0.109804, 0.623529)
+border_color = Color(0.423529, 0.423529, 0.423529, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="334"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.290196, 0.266667, 0.235294, 0.623529)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.92549, 0.831373, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="337"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0.92549, 0.831373, 0.623529)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.84745, 0.0917969, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="FontVariation" id="332"]
+base_font = ExtResource("27")
+script = ExtResource("LegacyFontMigration")
+size = 19
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[sub_resource type="StyleBoxFlat" id="333"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.137255, 0.109804, 0.109804, 0.6)
+border_color = Color(0.686275, 0.686275, 0.686275, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxFlat" id="335"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.160784, 0.145098, 0.145098, 0.6)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.92549, 0.831373, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+anti_aliasing_size = 1.184
+
+[sub_resource type="StyleBoxFlat" id="338"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.501961, 0, 0, 0.6)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.84745, 0.0917969, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Animation" id="418"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerDamageMeter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FilterPanel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OpponentDamageMeter:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="419"]
+resource_name = "Tutorial"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerDamageMeter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OpponentDamageMeter:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FilterPanel:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6gdxt"]
+_data = {
+&"RESET": SubResource("418"),
+&"Tutorial": SubResource("419")
+}
+
+[sub_resource type="Shader" id="134"]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+varying vec4 legacy_modulate;
+
+uniform sampler2D overlapGradient : repeat_disable, filter_linear;
+uniform sampler2D tex2 : repeat_enable, filter_linear;
+uniform vec2 scroll1 = vec2(0.2, -0.3);
+uniform vec2 scroll2 = vec2(0.1, -0.4);
+uniform float tex2_scale = 0.5;
+uniform float tex1_scale = 1.0;
+varying float particleId;
+
+void vertex(){
+	legacy_modulate = COLOR;
+	particleId = INSTANCE_CUSTOM.z;
+	
+}
+
+
+void fragment() {
+	COLOR = vec4(1.0);
+	
+	float adjustedTime = bb_shader_time + particleId * 11374.293247;
+	float tex1_intensity = texture(tex2, tex1_scale * (UV + adjustedTime * scroll1)).r;
+	float tex2_intensity = texture(tex2, tex2_scale * (UV + adjustedTime * scroll2)).r;
+	float mask = texture(TEXTURE,UV).r;
+	float intensity = tex1_intensity * tex2_intensity * mask * COLOR.a * legacy_modulate.a;
+	vec4 overlapColor = texture(overlapGradient, vec2(intensity * 2.0));
+	COLOR.a = 1.0; // already used in intensity
+	COLOR.rgb *= legacy_modulate.rgb;
+	COLOR *= overlapColor;
+
+}"
+
+[sub_resource type="Gradient" id="244"]
+offsets = PackedFloat32Array(0, 0.047619, 0.236)
+colors = PackedColorArray(0.783203, 0.486443, 0, 0, 1, 0.70623, 0.203125, 1, 1, 0.958958, 0.773438, 1)
+
+[sub_resource type="GradientTexture1D" id="245"]
+gradient = SubResource("244")
+width = 200
+
+[sub_resource type="ShaderMaterial" id="246"]
+shader = SubResource("134")
+shader_parameter/overlapGradient = SubResource("245")
+shader_parameter/tex2 = ExtResource("94")
+shader_parameter/scroll1 = Vector2(0.2, -0.6987)
+shader_parameter/scroll2 = Vector2(0.1, -0.3145)
+shader_parameter/tex2_scale = 0.5
+shader_parameter/tex1_scale = 1.0
+
+[sub_resource type="Gradient" id="247"]
+colors = PackedColorArray(0.873047, 0.873047, 0.873047, 0.92549, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="248"]
+gradient = SubResource("247")
+width = 100
+
+[sub_resource type="Gradient" id="282"]
+offsets = PackedFloat32Array(0, 0.114286, 0.280952, 0.671429, 0.952381)
+colors = PackedColorArray(1, 1, 1, 0.192157, 1, 1, 1, 0.603922, 1, 1, 1, 1, 1, 1, 1, 0.117647, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="139"]
+gradient = SubResource("282")
+width = 100
+
+[sub_resource type="Curve" id="283"]
+_limits = [0.0, 1.43, 0.0, 1.0]
+_data = [Vector2(0, 0.561443), 0.0, 0.772704, 0, 0, Vector2(1, 1.43), 1.71675, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="141"]
+width = 200
+curve = SubResource("283")
+
+[sub_resource type="ParticleProcessMaterial" id="249"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 0.65
+initial_velocity_min = 281.512
+initial_velocity_max = 365.6
+angular_velocity_min = -124.1
+angular_velocity_max = 124.1
+gravity = Vector3(0, 300, 0)
+scale_min = 0.12
+scale_max = 0.252
+scale_curve = SubResource("141")
+color_ramp = SubResource("139")
+color_initial_ramp = SubResource("248")
+anim_offset_max = 1.0
+
+[sub_resource type="FontVariation" id="254"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 25
+outline_size = 3
+outline_color = Color(0.0509804, 0.0588235, 0.219608, 1)
+
+[sub_resource type="FontVariation" id="255"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 25
+outline_size = 3
+outline_color = Color(0.137255, 0.0235294, 0.0235294, 1)
+
+[sub_resource type="Animation" id="253"]
+resource_name = "Cancel"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("TakeWin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-600, 844), Vector2(401, 844)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("StartSurvival:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1940, 842), Vector2(940, 842)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("SurvivalSkull:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(2.21914, 2.21914, -2),
+"update": 0,
+"values": [Vector2(0.652074, 0.652074), Vector2(0.652074, 0.652074), Vector2(2, 2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SurvivalSkull:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TakeWin:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StartSurvival:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TakeWin:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 2.2974, 1),
+"update": 0,
+"values": [Color(2, 2, 2, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("StartSurvival:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(2.46229, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("GPUParticles2D:emitting")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="250"]
+resource_name = "Confirm"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("TakeWin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-600, 844), Vector2(401, 844)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("StartSurvival:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1940, 842), Vector2(940, 842)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SurvivalSkull:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(2.21914, 2.21914, -2),
+"update": 0,
+"values": [Vector2(0.652074, 0.652074), Vector2(0.652074, 0.652074), Vector2(2, 2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SurvivalSkull:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 3.86374, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TakeWin:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StartSurvival:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TakeWin:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.2974, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("StartSurvival:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 2.46229, 1),
+"update": 0,
+"values": [Color(2, 2, 2, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("GPUParticles2D:emitting")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="251"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SurvivalSkull:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TakeWin:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StartSurvival:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GPUParticles2D:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="252"]
+resource_name = "Show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TakeWin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-600, 844), Vector2(401, 844)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StartSurvival:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1940, 842), Vector2(940, 842)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SurvivalSkull:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [Vector2(1.2, 1.2), Vector2(1.2, 1.2), Vector2(0.652074, 0.652074)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SurvivalSkull:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TakeWin:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StartSurvival:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GPUParticles2D:emitting")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/9/type = "method"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("GPUParticles2D")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u8efn"]
+_data = {
+&"Cancel": SubResource("253"),
+&"Confirm": SubResource("250"),
+&"RESET": SubResource("251"),
+&"Show": SubResource("252")
+}
+
+[sub_resource type="FontVariation" id="188"]
+base_font = ExtResource("23")
+spacing_top = -5
+script = ExtResource("LegacyFontMigration")
+size = 32
+outline_size = 4
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[sub_resource type="Animation" id="189"]
+resource_name = "Connecting"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 12, 13]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pqkye"]
+_data = {
+&"Connecting": SubResource("189")
+}
+
+[node name="UI" type="Node2D" unique_id=219519902]
+z_index = 100
+
+[node name="Toolbar" type="Node2D" parent="." unique_id=855441187]
+z_index = -50
+position = Vector2(581, 1041)
+script = ExtResource("296")
+
+[node name="Panel" type="NinePatchRect" parent="Toolbar" unique_id=2132583948]
+offset_left = -189.0
+offset_top = -33.0
+offset_right = 115.0
+offset_bottom = 155.0
+texture = ExtResource("297")
+patch_margin_right = 80
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="Toolbar" unique_id=461992155]
+modulate = Color(0.054902, 0.0588235, 0.0627451, 1)
+material = ExtResource("299")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -129.0
+offset_top = 27.0
+offset_right = -9.0
+offset_bottom = 70.0
+texture = ExtResource("298")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="ToolbarButton" type="TextureButton" parent="Toolbar" unique_id=42135487]
+offset_left = -173.0
+offset_top = -21.0
+offset_right = -125.0
+offset_bottom = 16.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("292")
+texture_pressed = ExtResource("291")
+texture_hover = ExtResource("291")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+[node name="UndoButton" type="TextureButton" parent="Toolbar" unique_id=1330300816]
+offset_left = -119.0
+offset_top = 22.0
+offset_right = -74.0
+offset_bottom = 72.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("293")
+texture_hover = ExtResource("295")
+texture_disabled = ExtResource("303")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_undo"
+tooltipOffset = Vector2(0, -20)
+showTooltipWhenDisabled = true
+
+[node name="RedoButton" type="TextureButton" parent="Toolbar" unique_id=1951425701]
+offset_left = -63.0
+offset_top = 22.0
+offset_right = -18.0
+offset_bottom = 72.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("293")
+texture_hover = ExtResource("295")
+texture_disabled = ExtResource("303")
+ignore_texture_size = true
+stretch_mode = 5
+flip_h = true
+script = ExtResource("160")
+tooltipKey = "KEYBIND_redo"
+tooltipOffset = Vector2(0, -20)
+showTooltipWhenDisabled = true
+
+[node name="PushToStorageButton" type="TextureButton" parent="Toolbar" unique_id=868138674]
+offset_left = 3.0
+offset_top = 22.0
+offset_right = 53.0
+offset_bottom = 72.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("302")
+texture_hover = ExtResource("294")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "HINT_PushToStorage"
+tooltipOffset = Vector2(0, -20)
+
+[node name="GridStorageButton" type="TextureButton" parent="Toolbar" unique_id=1258399157]
+offset_left = 27.0
+offset_top = 73.0
+offset_right = 77.0
+offset_bottom = 123.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("307")
+texture_pressed = ExtResource("308")
+texture_hover = ExtResource("306")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "BUTTON_GridStorage"
+tooltipOffset = Vector2(0, -20)
+
+[node name="EditModeButtons" type="Node2D" parent="Toolbar" unique_id=1105774384]
+position = Vector2(-155, 85)
+script = ExtResource("285")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Toolbar/EditModeButtons" unique_id=397990279]
+modulate = Color(0.054902, 0.0588235, 0.0627451, 1)
+material = ExtResource("299")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -11.0
+offset_right = 169.0
+offset_bottom = 38.0
+texture = ExtResource("298")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+[node name="Default" type="TextureButton" parent="Toolbar/EditModeButtons" unique_id=1551893898]
+offset_left = 11.0
+offset_top = -12.0
+offset_right = 61.0
+offset_bottom = 38.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("300")
+texture_pressed = ExtResource("301")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_edit_all"
+tooltipOffset = Vector2(0, -20)
+
+[node name="BagLayer" type="TextureButton" parent="Toolbar/EditModeButtons" unique_id=1548462973]
+offset_left = 63.0
+offset_top = -12.0
+offset_right = 113.0
+offset_bottom = 38.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("287")
+texture_pressed = ExtResource("289")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_edit_bags"
+tooltipOffset = Vector2(0, -20)
+
+[node name="ItemLayer" type="TextureButton" parent="Toolbar/EditModeButtons" unique_id=478399514]
+offset_left = 113.0
+offset_top = -12.0
+offset_right = 163.0
+offset_bottom = 38.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("288")
+texture_pressed = ExtResource("290")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_edit_items"
+tooltipOffset = Vector2(0, -20)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Toolbar" unique_id=1381156348]
+libraries/ = SubResource("AnimationLibrary_32r38")
+
+[node name="UndoStack" type="Node2D" parent="." unique_id=363487090]
+visible = false
+position = Vector2(973, 250)
+script = ExtResource("249")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UndoStack" unique_id=1867502647]
+libraries/ = SubResource("AnimationLibrary_ayhut")
+
+[node name="Label" type="Label" parent="UndoStack" unique_id=1084115778]
+offset_left = -67.0
+offset_top = 1.0
+offset_right = 72.0
+offset_bottom = 47.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("339")
+theme_override_font_sizes/font_size = 35
+text = "4/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("250")
+
+[node name="RightArrow" type="Sprite2D" parent="UndoStack" unique_id=1977308117]
+position = Vector2(0.526733, -16.213)
+rotation = -0.603884
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("195")
+
+[node name="LeftArrow" type="Sprite2D" parent="UndoStack" unique_id=1391919397]
+position = Vector2(-0.922607, -16.8698)
+rotation = -3.75595
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("195")
+
+[node name="OptionsButton" type="TextureButton" parent="." unique_id=1516369156 groups=["PinnedControl"]]
+offset_left = 1794.0
+offset_top = 13.0
+offset_right = 1903.0
+offset_bottom = 126.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("90")
+texture_pressed = ExtResource("117")
+texture_hover = ExtResource("117")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("208")
+tooltipKey = "UI_Options"
+
+[node name="SelectionBox" type="Node2D" parent="." unique_id=1875983399]
+script = ExtResource("154")
+
+[node name="BoxVisual" type="NinePatchRect" parent="SelectionBox" unique_id=1017791792]
+visible = false
+offset_left = -100.0
+offset_top = 58.0
+offset_right = -73.0
+offset_bottom = 85.0
+texture = ExtResource("155")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Area2D" type="Area2D" parent="SelectionBox" unique_id=124835843]
+visible = false
+collision_layer = 0
+collision_mask = 5
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SelectionBox/Area2D" unique_id=418593538]
+shape = SubResource("324")
+disabled = true
+
+[node name="Labels" type="Node2D" parent="." unique_id=1091633683]
+
+[node name="CombatLog" type="Node2D" parent="." unique_id=1603415123]
+z_index = 1
+
+[node name="CombatLog" type="NinePatchRect" parent="CombatLog" unique_id=209770747]
+visible = false
+custom_minimum_size = Vector2(480, 300)
+offset_left = 686.0
+offset_top = 274.0
+offset_right = 1218.0
+offset_bottom = 764.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("169")
+patch_margin_left = 24
+patch_margin_top = 28
+patch_margin_right = 30
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("167")
+draggable = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CombatLog/CombatLog" unique_id=885898824]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 64.0
+offset_right = -20.0
+offset_bottom = -22.0
+theme = SubResource("205")
+script = ExtResource("163")
+scrollEnabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CombatLog/CombatLog/ScrollContainer" unique_id=2124570422]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="Label" type="Label" parent="CombatLog/CombatLog" unique_id=1681775050]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 19.0
+offset_right = 194.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = "Combat Log"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_CombatLog"
+
+[node name="PlayerButton" type="Button" parent="CombatLog/CombatLog" unique_id=996434054]
+custom_minimum_size = Vector2(83, 26)
+layout_mode = 0
+offset_left = 220.0
+offset_top = 24.0
+offset_right = 303.0
+offset_bottom = 50.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_pressed_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = SubResource("330")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("331")
+theme_override_styles/pressed = ExtResource("172")
+theme_override_styles/hover = SubResource("334")
+theme_override_styles/focus = ExtResource("92")
+text = "You"
+script = ExtResource("248")
+hoverPressedStylebox = SubResource("337")
+isPressed = true
+translationKey = "LOG_Player"
+
+[node name="OpponentButton" type="Button" parent="CombatLog/CombatLog" unique_id=309758447]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 0
+offset_left = 315.0
+offset_top = 24.0
+offset_right = 451.0
+offset_bottom = 52.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = SubResource("332")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("333")
+theme_override_styles/pressed = ExtResource("173")
+theme_override_styles/hover = SubResource("335")
+theme_override_styles/focus = ExtResource("92")
+text = "Opponent"
+script = ExtResource("248")
+hoverPressedStylebox = SubResource("338")
+isPressed = true
+translationKey = "LOG_Opponent"
+
+[node name="HoverHint" type="Label" parent="CombatLog/CombatLog" unique_id=1911300759]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -181.0
+offset_top = 59.0
+offset_right = 185.0
+offset_bottom = 85.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("m7_shared_235")
+theme_override_font_sizes/font_size = 19
+text = "Hover entries to jump back in time."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "HINT_HoverLog"
+
+[node name="DragHint" type="Label" parent="CombatLog/CombatLog" unique_id=918597270]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -252.0
+offset_top = 60.0
+offset_right = 252.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("m7_shared_235")
+theme_override_font_sizes/font_size = 19
+text = "Drag to move. Pull the bottom to resize."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "HINT_DragLog"
+
+[node name="LineArrow" type="Sprite2D" parent="CombatLog/CombatLog" unique_id=1457908742]
+position = Vector2(-4, 116)
+scale = Vector2(0.343201, 0.433038)
+texture = ExtResource("175")
+
+[node name="CloseButton" type="TextureButton" parent="CombatLog/CombatLog" unique_id=1198241220]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -63.0
+offset_top = 12.0
+offset_right = -13.0
+offset_bottom = 62.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("179")
+texture_pressed = ExtResource("180")
+texture_hover = ExtResource("180")
+script = ExtResource("160")
+
+[node name="VerticalResizeButton" type="Button" parent="CombatLog/CombatLog" unique_id=1343276180]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -23.0
+offset_right = -56.0
+offset_bottom = 34.0
+mouse_filter = 1
+mouse_default_cursor_shape = 9
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+[node name="HorizontalResizeButton" type="Button" parent="CombatLog/CombatLog" unique_id=1243984013]
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -46.0
+offset_right = 11.0
+offset_bottom = 38.0
+mouse_filter = 1
+mouse_default_cursor_shape = 10
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+[node name="PlayerDamageMeter" type="NinePatchRect" parent="CombatLog/CombatLog" unique_id=386020720]
+show_behind_parent = true
+custom_minimum_size = Vector2(77, 115)
+layout_mode = 0
+offset_left = -459.0
+offset_top = 3.0
+offset_right = 14.0
+offset_bottom = 332.0
+grow_horizontal = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("169")
+patch_margin_left = 24
+patch_margin_top = 28
+patch_margin_right = 30
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("198")
+player = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CombatLog/CombatLog/PlayerDamageMeter" unique_id=1546097557]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 65.0
+offset_right = 10.0
+offset_bottom = -20.0
+theme = SubResource("205")
+script = ExtResource("163")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CombatLog/CombatLog/PlayerDamageMeter/ScrollContainer" unique_id=1380889810]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="OpenButton" type="TextureButton" parent="CombatLog/CombatLog/PlayerDamageMeter" unique_id=1757519962]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -70.0
+offset_top = 9.0
+offset_right = -7.0
+offset_bottom = 112.0
+pivot_offset = Vector2(26.6412, 23.0017)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("200")
+texture_pressed = ExtResource("200")
+texture_hover = ExtResource("201")
+ignore_texture_size = true
+flip_h = true
+script = ExtResource("160")
+
+[node name="Label" type="Label" parent="CombatLog/CombatLog/PlayerDamageMeter" unique_id=934693709]
+visible = false
+layout_mode = 0
+offset_left = 21.0
+offset_top = 19.0
+offset_right = 224.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = "Damage Dealt"
+script = ExtResource("182")
+translationKey = "UI_DamageMeter_Player"
+
+[node name="VerticalResizeButton" type="Button" parent="CombatLog/CombatLog/PlayerDamageMeter" unique_id=1189606822]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = -17.0
+offset_right = -48.0
+offset_bottom = 33.0
+mouse_filter = 1
+mouse_default_cursor_shape = 9
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+[node name="Icon" type="TextureRect" parent="CombatLog/CombatLog/PlayerDamageMeter" unique_id=1697568450]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -60.0
+offset_top = 62.0
+offset_right = -21.0
+offset_bottom = 94.0
+mouse_filter = 2
+texture = ExtResource("199")
+flip_h = true
+
+[node name="Node2D" type="Node2D" parent="CombatLog/CombatLog/PlayerDamageMeter" unique_id=1447007292]
+z_index = 2
+
+[node name="MetricList" parent="CombatLog/CombatLog/PlayerDamageMeter/Node2D" unique_id=612400058 instance=ExtResource("181")]
+offset_left = 9.0
+offset_top = 15.0
+offset_right = 283.0
+offset_bottom = 61.0
+text = "Damage Dealt"
+icon = ExtResource("127")
+expand_icon = true
+openWithClick = true
+
+[node name="OpponentDamageMeter" type="NinePatchRect" parent="CombatLog/CombatLog" unique_id=1835151637]
+show_behind_parent = true
+custom_minimum_size = Vector2(77, 115)
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -15.0
+offset_top = 3.0
+offset_right = 427.0
+offset_bottom = 351.0
+grow_horizontal = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("169")
+patch_margin_left = 24
+patch_margin_top = 28
+patch_margin_right = 30
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("198")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CombatLog/CombatLog/OpponentDamageMeter" unique_id=1093777240]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = 65.0
+offset_right = 13.0
+offset_bottom = -19.0
+theme = SubResource("205")
+script = ExtResource("163")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CombatLog/CombatLog/OpponentDamageMeter/ScrollContainer" unique_id=1215710087]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="OpenButton" type="TextureButton" parent="CombatLog/CombatLog/OpponentDamageMeter" unique_id=1994034888]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 9.0
+offset_right = 68.0
+offset_bottom = 112.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("200")
+texture_hover = ExtResource("201")
+ignore_texture_size = true
+flip_h = true
+script = ExtResource("160")
+
+[node name="Label" type="Label" parent="CombatLog/CombatLog/OpponentDamageMeter" unique_id=391095006]
+visible = false
+custom_minimum_size = Vector2(208, 0)
+layout_mode = 0
+offset_left = 211.0
+offset_top = 22.0
+offset_right = 419.0
+offset_bottom = 54.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = " Damage Taken"
+horizontal_alignment = 2
+script = ExtResource("182")
+translationKey = "UI_DamageMeter_Opponent"
+maxSize = 356.0
+
+[node name="VerticalResizeButton" type="Button" parent="CombatLog/CombatLog/OpponentDamageMeter" unique_id=1646508455]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -22.0
+offset_right = -21.0
+offset_bottom = 29.0
+mouse_filter = 1
+mouse_default_cursor_shape = 9
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+[node name="Icon" type="TextureRect" parent="CombatLog/CombatLog/OpponentDamageMeter" unique_id=1951052057]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 63.0
+offset_right = 59.0
+offset_bottom = 95.0
+mouse_filter = 2
+texture = ExtResource("199")
+
+[node name="Node2D" type="Node2D" parent="CombatLog/CombatLog/OpponentDamageMeter" unique_id=514535052]
+z_index = 2
+
+[node name="MetricList" parent="CombatLog/CombatLog/OpponentDamageMeter/Node2D" unique_id=1203804649 instance=ExtResource("181")]
+offset_left = 165.0
+offset_top = 21.0
+offset_right = 433.0
+offset_bottom = 67.0
+grow_horizontal = 0
+text = "Damage Taken"
+icon = ExtResource("127")
+alignment = 2
+icon_alignment = 2
+openWithClick = true
+
+[node name="AboveLog" type="Node2D" parent="CombatLog/CombatLog" unique_id=1739114911]
+z_index = 1
+position = Vector2(-686, -274)
+
+[node name="FilterPanel" type="NinePatchRect" parent="CombatLog/CombatLog" unique_id=457724573]
+show_behind_parent = true
+layout_mode = 0
+offset_top = -99.0
+offset_right = 528.0
+offset_bottom = 20.0
+mouse_filter = 0
+texture = ExtResource("169")
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("213")
+
+[node name="OpenButton" type="TextureButton" parent="CombatLog/CombatLog/FilterPanel" unique_id=1882198198]
+layout_mode = 0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -64.0
+offset_right = 60.0
+offset_bottom = -9.0
+rotation = 90.0
+pivot_offset = Vector2(26.6412, 23.0017)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("200")
+texture_pressed = ExtResource("200")
+texture_hover = ExtResource("201")
+ignore_texture_size = true
+script = ExtResource("160")
+
+[node name="Searchbar" parent="CombatLog/CombatLog/FilterPanel" unique_id=914981454 instance=ExtResource("212")]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 55.0
+offset_right = 321.0
+offset_bottom = 95.0
+
+[node name="Activations" type="Button" parent="CombatLog/CombatLog/FilterPanel" unique_id=1795759505]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 8.0
+offset_right = 513.0
+offset_bottom = 54.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_focus_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_disabled_color = Color(0.501953, 0.364891, 0.308819, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("133")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/focus = ExtResource("92")
+text = "Show Activations"
+icon = ExtResource("244")
+flat = true
+alignment = 2
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("247")
+
+[node name="PlayFromStartButton" type="TextureButton" parent="CombatLog/CombatLog/FilterPanel" unique_id=940370283]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 51.0
+offset_right = 474.0
+offset_bottom = 96.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("229")
+texture_pressed = ExtResource("246")
+texture_hover = ExtResource("230")
+texture_disabled = ExtResource("240")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+[node name="PlayFromEndButton" type="TextureButton" parent="CombatLog/CombatLog/FilterPanel" unique_id=388892965]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 51.0
+offset_right = 420.0
+offset_bottom = 96.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("229")
+texture_pressed = ExtResource("246")
+texture_hover = ExtResource("230")
+texture_disabled = ExtResource("240")
+ignore_texture_size = true
+stretch_mode = 5
+flip_h = true
+script = ExtResource("160")
+
+[node name="PlayButton" type="TextureButton" parent="CombatLog/CombatLog/FilterPanel" unique_id=2127555747]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 54.0
+offset_right = 519.0
+offset_bottom = 93.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("236")
+texture_pressed = ExtResource("245")
+texture_hover = ExtResource("241")
+texture_disabled = ExtResource("228")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+[node name="PlayBackButton" type="TextureButton" parent="CombatLog/CombatLog/FilterPanel" unique_id=1770422409]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 54.0
+offset_right = 372.0
+offset_bottom = 93.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("236")
+texture_pressed = ExtResource("245")
+texture_hover = ExtResource("241")
+texture_disabled = ExtResource("228")
+ignore_texture_size = true
+stretch_mode = 5
+flip_h = true
+script = ExtResource("160")
+
+[node name="ScrollTimer" type="Timer" parent="CombatLog/CombatLog" unique_id=1753068039]
+one_shot = true
+
+[node name="TutorialAni" type="AnimationPlayer" parent="CombatLog/CombatLog" unique_id=45145922]
+libraries/ = SubResource("AnimationLibrary_6gdxt")
+
+[node name="SurvivalPrompt" type="Node2D" parent="." unique_id=1061008894]
+unique_name_in_owner = true
+visible = false
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="SurvivalPrompt" unique_id=37480802]
+modulate = Color(1.4, 1.4, 1.4, 1)
+material = SubResource("246")
+position = Vector2(967, 971)
+emitting = false
+amount = 32
+texture = ExtResource("95")
+lifetime = 1.22
+speed_scale = 0.62
+process_material = SubResource("249")
+
+[node name="Label2" type="Label" parent="SurvivalPrompt" unique_id=110002859]
+modulate = Color(1, 1, 1, 0)
+material = ExtResource("139")
+offset_left = 746.0
+offset_top = 799.0
+offset_right = 1192.0
+offset_bottom = 875.0
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "Choose wisely..."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_SurvivalChoice"
+
+[node name="TakeWin" type="TextureButton" parent="SurvivalPrompt" unique_id=1706374343]
+material = ExtResource("139")
+offset_left = 401.0
+offset_top = 844.0
+offset_right = 986.0
+offset_bottom = 1076.0
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource("185")
+ignore_texture_size = true
+flip_h = true
+script = ExtResource("191")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SurvivalPrompt/TakeWin" unique_id=1507405424]
+material = ExtResource("139")
+clip_contents = false
+layout_mode = 0
+offset_left = 82.0
+offset_top = 80.0
+offset_right = 501.0
+offset_bottom = 174.0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.0509804, 0.0588235, 0.219608, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = SubResource("254")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "test "
+scroll_active = false
+
+[node name="StartSurvival" type="TextureButton" parent="SurvivalPrompt" unique_id=1239031900]
+material = ExtResource("139")
+offset_left = 940.0
+offset_top = 842.0
+offset_right = 1562.0
+offset_bottom = 1079.0
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource("184")
+ignore_texture_size = true
+script = ExtResource("191")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SurvivalPrompt/StartSurvival" unique_id=837407300]
+material = ExtResource("139")
+clip_contents = false
+layout_mode = 0
+offset_left = 68.0
+offset_top = 65.0
+offset_right = 539.0
+offset_bottom = 175.0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.137255, 0.0235294, 0.0235294, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = SubResource("255")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+scroll_active = false
+
+[node name="HealHint" type="RichTextLabel" parent="SurvivalPrompt/StartSurvival" unique_id=1036032171]
+material = ExtResource("139")
+clip_contents = false
+layout_mode = 0
+offset_left = 594.0
+offset_top = 81.75
+offset_right = 686.0
+offset_bottom = 142.75
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = ExtResource("m7_shared_130")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "+1"
+scroll_active = false
+
+[node name="Heart" type="Sprite2D" parent="SurvivalPrompt/StartSurvival/HealHint" unique_id=240917696]
+material = ExtResource("139")
+position = Vector2(79.0001, 28)
+scale = Vector2(0.476, 0.476)
+texture = ExtResource("67")
+
+[node name="SurvivalSkull" type="Sprite2D" parent="SurvivalPrompt" unique_id=678943647]
+material = ExtResource("139")
+position = Vector2(959, 957)
+scale = Vector2(2, 2)
+texture = ExtResource("188")
+
+[node name="SurvivalBones" type="Sprite2D" parent="SurvivalPrompt/SurvivalSkull" unique_id=887824107]
+show_behind_parent = true
+position = Vector2(4.71205, 6.13417)
+scale = Vector2(0.917647, 1.09241)
+texture = ExtResource("190")
+flip_v = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SurvivalPrompt" unique_id=1040383842]
+libraries/ = SubResource("AnimationLibrary_u8efn")
+
+[node name="WardrobePlaceholder" type="Node2D" parent="." unique_id=220946469]
+
+[node name="OptionsPlaceholder" type="Node2D" parent="." unique_id=475806588]
+
+[node name="RecipeBookPlaceholder" type="Node2D" parent="." unique_id=641071365]
+
+[node name="ItemLibraryPlaceholder" type="Node2D" parent="." unique_id=1269533258]
+
+[node name="BuildHistoryPlaceholder" type="Node2D" parent="." unique_id=1772218815]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=72641420]
+visible = false
+modulate = Color(1, 1, 1, 0)
+offset_right = 1914.0
+offset_bottom = 1057.0
+color = Color(0, 0, 0, 0.47451)
+
+[node name="RecipeTooltips" type="Node2D" parent="." unique_id=1533225335]
+z_index = 4
+
+[node name="Tooltips" type="Node2D" parent="." unique_id=1011998812]
+z_index = 6
+
+[node name="Frame" type="Sprite2D" parent="." unique_id=156344349]
+z_index = 100
+texture = ExtResource("119")
+centered = false
+
+[node name="Version" type="Button" parent="Frame" unique_id=2062746243 groups=["NotLocalized", "PinnedControl"]]
+offset_left = 1688.0
+offset_top = 1033.0
+offset_right = 1912.0
+offset_bottom = 1077.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = ExtResource("92")
+text = "0.0.0"
+flat = true
+alignment = 2
+script = ExtResource("99")
+
+[node name="ConnectingLabel" type="RichTextLabel" parent="." unique_id=1445850498]
+process_mode = 3
+visible = false
+clip_contents = false
+offset_left = 40.0
+offset_top = 32.0
+offset_right = 289.0
+offset_bottom = 82.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 4
+theme_override_fonts/normal_font = SubResource("188")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Connecting..."
+scroll_active = false
+visible_characters = 10
+visible_ratio = 0.769231
+script = ExtResource("183")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ConnectingLabel" unique_id=1021722442]
+libraries/ = SubResource("AnimationLibrary_pqkye")
+
+[node name="AnimationTimer" type="Timer" parent="ConnectingLabel" unique_id=206135074]
+wait_time = 0.5
+autostart = true
+
+[node name="Splashscreen" type="Sprite2D" parent="." unique_id=1234445352]
+z_index = 100
+position = Vector2(960, 540)
+texture = ExtResource("297_y1jck")
+
+[node name="InputBlocker" type="Control" parent="." unique_id=445748395]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 1900.0
+offset_bottom = 1061.0
+
+[connection signal="area_entered" from="SelectionBox/Area2D" to="SelectionBox" method="onItemAreaEntered"]
+[connection signal="area_exited" from="SelectionBox/Area2D" to="SelectionBox" method="onItemAreaExited"]
+[connection signal="pressed" from="CombatLog/CombatLog/CloseButton" to="CombatLog/CombatLog" method="_on_CloseButton_pressed"]
+[connection signal="pressed" from="CombatLog/CombatLog/PlayerDamageMeter/OpenButton" to="CombatLog/CombatLog/PlayerDamageMeter" method="_on_OpenButton_pressed"]
+[connection signal="item_selected" from="CombatLog/CombatLog/PlayerDamageMeter/Node2D/MetricList" to="CombatLog/CombatLog/PlayerDamageMeter" method="onMetricSelected"]
+[connection signal="pressed" from="CombatLog/CombatLog/OpponentDamageMeter/OpenButton" to="CombatLog/CombatLog/OpponentDamageMeter" method="_on_OpenButton_pressed"]
+[connection signal="item_selected" from="CombatLog/CombatLog/OpponentDamageMeter/Node2D/MetricList" to="CombatLog/CombatLog/OpponentDamageMeter" method="onMetricSelected"]
+[connection signal="pressed" from="CombatLog/CombatLog/FilterPanel/OpenButton" to="CombatLog/CombatLog/FilterPanel" method="_on_OpenButton_pressed"]
+[connection signal="toggled" from="CombatLog/CombatLog/FilterPanel/Activations" to="CombatLog/CombatLog/FilterPanel" method="onActivationsButtonPressed"]
+[connection signal="toggled" from="CombatLog/CombatLog/FilterPanel/PlayFromStartButton" to="CombatLog/CombatLog/FilterPanel" method="onPlayFromStartButtonToggled"]
+[connection signal="toggled" from="CombatLog/CombatLog/FilterPanel/PlayFromEndButton" to="CombatLog/CombatLog/FilterPanel" method="onPlayFromEndButtonToggled"]
+[connection signal="toggled" from="CombatLog/CombatLog/FilterPanel/PlayButton" to="CombatLog/CombatLog/FilterPanel" method="onPlayButtonToggled"]
+[connection signal="toggled" from="CombatLog/CombatLog/FilterPanel/PlayBackButton" to="CombatLog/CombatLog/FilterPanel" method="onPlayBackwardsButtonToggled"]
+[connection signal="timeout" from="CombatLog/CombatLog/ScrollTimer" to="CombatLog/CombatLog" method="scrollTimerTimeout"]
+[connection signal="pressed" from="Frame/Version" to="Frame/Version" method="onPressed"]
+[connection signal="timeout" from="ConnectingLabel/AnimationTimer" to="ConnectingLabel" method="timeout"]

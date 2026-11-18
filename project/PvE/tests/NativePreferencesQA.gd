@@ -50,7 +50,7 @@ func bindings_equal(first: Array, second: Array) -> bool:
 	return JSON.parse_string(JSON.stringify(first)) == JSON.parse_string(JSON.stringify(second))
 
 func options() -> Array:
-	return Expedition.popup_content.find_children("*", "Button", true, false).filter(func(node):return node.has_meta("setting_key"))
+	return Expedition.panel.find_children("*", "Button", true, false).filter(func(node):return node.has_meta("setting_key"))
 
 func choose_option(index: int, selected: int):
 	var control = options()[index]
@@ -164,7 +164,7 @@ func check_conflicts_and_cancel():
 		var before_bindings = all_bindings()
 		var before_file = settings_bytes()
 		if close_method == "back":
-			var back = Expedition.menu_header.get_node("CloseMenu")
+			var back = Expedition.panel.find_child("CloseMenu",true,false)
 			back.pressed.emit()
 		else: Expedition.close_popup()
 		await frames(3)
@@ -212,7 +212,7 @@ func run_write():
 	var initial_defaults = preferences.values.duplicate(true)
 	var default_actions = {}
 	for action in preferences.defaults: default_actions[action] = bindings(action)
-	preferences.show_page()
+	Expedition.menus.settings.show_page("advanced")
 	await frames()
 	await choose_option(0, 1)
 	await choose_option(1, 2)
@@ -220,13 +220,15 @@ func run_write():
 	check(DisplayServer.window_get_flag(DisplayServer.WINDOW_FLAG_BORDERLESS), "actual window selection enables borderless mode")
 	await choose_option(3, 2)
 	check(DisplayServer.window_get_size() == Vector2i(1600, 900), "actual resolution selection resizes native window")
-	var checks_ui = Expedition.popup_content.find_children("*", "CheckBox", true, false)
+	var checks_ui = Expedition.panel.find_children("*", "CheckBox", true, false)
 	for control in checks_ui: control.button_pressed = true
-	Expedition.menus.settings.show_page("sound");await frames()
-	var levels = [0.19, 0.31, 0.43, 0.57]
-	var sliders = Expedition.popup_content.find_children("*", "HSlider", true, false)
-	check(sliders.size() == 4, "settings renders all four category volume controls")
-	for index in range(sliders.size()): sliders[index].value = levels[index] * 100
+	var levels={"music":0.19,"ambient":0.31,"ui":0.43,"combat":0.57}
+	var volume_controls=0
+	for sheet in ["general","advanced"]:
+		Expedition.menus.settings.show_page(sheet);await frames()
+		for slider in Expedition.panel.find_children("*","HSlider",true,false):
+			volume_controls+=1;slider.value=levels[str(slider.get_meta("volume_key"))]*100
+	check(volume_controls==4,"both flat sheets expose all four category volume controls")
 	await frames()
 	check_volumes(preferences.values)
 	check(Expedition.ui_theme.default_font_size == 29 and TranslationServer.get_locale().begins_with("en"), "native language and scale selections apply")
@@ -254,7 +256,46 @@ func run_write():
 	save_json(output.path_join("expected-settings.json"), {"settings": preferences.values.duplicate(true), "bindings": expected_actions, "defaults": initial_defaults, "default_bindings": default_actions})
 	var loaded = load("res://PvE/NativePreferences.gd").new(Expedition)
 	check(is_equal_approx(float(loaded.values.ui_scale), 1.2) and loaded.values.inputs.has("rotate_left_button_controller"), "new preferences instance reads written scale and controller suffix")
+	await check_wardrobe_lifetime()
 	await check_rest_audio()
+
+func check_wardrobe_lifetime() -> void:
+	Expedition.close_popup()
+	await frames()
+	var button = Game.titleScreen.find_child("WardrobeButton", true, false)
+	check(button != null and not is_instance_valid(Game.wardrobe), "real title wardrobe remains lazy")
+	if button == null: return
+	button.onPressed()
+	preferences.show_page()
+	check(await wait_for(func(): return not button.loading and not AssetStream.scopes.has("wardrobe")),
+		"a new settings page invalidates a pending wardrobe open and releases its scene")
+	Expedition.close_popup()
+	await frames()
+	var original_class: int = Game.curClass
+	var original_z: int = Game.PLAYER.spriteNode.z_index
+	button.onPressed()
+	var finished_build := func(): return is_instance_valid(Game.wardrobe) and not Game.wardrobe.skin_building and Game.wardrobe.hboxContainer.visible
+	check(await wait_for(finished_build, 25.0), "native wardrobe opens and builds its actual skin rows")
+	if not is_instance_valid(Game.wardrobe): return
+	var wardrobe = Game.wardrobe
+	check(wardrobe.scene_file_path == "res://Interface/Wardrobe/Wardrobe.tscn"
+		and wardrobe.selectedSkins.size() == Game.SkinSlot.size(), "original scene has a selection for each slot")
+	await snapshot("wardrobe")
+	var alternate: int = Game.Classes_Full.Reaper if original_class == Game.Classes_Full.Berserker else Game.Classes_Full.Berserker
+	Game.instanceCharacter(alternate)
+	check(await wait_for(finished_build, 25.0), "changing the class replaces the wardrobe rows")
+	var catalogue := SkinBook.getSkinsForClass(alternate, int(Game.getEffectiveChibiMode()))
+	var expected := catalogue.filter(func(skin): return ResourceLoader.exists(skin.scene_path, "PackedScene"))
+	check(not expected.is_empty() and wardrobe.hboxContainer.get_child_count() == expected.size()
+		and expected.all(func(skin): return wardrobe.hboxContainer.has_node(str(skin.id))),
+		"only the current class skins remain after replacement")
+	var header = wardrobe.hboxContainer.get_child(0).get_child(0) if not expected.is_empty() else null
+	check(header is TextureButton and header.texture_normal != null, "existing default skin has an asynchronously loaded thumbnail")
+	Game.instanceCharacter(original_class)
+	wardrobe.closeButton.pressed.emit()
+	check(await wait_for(func(): return not is_instance_valid(Game.wardrobe)), "closing during a rebuild frees the native wardrobe")
+	check(not AssetStream.scopes.has("wardrobe") and not AssetStream.scopes.has("wardrobe-icons")
+		and Game.PLAYER.spriteNode.z_index == original_z, "closing releases both asset scopes and restores actor depth")
 
 func check_rest_audio():
 	Expedition.close_popup()

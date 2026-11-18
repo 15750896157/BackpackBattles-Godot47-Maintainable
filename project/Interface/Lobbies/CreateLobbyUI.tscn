@@ -1,197 +1,189 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene format=3 uid="uid://dimucguugkpeo"]
 
-[ext_resource path="res://Interface/Lobbies/CreateLobbyUI.gd" type="Script" id=1]
-[ext_resource path="res://Interface/Options/OptionsFont.tres" type="FontVariation" id=2]
-[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="FontFile" id=3]
-[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=4]
-[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=5]
-[ext_resource path="res://Interface/SidePanel.png" type="Texture2D" id=6]
-[ext_resource path="res://Items/Particles/SubtractiveCanvasItem.material" type="Material" id=7]
-[ext_resource path="res://Interface/Lobbies/LobbyIcon_Host.png" type="Texture2D" id=8]
-[ext_resource path="res://Assets/Patch3.png" type="Texture2D" id=9]
-[ext_resource path="res://Interface/CopyToClipboardButton.png" type="Texture2D" id=10]
-[ext_resource path="res://Interface/CopyToClipboardButton_hovered.png" type="Texture2D" id=11]
-[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_hovered.tres" type="StyleBox" id=12]
-[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_normal.tres" type="StyleBox" id=13]
-[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_pressed.tres" type="StyleBox" id=14]
-[ext_resource path="res://Interface/Lobbies/ButtonStyleBox_disabled.tres" type="StyleBox" id=15]
-[ext_resource path="res://Interface/Lobbies/LobbyMemberList.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Interface/Lobbies/MemberCounter.gd" type="Script" id=17]
-[ext_resource path="res://Interface/Lobbies/StartTimer.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Assets/Divider1.png" type="Texture2D" id=19]
-[ext_resource path="res://Interface/Lobbies/LobbySpeed.tscn" type="PackedScene" id=20]
-[ext_resource path="res://Interface/NonLocalized_KeepFont.gd" type="Script" id=21]
-[ext_resource path="res://Assets/Fonts/Milonga-Regular.ttf" type="FontFile" id=26]
-[ext_resource path="res://Interface/RedXButton.png" type="Texture2D" id=27]
-[ext_resource path="res://Interface/CompositeButton.gd" type="Script" id=28]
-[ext_resource path="res://Interface/RedXButton_hovered.png" type="Texture2D" id=29]
-[ext_resource path="res://Interface/SpinboxIcon.png" type="Texture2D" id=31]
-[ext_resource path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" type="FontFile" id=32]
-[ext_resource path="res://Interface/PopupBox.png" type="Texture2D" id=33]
-[ext_resource path="res://Interface/FocusGrabbingTextureButton.gd" type="Script" id=34]
-[ext_resource path="res://Interface/HintButton.png" type="Texture2D" id=35]
-[ext_resource path="res://Interface/HintButton_hovered.png" type="Texture2D" id=36]
-[ext_resource path="res://Interface/Lobbies/CustomRulesInput.gd" type="Script" id=38]
-[ext_resource path="res://Interface/Lobbies/CustomIcon.png" type="Texture2D" id=39]
-[ext_resource path="res://Interface/FocusGrabbingControl.gd" type="Script" id=40]
-[ext_resource path="res://Interface/SliderProperty.tscn" type="PackedScene" id=41]
-[ext_resource path="res://Interface/DropdownArrow.png" type="Texture2D" id=43]
-[ext_resource path="res://Interface/Tooltips/ImageFont.tres" type="FontFile" id=44]
-[ext_resource path="res://Interface/LoadoutButton.tscn" type="PackedScene" id=46]
-[ext_resource path="res://Interface/Options/Unchecked.png" type="Texture2D" id=47]
-[ext_resource path="res://Interface/Options/Checked.png" type="Texture2D" id=48]
+[ext_resource type="Script" path="res://Interface/Lobbies/CreateLobbyUI.gd" id="1_y7j6t"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="2_rn7l0"]
+[ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_bwwgn"]
+[ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="4_7kmvw"]
+[ext_resource type="Texture2D" path="res://Interface/HintButton.png" id="5_e6j1v"]
+[ext_resource type="Texture2D" path="res://Interface/HintButton_hovered.png" id="6_ql75x"]
+[ext_resource type="Script" path="res://Interface/FocusGrabbingTextureButton.gd" id="7_g1fyr"]
+[ext_resource type="Texture2D" path="res://Interface/PopupBox.png" id="8_2bn8h"]
+[ext_resource type="Script" path="res://Interface/Lobbies/CustomRulesInput.gd" id="9_m05r8"]
+[ext_resource type="PackedScene" path="res://Interface/SliderProperty.tscn" id="10_s5gas"]
+[ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="11_y0o60"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="12_t4336"]
+[ext_resource type="Texture2D" path="res://Interface/Options/Unchecked.png" id="13_4doey"]
+[ext_resource type="Texture2D" path="res://Interface/Options/Checked.png" id="14_b2xci"]
+[ext_resource type="Material" path="res://Items/Particles/SubtractiveCanvasItem.material" id="15_yty0h"]
+[ext_resource type="Texture2D" path="res://Assets/Patch3.png" id="16_o4u2l"]
+[ext_resource type="PackedScene" path="res://Interface/LoadoutButton.tscn" id="17_v7vyj"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="18_22l2d"]
+[ext_resource type="Script" path="res://Interface/FocusGrabbingControl.gd" id="19_na5wp"]
+[ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="20_218u0"]
+[ext_resource type="Script" path="res://Interface/CompositeButton.gd" id="21_slv2e"]
+[ext_resource type="FontVariation" path="res://Interface/Options/OptionsFont.tres" id="22_fi6h4"]
+[ext_resource type="StyleBox" path="res://Interface/Lobbies/ButtonStyleBox_hovered.tres" id="23_jylde"]
+[ext_resource type="StyleBox" path="res://Interface/Lobbies/ButtonStyleBox_pressed.tres" id="24_yv1bp"]
+[ext_resource type="StyleBox" path="res://Interface/Lobbies/ButtonStyleBox_disabled.tres" id="25_655ve"]
+[ext_resource type="StyleBox" path="res://Interface/Lobbies/ButtonStyleBox_normal.tres" id="26_kxn2p"]
+[ext_resource type="Texture2D" path="res://Interface/SpinboxIcon.png" id="27_f500e"]
+[ext_resource type="PackedScene" path="res://Interface/Lobbies/LobbySpeed.tscn" id="28_tcgam"]
+[ext_resource type="Texture2D" path="res://Interface/Lobbies/CustomIcon.png" id="29_hxpq5"]
+[ext_resource type="Texture2D" path="res://Interface/DropdownArrow.png" id="30_i0h5h"]
+[ext_resource type="PackedScene" path="res://Interface/Lobbies/StartTimer.tscn" id="31_gpedr"]
+[ext_resource type="Texture2D" path="res://Interface/SidePanel.png" id="32_6nyij"]
+[ext_resource type="Script" path="res://Interface/NonLocalized_KeepFont.gd" id="33_m5d0l"]
+[ext_resource type="Texture2D" path="res://Interface/CopyToClipboardButton.png" id="34_yf7ed"]
+[ext_resource type="Texture2D" path="res://Interface/CopyToClipboardButton_hovered.png" id="35_6tmbb"]
+[ext_resource type="Texture2D" path="res://Assets/Divider1.png" id="36_bdanh"]
+[ext_resource type="PackedScene" path="res://Interface/Lobbies/LobbyMemberList.tscn" id="37_tx4f0"]
+[ext_resource type="Script" path="res://Interface/Lobbies/MemberCounter.gd" id="38_wxass"]
+[ext_resource type="Texture2D" path="res://Interface/RedXButton_hovered.png" id="39_2k71r"]
+[ext_resource type="Texture2D" path="res://Interface/RedXButton.png" id="40_h3cy7"]
+[ext_resource type="Texture2D" path="res://Interface/Lobbies/LobbyIcon_Host.png" id="41_oyjp2"]
 
-[ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
-
-[sub_resource type="FontVariation" id=5]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="5"]
+base_font = ExtResource("2_rn7l0")
+script = ExtResource("3_bwwgn")
 size = 36
 outline_size = 4
-outline_color = Color( 0.24, 0.15, 0.11, 1 )
-use_filter = true
-base_font = ExtResource( 26 )
+outline_color = Color(0.24, 0.15, 0.11, 1)
 
-[sub_resource type="FontVariation" id=348]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="348"]
+base_font = ExtResource("12_t4336")
+script = ExtResource("3_bwwgn")
 size = 22
 outline_size = 3
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-base_font = ExtResource( 32 )
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="ButtonGroup" id=344]
+[sub_resource type="ButtonGroup" id="344"]
 
-[sub_resource type="ButtonGroup" id=345]
+[sub_resource type="ButtonGroup" id="345"]
 
-[sub_resource type="FontVariation" id=346]
-script = ExtResource( "LegacyFontMigration" )
-size = 18
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-use_filter = true
+[sub_resource type="FontVariation" id="346"]
+base_font = ExtResource("18_22l2d")
 spacing_top = -4
 spacing_bottom = -4
-base_font = ExtResource( 3 )
+script = ExtResource("3_bwwgn")
+size = 18
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="FontVariation" id=343]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="343"]
+base_font = ExtResource("12_t4336")
+script = ExtResource("3_bwwgn")
 size = 22
 outline_size = 3
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-base_font = ExtResource( 32 )
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="FontVariation" id=4]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="4"]
+base_font = ExtResource("18_22l2d")
+script = ExtResource("3_bwwgn")
 size = 24
 outline_size = 3
-outline_color = Color( 0.24, 0.15, 0.11, 1 )
-use_filter = true
-base_font = ExtResource( 3 )
+outline_color = Color(0.24, 0.15, 0.11, 1)
 
-[sub_resource type="StyleBoxFlat" id=6]
+[sub_resource type="StyleBoxFlat" id="6"]
 content_margin_left = 8.0
-content_margin_right = 10.0
 content_margin_top = 0.0
+content_margin_right = 10.0
 content_margin_bottom = 0.0
-bg_color = Color( 0.505882, 0.380392, 0.25098, 0.682353 )
+bg_color = Color(0.505882, 0.380392, 0.25098, 0.682353)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
 border_width_bottom = 3
-border_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+border_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="StyleBoxFlat" id=15]
+[sub_resource type="StyleBoxFlat" id="15"]
 content_margin_left = 8.0
-content_margin_right = 10.0
 content_margin_top = 0.0
+content_margin_right = 10.0
 content_margin_bottom = 0.0
-bg_color = Color( 0.505882, 0.380392, 0.25098, 0.682353 )
+bg_color = Color(0.505882, 0.380392, 0.25098, 0.682353)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
 border_width_bottom = 3
-border_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+border_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="Theme" id=13]
-LineEdit/colors/cursor_color = Color( 0.235294, 0.14902, 0.113725, 0 )
-LineEdit/colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-LineEdit/colors/font_color_selected = Color( 1, 0.92549, 0.831373, 1 )
-LineEdit/colors/selection_color = Color( 1, 0.890196, 0.215686, 1 )
+[sub_resource type="Theme" id="13"]
+LineEdit/colors/cursor_color = Color(0.235294, 0.14902, 0.113725, 0)
+LineEdit/colors/font_color = Color(1, 0.92549, 0.831373, 1)
+LineEdit/colors/font_color_selected = Color(1, 0.92549, 0.831373, 1)
+LineEdit/colors/selection_color = Color(1, 0.890196, 0.215686, 1)
 LineEdit/constants/minimum_spaces = 3
-LineEdit/fonts/font = ExtResource( 2 )
-LineEdit/styles/focus = ExtResource( 5 )
-LineEdit/styles/normal = SubResource( 6 )
-LineEdit/styles/read_only = SubResource( 15 )
-SpinBox/icons/updown = ExtResource( 31 )
+LineEdit/fonts/font = ExtResource("22_fi6h4")
+LineEdit/styles/focus = ExtResource("20_218u0")
+LineEdit/styles/normal = SubResource("6")
+LineEdit/styles/read_only = SubResource("15")
+SpinBox/icons/updown = ExtResource("27_f500e")
 
-[sub_resource type="FontVariation" id=347]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="347"]
+base_font = ExtResource("12_t4336")
+script = ExtResource("3_bwwgn")
 size = 22
 outline_size = 3
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-base_font = ExtResource( 32 )
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="FontVariation" id=8]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="8"]
+base_font = ExtResource("18_22l2d")
+spacing_glyph = 6
+script = ExtResource("3_bwwgn")
 size = 36
 outline_size = 4
-outline_color = Color( 0.24, 0.15, 0.11, 1 )
-use_filter = true
-spacing_glyph = 6
-base_font = ExtResource( 3 )
+outline_color = Color(0.24, 0.15, 0.11, 1)
 
-[sub_resource type="FontVariation" id=7]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="7"]
+base_font = ExtResource("18_22l2d")
+script = ExtResource("3_bwwgn")
 size = 26
 outline_size = 3
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-use_filter = true
-base_font = ExtResource( 3 )
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="FontVariation" id=14]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="14"]
+base_font = ExtResource("18_22l2d")
+script = ExtResource("3_bwwgn")
 size = 26
 outline_size = 3
-outline_color = Color( 0.24, 0.15, 0.11, 1 )
-use_filter = true
-base_font = ExtResource( 3 )
+outline_color = Color(0.24, 0.15, 0.11, 1)
 
-[sub_resource type="FontVariation" id=16]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="16"]
+base_font = ExtResource("12_t4336")
+spacing_bottom = -8
+script = ExtResource("3_bwwgn")
 size = 22
 outline_size = 2
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-use_filter = true
-spacing_bottom = -8
-base_font = ExtResource( 32 )
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="CreateLobbyUI" type="Node2D"]
 process_mode = 3
 z_index = 3
-script = ExtResource( 1 )
+script = ExtResource("1_y7j6t")
 
 [node name="Header" type="RichTextLabel" parent="."]
 offset_left = 970.0
 offset_top = 46.0
 offset_right = 1281.0
 offset_bottom = 98.0
-custom_minimum_size = Vector2( 311, 0 )
+custom_minimum_size = Vector2(311, 0)
 clip_contents = false
-theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 3
 theme_override_constants/shadow_offset_y = 4
-theme_override_fonts/normal_font = SubResource( 5 )
+theme_override_fonts/normal_font = SubResource("5")
 bbcode_enabled = true
 text = "[center]Host a Lobby"
 text = "Host a Lobby"
 fit_content = true
 scroll_active = false
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "BUTTON_HostLobby"
 prefix = "[center]"
 maxSize = 311.0
 theme_override_font_sizes/normal_font_size = 36
 theme_override_constants/outline_size = 4
-theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+theme_override_colors/font_outline_color = Color(0.24, 0.15, 0.11, 1)
 
 [node name="HintButton" type="TextureButton" parent="."]
 offset_left = 662.0
@@ -199,9 +191,9 @@ offset_top = 549.0
 offset_right = 727.0
 offset_bottom = 617.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource( 35 )
-texture_hover = ExtResource( 36 )
-script = ExtResource( 34 )
+texture_normal = ExtResource("5_e6j1v")
+texture_hover = ExtResource("6_ql75x")
+script = ExtResource("7_g1fyr")
 showOnHover = NodePath("../Hints")
 ignore_texture_size = true
 
@@ -219,7 +211,7 @@ offset_left = -64.0
 offset_top = -45.0
 offset_right = 53.0
 offset_bottom = 187.0
-texture = ExtResource( 33 )
+texture = ExtResource("8_2bn8h")
 patch_margin_left = 45
 patch_margin_top = 118
 patch_margin_right = 44
@@ -233,16 +225,16 @@ offset_top = 3.0
 offset_right = 521.0
 offset_bottom = 291.0
 theme_override_constants/separation = 8
-script = ExtResource( 38 )
+script = ExtResource("9_m05r8")
 
-[node name="BonusGold" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource( 41 )]
+[node name="BonusGold" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource("10_s5gas")]
 translationKey = "UI_BonusGold"
 
 [node name="Spacer" parent="CustomRulesTooltip/VBoxContainer/BonusGold" index="2"]
 offset_left = 232.0
 offset_right = 252.0
 
-[node name="SalesChance" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource( 41 )]
+[node name="SalesChance" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource("10_s5gas")]
 offset_top = 44.0
 offset_bottom = 78.0
 translationKey = "UI_SalesChance"
@@ -264,7 +256,7 @@ offset_bottom = 34.0
 offset_top = 0.0
 offset_bottom = 34.0
 
-[node name="TradeChance" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource( 41 )]
+[node name="TradeChance" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource("10_s5gas")]
 offset_top = 86.0
 offset_bottom = 120.0
 translationKey = "UI_TradeChance"
@@ -286,7 +278,7 @@ offset_bottom = 34.0
 offset_top = 0.0
 offset_bottom = 34.0
 
-[node name="BonusTreasures" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource( 41 )]
+[node name="BonusTreasures" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource("10_s5gas")]
 offset_top = 128.0
 offset_bottom = 164.0
 translationKey = "UI_BonusTreasure"
@@ -299,7 +291,7 @@ text = "Bonus  chance"
 offset_left = 232.0
 offset_right = 252.0
 
-[node name="TreasureLimit" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource( 41 )]
+[node name="TreasureLimit" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource("10_s5gas")]
 offset_top = 172.0
 offset_bottom = 208.0
 translationKey = "UI_TreasureLimit"
@@ -312,7 +304,7 @@ text = "  limit"
 offset_left = 232.0
 offset_right = 252.0
 
-[node name="HealthMultiplier" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource( 41 )]
+[node name="HealthMultiplier" parent="CustomRulesTooltip/VBoxContainer" instance=ExtResource("10_s5gas")]
 offset_top = 216.0
 offset_bottom = 250.0
 translationKey = "UI_BonusHealth"
@@ -341,36 +333,36 @@ offset_bottom = 288.0
 offset_right = 476.0
 offset_bottom = 30.0
 grow_horizontal = 0
-custom_minimum_size = Vector2( 400, 0 )
+custom_minimum_size = Vector2(400, 0)
 clip_contents = false
 size_flags_horizontal = 3
-theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/italics_font = ExtResource( 44 )
-theme_override_fonts/normal_font = SubResource( 348 )
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/italics_font = ExtResource("11_y0o60")
+theme_override_fonts/normal_font = SubResource("348")
 bbcode_enabled = true
 text = "[center]Place bags permanently"
 text = "Place bags permanently"
 fit_content = true
 scroll_active = false
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "UI_CannotPickBags"
 prefix = "[center]"
 maxSize = 224.0
 theme_override_font_sizes/normal_font_size = 22
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="Checkbox" type="TextureButton" parent="CustomRulesTooltip/VBoxContainer/CannotPickBags"]
 offset_left = 484.0
 offset_right = 514.0
 offset_bottom = 30.0
-custom_minimum_size = Vector2( 30, 30 )
+custom_minimum_size = Vector2(30, 30)
 mouse_default_cursor_shape = 2
 toggle_mode = true
-texture_normal = ExtResource( 47 )
-texture_pressed = ExtResource( 48 )
+texture_normal = ExtResource("13_4doey")
+texture_pressed = ExtResource("14_b2xci")
 stretch_mode = 5
-script = ExtResource( 34 )
+script = ExtResource("7_g1fyr")
 ignore_texture_size = true
 
 [node name="MatchmakingTooltip" type="Control" parent="."]
@@ -386,7 +378,7 @@ offset_left = -62.0
 offset_top = -45.0
 offset_right = 49.0
 offset_bottom = 107.0
-texture = ExtResource( 33 )
+texture = ExtResource("8_2bn8h")
 patch_margin_left = 45
 patch_margin_top = 118
 patch_margin_right = 44
@@ -395,42 +387,42 @@ axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
 
 [node name="NinePatchRect" type="NinePatchRect" parent="MatchmakingTooltip"]
-modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
-self_modulate = Color( 1, 1, 1, 0.678431 )
-material = ExtResource( 7 )
+modulate = Color(0.0941176, 0.101961, 0.109804, 1)
+self_modulate = Color(1, 1, 1, 0.678431)
+material = ExtResource("15_yty0h")
 offset_left = -12.0
 offset_top = 55.0
 offset_right = 560.0
 offset_bottom = 106.0
-texture = ExtResource( 9 )
+texture = ExtResource("16_o4u2l")
 patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 7
 patch_margin_bottom = 9
 
 [node name="NinePatchRect2" type="NinePatchRect" parent="MatchmakingTooltip"]
-modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
-self_modulate = Color( 1, 1, 1, 0.678431 )
-material = ExtResource( 7 )
+modulate = Color(0.0941176, 0.101961, 0.109804, 1)
+self_modulate = Color(1, 1, 1, 0.678431)
+material = ExtResource("15_yty0h")
 offset_left = -12.0
 offset_top = 159.0
 offset_right = 560.0
 offset_bottom = 210.0
-texture = ExtResource( 9 )
+texture = ExtResource("16_o4u2l")
 patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 7
 patch_margin_bottom = 9
 
 [node name="NinePatchRect3" type="NinePatchRect" parent="MatchmakingTooltip"]
-modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
-self_modulate = Color( 1, 1, 1, 0.678431 )
-material = ExtResource( 7 )
+modulate = Color(0.0941176, 0.101961, 0.109804, 1)
+self_modulate = Color(1, 1, 1, 0.678431)
+material = ExtResource("15_yty0h")
 offset_left = -11.0
 offset_top = 274.0
 offset_right = 560.0
 offset_bottom = 322.0
-texture = ExtResource( 9 )
+texture = ExtResource("16_o4u2l")
 patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 7
@@ -443,49 +435,49 @@ offset_right = 204.0
 offset_bottom = 260.0
 theme_override_constants/separation = 4
 
-[node name="Random" parent="MatchmakingTooltip/Modes" instance=ExtResource( 46 )]
+[node name="Random" parent="MatchmakingTooltip/Modes" instance=ExtResource("17_v7vyj")]
 offset_right = 221.0
-group = SubResource( 344 )
+group = SubResource("344")
 text = "Random"
 translationKey = "MATCHING_Random_NAME"
 maxSize = 221.0
 maxSizeY = 48.0
 
-[node name="EvenStats" parent="MatchmakingTooltip/Modes" instance=ExtResource( 46 )]
+[node name="EvenStats" parent="MatchmakingTooltip/Modes" instance=ExtResource("17_v7vyj")]
 offset_top = 52.0
 offset_right = 221.0
 offset_bottom = 100.0
-group = SubResource( 345 )
+group = SubResource("345")
 text = "Similar Stats"
 translationKey = "MATCHING_EvenStats_NAME"
 maxSize = 221.0
 maxSizeY = 48.0
 
-[node name="Elimination" parent="MatchmakingTooltip/Modes" instance=ExtResource( 46 )]
+[node name="Elimination" parent="MatchmakingTooltip/Modes" instance=ExtResource("17_v7vyj")]
 offset_top = 104.0
 offset_right = 221.0
 offset_bottom = 152.0
-group = SubResource( 345 )
+group = SubResource("345")
 text = "Elimination"
 translationKey = "MATCHING_Elimination_NAME"
 maxSize = 221.0
 maxSizeY = 48.0
 
-[node name="Strongest" parent="MatchmakingTooltip/Modes" instance=ExtResource( 46 )]
+[node name="Strongest" parent="MatchmakingTooltip/Modes" instance=ExtResource("17_v7vyj")]
 offset_top = 156.0
 offset_right = 221.0
 offset_bottom = 204.0
-group = SubResource( 345 )
+group = SubResource("345")
 text = "Strong"
 translationKey = "MATCHING_Strongest_NAME"
 maxSize = 221.0
 maxSizeY = 48.0
 
-[node name="RoundRobin" parent="MatchmakingTooltip/Modes" instance=ExtResource( 46 )]
+[node name="RoundRobin" parent="MatchmakingTooltip/Modes" instance=ExtResource("17_v7vyj")]
 offset_top = 208.0
 offset_right = 221.0
 offset_bottom = 256.0
-group = SubResource( 345 )
+group = SubResource("345")
 text = "Round Robin"
 translationKey = "MATCHING_RoundRobin_NAME"
 maxSize = 221.0
@@ -503,20 +495,20 @@ offset_right = 327.0
 offset_bottom = 49.0
 grow_horizontal = 0
 grow_vertical = 2
-custom_minimum_size = Vector2( 0, 49 )
+custom_minimum_size = Vector2(0, 49)
 size_flags_vertical = 7
-theme_override_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
-theme_override_fonts/font = SubResource( 346 )
+theme_override_fonts/font = SubResource("346")
 text = "Play against a random member"
 autowrap_mode = 3
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "MATCHING_Random_DESCR"
 theme_override_font_sizes/font_size = 18
 theme_override_constants/outline_size = 0
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 vertical_alignment = 1
 
 [node name="EvenStats" type="Label" parent="MatchmakingTooltip/ModeExplanations"]
@@ -525,20 +517,20 @@ offset_right = 327.0
 offset_bottom = 101.0
 grow_horizontal = 0
 grow_vertical = 2
-custom_minimum_size = Vector2( 0, 49 )
+custom_minimum_size = Vector2(0, 49)
 size_flags_vertical = 7
-theme_override_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
-theme_override_fonts/font = SubResource( 346 )
+theme_override_fonts/font = SubResource("346")
 text = "Play against a random member"
 autowrap_mode = 3
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "MATCHING_EvenStats_DESCR"
 theme_override_font_sizes/font_size = 18
 theme_override_constants/outline_size = 0
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 vertical_alignment = 1
 
 [node name="Elimination" type="Label" parent="MatchmakingTooltip/ModeExplanations"]
@@ -547,20 +539,20 @@ offset_right = 327.0
 offset_bottom = 153.0
 grow_horizontal = 0
 grow_vertical = 2
-custom_minimum_size = Vector2( 0, 49 )
+custom_minimum_size = Vector2(0, 49)
 size_flags_vertical = 7
-theme_override_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
-theme_override_fonts/font = SubResource( 346 )
+theme_override_fonts/font = SubResource("346")
 text = "Play against a random member"
 autowrap_mode = 3
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "MATCHING_Elimination_DESCR"
 theme_override_font_sizes/font_size = 18
 theme_override_constants/outline_size = 0
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 vertical_alignment = 1
 
 [node name="Strongest" type="Label" parent="MatchmakingTooltip/ModeExplanations"]
@@ -569,20 +561,20 @@ offset_right = 327.0
 offset_bottom = 205.0
 grow_horizontal = 0
 grow_vertical = 2
-custom_minimum_size = Vector2( 0, 49 )
+custom_minimum_size = Vector2(0, 49)
 size_flags_vertical = 7
-theme_override_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
-theme_override_fonts/font = SubResource( 346 )
+theme_override_fonts/font = SubResource("346")
 text = "Play against a random member"
 autowrap_mode = 3
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "MATCHING_Strongest_DESCR"
 theme_override_font_sizes/font_size = 18
 theme_override_constants/outline_size = 0
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 vertical_alignment = 1
 
 [node name="RoundRobin" type="Label" parent="MatchmakingTooltip/ModeExplanations"]
@@ -591,20 +583,20 @@ offset_right = 327.0
 offset_bottom = 257.0
 grow_horizontal = 0
 grow_vertical = 2
-custom_minimum_size = Vector2( 0, 49 )
+custom_minimum_size = Vector2(0, 49)
 size_flags_vertical = 7
-theme_override_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
-theme_override_fonts/font = SubResource( 346 )
+theme_override_fonts/font = SubResource("346")
 text = "Play against a random member"
 autowrap_mode = 3
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "MATCHING_RoundRobin_DESCR"
 theme_override_font_sizes/font_size = 18
 theme_override_constants/outline_size = 0
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 vertical_alignment = 1
 
 [node name="PrioritizeHost" type="Node2D" parent="MatchmakingTooltip"]
@@ -616,14 +608,14 @@ offset_top = 280.0
 offset_right = 218.0
 offset_bottom = 314.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = SubResource( 343 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("343")
 text = "Prioritize Host"
-script = ExtResource( 40 )
+script = ExtResource("19_na5wp")
 translationKey = "MATCHING_PrioritizeHost_NAME"
 theme_override_font_sizes/font_size = 22
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 vertical_alignment = 1
 
 [node name="Descr" type="Label" parent="MatchmakingTooltip/PrioritizeHost"]
@@ -634,39 +626,39 @@ offset_bottom = 320.0
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_vertical = 7
-theme_override_colors/font_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
-theme_override_fonts/font = SubResource( 346 )
+theme_override_fonts/font = SubResource("346")
 text = "Play against a random member"
 autowrap_mode = 3
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "MATCHING_PrioritizeHost_DESCR"
 theme_override_font_sizes/font_size = 18
 theme_override_constants/outline_size = 0
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 vertical_alignment = 1
 
 [node name="Checkbox" type="Sprite2D" parent="MatchmakingTooltip/PrioritizeHost"]
-position = Vector2( 7.99999, 297 )
-scale = Vector2( 0.717391, 0.717391 )
-texture = ExtResource( 47 )
+position = Vector2(7.99999, 297)
+scale = Vector2(0.717391, 0.717391)
+texture = ExtResource("13_4doey")
 
 [node name="Button" type="Button" parent="MatchmakingTooltip/PrioritizeHost"]
 offset_left = -10.0
 offset_top = 279.0
 offset_right = 210.0
 offset_bottom = 316.0
-custom_minimum_size = Vector2( 30, 30 )
+custom_minimum_size = Vector2(30, 30)
 mouse_default_cursor_shape = 2
-theme_override_styles/focus = ExtResource( 5 )
+theme_override_styles/focus = ExtResource("20_218u0")
 toggle_mode = true
 flat = true
-script = ExtResource( 28 )
+script = ExtResource("21_slv2e")
 labelPath = NodePath("../Label")
 iconPath = NodePath("../Checkbox")
-iconPressed = ExtResource( 48 )
+iconPressed = ExtResource("14_b2xci")
 
 [node name="CreateLobbyButton" type="Button" parent="."]
 offset_left = 795.0
@@ -674,24 +666,24 @@ offset_top = 443.0
 offset_right = 1029.0
 offset_bottom = 488.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
-theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = ExtResource( 2 )
-theme_override_styles/hover = ExtResource( 12 )
-theme_override_styles/pressed = ExtResource( 14 )
-theme_override_styles/focus = ExtResource( 5 )
-theme_override_styles/disabled = ExtResource( 15 )
-theme_override_styles/normal = ExtResource( 13 )
+theme_override_colors/font_disabled_color = Color(0.701961, 0.643137, 0.568627, 1)
+theme_override_colors/font_focus_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = ExtResource("22_fi6h4")
+theme_override_styles/hover = ExtResource("23_jylde")
+theme_override_styles/pressed = ExtResource("24_yv1bp")
+theme_override_styles/focus = ExtResource("20_218u0")
+theme_override_styles/disabled = ExtResource("25_655ve")
+theme_override_styles/normal = ExtResource("26_kxn2p")
 disabled = true
 text = "Create Lobby"
-script = ExtResource( 40 )
+script = ExtResource("19_na5wp")
 translationKey = "BUTTON_CreateLobby"
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="StatusLabel" type="Label" parent="."]
 visible = false
@@ -699,27 +691,27 @@ offset_left = 683.0
 offset_top = 447.0
 offset_right = 1166.0
 offset_bottom = 488.0
-custom_minimum_size = Vector2( 483, 0 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = SubResource( 4 )
+custom_minimum_size = Vector2(483, 0)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("4")
 text = "Lobby created."
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 maxSize = 483.0
 theme_override_font_sizes/font_size = 24
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+theme_override_colors/font_outline_color = Color(0.24, 0.15, 0.11, 1)
 horizontal_alignment = 1
 
 [node name="Settings" type="Node2D" parent="."]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Settings"]
-modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
-material = ExtResource( 7 )
+modulate = Color(0.0941176, 0.101961, 0.109804, 1)
+material = ExtResource("15_yty0h")
 offset_left = 674.0
 offset_top = 180.0
 offset_right = 1168.0
 offset_bottom = 434.0
-texture = ExtResource( 9 )
+texture = ExtResource("16_o4u2l")
 patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 7
@@ -731,7 +723,7 @@ offset_top = 194.0
 offset_right = 1027.0
 offset_bottom = 236.0
 mouse_default_cursor_shape = 2
-theme = SubResource( 13 )
+theme = SubResource("13")
 min_value = 2.0
 max_value = 99.0
 value = 20.0
@@ -742,16 +734,16 @@ offset_left = 679.0
 offset_top = 195.0
 offset_right = 892.0
 offset_bottom = 236.0
-custom_minimum_size = Vector2( 213, 0 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = SubResource( 347 )
+custom_minimum_size = Vector2(213, 0)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("347")
 text = "Max. members"
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "UI_LobbySize"
 maxSize = 213.0
 theme_override_font_sizes/font_size = 22
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 horizontal_alignment = 2
 vertical_alignment = 1
 
@@ -765,14 +757,14 @@ offset_top = 206.0
 offset_right = 1011.0
 offset_bottom = 240.0
 mouse_default_cursor_shape = 2
-theme_override_colors/selection_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_color_selected = Color( 1, 0.890196, 0.0784314, 1 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
+theme_override_colors/selection_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_color_selected = Color(1, 0.890196, 0.0784314, 1)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
 theme_override_constants/minimum_spaces = 1
-theme_override_fonts/font = ExtResource( 2 )
-theme_override_styles/read_only = ExtResource( 5 )
-theme_override_styles/focus = ExtResource( 5 )
-theme_override_styles/normal = SubResource( 6 )
+theme_override_fonts/font = ExtResource("22_fi6h4")
+theme_override_styles/read_only = ExtResource("20_218u0")
+theme_override_styles/focus = ExtResource("20_218u0")
+theme_override_styles/normal = SubResource("6")
 text = "10"
 max_length = 3
 context_menu_enabled = false
@@ -785,27 +777,27 @@ caret_blink = true
 caret_blink_interval = 0.5
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 alignment = 2
 
-[node name="LobbySpeed" parent="Settings" instance=ExtResource( 20 )]
-position = Vector2( 679, 254 )
+[node name="LobbySpeed" parent="Settings" instance=ExtResource("28_tcgam")]
+position = Vector2(679, 254)
 
 [node name="Label3" type="Label" parent="Settings"]
 offset_left = 679.0
 offset_top = 325.0
 offset_right = 892.0
 offset_bottom = 366.0
-custom_minimum_size = Vector2( 213, 0 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = SubResource( 347 )
+custom_minimum_size = Vector2(213, 0)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("347")
 text = "Custom Rules"
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "UI_CustomRules"
 maxSize = 213.0
 theme_override_font_sizes/font_size = 22
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 horizontal_alignment = 2
 vertical_alignment = 1
 
@@ -816,29 +808,29 @@ offset_right = 973.0
 offset_bottom = 366.0
 grow_horizontal = 2
 mouse_default_cursor_shape = 2
-theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
-theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = ExtResource( 2 )
-theme_override_styles/hover = ExtResource( 12 )
-theme_override_styles/pressed = ExtResource( 14 )
-theme_override_styles/focus = ExtResource( 5 )
-theme_override_styles/disabled = ExtResource( 15 )
-theme_override_styles/normal = ExtResource( 13 )
+theme_override_colors/font_disabled_color = Color(0.701961, 0.643137, 0.568627, 1)
+theme_override_colors/font_focus_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = ExtResource("22_fi6h4")
+theme_override_styles/hover = ExtResource("23_jylde")
+theme_override_styles/pressed = ExtResource("24_yv1bp")
+theme_override_styles/focus = ExtResource("20_218u0")
+theme_override_styles/disabled = ExtResource("25_655ve")
+theme_override_styles/normal = ExtResource("26_kxn2p")
 flat = true
-script = ExtResource( 28 )
+script = ExtResource("21_slv2e")
 labelPath = NodePath("../Label3")
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 alignment = 0
 
 [node name="CustomIcon" type="Sprite2D" parent="Settings"]
-position = Vector2( 938, 339.5 )
-scale = Vector2( 0.36, 0.36 )
-texture = ExtResource( 39 )
+position = Vector2(938, 339.5)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("29_hxpq5")
 
 [node name="CustomRulesTimer" type="Timer" parent="Settings"]
 one_shot = true
@@ -848,17 +840,17 @@ offset_left = 679.0
 offset_top = 381.0
 offset_right = 892.0
 offset_bottom = 422.0
-custom_minimum_size = Vector2( 213, 0 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = SubResource( 347 )
+custom_minimum_size = Vector2(213, 0)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("347")
 text = "Matching"
 autowrap_mode = 3
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "UI_Matchmaking"
 maxSize = 213.0
 theme_override_font_sizes/font_size = 22
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 horizontal_alignment = 2
 vertical_alignment = 1
 
@@ -868,24 +860,24 @@ offset_top = 375.0
 offset_right = 952.0
 offset_bottom = 426.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_focus_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_pressed_color = Color( 1, 0.890196, 0.0784314, 1 )
-theme_override_fonts/font = ExtResource( 2 )
-theme_override_styles/focus = ExtResource( 5 )
-icon = ExtResource( 43 )
+theme_override_colors/font_focus_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.890196, 0.0784314, 1)
+theme_override_fonts/font = ExtResource("22_fi6h4")
+theme_override_styles/focus = ExtResource("20_218u0")
+icon = ExtResource("30_i0h5h")
 flat = true
 icon_alignment = 2
-script = ExtResource( 28 )
+script = ExtResource("21_slv2e")
 labelPath = NodePath("../Label4")
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 alignment = 2
 
-[node name="StartTimer" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1128, 629 )
+[node name="StartTimer" parent="." instance=ExtResource("31_gpedr")]
+position = Vector2(1128, 629)
 
 [node name="StartGameButton" type="Button" parent="."]
 visible = false
@@ -895,41 +887,41 @@ offset_right = 1242.0
 offset_bottom = 680.0
 grow_horizontal = 2
 mouse_default_cursor_shape = 2
-theme_override_colors/font_disabled_color = Color( 0.701961, 0.643137, 0.568627, 1 )
-theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = ExtResource( 2 )
-theme_override_styles/hover = ExtResource( 12 )
-theme_override_styles/pressed = ExtResource( 14 )
-theme_override_styles/focus = ExtResource( 5 )
-theme_override_styles/disabled = ExtResource( 15 )
-theme_override_styles/normal = ExtResource( 13 )
+theme_override_colors/font_disabled_color = Color(0.701961, 0.643137, 0.568627, 1)
+theme_override_colors/font_focus_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = ExtResource("22_fi6h4")
+theme_override_styles/hover = ExtResource("23_jylde")
+theme_override_styles/pressed = ExtResource("24_yv1bp")
+theme_override_styles/focus = ExtResource("20_218u0")
+theme_override_styles/disabled = ExtResource("25_655ve")
+theme_override_styles/normal = ExtResource("26_kxn2p")
 text = "Start Game"
 flat = true
-script = ExtResource( 40 )
+script = ExtResource("19_na5wp")
 translationKey = "BUTTON_StartGame"
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="SidePanel2" type="Sprite2D" parent="StartGameButton"]
 show_behind_parent = true
-position = Vector2( 113, 38 )
-texture = ExtResource( 6 )
+position = Vector2(113, 38)
+texture = ExtResource("32_6nyij")
 
 [node name="LobbyCode" type="Node2D" parent="."]
-position = Vector2( 926, 527 )
+position = Vector2(926, 527)
 
 [node name="NinePatchRect" type="NinePatchRect" parent="LobbyCode"]
-modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
-material = ExtResource( 7 )
+modulate = Color(0.0941176, 0.101961, 0.109804, 1)
+material = ExtResource("15_yty0h")
 offset_left = -188.0
 offset_top = -30.0
 offset_right = 143.0
 offset_bottom = 33.0
-texture = ExtResource( 9 )
+texture = ExtResource("16_o4u2l")
 patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 7
@@ -943,19 +935,19 @@ offset_bottom = 24.0
 grow_horizontal = 2
 clip_contents = false
 focus_mode = 2
-theme_override_colors/default_color = Color( 1, 0.84745, 0.0917969, 1 )
-theme_override_colors/selection_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_fonts/normal_font = SubResource( 8 )
-theme_override_styles/focus = ExtResource( 5 )
+theme_override_colors/default_color = Color(1, 0.84745, 0.0917969, 1)
+theme_override_colors/selection_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_fonts/normal_font = SubResource("8")
+theme_override_styles/focus = ExtResource("20_218u0")
 bbcode_enabled = true
 text = "[center]111111"
 text = "111111"
 scroll_active = false
 selection_enabled = true
-script = ExtResource( 21 )
+script = ExtResource("33_m5d0l")
 theme_override_font_sizes/normal_font_size = 36
 theme_override_constants/outline_size = 4
-theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+theme_override_colors/font_outline_color = Color(0.24, 0.15, 0.11, 1)
 
 [node name="CopyButton" type="TextureButton" parent="LobbyCode"]
 offset_left = 151.0
@@ -963,11 +955,11 @@ offset_top = -25.0
 offset_right = 205.0
 offset_bottom = 26.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource( 10 )
-texture_pressed = ExtResource( 11 )
-texture_hover = ExtResource( 11 )
+texture_normal = ExtResource("34_yf7ed")
+texture_pressed = ExtResource("35_6tmbb")
+texture_hover = ExtResource("35_6tmbb")
 stretch_mode = 5
-script = ExtResource( 34 )
+script = ExtResource("7_g1fyr")
 ignore_texture_size = true
 
 [node name="Label3" type="Label" parent="."]
@@ -975,67 +967,67 @@ offset_left = 1227.0
 offset_top = 121.0
 offset_right = 1502.0
 offset_bottom = 162.0
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
-theme_override_fonts/font = ExtResource( 2 )
+theme_override_fonts/font = ExtResource("22_fi6h4")
 text = "Joined Members"
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "UI_JoinedMembers"
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="Label4" type="Label" parent="."]
 offset_left = 687.0
 offset_top = 121.0
 offset_right = 1162.0
 offset_bottom = 162.0
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
-theme_override_fonts/font = ExtResource( 2 )
+theme_override_fonts/font = ExtResource("22_fi6h4")
 text = "Settings"
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "UI_LobbySettings"
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="Divider1" type="Sprite2D" parent="."]
-position = Vector2( 923, 163.875 )
-scale = Vector2( 1.92218, 0.824999 )
-texture = ExtResource( 19 )
+position = Vector2(923, 163.875)
+scale = Vector2(1.92218, 0.824999)
+texture = ExtResource("36_bdanh")
 
 [node name="Divider2" type="Sprite2D" parent="."]
-position = Vector2( 1405, 163.875 )
-scale = Vector2( 1.46304, 0.824999 )
-texture = ExtResource( 19 )
+position = Vector2(1405, 163.875)
+scale = Vector2(1.46304, 0.824999)
+texture = ExtResource("36_bdanh")
 
 [node name="Divider3" type="Sprite2D" parent="."]
-position = Vector2( 1190, 347 )
+position = Vector2(1190, 347)
 rotation = 1.5708
-scale = Vector2( 1.81111, 0.824999 )
-texture = ExtResource( 19 )
+scale = Vector2(1.81111, 0.824999)
+texture = ExtResource("36_bdanh")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
-modulate = Color( 0.0941176, 0.101961, 0.109804, 1 )
-material = ExtResource( 7 )
+modulate = Color(0.0941176, 0.101961, 0.109804, 1)
+material = ExtResource("15_yty0h")
 offset_left = 1216.0
 offset_top = 180.0
 offset_right = 1589.0
 offset_bottom = 599.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 9 )
+texture = ExtResource("16_o4u2l")
 patch_margin_left = 8
 patch_margin_top = 8
 patch_margin_right = 7
 patch_margin_bottom = 9
 
-[node name="LobbyMemberList" parent="." instance=ExtResource( 16 )]
+[node name="LobbyMemberList" parent="." instance=ExtResource("37_tx4f0")]
 offset_left = 1221.0
 offset_top = 181.0
 offset_right = 1556.0
@@ -1046,13 +1038,13 @@ offset_left = 1490.0
 offset_top = 123.0
 offset_right = 1597.0
 offset_bottom = 157.0
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = SubResource( 7 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("7")
 text = "6/10"
-script = ExtResource( 17 )
+script = ExtResource("38_wxass")
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 horizontal_alignment = 1
 
 [node name="CancelButton" type="Button" parent="."]
@@ -1061,22 +1053,22 @@ offset_top = 632.0
 offset_right = 1608.0
 offset_bottom = 678.0
 mouse_default_cursor_shape = 2
-theme_override_colors/font_disabled_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_focus_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_hover_color = Color( 1, 0.890196, 0.215686, 1 )
-theme_override_colors/font_pressed_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = SubResource( 14 )
-theme_override_styles/focus = ExtResource( 5 )
+theme_override_colors/font_disabled_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_focus_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("14")
+theme_override_styles/focus = ExtResource("20_218u0")
 flat = true
 icon_alignment = 1
-script = ExtResource( 28 )
+script = ExtResource("21_slv2e")
 labelPath = NodePath("../CancelLabel")
 iconPath = NodePath("../CancelIcon")
-iconHovered = ExtResource( 29 )
+iconHovered = ExtResource("39_2k71r")
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.24, 0.15, 0.11, 1 )
+theme_override_colors/font_outline_color = Color(0.24, 0.15, 0.11, 1)
 alignment = 0
 
 [node name="CancelLabel" type="Label" parent="."]
@@ -1084,28 +1076,28 @@ offset_left = 1388.0
 offset_top = 637.0
 offset_right = 1598.0
 offset_bottom = 671.0
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_fonts/font = ExtResource( 2 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = ExtResource("22_fi6h4")
 text = "Cancel"
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "BUTTON_Cancel"
 maxSize = 210.0
 theme_override_font_sizes/font_size = 26
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="CancelIcon" type="Sprite2D" parent="."]
-position = Vector2( 1361, 654 )
-texture = ExtResource( 27 )
+position = Vector2(1361, 654)
+texture = ExtResource("40_h3cy7")
 
 [node name="LobbyIconMember" type="Sprite2D" parent="."]
-position = Vector2( 941.625, 68.375 )
-scale = Vector2( 0.418333, 0.418333 )
-texture = ExtResource( 8 )
+position = Vector2(941.625, 68.375)
+scale = Vector2(0.418333, 0.418333)
+texture = ExtResource("41_oyjp2")
 
 [node name="Hints" type="Node2D" parent="."]
 visible = false
-position = Vector2( 781, 537 )
+position = Vector2(781, 537)
 z_index = 10
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Hints"]
@@ -1116,7 +1108,7 @@ offset_left = -84.0
 offset_top = -71.0
 offset_right = 705.0
 offset_bottom = 116.0
-texture = ExtResource( 33 )
+texture = ExtResource("8_2bn8h")
 patch_margin_left = 46
 patch_margin_top = 47
 patch_margin_right = 44
@@ -1130,17 +1122,17 @@ offset_top = -15.0
 offset_right = 674.0
 offset_bottom = 18.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
-theme_override_fonts/font = SubResource( 16 )
+theme_override_fonts/font = SubResource("16")
 text = "As host, you can kick members from the scoreboard."
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "HINT_HostLobby1"
 theme_override_font_sizes/font_size = 22
 theme_override_constants/outline_size = 2
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 horizontal_alignment = 1
 
 [node name="Hint2" type="Label" parent="Hints"]
@@ -1151,17 +1143,17 @@ offset_top = 31.0
 offset_right = 657.0
 offset_bottom = 57.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
-theme_override_fonts/font = SubResource( 16 )
+theme_override_fonts/font = SubResource("16")
 text = "If you abandon the lobby, it will be closed."
-script = ExtResource( 4 )
+script = ExtResource("4_7kmvw")
 translationKey = "HINT_HostLobby2"
 theme_override_font_sizes/font_size = 22
 theme_override_constants/outline_size = 2
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 horizontal_alignment = 1
 
 [connection signal="rules_changed" from="CustomRulesTooltip/VBoxContainer" to="." method="onCustomRulesChanged"]

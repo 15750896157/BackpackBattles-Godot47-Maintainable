@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://bv5j0a17pgur2"]
+
+[node name="CombatSideHud" type="Control"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 568.0
+offset_bottom = 152.0
+mouse_filter = 2
+
+[node name="PanelArt" type="TextureRect" parent="."]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 568.0
+offset_bottom = 152.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NameArt" type="TextureRect" parent="."]
+offset_left = 0.0
+offset_top = -47.0
+offset_right = 342.0
+offset_bottom = -1.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NameCaption" type="Label" parent="."]
+offset_left = 20.0
+offset_top = -47.0
+offset_right = 322.0
+offset_bottom = -1.0
+mouse_filter = 2
+horizontal_alignment = 0
+vertical_alignment = 1
+metadata/art_font_size = 29
+
+[node name="HealthTrack" type="TextureRect" parent="."]
+offset_left = 81.0
+offset_top = 18.0
+offset_right = 286.0
+offset_bottom = 54.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+offset_left = 81.0
+offset_top = 18.0
+offset_right = 286.0
+offset_bottom = 54.0
+mouse_filter = 2
+nine_patch_stretch = true
+
+[node name="HealthValue" type="Label" parent="."]
+offset_left = 81.0
+offset_top = 18.0
+offset_right = 286.0
+offset_bottom = 54.0
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 24
+
+[node name="HealthCaption" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 80.0
+offset_bottom = 55.0
+mouse_filter = 2
+text = "生命"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 25
+
+[node name="StaminaTrack" type="TextureRect" parent="."]
+offset_left = 349.0
+offset_top = 18.0
+offset_right = 554.0
+offset_bottom = 54.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StaminaBar" type="TextureProgressBar" parent="."]
+offset_left = 349.0
+offset_top = 18.0
+offset_right = 554.0
+offset_bottom = 54.0
+mouse_filter = 2
+nine_patch_stretch = true
+
+[node name="StaminaValue" type="Label" parent="."]
+offset_left = 349.0
+offset_top = 18.0
+offset_right = 554.0
+offset_bottom = 54.0
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 24
+
+[node name="StaminaCaption" type="Label" parent="."]
+offset_left = 283.0
+offset_top = 15.0
+offset_right = 348.0
+offset_bottom = 55.0
+mouse_filter = 2
+text = "耐力"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 25
+
+[node name="BuffCaption" type="Label" parent="."]
+offset_left = 14.0
+offset_top = 65.0
+offset_right = 79.0
+offset_bottom = 105.0
+mouse_filter = 2
+text = "增益"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 25
+
+[node name="Buffs" type="GridContainer" parent="."]
+offset_left = 82.0
+offset_top = 68.0
+offset_right = 270.0
+offset_bottom = 130.0
+mouse_filter = 2
+columns = 4
+
+[node name="DebuffCaption" type="Label" parent="."]
+offset_left = 282.0
+offset_top = 65.0
+offset_right = 347.0
+offset_bottom = 105.0
+mouse_filter = 2
+text = "减益"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 25
+
+[node name="Debuffs" type="GridContainer" parent="."]
+offset_left = 350.0
+offset_top = 68.0
+offset_right = 538.0
+offset_bottom = 130.0
+mouse_filter = 2
+columns = 4
+
+[node name="StatusText" type="Label" parent="."]
+offset_left = 82.0
+offset_top = 112.0
+offset_right = 547.0
+offset_bottom = 142.0
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 18

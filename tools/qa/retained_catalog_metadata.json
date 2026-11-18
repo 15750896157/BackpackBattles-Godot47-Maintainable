@@ -1,0 +1,2749 @@
+{
+  "format": 1,
+  "purpose": "Reviewed metadata for scenes pruned before M1. Retains runtime socket values; not proof of loadable scenes. Update only after source/socket review.",
+  "catalog_sha256_at_review": "53bf9dceb7f1efaa2c2c3d6289335f57853a6e15b7de737464dc50115a5beb86",
+  "provenance": "M1 Step4 2026-11-05; all missing paths checked against m1_step3 before.json; current sources and socket counts unchanged by migration.",
+  "items": {
+    "Ace of Spades": {
+      "record_sha256": "b8ad6ca1306183bf0c4f21145001961a8336a302d807100a75d80bfcdfae3c8a",
+      "missing_paths": [
+        "res://Items/AceofSpades.tscn"
+      ]
+    },
+    "Acorn Ace": {
+      "record_sha256": "0e317738ef6208b033d1adfe0b294da1f839427e472545e0ab4cdeb46f29a746",
+      "missing_paths": [
+        "res://Items/Exclusive/AcornAce.tscn"
+      ]
+    },
+    "Acorn Collar": {
+      "record_sha256": "4dfdf90247307654bbdd62759dbd09915f439228803ec55346ee728ccd2bc0f2",
+      "missing_paths": [
+        "res://Items/AcornCollar.tscn"
+      ]
+    },
+    "Amethyst Egg": {
+      "record_sha256": "1901c1d0f89c0e4cdac2f2ce4afec072365957cc9536a71dfa9f5aaa6b7afe9c",
+      "missing_paths": [
+        "res://Items/Exclusive/AmethystEgg.tscn"
+      ]
+    },
+    "Amethyst Whelp": {
+      "record_sha256": "cd9d0f69a93d71f00a1313bee014d0d3d3d61c5ac9def1dc8db7adf2e20eefdc",
+      "missing_paths": [
+        "res://Items/Exclusive/AmethystWhelp.tscn",
+        "res://Items/Exclusive/Animations/AmethystWhelpAnimation.tscn"
+      ]
+    },
+    "Amulet Unidentified": {
+      "record_sha256": "aedd3f8af66c4556222a20e689ef99cccea2b5130cacccf93c4c336a9ceca5b2",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletUnidentified.tscn"
+      ]
+    },
+    "Amulet of Agility": {
+      "record_sha256": "2d849872db90c3df17560a2010c941372339ff3a7a7b30d3ecc8cce0f1bb8e0a",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofAgility.tscn"
+      ]
+    },
+    "Amulet of Alchemy": {
+      "record_sha256": "5ef2621980f18610327f9868fe3d7af63cfcfd84be073060af827af94fd3ebe8",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofAlchemy.tscn"
+      ]
+    },
+    "Amulet of Darkness": {
+      "record_sha256": "cdc54b54e5fce100ddbd961ddfcff41605c2df6f915b10f1534c54f4a985bef5",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofDarkness.tscn"
+      ]
+    },
+    "Amulet of Feasting": {
+      "record_sha256": "04479fe1042966ed2020bcab50aacd420cc95c6eb48741d87f0a204f9d6beedb",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofFeasting.tscn"
+      ]
+    },
+    "Amulet of Fortune": {
+      "record_sha256": "5b1d482d1256d2917c63ad6bf4e4d87b67f1d46b1b2446ca7867e80d75e0f540",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofFortune.tscn"
+      ]
+    },
+    "Amulet of Life": {
+      "record_sha256": "0268e3439815c5cec9932a1eb3767b5dc23445ec73a0d6d558cf510995ca1b00",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofLife.tscn"
+      ]
+    },
+    "Amulet of Light": {
+      "record_sha256": "1fba8e064c0f8f2b80a8ed73880047769e1fa22d098467d50be890d5d306330b",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofLight.tscn"
+      ]
+    },
+    "Amulet of Steel": {
+      "record_sha256": "945b982222b18f52b34e4ec631b9c69195be3aeffa4cc3aa79189623a97575e1",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletofSteel.tscn"
+      ]
+    },
+    "Amulet of the Wild": {
+      "record_sha256": "2e56619ea6bf074eb21d3d0114db60cac6fda8e2c5174572e71b1ecfde4bc4f8",
+      "missing_paths": [
+        "res://Items/Exclusive/AmuletoftheWild.tscn"
+      ]
+    },
+    "Angel Crystal": {
+      "record_sha256": "403c42af3a1556ebd41ef74a7a1af7ca706fe618fa75a87a4c1526aa54d6dbe4",
+      "missing_paths": [
+        "res://Items/Exclusive/AngelCrystal.tscn"
+      ]
+    },
+    "Arcane Boots": {
+      "record_sha256": "936e120634051ebde4b1d1f8b33a0c6101da030db16c5b2fd2fab9abe50e60c0",
+      "missing_paths": [
+        "res://Items/Exclusive/ArcaneBoots.tscn"
+      ]
+    },
+    "Arcane Intellect": {
+      "record_sha256": "c4091d953a6091746c645e604ee9ca938988695d4dfeef41744ce594f973ed49",
+      "missing_paths": [
+        "res://Items/Exclusive/ArcaneIntellect.tscn"
+      ]
+    },
+    "Armored Courage Puppy": {
+      "record_sha256": "94e9e822c668b7c0182a71a1fd2c3c3f281fb4caa6eed5931d249af81c62e2f4",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ArmoredCouragePuppyAnimation.tscn",
+        "res://Items/Exclusive/ArmoredCouragePuppy.tscn"
+      ]
+    },
+    "Armored Power Puppy": {
+      "record_sha256": "97eb6e522b130e27c1ab8e8f129f092ed72702473377ef86c2c51bcd86050646",
+      "missing_paths": [
+        "res://Items/Exclusive/ArmoredPowerPuppy.tscn"
+      ]
+    },
+    "Armored Wisdom Puppy": {
+      "record_sha256": "7eebd989df6dc786b3f420ea4b9436836d9bde99bb233aa9334ac1dffafe939d",
+      "missing_paths": [
+        "res://Items/Exclusive/ArmoredWisdomPuppy.tscn"
+      ]
+    },
+    "Artifact Stone Cold": {
+      "record_sha256": "0c102963765677f68e0c38b4cfd90bab990970555c5ff7484dfa9f522cdf6ff9",
+      "missing_paths": [
+        "res://Items/Animations/ArtifactStoneColdAnimation.tscn",
+        "res://Items/ArtifactStoneCold.tscn"
+      ]
+    },
+    "Artifact Stone Death": {
+      "record_sha256": "fac372a5bd9b1400eed572518858205431369beb68c10afde24c9f5aa5cf4a16",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ArtifactStoneDeathAnimation.tscn",
+        "res://Items/Exclusive/ArtifactStoneDeath.tscn"
+      ]
+    },
+    "Artifact Stone Heat": {
+      "record_sha256": "523b4fb78e7d2bb8f696cf0f3d1f617b37b152b84f3060b55f37f11be0e99349",
+      "missing_paths": [
+        "res://Items/Animations/ArtifactStoneHeatAnimation.tscn",
+        "res://Items/ArtifactStoneHeat.tscn"
+      ]
+    },
+    "Automanaton": {
+      "record_sha256": "3ce2054b927270f9c767c9606e51d063af586c25c8cf3052e23368e08b963c59",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/AutomanatonAnimation.tscn",
+        "res://Items/Exclusive/Automanaton.tscn"
+      ]
+    },
+    "Badger Rune": {
+      "record_sha256": "241bd45a096a2ee85db94016beae9c79473ef865884c16fe0e84abbdf1e26e84",
+      "missing_paths": [
+        "res://Items/Exclusive/BadgerRune.tscn"
+      ]
+    },
+    "Badger Spirit": {
+      "record_sha256": "209101fcb95727f0d0282e726f2e2b033ea365f4b36dbd4eb03509b9a79344f2",
+      "missing_paths": [
+        "res://Items/Exclusive/BadgerSpirit.tscn"
+      ]
+    },
+    "Bag of Giving": {
+      "record_sha256": "5acb0bda44bea42480248f48700b52a7a19c99182047e899d0cb3bedcbe1f29d",
+      "missing_paths": [
+        "res://Items/Exclusive/BagofGiving.tscn"
+      ]
+    },
+    "Bagtacular": {
+      "record_sha256": "794259e9512e393f2add83234540f0aaee65c174c5be158bfec6ca9619981536",
+      "missing_paths": [
+        "res://Items/Exclusive/Bagtacular.tscn"
+      ]
+    },
+    "Banana": {
+      "record_sha256": "0873f748373710b79117250aa278bf2d754cbccdf7bbd2de4c85b6139336ef15",
+      "missing_paths": [
+        "res://Items/Banana.tscn"
+      ]
+    },
+    "Bazooka": {
+      "record_sha256": "f6b5868902f1ecdbd7fe2db360457e09eca8ac4bddbc81745b4c8c8e6019fa68",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/BazookaAnimation.tscn",
+        "res://Items/Exclusive/Bazooka.tscn"
+      ]
+    },
+    "Bewitchment": {
+      "record_sha256": "ed078f36f15a3ef83406db78b55f13311db4c13765fec084414a3e9ebc3b5a9e",
+      "missing_paths": [
+        "res://Items/Exclusive/Bewitchment.tscn"
+      ]
+    },
+    "Big Bloodthorne": {
+      "record_sha256": "0390052e523fc121d492e3bfbada422b8818ad9ec7f9c74c1badd27628fd8c51",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/BigBloodthorneAnimation.tscn",
+        "res://Items/Exclusive/BigBloodthorne.tscn"
+      ]
+    },
+    "Bismuth Cube": {
+      "record_sha256": "5483b6d4e58201b3b23ae66658268be0824c033eb5c4f8daa1ae0dddfc38e67d",
+      "missing_paths": [
+        "res://Items/Exclusive/BismuthCube.tscn"
+      ]
+    },
+    "Black Bishop": {
+      "record_sha256": "c1ac332dbd95ba284ced42575d6a340ff8fcc7be3a89bd9ce9eaef0efe1495d6",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/BlackBishop.tscn"
+      ]
+    },
+    "Black King": {
+      "record_sha256": "5dee2b70d4fbb677d3477c76084bf31075b6350b6ac38a6dc94324a45d74905e",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/BlackKing.tscn"
+      ]
+    },
+    "Black Knight": {
+      "record_sha256": "6de445c6b3dd496f731cf456c573fbfbd0a0660acad2fee6edc092101031c214",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/BlackKnight.tscn"
+      ]
+    },
+    "Black Pawn": {
+      "record_sha256": "fc50eafe70807bdb4b0af3f7ab5fed914834bf64dc4ad48a3175e97420adb034",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/BlackPawn.tscn"
+      ]
+    },
+    "Black Queen": {
+      "record_sha256": "ae76297390de8fc5265d3d1efcd3b1bcb8e4499abe8e1d8ff91007b70e694d91",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/BlackQueen.tscn"
+      ]
+    },
+    "Black Rook": {
+      "record_sha256": "08e86a1af7afe294f78f1df39d66ec3020337bfeff4f06dcf21844d901e1e37d",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/BlackRook.tscn"
+      ]
+    },
+    "Blood Goobert": {
+      "record_sha256": "3a8c30fc716c3a35f5b1cf21d0e797a1ba4e1875f95354e158c1ae4d5eb9c4d9",
+      "missing_paths": [
+        "res://Items/BloodGoobert.tscn"
+      ]
+    },
+    "Blood Manipulation": {
+      "record_sha256": "64340ba122ba6e66eb65497d9517692ecea93d40235ea600d7d293e01c10791b",
+      "missing_paths": [
+        "res://Items/Exclusive/BloodManipulation.tscn"
+      ]
+    },
+    "Bloodthorne": {
+      "record_sha256": "9c1c3dc5d48c8ffb6b621f6721109b0c1e8cf91cf0b00f5dc1d2285ff4e0dfb0",
+      "missing_paths": [
+        "res://Items/Animations/BloodthorneAnimation.tscn",
+        "res://Items/Bloodthorne.tscn"
+      ]
+    },
+    "Bloody Dagger": {
+      "record_sha256": "e6be6334d68e16f24539f9636728478a927ab64acdd0b36eadcd28a8e0e66c67",
+      "missing_paths": [
+        "res://Items/Animations/BloodyDaggerAnimation.tscn",
+        "res://Items/BloodyDagger.tscn"
+      ]
+    },
+    "Blueberries": {
+      "record_sha256": "ed08e8110e275d6427ef11bcf0e0f34c34edf6216bfbcf3d2ebd40dfea48ed5e",
+      "missing_paths": [
+        "res://Items/Blueberries.tscn"
+      ]
+    },
+    "Bomb": {
+      "record_sha256": "68a281497f13f1d150a96a05d63e81ea738cb3dc73e487998a050c6276c5c78c",
+      "missing_paths": [
+        "res://Items/Exclusive/Bomb.tscn"
+      ]
+    },
+    "Book of Basics": {
+      "record_sha256": "1d4bbefe93122614fbbfca0f9fd7c3d92c2cc10bb201058de5029901fed60886",
+      "missing_paths": [
+        "res://Items/Exclusive/BookofBasics.tscn"
+      ]
+    },
+    "Book of Darkness": {
+      "record_sha256": "bcbb3c68b586e285c100ac40764b5c51342a359d891474cd0eca1ebad24813dc",
+      "missing_paths": [
+        "res://Items/Exclusive/BookofDarkness.tscn"
+      ]
+    },
+    "Book of Ice": {
+      "record_sha256": "4d8f4fcd3579eca818773f1e8e5bb18045c52017bcca3257749069755a2445f9",
+      "missing_paths": [
+        "res://Items/Exclusive/BookofIce.tscn"
+      ]
+    },
+    "Book of Light": {
+      "record_sha256": "87c789f65273e8b980357a4e84f4d48aa5942f31d2b520823932e5aa7251514c",
+      "missing_paths": [
+        "res://Items/Exclusive/BookofLight.tscn"
+      ]
+    },
+    "Book of Nature": {
+      "record_sha256": "7565e1889c806c051fd0f9ceb92c95fdc0a3ba7149c88fa247bb039e7c604c4f",
+      "missing_paths": [
+        "res://Items/Exclusive/BookofNature.tscn"
+      ]
+    },
+    "Boomerang": {
+      "record_sha256": "152b756d8c5875b24daac7b3c4379491d8bf6679d2503f3956b2295ea79b657a",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/BoomerangAnimation.tscn",
+        "res://Items/Exclusive/Boomerang.tscn"
+      ]
+    },
+    "Bow and Arrow": {
+      "record_sha256": "28f47b501996d58daa3f000545b92f1215710b8a5d5b2decded79f5ad1b44e55",
+      "missing_paths": [
+        "res://Items/Animations/BowandArrowAnimation.tscn",
+        "res://Items/BowandArrow.tscn"
+      ]
+    },
+    "Bowl of Treats": {
+      "record_sha256": "5da387129ec818e7e16a2e42507988be6908369a6e3896958d2301a51857864e",
+      "missing_paths": [
+        "res://Items/Exclusive/BowlofTreats.tscn"
+      ]
+    },
+    "Box of Prosperity": {
+      "record_sha256": "28d9603bb63795f7b6a590fc885c37335a2deb3e6ad5244cb5d9f63f2c82aaa8",
+      "missing_paths": [
+        "res://Items/Exclusive/BoxofProsperity.tscn"
+      ]
+    },
+    "Brass Knuckles": {
+      "record_sha256": "e557745c563b286bdb146144389e8f49c75e2450422555c0246f61bb6be1233e",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/BrassKnucklesAnimation.tscn",
+        "res://Items/Exclusive/BrassKnuckles.tscn"
+      ]
+    },
+    "Broccoli": {
+      "record_sha256": "b78e08e590dfbad73ef86869caaeb8be68966783d1ac984222c231fb4b56cd81",
+      "missing_paths": [
+        "res://Items/Exclusive/Broccoli.tscn"
+      ]
+    },
+    "Broccoli Goobert": {
+      "record_sha256": "3b08c08ba07441a8539360867c3285be9e339cec260be6b38272ce71152af849",
+      "missing_paths": [
+        "res://Items/Exclusive/BroccoliGoobert.tscn"
+      ]
+    },
+    "Broccotree": {
+      "record_sha256": "185acf9ee2567154c688aa4ef521d6e6dcf66257b3b5d7fd308597be98d1db8d",
+      "missing_paths": [
+        "res://Items/Exclusive/Broccotree.tscn"
+      ]
+    },
+    "Broom": {
+      "record_sha256": "7296957cec1acabd9f856efad5ed17462900e105612f23b0bed33cffe3741fce",
+      "missing_paths": [
+        "res://Items/Animations/BroomAnimation.tscn",
+        "res://Items/Broom.tscn"
+      ]
+    },
+    "Burning Blade": {
+      "record_sha256": "77fe8b31706077e8c22e389f963177ecb6318ea06ef3240038c293fa1df310a9",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/BurningBladeAnimation.tscn",
+        "res://Items/Exclusive/BurningBlade.tscn"
+      ]
+    },
+    "Burning Spikes": {
+      "record_sha256": "e78701eaca0d034745c6150f7b4fec38e194dd9b0f84c5d18d3bb3b0c567b9a4",
+      "missing_paths": [
+        "res://Items/Exclusive/BurningSpikes.tscn"
+      ]
+    },
+    "Burning Sword": {
+      "record_sha256": "ff6e00843c4372c9126cf0dd3a3add5522e5f7f40f72952654b5f12f59a0ffc6",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/BurningSwordAnimation.tscn",
+        "res://Items/Exclusive/BurningSword.tscn"
+      ]
+    },
+    "Busted Blade": {
+      "record_sha256": "694227392cae0bd7d62ce04759c4e9e5d1ce9051cd47ff08011f05b0ed92db30",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/BustedBladeAnimation.tscn",
+        "res://Items/Exclusive/BustedBlade.tscn"
+      ]
+    },
+    "Buy the Holy Light": {
+      "record_sha256": "f26b90c346a663912075a5de36391fe8a304c4eda24f087c90eaf93e8ab49e84",
+      "missing_paths": [
+        "res://Items/Exclusive/BuytheHolyLight.tscn"
+      ]
+    },
+    "Cap of Brilliance": {
+      "record_sha256": "2860aeb21ce699344e47f6426622466925e38fa4e12bca62bc7772f48c5dbd44",
+      "missing_paths": [
+        "res://Items/Exclusive/CapofBrilliance.tscn"
+      ]
+    },
+    "Carrot": {
+      "record_sha256": "1cdd44cade87adb062bd88639e416fe11ae4285e56b7c30e6a59ecf78a89479a",
+      "missing_paths": [
+        "res://Items/Carrot.tscn"
+      ]
+    },
+    "Carrot Goobert": {
+      "record_sha256": "a31fd44e4368f9ec59cc4a9c8acb4f72f0af656db85311b89bdf5a57700318be",
+      "missing_paths": [
+        "res://Items/CarrotGoobert.tscn"
+      ]
+    },
+    "Cat Spirit": {
+      "record_sha256": "74cb750e9c8c633db3954af6e791f7c28b0d6c1436aa4a0d0d7b95833e3258af",
+      "missing_paths": [
+        "res://Items/Exclusive/CatSpirit.tscn"
+      ]
+    },
+    "Chain Whip": {
+      "record_sha256": "e611bdc57af37d25792b197f50227eba620828ce7f2aab21b45034357f88b840",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ChainWhipAnimation.tscn",
+        "res://Items/Exclusive/ChainWhip.tscn"
+      ]
+    },
+    "Charge Splitter": {
+      "record_sha256": "5b349b800207540ff787a1f736149921651a5f2b12b03cb616083098365e21b7",
+      "missing_paths": [
+        "res://Items/Exclusive/ChargeSplitter.tscn"
+      ]
+    },
+    "Cheese": {
+      "record_sha256": "bfa012451825450a38c49ee14f0920fd6c6721b55c2ea4d00935ef8f3f5e9477",
+      "missing_paths": [
+        "res://Items/Exclusive/Cheese.tscn"
+      ]
+    },
+    "Cheese Goobert": {
+      "record_sha256": "5f65ec2e36ba15c22c434123b97df10a3197af43d7f062369cf84c0750eccf19",
+      "missing_paths": [
+        "res://Items/Exclusive/CheeseGoobert.tscn"
+      ]
+    },
+    "Chess Board": {
+      "record_sha256": "dfc110bcd7ffb507aaab11d139d4c708f4c35fb56a3d1f002e1a6f1180f2df88",
+      "missing_paths": [
+        "res://Items/Exclusive/ChessBoard.tscn"
+      ]
+    },
+    "Chess Master": {
+      "record_sha256": "90db080e2737db6d9f6e2fea22bd2818dd0cb958d19be517c21fa74c0e42484b",
+      "missing_paths": [
+        "res://Items/Exclusive/ChessMaster.tscn"
+      ]
+    },
+    "Chili Goobert": {
+      "record_sha256": "7a9e7423351dc5f83c7fc05f4419ae9029bcaf3ba56ef51d385222ce2adb0f96",
+      "missing_paths": [
+        "res://Items/Exclusive/ChiliGoobert.tscn"
+      ]
+    },
+    "Chili Pepper": {
+      "record_sha256": "375c042e4b0b8c06db32417e7c8dae90978ff1d5891c4a81151cd34faadc9ed6",
+      "missing_paths": [
+        "res://Items/Exclusive/ChiliPepper.tscn"
+      ]
+    },
+    "Chipped Amethyst": {
+      "record_sha256": "d92fde1a458a78f05cea4dc4802755491784710c08a0eb2937aef276e58e5be2",
+      "missing_paths": [
+        "res://Items/Gems/ChippedAmethyst.tscn"
+      ]
+    },
+    "Chipped Emerald": {
+      "record_sha256": "99dc50ae95b92bec9a471004f9a216dcf58a37e381d230d36a909ea04b665f33",
+      "missing_paths": [
+        "res://Items/Gems/ChippedEmerald.tscn"
+      ]
+    },
+    "Chipped Ruby": {
+      "record_sha256": "3604341f092524c7d2c13db8adb238001ee5f86ad7cc13950d33db9266bd8def",
+      "missing_paths": [
+        "res://Items/Gems/ChippedRuby.tscn"
+      ]
+    },
+    "Chipped Sapphire": {
+      "record_sha256": "4cc9086fe9a41f071000bcfab7198555d954fd10d9af03b62a19c4920c078e3f",
+      "missing_paths": [
+        "res://Items/Gems/ChippedSapphire.tscn"
+      ]
+    },
+    "Chipped Topaz": {
+      "record_sha256": "ba78c5fa3b66212a4f4f8a936b7ed25a2fb97a7a2f3670a21b964f81bf45c59e",
+      "missing_paths": [
+        "res://Items/Gems/ChippedTopaz.tscn"
+      ]
+    },
+    "Chrome Cube": {
+      "record_sha256": "f4eaa8e11db2ee591d838b52c5ddaea2e0e56e9e46b8837b7d369a818435ffe3",
+      "missing_paths": [
+        "res://Items/Exclusive/ChromeCube.tscn"
+      ]
+    },
+    "Cog Badge": {
+      "record_sha256": "9aba173f396c8d6d2f9c30668ec407401b0a146e9d9a029e0403b910053c295d",
+      "missing_paths": [
+        "res://Items/Exclusive/CogBadge.tscn"
+      ]
+    },
+    "Coins": {
+      "record_sha256": "b8dfb4cf95dc80d31fbe94719dffdab9b6f16f080e40c430a1f6993aacc902ba",
+      "missing_paths": [
+        "res://Items/Coins.tscn"
+      ]
+    },
+    "Con-Trap-Tron": {
+      "record_sha256": "e34925083a49209701899db8c4d9b2d5d3d6a3293aac0c847faeca01d2a4158c",
+      "missing_paths": [
+        "res://Items/Exclusive/Con-Trap-Tron.tscn"
+      ]
+    },
+    "Corrupted Armor": {
+      "record_sha256": "9c84896714bc5ea4d753c417bc78dd15ebefc0fe2861c0e83c29c8c108f92b08",
+      "missing_paths": [
+        "res://Items/CorruptedArmor.tscn"
+      ]
+    },
+    "Corrupted Crystal": {
+      "record_sha256": "6d8368fcad9c6f5fc1a9bdb1e430f0f1522d543aefa036a983e2a93e90aa611a",
+      "missing_paths": [
+        "res://Items/Gems/CorruptedCrystal.tscn"
+      ]
+    },
+    "Courage Puppy": {
+      "record_sha256": "fc713de4cf5be2055d9f55f4486f8795dca478a2bc77c7e042b00eb679e6f305",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/CouragePuppyAnimation.tscn",
+        "res://Items/Exclusive/CouragePuppy.tscn"
+      ]
+    },
+    "Critical Poison": {
+      "record_sha256": "5d7bbedc6d377e8dd4ca66b397b03f3ab3441aa8f1ef11e4bd89a5585d82d144",
+      "missing_paths": [
+        "res://Items/Exclusive/CriticalPoison.tscn"
+      ]
+    },
+    "Critwood Staff": {
+      "record_sha256": "b3a54a8a7b4c8877741253637a728608145e63415483a2c8e597d895ba212821",
+      "missing_paths": [
+        "res://Items/Animations/CritwoodStaffAnimation.tscn",
+        "res://Items/CritwoodStaff.tscn"
+      ]
+    },
+    "Crossblades": {
+      "record_sha256": "25fe8380bc48678a0d2d03b7c94ebcbc13acd9877b95bb4921da8b2e19426147",
+      "missing_paths": [
+        "res://Items/Animations/CrossbladesAnimation.tscn",
+        "res://Items/Crossblades.tscn"
+      ]
+    },
+    "Crow": {
+      "record_sha256": "b63933a57791deb12e1b13eb5db1e99b82f067ecc05135756186df0220cd8cbc",
+      "missing_paths": [
+        "res://Items/Exclusive/Crow.tscn"
+      ]
+    },
+    "Crown": {
+      "record_sha256": "6838cd721e820632bfc6e7fe4fcbb9d5dde8bcb01f2fa47f5890483e5399b46b",
+      "missing_paths": [
+        "res://Items/Crown.tscn"
+      ]
+    },
+    "Cthulhu": {
+      "record_sha256": "8cd5eb2cd4f770165a25722a9e863025b416e7db73b82183809668fb879c0394",
+      "missing_paths": [
+        "res://Items/Exclusive/Cthulhu.tscn"
+      ]
+    },
+    "Cubert": {
+      "record_sha256": "a88464b6b786429402fc67c20fff87e2f53ae809134dce3b800e4351eb039c7a",
+      "missing_paths": [
+        "res://Items/Exclusive/Cubert.tscn"
+      ]
+    },
+    "Cupcake": {
+      "record_sha256": "c201fda384c6bcb0bc5afe169bcbfeb265be1a2a3ca9cf9ce1369e515abd4912",
+      "missing_paths": [
+        "res://Items/Exclusive/Cupcake.tscn"
+      ]
+    },
+    "Cupcake Dragon": {
+      "record_sha256": "b9dc1a0747a40e9a6a2192f339f7933aad39f4784f84bc7c729fb3800d51234b",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/CupcakeDragonAnimation.tscn",
+        "res://Items/Exclusive/CupcakeDragon.tscn"
+      ]
+    },
+    "Cupcake Goobert": {
+      "record_sha256": "2fd27a15e2ecf8925276c69658cfd250db9978a27830dcb46441f5b9d9a855cd",
+      "missing_paths": [
+        "res://Items/Exclusive/CupcakeGoobert.tscn"
+      ]
+    },
+    "Cupcake Staff": {
+      "record_sha256": "cb5a07bb7ca1c8f847a83c482b1bbad23c45d2e567eda00fe9fa4b9bd7531477",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/CupcakeStaffAnimation.tscn",
+        "res://Items/Exclusive/CupcakeStaff.tscn"
+      ]
+    },
+    "Cursed Dagger": {
+      "record_sha256": "2776e800dfd088090cd952fb45de8ddff035c48c631b912a7b69b52fcca7132a",
+      "missing_paths": [
+        "res://Items/Animations/CursedDaggerAnimation.tscn",
+        "res://Items/CursedDagger.tscn"
+      ]
+    },
+    "Daggerang": {
+      "record_sha256": "d4c6091d7e8ae7eda3dc60004bc77da68e4e3470e758186b666ac8f5080390f0",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/DaggerangAnimation.tscn",
+        "res://Items/Exclusive/Daggerang.tscn"
+      ]
+    },
+    "Dancing Dragon": {
+      "record_sha256": "565ed7523d788962a8e59f607fa87cacab7da79d22abc1f73276326862c8f698",
+      "missing_paths": [
+        "res://Items/Animations/DancingDragonAnimation.tscn",
+        "res://Items/DancingDragon.tscn"
+      ]
+    },
+    "Dark Lantern": {
+      "record_sha256": "fdd6c80fac4581597ad5c16a5b83da7c8e315a17029ea97630831248e8b33236",
+      "missing_paths": [
+        "res://Items/Exclusive/DarkLantern.tscn"
+      ]
+    },
+    "Dark Ritual": {
+      "record_sha256": "94aefd48ce7e4c4d45e26e62a651f5caf6cd4d7fa9acd2d1b1931b6a1d87bcd3",
+      "missing_paths": [
+        "res://Items/Exclusive/DarkRitual.tscn"
+      ]
+    },
+    "Darkest Lotus": {
+      "record_sha256": "42da746afd96ace7894cc546eedeec19598ebf0f7e29cb105a246d367cf6cdba",
+      "missing_paths": [
+        "res://Items/DarkestLotus.tscn"
+      ]
+    },
+    "Darksaber": {
+      "record_sha256": "16a6618f6637b61a2aa2c66b199a7e073f8149541487bba526a83c3052c885bf",
+      "missing_paths": [
+        "res://Items/Animations/DarksaberAnimation.tscn",
+        "res://Items/Darksaber.tscn"
+      ]
+    },
+    "Death Lotus": {
+      "record_sha256": "5c834db66002d5c98d8883c7a87376f548e7487b76c3c587d140d2f695958102",
+      "missing_paths": [
+        "res://Items/Exclusive/DeathLotus.tscn"
+      ]
+    },
+    "Death Scythe": {
+      "record_sha256": "1c8566243ef5121c2d0e95bacc255882f6893aaf61ab2db95332e64b7506bf6f",
+      "missing_paths": [
+        "res://Items/Animations/DeathScytheAnimation.tscn",
+        "res://Items/DeathScythe.tscn"
+      ]
+    },
+    "Deck of Cards": {
+      "record_sha256": "1b55090c9aef8e47c7650abf05df41636491f3d5d62ddf30258a780fb71800c4",
+      "missing_paths": [
+        "res://Items/DeckofCards.tscn"
+      ]
+    },
+    "Deer Totem": {
+      "record_sha256": "84c5dbd40832cbbdd24da0097eb257693152cc9c494eae8c742577539f65edd5",
+      "missing_paths": [
+        "res://Items/Exclusive/DeerTotem.tscn"
+      ]
+    },
+    "Devouring Sphere": {
+      "record_sha256": "9996e9b8cde52b7980cece1657bcdc5dead50f9b571ef44f4c849c9a4ba1e976",
+      "missing_paths": [
+        "res://Items/Exclusive/DevouringSphere.tscn"
+      ]
+    },
+    "Dig Deeper": {
+      "record_sha256": "56dfa9443785ba610eb1b52b9371d622c131fab77224887b299e4bbc6c361796",
+      "missing_paths": [
+        "res://Items/Exclusive/DigDeeper.tscn"
+      ]
+    },
+    "Djinn Lamp": {
+      "record_sha256": "e5bb674ce1d86973bde3fecc5e28b2d4d2005a8547a4dced9057694a9b058f6f",
+      "missing_paths": [
+        "res://Items/DjinnLamp.tscn"
+      ]
+    },
+    "Doom Cap": {
+      "record_sha256": "a24ce6ae2d6232d41c6e29f4557ebfc5daa82de6794285f5469da820cb542db6",
+      "missing_paths": [
+        "res://Items/Exclusive/DoomCap.tscn"
+      ]
+    },
+    "Double Rainbow": {
+      "record_sha256": "fe720815f7eadc4de5ccf5fc4e33b81e4c839c404e5343cec914ba5e6552a49a",
+      "missing_paths": [
+        "res://Items/Exclusive/DoubleRainbow.tscn"
+      ]
+    },
+    "Draconic Orb": {
+      "record_sha256": "430c439c985c45871ce77d361bcaac704460fb16d2e4e941d0ba95cebef16f39",
+      "missing_paths": [
+        "res://Items/Exclusive/DraconicOrb.tscn"
+      ]
+    },
+    "Dragon Claws": {
+      "record_sha256": "65381da47d6c23d11545417319273e855512675c7f31b8ae94e3ffa9ab319775",
+      "missing_paths": [
+        "res://Items/Exclusive/DragonClaws.tscn"
+      ]
+    },
+    "Dragon Knight": {
+      "record_sha256": "0b94c89f9ded0fc6347eed21f969b81657943a60984e85e365bea7210f9d2b2b",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/DragonKnightAnimation.tscn",
+        "res://Items/Exclusive/DragonKnight.tscn"
+      ]
+    },
+    "Dragon Nest": {
+      "record_sha256": "f640a41273d17eb2b9a608fda1070e9dbd83346e1314cdcb464a6d34d7e67f29",
+      "missing_paths": [
+        "res://Items/Exclusive/DragonNest.tscn"
+      ]
+    },
+    "Dragon Set": {
+      "record_sha256": "693868d92e8d71496c7dbbfd0bfc1ee837f9e3a44f01e1b110be4f1ede88ca08",
+      "missing_paths": [
+        "res://Items/Exclusive/DragonSet.tscn"
+      ]
+    },
+    "Dragonskin Boots": {
+      "record_sha256": "75494b627b7e46f6d0dab864a80cb7d07d19a542a2b5ac5840f0dc9b7a215e71",
+      "missing_paths": [
+        "res://Items/Exclusive/DragonskinBoots.tscn"
+      ]
+    },
+    "Dual Wielding": {
+      "record_sha256": "678567219f30be992fc2a5488ff3628bf863c69cda951eee1b9bebdb5bb75ae5",
+      "missing_paths": [
+        "res://Items/Exclusive/DualWielding.tscn"
+      ]
+    },
+    "Eat-o-matic": {
+      "record_sha256": "74dfea51c05af3d4602115913503da769d0e4a4afdb325985c175377431d6057",
+      "missing_paths": [
+        "res://Items/Exclusive/Eat-o-matic.tscn"
+      ]
+    },
+    "Echoing Battlecry": {
+      "record_sha256": "780926523d4233f0f93e6e331ea2574bd39d035f599d63fdd2554612fa1f76fe",
+      "missing_paths": [
+        "res://Items/Exclusive/EchoingBattlecry.tscn"
+      ]
+    },
+    "Eggscalibur": {
+      "record_sha256": "26ec3d01cdbb586a8325988a47ee419d859ce762d0eb2289fe6ac3f3f35d0dd2",
+      "missing_paths": [
+        "res://Items/Animations/EggscaliburAnimation.tscn",
+        "res://Items/Eggscalibur.tscn"
+      ]
+    },
+    "Electric Torch": {
+      "record_sha256": "108c7251ccdf9a7a792d6b754449523bb50fc6df9b1bf045c18bd02ee05eb63e",
+      "missing_paths": [
+        "res://Items/Exclusive/ElectricTorch.tscn"
+      ]
+    },
+    "Elephant Rune": {
+      "record_sha256": "9eb6c3fc3bf4aa09176ff39f6a4070151cd284f53d81b889fecc16bac93589a6",
+      "missing_paths": [
+        "res://Items/Exclusive/ElephantRune.tscn"
+      ]
+    },
+    "Emerald Egg": {
+      "record_sha256": "f47aa3a8f670c43000c95cdb09f2b0cb2d6ad8bacf35b8aa829cf38cf6960672",
+      "missing_paths": [
+        "res://Items/Exclusive/EmeraldEgg.tscn"
+      ]
+    },
+    "Emerald Whelp": {
+      "record_sha256": "346f32be9530bc2ebda48abac1fe031a915cf33f3629c0db8a9bb3d1526a99ab",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/EmeraldWhelpAnimation.tscn",
+        "res://Items/Exclusive/EmeraldWhelp.tscn"
+      ]
+    },
+    "Employee Uniform": {
+      "record_sha256": "d5d699ef975fdd7662dd662108d4ca15f118dafd040929cf8b0531e8ec9325a9",
+      "missing_paths": [
+        "res://Items/Exclusive/EmployeeUniform.tscn"
+      ]
+    },
+    "Enchanted Weapons": {
+      "record_sha256": "448f33cff53824ca4d48903304825a7461d3f98ea1a79e0889531841ac40e777",
+      "missing_paths": [
+        "res://Items/Exclusive/EnchantedWeapons.tscn"
+      ]
+    },
+    "Energy Conversion": {
+      "record_sha256": "a844e951d21f93129fd291a09a98b3fe904401dfac65197dba8f13a2f40803ef",
+      "missing_paths": [
+        "res://Items/Exclusive/EnergyConversion.tscn"
+      ]
+    },
+    "Engineer Box": {
+      "record_sha256": "f50d6136b6585d70693aeb854b45800027e53bb30aa5816b8690e6758d8c9954",
+      "missing_paths": [
+        "res://Items/Exclusive/EngineerBox.tscn"
+      ]
+    },
+    "Everburning": {
+      "record_sha256": "d1792917e9a6be003400cd8401aae31332e89b30575b70bc0c36eadf8f7faca9",
+      "missing_paths": [
+        "res://Items/Exclusive/Everburning.tscn"
+      ]
+    },
+    "Evil Cap": {
+      "record_sha256": "1db5c4223736105e2789082a363483a3facb00b164fbfd2e8d90af4768b57dc1",
+      "missing_paths": [
+        "res://Items/EvilCap.tscn"
+      ]
+    },
+    "Evil Hat": {
+      "record_sha256": "92448d2e6832db33401f829d44f8a01c16fd1bdf5ed82c259d047075d65a9e47",
+      "missing_paths": [
+        "res://Items/Exclusive/EvilHat.tscn"
+      ]
+    },
+    "Extra Angy": {
+      "record_sha256": "15d8a914ec93203c34190e1867717e4ba008a27f49f1320e0c4bc75b0a656e94",
+      "missing_paths": [
+        "res://Items/Exclusive/ExtraAngy.tscn"
+      ]
+    },
+    "Extra Bags": {
+      "record_sha256": "3b169b881342fa0a45cb75871fb6ff3b9f9cef34b959a61ddc722b15195fe98b",
+      "missing_paths": [
+        "res://Items/Exclusive/ExtraBags.tscn"
+      ]
+    },
+    "Falcon Blade": {
+      "record_sha256": "fd2372f1513496a19b298d7a827e582a621919eb9ff8a3f97c2bf3fa9c67da64",
+      "missing_paths": [
+        "res://Items/Animations/FalconBladeAnimation.tscn",
+        "res://Items/FalconBlade.tscn"
+      ]
+    },
+    "False Life": {
+      "record_sha256": "813a00be4ee6838bce6165cc6889598ece7939fd972fa1ac9909348335683f89",
+      "missing_paths": [
+        "res://Items/Exclusive/FalseLife.tscn"
+      ]
+    },
+    "Fancy Fencing Rapier": {
+      "record_sha256": "73333889b3dc0290b971f66f78b2039d45fb0e37a51d888c4000e075fa6d8b1c",
+      "missing_paths": [
+        "res://Items/Animations/FancyFencingRapierAnimation.tscn",
+        "res://Items/FancyFencingRapier.tscn"
+      ]
+    },
+    "Fanfare": {
+      "record_sha256": "d37969a6975b5f935995b79eca70bc24e624dfaa45e25bcff45eb2424d09a0ad",
+      "missing_paths": [
+        "res://Items/Fanfare.tscn"
+      ]
+    },
+    "Fanny Pack": {
+      "record_sha256": "c97d9b7d8293b6873441e0654b0b936ce92a1be46df2285ea0e0dcca7d95f7ef",
+      "missing_paths": [
+        "res://Items/FannyPack.tscn"
+      ]
+    },
+    "Fedora": {
+      "record_sha256": "2435687ab604b1e7ee396606a41fc6dcfe20cb82a8fd40aaa2fc97a6add5779b",
+      "missing_paths": [
+        "res://Items/Exclusive/Fedora.tscn"
+      ]
+    },
+    "Fire Pit": {
+      "record_sha256": "429ec8c01549a0c81024926074ad1d4cc79f6720674330183ec85afaac7c436b",
+      "missing_paths": [
+        "res://Items/Exclusive/FirePit.tscn"
+      ]
+    },
+    "Fire Shelly": {
+      "record_sha256": "6d8c9d521bbba3a09e210867f42ed1e649138787a7b11c31f334701968631114",
+      "missing_paths": [
+        "res://Items/Exclusive/FireShelly.tscn"
+      ]
+    },
+    "Flame": {
+      "record_sha256": "f3bb654403b62fefad8d7085d6f0ede840a7bbd5d9c46183afe4642b37409f1d",
+      "missing_paths": [
+        "res://Items/Exclusive/Flame.tscn"
+      ]
+    },
+    "Flame Badge": {
+      "record_sha256": "004dd3fc6bf76bfed5013fb452d072f9731c6568dea8ca42ccf2c7cf3418a9c7",
+      "missing_paths": [
+        "res://Items/Exclusive/FlameBadge.tscn"
+      ]
+    },
+    "Flame Whip": {
+      "record_sha256": "b21178e5267b1fc6f47d6221b2e7db556debfb9b12aab27578a9f02c03ab59f4",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/FlameWhipAnimation.tscn",
+        "res://Items/Exclusive/FlameWhip.tscn"
+      ]
+    },
+    "Flawed Amethyst": {
+      "record_sha256": "c659c7c00d66288475885f7222818e9907df8e052a77e9240e4e0745467645ed",
+      "missing_paths": [
+        "res://Items/Gems/FlawedAmethyst.tscn"
+      ]
+    },
+    "Flawed Emerald": {
+      "record_sha256": "899aa6b69894b0e2b0f19b15e35bcc33fd126024af8151dbcdb3d18f124c9780",
+      "missing_paths": [
+        "res://Items/Gems/FlawedEmerald.tscn"
+      ]
+    },
+    "Flawed Ruby": {
+      "record_sha256": "5695a2658054a4adeadd73759bfe9bc814a7876b5595753a8728d3c3912c5b8b",
+      "missing_paths": [
+        "res://Items/Gems/FlawedRuby.tscn"
+      ]
+    },
+    "Flawed Sapphire": {
+      "record_sha256": "443f5b29145d1225fdb17bfdb5a56252d2b2b7b4a03993ba9f9fc9019a2c1136",
+      "missing_paths": [
+        "res://Items/Gems/FlawedSapphire.tscn"
+      ]
+    },
+    "Flawed Topaz": {
+      "record_sha256": "4b0d9d5868ee57c61838748b6a6347fdb6bb56ca864d4ddff070689c56500ec5",
+      "missing_paths": [
+        "res://Items/Gems/FlawedTopaz.tscn"
+      ]
+    },
+    "Flawless Amethyst": {
+      "record_sha256": "aece28861b5a785387c43e412b14a6a1886960f5f8f41c7e79e3ce11a26cef67",
+      "missing_paths": [
+        "res://Items/Gems/FlawlessAmethyst.tscn"
+      ]
+    },
+    "Flawless Emerald": {
+      "record_sha256": "f09125d43c4dce041af0e1d598058d183b993a37bc0eba20fe32b270fe1b9312",
+      "missing_paths": [
+        "res://Items/Gems/FlawlessEmerald.tscn"
+      ]
+    },
+    "Flawless Ruby": {
+      "record_sha256": "db979df401ded8b4335a9549515c9a4112a8a87348c203f5ee2bbcfa65f1f676",
+      "missing_paths": [
+        "res://Items/Gems/FlawlessRuby.tscn"
+      ]
+    },
+    "Flawless Sapphire": {
+      "record_sha256": "97af3a43799e28945921eba6d6feb5302d2457e3ecaab3610cfc5930b2c5483d",
+      "missing_paths": [
+        "res://Items/Gems/FlawlessSapphire.tscn"
+      ]
+    },
+    "Flawless Topaz": {
+      "record_sha256": "67a1ee8522cabde1da00a86743b40aa8cae9cb809007e4f0b6c672555422cc66",
+      "missing_paths": [
+        "res://Items/Gems/FlawlessTopaz.tscn"
+      ]
+    },
+    "Flute": {
+      "record_sha256": "08faa40ed7c00b5b84e66f0e26344a22e785c7176aebd90b173dcb1f65349193",
+      "missing_paths": [
+        "res://Items/Flute.tscn"
+      ]
+    },
+    "Forest Dragon": {
+      "record_sha256": "94476703a6d0ea61f8e9fe1b8f85e1fac641442c945876b774c9074d2968aa39",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ForestDragonAnimation.tscn",
+        "res://Items/Exclusive/ForestDragon.tscn"
+      ]
+    },
+    "Forging Hammer": {
+      "record_sha256": "4e6a53d3e9ad8d3a26d0f1e8aca273350f5dc041d91ef234f4e628d275bb7c95",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ForgingHammerAnimation.tscn",
+        "res://Items/Exclusive/ForgingHammer.tscn"
+      ]
+    },
+    "Fortunas Kiss": {
+      "record_sha256": "67a62fe411023973de952573cc95abd8e512a90b720774df9edd9f1543f7b4b5",
+      "missing_paths": [
+        "res://Items/Exclusive/FortunasKiss.tscn"
+      ]
+    },
+    "Friendly Fire": {
+      "record_sha256": "84d0b4198bd4b0ccdc85e1c44e2384c6c2e1b5daaa23dea2285d45bedea5cf30",
+      "missing_paths": [
+        "res://Items/Exclusive/FriendlyFire.tscn"
+      ]
+    },
+    "Frog Prince": {
+      "record_sha256": "c0a9934efa9274dd75a58343f5989802c5297e3acd7416030559f44be44f5506",
+      "missing_paths": [
+        "res://Items/Exclusive/FrogPrince.tscn"
+      ]
+    },
+    "Frostbite": {
+      "record_sha256": "28b9bcfa3f76406a72619d4c5dd5086b7825fc83033ec5d304f8def4af7c2df9",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/FrostbiteAnimation.tscn",
+        "res://Items/Exclusive/Frostbite.tscn"
+      ]
+    },
+    "Frozen Buckler": {
+      "record_sha256": "03c8cd22b4a31620310614c5e7d8e1aef922ccc3b3cd2bdaa1ca12ea67048f93",
+      "missing_paths": [
+        "res://Items/Exclusive/FrozenBuckler.tscn"
+      ]
+    },
+    "Frozen Flame": {
+      "record_sha256": "536ec05eb552a3ed64c27f08d37fec8581169b929e1e9f4fa667e18b48a1d6bb",
+      "missing_paths": [
+        "res://Items/Exclusive/FrozenFlame.tscn"
+      ]
+    },
+    "Full Body Protection": {
+      "record_sha256": "60bc978df2cd2428a93cb151e08e670babc2c8544dd8b7e02fedb67ae400e9d9",
+      "missing_paths": [
+        "res://Items/Exclusive/FullBodyProtection.tscn"
+      ]
+    },
+    "Furcifer Prime": {
+      "record_sha256": "ea17b1c8f1d157d82375c6b038475c81ccf19e09b901a0341660826e5b068d58",
+      "missing_paths": [
+        "res://Items/Exclusive/FurciferPrime.tscn"
+      ]
+    },
+    "Garlic": {
+      "record_sha256": "98e835b05445dc03cc9d97d52607c980654fb7cc28426719d6a605736cab8098",
+      "missing_paths": [
+        "res://Items/Garlic.tscn"
+      ]
+    },
+    "Ghost": {
+      "record_sha256": "10ef72ae8ea26af95714e9410c1bcf1f097e20dda8b30d638af4c0a7e5811241",
+      "missing_paths": [
+        "res://Items/Exclusive/Ghost.tscn"
+      ]
+    },
+    "Gigawatz": {
+      "record_sha256": "83ffa150fa36445ec11973b1c92fe9213657b8807b7e898dee39fae417e81c0b",
+      "missing_paths": [
+        "res://Items/Exclusive/Gigawatz.tscn"
+      ]
+    },
+    "Gingerbread Man": {
+      "record_sha256": "16958bfc6709c443969acb4274598eafde4858f455ce13e3871b4e622fc5220e",
+      "missing_paths": [
+        "res://Items/GingerbreadMan.tscn"
+      ]
+    },
+    "Girl Power": {
+      "record_sha256": "a82db065cc9f0ae9cdb1ce3e3ebe281874883043713b7a9e1cebf16369c7438b",
+      "missing_paths": [
+        "res://Items/Exclusive/GirlPower.tscn"
+      ]
+    },
+    "Gloves of Haste": {
+      "record_sha256": "e26ac9e18dc753b420968a0ebdb7f2dcbdbfd5eff6b46f1e8ab43bb1ecfc9a37",
+      "missing_paths": [
+        "res://Items/GlovesofHaste.tscn"
+      ]
+    },
+    "Gold Armor": {
+      "record_sha256": "1b09d8633aaedc309cc6e967a3397f29ece80d4e396ed381941c3c877b59c1f4",
+      "missing_paths": [
+        "res://Items/Exclusive/GoldArmor.tscn"
+      ]
+    },
+    "Gold Cube": {
+      "record_sha256": "479a6e8132475561de41768b264bf5d01fae986452a8ac026b9ef7e140b35ca9",
+      "missing_paths": [
+        "res://Items/Exclusive/GoldCube.tscn"
+      ]
+    },
+    "Goobert": {
+      "record_sha256": "3e28f92bc02812da8e6346deac40b57e74e350ec41be3abe769aff1c0d93466c",
+      "missing_paths": [
+        "res://Items/Goobert.tscn"
+      ]
+    },
+    "Goobling": {
+      "record_sha256": "c05bc427cf33bd6ecf6695e0e25d336a64c7da644d92ba7c5d5c47927ff79528",
+      "missing_paths": [
+        "res://Items/Exclusive/Goobling.tscn"
+      ]
+    },
+    "Greatsword": {
+      "record_sha256": "7610b6c539bf43b2476f10aeccdc8b418cbd0320ee24f889e64cc839ff2fe6b9",
+      "missing_paths": [
+        "res://Items/Animations/GreatswordAnimation.tscn",
+        "res://Items/Greatsword.tscn"
+      ]
+    },
+    "Hardwood": {
+      "record_sha256": "6629f99cd9cb20a3cd618cd319db123cea0d37709a556e0708f97eeb45288d22",
+      "missing_paths": [
+        "res://Items/Exclusive/Hardwood.tscn"
+      ]
+    },
+    "Hawk Rune": {
+      "record_sha256": "8a4fa4440aef85d8d168b24992863f5da796ea861bcf01bc22ad2ff0a068ab4c",
+      "missing_paths": [
+        "res://Items/Exclusive/HawkRune.tscn"
+      ]
+    },
+    "Heart Container": {
+      "record_sha256": "9b9bd38531debb32a5faf0621a5123581ff14662f98691d58ac85c6322c84ad0",
+      "missing_paths": [
+        "res://Items/HeartContainer.tscn"
+      ]
+    },
+    "Heart Shield": {
+      "record_sha256": "27bb49b7986a9ae4aeafd86a51f019ba1fc773afa66b4a2374fe12e527db00a6",
+      "missing_paths": [
+        "res://Items/Exclusive/HeartShield.tscn"
+      ]
+    },
+    "Heart of Darkness": {
+      "record_sha256": "4b30768a1dba781a7c50b95a6963eb5f653d43770854889310fa080ab6e800e5",
+      "missing_paths": [
+        "res://Items/HeartofDarkness.tscn"
+      ]
+    },
+    "Heart of the Cards": {
+      "record_sha256": "a3595576e16af41931fb1d7824d2308bb8af9bf6e0e593b3c931d3571714da7f",
+      "missing_paths": [
+        "res://Items/Exclusive/HeartoftheCards.tscn"
+      ]
+    },
+    "Heavy Drinking": {
+      "record_sha256": "921d4844326ffa28b94fcb5c0a222a2f008188449c5096dbf8269b8ade01e0b0",
+      "missing_paths": [
+        "res://Items/Exclusive/HeavyDrinking.tscn"
+      ]
+    },
+    "Hedgehog": {
+      "record_sha256": "fe14f0c5ae0a194846cd1103b40aafe1924c402114bf59db21ee9bebab61e086",
+      "missing_paths": [
+        "res://Items/Exclusive/Hedgehog.tscn"
+      ]
+    },
+    "Hero Longsword": {
+      "record_sha256": "64301e73fda09accc00ce7e172c058480f510eb8f8f7de3d3aef325fb2273372",
+      "missing_paths": [
+        "res://Items/Animations/HeroLongswordAnimation.tscn",
+        "res://Items/HeroLongsword.tscn"
+      ]
+    },
+    "Hero Shield": {
+      "record_sha256": "359174a4b21c287c979cec83e5dd9ba5311707efaf7b0540c414c81b507a77ab",
+      "missing_paths": [
+        "res://Items/Exclusive/HeroShield.tscn"
+      ]
+    },
+    "Hogus Bogus": {
+      "record_sha256": "24506d2a059734d715abeb395a3de7a2a6e03c5331955ccec561d482c5077185",
+      "missing_paths": [
+        "res://Items/Exclusive/HogusBogus.tscn"
+      ]
+    },
+    "Holo Fire Lizard": {
+      "record_sha256": "5111f8f0e53bd22bf691361e87d659f4267c70442f30c527ebdb331e8ed8726b",
+      "missing_paths": [
+        "res://Items/HoloFireLizard.tscn"
+      ]
+    },
+    "Holy Armor": {
+      "record_sha256": "8ea6c50b466bb79d820758b16c230b1c7b3c4c7e8f2257155757ce2f01b546d8",
+      "missing_paths": [
+        "res://Items/HolyArmor.tscn"
+      ]
+    },
+    "Holy Collar": {
+      "record_sha256": "fde0094a31534d188fe0a875827f6d971fe2aa250faecc554e6e7f9cf6d718a2",
+      "missing_paths": [
+        "res://Items/Exclusive/HolyCollar.tscn"
+      ]
+    },
+    "Holy Spear": {
+      "record_sha256": "d5f6cecf162cb5085dcc06d588f002f0cd14b78a2ee6650581caa3a5231372a9",
+      "missing_paths": [
+        "res://Items/Animations/HolySpearAnimation.tscn",
+        "res://Items/HolySpear.tscn"
+      ]
+    },
+    "Hungry Blade": {
+      "record_sha256": "f158a0f27463d4692c1fab5e6e1f06e66c2794b8eee948caf2f9268cf6f08332",
+      "missing_paths": [
+        "res://Items/Animations/HungryBladeAnimation.tscn",
+        "res://Items/HungryBlade.tscn"
+      ]
+    },
+    "Hyper Hedgehog": {
+      "record_sha256": "c593ec6fbbd451fb043a20b33b56f95bfbeb2593fcfe597c21351463884352d7",
+      "missing_paths": [
+        "res://Items/Exclusive/HyperHedgehog.tscn"
+      ]
+    },
+    "Hypercube": {
+      "record_sha256": "be9b6887ee9761aad75da58b84fe069feefb3ce35d463c287f64030ce87b12e5",
+      "missing_paths": [
+        "res://Items/Exclusive/Hypercube.tscn"
+      ]
+    },
+    "Ice Armor": {
+      "record_sha256": "6b4ad4471eeb655af5c409ee0488f3d8df5f055ef1f093ad248ad1fce65d0c04",
+      "missing_paths": [
+        "res://Items/Exclusive/IceArmor.tscn"
+      ]
+    },
+    "Ice Dragon": {
+      "record_sha256": "9986043280bda1b5b63f9fe653d72bfbd97d52251eda9fafd13590979f0d2790",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/IceDragonAnimation.tscn",
+        "res://Items/Exclusive/IceDragon.tscn"
+      ]
+    },
+    "Ice Flower": {
+      "record_sha256": "7e788a6b7d8660156eac3fb48a799b62413818354ad05dd138208fbaba2e8bda",
+      "missing_paths": [
+        "res://Items/Exclusive/IceFlower.tscn"
+      ]
+    },
+    "Inner Power": {
+      "record_sha256": "10bafa9693dc0da86cad2a9fdc380f7da7c4f0f7ab4a4c3ee04b4522848232e7",
+      "missing_paths": [
+        "res://Items/Exclusive/InnerPower.tscn"
+      ]
+    },
+    "Investment Opportunity": {
+      "record_sha256": "58064b295f40aaf8c035caf1716143771d70200d1339703f5ed860fca3431a12",
+      "missing_paths": [
+        "res://Items/Exclusive/InvestmentOpportunity.tscn"
+      ]
+    },
+    "Joker": {
+      "record_sha256": "49236996681f0d9b4ac785b39b5125f678d15bf2629332f874573000f1f54d0b",
+      "missing_paths": [
+        "res://Items/Exclusive/Joker.tscn"
+      ]
+    },
+    "Just Stats": {
+      "record_sha256": "d9240e0bd7020e8381cdaaf948692d7786f47e85e7c5b6d2d4ce5097a1e12b84",
+      "missing_paths": [
+        "res://Items/Exclusive/JustStats.tscn"
+      ]
+    },
+    "Jynx Staff": {
+      "record_sha256": "a7a2b110db76887cf7f4beef562c8559a0eb1fb79756a3089f3f3b48c7bba873",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/JynxStaffAnimation.tscn",
+        "res://Items/Exclusive/JynxStaff.tscn"
+      ]
+    },
+    "Jynx torquilla": {
+      "record_sha256": "7a3ac899ac514d186a713db2d517576152b2c0dfdf209fda07c90bacc24effdf",
+      "missing_paths": [
+        "res://Items/Jynxtorquilla.tscn"
+      ]
+    },
+    "Katana": {
+      "record_sha256": "eb66636e40ed50241b0e9aa993319e165c4397ece2019788deca2a3a3d273ae1",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/KatanaAnimation.tscn",
+        "res://Items/Exclusive/Katana.tscn"
+      ]
+    },
+    "King Crown": {
+      "record_sha256": "fab29286415fb0e89e32b2e5842f6f1a0a6517e3e79b6799d65d2d480470a011",
+      "missing_paths": [
+        "res://Items/Exclusive/KingCrown.tscn"
+      ]
+    },
+    "King Goobert": {
+      "record_sha256": "f7703bbf5e74d8da42b28f7220cd29528af7fac227858d0d642c01573a9bc6f8",
+      "missing_paths": [
+        "res://Items/Exclusive/KingGoobert.tscn"
+      ]
+    },
+    "King of the Bling": {
+      "record_sha256": "28004e536d2e90c7a1e4171e48e509bd059d8251c409d20e1b3e2c9547a73cf9",
+      "missing_paths": [
+        "res://Items/Exclusive/KingoftheBling.tscn"
+      ]
+    },
+    "Knife to Meet You": {
+      "record_sha256": "3b8dd02aaec214b572b8d342d0be2fd5b453368fe0af214e7cdd1b6413377b7c",
+      "missing_paths": [
+        "res://Items/Exclusive/KnifetoMeetYou.tscn"
+      ]
+    },
+    "Leaf Badge": {
+      "record_sha256": "2398c0849074be32368983fa55827318f9a326ade49864fd802f5b2bfbd0e26c",
+      "missing_paths": [
+        "res://Items/Exclusive/LeafBadge.tscn"
+      ]
+    },
+    "Leather Boots": {
+      "record_sha256": "c332e7df159e3d7b30938877ac3f12dd9d00e03a033c2f4abb203e4a5044649d",
+      "missing_paths": [
+        "res://Items/LeatherBoots.tscn"
+      ]
+    },
+    "Leather Helm": {
+      "record_sha256": "c365c2feca4df0ad723c9a9c51fa68a7a2770ad6fae960009e45d75e5532ab87",
+      "missing_paths": [
+        "res://Items/LeatherHelm.tscn"
+      ]
+    },
+    "Level Up": {
+      "record_sha256": "198a5e66683b0800a6b968c304934474739fea81f06ad2236ae7c66cd3028b06",
+      "missing_paths": [
+        "res://Items/Exclusive/LevelUp.tscn"
+      ]
+    },
+    "Light Flower": {
+      "record_sha256": "1e21ea2e9db30c52f7835f9953dcca53898327606de20cc1b18daf0ddbf2dcf1",
+      "missing_paths": [
+        "res://Items/Exclusive/LightFlower.tscn"
+      ]
+    },
+    "Light Goobert": {
+      "record_sha256": "1e428d89c127f684d5f38b664a87f99d014d74410cde896d2a4de6d3707666ca",
+      "missing_paths": [
+        "res://Items/LightGoobert.tscn"
+      ]
+    },
+    "Lightning Potion": {
+      "record_sha256": "b16c0e22311975ff3abac2f1e00f8263cb6823c5e32bfa9b3b7a56ddb2efb7f8",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/LightningPotionAnimation.tscn",
+        "res://Items/Exclusive/LightningPotion.tscn"
+      ]
+    },
+    "Lightning Staff": {
+      "record_sha256": "2e017fc287fc32e33d4df8c518cf934c212eccaa637dfe0c16da8cfd2c2085ca",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/LightningStaffAnimation.tscn",
+        "res://Items/Exclusive/LightningStaff.tscn"
+      ]
+    },
+    "Lightsaber": {
+      "record_sha256": "d5436eabd8b8c8b9dc22209eee1550fd628ef493ad9dcb95b3c9905fc572e5f5",
+      "missing_paths": [
+        "res://Items/Animations/LightsaberAnimation.tscn",
+        "res://Items/Lightsaber.tscn"
+      ]
+    },
+    "Little Mimic": {
+      "record_sha256": "88c0145b59eff59376bbab41457f664ddee28e8d33c19d2d940fb7f5b16dbc68",
+      "missing_paths": [
+        "res://Items/Exclusive/LittleMimic.tscn"
+      ]
+    },
+    "Long Spear": {
+      "record_sha256": "ffe1cf755fa067d52304ae73b8404cbae2abfeb21defb5dd710f5529a2a38cb9",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/LongSpearAnimation.tscn",
+        "res://Items/Exclusive/LongSpear.tscn"
+      ]
+    },
+    "Lootbox": {
+      "record_sha256": "42cf75c9a911c48780913a847176c76bd83fbf5a24ca9d389119903af7669b12",
+      "missing_paths": [
+        "res://Items/Exclusive/Lootbox.tscn"
+      ]
+    },
+    "Lucky Bow": {
+      "record_sha256": "d3d4d4f029e121be19c67b1f53fdb8c649b7697ca84ea72ee4a1288f339b177a",
+      "missing_paths": [
+        "res://Items/Animations/LuckyBowAnimation.tscn",
+        "res://Items/LuckyBow.tscn"
+      ]
+    },
+    "Lucky Cat": {
+      "record_sha256": "7d768b91d6db3349fa46f98e6df9f93f4b8224a303c45b809050a303f7d89d35",
+      "missing_paths": [
+        "res://Items/Exclusive/LuckyCat.tscn"
+      ]
+    },
+    "Lucky Piggy": {
+      "record_sha256": "8c11a82d477688a2f9397f4708cfb155cd8f62a3aa2a8b861691ce1480f07f6f",
+      "missing_paths": [
+        "res://Items/LuckyPiggy.tscn"
+      ]
+    },
+    "Lucky Shortbow": {
+      "record_sha256": "3abe900f7fbc628029646a26973ba42275ed10ddac9b3055d1788af44d77920d",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/LuckyShortbowAnimation.tscn",
+        "res://Items/Exclusive/LuckyShortbow.tscn"
+      ]
+    },
+    "Lump of Coal": {
+      "record_sha256": "d4dc51f4325ba7350bf60c912608782ffb10fb4c475aad27baae5b9d7da9cd6c",
+      "missing_paths": [
+        "res://Items/Gems/LumpofCoal.tscn"
+      ]
+    },
+    "Mage Hat": {
+      "record_sha256": "24e4c28448659b62b7c4e177e6111d66195b59c924d91a6af8a574af2a7b4b9e",
+      "missing_paths": [
+        "res://Items/Exclusive/MageHat.tscn"
+      ]
+    },
+    "Magic Badge": {
+      "record_sha256": "bc8cfdb9ff94192d3809cfb0e18a84c318d1a7c0343c82eb336be72372c06198",
+      "missing_paths": [
+        "res://Items/Exclusive/MagicBadge.tscn"
+      ]
+    },
+    "Magic Collar": {
+      "record_sha256": "3945ae10da4d173451e212b11d69f7c8cc02727955aa235f2c14261ac6742dd2",
+      "missing_paths": [
+        "res://Items/Exclusive/MagicCollar.tscn"
+      ]
+    },
+    "Magic Ring": {
+      "record_sha256": "5dd0b1ae9b8025b2cad621afc69f0ed2645842092fa8bd06068b238c51d6d963",
+      "missing_paths": [
+        "res://Items/Exclusive/MagicRing.tscn"
+      ]
+    },
+    "Magic Staff": {
+      "record_sha256": "5a4fcd57a6f8e671579df7b1ba48fd7b330adc851c77297dcad3f9bd489c8a80",
+      "missing_paths": [
+        "res://Items/Animations/MagicStaffAnimation.tscn",
+        "res://Items/MagicStaff.tscn"
+      ]
+    },
+    "Magic Torch": {
+      "record_sha256": "5efd0827f324fb480f94d43aa9f64fb05820d0466f449a3850d80ae49317d927",
+      "missing_paths": [
+        "res://Items/Animations/MagicTorchAnimation.tscn",
+        "res://Items/MagicTorch.tscn"
+      ]
+    },
+    "Magitecc Armor": {
+      "record_sha256": "6c48f38fa0aaf00db97bfce5e95113f02b5d6719de54f18a5ff15c960bb955ba",
+      "missing_paths": [
+        "res://Items/Exclusive/MagiteccArmor.tscn"
+      ]
+    },
+    "Mana Crystal": {
+      "record_sha256": "56939f638c269ed86a0f92e4fd6cfcc065fc368f67627b0ce9f9a0b892224082",
+      "missing_paths": [
+        "res://Items/Exclusive/ManaCrystal.tscn"
+      ]
+    },
+    "Mana Mastery": {
+      "record_sha256": "94b832a642c7787008ffa12a2e5e6bc9f5239164d8b72440121cd05e157602c1",
+      "missing_paths": [
+        "res://Items/Exclusive/ManaMastery.tscn"
+      ]
+    },
+    "Mana Orb": {
+      "record_sha256": "0d622da42dc191c3610f4848b39e9bade04f8a927367d4cd6281707b501e64bb",
+      "missing_paths": [
+        "res://Items/ManaOrb.tscn"
+      ]
+    },
+    "Mana Potion": {
+      "record_sha256": "936b48f9f7f1334f5b3167543008a0920d1b9474aee9686cb1c7af473f22171e",
+      "missing_paths": [
+        "res://Items/Animations/ManaPotionAnimation.tscn",
+        "res://Items/ManaPotion.tscn"
+      ]
+    },
+    "Mananana": {
+      "record_sha256": "4a9e68a4105c03a12e73e81f0703890c2d2f4046a8587e1918736dd61d0a392e",
+      "missing_paths": [
+        "res://Items/Exclusive/Mananana.tscn"
+      ]
+    },
+    "Manathirst": {
+      "record_sha256": "7e6b2f7e1633b2e13433b310f6567fbd39c8012200ecf6bfb1d3d84c8e70a18c",
+      "missing_paths": [
+        "res://Items/Animations/ManathirstAnimation.tscn",
+        "res://Items/Manathirst.tscn"
+      ]
+    },
+    "Markswoman": {
+      "record_sha256": "c0d53a71211b86044cc94cc98fbcb82c246af299a062695025953ff5845c23e9",
+      "missing_paths": [
+        "res://Items/Exclusive/Markswoman.tscn"
+      ]
+    },
+    "Mecha Bat": {
+      "record_sha256": "85fcda4080c93d508408e2554a85bc67570e91c54ee43aacc3d7a0be556d6606",
+      "missing_paths": [
+        "res://Items/Exclusive/MechaBat.tscn"
+      ]
+    },
+    "Mega Clover": {
+      "record_sha256": "cad0084ab3d92e9ab3a6a34b77da85ba62f19f9a6b7bc8d3646a37e6abeaf090",
+      "missing_paths": [
+        "res://Items/Exclusive/MegaClover.tscn"
+      ]
+    },
+    "Mercury Elemental": {
+      "record_sha256": "2d061dbc8bebf5285d8283db12426b39c56d95773312d1ed6e6db704bf67b635",
+      "missing_paths": [
+        "res://Items/Exclusive/MercuryElemental.tscn"
+      ]
+    },
+    "Miss Fortune": {
+      "record_sha256": "bcf58f5c72214971206def610b17db6c08af817cdda062cc352ba33c59452276",
+      "missing_paths": [
+        "res://Items/Exclusive/MissFortune.tscn"
+      ]
+    },
+    "Molten Dagger": {
+      "record_sha256": "fe7f60e04c41643cab04559f7c41d37793d69ac282b6174cf4abb5706a57e529",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/MoltenDaggerAnimation.tscn",
+        "res://Items/Exclusive/MoltenDagger.tscn"
+      ]
+    },
+    "Molten Greatsword": {
+      "record_sha256": "90bef2612ad387fce6ae8c2844269d4426f3f51c638f07520eab9cc853bf5552",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/MoltenGreatswordAnimation.tscn",
+        "res://Items/Exclusive/MoltenGreatsword.tscn"
+      ]
+    },
+    "Molten Spear": {
+      "record_sha256": "175e601b8d116e8126fa60553a1c1c1b86b7c6c902beb6f816c18c221fe883f7",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/MoltenSpearAnimation.tscn",
+        "res://Items/Exclusive/MoltenSpear.tscn"
+      ]
+    },
+    "Molten Spear2": {
+      "record_sha256": "8b7acdfdaf343f6f969bd9f6b31228d2bc2fecdbc2bd343a8585194fabe79055",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/MoltenSpear2Animation.tscn",
+        "res://Items/Exclusive/MoltenSpear2.tscn"
+      ]
+    },
+    "Moon Armor": {
+      "record_sha256": "fa09f9f2575f3b3b157cf3c742f92f6148f71956062ebdab0c2d38e9315f5b1b",
+      "missing_paths": [
+        "res://Items/Exclusive/MoonArmor.tscn"
+      ]
+    },
+    "Moon Shield": {
+      "record_sha256": "b7528208371fccd1aa11c8707a8e37b9a8e9283666065fbca304c0d3f1fb0c9e",
+      "missing_paths": [
+        "res://Items/MoonShield.tscn"
+      ]
+    },
+    "More Stats": {
+      "record_sha256": "520dad801f768e6670aa03bc7e81b261fc3c62235b28a04b14b492038c7fdc5b",
+      "missing_paths": [
+        "res://Items/Exclusive/MoreStats.tscn"
+      ]
+    },
+    "Mr Struggles": {
+      "record_sha256": "5aadbbf28a3a1874869b367fe1a82ad14373eb4507ef8626321aa16c5d24d97d",
+      "missing_paths": [
+        "res://Items/MrStruggles.tscn"
+      ]
+    },
+    "Mrs Struggles": {
+      "record_sha256": "1825186941e22c5bcf3653c7f48b900bfd2c13e1af2759bbecba193ac50cc2a0",
+      "missing_paths": [
+        "res://Items/Exclusive/MrsStruggles.tscn"
+      ]
+    },
+    "Mushroom Farm": {
+      "record_sha256": "c9bff09f7480eec21d5baff92be95000d0ef153d2ed313c6f782daa6cab7cdbb",
+      "missing_paths": [
+        "res://Items/Exclusive/MushroomFarm.tscn"
+      ]
+    },
+    "No Rush Please": {
+      "record_sha256": "af71a42b5df742e4946b0b268b0bd9ae547a330946fc1c5e8841c44bcc95e937",
+      "missing_paths": [
+        "res://Items/Exclusive/NoRushPlease.tscn"
+      ]
+    },
+    "Null Blade": {
+      "record_sha256": "5a8a0c53fa82ba4486b02ac222a74e5e3d967e725736e43b2a24cc118875a0d2",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/NullBladeAnimation.tscn",
+        "res://Items/Exclusive/NullBlade.tscn"
+      ]
+    },
+    "Obsidian Dragon": {
+      "record_sha256": "7edca7af4946b3eb349d488f5ed5f60d73129bf27f29ea3b1339fad88cc1bc3b",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ObsidianDragonAnimation.tscn",
+        "res://Items/Exclusive/ObsidianDragon.tscn"
+      ]
+    },
+    "Onion Cutter": {
+      "record_sha256": "e78e3e0c42e0623173546c65325fd6afc038aace8c511f4b3be66193ee99ce8a",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/OnionCutterAnimation.tscn",
+        "res://Items/Exclusive/OnionCutter.tscn"
+      ]
+    },
+    "Owl Spirit": {
+      "record_sha256": "7e57c40ec3bb31fb53f13f19fe10b82e16c395afee1226aa04da8d7142599d06",
+      "missing_paths": [
+        "res://Items/Exclusive/OwlSpirit.tscn"
+      ]
+    },
+    "Pan": {
+      "record_sha256": "faf8233db904faf052acfdfc51c7e2b1af6db77cc3a7aa9a4002e345e8ae663c",
+      "missing_paths": [
+        "res://Items/Animations/PanAnimation.tscn",
+        "res://Items/Pan.tscn"
+      ]
+    },
+    "Pandamonium": {
+      "record_sha256": "d9680940e2b8fe7f575e6ecf2a842833f600c9ee59c9fd4a28e883515de68bdd",
+      "missing_paths": [
+        "res://Items/Animations/PandamoniumAnimation.tscn",
+        "res://Items/Pandamonium.tscn"
+      ]
+    },
+    "Paradise Birb": {
+      "record_sha256": "4decb8768a38e46aa4fad74ef065fb6c2827f16a3175c83a11d2d3cdc131ccd0",
+      "missing_paths": [
+        "res://Items/Exclusive/ParadiseBirb.tscn"
+      ]
+    },
+    "Perfect Emerald": {
+      "record_sha256": "255c03d44eda84cb444edfa907d0ff6457e56cc6a1ff37cbc09c7e0dbf73d954",
+      "missing_paths": [
+        "res://Items/Gems/PerfectEmerald.tscn"
+      ]
+    },
+    "Perfect Ruby": {
+      "record_sha256": "e4a3738626d113b7cac0c9cc89e15ee22eecfb7fcb0866029cbb307f5d50a94f",
+      "missing_paths": [
+        "res://Items/Gems/PerfectRuby.tscn"
+      ]
+    },
+    "Perfect Sapphire": {
+      "record_sha256": "869ac64a50b24b75359f4c7bf4cf8420722cd9905965c467801bcc370a804e0c",
+      "missing_paths": [
+        "res://Items/Gems/PerfectSapphire.tscn"
+      ]
+    },
+    "Perfect Topaz": {
+      "record_sha256": "a3bdcbdbd204acacb09a694c80018755cd88bfa81ece3569889a356ec4acdc53",
+      "missing_paths": [
+        "res://Items/Gems/PerfectTopaz.tscn"
+      ]
+    },
+    "Phoenix": {
+      "record_sha256": "95a81673b48d84c49864e129f1c7fbe396f89d917cbba60d15f6f87e81ce7dec",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/PhoenixAnimation.tscn",
+        "res://Items/Exclusive/Phoenix.tscn"
+      ]
+    },
+    "Phoenix2": {
+      "record_sha256": "b97ee4e6030405d613bccd072fe3de198c75f98bf8c928f15d0306cf28dbf6de",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/Phoenix2Animation.tscn",
+        "res://Items/Exclusive/Phoenix2.tscn"
+      ]
+    },
+    "Piercing Arrow": {
+      "record_sha256": "0efdd7068f3bb2a02fa76096fbe4847b21451c906b89eca69f1ac7eb1d7c647b",
+      "missing_paths": [
+        "res://Items/PiercingArrow.tscn"
+      ]
+    },
+    "Piggy Pinata": {
+      "record_sha256": "75c85256889d78d0dafaa850ad8e3455edd10936c4984cf3db7ad29d8daf243b",
+      "missing_paths": [
+        "res://Items/Exclusive/PiggyPinata.tscn"
+      ]
+    },
+    "Piggy of Riches": {
+      "record_sha256": "130bbcf70d30150369a0e5ebf32e3b64ef716468fd797ddbee56740ef576b808",
+      "missing_paths": [
+        "res://Items/Exclusive/PiggyofRiches.tscn"
+      ]
+    },
+    "Pine Protector": {
+      "record_sha256": "a64e64d5f91a704726dd18c51024f5bdec4da4ed3f8ae070ec7254f1c57a1067",
+      "missing_paths": [
+        "res://Items/Exclusive/PineProtector.tscn"
+      ]
+    },
+    "Pineapple": {
+      "record_sha256": "3c9d53cd4a6e5699cb9f85b925766f5312550041191c87487d1f938ee95a5b14",
+      "missing_paths": [
+        "res://Items/Pineapple.tscn"
+      ]
+    },
+    "Plastic Cube": {
+      "record_sha256": "6d835281ae7279d7743788e570d9d8652e3e33b29bce4b5d8fc08c021e56180b",
+      "missing_paths": [
+        "res://Items/Exclusive/PlasticCube.tscn"
+      ]
+    },
+    "Platin Customer Card": {
+      "record_sha256": "5d9946e2244a4fd42434ea3efa2a15bd24f50e69fc378c2a718bf8d1ed9eff94",
+      "missing_paths": [
+        "res://Items/PlatinCustomerCard.tscn"
+      ]
+    },
+    "Poison Bow": {
+      "record_sha256": "4b8f8b1485fca66afa2a6a3a9d984ccb920be07375c70c241b8f0e23b00ccd06",
+      "missing_paths": [
+        "res://Items/Animations/PoisonBowAnimation.tscn",
+        "res://Items/PoisonBow.tscn"
+      ]
+    },
+    "Poison Frog": {
+      "record_sha256": "adc36a1c61d1186ed68f36a226f7e0510e910543bcb80d9f884d83322f68f83e",
+      "missing_paths": [
+        "res://Items/Exclusive/PoisonFrog.tscn"
+      ]
+    },
+    "Poison Goobert": {
+      "record_sha256": "0e65ab2210065d5a08951015d5f999dea3bf87cf9be05b5d9d00166dc0dbedb7",
+      "missing_paths": [
+        "res://Items/PoisonGoobert.tscn"
+      ]
+    },
+    "Poison Grenade": {
+      "record_sha256": "f4c99173c7df6cf9380bf901317d4df5ac6d31ba1baa200822c42a787bb28b3b",
+      "missing_paths": [
+        "res://Items/Exclusive/PoisonGrenade.tscn"
+      ]
+    },
+    "Poison Shortbow": {
+      "record_sha256": "e8778e98c0dace3450b3a5d3f9ae01c780ebcb710b794bd0b66a79f9ca68bdaa",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/PoisonShortbowAnimation.tscn",
+        "res://Items/Exclusive/PoisonShortbow.tscn"
+      ]
+    },
+    "Poison Spear": {
+      "record_sha256": "9f5abee362644e0f222c25a5b00a40f9f62e14ee7e5dfa8c72a4c9dfa3b4ac2d",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/PoisonSpearAnimation.tscn",
+        "res://Items/Exclusive/PoisonSpear.tscn"
+      ]
+    },
+    "Pop": {
+      "record_sha256": "07f823e0e60ec63793f3ae75bf6300504d5ec0d4404b2684ae3779a54ed0db85",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/PopAnimation.tscn",
+        "res://Items/Exclusive/Pop.tscn"
+      ]
+    },
+    "Portable Altar": {
+      "record_sha256": "d5fe38ede0ba42e303bc7040d98d63bc20f6f597fb3ebe1bbfcfdbce24145d41",
+      "missing_paths": [
+        "res://Items/Exclusive/PortableAltar.tscn"
+      ]
+    },
+    "Potion Belt": {
+      "record_sha256": "2a22e97e9364c809263c102256b2f3e0674c573efed2ed037346f352a186b0d9",
+      "missing_paths": [
+        "res://Items/PotionBelt.tscn"
+      ]
+    },
+    "Power Puppy": {
+      "record_sha256": "21b1925899fe9e2524dd18c251070504570637f4827a1b978602aa92db3174ae",
+      "missing_paths": [
+        "res://Items/Exclusive/PowerPuppy.tscn"
+      ]
+    },
+    "Power of the Moon": {
+      "record_sha256": "dd84ded2d6e4cca23a76d6f956637f1b0f903717225a5dc1f4a58c78da162318",
+      "missing_paths": [
+        "res://Items/Exclusive/PoweroftheMoon.tscn"
+      ]
+    },
+    "Present": {
+      "record_sha256": "fd5666e409a168c6d5a5ff9acccfb67f08659b950bcdfb2689ca9954c52eaf42",
+      "missing_paths": [
+        "res://Items/Present.tscn"
+      ]
+    },
+    "Prismatic Sword": {
+      "record_sha256": "2114677048641721ee7ad3d8ddb6bd6be07cae2ae6dcc311e200d3b523050551",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/PrismaticSwordAnimation.tscn",
+        "res://Items/Exclusive/PrismaticSword.tscn"
+      ]
+    },
+    "Prismatic Wand": {
+      "record_sha256": "4453e8508225cd3e760fda214cf83905134d9efe3b1316bdbba71666af03a173",
+      "missing_paths": [
+        "res://Items/Exclusive/PrismaticWand.tscn"
+      ]
+    },
+    "Protective Purse": {
+      "record_sha256": "99af41b163cf126a7f1bbbb3c2d52671ff37736d77d9f3590db91b7c7781ff1d",
+      "missing_paths": [
+        "res://Items/ProtectivePurse.tscn"
+      ]
+    },
+    "Pumpkin": {
+      "record_sha256": "46ecea94f6bac91736ecab9e41f2a007f671569ca7e02649c8014f57069b5bf1",
+      "missing_paths": [
+        "res://Items/Animations/PumpkinAnimation.tscn",
+        "res://Items/Pumpkin.tscn"
+      ]
+    },
+    "Puzzle Badge": {
+      "record_sha256": "b7e98904a26874d15189976c1f3b9794df7d56166f8177ba8bba3097e7bdafff",
+      "missing_paths": [
+        "res://Items/Exclusive/PuzzleBadge.tscn"
+      ]
+    },
+    "Puzzlebag J": {
+      "record_sha256": "f9cadecfbc91de27845f3d6bfd164e0bf4df0aacb26bba0a29003e63349b51f3",
+      "missing_paths": [
+        "res://Items/Exclusive/PuzzlebagJ.tscn"
+      ]
+    },
+    "Puzzlebox": {
+      "record_sha256": "744e226bacb34de9ada6d8d0483776571ec1897dc08a0a3d27f6876ed81e6fc1",
+      "missing_paths": [
+        "res://Items/Exclusive/Puzzlebox.tscn"
+      ]
+    },
+    "Rainbow Badge": {
+      "record_sha256": "28b69f574cff5c8333423f0f9652da72c316a6a5cd041c2d14054ec79af0674a",
+      "missing_paths": [
+        "res://Items/Exclusive/RainbowBadge.tscn"
+      ]
+    },
+    "Rainbow Goobert": {
+      "record_sha256": "6ddbb8243b4d64b7b1be771beb4a513fb43e6bc170d807c4a5dd9cf808d9a790",
+      "missing_paths": [
+        "res://Items/RainbowGoobert.tscn"
+      ]
+    },
+    "Rainbow Goobert Adventurer": {
+      "record_sha256": "1242ae1598a4c00152660e142c89ac78ab8c845a8b6d9e0c324fa6bf17d90ed2",
+      "missing_paths": [
+        "res://Items/Exclusive/RainbowGoobertAdventurer.tscn"
+      ]
+    },
+    "Rainbow Goobert Berserker": {
+      "record_sha256": "56146b1cca076459de79e48da5b11b01ab157eaf974e0fe72460842368b8c5bb",
+      "missing_paths": [
+        "res://Items/Exclusive/RainbowGoobertBerserker.tscn"
+      ]
+    },
+    "Rainbow Goobert Engineer": {
+      "record_sha256": "91ef25b64525a98eb39482a222d339edeac60ff6ba949d767ea7e859de38ac1e",
+      "missing_paths": [
+        "res://Items/Exclusive/RainbowGoobertEngineer.tscn"
+      ]
+    },
+    "Rainbow Goobert Mage": {
+      "record_sha256": "eb9553db8318b3f4bab2a082ee2ef9031f7cc2358fd58a99e523079622f28f30",
+      "missing_paths": [
+        "res://Items/Exclusive/RainbowGoobertMage.tscn"
+      ]
+    },
+    "Rainbow Goobert Pyromancer": {
+      "record_sha256": "2be5d930117b25b234f7ff47ee593e424cc5cddf1057da4588347b519c66b935",
+      "missing_paths": [
+        "res://Items/Exclusive/RainbowGoobertPyromancer.tscn"
+      ]
+    },
+    "Rainbow Goobert Ranger": {
+      "record_sha256": "1fcbc6486feb1a0a5e8093ca2df5b05d6cd0c597ffbe35488c5439c318bb4ddf",
+      "missing_paths": [
+        "res://Items/RainbowGoobertRanger.tscn"
+      ]
+    },
+    "Rainbow Orb": {
+      "record_sha256": "dcc4e5bb8458f16da1debed44a7b079eb0fed15362ccd29b213308de830df2e0",
+      "missing_paths": [
+        "res://Items/Exclusive/RainbowOrb.tscn"
+      ]
+    },
+    "Rainbow Potion": {
+      "record_sha256": "f0be83c5fdbb960b967751f81849a8a58e6f2ed42c55c3904b09afda8dd1a6aa",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/RainbowPotionAnimation.tscn",
+        "res://Items/Exclusive/RainbowPotion.tscn"
+      ]
+    },
+    "Random Loadout Bag": {
+      "record_sha256": "394bf2950345d337a1bf5b16df9c6f2b59b56d4fdd38251ae6ffa124dfa15c96",
+      "missing_paths": [
+        "res://Items/Exclusive/RandomLoadoutBag.tscn"
+      ]
+    },
+    "Ranger Bag": {
+      "record_sha256": "7dffef2ccc1813e5c4633f34584b159737efe8e35c02bdbec7df412fcca620cb",
+      "missing_paths": [
+        "res://Items/RangerBag.tscn"
+      ]
+    },
+    "Rat": {
+      "record_sha256": "55417e618e49c667d7f1d1179e9118bbd6da3aa0509e98ec40026f6da57a458f",
+      "missing_paths": [
+        "res://Items/Exclusive/Rat.tscn"
+      ]
+    },
+    "Rat Chef": {
+      "record_sha256": "cc6497665acc7f65fbffc0d3b6100693c2a67486056a6309d07d151cea26e361",
+      "missing_paths": [
+        "res://Items/Exclusive/RatChef.tscn"
+      ]
+    },
+    "Regular Amethyst": {
+      "record_sha256": "d47c47bf8e8ec53f117ec5c58fb95e0ad4a7fffd87d4a7e9f48110bbd486cc9c",
+      "missing_paths": [
+        "res://Items/Gems/RegularAmethyst.tscn"
+      ]
+    },
+    "Regular Emerald": {
+      "record_sha256": "35539d5e3f6490473137888fa179f32ff8918a6af7a1a199a6b5a4f28720c1c9",
+      "missing_paths": [
+        "res://Items/Gems/RegularEmerald.tscn"
+      ]
+    },
+    "Regular Ruby": {
+      "record_sha256": "c9fd5fe690d4b1f88bfd72b4d1a2ac44c8a93e89717c8b983f02b0c4ebc23883",
+      "missing_paths": [
+        "res://Items/Gems/RegularRuby.tscn"
+      ]
+    },
+    "Regular Topaz": {
+      "record_sha256": "8b8adf8ded7b7d52b40be5af63fdcfdcf9e50c9ad4e6a4230798ff631f44ed2a",
+      "missing_paths": [
+        "res://Items/Gems/RegularTopaz.tscn"
+      ]
+    },
+    "Relic Case": {
+      "record_sha256": "0c5ebdd90cfab1ecaec2f0e442463da1aa8d88c76a074b38e72edd837b8b9df4",
+      "missing_paths": [
+        "res://Items/Exclusive/RelicCase.tscn"
+      ]
+    },
+    "Resistor": {
+      "record_sha256": "f3143df50a02c2f9b210cd1f70d0e225539955f9615b3d579413463cf67e7f2d",
+      "missing_paths": [
+        "res://Items/Exclusive/Resistor.tscn"
+      ]
+    },
+    "Reverse": {
+      "record_sha256": "e5e813f9965105704c7e5c64e459f5e867d36c6c2da1d106ad23eb7d5b910f4a",
+      "missing_paths": [
+        "res://Items/Exclusive/Reverse.tscn"
+      ]
+    },
+    "Rib Saw Blade": {
+      "record_sha256": "488b0b1211a216ddb18bf371b17e4b96d09af027b2479ab506339f31858b060d",
+      "missing_paths": [
+        "res://Items/Animations/RibSawBladeAnimation.tscn",
+        "res://Items/RibSawBlade.tscn"
+      ]
+    },
+    "Robodog": {
+      "record_sha256": "3d478487068f8eeacc3b019f393519c96b0eb515ded6fc90a4f0284549900ac5",
+      "missing_paths": [
+        "res://Items/Exclusive/Robodog.tscn"
+      ]
+    },
+    "Ruby Chonk": {
+      "record_sha256": "c3036db0eb4e8191c96d4528c2988c6cf836e0631c2dbdc6ee4404586d59bfa1",
+      "missing_paths": [
+        "res://Items/Animations/RubyChonkAnimation.tscn",
+        "res://Items/RubyChonk.tscn"
+      ]
+    },
+    "Ruby Egg": {
+      "record_sha256": "89901f1d81cf4cd195257ff7ea2ee7e15a9a74b085ebf91c5b5bea260a5739ac",
+      "missing_paths": [
+        "res://Items/RubyEgg.tscn"
+      ]
+    },
+    "Ruby Whelp": {
+      "record_sha256": "66fda91b863a3ccf981c6e8e96e2fac7688ef124cc25d8e23c84844849500ec8",
+      "missing_paths": [
+        "res://Items/Animations/RubyWhelpAnimation.tscn",
+        "res://Items/RubyWhelp.tscn"
+      ]
+    },
+    "Sapphire Egg": {
+      "record_sha256": "cc318bb0a65e60875227d875753d936b3f5c79a98f2e377d25b80555ff09e6f2",
+      "missing_paths": [
+        "res://Items/Exclusive/SapphireEgg.tscn"
+      ]
+    },
+    "Sapphire Whelp": {
+      "record_sha256": "037636869a073544ebba6a0d7dbe6ff86473f6cb938c2cc895550cf953e4ff17",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/SapphireWhelpAnimation.tscn",
+        "res://Items/Exclusive/SapphireWhelp.tscn"
+      ]
+    },
+    "Scale": {
+      "record_sha256": "2a30b1f9ce04949706fa3de6dfacbe0f7351e37b24598f4c3f0258e696d5aa87",
+      "missing_paths": [
+        "res://Items/Exclusive/Scale.tscn"
+      ]
+    },
+    "Scholar Bag": {
+      "record_sha256": "dded6cc27eac386b492c3b5df99dbb93baf0ade0c28b9f9811ce402924719a44",
+      "missing_paths": [
+        "res://Items/Exclusive/ScholarBag.tscn"
+      ]
+    },
+    "Seal the Deal": {
+      "record_sha256": "e7536cbc0f774c7bafe8c3900b682e27883cb94f050d72c94ad448b3e4425514",
+      "missing_paths": [
+        "res://Items/Exclusive/SealtheDeal.tscn"
+      ]
+    },
+    "Serpent Staff": {
+      "record_sha256": "ee1d808683ec62b9bd95fa230976381e2a0b963bb57701df1e7e2c4745ae1e6b",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/SerpentStaffAnimation.tscn",
+        "res://Items/Exclusive/SerpentStaff.tscn"
+      ]
+    },
+    "Sewing Case": {
+      "record_sha256": "896d9d719fc47e5a8c7bf2310e0fa8af19b920c71b38c3e533823e26fcbb6356",
+      "missing_paths": [
+        "res://Items/Exclusive/SewingCase.tscn"
+      ]
+    },
+    "Shaman Mask": {
+      "record_sha256": "d51a2163c4adceb642e7f9ed3496c072abe664b61aaa6e1c3b89fa32ac8342ec",
+      "missing_paths": [
+        "res://Items/Exclusive/ShamanMask.tscn"
+      ]
+    },
+    "Shell Totem": {
+      "record_sha256": "c95cd60c3bb1b877ba4c1371e8d4f52c98b9534ab8b97533e7efac6b4f3b2362",
+      "missing_paths": [
+        "res://Items/Exclusive/ShellTotem.tscn"
+      ]
+    },
+    "Shelly": {
+      "record_sha256": "7ac1a072097b1209043255a8ebfa863acab5f605de7553f7e59935dc41f68fde",
+      "missing_paths": [
+        "res://Items/Exclusive/Shelly.tscn"
+      ]
+    },
+    "Shepherds Crook": {
+      "record_sha256": "bfca4868864c78351d8e07a36e214874f91030627655a83fb8fe17985f79ffcd",
+      "missing_paths": [
+        "res://Items/Exclusive/ShepherdsCrook.tscn"
+      ]
+    },
+    "Shielded": {
+      "record_sha256": "b5eca31d796cf3dedacfc22290ae3c6eb7ecb3794f3bf7c54849423eb3566f2b",
+      "missing_paths": [
+        "res://Items/Exclusive/Shielded.tscn"
+      ]
+    },
+    "Shiny Mantle": {
+      "record_sha256": "46aeb1b3832365261f3654704558e7204fdfafde871635b229acbec6e47fd112",
+      "missing_paths": [
+        "res://Items/Exclusive/ShinyMantle.tscn"
+      ]
+    },
+    "Shiny Shell": {
+      "record_sha256": "1a25b1196aefec5a0dd60fe193995269d8aea839980aab28b245ccaa9c112711",
+      "missing_paths": [
+        "res://Items/Exclusive/ShinyShell.tscn"
+      ]
+    },
+    "Shortbow": {
+      "record_sha256": "b4afc22ce2ddefe0b38a665d6b5e3fdaf59413c2727f476da54f218f4ad93719",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ShortbowAnimation.tscn",
+        "res://Items/Exclusive/Shortbow.tscn"
+      ]
+    },
+    "Shovel": {
+      "record_sha256": "5837d5dd7cc38f261a8da080345fcda4feaf565536b231d5763c5fbed55223fe",
+      "missing_paths": [
+        "res://Items/Animations/ShovelAnimation.tscn",
+        "res://Items/Shovel.tscn"
+      ]
+    },
+    "Skull": {
+      "record_sha256": "9ebb4b0c23978f1af12f19680a780cbc5f6e0cd2e796f1075e6e5d7a828117ae",
+      "missing_paths": [
+        "res://Items/Gems/Skull.tscn"
+      ]
+    },
+    "Skull Badge": {
+      "record_sha256": "3154a772fb42fbc451218dbaf520a0a50e42a21ad1b04f1c9dd5a14406084e5a",
+      "missing_paths": [
+        "res://Items/Exclusive/SkullBadge.tscn"
+      ]
+    },
+    "Slice of Toast": {
+      "record_sha256": "70747495ead6088bca72c93c2081dd5d256d79301460453cafca46403f7187fb",
+      "missing_paths": [
+        "res://Items/Exclusive/SliceofToast.tscn"
+      ]
+    },
+    "Slime Time": {
+      "record_sha256": "07e40b8d42b3f42315c5ebf294e4c41d00286148a058badcc65a12fffa6f293f",
+      "missing_paths": [
+        "res://Items/Exclusive/SlimeTime.tscn"
+      ]
+    },
+    "Sloth": {
+      "record_sha256": "d55474d0806c804f2081351f31c49ba7c0d997f220eb583303c1431acf3c080a",
+      "missing_paths": [
+        "res://Items/Exclusive/Sloth.tscn"
+      ]
+    },
+    "Smelly Barrier": {
+      "record_sha256": "218a0848ef8a69dbc99d401c9722c8f77a358fcc354be046e40c6e8b5c3df8a3",
+      "missing_paths": [
+        "res://Items/Exclusive/SmellyBarrier.tscn"
+      ]
+    },
+    "Snake": {
+      "record_sha256": "ab041267b415c1abbdf47bc66ce90dcd5e01c9a5ed8c65d5b45a9412cde99a68",
+      "missing_paths": [
+        "res://Items/Exclusive/Snake.tscn"
+      ]
+    },
+    "Snow Stick": {
+      "record_sha256": "a25096edecfc7fa30dc78c96f9e8d96abc52253f91c6415b0077093fae2a86dc",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/SnowStickAnimation.tscn",
+        "res://Items/Exclusive/SnowStick.tscn"
+      ]
+    },
+    "Snowball": {
+      "record_sha256": "16831fa30e637c9934d58c5e6f1d18718d0ce578b0e5eb61cd70daca25865bab",
+      "missing_paths": [
+        "res://Items/Exclusive/Snowball.tscn"
+      ]
+    },
+    "Snowcake": {
+      "record_sha256": "51e9247e154d65358d4489805fe194024d8064caae6c86b39767c78a20eab406",
+      "missing_paths": [
+        "res://Items/Exclusive/Snowcake.tscn"
+      ]
+    },
+    "Snowman": {
+      "record_sha256": "79a650afe3b3f31531e8f6d5e16a8d81ff5913ad683a6464e1f5b65cb7c92bc3",
+      "missing_paths": [
+        "res://Items/Exclusive/Snowman.tscn"
+      ]
+    },
+    "Snowmaster": {
+      "record_sha256": "b3d51e173995ce9d513c0cb48aaa255b04a4951890cc16d85415cf53567b55a1",
+      "missing_paths": [
+        "res://Items/Exclusive/Snowmaster.tscn"
+      ]
+    },
+    "Solaris": {
+      "record_sha256": "beb42e0dbdac97d38551d37a614f6688100d5f52b91c1947ad12b3174c76122e",
+      "missing_paths": [
+        "res://Items/Exclusive/Solaris.tscn"
+      ]
+    },
+    "Speak with Animals": {
+      "record_sha256": "cfa43ee030fdb33cf3b86f3a192518d1001d8bdb775681f7ff843c5f968536d4",
+      "missing_paths": [
+        "res://Items/Exclusive/SpeakwithAnimals.tscn"
+      ]
+    },
+    "Spectral Dagger": {
+      "record_sha256": "86d1e80323849b8bc424d05d471aeaeadd32529132964f204c81c140dd5ba9fd",
+      "missing_paths": [
+        "res://Items/Animations/SpectralDaggerAnimation.tscn",
+        "res://Items/SpectralDagger.tscn"
+      ]
+    },
+    "Spell Scroll Dark": {
+      "record_sha256": "9e9636d2d72b9797159c785ee0d658633b079d6575aae88e1056df6dc900bb27",
+      "missing_paths": [
+        "res://Items/Exclusive/SpellScrollDark.tscn"
+      ]
+    },
+    "Spell Scroll Frostbolt": {
+      "record_sha256": "e242f296aa4058e993e67129e3486dff52487846dbf94e1814ab0a7f2861b9f7",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/SpellScrollFrostboltAnimation.tscn",
+        "res://Items/Exclusive/SpellScrollFrostbolt.tscn"
+      ]
+    },
+    "Spell Scroll Ice": {
+      "record_sha256": "26899f5f04a7a4e82e401b430e122e496e3481d1dcf206f8da92507c14fa1908",
+      "missing_paths": [
+        "res://Items/Exclusive/SpellScrollIce.tscn"
+      ]
+    },
+    "Spell Scroll Light": {
+      "record_sha256": "5ab543490ce58b756cc9182db56cb6121fa76ce591e2b97a7f133e3ea6a7ecfd",
+      "missing_paths": [
+        "res://Items/Exclusive/SpellScrollLight.tscn"
+      ]
+    },
+    "Spell Scroll Nature": {
+      "record_sha256": "00b1127f3ec7c619307ef6d3bb809147384e85e289b2f3ed2e009408e7d85ba1",
+      "missing_paths": [
+        "res://Items/Exclusive/SpellScrollNature.tscn"
+      ]
+    },
+    "Spicy Banana": {
+      "record_sha256": "edadd61f6dbb7cd757e6fd9939fd33790987e9fb9c5798ce965468a8271a1343",
+      "missing_paths": [
+        "res://Items/Exclusive/SpicyBanana.tscn"
+      ]
+    },
+    "Spiked Collar": {
+      "record_sha256": "614ebdf69f17c5d0391ee54f10bac88b13f3b4850fa8958c82de69c59d781072",
+      "missing_paths": [
+        "res://Items/Exclusive/SpikedCollar.tscn"
+      ]
+    },
+    "Spiked Staff": {
+      "record_sha256": "026bdbb5040448153a48ed92b159102218fb30c3f3fb70b45d0ea682bce3c917",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/SpikedStaffAnimation.tscn",
+        "res://Items/Exclusive/SpikedStaff.tscn"
+      ]
+    },
+    "Spin to Win": {
+      "record_sha256": "23edcd99de8c6619d5b810de0e24a4cf4247076543cfe8b642778e89f4bb9f2c",
+      "missing_paths": [
+        "res://Items/Exclusive/SpintoWin.tscn"
+      ]
+    },
+    "Squirrel": {
+      "record_sha256": "ae2b7a14abee1b5ef5a2e442a582ebb2c6c2f164044c7de2641f74e702ff555c",
+      "missing_paths": [
+        "res://Items/Exclusive/Squirrel.tscn"
+      ]
+    },
+    "Squirrel Archer": {
+      "record_sha256": "0b2a5b72fce0a2f5e1866a748f3371295d23e132155a74a51730ffcfa80c081e",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/SquirrelArcherAnimation.tscn",
+        "res://Items/Exclusive/SquirrelArcher.tscn"
+      ]
+    },
+    "Stable Recombobulator": {
+      "record_sha256": "07a5f61af3f98d10c4698a231992d0c6a8493f5ebfae8c7642102114ccbe903f",
+      "missing_paths": [
+        "res://Items/Exclusive/StableRecombobulator.tscn"
+      ]
+    },
+    "Staff of Fire": {
+      "record_sha256": "c9b5086f04098561bb74b34bfe079e6012e6cc54cd6191b3fad9cfb9d775918c",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/StaffofFireAnimation.tscn",
+        "res://Items/Exclusive/StaffofFire.tscn"
+      ]
+    },
+    "Staff of Unhealing": {
+      "record_sha256": "6be55fcd2a9f9041de6b508cb68c1cad0094d3e6bb29ed5d8c307a95dd5f460f",
+      "missing_paths": [
+        "res://Items/StaffofUnhealing.tscn"
+      ]
+    },
+    "Stamina Sack": {
+      "record_sha256": "2fe154e9407832a64e79847f8d5dcfc6144039dff955c8b6912a9865faaecea9",
+      "missing_paths": [
+        "res://Items/StaminaSack.tscn"
+      ]
+    },
+    "Steel Dragon": {
+      "record_sha256": "adb4f2d81cafcadffc68bdfc7f5cf2aebdc7c338a858fd72c96e220ae139bca2",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/SteelDragonAnimation.tscn",
+        "res://Items/Exclusive/SteelDragon.tscn"
+      ]
+    },
+    "Steel Goobert": {
+      "record_sha256": "548ea7ecca04b251d91044cf085ca9be13e654a8aad71abf31b304f899578f7c",
+      "missing_paths": [
+        "res://Items/SteelGoobert.tscn"
+      ]
+    },
+    "Stone": {
+      "record_sha256": "55ea04e44905030b9a5567c73a8e66e19246332032c39f084698660c2de9ac4d",
+      "missing_paths": [
+        "res://Items/Animations/StoneAnimation.tscn",
+        "res://Items/Stone.tscn"
+      ]
+    },
+    "Stone Gloves": {
+      "record_sha256": "11d899f6a97d4e2aaa07aa1d3174870065f01b802751108e2b85a32e5a65c32d",
+      "missing_paths": [
+        "res://Items/Exclusive/StoneGloves.tscn"
+      ]
+    },
+    "Stone Golem": {
+      "record_sha256": "ed486d7e049a4ff760a4ad102fe927c689f60bb249f6932aab0825898c8d2e2c",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/StoneGolemAnimation.tscn",
+        "res://Items/Exclusive/StoneGolem.tscn"
+      ]
+    },
+    "Stone Helm": {
+      "record_sha256": "e3d21e60a9daab75af787e26ad6aec3711a1fe5d5fa9b799c637b9417eba1db0",
+      "missing_paths": [
+        "res://Items/StoneHelm.tscn"
+      ]
+    },
+    "Stone Shoes": {
+      "record_sha256": "d74ea62e89ca8f8347a99c9ecb9a2a19b097099b426e36faeeb3514a65525e5e",
+      "missing_paths": [
+        "res://Items/Exclusive/StoneShoes.tscn"
+      ]
+    },
+    "Stone Skin Potion": {
+      "record_sha256": "20800e81ff9de15f9f6c452e5ad53f027ab162fc66ea3ff8764d317489e0d804",
+      "missing_paths": [
+        "res://Items/Animations/StoneSkinPotionAnimation.tscn",
+        "res://Items/StoneSkinPotion.tscn"
+      ]
+    },
+    "Stoned": {
+      "record_sha256": "bb06e3207f353d1dab0eeef1340ed5c88fd246f2743157e69523bf9366170790",
+      "missing_paths": [
+        "res://Items/Exclusive/Stoned.tscn"
+      ]
+    },
+    "Storage Coffin": {
+      "record_sha256": "e11dde32f4f358d052ea6b73500e7ba3c925adf85b9d72f18e9555a026513ff0",
+      "missing_paths": [
+        "res://Items/StorageCoffin.tscn"
+      ]
+    },
+    "Strong Demonic Flask": {
+      "record_sha256": "b425de485547ffd381ae3a432f37d68c3d78792f7a1d30b22fdb424afc41a5fd",
+      "missing_paths": [
+        "res://Items/Animations/StrongDemonicFlaskAnimation.tscn",
+        "res://Items/StrongDemonicFlask.tscn"
+      ]
+    },
+    "Strong Divine Potion": {
+      "record_sha256": "c3f05914160acaf0040b32fc611d91fcb16d2774496158ac11153f0405c016e1",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/StrongDivinePotionAnimation.tscn",
+        "res://Items/Exclusive/StrongDivinePotion.tscn"
+      ]
+    },
+    "Strong Health Potion": {
+      "record_sha256": "ed71b2d86e0897c868e1ef1e21f8b69507d9ae5929101ceadee102f5894b2658",
+      "missing_paths": [
+        "res://Items/Animations/StrongHealthPotionAnimation.tscn",
+        "res://Items/StrongHealthPotion.tscn"
+      ]
+    },
+    "Strong Heroic Potion": {
+      "record_sha256": "ed113819a0c4dffe31cf556fea726258bf1af3e47d0199bffe0bcfbe227fc0f8",
+      "missing_paths": [
+        "res://Items/Animations/StrongHeroicPotionAnimation.tscn",
+        "res://Items/StrongHeroicPotion.tscn"
+      ]
+    },
+    "Strong Mana Potion": {
+      "record_sha256": "8a6e108bbf5235493af755a77d7a9900f670a94c25ef684badaa9ffbc3d0cf7f",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/StrongManaPotionAnimation.tscn",
+        "res://Items/Exclusive/StrongManaPotion.tscn"
+      ]
+    },
+    "Strong Stone Skin Potion": {
+      "record_sha256": "4010630569b5dc2dc6d4492914a99a0aa8c204e7d5edd85f0e1b12bc192fba07",
+      "missing_paths": [
+        "res://Items/Animations/StrongStoneSkinPotionAnimation.tscn",
+        "res://Items/StrongStoneSkinPotion.tscn"
+      ]
+    },
+    "Strong Vampiric Potion": {
+      "record_sha256": "3d81edde540caff0e736f0ab603a2f3c3d6ac003c30edab8107296710fdccd35",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/StrongVampiricPotionAnimation.tscn",
+        "res://Items/Exclusive/StrongVampiricPotion.tscn"
+      ]
+    },
+    "Sun Armor": {
+      "record_sha256": "01f5ae0c117937b272456be0dc5b7b749723fdc74d194453a472524b01c2595c",
+      "missing_paths": [
+        "res://Items/Exclusive/SunArmor.tscn"
+      ]
+    },
+    "Sun Shield": {
+      "record_sha256": "21b8d9d312ebf0dff15178944472ee434b57c0a6f3ef30e99ebc56f0ab388456",
+      "missing_paths": [
+        "res://Items/Exclusive/SunShield.tscn"
+      ]
+    },
+    "Superior Ring": {
+      "record_sha256": "2ab37df21b5fcb2e523e0507b68b4db293db79d824f9083f884151d70f08058a",
+      "missing_paths": [
+        "res://Items/Exclusive/SuperiorRing.tscn"
+      ]
+    },
+    "Tesla Coil": {
+      "record_sha256": "1578b7004cee712276fd6b6352f5e287736fd382be625536ee3eed311e01eb29",
+      "missing_paths": [
+        "res://Items/Exclusive/TeslaCoil.tscn"
+      ]
+    },
+    "The Fool": {
+      "record_sha256": "2e85b17dfe56550ced3692a087810e25ff851029bb508c61bba7147e3443f916",
+      "missing_paths": [
+        "res://Items/TheFool.tscn"
+      ]
+    },
+    "The Lovers": {
+      "record_sha256": "719bec91a992c78c5693f4a467423c66dea8218a34f6edefac3d6c2eeae8944a",
+      "missing_paths": [
+        "res://Items/TheLovers.tscn"
+      ]
+    },
+    "Thorn Bow": {
+      "record_sha256": "d21936589f61a02858e571c8e45d302956351fb7eab8a95941a4cd5669b3f3e4",
+      "missing_paths": [
+        "res://Items/Animations/ThornBowAnimation.tscn",
+        "res://Items/ThornBow.tscn"
+      ]
+    },
+    "Thorn Elemental": {
+      "record_sha256": "60cca4de3986c0341a131d299c0bb4c0e119b3090408d44cea27857ad60b7675",
+      "missing_paths": [
+        "res://Items/Exclusive/ThornElemental.tscn"
+      ]
+    },
+    "Thorn Shortbow": {
+      "record_sha256": "6b3d5f206791fb312a155f5429c4040d3d76982385889db645727c970365bc48",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ThornShortbowAnimation.tscn",
+        "res://Items/Exclusive/ThornShortbow.tscn"
+      ]
+    },
+    "Thorn Whip": {
+      "record_sha256": "0c5f463c2d3a6e08d016bef38305b48021d7b2e6da4bc98f9634d2e451805bdf",
+      "missing_paths": [
+        "res://Items/Animations/ThornWhipAnimation.tscn",
+        "res://Items/ThornWhip.tscn"
+      ]
+    },
+    "Thornbloom": {
+      "record_sha256": "280236f317f7a8218d8b4c85a5eccb826436230c02b280f5b54c3a0601752fb3",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ThornbloomAnimation.tscn",
+        "res://Items/Exclusive/Thornbloom.tscn"
+      ]
+    },
+    "Thornburst": {
+      "record_sha256": "3c166bd99d982f3fc6ed651884951829d92529b049b402aa6dc6c130c4e608d2",
+      "missing_paths": [
+        "res://Items/Exclusive/Thornburst.tscn"
+      ]
+    },
+    "Thunder Drake": {
+      "record_sha256": "c897390cd438dad3eff9abfbfcec0a1a907536e018eb38c1f0a5575f904f30f9",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/ThunderDrakeAnimation.tscn",
+        "res://Items/Exclusive/ThunderDrake.tscn"
+      ]
+    },
+    "Tiger Rune": {
+      "record_sha256": "dc0dfd3915383529a90547e5c30cc028127b3720682d73daff0f4574cd9255a0",
+      "missing_paths": [
+        "res://Items/Exclusive/TigerRune.tscn"
+      ]
+    },
+    "Time Melting": {
+      "record_sha256": "2d3dbff1b726cb9ac27a8614b10152c39ee809aa1ddce998a0f2f6ffa570a4da",
+      "missing_paths": [
+        "res://Items/Exclusive/TimeMelting.tscn"
+      ]
+    },
+    "Toad": {
+      "record_sha256": "e558a1a442899f1f76818a1027f737d2f2ece8d39590b3eaf4cd97a4b1ac40d8",
+      "missing_paths": [
+        "res://Items/Exclusive/Toad.tscn"
+      ]
+    },
+    "Toast Goobert": {
+      "record_sha256": "e80f8a6b550673b60c5a51b0c34cf9f2de63d858c5f7fdd24b21f01c321d981e",
+      "missing_paths": [
+        "res://Items/Exclusive/ToastGoobert.tscn"
+      ]
+    },
+    "Torch": {
+      "record_sha256": "ad18b2050cafa0fa1153d7940e015dfbc56df700decf1589c0d176fdc5a2e6aa",
+      "missing_paths": [
+        "res://Items/Animations/TorchAnimation.tscn",
+        "res://Items/Torch.tscn"
+      ]
+    },
+    "Turtle": {
+      "record_sha256": "d5294cffbc0d34a87a2711c797ee4ab68923f769b89a1a1aab5f8314e0670dbb",
+      "missing_paths": [
+        "res://Items/Exclusive/Turtle.tscn"
+      ]
+    },
+    "Twine": {
+      "record_sha256": "d6e167655355db499a19bc4fd11a5e3a2b8b5ec64ec92920e5471e1fe88986e4",
+      "missing_paths": [
+        "res://Items/Exclusive/Twine.tscn"
+      ]
+    },
+    "Twine Badge": {
+      "record_sha256": "28d7cd11f2c6bac3a70025c959d5e2ad5dc85415a9b2ff2fd51c7ba35ff5edc0",
+      "missing_paths": [
+        "res://Items/Exclusive/TwineBadge.tscn"
+      ]
+    },
+    "Ukulele": {
+      "record_sha256": "894075c22402fbcd78e3374b294fd6e0f61ec39ef73fd2309529eee95c690511",
+      "missing_paths": [
+        "res://Items/Exclusive/Ukulele.tscn"
+      ]
+    },
+    "Ultima": {
+      "record_sha256": "d9f0520d5d113035640fad6957a3f78d5c5dd934a7f4d42d1459aa5b4d0ae90a",
+      "missing_paths": [
+        "res://Items/Exclusive/Ultima.tscn"
+      ]
+    },
+    "Unidentified Skill": {
+      "record_sha256": "57fbcde5d8feca841cb7bd748b6ae70b213ffc0fa0fea4c4cbb9e14098b4e024",
+      "missing_paths": [
+        "res://Items/Exclusive/UnidentifiedSkill.tscn"
+      ]
+    },
+    "Uniquely Unique": {
+      "record_sha256": "0bff9d5b1df64a4eb54b9b9afa0357a69a094f19009f528dbd85e4f87a1832b8",
+      "missing_paths": [
+        "res://Items/Exclusive/UniquelyUnique.tscn"
+      ]
+    },
+    "Unstable Recombobulator": {
+      "record_sha256": "3300ce717bbe44a2a0be1ed9ffecccc6aa9031e63755914483e698530ab34907",
+      "missing_paths": [
+        "res://Items/Exclusive/UnstableRecombobulator.tscn"
+      ]
+    },
+    "Vampiric Armor": {
+      "record_sha256": "d0971a3031dcad2025edaed17bd2d11ed9c91a9cff64c8da43b44f5268416853",
+      "missing_paths": [
+        "res://Items/VampiricArmor.tscn"
+      ]
+    },
+    "Vampiric Collar": {
+      "record_sha256": "bca0ce59c747bb8eb292a6f379e34b8d323fbd9145e1bacfb100e34a5003f22e",
+      "missing_paths": [
+        "res://Items/Exclusive/VampiricCollar.tscn"
+      ]
+    },
+    "Vampiric Gloves": {
+      "record_sha256": "facb97913e33ecd4e218d77375ba6b70a0e8e3baf66b755b2a7525d492346f8b",
+      "missing_paths": [
+        "res://Items/VampiricGloves.tscn"
+      ]
+    },
+    "Vampiric Scythe": {
+      "record_sha256": "db1fcc15cb647e000939521292f87421185f3d46582df0c7fa7d62b581836096",
+      "missing_paths": [
+        "res://Items/Animations/VampiricScytheAnimation.tscn",
+        "res://Items/VampiricScythe.tscn"
+      ]
+    },
+    "Villain Sword": {
+      "record_sha256": "ddcec50ccb73e506676f1fe544a4382c252bed4e11eb8dd364cc2fad72205016",
+      "missing_paths": [
+        "res://Items/Animations/VillainSwordAnimation.tscn",
+        "res://Items/VillainSword.tscn"
+      ]
+    },
+    "Wand": {
+      "record_sha256": "db3ac6a7c3164fc77561a76bdee7b2063336ee6eb059659e85aeb7c50e6dac79",
+      "missing_paths": [
+        "res://Items/Exclusive/Wand.tscn"
+      ]
+    },
+    "Wand of Dissonance": {
+      "record_sha256": "b33ef509c5ae1fc1eea1eb90d8da073684ede3c258730f99b153df2f1655d1aa",
+      "missing_paths": [
+        "res://Items/Exclusive/WandofDissonance.tscn"
+      ]
+    },
+    "War Scythe": {
+      "record_sha256": "2829dfe5466393605aa2388b10af88979abcc91e384bc1f9a4040d949dc92e87",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/WarScytheAnimation.tscn",
+        "res://Items/Exclusive/WarScythe.tscn"
+      ]
+    },
+    "Water Elemental": {
+      "record_sha256": "0d312a0d63138790591861f28fbe68a9479e72827ea253227cdf1f1277e0dd9e",
+      "missing_paths": [
+        "res://Items/Exclusive/Animations/WaterElementalAnimation.tscn",
+        "res://Items/Exclusive/WaterElemental.tscn"
+      ]
+    },
+    "Whetstone2": {
+      "record_sha256": "918f7a448815ba4126c16c1dd3286b38b7be183c2daa4ebd3bcd34ac0d4203b4",
+      "missing_paths": [
+        "res://Items/Exclusive/Whetstone2.tscn"
+      ]
+    },
+    "Whetstone3": {
+      "record_sha256": "bb906ebf002def7a19cd629727c7df8b223905357709c4cf48f5ca2a9bee67be",
+      "missing_paths": [
+        "res://Items/Exclusive/Whetstone3.tscn"
+      ]
+    },
+    "White Bishop": {
+      "record_sha256": "91f2efca482d500bfaaee0ec276c6806f824afc7d8873c83af9b702eb25fe6bc",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/WhiteBishop.tscn"
+      ]
+    },
+    "White King": {
+      "record_sha256": "b3013f102e43d42544f55df0d88c09ff4c18389eeaf06357b5a8891a8083e091",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/WhiteKing.tscn"
+      ]
+    },
+    "White Knight": {
+      "record_sha256": "8d53ab0444481917982c794e107e182ce24e80115b21ab8964ac62216d61ea98",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/WhiteKnight.tscn"
+      ]
+    },
+    "White Pawn": {
+      "record_sha256": "8e202cd5eb6bef42733d0a28d31905af16a30be5fdae69ab8c90e842cbcfb0d8",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/WhitePawn.tscn"
+      ]
+    },
+    "White Queen": {
+      "record_sha256": "0bab8a638d330a9addf6da0acea57afa0a2082320db2f854c32ff2be254b75fc",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/WhiteQueen.tscn"
+      ]
+    },
+    "White Rook": {
+      "record_sha256": "e430eab2f1a45eeedade126845536e79743839469edce15fcb5713fffc2b3f43",
+      "missing_paths": [
+        "res://Items/Exclusive/Chess/WhiteRook.tscn"
+      ]
+    },
+    "White-Eyes Blue Dragon": {
+      "record_sha256": "27c95503e8e9a6db85379dd0c7fff7879c261ecd35e0e1bfabd62098ef42418e",
+      "missing_paths": [
+        "res://Items/White-EyesBlueDragon.tscn"
+      ]
+    },
+    "Winged Boots": {
+      "record_sha256": "71847ddc65c2cf5a2ed909a621d9a62859cb1a6c207066a7c0e093d6facc6b40",
+      "missing_paths": [
+        "res://Items/Exclusive/WingedBoots.tscn"
+      ]
+    },
+    "Wisdom Puppy": {
+      "record_sha256": "f57b41bbbdb58c9add2b677b5fda58ac50ecbc5837f5f2c509a1498ead7fc9f9",
+      "missing_paths": [
+        "res://Items/Exclusive/WisdomPuppy.tscn"
+      ]
+    },
+    "Wisp": {
+      "record_sha256": "23a91fd7aa645eba75121b3c21454904ccf1ef1202bd0dc6df412036c390b88c",
+      "missing_paths": [
+        "res://Items/Exclusive/Wisp.tscn"
+      ]
+    },
+    "Wolf Badge": {
+      "record_sha256": "2c748412776abf19f97bc0da9a48b3f1bc911f34262353766b90e4d57721296b",
+      "missing_paths": [
+        "res://Items/Exclusive/WolfBadge.tscn"
+      ]
+    },
+    "Wolf Emblem": {
+      "record_sha256": "5f19c46bb28fe05c4bcffbbc057b72a82fbc4dee401dd40aab1fe50757bfbc92",
+      "missing_paths": [
+        "res://Items/Exclusive/WolfEmblem.tscn"
+      ]
+    },
+    "Wolpertinger": {
+      "record_sha256": "c3b74541cc3d968c278258b85d9a3c25354489f0e2d653d222adc5a2454e872d",
+      "missing_paths": [
+        "res://Items/Wolpertinger.tscn"
+      ]
+    },
+    "Wooden Sword": {
+      "record_sha256": "5c92d0ac7b297690c8a98aaca220433c93a76a5ea7bab19aac9ba82525d4bb5f",
+      "missing_paths": [
+        "res://Items/Animations/WoodenSwordAnimation.tscn",
+        "res://Items/WoodenSword.tscn"
+      ]
+    }
+  }
+}

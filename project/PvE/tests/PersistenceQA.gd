@@ -30,12 +30,10 @@ func stable(data):
 
 func title_entry_checks():
 	check(not Game.titleScreen.continueNode.is_visible_in_tree(),"standalone continue banner removed")
-	Game.titleScreen.rankedButton.pressed.emit()
-	await frames()
-	var resume=Expedition.panel.find_child("ResumeSavedRun",true,false)
-	check(resume!=null and not resume.disabled,"standard entrance offers enabled continue")
-	check(Expedition.panel.find_child("NewGameChoice",true,false)!=null,"standard entrance offers explicit new game")
-	if resume!=null:check(Expedition.popup_scroll.get_global_rect().encloses(resume.get_global_rect()),"continue card fits on first page")
+	var resume=Expedition.art.ui.get_node_or_null("TitleStart")
+	check(resume!=null and not resume.disabled,"main start offers enabled continue")
+	check(Expedition.art.ui.get_node_or_null("TitleNewRun")!=null,"main menu offers explicit new game")
+	if resume!=null:check(Rect2(0,0,1920,1080).encloses(resume.get_global_rect()),"continue target fits on main menu")
 	return resume
 
 func shot(name):
@@ -95,7 +93,7 @@ func run_tests():
 		details.before_menu_state = flow.screen_state
 		Expedition.show_settings()
 		await frames()
-		var buttons = Expedition.panel.find_children("*", "Button", true, false)
+		var buttons = Expedition.panel.find_children("*", "BaseButton", true, false)
 		var pressed = false
 		for button in buttons:
 			if button.name in ["SaveAndExit","SaveAndExitBody"]:

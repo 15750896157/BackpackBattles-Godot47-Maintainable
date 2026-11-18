@@ -1,0 +1,622 @@
+[gd_scene format=3 uid="uid://cymgdt4h07p2x"]
+
+[ext_resource type="Script" path="res://PvE/UI/ShopScreen.gd" id="1_screen"]
+
+[sub_resource type="Theme" id="Theme_shop"]
+Label/colors/font_color = Color(1, 0.9411764705882353, 0.803921568627451, 1)
+Label/colors/font_outline_color = Color(0.09019607843137255, 0.10588235294117647, 0.12549019607843137, 1)
+Label/constants/outline_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_target"]
+
+[node name="ShopScreen" type="Control"]
+visible = false
+mouse_filter = 2
+theme = SubResource("Theme_shop")
+script = ExtResource("1_screen")
+
+[node name="Action_codex" type="TextureButton" parent="."]
+offset_left = 457.7548828125
+offset_top = 776.0997314453125
+offset_right = 698.0020751953125
+offset_bottom = 890.543212890625
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "codex"
+
+[node name="Action_journey" type="TextureButton" parent="."]
+offset_left = 1716.333740234375
+offset_top = 447.19500732421875
+offset_right = 1815.200927734375
+offset_bottom = 581.8343505859375
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "journey"
+
+[node name="Action_refresh" type="TextureButton" parent="."]
+offset_left = 789.948486328125
+offset_top = -93.28583526611328
+offset_right = 910.56640625
+offset_bottom = 216.38467407226562
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "refresh"
+
+[node name="RefreshCoin" type="TextureRect" parent="."]
+offset_left = 809.721923828125
+offset_top = 84.63045501708984
+offset_right = 836.4160766601562
+offset_bottom = 110.59661865234375
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "coin"
+
+[node name="RefreshCost" type="Label" parent="."]
+offset_left = 836.4160766601562
+offset_top = 82.70703125
+offset_right = 871.0195922851562
+offset_bottom = 117.32858276367188
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9568627450980393, 0.8196078431372549, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 29
+
+[node name="BattleSign" type="TextureRect" parent="."]
+offset_left = 1673.82080078125
+offset_top = -300.05340576171875
+offset_right = 1905.169921875
+offset_bottom = 426.03741455078125
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "battle"
+
+[node name="ArtStartBattle" type="Button" parent="."]
+offset_left = 1673.82080078125
+offset_top = 256.7764892578125
+offset_right = 1905.169921875
+offset_bottom = 426.03741455078125
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_target")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_target")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_target")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_target")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_target")
+
+[node name="StageCaption" type="Label" parent="ArtStartBattle"]
+offset_left = 21.75077247619629
+offset_top = 36.54496765136719
+offset_right = 210.5870361328125
+offset_bottom = 86.55387115478516
+mouse_filter = 2
+text = "开战"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 36
+
+[node name="StageNumber" type="Label" parent="ArtStartBattle"]
+offset_left = 23.72811508178711
+offset_top = 92.32412719726562
+offset_right = 205.6436767578125
+offset_bottom = 132.7159423828125
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.9058823529411765, 0.7176470588235294, 0.4823529411764706, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 27
+
+[node name="Action_shop_settings" type="TextureButton" parent="."]
+offset_left = 1822.12158203125
+offset_top = 14.425644874572754
+offset_right = 1879.4644775390625
+offset_bottom = 71.16651916503906
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "settings"
+
+[node name="GoldPlate" type="TextureRect" parent="."]
+offset_left = 1540.3502197265625
+offset_top = 36.54496765136719
+offset_right = 1664.9228515625
+offset_bottom = 75.01335144042969
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "plate1"
+
+[node name="GoldCoin" type="TextureRect" parent="."]
+offset_left = 1540.3502197265625
+offset_top = 34.62154769897461
+offset_right = 1578.908447265625
+offset_bottom = 72.12821960449219
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "coin"
+
+[node name="GoldValue" type="Label" parent="."]
+offset_left = 1585.8291015625
+offset_top = 33.65983963012695
+offset_right = 1664.9228515625
+offset_bottom = 74.05165100097656
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 26
+
+[node name="Offer0" type="Control" parent="."]
+mouse_filter = 2
+
+[node name="PriceTag" type="TextureButton" parent="Offer0"]
+offset_left = 237.28115844726562
+offset_top = 171.184326171875
+offset_right = 326.2615966796875
+offset_bottom = 227.92520141601562
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "price"
+
+[node name="Coin" type="TextureRect" parent="Offer0/PriceTag"]
+offset_left = 7.0
+offset_top = 26.0
+offset_right = 35.0
+offset_bottom = 54.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "coin"
+
+[node name="Price" type="Label" parent="Offer0/PriceTag"]
+offset_left = 35.0
+offset_top = 22.0
+offset_right = 72.0
+offset_bottom = 57.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9411764705882353, 0.7607843137254902, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 28
+
+[node name="SaleBadge" type="TextureButton" parent="Offer0"]
+offset_left = 276.8280029296875
+offset_top = 151.95013427734375
+offset_right = 326.2615661621094
+offset_bottom = 200.03561401367188
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "sale"
+
+[node name="Discount" type="Label" parent="Offer0/SaleBadge"]
+offset_right = 49.43357467651367
+offset_bottom = 48.08548355102539
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8666666666666667, 0.3254901960784314, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Lock" type="Label" parent="Offer0"]
+offset_left = 153.24407958984375
+offset_top = 228.88690185546875
+offset_right = 321.3182373046875
+offset_bottom = 257.7381896972656
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Offer1" type="Control" parent="."]
+mouse_filter = 2
+
+[node name="PriceTag" type="TextureButton" parent="Offer1"]
+offset_left = 525.9732055664062
+offset_top = 171.184326171875
+offset_right = 614.95361328125
+offset_bottom = 227.92520141601562
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "price"
+
+[node name="Coin" type="TextureRect" parent="Offer1/PriceTag"]
+offset_left = 7.0
+offset_top = 26.0
+offset_right = 35.0
+offset_bottom = 54.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "coin"
+
+[node name="Price" type="Label" parent="Offer1/PriceTag"]
+offset_left = 35.0
+offset_top = 22.0
+offset_right = 72.0
+offset_bottom = 57.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9411764705882353, 0.7607843137254902, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 28
+
+[node name="SaleBadge" type="TextureButton" parent="Offer1"]
+offset_left = 565.5200805664062
+offset_top = 151.95013427734375
+offset_right = 614.9536743164062
+offset_bottom = 200.03561401367188
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "sale"
+
+[node name="Discount" type="Label" parent="Offer1/SaleBadge"]
+offset_right = 49.43357467651367
+offset_bottom = 48.08548355102539
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8666666666666667, 0.3254901960784314, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Lock" type="Label" parent="Offer1"]
+offset_left = 441.9361572265625
+offset_top = 228.88690185546875
+offset_right = 610.0103149414062
+offset_bottom = 257.7381896972656
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Offer2" type="Control" parent="."]
+mouse_filter = 2
+
+[node name="PriceTag" type="TextureButton" parent="Offer2"]
+offset_left = 173.0175018310547
+offset_top = 483.7399597167969
+offset_right = 261.9979248046875
+offset_bottom = 540.4808349609375
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "price"
+
+[node name="Coin" type="TextureRect" parent="Offer2/PriceTag"]
+offset_left = 7.0
+offset_top = 26.0
+offset_right = 35.0
+offset_bottom = 54.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "coin"
+
+[node name="Price" type="Label" parent="Offer2/PriceTag"]
+offset_left = 35.0
+offset_top = 22.0
+offset_right = 72.0
+offset_bottom = 57.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9411764705882353, 0.7607843137254902, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 28
+
+[node name="SaleBadge" type="TextureButton" parent="Offer2"]
+offset_left = 212.56436157226562
+offset_top = 464.5057678222656
+offset_right = 261.9979248046875
+offset_bottom = 512.5912475585938
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "sale"
+
+[node name="Discount" type="Label" parent="Offer2/SaleBadge"]
+offset_right = 49.43357467651367
+offset_bottom = 48.08548355102539
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8666666666666667, 0.3254901960784314, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Lock" type="Label" parent="Offer2"]
+offset_left = 88.98043060302734
+offset_top = 541.4425659179688
+offset_right = 257.0545959472656
+offset_bottom = 570.2938842773438
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Offer3" type="Control" parent="."]
+mouse_filter = 2
+
+[node name="PriceTag" type="TextureButton" parent="Offer3"]
+offset_left = 460.7209167480469
+offset_top = 483.7399597167969
+offset_right = 549.7013549804688
+offset_bottom = 540.4808349609375
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "price"
+
+[node name="Coin" type="TextureRect" parent="Offer3/PriceTag"]
+offset_left = 7.0
+offset_top = 26.0
+offset_right = 35.0
+offset_bottom = 54.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "coin"
+
+[node name="Price" type="Label" parent="Offer3/PriceTag"]
+offset_left = 35.0
+offset_top = 22.0
+offset_right = 72.0
+offset_bottom = 57.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9411764705882353, 0.7607843137254902, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 28
+
+[node name="SaleBadge" type="TextureButton" parent="Offer3"]
+offset_left = 500.26776123046875
+offset_top = 464.5057678222656
+offset_right = 549.7013549804688
+offset_bottom = 512.5912475585938
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "sale"
+
+[node name="Discount" type="Label" parent="Offer3/SaleBadge"]
+offset_right = 49.43357467651367
+offset_bottom = 48.08548355102539
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8666666666666667, 0.3254901960784314, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Lock" type="Label" parent="Offer3"]
+offset_left = 376.683837890625
+offset_top = 541.4425659179688
+offset_right = 544.7579956054688
+offset_bottom = 570.2938842773438
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Offer4" type="Control" parent="."]
+mouse_filter = 2
+
+[node name="PriceTag" type="TextureButton" parent="Offer4"]
+offset_left = 719.7528686523438
+offset_top = 483.7399597167969
+offset_right = 808.7332763671875
+offset_bottom = 540.4808349609375
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "price"
+
+[node name="Coin" type="TextureRect" parent="Offer4/PriceTag"]
+offset_left = 7.0
+offset_top = 26.0
+offset_right = 35.0
+offset_bottom = 54.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "coin"
+
+[node name="Price" type="Label" parent="Offer4/PriceTag"]
+offset_left = 35.0
+offset_top = 22.0
+offset_right = 72.0
+offset_bottom = 57.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.9411764705882353, 0.7607843137254902, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 28
+
+[node name="SaleBadge" type="TextureButton" parent="Offer4"]
+offset_left = 759.2996826171875
+offset_top = 464.5057678222656
+offset_right = 808.7332763671875
+offset_bottom = 512.5912475585938
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+metadata/shop_texture = "sale"
+
+[node name="Discount" type="Label" parent="Offer4/SaleBadge"]
+offset_right = 49.43357467651367
+offset_bottom = 48.08548355102539
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.8666666666666667, 0.3254901960784314, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="Lock" type="Label" parent="Offer4"]
+offset_left = 635.7157592773438
+offset_top = 541.4425659179688
+offset_right = 803.7899169921875
+offset_bottom = 570.2938842773438
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 21
+
+[node name="ClassBadge" type="TextureRect" parent="."]
+offset_left = 1787.0
+offset_top = 710.0
+offset_right = 1895.0
+offset_bottom = 760.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "class_badge"
+
+[node name="StatsPlate" type="NinePatchRect" parent="."]
+offset_left = 1360.0
+offset_top = 1017.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+metadata/shop_texture = "plate2"
+
+[node name="ClassName" type="Label" parent="."]
+offset_left = 1801.0
+offset_top = 710.0
+offset_right = 1901.0
+offset_bottom = 760.0
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 28
+
+[node name="HealthTrack" type="TextureRect" parent="."]
+offset_left = 1439.0
+offset_top = 1035.0
+offset_right = 1642.0
+offset_bottom = 1069.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "plate3"
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+offset_left = 1439.0
+offset_top = 1035.0
+offset_right = 1642.0
+offset_bottom = 1069.0
+mouse_filter = 2
+nine_patch_stretch = true
+metadata/shop_texture = "health"
+
+[node name="HealthValue" type="Label" parent="."]
+offset_left = 1439.0
+offset_top = 1035.0
+offset_right = 1642.0
+offset_bottom = 1069.0
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 24
+
+[node name="HealthCaption" type="Label" parent="."]
+offset_left = 1382.0
+offset_top = 1031.0
+offset_right = 1439.0
+offset_bottom = 1071.0
+mouse_filter = 2
+text = "生命"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 24
+
+[node name="StaminaTrack" type="TextureRect" parent="."]
+offset_left = 1704.0
+offset_top = 1035.0
+offset_right = 1907.0
+offset_bottom = 1069.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "plate3"
+
+[node name="StaminaBar" type="TextureProgressBar" parent="."]
+offset_left = 1704.0
+offset_top = 1035.0
+offset_right = 1907.0
+offset_bottom = 1069.0
+mouse_filter = 2
+nine_patch_stretch = true
+metadata/shop_texture = "stamina"
+
+[node name="StaminaValue" type="Label" parent="."]
+offset_left = 1704.0
+offset_top = 1035.0
+offset_right = 1907.0
+offset_bottom = 1069.0
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 24
+
+[node name="StaminaCaption" type="Label" parent="."]
+offset_left = 1647.0
+offset_top = 1031.0
+offset_right = 1704.0
+offset_bottom = 1071.0
+mouse_filter = 2
+text = "耐力"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 24
+
+[node name="TouchRotateLeft" type="Button" parent="."]
+offset_left = 1080.0
+offset_top = 756.0
+offset_right = 1168.0
+offset_bottom = 834.0
+visible = false
+custom_minimum_size = Vector2(88, 78)
+tooltip_text = "左转"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_target")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_target")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_target")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_target")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_target")
+
+[node name="Icon" type="TextureRect" parent="TouchRotateLeft"]
+offset_right = 88.0
+offset_bottom = 78.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "previous"
+
+[node name="TouchRotateRight" type="Button" parent="."]
+offset_left = 1184.0
+offset_top = 756.0
+offset_right = 1272.0
+offset_bottom = 834.0
+visible = false
+custom_minimum_size = Vector2(88, 78)
+tooltip_text = "右转"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_target")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_target")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_target")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_target")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_target")
+
+[node name="Icon" type="TextureRect" parent="TouchRotateRight"]
+offset_right = 88.0
+offset_bottom = 78.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "next"

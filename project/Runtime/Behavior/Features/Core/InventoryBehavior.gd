@@ -101,7 +101,7 @@ static func deleteItems(subject: Receiver):
 	subject.cleanUp()
 
 static func orientItem(subject: Receiver, item, topLeftCell, faceDirection) -> void :
-	item.scale = Vector2.ONE
+	item.scale = Vector2.ONE*Expedition.art.grid_scale() if Expedition.enabled and item.pve_is_view() else Vector2.ONE
 	item.setFaceDirectionInstant(faceDirection)
 
 	var curPos = item.getTopLeftGlobal()

@@ -156,10 +156,10 @@ func getCellsForGlobalPositions(points: Array) -> Array:
 	return cells
 
 func cellToGlobalPos(cell: Vector2, cellCenter: bool = false) -> Vector2:
-	var pos = tilemap.global_position + cellSize * cell
+	var pos = cellSize * cell
 	if cellCenter:
 		pos += halfCellSize
-	return pos
+	return tilemap.to_global(pos)
 
 func allCellsPotentialSpace(cells: Array):
 	for cell in cells:

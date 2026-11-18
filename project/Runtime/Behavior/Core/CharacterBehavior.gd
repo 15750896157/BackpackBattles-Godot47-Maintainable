@@ -69,6 +69,7 @@ static func setSprite(subject: Receiver, classResource, _chibi: bool):
 static func pve_apply_role_stats(subject: Receiver):
 	if Expedition.db == null: return
 	var role = "alchemist" if subject.characterClass == Game.Classes_Full.Reaper else "armorer"
+	if subject.playerId==Character.ID.PLAYER and Expedition.active:role=str(Expedition.flow.run.character_id)
 	var data = Expedition.db.get_row("characters", role)
 	if data.is_empty(): return
 	subject.temporaryMaxHealth = 0.0

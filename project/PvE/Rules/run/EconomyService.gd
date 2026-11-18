@@ -10,7 +10,7 @@ func _init(content = null):
 	placement = PlacementService.new(content)
 	generator = ShopGenerator.new(content)
 
-func buy(run: Dictionary, slot_index: int) -> Dictionary:
+func buy(run: Dictionary, slot_index: int, storage_slot: Variant = null) -> Dictionary:
 	var slots = run.get("shop", {}).get("slots", [])
 	if slot_index < 0 or slot_index >= slots.size():
 		return _error("invalid_shop_slot", "找不到商品槽位。")
@@ -22,13 +22,17 @@ func buy(run: Dictionary, slot_index: int) -> Dictionary:
 		return _error("not_enough_gold", "金币不足。")
 	var candidate = run.duplicate(true)
 	var entry = make_entry(candidate, str(slot.definition_id), price)
-	var status = placement.auto_place(candidate.build, entry)
-	var stored = false
+	# An omitted slot uses the normal inventory-first purchase. A supplied
+	# -1 addresses the first free storage slot for the storage shortcut.
+	var direct_storage := storage_slot != null
+	var status = placement.store(candidate.build, entry, int(storage_slot)) if direct_storage else placement.auto_place(candidate.build, entry)
+	var stored := direct_storage
 	if not status.ok:
+		if direct_storage: return status
 		status = placement.store(candidate.build, entry)
-		stored = status.ok
-	if not status.ok:
-		return _error("inventory_full", "背包和仓库都无法接收商品，请先整理空间。")
+		if not status.ok:
+			return _error("inventory_full", "背包和仓库都无法接收商品，请先整理空间。")
+		stored = true
 	candidate.gold = int(candidate.gold) - price
 	candidate.shop.slots[slot_index]["sold"] = true
 	candidate.shop.slots[slot_index]["locked"] = false

@@ -14,7 +14,7 @@ from developer_tools import stage_project
 ROOT = Path(__file__).resolve().parents[1]
 TESTS = Path(__file__).resolve().parent / 'qa/test_sources'
 NAMES = ['combat_tests', 'inventory_economy_tests', 'flow_contract_tests', 'content_tests',
-         'quality_rule_tests', 'rule_text_tests', 'tools_ui_tests', 'route_contract_tests', 'content_migration_tests']
+         'quality_rule_tests', 'rule_text_tests', 'tools_ui_tests', 'route_contract_tests', 'content_migration_tests', 'release_rules_tests']
 
 
 def main():

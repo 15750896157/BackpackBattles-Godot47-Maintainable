@@ -1,10 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene format=3 uid="uid://bisx35birggl0"]
 
-[ext_resource path="res://Assets/Particles/Triangle.png" type="Texture2D" id=1]
-[ext_resource path="res://Assets/Noise/BubbleNoise.png" type="Texture2D" id=2]
-[ext_resource path="res://Items/Animations/PotionConnector.gd" type="Script" id=3]
+[ext_resource type="Texture2D" path="res://Assets/Noise/BubbleNoise.png" id="1_4fyuc"]
+[ext_resource type="Texture2D" path="res://Assets/Particles/Triangle.png" id="2_6nf0p"]
+[ext_resource type="Script" path="res://Items/Animations/PotionConnector.gd" id="3_pc2g0"]
 
-[sub_resource type="Shader" id=5]
+[sub_resource type="Shader" id="5"]
 code = "shader_type canvas_item;
 global uniform float bb_shader_time;
 varying vec4 legacy_modulate;
@@ -27,120 +27,120 @@ uniform float noise2Scale : hint_range(0.0, 10.0) = 1.0;
 // legacy_modulate.g - time offset
 
 void fragment() {
-\tCOLOR = vec4(1.0);
-\tfloat adjustedTime = bb_shader_time * legacy_modulate.g;
-\tfloat intensity1 = texture(NOISE_PATTERN, UV * noise1Scale + adjustedTime * scroll1).r;
-\tfloat intensity2 = texture(NOISE_PATTERN2, UV * noise2Scale + adjustedTime * scroll2).r;
-\tfloat intensity = (intensity1 * intensity2);
-\tfloat texAlpha = texture(TEXTURE, UV).a;
-\tCOLOR = texture(gradient, vec2(intensity * texAlpha * wobbliness * legacy_modulate.a));
-\tCOLOR.rgb *= legacy_modulate.r;
+	COLOR = vec4(1.0);
+	float adjustedTime = bb_shader_time * legacy_modulate.g;
+	float intensity1 = texture(NOISE_PATTERN, UV * noise1Scale + adjustedTime * scroll1).r;
+	float intensity2 = texture(NOISE_PATTERN2, UV * noise2Scale + adjustedTime * scroll2).r;
+	float intensity = (intensity1 * intensity2);
+	float texAlpha = texture(TEXTURE, UV).a;
+	COLOR = texture(gradient, vec2(intensity * texAlpha * wobbliness * legacy_modulate.a));
+	COLOR.rgb *= legacy_modulate.r;
 }
 void vertex() { legacy_modulate = COLOR; }
 "
 
-[sub_resource type="Gradient" id=18]
-offsets = PackedFloat32Array( 0, 0.137255, 0.328431, 0.54023, 1 )
-colors = PackedColorArray( 0.104015, 0.174871, 0.291016, 0, 0.0404549, 0.0502555, 0.197266, 1, 0.38121, 0.448017, 0.648438, 0.780392, 0.512226, 0.635622, 0.837891, 1, 1, 1, 1, 1 )
+[sub_resource type="Gradient" id="18"]
+offsets = PackedFloat32Array(0, 0.137255, 0.328431, 0.54023, 1)
+colors = PackedColorArray(0.104015, 0.174871, 0.291016, 0, 0.0404549, 0.0502555, 0.197266, 1, 0.38121, 0.448017, 0.648438, 0.780392, 0.512226, 0.635622, 0.837891, 1, 1, 1, 1, 1)
 
-[sub_resource type="GradientTexture1D" id=19]
-gradient = SubResource( 18 )
+[sub_resource type="GradientTexture1D" id="19"]
+gradient = SubResource("18")
 width = 100
 
-[sub_resource type="ShaderMaterial" id=20]
+[sub_resource type="ShaderMaterial" id="20"]
 resource_local_to_scene = true
-shader = SubResource( 5 )
+shader = SubResource("5")
 shader_parameter/wobbliness = 1.16
-shader_parameter/scroll1 = Vector2( 0.0033, 0.2253 )
-shader_parameter/scroll2 = Vector2( -0.0117, 0.1378 )
+shader_parameter/gradient = SubResource("19")
+shader_parameter/NOISE_PATTERN = ExtResource("1_4fyuc")
+shader_parameter/NOISE_PATTERN2 = ExtResource("1_4fyuc")
+shader_parameter/scroll1 = Vector2(0.0033, 0.2253)
+shader_parameter/scroll2 = Vector2(-0.0117, 0.1378)
 shader_parameter/noise1Scale = 0.253
 shader_parameter/noise2Scale = 0.15
-shader_parameter/gradient = SubResource( 19 )
-shader_parameter/NOISE_PATTERN = ExtResource( 2 )
-shader_parameter/NOISE_PATTERN2 = ExtResource( 2 )
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id="9"]
 resource_name = "Appear"
 length = 0.3
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:self_modulate:a")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PackedFloat32Array( 0, 0.3 ),
-"transitions": PackedFloat32Array( 2.07053, 1 ),
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2.07053, 1),
 "update": 0,
-"values": [ 0.0, 1.0 ]
+"values": [0.0, 1.0]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PackedFloat32Array( 0 ),
-"transitions": PackedFloat32Array( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ true ]
+"values": [true]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id="10"]
 resource_name = "Disappear"
 length = 0.5
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:self_modulate:a")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PackedFloat32Array( 0, 0.5 ),
-"transitions": PackedFloat32Array( 0.5, 2.07053 ),
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, 2.07053),
 "update": 0,
-"values": [ 1.0, 0.0 ]
+"values": [1.0, 0.0]
 }
 tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
 tracks/1/path = NodePath(".:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
 tracks/1/keys = {
-"times": PackedFloat32Array( 0, 0.5 ),
-"transitions": PackedFloat32Array( 1, 1 ),
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ true, false ]
+"values": [true, false]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id="17"]
 resource_name = "RESET"
 length = 0.001
 tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath(".:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"times": PackedFloat32Array( 0 ),
-"transitions": PackedFloat32Array( 1 ),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ false ]
+"values": [false]
 }
 
 [node name="Connector" type="Sprite2D"]
 visible = false
-modulate = Color( 3, 1, 1, 1 )
-material = SubResource( 20 )
-scale = Vector2( 0.17, 0.3 )
-texture = ExtResource( 1 )
+modulate = Color(3, 1, 1, 1)
+material = SubResource("20")
+scale = Vector2(0.17, 0.3)
+texture = ExtResource("2_6nf0p")
 flip_v = true
-script = ExtResource( 3 )
+script = ExtResource("3_pc2g0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Appear = SubResource( 9 )
-anims/Disappear = SubResource( 10 )
-anims/RESET = SubResource( 17 )
+anims/Appear = SubResource("9")
+anims/Disappear = SubResource("10")
+anims/RESET = SubResource("17")

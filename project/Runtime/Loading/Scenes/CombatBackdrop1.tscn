@@ -1,15 +1,25 @@
-[gd_scene load_steps=4 format=3]
-[ext_resource type="Texture2D" path="res://Art/Supplied20261028/backgrounds/forest.png" id="1"]
+[gd_scene format=3 uid="uid://uhh57axffxqw"]
+
+[ext_resource type="Texture2D" path="res://Art/Supplied20261102/bg/bg_chapter1_jungle.png" id="1_y7spb"]
+
 [sub_resource type="Animation" id="Round"]
 resource_name = "Round"
 length = 60.0
 loop_mode = 1
+
 [sub_resource type="AnimationLibrary" id="Library"]
-_data = {"Round": SubResource("Round")}
+_data = {
+&"Round": SubResource("Round")
+}
+
 [node name="Background" type="Node2D"]
+
 [node name="Desert" type="Sprite2D" parent="."]
-texture = ExtResource("1")
+texture = ExtResource("1_y7spb")
 centered = false
-scale = Vector2(1, 0.99907493)
+scale = Vector2(1, 0.99907494)
+
 [node name="BackgroundAnimation" type="AnimationPlayer" parent="."]
-libraries = {&"": SubResource("Library")}
+libraries = {
+&"": SubResource("Library")
+}

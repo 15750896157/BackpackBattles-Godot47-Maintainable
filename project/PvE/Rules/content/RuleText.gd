@@ -159,6 +159,7 @@ func bag(id: String, language: String = "zh_CN") -> String:
 	if str(row.special_cell_type) == "none": return text
 	text += _b("强化格仅影响覆盖该格的物品。", "Enhanced cells affect only items covering them.", language) if row.special_cell_type == "enhanced_cell" else _b("星位影响同包内覆盖星位或其四向相邻的物品。", "Stars affect same-bag items covering or orthogonally adjacent to the star.", language)
 	var effects: Array = []; var params = _params(row.special_effect)
+	if params.has("target_tag"):text+=_b("仅对%s类物品生效。", "Applies only to %s items. ",language)%term("tags",str(params.target_tag),language)
 	for key in params:
 		match key:
 			"cooldown_pct": effects.append(_b("冷却时间%s", "cooldown duration %s", language) % _signed(params[key], true))

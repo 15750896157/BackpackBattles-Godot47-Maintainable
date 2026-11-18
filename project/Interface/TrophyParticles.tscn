@@ -1,22 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://c12y70icr30rx"]
 
-[ext_resource path="res://Assets/Trophy.png" type="Texture2D" id=1]
-[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=2]
+[ext_resource type="Texture2D" path="res://Assets/Trophy.png" id="1_x1jnn"]
+[ext_resource type="Script" path="res://Utility/PooledScene.gd" id="2_ahc2q"]
 
-[sub_resource type="Curve" id=181]
-_data = [ Vector2( 0, 0.0522727 ), 0.0, 0.0, 0, 0, Vector2( 0.190083, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.690083, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.134091 ), 0.0, 0.0, 0, 0 ]
+[sub_resource type="Curve" id="181"]
+_data = [Vector2(0, 0.0522727), 0.0, 0.0, 0, 0, Vector2(0.190083, 1), 0.0, 0.0, 0, 0, Vector2(0.690083, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.134091), 0.0, 0.0, 0, 0]
+point_count = 4
 
 [node name="TrophyParticles" type="CPUParticles2D"]
-modulate = Color( 1.2, 1.2, 1.2, 1 )
-position = Vector2( 604, 76 )
+modulate = Color(1.2, 1.2, 1.2, 1)
+position = Vector2(604, 76)
 emitting = false
 amount = 10
 lifetime = 0.6
 one_shot = true
 speed_scale = 0.79
 explosiveness = 1.0
-texture = ExtResource( 1 )
-direction = Vector2( 0, -1 )
+texture = ExtResource("1_x1jnn")
+direction = Vector2(0, -1)
 spread = 180.0
 initial_velocity = 503.76
 initial_velocity_random = 0.63
@@ -26,5 +27,5 @@ angle = 18.5
 angle_random = 1.0
 scale_amount = 0.72
 scale_amount_random = 0.28
-scale_amount_curve = SubResource( 181 )
-script = ExtResource( 2 )
+scale_amount_curve = SubResource("181")
+script = ExtResource("2_ahc2q")

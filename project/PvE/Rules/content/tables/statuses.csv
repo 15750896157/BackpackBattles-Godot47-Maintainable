@@ -7,3 +7,5 @@ lifesteal,status.lifesteal.name,status.lifesteal.desc,positive,10,0,lifesteal_pc
 vulnerable,status.vulnerable.name,status.vulnerable.desc,negative,10,0,life_damage_taken_pct,0.04,duration,4
 haste,status.haste.name,status.haste.desc,positive,10,0,cooldown_progress_up_pct,0.04,duration,4
 fortified,status.fortified.name,status.fortified.desc,positive,10,0,physical_damage_reduction_pct,0.04,duration,4
+thorns,status.thorns.name,status.thorns.desc,positive,10,0,reflect_physical_flat,1,duration,6
+resistance,status.resistance.name,status.resistance.desc,positive,10,0,physical_damage_reduction_pct,0.03,duration,6

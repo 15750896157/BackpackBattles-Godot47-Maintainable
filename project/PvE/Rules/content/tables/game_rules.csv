@@ -1,5 +1,5 @@
 key,value,value_type,scope,description
-content_version,0.1.3,string,global,修复冻结D02：每章最多一个纯非战斗节点，保证12至15场战斗
+content_version,0.2.1,string,global,新版策划：新美术内容、战士与射手、三章；保留旧定义以安全继续旧存档
 grid_width,9,int,backpack,逻辑画布宽度
 grid_height,7,int,backpack,逻辑画布高度
 shop_slots,5,int,shop,标准商店槽位

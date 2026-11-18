@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b0qilxsxi1vsq"]
+
+[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_f5k5w"]
+[ext_resource type="Script" path="res://PvE/tests/ReleaseContentQA.gd" id="2_ay5ks"]
+
+[node name="Main" instance=ExtResource("1_f5k5w")]
+
+[node name="Regression" type="Node" parent="."]
+script = ExtResource("2_ay5ks")

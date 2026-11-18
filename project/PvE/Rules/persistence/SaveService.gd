@@ -1,6 +1,8 @@
 class_name SaveService
 extends RefCounted
 
+signal run_saved
+
 const SCHEMA = 2
 var base_path: String
 var notices: Array = []
@@ -65,6 +67,8 @@ func save(kind: String, data: Dictionary) -> bool:
 		last_error = "atomic_replace_failed"
 		return false
 	last_error = ""
+	if kind == "run":
+		run_saved.emit()
 	return true
 
 func load_save(kind: String) -> Dictionary:
@@ -155,6 +159,10 @@ func validate_run(data: Dictionary, content) -> Dictionary:
 	for key in ["current_node", "shop", "combat_checkpoint"]:
 		if not data[key] is Dictionary: return {"ok": false, "error": "save_invalid_structure"}
 	if float(data.max_health) <= 0 or float(data.health) < 0 or int(data.gold) < 0: return {"ok": false, "error": "save_invalid_values"}
+	if data.has("route_pending"):
+		if not data.route_pending is bool: return {"ok": false, "error":"save_invalid_structure"}
+		if data.route_pending and (str(data.state)!="SHOP_PREPARE" or data.route_candidates.is_empty() or data.current_node.get("type", "")!="route_pending"):
+			return {"ok":false,"error":"save_invalid_route"}
 	if str(data.state) in ["COMBAT_PREPARE", "COMBAT_RUNNING"]:
 		var checkpoint: Dictionary = data.combat_checkpoint
 		if not checkpoint.get("player") is Dictionary or not checkpoint.get("enemy") is Dictionary or not checkpoint.has("seed"): return {"ok": false, "error": "save_invalid_combat"}

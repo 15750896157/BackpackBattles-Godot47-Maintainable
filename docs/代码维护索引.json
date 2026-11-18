@@ -9,23 +9,25 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "globalPosToScreenPos",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [
       "pos"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getLastRoundResult",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "expandPath",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [
@@ -33,133 +35,149 @@
       "steamID",
       "full"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "makeBaseDir",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getLoadPath",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [
       "format",
       "isFile"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "actuallySaveGame",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "findBackups",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [
       "isLoad"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "loadGame",
     "implementation": "Runtime/Behavior/Game/Session.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getFileContent",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "path"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "calcTempPath",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "loadRunStateFromPath",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "path",
       "mode"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "validateRun",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "mode"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "loadRunState",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "mode",
       "instanceRunState"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "initPlayerFromRunstate",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "mode"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "readRoundResultsFromRunState",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "mode"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "concedeLastRun",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "initPlayer",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getLeague_exact",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "rating"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -183,49 +201,54 @@
     "coroutine": true
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "onReconnectedToLobby",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "loadArenaRunAndStartOnTitle",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "instanceCharacter",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "characterClass"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "addLoadoutAni_jump",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "bag"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "addLoadoutAni",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
       "node",
       "isBag"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "startHistoryRun",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [
@@ -234,21 +257,24 @@
       "opponentData",
       "opponentRoundNum"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "endHistoryRun",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "isSoftballRound",
     "implementation": "Runtime/Behavior/Game/RunFlow.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -265,18 +291,20 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "onWaitingForMembersTimeout",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "forceLeaveLobby",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -289,14 +317,15 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "initHistoryOpponent",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "addOpponentItem",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [
@@ -304,7 +333,8 @@
       "item",
       "checkValidity"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -316,29 +346,32 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "showAffectedLines",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "setInventoryEditMode",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [
       "editMode"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "lockTooltip",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [
       "item"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -419,7 +452,7 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "calcRunRating",
     "implementation": "Runtime/Behavior/Game/Presentation.gd",
     "arguments": [
@@ -430,65 +463,73 @@
       "survival",
       "perfectRunBeforeSurvival"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "itemHovered",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
       "item"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "onItemBought",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
       "item",
       "onSale"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "onItemCrafted",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
       "itemDescriptor"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "getNextTutorialText",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "changeCursorSize",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
       "newSize"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "recalculateCursor",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "getCursorType",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -500,7 +541,7 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "addControlOfInterest",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
@@ -510,39 +551,43 @@
       "childToScrollTo",
       "layer"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "addItemOfInterest",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
       "item",
       "layer"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "warp",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
       "input"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "ensureScrollVisibility",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
       "scrollContainer",
       "child"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "incrementItemStatistic",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [
@@ -550,28 +595,32 @@
       "descriptor",
       "increment"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "onPatchNotesClosed",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "fuseAll",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "checkForInventoryAchievements",
     "implementation": "Runtime/Behavior/Game/ProgressAndRewards.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -2704,13 +2753,6 @@
   {
     "scene_script": "Core/Combat.gd",
     "method": "onSwitchingToCombat",
-    "implementation": "Runtime/Behavior/Core/CombatBehavior.gd",
-    "arguments": [],
-    "coroutine": false
-  },
-  {
-    "scene_script": "Core/Combat.gd",
-    "method": "clashSwords",
     "implementation": "Runtime/Behavior/Core/CombatBehavior.gd",
     "arguments": [],
     "coroutine": false
@@ -6053,22 +6095,24 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "versionToInt",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "ver"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "versionToString",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "ver"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -6080,184 +6124,205 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "openedMenu",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "closeMenu",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "restoreVisibility"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "isMenuOpen",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "giveTrophies",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "amount"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "loseTrophies",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "amount"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getGoldGain",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "inRound"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getHealthGain",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "inRound"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getStartInventoryPrice",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "forClass",
       "loadout"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getRoundResults",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getSavePath",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "format"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "deleteRunState",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "mode"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "checkItemsValid",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "items"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "deleteDraggedItem",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "defaultPersistentVar",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "varName",
       "defaultVal"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getPlayerName",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getClassName",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "charClass"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getPveClassDescription",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "charClass"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getNativeClassColor",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "charClass"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getSeason",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getClassesForRandom",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getRatingFromLeague",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "leagueExact"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getRankingDifForStats",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6267,28 +6332,32 @@
       "numTriesLeft",
       "survival"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getRankingDifIfConceded",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "onReconnectTimeout",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "addStarOfCourage",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -6298,37 +6367,31 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "isItemHandicapStats",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
-    "method": "activateItems",
-    "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
-    "arguments": [
-      "items"
-    ],
-    "coroutine": false
-  },
-  {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "setItemEditMode",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "item",
       "isInGridStorage"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "unlockTooltip",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -6391,39 +6454,43 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getBonusTrophies",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameRunCompatibility.gd",
     "method": "endRun_lobby",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "decode",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "g"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "gainGold",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "amount"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "shootGold",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6431,48 +6498,54 @@
       "toPos",
       "amount"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "unhoverAllItems",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "clearItemsUnderMouse"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "recalcHoverPriority",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "itemHoverEnd",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "item"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "onCraftingTimeout",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "onHoverInteractable",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "control"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",
@@ -6484,7 +6557,7 @@
     "coroutine": false
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "addPointOfInterest",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6493,30 +6566,33 @@
       "childToScrollTo",
       "layer"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "connectToGetRectsSignals",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "receiver",
       "method"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "connectToWarpCursorSignals",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "receiver",
       "method"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "setConfigValue",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6524,20 +6600,22 @@
       "propertyName",
       "propertyValue"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "eraseConfigValue",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "groupName",
       "propertyName"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getConfigValue",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6545,44 +6623,49 @@
       "propertyName",
       "defaultValue"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "setShowChibis",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "showChibis"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "setChibiMode",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "_chibiMode"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "typeToKeyword",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "_type"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getDefaultLocale",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getSkinConfigKey",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6590,19 +6673,21 @@
       "charClass",
       "chibi"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getSelectedSkin",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "slot"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getSkinUnlockKey",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6610,30 +6695,33 @@
       "charClass",
       "chibi"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "isSkinUnlocked",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "slot",
       "skinId"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "unlockSkin",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
       "slot",
       "skinId"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "getItemStatistics",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6641,10 +6729,11 @@
       "descriptor",
       "default"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameProfileCompatibility.gd",
     "method": "addRecord",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6652,10 +6741,11 @@
       "descriptor",
       "amount"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
-    "scene_script": "Core/Game.gd",
+    "scene_script": "Runtime/Compatibility/GameInteractionCompatibility.gd",
     "method": "showWarning",
     "implementation": "Runtime/Behavior/Features/Core/GameBehavior.gd",
     "arguments": [
@@ -6663,7 +6753,8 @@
       "confirmKey",
       "cancelKey"
     ],
-    "coroutine": false
+    "coroutine": false,
+    "entry_point": "Core/Game.gd"
   },
   {
     "scene_script": "Core/Game.gd",

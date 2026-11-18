@@ -54,13 +54,6 @@ static func onSwitchingToCombat(subject: Receiver):
 		Util.callDelayed(subject, "pve_clash_swords", 1.0, [subject.pve_lifecycle_epoch, Game.OPPONENT.get_instance_id()])
 	return
 
-static func clashSwords(subject: Receiver):
-	if Expedition.enabled and (Game.state != Game.State.Combat or not is_instance_valid(Game.OPPONENT)):
-		return
-	Game.PLAYER.animation.play("CombatStart")
-	Game.OPPONENT.animation.play("OpponentCombatStart")
-	Util.callDelayed(Sound, "playSound", 1, [subject.swordClashSound, - 5, Util.rng.randf_range(0.9, 1.0)])
-
 static func pve_clash_swords(subject: Receiver, epoch: int, opponent_id: int):
 	if epoch != subject.pve_lifecycle_epoch or Game.state != Game.State.Combat: return
 	if not is_instance_valid(Game.OPPONENT) or Game.OPPONENT.get_instance_id() != opponent_id: return

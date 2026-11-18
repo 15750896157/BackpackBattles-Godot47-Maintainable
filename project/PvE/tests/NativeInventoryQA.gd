@@ -36,7 +36,8 @@ func run_tests():
 	await get_tree().create_timer(1.0).timeout
 	Game.sceneAnimation.play("StartOnTitle"); Game.sceneAnimation.advance(100)
 	Game.state = Game.State.Title
-	check(Expedition.flow.new_run("armorer", "armorer_blades", "tutorial", 1337, true).ok, "fresh public new run")
+	var loadout = "warrior_blades" if "--release-grid" in OS.get_cmdline_user_args() else "armorer_blades"
+	check(Expedition.flow.new_run("armorer", loadout, "tutorial", 1337, true).ok, "fresh public new run: " + loadout)
 	Expedition.flow.skip_tutorial()
 	await frames()
 	var route = -1
@@ -109,13 +110,21 @@ func run_tests():
 	check(is_instance_valid(stored_item), "storage candidate exists")
 	if is_instance_valid(stored_item):
 		stored_item.pickup()
-		stored_item.global_position = Game.STORAGEBOX.getStorageRect().get_center()
+		var storage_slot := int(Expedition.flow.run.build.storage_capacity) - 1
+		stored_item.global_position = Game.STORAGEBOX.pve_slot_rect(storage_slot).get_center()
 		var storage_result = stored_item.drop()
 		stored_item.reactToDropResult(storage_result)
 		await frames(8)
 		check(storage_result == Item.DropResult.AddedToStorageBox, "original storage drag commits")
 		check(Expedition.flow.placement.find(Expedition.flow.run.build, stored_uid).get("layer", "") == "storage", "canonical storage entry retained")
 		check(stored_item in Game.STORAGEBOX.items and stored_item.ownerType == Item.Owner.PlayerStorageBox, "original storage displays same scene")
+		check(Expedition.flow.placement.storage_positions(Expedition.flow.run.build).get(stored_uid, -1) == storage_slot,
+			"native storage preserves a later slot even when the preceding slot is empty")
+		check(stored_item.global_position.distance_to(Game.STORAGEBOX.pve_slot_rect(storage_slot).get_center()) < 2.0,
+			"the item is rendered in the cell picked by the player")
+		var saved: Dictionary = Expedition.flow.saves.load_save("run")
+		check(saved.ok and Expedition.flow.placement.storage_positions(saved.data.build).get(stored_uid, -1) == storage_slot,
+			"an isolated save preserves the exact storage slot")
 		check(Expedition.flow.edit("undo").ok, "storage undo is one transaction")
 		await frames(8)
 		check(Expedition.flow.placement.find(Expedition.flow.run.build, stored_uid).get("layer", "") == "items", "storage undo restores backpack")
@@ -129,7 +138,7 @@ func run_tests():
 		var uid = "%s_%d" % [str(before_storage.run_id), int(before_storage.next_uid)]
 		var item = Game.shopSceneNode.slots[storage_offer].item
 		item.pickup()
-		item.global_position = Game.STORAGEBOX.getStorageRect().get_center()
+		item.global_position = Game.STORAGEBOX.pve_slot_rect(0).get_center()
 		var result = item.drop()
 		item.reactToDropResult(result)
 		await frames(8)
@@ -140,6 +149,14 @@ func run_tests():
 		check(Expedition.flow.edit("undo").ok, "direct storage purchase one undo")
 		await frames(8)
 		check(transaction_state(Expedition.flow.run) == transaction_state(before_storage), "direct storage undo restores full run")
+		var shortcut_item: Item = Game.shopSceneNode.slots[storage_offer].item
+		check(Expedition.bridge.store_item(shortcut_item).ok, "store shortcut can purchase the original shelf item")
+		await frames(8)
+		var shortcut_entry: Dictionary = Expedition.flow.placement.find(Expedition.flow.run.build, uid)
+		check(shortcut_entry.get("layer", "") == "storage" and int(shortcut_entry.entry.storage_slot) == 0,
+			"store shortcut uses the first free warehouse cell even when the backpack can fit the item")
+		check(Expedition.flow.edit("undo").ok, "store shortcut is one undo")
+		await frames(8)
 	# Translation and clockwise rotation transform the whole recovered bag group.
 	var bag: Dictionary = Expedition.flow.run.build.bags[0]
 	var initial = Expedition.flow.run.duplicate(true)

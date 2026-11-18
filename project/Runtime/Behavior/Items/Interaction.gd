@@ -212,6 +212,7 @@ static func respondToHover(subject: Receiver):
 
 			var ownerType_ = subject.getEffectiveOwnerType()
 			var inventory_ = subject.getInventory()
+			var reference_shop: bool = ownerType_ == subject.Owner.Shop and subject.has_meta("pve_definition_id") and Expedition.active and Expedition.db.release_run(Expedition.flow.run)
 
 			match ownerType_:
 				subject.Owner.Shop:
@@ -269,7 +270,12 @@ static func respondToHover(subject: Receiver):
 
 			Game.tooltipsNode.add_child(subject.tooltip)
 			subject.tooltip.setItem(subject)
-			subject.tooltip.forceUpdatePosition(tooltipPos, toolsize)
+			if reference_shop:
+				# The reference places the parchment above the right-hand workspace.
+				tooltipPos = Vector2(1173 - toolsize.x - subject.tooltip.MARGIN,213)
+				subject.tooltip.forceUpdatePosition(tooltipPos, toolsize, ToolTip.Alignment.Top)
+			else:
+				subject.tooltip.forceUpdatePosition(tooltipPos, toolsize)
 
 			if Game.showHintsIsPressed:
 				if subject.isOwnable() or subject.isOwnedByOpponent():

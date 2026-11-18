@@ -114,8 +114,27 @@ stat_definitions source_metric telemetry_metrics'''
     fk('enemy_builds','affix_id','encounter_affixes',optional=True)
     fk('encounter_templates','affix_pool','encounter_affixes',optional=True)
     fk('node_templates','shop_rule_id','shop_rules',allowed=('none',))
-    frozen={'items':72,'bags':10,'recipes':24,'recipe_ingredients':48,'characters':2,
-      'character_archetypes':6,'character_loadouts':4,'difficulty_levels':8,'enemy_builds':30,
+    # Content tracks and selectable professions are separate. A restored role
+    # can retain its original pools and loadouts without migrating existing saves.
+    release_path=Path(source).parent/'release_catalog.json' if source else None
+    release=json.loads(release_path.read_text(encoding='utf-8-sig')) if release_path and release_path.exists() else {}
+    if release:
+        for table,minimum in [('items',60),('bags',8),('recipes',18)]:
+            ids=release.get(table,[])
+            if len(ids)<minimum or len(ids)!=len(set(ids)):fail(table+'：新版内容数量不足或ID重复')
+            if not set(ids)<=set(by(table)):fail(table+'：新版目录含不存在的ID')
+            counts['release_'+table]=len(ids)
+        if release.get('characters')!=['armorer','archer']:fail('新版内容轨道必须保留战士与射手')
+        if release.get('selectable_characters')!=['armorer','archer','alchemist']:fail('选人必须包含战士、射手、调律师三个职业')
+        for role, ids in release.get('compatibility_loadouts',{}).items():
+            if role not in release.get('selectable_characters',[]) or role in release.get('characters',[]):fail(role+'：兼容起手配置必须属于独立的可选职业')
+            if len(ids)!=2 or len(set(ids))!=2 or any(by('character_loadouts').get(i,{}).get('character_id')!=role for i in ids):fail(role+'：必须保留两套合法兼容起手配置')
+        if 'alchemist' not in release.get('compatibility_loadouts',{}):fail('调律师缺少兼容起手配置')
+        if release.get('chapters')!=3:fail('冻结D02：首发采用三章')
+        for role in release.get('characters',[]):
+            ids=release.get('loadouts',{}).get(role,[])
+            if len(ids)!=2 or any(by('character_loadouts').get(i,{}).get('character_id')!=role for i in ids):fail(role+'：必须有两套合法新版起手配置')
+    frozen={'difficulty_levels':8,'enemy_builds':30,
       'bosses':3,'boss_phases':6,'events':12,'reward_tables':5,'reward_entries':20,
       'tutorial_steps':16,'achievements':20,'telemetry_metrics':24,'stat_definitions':19,'rest_actions':2}
     for name, count in frozen.items():

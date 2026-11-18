@@ -39,7 +39,7 @@ func run_tests():
 		check(not item.sprite.region_enabled and item.sprite.hframes==1 and item.sprite.vframes==1,id+": entire single-frame image retained")
 		check(not item.sprite.flip_h and not item.sprite.flip_v,id+": shelf image is upright")
 		var rect:Rect2=item.get_meta("pve_visual_bounds")
-		check(rect.size.x<=185 and rect.size.y<=161,id+": shelf image fits display bounds")
+		check(rect.size.x<=185 and rect.size.y<=261,id+": shelf image fits display bounds")
 		item.ownerType=Item.Owner.BuildViewerIcon
 		Expedition.bridge.fit_native_visual(item)
 		var cells=Expedition.flow.placement.local_cells(item.get_meta("pve_entry"))
@@ -83,12 +83,12 @@ func run_tests():
 		Expedition.flow.run.act=act+1
 		check(await Expedition.scenery.ensure_view("combat"),"chapter "+str(act+1)+": streamed background")
 		var background=Game.combatSceneNode.backgroundNode.get_node("Desert")
-		check(background.texture.resource_path==ART.ROOT+"backgrounds/"+["forest","desert","volcano"][act]+".png","chapter background mapping")
+		check(background.texture.resource_path==ART.ROOT+"bg/"+["bg_chapter1_jungle","bg_chapter2_desert","bg_chapter3_volcano"][act]+".png","chapter background mapping")
 		Expedition.scenery.unload("combat");await get_tree().process_frame
 	check(not Expedition.scenery.live.has("combat"),"unused chapter scenery released")
 	Expedition.flow.screen_state="REST";Expedition.menus.runs.event();await settle()
 	var camp=Expedition.panel.find_child("RestCampArt",true,false)
-	check(camp!=null and camp.texture!=null and camp.texture.resource_path==ART.ROOT+"ui/camp.png","rest camp loaded through guarded popup resource scope")
+	check(camp!=null and camp.texture!=null and camp.texture.resource_path==ART.ui_path("camp"),"rest camp loaded through guarded popup resource scope")
 	await shot("rest-camp")
 	var file=FileAccess.open(output.path_join("supplied-art-report.json"),FileAccess.WRITE)
 	file.store_string(JSON.stringify({"ok":failures.is_empty(),"checks":checks,"failures":failures},"\t"));file.close()

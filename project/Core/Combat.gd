@@ -58,7 +58,7 @@ const swordClashSound = preload("res://Assets/Sound/SwordClash.mp3")
 @onready var rankUpBonusAnimation = $UI/Ranked/BonusAnimationPlayer
 @onready var rankUpBonusLabel = $UI/Ranked/RankUpBonus
 @onready var combatLogButton = $CombatLogButtonNode/CombatLogButton
-@onready var survivalPrompt = $"%SurvivalPrompt"
+@onready var survivalPrompt = $"../UI/SurvivalPrompt"
 @onready var survivalPromptAnimation = survivalPrompt.get_node("AnimationPlayer")
 @onready var survivalHealHint = survivalPrompt.get_node("StartSurvival/HealHint")
 @onready var survivalTrophies = $UI/Trophies/SurvivalTrophies
@@ -122,9 +122,6 @@ func onSwitchingToCombat():
 func onSwitchedToCombat():
 	combatLogButton.disabled = false
 	combatLogButton.show()
-
-func clashSwords():
-	return load("res://Runtime/Behavior/Core/CombatBehavior.gd").clashSwords(self)
 
 func pve_clash_swords(epoch: int, opponent_id: int):
 	return load("res://Runtime/Behavior/Core/CombatBehavior.gd").pve_clash_swords(self, epoch, opponent_id)

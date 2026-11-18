@@ -10,3 +10,7 @@ Thumbs.db
 *.temp
 .env
 .env.*
+
+# Generated test evidence and private authoring inputs
+/verification/
+/inputs/

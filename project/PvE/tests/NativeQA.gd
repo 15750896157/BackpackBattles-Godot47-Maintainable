@@ -105,15 +105,15 @@ func run_tests():
 	Expedition.menus.library.show_page("items")
 	await frames()
 	var seen:Dictionary={}
-	for page_index in int(ceil(Expedition.db.rows("items").size()/6.0)):
+	for page_index in int(ceil(Expedition.db.catalogue_rows("items",not Expedition.db.release_run(Expedition.flow.run)).size()/4.0)):
 		Expedition.menus.library.page=page_index;Expedition.menus.library.populate();await frames()
-		var cards=Expedition.detail_views.results.find_children("*","Button",true,false).filter(func(card):return card.has_meta("definition_id"))
+		var cards=Expedition.menus.library.body.find_children("*","Button",true,false).filter(func(card):return card.has_meta("definition_id"))
 		check(cards.size()<=6,"codex instantiates at most six touch cards per page")
 		for card in cards:
-			var icons=card.find_children("*","TextureRect",true,false)
-			check(icons.size()==1 and icons[0].texture!=null,"paged card has real texture "+str(card.get_meta("definition_id")))
+			var icon: TextureRect = card.get_node_or_null("BookEntryIcon")
+			check(icon!=null and icon.texture!=null,"paged card has real texture "+str(card.get_meta("definition_id")))
 			seen[card.get_meta("definition_id")]=true
-	check(Expedition.current_page == "CODEX" and seen.size() == Expedition.db.rows("items").size(), "paged codex covers every configured item")
+	check(Expedition.current_page == "CODEX" and seen.size() == Expedition.db.catalogue_rows("items",not Expedition.db.release_run(Expedition.flow.run)).size(), "paged codex covers every configured item")
 	Expedition.close_popup()
 	Expedition.show_current_enemy()
 	await frames()
@@ -132,6 +132,14 @@ func run_tests():
 	await get_tree().create_timer(0.15,true,false,true).timeout
 	check(Expedition.flow.playback_time == paused_time, "native pause freezes rule playback")
 	await shot("07-original-battle-paused")
+	var all_events: Array = Expedition.flow.combat_result.get("full_events", [])
+	var reached := all_events.filter(func(event): return float(event.get("time", 0)) <= paused_time)
+	Expedition.show_combat_log(0, true)
+	await frames()
+	var shown := combat_log_times()
+	check(reached.size() < all_events.size() and shown == reached.slice(0, 6).map(func(event): return float(event.get("time", 0))),
+		"live event page contains exactly the first six reached events and no future events")
+	Expedition.close_popup()
 	Expedition.return_to_title()
 	await frames()
 	Expedition.continue_run()
@@ -148,6 +156,15 @@ func run_tests():
 	check(Expedition.current_page == "COMBAT_LOG", "native combat log uses deterministic statistics")
 	check(not Expedition.flow.run.logs.back().get("item_stats_by_instance_id", {}).is_empty(), "local history saves new combat statistics")
 	await shot("08b-original-combat-log")
+	Expedition.show_combat_log(0, true)
+	await frames()
+	check(combat_log_times().size() == mini(6, all_events.size()), "settled event log shows the first full page")
+	var next_page = Expedition.popup_content.find_child("LogNext", true, false)
+	if all_events.size() > 6 and next_page != null:
+		next_page.pressed.emit()
+		await frames()
+		check(combat_log_times() == all_events.slice(6, 12).map(func(event): return float(event.get("time", 0))),
+			"next event page advances in the same deterministic order")
 	Expedition.render_state()
 	Expedition.advance_result()
 	await frames()
@@ -172,6 +189,13 @@ func run_tests():
 	check(str(Expedition.flow.run.logs.back().digest) == history_digest, "finished battle history survives local save/continue")
 	check(not Expedition.flow.run.logs.back().get("item_stats_by_instance_id", {}).is_empty(), "saved history restores per-item statistics")
 	finish()
+
+func combat_log_times() -> Array:
+	var times: Array = []
+	for line in Expedition.popup_content.find_children("*", "Label", true, false):
+		if line.has_meta("pve_combat_event_time"):
+			times.append(line.get_meta("pve_combat_event_time"))
+	return times
 
 func finish():
 	var report = {"checks": checks, "failures": failures, "engine": Engine.get_version_info().string, "entry": ProjectSettings.get_setting("application/run/main_scene"), "content_sha256": Expedition.db.content_sha256 if Expedition.db != null else "", "battle_digest": digest, "mode": "actual original root scene with PVE adapter; public UI and rule methods"}

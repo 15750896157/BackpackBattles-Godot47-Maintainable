@@ -260,23 +260,6 @@ static func isItemHandicapStats(subject: Receiver):
 			(subject.wins == 3 and subject.losses == 4) or
 			(subject.wins == 0 and subject.losses == 4))
 
-static func activateItems(subject: Receiver, items):
-
-	subject.emit_signal("combat_start")
-	subject.combatTimer.start()
-
-	subject.PLAYER.combatStart()
-	subject.OPPONENT.combatStart()
-
-	for item in items:
-		item.preCombatStart()
-
-	for item in items:
-		item.combatStart()
-
-	for item in items:
-		item.postCombatStart()
-
 static func setItemEditMode(subject: Receiver, item, isInGridStorage):
 	if isInGridStorage == null:
 		isInGridStorage = item.isInGridStorage()

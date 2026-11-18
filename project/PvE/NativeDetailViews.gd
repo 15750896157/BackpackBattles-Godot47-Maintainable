@@ -33,23 +33,30 @@ func enemy_snapshot(node: Dictionary) -> Dictionary:
 func show_enemy(node: Dictionary, phase: int = 1):
 	owner.menus.journey.show_page(node,phase)
 
-func grid(build: Dictionary, parent: Node) -> Control:
+func grid(build: Dictionary, parent: Node, empty_tile: Texture2D = null) -> Control:
 	var canvas = Control.new()
 	canvas.custom_minimum_size = Vector2(558, 434)
 	canvas.size_flags_horizontal=Control.SIZE_SHRINK_CENTER
 	canvas.set_meta("pve_build_grid", true)
 	parent.add_child(canvas)
 	var supported: Dictionary = {}
+	var occupied_cells: Dictionary = {}
+	for entry in build.items:
+		for cell in owner.flow.placement.cells(entry): occupied_cells[cell] = true
+	var tile_texture: Texture2D = load("res://Art/Supplied20261028/ui/cell.png")
 	for bag in build.bags:
 		for cell in owner.flow.placement.cells(bag): supported[cell] = true
 	for y in 7:
 		for x in 9:
 			var tile = TextureRect.new()
-			tile.texture = load("res://Art/Supplied20261028/ui/cell.png")
-			tile.position = Vector2(x, y) * 62
-			tile.size = Vector2(62, 62)
+			var occupied := supported.has(Vector2i(x,y))
 			tile.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-			tile.modulate = Color(1,1,1,0.38) if supported.has(Vector2i(x, y)) else Color(0.25, 0.25, 0.25, 0.12)
+			tile.texture = empty_tile if empty_tile != null and not occupied else tile_texture
+			tile.position = Vector2(x, y) * 62
+			tile.size = Vector2(60,60) if empty_tile != null else Vector2(62,62)
+			tile.modulate = Color(1,1,1,0.55) if empty_tile != null else Color(1,1,1,0.38) if occupied else Color(0.25, 0.25, 0.25, 0.12)
+			if occupied_cells.has(Vector2i(x,y)):
+				tile.modulate = Color(0.39, 0.32, 0.26, tile.modulate.a)
 			tile.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			canvas.add_child(tile)
 	for entry in build.items:
@@ -107,7 +114,10 @@ func fill_icon(target: WeakRef, id: String, epoch: int):
 	icon.texture = texture
 
 func fill_supplied_picture(target: WeakRef, key: String, epoch: int):
-	var texture=await AssetStream.request_resource("res://Art/Supplied20261028/ui/"+key+".png","popup")
+	await fill_picture(target,"res://Art/Supplied20261028/ui/"+key+".png",epoch)
+
+func fill_picture(target: WeakRef, path: String, epoch: int):
+	var texture=await AssetStream.request_resource(path,"popup")
 	var icon=target.get_ref()
 	if epoch!=owner.popup_epoch or not is_instance_valid(icon) or icon.is_queued_for_deletion():return
 	icon.texture=texture

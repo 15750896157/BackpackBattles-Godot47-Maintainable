@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cr7hlk4b5k5xg"]
+
+[node name="LootCanvas" type="Control"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Subtitle" type="Label" parent="."]
+offset_left = 610.0
+offset_top = 424.0
+offset_right = 1310.0
+offset_bottom = 473.0
+visible = false
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cards" type="Control" parent="."]
+offset_left = 0.0
+offset_top = 479.0
+offset_right = 1920.0
+offset_bottom = 908.0
+mouse_filter = 2
+
+[node name="DefeatMessage" type="Label" parent="."]
+offset_left = 545.0
+offset_top = 600.0
+offset_right = 1375.0
+offset_bottom = 646.0
+visible = false
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReturnHome" type="TextureButton" parent="."]
+offset_left = 810.0
+offset_top = 655.0
+offset_right = 1110.0
+offset_bottom = 717.0
+visible = false
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Continue" type="TextureButton" parent="."]
+offset_left = 735.0
+offset_top = 927.0
+offset_right = 1185.0
+offset_bottom = 988.0
+visible = false
+mouse_default_cursor_shape = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CarryHint" type="Label" parent="."]
+offset_left = 390.0
+offset_top = 1005.0
+offset_right = 1530.0
+offset_bottom = 1048.0
+visible = false
+mouse_filter = 2
+horizontal_alignment = 1
+vertical_alignment = 1

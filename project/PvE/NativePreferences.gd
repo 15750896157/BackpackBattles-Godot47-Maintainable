@@ -29,12 +29,11 @@ func apply():
 			var index = AudioServer.bus_count - 1
 			AudioServer.set_bus_name(index, name)
 			AudioServer.set_bus_send(index, "Master")
-	for pair in [["BGM", "music"], ["PvEUI", "ui"], ["PvECombat", "combat"], ["PvEAmbient", "ambient"]]:
-		AudioServer.set_bus_volume_db(AudioServer.get_bus_index(pair[0]), linear_to_db(clampf(float(values[pair[1]]), 0.0, 1.0)))
+	apply_audio_levels()
 	Sound.itemMovePlayer.bus = &"PvEUI"
 	AudioServer.set_bus_send(AudioServer.get_bus_index("SFX"), "PvEUI")
 	AudioServer.set_bus_send(AudioServer.get_bus_index("Voice"), "PvECombat")
-	Settings.setVal(Settings.Setting.language, "zh_Hans_CN" if str(values.language).begins_with("zh") else "en")
+	apply_language()
 	for action in values.inputs:
 		if action not in defaults or not values.inputs[action] is Dictionary: continue
 		var saved: Dictionary = values.inputs[action]
@@ -68,6 +67,37 @@ func apply_window():
 
 func save():
 	if not owner.flow.saves.save("settings", values): owner.notice("save_write_failed")
+
+func apply_audio_levels() -> void:
+	for pair in [["BGM", "music"], ["PvEUI", "ui"], ["PvECombat", "combat"], ["PvEAmbient", "ambient"]]:
+		AudioServer.set_bus_volume_db(AudioServer.get_bus_index(pair[0]), linear_to_db(clampf(float(values[pair[1]]), 0.0, 1.0)))
+
+func apply_language() -> void:
+	Settings.setVal(Settings.Setting.language, "zh_Hans_CN" if str(values.language).begins_with("zh") else "en")
+
+func set_option(key: String, value: Variant) -> bool:
+	if key not in ["language", "ui_scale", "window_mode", "resolution", "reduce_flash", "reduce_motion", "reduce_effects", "high_contrast"]:
+		return false
+	if typeof(value) != typeof(values[key]):
+		return false
+	values[key] = value
+	save()
+	match key:
+		"language": apply_language()
+		"ui_scale": owner.ui_theme.default_font_size = roundi(24 * values.ui_scale)
+		"window_mode", "resolution": apply_window()
+	return true
+
+func set_volume(key: String, ratio: float) -> bool:
+	if key not in ["music", "ambient", "ui", "combat"]:
+		return false
+	values[key] = clampf(ratio, 0.0, 1.0)
+	if key == "ui":
+		values.ambient = values.ui
+		values.combat = values.ui
+	apply_audio_levels()
+	save()
+	return true
 
 func show_page():
 	owner.menus.settings.show_page()
@@ -124,8 +154,7 @@ func capture(event: InputEvent) -> bool:
 	if not conflict.is_empty():
 		cancel_capture()
 		show_inputs()
-		owner.toast.text = owner.t("native.input_conflict", {"action": owner.t("native.key_" + conflict)})
-		owner.toast_time = 5.0
+		owner.hud_vm.show_notice(owner.t("native.input_conflict", {"action": owner.t("native.key_" + conflict)}))
 		return true
 	apply_binding(target, binding)
 	var slots: Dictionary = values.inputs.get(target, {}).duplicate(true)
@@ -135,8 +164,7 @@ func capture(event: InputEvent) -> bool:
 	slots["controller" if binding.has("joy") or binding.has("axis") else "keyboard"] = binding
 	values.inputs[target] = slots
 	cancel_capture()
-	owner.toast_time = 0.0
-	owner.toast.text = ""
+	owner.hud_vm.clear_notice()
 	save()
 	show_inputs()
 	return true

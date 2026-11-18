@@ -1,17 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene format=3 uid="uid://dw3g2c6mx1ipv"]
 
-[ext_resource path="res://Interface/DamageMeter/PlotLine.gd" type="Script" id=1]
-[ext_resource path="res://Interface/DamageMeter/Plot/LineTexture2.png" type="Texture2D" id=2]
+[ext_resource type="Texture2D" path="res://Interface/DamageMeter/Plot/LineTexture2.png" id="1_xs3w4"]
+[ext_resource type="Script" path="res://Interface/DamageMeter/PlotLine.gd" id="2_qpwc3"]
 
 [node name="Line2D" type="Line2D"]
-points = PackedVector2Array( 0, 0, 65, -92, 187, -156, 242, -50, 353, -106 )
+points = PackedVector2Array(0, 0, 65, -92, 187, -156, 242, -50, 353, -106)
 width = 1.0
-default_color = Color( 1, 1, 1, 1 )
-texture = ExtResource( 2 )
+default_color = Color(1, 1, 1, 1)
+texture = ExtResource("1_xs3w4")
 texture_mode = 1
 joint_mode = 2
 antialiased = true
-script = ExtResource( 1 )
+script = ExtResource("2_qpwc3")
 
 [node name="Points" type="Node2D" parent="."]
 z_index = 1

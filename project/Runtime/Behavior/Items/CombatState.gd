@@ -224,10 +224,14 @@ static func _input(subject: Receiver, event: InputEvent) -> void :
 
 static func resetSprite(subject: Receiver):
 	if subject.pve_is_view():
+		var presentation_scale = subject.scale
 		Util.finishTween(subject.shadowTween)
 		subject.animation.advance(100)
 		subject.animation.play("RESET")
 		subject.animation.advance(1)
+		# The recovered RESET clip includes a root scale=1 track. Preserve the
+		# current board/storage transform; animation may only reset the sprite.
+		subject.scale = presentation_scale
 		subject.sprite.position = subject.get_meta("pve_sprite_position", Vector2.ZERO)
 		subject.sprite.rotation = 0
 		subject.setSpriteScale(subject.spriteScale)

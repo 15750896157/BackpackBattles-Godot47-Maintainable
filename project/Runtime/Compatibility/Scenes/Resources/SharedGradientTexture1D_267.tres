@@ -1,0 +1,7 @@
+[gd_resource type="GradientTexture1D" format=3]
+
+[ext_resource type="Gradient" path="res://Runtime/Compatibility/Scenes/Resources/SharedGradient_266.tres" id="m7_shared_266"]
+
+[resource]
+gradient = ExtResource("m7_shared_266")
+width = 100

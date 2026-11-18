@@ -481,7 +481,7 @@ func damage(event: Dictionary, target_side: int, base: float, kind: String, stat
 			critical = _roll("critical", str(event.source_id)) < _crit_chance(attacker, item)
 		amount = _raw_damage(attacker, item, base, critical)
 	amount = floor(amount)
-	if kind == "physical_damage": amount = floor(amount * (1.0 - minf(float(_rule("damage_reduction_cap", 0.7)), statuses.value(target, "fortified"))))
+	if kind == "physical_damage": amount = floor(amount * (1.0 - minf(float(_rule("damage_reduction_cap", 0.7)), statuses.value(target, "fortified")+statuses.value(target,"resistance"))))
 	var previous_armor = float(target.armor)
 	var absorbed = minf(float(target.armor), amount) if kind == "physical_damage" else 0.0
 	target.armor = maxf(0.0, float(target.armor) - absorbed)
@@ -499,6 +499,12 @@ func damage(event: Dictionary, target_side: int, base: float, kind: String, stat
 	if previous_armor > 0.0 and float(target.armor) <= 0.0: _armor_broken(target, event)
 	_check_death()
 	if finished: return
+	if kind=="physical_damage" and side!=target_side and statuses.value(target,"thorns")>0:
+		var reflected=event.duplicate(true)
+		reflected.side=target_side
+		reflected.source_id=str(target.statuses.thorns.get("source_id",""))
+		damage(reflected,side,statuses.value(target,"thorns"),"true_damage","thorns")
+		if finished:return
 	if kind == "physical_damage":
 		_emit_trigger("attack_hit", side, event, {"trigger_source_id": event.source_id, "life_damage": actual})
 		if critical: _emit_trigger("critical_hit", side, event, {"trigger_source_id": event.source_id, "life_damage": actual})

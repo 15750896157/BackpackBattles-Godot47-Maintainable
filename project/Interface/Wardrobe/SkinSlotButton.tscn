@@ -1,16 +1,16 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene format=3 uid="uid://c0t7tcmeqoeyg"]
 
-[ext_resource path="res://Interface/KeyLock.png" type="Texture2D" id=1]
-[ext_resource path="res://Interface/Wardrobe/SkinSlotButton.png" type="Texture2D" id=2]
-[ext_resource path="res://Interface/Wardrobe/SkinSlotButton.gd" type="Script" id=3]
-[ext_resource path="res://CharacterClasses/Ranger/Skins/Normal/Default/Default.png" type="Texture2D" id=4]
-[ext_resource path="res://Interface/FocusGrabbingTextureButton.gd" type="Script" id=5]
+[ext_resource type="Script" path="res://Interface/Wardrobe/SkinSlotButton.gd" id="1_8e6n4"]
+[ext_resource type="Texture2D" path="res://Interface/Wardrobe/SkinSlotButton.png" id="2_3kxkr"]
+[ext_resource type="Script" path="res://Interface/FocusGrabbingTextureButton.gd" id="3_cvgkm"]
+[ext_resource type="Texture2D" path="res://CharacterClasses/Ranger/Skins/Normal/Default/Default.png" id="4_pwe8d"]
+[ext_resource type="Texture2D" path="res://Interface/KeyLock.png" id="5_yqtw4"]
 
 [node name="Control" type="Control"]
 offset_right = 60.0
 offset_bottom = 60.0
-custom_minimum_size = Vector2( 60, 60 )
-script = ExtResource( 3 )
+custom_minimum_size = Vector2(60, 60)
+script = ExtResource("1_8e6n4")
 
 [node name="Button" type="TextureButton" parent="."]
 anchor_right = 1.0
@@ -20,23 +20,23 @@ offset_top = -15.0
 offset_right = 16.0
 offset_bottom = 16.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource( 2 )
+texture_normal = ExtResource("2_3kxkr")
 stretch_mode = 5
-script = ExtResource( 5 )
+script = ExtResource("3_cvgkm")
 ignore_texture_size = true
 
 [node name="Icon" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-texture = ExtResource( 4 )
+texture = ExtResource("4_pwe8d")
 expand_mode = 1
 stretch_mode = 6
 
 [node name="Locked" type="Sprite2D" parent="."]
-position = Vector2( 29, 29 )
-scale = Vector2( 0.43125, 0.43125 )
-texture = ExtResource( 1 )
+position = Vector2(29, 29)
+scale = Vector2(0.43125, 0.43125)
+texture = ExtResource("5_yqtw4")
 
 [connection signal="hover_end" from="Button" to="." method="onHoverEnd"]
 [connection signal="hover_start" from="Button" to="." method="onMouseEntered"]

@@ -7,6 +7,7 @@ var loadout="armorer_blades"
 var difficulty="tutorial"
 var seed_value=0
 var selected_recipe:Dictionary={}
+var selection
 func _init(host,shell): owner=host;ui=shell
 func setup(mode: int = -1):
 	if seed_value==0: seed_value=Time.get_ticks_usec()&0xffffffff
@@ -33,36 +34,9 @@ func entry_choice(saved:Dictionary):
 	fresh.get_child(0).get_child(0).custom_minimum_size.y=150
 	owner.label(ui.words("新游戏出发后替换上局进度","Starting a new expedition replaces the previous run."),null,22)
 func new_setup():
-	ui.open("SETUP",ui.words("出发","New expedition"))
-	var roles=ui.row()
-	for id in ["armorer","alchemist"]:
-		var data=owner.db.get_row("characters",id)
-		var button=ui.card(roles,owner.t(data.name_key),load(preload("res://PvE/Art/SuppliedArt.gd").actor_path(id)),func():role=id;loadout="";setup(),"♥ "+str(data.max_health))
-		button.custom_minimum_size.y=310
-		button.get_child(0).get_child(0).custom_minimum_size.y=180
-		for state in ["normal","hover","pressed","disabled"]:
-			var skin=StyleBoxTexture.new();skin.texture=load("res://Art/Supplied20261028/ui/selection.png");skin.set_content_margin_all(14);button.add_theme_stylebox_override(state,skin)
-		for label in button.find_children("*","Label",true,false):
-			label.add_theme_color_override("font_color",Color("fff0ce"));label.add_theme_color_override("font_outline_color",Color("20120b"));label.add_theme_constant_override("outline_size",3)
-		button.modulate=Color.WHITE if role==id else Color(0.76,0.76,0.76)
-	var choices=ui.row()
-	for data in owner.db.rows("character_loadouts"):
-		if data.character_id!=role:continue
-		if loadout.is_empty() or not loadout.begins_with(role):loadout=data.id
-		ui.action(choices,owner.t(data.name_key),func():loadout=data.id;setup(),loadout==data.id)
-	var levels=ui.row()
-	for data in owner.db.rows("difficulty_levels"):
-		if data.id in owner.flow.profile_service.profile.unlocks:
-			ui.segment(levels,owner.t(data.name_key),func():difficulty=data.id;setup(),difficulty==data.id)
-	var bottom=ui.row()
-	ui.action(bottom,ui.words("换一张地图","Shuffle map"),func():seed_value=Time.get_ticks_usec()&0xffffffff;new_setup()).name="ShuffleSeed"
-	var begin=ui.action(bottom,owner.t("ui.begin_expedition"),func():
-		if seed_value<0 or seed_value>4294967295:owner.notice("ui.invalid_seed");return
-		owner.perform(owner.flow.new_run(role,loadout,difficulty,seed_value,true)))
-	begin.name="BeginExpedition"
-	for state in ["normal","hover","pressed","disabled"]:
-		var skin=owner.ui_theme.get_stylebox(state,"Button").duplicate();skin.texture=load("res://Art/Supplied20261028/ui/button_red.png");begin.add_theme_stylebox_override(state,skin)
-	for state in ["font_color","font_hover_color","font_pressed_color"]:begin.add_theme_color_override(state,Color("fff4d7"))
+	if selection == null: selection = preload("res://PvE/UI/SelectionLayout.gd").new(self)
+	selection.show_page()
+
 func confirm_new(new_role: String,new_loadout: String,new_difficulty: String,new_seed: int):
 	role=new_role;loadout=new_loadout;seed_value=new_seed
 	difficulty=new_difficulty
@@ -70,35 +44,9 @@ func confirm_new(new_role: String,new_loadout: String,new_difficulty: String,new
 	if saved.ok:entry_choice(saved.data)
 	else:new_setup()
 func result():
-	var data=owner.flow.combat_result
-	ui.open("COMBAT_RESULT",owner.t("ui.victory" if int(data.get("winner_side",data.get("winner",1)))==0 else "ui.defeat"))
-	var top=ui.row();ui.picture(top,ui.image("battle"),Vector2(280,155))
-	var info=ui.column(top)
-	owner.label(owner.enemy_name(owner.flow.run.current_node),info,30)
-	owner.label("♥ "+str(int(owner.flow.run.health))+"   ⏱ "+str(snappedf(float(data.elapsed_time),0.1))+"s",info,28)
-	ui.action(info,owner.t("ui.next"),owner.advance_result).name="ResultNext"
-	var stats=ui.column(owner.popup_content)
-	for side in 2:
-		var entries=data.get("item_stats_by_instance_id",{}).values().filter(func(row):return int(row.get("side",-1))==side)
-		entries.sort_custom(func(a,b):return float(a.get("damage",0))>float(b.get("damage",0)))
-		var row=ui.row(stats)
-		owner.label(owner.t("native.player_side" if side==0 else "native.enemy_side"),row,24)
-		for index in mini(3,entries.size()):
-			owner.label(owner.source_name(entries[index])+"  ⚔ "+str(snappedf(float(entries[index].get("damage",0)),0.1)),row,22)
+	preload("res://PvE/UI/LootLayout.gd").show_page(self)
 func rewards():
-	ui.open("REWARD_SELECT",ui.words("战利品","Rewards"))
-	if bool(owner.flow.run.reward_selected):
-		pending_controls();ui.action(owner.popup_content,owner.t("ui.continue_route"),func():owner.perform(owner.flow.complete_node()),not owner.flow.run.pending_rewards.is_empty());return
-	var grid=ui.grid(owner.popup_content,3)
-	for index in owner.flow.run.reward_choices.size():
-		var reward=owner.flow.run.reward_choices[index]
-		var id=str(reward.get("definition_id",""))
-		var title=owner.t(owner.flow.placement.definition(id).name_key) if not id.is_empty() else owner.effect_text(reward.type,reward.params)
-		var card=ui.card(grid,title,ui.image("codex"),func():owner.perform(owner.flow.choose_reward(index)))
-		if not id.is_empty():owner.detail_views.fill_icon(weakref(card.get_child(0).get_child(0)),id,owner.popup_epoch)
-	var consent=CheckBox.new();consent.text=ui.words("放弃本次奖励","Skip this reward");consent.custom_minimum_size.y=72;owner.popup_content.add_child(consent)
-	ui.action(owner.popup_content,owner.t("ui.skip_reward"),func():
-		if consent.button_pressed:owner.perform(owner.flow.skip_reward(true)))
+	preload("res://PvE/UI/LootLayout.gd").show_page(self)
 func pending_controls():
 	for index in owner.flow.run.pending_rewards.size():
 		var pending=owner.flow.run.pending_rewards[index]
@@ -108,22 +56,26 @@ func pending_controls():
 			ui.action(row,owner.t("ui."+action),func():owner.perform(owner.flow.handle_pending(index,action)),action=="storage" and owner.flow.run.build.storage.size()>=int(owner.flow.run.build.storage_capacity))
 func pending():ui.open("PENDING",ui.words("收纳战利品","Store rewards"));pending_controls()
 func event():
-	var rest=owner.flow.screen_state=="REST"
-	if rest:Sound.playBGM(Sound.postFightBGM_survival,-8)
-	var event=owner.db.get_row("events",str(owner.flow.run.current_node.get("event_id","")))
-	ui.open(owner.flow.screen_state,owner.t("ui.rest") if rest else owner.t(event.title_key))
-	if rest:
-		var camp=ui.picture(ui.row(),null,Vector2(560,190));camp.name="RestCampArt"
-		owner.detail_views.fill_supplied_picture(weakref(camp),"camp",owner.popup_epoch)
-	if not rest:owner.label(owner.t(event.description_key),null,24)
+	if owner.flow.screen_state=="REST":
+		Sound.playBGM(Sound.postFightBGM_survival,-8)
+		preload("res://PvE/UI/CampLayout.gd").show_page(self)
+		return
+	var model = owner.menus.new_journey_model()
+	var event: Dictionary = model.snapshot().choice_page.event
+	ui.open("EVENT",owner.t(event.title_key))
+	owner.label(owner.t(event.description_key),null,24)
 	var grid=ui.grid(owner.popup_content,2)
-	for choice in owner.db.rows("rest_actions" if rest else "event_choices"):
-		if not rest and choice.event_id!=event.id:continue
-		var column=ui.column(grid,580)
+	populate_choices(grid,false,580,model)
+func populate_choices(grid:Node,rest:bool,width:float=580,existing_model=null):
+	var model = existing_model if existing_model != null else owner.menus.new_journey_model()
+	var page: Dictionary = model.snapshot().choice_page
+	var ticket: int = owner.popup_epoch
+	for projected in page.get("choices",[]):
+		var choice: Dictionary = projected.rule
+		var column=ui.column(grid,width)
 		owner.label(owner.t(str(choice.get("name_key" if rest else "text_key",""))),column,27)
 		var options:Array=[{}];var names:Array=[]
-		for effect in owner.db.rows("rest_action_effects" if rest else "event_choice_effects"):
-			if str(effect.get("rest_action_id" if rest else "choice_id",""))!=choice.id:continue
+		for effect in projected.effects:
 			owner.label(owner.effect_text(effect.effect_type,effect.params),column,22)
 			if effect.effect_type=="remove_item":
 				options=[]
@@ -139,29 +91,46 @@ func event():
 					var recipe=owner.db.get_row("recipes",candidate.recipe_id)
 					if int(recipe.tier)>int(owner.db.parse_params(effect.params).get("tier_max",2)):continue
 					options.append({"recipe_id":recipe.id,"material_uids":candidate.material_uids});names.append(owner.t(owner.flow.placement.definition(recipe.result_item_id).name_key))
+		if options.is_empty():
+			for effect in projected.effects:
+				if float(owner.db.parse_params(effect.params).get("fallback_discount",0))>0:options=[{}]
 		var selected={"index":0}
 		if not names.is_empty():
 			var select=ui.action(column,names[0],func():pass)
 			select.pressed.connect(func():selected.index=(int(selected.index)+1)%names.size();select.text=names[selected.index])
-		var legal=owner.flow.effects.requirements(owner.flow.run,str(choice.requirements))
-		ui.action(column,owner.t("ui.confirm"),func():owner.perform(owner.flow.event_choice(choice.id,options[selected.index])),not legal.ok or options.is_empty())
+		ui.action(column,owner.t("ui.confirm"),func():
+			if ticket == owner.popup_epoch and not options.is_empty():
+				model.choose_event_action(str(choice.id),options[selected.index]),not projected.requirements.ok or options.is_empty())
 func summary():
 	var act=owner.flow.screen_state=="ACT_RESULT"
 	var cleared=not act and int(owner.flow.run.act)==3 and not owner.flow.run.completed_nodes.is_empty() and owner.flow.run.completed_nodes.back().type=="boss"
 	ui.open(owner.flow.screen_state,owner.t("ui.act_cleared" if act else "ui.run_cleared" if cleared else "ui.run_failed"))
 	owner.label("⚑ "+str(owner.flow.run.completed_nodes.size())+"   ◉ "+str(owner.flow.run.gold),null,34)
 	if act:ui.action(owner.popup_content,owner.t("ui.next_act"),func():owner.perform(owner.flow.next_act()))
-	else:ui.action(owner.popup_content,owner.t("ui.new_run"),func():setup(Game.Mode.Unranked))
+	else:
+		owner.back_action = owner.return_to_title
+		ui.action(owner.popup_content,ui.words("返回主页","Return home"),owner.return_to_title).name = "RunSummaryReturnHome"
+		ui.action(owner.popup_content,owner.t("ui.new_run"),func():setup(Game.Mode.Unranked))
 func craft(candidate: Dictionary):
 	selected_recipe=candidate
 	owner.menus.library.show_page("recipes")
 func log_page(page: int = 0, full: bool = false):
-	ui.open("COMBAT_LOG",ui.words("战斗记录","Battle record"))
-	var tabs=ui.row();ui.action(tabs,ui.words("统计","Stats"),func():log_page(0,false),not full);ui.action(tabs,ui.words("事件","Events"),func():log_page(0,true),full)
-	var result=owner._combat_log_result();var events:Array=result.get("full_events",[])
-	if owner.flow.screen_state=="COMBAT_RUNNING":events=events.filter(func(e):return float(e.get("time",0))<=owner.flow.playback_time)
-	var pages=maxi(1,int(ceil(events.size()/6.0)));page=clampi(page,0,pages-1)
-	if full:
-		var controls=ui.row();ui.symbol(controls,"previous",ui.words("上一页","Previous"),func():log_page(page-1,true)).disabled=page==0;owner.label(str(page+1)+" / "+str(pages),controls,26);ui.symbol(controls,"next",ui.words("下一页","Next"),func():log_page(page+1,true)).disabled=page+1>=pages
-		for index in range(page*6,mini((page+1)*6,events.size())):ui.text_pages(owner.popup_content,owner.combat_event_text(events[index],result),1400,64,22)
-	else:owner.statistics_controls(result)
+	if not full:
+		preload("res://PvE/UI/BattleStatsLayout.gd").show_page(self, owner.combat_log_vm.statistics())
+		return
+	ui.open("COMBAT_LOG", ui.words("战斗记录", "Battle record"))
+	var tabs = ui.row()
+	ui.action(tabs, ui.words("统计", "Stats"), func(): log_page(0, false), not full)
+	ui.action(tabs, ui.words("事件", "Events"), func(): log_page(0, true), full)
+	var projected: Dictionary = owner.combat_log_vm.events_page(page)
+	var controls = ui.row()
+	var previous = ui.symbol(controls, "previous", ui.words("上一页", "Previous"), func(): log_page(projected.page - 1, true))
+	previous.name = "LogPrevious"
+	previous.disabled = projected.page == 0
+	owner.label(str(projected.page + 1) + " / " + str(projected.pages), controls, 26)
+	var next = ui.symbol(controls, "next", ui.words("下一页", "Next"), func(): log_page(projected.page + 1, true))
+	next.name = "LogNext"
+	next.disabled = projected.page + 1 >= projected.pages
+	for row in projected.rows:
+		var deck = ui.text_pages(owner.popup_content, row.text, 1400, 64, 22)
+		deck.label.set_meta("pve_combat_event_time", row.time)

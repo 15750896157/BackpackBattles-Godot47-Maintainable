@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://cp4fp3hsgh4x8"]
+
+[ext_resource type="Script" path="res://PvE/UI/CombatScreen.gd" id="1_screen"]
+[ext_resource type="PackedScene" uid="uid://bv5j0a17pgur2" path="res://PvE/UI/CombatSideHud.tscn" id="2_side"]
+
+[sub_resource type="Theme" id="Theme_combat"]
+Label/colors/font_color = Color(1, 0.9411765, 0.8039216, 1)
+Label/colors/font_outline_color = Color(0.0901961, 0.1058824, 0.1254902, 1)
+Label/constants/outline_size = 3
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_target"]
+
+[node name="CombatScreen" type="Control"]
+visible = false
+mouse_filter = 2
+theme = SubResource("Theme_combat")
+script = ExtResource("1_screen")
+
+[node name="PlayerHud" parent="." instance=ExtResource("2_side")]
+offset_left = 386.0
+offset_top = 887.0
+offset_right = 954.0
+offset_bottom = 1039.0
+
+[node name="EnemyHud" parent="." instance=ExtResource("2_side")]
+offset_left = 966.0
+offset_top = 887.0
+offset_right = 1534.0
+offset_bottom = 1039.0
+
+[node name="NameArt" parent="EnemyHud" index="1"]
+offset_left = 226.0
+offset_right = 568.0
+flip_h = true
+
+[node name="NameCaption" parent="EnemyHud" index="2"]
+offset_left = 246.0
+offset_right = 548.0
+horizontal_alignment = 2
+
+[node name="TimelineBase" type="TextureRect" parent="."]
+offset_left = 746.0
+offset_top = 26.0
+offset_right = 1236.0
+offset_bottom = 87.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ArtTimeline" type="TextureProgressBar" parent="."]
+offset_left = 747.0
+offset_top = 27.0
+offset_right = 1234.0
+offset_bottom = 47.0
+mouse_filter = 2
+nine_patch_stretch = true
+
+[node name="CombatPausePlay" type="TextureButton" parent="."]
+offset_left = 978.0
+offset_top = 51.0
+offset_right = 1010.0
+offset_bottom = 87.0
+focus_mode = 2
+mouse_default_cursor_shape = 2
+disabled = true
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CombatPauseTarget" type="Button" parent="."]
+offset_left = 961.0
+offset_top = 44.0
+offset_right = 1027.0
+offset_bottom = 101.0
+mouse_default_cursor_shape = 2
+disabled = true
+theme_override_styles/normal = SubResource("StyleBoxEmpty_target")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_target")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_target")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_target")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_target")
+
+[node name="CombatSpeed" type="Button" parent="."]
+offset_left = 1240.0
+offset_top = 12.0
+offset_right = 1318.0
+offset_bottom = 71.0
+mouse_default_cursor_shape = 2
+disabled = true
+theme_override_styles/normal = SubResource("StyleBoxEmpty_target")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_target")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_target")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_target")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_target")
+
+[node name="SpeedCaption" type="Label" parent="CombatSpeed"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 78.0
+offset_bottom = 59.0
+mouse_filter = 2
+text = "×1"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/art_font_size = 40
+
+[node name="Action_combat_settings" type="TextureButton" parent="."]
+offset_left = 1822.0
+offset_top = 14.0
+offset_right = 1881.0
+offset_bottom = 73.0
+focus_mode = 2
+mouse_default_cursor_shape = 2
+disabled = true
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="PlayerGrid" type="Marker2D" parent="."]
+position = Vector2(32, 86)
+
+[node name="EnemyGrid" type="Marker2D" parent="."]
+position = Vector2(1175, 86)
+
+[connection signal="pressed" from="CombatPausePlay" to="." method="_on_pause_play"]
+[connection signal="pressed" from="CombatPauseTarget" to="." method="_on_pause_play"]
+[connection signal="pressed" from="CombatSpeed" to="." method="_on_speed"]
+[connection signal="pressed" from="Action_combat_settings" to="." method="_on_settings"]
+
+[editable path="EnemyHud"]

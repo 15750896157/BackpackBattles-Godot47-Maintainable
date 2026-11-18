@@ -5,3 +5,5 @@ heavy_charge,armorer,archetype.heavy_charge.name,archetype.heavy_charge.desc,hea
 toxin_stack,alchemist,archetype.toxin_stack.name,archetype.toxin_stack.desc,poison|potion|tempo,cleanse|burst,1
 burn_rhythm,alchemist,archetype.burn_rhythm.name,archetype.burn_rhythm.desc,burn|tempo|spatial,healing|cleanse,1
 healing_conversion,alchemist,archetype.healing_conversion.name,archetype.healing_conversion.desc,healing|herb|combo,heavy|burst,1
+archer_precision,archer,archetype.archer_precision.name,archetype.archer_precision.desc,ranged|tempo|spatial,armor,1
+archer_embers,archer,archetype.archer_embers.name,archetype.archer_embers.desc,ranged|burn|stamina,armor,1

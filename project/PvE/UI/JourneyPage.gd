@@ -1,14 +1,23 @@
 extends RefCounted
+const ROUTE = preload("res://PvE/UI/RouteScreenPresenter.gd")
 var owner
 var ui
 var section="abilities"
 func _init(host,shell):owner=host;ui=shell
+func portrait_path(node:Dictionary)->String:
+	if node.get("type","")=="merchant":return preload("res://PvE/Art/SuppliedArt.gd").ui_path("merchant")
+	if node.get("type","")=="rest":return preload("res://PvE/Art/SuppliedArt.gd").ui_path("camp")
+	var key=preload("res://PvE/Art/NewArtCatalog.gd").enemy_key(node)
+	return preload("res://PvE/Art/SuppliedArt.gd").actor_path(key)
 func portrait(node:Dictionary)->Texture2D:
-	var enemy=owner.db.get_row("enemy_builds",str(node.get("enemy_id","")))
-	var archetype=str(enemy.get("archetype_id",""))
-	var key="goblin" if archetype in ["venom_brewer","field_mender","toxic_guard"] else "bat" if archetype in ["ember_runner","quick_striker","gear_conductor"] else "skeleton"
-	return load(preload("res://PvE/Art/SuppliedArt.gd").actor_path(key))
+	return load(portrait_path(node))
 func choose_route():
+	if not owner.flow.run.get("route_candidates", []).is_empty():
+		if owner.native_routes != null:
+			_open_editable_route()
+		else:
+			preload("res://PvE/UI/RouteLayout.gd").show_page(self)
+		return
 	ui.open("ROUTE_SELECT",ui.words("选择路线","Choose route"))
 	var choices=ui.row()
 	for index in owner.flow.run.route_candidates.size():
@@ -24,11 +33,27 @@ func choose_route():
 	for boss in owner.db.rows("bosses"):
 		if boss.act_id=="act_"+str(owner.flow.run.act):
 			ui.action(bosses,ui.words("本章首领","Act boss"),func():section="abilities";show_page({"type":"boss","boss_id":boss.id,"enemy_id":"","affix_id":""}))
+
+func _open_editable_route() -> void:
+	var root: Control = ui.open_canvas("ROUTE_SELECT",ui.words("征战旅途","Journey"))
+	var ticket: int = owner.popup_epoch
+	var mounted := await ROUTE.mount(self,owner.menus.new_journey_model(),root,ticket)
+	if ticket != owner.popup_epoch or not is_instance_valid(root):
+		return
+	if mounted:
+		owner.focus_popup()
+		return
+	# A failed current mount must not leave an empty modal or consume a route.
+	owner.close_popup()
+	owner.notice("native_asset_missing")
 func show_page(node:Dictionary={},phase:int=1):
 	if not owner.active:owner.show_codex();return
-	ui.open("INTEL",ui.words("敌情与路线","Journey"))
 	var selected=node if not node.is_empty() else owner.flow.run.get("current_node",{})
 	if selected.is_empty() and not owner.flow.run.get("route_candidates",[]).is_empty():selected=owner.flow.run.route_candidates[0]
+	if not selected.is_empty() and (str(selected.get("type","")).ends_with("combat") or selected.get("type","") == "boss"):
+		preload("res://PvE/UI/EnemyIntelLayout.gd").show_page(self,selected,phase)
+		return
+	ui.open("INTEL",ui.words("敌情与路线","Journey"))
 	var controls=ui.row()
 	var tabs=ui.row(controls);tabs.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	ui.segment(tabs,ui.words("能力","Abilities"),func():section="abilities";show_page(selected,phase),section=="abilities")

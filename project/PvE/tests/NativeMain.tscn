@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene format=3 uid="uid://c0k46lubm0gym"]
 
-[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1"]
-[ext_resource type="Script" path="res://PvE/tests/NativeQA.gd" id="2"]
+[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_lsghi"]
+[ext_resource type="Script" path="res://PvE/tests/NativeQA.gd" id="2_4h6fc"]
 
-[node name="Main" instance=ExtResource("1")]
+[node name="Main" instance=ExtResource("1_lsghi")]
 
 [node name="NativeQA" type="Node" parent="."]
-script = ExtResource("2")
+script = ExtResource("2_4h6fc")

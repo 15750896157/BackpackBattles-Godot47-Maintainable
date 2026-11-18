@@ -30,6 +30,10 @@ func run_tests():
 	Game.state = Game.State.Title
 	var flow = Expedition.flow
 	check(flow.new_run("armorer", "armorer_blades", "tutorial", 54321, true).ok, "initial run saved")
+	# Enter the same settled main-menu state a player uses before selecting New.
+	# An unflushed ROUTE_SELECT notification would otherwise replace the draft.
+	await Expedition.return_to_title()
+	await preload("res://PvE/tests/LoadingBarrier.gd").wait_idle(get_tree())
 	var initial = flow.saves.load_save("run")
 	var original = stable(initial.data)
 	var path = flow.saves._path("run")
@@ -51,8 +55,9 @@ func run_tests():
 	check(not refused.ok and refused.error == "save_write_failed", "archive failure rejects replacement")
 	check(FileAccess.get_sha256(path) == disk_hash, "failed archival cannot overwrite previous adventure")
 	Expedition.panel.find_child("NewGameChoice",true,false).pressed.emit()
+	await preload("res://PvE/tests/LoadingBarrier.gd").wait_idle(get_tree())
 	check(FileAccess.get_sha256(path)==disk_hash,"new run draft preserves current save")
-	buttons=Expedition.popup_content.find_children("*","Button",true,false)
+	buttons=Expedition.panel.find_children("*","BaseButton",true,false)
 	var confirmed = false
 	for button in buttons:
 		if button.name == "BeginExpedition":
@@ -60,7 +65,7 @@ func run_tests():
 			confirmed = true
 			break
 	check(confirmed, "explicit Begin new run button operates")
-	for index in 8: await get_tree().process_frame
+	await preload("res://PvE/tests/LoadingBarrier.gd").wait_idle(get_tree())
 	check(int(flow.run.run_seed) == 24680 and str(flow.run.run_id) != str(original.run_id), "confirmed replacement creates selected new adventure")
 	check(not flow.saves.last_run_archive.is_empty(), "previous adventure has a separate archive")
 	var archived = flow.saves._read(flow.saves.last_run_archive.path_join("run.save"))

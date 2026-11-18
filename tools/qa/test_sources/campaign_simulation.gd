@@ -32,7 +32,11 @@ func _run():
 		{"character": "armorer", "difficulty": "tutorial", "seed": 67731},
 		{"character": "alchemist", "difficulty": "tutorial", "seed": 12345},
 		{"character": "armorer", "difficulty": "standard", "seed": 18421},
-		{"character": "alchemist", "difficulty": "standard", "seed": 31337}]
+		{"character": "alchemist", "difficulty": "standard", "seed": 31337},
+		{"character":"armorer","loadout":"warrior_blades","difficulty":"tutorial","seed":67731},
+		{"character":"archer","loadout":"archer_precision","difficulty":"tutorial","seed":12345},
+		{"character":"armorer","loadout":"warrior_guard","difficulty":"standard","seed":18421},
+		{"character":"archer","loadout":"archer_embers","difficulty":"standard","seed":31337}]
 	for specification in cases:
 		_play(specification)
 	# At most four additional fixed seeds, only when no complete run was observed.
@@ -54,7 +58,7 @@ func _play(specification: Dictionary):
 	var memory = SimulationSaves.new()
 	memory.base_path = directory
 	var flow = GameFlow.new(db, memory)
-	var loadout = "armorer_blades" if specification.character == "armorer" else "alchemist_toxin"
+	var loadout = str(specification.get("loadout","armorer_blades" if specification.character == "armorer" else "alchemist_toxin"))
 	var setup = flow.new_run(specification.character, loadout, specification.difficulty, int(specification.seed), true)
 	var report = {"character": specification.character, "difficulty": specification.difficulty, "seed": specification.seed, "clear": false, "start_gold": flow.run.get("gold", 0), "start_health": flow.run.get("health", 0), "max_act": 1, "battles": [], "bosses_defeated": [], "nodes": [], "purchases": [], "crafts": [], "refreshes": 0, "stop_reason": "", "directory": directory}
 	if not setup.ok:

@@ -18,7 +18,7 @@ func sample(label):
 			var entry=item.get_meta("pve_entry")
 			var expected=actor.INVENTORY.tilemap.to_global(LegacyGrid.cell_origin(actor.INVENTORY.tilemap,Vector2(entry.x,entry.y)))
 			var error=item.getTopLeftGlobal().distance_to(expected)
-			if error>max_error:max_error=error;worst={"uid":entry.uid,"id":entry.definition_id,"offset":item.getTopLeftGlobal()-expected,"mode":item.mode,"owner":item.ownerType}
+			if error>max_error:max_error=error;worst={"uid":entry.uid,"id":entry.definition_id,"offset":item.getTopLeftGlobal()-expected,"mode":item.mode,"owner":item.ownerType,"scale":item.scale,"global_scale":item.global_scale,"rotation":item.rotation,"position":item.global_position,"anchor":item.get_meta("pve_anchor"),"board_scale":actor.INVENTORY.scale}
 			sprite_error=maxf(sprite_error,item.sprite.position.distance_to(item.get_meta("pve_sprite_position",Vector2.ZERO)))
 	samples.append({"label":label,"max_error_px":max_error,"sprite_offset_px":sprite_error,"worst":worst})
 	if max_error>1.0:failures.append(label+": grid anchor drift "+str(max_error))
@@ -26,7 +26,8 @@ func sample(label):
 func run_tests():
 	while not Expedition.initialized:await get_tree().process_frame
 	DirAccess.make_dir_recursive_absolute(output)
-	Expedition.flow.new_run("armorer","armorer_blades","tutorial",1337,true)
+	var loadout="warrior_blades" if "--release-grid" in OS.get_cmdline_user_args() else "armorer_blades"
+	Expedition.flow.new_run("armorer",loadout,"tutorial",1337,true)
 	Expedition.flow.skip_tutorial();Expedition.flow.choose_route(0);await idle()
 	sample("shop")
 	Game.startCombatButton.activateButton();await idle();Expedition.set_playback(1.0,false)

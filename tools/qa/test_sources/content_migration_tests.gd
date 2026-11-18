@@ -26,7 +26,7 @@ func execute():
 		flow.notification.connect(func(key): notifications.append(key))
 		var before = loaded.data
 		var result = flow.continue_run()
-		check(result.ok and flow.run.content_version == "0.1.3" and flow.run.content_sha256 == db.content_sha256, kind + " migrates content version and hash")
+		check(result.ok and flow.run.content_version == "0.2.1" and flow.run.content_sha256 == db.content_sha256, kind + " migrates content version and hash")
 		check(flow.run.gold == before.gold and flow.run.health == before.health and flow.run.build == before.build, kind + " retains actual gold health and full item/bag coordinates")
 		check(flow.run.logs == before.logs and flow.run.rng == before.rng, kind + " retains prior logs and RNG without committing or consuming combat")
 		if kind == "combat":
@@ -41,7 +41,7 @@ func execute():
 				var fresh = CombatEngine.new(db).simulate(flow.run.combat_checkpoint.player, flow.run.combat_checkpoint.enemy, int(flow.run.combat_checkpoint.seed))
 				check(fresh.replay_digest == flow.combat_result.replay_digest, "new checkpoint exactly replays with the same saved seed")
 			var persisted = saves.load_save("run")
-			check(persisted.ok and persisted.data.state == "COMBAT_RUNNING" and persisted.data.content_version == "0.1.3", "new checkpoint is atomically persisted after restarting battle")
+			check(persisted.ok and persisted.data.state == "COMBAT_RUNNING" and persisted.data.content_version == "0.2.1", "new checkpoint is atomically persisted after restarting battle")
 		else:
 			check(flow.screen_state == "ROUTE_SELECT" and flow.run.route_candidates.size() >= 2, "route migration remains on route select with real alternatives")
 			check(flow.run.route_candidates.all(func(card): return card.type not in ["event", "rest", "merchant"]), "stale route candidates are refreshed after chapter noncombat allowance was consumed")

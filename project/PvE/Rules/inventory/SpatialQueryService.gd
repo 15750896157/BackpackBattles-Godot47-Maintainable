@@ -63,6 +63,8 @@ func active_special_effects(build: Dictionary, uid: String) -> Array:
 	for special in special_cells(build):
 		if not owners.has(str(special.bag_uid)):
 			continue
+		var required_tag=str(db.parse_params(special.effect).get("target_tag",""))
+		if not required_tag.is_empty() and required_tag not in tags(found.entry):continue
 		var affected = occupied.has(special.cell)
 		if special.type == "star_cell" and not affected:
 			for offset in [Vector2i.LEFT, Vector2i.RIGHT, Vector2i.UP, Vector2i.DOWN]:

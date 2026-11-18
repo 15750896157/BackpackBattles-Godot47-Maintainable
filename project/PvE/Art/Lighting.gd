@@ -8,6 +8,8 @@ var surface: ShaderMaterial
 var ambient: CanvasModulate
 var signature = ""
 var refresh_clock = 0.0
+var emissive_materials: Dictionary = {}
+var light_tint = Color.WHITE
 
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -52,6 +54,10 @@ func _process(delta):
 		grade.material.set_shader_parameter("glow", 0.045 if Game.state == Game.State.Shop else 0.06)
 		surface.set_shader_parameter("light_tint", tint)
 		surface.set_shader_parameter("source_position",position_hint)
+		light_tint = tint
+		for glow in emissive_materials.values():
+			glow.set_shader_parameter("light_tint",tint)
+			glow.set_shader_parameter("source_position",position_hint)
 	refresh_clock += delta
 	if refresh_clock < 0.2: return
 	refresh_clock = 0.0
@@ -70,7 +76,7 @@ func apply_to_item(item, enabled: bool):
 	if not item.has_meta("polish_material_recorded"):
 		item.set_meta("polish_material_recorded",true)
 		if item.sprite.material != null: item.set_meta("polish_original_material", item.sprite.material)
-	item.sprite.material = surface if enabled else item.get_meta("polish_original_material") if item.has_meta("polish_original_material") else null
+	item.sprite.material = item_material(item) if enabled else item.get_meta("polish_original_material") if item.has_meta("polish_original_material") else null
 	# Bags receive the light; contents cast a low-cost silhouette shadow.
 	if item.isBag(): return
 	var occluder = item.sprite.get_node_or_null("PolishLightOccluder")
@@ -81,6 +87,21 @@ func apply_to_item(item, enabled: bool):
 		polygon.polygon = silhouette(item.sprite)
 		occluder.occluder = polygon; item.sprite.add_child(occluder)
 	occluder.visible = enabled and not item.dragged
+
+func item_material(item) -> ShaderMaterial:
+	var id = str(item.get_meta("pve_definition_id",""))
+	var profile = preload("res://PvE/Art/CombatPalette.gd").profile(Expedition.db.get_row("items",id))
+	if item.isBag() or float(profile.glow) <= 0.0: return surface
+	var reduced = bool(Expedition.preferences.values.reduce_flash)
+	var key = str(profile.color)+":"+str(profile.rank)+":"+str(reduced)
+	if not emissive_materials.has(key):
+		var glow = surface.duplicate() as ShaderMaterial
+		glow.set_shader_parameter("emission_strength",float(profile.glow)*(0.6 if reduced else 1.0))
+		glow.set_shader_parameter("emission_tint",profile.color)
+		glow.set_shader_parameter("rarity_tint",profile.rarity_color)
+		glow.set_shader_parameter("reduced_flash",reduced)
+		emissive_materials[key] = glow
+	return emissive_materials[key]
 
 func silhouette(sprite: Sprite2D) -> PackedVector2Array:
 	var image = sprite.texture.get_image()

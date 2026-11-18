@@ -18,10 +18,13 @@ func onPressed():
 	var path = "res://Interface/Wardrobe/Wardrobe.tscn"
 	if not await AssetStream.prepare([path], "wardrobe"):
 		loading = false
+		AssetStream.release("wardrobe")
 		return
 	var menu = await AssetStream.instantiate_path(path, "wardrobe")
 	loading = false
-	if menu == null: return
+	if menu == null:
+		AssetStream.release("wardrobe")
+		return
 	if Expedition.popup_epoch != epoch or Expedition.panel.visible or Game.state != Game.State.Title:
 		menu.free()
 		AssetStream.release("wardrobe")

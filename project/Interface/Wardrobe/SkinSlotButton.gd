@@ -48,6 +48,7 @@ func onMouseEntered():
 
 func onHover():
 	if not is_instance_valid(Game.wardrobe) or not Game.wardrobe.is_ancestor_of(self): return
+	if Game.wardrobe.closing or Game.wardrobe.skin_building: return
 	preview()
 	button.texture_normal = hoverTex
 	Game.wardrobe.onSlotHovered(self)
@@ -59,6 +60,7 @@ func onHoverEnd():
 
 func onPressed():
 	if not is_instance_valid(Game.wardrobe) or not Game.wardrobe.is_ancestor_of(self): return
+	if Game.wardrobe.closing or Game.wardrobe.skin_building: return
 	return load("res://Runtime/Behavior/Interface/Wardrobe/SkinSlotButtonBehavior.gd").onPressed(self)
 
 func setLocked():

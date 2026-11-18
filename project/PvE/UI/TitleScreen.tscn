@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://bq7jpd7frnv5b"]
+
+[ext_resource type="Script" path="res://PvE/UI/TitleScreen.gd" id="1_title"]
+
+[node name="TitleTouchHUD" type="Control"]
+mouse_filter = 2
+script = ExtResource("1_title")
+
+[node name="Ref_title" type="TextureRect" parent="."]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 0
+metadata/reference_rect = Rect2(0, 0, 1920, 1080)
+
+[node name="Ref_title_logo" type="TextureRect" parent="."]
+offset_left = 603.0
+offset_top = 310.0
+offset_right = 1317.0
+offset_bottom = 521.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/reference_rect = Rect2(603, 310, 714, 211)
+
+[node name="TitleSettings" type="TextureButton" parent="."]
+offset_left = 1822.0
+offset_top = 14.0
+offset_right = 1881.0
+offset_bottom = 73.0
+focus_mode = 2
+mouse_default_cursor_shape = 2
+disabled = true
+ignore_texture_size = true
+stretch_mode = 5
+metadata/reference_rect = Rect2(1822, 14, 59, 59)
+
+[node name="TitleCodex" type="TextureButton" parent="."]
+offset_left = 1342.0
+offset_top = 831.0
+offset_right = 1725.0
+offset_bottom = 1081.0
+focus_mode = 2
+mouse_default_cursor_shape = 2
+disabled = true
+ignore_texture_size = true
+stretch_mode = 5
+metadata/reference_rect = Rect2(1342, 831, 383, 250)
+
+[node name="SavedPortrait" type="TextureRect" parent="."]
+visible = false
+offset_left = 235.0
+offset_top = 578.0
+offset_right = 698.0
+offset_bottom = 1082.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/reference_rect = Rect2(235, 578, 463, 504)
+
+[node name="TitleStart" type="TextureButton" parent="."]
+offset_left = 786.0
+offset_top = 595.0
+offset_right = 1134.0
+offset_bottom = 674.0
+focus_mode = 2
+mouse_default_cursor_shape = 2
+disabled = true
+ignore_texture_size = true
+stretch_mode = 5
+metadata/reference_rect = Rect2(786, 595, 348, 79)
+
+[node name="Caption" type="Label" parent="TitleStart"]
+offset_right = 348.0
+offset_bottom = 79.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.78, 1)
+theme_override_colors/font_outline_color = Color(0.34, 0.19, 0.08, 1)
+theme_override_constants/outline_size = 7
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleExit" type="TextureButton" parent="."]
+offset_left = 786.0
+offset_top = 691.0
+offset_right = 1134.0
+offset_bottom = 770.0
+focus_mode = 2
+mouse_default_cursor_shape = 2
+disabled = true
+ignore_texture_size = true
+stretch_mode = 5
+metadata/reference_rect = Rect2(786, 691, 348, 79)
+
+[node name="Caption" type="Label" parent="TitleExit"]
+offset_right = 348.0
+offset_bottom = 79.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.86, 0.97, 1, 1)
+theme_override_colors/font_outline_color = Color(0.075, 0.25, 0.38, 1)
+theme_override_constants/outline_size = 7
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleNewRun" type="TextureButton" parent="."]
+visible = false
+offset_left = 751.0
+offset_top = 785.0
+offset_right = 1169.0
+offset_bottom = 864.0
+focus_mode = 2
+mouse_default_cursor_shape = 2
+disabled = true
+ignore_texture_size = true
+stretch_mode = 5
+metadata/reference_rect = Rect2(751, 785, 418, 79)
+
+[node name="Caption" type="Label" parent="TitleNewRun"]
+offset_right = 418.0
+offset_bottom = 79.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.91, 0.79, 1)
+theme_override_colors/font_outline_color = Color(0.43, 0.12, 0.09, 1)
+theme_override_constants/outline_size = 7
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TitleSettings" to="." method="_on_settings"]
+[connection signal="pressed" from="TitleCodex" to="." method="_on_codex"]
+[connection signal="pressed" from="TitleStart" to="." method="_on_start"]
+[connection signal="pressed" from="TitleExit" to="." method="_on_exit"]
+[connection signal="pressed" from="TitleNewRun" to="." method="_on_new_run"]

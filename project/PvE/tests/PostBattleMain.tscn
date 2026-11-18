@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bfwynd6nkdgtx"]
+
+[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_fdk0c"]
+[ext_resource type="Script" path="res://PvE/tests/PostBattleQA.gd" id="2_14reb"]
+
+[node name="Main" instance=ExtResource("1_fdk0c")]
+
+[node name="PostBattleQA" type="Node" parent="."]
+script = ExtResource("2_14reb")

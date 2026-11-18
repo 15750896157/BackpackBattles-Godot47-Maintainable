@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://du0drmd3o211g"]
+
+[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_ty6hq"]
+[ext_resource type="Script" path="res://PvE/tests/CombatVFXQA.gd" id="2_25h7j"]
+
+[node name="Main" instance=ExtResource("1_ty6hq")]
+
+[node name="CombatVFXQA" type="Node" parent="."]
+script = ExtResource("2_25h7j")

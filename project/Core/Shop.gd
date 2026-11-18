@@ -93,10 +93,11 @@ func openShop():
 	chooseOneLabel.hide()
 	shopSignLabel.show()
 	Sound.playSound(shopOpenSound)
-	Expedition.request_render()
+	if not Expedition.route_in_progress(): Expedition.request_render()
 	return
 
 func closeShop():
+	if Expedition.native_routes != null: return
 	Util.callDelayed(self, "shopHidden", 2)
 	return
 

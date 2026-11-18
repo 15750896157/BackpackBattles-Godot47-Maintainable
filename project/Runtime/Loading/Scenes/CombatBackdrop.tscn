@@ -1,14 +1,24 @@
-[gd_scene load_steps=4 format=3]
-[ext_resource type="Texture2D" path="res://Art/20261022/desert.png" id="1"]
+[gd_scene format=3 uid="uid://dk7tld5x4x5ey"]
+
+[ext_resource type="Texture2D" path="res://Art/20261022/desert.png" id="1_8fe27"]
+
 [sub_resource type="Animation" id="Round"]
 resource_name = "Round"
 length = 60.0
 loop_mode = 1
+
 [sub_resource type="AnimationLibrary" id="Library"]
-_data = {"Round": SubResource("Round")}
+_data = {
+&"Round": SubResource("Round")
+}
+
 [node name="Background" type="Node2D"]
+
 [node name="Desert" type="Sprite2D" parent="."]
-texture = ExtResource("1")
+texture = ExtResource("1_8fe27")
 centered = false
+
 [node name="BackgroundAnimation" type="AnimationPlayer" parent="."]
-libraries = {&"": SubResource("Library")}
+libraries = {
+&"": SubResource("Library")
+}

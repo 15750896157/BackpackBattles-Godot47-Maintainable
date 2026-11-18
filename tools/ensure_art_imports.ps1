@@ -10,10 +10,12 @@ function Get-ArtworkSourceDigest($path) {
     try { return ([System.BitConverter]::ToString($digestAlgorithm.ComputeHash($sourceStream))).Replace('-', '').ToLowerInvariant() }
     finally { $sourceStream.Dispose(); $digestAlgorithm.Dispose() }
 }
-foreach ($catalogFile in @('Art\20261022\catalog.json', 'Art\Supplied20261028\catalog.json')) {
-    $catalogPath = Join-Path $projectPath $catalogFile
-    $sourceCatalog = Get-Content -LiteralPath $catalogPath -Raw -Encoding UTF8 | ConvertFrom-Json
-    foreach ($property in $sourceCatalog.PSObject.Properties) { $catalog[$catalogFile + ':' + $property.Name] = $property.Value }
+$artRoot = Join-Path $projectPath 'Art'
+foreach ($file in Get-ChildItem -LiteralPath $artRoot -File -Recurse) {
+    if ($file.Extension -in @('.png','.jpg','.jpeg','.svg','.webp')) {
+        $relative = $file.FullName.Substring($projectPath.Length + 1).Replace('\', '/')
+        $catalog[$relative] = 'res://' + $relative
+    }
 }
 function Get-MissingArtworkImports {
     $missing = @()
@@ -47,14 +49,24 @@ if ($missing.Count -eq 0) { exit 0 }
 Write-Host 'Preparing new artwork for this project folder. The first launch may take a moment.'
 $cachePath = Join-Path $projectPath '.godot'
 New-Item -ItemType Directory -Path $cachePath -Force | Out-Null
-$stdoutPath = Join-Path $cachePath 'new-art-import.stdout.log'
-$stderrPath = Join-Path $cachePath 'new-art-import.stderr.log'
-$arguments = @('--headless', '--editor', '--path', ('"' + $projectPath + '"'), '--import', '--quit')
-$process = Start-Process -FilePath $enginePath -ArgumentList $arguments -WindowStyle Hidden -PassThru -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath
-$handle = $process.Handle
-if (-not $process.WaitForExit(180000)) { $process.Kill(); throw 'Artwork import timed out; only this import process was stopped.' }
-$process.WaitForExit()
-$errors = Get-Content -LiteralPath $stderrPath -Raw
-if ($process.ExitCode -ne 0 -or -not [string]::IsNullOrWhiteSpace($errors)) { throw ('Artwork import failed. See ' + $stderrPath) }
-if (@(Get-MissingArtworkImports).Count -gt 0) { throw 'Artwork imports remain incomplete. Keep the source images and inspect the import log.' }
+function Invoke-ArtImport([string]$name) {
+    $stdoutPath = Join-Path $cachePath ($name + '.stdout.log')
+    $stderrPath = Join-Path $cachePath ($name + '.stderr.log')
+    $arguments = @('--headless', '--editor', '--path', ('"' + $projectPath + '"'), '--import', '--quit')
+    $process = Start-Process -FilePath $enginePath -ArgumentList $arguments -WindowStyle Hidden -PassThru -RedirectStandardOutput $stdoutPath -RedirectStandardError $stderrPath
+    $handle = $process.Handle
+    if (-not $process.WaitForExit(180000)) { $process.Kill(); throw 'Artwork import timed out.' }
+    $process.WaitForExit()
+    if ($process.ExitCode -ne 0) { throw ('Artwork import failed. See ' + $stderrPath) }
+    return [string](Get-Content -LiteralPath $stderrPath -Raw)
+}
+
+$errors = Invoke-ArtImport 'new-art-import'
+if (-not [string]::IsNullOrWhiteSpace($errors) -or @(Get-MissingArtworkImports).Count -gt 0) {
+    # On a cold checkout some atlas consumers can be opened before the first
+    # pass has written their imports. Require a clean second import.
+    $errors = Invoke-ArtImport 'new-art-import-verify'
+}
+if (-not [string]::IsNullOrWhiteSpace($errors)) { throw 'Artwork import verification failed. See project/.godot/new-art-import-verify.stderr.log.' }
+if (@(Get-MissingArtworkImports).Count -gt 0) { throw 'Artwork imports remain incomplete.' }
 Write-Host 'New artwork is ready.'

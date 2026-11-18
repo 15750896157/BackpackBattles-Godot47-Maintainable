@@ -1,12 +1,12 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://bt5ojyslkxl08"]
 
-[ext_resource path="res://Assets/Particles/GlowingDot_small.png" type="Texture2D" id=1]
-[ext_resource path="res://Items/Exclusive/Particles/BigBloodthorneActivationParticles.material" type="Material" id=2]
-[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=3]
+[ext_resource type="Material" path="res://Items/Exclusive/Particles/BigBloodthorneActivationParticles.material" id="1_p5sdt"]
+[ext_resource type="Texture2D" path="res://Assets/Particles/GlowingDot_small.png" id="2_rjmq7"]
+[ext_resource type="Script" path="res://Utility/PooledScene.gd" id="3_kcioe"]
 
 [node name="ActivationParticles" type="GPUParticles2D"]
-modulate = Color( 3, 3, 3, 1 )
-position = Vector2( -1, 157 )
+modulate = Color(3, 3, 3, 1)
+position = Vector2(-1, 157)
 z_index = 2
 emitting = false
 amount = 11
@@ -15,6 +15,6 @@ one_shot = true
 speed_scale = 0.92
 explosiveness = 1.0
 local_coords = false
-process_material = ExtResource( 2 )
-texture = ExtResource( 1 )
-script = ExtResource( 3 )
+process_material = ExtResource("1_p5sdt")
+texture = ExtResource("2_rjmq7")
+script = ExtResource("3_kcioe")

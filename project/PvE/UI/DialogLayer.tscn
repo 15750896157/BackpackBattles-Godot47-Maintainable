@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cwpjkru57w0xt"]
+
+[node name="DialogLayer" type="CanvasLayer"]
+layer = 201
+
+[node name="ModalShield" type="ColorRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 0
+color = Color(0.05, 0.025, 0.01, 0.48)
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = 110.0
+offset_top = 20.0
+offset_right = 1810.0
+offset_bottom = 1060.0
+mouse_filter = 0
+
+[node name="Frame" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = 48.0
+offset_right = -60.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Panel/Frame"]
+layout_mode = 2
+
+[node name="Navigation" type="HBoxContainer" parent="Panel/Frame"]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Frame"]
+layout_mode = 2
+size_flags_vertical = 3
+scroll_deadzone = 100000
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="Content" type="VBoxContainer" parent="Panel/Frame/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="Toast" type="Label" parent="."]
+offset_left = 430.0
+offset_top = 962.0
+offset_right = 1680.0
+offset_bottom = 1006.0
+mouse_filter = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.08627451, 0.03529412, 1)
+theme_override_constants/line_spacing = -5
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+horizontal_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2

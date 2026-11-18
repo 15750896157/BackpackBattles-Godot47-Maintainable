@@ -1,17 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://csatn8u07e3g4"]
 
-[ext_resource path="res://Assets/Particles/GlowingDot_small.png" type="Texture2D" id=1]
-[ext_resource path="res://Interface/Lobbies/UIConfirmationParticles.material" type="Material" id=2]
-[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=3]
+[ext_resource type="Material" path="res://Interface/Lobbies/UIConfirmationParticles.material" id="1_u4pjp"]
+[ext_resource type="Texture2D" path="res://Assets/Particles/GlowingDot_small.png" id="2_egffr"]
+[ext_resource type="Script" path="res://Utility/PooledScene.gd" id="3_yi6ld"]
 
 [node name="GPUParticles2D" type="GPUParticles2D"]
-modulate = Color( 2, 2, 2, 1 )
-self_modulate = Color( 0.984314, 0.909804, 0.356863, 1 )
+modulate = Color(2, 2, 2, 1)
+self_modulate = Color(0.984314, 0.909804, 0.356863, 1)
 emitting = false
 amount = 17
 lifetime = 0.5
 one_shot = true
 explosiveness = 0.91
-process_material = ExtResource( 2 )
-texture = ExtResource( 1 )
-script = ExtResource( 3 )
+process_material = ExtResource("1_u4pjp")
+texture = ExtResource("2_egffr")
+script = ExtResource("3_yi6ld")

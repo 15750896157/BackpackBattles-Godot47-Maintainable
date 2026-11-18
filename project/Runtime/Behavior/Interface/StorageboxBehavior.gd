@@ -21,12 +21,23 @@ static func shake(subject: Receiver, collisionPoint, strong: bool):
 
 static func pve_slot_rect(subject: Receiver, index: int) -> Rect2:
 	var capacity = int(Expedition.flow.run.get("build", {}).get("storage_capacity", 2))
+	if subject.has_meta("art_storage_slots"):
+		var slots:Array=subject.get_meta("art_storage_slots")
+		return slots[clampi(index,0,mini(capacity,slots.size())-1)]
 	var area_rect = subject.getStorageRect()
 	var width = area_rect.size.x / float(capacity)
 	return Rect2(area_rect.position + Vector2(width * clampi(index, 0, capacity - 1) + 5, 4), Vector2(width - 10, area_rect.size.y - 8))
 
 static func pve_refresh_slots(subject: Receiver, build: Dictionary):
 	var capacity = int(build.storage_capacity)
+	if subject.has_meta("art_storage_slots"):
+		# The supplied cloth contains the slot artwork; do not add tiles or digits.
+		subject.pve_capacity=capacity
+		if is_instance_valid(subject.pve_slot_root):
+			subject.pve_slot_root.hide()
+			for child in subject.pve_slot_root.get_children():subject.pve_slot_root.remove_child(child);child.queue_free()
+		subject.get_node("StorageShakeButton/Storagebox/Label").hide()
+		return
 	# Keep the original localized chest caption above its fixed slots, leaving
 	# the shared bottom tutorial band free and avoiding the stored icon bounds.
 	var caption: Label = subject.get_node("StorageShakeButton/Storagebox/Label")
@@ -51,10 +62,10 @@ static func pve_refresh_slots(subject: Receiver, build: Dictionary):
 	for index in capacity:
 		var rect = subject.pve_slot_rect(index)
 		var slot = Sprite2D.new()
-		slot.texture = load("res://Art/Supplied20261028/ui/cell.png")
+		slot.texture = load("res://Art/Reference20261102/cell.png")
 		slot.position = rect.get_center() if subject.has_meta("art_storage_rect") else subject.to_local(rect.get_center())
 		slot.scale = Vector2.ONE * minf(rect.size.x / slot.texture.get_width(), rect.size.y / slot.texture.get_height())
-		slot.modulate = Color(1.0, 0.95, 0.85, 0.32)
+		slot.modulate = Color(1.0, 0.95, 0.85, 0.2)
 		subject.pve_slot_root.add_child(slot)
 		var text = Label.new()
 		text.text = str(index + 1)

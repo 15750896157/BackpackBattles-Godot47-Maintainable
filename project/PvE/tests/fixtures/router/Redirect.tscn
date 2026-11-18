@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b11avlnips3ts"]
+
+[ext_resource type="Script" path="res://PvE/tests/fixtures/router/Screen.gd" id="1"]
+
+[node name="ScreenRedirect" type="Node2D"]
+script = ExtResource("1")
+marker = "redirect"
+redirect_on_ready = true

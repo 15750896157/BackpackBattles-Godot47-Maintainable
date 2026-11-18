@@ -12,9 +12,31 @@ var _rules: Dictionary = {}
 var _locales: Dictionary = {}
 var _ui_locales: Dictionary = {}
 var _validation: Dictionary = {}
+var release_catalog:Dictionary={}
 
 func _init(path = CACHE_PATH):
+	var release_path="res://PvE/Rules/content/release_catalog.json"
+	if FileAccess.file_exists(release_path):release_catalog=JSON.parse_string(FileAccess.get_file_as_string(release_path))
 	load_content(path)
+
+func release_contains(table:String,id:String)->bool:
+	return id in release_catalog.get(table,[])
+
+func release_run(run:Dictionary)->bool:
+	return run.get("content_track","")==release_catalog.get("id","new_plan_20261102")
+
+func release_loadout(id:String)->bool:
+	for values in release_catalog.get("loadouts",{}).values():
+		if id in values:return true
+	return false
+
+func starting_loadouts(role:String)->Array:
+	var ids:Array=release_catalog.get("loadouts",{}).get(role,release_catalog.get("compatibility_loadouts",{}).get(role,[]))
+	return rows("character_loadouts").filter(func(row):return row.id in ids)
+
+func catalogue_rows(table:String,legacy:bool=false)->Array:
+	if table not in ["items","bags","recipes"]:return rows(table)
+	return rows(table).filter(func(row):return release_contains(table,row.id)!=legacy)
 
 func load_content(path = CACHE_PATH) -> Dictionary:
 	errors.clear()

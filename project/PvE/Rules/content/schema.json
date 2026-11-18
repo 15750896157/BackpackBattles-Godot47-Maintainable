@@ -1,5 +1,5 @@
 {
-  "content_version": "0.1.3",
+  "content_version": "0.2.1",
   "conventions": {
     "crafted_only": "recipe result excluded from random shop, but explicit event/reward grants allowed",
     "ignore_chapter_gate": "Boss reward only",

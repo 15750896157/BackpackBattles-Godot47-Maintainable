@@ -1,11 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://bw8skv6k7m0ud"]
 
-[ext_resource path="res://Assets/Pixel.png" type="Texture2D" id=1]
-[ext_resource path="res://Interface/RopeSegment.gd" type="Script" id=2]
+[ext_resource type="Script" path="res://Interface/RopeSegment.gd" id="1_4tuby"]
+[ext_resource type="Texture2D" path="res://Assets/Pixel.png" id="2_l8pnv"]
 
-[sub_resource type="RectangleShape2D" id=1]
-
-size = Vector2( 120, 48 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(120, 48)
 
 [node name="RopeSegment" type="RigidBody2D"]
 collision_layer = 16
@@ -14,22 +13,22 @@ input_pickable = true
 gravity_scale = 12.29
 linear_damp = -0.983
 angular_damp = -0.955
-script = ExtResource( 2 )
+script = ExtResource("1_4tuby")
 
 [node name="Start" type="Marker2D" parent="."]
-position = Vector2( 0, -25 )
+position = Vector2(0, -25)
 
 [node name="Pixel" type="Sprite2D" parent="."]
 visible = false
-scale = Vector2( 10, 50 )
-texture = ExtResource( 1 )
+scale = Vector2(10, 50)
+texture = ExtResource("2_l8pnv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -4.76837e-07 )
-shape = SubResource( 1 )
+position = Vector2(0, -4.76837e-07)
+shape = SubResource("1")
 
 [node name="End" type="Marker2D" parent="."]
-position = Vector2( 0, 25 )
+position = Vector2(0, 25)
 
 [node name="ClickArea" type="Control" parent="."]
 offset_left = -30.0

@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://dcxluumavfncc"]
 
-[ext_resource path="res://Assets/Particles/GlowingDot.png" type="Texture2D" id=1]
-[ext_resource path="res://Shader/ItemFuseParticles.tres" type="Material" id=2]
-[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=3]
+[ext_resource type="Material" path="res://Shader/ItemFuseParticles.tres" id="1_6o1xp"]
+[ext_resource type="Texture2D" path="res://Assets/Particles/GlowingDot.png" id="2_yxv38"]
+[ext_resource type="Script" path="res://Utility/PooledScene.gd" id="3_rmkgl"]
 
 [node name="GPUParticles2D" type="GPUParticles2D"]
 z_index = 6
@@ -14,6 +14,6 @@ preprocess = 0.1
 speed_scale = 1.2
 explosiveness = 0.95
 local_coords = false
-process_material = ExtResource( 2 )
-texture = ExtResource( 1 )
-script = ExtResource( 3 )
+process_material = ExtResource("1_6o1xp")
+texture = ExtResource("2_yxv38")
+script = ExtResource("3_rmkgl")

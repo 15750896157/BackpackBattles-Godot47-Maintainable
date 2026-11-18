@@ -4,6 +4,7 @@ var output: String = ""
 var checks: int = 0
 var failures: Array = []
 var cycles: Array = []
+var reveal_observations: Array = []
 const Barrier = preload("res://PvE/tests/LoadingBarrier.gd")
 
 func _ready():
@@ -42,6 +43,74 @@ func quiet_title():
 func sample(label: String) -> Dictionary:
 	return {"label": label, "static_bytes": Performance.get_monitor(Performance.MEMORY_STATIC), "orphans": Performance.get_monitor(Performance.OBJECT_ORPHAN_NODE_COUNT), "nodes": get_tree().get_node_count(), "stream": AssetStream.stats()}
 
+func reveal_probe(kind: String, ticket: int, epoch: int, result: Dictionary):
+	await Expedition.art.reveal_ready(kind, ticket, epoch)
+	result.done = true
+
+func wait_reveal_probe(result: Dictionary) -> bool:
+	var deadline = Time.get_ticks_msec() + 5000
+	while not result.done and Time.get_ticks_msec() < deadline:
+		await get_tree().process_frame
+	return result.done
+
+func check_cover_retained(label: String, ticket: int):
+	var curtain = Expedition.art.curtain
+	var covered = curtain.busy and curtain.covered and not curtain.revealing and curtain.generation == ticket
+	var locked = (InputBlocker.curSources & InputBlocker.Source.Cinematic) != 0
+	var loading = Expedition.loading_screen.root.visible and not Expedition.loading_screen.mode.is_empty()
+	check(covered, label + ": stale caller leaves current cover intact")
+	check(locked, label + ": stale caller cannot clear cinematic lock")
+	check(loading, label + ": stale caller cannot finish current loading overlay")
+	reveal_observations.append({"case": label, "covered": covered, "locked": locked, "loading": loading, "ticket": ticket, "view_epoch": Expedition.view_epoch})
+
+func reveal_contracts():
+	var before = JSON.stringify({"run": Expedition.flow.run, "flow": Expedition.flow.screen_state, "native": Game.state}, "", true, true)
+	for scenario in [{"name": "expired_on_entry", "kind": "combat", "epoch_delta": -1, "ticket_delta": 0},
+		{"name": "wrong_cloud_ticket", "kind": "title", "epoch_delta": 0, "ticket_delta": 1}]:
+		var ticket = await Expedition.art.curtain.cover("qa_reveal_" + scenario.name)
+		await Expedition.art.reveal_ready(scenario.kind, ticket + int(scenario.ticket_delta), Expedition.view_epoch + int(scenario.epoch_delta))
+		check_cover_retained(scenario.name, ticket)
+		await Expedition.art.curtain.reveal(ticket)
+		await settle()
+	for kind in ["combat", "title"]:
+		var label = "expired_while_waiting" if kind == "combat" else "expired_during_final_frame"
+		var ticket = await Expedition.art.curtain.cover("qa_reveal_" + label)
+		var result = {"done": false}
+		reveal_probe(kind, ticket, Expedition.view_epoch, result)
+		# Combat is deliberately not ready on Title; Title reaches the final yield.
+		if kind == "combat": await get_tree().process_frame
+		check(not result.done, label + ": probe reached a real asynchronous wait")
+		Expedition.view_epoch += 1
+		check(await wait_reveal_probe(result), label + ": cancelled waiter exits within deadline")
+		check_cover_retained(label, ticket)
+		await Expedition.art.curtain.reveal(ticket)
+		await settle()
+	var readiness_ticket = await Expedition.art.curtain.cover("qa_reveal_readiness_changed")
+	var readiness_result = {"done": false}
+	reveal_probe("title", readiness_ticket, Expedition.view_epoch, readiness_result)
+	var previous_ready_kind = Expedition.art.ready_kind
+	Expedition.art.ready_kind = ""
+	await get_tree().process_frame
+	await get_tree().process_frame
+	var held_for_ready = Expedition.art.curtain.covered and not Expedition.art.curtain.revealing and not readiness_result.done
+	check(held_for_ready, "final reveal frame rechecks target construction readiness")
+	Expedition.art.ready_kind = previous_ready_kind
+	check(await wait_reveal_probe(readiness_result), "current caller resumes when the target is ready again")
+	await settle()
+	check(not Expedition.art.curtain.busy and (InputBlocker.curSources & InputBlocker.Source.Cinematic) == 0, "resumed reveal completes and releases its cinematic lock")
+	check(Expedition.loading_screen.mode.is_empty(), "resumed reveal finishes the shared loading overlay")
+	reveal_observations.append({"case": "readiness_lost_in_final_frame", "held_until_ready": held_for_ready, "completed_after_ready": readiness_result.done})
+	var valid_ticket = await Expedition.art.curtain.cover("qa_reveal_valid_owner")
+	InputBlocker.activate(InputBlocker.Source.Popup, false)
+	await Expedition.art.reveal_ready("title", valid_ticket, Expedition.view_epoch)
+	await settle()
+	check(not Expedition.art.curtain.busy, "current view owner still completes normal reveal")
+	check((InputBlocker.curSources & InputBlocker.Source.Cinematic) == 0, "current view owner releases cinematic lock")
+	check((InputBlocker.curSources & InputBlocker.Source.Popup) != 0, "reveal preserves unrelated input lock ownership")
+	check(Expedition.loading_screen.mode.is_empty() and not Expedition.loading_screen.root.visible, "current view owner finishes loading overlay")
+	InputBlocker.deactivate(InputBlocker.Source.Popup, false)
+	check(JSON.stringify({"run": Expedition.flow.run, "flow": Expedition.flow.screen_state, "native": Game.state}, "", true, true) == before, "reveal cancellation never changes domain run or native state")
+
 func run_tests():
 	while not Expedition.initialized: await get_tree().process_frame
 	await settle()
@@ -52,6 +121,7 @@ func run_tests():
 	check(Game.shopSceneNode.get_node("Background").texture == null, "title does not retain shop background texture")
 	check(Game.combatSceneNode.backgroundNode.get_child_count() == 0, "title does not retain combat background scene")
 	check(not is_instance_valid(Game.wardrobe), "wardrobe not constructed at startup")
+	await reveal_contracts()
 
 	var path = "res://Items/LeatherBag.tscn"
 	check(not AssetStream.resources.has(path), "cancellation fixture starts after title transition and decoration cleanup")
@@ -130,7 +200,7 @@ func run_tests():
 	check(float(last.orphans) - float(first.orphans) <= 8, "repeated visits do not accumulate detached scene nodes")
 	check(int(AssetStream.metrics.max_inflight) <= AssetStream.MAX_IO, "background IO concurrency is bounded")
 	check(AssetStream.failed.is_empty(), "all active resource scopes are healthy after failure retry")
-	var report = {"checks": checks, "failures": failures, "cycles": cycles, "stream": AssetStream.stats(), "limits": {"io": AssetStream.MAX_IO, "instances_per_frame": AssetStream.MAX_INSTANCES_PER_FRAME, "budget_us": AssetStream.INSTANCE_BUDGET_US, "pool": ObjectPool.MAX_CACHED}}
+	var report = {"checks": checks, "failures": failures, "cycles": cycles, "reveal_observations": reveal_observations, "stream": AssetStream.stats(), "limits": {"io": AssetStream.MAX_IO, "instances_per_frame": AssetStream.MAX_INSTANCES_PER_FRAME, "budget_us": AssetStream.INSTANCE_BUDGET_US, "pool": ObjectPool.MAX_CACHED}}
 	var file = FileAccess.open(output.path_join("loading-contracts-report.json"), FileAccess.WRITE)
 	file.store_string(JSON.stringify(report, "\t"));file.close()
 	print("LOADING_CONTRACTS ", JSON.stringify(report))

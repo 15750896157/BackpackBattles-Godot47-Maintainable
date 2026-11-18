@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://385hepqwt4r"]
 
-[ext_resource path="res://Assets/GoldCoin2.png" type="Texture2D" id=1]
-[ext_resource path="res://Interface/CoinParticles.gd" type="Script" id=2]
-[ext_resource path="res://Shader/CoinParticles.material" type="Material" id=3]
+[ext_resource type="Material" path="res://Shader/CoinParticles.material" id="1_n8bj4"]
+[ext_resource type="Texture2D" path="res://Assets/GoldCoin2.png" id="2_sl0cn"]
+[ext_resource type="Script" path="res://Interface/CoinParticles.gd" id="3_l3br5"]
 
 [node name="CoinParticles" type="GPUParticles2D"]
 z_as_relative = false
@@ -12,6 +12,6 @@ one_shot = true
 speed_scale = 1.5
 explosiveness = 0.89
 local_coords = false
-process_material = ExtResource( 3 )
-texture = ExtResource( 1 )
-script = ExtResource( 2 )
+process_material = ExtResource("1_n8bj4")
+texture = ExtResource("2_sl0cn")
+script = ExtResource("3_l3br5")

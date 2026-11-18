@@ -93,6 +93,9 @@ func render_build(character, build: Dictionary, owner: int):
 		for entry in build.get(layer, []): ids.append(entry.definition_id)
 	if not await AssetStream.prepare(expedition.bindings.scene_paths(ids), scope): return
 	if not is_instance_valid(character) or build_revisions.get(owner) != revision: return
+	# Items use global anchors. Establish the board transform before orienting
+	# either side, including a freshly instantiated opponent inventory.
+	inventory.scale = Vector2.ONE * expedition.art.grid_scale()
 	rendered_builds[inventory.get_instance_id()] = build.duplicate(true)
 	var preview_items = _build_preview(owner)
 	if owner == Item.Owner.PlayerInventory: Game.STORAGEBOX.pve_refresh_slots(build)
@@ -136,7 +139,7 @@ func render_build(character, build: Dictionary, owner: int):
 				item.occupiedCells.clear()
 				item.setFaceDirectionInstant(0)
 				Game.STORAGEBOX.addItem(item)
-				place_storage_view(item, build.storage.find(entry))
+				place_storage_view(item, _flow().placement.storage_positions(build)[str(entry.uid)])
 				item.makeGrabbable(true)
 			else:
 				Util.reparentNode(item, inventory.itemNode)
@@ -267,7 +270,10 @@ func fit_native_visual(item, storage_view: bool = false):
 	item.sprite.offset = item.get_meta("pve_original_offset", Vector2.ZERO)
 	var geometry = footprint_layout.geometry(item)
 	var shop_view = item.ownerType == Item.Owner.Shop and not bool(item.get_meta("pve_drag_layout", false))
+	item.scale=Vector2.ONE if storage_view or shop_view else Vector2.ONE*expedition.art.grid_scale()
 	var target_size = Game.STORAGEBOX.pve_slot_rect(0).size - Vector2(24, 34) if storage_view else Vector2(184, 160)
+	if storage_view and Game.STORAGEBOX.has_meta("art_storage_slots"):target_size=Game.STORAGEBOX.pve_slot_rect(0).size-Vector2(6,6)
+	if shop_view and not item.isBag(): target_size.y = clampf(size.y*80.0,110.0,260.0)
 	if storage_view and Game.STORAGEBOX.has_meta("art_storage_rect"):
 		# One independent storage item per supplied square, including long weapons.
 		# The wider drop slot remains available, but its icon stays inside the cell.
@@ -292,6 +298,7 @@ func fit_native_visual(item, storage_view: bool = false):
 	item.collisionMap.hide()
 	if item.isBag(): item.bagTilemap.hide()
 	var pick_signature = str(entry.definition_id) + (":storage" if storage_view else ":shop" if shop_view else ":grid")
+	if storage_view:pick_signature+=str(target_size)
 	if str(item.get_meta("pve_pick_definition", "")) == pick_signature: return
 	item.set_meta("pve_pick_definition", pick_signature)
 	# Pixel picking uses the same recovered 80px cells as the authoritative build.
@@ -350,7 +357,7 @@ func grid_points(item) -> Array:
 	var points: Array = []
 	var entry = item_entry(item)
 	var origin: Vector2 = item.getTopLeftGlobal()
-	for cell in _flow().placement.local_cells(entry): points.append(origin + (Vector2(cell) + Vector2(0.5, 0.5)) * 80.0)
+	for cell in _flow().placement.local_cells(entry): points.append(origin + (Vector2(cell) + Vector2(0.5, 0.5)) * 80.0*expedition.art.grid_scale())
 	return points
 
 func _build_preview(owner: int) -> Dictionary:
@@ -378,7 +385,7 @@ func definition_stats(id: String) -> Dictionary:
 
 func target_origin(item) -> Vector2i:
 	var inventory = Game.PLAYER.INVENTORY
-	var center = inventory.tilemap.to_local(item.getTopLeftGlobal() + Vector2(40, 40))
+	var center = inventory.tilemap.to_local(item.getTopLeftGlobal()) + Vector2(40, 40)
 	return Vector2i(LegacyGrid.cell(inventory.tilemap, center))
 
 func bag_contents(item) -> Array:
@@ -407,7 +414,7 @@ func preview(item) -> Dictionary:
 
 func affected_cells(item, color: int, inventory) -> Dictionary:
 	var result = {inventory.AffectedTile.CanAffect + color: [], inventory.AffectedTile.CannotAffect + color: [], inventory.AffectedTile.AffectsInside: []}
-	if color != Item.Affected.Primary: return result
+	if color != Item.Affected.Primary or (item.ownerType == Item.Owner.Shop and not item.dragged): return result
 	var build: Dictionary = rendered_builds.get(inventory.get_instance_id(), _flow().run.get("build", {})).duplicate(true)
 	var entry = item_entry(item)
 	if item.dragged or item.ownerType == Item.Owner.Shop:
@@ -442,14 +449,11 @@ func affected_cells(item, color: int, inventory) -> Dictionary:
 			if point not in result[tile]: result[tile].append(point)
 	return result
 
-func _buy_to_storage(index: int) -> Dictionary:
+func _buy_to_storage(index: int, slot: int = -1) -> Dictionary:
 	var before = _flow().run.duplicate(true)
 	var draft = before.duplicate(true)
-	var bought = _flow().economy.buy(draft, index)
+	var bought = _flow().economy.buy(draft, index, slot)
 	if not bought.ok: return bought
-	if not bought.stored:
-		var stored = _flow().placement.remove(draft.build, str(bought.entry.uid), true)
-		if not stored.ok: return stored
 	_flow().run.clear()
 	_flow().run.merge(draft, true)
 	_flow().edit_history.record(before, _flow().run)
@@ -475,7 +479,7 @@ func _restore_native(item):
 			if item not in Game.STORAGEBOX.items: Game.STORAGEBOX.addItem(item)
 			fit_native_visual(item, true)
 			item.setFaceDirectionInstant(0)
-			place_storage_view(item, int(found.index))
+			place_storage_view(item, _flow().placement.storage_positions(_flow().run.build)[uid])
 			item.makeGrabbable(true)
 		else:
 			var inventory = Game.PLAYER.INVENTORY
@@ -508,6 +512,7 @@ func drop_item(item) -> int:
 	var origin = target_origin(item)
 	var rotation = int(item.getFaceDirection()) * 90
 	var sale_amount = sell_price(item) if not was_shop else 0
+	var storage_slot := storage_slot_at(item.global_position)
 	var result: Dictionary
 	var drop_result = Item.DropResult.AddedToInventory
 	expedition.syncing = true
@@ -515,8 +520,8 @@ func drop_item(item) -> int:
 	if Game.SELLBOX.isHovered():
 		result = {"ok": false, "error": "missing_item"} if was_shop else _flow().sell(uid)
 		drop_result = Item.DropResult.Sold
-	elif Game.STORAGEBOX.isHovered():
-		result = _buy_to_storage(index) if was_shop else _flow().edit("store", uid)
+	elif storage_slot >= 0:
+		result = _buy_to_storage(index, storage_slot) if was_shop else _flow().edit("store", uid, {"storage_slot": storage_slot})
 		drop_result = Item.DropResult.AddedToStorageBox
 	else:
 		if not was_shop and item.isBag() and item.ownerType == Item.Owner.PlayerInventory:
@@ -609,6 +614,13 @@ func shift_inventory(direction: Vector2) -> Dictionary:
 	_flow().run.clear(); _flow().run.merge(draft, true)
 	_flow().edit_history.record(before, _flow().run)
 	return _flow()._update()
+
+func storage_slot_at(point: Vector2) -> int:
+	var capacity := int(_flow().run.build.storage_capacity)
+	for slot in capacity:
+		if Game.STORAGEBOX.pve_slot_rect(slot).has_point(point):
+			return slot
+	return -1
 
 func place_storage_view(item, index: int):
 	item.makeNonRigidBody()

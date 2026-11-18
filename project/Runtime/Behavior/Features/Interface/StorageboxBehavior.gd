@@ -15,6 +15,12 @@ static func getStorageRect(subject: Receiver):
 	return Rect2(subject.box.global_position - subject.shape.size * 0.5, subject.shape.size)
 
 static func isHovered(subject: Receiver):
+	if Expedition.enabled and subject.has_meta("art_storage_slots"):
+		if not is_instance_valid(Game.draggedItem):return false
+		var capacity=int(Expedition.flow.run.get("build",{}).get("storage_capacity",2))
+		for index in capacity:
+			if subject.pve_slot_rect(index).has_point(Game.draggedItem.global_position):return true
+		return false
 	if Expedition.enabled: return Game.draggedItem != null and subject.getStorageRect().has_point(Game.draggedItem.global_position)
 	var pos = Game.draggedItem.global_position
 	return subject.getStorageRect().has_point(pos)

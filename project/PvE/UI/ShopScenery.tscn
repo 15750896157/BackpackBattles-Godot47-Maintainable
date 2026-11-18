@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://b1k3cd54h02mw"]
+
+[node name="SuppliedArtScenery" type="Node2D"]
+z_index = -1
+
+[node name="TopShelf" type="TextureRect" parent="."]
+offset_left = -245.19052124023438
+offset_top = 223.11663818359375
+offset_right = 765.231689453125
+offset_bottom = 298.1300048828125
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "shelf"
+
+[node name="BottomShelf" type="TextureRect" parent="."]
+offset_left = -71.1843490600586
+offset_top = 540.4808349609375
+offset_right = 939.2379150390625
+offset_bottom = 615.4942016601562
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "shelf"
+
+[node name="Merchant" type="TextureRect" parent="."]
+offset_left = -3.954685926437378
+offset_top = 573.178955078125
+offset_right = 477.5283203125
+offset_bottom = 880.926025390625
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "merchant"
+
+[node name="Table" type="TextureRect" parent="."]
+offset_top = 867.462158203125
+offset_right = 1920.0
+offset_bottom = 1093.4638671875
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "table"
+
+[node name="StorageCloth" type="TextureRect" parent="."]
+offset_left = 450.8341979980469
+offset_top = 858.8067626953125
+offset_right = 1602.636474609375
+offset_bottom = 1114.62158203125
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "storage_mat"
+
+[node name="SellScroll" type="TextureRect" parent="."]
+offset_left = 160.16477966308594
+offset_top = 852.0747680664062
+offset_right = 458.74359130859375
+offset_bottom = 1080.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/shop_texture = "sell"

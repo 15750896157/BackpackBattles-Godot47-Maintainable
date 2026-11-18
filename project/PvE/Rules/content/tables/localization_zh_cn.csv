@@ -95,11 +95,11 @@ item.iron_sword.name,铁脊长剑
 item.iron_sword.desc,每 3.4 秒：造成 10 点物理伤害。作用范围：front_1；条件：spatial_target_count>=1；消耗 2 耐力。
 item.broad_axe.name,宽刃斧
 item.broad_axe.desc,每 5.5 秒：造成 14 点物理伤害。消耗 3 耐力。
-item.stone_hammer.name,石击锤
+item.stone_hammer.name,铁锤
 item.stone_hammer.desc,每 6.2 秒：造成 16 点物理伤害。消耗 3 耐力。
 item.hunting_spear.name,猎路长矛
 item.hunting_spear.desc,每 4.5 秒：造成 11 点物理伤害。作用范围：front_2；消耗 2 耐力。
-item.twin_needles.name,双针
+item.twin_needles.name,双剑
 item.twin_needles.desc,每 2.1 秒：造成 4 点物理伤害。消耗 1 耐力。
 item.sling.name,机索投带
 item.sling.desc,每 3.0 秒：造成 6 点物理伤害。消耗 1 耐力。
@@ -113,29 +113,29 @@ item.tower_shield.name,高壁盾
 item.tower_shield.desc,每 6.5 秒：获得 13 点护甲。
 item.spiked_guard.name,棘面护板
 item.spiked_guard.desc,受到伤害后：造成 4 点物理伤害。条件：trigger_count_max:8。
-item.leather_wrap.name,韧皮缠带
+item.leather_wrap.name,皮甲
 item.leather_wrap.desc,每 5.0 秒：获得 4 点护甲。作用范围：adjacent_4。
-item.repair_kit.name,修缮包
+item.repair_kit.name,扳手
 item.repair_kit.desc,每 6.0 秒：恢复 4 点生命。作用范围：adjacent_4；条件：target_has_tag:armor。
 item.stamina_flask.name,耐力壶
 item.stamina_flask.desc,每 5.0 秒：获得 3 点耐力。
 item.travel_ration.name,行军口粮
 item.travel_ration.desc,每 7.0 秒：恢复 4 点生命。
-item.bandage_roll.name,绷带卷
+item.bandage_roll.name,草药袋
 item.bandage_roll.desc,每 6.0 秒：恢复 3 点生命。
-item.cleansing_salt.name,澄净盐
+item.cleansing_salt.name,圣十字架
 item.cleansing_salt.desc,每 8.0 秒：移除 3 层负面状态。
 item.sharpening_stone.name,磨锋石
 item.sharpening_stone.desc,战斗开始：使目标伤害改变 2。作用范围：adjacent_4；条件：target_has_tag:weapon。
-item.clockwork_spring.name,发条簧
+item.clockwork_spring.name,纯铜怀表
 item.clockwork_spring.desc,战斗开始：使目标冷却改变 -0.08。作用范围：adjacent_4。
-item.lucky_coin.name,缺角幸运币
+item.lucky_coin.name,荣誉勋章
 item.lucky_coin.desc,战斗开始：战后获得 1 金币。条件：health_above_pct:0.5。
-item.scout_lens.name,斥候镜
+item.scout_lens.name,法力宝石
 item.scout_lens.desc,战斗开始：使目标暴击率改变 0.06。作用范围：front_2；条件：target_has_tag:weapon。
 item.merchant_token.name,商路筹码
 item.merchant_token.desc,战斗开始：获得 1 次免费刷新。条件：trigger_count_max:1。
-item.storage_hook.name,仓储挂钩
+item.storage_hook.name,绳索
 item.storage_hook.desc,战斗开始：获得 2 点护甲。作用范围：same_bag；条件：spatial_target_count>=3。
 item.gear_link.name,联动齿节
 item.gear_link.desc,作用目标激活后：推进目标 0.25 秒冷却。作用范围：adjacent_4；条件：trigger_count_max:10。
@@ -145,11 +145,11 @@ item.row_banner.name,横列旗
 item.row_banner.desc,战斗开始：使目标伤害改变 1。作用范围：same_row。
 item.column_standard.name,纵阵标
 item.column_standard.desc,战斗开始：获得 2 点护甲。作用范围：same_column。
-item.star_compass.name,星位罗盘
+item.star_compass.name,王冠铁徽
 item.star_compass.desc,战斗开始：使目标冷却改变 -0.12。作用范围：star_cell。
-item.compact_rack.name,紧凑支架
+item.compact_rack.name,珠宝匣
 item.compact_rack.desc,战斗开始：获得 3 点护甲。作用范围：adjacent_8；条件：spatial_target_count>=4。
-item.resonant_bell.name,共鸣铃
+item.resonant_bell.name,鸣雷戒指
 item.resonant_bell.desc,作用目标激活后：获得 1 点耐力。作用范围：adjacent_4；条件：trigger_count_max:8。
 item.counterweight.name,平衡配重
 item.counterweight.desc,战斗开始：使目标伤害改变 4。作用范围：front_1；条件：target_has_tag:heavy。
@@ -157,19 +157,19 @@ item.venom_needle.name,毒刺针
 item.venom_needle.desc,每 3.5 秒：施加 poison:2。消耗 1 耐力。
 item.ember_stone.name,余烬石
 item.ember_stone.desc,每 4.0 秒：施加 burn:2。
-item.healing_herb.name,愈合草
+item.healing_herb.name,盆栽
 item.healing_herb.desc,每 5.5 秒：恢复 4 点生命。
-item.regeneration_leaf.name,复生叶
+item.regeneration_leaf.name,藤蔓草环
 item.regeneration_leaf.desc,每 6.0 秒：施加 regeneration:3。
-item.fracture_charm.name,裂痕符
+item.fracture_charm.name,巫毒小人
 item.fracture_charm.desc,每 4.5 秒：施加 vulnerable:1。
 item.quicksand_vial.name,流沙瓶
 item.quicksand_vial.desc,每 6.0 秒：施加 slow:2。
-item.blood_cup.name,赤液杯
+item.blood_cup.name,吸血鬼尖牙
 item.blood_cup.desc,攻击命中后：施加 lifesteal:1。条件：trigger_count_max:6。
-item.cooling_fan.name,散热扇
+item.cooling_fan.name,时间怀表
 item.cooling_fan.desc,施加状态后：推进目标 0.3 秒冷却。作用范围：front_2；条件：enemy_has_status:burn。
-item.iron_nail.name,铆接铁钉
+item.iron_nail.name,海象獠牙
 item.iron_nail.desc,获得护甲后：造成 2 点物理伤害。条件：trigger_count_max:8。
 item.glass_bead.name,折光玻珠
 item.glass_bead.desc,战斗开始：使目标状态强度改变 0.1。作用范围：adjacent_8。
@@ -177,7 +177,7 @@ item.field_manual.name,随军手册
 item.field_manual.desc,战斗开始：使目标伤害改变 1。作用范围：global_same_tag；条件：build_tag_count:4。
 item.salvage_pouch.name,回收钱袋
 item.salvage_pouch.desc,战斗开始：战后获得 2 金币。条件：health_above_pct:0.6。
-item.arsenal_bracer.name,武库腕轮
+item.arsenal_bracer.name,翡翠手套
 item.arsenal_bracer.desc,战斗开始：使目标暴击率改变 0.04。作用范围：adjacent_4；条件：target_has_tag:weapon。
 item.chain_blade.name,链节刃
 item.chain_blade.desc,每 3.0 秒：造成 11 点物理伤害。作用范围：adjacent_4；条件：spatial_target_count>=2；消耗 2 耐力。
@@ -189,19 +189,19 @@ item.siege_maul.name,攻城槌
 item.siege_maul.desc,每 7.5 秒：造成 30 点物理伤害。作用范围：front_1；消耗 5 耐力。
 item.momentum_gear.name,势能齿轮
 item.momentum_gear.desc,作用目标激活后：获得 1 点耐力。作用范围：adjacent_4；条件：trigger_count_max:8。
-item.duelist_mark.name,决斗印记
+item.duelist_mark.name,牧师徽章
 item.duelist_mark.desc,暴击后：推进目标 0.5 秒冷却。作用范围：same_row；条件：trigger_count_max:6。
 item.overdrive_ratchet.name,超载棘轮
 item.overdrive_ratchet.desc,攻击命中后：推进目标 0.2 秒冷却。作用范围：adjacent_8；条件：trigger_count_max:12。
 item.bastion_core.name,壁垒核心
 item.bastion_core.desc,每 4.0 秒：获得 12 点护甲。作用范围：same_bag；条件：build_tag_count:3。
-item.layered_plates.name,叠层甲片
+item.layered_plates.name,侍从铠甲
 item.layered_plates.desc,每 5.0 秒：获得 10 点护甲。作用范围：adjacent_4；条件：target_has_tag:armor。
-item.retaliation_spikes.name,回击尖刺
+item.retaliation_spikes.name,荆棘刺甲
 item.retaliation_spikes.desc,获得护甲后：造成 5 点物理伤害。条件：trigger_count_max:8。
-item.guardian_standard.name,守阵旗
+item.guardian_standard.name,骑士之证
 item.guardian_standard.desc,战斗开始：获得 3 点护甲。作用范围：same_column；条件：target_has_tag:armor。
-item.charging_weight.name,蓄势铁坠
+item.charging_weight.name,蓄能电池
 item.charging_weight.desc,每 6.0 秒：获得 4 点耐力。
 item.execution_anvil.name,终击砧
 item.execution_anvil.desc,战斗开始：使目标伤害改变 8。作用范围：front_1；条件：target_has_tag:heavy。
@@ -209,7 +209,7 @@ item.toxin_bottle.name,毒素瓶
 item.toxin_bottle.desc,每 4.0 秒：施加 poison:4。
 item.thorn_extract.name,棘刺萃液
 item.thorn_extract.desc,施加状态后：施加 poison:1。作用范围：adjacent_4；条件：target_has_tag:poison。
-item.spore_jar.name,孢尘罐
+item.spore_jar.name,毒蘑菇
 item.spore_jar.desc,每 6.0 秒：施加 poison:6。
 item.venom_distiller.name,剧毒蒸馏器
 item.venom_distiller.desc,施加状态后：推进目标 0.4 秒冷却。作用范围：adjacent_4；条件：enemy_has_status:poison。
@@ -229,11 +229,11 @@ item.tonic_bottle.name,复元补剂
 item.tonic_bottle.desc,每 5.0 秒：恢复 7 点生命。
 item.renewal_mortar.name,生息研钵
 item.renewal_mortar.desc,施加状态后：施加 regeneration:1。作用范围：adjacent_4；条件：source_has_tag:healing。
-item.transfusion_tube.name,回流导管
+item.transfusion_tube.name,血晶护符
 item.transfusion_tube.desc,攻击命中后：恢复 2 点生命。作用范围：adjacent_4；条件：trigger_count_max:8。
 item.philosophers_kettle.name,回生炼釜
 item.philosophers_kettle.desc,首次低生命时：恢复 24 点生命。作用范围：same_bag；条件：trigger_count_max:1。
-character.armorer.name,铸阵师
+character.armorer.name,战士
 character.armorer.desc,使用武器形状、护甲与耐力联动建立稳定阵线。
 character.alchemist.name,调律师
 character.alchemist.desc,使用毒、灼烧和治疗转化控制战斗节奏。
@@ -295,36 +295,36 @@ enemy_archetype.toxic_guard.name,毒甲守卫
 enemy_archetype.burning_bastion.name,燃烧壁垒
 enemy_archetype.blood_engine.name,回流机关
 enemy_archetype.star_artillery.name,星位炮阵
-enemy.rust_scout_a.name,锈林斥候·轻装
-enemy.rust_scout_b.name,锈林斥候·连击
-enemy.road_guard_a.name,道路守卫·圆盾
-enemy.road_guard_b.name,道路守卫·板甲
-enemy.trail_breaker.name,荒径破阵者
-enemy.marsh_brewer.name,沼地毒酿师
-enemy.cinder_runner.name,余烬疾行者
-enemy.camp_mender.name,营地修补师
-enemy.gear_hunter_elite.name,精英·齿轮猎手
-enemy.thorn_wall_elite.name,精英·棘墙守卫
-enemy.furnace_duelist.name,熔炉决斗者
-enemy.plate_warden.name,叠甲监工
-enemy.slag_breaker.name,炉渣粉碎者
-enemy.coil_brewer.name,盘管毒酿师
-enemy.kiln_runner.name,窑火疾行者
-enemy.red_medic.name,赤衣医师
-enemy.relay_captain.name,传动队长
-enemy.foundry_raider.name,铸坊掠夺者
-enemy.cinder_bastion_elite.name,精英·烬火壁垒
-enemy.blood_loom_elite.name,精英·血织机
-enemy.court_blades.name,深庭刃舞队
-enemy.astral_guard.name,星辉守卫
-enemy.anvil_judge.name,铁砧裁决者
-enemy.pale_distiller.name,苍白蒸馏师
-enemy.wildfire_choir.name,野火合唱团
-enemy.revival_circle.name,回生环阵
-enemy.star_gunner.name,星位炮手
-enemy.court_raider.name,深庭掠袭者
-enemy.plague_oracle_elite.name,精英·疫雾先知
-enemy.starbreaker_elite.name,精英·碎星者
+enemy.rust_scout_a.name,蝙蝠·轻装
+enemy.rust_scout_b.name,蝙蝠·连击
+enemy.road_guard_a.name,石头人·圆盾
+enemy.road_guard_b.name,石头人·板甲
+enemy.trail_breaker.name,寄居蟹·破阵
+enemy.marsh_brewer.name,哥布林·毒酿
+enemy.cinder_runner.name,火蜗牛·疾行
+enemy.camp_mender.name,哥布林·修补
+enemy.gear_hunter_elite.name,精英·蚁狮
+enemy.thorn_wall_elite.name,精英·蜘蛛
+enemy.furnace_duelist.name,狼人·决斗
+enemy.plate_warden.name,石头人·重甲
+enemy.slag_breaker.name,寄居蟹·粉碎
+enemy.coil_brewer.name,小青蛇·毒酿
+enemy.kiln_runner.name,火蜗牛·疾行
+enemy.red_medic.name,木乃伊·治疗
+enemy.relay_captain.name,蚁狮·队长
+enemy.foundry_raider.name,沙蜥·掠袭
+enemy.cinder_bastion_elite.name,精英·烈焰骑士
+enemy.blood_loom_elite.name,精英·沙蜥
+enemy.court_blades.name,狼人·刃舞
+enemy.astral_guard.name,树精·守卫
+enemy.anvil_judge.name,熔岩怪·裁决
+enemy.pale_distiller.name,小青蛇·毒酿
+enemy.wildfire_choir.name,火蜗牛·灼烧
+enemy.revival_circle.name,木乃伊·回生
+enemy.star_gunner.name,骷髅兵·远射
+enemy.court_raider.name,骷髅兵·掠袭
+enemy.plague_oracle_elite.name,精英·蜘蛛
+enemy.starbreaker_elite.name,精英·骷髅兵
 affix.accelerated_opening.name,急速开场
 affix.accelerated_opening.desc,急速开场会公开改变本场敌人的战斗参数。
 affix.armored_start.name,披甲
@@ -341,12 +341,12 @@ affix.thick_hide.name,厚皮
 affix.thick_hide.desc,厚皮会公开改变本场敌人的战斗参数。
 affix.restless.name,不息
 affix.restless.desc,不息会公开改变本场敌人的战斗参数。
-boss.boss_iron_beast.name,铆甲巨兽
-boss.boss_iron_beast.desc,铆甲巨兽拥有公开的阶段规则与可针对弱点。
-boss.boss_cinder_engine.name,熔流机心
-boss.boss_cinder_engine.desc,熔流机心拥有公开的阶段规则与可针对弱点。
-boss.boss_star_regent.name,星炉执政
-boss.boss_star_regent.desc,星炉执政拥有公开的阶段规则与可针对弱点。
+boss.boss_iron_beast.name,女巫
+boss.boss_iron_beast.desc,女巫拥有公开的阶段规则与可针对弱点。
+boss.boss_cinder_engine.name,法老
+boss.boss_cinder_engine.desc,法老拥有公开的阶段规则与可针对弱点。
+boss.boss_star_regent.name,魔王
+boss.boss_star_regent.desc,魔王拥有公开的阶段规则与可针对弱点。
 run_effect.gold.name,金币变更
 run_effect.heal_flat.name,固定治疗
 run_effect.heal_pct.name,比例治疗
@@ -542,3 +542,191 @@ tag.focused_build.name,专注流派
 tag.focused_build.desc,用一致的流派协同对抗分散构筑。
 content_changed,内容已更新，路线选项已重新生成。
 route_no_longer_available,此路线已不符合当前章节规则，选项已重新生成。
+status.thorns.name,反伤
+status.thorns.desc,受到物理攻击后每层反弹1点真实伤害。
+status.resistance.name,抵抗
+status.resistance.desc,每层降低3%物理伤害，与其他减伤共同受上限约束。
+item.supply_apprentice_robe.name,学徒长袍
+item.supply_apprentice_robe.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_basic_staff.name,基础法杖
+item.supply_basic_staff.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_battle_axe.name,战斧
+item.supply_battle_axe.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_blood_crystal_necklace.name,血晶项链
+item.supply_blood_crystal_necklace.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_blood_ring.name,血戒指
+item.supply_blood_ring.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_blossom_bow.name,花枝弓
+item.supply_blossom_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_bow.name,反曲弓
+item.supply_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_bread.name,面包
+item.supply_bread.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_chaos_staff.name,混沌法杖
+item.supply_chaos_staff.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_codex.name,法典
+item.supply_codex.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_composite_bow.name,复合弓
+item.supply_composite_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_copper_watch.name,纯铜怀表
+item.supply_copper_watch.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_cross.name,十字架
+item.supply_cross.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_crown_crest.name,王冠铁徽
+item.supply_crown_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_dagger.name,匕首
+item.supply_dagger.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_demonic_codex.name,恶魔法典
+item.supply_demonic_codex.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_discount_card.name,打折卡
+item.supply_discount_card.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_double_axe.name,双刃斧
+item.supply_double_axe.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_dusk_robe.name,黄昏长袍
+item.supply_dusk_robe.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_elven_bow.name,精灵弓
+item.supply_elven_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_elven_charm.name,精灵护符
+item.supply_elven_charm.desc,在整理阶段观察作用范围，按规则提供暴击与连射支持。
+item.supply_elven_gemstone.name,精灵结石
+item.supply_elven_gemstone.desc,在整理阶段观察作用范围，按规则提供暴击与连射支持。
+item.supply_elven_tear.name,精灵之泪
+item.supply_elven_tear.desc,在整理阶段观察作用范围，按规则提供暴击与连射支持。
+item.supply_elven_wreath.name,精灵花冠
+item.supply_elven_wreath.desc,在整理阶段观察作用范围，按规则提供暴击与连射支持。
+item.supply_envy_crest.name,嫉妒晶徽
+item.supply_envy_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_flint.name,打火石
+item.supply_flint.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_fruit.name,浆果
+item.supply_fruit.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_gem_blue.name,宝石蓝
+item.supply_gem_blue.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_gem_green.name,宝石绿
+item.supply_gem_green.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_gem_purple.name,宝石紫
+item.supply_gem_purple.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_gem_red.name,宝石红
+item.supply_gem_red.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_gem_yellow.name,宝石黄
+item.supply_gem_yellow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_gluttony_crest.name,暴食晶徽
+item.supply_gluttony_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_greed_crest.name,贪婪晶徽
+item.supply_greed_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_herb_pouch.name,口袋
+item.supply_herb_pouch.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_hero_bow.name,英雄弓
+item.supply_hero_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_holy_bulwark.name,圣辉大盾
+item.supply_holy_bulwark.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_holy_cross.name,圣十字架
+item.supply_holy_cross.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_honor_medal.name,荣誉勋章
+item.supply_honor_medal.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_ice_cube.name,冰块
+item.supply_ice_cube.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_ice_pack.name,冰袋
+item.supply_ice_pack.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_iron_longsword.name,铁质长剑
+item.supply_iron_longsword.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_jade_gloves.name,翡翠手套
+item.supply_jade_gloves.desc,在整理阶段观察作用范围，按规则提供暴击与连射支持。
+item.supply_kite_dagger.name,鸢盾短剑
+item.supply_kite_dagger.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_knight_seal.name,骑士之证
+item.supply_knight_seal.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_leather_armor.name,皮甲
+item.supply_leather_armor.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_lucky_cat.name,招财猫
+item.supply_lucky_cat.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_lust_crest.name,色欲晶徽
+item.supply_lust_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_magic_bow.name,魔法弓
+item.supply_magic_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_mana_gem.name,法力宝石
+item.supply_mana_gem.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_medical_case.name,药箱
+item.supply_medical_case.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_plate_armor.name,板甲
+item.supply_plate_armor.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_potted_plant.name,盆栽
+item.supply_potted_plant.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_pride_crest.name,傲慢晶徽
+item.supply_pride_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_priest_badge.name,牧师徽章
+item.supply_priest_badge.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_puppet.name,偃偶
+item.supply_puppet.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_salvage_pouch.name,钱袋
+item.supply_salvage_pouch.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_sloth_crest.name,怠惰晶徽
+item.supply_sloth_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_spear.name,长矛
+item.supply_spear.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_squire_armor.name,侍从铠甲
+item.supply_squire_armor.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_stone.name,石头
+item.supply_stone.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_thorn_mail.name,荆棘刺甲
+item.supply_thorn_mail.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_thunder_ring.name,鸣雷戒指
+item.supply_thunder_ring.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_token.name,令牌
+item.supply_token.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_vampire_fang.name,吸血鬼尖牙
+item.supply_vampire_fang.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_vine_bow.name,藤蔓弓
+item.supply_vine_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_vine_ring.name,藤曼草环
+item.supply_vine_ring.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_voodoo_doll.name,巫毒小人
+item.supply_voodoo_doll.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_voodoo_staff.name,巫毒法杖
+item.supply_voodoo_staff.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_weapon_case.name,武器匣
+item.supply_weapon_case.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_whetstone.name,磨刀石
+item.supply_whetstone.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_wooden_bow.name,木弓
+item.supply_wooden_bow.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_wooden_club.name,木棍
+item.supply_wooden_club.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_wooden_knife.name,木制小刀
+item.supply_wooden_knife.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_wooden_staff.name,木杖
+item.supply_wooden_staff.desc,在整理阶段观察作用范围，按规则提供装备效果。
+item.supply_wrath_crest.name,愤怒晶徽
+item.supply_wrath_crest.desc,在整理阶段观察作用范围，按规则提供装备效果。
+bag.bag_release_journey.name,行囊
+bag.bag_release_journey.desc,提供独立背包空间；特殊格与加成见占格预览。
+bag.bag_release_satchel.name,挎包
+bag.bag_release_satchel.desc,提供独立背包空间；特殊格与加成见占格预览。
+bag.bag_release_bedroll.name,铺盖背包
+bag.bag_release_bedroll.desc,提供独立背包空间；特殊格与加成见占格预览。
+bag.bag_release_weapon.name,武器包
+bag.bag_release_weapon.desc,提供独立背包空间；特殊格与加成见占格预览。
+bag.bag_release_herbal.name,药草袋
+bag.bag_release_herbal.desc,提供独立背包空间；特殊格与加成见占格预览。
+bag.bag_release_armor.name,护甲包
+bag.bag_release_armor.desc,提供独立背包空间；特殊格与加成见占格预览。
+bag.bag_release_transport.name,方形运输包
+bag.bag_release_transport.desc,提供独立背包空间；特殊格与加成见占格预览。
+bag.bag_release_supply.name,物资包
+bag.bag_release_supply.desc,提供独立背包空间；特殊格与加成见占格预览。
+character.archer.name,射手
+character.archer.desc,战斗开始获得8%暴击率，擅长连射与灼烧节奏。
+tag.ranged.name,远程
+tag.ranged.desc,远程类物品。
+tag.material.name,材料
+tag.material.desc,材料类物品。
+tag.elite_loot.name,精英战利品
+tag.elite_loot.desc,精英战利品类物品。
+archetype.archer_precision.name,精准连射
+archetype.archer_precision.desc,围绕远程武器与空间辅助建立构筑。
+archetype.archer_embers.name,余烬箭雨
+archetype.archer_embers.desc,围绕远程武器与空间辅助建立构筑。
+loadout.warrior_blades.name,轻刃起手
+loadout.warrior_guard.name,护甲起手
+loadout.archer_precision.name,迅弓起手
+loadout.archer_embers.name,余烬起手

@@ -13,12 +13,12 @@ static func normalized(key: String, region: Rect2i, size: Vector2i) -> Texture2D
 
 static func apply(theme: Theme):
 	var panel = StyleBoxTexture.new()
-	panel.texture=load(ROOT+"window.png")
+	panel.texture=load("res://Art/Supplied20261102/ui/ui_panel_parchment.png")
 	for side in [SIDE_LEFT,SIDE_TOP,SIDE_RIGHT,SIDE_BOTTOM]:
 		panel.set_texture_margin(side,70)
 		panel.set_content_margin(side,60)
 	theme.set_stylebox("panel","PanelContainer",panel)
-	var wood=load("res://Art/Supplied20261028/ui/button.png")
+	var wood=load("res://Art/Supplied20261102/ui/ui_button_frame_yellow.png")
 	for state in ["normal","hover","pressed","disabled"]:
 		var style = StyleBoxTexture.new(); style.texture = wood
 		for side in [SIDE_LEFT,SIDE_RIGHT]:

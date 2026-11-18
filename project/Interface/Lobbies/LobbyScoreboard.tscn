@@ -1,62 +1,51 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene format=3 uid="uid://b1lxwnu0cdqht"]
 
-[ext_resource path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" type="FontFile" id=1]
-[ext_resource path="res://Assets/Divider1.png" type="Texture2D" id=2]
-[ext_resource path="res://Interface/EmptyStylebox.tres" type="StyleBox" id=3]
-[ext_resource path="res://Utility/LocalizedControl.gd" type="Script" id=4]
-[ext_resource path="res://Interface/VScrollbar.png" type="Texture2D" id=5]
-[ext_resource path="res://Interface/VScrollbar_grabber.png" type="Texture2D" id=6]
-[ext_resource path="res://Interface/Lobbies/LobbyScoreboard.gd" type="Script" id=7]
-[ext_resource path="res://Interface/CombatLog/CloseButton.png" type="Texture2D" id=8]
-[ext_resource path="res://Interface/Tooltips/TooltipBase.png" type="Texture2D" id=9]
-[ext_resource path="res://Interface/CombatLog/CloseButton_hovered.png" type="Texture2D" id=10]
-[ext_resource path="res://Interface/Lobbies/LobbyScoreboardEntry.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Interface/Lobbies/LobbyIcon_Member.png" type="Texture2D" id=12]
-[ext_resource path="res://Interface/Lobbies/ScoreboardButton.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Assets/Patch1.png" type="Texture2D" id=14]
-[ext_resource path="res://Interface/DraggableScrollContainer.gd" type="Script" id=15]
+[ext_resource type="Texture2D" path="res://Interface/Tooltips/TooltipBase.png" id="1_bn7gm"]
+[ext_resource type="Script" path="res://Interface/Lobbies/LobbyScoreboard.gd" id="2_vjsck"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_2m2bp"]
+[ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_1ug7u"]
+[ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="5_kyy1t"]
+[ext_resource type="Texture2D" path="res://Interface/CombatLog/CloseButton.png" id="6_o57mf"]
+[ext_resource type="Texture2D" path="res://Interface/CombatLog/CloseButton_hovered.png" id="7_y8sjd"]
+[ext_resource type="Texture2D" path="res://Assets/Divider1.png" id="8_ftpbh"]
+[ext_resource type="Texture2D" path="res://Interface/VScrollbar_grabber.png" id="9_c5in2"]
+[ext_resource type="Texture2D" path="res://Interface/VScrollbar.png" id="10_xooy0"]
+[ext_resource type="Script" path="res://Interface/DraggableScrollContainer.gd" id="11_d0416"]
+[ext_resource type="PackedScene" path="res://Interface/Lobbies/LobbyScoreboardEntry.tscn" id="12_6ttkp"]
+[ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="13_sucwk"]
+[ext_resource type="Texture2D" path="res://Interface/Lobbies/LobbyIcon_Member.png" id="14_ix0vc"]
+[ext_resource type="Texture2D" path="res://Assets/Patch1.png" id="15_mipbr"]
+[ext_resource type="PackedScene" path="res://Interface/Lobbies/ScoreboardButton.tscn" id="16_od7qb"]
 
-[ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
-
-[sub_resource type="FontVariation" id=205]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="205"]
+base_font = ExtResource("3_2m2bp")
+script = ExtResource("4_1ug7u")
 size = 25
 outline_size = 3
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-use_filter = true
-base_font = ExtResource( 1 )
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="FontVariation" id=206]
-script = ExtResource( "LegacyFontMigration" )
+[sub_resource type="FontVariation" id="206"]
+base_font = ExtResource("3_2m2bp")
+script = ExtResource("4_1ug7u")
 size = 35
 outline_size = 3
-outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
-use_filter = true
-base_font = ExtResource( 1 )
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="StyleBoxTexture" id=208]
-texture = ExtResource( 6 )
-region_rect = Rect2( -14.8741, 0, 70.4767, 64.1349 )
-offset_left = 7.49648
-offset_right = 22.0208
-offset_top = 15.6563
-offset_bottom = 14.4243
+[sub_resource type="StyleBoxTexture" id="208"]
+texture = ExtResource("9_c5in2")
 expand_margin_top = 8.0
 expand_margin_bottom = 8.0
+region_rect = Rect2(-14.8741, 0, 70.4767, 64.1349)
 
-[sub_resource type="StyleBoxTexture" id=209]
-texture = ExtResource( 5 )
-region_rect = Rect2( -6, 0.0862274, 57.0044, 461.484 )
-offset_left = 9.0
-offset_right = 8.92128
-offset_top = 8.49884
-offset_bottom = 5.31932
+[sub_resource type="StyleBoxTexture" id="209"]
+texture = ExtResource("10_xooy0")
+region_rect = Rect2(-6, 0.0862274, 57.0044, 461.484)
 
-[sub_resource type="Theme" id=207]
-VScrollBar/styles/grabber = SubResource( 208 )
-VScrollBar/styles/grabber_highlight = SubResource( 208 )
-VScrollBar/styles/grabber_pressed = SubResource( 208 )
-VScrollBar/styles/scroll = SubResource( 209 )
+[sub_resource type="Theme" id="207"]
+VScrollBar/styles/grabber = SubResource("208")
+VScrollBar/styles/grabber_highlight = SubResource("208")
+VScrollBar/styles/grabber_pressed = SubResource("208")
+VScrollBar/styles/scroll = SubResource("209")
 
 [node name="LobbyScoreboard" type="Node2D"]
 z_index = 100
@@ -66,17 +55,17 @@ offset_left = 686.0
 offset_top = 274.0
 offset_right = 1254.0
 offset_bottom = 781.0
-custom_minimum_size = Vector2( 496, 300 )
+custom_minimum_size = Vector2(496, 300)
 mouse_filter = 0
 mouse_default_cursor_shape = 2
-texture = ExtResource( 9 )
+texture = ExtResource("1_bn7gm")
 patch_margin_left = 24
 patch_margin_top = 28
 patch_margin_right = 30
 patch_margin_bottom = 25
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
-script = ExtResource( 7 )
+script = ExtResource("2_vjsck")
 draggable = true
 
 [node name="Label" type="Label" parent="Scoreboard"]
@@ -86,21 +75,21 @@ offset_top = 19.0
 offset_right = -78.0
 offset_bottom = 51.0
 grow_horizontal = 2
-pivot_offset = Vector2( 278, 14 )
+pivot_offset = Vector2(278, 14)
 size_flags_horizontal = 3
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
-theme_override_fonts/font = SubResource( 205 )
+theme_override_fonts/font = SubResource("205")
 text = "~ Lobby ~"
-script = ExtResource( 4 )
+script = ExtResource("5_kyy1t")
 translationKey = "UI_Lobby"
 prefix = "~"
 suffix = "~"
 theme_override_font_sizes/font_size = 25
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 horizontal_alignment = 1
 
 [node name="TimerLabel" type="RichTextLabel" parent="Scoreboard"]
@@ -111,17 +100,17 @@ offset_right = 320.0
 offset_bottom = 120.0
 clip_contents = false
 mouse_filter = 2
-theme_override_colors/default_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.24, 0.15, 0.11, 1 )
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.24, 0.15, 0.11, 1)
 theme_override_constants/shadow_offset_x = 3
 theme_override_constants/shadow_offset_y = 3
-theme_override_fonts/normal_font = SubResource( 206 )
+theme_override_fonts/normal_font = SubResource("206")
 text = "0:50"
 fit_content = true
 scroll_active = false
 theme_override_font_sizes/normal_font_size = 35
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="Label2" type="Label" parent="Scoreboard"]
 visible = false
@@ -129,16 +118,16 @@ offset_left = 23.0
 offset_top = 79.0
 offset_right = 182.0
 offset_bottom = 111.0
-theme_override_colors/font_color = Color( 1, 0.92549, 0.831373, 1 )
-theme_override_colors/font_shadow_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
-theme_override_fonts/font = SubResource( 205 )
+theme_override_fonts/font = SubResource("205")
 text = "Time left:"
-script = ExtResource( 4 )
+script = ExtResource("5_kyy1t")
 theme_override_font_sizes/font_size = 25
 theme_override_constants/outline_size = 3
-theme_override_colors/font_outline_color = Color( 0.235294, 0.14902, 0.113725, 1 )
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [node name="CloseButton" type="TextureButton" parent="Scoreboard"]
 anchor_left = 1.0
@@ -149,16 +138,16 @@ offset_right = -12.0
 offset_bottom = 118.0
 rotation = -90.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 10 )
-texture_hover = ExtResource( 10 )
+texture_normal = ExtResource("6_o57mf")
+texture_pressed = ExtResource("7_y8sjd")
+texture_hover = ExtResource("7_y8sjd")
 stretch_mode = 5
 
 [node name="Divider1" type="Sprite2D" parent="Scoreboard"]
 visible = false
-position = Vector2( 274, 62 )
-scale = Vector2( 1.84241, 0.7 )
-texture = ExtResource( 2 )
+position = Vector2(274, 62)
+scale = Vector2(1.84241, 0.7)
+texture = ExtResource("8_ftpbh")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Scoreboard"]
 anchor_right = 1.0
@@ -167,9 +156,9 @@ offset_left = 18.0
 offset_top = 70.0
 offset_right = -20.0
 offset_bottom = -28.0
-theme = SubResource( 207 )
+theme = SubResource("207")
 scroll_horizontal_enabled = false
-script = ExtResource( 15 )
+script = ExtResource("11_d0416")
 scrollEnabled = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Scoreboard/ScrollContainer"]
@@ -178,40 +167,40 @@ offset_bottom = 430.0
 size_flags_horizontal = 3
 theme_override_constants/separation = 10
 
-[node name="LobbyMember" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_right = 472.0
 
-[node name="LobbyMember2" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember2" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_top = 55.0
 offset_right = 472.0
 offset_bottom = 100.0
 
-[node name="LobbyMember3" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember3" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_top = 110.0
 offset_right = 472.0
 offset_bottom = 155.0
 
-[node name="LobbyMember4" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember4" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_top = 165.0
 offset_right = 472.0
 offset_bottom = 210.0
 
-[node name="LobbyMember5" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember5" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_top = 220.0
 offset_right = 472.0
 offset_bottom = 265.0
 
-[node name="LobbyMember6" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember6" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_top = 275.0
 offset_right = 472.0
 offset_bottom = 320.0
 
-[node name="LobbyMember7" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember7" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_top = 330.0
 offset_right = 472.0
 offset_bottom = 375.0
 
-[node name="LobbyMember8" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource( 11 )]
+[node name="LobbyMember8" parent="Scoreboard/ScrollContainer/VBoxContainer" instance=ExtResource("12_6ttkp")]
 offset_top = 385.0
 offset_right = 472.0
 offset_bottom = 430.0
@@ -226,7 +215,7 @@ offset_right = -56.0
 offset_bottom = 34.0
 mouse_filter = 1
 mouse_default_cursor_shape = 9
-theme_override_styles/focus = ExtResource( 3 )
+theme_override_styles/focus = ExtResource("13_sucwk")
 flat = true
 
 [node name="HorizontalResizeButton" type="Button" parent="Scoreboard"]
@@ -240,21 +229,21 @@ offset_right = 11.0
 offset_bottom = 38.0
 mouse_filter = 1
 mouse_default_cursor_shape = 10
-theme_override_styles/focus = ExtResource( 3 )
+theme_override_styles/focus = ExtResource("13_sucwk")
 flat = true
 
 [node name="LobbyIconMember" type="Sprite2D" parent="Scoreboard"]
-position = Vector2( 38, 33 )
-scale = Vector2( 0.33, 0.33 )
-texture = ExtResource( 12 )
+position = Vector2(38, 33)
+scale = Vector2(0.33, 0.33)
+texture = ExtResource("14_ix0vc")
 
 [node name="Patch1" type="Sprite2D" parent="."]
-position = Vector2( 101.196, 995.205 )
+position = Vector2(101.196, 995.205)
 rotation = 1.5708
-scale = Vector2( 0.851734, 0.650778 )
-texture = ExtResource( 14 )
+scale = Vector2(0.851734, 0.650778)
+texture = ExtResource("15_mipbr")
 
-[node name="LobbyButton" parent="." instance=ExtResource( 13 )]
+[node name="LobbyButton" parent="." instance=ExtResource("16_od7qb")]
 offset_left = 52.0
 offset_top = 946.0
 offset_right = 149.0

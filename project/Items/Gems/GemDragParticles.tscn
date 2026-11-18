@@ -1,20 +1,20 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene format=3 uid="uid://d0s4534ca71ic"]
 
-[ext_resource path="res://Items/Exclusive/Particles/GemDragParticles.material" type="Material" id=1]
-[ext_resource path="res://Assets/Particles/GlowingDot_small.png" type="Texture2D" id=2]
-[ext_resource path="res://Utility/AutoHideParticles.gd" type="Script" id=3]
+[ext_resource type="Material" path="res://Items/Exclusive/Particles/GemDragParticles.material" id="1_cxonq"]
+[ext_resource type="Texture2D" path="res://Assets/Particles/GlowingDot_small.png" id="2_1lkkb"]
+[ext_resource type="Script" path="res://Utility/AutoHideParticles.gd" id="3_2lm5n"]
 
 [node name="SpecificDragParticles" type="GPUParticles2D"]
-modulate = Color( 1.8, 1.8, 1.8, 1 )
-self_modulate = Color( 1, 0.478431, 0.470588, 1 )
+modulate = Color(1.8, 1.8, 1.8, 1)
+self_modulate = Color(1, 0.478431, 0.470588, 1)
 show_behind_parent = true
-position = Vector2( 1.59091, 3.96261 )
+position = Vector2(1.59091, 3.96261)
 rotation = 1.5708
-scale = Vector2( 2, 2 )
+scale = Vector2(2, 2)
 amount = 6
 lifetime = 0.7
 speed_scale = 1.1
 local_coords = false
-process_material = ExtResource( 1 )
-texture = ExtResource( 2 )
-script = ExtResource( 3 )
+process_material = ExtResource("1_cxonq")
+texture = ExtResource("2_1lkkb")
+script = ExtResource("3_2lm5n")

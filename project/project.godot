@@ -17,7 +17,7 @@ config/custom_user_dir_name="BackpackBattles_Local47_PvE"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 run/flush_stdout_on_print=true
 run/low_processor_mode_sleep_usec=33000
-boot_splash/image="res://Assets/Splashscreen.png"
+boot_splash/image="res://Art/Reference20261102/boot.png"
 config/icon="res://ClientIcon_256.png"
 config/recovered_project=true
 config/recovered_offline=false
@@ -53,6 +53,7 @@ EventBus="*res://Utility/EventBus.gd"
 CustomRules="*res://Utility/CustomRules.gd"
 InputBlocker="*res://Interface/InputBlocker.tscn"
 Expedition="*res://PvE/NativeExpedition.gd"
+SceneRouter="*res://Runtime/Scene/SceneRouter.gd"
 
 [debug]
 
@@ -70,15 +71,7 @@ gdscript/warnings/unused_argument=false
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=3
 window/stretch/mode="canvas_items"
-window/stretch/aspect="keep"
-mouse_cursor/custom_image="res://Assets/Cursor/Cursor_default_small.png"
-mouse_cursor/custom_image_hotspot=Vector2(20, 25)
-
-[editor_plugins]
-
-enabled=PackedStringArray()
 
 [gui]
 

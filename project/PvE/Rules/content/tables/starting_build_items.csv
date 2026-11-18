@@ -7,3 +7,11 @@ alchemist_toxin,alchemist_toxin_item_1,venom_needle,0,0,0
 alchemist_toxin,alchemist_toxin_item_2,healing_herb,1,0,0
 alchemist_ember,alchemist_ember_item_1,ember_stone,0,0,0
 alchemist_ember,alchemist_ember_item_2,bandage_roll,2,0,0
+warrior_blades,warrior_blades_item_1,supply_dagger,0,0,0
+warrior_blades,warrior_blades_item_2,supply_wooden_knife,1,0,0
+warrior_guard,warrior_guard_item_1,supply_dagger,2,0,0
+warrior_guard,warrior_guard_item_2,supply_leather_armor,0,0,0
+archer_precision,archer_precision_item_1,supply_wooden_bow,0,0,0
+archer_precision,archer_precision_item_2,supply_elven_tear,1,0,0
+archer_embers,archer_embers_item_1,supply_wooden_bow,0,0,0
+archer_embers,archer_embers_item_2,supply_flint,1,0,0

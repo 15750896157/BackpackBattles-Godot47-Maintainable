@@ -1,14 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene format=3 uid="uid://dabonca6hb47l"]
 
-[ext_resource path="res://Interface/InputBlocker.gd" type="Script" id=1]
-[ext_resource path="res://Interface/InputEaterRect.gd" type="Script" id=2]
+[ext_resource type="Script" path="res://Interface/InputBlocker.gd" id="1_blx51"]
+[ext_resource type="Script" path="res://Interface/InputEaterRect.gd" id="2_oj7vw"]
 
 [node name="InputBlocker" type="Node2D"]
 process_mode = 3
-script = ExtResource( 1 )
+script = ExtResource("1_blx51")
 
 [node name="Rect" type="Control" parent="."]
 visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
-script = ExtResource( 2 )
+script = ExtResource("2_oj7vw")

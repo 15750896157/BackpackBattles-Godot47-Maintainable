@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene format=3 uid="uid://c5ifunwywq3xr"]
 
-[ext_resource path="res://Utility/Sound.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Sound/Noise1.ogg" type="AudioStream" id=2]
+[ext_resource type="Script" path="res://Utility/Sound.gd" id="1_o4etw"]
+[ext_resource type="AudioStream" path="res://Assets/Sound/Noise1.ogg" id="2_dpicc"]
 
 [node name="Sound" type="Node2D"]
 process_mode = 3
-script = ExtResource( 1 )
+script = ExtResource("1_o4etw")
 
 [node name="SoundPlayers" type="Node2D" parent="."]
 
@@ -16,6 +16,6 @@ bus = "BGM"
 bus = "BGM"
 
 [node name="ItemMoveAudio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
+stream = ExtResource("2_dpicc")
 volume_db = -60.0
 bus = "SFX"
