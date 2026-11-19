@@ -1012,6 +1012,10 @@
     -40,
     160
    ],
+   "click_area_position": [
+    0.0,
+    -99.0
+   ],
    "bottom_center": [
     0.0,
     -14.0
@@ -1712,6 +1716,171 @@
     "utility_knife",
     "supply_dagger",
     "supply_wooden_knife"
+   ]
+  },
+  "DivinePotion": {
+   "root_name": "Divine Potion",
+   "script": "res://Items/Exclusive/DivinePotion.gd",
+   "root_props": {
+    "potionColor": [
+     1.0,
+     0.937255,
+     0.690196,
+     1.0
+    ]
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/HolyPotion_flask.png",
+    "position": [
+     0.0,
+     -1.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    -1.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -8,
+     -70,
+     -23,
+     -8,
+     -34,
+     36,
+     -24,
+     71,
+     22,
+     71,
+     34,
+     37,
+     25,
+     -6,
+     8,
+     -70
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "BottleOfBooze",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.4,
+        1.4,
+        1.4,
+        1.0
+       ]
+      },
+      "material": {
+       "res": "res://Items/Exclusive/Materials/DivinePotion.material"
+      },
+      "position": {
+       "vec2": [
+        -1.0,
+        30.4444
+       ]
+      },
+      "rotation": 0.0,
+      "scale": {
+       "vec2": [
+        0.96063,
+        1.0
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Sprites/Masks/HolyPotion_mask.png"
+      },
+      "friction": 0.966,
+      "backForce": 3.4,
+      "baseFoaminess": 0.0624,
+      "maxFoaminess": 1.1,
+      "rotationFoam": 0.04,
+      "baseScroll": 0.017,
+      "levelModification": -0.083,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/DivinePotion_mat15.tres"
+      }
+     }
+    },
+    {
+     "name": "Flask1Overlay",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        -0.5,
+        0.87392
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Sprites/HolyPotion_overlay.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "cleansing_salt",
+    "supply_cross",
+    "supply_holy_cross"
    ]
   },
   "DoubleAxe": {
@@ -2423,6 +2592,7 @@
     -40,
     160
    ],
+   "click_area_visible": true,
    "bottom_center": [
     0.0,
     39.0
@@ -2696,6 +2866,161 @@
     "supply_vine_ring"
    ]
   },
+  "HealthPotion": {
+   "root_name": "Health Potion",
+   "script": "res://Items/HealthPotion.gd",
+   "root_props": {
+    "potionColor": [
+     0.945098,
+     0.0627451,
+     0.0627451,
+     1.0
+    ]
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Flask1.png",
+    "position": [
+     0.25,
+     -0.43696
+    ],
+    "scale": [
+     0.45,
+     0.45
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": -0.432,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.22222,
+    2.22222
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -10,
+     -73,
+     -32,
+     -19,
+     -31,
+     22,
+     -21,
+     73,
+     23,
+     73,
+     33,
+     22,
+     32,
+     -19,
+     11,
+     -73
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "BottleOfBooze",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.4,
+        1.4,
+        1.4,
+        1.0
+       ]
+      },
+      "material": {
+       "res": "res://Shader/HealthPotion.material"
+      },
+      "position": {
+       "vec2": [
+        -0.5,
+        6.87392
+       ]
+      },
+      "rotation": 0.0,
+      "texture": {
+       "res": "res://Items/Masks/HealthPotionMask.png"
+      },
+      "friction": 0.98,
+      "baseFoaminess": 0.0624,
+      "rotationFoam": 0.03,
+      "baseScroll": 0.006,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/HealthPotion_mat83.tres"
+      }
+     }
+    },
+    {
+     "name": "Flask1Overlay",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        1.5,
+        -1.12608
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Sprites/Flask1_Overlay.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "tonic_bottle",
+    "supply_dusk_robe"
+   ]
+  },
   "HeroSword": {
    "root_name": "Hero Sword",
    "script": "res://Items/HeroSword.gd",
@@ -2873,6 +3198,392 @@
    "definition_ids": [
     "iron_sword",
     "supply_iron_longsword"
+   ]
+  },
+  "HeroicPotion": {
+   "root_name": "Heroic Potion",
+   "script": "res://Items/HeroicPotion.gd",
+   "root_props": {
+    "potionColor": [
+     0.964706,
+     0.894118,
+     0.145098,
+     1.0
+    ]
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Flask5.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    2.0,
+    78.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -10,
+     -76,
+     -33,
+     -52,
+     -39,
+     -2,
+     -16,
+     77,
+     21,
+     77,
+     38,
+     -4,
+     35,
+     -54,
+     11,
+     -76
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "BottleOfBooze",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.4,
+        1.4,
+        1.4,
+        1.0
+       ]
+      },
+      "material": {
+       "res": "res://PvE/Items/Particles/HeroicPotion_mat86.tres"
+      },
+      "position": {
+       "vec2": [
+        -0.5,
+        6.87392
+       ]
+      },
+      "rotation": 0.0,
+      "texture": {
+       "res": "res://Items/Masks/Flask5_Mask.png"
+      },
+      "backForce": 3.4,
+      "baseFoaminess": 0.0624,
+      "maxFoaminess": 1.1,
+      "rotationFoam": 0.04,
+      "baseScroll": 0.006,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/HeroicPotion_mat83.tres"
+      }
+     }
+    },
+    {
+     "name": "Flask1Overlay",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        -0.5,
+        0.87392
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Sprites/Flask5_Overlay.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "stamina_flask",
+    "supply_apprentice_robe",
+    "supply_fruit",
+    "supply_mana_gem"
+   ]
+  },
+  "Laboratory": {
+   "root_name": "Laboratory",
+   "script": "res://Items/Exclusive/Laboratory.gd",
+   "root_props": {
+    "rotation": -6.27446
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Laboratory.png",
+    "position": [
+     10.0,
+     -8.0
+    ],
+    "scale": [
+     0.45,
+     0.45
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     17.0,
+     -19.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      4
+     ],
+     [
+      -1,
+      2,
+      4
+     ],
+     [
+      0,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.22222,
+    2.22222
+   ],
+   "click_polygon": [
+    -80,
+    -80,
+    0,
+    -80,
+    0,
+    0,
+    80,
+    0,
+    80,
+    80,
+    -80,
+    80
+   ],
+   "click_area_position": [
+    17.0,
+    -19.0
+   ],
+   "bottom_center": [
+    12.0,
+    59.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     16.0,
+     -19.0
+    ],
+    "polygon": [
+     -24.6716,
+     -57.9273,
+     -8.61108,
+     -51.0671,
+     -0.114039,
+     5.86089,
+     34.9021,
+     7.55543,
+     59.1193,
+     32.3451,
+     63.5205,
+     78.3084,
+     -71.4831,
+     78.4864,
+     -76.8581,
+     35.5316,
+     -63.5566,
+     -44.5875
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Fluid",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "material": {
+       "res": "res://PvE/Items/Particles/Laboratory_mat15.tres"
+      },
+      "position": {
+       "vec2": [
+        -75.5556,
+        24.4445
+       ]
+      },
+      "rotation": 0.0,
+      "texture": {
+       "res": "res://Items/Exclusive/Sprites/Laboratory_Mask.png"
+      },
+      "friction": 0.966,
+      "backForce": 3.4,
+      "baseFoaminess": 0.0624,
+      "maxFoaminess": 1.1,
+      "rotationFoam": 0.04,
+      "levelModification": -0.114,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/Laboratory_mat16.tres"
+      }
+     }
+    },
+    {
+     "name": "LaboratoryFront",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        -75.515,
+        24.0
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Sprites/Laboratory_Front.png"
+      }
+     }
+    },
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "position": {
+       "vec2": [
+        -75.4954,
+        24.9095
+       ]
+      },
+      "emitting": false,
+      "amount": 18,
+      "lifetime": 0.8,
+      "speed_scale": 0.8,
+      "explosiveness": 0.28,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/LaboratoryDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Light/RingLight.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "venom_distiller"
    ]
   },
   "LeatherArmor": {
@@ -3685,6 +4396,186 @@
    "definition_ids": [
     "overdrive_ratchet",
     "supply_pride_crest"
+   ]
+  },
+  "PestilenceFlask": {
+   "root_name": "Pestilence Flask",
+   "script": "res://Items/PestilenceFlask.gd",
+   "root_props": {
+    "potionColor": [
+     0.192157,
+     0.835294,
+     0.172549,
+     1.0
+    ]
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Flask2.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    66.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     -2.0,
+     10.0
+    ],
+    "polygon": [
+     -9,
+     -72,
+     -9,
+     -19,
+     -31,
+     41,
+     -31,
+     55,
+     36,
+     55,
+     36,
+     41,
+     9,
+     -19,
+     8,
+     -72
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "BottleOfBooze",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.4,
+        1.4,
+        1.4,
+        1.0
+       ]
+      },
+      "material": {
+       "res": "res://Shader/PestilenceFlask.Material.tres"
+      },
+      "position": {
+       "vec2": [
+        -4.5,
+        28.8739
+       ]
+      },
+      "rotation": 0.0,
+      "texture": {
+       "res": "res://Items/Masks/Flask2_Mask.png"
+      },
+      "offset": {
+       "vec2": [
+        4.0,
+        -17.0
+       ]
+      },
+      "backForce": 2.5,
+      "baseFoaminess": 0.0624,
+      "rotationFoam": 0.03,
+      "baseScroll": 0.006,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/PestilenceFlask_mat15.tres"
+      }
+     }
+    },
+    {
+     "name": "Flask1Overlay",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        -4.5,
+        18.8739
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Sprites/Flask2_Overlay.png"
+      },
+      "offset": {
+       "vec2": [
+        4.0,
+        -17.0
+       ]
+      }
+     }
+    },
+    {
+     "name": "Poison",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        0.0,
+        56.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.382353,
+        0.382353
+       ]
+      },
+      "texture": {
+       "res": "res://Assets/Buffs/Poison.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "toxin_bottle",
+    "supply_voodoo_staff"
    ]
   },
   "Piggybank": {
@@ -4731,6 +5622,7 @@
     0,
     -40
    ],
+   "click_area_visible": true,
    "bottom_center": [
     1.0,
     120.0
@@ -5753,6 +6645,7 @@
     -120,
     80
    ],
+   "click_area_visible": true,
    "bottom_center": [
     0.0,
     72.0
@@ -5904,6 +6797,7 @@
     0.0,
     -45.0
    ],
+   "click_area_visible": true,
    "bottom_center": [
     0.0,
     17.0
@@ -6728,6 +7622,203 @@
    "definition_ids": [
     "cooling_fan",
     "supply_ice_pack"
+   ]
+  },
+  "VampiricPotion": {
+   "root_name": "Vampiric Potion",
+   "script": "res://Items/Exclusive/VampiricPotion.gd",
+   "root_props": {
+    "potionColor": [
+     0.913725,
+     0.0,
+     0.105882,
+     1.0
+    ]
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/VampiricPotion_flask.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.47
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.12766
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    -1.0,
+    76.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -9,
+     -76,
+     -12,
+     -35,
+     -28,
+     -28,
+     -24,
+     -7,
+     -27,
+     22,
+     -11,
+     53,
+     -19,
+     76,
+     18,
+     76,
+     9,
+     53,
+     27,
+     22,
+     25,
+     -6,
+     27,
+     -29,
+     11,
+     -35,
+     8,
+     -76
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "BottleOfBooze",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.2,
+        1.2,
+        1.2,
+        1.0
+       ]
+      },
+      "material": {
+       "res": "res://Items/Exclusive/Materials/VampiricPotion.material"
+      },
+      "position": {
+       "vec2": [
+        0.194002,
+        5.87097
+       ]
+      },
+      "rotation": 0.0,
+      "texture": {
+       "res": "res://Items/Exclusive/Sprites/Masks/VampiricPotion_mask.png"
+      },
+      "friction": 0.9244,
+      "foamDecay": 0.984,
+      "backForce": 5.0,
+      "baseFoaminess": 0.068,
+      "maxFoaminess": 1.1,
+      "rotationFoam": 0.04,
+      "baseScroll": 0.007,
+      "levelModification": -0.074,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/VampiricPotion_mat83.tres"
+      }
+     }
+    },
+    {
+     "name": "Flask1Overlay",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        -0.5,
+        0.87392
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Sprites/VampiricPotion_overlay.png"
+      }
+     }
+    },
+    {
+     "name": "Vampirism",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "visible": false,
+      "position": {
+       "vec2": [
+        9.53674e-07,
+        35.5556
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.315359,
+        0.31536
+       ]
+      },
+      "texture": {
+       "res": "res://Assets/Buffs/Vampirism.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "blood_cup",
+    "supply_blood_crystal_necklace",
+    "supply_blood_ring",
+    "supply_lust_crest",
+    "supply_vampire_fang"
    ]
   },
   "WalrusTusk": {

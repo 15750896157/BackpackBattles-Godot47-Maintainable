@@ -115,6 +115,22 @@ func _check_template_item(id: String, holder: Node2D) -> void:
 	check(click_poly.size() * 2 == data.click_polygon.size() and _poly_equal(click_poly, data.click_polygon), id + ": click polygon matches")
 	if data.has("click_position"):
 		check(item.get_node("ClickArea/CollisionPolygon2D").position.is_equal_approx(Vector2(data.click_position[0], data.click_position[1])), id + ": click polygon position matches")
+	# --- ClickArea 节点自身覆盖（第六刀漏收、药剂刀补上：Chainsaw position=(0,-99)）---
+	if data.has("click_area_position"):
+		check(item.get_node("ClickArea").position.is_equal_approx(Vector2(data.click_area_position[0], data.click_area_position[1])), id + ": click area node position matches")
+	if data.get("click_area_visible", false):
+		check(item.get_node("ClickArea").visible, id + ": click area node visible matches")
+	# --- 根节点属性覆盖（药剂类 potionColor Color、Laboratory rotation）---
+	for key in data.get("root_props", {}):
+		var expect_root = data.root_props[key]
+		if expect_root is Array:
+			var ec := Color(expect_root[0], expect_root[1], expect_root[2], expect_root[3])
+			var got_color = item.get(key)
+			check(got_color is Color and is_equal_approx(got_color.r, ec.r) and is_equal_approx(got_color.g, ec.g) \
+				and is_equal_approx(got_color.b, ec.b) and is_equal_approx(got_color.a, ec.a), id + ": root prop matches " + key)
+		else:
+			var got_scalar = item.get(key)
+			check((got_scalar is float or got_scalar is int) and is_equal_approx(float(got_scalar), float(expect_root)), id + ": root prop matches " + key)
 	check(item.get_node("Icon/Sockets").scale.is_equal_approx(Vector2(data.sockets_scale[0], data.sockets_scale[1])), id + ": sockets scale matches")
 	# --- 条件槽位·宝石孔：孔位数量/名字/坐标/场景来源，进树前逐项对照数据 ---
 	var socket_specs: Array = data.get("gem_sockets", [])

@@ -81,6 +81,18 @@ mouse_cursor/custom_image_hotspot=Vector2(20, 25)
 
 enabled=PackedStringArray()
 
+[file_customization]
+
+folder_colors={
+"res://Art/": "green",
+"res://Assets/": "teal",
+"res://Atlases/": "blue",
+"res://CharacterClasses/": "purple",
+"res://Compatibility/": "pink",
+"res://Core/": "pink",
+"res://PvE/": "green"
+}
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true

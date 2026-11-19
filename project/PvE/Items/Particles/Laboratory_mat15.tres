@@ -1,0 +1,82 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3]
+[ext_resource type="Texture2D" path="res://Assets/Noise/BubbleNoise.png" id="5_0gwyc"]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Materials/LaboratoryDefaultGradient.tres" id="6_ae0ck"]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Materials/LaboratoryGradient5.tres" id="7_jk4si"]
+
+[sub_resource type="Shader" id="12"]
+code = "shader_type canvas_item;
+
+uniform vec2 direction = vec2(0.5, 0.5);
+uniform float angle : hint_range(0.0, 6.5, 0.1);
+uniform sampler2D gradient : repeat_disable, filter_linear;
+uniform sampler2D bubbleNoise : repeat_enable, filter_linear;
+uniform vec2 noiseScale = vec2(1,1);
+uniform float foaminess = 0.2;
+uniform vec2 foamOffset = vec2(0,0);
+uniform float levelOffset : hint_range(-1.0, 1.0) = 0.0;
+//uniform vec4 flashColor : source_color;
+//uniform float flashState : hint_range(0.0, 1.0) = 0.0;
+uniform float fade : hint_range(0.0, 1.0) = 0.0;
+uniform sampler2D gradient2 : repeat_disable, filter_linear;
+
+vec2 rotate(vec2 uv, vec2 pivot, float r)
+{
+	mat2 rotation = mat2(vec2(sin(r), -cos(r)),
+						vec2(cos(r), sin(r)));
+	
+	uv -= pivot;
+	uv = uv * rotation;
+	uv += pivot;
+	return uv;
+}
+
+void fragment()
+{
+	vec2 rotated_uv = rotate(UV, vec2(0.5), angle);
+	COLOR = texture(TEXTURE, UV);
+//	float dotPr = dot(direction, UV);
+//	if (dotPr < 1.0) {
+//		COLOR.a = 0.0;
+//	}
+	//COORDINATE SPACE FOR FOAM OFFSET?
+	//COORDINATE SPACE FOR FOAM OFFSET?
+
+	//float bubbles = texture(bubbleNoise, rotated_uv * noiseScale + foamOffset).r;
+	float bubbles = texture(bubbleNoise, (SCREEN_UV- foamOffset) * noiseScale).r;
+	
+	float borderBonus = abs(rotated_uv.x - 0.5);
+	borderBonus = pow(borderBonus, 4) * 2.0;
+	vec2 gradCoord = rotated_uv.yy + bubbles * foaminess + borderBonus + levelOffset;
+	vec4 gr = texture(gradient, gradCoord);
+	if (fade > 0.0)
+	{
+		vec4 gr2 = texture(gradient2, gradCoord);
+		gr = mix(gr, gr2, fade);
+	}
+
+	//COLOR.rgb = mix(COLOR.rgb, gr.rgb, gr.a);
+	if (COLOR.a > 0.0)
+		//COLOR.a = 1.0;
+		COLOR = gr;
+	
+	//if (flashState > 0.0)
+	//	COLOR.rgb = mix(COLOR.rgb, flashColor.rgb, flashState);
+	
+	//COLOR.rgb = mix(COLOR.rgb, vec3(1), foaminess);
+	//if (rotated_uv.y < 0.5) {COLOR.a = 0.0;}
+	//COLOR.a *= step(dotPr, 1.0);
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource("12")
+shader_parameter/direction = Vector2(-0.2538, 2.3444)
+shader_parameter/angle = 1.56207
+shader_parameter/gradient = ExtResource("6_ae0ck")
+shader_parameter/bubbleNoise = ExtResource("5_0gwyc")
+shader_parameter/noiseScale = Vector2(7, 5)
+shader_parameter/foaminess = 0.0624
+shader_parameter/foamOffset = Vector2(-0.0125132, 582.834)
+shader_parameter/levelOffset = -0.113995
+shader_parameter/fade = 0.0
+shader_parameter/gradient2 = ExtResource("7_jk4si")

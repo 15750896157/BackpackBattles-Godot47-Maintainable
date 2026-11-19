@@ -1041,7 +1041,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "fcc8b9f627075e4226ee90bb469aa43e2a8b1979cd0fcc511d20718d8980ddb6"
+      "png_sha256": "fcc8b9f627075e4226ee90bb469aa43e2a8b1979cd0fcc511d20718d8980ddb6",
+      "template": "ItemBase"
     },
     "travel_ration": {
       "name": "Slice of Bread",
@@ -1205,7 +1206,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "c6fcc247e5115c4f2ebd6769552bb98019b2c9840a66feb3b586ab54bc221bae"
+      "png_sha256": "c6fcc247e5115c4f2ebd6769552bb98019b2c9840a66feb3b586ab54bc221bae",
+      "template": "ItemBase"
     },
     "sharpening_stone": {
       "name": "Whetstone",
@@ -2428,7 +2430,8 @@
         "p4": "100:lifesteal",
         "p5": ""
       },
-      "png_sha256": "bed59f4d004c2e744fe8a16e41add12e7c9e5632f138bba37c17866c9a19d5c7"
+      "png_sha256": "bed59f4d004c2e744fe8a16e41add12e7c9e5632f138bba37c17866c9a19d5c7",
+      "template": "ItemBase"
     },
     "cooling_fan": {
       "name": "Time Dilator",
@@ -3795,7 +3798,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "b018539658431d0344b6f9e7f32785a157423aa5be651f8779f0f27c2d8df7d9"
+      "png_sha256": "b018539658431d0344b6f9e7f32785a157423aa5be651f8779f0f27c2d8df7d9",
+      "template": "ItemBase"
     },
     "thorn_extract": {
       "name": "Poison Ivy",
@@ -3988,7 +3992,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "ed71e32c904d237dd26e501cc1b0ca18b0291e4ae22fb8511092bc3c32dfde1e"
+      "png_sha256": "ed71e32c904d237dd26e501cc1b0ca18b0291e4ae22fb8511092bc3c32dfde1e",
+      "template": "ItemBase"
     },
     "plague_retort": {
       "name": "Strong Pestilence Flask",
@@ -4466,7 +4471,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "40ae45c56da74da30dd86480ae0475b08a4a90c929c31e51309fef7f459d65da"
+      "png_sha256": "40ae45c56da74da30dd86480ae0475b08a4a90c929c31e51309fef7f459d65da",
+      "template": "ItemBase"
     },
     "renewal_mortar": {
       "name": "Pot",
@@ -5710,7 +5716,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "c9f8604d506e6530ea97705b80407f5ab5676076c6914a16c3afde68a765402b"
+      "png_sha256": "c9f8604d506e6530ea97705b80407f5ab5676076c6914a16c3afde68a765402b",
+      "template": "ItemBase"
     },
     "supply_basic_staff": {
       "name": "Poison Dagger",
@@ -5920,7 +5927,8 @@
         "p4": "100:lifesteal",
         "p5": ""
       },
-      "png_sha256": "399b0be26c3b6b3396caafaad8b424bfb969eb899f2ecde1773d0b6770cddaee"
+      "png_sha256": "399b0be26c3b6b3396caafaad8b424bfb969eb899f2ecde1773d0b6770cddaee",
+      "template": "ItemBase"
     },
     "supply_blood_ring": {
       "name": "Vampiric Potion",
@@ -5983,7 +5991,8 @@
         "p4": "100:lifesteal",
         "p5": ""
       },
-      "png_sha256": "f630d9b8648d45fe1120035fd03c7535a1b5bac093d49fda7ff414dfbe127478"
+      "png_sha256": "f630d9b8648d45fe1120035fd03c7535a1b5bac093d49fda7ff414dfbe127478",
+      "template": "ItemBase"
     },
     "supply_blossom_bow": {
       "name": "Spear",
@@ -6507,7 +6516,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "e6267ac091eb48d9ecd4e8203bcd429a1d6965a18251a762c6ede54653991a17"
+      "png_sha256": "e6267ac091eb48d9ecd4e8203bcd429a1d6965a18251a762c6ede54653991a17",
+      "template": "ItemBase"
     },
     "supply_crown_crest": {
       "name": "Star of Courage",
@@ -6883,7 +6893,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "b34f1b2c6e9dc7f3eca2e48d1b3df0460a70083c933e3d9c18d3358446453175"
+      "png_sha256": "b34f1b2c6e9dc7f3eca2e48d1b3df0460a70083c933e3d9c18d3358446453175",
+      "template": "ItemBase"
     },
     "supply_elven_bow": {
       "name": "Spear",
@@ -7360,7 +7371,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "6a882d01906e317204cb5db46d779e80b9b24928bce5cef99dc2d07fb13de88c"
+      "png_sha256": "6a882d01906e317204cb5db46d779e80b9b24928bce5cef99dc2d07fb13de88c",
+      "template": "ItemBase"
     },
     "supply_gem_blue": {
       "name": "Regular Sapphire",
@@ -8033,7 +8045,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "9d954780d29910f82dd9e4b55ed8fa08a36588250a5876a9f16ec4a7cfd2d398"
+      "png_sha256": "9d954780d29910f82dd9e4b55ed8fa08a36588250a5876a9f16ec4a7cfd2d398",
+      "template": "ItemBase"
     },
     "supply_honor_medal": {
       "name": "Stone Badge",
@@ -8664,7 +8677,8 @@
         "p4": "100:lifesteal",
         "p5": ""
       },
-      "png_sha256": "ab1da5024dd6da9cca579ba62e1dbed4fbdba2308f34e12fece68df38b0a791b"
+      "png_sha256": "ab1da5024dd6da9cca579ba62e1dbed4fbdba2308f34e12fece68df38b0a791b",
+      "template": "ItemBase"
     },
     "supply_magic_bow": {
       "name": "Spear",
@@ -8795,7 +8809,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "50264286a512e31a15473068c1644e4e0ddd2937891fa190dabed154457f8025"
+      "png_sha256": "50264286a512e31a15473068c1644e4e0ddd2937891fa190dabed154457f8025",
+      "template": "ItemBase"
     },
     "supply_medical_case": {
       "name": "Wrench",
@@ -9759,7 +9774,8 @@
         "p4": "100:lifesteal",
         "p5": ""
       },
-      "png_sha256": "364234b8ba868301478b1cc026f07532acc384c79741571680b39c904a8dd49e"
+      "png_sha256": "364234b8ba868301478b1cc026f07532acc384c79741571680b39c904a8dd49e",
+      "template": "ItemBase"
     },
     "supply_vine_bow": {
       "name": "Spear",
@@ -9999,7 +10015,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "4bda4150b5ec6e8b0e1026c6cb55f6e31be2f257f65dd2f8eea17d6da00b0a3b"
+      "png_sha256": "4bda4150b5ec6e8b0e1026c6cb55f6e31be2f257f65dd2f8eea17d6da00b0a3b",
+      "template": "ItemBase"
     },
     "supply_weapon_case": {
       "name": "Burning Banner",

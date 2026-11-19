@@ -111,6 +111,18 @@ SCENES = {
                       "anim_targets": ["TorchLight"], "anim_root_target": "TorchLight",
                       "required_animations": {"Icon/TorchLight/AnimationPlayer": ["Flicker"],
                                                "Icon/TorchLight/FlickerAnimation": ["Flicker"]}},
+    # ---- 药剂刀（6 件/17 绑定；侦查结论：potionColor 在场景根属性（脚本 @export），
+    #      Laboratory 根 rotation=-6.27446、ClickArea 节点自身 position=(17,-19)；
+    #      BottleOfBooze/Fluid 瓶子是 PackedScene 实例节点+属性覆盖（extra_nodes scene 模式直接支持，
+    #      内嵌 ShaderMaterial/Curve 走 _dump_subres_tres 抽 .tres）。
+    #      本刀同修第六刀漏收的 ClickArea 节点自身 position/visible（Chainsaw 0,-99 错位 bug）----
+    "HealthPotion": {"ids": ["tonic_bottle", "supply_dusk_robe"], "base": "item"},
+    "HeroicPotion": {"ids": ["stamina_flask", "supply_apprentice_robe", "supply_fruit", "supply_mana_gem"], "base": "item"},
+    "DivinePotion": {"ids": ["cleansing_salt", "supply_cross", "supply_holy_cross"], "base": "item", "sub": "Exclusive"},
+    "VampiricPotion": {"ids": ["blood_cup", "supply_blood_crystal_necklace", "supply_blood_ring",
+                                 "supply_lust_crest", "supply_vampire_fang"], "base": "item", "sub": "Exclusive"},
+    "PestilenceFlask": {"ids": ["toxin_bottle", "supply_voodoo_staff"], "base": "item"},
+    "Laboratory": {"ids": ["venom_distiller"], "base": "item", "sub": "Exclusive"},
 }
 
 ITEM_TSCN = "res://Items/Item.tscn"
@@ -247,6 +259,19 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
     # --- 根节点属性段（到下一个 [node 为止）---
     root_block = text[root_m.end():text.index("\n[node", root_m.end())]
     script = ext[re.search(r'script = ExtResource\("([^"]+)"\)', root_block).group(1)][1]
+    # 根属性白名单：脚本/物理材质由固定槽位收；药剂刀新增 rotation / potionColor
+    # （脚本 @export 属性）。__meta__ = 编辑器参考线，非运行时数据，安全忽略。
+    # 出现别的 = 未知根属性，停手汇报（防静默丢根属性）。
+    root_keys = set(re.findall(r'^(\w+) = ', root_block, re.M))
+    assert root_keys <= {"script", "physics_material_override", "rotation", "potionColor", "__meta__"}, \
+        f"{path.name}: 根节点有未知属性 {root_keys}，停手汇报"
+    root_props = {}
+    rot_m = re.search(r'^rotation = (-?[\d.eE+-]+)$', root_block, re.M)
+    if rot_m:
+        root_props["rotation"] = float(rot_m.group(1))
+    pc_m = re.search(r'^potionColor = Color\(([^)]+)\)$', root_block, re.M)
+    if pc_m:
+        root_props["potionColor"] = [float(v.strip()) for v in pc_m.group(1).split(",")]
     # --- physics material（sub_resource）---
     pm = re.search(
         r'\[sub_resource type="PhysicsMaterial" id="(\d+)"\]\s*\nresource_local_to_scene = true\s*\nfriction = ([\d.]+)\s*\nbounce = ([\d.]+)',
@@ -327,6 +352,22 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
         cp = re.search(r'position = Vector2\(([^)]+)\)', click_block.group(1))
         if cp:
             click_position = [float(v) for v in cp.group(1).split(",")]
+    # ClickArea 节点自身的属性覆盖：position（Laboratory 17,-19、Chainsaw 0,-99）+ visible
+    # （基场景默认 false，4 件覆盖 true）。基默认不进数据；出现别的属性 = 停手汇报。
+    # 注：Chainsaw 的 position 是第六刀漏收的真 bug（点击区错位 -99px），本刀顺手修。
+    click_area_position = None
+    click_area_visible = None
+    ca_block = re.search(r'\[node name="ClickArea" parent="\." index="\d+"\]\s*\n(.*?)(?=\n\[|\s*\Z)', text, re.S)
+    if ca_block and ca_block.group(1).strip():
+        ca_keys = set(re.findall(r'^(\w+) = ', ca_block.group(1), re.M))
+        assert ca_keys <= {"position", "visible"}, f"{path.name}: ClickArea 有未知属性 {ca_keys}，停手汇报"
+        cap = re.search(r'position = Vector2\(([^)]+)\)', ca_block.group(1))
+        if cap:
+            click_area_position = [float(v) for v in cap.group(1).split(",")]
+        cav = re.search(r'visible = (\w+)', ca_block.group(1))
+        if cav:
+            assert cav.group(1) == "true", f"{path.name}: ClickArea visible={cav.group(1)}，停手汇报"
+            click_area_visible = True
     # 场景没覆盖点击多边形 = 继承基场景（Pot 就属于这种），由 build 补默认值；
     # 宝石场景则继承 Gems/Gem.tscn 的 -32 方块，不能在场景层塞默认值。
     click_poly = json.loads("[" + click.group(1).replace(", ", ",") + "]") if click else None
@@ -457,12 +498,15 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
     return {
         "root_name": root_name,
         "script": script,
+        "root_props": root_props,
         "physics": {"friction": friction, "bounce": bounce},
         "icon": icon_data,
         "collision_map": collision_map,
         "sockets_scale": sockets_scale,
         "click_polygon": click_poly,
         "click_position": click_position,
+        "click_area_position": click_area_position,
+        "click_area_visible": click_area_visible,
         "bottom_center": bottom_center,
         "body_collision": body_collision,
         "gem_sockets": gem_sockets,
@@ -555,6 +599,12 @@ def build() -> dict:
             data.pop("collision_shape", None)
         if data.get("click_position") is None:
             data.pop("click_position", None)
+        if not data.get("root_props"):
+            data.pop("root_props", None)
+        if data.get("click_area_position") is None:
+            data.pop("click_area_position", None)
+        if data.get("click_area_visible") is None:
+            data.pop("click_area_visible", None)
         data["definition_ids"] = cfg["ids"]
         items[scene_stem] = data
     out["items"] = items

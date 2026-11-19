@@ -1,0 +1,24 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3]
+[ext_resource type="Shader" path="res://Shader/Booze.gdshader" id="5_4hm6b"]
+[ext_resource type="Texture2D" path="res://Assets/Noise/LavaNoise.png" id="6_2l16f"]
+
+[sub_resource type="Gradient" id="84"]
+offsets = PackedFloat32Array(0.320313, 0.363281, 0.448625, 0.632979, 1)
+colors = PackedColorArray(1, 1, 1, 0, 0.998047, 0.980427, 0.65107, 1, 0.681641, 0.535714, 0.0692291, 0.807843, 0.861328, 0.804144, 0.0908432, 0.878431, 0.744141, 0.556993, 0.029068, 0.788235)
+
+[sub_resource type="GradientTexture1D" id="85"]
+resource_local_to_scene = true
+gradient = SubResource("84")
+width = 200
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("5_4hm6b")
+shader_parameter/direction = Vector2(-0.2538, 2.3444)
+shader_parameter/angle = 1.5708
+shader_parameter/gradient = SubResource("85")
+shader_parameter/bubbleNoise = ExtResource("6_2l16f")
+shader_parameter/noiseScale = Vector2(8, 6)
+shader_parameter/foaminess = 0.0624007
+shader_parameter/foamOffset = Vector2(-0.000130208, 1.87784)
+shader_parameter/levelOffset = 0.0

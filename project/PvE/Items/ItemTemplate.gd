@@ -59,6 +59,10 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 	item.physics_material_override = pm
 	# 进树前换脚本：物品专属脚本都极简（无 _init/export），_ready 尚未运行，安全。
 	item.set_script(load(str(data.script)))
+	# 根节点属性覆盖（药剂类：potionColor @export Color、Laboratory 的 rotation）。
+	for key in data.get("root_props", {}):
+		var value = data.root_props[key]
+		item.set(key, Color(value[0], value[1], value[2], value[3]) if value is Array else float(value))
 	var icon: Sprite2D = item.get_node("Icon")
 	icon.position = Vector2(data.icon.position[0], data.icon.position[1])
 	icon.scale = Vector2(data.icon.scale[0], data.icon.scale[1])
@@ -93,6 +97,11 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 	item.get_node("ClickArea/CollisionPolygon2D").polygon = _poly(data.click_polygon)
 	if data.has("click_position"):
 		item.get_node("ClickArea/CollisionPolygon2D").position = Vector2(data.click_position[0], data.click_position[1])
+	# ClickArea 节点自身的覆盖（第六刀漏收、本刀补上：Chainsaw position=(0,-99) 错位 bug 在此修复）。
+	if data.has("click_area_position"):
+		item.get_node("ClickArea").position = Vector2(data.click_area_position[0], data.click_area_position[1])
+	if data.get("click_area_visible", false):
+		item.get_node("ClickArea").visible = true
 	item.get_node("BottomCenter").position = Vector2(data.bottom_center[0], data.bottom_center[1])
 	# 物理体（硬接口，LifecycleAndText 会 get_node）：多边形（CollisionPolygon2D）
 	# 或形状（CollisionShape2D：圆/胶囊/矩形，进树前建 shape 资源），按数据二选一。
