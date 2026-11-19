@@ -969,6 +969,470 @@
     "transfusion_tube"
    ]
   },
+  "BoxofRiches": {
+   "root_name": "Box of Riches",
+   "script": "res://Items/BoxofRiches.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/BoxofRiches.png",
+    "position": [
+     10.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -40,
+    80,
+    -40,
+    80,
+    40,
+    -80,
+    40
+   ],
+   "bottom_center": [
+    1.0,
+    35.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 37.9999,
+     "height": 122.0
+    },
+    "position": [
+     1.0,
+     -2.0
+    ],
+    "rotation": 1.5708
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        0.48
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        0.870588,
+        0.772549,
+        0.431373,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        -18.0,
+        -28.0
+       ]
+      },
+      "emitting": false,
+      "amount": 6,
+      "lifetime": 1.22,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/BoxofRichesDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "compact_rack"
+   ]
+  },
+  "BurningBanner": {
+   "root_name": "Burning Banner",
+   "script": "res://Items/Exclusive/BurningBanner.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/BurningBanner.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -5,
+      0,
+      4
+     ],
+     [
+      -4,
+      0,
+      4
+     ],
+     [
+      -3,
+      0,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      1,
+      -1,
+      4
+     ],
+     [
+      2,
+      -1,
+      4
+     ],
+     [
+      3,
+      -1,
+      4
+     ],
+     [
+      -5,
+      1,
+      4
+     ],
+     [
+      -4,
+      1,
+      4
+     ],
+     [
+      -3,
+      1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      1,
+      0,
+      4
+     ],
+     [
+      2,
+      0,
+      4
+     ],
+     [
+      3,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    73.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "RectangleShape2D",
+    "params": {
+     "size": [
+      71.0,
+      154.0
+     ]
+    },
+    "position": [
+     -0.5,
+     -4.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.2,
+        1.2,
+        1.2,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "material": {
+       "res": "res://PvE/Items/Particles/BurningBanner_mat30.tres"
+      },
+      "scale": {
+       "vec2": [
+        3.5,
+        3.0
+       ]
+      },
+      "emitting": false,
+      "lifetime": 0.27,
+      "speed_scale": 0.36,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/FireParticle2.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "column_standard",
+    "guardian_standard",
+    "row_banner",
+    "supply_knight_seal",
+    "supply_weapon_case"
+   ]
+  },
+  "BurningCoal": {
+   "root_name": "Burning Coal",
+   "script": "res://Items/BurningCoal.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/BurningCoal.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -32,
+    -32,
+    32,
+    -32,
+    32,
+    32,
+    -32,
+    32
+   ],
+   "bottom_center": [
+    0.0,
+    21.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     3,
+     -19,
+     -10,
+     -12,
+     -17,
+     3,
+     -11,
+     16,
+     3,
+     18,
+     14,
+     10,
+     18,
+     -7,
+     13,
+     -16
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "scale": {
+       "vec2": [
+        2.0,
+        2.0
+       ]
+      },
+      "emitting": false,
+      "lifetime": 0.72,
+      "speed_scale": 1.2,
+      "explosiveness": 0.12,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Particles/BurningCoalDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/SparkParticle1.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "TorchLight",
+     "scene": "res://PvE/Items/Anims/BurningCoalAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "gem_animation_overrides": {
+    "autoplay": "NoSparkle",
+    "anims": {
+     "CorruptedSparkle": {
+      "res": "res://PvE/Items/Anims/BurningCoal_CorruptedSparkle.tres"
+     },
+     "NoSparkle": {
+      "res": "res://PvE/Items/Anims/BurningCoal_NoSparkle.tres"
+     }
+    }
+   },
+   "template_scene": "res://PvE/Items/GemBase.tscn",
+   "interface_nodes": [
+    "SocketDetectionArea",
+    "SocketDetectionArea/CollisionShape2D",
+    "GemAnimation"
+   ],
+   "required_animations": {
+    "GemAnimation": [
+     "CorruptedSparkle",
+     "NoSparkle"
+    ],
+    "Icon/TorchLight/FlickerAnimation": [
+     "Flicker"
+    ]
+   },
+   "definition_ids": [
+    "ember_stone",
+    "supply_flint",
+    "supply_gem_red"
+   ]
+  },
   "BurningTorch": {
    "root_name": "Burning Torch",
    "script": "res://Items/BurningTorch.gd",
@@ -1121,6 +1585,157 @@
    },
    "definition_ids": [
     "coal_burner"
+   ]
+  },
+  "Cauldron": {
+   "root_name": "Cauldron",
+   "script": "res://Items/Exclusive/Cauldron.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Cauldron.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      0,
+      -2,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80.0,
+    -80.0,
+    80.0,
+    -80.0,
+    80.0,
+    80.0,
+    -80.0,
+    80.0
+   ],
+   "bottom_center": [
+    0.0,
+    77.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 71.0,
+     "height": 164.0
+    },
+    "position": [
+     0.0,
+     -7.0
+    ],
+    "rotation": 1.5708
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "visible": false,
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        -74.0
+       ]
+      },
+      "z_index": 1,
+      "emitting": false,
+      "amount": 18,
+      "lifetime": 0.8,
+      "speed_scale": 0.9,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/CauldronDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Light/RingLight.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "philosophers_kettle",
+    "supply_gluttony_crest",
+    "wildfire_alembic"
    ]
   },
   "Chainsaw": {
@@ -1897,6 +2512,162 @@
     "utility_knife",
     "supply_dagger",
     "supply_wooden_knife"
+   ]
+  },
+  "DemonicFlask": {
+   "root_name": "Demonic Flask",
+   "script": "res://Items/DemonicFlask.gd",
+   "root_props": {
+    "potionColor": [
+     0.564706,
+     0.160784,
+     0.913725,
+     1.0
+    ]
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Flask4.png",
+    "position": [
+     1.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    74.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -18,
+     -70,
+     -38,
+     -59,
+     -39,
+     7,
+     -18,
+     74,
+     19,
+     75,
+     36,
+     6,
+     36,
+     -61,
+     17,
+     -70
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "BottleOfBooze",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.4,
+        1.4,
+        1.4,
+        1.0
+       ]
+      },
+      "material": {
+       "res": "res://Shader/DemonicFlask.material"
+      },
+      "position": {
+       "vec2": [
+        -4.5,
+        10.8739
+       ]
+      },
+      "rotation": 0.0,
+      "texture": {
+       "res": "res://Items/Masks/Flask4_Mask.png"
+      },
+      "backForce": 3.2,
+      "baseFoaminess": 0.0624,
+      "maxFoaminess": 1.1,
+      "rotationFoam": 0.04,
+      "baseScroll": 0.006,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/DemonicFlask_mat83.tres"
+      }
+     }
+    },
+    {
+     "name": "Flask1Overlay",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        -4.5,
+        4.87392
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Sprites/Flask4_Overlay.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "ember_phial",
+    "supply_wooden_staff"
    ]
   },
   "DivinePotion": {
@@ -5543,6 +6314,153 @@
     "supply_sloth_crest"
    ]
   },
+  "PoisonDagger": {
+   "root_name": "Poison Dagger",
+   "script": "res://Items/PoisonDagger.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/PoisonDagger.png",
+    "position": [
+     -2.75,
+     -1.43696
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     -2.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      11.75,
+      -7.56304
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "material": {
+       "res": "res://PvE/Items/Particles/PoisonDagger_mat13.tres"
+      },
+      "position": {
+       "vec2": [
+        -2.0,
+        -27.0
+       ]
+      },
+      "rotation": -0.321141,
+      "z_index": -1,
+      "emitting": false,
+      "amount": 6,
+      "lifetime": 2.5,
+      "explosiveness": 0.16,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Particles/PoisonDaggerDragParticles.tres"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/PoisonParticle.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "supply_basic_staff",
+    "supply_puppet",
+    "venom_needle"
+   ]
+  },
   "PoisonIvy": {
    "root_name": "Poison Ivy",
    "script": "res://Items/PoisonIvy.gd",
@@ -7026,6 +7944,157 @@
     "storage_hook"
    ]
   },
+  "Sandbag": {
+   "root_name": "Sandbag",
+   "script": "res://Items/Exclusive/Sandbag.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/SirSand.png",
+    "position": [
+     1.0,
+     0.0
+    ],
+    "scale": [
+     0.410377,
+     0.450637
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.43678,
+    2.21908
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    65.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 31.0,
+     "height": 138.0
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "show_behind_parent": true,
+      "emitting": false,
+      "amount": 60,
+      "lifetime": 2.0,
+      "preprocess": 0.2,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/SandbagDragParticles.material"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "BuffTimer",
+     "type": "Timer",
+     "props": {
+      "process_mode": 0,
+      "one_shot": true
+     },
+     "connections": [
+      {
+       "signal": "timeout",
+       "method": "buffEnded"
+      }
+     ]
+    },
+    {
+     "name": "ActivationParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "modulate": {
+       "color": [
+        2.5,
+        2.5,
+        2.5,
+        1.0
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        0.941176,
+        0.858824,
+        0.560784,
+        0.431373
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.8,
+        1.0
+       ]
+      },
+      "z_index": 1,
+      "emitting": false,
+      "amount": 1,
+      "process_material": {
+       "res": "res://Items/Particles/CapofResilienceAuraParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Light/RingLight.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "counterweight"
+   ]
+  },
   "Scissorswords": {
    "root_name": "Scissorswords",
    "script": "res://Items/Exclusive/Scissorswords.gd",
@@ -8228,6 +9297,284 @@
     "supply_thorn_mail"
    ]
   },
+  "SpiritBells": {
+   "root_name": "Spirit Bells",
+   "script": "res://Items/Exclusive/SpiritBells.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/SpiritBells.png",
+    "position": [
+     0.0,
+     5.5
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -3,
+      -2,
+      4
+     ],
+     [
+      1,
+      -3,
+      4
+     ],
+     [
+      -2,
+      -1,
+      4
+     ],
+     [
+      0,
+      -2,
+      4
+     ],
+     [
+      -4,
+      0,
+      4
+     ],
+     [
+      -3,
+      0,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      1,
+      -1,
+      4
+     ],
+     [
+      2,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      -2,
+      2,
+      4
+     ],
+     [
+      -1,
+      2,
+      4
+     ],
+     [
+      0,
+      1,
+      4
+     ],
+     [
+      -3,
+      3,
+      4
+     ],
+     [
+      -1,
+      3,
+      4
+     ],
+     [
+      1,
+      2,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    78.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -9,
+     -63,
+     11,
+     -70,
+     32,
+     -63,
+     38,
+     -5,
+     21,
+     62,
+     -28,
+     63,
+     -34,
+     37
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        0.65
+       ]
+      },
+      "material": {
+       "res": "res://Items/Exclusive/Particles/TimeMelting.material"
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        89.0
+       ]
+      },
+      "emitting": false,
+      "amount": 11,
+      "lifetime": 1.16,
+      "speed_scale": 0.8,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/SpiritBellsDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "BuffTimer",
+     "type": "Timer",
+     "props": {
+      "process_mode": 0,
+      "one_shot": true
+     },
+     "script": "res://Utility/MultiTimer.gd",
+     "connections": [
+      {
+       "signal": "multi_timeout",
+       "method": "buffEnded"
+      }
+     ]
+    },
+    {
+     "name": "ActivationParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "modulate": {
+       "color": [
+        2.5,
+        2.5,
+        2.5,
+        1.0
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        0.470588,
+        0.741176,
+        0.972549,
+        0.431373
+       ]
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        57.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.6,
+        0.6
+       ]
+      },
+      "z_index": 1,
+      "emitting": false,
+      "amount": 1,
+      "process_material": {
+       "res": "res://Items/Particles/CapofResilienceAuraParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Light/RingLight.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "resonant_bell",
+    "supply_thunder_ring"
+   ]
+  },
   "SpringLoader": {
    "root_name": "Spring Loader",
    "script": "res://Items/Exclusive/SpringLoader.gd",
@@ -8248,10 +9595,10 @@
     "material": null,
     "script": "res://Items/Exclusive/SpringloaderVisual.gd",
     "script_props": {
-     "accelFactor": 0.12,
      "speed": 4.0,
-     "friction": 0.96,
-     "maxScale": 0.7
+     "accelFactor": 0.12,
+     "maxScale": 0.7,
+     "friction": 0.96
     }
    },
    "collision_map": {
@@ -8825,6 +10172,189 @@
     "duelist_mark",
     "supply_honor_medal",
     "supply_priest_badge"
+   ]
+  },
+  "StrongPestilenceFlask": {
+   "root_name": "Strong Pestilence Flask",
+   "script": "res://Items/StrongPestilenceFlask.gd",
+   "root_props": {
+    "potionColor": [
+     0.0588235,
+     0.741176,
+     0.117647,
+     1.0
+    ]
+   },
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/StrongPestilenceFlask_flask.png",
+    "position": [
+     1.0,
+     0.0
+    ],
+    "scale": [
+     0.45,
+     0.45
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.22222,
+    2.22222
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    32.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 33.0,
+     "height": 130.0
+    },
+    "position": [
+     1.0,
+     6.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "BottleOfBooze",
+     "scene": "res://Assets/BottleOfBooze.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.4,
+        1.4,
+        1.4,
+        1.0
+       ]
+      },
+      "material": {
+       "res": "res://PvE/Items/Particles/StrongPestilenceFlask_mat5.tres"
+      },
+      "position": {
+       "vec2": [
+        -6.72222,
+        31.0961
+       ]
+      },
+      "rotation": 0.0,
+      "texture": {
+       "res": "res://Items/Masks/StrongPestilenceFlask_mask.png"
+      },
+      "offset": {
+       "vec2": [
+        4.0,
+        -17.0
+       ]
+      },
+      "backForce": 2.5,
+      "baseFoaminess": 0.0624,
+      "rotationFoam": 0.039,
+      "baseScroll": 0.024,
+      "levelCurve": {
+       "res": "res://PvE/Items/Particles/StrongPestilenceFlask_mat7.tres"
+      }
+     }
+    },
+    {
+     "name": "Flask1Overlay",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "position": {
+       "vec2": [
+        -4.5,
+        18.8739
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Sprites/StrongPestilenceFlask_overlay.png"
+      },
+      "offset": {
+       "vec2": [
+        4.0,
+        -17.0
+       ]
+      }
+     }
+    },
+    {
+     "name": "Poison",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "visible": false,
+      "position": {
+       "vec2": [
+        0.0,
+        56.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.382353,
+        0.382353
+       ]
+      },
+      "texture": {
+       "res": "res://Assets/Buffs/Poison.png"
+      }
+     }
+    },
+    {
+     "name": "PoisonTimer",
+     "type": "Timer",
+     "props": {
+      "process_mode": 0,
+      "one_shot": true
+     },
+     "script": "res://Utility/MultiTimer.gd",
+     "connections": [
+      {
+       "signal": "multi_timeout",
+       "method": "poisonTimerTimeout"
+      }
+     ]
+    }
+   ],
+   "definition_ids": [
+    "plague_retort",
+    "supply_demonic_codex"
    ]
   },
   "ThorsHammer": {

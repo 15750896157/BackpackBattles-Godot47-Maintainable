@@ -41,6 +41,13 @@ static func preload_paths(definition_id: String) -> Array:
 	# 宝石孔：整场景实例 GemSocket.tscn
 	if not data.get("gem_sockets", []).is_empty() and not paths.has(GEM_SOCKET_SCENE):
 		paths.append(GEM_SOCKET_SCENE)
+	# 宝石动画覆盖：GemAnimation 替换动画集的 .tres
+	var gao = data.get("gem_animation_overrides")
+	if gao is Dictionary:
+		for anim_name in gao.anims:
+			var apath = str(gao.anims[anim_name].res)
+			if not paths.has(apath):
+				paths.append(apath)
 	# 格区 TileMap：外部 TileSet .tres
 	if data.has("icon_tilemap") and not paths.has(str(data.icon_tilemap.tile_set)):
 		paths.append(str(data.icon_tilemap.tile_set))
@@ -102,6 +109,20 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 			socket.name = str(spec.name)
 			socket.position = Vector2(spec.position[0], spec.position[1])
 			item.get_node("Icon/Sockets").add_child(socket)
+	# 宝石动画覆盖（BurningCoal：原版覆盖块把 GemAnimation 默认动画集整个替换）。
+	# 等价复刻替换语义：清默认集 → 装回 .tres → 覆盖 autoplay。进树前完成，ready 时 autoplay 生效。
+	var gem_anim_ov = data.get("gem_animation_overrides")
+	if gem_anim_ov is Dictionary:
+		var gap: AnimationPlayer = item.get_node("GemAnimation")
+		# Godot 4：动画增删走默认库（""），AnimationPlayer 本身没有 add/remove_animation
+		var lib: AnimationLibrary = gap.get_animation_library("")
+		for anim_name in Array(lib.get_animation_list()):
+			lib.remove_animation(str(anim_name))
+		for anim_name in gem_anim_ov.anims:
+			var anim_res = await AssetStream.request_resource(str(gem_anim_ov.anims[anim_name].res), scope)
+			lib.add_animation(str(anim_name), anim_res)
+		if str(gem_anim_ov.get("autoplay", "")) != "":
+			gap.autoplay = str(gem_anim_ov.autoplay)
 	var map: TileMap = item.get_node("CollisionMap")
 	map.position = Vector2(data.collision_map.position[0], data.collision_map.position[1])
 	map.clear()

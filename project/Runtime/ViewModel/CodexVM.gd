@@ -1,5 +1,7 @@
 extends ViewModel
 ## Catalogue snapshots use the same discovery, release and crafting services as the run.
+## 临时调试开关：图鉴全解锁（看完改回 false）。
+const DEBUG_UNLOCK_ALL := false
 const PAGE_SIZE := 4
 const RECORD_PAGE_SIZE := 6
 var _flow: GameFlow
@@ -36,6 +38,9 @@ func catalogue(category: String, filters: Dictionary, requested_page: int,
 	var context := snapshot()
 	var profile: Dictionary = _flow.profile_service.profile
 	var source: Array = _flow.db.rows("enemy_builds") + _flow.db.rows("bosses") if category == "enemies" else _flow.db.catalogue_rows(category, context.legacy)
+	# 调试：绕过 release_catalog 发布清单过滤，图鉴显示全表物品。
+	if DEBUG_UNLOCK_ALL and category in ["items", "bags", "recipes"]:
+		source = _flow.db.rows(category)
 	if category == "characters":
 		source = _flow.db.rows("characters")
 	var available := {}
@@ -49,7 +54,7 @@ func catalogue(category: String, filters: Dictionary, requested_page: int,
 		var id := str(data.get("result_item_id", data.id)) if category == "recipes" else str(data.id)
 		var definition: Dictionary = data if category in ["enemies","characters"] else _flow.placement.definition(id)
 		var title: String = _translate.call(definition.get("name_key", id))
-		var known: bool = category == "characters" or (data.id in profile.recipes if category == "recipes" else data.id in profile.seen_enemies if category == "enemies" else data.id in profile.seen_items)
+		var known: bool = DEBUG_UNLOCK_ALL or category == "characters" or (data.id in profile.recipes if category == "recipes" else data.id in profile.seen_enemies if category == "enemies" else data.id in profile.seen_items)
 		if filters.seen and not known:
 			continue
 		if filters.available and not available.has(data.id):

@@ -1720,7 +1720,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df"
+      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df",
+      "template": "ItemBase"
     },
     "column_standard": {
       "name": "Burning Banner",
@@ -1785,7 +1786,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df"
+      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df",
+      "template": "ItemBase"
     },
     "star_compass": {
       "name": "Star of Courage",
@@ -1910,7 +1912,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "dae7a3806b152f90207c5eb3b296333bad6970d474a59de972f1f080dc299018"
+      "png_sha256": "dae7a3806b152f90207c5eb3b296333bad6970d474a59de972f1f080dc299018",
+      "template": "ItemBase"
     },
     "resonant_bell": {
       "name": "Spirit Bells",
@@ -1973,7 +1976,8 @@
         "p4": "30:buffs",
         "p5": ""
       },
-      "png_sha256": "875e4a421ac449426d2ee17fea75db85c451495e05acb9835e345bf02da6c051"
+      "png_sha256": "875e4a421ac449426d2ee17fea75db85c451495e05acb9835e345bf02da6c051",
+      "template": "ItemBase"
     },
     "counterweight": {
       "name": "Sandbag",
@@ -2038,7 +2042,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "f27f0867ca1c924eae10ff85b4adb3c2ecabd45e29aaab7ae626280286e20b8a"
+      "png_sha256": "f27f0867ca1c924eae10ff85b4adb3c2ecabd45e29aaab7ae626280286e20b8a",
+      "template": "ItemBase"
     },
     "venom_needle": {
       "name": "Poison Dagger",
@@ -2094,7 +2099,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "7a3c6022d46a622a754adb027461a000d100db0aa65e9f046a9a6348efc6936a"
+      "png_sha256": "7a3c6022d46a622a754adb027461a000d100db0aa65e9f046a9a6348efc6936a",
+      "template": "ItemBase"
     },
     "ember_stone": {
       "name": "Burning Coal",
@@ -2148,7 +2154,8 @@
         "p4": "2",
         "p5": "3"
       },
-      "png_sha256": "4097ec0008cf624178c85a9c44fa417a16241ee3421ab64b875640693d324649"
+      "png_sha256": "4097ec0008cf624178c85a9c44fa417a16241ee3421ab64b875640693d324649",
+      "template": "GemBase"
     },
     "healing_herb": {
       "name": "Healing Herbs",
@@ -3601,7 +3608,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df"
+      "png_sha256": "7dca95ad424945977301a8286a5c89dd5c11020622b469b7492e87a37f0777df",
+      "template": "ItemBase"
     },
     "charging_weight": {
       "name": "Battery",
@@ -4066,7 +4074,8 @@
         "p4": "3",
         "p5": ""
       },
-      "png_sha256": "dbead7e94329a8b64990d9ae6de6af024b20201d9d115c20b15c6c05cb201cc1"
+      "png_sha256": "dbead7e94329a8b64990d9ae6de6af024b20201d9d115c20b15c6c05cb201cc1",
+      "template": "ItemBase"
     },
     "caustic_coil": {
       "name": "Coil",
@@ -4191,7 +4200,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "ecdd66e7e0ee5e8df498af971a2856fbea198ab61a158a0521c70f587c55f7a6"
+      "png_sha256": "ecdd66e7e0ee5e8df498af971a2856fbea198ab61a158a0521c70f587c55f7a6",
+      "template": "ItemBase"
     },
     "coal_burner": {
       "name": "Burning Torch",
@@ -4409,7 +4419,8 @@
         "p4": "15:speedbonus",
         "p5": ""
       },
-      "png_sha256": "a9edf0b414d0701558ec347b2150e7022c72f370a73d550ef0c9a81ac30e4b6c"
+      "png_sha256": "a9edf0b414d0701558ec347b2150e7022c72f370a73d550ef0c9a81ac30e4b6c",
+      "template": "ItemBase"
     },
     "tonic_bottle": {
       "name": "Health Potion",
@@ -4691,7 +4702,8 @@
         "p4": "15:speedbonus",
         "p5": ""
       },
-      "png_sha256": "a9edf0b414d0701558ec347b2150e7022c72f370a73d550ef0c9a81ac30e4b6c"
+      "png_sha256": "a9edf0b414d0701558ec347b2150e7022c72f370a73d550ef0c9a81ac30e4b6c",
+      "template": "ItemBase"
     },
     "bag_canvas_frame": {
       "name": "Leather Bag",
@@ -5783,7 +5795,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "ffeccc5045d889cd356bc318dc9b18429b9f79bfa6b4efc8ae2953a7a73cc75a"
+      "png_sha256": "ffeccc5045d889cd356bc318dc9b18429b9f79bfa6b4efc8ae2953a7a73cc75a",
+      "template": "ItemBase"
     },
     "supply_battle_axe": {
       "name": "Double Axe",
@@ -6719,7 +6732,8 @@
         "p4": "3",
         "p5": ""
       },
-      "png_sha256": "257de5e9dd6a273f85714fe71066d2e21b5e6bc4c254c90d800672d8546aed33"
+      "png_sha256": "257de5e9dd6a273f85714fe71066d2e21b5e6bc4c254c90d800672d8546aed33",
+      "template": "ItemBase"
     },
     "supply_discount_card": {
       "name": "Customer Card",
@@ -7321,7 +7335,8 @@
         "p4": "2",
         "p5": "3"
       },
-      "png_sha256": "7b8dd7520f99e1f2149bd184fc1496a1b1f9836969c0ee782130ff979c180707"
+      "png_sha256": "7b8dd7520f99e1f2149bd184fc1496a1b1f9836969c0ee782130ff979c180707",
+      "template": "GemBase"
     },
     "supply_fruit": {
       "name": "Heroic Potion",
@@ -7587,7 +7602,8 @@
         "p4": "2",
         "p5": "3"
       },
-      "png_sha256": "64faeac49736a768387577cf59f82b4b64dae2f43306dc2e699aa281d13bd3c4"
+      "png_sha256": "64faeac49736a768387577cf59f82b4b64dae2f43306dc2e699aa281d13bd3c4",
+      "template": "GemBase"
     },
     "supply_gem_yellow": {
       "name": "Whetstone",
@@ -7715,7 +7731,8 @@
         "p4": "15:speedbonus",
         "p5": ""
       },
-      "png_sha256": "c2b9a0598003b58c38dca182573cd5a14a3b549d29b70243b21333512998f31f"
+      "png_sha256": "c2b9a0598003b58c38dca182573cd5a14a3b549d29b70243b21333512998f31f",
+      "template": "ItemBase"
     },
     "supply_greed_crest": {
       "name": "Lucky Clover",
@@ -8498,7 +8515,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "c9a87781d49b3856da863edfbdd0cc247c997bd021acdd8ed9244b473cc179c7"
+      "png_sha256": "c9a87781d49b3856da863edfbdd0cc247c997bd021acdd8ed9244b473cc179c7",
+      "template": "ItemBase"
     },
     "supply_leather_armor": {
       "name": "Leather Armor",
@@ -9199,7 +9217,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "2356a47228e8f57077c948a0174be91c1bd873db77cd2bcc32fb61fce5d60e81"
+      "png_sha256": "2356a47228e8f57077c948a0174be91c1bd873db77cd2bcc32fb61fce5d60e81",
+      "template": "ItemBase"
     },
     "supply_salvage_pouch": {
       "name": "Piggybank",
@@ -9670,7 +9689,8 @@
         "p4": "30:buffs",
         "p5": ""
       },
-      "png_sha256": "d66f1feeb06067fde1cabe32d1417a4d351e953da30f279a23642f8c7c5f3a37"
+      "png_sha256": "d66f1feeb06067fde1cabe32d1417a4d351e953da30f279a23642f8c7c5f3a37",
+      "template": "ItemBase"
     },
     "supply_token": {
       "name": "Customer Card",
@@ -10091,7 +10111,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "b8d928fa5af556a9da11534e4fe29053cd557c4e101256b7103c6d2872a1a6f0"
+      "png_sha256": "b8d928fa5af556a9da11534e4fe29053cd557c4e101256b7103c6d2872a1a6f0",
+      "template": "ItemBase"
     },
     "supply_whetstone": {
       "name": "Whetstone",
@@ -10405,7 +10426,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "f505ca165e878818fea4d90e758f0431bda477f35a4fe89b93a9f4eb12afc7e2"
+      "png_sha256": "f505ca165e878818fea4d90e758f0431bda477f35a4fe89b93a9f4eb12afc7e2",
+      "template": "ItemBase"
     },
     "supply_wrath_crest": {
       "name": "Anvil",
