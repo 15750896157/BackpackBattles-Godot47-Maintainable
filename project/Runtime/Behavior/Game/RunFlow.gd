@@ -349,10 +349,12 @@ static func _ready(subject: Receiver) -> void :
 		if i != - 1:
 			subject.leagueIcons.push_back(load("res://Assets/Leagues/League_" + league + ".png"))
 
-	var basePath = "res://CharacterClasses/"
-	for className in subject.Classes_Full:
-		if subject.isClassUnlocked(subject.Classes_Full[className]):
-			subject.classResources.push_back(load(str(basePath, className, "/", className, ".tres")))
+	var classRegistry = preload("res://PvE/ClassRegistry.gd")
+	for entry in classRegistry.entries():
+		if int(entry["enum_index"]) < 0:
+			continue
+		if subject.isClassUnlocked(int(entry["enum_index"])):
+			subject.classResources.push_back(load(str(entry["tres_path"])))
 		else:
 			subject.classResources.push_back(null)
 

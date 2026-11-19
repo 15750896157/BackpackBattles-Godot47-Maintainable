@@ -2,6 +2,8 @@ extends "res://Runtime/Compatibility/GameState.gd"
 
 ## Profile, legacy saves, localization, class and appearance APIs.
 
+const ClassRegistry = preload("res://PvE/ClassRegistry.gd")
+
 func versionToInt(ver: String = VERSION) -> int:
 	return load("res://Runtime/Behavior/Features/Core/GameBehavior.gd").versionToInt(self, ver)
 
@@ -289,7 +291,7 @@ func getTranslatedSubclassName(subclassName) -> String:
 	return Util.tra("SUBCLASS_" + subclassName + "_NAME")
 
 func isClassUnlocked(charClass = curClass) -> bool:
-	return charClass in [Classes_Full.Berserker, Classes_Full.Reaper]
+	return charClass in ClassRegistry.enabled_indices()
 
 func isClassUnlockedStuffed(charClass: int) -> bool:
 	return isClassUnlocked(Util.log2(charClass))

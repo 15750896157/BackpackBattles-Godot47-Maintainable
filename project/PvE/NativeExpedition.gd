@@ -4,6 +4,7 @@ extends Node
 # Rules and native presentation remain separate from the flat touch UI.
 # This distribution has one authoritative ruleset. Scene entry APIs remain stable.
 const enabled: bool = true
+const ClassRegistry = preload("res://PvE/ClassRegistry.gd")
 const HUD_LAYER = preload("res://PvE/UI/HudLayer.gd")
 const HUD_VM = preload("res://Runtime/ViewModel/HudVM.gd")
 const COMBAT_LOG_VM = preload("res://Runtime/ViewModel/CombatLogVM.gd")
@@ -101,7 +102,7 @@ func initialize_native():
 	add_child(art)
 	await menus.prepare_icons()
 	Game.randomCharacter = false
-	if Game.curClass not in [Game.Classes_Full.Berserker, Game.Classes_Full.Reaper]: Game.instanceCharacter(Game.Classes_Full.Berserker)
+	if not Game.isClassUnlocked(Game.curClass): Game.instanceCharacter(ClassRegistry.index_of("Berserker"))
 	if enabled and SceneRouter.ENABLED:
 		var routes = preload("res://PvE/NativeSceneRoutes.gd").new(self)
 		var install_error: Error = await routes.install()
@@ -410,7 +411,7 @@ func finish_switch_to_combat():
 func prepare_native_opponent(current: Callable, phase: int = 1) -> bool:
 	var node: Dictionary = flow.run.current_node
 	var enemy = db.get_row("enemy_builds", str(node.get("enemy_id", "")))
-	var character = Game.Classes_Full.Reaper if str(enemy.get("archetype_id", "")) in ["venom_brewer", "ember_runner"] else Game.Classes_Full.Berserker
+	var character = ClassRegistry.index_of("Reaper") if str(enemy.get("archetype_id", "")) in ["venom_brewer", "ember_runner"] else ClassRegistry.index_of("Berserker")
 	if not await AssetStream.prepare_actor(character, false, "actor-enemy", false) or not current.call():
 		return false
 	Game.freeOpponent()
@@ -495,7 +496,9 @@ func set_native_run_context():
 
 func prepare_native_player(current: Callable) -> bool:
 	# Archer uses the existing native carrier; its rules and art come from PvE.
-	var role = Game.Classes_Full.Reaper if flow.run.character_id == "alchemist" else Game.Classes_Full.Berserker
+	# 角色 id 走注册表查职业序号；查不到或职业未启用时沿用军械师（与旧行为一致）。
+	var role = ClassRegistry.index_for_art_key(str(flow.run.character_id))
+	if role < 0 or not Game.isClassUnlocked(role): role = ClassRegistry.index_of("Berserker")
 	var catalogue = preload("res://PvE/Art/SuppliedArt.gd")
 	var expected_portrait = catalogue.actor_path(catalogue.player_key(role))
 	var portrait_changed = not is_instance_valid(Game.PLAYER.sprite) or Game.PLAYER.sprite.get_meta("new_art_path", "") != expected_portrait

@@ -1,0 +1,69 @@
+{
+	"_readme": "职业注册表（Class Registry）。启用一个职业 = 把它的 enabled 改为 true，再跑一次 verify-project.cmd 验收。enum_index 是存档里的职业序号，绝对不能改（改了会毁掉老存档）。disabled 职业的资源一律不删，留作后续更新储备。注意：Mage/Adventurer/Engineer 三个职业原版就没有角色资源文件（.tres），启用前需先补做资源放到 tres_path 指向的位置。",
+	"classes": [
+		{
+			"key": "Ranger",
+			"display_name": "射手",
+			"enabled": false,
+			"tres_path": "res://CharacterClasses/Ranger/Ranger.tres",
+			"enum_index": 0,
+			"art_key": "archer"
+		},
+		{
+			"key": "Reaper",
+			"display_name": "炼金术士（原死神）",
+			"enabled": true,
+			"tres_path": "res://CharacterClasses/Reaper/Reaper.tres",
+			"enum_index": 1,
+			"art_key": "alchemist"
+		},
+		{
+			"key": "Berserker",
+			"display_name": "军械师（原狂战士）",
+			"enabled": true,
+			"tres_path": "res://CharacterClasses/Berserker/Berserker.tres",
+			"enum_index": 2,
+			"art_key": "armorer"
+		},
+		{
+			"key": "Pyromancer",
+			"display_name": "火法师",
+			"enabled": false,
+			"tres_path": "res://CharacterClasses/Pyromancer/Pyromancer.tres",
+			"enum_index": 3,
+			"art_key": ""
+		},
+		{
+			"key": "Mage",
+			"display_name": "法师",
+			"enabled": false,
+			"tres_path": "res://CharacterClasses/Mage/Mage.tres",
+			"enum_index": 4,
+			"art_key": ""
+		},
+		{
+			"key": "Adventurer",
+			"display_name": "冒险家",
+			"enabled": false,
+			"tres_path": "res://CharacterClasses/Adventurer/Adventurer.tres",
+			"enum_index": 5,
+			"art_key": ""
+		},
+		{
+			"key": "Engineer",
+			"display_name": "工程师",
+			"enabled": false,
+			"tres_path": "res://CharacterClasses/Engineer/Engineer.tres",
+			"enum_index": 6,
+			"art_key": ""
+		},
+		{
+			"key": "NotUnlocked",
+			"display_name": "未解锁占位",
+			"enabled": false,
+			"tres_path": "",
+			"enum_index": -1,
+			"art_key": ""
+		}
+	]
+}

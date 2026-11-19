@@ -6,12 +6,14 @@ var runs:
 var owner
 var ui
 var draft_index = 0
-const ROLES=["armorer","archer","alchemist"]
 const KEYS = ["selection","selection_shadow","select_armorer","select_archer","select_alchemist","previous","next","back","button","settings"]
+## 可选角色清单由数据驱动（release_catalog.selectable_characters），新增角色不再改代码。
+func roles() -> Array:
+	return owner.db.release_catalog.get("selectable_characters", ["armorer"])
 func _init(page):
 	owner = page.owner; ui = page.ui
 func show_page():
-	if runs.role not in ROLES:runs.role=ROLES[0]
+	if runs.role not in roles():runs.role=roles()[0]
 	var root = ui.open_canvas("SETUP",ui.words("选择角色","Choose a hero"))
 	var ticket = owner.popup_epoch
 	if not await AssetStream.prepare(REF.paths(KEYS),"popup") or ticket != owner.popup_epoch: return
@@ -43,7 +45,8 @@ func show_page():
 		var ids = levels.map(func(row):return row.id); runs.difficulty = ids[(ids.find(runs.difficulty)+1)%ids.size()]; show_page(),ui.words("切换难度","Change difficulty")).name = "ChooseDifficulty"
 	REF.fade_in(root)
 func turn_role(direction: int):
-	runs.role = ROLES[posmod(ROLES.find(runs.role)+direction,ROLES.size())]
+	var list = roles()
+	runs.role = list[posmod(list.find(runs.role)+direction,list.size())]
 	runs.loadout = ""; show_page()
 func begin():
 	if runs.seed_value == 0: runs.seed_value = Time.get_ticks_usec() & 0xffffffff
