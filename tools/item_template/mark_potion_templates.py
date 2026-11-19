@@ -4,7 +4,8 @@ import json
 import sys
 from pathlib import Path
 
-BINDINGS = Path(r"d:\GIt\yingx\yinxon\project\PvE\asset_bindings.json")
+ROOT = Path(__file__).resolve().parents[2] / 'project'
+BINDINGS = ROOT / 'PvE' / 'asset_bindings.json'
 IDS = {
     "tonic_bottle", "supply_dusk_robe",                              # HealthPotion
     "stamina_flask", "supply_apprentice_robe", "supply_fruit", "supply_mana_gem",  # HeroicPotion

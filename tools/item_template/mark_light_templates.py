@@ -4,7 +4,8 @@ import json
 import sys
 from pathlib import Path
 
-BINDINGS = Path(r"d:\GIt\yingx\yinxon\project\PvE\asset_bindings.json")
+ROOT = Path(__file__).resolve().parents[2] / 'project'
+BINDINGS = ROOT / 'PvE' / 'asset_bindings.json'
 IDS = {"siege_maul", "coal_burner", "ignition_lens", "supply_chaos_staff"}
 TOTAL_EXPECTED = 109
 

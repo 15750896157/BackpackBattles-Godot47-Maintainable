@@ -7,13 +7,14 @@
   Whetstone(sharpening_stone,supply_gem_yellow,supply_whetstone)
   ClawsofAttack(arsenal_bracer) DragonscaleArmor(layered_plates,supply_squire_armor)
   SpikedShield(spiked_guard) WoodenBuckler(buckler)
-铁规：scene_sha256 现值必须原样保留。用法：py -3 tz/mark_collision_shape_templates.py [--check]
+铁规：scene_sha256 现值必须原样保留。用法：py -3 tools/item_template/mark_collision_shape_templates.py [--check]
 """
 import json
 import sys
 from pathlib import Path
 
-BINDINGS = Path(r"d:\GIt\yingx\yinxon\project\PvE\asset_bindings.json")
+ROOT = Path(__file__).resolve().parents[2] / 'project'
+BINDINGS = ROOT / 'PvE' / 'asset_bindings.json'
 
 MARKS = {
     "sling": "ItemBase", "supply_stone": "ItemBase",

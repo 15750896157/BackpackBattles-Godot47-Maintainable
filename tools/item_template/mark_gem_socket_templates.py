@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 """第四刀·宝石孔：给 14 件物品的 37 个绑定 id 加 template 标记。
-铁规：scene_sha256 现值必须原样保留。用法：py -3 tz/mark_gem_socket_templates.py [--check]
+铁规：scene_sha256 现值必须原样保留。用法：py -3 tools/item_template/mark_gem_socket_templates.py [--check]
 """
 import json
 import sys
 from pathlib import Path
 
-BINDINGS = Path(r"d:\GIt\yingx\yinxon\project\PvE\asset_bindings.json")
+ROOT = Path(__file__).resolve().parents[2] / 'project'
+BINDINGS = ROOT / 'PvE' / 'asset_bindings.json'
 
 MARKS = {
     "broad_axe": "ItemBase", "supply_double_axe": "ItemBase",

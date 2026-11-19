@@ -19,7 +19,7 @@ import io
 from pathlib import Path
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-ROOT = Path(r'd:\GIt\yingx\yinxon\project')
+ROOT = Path(__file__).resolve().parents[2] / 'project'
 OUT = ROOT / 'PvE' / 'Items' / 'Anims'
 OUT.mkdir(parents=True, exist_ok=True)
 
@@ -41,6 +41,8 @@ ITEMS = [
     ('ThorsHammer', 'Exclusive', 'A', ['WithLight'], 'Idle', True),
     ('OilLamp', 'Exclusive', 'C', ['TorchLight'], '', False),
     ('BurningTorch', '', 'C', ['TorchLight'], '', False),
+    # ---- 收尾刀（1 件：宝石 + C 模式灯光，源在 Items/Gems/）----
+    ('BurningCoal', 'Gems', 'C', ['TorchLight'], '', False),
 ]
 
 
