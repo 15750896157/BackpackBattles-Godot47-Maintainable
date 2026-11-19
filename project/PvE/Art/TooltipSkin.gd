@@ -1,5 +1,4 @@
 extends RefCounted
-const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const ART = "res://Art/Supplied20261109/"
 const PROPERTY_ICON = {
 	Item.Stat.MaxDamage: "attack", Item.Stat.StaminaCost: "stamina",
@@ -64,8 +63,7 @@ static func apply(subject):
 			var icons := "  ".join(symbols.map(func(icon): return Util.imageToBbcode(stat_path(icon),30)))
 			if not subject.descrLabel.text.begins_with(icons):
 				subject.descrLabel.text = icons + "\n" + subject.descrLabel.text
-	var rarity := str(definition.get("rarity", "common"))
-	subject.rarityLabel.add_theme_color_override("font_color", REF.RARITY_INK.get(rarity, REF.INK))
+	subject.rarityLabel.add_theme_color_override("font_color",Game.rarityColors[subject.item.getRarity()].darkened(0.60))
 
 static func stat_path(key: String) -> String:
 	return ART+"status/"+key+".png"

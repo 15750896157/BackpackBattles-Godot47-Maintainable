@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ybbhmkfrtylo"]
 
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="1_ip0jp"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="2_5uqod"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="2_5uqod"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_ewx4e"]
 [ext_resource type="RichTextEffect" path="res://Interface/SColorTextEffect.tres" id="4_xxnak"]
 [ext_resource type="Script" path="res://Utility/PooledScene.gd" id="5_li1jy"]

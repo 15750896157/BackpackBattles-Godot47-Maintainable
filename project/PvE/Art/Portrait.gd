@@ -82,7 +82,7 @@ func _process(delta):
 	position += Vector2((sin(clock * 70.0) * 5.0 * impact + sin(attack_motion * PI) * (18.0 if character.playerId == Character.ID.PLAYER else -18.0)) if not reduced else 0.0, wave - (sin(bounce * PI) * 15.0 if not reduced else 0.0))
 	var height = 450.0 if combat else (420.0 if art_key == "armorer" else 390.0) if Game.state == Game.State.Shop else 430.0
 	if character.playerId == Character.ID.OPPONENT:
-		height = float({"bat":195,"goblin":290,"snake":250,"spider":260,"mummy":350,"lava_snail":230,"moss_golem":330,"hermit_crab":270,"sand_lizard":250,"lava_golem":370,"werewolf":340,"antlion":330,"boss":390,"final_boss":430}.get(art_key,355))
+		height = float({"bat":195,"goblin":290,"snake":250,"mummy":350,"lava_snail":230,"moss_golem":330,"hermit_crab":270,"sand_lizard":250,"lava_golem":370,"werewolf":340,"antlion":330,"boss":390,"final_boss":430}.get(art_key,355))
 		if enemy_art() == "bat": position.y -= 65.0
 		height *= float(appearance.scale)
 	var factor = height / body.texture.get_height()

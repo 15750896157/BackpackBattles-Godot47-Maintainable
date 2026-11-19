@@ -290,7 +290,7 @@ func changeHSizeCursor(cursorTypeHSize):
 	Input.CURSOR_HSIZE, getCursorOffset(cursorTypeHSize))
 
 func getCursorOffset(cursorType) -> Vector2:
-	var offset = Vector2(7, 3) if cursorType < 6 else cursorOffsets[cursorType]
+	var offset=Vector2(5,2) if cursorType<6 else cursorOffsets[cursorType]
 	return offset * (float(scaledCursors[cursorType].get_width())/float(cursors[cursorType].get_width()))
 
 func changeCursorSize(newSize: float):

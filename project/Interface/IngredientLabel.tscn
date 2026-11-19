@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://jdv22jytnu8j"]
 
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="1_8jle2"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="2_kglkq"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="2_kglkq"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_v70tj"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="4_02ja7"]
 

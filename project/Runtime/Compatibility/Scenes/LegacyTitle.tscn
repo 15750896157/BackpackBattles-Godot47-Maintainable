@@ -2,13 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://gsmsgkl7i4v4" path="res://Interface/BackpackButton.png" id="8"]
 
-[ext_resource type="Texture2D" uid="uid://ds31inn503scf" path="res://Assets/Trophy.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Assets/Trophy.png" id="9"]
 
 [ext_resource type="Texture2D" uid="uid://cjoukh2vs0q3u" path="res://Interface/DiceButton_disabled.png" id="18"]
 
-[ext_resource type="FontFile" uid="uid://7qphybp06aru" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="23"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="23"]
 
-[ext_resource type="FontFile" uid="uid://d1xddn4mi0bwc" path="res://Assets/Fonts/Milonga-Regular.ttf" id="31"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="31"]
 
 [ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Assets/Particles/Dust1.png" id="32"]
 
@@ -28,9 +28,9 @@
 
 [ext_resource type="Texture2D" uid="uid://v3uockslbycp" path="res://Assets/TitleScreen/RankedBanner.png" id="65"]
 
-[ext_resource type="Texture2D" uid="uid://c70felyqah1xs" path="res://Assets/Watch.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Assets/Watch.png" id="66"]
 
-[ext_resource type="Texture2D" uid="uid://nv1j54jgc1sg" path="res://Assets/Heart.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Assets/Heart.png" id="67"]
 
 [ext_resource type="Texture2D" uid="uid://co3sdi8hdhdk4" path="res://Assets/TitleScreen/ContinueBanner.png" id="68"]
 
@@ -42,7 +42,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b62ybs0qkmr7b" path="res://Assets/Light/UnrankedBanner_hovered.png" id="72"]
 
-[ext_resource type="Texture2D" uid="uid://cp64dcpcrg2fy" path="res://Assets/shadow.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Assets/shadow.png" id="77"]
 
 [ext_resource type="Texture2D" uid="uid://dlbxd7foyxc15" path="res://Interface/DiceButton.png" id="79"]
 
@@ -74,9 +74,9 @@
 
 [ext_resource type="Texture2D" uid="uid://dq0u43x6u5xxa" path="res://Assets/TitleScreen/DiscordIcon2.png" id="126"]
 
-[ext_resource type="FontFile" uid="uid://b24fe584qaab5" path="res://Assets/Fonts/Localized/NotoSansSC-Regular_.otf" id="128"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="128"]
 
-[ext_resource type="Texture2D" uid="uid://d0eurspyc70lx" path="res://Assets/Trophy_Slot.png" id="129"]
+[ext_resource type="Texture2D" uid="uid://de610uuvae7yc" path="res://Assets/Trophy_Slot.png" id="129"]
 
 [ext_resource type="Texture2D" uid="uid://cysvxr38rbd6j" path="res://Assets/TitleScreen/ChineseWiki_hovered.png" id="130"]
 
@@ -86,7 +86,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dfaktr0xav66w" path="res://Assets/TitleScreen/AdventurerIcon_disabled.png" id="141"]
 
-[ext_resource type="Texture2D" uid="uid://biiqbnun7rhvf" path="res://Assets/Paper1.png" id="147"]
+[ext_resource type="Texture2D" uid="uid://cxh281la1brh" path="res://Assets/Paper1.png" id="147"]
 
 [ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://Interface/ItemLibrary/ItemLibraryButton.png" id="149"]
 

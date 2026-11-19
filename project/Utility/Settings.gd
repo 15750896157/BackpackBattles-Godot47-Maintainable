@@ -139,8 +139,6 @@ func set_software_cursor(value):
 		Game.cursor = Game.Cursor.SOFTWARE_SMALL
 	else:
 		Game.cursor = Game.Cursor.HARDWARE_SMALL
-	Game.lastCursorType = -1
-	Game.call_deferred("recalculateCursor")
 	return value
 
 func set_fps_limit(value):

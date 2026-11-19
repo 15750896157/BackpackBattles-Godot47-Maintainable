@@ -402,7 +402,6 @@ static func ready_deferred(subject: Receiver):
 		subject.splashScreenAnimation.play("FadeOut")
 		subject.sceneAnimation.play("StartOnTitle")
 		subject.playerNodeAnimation.play("Start")
-		Sound.playBGM(Sound.titleBGM, 0, 0)
 		return
 	subject.instanceCharacter(selectedClass)
 
@@ -452,7 +451,6 @@ static func loadArenaRunAndStartOnTitle(subject: Receiver):
 	subject.sceneAnimation.play("StartOnTitle")
 	subject.playerNodeAnimation.play("Start")
 	Util.callDelayed(Sound, "playSound", 1.5, [subject.playerMoveInSound])
-	Sound.playBGM(Sound.titleBGM, 0, 0)
 
 	SteamHelper.updateRichPresence()
 

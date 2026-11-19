@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/NotEnoughGoldLabel.gd" id="1_0y4ya"]
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="2_3cabk"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="3_ali2c"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_ali2c"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_5a1bs"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="5_3l62e"]
 

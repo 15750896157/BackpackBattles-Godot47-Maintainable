@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/ShopOffer.gd" id="1_sc036"]
 [ext_resource type="Texture2D" path="res://Assets/Shop/Pricesign.png" id="2_cq4hr"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_i64c2"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="3_i64c2"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_y5nkl"]
 [ext_resource type="Texture2D" path="res://Assets/Light/ShopLight.png" id="5_f03up"]
 [ext_resource type="Material" path="res://Items/Materials/DistortedLeafs.material" id="6_iuhlw"]
@@ -13,12 +13,12 @@
 [ext_resource type="Script" path="res://Interface/FocusGrabbingButton.gd" id="11_43iw4"]
 [ext_resource type="Texture2D" path="res://Assets/Shop/ReservedTag.png" id="12_3xdwl"]
 [ext_resource type="Texture2D" path="res://Assets/Shop/ReservedTag_front.png" id="13_vgbiu"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/GlassAntiqua-Regular.ttf" id="14_bhp6q"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="14_bhp6q"]
 [ext_resource type="Texture2D" path="res://Assets/Shop/PriceStrikethrough2.png" id="15_rwvf8"]
 [ext_resource type="Texture2D" path="res://Assets/Shop/PriceStrikethrough1.png" id="16_8g7sn"]
 [ext_resource type="Texture2D" path="res://Assets/Shop/Saletag.png" id="17_qb14s"]
 [ext_resource type="Material" path="res://Shader/TextDissolveMaterial.tres" id="18_y8lmb"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="19_63brh"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="19_63brh"]
 [ext_resource type="Material" path="res://Shader/ClassBanner.material" id="20_uleab"]
 [ext_resource type="Texture2D" path="res://Interface/Banner3.png" id="21_2xcen"]
 

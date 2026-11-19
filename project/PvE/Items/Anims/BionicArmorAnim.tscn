@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Texture2D" path="res://Assets/Light/CircleLight.png" id="7_j5oj3"]
+
+[sub_resource type="Animation" id="3"]
+resource_name = "Pulse"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CircleLight:self_modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [0.09, 0.18, 0.09]
+}
+
+[node name="BionicArmorAnim" type="Node2D"]
+[node name="CircleLight" type="Sprite2D" parent="." index="1"]
+modulate = Color(1, 0.329412, 0.470588, 1)
+self_modulate = Color(4, 4, 4, 0.0900229)
+position = Vector2(4.81606e-05, -88.6793)
+scale = Vector2(0.358491, 0.358491)
+texture = ExtResource("7_j5oj3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+autoplay = "Pulse"
+anims/Pulse = SubResource("3")

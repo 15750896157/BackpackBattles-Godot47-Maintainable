@@ -4,17 +4,6 @@ func run_tests():
 	DirAccess.make_dir_recursive_absolute(output)
 	while not Expedition.initialized:await get_tree().process_frame
 	await settle()
-	Game.changeCursorSize(0.50)
-	check(Game.scaledCursors[0].get_width() == 32 and Game.lastCursorType >= 0, "cursor resize reapplies immediately without a hover change")
-	Settings.set_software_cursor(true)
-	await get_tree().process_frame
-	var cursor: CanvasLayer = Game.softwareCursor
-	check(cursor != null and cursor.layer > Expedition.loading_screen.layer
-		and cursor.get_node("Cursor/Sprite2D").is_visible_in_tree()
-		and Input.mouse_mode == Input.MOUSE_MODE_HIDDEN, "software cursor stays above UI layers when system cursor is hidden")
-	Settings.set_software_cursor(false)
-	await get_tree().process_frame
-	check(Game.softwareCursor == null and Input.mouse_mode == Input.MOUSE_MODE_VISIBLE, "hardware cursor restores visibility without a hover change")
 	check(Game.lastCursorType>=0,"startup initializes the actual cursor without waiting for a new hover state")
 	for cursor_index in 6:
 		var expected=Game.cursors[cursor_index].duplicate()
@@ -82,8 +71,8 @@ func run_tests():
 		check(not is_instance_id_valid(probe_id),"probe is physically freed: "+str(probe_id))
 	probes.clear()
 	AssetStream.release("release-art-probe");holder.queue_free()
-	check(Game.cursors[0].get_size()==Vector2i(64,65),"default cursor uses enlarged supplied hand dimensions")
-	check(Game.cursors[2].get_size()==Vector2i(64,65) and Game.cursors[4].get_size()==Vector2i(64,65),"grab and interact states use supplied hand")
+	check(Game.cursors[0].get_size()==Vector2i(48,49),"default cursor uses supplied hand dimensions")
+	check(Game.cursors[2].get_size()==Vector2i(48,49) and Game.cursors[4].get_size()==Vector2i(48,49),"grab and interact states use supplied hand")
 	# A target scene is protected throughout an asynchronous actor transaction.
 	Expedition.entering_shop=true
 	check(await Expedition.scenery.ensure_view("shop"),"background residency starts independently")

@@ -41,7 +41,7 @@ func show_page():
 	REF.text(root,owner.t("difficulty."+runs.difficulty+".name")+"  ›",Rect2(221,582,205,36),21,Color("f6ca7e"))
 	REF.zone(root,Rect2(218,577,212,52),func():
 		var ids = levels.map(func(row):return row.id); runs.difficulty = ids[(ids.find(runs.difficulty)+1)%ids.size()]; show_page(),ui.words("切换难度","Change difficulty")).name = "ChooseDifficulty"
-	owner.focus_popup()
+	REF.fade_in(root)
 func turn_role(direction: int):
 	runs.role = ROLES[posmod(ROLES.find(runs.role)+direction,ROLES.size())]
 	runs.loadout = ""; show_page()

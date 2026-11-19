@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/Combat/BlockHud.gd" id="1_6l4y0"]
 [ext_resource type="Texture2D" path="res://Assets/Buffs/Block.png" id="2_7p6k3"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_d7jot"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="3_d7jot"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_bvdpm"]
 [ext_resource type="Script" path="res://Interface/NonLocalized_KeepFont.gd" id="5_1wtyw"]
 [ext_resource type="Script" path="res://Compatibility/LegacyTween.gd" id="6_y717e"]

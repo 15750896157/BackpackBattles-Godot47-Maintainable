@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Interface/BoughtNothingWarning.gd" id="1_yxsgs"]
 [ext_resource type="Texture2D" path="res://Interface/Options/OptionsSheet.png" id="2_e278x"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_r2g5l"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="3_r2g5l"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_f6k6p"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="5_qjhci"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="5_qjhci"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="6_3mxyw"]
 [ext_resource type="FontVariation" path="res://Interface/Options/OptionsFont.tres" id="7_qs68m"]
 [ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="8_3mato"]

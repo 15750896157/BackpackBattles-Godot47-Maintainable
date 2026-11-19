@@ -12,7 +12,7 @@ func portrait_path(node:Dictionary)->String:
 func portrait(node:Dictionary)->Texture2D:
 	return load(portrait_path(node))
 func choose_route():
-	if not owner.flow.run.get("route_candidates", []).is_empty():
+	if owner.db.release_run(owner.flow.run) or bool(owner.flow.run.get("route_pending",false)):
 		if owner.native_routes != null:
 			_open_editable_route()
 		else:
@@ -50,7 +50,7 @@ func show_page(node:Dictionary={},phase:int=1):
 	if not owner.active:owner.show_codex();return
 	var selected=node if not node.is_empty() else owner.flow.run.get("current_node",{})
 	if selected.is_empty() and not owner.flow.run.get("route_candidates",[]).is_empty():selected=owner.flow.run.route_candidates[0]
-	if not selected.is_empty() and (str(selected.get("type","")).ends_with("combat") or selected.get("type","") == "boss"):
+	if owner.db.release_run(owner.flow.run) and not selected.is_empty() and (str(selected.get("type","")).ends_with("combat") or selected.get("type","") == "boss"):
 		preload("res://PvE/UI/EnemyIntelLayout.gd").show_page(self,selected,phase)
 		return
 	ui.open("INTEL",ui.words("敌情与路线","Journey"))

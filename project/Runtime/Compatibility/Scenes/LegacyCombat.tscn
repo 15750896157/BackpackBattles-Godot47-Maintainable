@@ -2,29 +2,29 @@
 
 [ext_resource type="Texture2D" uid="uid://28a83p40d7ft" path="res://Assets/Particles/Sparkles.png" id="3"]
 
-[ext_resource type="Texture2D" uid="uid://ds31inn503scf" path="res://Assets/Trophy.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Assets/Trophy.png" id="9"]
 
 [ext_resource type="Script" uid="uid://j21gsh3u6rb7" path="res://Interface/CombatTimer/CombatTimer.gd" id="15"]
 
-[ext_resource type="FontFile" uid="uid://dilwkrhbn5hai" path="res://Assets/Fonts/GlassAntiqua-Regular.ttf" id="20"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="20"]
 
-[ext_resource type="FontFile" uid="uid://7qphybp06aru" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="23"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="23"]
 
-[ext_resource type="FontFile" uid="uid://b5cgwoh27485q" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="27"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="27"]
 
-[ext_resource type="Texture2D" uid="uid://op4wcjuur5j2" path="res://Assets/RedBanner.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://chegnxuph0hht" path="res://Assets/RedBanner.png" id="28"]
 
 [ext_resource type="Texture2D" uid="uid://cudchn161hi6e" path="res://Interface/CombatTimer/CombatSpeed_grabber_hovered.png" id="29"]
 
-[ext_resource type="FontFile" uid="uid://d1xddn4mi0bwc" path="res://Assets/Fonts/Milonga-Regular.ttf" id="31"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="31"]
 
 [ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Assets/Particles/Dust1.png" id="32"]
 
-[ext_resource type="Texture2D" uid="uid://cfvdgj7uit3ch" path="res://Assets/BrokenFanfare.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://xnux6lseawe7" path="res://Assets/BrokenFanfare.png" id="41"]
 
 [ext_resource type="Texture2D" uid="uid://blcodc6wmmts4" path="res://Interface/Lobbies/ResultsPanel.png" id="45"]
 
-[ext_resource type="Texture2D" uid="uid://d1mcg3yslb0j" path="res://Assets/BlueBanner.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://6w1urhw50qyb" path="res://Assets/BlueBanner.png" id="52"]
 
 [ext_resource type="RichTextEffect" path="res://Utility/Jump.tres" id="53"]
 
@@ -42,9 +42,9 @@
 
 [ext_resource type="Texture2D" uid="uid://cc1wq2jj5755n" path="res://Interface/CombatTimer/CombatSpeed_fast.png" id="60"]
 
-[ext_resource type="Texture2D" uid="uid://c70felyqah1xs" path="res://Assets/Watch.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Assets/Watch.png" id="66"]
 
-[ext_resource type="Texture2D" uid="uid://nv1j54jgc1sg" path="res://Assets/Heart.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Assets/Heart.png" id="67"]
 
 [ext_resource type="PackedScene" path="res://Interface/Trophy.tscn" id="73"]
 
@@ -66,9 +66,9 @@
 
 [ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Assets/Particles/Spot1.png" id="95"]
 
-[ext_resource type="Texture2D" uid="uid://d3i88u06pmpj3" path="res://Assets/PinkBanner.png" id="97"]
+[ext_resource type="Texture2D" uid="uid://cdxw434t1g1yo" path="res://Assets/PinkBanner.png" id="97"]
 
-[ext_resource type="Texture2D" uid="uid://cyt5avebpw0ro" path="res://Assets/Banner3.png" id="98"]
+[ext_resource type="Texture2D" uid="uid://cl226yx2ut7mg" path="res://Assets/Banner3.png" id="98"]
 
 [ext_resource type="Texture2D" uid="uid://4wis32njk0b" path="res://Assets/Particles/Sparkles_gold.png" id="101"]
 
@@ -116,11 +116,11 @@
 
 [ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Utility/LocalizedControl.gd" id="182"]
 
-[ext_resource type="Texture2D" uid="uid://cr40qjy7g2x21" path="res://Assets/SurvivalSkull.png" id="188"]
+[ext_resource type="Texture2D" uid="uid://cbde3uxf3ijj" path="res://Assets/SurvivalSkull.png" id="188"]
 
-[ext_resource type="Texture2D" uid="uid://de5b0asp8epi0" path="res://Assets/SmallBlueBanner.png" id="189"]
+[ext_resource type="Texture2D" uid="uid://bupksyt64hjpq" path="res://Assets/SmallBlueBanner.png" id="189"]
 
-[ext_resource type="Texture2D" uid="uid://bmedq81qw3ort" path="res://Assets/SurvivalBones.png" id="190"]
+[ext_resource type="Texture2D" uid="uid://cmor430cqibbh" path="res://Assets/SurvivalBones.png" id="190"]
 
 [ext_resource type="PackedScene" path="res://Interface/TrophyParticles.tscn" id="209"]
 

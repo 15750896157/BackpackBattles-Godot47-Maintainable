@@ -87,7 +87,7 @@ func initialize_native():
 	# LegacyFont's compatibility binder forces its stored 24px size onto every
 	# control. A native font variation keeps each reference label's authored size.
 	ui_font = FontVariation.new()
-	ui_font.base_font = load("res://Assets/Fonts/Localized/NotoSansSC-Regular_.otf")
+	ui_font.base_font = load("res://Assets/Fonts/YaHei-Regular.ttc")
 	ui_font.variation_embolden = 0.5
 	while not is_instance_valid(loading_screen.root):await get_tree().process_frame
 	preferences = load("res://PvE/NativePreferences.gd").new(self)
@@ -245,9 +245,6 @@ func close_popup():
 	AssetStream.release_metadata()
 
 func view_return():
-	if current_page == "RUN_RESULT":
-		return_to_title()
-		return
 	close_popup()
 	render_state(true)
 
@@ -443,7 +440,6 @@ func activate_native_combat():
 	Game.pve_prepare_combat()
 	Game.PLAYER.set_physics_process(false)
 	Game.OPPONENT.set_physics_process(false)
-	Sound.playBGM(Sound.battleBGM, 2)
 	Sound.playSound(load("res://Assets/Sound/Drumroll.ogg"))
 	native_battle_ready = not restoring_result
 	_apply_timeline()
@@ -702,7 +698,6 @@ func update_tutorial_hint():
 	if tutorial_hint != null: tutorial_hint.text = ""; tutorial_hint.hide()
 
 func show_routes():
-	Sound.playBGM(Sound.shopBGM)
 	menus.journey.choose_route()
 
 func show_enemy(node: Dictionary):

@@ -13,8 +13,8 @@ static func _ready(subject: Receiver):
 
 	if not OS.has_feature("web"):
 
-		subject.chineseFallbackFont = load("res://Assets/Fonts/Localized/ChineseFallbackFont.tres")
-		subject.chineseFont1 = load("res://Assets/Fonts/Localized/NotoSansSC-Regular_.otf")
+		subject.chineseFont1 = load("res://Assets/Fonts/YaHei-Regular.ttc")
+		subject.chineseFallbackFont = subject.chineseFont1
 		subject.chineseFont2 = subject.chineseFont1
 		subject.japaneseFallbackFont = subject.chineseFallbackFont
 		subject.japaneseFont1 = subject.chineseFont1

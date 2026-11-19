@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/Chainsaw0.png" id="3_ij5bs"]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/Chainsaw1.png" id="5_35utk"]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/Chainsaw2.png" id="6_bg35o"]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/Chainsaw3.png" id="7_5x5sf"]
+
+[sub_resource type="Animation" id="12"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_ij5bs")]
+}
+[sub_resource type="Animation" id="13"]
+resource_name = "Saw"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_ij5bs"), ExtResource("5_35utk"), ExtResource("6_bg35o"), ExtResource("7_5x5sf")]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"setSawTexture"
+}, {
+"args": [],
+"method": &"setSawTexture"
+}, {
+"args": [],
+"method": &"setSawTexture"
+}, {
+"args": [],
+"method": &"setSawTexture"
+}]
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" index="1"]
+playback_speed = 8.0
+anims/RESET = SubResource("12")
+anims/Saw = SubResource("13")

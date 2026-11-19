@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/ThorsHammer_active.png" id="4_mu077"]
+
+[sub_resource type="Animation" id="12"]
+resource_name = "Flash"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("WithLight:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[node name="ThorsHammerAnim" type="Node2D"]
+use_parent_material = true
+[node name="WithLight" type="Sprite2D" parent="." index="0"]
+use_parent_material = true
+texture = ExtResource("4_mu077")
+
+[node name="Idle" type="AnimationPlayer" parent="." index="2"]
+autoplay = "Flash"
+playback_speed = 0.2
+anims/Flash = SubResource("12")

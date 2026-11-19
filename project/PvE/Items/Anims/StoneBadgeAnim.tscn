@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Material" path="res://Shader/AdditiveCanvasItemMaterial.tres" id="7_y106h"]
+[ext_resource type="Texture2D" path="res://Assets/Light/CircleLight.png" id="8_8uop4"]
+
+[sub_resource type="Animation" id="5"]
+resource_name = "Pulse"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Glow:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 0.682353), Color(1, 1, 1, 1)]
+}
+
+[node name="StoneBadgeAnim" type="Node2D"]
+[node name="Glow" type="Sprite2D" parent="." index="1"]
+modulate = Color(1, 1, 1, 0.682353)
+self_modulate = Color(0.454902, 0.454902, 0.454902, 0.835294)
+material = ExtResource("7_y106h")
+scale = Vector2(0.6475, 0.6475)
+texture = ExtResource("8_8uop4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+autoplay = "Pulse"
+anims/Pulse = SubResource("5")

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d161w751p85oo"]
 
 [ext_resource type="Script" path="res://Interface/Inventory/CraftingLockLabel.gd" id="1_xdeu5"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="2_kbevt"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="2_kbevt"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_ok4nr"]
 
 [sub_resource type="FontVariation" id="5"]

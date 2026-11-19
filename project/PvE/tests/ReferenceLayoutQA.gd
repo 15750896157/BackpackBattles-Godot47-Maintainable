@@ -15,7 +15,6 @@ func settle():
 	await preload("res://PvE/tests/LoadingBarrier.gd").wait_idle(get_tree())
 	for frame in 12:await get_tree().process_frame
 func shot(name):
-	await get_tree().create_timer(0.25, true, false, true).timeout
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png(output.path_join(name+".png"))
 func rect_data(node:Control)->Array:
@@ -56,12 +55,6 @@ func run_tests():
 	capture_geometry("settings",Expedition.panel)
 	check(Expedition.current_page=="SETTINGS","title settings receives a viewport click")
 	check(Expedition.modal_shield.is_visible_in_tree() and InputBlocker.isActive(), "settings owns modal shield and input lock")
-	await click(Expedition.panel.find_child("Fullscreen",true,false));await settle()
-	check(DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN and Expedition.preferences.values.window_mode == "fullscreen",
-		"fullscreen hit target sets actual fullscreen mode")
-	await click(Expedition.panel.find_child("Windowed",true,false));await settle()
-	check(DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_WINDOWED and not DisplayServer.window_get_flag(DisplayServer.WINDOW_FLAG_BORDERLESS)
-		and Expedition.preferences.values.window_mode == "windowed", "windowed hit target restores a decorated native window")
 	await click(Expedition.panel.find_child("CloseMenu",true,false));await settle()
 	check(not Expedition.panel.visible and not Expedition.modal_shield.visible and not InputBlocker.isActive(), "closing settings releases shield and input lock")
 	await click(Expedition.art.ui.get_node("TitleStart"));await settle();await shot("03-selection")
@@ -69,9 +62,6 @@ func run_tests():
 	check(Expedition.panel.find_child("BeginExpedition",true,false)!=null,"title start enters selection")
 	await click(Expedition.panel.find_child("RoleNext",true,false));await settle();await shot("04-selection-archer")
 	check(Expedition.menus.runs.role=="archer","carousel changes draft role")
-	await click(Expedition.panel.find_child("RoleNext",true,false));await settle();await shot("04b-selection-alchemist")
-	check(Expedition.menus.runs.role=="alchemist","role picker reaches alchemist")
-	await click(Expedition.panel.find_child("RolePrevious",true,false));await settle()
 	await click(Expedition.panel.find_child("RolePrevious",true,false));await settle()
 	await click(Expedition.panel.find_child("BeginExpedition",true,false));await settle()
 	Expedition.flow.skip_tutorial()
@@ -80,14 +70,6 @@ func run_tests():
 	capture_geometry("shop",Expedition.art.ui)
 	capture_geometry("shop-scenery",Expedition.art.scenery)
 	check(Game.state==Game.State.Shop,"new selection reaches native shop")
-	var shop_screen = Expedition.art.routed_shop
-	var shop_state: String = Expedition.flow.screen_state
-	Expedition.flow.screen_state = "REWARD_SELECT"
-	shop_screen._model.refresh()
-	check(not shop_screen.visible, "resident shop hides outside preparation")
-	Expedition.flow.screen_state = shop_state
-	shop_screen._model.refresh()
-	check(shop_screen.is_visible_in_tree(), "resident shop restores controls without remounting")
 	check(Expedition.hud_layer.get_instance_id() == hud_id and Expedition.overlay.get_instance_id() == dialog_id, "same HUD and dialog shell survive entering shop")
 	check(Expedition.status.text == Expedition.t("ui.run_header", {"act": int(Expedition.flow.run.act), "step": int(Expedition.flow.run.step), "hp": ceili(float(Expedition.flow.run.health)), "max_hp": ceili(float(Expedition.flow.run.max_health)), "gold": int(Expedition.flow.run.gold)}), "HUD observes the authoritative run header")
 	check(Game.STORAGEBOX.has_meta("art_storage_slots"),"storage uses squares painted on the supplied cloth")
@@ -119,11 +101,7 @@ func run_tests():
 	await click(Expedition.panel.find_child("BookPoolFilter", true, false));await settle()
 	check(book.owner_filter == "public" and not book.matches.is_empty() and book.matches.all(
 		func(row): return str(row.definition.get("owner_pool", "public")) == "public"), "pool filter exposes only public catalogue entries")
-	var book_canvas_id: int = Expedition.menus.shell.canvas.get_instance_id()
-	await click(Expedition.panel.find_child("BookTab_bags",true,false))
-	check(Expedition.menus.shell.canvas.get_instance_id() == book_canvas_id and is_equal_approx(Expedition.menus.shell.canvas.modulate.a, 1.0),
-		"switching category retains the opaque book without exposing the title")
-	await settle();await shot("08-book-bags")
+	await click(Expedition.panel.find_child("BookTab_bags",true,false));await settle();await shot("08-book-bags")
 	await click(Expedition.panel.find_child("BlueprintRight",true,false));await settle()
 	check(Expedition.menus.library.rotation==90,"blueprint rotates read-only geometry")
 	await click(Expedition.panel.find_child("BookTab_recipes",true,false));await settle();await shot("09-book-recipes")

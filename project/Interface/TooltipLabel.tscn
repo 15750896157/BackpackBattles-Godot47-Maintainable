@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d4eixvxs3atji"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="1_wm3vm"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="1_wm3vm"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="2_qa0ko"]
 [ext_resource type="Script" path="res://Interface/TooltipLabel.gd" id="3_0psdc"]
 

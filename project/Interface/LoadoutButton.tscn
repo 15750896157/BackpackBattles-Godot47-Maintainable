@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://r6r8kx140drr"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="1_85knd"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="1_85knd"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="2_0f0m6"]
 [ext_resource type="Texture2D" path="res://Interface/OptionButton_on_disabled.png" id="3_kanhw"]
 [ext_resource type="Texture2D" path="res://Interface/OptionButton_on.png" id="4_gqfqi"]

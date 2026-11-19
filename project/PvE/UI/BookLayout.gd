@@ -35,34 +35,20 @@ func show_page(section:String=""):
 	if not section.is_empty() and section!=category:
 		category=section;page=0;selection="";rotation=0;only_available=false;owner_filter="all";rarity_filter="all";tag_filter="all"
 	owner.detail_views.category=category
-	var page_kind := "CRAFTING" if category=="recipes" and can_craft() else "CODEX"
-	# The book frame is the same on every tab. Keep it opaque while changing pages.
-	if is_instance_valid(root) and root == ui.canvas and root.is_inside_tree() and is_instance_valid(body):
-		owner.current_page = page_kind
-		update_tabs()
-		populate()
-		owner.focus_popup()
-		return
-	root=ui.open_canvas(page_kind,ui.words("图鉴与合成","Collection & crafting"))
+	root=ui.open_canvas("CRAFTING" if category=="recipes" and can_craft() else "CODEX",ui.words("图鉴与合成","Collection & crafting"))
 	var ticket=owner.popup_epoch
 	if not await AssetStream.prepare(REF.paths(KEYS),"popup") or ticket!=owner.popup_epoch:return
 	REF.picture(root,"camp",Rect2(0,0,1920,1080),true)
 	REF.picture(root,"book_cover",Rect2(127,80,1438,960),true)
 	REF.picture(root,"book_pages",Rect2(163,116,1364,885),true)
 	REF.button(root,"close",Rect2(1668,73,92,96),owner.view_return).name="CloseMenu"
-	var colors=["blue","purple","gold","red","green","blue","gold"]
+	var colors=["blue","gold","green","red","purple","blue","gold"]
 	for index in CATEGORIES.size():
 		var entry=CATEGORIES[index];var tab=REF.button(root,"bookmark_"+colors[index],Rect2(1505,148+index*82,168,72),func():show_page(entry[0]),ui.words(entry[1],entry[2]),24)
 		tab.name="BookTab_"+entry[0];tab.modulate=Color.WHITE if category==entry[0] else Color(0.78,0.78,0.78)
 	REF.text(root,ui.words("冒险者造物与异闻手记","Adventurer's field journal"),Rect2(206,142,620,52),31)
 	body=Control.new();body.name="BookSpread";root.add_child(body)
-	populate()
-	owner.focus_popup()
-
-func update_tabs() -> void:
-	for entry in CATEGORIES:
-		var tab: Control = root.get_node("BookTab_" + entry[0])
-		tab.modulate = Color.WHITE if category == entry[0] else Color(0.78,0.78,0.78)
+	populate();REF.fade_in(root)
 func can_craft() -> bool: return model.snapshot().can_craft
 func cycle_filter(key:String,values:Array):
 	var value=get(key);set(key,values[(values.find(value)+1)%values.size()]);page=0;selection="";populate()
@@ -119,9 +105,6 @@ func populate():
 		var title=REF.text(card,entry.title,Rect2(16,48,410 if use_rows else 272,39),25)
 		title.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 		if use_rows: title.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
-		if category == "characters":
-			title.hide()
-			continue
 		REF.text(card, model.subtitle(category, entry), Rect2(12,91 if use_rows else 241,414 if use_rows else 280,32),20,Color("70502f")).horizontal_alignment=HORIZONTAL_ALIGNMENT_LEFT
 	page_buttons(body, result.count, populate)
 	if not selected.is_empty():show_detail(selected)
@@ -134,7 +117,7 @@ func filters():
 	var context := model.snapshot()
 	var pools: Array = context.pools
 	filter_button((ui.words("全部归属","All pools") if owner_filter=="all" else ui.words("公共","Public") if owner_filter=="public" else owner.t("character."+owner_filter+".name"))+" ›",Rect2(402,207,210,50),func():cycle_filter("owner_filter",pools),"BookPoolFilter")
-	filter_button(ui.words("稀有度","Rarity")+" ›" if rarity_filter=="all" else owner.t("rarity."+rarity_filter+".name")+" ›",Rect2(621,207,206,50),func():cycle_filter("rarity_filter",["all","common","rare","legendary"]),"BookRarityFilter")
+	filter_button(ui.words("稀有度","Rarity")+" ›" if rarity_filter=="all" else owner.t("rarity."+rarity_filter)+" ›",Rect2(621,207,206,50),func():cycle_filter("rarity_filter",["all","common","rare","legendary"]),"BookRarityFilter")
 	var tag_ids: Array = context.tags
 	filter_button((ui.words("全部标签","All tags") if tag_filter=="all" else owner.detail_views.tag_name(tag_filter))+"  ›",Rect2(207,261,620,45),func():cycle_filter("tag_filter",tag_ids),"BookTagFilter")
 	if category=="recipes" and can_craft():
@@ -150,14 +133,15 @@ func show_detail(entry:Dictionary):
 		var portrait: TextureRect = ui.picture(body,owner.menus.journey.portrait(enemy_node(entry.data)),Vector2.ZERO)
 		portrait.position=Vector2(1002,233);portrait.size=Vector2(389,371)
 		if not entry.known:portrait.modulate=Color(0.12,0.10,0.08)
-		REF.text(body,entry.title,Rect2(922,600,530,54),32)
+		REF.picture(body,"detail_title",Rect2(913,181,400,54),true)
+		REF.text(body,entry.title,Rect2(922,181,390,54),32)
 		REF.picture(body,"hero_description",Rect2(924,711,553,151),true)
-		detail=make_column(Rect2(937,724,524,204))
+		detail=make_column(Rect2(937,724,524,123))
 		if entry.known:
 			var snapshot: Dictionary = owner.detail_views.enemy_snapshot(enemy_node(entry.data))
 			if snapshot.get("ok",false):REF.text(body,"HP  %s   ◆  %s" % [snapshot.base_stats.max_health,snapshot.base_stats.stamina_max],Rect2(932,650,533,50),25)
-			ui.text_pages(detail,owner.menus.journey.ability_text(enemy_node(entry.data)),514,172,21)
-		else:ui.text_pages(detail,ui.words("在远征中遭遇后记录","Recorded after an encounter"),514,172,24)
+			ui.text_pages(detail,owner.menus.journey.ability_text(enemy_node(entry.data)),514,118,21)
+		else:ui.text_pages(detail,ui.words("在远征中遭遇后记录","Recorded after an encounter"),514,118,24)
 		return
 	if category=="characters":
 		var portrait: TextureRect = ui.picture(body,null,Vector2.ZERO)
@@ -174,12 +158,8 @@ func show_detail(entry:Dictionary):
 	var projected := model.detail(category, entry, rotation)
 	if category=="recipes":
 		REF.picture(body,"recipe_detail",Rect2(901,282,593,297),true)
-		var tier: int = int(entry.data.get("tier", 0))
-		if entry.known and tier > 0:
-			REF.picture(body,"detail_title",Rect2(923,216,552,46),true)
-			REF.text(body,ui.words("%d 阶合成配方","Tier %d recipe") % tier,Rect2(933,216,532,46),24)
-		detail=make_column(Rect2(927,616,565,286))
-		ui.text_pages(detail,projected.description,555,270,23)
+		detail=make_column(Rect2(927,616,565,230))
+		ui.text_pages(detail,projected.description,555,210,23)
 		if entry.known:
 			craft_detail(entry,projected.ingredients)
 		return
@@ -192,23 +172,20 @@ func show_detail(entry:Dictionary):
 	REF.text(body,str(rotation)+"°",Rect2(1012,605,150,48),23)
 	REF.button(body,"next",Rect2(1176,605,62,48),func():rotation=posmod(rotation+90,360);populate()).name="BlueprintRight"
 	detail=make_column(Rect2(927,723,565,160))
-	ui.text_pages(detail, projected.description, 555, 172, 23 if entry.known else 24)
+	ui.text_pages(detail, projected.description, 555, 132 if entry.known else 150, 23 if entry.known else 24)
 
 func draw_badge(card: Control, entry: Dictionary) -> void:
 	var caption: String
 	var key := "badge_gold"
 	if category == "enemies":
 		var boss: bool = entry.data.has("persistent_rule_id")
-		var elite: bool = str(entry.data.get("node_type","")) == "elite"
-		key = "badge_red" if boss else "badge_purple" if elite else "badge_blue"
-		caption = ui.words("首领","Boss") if boss else ui.words("精英","Elite") if elite else ui.words("敌人","Enemy")
+		key = "badge_red" if boss else "badge_blue"
+		caption = ui.words("首领","Boss") if boss else ui.words("敌人","Enemy")
 	elif category == "characters":
-		var role: String = str(entry.id)
-		key = str({"armorer":"badge_purple", "archer":"badge_gold", "alchemist":"badge_red"}.get(role, "badge_gold"))
-		caption = entry.title
+		caption = ui.words("英雄","Hero")
 	else:
 		var rarity := str(entry.definition.get("rarity","common"))
-		key = str(REF.RARITY_BADGES.get(rarity, "badge_green"))
+		key = "badge_green" if not entry.candidate.is_empty() else "badge_purple" if rarity == "legendary" else "badge_blue" if rarity == "rare" else "badge_gold"
 		caption = owner.t("rarity."+rarity+".name")
 	var extent := Rect2(13,10,116,37)
 	REF.picture(card,key,extent,true)
@@ -221,11 +198,6 @@ func craft_detail(entry: Dictionary, ingredients: Array):
 	var card_width := 540.0 / ids.size() - 12.0
 	for index in ids.size():
 		var card := REF.picture(body,"result_reward_paper",Rect2(931+index*(card_width+12),282,card_width,276),true)
-		if index > 0:
-			var separator := "=" if index == ingredients.size() else "+"
-			var symbol := REF.text(body,separator,Rect2(card.position.x-18,390,24,45),30)
-			symbol.z_index = 1
-			symbol.name = "RecipeOperator%d" % index
 		var icon: TextureRect = ui.picture(card,null,Vector2.ZERO)
 		icon.position = Vector2(9,51)
 		icon.size = Vector2(card_width-18,135)
@@ -250,10 +222,7 @@ func craft_detail(entry: Dictionary, ingredients: Array):
 	craft.name = "BookConfirmCraft"
 	craft.disabled = not bool(candidate.get("preview_ok", false))
 
-func enemy_node(data:Dictionary)->Dictionary:
-	var boss: bool = data.has("persistent_rule_id")
-	var elite: bool = str(data.get("node_type","")) == "elite"
-	return {"type":"boss" if boss else "elite_combat" if elite else "normal_combat", "boss_id":data.id if boss else "", "enemy_id":data.id,"affix_id":data.get("affix_id","")}
+func enemy_node(data:Dictionary)->Dictionary:return {"type":"boss" if data.has("persistent_rule_id") else "normal_combat","boss_id":data.id if data.has("persistent_rule_id") else "","enemy_id":data.id,"affix_id":data.get("affix_id","")}
 func other_pages():
 	listing = make_column(Rect2(217,281,600,580))
 	detail = make_column(Rect2(927,268,565,580))

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/SliderProperty.gd" id="1_vttpq"]
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="2_yx2c7"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="3_uq4yu"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_uq4yu"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_70p4i"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="5_2rckq"]
 [ext_resource type="Texture2D" path="res://Interface/Tooltips/Divider3_Godly.png" id="6_fynn2"]

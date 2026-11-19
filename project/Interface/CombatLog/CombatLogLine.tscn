@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://soq75aj3fsj1"]
 
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="1_s6jbq"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="2_oxybh"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="2_oxybh"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_vl11s"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="4_lpy4l"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="4_lpy4l"]
 [ext_resource type="StyleBox" path="res://Interface/CombatLog/LogLinePlayerStylebox_connected.tres" id="5_5w17k"]
 [ext_resource type="Script" path="res://Interface/CombatLog/CombatLogLine.gd" id="6_sos8m"]
 

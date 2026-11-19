@@ -63,14 +63,9 @@ static func status_path(key:String)->String:
 static func shop_actor_path(key:String)->String:
 	return ROOT+"shop/shop_hero_"+str({"armorer":"warrior","archer":"archer","alchemist":"mage"}.get(key,"warrior"))+".png"
 static func enemy_key(node:Dictionary)->String:
-	if node.get("type","")=="boss":
-		var boss = Expedition.db.get_row("bosses",str(node.get("boss_id","")))
-		var chapter = int(str(boss.get("act_id","act_"+str(Expedition.flow.run.get("act",1)))).trim_prefix("act_"))
-		return "final_boss" if chapter>=3 else "mummy" if chapter==2 else "boss"
+	if node.get("type","")=="boss":return "final_boss" if int(Expedition.flow.run.get("act",1))>=3 else "boss"
 	var enemy=Expedition.db.get_row("enemy_builds",str(node.get("enemy_id","")))
-	var archetype=str(enemy.get("archetype_id",""))
-	# Catalogue and route previews can refer to a different chapter than the run.
-	var chapter=int(str(enemy.get("act_id","act_"+str(Expedition.flow.run.get("act",1)))).trim_prefix("act_"))
+	var archetype=str(enemy.get("archetype_id",""));var chapter=int(Expedition.flow.run.get("act",1))
 	match archetype:
 		"burning_bastion":return "fire_knight"
 		"quick_striker":return "bat" if chapter==1 else "werewolf"
@@ -88,8 +83,7 @@ static func enemy_variant(node:Dictionary)->Dictionary:
 	# data, global RNG, contour or facing direction.
 	var enemy=Expedition.db.get_row("enemy_builds",str(node.get("enemy_id","")))
 	var archetype=str(enemy.get("archetype_id",""))
-	var boss=Expedition.db.get_row("bosses",str(node.get("boss_id","")))
-	if node.get("type","")=="boss" and str(boss.get("act_id",""))=="act_2":return {"tint":Color(0.84,0.93,1.0),"scale":1.10}
+	if node.get("type","")=="boss" and int(Expedition.flow.run.get("act",1))==2:return {"tint":Color(0.84,0.93,1.0),"scale":1.10}
 	if archetype=="field_mender":return {"tint":Color(1.0,0.91,0.78),"scale":1.08}
 	if archetype=="counter_wall":return {"tint":Color(0.84,0.91,1.0),"scale":0.92}
 	if archetype=="toxic_guard":return {"tint":Color(0.85,0.93,0.81),"scale":1.08}

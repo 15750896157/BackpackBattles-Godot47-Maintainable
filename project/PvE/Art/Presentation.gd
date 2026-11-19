@@ -180,7 +180,7 @@ func texture(key: String) -> Texture2D:
 
 func _art_path(key: String) -> String:
 	if key == "class_badge": return "res://Art/Reference20261102/class_badge.png"
-	if key == "coin": return CATALOG.ui_path("route_coin")
+	if key == "coin": return "res://Art/Reference20261102/coin.png"
 	if key in ["shelf_top","shelf_bottom"]:return CATALOG.ui_path("shelf")
 	if key in ["stamina_regen","cooldown"]:return CATALOG.status_path(key)
 	var supplied=CATALOG.ui_path(key)
@@ -328,12 +328,9 @@ func _layout_shop():
 		Game.STORAGEBOX.set_meta("art_slots_reset", true)
 	Game.STORAGEBOX.pve_refresh_slots(Expedition.flow.run.get("build", {"storage_capacity": 4}))
 	if Game.STORAGEBOX.has_meta("art_storage_slots"):
-		var positions: Dictionary = Expedition.flow.placement.storage_positions(Expedition.flow.run.get("build", {}))
-		for item in Game.STORAGEBOX.items:
+		for index in Game.STORAGEBOX.items.size():
+			var item=Game.STORAGEBOX.items[index]
 			if not is_instance_valid(item) or item.dragged:continue
-			var uid := str(item.get_meta("pve_uid", ""))
-			if not positions.has(uid): continue
-			var index: int = positions[uid]
 			var size=Game.STORAGEBOX.pve_slot_rect(index).size
 			if item.get_meta("cloth_slot_size",Vector2.ZERO)!=size:
 				Expedition.bridge.fit_native_visual(item,true);item.set_meta("cloth_slot_size",size)

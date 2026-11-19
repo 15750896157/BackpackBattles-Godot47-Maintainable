@@ -1,8 +1,7 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://Assets/Decoration/UmbrellaBasket.gd")
 
-static func _on_UmbrellaBasket_button_down(subject: Receiver):
+static func _on_UmbrellaBasket_button_down(subject):
 	var remainingTime = 0
 	if subject.animation.is_playing():
 		remainingTime = subject.animation.current_animation_length - subject.animation.current_animation_position
@@ -16,7 +15,7 @@ static func _on_UmbrellaBasket_button_down(subject: Receiver):
 	subject.state = (subject.state + 1) % 2
 	Sound.playSound(subject.sound, - 10)
 
-static func _gui_input(subject: Receiver, event):
+static func _gui_input(subject, event):
 	if Util.isRightClick(event) and not subject.broken:
 		subject.broken = true
 		subject.animation.stop()

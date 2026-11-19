@@ -13,7 +13,7 @@ const rankUpSound = preload("res://Assets/Sound/RankUp.ogg")
 const rankUpSound2 = preload("res://Assets/Sound/RankUp2.ogg")
 const rankDownSound = preload("res://Assets/Sound/RankDown.ogg")
 const combatStartSound = preload("res://Assets/Sound/Drumroll.ogg")
-const clipMaterial = preload("res://Shader/MaskClip.material")
+const clipMaterial = preload("res://Shader/MaskClip.tres")
 const eatTrophyParticles = preload("res://Interface/Combat/EatTrophyParticles.tscn")
 const chestnutLandSound = preload("res://Assets/Sound/Impact.ogg")
 const swordClashSound = preload("res://Assets/Sound/SwordClash.mp3")
@@ -387,4 +387,3 @@ func playCloseSound():
 
 func onCursorWarp():
 	return load("res://Runtime/Behavior/Core/CombatBehavior.gd").onCursorWarp(self)
-

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Backpack Battles"
+config/name="背包"
 run/main_scene="res://Core/Main.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="BackpackBattles_Local47_PvE"
@@ -25,7 +25,7 @@ config/local_services=true
 
 [audio]
 
-buses/default_bus_layout="res://Utility/default_bus_layout.tres"
+buses/default_bus_layout="uid://csuum7oc6bqgu"
 
 [autoload]
 
@@ -54,6 +54,7 @@ CustomRules="*res://Utility/CustomRules.gd"
 InputBlocker="*res://Interface/InputBlocker.tscn"
 Expedition="*res://PvE/NativeExpedition.gd"
 SceneRouter="*res://Runtime/Scene/SceneRouter.gd"
+_mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
 
 [debug]
 
@@ -71,7 +72,14 @@ gdscript/warnings/unused_argument=false
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/mode=3
 window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="res://Assets/Cursor/Cursor_default_small.png"
+mouse_cursor/custom_image_hotspot=Vector2(20, 25)
+
+[editor_plugins]
+
+enabled=PackedStringArray()
 
 [gui]
 

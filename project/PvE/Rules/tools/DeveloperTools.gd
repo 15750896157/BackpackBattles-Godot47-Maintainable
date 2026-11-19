@@ -25,7 +25,7 @@ var running: bool = false
 func _ready():
 	db = ContentDB.new()
 	service = PvEDeveloperToolService.new(db)
-	var face = load("res://Assets/Fonts/Localized/NotoSansSC-Regular_.otf")
+	var face = load("res://Assets/Fonts/YaHei-Regular.ttc")
 	if face is Font:
 		theme = Theme.new(); theme.default_font = face
 	var margin = MarginContainer.new(); margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT); add_child(margin)

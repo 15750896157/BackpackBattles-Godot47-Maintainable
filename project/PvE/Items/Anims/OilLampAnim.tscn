@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3]
+[ext_resource type="Material" path="res://Shader/AdditiveCanvasItemMaterial.tres" id="4_d0lfc"]
+[ext_resource type="Texture2D" path="res://Items/Sprites/TorchLight.png" id="5_15s0t"]
+[ext_resource type="Script" path="res://Items/Animations/FlickerAnimation.gd" id="6_f6erm"]
+
+[sub_resource type="Animation" id="13"]
+resource_name = "Flicker"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0988339, 0.20456),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.494118), Color(1, 1, 1, 1)]
+}
+[sub_resource type="Animation" id="14"]
+length = 0.001
+
+[node name="TorchLight" type="Sprite2D"]
+self_modulate = Color(1, 1, 1, 0.741176)
+material = ExtResource("4_d0lfc")
+scale = Vector2(1.5, 1.70396)
+texture = ExtResource("5_15s0t")
+[node name="FlickerAnimation" type="AnimationPlayer" parent="." index="0"]
+anims/Flicker = SubResource("13")
+anims/RESET = SubResource("14")
+script = ExtResource("6_f6erm")

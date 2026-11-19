@@ -108,7 +108,7 @@ static func _describe_card(page, node: Dictionary, portrait: Texture2D) -> Dicti
 		"intel": ui.words("查看完整敌情", "Inspect enemy details"),
 		"possible_rewards": ui.words("可能奖励", "Possible rewards"),
 		"rewards": rewards,
-		"prepare": ui.words("开始战斗", "Start battle") if type.ends_with("combat") or type == "boss" else ui.words("准备出发", "Prepare"),
+		"prepare": ui.words("准备出发", "Prepare"),
 	}
 	for index in rewards.size():
 		row["reward%d" % index] = rewards[index]

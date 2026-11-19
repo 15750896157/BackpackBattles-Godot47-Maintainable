@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dp2efv2w8od01"]
 
 [ext_resource type="Script" path="res://Utility/PooledScene.gd" id="1_nqlo8"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="2_c5n45"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="2_c5n45"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_56h08"]
 [ext_resource type="Script" path="res://Interface/Lobbies/ForceSpeedAnimation.gd" id="4_cinwv"]
 

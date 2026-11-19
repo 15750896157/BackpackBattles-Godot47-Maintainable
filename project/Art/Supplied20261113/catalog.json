@@ -1,0 +1,17 @@
+{
+  "loading_0": "res://Art/Supplied20261113/loading_0.png",
+  "loading_1": "res://Art/Supplied20261113/loading_1.png",
+  "loading_2": "res://Art/Supplied20261113/loading_2.png",
+  "loading_3": "res://Art/Supplied20261113/loading_3.png",
+  "loading_5": "res://Art/Supplied20261113/loading_5.png",
+  "loading_6": "res://Art/Supplied20261113/loading_6.png",
+  "fire_knight": "res://Art/Supplied20261113/fire_knight.png",
+  "reserve_adventurer": "res://Art/Supplied20261113/reserve_adventurer.png",
+  "reserve_gauntlet": "res://Art/Supplied20261113/reserve_gauntlet.png",
+  "recipe_row": "res://Art/Supplied20261113/recipe_row.png",
+  "recipe_detail": "res://Art/Supplied20261113/recipe_detail.png",
+  "detail_title": "res://Art/Supplied20261113/detail_title.png",
+  "entry": "res://Art/Supplied20261113/entry.png",
+  "hero_description": "res://Art/Supplied20261113/hero_description.png",
+  "bag_description": "res://Art/Supplied20261113/bag_description.png"
+}

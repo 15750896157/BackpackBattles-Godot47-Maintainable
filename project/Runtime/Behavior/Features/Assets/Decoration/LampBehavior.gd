@@ -1,8 +1,7 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://Assets/Decoration/Lamp.gd")
 
-static func _physics_process(subject: Receiver, delta):
+static func _physics_process(subject, delta):
 	subject.rotation_degrees += delta * subject.momentum
 	subject.momentum -= subject.rotation_degrees * subject.backForce * delta
 	subject.momentum *= subject.friction
@@ -10,7 +9,7 @@ static func _physics_process(subject: Receiver, delta):
 	if is_equal_approx(subject.rotation_degrees, 0) and is_equal_approx(subject.momentum, 0):
 		subject.set_physics_process(false)
 
-static func onLampPressed(subject: Receiver):
+static func onLampPressed(subject):
 	if subject.momentum > 0:
 		subject.momentum += subject.impulse
 	else:
@@ -27,7 +26,7 @@ static func onLampPressed(subject: Receiver):
 		subject.light.show()
 		subject.lamp.modulate = Color.WHITE
 
-static func _gui_input(subject: Receiver, event):
+static func _gui_input(subject, event):
 	if Util.isRightClick(event) and not subject.broken:
 		subject.broken = true
 		subject.lamp.disable()

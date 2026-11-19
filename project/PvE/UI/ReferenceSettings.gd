@@ -19,8 +19,6 @@ func show_page(target: String = "general"):
 	var root = ui.open_canvas("SETTINGS",ui.words("游戏设置","Game settings"))
 	var ticket = owner.popup_epoch
 	if not await AssetStream.prepare(REF.paths(KEYS),"popup") or ticket != owner.popup_epoch: return
-	# The reference dims the town behind the paper, without layering menu buttons over it.
-	owner.modal_shield.color = Color(0.0, 0.0, 0.0, 153.0 / 255.0)
 	var content = Control.new(); content.name = "SettingsReference1768"
 	content.scale = Vector2(1920.0/1768.0,1080.0/992.0); content.size = Vector2(1768,992)
 	root.add_child(content)
@@ -39,19 +37,20 @@ func show_page(target: String = "general"):
 		save.name = "SaveAndExit";save.set_meta("action_caption",owner.t("ui.save_menu"))
 	elif return_to_selection and section == "advanced":
 		REF.button(content,"button",Rect2(650,752,380,55),func():owner.menus.runs.seed_value=Time.get_ticks_usec()&0xffffffff,ui.words("换一张地图","Shuffle map"),25).name="ShuffleSeed"
+	REF.fade_in(root)
 func close_page():
 	if return_to_selection:owner.menus.runs.new_setup()
 	else:owner.view_return()
 func main_sheet(root: Control):
-	REF.picture(root,"settings_plate",Rect2(340,406,512,262),true)
-	REF.picture(root,"settings_plate",Rect2(885,406,512,262),true)
+	REF.picture(root,"settings_plate",Rect2(338,404,518,268),true)
+	REF.picture(root,"settings_plate",Rect2(877,404,518,268),true)
 	REF.text(root,ui.words("画面","Display"),Rect2(526,433,145,62),42)
 	REF.text(root,ui.words("声音","Sound"),Rect2(1062,433,145,62),42)
 	for index in 2:
 		var full = index == 0
-		var selected = model.snapshot().window_mode == ("fullscreen" if full else "windowed")
+		var selected = (model.snapshot().window_mode == "fullscreen") == full
 		var y = 508 + index*56
-		if selected: REF.picture(root,"highlight",Rect2(412,y-2,359,42),true)
+		if selected: REF.picture(root,"highlight",Rect2(414,y,355,40),true)
 		REF.text(root,ui.words("全屏模式" if full else "窗口模式","Full screen" if full else "Windowed"),Rect2(422,y-3,236,45),31).horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
 		REF.picture(root,"checkbox",Rect2(731,y+1,35,35))
 		if selected: REF.picture(root,"check",Rect2(731,y-3,41,39))

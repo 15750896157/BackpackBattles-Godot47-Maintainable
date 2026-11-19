@@ -1,6 +1,6 @@
 [gd_resource type="FontVariation" format=3]
 
-[ext_resource type="FontFile" uid="uid://d1xddn4mi0bwc" path="res://Assets/Fonts/Milonga-Regular.ttf" id="31"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="31"]
 
 [ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 

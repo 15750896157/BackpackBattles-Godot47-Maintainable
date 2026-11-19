@@ -133,7 +133,6 @@ func becomeOpponent_old():
 
 func playShopBGM():
 	lastShopBGM = ShopBGM.Default
-	Sound.playBGM(Sound.shopBGM)
 	return
 
 func _pve_initialize_role_stats():

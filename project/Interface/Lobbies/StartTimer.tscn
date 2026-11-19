@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/Lobbies/StartTimer.gd" id="1_8c0yv"]
 [ext_resource type="Texture2D" path="res://Interface/SidePanel.png" id="2_gw6d3"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_sayaq"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="3_sayaq"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_oskjh"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="5_f4hch"]
 

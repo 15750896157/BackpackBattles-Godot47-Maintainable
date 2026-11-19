@@ -1,0 +1,38 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=7 format=3]
+[ext_resource type="Texture2D" path="res://Shader/VerySmoothFadeGradient.tres" id="4_4qf60"]
+
+[sub_resource type="Curve" id="5"]
+_limits = [0.0, 1024.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.0842697, 0), 0.0, 0.0, 0, 0, Vector2(0.297753, 861.091), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="2"]
+width = 100
+curve = SubResource("5")
+
+[sub_resource type="Gradient" id="3"]
+offsets = PackedFloat32Array(0, 0.470968, 1)
+colors = PackedColorArray(0.529297, 0.0834416, 0.0671959, 1, 1, 0.488281, 0.542252, 1, 1, 0.0917969, 0.0917969, 1)
+
+[sub_resource type="GradientTexture1D" id="4"]
+gradient = SubResource("3")
+width = 100
+
+[resource]
+lifetime_randomness = 0.27
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 62.95
+angle_max = 720.0
+direction = Vector3(0, 1, 0)
+spread = 21.27
+initial_velocity_min = 71.3424
+initial_velocity_max = 445.89
+angular_velocity_min = -267.5
+angular_velocity_max = 267.5
+gravity = Vector3(0, 900, 0)
+damping_curve = SubResource("2")
+scale_min = 1.2176
+scale_max = 1.68
+color_ramp = ExtResource("4_4qf60")
+color_initial_ramp = SubResource("4")

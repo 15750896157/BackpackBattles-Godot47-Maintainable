@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/EdgeMask.png" id="1_3gffj"]
+
+[sub_resource type="Shader" id="405"]
+code = "shader_type canvas_item;
+
+uniform sampler2D mask : repeat_disable, filter_linear;
+uniform float xPosition : hint_range(-1.0, 1.0, 0.01) = 0.0;
+uniform float scale = 1.0;
+
+void fragment() {
+	COLOR = texture(TEXTURE, UV);
+	float maskAlpha = texture(mask, (SCREEN_UV + vec2(xPosition, 0.0))* vec2(scale, 1.0)).a;
+	COLOR.a *= maskAlpha;
+}
+"
+
+[resource]
+shader = SubResource("405")
+shader_parameter/mask = ExtResource("1_3gffj")
+shader_parameter/xPosition = 0.0
+shader_parameter/scale = 60.0

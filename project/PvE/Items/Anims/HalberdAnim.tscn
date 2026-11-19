@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/HalberdShineMask.png" id="10_2x72s"]
+[ext_resource type="Material" path="res://Items/Exclusive/Materials/SteelShine.material" id="9_5e5db"]
+
+[sub_resource type="Animation" id="19"]
+resource_name = "Shine"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shine:material:shader_parameter/shineProgress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(-2.82843, 1),
+"update": 0,
+"values": [1.6, 0.35]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Shine:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[node name="HalberdAnim" type="Node2D"]
+[node name="Shine" type="Sprite2D" parent="." index="2"]
+visible = false
+modulate = Color(1.5, 1.5, 1.5, 0.58)
+material = ExtResource("9_5e5db")
+position = Vector2(0, -162)
+texture = ExtResource("10_2x72s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
+autoplay = "Shine"
+playback_speed = 0.3
+anims/Shine = SubResource("19")

@@ -29,9 +29,9 @@ static func show_page(page, sides: Array) -> void:
 		scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 		root.add_child(scroll)
 		var content: VBoxContainer = ui.column(scroll)
-		owner.label(str(side.summary).replace(" · ", "   "), content, 22)
+		owner.label(side.summary, content, 22)
 		for line in side.items:
-			owner.label(str(line).replace(" · ", "   "), content, 21)
+			owner.label(line, content, 21)
 		if side.has_totals:
 			owner.label(side.totals_heading, content, 23)
 		for entry in side.statuses:
@@ -40,5 +40,5 @@ static func show_page(page, sides: Array) -> void:
 			owner.label(side.stamina, content, 21)
 	REF.button(root, "result_gold", Rect2(839,826,242,55),
 		func(): page.log_page(0,true), ui.words("查看事件","View events"), 24).name = "LogEvents"
-	owner.modal_shield.color = Color(0.0, 0.0, 0.0, 0.64)
+	REF.fade_in(root)
 	owner.focus_popup()

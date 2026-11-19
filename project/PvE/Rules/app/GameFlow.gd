@@ -295,7 +295,7 @@ func edit(command: String, uid: String = "", options: Dictionary = {}) -> Dictio
 	var result: Dictionary
 	match command:
 		"move": result = placement.move(run.build, uid, int(options.get("x", 0)), int(options.get("y", 0)), int(options.get("rotation", 0)))
-		"store": result = placement.remove(run.build, uid, true, int(options.get("storage_slot", -1)))
+		"store": result = placement.remove(run.build, uid, true)
 		"restore": result = placement.restore(run.build, uid)
 		"swap": result = placement.swap(run.build, uid, str(options.get("other_uid", "")))
 		"undo": result = edit_history.undo(run)

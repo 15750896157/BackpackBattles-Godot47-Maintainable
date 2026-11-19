@@ -2,7 +2,7 @@
 
 [ext_resource type="StyleBox" path="res://Interface/Lobbies/MemberStylebox_Player.tres" id="1_8ggoy"]
 [ext_resource type="Script" path="res://Interface/Lobbies/LobbyScoreboardEntry.gd" id="2_gte1m"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_k07gs"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="3_k07gs"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_jiajy"]
 [ext_resource type="Texture2D" path="res://Assets/TitleScreen/RangerIcon.png" id="5_5icgo"]
 [ext_resource type="Texture2D" path="res://Assets/Trophy.png" id="6_maaf2"]

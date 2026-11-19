@@ -52,9 +52,15 @@ func instance(definition_id: String, owner_type: int):
 func scene_paths(ids: Array) -> Array:
 	var paths: Array = []
 	for id in ids:
-		var binding: Dictionary = bindings.get(str(id), {})
-		var path = str(binding.get("scene", ""))
-		if not path.is_empty() and path not in paths: paths.append(path)
+		# 试点挂钩：带模板覆盖的绑定改加载新基场景+数据（贴图/shader），不再预载旧场景。
+		var template_paths: Array = ItemTemplate.preload_paths(str(id))
+		if not template_paths.is_empty():
+			for path in template_paths:
+				if path not in paths: paths.append(path)
+		else:
+			var binding: Dictionary = bindings.get(str(id), {})
+			var path = str(binding.get("scene", ""))
+			if not path.is_empty() and path not in paths: paths.append(path)
 		var bag_path = replacement_path(str(id))
 		if not bag_path.is_empty() and bag_path not in paths: paths.append(bag_path)
 	return paths
@@ -62,8 +68,17 @@ func scene_paths(ids: Array) -> Array:
 func instance_async(definition_id: String, owner_type: int, scope: String):
 	var descriptor = descriptor_for(definition_id)
 	if descriptor == null: return null
-	var original = await AssetStream.instantiate_path(descriptor.scene_path, scope)
+	var template_data: Dictionary = ItemTemplate.override_for(definition_id)
+	# 宝石走 GemBase（ItemBase 子场景，照抄原版 Item→Gem 层级），其余 ItemBase。
+	var scene_path = ItemTemplate.template_scene_for(template_data) if not template_data.is_empty() else descriptor.scene_path
+	var original = await AssetStream.instantiate_path(scene_path, scope)
 	if original == null: return null
+	if not template_data.is_empty():
+		var template_ok = await ItemTemplate.apply(original, template_data, scope)
+		if not template_ok:
+			if is_instance_valid(original): original.free()
+			errors.append("template_apply_failed:" + definition_id)
+			return null
 	original.descriptor = descriptor
 	original.ownerType = owner_type
 	original.set_meta("pve_definition_id", definition_id)

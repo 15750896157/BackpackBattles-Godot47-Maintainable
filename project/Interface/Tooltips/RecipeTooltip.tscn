@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" path="res://Interface/Tooltips/TooltipBase2.png" id="1_k5640"]
 [ext_resource type="Script" path="res://Interface/Tooltips/RecipeTooltip.gd" id="2_ceskx"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="3_pfe2r"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_pfe2r"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_ts4qt"]
 [ext_resource type="Texture2D" path="res://Assets/Divider1.png" id="5_5aasj"]
 

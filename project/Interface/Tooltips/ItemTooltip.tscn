@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" path="res://Interface/Tooltips/TooltipBase2.png" id="1_5ayvg"]
 [ext_resource type="Script" path="res://Interface/Tooltips/ItemTooltip.gd" id="2_4x54k"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="3_dbjth"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_dbjth"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_7r7n0"]
 [ext_resource type="RichTextEffect" path="res://Interface/Tooltips/ItemNameEffect.tres" id="5_h1api"]
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="6_bvdk2"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="7_hybfc"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="7_hybfc"]
 [ext_resource type="RichTextEffect" path="res://Interface/SColorTextEffect.tres" id="8_u4cf5"]
 [ext_resource type="PackedScene" path="res://Interface/Tooltips/TooltipDivider.tscn" id="9_c3e1c"]
 

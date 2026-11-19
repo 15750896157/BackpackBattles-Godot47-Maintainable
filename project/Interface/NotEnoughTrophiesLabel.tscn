@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dt55t7k6koy4y"]
 
 [ext_resource type="Script" path="res://Interface/NotEnoughGoldLabel.gd" id="1_lplx1"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="2_7rqu5"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="2_7rqu5"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_3w2l4"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="4_qwvhd"]
 

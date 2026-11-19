@@ -65,9 +65,9 @@ metadata/route_font_size = 37
 
 [node name="Subtitle" type="Label" parent="."]
 offset_left = 125.0
-offset_top = 216.0
+offset_top = 222.0
 offset_right = 369.0
-offset_bottom = 249.0
+offset_bottom = 255.0
 mouse_filter = 2
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -257,9 +257,9 @@ metadata/route_texture = "route_go"
 
 [node name="Caption" type="Label" parent="Go"]
 offset_left = 0.0
-offset_top = -5.0
+offset_top = 0.0
 offset_right = 230.0
-offset_bottom = 65.0
+offset_bottom = 70.0
 mouse_filter = 2
 horizontal_alignment = 1
 vertical_alignment = 1

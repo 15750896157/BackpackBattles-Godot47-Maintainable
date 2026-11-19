@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/DamageMeter/DamageMeterTotal.gd" id="1_aac5h"]
 [ext_resource type="StyleBox" path="res://Interface/DamageMeter/DamageMeterEntryStylebox.tres" id="2_albmp"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="3_ojfvr"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_ojfvr"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_pu03h"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="5_p2uld"]
 [ext_resource type="Texture2D" path="res://Assets/Divider1.png" id="6_kntl6"]

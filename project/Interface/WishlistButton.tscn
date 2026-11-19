@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dlpwpntolvulp"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="1_1tqux"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="1_1tqux"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="2_kc7w4"]
 [ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="3_gn6sv"]
 [ext_resource type="Script" path="res://Interface/WishlistButton.gd" id="4_72mif"]

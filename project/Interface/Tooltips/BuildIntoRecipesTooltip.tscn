@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" path="res://Interface/Tooltips/RecipeTooltip.png" id="1_h5t5d"]
 [ext_resource type="Script" path="res://Interface/Tooltips/BuildIntoRecipesTooltip.gd" id="2_npool"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="3_murwp"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_murwp"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_463qe"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="5_yl7t4"]
 [ext_resource type="PackedScene" path="res://Utility/DefaultRichTextLabel.tscn" id="6_66n3q"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="7_hm40c"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="7_hm40c"]
 [ext_resource type="Texture2D" path="res://Interface/KeyLock.png" id="8_ysc1u"]
 
 [sub_resource type="FontVariation" id="2"]

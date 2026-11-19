@@ -57,7 +57,6 @@ func pending_controls():
 func pending():ui.open("PENDING",ui.words("收纳战利品","Store rewards"));pending_controls()
 func event():
 	if owner.flow.screen_state=="REST":
-		Sound.playBGM(Sound.postFightBGM_survival,-8)
 		preload("res://PvE/UI/CampLayout.gd").show_page(self)
 		return
 	var model = owner.menus.new_journey_model()
@@ -107,10 +106,7 @@ func summary():
 	ui.open(owner.flow.screen_state,owner.t("ui.act_cleared" if act else "ui.run_cleared" if cleared else "ui.run_failed"))
 	owner.label("⚑ "+str(owner.flow.run.completed_nodes.size())+"   ◉ "+str(owner.flow.run.gold),null,34)
 	if act:ui.action(owner.popup_content,owner.t("ui.next_act"),func():owner.perform(owner.flow.next_act()))
-	else:
-		owner.back_action = owner.return_to_title
-		ui.action(owner.popup_content,ui.words("返回主页","Return home"),owner.return_to_title).name = "RunSummaryReturnHome"
-		ui.action(owner.popup_content,owner.t("ui.new_run"),func():setup(Game.Mode.Unranked))
+	else:ui.action(owner.popup_content,owner.t("ui.new_run"),func():setup(Game.Mode.Unranked))
 func craft(candidate: Dictionary):
 	selected_recipe=candidate
 	owner.menus.library.show_page("recipes")

@@ -24,7 +24,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/DaggerAnimation.tscn",
-      "scene_sha256": "3e2fd9a0407394de9608748cf4db834b9e56ce9762ef49caa13295fe51fe1cac",
+      "scene_sha256": "fcc024b39879d808878aafa32e737f8b2ea37ddd44d2e806d0d696be5875ac76",
       "definition_id": "utility_knife",
       "kind": "item",
       "reason": "短匕首刀刃与轻型近战用途一致",
@@ -55,7 +55,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "1966e21409c299ab1d44217c2e7e16e2ec8ad719d812c289d9c132c4b6ad2cfa"
+      "png_sha256": "1966e21409c299ab1d44217c2e7e16e2ec8ad719d812c289d9c132c4b6ad2cfa",
+      "template": "ItemBase"
     },
     "iron_sword": {
       "name": "Hero Sword",
@@ -81,7 +82,7 @@
         "res://Items/Particles/HeroSwordDragParticles.material"
       ],
       "animation": "res://Items/Animations/HeroSwordAnimation.tscn",
-      "scene_sha256": "e4dd71d663b526ea268f981a608b78f11f7bdd48f2d6a72182530c843743dbf9",
+      "scene_sha256": "b3b2ea0c9f936f4d019a9b4fad0c85b9a56bf018f4250c213d4a5bf5276fb266",
       "definition_id": "iron_sword",
       "kind": "item",
       "reason": "原金属长剑；同属直剑近战武器",
@@ -120,7 +121,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "e26d7b6ac88028fb75e5ca7d5c5bdaff13bac80dedb648738a89c0cf3afb8fcf"
+      "png_sha256": "e26d7b6ac88028fb75e5ca7d5c5bdaff13bac80dedb648738a89c0cf3afb8fcf",
+      "template": "ItemBase"
     },
     "broad_axe": {
       "name": "Axe",
@@ -151,7 +153,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Exclusive/Animations/AxeAnimation.tscn",
-      "scene_sha256": "ed3e35464a681626dd7691593373751fe10eb1f9f1e10cf5aeedd772b411a8f5",
+      "scene_sha256": "791d3c236340e189acabf49833f7f05ace8e56fca35d12a6717bf89b1d0752db",
       "definition_id": "broad_axe",
       "kind": "item",
       "reason": "原斧头，斧刃轮廓与重武器类别一致",
@@ -190,7 +192,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "2804e20be899bf1c2275af0921fe584a18cadf104c346026dadf4bd5d1413c7c"
+      "png_sha256": "2804e20be899bf1c2275af0921fe584a18cadf104c346026dadf4bd5d1413c7c",
+      "template": "ItemBase"
     },
     "stone_hammer": {
       "name": "Hammer",
@@ -225,7 +228,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/HammerAnimation.tscn",
-      "scene_sha256": "3c21f87b34309a27050042ae3c306db5e37d822c51ca3a89312a720d2a1bb617",
+      "scene_sha256": "9b58ce1b21e9772508fa38ab9e968326a988fde1eeb59997fb958ed7cd49cd45",
       "definition_id": "stone_hammer",
       "kind": "item",
       "reason": "原锤类重武器；不宣称原图材质是石头",
@@ -264,7 +267,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "7f2e70010712ace3e8b5445a17a111a35bfb7b6a0a8d06541f504284fe268f23"
+      "png_sha256": "7f2e70010712ace3e8b5445a17a111a35bfb7b6a0a8d06541f504284fe268f23",
+      "template": "ItemBase"
     },
     "hunting_spear": {
       "name": "Spear",
@@ -295,7 +299,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -334,7 +338,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "efb6a706bd3f6e7a9442cb4ddcb3be9f0e2e0a422eaf5e9f22ac02faa7c7cc70"
+      "png_sha256": "efb6a706bd3f6e7a9442cb4ddcb3be9f0e2e0a422eaf5e9f22ac02faa7c7cc70",
+      "template": "ItemBase"
     },
     "twin_needles": {
       "name": "Scissorswords",
@@ -379,7 +384,7 @@
         "res://Shader/AdditiveCanvasItemMaterial.tres"
       ],
       "animation": "res://Items/Exclusive/Animations/ScissorswordsAnimation.tscn",
-      "scene_sha256": "e5b7aa7f9c2ca112f4c8a6e88662a3cfcfea7b2f09fbba09ce8f4ff6a81c897f",
+      "scene_sha256": "050fee5c5db3ee4f4a20b53a231ba350218269b236c78345c992b1dec8278fa0",
       "definition_id": "twin_needles",
       "kind": "item",
       "reason": "原成对细刃；保留原剪剑造型，不宣称已有双针图",
@@ -414,7 +419,8 @@
         "p4": "5:dur_blind",
         "p5": "3:luckt"
       },
-      "png_sha256": "ab043f152cbf38cd98b598a3745e33d4c5a8199b374b62a8d5564e95fed37608"
+      "png_sha256": "ab043f152cbf38cd98b598a3745e33d4c5a8199b374b62a8d5564e95fed37608",
+      "template": "ItemBase"
     },
     "sling": {
       "name": "Bag of Stones",
@@ -437,7 +443,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "c20c11cef27ee2c39534103b77ed836e27e9c342f641ba480696667e0e02104d",
+      "scene_sha256": "be951e7d965a4e7100c33e01b0bad5a8c326f71721881a8960311b161b93c02a",
       "definition_id": "sling",
       "kind": "item",
       "reason": "原投石袋，同属投石远程装具；原库无独立弹弓贴图",
@@ -472,7 +478,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "ebfbeb469783edd831b78b6882411502e570ba89f2f5e73b2529479c2a861225"
+      "png_sha256": "ebfbeb469783edd831b78b6882411502e570ba89f2f5e73b2529479c2a861225",
+      "template": "ItemBase"
     },
     "heavy_cleaver": {
       "name": "Double Axe",
@@ -519,7 +526,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Exclusive/Animations/DoubleAxeAnimation.tscn",
-      "scene_sha256": "25b0772cf67d9501091c7b034a41c033224637d19a8b9623fb8b3e896732d6ed",
+      "scene_sha256": "c730b4b2997d12e972a809bd57bf2e427aa10b051dd876a10610d312e9acd818",
       "definition_id": "heavy_cleaver",
       "kind": "item",
       "reason": "原双刃大斧，强化后的重型刃武器",
@@ -562,7 +569,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "83cc4e3a6f469eb9825551f6c6f2720acfd2a574f4aaedd2c1141089609a2cd5"
+      "png_sha256": "83cc4e3a6f469eb9825551f6c6f2720acfd2a574f4aaedd2c1141089609a2cd5",
+      "template": "ItemBase"
     },
     "buckler": {
       "name": "Wooden Buckler",
@@ -576,7 +584,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "e23d33e1e147f80987db40cce48d3d1c8d29e1ee894a83d9b7fa5010f84b4b16",
+      "scene_sha256": "9993b98922dc876006309f44b96f02647c678eebe53978f3e08cdbfbaf8ed995",
       "definition_id": "buckler",
       "kind": "item",
       "reason": "原圆形小盾，同类防御物品",
@@ -611,7 +619,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "965a667b8462da5e3df4f15d9049c6dd8375666b754c8afa9adc7e0ce1b002bc"
+      "png_sha256": "965a667b8462da5e3df4f15d9049c6dd8375666b754c8afa9adc7e0ce1b002bc",
+      "template": "ItemBase"
     },
     "plated_vest": {
       "name": "Stone Armor",
@@ -650,7 +659,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "52c156a0404eb2e695294ff253bf15f51495e7bd205486a9b05a2564b5985eff",
+      "scene_sha256": "5ec2c06611508432a4858e77f671a2da4af5f0ed5883285c23e8ccddfe4daee2",
       "definition_id": "plated_vest",
       "kind": "item",
       "reason": "原硬质护甲，护甲机制与装甲轮廓",
@@ -693,7 +702,8 @@
         "p4": "20:staminacost",
         "p5": "40:blockperhealth"
       },
-      "png_sha256": "09968d012d35172c86dda15b990b1902f095f851a2b1e9a6295fa453c4fd0508"
+      "png_sha256": "09968d012d35172c86dda15b990b1902f095f851a2b1e9a6295fa453c4fd0508",
+      "template": "ItemBase"
     },
     "tower_shield": {
       "name": "Shield of Valor",
@@ -735,7 +745,7 @@
         "res://Items/Particles/HolyArmorDragParticles.tres"
       ],
       "animation": null,
-      "scene_sha256": "4f82f59e57a15d24629b9a956873a479b22131fbf3738e403fc557a5be9131cf",
+      "scene_sha256": "836bfe994f21d9bb714080c9c5cd20bff8a5b2be86f81d79eff563da650eb129",
       "definition_id": "tower_shield",
       "kind": "item",
       "reason": "原大型盾牌，同类长盾防御物品",
@@ -778,7 +788,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "7e4d2150543894c1a4043d6c6480389a3f5f4bf7fefd9707ec3832e90d03f81e"
+      "png_sha256": "7e4d2150543894c1a4043d6c6480389a3f5f4bf7fefd9707ec3832e90d03f81e",
+      "template": "ItemBase"
     },
     "spiked_guard": {
       "name": "Spiked Shield",
@@ -792,7 +803,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "bd998a4060f0c1a2369fa7087eca3155db2284167675189584d80a8f3ffbf8fb",
+      "scene_sha256": "d3ada40c7770eb5e72584ade02d7132fbc7b9809222c7612cca3a491f6ccb033",
       "definition_id": "spiked_guard",
       "kind": "item",
       "reason": "原尖刺盾，防御反击机制与尖刺轮廓",
@@ -831,7 +842,8 @@
         "p4": "5:maxspikes",
         "p5": ""
       },
-      "png_sha256": "b6237c05d6c7d28224f66c2a988f123ba6f6407abe290ddcceee29c04b2cc6f7"
+      "png_sha256": "b6237c05d6c7d28224f66c2a988f123ba6f6407abe290ddcceee29c04b2cc6f7",
+      "template": "ItemBase"
     },
     "leather_wrap": {
       "name": "Leather Armor",
@@ -870,7 +882,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "213236085cda0fc2d9a6ff4f946823cebb2362ebea5b7263772842de693b9836",
+      "scene_sha256": "149646349db7a3e99be5343ff6f25cf995721743b5c5a06f1b3ef0dacf5c1c94",
       "definition_id": "leather_wrap",
       "kind": "item",
       "reason": "原皮甲，皮革防护类别；保持原皮甲外观",
@@ -905,7 +917,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "b76fdbc0ae28ceaa2dc95d8388f7d2837e64fe899fc5ccc67cb225614ace2ccb"
+      "png_sha256": "b76fdbc0ae28ceaa2dc95d8388f7d2837e64fe899fc5ccc67cb225614ace2ccb",
+      "template": "ItemBase"
     },
     "repair_kit": {
       "name": "Wrench",
@@ -928,7 +941,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Exclusive/Animations/WrenchAnimation.tscn",
-      "scene_sha256": "c7810b1bc447b1cb6e2e10875469aced268e4ca0cd2df8afad5dfabaff14327e",
+      "scene_sha256": "390f13ba2ff34ea254c016ce6f65b47864bd6918839d03478e0c1d4429e53828",
       "definition_id": "repair_kit",
       "kind": "item",
       "reason": "原维修扳手工具；维修用途一致，保留扳手造型",
@@ -967,7 +980,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "b7063494b876aa083706bd6cda4ce1d3fcb64859d5d9770407f108d8edc42275"
+      "png_sha256": "b7063494b876aa083706bd6cda4ce1d3fcb64859d5d9770407f108d8edc42275",
+      "template": "ItemBase"
     },
     "stamina_flask": {
       "name": "Heroic Potion",
@@ -992,7 +1006,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/HeroicPotionAnimation.tscn",
-      "scene_sha256": "931502a9113435f9e1d9a8e7fcf8bcec32ad63d88c83990acaed0663087f05e4",
+      "scene_sha256": "42b71fecd225fc62f577af145bf21a2869d75a91c029dde581b39aebe0fece30",
       "definition_id": "stamina_flask",
       "kind": "item",
       "reason": "原耐力药水，同类耐力补给瓶",
@@ -1046,7 +1060,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f1a381a01c30daeb43ab6439913f0cb31f71a2794236c0dd7320495f59e4c89d",
+      "scene_sha256": "59a18b6c8f5293eea3a00402811c59135514a47470684c394db1189034375860",
       "definition_id": "travel_ration",
       "kind": "item",
       "reason": "原食物补给，旅行口粮对应面包",
@@ -1081,7 +1095,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "1784f3e195b1578b5c21cf5ea2f00afe036b2cb34b1dd0df7321c5ef7b9ef4d4"
+      "png_sha256": "1784f3e195b1578b5c21cf5ea2f00afe036b2cb34b1dd0df7321c5ef7b9ef4d4",
+      "template": "ItemBase"
     },
     "bandage_roll": {
       "name": "Healing Herbs",
@@ -1100,7 +1115,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "scene_sha256": "dbae7ae9cfb7642040507cb00611b950a31f71bb594245f20c45af4a16fd201f",
       "definition_id": "bandage_roll",
       "kind": "item",
       "reason": "原低阶治疗耗材；原库无绷带卷，不伪造布卷图",
@@ -1131,7 +1146,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "746e611267fea2863f88dde055f6b34b87d756314eb14e31a7e9a02ee83d5f48"
+      "png_sha256": "746e611267fea2863f88dde055f6b34b87d756314eb14e31a7e9a02ee83d5f48",
+      "template": "ItemBase"
     },
     "cleansing_salt": {
       "name": "Divine Potion",
@@ -1158,7 +1174,7 @@
         "res://Items/Exclusive/Materials/DivinePotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/DivinePotionAnimation.tscn",
-      "scene_sha256": "513560124bc74e881716ebac4aeb645295c8ec839e8eac3c55eb70275694ae53",
+      "scene_sha256": "5f2ef9d63fb883547b42fd601a31818425af3dad5602871643e9b4fb718535ce",
       "definition_id": "cleansing_salt",
       "kind": "item",
       "reason": "原净化型神圣药水；保留净化药瓶外观而非伪造盐罐",
@@ -1208,7 +1224,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f18f4927989468185baed745952efbf9d7b1e7c5e47318d38c1d26ed0145774d",
+      "scene_sha256": "5beb63deb3fdd9faf5bfc58ee9e029d36f7d19b1fac43e767f0c68e1bbb3bfcf",
       "definition_id": "sharpening_stone",
       "kind": "item",
       "reason": "原磨刀石，同名同用途",
@@ -1239,7 +1255,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "bdf8f5299f47d99ccca421b4dd441eeb7534653ec4496249999caf19b96d669f"
+      "png_sha256": "bdf8f5299f47d99ccca421b4dd441eeb7534653ec4496249999caf19b96d669f",
+      "template": "ItemBase"
     },
     "clockwork_spring": {
       "name": "Spring Loader",
@@ -1271,7 +1288,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "4773eb91390e4821c248d2d458cff3b976cf4a3945d0cec576cfe288d4ac192d",
+      "scene_sha256": "cd13cea51bdaf56b8b1f84991c9a107e752a99f7f8778e5c3c01ef2d64fe16f9",
       "definition_id": "clockwork_spring",
       "kind": "item",
       "reason": "原弹簧装置，有独立弹簧与护盾组合精灵",
@@ -1306,7 +1323,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "47920146cb0b38d5a4387bc6a6ee8db306eb2da8466ba93610073a25b041fb05"
+      "png_sha256": "47920146cb0b38d5a4387bc6a6ee8db306eb2da8466ba93610073a25b041fb05",
+      "template": "ItemBase"
     },
     "lucky_coin": {
       "name": "Lucky Clover",
@@ -1325,7 +1343,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "bbb7a665cfc458ee9cd7284cdae9476dc7f09fdf82d1f22e73650864319bf746",
+      "scene_sha256": "361d71ec2b7b372073e1640bada99aac9acedfe2b9143612446dd51e8dc3700c",
       "definition_id": "lucky_coin",
       "kind": "item",
       "reason": "原幸运饰物；币形图无可购原descriptor时使用幸运三叶草，不伪称硬币",
@@ -1356,7 +1374,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "3354e1995cddecd2677676a1ea3f24b16f78cb483c3d564dfd1975c9581333ff"
+      "png_sha256": "3354e1995cddecd2677676a1ea3f24b16f78cb483c3d564dfd1975c9581333ff",
+      "template": "ItemBase"
     },
     "scout_lens": {
       "name": "Magic Mirror",
@@ -1383,7 +1402,7 @@
         "res://Items/Exclusive/Particles/FrozenFlame.material"
       ],
       "animation": null,
-      "scene_sha256": "419a83fd27f93dcb2bd2a94a6b9486f2b4b7ff7abff6da6c9c6856d4beba8600",
+      "scene_sha256": "c7cc2194b78d5a50b7dae5399a08b35995271c21f1306a0abfe9b87506f79779",
       "definition_id": "scout_lens",
       "kind": "item",
       "reason": "原光学镜面器具，光学辅助类别；原外观为镜子",
@@ -1418,7 +1437,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "20d80b1b977f1a02d5c423ca8eb63de3e1d784e6f97afc83ac9fb288dc2ee9b1"
+      "png_sha256": "20d80b1b977f1a02d5c423ca8eb63de3e1d784e6f97afc83ac9fb288dc2ee9b1",
+      "template": "ItemBase"
     },
     "merchant_token": {
       "name": "Customer Card",
@@ -1437,7 +1457,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "910f5cd20a839b6d8afaf59134f211b57d6d5c9d1d5138ee6568f2774bab0e02",
+      "scene_sha256": "99490a0a1c6cc44c37ae8df818a8f80bc5192a2b163d614a1cdec7432f20ebd2",
       "definition_id": "merchant_token",
       "kind": "item",
       "reason": "原顾客卡，商店经济辅助用途一致",
@@ -1468,7 +1488,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "bed5723f14b0c2a16822938cb6c6151b125dfb8c467220ec86cb721de789d3c2"
+      "png_sha256": "bed5723f14b0c2a16822938cb6c6151b125dfb8c467220ec86cb721de789d3c2",
+      "template": "ItemBase"
     },
     "storage_hook": {
       "name": "Rope",
@@ -1491,7 +1512,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "b35aa89490d4a3ccd5136e7d326a02fa701e4e9711c5357728b8ce87297749f8",
+      "scene_sha256": "9c10bcfb03a2766b37a226678fe6b6dce880efa164b6c2b671fdbb4b7cbfebda",
       "definition_id": "storage_hook",
       "kind": "item",
       "reason": "原绳索工具，收纳挂载用途近似；原库无专属挂钩图",
@@ -1526,7 +1547,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "26e1ca0aac65a5a1632a1b44827dae27e3e94630352e2a147775151c31893eb5"
+      "png_sha256": "26e1ca0aac65a5a1632a1b44827dae27e3e94630352e2a147775151c31893eb5",
+      "template": "ItemBase"
     },
     "gear_link": {
       "name": "Cog",
@@ -1545,7 +1567,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "615a8fa28adee346d9fa5e694f990f0b036564515f2125523d26157cf2c85a13",
+      "scene_sha256": "d6c7a23ced1c75d3996ba20e68fb08bfa6159750ab2b899bc93780addc385752",
       "definition_id": "gear_link",
       "kind": "item",
       "reason": "原齿轮，同类机械连接件",
@@ -1576,7 +1598,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "8e6141e2a78865b85d5f68134f5cddf93c5019cf13a2b0cd5571a86b2bb7e5a1"
+      "png_sha256": "8e6141e2a78865b85d5f68134f5cddf93c5019cf13a2b0cd5571a86b2bb7e5a1",
+      "template": "ItemBase"
     },
     "focus_prism": {
       "name": "Perfect Amethyst",
@@ -1590,7 +1613,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "c1fafef7527a7360ab7eec8c2a3469b889c2933bbb2b8c9d7569ff85a80140e0",
+      "scene_sha256": "0ae0dd82fbc717286df39305d7e3d5d72dcbc52356ffaa6276826680c4f69824",
       "definition_id": "focus_prism",
       "kind": "item",
       "reason": "原晶体宝石，可复用棱镜轮廓；保留原紫晶色彩",
@@ -1629,7 +1652,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "666c862f073733bec13d7c4788955295b0e6f25595658386084363f60f15ff70"
+      "png_sha256": "666c862f073733bec13d7c4788955295b0e6f25595658386084363f60f15ff70",
+      "template": "GemBase"
     },
     "row_banner": {
       "name": "Burning Banner",
@@ -1655,7 +1679,7 @@
         "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "scene_sha256": "ebd69545b31f5e42537dcbbe3418cc46479b7789eed4a00737be153d197487cf",
       "definition_id": "row_banner",
       "kind": "item",
       "reason": "原战旗，按行支援仍使用原旗帜与火焰材质",
@@ -1720,7 +1744,7 @@
         "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "scene_sha256": "ebd69545b31f5e42537dcbbe3418cc46479b7789eed4a00737be153d197487cf",
       "definition_id": "column_standard",
       "kind": "item",
       "reason": "原战旗；列式防御属于PvE规则，视觉不另造蓝旗",
@@ -1783,7 +1807,7 @@
         "res://Items/Exclusive/Particles/StarofCourageDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "4e125fa79dabb198db6a58597273b398b6f0b2be7b2e17c27b16ce424d00d00e",
+      "scene_sha256": "51533899ea15f1b4fc98fc70105d32d066eee1c9b0572145f62943b15f0043a9",
       "definition_id": "star_compass",
       "kind": "item",
       "reason": "原星形支援器具，星位作用视觉一致；原库无罗盘",
@@ -1822,7 +1846,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "f7a1c65e106845e90bc6a2fdf0ba69dec9e2df68dd24c0a2871a6f32bad8fcbe"
+      "png_sha256": "f7a1c65e106845e90bc6a2fdf0ba69dec9e2df68dd24c0a2871a6f32bad8fcbe",
+      "template": "ItemBase"
     },
     "compact_rack": {
       "name": "Box of Riches",
@@ -1848,7 +1873,7 @@
         "res://Items/Exclusive/Particles/BoxofRichesDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "63dfb9af95f8ed85ea723f5a4248693ff62bc25715bf5d2d74eccb5541432bb4",
+      "scene_sha256": "96c1fca5cf519ee362022d6f18c01faa4417edf61b5eca7ca7f145345f764276",
       "definition_id": "compact_rack",
       "kind": "item",
       "reason": "原紧凑收纳盒，保留原箱体轮廓；使用普通Item而非Toolbox背包类",
@@ -1911,7 +1936,7 @@
         "res://Items/Exclusive/Particles/SpiritBellsDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "a2a239e69622327c9cad1e7ae8efca6a6c421287339eba70788014de02f60126",
+      "scene_sha256": "7405d6488b460cabda9b5fa0f100bdb76eae05de9ade1a9da0615c1c617d4163",
       "definition_id": "resonant_bell",
       "kind": "item",
       "reason": "原铃铛，同类共鸣铃器",
@@ -1972,7 +1997,7 @@
         "res://Items/Exclusive/Particles/SandbagDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "41002ad5a677cc60ba3713dfd73964364ee4acd6ad40a957b357d3fb7ec985ee",
+      "scene_sha256": "634d374daadf456b9111b6eca1cd964ac5cae0f47dcfbe6d063d42a05686f27d",
       "definition_id": "counterweight",
       "kind": "item",
       "reason": "原沙袋配重，同类重量装具",
@@ -2036,7 +2061,7 @@
         "res://Items/Particles/PoisonDaggerDragParticles.tres"
       ],
       "animation": "res://Items/Animations/PoisonDaggerAnimation.tscn",
-      "scene_sha256": "51850460b0c2ecb9b69343a2b9d2926779e0fbd34bef3f81618e06d879c7521a",
+      "scene_sha256": "fd73eb1bc748abefd622175ac0772cc829cc122ffb44d6976fa9b56c5d6e401e",
       "definition_id": "venom_needle",
       "kind": "item",
       "reason": "原毒匕首，毒刃机制一致",
@@ -2086,7 +2111,7 @@
         "res://Items/Particles/BurningCoalDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "537c1b3333cc58ebcd1abfa4dd5a15ad507ca50d9e9c337f5ac487666d6bf343",
+      "scene_sha256": "74001a058ad33c4786df64503020db73e6b178318eef40607811fb820e802ccc",
       "definition_id": "ember_stone",
       "kind": "item",
       "reason": "原燃烧煤块，同类灼烧石块",
@@ -2140,7 +2165,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "scene_sha256": "dbae7ae9cfb7642040507cb00611b950a31f71bb594245f20c45af4a16fd201f",
       "definition_id": "healing_herb",
       "kind": "item",
       "reason": "原治疗草药，同名同用途",
@@ -2171,7 +2196,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "746e611267fea2863f88dde055f6b34b87d756314eb14e31a7e9a02ee83d5f48"
+      "png_sha256": "746e611267fea2863f88dde055f6b34b87d756314eb14e31a7e9a02ee83d5f48",
+      "template": "ItemBase"
     },
     "regeneration_leaf": {
       "name": "Yggdrasil Leaf",
@@ -2191,7 +2217,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "045521cc0458532bc07f8519ab55cb73516158053e7977aa5aa4590b0afbd736",
+      "scene_sha256": "b7f20afce8ce8a8b844bb76c9ff2e31aa015d1193db4d65f2eb025ecdc38e324",
       "definition_id": "regeneration_leaf",
       "kind": "item",
       "reason": "原恢复型叶片，草药再生类别一致",
@@ -2226,7 +2252,8 @@
         "p4": "20:heal",
         "p5": "2:cleanse"
       },
-      "png_sha256": "4d05bfa47a1385c0d4133fc5ea44770ab17108a2560def814668eaefc67e3297"
+      "png_sha256": "4d05bfa47a1385c0d4133fc5ea44770ab17108a2560def814668eaefc67e3297",
+      "template": "ItemBase"
     },
     "fracture_charm": {
       "name": "Cursed Hair Comb",
@@ -2249,7 +2276,7 @@
         "res://Shader/AdditiveCanvasItemMaterial.tres"
       ],
       "animation": null,
-      "scene_sha256": "21a1270519d391da92bf24672a7f3cef70a797eb37a79c7c472359aff714a6d5",
+      "scene_sha256": "152a973d8603dcde8ed91fc7eb15998190cacb41f90b81e4730337c12698c53a",
       "definition_id": "fracture_charm",
       "kind": "item",
       "reason": "原诅咒饰物，负面状态辅助类别；保留骨梳原貌",
@@ -2280,7 +2307,8 @@
         "p4": "",
         "p5": "8:lifesteal_scaling"
       },
-      "png_sha256": "5efe01ef648e9c0710f961e669b521b545714164269baa3bf6481d139efa3ebf"
+      "png_sha256": "5efe01ef648e9c0710f961e669b521b545714164269baa3bf6481d139efa3ebf",
+      "template": "ItemBase"
     },
     "quicksand_vial": {
       "name": "Pocket Sand",
@@ -2301,7 +2329,7 @@
         "res://Items/Particles/PocketSandDragParticles.tres"
       ],
       "animation": null,
-      "scene_sha256": "3d955f8c5ab93e06167091bd88cca166f71df8bf004baef205d6f23c8dc0a868",
+      "scene_sha256": "cc8d5907cf4354cce589ce8e040f63cc615d349d73d1168e222e7a79917daf85",
       "definition_id": "quicksand_vial",
       "kind": "item",
       "reason": "原沙类减益耗材；原图为沙堆，不假称玻璃瓶",
@@ -2336,7 +2364,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "24081b43403cf90b51504ec1b9bef90d3d7401716490916ee0b69ce8488d277b"
+      "png_sha256": "24081b43403cf90b51504ec1b9bef90d3d7401716490916ee0b69ce8488d277b",
+      "template": "ItemBase"
     },
     "blood_cup": {
       "name": "Vampiric Potion",
@@ -2364,7 +2393,7 @@
         "res://Items/Exclusive/Materials/VampiricPotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
-      "scene_sha256": "f3af5f763268ce420dd0bc6711795f3b7f47a932ccdef988d553aed0d9391b83",
+      "scene_sha256": "44b30aeb8a4f4b4af9320d8f5c74714a81551ffea9292340aafd78a756d3017f",
       "definition_id": "blood_cup",
       "kind": "item",
       "reason": "原吸血药水，血液与吸血用途一致",
@@ -2421,7 +2450,7 @@
         "res://Items/Particles/CapofResilienceAuraParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "78a3b72e8d67703cb8401467c13befe3b632659d863d217d2c98900d84b3e253",
+      "scene_sha256": "6e0bc29fb3bd8af0f5b782596d5f503b4461e64592eeb7f25265df9a1dfb0b69",
       "definition_id": "cooling_fan",
       "kind": "item",
       "reason": "原节奏调节机械装置；原库无风扇，不生成风扇图",
@@ -2460,7 +2489,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "e22228eba512a378756e7c1b287942c0e5ebc922d1858132e084442c2ef1053f"
+      "png_sha256": "e22228eba512a378756e7c1b287942c0e5ebc922d1858132e084442c2ef1053f",
+      "template": "ItemBase"
     },
     "iron_nail": {
       "name": "Walrus Tusk",
@@ -2483,7 +2513,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "affb6efe4e978466e106daac7d85384098773951860f694d9e0e5a5ebcb82efd",
+      "scene_sha256": "6e0657ae9224b3fe958035c76bca61486d7a2253bf6f560a737a9f79d0d1b43f",
       "definition_id": "iron_nail",
       "kind": "item",
       "reason": "原尖刺形伤害组件；保留獠牙外观，不假称金属钉",
@@ -2514,7 +2544,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "edd3551e24798b56b9c4e12182bef555131af1141a863d3e4cb2a6f7a7543b04"
+      "png_sha256": "edd3551e24798b56b9c4e12182bef555131af1141a863d3e4cb2a6f7a7543b04",
+      "template": "ItemBase"
     },
     "glass_bead": {
       "name": "Regular Sapphire",
@@ -2528,7 +2559,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "371bbbb6d217cf7e16076fa7e7f3e7e4aa48ce14eb4b08e2655545080d420681",
+      "scene_sha256": "f13c1e95fffe81e9c1176f2318c3c411ddae75e4a45c1725e2feb5fd0ef4abe3",
       "definition_id": "glass_bead",
       "kind": "item",
       "reason": "原小型珠状宝石，玻璃珠状轮廓",
@@ -2559,7 +2590,8 @@
         "p4": "1",
         "p5": "4"
       },
-      "png_sha256": "b2bf045a6722cf612d7a557819b463cf4a717cd2426875c0926ef1987b6b22ae"
+      "png_sha256": "b2bf045a6722cf612d7a557819b463cf4a717cd2426875c0926ef1987b6b22ae",
+      "template": "GemBase"
     },
     "field_manual": {
       "name": "Smithing For Dummies",
@@ -2581,7 +2613,7 @@
         "res://Items/Exclusive/Particles/SmithingForDummiesDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "3b6771ea17ddb64a0dfd574761a16bce5bd3cc1b17cc17ce39ca4d73609ab45d",
+      "scene_sha256": "d20e47ca3d4206e5c98ab39742e61c0abc2ad6ff609535ba981ba9a7a9c13a54",
       "definition_id": "field_manual",
       "kind": "item",
       "reason": "原锻造手册，同类武器支援书籍",
@@ -2620,7 +2652,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "cafcd4d4cabafe85566a9e2c4b94ec121322c27acff07abcd2aaf476ccfced08"
+      "png_sha256": "cafcd4d4cabafe85566a9e2c4b94ec121322c27acff07abcd2aaf476ccfced08",
+      "template": "ItemBase"
     },
     "salvage_pouch": {
       "name": "Piggybank",
@@ -2643,7 +2676,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "025c82aec318f3897e869a562c0a6f4d0e3c041064c89bc7c521b17276296f85",
+      "scene_sha256": "518408e4571547f5405cf54b638584d037b04e8922eba863d6b2b930637fe455",
       "definition_id": "salvage_pouch",
       "kind": "item",
       "reason": "原存钱器，经济收集机制；使用普通Item而非ProtectivePurse背包类",
@@ -2678,7 +2711,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "3377fde1ba58b7131df695c586dd4a677cca65f80c5ab4a04f49fd013c2ab1a5"
+      "png_sha256": "3377fde1ba58b7131df695c586dd4a677cca65f80c5ab4a04f49fd013c2ab1a5",
+      "template": "ItemBase"
     },
     "arsenal_bracer": {
       "name": "Claws of Attack",
@@ -2701,7 +2735,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/ClawsofAttackAnimation.tscn",
-      "scene_sha256": "4b93868528d6ee770946c768d973aae06858bbb6bb989b9c95262b642c79944d",
+      "scene_sha256": "b5d21c5d3b77ecdf99d6f5bb177d366b5b6856868384652788dc02cc4316fe8e",
       "definition_id": "arsenal_bracer",
       "kind": "item",
       "reason": "原手部攻击增益装具，同类武器增强护腕",
@@ -2736,7 +2770,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "a49becad534bd79d0c5f39eba775f2ac0375262082e00ba5d1ea4dc8d13da557"
+      "png_sha256": "a49becad534bd79d0c5f39eba775f2ac0375262082e00ba5d1ea4dc8d13da557",
+      "template": "ItemBase"
     },
     "chain_blade": {
       "name": "Chainsaw",
@@ -2767,7 +2802,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Exclusive/Animations/ChainsawAnimation.tscn",
-      "scene_sha256": "47aacd189a1f66e30b8cf3f936bc255bbd8be5563b4394bb6b8ae5375d26d44e",
+      "scene_sha256": "37b51d7622c41a73eca9e144da6b6a979c7aa3ef59c539f274f46325823c7afd",
       "definition_id": "chain_blade",
       "kind": "item",
       "reason": "原链锯，链式刃具轮廓和机械攻击类别一致",
@@ -2810,7 +2845,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "27b251fcbb5dc5acf1cff0f17909553e20ca4354bbe96670b7a31b71581fcb64"
+      "png_sha256": "27b251fcbb5dc5acf1cff0f17909553e20ca4354bbe96670b7a31b71581fcb64",
+      "template": "ItemBase"
     },
     "repeater_crossbow": {
       "name": "Repeater",
@@ -2832,7 +2868,7 @@
         "res://Items/Exclusive/Particles/RepeaterDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "02150dc178b2c7ab119379e6884509940d710199cd25a4b9d43be68a397523d6",
+      "scene_sha256": "0ce62d3c10d79732ac4ac3a45f9080b0e93513f63ae92b58abfa7e0430082532",
       "definition_id": "repeater_crossbow",
       "kind": "item",
       "reason": "原连发弩，同名同类武器",
@@ -2875,7 +2911,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "0f6050f8d28a77023f922e13d98b38ae07a7fd3420b9df5f49cb7e9f84277d18"
+      "png_sha256": "0f6050f8d28a77023f922e13d98b38ae07a7fd3420b9df5f49cb7e9f84277d18",
+      "template": "ItemBase"
     },
     "crescent_glaive": {
       "name": "Halberd",
@@ -2918,7 +2955,7 @@
         "res://Items/Exclusive/Materials/SteelShine.material"
       ],
       "animation": "res://Items/Exclusive/Animations/HalberdAnimation.tscn",
-      "scene_sha256": "5bb8630a49f5c45a70a1ca770f3757986517978915e3240f62740e89e4ecf24d",
+      "scene_sha256": "e9ca02fd1a4bf963f2de97782cbdc66cb1a26d120204267df95f020a7d1f6c54",
       "definition_id": "crescent_glaive",
       "kind": "item",
       "reason": "原戟，月刃长柄武器类别一致",
@@ -2965,7 +3002,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "2d9597624d81aa5aa0a2d902374e86c678eb4d85c100e97a6d8b1421eef22110"
+      "png_sha256": "2d9597624d81aa5aa0a2d902374e86c678eb4d85c100e97a6d8b1421eef22110",
+      "template": "ItemBase"
     },
     "siege_maul": {
       "name": "Thors Hammer",
@@ -3005,7 +3043,7 @@
         "res://Items/Exclusive/Particles/TimeMelting.material"
       ],
       "animation": "res://Items/Exclusive/Animations/ThorsHammerAnimation.tscn",
-      "scene_sha256": "53e065b944efe8da0f3adcb1067da58675751ceb80c5a1d10a739774f6a5b612",
+      "scene_sha256": "b826c680eb0b3b27ae28cb118b14e807c7241ce1a16d397239e01226fb0ea5c5",
       "definition_id": "siege_maul",
       "kind": "item",
       "reason": "原高阶重锤，保留原雷神锤动画",
@@ -3052,7 +3090,8 @@
         "p4": "5:blind",
         "p5": "2:dur_blind"
       },
-      "png_sha256": "ffeb78a42ddf7bcfa170d958673718b856789aff5abaea8219d25c80ed662ec1"
+      "png_sha256": "ffeb78a42ddf7bcfa170d958673718b856789aff5abaea8219d25c80ed662ec1",
+      "template": "ItemBase"
     },
     "momentum_gear": {
       "name": "Generator",
@@ -3079,7 +3118,7 @@
         "res://Items/Exclusive/Particles/BatteryDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "88176b2095d736840807e4994724a208efd8aa5117679d673ed1c4465cadec8f",
+      "scene_sha256": "db3adef99278502f8dc64ae3a8c74568d20a46637d709b12ab9e2d051578f584",
       "definition_id": "momentum_gear",
       "kind": "item",
       "reason": "原机械发电装置，动力/节奏支援类别",
@@ -3118,7 +3157,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "729489fc33688133d7ef039cc53025ed9c166f0cfd4006a86c1b00c6b6bb8bc9"
+      "png_sha256": "729489fc33688133d7ef039cc53025ed9c166f0cfd4006a86c1b00c6b6bb8bc9",
+      "template": "ItemBase"
     },
     "duelist_mark": {
       "name": "Stone Badge",
@@ -3142,7 +3182,7 @@
         "res://Shader/AdditiveCanvasItemMaterial.tres"
       ],
       "animation": null,
-      "scene_sha256": "8675b70a81f71ab1e8f8042017516b427315976c37927a21c5bd038ed50272eb",
+      "scene_sha256": "33086b0433e9cc12a611b0fd98869ec808db486b0a2a8810d3ade7bc7bc5269d",
       "definition_id": "duelist_mark",
       "kind": "item",
       "reason": "原战斗徽记，同属小型战斗支援标记",
@@ -3177,7 +3217,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "294ad4d275d7b4a36115a4c33a20d7a44e3abf9f38ea4e6b6ba807dee0bb3eca"
+      "png_sha256": "294ad4d275d7b4a36115a4c33a20d7a44e3abf9f38ea4e6b6ba807dee0bb3eca",
+      "template": "ItemBase"
     },
     "overdrive_ratchet": {
       "name": "Perpetuum Mobile",
@@ -3199,7 +3240,7 @@
         "res://Items/Exclusive/Particles/PerpetuumMobileDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "70d0623a53b2b35c28d07ccec6988b373b2daaa104128819f83048cadcbe583c",
+      "scene_sha256": "4b2712ccdfc03d575383d6a974fdcd9e76a12a706c00d663fe8252adc6ad8d46",
       "definition_id": "overdrive_ratchet",
       "kind": "item",
       "reason": "原高阶动力机械，节奏增强类别",
@@ -3242,7 +3283,8 @@
         "p4": "30:speed",
         "p5": ""
       },
-      "png_sha256": "fdde8a989bc8cd14be6d7bb4b8d1889f76cf9c099bf1516f58c019ca4a1a95e0"
+      "png_sha256": "fdde8a989bc8cd14be6d7bb4b8d1889f76cf9c099bf1516f58c019ca4a1a95e0",
+      "template": "ItemBase"
     },
     "bastion_core": {
       "name": "Bionic Armor",
@@ -3285,7 +3327,7 @@
         "res://Items/Exclusive/Particles/SunShieldDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "70b58a5d22d14743f81459200464ebfdfd1d6d97dc7bae1dc6add7d6e1e8d769",
+      "scene_sha256": "ba9789f88ba77dbfc7507875f33e628600d61976e4f970c162cefc9c065ee20b",
       "definition_id": "bastion_core",
       "kind": "item",
       "reason": "原高阶机械护甲，防御核心类别",
@@ -3328,7 +3370,8 @@
         "p4": "5:staminat1",
         "p5": "30:block"
       },
-      "png_sha256": "1020194191b5019c11e118f28b72a758bdfe3d09cfc84041f442ce77a061d7b7"
+      "png_sha256": "1020194191b5019c11e118f28b72a758bdfe3d09cfc84041f442ce77a061d7b7",
+      "template": "ItemBase"
     },
     "layered_plates": {
       "name": "Dragonscale Armor",
@@ -3367,7 +3410,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "08bf99219c3752897b2512027d7ab8983aec7360b10b888109cc070bde588e49",
+      "scene_sha256": "102b50df679cf11bd1d4267a6a21ae2510f28e8ae2e62909d72d4c2a286d69db",
       "definition_id": "layered_plates",
       "kind": "item",
       "reason": "原层叠鳞甲，同类层叠护甲",
@@ -3410,7 +3453,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "02642fee38f22d8c1bd992059baf8b4fe8f76f1c7d3994ae99bd9d13754596b1"
+      "png_sha256": "02642fee38f22d8c1bd992059baf8b4fe8f76f1c7d3994ae99bd9d13754596b1",
+      "template": "ItemBase"
     },
     "retaliation_spikes": {
       "name": "Spiked Wall",
@@ -3449,7 +3493,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "de3571d4d47d9b5282a4fc75c90f90d65ce1b63606b4e3d275f8610c849f8e38",
+      "scene_sha256": "89b3f214d10b827b04998b41ad5da9b3a9ef0568fc80e73f702e06f130cfceff",
       "definition_id": "retaliation_spikes",
       "kind": "item",
       "reason": "原尖刺防御器，尖刺反击用途一致",
@@ -3488,7 +3532,8 @@
         "p4": "12:maxspikes",
         "p5": "30:staminaregen"
       },
-      "png_sha256": "7bb680f67a011122ddf1eaf7cc7c017a3fc7f042683d4f0e2cfa581f1e7533a0"
+      "png_sha256": "7bb680f67a011122ddf1eaf7cc7c017a3fc7f042683d4f0e2cfa581f1e7533a0",
+      "template": "ItemBase"
     },
     "guardian_standard": {
       "name": "Burning Banner",
@@ -3514,7 +3559,7 @@
         "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "scene_sha256": "ebd69545b31f5e42537dcbbe3418cc46479b7789eed4a00737be153d197487cf",
       "definition_id": "guardian_standard",
       "kind": "item",
       "reason": "原旗帜支援器，保留原旗帜材质；无新守护旗图",
@@ -3576,7 +3621,7 @@
         "res://Items/Exclusive/Materials/BatteryLightning.material"
       ],
       "animation": null,
-      "scene_sha256": "61b52c3291c05762decb258c1f52e8d9d5cc54b676dd437e7415b1134c687d26",
+      "scene_sha256": "29ef5499d8b3b22b67e172d44ad61d6fd6546754f3c96a6b5c46381eb75b1f18",
       "definition_id": "charging_weight",
       "kind": "item",
       "reason": "原蓄能器，耐力/充能用途对应；保留电池外观",
@@ -3615,7 +3660,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "c6ea12150ef276c85d110663f3d6f77efcb1b51756acec39beb82835fdd70a52"
+      "png_sha256": "c6ea12150ef276c85d110663f3d6f77efcb1b51756acec39beb82835fdd70a52",
+      "template": "ItemBase"
     },
     "execution_anvil": {
       "name": "Anvil",
@@ -3638,7 +3684,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "e5393a77ed1223e614e3421a2258ad2db546fa29256883b9446216a025954f9d",
+      "scene_sha256": "c238335527b01c563784b875db47a7872f601b99c5940c88993cf7f21b874eb4",
       "definition_id": "execution_anvil",
       "kind": "item",
       "reason": "原铁砧，同名同用途",
@@ -3685,7 +3731,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "4e6ab3e8183449f687f5f58e62ad3c17c363b85bb3d126b781d1e3286cbb14fc"
+      "png_sha256": "4e6ab3e8183449f687f5f58e62ad3c17c363b85bb3d126b781d1e3286cbb14fc",
+      "template": "ItemBase"
     },
     "toxin_bottle": {
       "name": "Pestilence Flask",
@@ -3713,7 +3760,7 @@
         "res://Shader/PestilenceFlask.Material.tres"
       ],
       "animation": "res://Items/Animations/PestilenceFlaskAnimation.tscn",
-      "scene_sha256": "09bf8656814562aabe71da15f490e5f01155acfdc76d551fc0cacaa90cb674c3",
+      "scene_sha256": "5f38914281543061464f00f8a725a32d1814b4b949e28c5ad3284c867eda7e23",
       "definition_id": "toxin_bottle",
       "kind": "item",
       "reason": "原毒药瓶，同类毒瓶",
@@ -3771,7 +3818,7 @@
         "res://Items/Particles/PoisonIvyDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "cb1cbc15e72c7ed7b641a2ba8a3b8aabbaaae0cd5c0f16cb1b207fb68a0815c6",
+      "scene_sha256": "d8dc6ce4884216d7fb58aff2f86478b16e622d4808a0f855bd6083663f0ee77f",
       "definition_id": "thorn_extract",
       "kind": "item",
       "reason": "原毒藤，同类毒性植物萃取原料",
@@ -3802,7 +3849,8 @@
         "p4": "2:poisonperspike",
         "p5": ""
       },
-      "png_sha256": "360de06e93b8f86c266d5116515756726bafd522d68ac41272611248063adfdc"
+      "png_sha256": "360de06e93b8f86c266d5116515756726bafd522d68ac41272611248063adfdc",
+      "template": "ItemBase"
     },
     "spore_jar": {
       "name": "Fly Agaric",
@@ -3825,7 +3873,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "4830ed374ecf3927ee368fc3d6c4489aca508cec1865bfa1c30a09e868e612d3",
+      "scene_sha256": "5a3d36cd07c330136f8a48a5529e552b047b4fe1151cbabbd97ab7466e1197b1",
       "definition_id": "spore_jar",
       "kind": "item",
       "reason": "原毒蘑菇，孢子毒素类别；无新罐子图",
@@ -3864,7 +3912,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "5b1ac689f2479d146b70d21595af40b3740f9e386776f0315804c9a829a7554d"
+      "png_sha256": "5b1ac689f2479d146b70d21595af40b3740f9e386776f0315804c9a829a7554d",
+      "template": "ItemBase"
     },
     "venom_distiller": {
       "name": "Laboratory",
@@ -3896,7 +3945,7 @@
         "res://Items/Exclusive/Particles/LaboratoryDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "e5a089da3b0fca28617d613872f3f7ad240f131f30e79d7d330b1486b9f54b41",
+      "scene_sha256": "6028288812916790d498c272f5f19364835e90a2d17e6c5609621daad5e725e0",
       "definition_id": "venom_distiller",
       "kind": "item",
       "reason": "原炼金蒸馏实验装置，多层原精灵和材质",
@@ -3965,7 +4014,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/StrongPestilenceFlaskAnimation.tscn",
-      "scene_sha256": "65dfbb755b6d0af5e2c1d8467f15abf13635bef2615f21658f07bcf74edc263e",
+      "scene_sha256": "f56d6ec386dc4e3c11def64aa55c1c5b6b88b661e0b0a8238e60b5bd40653a85",
       "definition_id": "plague_retort",
       "kind": "item",
       "reason": "原高阶瘟疫药瓶，保留原强化毒瓶组合",
@@ -4031,7 +4080,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "962fe9ce52b27307fbc567813499d5be52a409fc3a1fc990aa644b025e5423e3",
+      "scene_sha256": "9ee6bd2fb6904231de6556cd6eb063692966a6452ec36848abffbd7c68633353",
       "definition_id": "caustic_coil",
       "kind": "item",
       "reason": "原线圈，同类盘绕装具；毒素逻辑只来自PvE规则",
@@ -4074,7 +4123,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "c14250b5fef1c1146d766c08cc9b6fbf65f74eeeeccdfafe0bae55bc5271b98e"
+      "png_sha256": "c14250b5fef1c1146d766c08cc9b6fbf65f74eeeeccdfafe0bae55bc5271b98e",
+      "template": "ItemBase"
     },
     "ember_phial": {
       "name": "Demonic Flask",
@@ -4101,7 +4151,7 @@
         "res://Shader/DemonicFlask.material"
       ],
       "animation": "res://Items/Animations/DemonicFlaskAnimation.tscn",
-      "scene_sha256": "4811e573163fd1ac5361878d8f8a3b8472cc5ef3b0be983d7f0570293e6e62e5",
+      "scene_sha256": "53af15ec1d032564e7b2712e01be9b58c0bb785668b8b373ea24f714d69e6935",
       "definition_id": "ember_phial",
       "kind": "item",
       "reason": "原恶魔药瓶，热色液体与灼烧瓶用途近似",
@@ -4165,7 +4215,7 @@
         "res://Items/Particles/BurningTorchParticles.material"
       ],
       "animation": "res://Items/Animations/BurningTorchAnimation.tscn",
-      "scene_sha256": "376a12dfc0103ebecd39e1fe9ee37181332cfabf377dc0b6c6e3a3a811ab01c7",
+      "scene_sha256": "837ac81973ee10209f00a4a3a92d56e0e6d31f9ba81bed6b501be7270b3efa70",
       "definition_id": "coal_burner",
       "kind": "item",
       "reason": "原燃烧火炬，同属持续火焰器具；FirePit是背包而非普通Item",
@@ -4204,7 +4254,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "06796ffb65f7644510be8f83073a0587711cbf360145923db89b6419edb49547"
+      "png_sha256": "06796ffb65f7644510be8f83073a0587711cbf360145923db89b6419edb49547",
+      "template": "ItemBase"
     },
     "ignition_lens": {
       "name": "Oil Lamp",
@@ -4232,7 +4283,7 @@
         "res://Items/Particles/FlameDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "b9b4d54ebc9357fc9b12225bcb2c89e2caab5ece699b6e9c863539540dfc6132",
+      "scene_sha256": "e82a3490c96b6ae9e8a40fb3c00bdcb826baa43048190f46ba2b74454d584906",
       "definition_id": "ignition_lens",
       "kind": "item",
       "reason": "原玻璃灯器，点火/聚光类别",
@@ -4271,7 +4322,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "a3b1690bc9266c02352fd80289f64fe2920afc920f483e614fa8fd918f5d30b3"
+      "png_sha256": "a3b1690bc9266c02352fd80289f64fe2920afc920f483e614fa8fd918f5d30b3",
+      "template": "ItemBase"
     },
     "wildfire_alembic": {
       "name": "Cauldron",
@@ -4305,7 +4357,7 @@
         "res://Items/Exclusive/Particles/CauldronDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "774b2a376a774370ba74ca766c4c412eb8b1e9081e51acb51d55c12b8209e0e7",
+      "scene_sha256": "d895a196926018a7f9d66eacf0ebec9e137ccee593d965f2007c5349478a6846",
       "definition_id": "wildfire_alembic",
       "kind": "item",
       "reason": "原炼金锅，大型炼金器具，保留完整原材质",
@@ -4379,7 +4431,7 @@
         "res://Shader/HealthPotion.material"
       ],
       "animation": "res://Items/Animations/HealthPotionAnimation.tscn",
-      "scene_sha256": "9ae2e74cc8573171a94a150b8e883202accacf0c671c096918b1f1c8ba4ed949",
+      "scene_sha256": "a4d30a79b570c4758c3258519921c71ef4f7aa0675573f4031c13824955d856d",
       "definition_id": "tonic_bottle",
       "kind": "item",
       "reason": "原治疗药瓶，同类恢复药水",
@@ -4448,7 +4500,7 @@
         "res://Items/Exclusive/Particles/PotDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "63acb0c4a4921a2e4e3819916939f6bc544b376bc1e4e2cbfff88c85c22dd83d",
+      "scene_sha256": "e11781e7dd9e806e039742972e4688eacc7bb37b700a7ebe45f7d93f0574f00d",
       "definition_id": "renewal_mortar",
       "kind": "item",
       "reason": "原草药烹调容器；保留锅的原貌，非伪造石臼",
@@ -4487,7 +4539,8 @@
         "p4": "6:regen",
         "p5": "50:speed"
       },
-      "png_sha256": "92008f0ed4cb33e80a7140280a3058ab6f7ae23af1f734562756f99c21526949"
+      "png_sha256": "92008f0ed4cb33e80a7140280a3058ab6f7ae23af1f734562756f99c21526949",
+      "template": "ItemBase"
     },
     "transfusion_tube": {
       "name": "Blood Amulet",
@@ -4511,7 +4564,7 @@
         "res://Items/Particles/BloodAmuletDragParticles.tres"
       ],
       "animation": null,
-      "scene_sha256": "ce9b8e7e0db4a6279b5dfc5479c19bb9574843e6043873dec7d109e7676a39c0",
+      "scene_sha256": "584671e9642178dcfd6436f857b60631e5917aa6ae14f53cc011bab14cfa3042",
       "definition_id": "transfusion_tube",
       "kind": "item",
       "reason": "原血液恢复饰物；原库无输液管，保留原血护符",
@@ -4554,7 +4607,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "9b63de7a4b82560d41205ef0e8a947446a53e4075d35c27963f2cb8090962b50"
+      "png_sha256": "9b63de7a4b82560d41205ef0e8a947446a53e4075d35c27963f2cb8090962b50",
+      "template": "ItemBase"
     },
     "philosophers_kettle": {
       "name": "Cauldron",
@@ -4588,7 +4642,7 @@
         "res://Items/Exclusive/Particles/CauldronDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "774b2a376a774370ba74ca766c4c412eb8b1e9081e51acb51d55c12b8209e0e7",
+      "scene_sha256": "d895a196926018a7f9d66eacf0ebec9e137ccee593d965f2007c5349478a6846",
       "definition_id": "philosophers_kettle",
       "kind": "item",
       "reason": "原炼金锅，同类锅炉与恢复炼金器具",
@@ -4662,7 +4716,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -4757,7 +4811,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "c80c5851a278409a7c2537af63a2f59ea30454834fa4ea73af0cbf89e3d59b41",
+      "scene_sha256": "88dca80d5afa9a616102258137037d8839b7d2d495a44624bdd723c1c760a0bb",
       "definition_id": "bag_corner_satchel",
       "kind": "bag",
       "reason": "原L形拼图袋，转角拓扑",
@@ -4859,7 +4913,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "9653778ba8f20174bc37ab0835c59b2ca6ea69957488e274e45984800abaeb11",
+      "scene_sha256": "b1e9428cb879c13f7c265f6e1706ded8f2f4a00195a0bd2f6923870a92235279",
       "definition_id": "bag_tool_roll",
       "kind": "bag",
       "reason": "原三乘二六格收纳袋，实际占格与规划卷袋完全一致",
@@ -4949,7 +5003,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "8e9aefd63bc2e47aaa7a7f6814c2480f09673fda0132a820d7ec556691e16dde",
+      "scene_sha256": "94baa37a7b693c0f755c5c54790ec5db4673a693307b2375aff6c31c8305f311",
       "definition_id": "bag_guard_harness",
       "kind": "bag",
       "reason": "原战士职业袋，战斗防护装具",
@@ -5059,7 +5113,7 @@
         "res://Items/Exclusive/Particles/VineweaveBasketSaleParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "d496573b78eda5efebb47ed8de23c3e7b5f4b61d066e7d53e95d542cf9e5c610",
+      "scene_sha256": "ca2c331dcbb0ab0eed4210cf6831669aca2c06dc274982f47f27308e6f890503",
       "definition_id": "bag_herbal_tray",
       "kind": "bag",
       "reason": "原藤编篮，草药篮形容器",
@@ -5161,7 +5215,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "c2ffd28a580159427563bf19cec3157c4620d8fc0a606ffcceca678b58fe2123",
+      "scene_sha256": "7d5293d00400a1c938ed8bb4af13f759c15c9f5bbbf4a5357f91229a2e44266e",
       "definition_id": "bag_gear_sling",
       "kind": "bag",
       "reason": "原工程师机械包，机械空间与增益类别",
@@ -5244,7 +5298,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "4f4d7296c129449d414013950bb6235ffc38b1eb3d7052a2baa4862a8ce96675",
+      "scene_sha256": "7e69b396f780c7d18447a94819d4068d7a19c41a746db9a61fc2a7da4f0ae8c3",
       "definition_id": "bag_cross_brace",
       "kind": "bag",
       "reason": "原T形拼图袋，分支拓扑",
@@ -5355,7 +5409,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "1bfbe658402761258e6b420a42bb676d1a3c358c5aadb0afe5802890cdba273e",
+      "scene_sha256": "046ca49b06a102a67b68004b45a745a69ba003a03d2baef03839cd8b077312a2",
       "definition_id": "bag_hollow_ring",
       "kind": "bag",
       "reason": "原八格三乘三工具箱带缺口，接近八格环围；缺口位置与规划不同明确记录",
@@ -5446,7 +5500,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "555dea7210e747108c470c9e384bb3eeb2d89b220f7cf463c7ab31f057b9e9c6",
+      "scene_sha256": "3e94080cb95d31838e9bd3de2d35ed3a427f8df3897de1be1fbe31d9d27fae4b",
       "definition_id": "bag_step_case",
       "kind": "bag",
       "reason": "原阶梯Z形拼图袋，阶梯拓扑",
@@ -5537,7 +5591,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "a1bfdb79cd7b7f962b713a8c764dd10160d51da1f9133a244372aa540a590d92",
+      "scene_sha256": "4fd5830e647509f76fca63be9161bfc56e3c9e016f7d615b7834d37daa9f1b78",
       "definition_id": "bag_twin_wing",
       "kind": "bag",
       "reason": "原双翼折线S形拼图袋，双翼拓扑",
@@ -5621,7 +5675,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/HeroicPotionAnimation.tscn",
-      "scene_sha256": "931502a9113435f9e1d9a8e7fcf8bcec32ad63d88c83990acaed0663087f05e4",
+      "scene_sha256": "42b71fecd225fc62f577af145bf21a2869d75a91c029dde581b39aebe0fece30",
       "definition_id": "stamina_flask",
       "kind": "item",
       "reason": "原耐力药水，同类耐力补给瓶",
@@ -5681,7 +5735,7 @@
         "res://Items/Particles/PoisonDaggerDragParticles.tres"
       ],
       "animation": "res://Items/Animations/PoisonDaggerAnimation.tscn",
-      "scene_sha256": "51850460b0c2ecb9b69343a2b9d2926779e0fbd34bef3f81618e06d879c7521a",
+      "scene_sha256": "fd73eb1bc748abefd622175ac0772cc829cc122ffb44d6976fa9b56c5d6e401e",
       "definition_id": "venom_needle",
       "kind": "item",
       "reason": "原毒匕首，毒刃机制一致",
@@ -5759,7 +5813,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Exclusive/Animations/DoubleAxeAnimation.tscn",
-      "scene_sha256": "25b0772cf67d9501091c7b034a41c033224637d19a8b9623fb8b3e896732d6ed",
+      "scene_sha256": "c730b4b2997d12e972a809bd57bf2e427aa10b051dd876a10610d312e9acd818",
       "definition_id": "heavy_cleaver",
       "kind": "item",
       "reason": "原双刃大斧，强化后的重型刃武器",
@@ -5802,7 +5856,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "c7d59ad7e99df70bf5d252bd768461ca848661dd526f1fcd60f4ebb60beffae3"
+      "png_sha256": "c7d59ad7e99df70bf5d252bd768461ca848661dd526f1fcd60f4ebb60beffae3",
+      "template": "ItemBase"
     },
     "supply_blood_crystal_necklace": {
       "name": "Vampiric Potion",
@@ -5830,7 +5885,7 @@
         "res://Items/Exclusive/Materials/VampiricPotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
-      "scene_sha256": "f3af5f763268ce420dd0bc6711795f3b7f47a932ccdef988d553aed0d9391b83",
+      "scene_sha256": "44b30aeb8a4f4b4af9320d8f5c74714a81551ffea9292340aafd78a756d3017f",
       "definition_id": "blood_cup",
       "kind": "item",
       "reason": "原吸血药水，血液与吸血用途一致",
@@ -5893,7 +5948,7 @@
         "res://Items/Exclusive/Materials/VampiricPotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
-      "scene_sha256": "f3af5f763268ce420dd0bc6711795f3b7f47a932ccdef988d553aed0d9391b83",
+      "scene_sha256": "44b30aeb8a4f4b4af9320d8f5c74714a81551ffea9292340aafd78a756d3017f",
       "definition_id": "blood_cup",
       "kind": "item",
       "reason": "原吸血药水，血液与吸血用途一致",
@@ -5959,7 +6014,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -5998,7 +6053,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "da3fb744552ec7a46e42c4c7d3a7f24e75ae1f68aad5f08bb221ef03148776e0"
+      "png_sha256": "da3fb744552ec7a46e42c4c7d3a7f24e75ae1f68aad5f08bb221ef03148776e0",
+      "template": "ItemBase"
     },
     "supply_bow": {
       "name": "Spear",
@@ -6029,7 +6085,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -6068,7 +6124,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "49a8d5e33baa84c598bd8f43bfa691100beeae5038c0ed19285e7ca1f5223b14"
+      "png_sha256": "49a8d5e33baa84c598bd8f43bfa691100beeae5038c0ed19285e7ca1f5223b14",
+      "template": "ItemBase"
     },
     "supply_bread": {
       "name": "Slice of Bread",
@@ -6087,7 +6144,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f1a381a01c30daeb43ab6439913f0cb31f71a2794236c0dd7320495f59e4c89d",
+      "scene_sha256": "59a18b6c8f5293eea3a00402811c59135514a47470684c394db1189034375860",
       "definition_id": "travel_ration",
       "kind": "item",
       "reason": "原食物补给，旅行口粮对应面包",
@@ -6122,7 +6179,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "d72135ca3a2f8d94f17a01ae61a84c22dd81e055033e677114d3ff30c0b1e051"
+      "png_sha256": "d72135ca3a2f8d94f17a01ae61a84c22dd81e055033e677114d3ff30c0b1e051",
+      "template": "ItemBase"
     },
     "supply_chaos_staff": {
       "name": "Oil Lamp",
@@ -6150,7 +6208,7 @@
         "res://Items/Particles/FlameDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "b9b4d54ebc9357fc9b12225bcb2c89e2caab5ece699b6e9c863539540dfc6132",
+      "scene_sha256": "e82a3490c96b6ae9e8a40fb3c00bdcb826baa43048190f46ba2b74454d584906",
       "definition_id": "ignition_lens",
       "kind": "item",
       "reason": "原玻璃灯器，点火/聚光类别",
@@ -6189,7 +6247,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "5e438785292657b5038cac9264ebcde5b6aa7accc6703daf3e8aa05af82aaad7"
+      "png_sha256": "5e438785292657b5038cac9264ebcde5b6aa7accc6703daf3e8aa05af82aaad7",
+      "template": "ItemBase"
     },
     "supply_codex": {
       "name": "Smithing For Dummies",
@@ -6211,7 +6270,7 @@
         "res://Items/Exclusive/Particles/SmithingForDummiesDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "3b6771ea17ddb64a0dfd574761a16bce5bd3cc1b17cc17ce39ca4d73609ab45d",
+      "scene_sha256": "d20e47ca3d4206e5c98ab39742e61c0abc2ad6ff609535ba981ba9a7a9c13a54",
       "definition_id": "field_manual",
       "kind": "item",
       "reason": "原锻造手册，同类武器支援书籍",
@@ -6250,7 +6309,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7"
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "template": "ItemBase"
     },
     "supply_composite_bow": {
       "name": "Spear",
@@ -6281,7 +6341,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -6320,7 +6380,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "34b750b5e8c73f2ec3d06c09a1a941d365fd3194c3c5ac753c7e93d633106a70"
+      "png_sha256": "34b750b5e8c73f2ec3d06c09a1a941d365fd3194c3c5ac753c7e93d633106a70",
+      "template": "ItemBase"
     },
     "supply_copper_watch": {
       "name": "Spring Loader",
@@ -6352,7 +6413,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "4773eb91390e4821c248d2d458cff3b976cf4a3945d0cec576cfe288d4ac192d",
+      "scene_sha256": "cd13cea51bdaf56b8b1f84991c9a107e752a99f7f8778e5c3c01ef2d64fe16f9",
       "definition_id": "clockwork_spring",
       "kind": "item",
       "reason": "原弹簧装置，有独立弹簧与护盾组合精灵",
@@ -6387,7 +6448,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "05a8fff2758982a51513c11208dc5a137af9848d72a1871bcf70d06e2caf4e15"
+      "png_sha256": "05a8fff2758982a51513c11208dc5a137af9848d72a1871bcf70d06e2caf4e15",
+      "template": "ItemBase"
     },
     "supply_cross": {
       "name": "Divine Potion",
@@ -6414,7 +6476,7 @@
         "res://Items/Exclusive/Materials/DivinePotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/DivinePotionAnimation.tscn",
-      "scene_sha256": "513560124bc74e881716ebac4aeb645295c8ec839e8eac3c55eb70275694ae53",
+      "scene_sha256": "5f2ef9d63fb883547b42fd601a31818425af3dad5602871643e9b4fb718535ce",
       "definition_id": "cleansing_salt",
       "kind": "item",
       "reason": "原净化型神圣药水；保留净化药瓶外观而非伪造盐罐",
@@ -6469,7 +6531,7 @@
         "res://Items/Exclusive/Particles/StarofCourageDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "4e125fa79dabb198db6a58597273b398b6f0b2be7b2e17c27b16ce424d00d00e",
+      "scene_sha256": "51533899ea15f1b4fc98fc70105d32d066eee1c9b0572145f62943b15f0043a9",
       "definition_id": "star_compass",
       "kind": "item",
       "reason": "原星形支援器具，星位作用视觉一致；原库无罗盘",
@@ -6508,7 +6570,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "86543d72625c82c46b4b9b2c65a26f7f812b2d2333fdd527ca648dbc889077cc"
+      "png_sha256": "86543d72625c82c46b4b9b2c65a26f7f812b2d2333fdd527ca648dbc889077cc",
+      "template": "ItemBase"
     },
     "supply_dagger": {
       "name": "Dagger",
@@ -6531,7 +6594,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/DaggerAnimation.tscn",
-      "scene_sha256": "3e2fd9a0407394de9608748cf4db834b9e56ce9762ef49caa13295fe51fe1cac",
+      "scene_sha256": "fcc024b39879d808878aafa32e737f8b2ea37ddd44d2e806d0d696be5875ac76",
       "definition_id": "utility_knife",
       "kind": "item",
       "reason": "短匕首刀刃与轻型近战用途一致",
@@ -6562,7 +6625,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "13899db2eee33767779aa87ba7d228b46e2fadac2a7c97aa7d569406b73e0fce"
+      "png_sha256": "13899db2eee33767779aa87ba7d228b46e2fadac2a7c97aa7d569406b73e0fce",
+      "template": "ItemBase"
     },
     "supply_demonic_codex": {
       "name": "Strong Pestilence Flask",
@@ -6588,7 +6652,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/StrongPestilenceFlaskAnimation.tscn",
-      "scene_sha256": "65dfbb755b6d0af5e2c1d8467f15abf13635bef2615f21658f07bcf74edc263e",
+      "scene_sha256": "f56d6ec386dc4e3c11def64aa55c1c5b6b88b661e0b0a8238e60b5bd40653a85",
       "definition_id": "plague_retort",
       "kind": "item",
       "reason": "原高阶瘟疫药瓶，保留原强化毒瓶组合",
@@ -6654,7 +6718,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "910f5cd20a839b6d8afaf59134f211b57d6d5c9d1d5138ee6568f2774bab0e02",
+      "scene_sha256": "99490a0a1c6cc44c37ae8df818a8f80bc5192a2b163d614a1cdec7432f20ebd2",
       "definition_id": "merchant_token",
       "kind": "item",
       "reason": "原顾客卡，商店经济辅助用途一致",
@@ -6685,7 +6749,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "fb95921ccdd96cd94328b876e043af4a0948f0c5fd9ea9192ddadc5576551240"
+      "png_sha256": "fb95921ccdd96cd94328b876e043af4a0948f0c5fd9ea9192ddadc5576551240",
+      "template": "ItemBase"
     },
     "supply_double_axe": {
       "name": "Axe",
@@ -6716,7 +6781,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Exclusive/Animations/AxeAnimation.tscn",
-      "scene_sha256": "ed3e35464a681626dd7691593373751fe10eb1f9f1e10cf5aeedd772b411a8f5",
+      "scene_sha256": "791d3c236340e189acabf49833f7f05ace8e56fca35d12a6717bf89b1d0752db",
       "definition_id": "broad_axe",
       "kind": "item",
       "reason": "原斧头，斧刃轮廓与重武器类别一致",
@@ -6755,7 +6820,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "6a27153e3045e6a6151b4c93b3fb5747c7c8aa0c76713372ac35342614e5031b"
+      "png_sha256": "6a27153e3045e6a6151b4c93b3fb5747c7c8aa0c76713372ac35342614e5031b",
+      "template": "ItemBase"
     },
     "supply_dusk_robe": {
       "name": "Health Potion",
@@ -6782,7 +6848,7 @@
         "res://Shader/HealthPotion.material"
       ],
       "animation": "res://Items/Animations/HealthPotionAnimation.tscn",
-      "scene_sha256": "9ae2e74cc8573171a94a150b8e883202accacf0c671c096918b1f1c8ba4ed949",
+      "scene_sha256": "a4d30a79b570c4758c3258519921c71ef4f7aa0675573f4031c13824955d856d",
       "definition_id": "tonic_bottle",
       "kind": "item",
       "reason": "原治疗药瓶，同类恢复药水",
@@ -6848,7 +6914,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -6887,7 +6953,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "5f26cbf11c65834ac543b7966de1a35cb9537b103b1b2407a0f1b9b9e7eb0800"
+      "png_sha256": "5f26cbf11c65834ac543b7966de1a35cb9537b103b1b2407a0f1b9b9e7eb0800",
+      "template": "ItemBase"
     },
     "supply_elven_charm": {
       "name": "Magic Mirror",
@@ -6914,7 +6981,7 @@
         "res://Items/Exclusive/Particles/FrozenFlame.material"
       ],
       "animation": null,
-      "scene_sha256": "419a83fd27f93dcb2bd2a94a6b9486f2b4b7ff7abff6da6c9c6856d4beba8600",
+      "scene_sha256": "c7cc2194b78d5a50b7dae5399a08b35995271c21f1306a0abfe9b87506f79779",
       "definition_id": "scout_lens",
       "kind": "item",
       "reason": "原光学镜面器具，光学辅助类别；原外观为镜子",
@@ -6949,7 +7016,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "b7e9ffe9ac4c33c54b6defe17a9deea98a466122aedbf8e49726e1b932f9ab90"
+      "png_sha256": "b7e9ffe9ac4c33c54b6defe17a9deea98a466122aedbf8e49726e1b932f9ab90",
+      "template": "ItemBase"
     },
     "supply_elven_gemstone": {
       "name": "Perfect Amethyst",
@@ -6963,7 +7031,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "c1fafef7527a7360ab7eec8c2a3469b889c2933bbb2b8c9d7569ff85a80140e0",
+      "scene_sha256": "0ae0dd82fbc717286df39305d7e3d5d72dcbc52356ffaa6276826680c4f69824",
       "definition_id": "focus_prism",
       "kind": "item",
       "reason": "原晶体宝石，可复用棱镜轮廓；保留原紫晶色彩",
@@ -7002,7 +7070,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "06f8b9242d34c21cae709f6a1ff711e4f52bbba72ff2f2cb31ddea6636b89c56"
+      "png_sha256": "06f8b9242d34c21cae709f6a1ff711e4f52bbba72ff2f2cb31ddea6636b89c56",
+      "template": "GemBase"
     },
     "supply_elven_tear": {
       "name": "Yggdrasil Leaf",
@@ -7022,7 +7091,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "045521cc0458532bc07f8519ab55cb73516158053e7977aa5aa4590b0afbd736",
+      "scene_sha256": "b7f20afce8ce8a8b844bb76c9ff2e31aa015d1193db4d65f2eb025ecdc38e324",
       "definition_id": "regeneration_leaf",
       "kind": "item",
       "reason": "原恢复型叶片，草药再生类别一致",
@@ -7057,7 +7126,8 @@
         "p4": "20:heal",
         "p5": "2:cleanse"
       },
-      "png_sha256": "3c280ecc464bfa2c4f9d76b84ce811f127c06e0728d0378652b07308b6c449bd"
+      "png_sha256": "3c280ecc464bfa2c4f9d76b84ce811f127c06e0728d0378652b07308b6c449bd",
+      "template": "ItemBase"
     },
     "supply_elven_wreath": {
       "name": "Healing Herbs",
@@ -7076,7 +7146,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "scene_sha256": "dbae7ae9cfb7642040507cb00611b950a31f71bb594245f20c45af4a16fd201f",
       "definition_id": "healing_herb",
       "kind": "item",
       "reason": "原治疗草药，同名同用途",
@@ -7107,7 +7177,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "837aac252159508b26dc303a04d949df9ae4c3930847c2d6405da50d4b492d00"
+      "png_sha256": "837aac252159508b26dc303a04d949df9ae4c3930847c2d6405da50d4b492d00",
+      "template": "ItemBase"
     },
     "supply_envy_crest": {
       "name": "Blood Amulet",
@@ -7131,7 +7202,7 @@
         "res://Items/Particles/BloodAmuletDragParticles.tres"
       ],
       "animation": null,
-      "scene_sha256": "ce9b8e7e0db4a6279b5dfc5479c19bb9574843e6043873dec7d109e7676a39c0",
+      "scene_sha256": "584671e9642178dcfd6436f857b60631e5917aa6ae14f53cc011bab14cfa3042",
       "definition_id": "transfusion_tube",
       "kind": "item",
       "reason": "原血液恢复饰物；原库无输液管，保留原血护符",
@@ -7174,7 +7245,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "d6ad22d66dd4352ff86133ec0dd03c48a22c3590bae01e3d9ebfd268ed940987"
+      "png_sha256": "d6ad22d66dd4352ff86133ec0dd03c48a22c3590bae01e3d9ebfd268ed940987",
+      "template": "ItemBase"
     },
     "supply_flint": {
       "name": "Burning Coal",
@@ -7193,7 +7265,7 @@
         "res://Items/Particles/BurningCoalDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "537c1b3333cc58ebcd1abfa4dd5a15ad507ca50d9e9c337f5ac487666d6bf343",
+      "scene_sha256": "74001a058ad33c4786df64503020db73e6b178318eef40607811fb820e802ccc",
       "definition_id": "ember_stone",
       "kind": "item",
       "reason": "原燃烧煤块，同类灼烧石块",
@@ -7253,7 +7325,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/HeroicPotionAnimation.tscn",
-      "scene_sha256": "931502a9113435f9e1d9a8e7fcf8bcec32ad63d88c83990acaed0663087f05e4",
+      "scene_sha256": "42b71fecd225fc62f577af145bf21a2869d75a91c029dde581b39aebe0fece30",
       "definition_id": "stamina_flask",
       "kind": "item",
       "reason": "原耐力药水，同类耐力补给瓶",
@@ -7302,7 +7374,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "371bbbb6d217cf7e16076fa7e7f3e7e4aa48ce14eb4b08e2655545080d420681",
+      "scene_sha256": "f13c1e95fffe81e9c1176f2318c3c411ddae75e4a45c1725e2feb5fd0ef4abe3",
       "definition_id": "glass_bead",
       "kind": "item",
       "reason": "原小型珠状宝石，玻璃珠状轮廓",
@@ -7333,7 +7405,8 @@
         "p4": "1",
         "p5": "4"
       },
-      "png_sha256": "171f301ee3ff3edff42d21e4968bee74b08a19d495ed6ef4bd4601051e8317d8"
+      "png_sha256": "171f301ee3ff3edff42d21e4968bee74b08a19d495ed6ef4bd4601051e8317d8",
+      "template": "GemBase"
     },
     "supply_gem_green": {
       "name": "Healing Herbs",
@@ -7352,7 +7425,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "scene_sha256": "dbae7ae9cfb7642040507cb00611b950a31f71bb594245f20c45af4a16fd201f",
       "definition_id": "healing_herb",
       "kind": "item",
       "reason": "原治疗草药，同名同用途",
@@ -7383,7 +7456,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "3afe0acab3518c0fd0eb51abab8bc7e29af041f8f9f27b95f3c836ac366e95da"
+      "png_sha256": "3afe0acab3518c0fd0eb51abab8bc7e29af041f8f9f27b95f3c836ac366e95da",
+      "template": "ItemBase"
     },
     "supply_gem_purple": {
       "name": "Perfect Amethyst",
@@ -7397,7 +7471,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "c1fafef7527a7360ab7eec8c2a3469b889c2933bbb2b8c9d7569ff85a80140e0",
+      "scene_sha256": "0ae0dd82fbc717286df39305d7e3d5d72dcbc52356ffaa6276826680c4f69824",
       "definition_id": "focus_prism",
       "kind": "item",
       "reason": "原晶体宝石，可复用棱镜轮廓；保留原紫晶色彩",
@@ -7436,7 +7510,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "fc69d6aa5645d9c784ad2a94375e04c7173d51bb570a87b847276e6b088f21d3"
+      "png_sha256": "fc69d6aa5645d9c784ad2a94375e04c7173d51bb570a87b847276e6b088f21d3",
+      "template": "GemBase"
     },
     "supply_gem_red": {
       "name": "Burning Coal",
@@ -7455,7 +7530,7 @@
         "res://Items/Particles/BurningCoalDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "537c1b3333cc58ebcd1abfa4dd5a15ad507ca50d9e9c337f5ac487666d6bf343",
+      "scene_sha256": "74001a058ad33c4786df64503020db73e6b178318eef40607811fb820e802ccc",
       "definition_id": "ember_stone",
       "kind": "item",
       "reason": "原燃烧煤块，同类灼烧石块",
@@ -7509,7 +7584,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f18f4927989468185baed745952efbf9d7b1e7c5e47318d38c1d26ed0145774d",
+      "scene_sha256": "5beb63deb3fdd9faf5bfc58ee9e029d36f7d19b1fac43e767f0c68e1bbb3bfcf",
       "definition_id": "sharpening_stone",
       "kind": "item",
       "reason": "原磨刀石，同名同用途",
@@ -7540,7 +7615,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "de92ee1e1dd14bfa5b14a2fcfde512dfde69b9aecad6b69973bb846c7e660bbd"
+      "png_sha256": "de92ee1e1dd14bfa5b14a2fcfde512dfde69b9aecad6b69973bb846c7e660bbd",
+      "template": "ItemBase"
     },
     "supply_gluttony_crest": {
       "name": "Cauldron",
@@ -7574,7 +7650,7 @@
         "res://Items/Exclusive/Particles/CauldronDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "774b2a376a774370ba74ca766c4c412eb8b1e9081e51acb51d55c12b8209e0e7",
+      "scene_sha256": "d895a196926018a7f9d66eacf0ebec9e137ccee593d965f2007c5349478a6846",
       "definition_id": "philosophers_kettle",
       "kind": "item",
       "reason": "原炼金锅，同类锅炉与恢复炼金器具",
@@ -7636,7 +7712,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "bbb7a665cfc458ee9cd7284cdae9476dc7f09fdf82d1f22e73650864319bf746",
+      "scene_sha256": "361d71ec2b7b372073e1640bada99aac9acedfe2b9143612446dd51e8dc3700c",
       "definition_id": "lucky_coin",
       "kind": "item",
       "reason": "原幸运饰物；币形图无可购原descriptor时使用幸运三叶草，不伪称硬币",
@@ -7667,7 +7743,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "78c726123c7055d2ce173c79af3d16b793d0136fd357ef2356ca78a13bf2b925"
+      "png_sha256": "78c726123c7055d2ce173c79af3d16b793d0136fd357ef2356ca78a13bf2b925",
+      "template": "ItemBase"
     },
     "supply_herb_pouch": {
       "name": "Pot",
@@ -7701,7 +7778,7 @@
         "res://Items/Exclusive/Particles/PotDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "63acb0c4a4921a2e4e3819916939f6bc544b376bc1e4e2cbfff88c85c22dd83d",
+      "scene_sha256": "e11781e7dd9e806e039742972e4688eacc7bb37b700a7ebe45f7d93f0574f00d",
       "definition_id": "renewal_mortar",
       "kind": "item",
       "reason": "原草药烹调容器；保留锅的原貌，非伪造石臼",
@@ -7740,7 +7817,8 @@
         "p4": "6:regen",
         "p5": "50:speed"
       },
-      "png_sha256": "aa3249c3c30c65a73a542f2007f5cea51457414367ddd1c0c27ed8d551303adf"
+      "png_sha256": "aa3249c3c30c65a73a542f2007f5cea51457414367ddd1c0c27ed8d551303adf",
+      "template": "ItemBase"
     },
     "supply_hero_bow": {
       "name": "Spear",
@@ -7771,7 +7849,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -7810,7 +7888,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "9a5e287171e0ea2ccda7076529ed6f46220cc5701d6db10f1001ca3a8b727e01"
+      "png_sha256": "9a5e287171e0ea2ccda7076529ed6f46220cc5701d6db10f1001ca3a8b727e01",
+      "template": "ItemBase"
     },
     "supply_holy_bulwark": {
       "name": "Shield of Valor",
@@ -7852,7 +7931,7 @@
         "res://Items/Particles/HolyArmorDragParticles.tres"
       ],
       "animation": null,
-      "scene_sha256": "4f82f59e57a15d24629b9a956873a479b22131fbf3738e403fc557a5be9131cf",
+      "scene_sha256": "836bfe994f21d9bb714080c9c5cd20bff8a5b2be86f81d79eff563da650eb129",
       "definition_id": "tower_shield",
       "kind": "item",
       "reason": "原大型盾牌，同类长盾防御物品",
@@ -7895,7 +7974,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "42268334f000500fdc399f3721da7eda92cc6c9da27494c735a269036471bdc5"
+      "png_sha256": "42268334f000500fdc399f3721da7eda92cc6c9da27494c735a269036471bdc5",
+      "template": "ItemBase"
     },
     "supply_holy_cross": {
       "name": "Divine Potion",
@@ -7922,7 +8002,7 @@
         "res://Items/Exclusive/Materials/DivinePotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/DivinePotionAnimation.tscn",
-      "scene_sha256": "513560124bc74e881716ebac4aeb645295c8ec839e8eac3c55eb70275694ae53",
+      "scene_sha256": "5f2ef9d63fb883547b42fd601a31818425af3dad5602871643e9b4fb718535ce",
       "definition_id": "cleansing_salt",
       "kind": "item",
       "reason": "原净化型神圣药水；保留净化药瓶外观而非伪造盐罐",
@@ -7977,7 +8057,7 @@
         "res://Shader/AdditiveCanvasItemMaterial.tres"
       ],
       "animation": null,
-      "scene_sha256": "8675b70a81f71ab1e8f8042017516b427315976c37927a21c5bd038ed50272eb",
+      "scene_sha256": "33086b0433e9cc12a611b0fd98869ec808db486b0a2a8810d3ade7bc7bc5269d",
       "definition_id": "duelist_mark",
       "kind": "item",
       "reason": "原战斗徽记，同属小型战斗支援标记",
@@ -8012,7 +8092,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "f79aafd2394488e228aff3eaf7bf876883f3f59a9a18317d750cb99105166612"
+      "png_sha256": "f79aafd2394488e228aff3eaf7bf876883f3f59a9a18317d750cb99105166612",
+      "template": "ItemBase"
     },
     "supply_ice_cube": {
       "name": "Pocket Sand",
@@ -8033,7 +8114,7 @@
         "res://Items/Particles/PocketSandDragParticles.tres"
       ],
       "animation": null,
-      "scene_sha256": "3d955f8c5ab93e06167091bd88cca166f71df8bf004baef205d6f23c8dc0a868",
+      "scene_sha256": "cc8d5907cf4354cce589ce8e040f63cc615d349d73d1168e222e7a79917daf85",
       "definition_id": "quicksand_vial",
       "kind": "item",
       "reason": "原沙类减益耗材；原图为沙堆，不假称玻璃瓶",
@@ -8068,7 +8149,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "94b3687c650f1bd416f18b1c8d0dc1bf035884a333d776d2869361014275271a"
+      "png_sha256": "94b3687c650f1bd416f18b1c8d0dc1bf035884a333d776d2869361014275271a",
+      "template": "ItemBase"
     },
     "supply_ice_pack": {
       "name": "Time Dilator",
@@ -8090,7 +8172,7 @@
         "res://Items/Particles/CapofResilienceAuraParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "78a3b72e8d67703cb8401467c13befe3b632659d863d217d2c98900d84b3e253",
+      "scene_sha256": "6e0bc29fb3bd8af0f5b782596d5f503b4461e64592eeb7f25265df9a1dfb0b69",
       "definition_id": "cooling_fan",
       "kind": "item",
       "reason": "原节奏调节机械装置；原库无风扇，不生成风扇图",
@@ -8129,7 +8211,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "58b3a90fc959cac6225343359cc5ad2ee5b307da9f98b7c1e0b6a8f9dbccba66"
+      "png_sha256": "58b3a90fc959cac6225343359cc5ad2ee5b307da9f98b7c1e0b6a8f9dbccba66",
+      "template": "ItemBase"
     },
     "supply_iron_longsword": {
       "name": "Hero Sword",
@@ -8155,7 +8238,7 @@
         "res://Items/Particles/HeroSwordDragParticles.material"
       ],
       "animation": "res://Items/Animations/HeroSwordAnimation.tscn",
-      "scene_sha256": "e4dd71d663b526ea268f981a608b78f11f7bdd48f2d6a72182530c843743dbf9",
+      "scene_sha256": "b3b2ea0c9f936f4d019a9b4fad0c85b9a56bf018f4250c213d4a5bf5276fb266",
       "definition_id": "iron_sword",
       "kind": "item",
       "reason": "原金属长剑；同属直剑近战武器",
@@ -8194,7 +8277,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "828acc4990f22d4a5f6a98316670648b4eb0f9cb687699ab304e49d599be3b2d"
+      "png_sha256": "828acc4990f22d4a5f6a98316670648b4eb0f9cb687699ab304e49d599be3b2d",
+      "template": "ItemBase"
     },
     "supply_jade_gloves": {
       "name": "Cog",
@@ -8213,7 +8297,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "615a8fa28adee346d9fa5e694f990f0b036564515f2125523d26157cf2c85a13",
+      "scene_sha256": "d6c7a23ced1c75d3996ba20e68fb08bfa6159750ab2b899bc93780addc385752",
       "definition_id": "gear_link",
       "kind": "item",
       "reason": "原齿轮，同类机械连接件",
@@ -8244,7 +8328,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "321ae379227bacf3e3b39d5831ff88d6d9931df5d3c5b0c9f89501dc401ee0fb"
+      "png_sha256": "321ae379227bacf3e3b39d5831ff88d6d9931df5d3c5b0c9f89501dc401ee0fb",
+      "template": "ItemBase"
     },
     "supply_kite_dagger": {
       "name": "Scissorswords",
@@ -8289,7 +8374,7 @@
         "res://Shader/AdditiveCanvasItemMaterial.tres"
       ],
       "animation": "res://Items/Exclusive/Animations/ScissorswordsAnimation.tscn",
-      "scene_sha256": "e5b7aa7f9c2ca112f4c8a6e88662a3cfcfea7b2f09fbba09ce8f4ff6a81c897f",
+      "scene_sha256": "050fee5c5db3ee4f4a20b53a231ba350218269b236c78345c992b1dec8278fa0",
       "definition_id": "twin_needles",
       "kind": "item",
       "reason": "原成对细刃；保留原剪剑造型，不宣称已有双针图",
@@ -8324,7 +8409,8 @@
         "p4": "5:dur_blind",
         "p5": "3:luckt"
       },
-      "png_sha256": "6c10bb889f61be7f0a92747042d07a155f91b2864be1acf20112aa362a982644"
+      "png_sha256": "6c10bb889f61be7f0a92747042d07a155f91b2864be1acf20112aa362a982644",
+      "template": "ItemBase"
     },
     "supply_knight_seal": {
       "name": "Burning Banner",
@@ -8350,7 +8436,7 @@
         "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "scene_sha256": "ebd69545b31f5e42537dcbbe3418cc46479b7789eed4a00737be153d197487cf",
       "definition_id": "column_standard",
       "kind": "item",
       "reason": "原战旗；列式防御属于PvE规则，视觉不另造蓝旗",
@@ -8428,7 +8514,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "213236085cda0fc2d9a6ff4f946823cebb2362ebea5b7263772842de693b9836",
+      "scene_sha256": "149646349db7a3e99be5343ff6f25cf995721743b5c5a06f1b3ef0dacf5c1c94",
       "definition_id": "leather_wrap",
       "kind": "item",
       "reason": "原皮甲，皮革防护类别；保持原皮甲外观",
@@ -8463,7 +8549,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "a4b2790aca24525182d6c395a02f45ecca01ffd68d40a8e5cd196a79e14f4df9"
+      "png_sha256": "a4b2790aca24525182d6c395a02f45ecca01ffd68d40a8e5cd196a79e14f4df9",
+      "template": "ItemBase"
     },
     "supply_lucky_cat": {
       "name": "Lucky Clover",
@@ -8482,7 +8569,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "bbb7a665cfc458ee9cd7284cdae9476dc7f09fdf82d1f22e73650864319bf746",
+      "scene_sha256": "361d71ec2b7b372073e1640bada99aac9acedfe2b9143612446dd51e8dc3700c",
       "definition_id": "lucky_coin",
       "kind": "item",
       "reason": "原幸运饰物；币形图无可购原descriptor时使用幸运三叶草，不伪称硬币",
@@ -8513,7 +8600,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "f8ab25f34c4b6fbd1700e5b45de29508b7a65e2e85c409d89378729f7fddfa8d"
+      "png_sha256": "f8ab25f34c4b6fbd1700e5b45de29508b7a65e2e85c409d89378729f7fddfa8d",
+      "template": "ItemBase"
     },
     "supply_lust_crest": {
       "name": "Vampiric Potion",
@@ -8541,7 +8629,7 @@
         "res://Items/Exclusive/Materials/VampiricPotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
-      "scene_sha256": "f3af5f763268ce420dd0bc6711795f3b7f47a932ccdef988d553aed0d9391b83",
+      "scene_sha256": "44b30aeb8a4f4b4af9320d8f5c74714a81551ffea9292340aafd78a756d3017f",
       "definition_id": "blood_cup",
       "kind": "item",
       "reason": "原吸血药水，血液与吸血用途一致",
@@ -8607,7 +8695,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -8646,7 +8734,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "74fcf33982028e64cc61f8ccf96f1d9ff8c62e0cb91f3e42c3edd152b62083f6"
+      "png_sha256": "74fcf33982028e64cc61f8ccf96f1d9ff8c62e0cb91f3e42c3edd152b62083f6",
+      "template": "ItemBase"
     },
     "supply_mana_gem": {
       "name": "Heroic Potion",
@@ -8671,7 +8760,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/HeroicPotionAnimation.tscn",
-      "scene_sha256": "931502a9113435f9e1d9a8e7fcf8bcec32ad63d88c83990acaed0663087f05e4",
+      "scene_sha256": "42b71fecd225fc62f577af145bf21a2869d75a91c029dde581b39aebe0fece30",
       "definition_id": "stamina_flask",
       "kind": "item",
       "reason": "原耐力药水，同类耐力补给瓶",
@@ -8729,7 +8818,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Exclusive/Animations/WrenchAnimation.tscn",
-      "scene_sha256": "c7810b1bc447b1cb6e2e10875469aced268e4ca0cd2df8afad5dfabaff14327e",
+      "scene_sha256": "390f13ba2ff34ea254c016ce6f65b47864bd6918839d03478e0c1d4429e53828",
       "definition_id": "repair_kit",
       "kind": "item",
       "reason": "原维修扳手工具；维修用途一致，保留扳手造型",
@@ -8768,7 +8857,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "fd8a205f13e93a96778bbd955b383d61b404316caab3a7b7ad26b05d4cda36a6"
+      "png_sha256": "fd8a205f13e93a96778bbd955b383d61b404316caab3a7b7ad26b05d4cda36a6",
+      "template": "ItemBase"
     },
     "supply_plate_armor": {
       "name": "Stone Armor",
@@ -8807,7 +8897,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "52c156a0404eb2e695294ff253bf15f51495e7bd205486a9b05a2564b5985eff",
+      "scene_sha256": "5ec2c06611508432a4858e77f671a2da4af5f0ed5883285c23e8ccddfe4daee2",
       "definition_id": "plated_vest",
       "kind": "item",
       "reason": "原硬质护甲，护甲机制与装甲轮廓",
@@ -8850,7 +8940,8 @@
         "p4": "20:staminacost",
         "p5": "40:blockperhealth"
       },
-      "png_sha256": "c23d46decb97364ec5756fe50f75613b3cf9d3075cd4ad12d5f5d481b2fa83fa"
+      "png_sha256": "c23d46decb97364ec5756fe50f75613b3cf9d3075cd4ad12d5f5d481b2fa83fa",
+      "template": "ItemBase"
     },
     "supply_potted_plant": {
       "name": "Healing Herbs",
@@ -8869,7 +8960,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "scene_sha256": "dbae7ae9cfb7642040507cb00611b950a31f71bb594245f20c45af4a16fd201f",
       "definition_id": "healing_herb",
       "kind": "item",
       "reason": "原治疗草药，同名同用途",
@@ -8900,7 +8991,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "001d125f707acaa78cd0a306e835c68a7d175d9412854a0aed03437d8dc5c10d"
+      "png_sha256": "001d125f707acaa78cd0a306e835c68a7d175d9412854a0aed03437d8dc5c10d",
+      "template": "ItemBase"
     },
     "supply_pride_crest": {
       "name": "Perpetuum Mobile",
@@ -8922,7 +9014,7 @@
         "res://Items/Exclusive/Particles/PerpetuumMobileDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "70d0623a53b2b35c28d07ccec6988b373b2daaa104128819f83048cadcbe583c",
+      "scene_sha256": "4b2712ccdfc03d575383d6a974fdcd9e76a12a706c00d663fe8252adc6ad8d46",
       "definition_id": "overdrive_ratchet",
       "kind": "item",
       "reason": "原高阶动力机械，节奏增强类别",
@@ -8965,7 +9057,8 @@
         "p4": "30:speed",
         "p5": ""
       },
-      "png_sha256": "88e7b7e0dd8aedae07cc5c12e286edc6a546ed1afcd7c7813dd2132bf52bc682"
+      "png_sha256": "88e7b7e0dd8aedae07cc5c12e286edc6a546ed1afcd7c7813dd2132bf52bc682",
+      "template": "ItemBase"
     },
     "supply_priest_badge": {
       "name": "Stone Badge",
@@ -8989,7 +9082,7 @@
         "res://Shader/AdditiveCanvasItemMaterial.tres"
       ],
       "animation": null,
-      "scene_sha256": "8675b70a81f71ab1e8f8042017516b427315976c37927a21c5bd038ed50272eb",
+      "scene_sha256": "33086b0433e9cc12a611b0fd98869ec808db486b0a2a8810d3ade7bc7bc5269d",
       "definition_id": "duelist_mark",
       "kind": "item",
       "reason": "原战斗徽记，同属小型战斗支援标记",
@@ -9024,7 +9117,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "eec0ef61702178665de416d1a019f1e82cf26b1425bf822a5caca6d419b86f14"
+      "png_sha256": "eec0ef61702178665de416d1a019f1e82cf26b1425bf822a5caca6d419b86f14",
+      "template": "ItemBase"
     },
     "supply_puppet": {
       "name": "Poison Dagger",
@@ -9049,7 +9143,7 @@
         "res://Items/Particles/PoisonDaggerDragParticles.tres"
       ],
       "animation": "res://Items/Animations/PoisonDaggerAnimation.tscn",
-      "scene_sha256": "51850460b0c2ecb9b69343a2b9d2926779e0fbd34bef3f81618e06d879c7521a",
+      "scene_sha256": "fd73eb1bc748abefd622175ac0772cc829cc122ffb44d6976fa9b56c5d6e401e",
       "definition_id": "venom_needle",
       "kind": "item",
       "reason": "原毒匕首，毒刃机制一致",
@@ -9103,7 +9197,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "025c82aec318f3897e869a562c0a6f4d0e3c041064c89bc7c521b17276296f85",
+      "scene_sha256": "518408e4571547f5405cf54b638584d037b04e8922eba863d6b2b930637fe455",
       "definition_id": "salvage_pouch",
       "kind": "item",
       "reason": "原存钱器，经济收集机制；使用普通Item而非ProtectivePurse背包类",
@@ -9138,7 +9232,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "a5d9a85a2be0af69966c100c684b307006f78bc34b56f4c8fcf0e6bf559f7855"
+      "png_sha256": "a5d9a85a2be0af69966c100c684b307006f78bc34b56f4c8fcf0e6bf559f7855",
+      "template": "ItemBase"
     },
     "supply_sloth_crest": {
       "name": "Pocket Sand",
@@ -9159,7 +9254,7 @@
         "res://Items/Particles/PocketSandDragParticles.tres"
       ],
       "animation": null,
-      "scene_sha256": "3d955f8c5ab93e06167091bd88cca166f71df8bf004baef205d6f23c8dc0a868",
+      "scene_sha256": "cc8d5907cf4354cce589ce8e040f63cc615d349d73d1168e222e7a79917daf85",
       "definition_id": "quicksand_vial",
       "kind": "item",
       "reason": "原沙类减益耗材；原图为沙堆，不假称玻璃瓶",
@@ -9194,7 +9289,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "e935a15641a9d5bfd9e0c966e2620a799b5845268e1a1d322fd5eef8a792a245"
+      "png_sha256": "e935a15641a9d5bfd9e0c966e2620a799b5845268e1a1d322fd5eef8a792a245",
+      "template": "ItemBase"
     },
     "supply_spear": {
       "name": "Spear",
@@ -9225,7 +9321,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -9264,7 +9360,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "0a41bb63bb2630ac52d2219d5ec579f1e67db2ce2b87eca863e4a68698963247"
+      "png_sha256": "0a41bb63bb2630ac52d2219d5ec579f1e67db2ce2b87eca863e4a68698963247",
+      "template": "ItemBase"
     },
     "supply_squire_armor": {
       "name": "Dragonscale Armor",
@@ -9303,7 +9400,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "08bf99219c3752897b2512027d7ab8983aec7360b10b888109cc070bde588e49",
+      "scene_sha256": "102b50df679cf11bd1d4267a6a21ae2510f28e8ae2e62909d72d4c2a286d69db",
       "definition_id": "layered_plates",
       "kind": "item",
       "reason": "原层叠鳞甲，同类层叠护甲",
@@ -9346,7 +9443,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "2d77e6cdaa2963c87988cae5c90efd4a58b6ac208281067aebff4f75dd5c2263"
+      "png_sha256": "2d77e6cdaa2963c87988cae5c90efd4a58b6ac208281067aebff4f75dd5c2263",
+      "template": "ItemBase"
     },
     "supply_stone": {
       "name": "Bag of Stones",
@@ -9369,7 +9467,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "c20c11cef27ee2c39534103b77ed836e27e9c342f641ba480696667e0e02104d",
+      "scene_sha256": "be951e7d965a4e7100c33e01b0bad5a8c326f71721881a8960311b161b93c02a",
       "definition_id": "sling",
       "kind": "item",
       "reason": "原投石袋，同属投石远程装具；原库无独立弹弓贴图",
@@ -9404,7 +9502,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "5cc57b53d910c4e617283e2e69b59b46d149fca4a86ddde7e3b38608f3c5a8e5"
+      "png_sha256": "5cc57b53d910c4e617283e2e69b59b46d149fca4a86ddde7e3b38608f3c5a8e5",
+      "template": "ItemBase"
     },
     "supply_thorn_mail": {
       "name": "Spiked Wall",
@@ -9443,7 +9542,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "de3571d4d47d9b5282a4fc75c90f90d65ce1b63606b4e3d275f8610c849f8e38",
+      "scene_sha256": "89b3f214d10b827b04998b41ad5da9b3a9ef0568fc80e73f702e06f130cfceff",
       "definition_id": "retaliation_spikes",
       "kind": "item",
       "reason": "原尖刺防御器，尖刺反击用途一致",
@@ -9482,7 +9581,8 @@
         "p4": "12:maxspikes",
         "p5": "30:staminaregen"
       },
-      "png_sha256": "09455ca6887918c43bc442563401ac665c40cd4d33d6444c48b6dbb559609dec"
+      "png_sha256": "09455ca6887918c43bc442563401ac665c40cd4d33d6444c48b6dbb559609dec",
+      "template": "ItemBase"
     },
     "supply_thunder_ring": {
       "name": "Spirit Bells",
@@ -9510,7 +9610,7 @@
         "res://Items/Exclusive/Particles/SpiritBellsDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "a2a239e69622327c9cad1e7ae8efca6a6c421287339eba70788014de02f60126",
+      "scene_sha256": "7405d6488b460cabda9b5fa0f100bdb76eae05de9ade1a9da0615c1c617d4163",
       "definition_id": "resonant_bell",
       "kind": "item",
       "reason": "原铃铛，同类共鸣铃器",
@@ -9564,7 +9664,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "910f5cd20a839b6d8afaf59134f211b57d6d5c9d1d5138ee6568f2774bab0e02",
+      "scene_sha256": "99490a0a1c6cc44c37ae8df818a8f80bc5192a2b163d614a1cdec7432f20ebd2",
       "definition_id": "merchant_token",
       "kind": "item",
       "reason": "原顾客卡，商店经济辅助用途一致",
@@ -9595,7 +9695,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "5a1654f41d41191a7de4975f4589062f1e6bbe78fa1cb7feeabf6d863bb1e87f"
+      "png_sha256": "5a1654f41d41191a7de4975f4589062f1e6bbe78fa1cb7feeabf6d863bb1e87f",
+      "template": "ItemBase"
     },
     "supply_vampire_fang": {
       "name": "Vampiric Potion",
@@ -9623,7 +9724,7 @@
         "res://Items/Exclusive/Materials/VampiricPotion.material"
       ],
       "animation": "res://Items/Exclusive/Animations/VampiricPotionAnimation.tscn",
-      "scene_sha256": "f3af5f763268ce420dd0bc6711795f3b7f47a932ccdef988d553aed0d9391b83",
+      "scene_sha256": "44b30aeb8a4f4b4af9320d8f5c74714a81551ffea9292340aafd78a756d3017f",
       "definition_id": "blood_cup",
       "kind": "item",
       "reason": "原吸血药水，血液与吸血用途一致",
@@ -9689,7 +9790,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -9728,7 +9829,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "39105d59ac6443067694e123c01df210970013f5d01be4a9e0d6e661091ab3cc"
+      "png_sha256": "39105d59ac6443067694e123c01df210970013f5d01be4a9e0d6e661091ab3cc",
+      "template": "ItemBase"
     },
     "supply_vine_ring": {
       "name": "Healing Herbs",
@@ -9747,7 +9849,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "6aa287cef917b21064f2e3ebf181695b87d46274a763ad3d486b904ad1f7750c",
+      "scene_sha256": "dbae7ae9cfb7642040507cb00611b950a31f71bb594245f20c45af4a16fd201f",
       "definition_id": "healing_herb",
       "kind": "item",
       "reason": "原治疗草药，同名同用途",
@@ -9778,7 +9880,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "de104e1d170d0ecceff2f42c62489f6d7abaa7985add3d4c4d179cc77c38aeb6"
+      "png_sha256": "de104e1d170d0ecceff2f42c62489f6d7abaa7985add3d4c4d179cc77c38aeb6",
+      "template": "ItemBase"
     },
     "supply_voodoo_doll": {
       "name": "Cursed Hair Comb",
@@ -9801,7 +9904,7 @@
         "res://Shader/AdditiveCanvasItemMaterial.tres"
       ],
       "animation": null,
-      "scene_sha256": "21a1270519d391da92bf24672a7f3cef70a797eb37a79c7c472359aff714a6d5",
+      "scene_sha256": "152a973d8603dcde8ed91fc7eb15998190cacb41f90b81e4730337c12698c53a",
       "definition_id": "fracture_charm",
       "kind": "item",
       "reason": "原诅咒饰物，负面状态辅助类别；保留骨梳原貌",
@@ -9832,7 +9935,8 @@
         "p4": "",
         "p5": "8:lifesteal_scaling"
       },
-      "png_sha256": "fc920b15798e50c334cf071f9792ad544a9b0c22b7bb6da15d644a1cc45c6e63"
+      "png_sha256": "fc920b15798e50c334cf071f9792ad544a9b0c22b7bb6da15d644a1cc45c6e63",
+      "template": "ItemBase"
     },
     "supply_voodoo_staff": {
       "name": "Pestilence Flask",
@@ -9860,7 +9964,7 @@
         "res://Shader/PestilenceFlask.Material.tres"
       ],
       "animation": "res://Items/Animations/PestilenceFlaskAnimation.tscn",
-      "scene_sha256": "09bf8656814562aabe71da15f490e5f01155acfdc76d551fc0cacaa90cb674c3",
+      "scene_sha256": "5f38914281543061464f00f8a725a32d1814b4b949e28c5ad3284c867eda7e23",
       "definition_id": "toxin_bottle",
       "kind": "item",
       "reason": "原毒药瓶，同类毒瓶",
@@ -9921,7 +10025,7 @@
         "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
       ],
       "animation": null,
-      "scene_sha256": "a840f4de37a343fc9189076c3e19154764032333350894f7ed464c7ddeb76732",
+      "scene_sha256": "ebd69545b31f5e42537dcbbe3418cc46479b7789eed4a00737be153d197487cf",
       "definition_id": "guardian_standard",
       "kind": "item",
       "reason": "原旗帜支援器，保留原旗帜材质；无新守护旗图",
@@ -9979,7 +10083,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f18f4927989468185baed745952efbf9d7b1e7c5e47318d38c1d26ed0145774d",
+      "scene_sha256": "5beb63deb3fdd9faf5bfc58ee9e029d36f7d19b1fac43e767f0c68e1bbb3bfcf",
       "definition_id": "sharpening_stone",
       "kind": "item",
       "reason": "原磨刀石，同名同用途",
@@ -10010,7 +10114,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "4996867a845d5ea574c76fbb07244003c0913ad077e1dbcef766aa90058a267f"
+      "png_sha256": "4996867a845d5ea574c76fbb07244003c0913ad077e1dbcef766aa90058a267f",
+      "template": "ItemBase"
     },
     "supply_wooden_bow": {
       "name": "Spear",
@@ -10041,7 +10146,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/SpearAnimation.tscn",
-      "scene_sha256": "7e52dafb2dacc266dac0ea60d90ac8c7b15006b50d90cbef1a12482bd9130997",
+      "scene_sha256": "6ee08c3710ddfcb5bb545490a92d798aeaf7313c39fbfd94c35980f40a35c674",
       "definition_id": "hunting_spear",
       "kind": "item",
       "reason": "原长矛，同类长柄刺击轮廓",
@@ -10080,7 +10185,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "06067d36041ef15bc80adf331718c9ba19f984cc03ffe9037a1c2524bf2ded49"
+      "png_sha256": "06067d36041ef15bc80adf331718c9ba19f984cc03ffe9037a1c2524bf2ded49",
+      "template": "ItemBase"
     },
     "supply_wooden_club": {
       "name": "Hammer",
@@ -10115,7 +10221,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/HammerAnimation.tscn",
-      "scene_sha256": "3c21f87b34309a27050042ae3c306db5e37d822c51ca3a89312a720d2a1bb617",
+      "scene_sha256": "9b58ce1b21e9772508fa38ab9e968326a988fde1eeb59997fb958ed7cd49cd45",
       "definition_id": "stone_hammer",
       "kind": "item",
       "reason": "原锤类重武器；不宣称原图材质是石头",
@@ -10154,7 +10260,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "3957155364320dd07fbcb774966d0f2edb2a93a11b8426cfdb3bacc212b5e0db"
+      "png_sha256": "3957155364320dd07fbcb774966d0f2edb2a93a11b8426cfdb3bacc212b5e0db",
+      "template": "ItemBase"
     },
     "supply_wooden_knife": {
       "name": "Dagger",
@@ -10177,7 +10284,7 @@
       ],
       "material_refs": [],
       "animation": "res://Items/Animations/DaggerAnimation.tscn",
-      "scene_sha256": "3e2fd9a0407394de9608748cf4db834b9e56ce9762ef49caa13295fe51fe1cac",
+      "scene_sha256": "fcc024b39879d808878aafa32e737f8b2ea37ddd44d2e806d0d696be5875ac76",
       "definition_id": "utility_knife",
       "kind": "item",
       "reason": "短匕首刀刃与轻型近战用途一致",
@@ -10208,7 +10315,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "0d5f7749f2648cc4fa205e89232ecc794d239e541a10d03c0353b648e9e9c016"
+      "png_sha256": "0d5f7749f2648cc4fa205e89232ecc794d239e541a10d03c0353b648e9e9c016",
+      "template": "ItemBase"
     },
     "supply_wooden_staff": {
       "name": "Demonic Flask",
@@ -10235,7 +10343,7 @@
         "res://Shader/DemonicFlask.material"
       ],
       "animation": "res://Items/Animations/DemonicFlaskAnimation.tscn",
-      "scene_sha256": "4811e573163fd1ac5361878d8f8a3b8472cc5ef3b0be983d7f0570293e6e62e5",
+      "scene_sha256": "53af15ec1d032564e7b2712e01be9b58c0bb785668b8b373ea24f714d69e6935",
       "definition_id": "ember_phial",
       "kind": "item",
       "reason": "原恶魔药瓶，热色液体与灼烧瓶用途近似",
@@ -10293,7 +10401,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "e5393a77ed1223e614e3421a2258ad2db546fa29256883b9446216a025954f9d",
+      "scene_sha256": "c238335527b01c563784b875db47a7872f601b99c5940c88993cf7f21b874eb4",
       "definition_id": "execution_anvil",
       "kind": "item",
       "reason": "原铁砧，同名同用途",
@@ -10340,7 +10448,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "87ee73c9d2c076bbaeb3122921046ef0458fc69aef6bd9a5bc15e91618277acb"
+      "png_sha256": "87ee73c9d2c076bbaeb3122921046ef0458fc69aef6bd9a5bc15e91618277acb",
+      "template": "ItemBase"
     },
     "bag_release_journey": {
       "name": "Leather Bag",
@@ -10371,7 +10480,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -10465,7 +10574,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -10559,7 +10668,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -10653,7 +10762,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -10747,7 +10856,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -10841,7 +10950,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -10935,7 +11044,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",
@@ -11029,7 +11138,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "f4db3cb1acac51b21579112e7395048b25d84757073a9cf6b49da9374a66a06e",
+      "scene_sha256": "1ed31df1255dbb9a6b5124f4fe93ebae423291cb44314b5a50c99c8c49e4188e",
       "definition_id": "bag_canvas_frame",
       "kind": "bag",
       "reason": "原基础皮袋，纯空间背包",

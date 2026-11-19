@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/LeagueProgressUI.gd" id="1_8pqs2"]
 [ext_resource type="PackedScene" path="res://Interface/LeagueEmblem.tscn" id="2_f1hrp"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_jk8ol"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="3_jk8ol"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_7iq0f"]
 [ext_resource type="PackedScene" path="res://Interface/LeagueProgressBar.tscn" id="5_pdups"]
 

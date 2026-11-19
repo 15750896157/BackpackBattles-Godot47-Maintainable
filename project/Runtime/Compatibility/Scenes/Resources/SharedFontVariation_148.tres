@@ -1,6 +1,6 @@
 [gd_resource type="FontVariation" format=3]
 
-[ext_resource type="FontFile" uid="uid://7qphybp06aru" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="23"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="23"]
 
 [ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 

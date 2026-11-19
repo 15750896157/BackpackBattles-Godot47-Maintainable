@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" path="res://Interface/Tooltips/TooltipBase2.png" id="1_i4hyx"]
 [ext_resource type="Script" path="res://Interface/Tooltips/SimpleTooltip.gd" id="2_gk5x4"]
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="3_jtilj"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="4_vkke0"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="4_vkke0"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="5_fk7gp"]
 [ext_resource type="RichTextEffect" path="res://Interface/SColorTextEffect.tres" id="6_ir4mc"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="7_vwv8g"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="7_vwv8g"]
 
 [sub_resource type="FontVariation" id="4"]
 base_font = ExtResource("4_vkke0")

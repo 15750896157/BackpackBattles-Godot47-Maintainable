@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://dl7q4jj6aptic"]
 
-[ext_resource type="Script" uid="uid://cp2n0j2ipboyd" path="res://Interface/AchievementPopup.gd" id="1_5g22g"]
-[ext_resource type="Texture2D" uid="uid://cvrupifajxi8x" path="res://Interface/PopupBox.png" id="2_xtba3"]
-[ext_resource type="FontFile" uid="uid://b5cgwoh27485q" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="3_wid3r"]
-[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Compatibility/LegacyFont.gd" id="4_lo4ph"]
-[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Utility/LocalizedControl.gd" id="5_hfftq"]
-[ext_resource type="Texture2D" uid="uid://ds31inn503scf" path="res://Assets/Trophy.png" id="6_cupkm"]
-[ext_resource type="PackedScene" uid="uid://c12y70icr30rx" path="res://Interface/TrophyParticles.tscn" id="7_jc4lm"]
+[ext_resource type="Script" path="res://Interface/AchievementPopup.gd" id="1_5g22g"]
+[ext_resource type="Texture2D" path="res://Interface/PopupBox.png" id="2_xtba3"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_wid3r"]
+[ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_lo4ph"]
+[ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="5_hfftq"]
+[ext_resource type="Texture2D" path="res://Assets/Trophy.png" id="6_cupkm"]
+[ext_resource type="PackedScene" path="res://Interface/TrophyParticles.tscn" id="7_jc4lm"]
 
 [sub_resource type="FontVariation" id="1"]
 base_font = ExtResource("3_wid3r")
@@ -72,20 +72,13 @@ tracks/2/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_7hiae"]
-_data = {
-&"RESET": SubResource("2"),
-&"Show": SubResource("3")
-}
-
-[node name="AchievementPopup" type="Node2D" unique_id=903427424]
+[node name="AchievementPopup" type="Node2D"]
 process_mode = 3
 z_index = 50
 script = ExtResource("1_5g22g")
 
-[node name="Sheet" type="NinePatchRect" parent="." unique_id=1261567126]
+[node name="Sheet" type="NinePatchRect" parent="."]
 show_behind_parent = true
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1349.0
@@ -98,63 +91,71 @@ patch_margin_top = 46
 patch_margin_right = 48
 patch_margin_bottom = 50
 
-[node name="Label" type="RichTextLabel" parent="." unique_id=776468453]
-clip_contents = false
+[node name="Label" type="RichTextLabel" parent="."]
 offset_left = 1426.62
 offset_top = 850.0
 offset_right = 1861.62
 offset_bottom = 886.0
 grow_horizontal = 2
+clip_contents = false
 theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 3
 theme_override_constants/shadow_offset_y = 3
-theme_override_constants/outline_size = 3
 theme_override_fonts/normal_font = SubResource("1")
-theme_override_font_sizes/normal_font_size = 26
 bbcode_enabled = true
+text = "[center]Achievement unlocked!"
 text = "Achievement unlocked!"
 fit_content = true
 scroll_active = false
 script = ExtResource("5_hfftq")
 translationKey = "UI_Achievement"
 prefix = "[center]"
+theme_override_font_sizes/normal_font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[node name="Label2" type="RichTextLabel" parent="." unique_id=1385906551]
-clip_contents = false
+[node name="Label2" type="RichTextLabel" parent="."]
 offset_left = 1500.62
 offset_top = 888.0
 offset_right = 1789.62
 offset_bottom = 924.0
 grow_horizontal = 2
+clip_contents = false
 theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
 theme_override_constants/shadow_offset_x = 3
 theme_override_constants/shadow_offset_y = 3
-theme_override_constants/outline_size = 3
 theme_override_fonts/normal_font = SubResource("1")
-theme_override_font_sizes/normal_font_size = 26
 bbcode_enabled = true
+text = "[center]+10 Trophies!"
 text = "+10 Trophies!"
 fit_content = true
 scroll_active = false
 script = ExtResource("5_hfftq")
 prefix = "[center]"
+theme_override_font_sizes/normal_font_size = 26
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[node name="Trophy" type="Sprite2D" parent="." unique_id=1270152780]
+[node name="Trophy" type="Sprite2D" parent="."]
 position = Vector2(1387.62, 886)
 rotation = -0.108573
 texture = ExtResource("6_cupkm")
 
-[node name="TrophyParticles" parent="." unique_id=1379302542 instance=ExtResource("7_jc4lm")]
+[node name="TrophyParticles" parent="." instance=ExtResource("7_jc4lm")]
 position = Vector2(1367, 675)
 lifetime = 1.4
 speed_scale = 1.0
 lifetime_randomness = 0.22
+local_coords = false
 spread = 29.07
 gravity = Vector2(0, 700)
+initial_velocity = 837.09
+initial_velocity_random = 0.27
+scale_amount = 0.58
+scale_amount_random = 0.49
 
-[node name="Ani" type="AnimationPlayer" parent="." unique_id=1630802099]
-libraries/ = SubResource("AnimationLibrary_7hiae")
+[node name="Ani" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource("2")
+anims/Show = SubResource("3")

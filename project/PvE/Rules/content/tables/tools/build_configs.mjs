@@ -203,68 +203,68 @@ function describeItemEn(trigger, effect, amount, target, spatial, condition, coo
 item("utility_knife", "便携小刀", "Utility Knife", "public", "common", 2, 1, "shape_1", ["weapon", "combo"], 2.4, 1, "cooldown_ready", "physical_damage", 4);
 item("iron_sword", "铁脊长剑", "Ironspine Sword", "public", "rare", 7, 1, "shape_3_i", ["weapon", "combo"], 3.4, 2, "cooldown_ready", "physical_damage", 10, "enemy", "front_1", "spatial_target_count>=1", "crafted");
 item("broad_axe", "宽刃斧", "Broad Axe", "public", "common", 5, 1, "shape_3_l", ["weapon", "heavy"], 5.5, 3, "cooldown_ready", "physical_damage", 14);
-item("stone_hammer", "铁锤", "Iron Hammer", "public", "common", 5, 1, "shape_3_i", ["weapon", "heavy"], 6.2, 3, "cooldown_ready", "physical_damage", 16);
+item("stone_hammer", "石击锤", "Stone Hammer", "public", "common", 5, 1, "shape_3_i", ["weapon", "heavy"], 6.2, 3, "cooldown_ready", "physical_damage", 16);
 item("hunting_spear", "猎路长矛", "Trail Spear", "public", "common", 4, 1, "shape_3_i", ["weapon", "spatial"], 4.5, 2, "cooldown_ready", "physical_damage", 11, "enemy", "front_2");
-item("twin_needles", "双剑", "Twin Swords", "public", "common", 4, 1, "shape_2_h", ["weapon", "combo"], 2.1, 1, "cooldown_ready", "physical_damage", 4);
+item("twin_needles", "双针", "Twin Needles", "public", "common", 4, 1, "shape_2_h", ["weapon", "combo"], 2.1, 1, "cooldown_ready", "physical_damage", 4);
 item("sling", "机索投带", "Gear Sling", "public", "common", 3, 1, "shape_2_h", ["weapon", "tempo"], 3.0, 1, "cooldown_ready", "physical_damage", 6);
 item("heavy_cleaver", "断梁重刃", "Beam Cleaver", "public", "rare", 8, 2, "shape_4_l", ["weapon", "heavy"], 6.8, 4, "cooldown_ready", "physical_damage", 24, "enemy", "front_1", "always", "crafted");
 item("buckler", "圆扣盾", "Round Buckler", "public", "common", 3, 1, "shape_2_h", ["armor", "counter"], 4.0, 0, "cooldown_ready", "gain_armor", 5, "self");
 item("plated_vest", "拼片甲", "Patchplate Vest", "public", "common", 5, 1, "shape_4_o", ["armor"], 5.0, 0, "cooldown_ready", "gain_armor", 8, "self");
 item("tower_shield", "高壁盾", "Highwall Shield", "public", "rare", 8, 2, "shape_4_l", ["armor", "heavy"], 6.5, 0, "cooldown_ready", "gain_armor", 13, "self");
 item("spiked_guard", "棘面护板", "Spiked Guard", "public", "rare", 7, 1, "shape_3_l", ["armor", "counter"], 0, 0, "damage_taken", "physical_damage", 4, "enemy", "none", "trigger_count_max:8", "crafted");
-item("leather_wrap", "皮甲", "Leather Armor", "public", "common", 3, 1, "shape_2_h", ["armor", "utility"], 5.0, 0, "cooldown_ready", "gain_armor", 4, "self", "adjacent_4");
-item("repair_kit", "扳手", "Wrench", "public", "common", 4, 1, "shape_3_l", ["armor", "healing", "utility"], 6.0, 0, "cooldown_ready", "heal", 4, "self", "adjacent_4", "target_has_tag:armor");
+item("leather_wrap", "韧皮缠带", "Tough Wrap", "public", "common", 3, 1, "shape_2_h", ["armor", "utility"], 5.0, 0, "cooldown_ready", "gain_armor", 4, "self", "adjacent_4");
+item("repair_kit", "修缮包", "Repair Kit", "public", "common", 4, 1, "shape_3_l", ["armor", "healing", "utility"], 6.0, 0, "cooldown_ready", "heal", 4, "self", "adjacent_4", "target_has_tag:armor");
 item("stamina_flask", "耐力壶", "Stamina Flask", "public", "common", 3, 1, "shape_2_h", ["stamina", "potion"], 5.0, 0, "cooldown_ready", "gain_stamina", 3, "self");
 item("travel_ration", "行军口粮", "Trail Ration", "public", "common", 3, 1, "shape_2_h", ["healing", "stamina"], 7.0, 0, "cooldown_ready", "heal", 4, "self");
-item("bandage_roll", "草药袋", "Herb Pouch", "public", "common", 2, 1, "shape_1", ["healing", "utility"], 6.0, 0, "cooldown_ready", "heal", 3, "self");
-item("cleansing_salt", "圣十字架", "Holy Cross", "public", "common", 4, 1, "shape_1", ["cleanse", "utility"], 8.0, 0, "cooldown_ready", "remove_status", 3, "self");
+item("bandage_roll", "绷带卷", "Bandage Roll", "public", "common", 2, 1, "shape_1", ["healing", "utility"], 6.0, 0, "cooldown_ready", "heal", 3, "self");
+item("cleansing_salt", "澄净盐", "Cleansing Salt", "public", "common", 4, 1, "shape_1", ["cleanse", "utility"], 8.0, 0, "cooldown_ready", "remove_status", 3, "self");
 item("sharpening_stone", "磨锋石", "Sharpening Stone", "public", "common", 3, 1, "shape_1", ["weapon", "spatial"], 0, 0, "combat_start", "modify_damage_flat", 2, "spatial_targets", "adjacent_4", "target_has_tag:weapon");
-item("clockwork_spring", "纯铜怀表", "Copper Watch", "public", "common", 4, 1, "shape_2_h", ["tempo", "spatial"], 0, 0, "combat_start", "modify_cooldown_pct", -0.08, "spatial_targets", "adjacent_4");
-item("lucky_coin", "荣誉勋章", "Honor Medal", "public", "common", 3, 1, "shape_1", ["economy", "utility"], 0, 0, "combat_start", "gain_gold", 1, "self", "none", "health_above_pct:0.5");
-item("scout_lens", "法力宝石", "Mana Gem", "public", "common", 3, 1, "shape_2_h", ["utility", "spatial"], 0, 0, "combat_start", "modify_crit_chance", 0.06, "spatial_targets", "front_2", "target_has_tag:weapon");
+item("clockwork_spring", "发条簧", "Clockwork Spring", "public", "common", 4, 1, "shape_2_h", ["tempo", "spatial"], 0, 0, "combat_start", "modify_cooldown_pct", -0.08, "spatial_targets", "adjacent_4");
+item("lucky_coin", "缺角幸运币", "Notched Lucky Coin", "public", "common", 3, 1, "shape_1", ["economy", "utility"], 0, 0, "combat_start", "gain_gold", 1, "self", "none", "health_above_pct:0.5");
+item("scout_lens", "斥候镜", "Scout Lens", "public", "common", 3, 1, "shape_2_h", ["utility", "spatial"], 0, 0, "combat_start", "modify_crit_chance", 0.06, "spatial_targets", "front_2", "target_has_tag:weapon");
 item("merchant_token", "商路筹码", "Trade Token", "public", "common", 3, 1, "shape_1", ["economy"], 0, 0, "combat_start", "free_refresh", 1, "self", "none", "trigger_count_max:1");
-item("storage_hook", "绳索", "Rope", "public", "common", 4, 1, "shape_2_h", ["utility", "spatial"], 0, 0, "combat_start", "gain_armor", 2, "self", "same_bag", "spatial_target_count>=3");
+item("storage_hook", "仓储挂钩", "Storage Hook", "public", "common", 4, 1, "shape_2_h", ["utility", "spatial"], 0, 0, "combat_start", "gain_armor", 2, "self", "same_bag", "spatial_target_count>=3");
 item("gear_link", "联动齿节", "Gear Link", "public", "common", 3, 1, "shape_1", ["tempo", "spatial"], 0, 0, "target_activated", "advance_cooldown", 0.25, "spatial_targets", "adjacent_4", "trigger_count_max:10");
 item("focus_prism", "聚焦棱镜", "Focus Prism", "public", "rare", 6, 1, "shape_3_l", ["spatial", "utility"], 0, 0, "combat_start", "modify_damage_flat", 3, "spatial_targets", "front_3", "target_has_tag:weapon");
 item("row_banner", "横列旗", "Row Banner", "public", "common", 5, 1, "shape_3_i", ["spatial", "utility"], 0, 0, "combat_start", "modify_damage_flat", 1, "spatial_targets", "same_row");
 item("column_standard", "纵阵标", "Column Standard", "public", "common", 5, 1, "shape_3_i", ["spatial", "armor"], 0, 0, "combat_start", "gain_armor", 2, "spatial_targets", "same_column");
-item("star_compass", "王冠铁徽", "Crown Crest", "public", "rare", 7, 2, "shape_3_l", ["spatial", "tempo"], 0, 0, "combat_start", "modify_cooldown_pct", -0.12, "spatial_targets", "star_cell");
-item("compact_rack", "珠宝匣", "Jewel Box", "public", "common", 4, 1, "shape_2_h", ["spatial", "utility"], 0, 0, "combat_start", "gain_armor", 3, "self", "adjacent_8", "spatial_target_count>=4");
-item("resonant_bell", "鸣雷戒指", "Thunder Ring", "public", "rare", 6, 2, "shape_2_h", ["tempo", "spatial"], 0, 0, "target_activated", "gain_stamina", 1, "self", "adjacent_4", "trigger_count_max:8");
+item("star_compass", "星位罗盘", "Star Compass", "public", "rare", 7, 2, "shape_3_l", ["spatial", "tempo"], 0, 0, "combat_start", "modify_cooldown_pct", -0.12, "spatial_targets", "star_cell");
+item("compact_rack", "紧凑支架", "Compact Rack", "public", "common", 4, 1, "shape_2_h", ["spatial", "utility"], 0, 0, "combat_start", "gain_armor", 3, "self", "adjacent_8", "spatial_target_count>=4");
+item("resonant_bell", "共鸣铃", "Resonant Bell", "public", "rare", 6, 2, "shape_2_h", ["tempo", "spatial"], 0, 0, "target_activated", "gain_stamina", 1, "self", "adjacent_4", "trigger_count_max:8");
 item("counterweight", "平衡配重", "Counterweight", "public", "common", 4, 1, "shape_3_l", ["heavy", "spatial"], 0, 0, "combat_start", "modify_damage_flat", 4, "spatial_targets", "front_1", "target_has_tag:heavy");
 item("venom_needle", "毒刺针", "Venom Needle", "public", "common", 3, 1, "shape_1", ["weapon", "poison"], 3.5, 1, "cooldown_ready", "apply_status", "poison:2", "enemy");
 item("ember_stone", "余烬石", "Ember Stone", "public", "common", 3, 1, "shape_2_h", ["burn", "spatial"], 4.0, 0, "cooldown_ready", "apply_status", "burn:2", "enemy");
-item("healing_herb", "盆栽", "Potted Plant", "public", "common", 3, 1, "shape_1", ["healing", "herb"], 5.5, 0, "cooldown_ready", "heal", 4, "self");
-item("regeneration_leaf", "藤蔓草环", "Vine Ring", "public", "common", 4, 1, "shape_2_h", ["healing", "herb"], 6.0, 0, "cooldown_ready", "apply_status", "regeneration:3", "self");
-item("fracture_charm", "巫毒小人", "Voodoo Doll", "public", "common", 4, 1, "shape_1", ["utility", "combo"], 4.5, 0, "cooldown_ready", "apply_status", "vulnerable:1", "enemy");
+item("healing_herb", "愈合草", "Mending Herb", "public", "common", 3, 1, "shape_1", ["healing", "herb"], 5.5, 0, "cooldown_ready", "heal", 4, "self");
+item("regeneration_leaf", "复生叶", "Renewal Leaf", "public", "common", 4, 1, "shape_2_h", ["healing", "herb"], 6.0, 0, "cooldown_ready", "apply_status", "regeneration:3", "self");
+item("fracture_charm", "裂痕符", "Fracture Charm", "public", "common", 4, 1, "shape_1", ["utility", "combo"], 4.5, 0, "cooldown_ready", "apply_status", "vulnerable:1", "enemy");
 item("quicksand_vial", "流沙瓶", "Quicksand Vial", "public", "rare", 6, 2, "shape_2_h", ["potion", "tempo"], 6.0, 0, "cooldown_ready", "apply_status", "slow:2", "enemy");
-item("blood_cup", "吸血鬼尖牙", "Vampire Fang", "public", "rare", 7, 2, "shape_2_h", ["healing", "combo"], 0, 0, "attack_hit", "apply_status", "lifesteal:1", "self", "none", "trigger_count_max:6");
-item("cooling_fan", "时间怀表", "Time Watch", "public", "common", 4, 1, "shape_3_l", ["tempo", "burn"], 0, 0, "status_applied", "advance_cooldown", 0.3, "spatial_targets", "front_2", "enemy_has_status:burn");
-item("iron_nail", "海象獠牙", "Walrus Tusk", "public", "common", 2, 1, "shape_1", ["armor", "counter"], 0, 0, "armor_gained", "physical_damage", 2, "enemy", "none", "trigger_count_max:8");
+item("blood_cup", "赤液杯", "Crimson Cup", "public", "rare", 7, 2, "shape_2_h", ["healing", "combo"], 0, 0, "attack_hit", "apply_status", "lifesteal:1", "self", "none", "trigger_count_max:6");
+item("cooling_fan", "散热扇", "Cooling Fan", "public", "common", 4, 1, "shape_3_l", ["tempo", "burn"], 0, 0, "status_applied", "advance_cooldown", 0.3, "spatial_targets", "front_2", "enemy_has_status:burn");
+item("iron_nail", "铆接铁钉", "Rivet Nail", "public", "common", 2, 1, "shape_1", ["armor", "counter"], 0, 0, "armor_gained", "physical_damage", 2, "enemy", "none", "trigger_count_max:8");
 item("glass_bead", "折光玻珠", "Refracting Bead", "public", "common", 3, 1, "shape_1", ["spatial", "utility"], 0, 0, "combat_start", "modify_status_power", 0.1, "spatial_targets", "adjacent_8");
 item("field_manual", "随军手册", "Field Manual", "public", "rare", 6, 2, "shape_3_l", ["utility", "spatial"], 0, 0, "combat_start", "modify_damage_flat", 1, "spatial_targets", "global_same_tag", "build_tag_count:4");
 item("salvage_pouch", "回收钱袋", "Salvage Pouch", "public", "rare", 6, 2, "shape_2_h", ["economy", "utility"], 0, 0, "combat_start", "gain_gold", 2, "self", "none", "health_above_pct:0.6", "crafted");
 
 // Armorer pool: 14 items.
-item("arsenal_bracer", "翡翠手套", "Jade Gloves", "armorer", "common", 4, 1, "shape_2_h", ["weapon", "combo", "spatial"], 0, 0, "combat_start", "modify_crit_chance", 0.04, "spatial_targets", "adjacent_4", "target_has_tag:weapon");
+item("arsenal_bracer", "武库腕轮", "Arsenal Bracer", "armorer", "common", 4, 1, "shape_2_h", ["weapon", "combo", "spatial"], 0, 0, "combat_start", "modify_crit_chance", 0.04, "spatial_targets", "adjacent_4", "target_has_tag:weapon");
 item("chain_blade", "链节刃", "Chain Blade", "armorer", "rare", 8, 2, "shape_4_z", ["weapon", "combo", "tempo"], 3.0, 2, "cooldown_ready", "physical_damage", 11, "enemy", "adjacent_4", "spatial_target_count>=2", "crafted");
 item("repeater_crossbow", "轮转弩", "Repeater Crossbow", "armorer", "rare", 8, 2, "shape_4_t", ["weapon", "combo", "stamina"], 2.0, 1, "cooldown_ready", "physical_damage", 7, "enemy", "front_2", "always", "crafted");
 item("crescent_glaive", "新月战镰", "Crescent Glaive", "armorer", "rare", 9, 2, "shape_5_p", ["weapon", "heavy", "spatial"], 5.8, 3, "cooldown_ready", "physical_damage", 21, "enemy", "front_3", "spatial_target_count>=1", "crafted");
 item("siege_maul", "攻城槌", "Siege Maul", "armorer", "legendary", 13, 3, "shape_5_p", ["weapon", "heavy"], 7.5, 5, "cooldown_ready", "physical_damage", 30, "enemy", "front_1", "always", "crafted");
 item("momentum_gear", "势能齿轮", "Momentum Gear", "armorer", "rare", 7, 2, "shape_3_l", ["tempo", "stamina", "spatial"], 0, 0, "target_activated", "gain_stamina", 1, "self", "adjacent_4", "trigger_count_max:8", "crafted");
-item("duelist_mark", "牧师徽章", "Priest Badge", "armorer", "rare", 7, 2, "shape_2_h", ["combo", "spatial"], 0, 0, "critical_hit", "advance_cooldown", 0.5, "spatial_targets", "same_row", "trigger_count_max:6", "crafted");
+item("duelist_mark", "决斗印记", "Duelist Mark", "armorer", "rare", 7, 2, "shape_2_h", ["combo", "spatial"], 0, 0, "critical_hit", "advance_cooldown", 0.5, "spatial_targets", "same_row", "trigger_count_max:6", "crafted");
 item("overdrive_ratchet", "超载棘轮", "Overdrive Ratchet", "armorer", "legendary", 12, 3, "shape_4_t", ["tempo", "stamina", "combo"], 0, 0, "attack_hit", "advance_cooldown", 0.2, "spatial_targets", "adjacent_8", "trigger_count_max:12", "crafted");
 item("bastion_core", "壁垒核心", "Bastion Core", "armorer", "legendary", 12, 3, "shape_4_o", ["armor", "counter"], 4.0, 0, "cooldown_ready", "gain_armor", 12, "self", "same_bag", "build_tag_count:3", "crafted");
-item("layered_plates", "侍从铠甲", "Squire Armor", "armorer", "rare", 8, 2, "shape_4_z", ["armor", "counter"], 5.0, 0, "cooldown_ready", "gain_armor", 10, "self", "adjacent_4", "target_has_tag:armor", "crafted");
-item("retaliation_spikes", "荆棘刺甲", "Thorn Mail", "armorer", "rare", 7, 2, "shape_3_l", ["armor", "counter"], 0, 0, "armor_gained", "physical_damage", 5, "enemy", "none", "trigger_count_max:8", "crafted");
-item("guardian_standard", "骑士之证", "Knight Seal", "armorer", "common", 5, 1, "shape_3_i", ["armor", "spatial"], 0, 0, "combat_start", "gain_armor", 3, "spatial_targets", "same_column", "target_has_tag:armor");
-item("charging_weight", "蓄能电池", "Charged Battery", "armorer", "common", 4, 1, "shape_3_l", ["heavy", "stamina"], 6.0, 0, "cooldown_ready", "gain_stamina", 4, "self");
+item("layered_plates", "叠层甲片", "Layered Plates", "armorer", "rare", 8, 2, "shape_4_z", ["armor", "counter"], 5.0, 0, "cooldown_ready", "gain_armor", 10, "self", "adjacent_4", "target_has_tag:armor", "crafted");
+item("retaliation_spikes", "回击尖刺", "Retaliation Spikes", "armorer", "rare", 7, 2, "shape_3_l", ["armor", "counter"], 0, 0, "armor_gained", "physical_damage", 5, "enemy", "none", "trigger_count_max:8", "crafted");
+item("guardian_standard", "守阵旗", "Guardian Standard", "armorer", "common", 5, 1, "shape_3_i", ["armor", "spatial"], 0, 0, "combat_start", "gain_armor", 3, "spatial_targets", "same_column", "target_has_tag:armor");
+item("charging_weight", "蓄势铁坠", "Charging Weight", "armorer", "common", 4, 1, "shape_3_l", ["heavy", "stamina"], 6.0, 0, "cooldown_ready", "gain_stamina", 4, "self");
 item("execution_anvil", "终击砧", "Execution Anvil", "armorer", "legendary", 14, 3, "shape_5_p", ["heavy", "spatial", "weapon"], 0, 0, "combat_start", "modify_damage_flat", 8, "spatial_targets", "front_1", "target_has_tag:heavy", "crafted");
 
 // Alchemist pool: 14 items.
 item("toxin_bottle", "毒素瓶", "Toxin Bottle", "alchemist", "common", 5, 1, "shape_2_h", ["potion", "poison"], 4.0, 0, "cooldown_ready", "apply_status", "poison:4", "enemy", "none", "always", "crafted");
 item("thorn_extract", "棘刺萃液", "Thorn Extract", "alchemist", "common", 4, 1, "shape_1", ["herb", "poison", "spatial"], 0, 0, "status_applied", "apply_status", "poison:1", "enemy", "adjacent_4", "target_has_tag:poison");
-item("spore_jar", "毒蘑菇", "Poison Mushroom", "alchemist", "common", 5, 1, "shape_3_l", ["potion", "poison"], 6.0, 0, "cooldown_ready", "apply_status", "poison:6", "enemy");
+item("spore_jar", "孢尘罐", "Spore Jar", "alchemist", "common", 5, 1, "shape_3_l", ["potion", "poison"], 6.0, 0, "cooldown_ready", "apply_status", "poison:6", "enemy");
 item("venom_distiller", "剧毒蒸馏器", "Venom Distiller", "alchemist", "rare", 8, 2, "shape_4_t", ["potion", "poison", "tempo"], 0, 0, "status_applied", "advance_cooldown", 0.4, "spatial_targets", "adjacent_4", "enemy_has_status:poison", "crafted");
 item("plague_retort", "瘴雾曲颈瓶", "Plague Retort", "alchemist", "legendary", 13, 3, "shape_5_p", ["potion", "poison"], 5.0, 0, "cooldown_ready", "apply_status", "poison:10", "enemy", "same_bag", "build_tag_count:4", "crafted");
 item("caustic_coil", "蚀液盘管", "Caustic Coil", "alchemist", "rare", 7, 2, "shape_4_z", ["poison", "spatial"], 0, 0, "status_applied", "true_damage", 2, "enemy", "adjacent_8", "enemy_has_status:poison");
@@ -274,7 +274,7 @@ item("ignition_lens", "引燃透镜", "Ignition Lens", "alchemist", "rare", 7, 2
 item("wildfire_alembic", "野火蒸馏釜", "Wildfire Alembic", "alchemist", "legendary", 13, 3, "shape_5_p", ["potion", "burn", "tempo"], 4.5, 0, "cooldown_ready", "apply_status", "burn:9", "enemy", "adjacent_8", "spatial_target_count>=3", "crafted");
 item("tonic_bottle", "复元补剂", "Restorative Tonic", "alchemist", "common", 5, 1, "shape_2_h", ["potion", "healing"], 5.0, 0, "cooldown_ready", "heal", 7, "self", "none", "always", "crafted");
 item("renewal_mortar", "生息研钵", "Renewal Mortar", "alchemist", "rare", 7, 2, "shape_3_l", ["herb", "healing", "spatial"], 0, 0, "status_applied", "apply_status", "regeneration:1", "self", "adjacent_4", "source_has_tag:healing");
-item("transfusion_tube", "血晶护符", "Blood Crystal Amulet", "alchemist", "rare", 8, 2, "shape_4_z", ["healing", "combo"], 0, 0, "attack_hit", "heal", 2, "self", "adjacent_4", "trigger_count_max:8", "crafted");
+item("transfusion_tube", "回流导管", "Transfusion Tube", "alchemist", "rare", 8, 2, "shape_4_z", ["healing", "combo"], 0, 0, "attack_hit", "heal", 2, "self", "adjacent_4", "trigger_count_max:8", "crafted");
 item("philosophers_kettle", "回生炼釜", "Revival Kettle", "alchemist", "legendary", 14, 3, "shape_4_o", ["potion", "healing"], 0, 0, "first_low_health", "heal", 24, "self", "same_bag", "trigger_count_max:1", "crafted");
 
 table("items.csv", ["id", "name_key", "description_key", "owner_pool", "rarity", "base_price", "chapter_min", "shape_id", "tags", "cooldown", "stamina_cost", "shop_enabled", "crafted_only", "power_score", "icon_ref", "vfx_ref"], itemSpecs.map((it) => ({
@@ -582,36 +582,36 @@ enemy("plague_oracle_elite", "act_3", "elite", "toxic_guard", 4, 150, 12, 2.0, 1
 enemy("starbreaker_elite", "act_3", "elite", "star_artillery", 4, 146, 13, 2.1, 112, ["siege_maul", "execution_anvil", "star_compass", "focus_prism"], "precision_opening");
 
 const enemyNames = {
-  rust_scout_a: ["蝙蝠·轻装", "Bat Scout"],
-  rust_scout_b: ["蝙蝠·连击", "Bat Striker"],
-  road_guard_a: ["石头人·圆盾", "Moss Golem Guard"],
-  road_guard_b: ["石头人·板甲", "Armored Moss Golem"],
-  trail_breaker: ["寄居蟹·破阵", "Hermit Crab Breaker"],
-  marsh_brewer: ["哥布林·毒酿", "Goblin Poison Brewer"],
-  cinder_runner: ["火蜗牛·疾行", "Fire Snail Runner"],
-  camp_mender: ["哥布林·修补", "Goblin Mender"],
-  gear_hunter_elite: ["精英·蚁狮", "Elite Antlion"],
-  thorn_wall_elite: ["精英·蜘蛛", "Elite Spider"],
-  furnace_duelist: ["狼人·决斗", "Werewolf Duelist"],
-  plate_warden: ["石头人·重甲", "Heavy Moss Golem"],
-  slag_breaker: ["寄居蟹·粉碎", "Hermit Crab Crusher"],
-  coil_brewer: ["小青蛇·毒酿", "Green Snake Brewer"],
-  kiln_runner: ["火蜗牛·疾行", "Fire Snail Runner"],
-  red_medic: ["木乃伊·治疗", "Mummy Medic"],
-  relay_captain: ["蚁狮·队长", "Antlion Captain"],
-  foundry_raider: ["沙蜥·掠袭", "Sand Lizard Raider"],
-  cinder_bastion_elite: ["精英·烈焰骑士", "Elite Flame Knight"],
-  blood_loom_elite: ["精英·沙蜥", "Elite Sand Lizard"],
-  court_blades: ["狼人·刃舞", "Werewolf Blade Dancer"],
-  astral_guard: ["树精·守卫", "Treant Guard"],
-  anvil_judge: ["熔岩怪·裁决", "Lava Golem Judge"],
-  pale_distiller: ["小青蛇·毒酿", "Green Snake Distiller"],
-  wildfire_choir: ["火蜗牛·灼烧", "Burning Fire Snail"],
-  revival_circle: ["木乃伊·回生", "Mummy Healer"],
-  star_gunner: ["骷髅兵·远射", "Skeleton Gunner"],
-  court_raider: ["骷髅兵·掠袭", "Skeleton Raider"],
-  plague_oracle_elite: ["精英·蜘蛛", "Elite Spider"],
-  starbreaker_elite: ["精英·骷髅兵", "Elite Skeleton"],
+  rust_scout_a: ["锈林斥候·轻装", "Rustwood Scout A"],
+  rust_scout_b: ["锈林斥候·连击", "Rustwood Scout B"],
+  road_guard_a: ["道路守卫·圆盾", "Road Guard A"],
+  road_guard_b: ["道路守卫·板甲", "Road Guard B"],
+  trail_breaker: ["荒径破阵者", "Trail Breaker"],
+  marsh_brewer: ["沼地毒酿师", "Marsh Brewer"],
+  cinder_runner: ["余烬疾行者", "Cinder Runner"],
+  camp_mender: ["营地修补师", "Camp Mender"],
+  gear_hunter_elite: ["精英·齿轮猎手", "Elite Gear Hunter"],
+  thorn_wall_elite: ["精英·棘墙守卫", "Elite Thorn Wall"],
+  furnace_duelist: ["熔炉决斗者", "Furnace Duelist"],
+  plate_warden: ["叠甲监工", "Plate Warden"],
+  slag_breaker: ["炉渣粉碎者", "Slag Breaker"],
+  coil_brewer: ["盘管毒酿师", "Coil Brewer"],
+  kiln_runner: ["窑火疾行者", "Kiln Runner"],
+  red_medic: ["赤衣医师", "Red Medic"],
+  relay_captain: ["传动队长", "Relay Captain"],
+  foundry_raider: ["铸坊掠夺者", "Foundry Raider"],
+  cinder_bastion_elite: ["精英·烬火壁垒", "Elite Cinder Bastion"],
+  blood_loom_elite: ["精英·血织机", "Elite Blood Loom"],
+  court_blades: ["深庭刃舞队", "Court Blades"],
+  astral_guard: ["星辉守卫", "Astral Guard"],
+  anvil_judge: ["铁砧裁决者", "Anvil Judge"],
+  pale_distiller: ["苍白蒸馏师", "Pale Distiller"],
+  wildfire_choir: ["野火合唱团", "Wildfire Choir"],
+  revival_circle: ["回生环阵", "Revival Circle"],
+  star_gunner: ["星位炮手", "Star Gunner"],
+  court_raider: ["深庭掠袭者", "Court Raider"],
+  plague_oracle_elite: ["精英·疫雾先知", "Elite Plague Oracle"],
+  starbreaker_elite: ["精英·碎星者", "Elite Starbreaker"],
 };
 
 table("enemy_builds.csv", ["id", "name_key", "act_id", "node_type", "archetype_id", "tier", "max_health", "stamina_max", "stamina_regen", "power_budget", "difficulty_min", "difficulty_max", "threat_tags", "weakness_tags", "affix_id", "layout_version"], enemyBuilds.map((b) => {
@@ -657,9 +657,9 @@ table("encounter_templates.csv", ["id", "act_id", "node_type", "enemy_build_pool
 ]), "章节遭遇池与重复限制。");
 
 const bosses = [
-  ["boss_iron_beast", "act_1", "女巫", "Witch", 165, 11, 1.8, "armor|counter", "poison|burn", "armor_break_frenzy"],
-  ["boss_cinder_engine", "act_2", "法老", "Pharaoh", 230, 12, 2.0, "burn|tempo|armor", "cleanse|heavy", "heat_cycle"],
-  ["boss_star_regent", "act_3", "魔王", "Demon King", 310, 13, 2.1, "spatial|heavy|healing", "tempo|vulnerable", "star_alignment"],
+  ["boss_iron_beast", "act_1", "铆甲巨兽", "Rivetback Colossus", 165, 11, 1.8, "armor|counter", "poison|burn", "armor_break_frenzy"],
+  ["boss_cinder_engine", "act_2", "熔流机心", "Cinderflow Engine", 230, 12, 2.0, "burn|tempo|armor", "cleanse|heavy", "heat_cycle"],
+  ["boss_star_regent", "act_3", "星炉执政", "Starforge Regent", 310, 13, 2.1, "spatial|heavy|healing", "tempo|vulnerable", "star_alignment"],
 ];
 table("bosses.csv", ["id", "name_key", "description_key", "act_id", "max_health", "stamina_max", "stamina_regen", "threat_tags", "weakness_tags", "persistent_rule_id", "reward_table_id"], bosses.map(([id, act, zh, en, hp, stamina, regen, threat, weak, rule]) => ({
   id, name_key: addLoc(`boss.${id}.name`, zh, en), description_key: addLoc(`boss.${id}.desc`, `${zh}拥有公开的阶段规则与可针对弱点。`, `${en} has an openly previewed phase rule and exploitable weakness.`),

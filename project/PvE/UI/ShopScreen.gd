@@ -127,8 +127,6 @@ func refresh_display() -> void:
 	if state.mode != "SHOP_PREPARE":
 		hide()
 		return
-	# A resident screen can return from a modal state without being remounted.
-	show()
 	var host: Dictionary = _read_display.call()
 	var chinese := str(host.locale).begins_with("zh")
 	var shop: Dictionary = state.shop

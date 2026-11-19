@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/Inventory/CraftingProgressLabel.gd" id="1_sfbwc"]
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="2_adjo2"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/Milonga-Regular.ttf" id="3_osmt0"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="3_osmt0"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_de045"]
 
 [sub_resource type="FontVariation" id="5"]

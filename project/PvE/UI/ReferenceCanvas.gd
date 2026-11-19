@@ -1,13 +1,4 @@
 extends RefCounted
-
-const RARITY_BADGES := {
-	"common": "badge_green", "rare": "badge_blue", "high": "badge_red",
-	"epic": "badge_purple", "legendary": "badge_gold",
-}
-const RARITY_INK := {
-	"common": Color("245932"), "rare": Color("16527a"), "high": Color("882e28"),
-	"epic": Color("5a347f"), "legendary": Color("755015"),
-}
 ## Coordinates are authored on the supplied 1920 x 1080 reference canvas.
 ## Only presentation is built here; callbacks retain the existing game services.
 const ROOT = "res://Art/Reference20261102/"

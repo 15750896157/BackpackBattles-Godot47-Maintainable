@@ -23,10 +23,10 @@ func configure(state: Dictionary, descriptions: Array[Dictionary], art: Dictiona
 	back.name = "RouteCancel" if pending else "JourneyReturn"
 	back.pressed.connect(back_requested.emit)
 	get_node("JourneySettings").pressed.connect(settings_requested.emit)
-	get_node("JourneyCodex").hide()
+	get_node("JourneyCodex").pressed.connect(codex_requested.emit)
 	for index in count:
 		var card: Control = CARD.instantiate()
-		card.position.x = (1920.0 - (521.0 + (count-1)*606.0)) * 0.5 + index*606.0
+		card.position.x = 104.0 + index * 606.0 if count == 3 else 310.0 + index * 780.0
 		var row := descriptions[index]
 		var choice: Button = card.get_node("Choice")
 		var go: TextureButton = card.get_node("Go")

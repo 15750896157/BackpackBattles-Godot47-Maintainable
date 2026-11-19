@@ -91,20 +91,9 @@ func playBGM(stream, volume = 0.0, fadeOutTime: float = 0.5):
 func playBGM_loop(loop, intro, volume = 0.0, delay = 3.0):
 	return load("res://Runtime/Behavior/Utility/SoundBehavior.gd").playBGM_loop(self, loop, intro, volume, delay)
 
-func playSurvivalBGM(volume = 0.0):
-	playBGM_loop(survivalBGM_loop, survivalBGM_intro, volume)
-
-func playLobbyBGM(volume = 0.0):
-	playBGM_loop(lobbyBGM_loop, lobbyBGM_intro, volume)
-
-func playSwitchModeBGM(volume = 0.0):
-	playBGM_loop(switchModeBGM_loop, switchModeBGM_intro, volume)
-
-func playSubclassBGM(volume = 0.0):
-	playBGM_loop(subclassBGM_loop, subclassBGM_intro, volume)
-
-func playLastTryBGM(volume = 0.0):
-	playBGM_loop(lastTryBGM_loop, lastTryBGM_intro, volume)
+# 2026-11-18 版权清理：按用户要求移除全部纯音乐（BGM）。
+# 原 playSurvivalBGM / playLobbyBGM / playSwitchModeBGM / playSubclassBGM / playLastTryBGM
+# 五个函数及 16 个 BGM preload 常量已删除，游戏不再播放任何背景音乐。
 
 func setLinearVolume(vol: float, player: AudioStreamPlayer):
 	player.volume_db = linear_to_db(vol)
@@ -136,25 +125,8 @@ func playSound_process(stream: AudioStream, volume: float = 0, pitch: float = 1)
 func _physics_process(_delta):
 	soundsPlayedThisFrame.clear()
 
-const titleBGM = preload("res://Assets/Sound/BGM/Medieval Vol. 2 6.mp3")
-const shopBGM = preload("res://Assets/Sound/BGM/Song_of_Heroes.ogg")
-const battleBGM = preload("res://Assets/Sound/BGM/Action 4 (Loop).mp3")
-const battleBGM_survival = preload("res://Assets/Sound/BGM/Action 1 Loop.ogg")
-const survivalBGM_intro = preload("res://Assets/Sound/BGM/Jolly Tavern of Vicious Folkalore - Start.ogg")
-const survivalBGM_loop = preload("res://Assets/Sound/BGM/Jolly Tavern of Vicious Folkalore - Loop.ogg")
-const postFightBGM = preload("res://Assets/Sound/BGM/Medieval 6.ogg")
-const postFightBGM_survival = preload("res://Assets/Sound/BGM/Ambient 6.ogg")
-const lobbyBGM_intro = preload("res://Assets/Sound/BGM/Check-In with Drinks and Slices - Start.ogg")
-const lobbyBGM_loop = preload("res://Assets/Sound/BGM/Check-In with Drinks and Slices - Loop.ogg")
-const switchModeBGM_intro = preload("res://Assets/Sound/BGM/Valhallas Spa and Rubber Ducks - Start.ogg")
-const switchModeBGM_loop = preload("res://Assets/Sound/BGM/Valhallas Spa and Rubber Ducks - Loop.ogg")
-const subclassBGM_intro = preload("res://Assets/Sound/BGM/This counts as a Victory - Start.ogg")
-const subclassBGM_loop = preload("res://Assets/Sound/BGM/This counts as a Victory - Loop.ogg")
-const lastTryBGM_intro = preload("res://Assets/Sound/BGM/Who Brought Bananas To A Sword Fight - Start.ogg")
-const lastTryBGM_loop = preload("res://Assets/Sound/BGM/Who Brought Bananas To A Sword Fight - Loop.ogg")
-
-func loadBGM():
-	pass
+# 2026-11-18 版权清理：16 个 BGM preload 常量（titleBGM/shopBGM/battleBGM 等）
+# 及其指向的 HomeBGM.wav / ShopBGM.wav / BattleBGM.wav 已移入隔离区。
 
 class PitchData:
 	var lastPlayedTime: float = 0
@@ -181,4 +153,3 @@ class PitchData:
 
 func pve_bus(stream: AudioStream) -> StringName:
 	return load("res://Runtime/Behavior/Utility/SoundBehavior.gd").pve_bus(self, stream)
-

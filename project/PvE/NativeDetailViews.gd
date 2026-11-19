@@ -40,9 +40,6 @@ func grid(build: Dictionary, parent: Node, empty_tile: Texture2D = null) -> Cont
 	canvas.set_meta("pve_build_grid", true)
 	parent.add_child(canvas)
 	var supported: Dictionary = {}
-	var occupied_cells: Dictionary = {}
-	for entry in build.items:
-		for cell in owner.flow.placement.cells(entry): occupied_cells[cell] = true
 	var tile_texture: Texture2D = load("res://Art/Supplied20261028/ui/cell.png")
 	for bag in build.bags:
 		for cell in owner.flow.placement.cells(bag): supported[cell] = true
@@ -55,10 +52,21 @@ func grid(build: Dictionary, parent: Node, empty_tile: Texture2D = null) -> Cont
 			tile.position = Vector2(x, y) * 62
 			tile.size = Vector2(60,60) if empty_tile != null else Vector2(62,62)
 			tile.modulate = Color(1,1,1,0.55) if empty_tile != null else Color(1,1,1,0.38) if occupied else Color(0.25, 0.25, 0.25, 0.12)
-			if occupied_cells.has(Vector2i(x,y)):
-				tile.modulate = Color(0.39, 0.32, 0.26, tile.modulate.a)
 			tile.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			canvas.add_child(tile)
+	if empty_tile != null:
+		for bag in build.bags:
+			var cells: Array = owner.flow.placement.local_cells(bag)
+			if cells.is_empty(): continue
+			var origin: Vector2i = cells[0]
+			for cell: Vector2i in cells: origin = origin.min(cell)
+			var art := Control.new()
+			art.position = Vector2(Vector2i(int(bag.x),int(bag.y))+origin)*62.0
+			art.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			canvas.add_child(art)
+			var base: Dictionary = bag.duplicate(true)
+			base.rotation = 0
+			fill_grid_icon(weakref(art),bag,owner.flow.placement.local_cells(base),owner.popup_epoch)
 	for entry in build.items:
 		var cells = owner.flow.placement.local_cells(entry)
 		var min_cell = Vector2i(999, 999)

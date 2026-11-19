@@ -3,18 +3,15 @@
 [ext_resource type="Script" path="res://Interface/Cursor.gd" id="1_sqemm"]
 [ext_resource type="Texture2D" path="res://Art/Supplied20261102/ui/ui_hand_hint.png" id="2_hqcmp"]
 
-[node name="SoftwareCursor" type="CanvasLayer"]
-process_mode = 3
-layer = 1000
-
-[node name="Cursor" type="Node2D" parent="."]
+[node name="Cursor" type="Node2D"]
+z_index = 1000
 script = ExtResource("1_sqemm")
 
-[node name="Sprite2D" type="Sprite2D" parent="Cursor"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_hqcmp")
 centered = false
 
-[node name="Shadow" type="Sprite2D" parent="Cursor/Sprite2D"]
+[node name="Shadow" type="Sprite2D" parent="Sprite2D"]
 visible = false
 modulate = Color(0, 0, 0, 0.533333)
 show_behind_parent = true

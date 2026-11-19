@@ -516,7 +516,6 @@ static func pve_prepare_title(subject: Receiver):
 	subject.canCancelSwitch = false
 	subject.fightEnded = true
 	Sound.pve_stop_scene_sounds()
-	Sound.playBGM(Sound.titleBGM)
 	subject.emit_signal("return_to_title")
 
 static func freeOpponent(subject: Receiver, notify: bool = true):

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://eitwiaupw55h"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="1_vqg5i"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="1_vqg5i"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="2_ssxky"]
 [ext_resource type="Script" path="res://Interface/MovingCounter.gd" id="3_jjr4s"]
 

@@ -1,6 +1,6 @@
 [gd_resource type="FontVariation" load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" type="FontFile" id=1]
+[ext_resource path="res://Assets/Fonts/YaHei-Regular.ttc" type="FontFile" id=1]
 
 [ext_resource path="res://Compatibility/LegacyFont.gd" type="Script" id="LegacyFontMigration"]
 

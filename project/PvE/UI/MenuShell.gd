@@ -31,7 +31,6 @@ func reset_canvas():
 	if is_instance_valid(canvas):
 		owner.panel.remove_child(canvas); canvas.queue_free()
 	canvas = null
-	owner.modal_shield.color = Color(0.05, 0.025, 0.01, 0.48)
 	owner.panel.position = Vector2(110,20); owner.panel.size = Vector2(1700,1040)
 	owner.panel.add_theme_stylebox_override("panel",owner.ui_theme.get_stylebox("panel","PanelContainer"))
 	owner.popup_scroll.get_parent().show()
@@ -42,7 +41,6 @@ func open_canvas(page: String, title: String, template: PackedScene = null) -> C
 	owner.panel.position = Vector2.ZERO; owner.panel.size = Vector2(1920,1080)
 	owner.panel.modulate = Color.WHITE
 	owner.modal_shield.modulate = Color.WHITE
-	owner.modal_shield.color = Color(0.05, 0.025, 0.01, 0.48)
 	owner.panel.add_theme_stylebox_override("panel",StyleBoxEmpty.new())
 	owner.popup_scroll.get_parent().hide()
 	canvas = template.instantiate() if template != null else Control.new()

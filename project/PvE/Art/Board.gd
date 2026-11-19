@@ -5,7 +5,6 @@ var cell_texture: Texture2D
 var empty_texture: Texture2D
 var guide_texture: Texture2D
 var active_cells: Dictionary = {}
-var occupied_cells: Dictionary = {}
 var showing_empty = false
 var seams: Dictionary = {}
 var specials:Array=[]
@@ -16,9 +15,6 @@ func configure(data: Dictionary):
 	if data == build: return
 	build = data.duplicate(true)
 	active_cells.clear()
-	occupied_cells.clear()
-	for entry in build.get("items", []):
-		for cell in Expedition.flow.placement.cells(entry): occupied_cells[Vector2i(cell)] = true
 	for bag in build.get("bags", []):
 		for cell in Expedition.flow.placement.cells(bag): active_cells[Vector2i(cell)] = true
 	specials=Expedition.flow.spatial.special_cells(build)
@@ -37,8 +33,6 @@ func _draw():
 			if image!=null:draw_texture_rect(image,tile,false,Color(1,1,1,0.24 if active else 0.15))
 			# Fine translucent seams reveal the leather instead of a white tile fill.
 			draw_style_box(_seam(active),tile)
-			if occupied_cells.has(Vector2i(x, y)):
-				draw_rect(tile.grow(-2), Color(0.12, 0.06, 0.025, 0.38))
 	for special in specials:
 		var rect=Rect2(Vector2(special.cell)*80.0+Vector2(5,5),Vector2(70,70))
 		draw_rect(rect,Color(1,0.78,0.3,0.42),false,2)

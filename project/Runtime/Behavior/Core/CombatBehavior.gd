@@ -298,12 +298,9 @@ static func hideUI(subject: Receiver):
 	if subject.survivalPromptActive:
 		subject.survivalPrompt.hide()
 
+	# 2026-11-18 版权清理：战后背景音乐（postFightBGM/postFightBGM_survival）已按用户要求移除
 	if not subject.postCombatBgmStarted:
 		subject.postCombatBgmStarted = true
-		if Game.survivalMode:
-			Sound.playBGM(Sound.postFightBGM_survival, - 3)
-		else:
-			Sound.playBGM(Sound.postFightBGM, - 4)
 
 static func onShowUI(subject: Receiver):
 	subject.currentStats.hide()

@@ -95,11 +95,11 @@ item.iron_sword.name,Ironspine Sword
 item.iron_sword.desc,Every 3.4s: deal 10 physical damage. area: front_1; condition: spatial_target_count>=1; costs 2 stamina.
 item.broad_axe.name,Broad Axe
 item.broad_axe.desc,Every 5.5s: deal 14 physical damage. costs 3 stamina.
-item.stone_hammer.name,Iron Hammer
+item.stone_hammer.name,Stone Hammer
 item.stone_hammer.desc,Every 6.2s: deal 16 physical damage. costs 3 stamina.
 item.hunting_spear.name,Trail Spear
 item.hunting_spear.desc,Every 4.5s: deal 11 physical damage. area: front_2; costs 2 stamina.
-item.twin_needles.name,Twin Swords
+item.twin_needles.name,Twin Needles
 item.twin_needles.desc,Every 2.1s: deal 4 physical damage. costs 1 stamina.
 item.sling.name,Gear Sling
 item.sling.desc,Every 3.0s: deal 6 physical damage. costs 1 stamina.
@@ -113,29 +113,29 @@ item.tower_shield.name,Highwall Shield
 item.tower_shield.desc,Every 6.5s: gain 13 armor.
 item.spiked_guard.name,Spiked Guard
 item.spiked_guard.desc,After taking damage: deal 4 physical damage. condition: trigger_count_max:8.
-item.leather_wrap.name,Leather Armor
+item.leather_wrap.name,Tough Wrap
 item.leather_wrap.desc,Every 5.0s: gain 4 armor. area: adjacent_4.
-item.repair_kit.name,Wrench
+item.repair_kit.name,Repair Kit
 item.repair_kit.desc,Every 6.0s: heal 4. area: adjacent_4; condition: target_has_tag:armor.
 item.stamina_flask.name,Stamina Flask
 item.stamina_flask.desc,Every 5.0s: gain 3 stamina.
 item.travel_ration.name,Trail Ration
 item.travel_ration.desc,Every 7.0s: heal 4.
-item.bandage_roll.name,Herb Pouch
+item.bandage_roll.name,Bandage Roll
 item.bandage_roll.desc,Every 6.0s: heal 3.
-item.cleansing_salt.name,Holy Cross
+item.cleansing_salt.name,Cleansing Salt
 item.cleansing_salt.desc,Every 8.0s: remove 3 negative stacks.
 item.sharpening_stone.name,Sharpening Stone
 item.sharpening_stone.desc,Combat start: change target damage by 2. area: adjacent_4; condition: target_has_tag:weapon.
-item.clockwork_spring.name,Copper Watch
+item.clockwork_spring.name,Clockwork Spring
 item.clockwork_spring.desc,Combat start: change target cooldown by -0.08. area: adjacent_4.
-item.lucky_coin.name,Honor Medal
+item.lucky_coin.name,Notched Lucky Coin
 item.lucky_coin.desc,Combat start: gain 1 gold after combat. condition: health_above_pct:0.5.
-item.scout_lens.name,Mana Gem
+item.scout_lens.name,Scout Lens
 item.scout_lens.desc,Combat start: change target critical chance by 0.06. area: front_2; condition: target_has_tag:weapon.
 item.merchant_token.name,Trade Token
 item.merchant_token.desc,Combat start: gain 1 free refresh. condition: trigger_count_max:1.
-item.storage_hook.name,Rope
+item.storage_hook.name,Storage Hook
 item.storage_hook.desc,Combat start: gain 2 armor. area: same_bag; condition: spatial_target_count>=3.
 item.gear_link.name,Gear Link
 item.gear_link.desc,After a target activates: advance target cooldown by 0.25s. area: adjacent_4; condition: trigger_count_max:10.
@@ -145,11 +145,11 @@ item.row_banner.name,Row Banner
 item.row_banner.desc,Combat start: change target damage by 1. area: same_row.
 item.column_standard.name,Column Standard
 item.column_standard.desc,Combat start: gain 2 armor. area: same_column.
-item.star_compass.name,Crown Crest
+item.star_compass.name,Star Compass
 item.star_compass.desc,Combat start: change target cooldown by -0.12. area: star_cell.
-item.compact_rack.name,Jewel Box
+item.compact_rack.name,Compact Rack
 item.compact_rack.desc,Combat start: gain 3 armor. area: adjacent_8; condition: spatial_target_count>=4.
-item.resonant_bell.name,Thunder Ring
+item.resonant_bell.name,Resonant Bell
 item.resonant_bell.desc,After a target activates: gain 1 stamina. area: adjacent_4; condition: trigger_count_max:8.
 item.counterweight.name,Counterweight
 item.counterweight.desc,Combat start: change target damage by 4. area: front_1; condition: target_has_tag:heavy.
@@ -157,19 +157,19 @@ item.venom_needle.name,Venom Needle
 item.venom_needle.desc,Every 3.5s: apply poison:2. costs 1 stamina.
 item.ember_stone.name,Ember Stone
 item.ember_stone.desc,Every 4.0s: apply burn:2.
-item.healing_herb.name,Potted Plant
+item.healing_herb.name,Mending Herb
 item.healing_herb.desc,Every 5.5s: heal 4.
-item.regeneration_leaf.name,Vine Ring
+item.regeneration_leaf.name,Renewal Leaf
 item.regeneration_leaf.desc,Every 6.0s: apply regeneration:3.
-item.fracture_charm.name,Voodoo Doll
+item.fracture_charm.name,Fracture Charm
 item.fracture_charm.desc,Every 4.5s: apply vulnerable:1.
 item.quicksand_vial.name,Quicksand Vial
 item.quicksand_vial.desc,Every 6.0s: apply slow:2.
-item.blood_cup.name,Vampire Fang
+item.blood_cup.name,Crimson Cup
 item.blood_cup.desc,After hitting: apply lifesteal:1. condition: trigger_count_max:6.
-item.cooling_fan.name,Time Watch
+item.cooling_fan.name,Cooling Fan
 item.cooling_fan.desc,After applying a status: advance target cooldown by 0.3s. area: front_2; condition: enemy_has_status:burn.
-item.iron_nail.name,Walrus Tusk
+item.iron_nail.name,Rivet Nail
 item.iron_nail.desc,After gaining armor: deal 2 physical damage. condition: trigger_count_max:8.
 item.glass_bead.name,Refracting Bead
 item.glass_bead.desc,Combat start: change target status power by 0.1. area: adjacent_8.
@@ -177,7 +177,7 @@ item.field_manual.name,Field Manual
 item.field_manual.desc,Combat start: change target damage by 1. area: global_same_tag; condition: build_tag_count:4.
 item.salvage_pouch.name,Salvage Pouch
 item.salvage_pouch.desc,Combat start: gain 2 gold after combat. condition: health_above_pct:0.6.
-item.arsenal_bracer.name,Jade Gloves
+item.arsenal_bracer.name,Arsenal Bracer
 item.arsenal_bracer.desc,Combat start: change target critical chance by 0.04. area: adjacent_4; condition: target_has_tag:weapon.
 item.chain_blade.name,Chain Blade
 item.chain_blade.desc,Every 3.0s: deal 11 physical damage. area: adjacent_4; condition: spatial_target_count>=2; costs 2 stamina.
@@ -189,19 +189,19 @@ item.siege_maul.name,Siege Maul
 item.siege_maul.desc,Every 7.5s: deal 30 physical damage. area: front_1; costs 5 stamina.
 item.momentum_gear.name,Momentum Gear
 item.momentum_gear.desc,After a target activates: gain 1 stamina. area: adjacent_4; condition: trigger_count_max:8.
-item.duelist_mark.name,Priest Badge
+item.duelist_mark.name,Duelist Mark
 item.duelist_mark.desc,After a critical hit: advance target cooldown by 0.5s. area: same_row; condition: trigger_count_max:6.
 item.overdrive_ratchet.name,Overdrive Ratchet
 item.overdrive_ratchet.desc,After hitting: advance target cooldown by 0.2s. area: adjacent_8; condition: trigger_count_max:12.
 item.bastion_core.name,Bastion Core
 item.bastion_core.desc,Every 4.0s: gain 12 armor. area: same_bag; condition: build_tag_count:3.
-item.layered_plates.name,Squire Armor
+item.layered_plates.name,Layered Plates
 item.layered_plates.desc,Every 5.0s: gain 10 armor. area: adjacent_4; condition: target_has_tag:armor.
-item.retaliation_spikes.name,Thorn Mail
+item.retaliation_spikes.name,Retaliation Spikes
 item.retaliation_spikes.desc,After gaining armor: deal 5 physical damage. condition: trigger_count_max:8.
-item.guardian_standard.name,Knight Seal
+item.guardian_standard.name,Guardian Standard
 item.guardian_standard.desc,Combat start: gain 3 armor. area: same_column; condition: target_has_tag:armor.
-item.charging_weight.name,Charged Battery
+item.charging_weight.name,Charging Weight
 item.charging_weight.desc,Every 6.0s: gain 4 stamina.
 item.execution_anvil.name,Execution Anvil
 item.execution_anvil.desc,Combat start: change target damage by 8. area: front_1; condition: target_has_tag:heavy.
@@ -209,7 +209,7 @@ item.toxin_bottle.name,Toxin Bottle
 item.toxin_bottle.desc,Every 4.0s: apply poison:4.
 item.thorn_extract.name,Thorn Extract
 item.thorn_extract.desc,After applying a status: apply poison:1. area: adjacent_4; condition: target_has_tag:poison.
-item.spore_jar.name,Poison Mushroom
+item.spore_jar.name,Spore Jar
 item.spore_jar.desc,Every 6.0s: apply poison:6.
 item.venom_distiller.name,Venom Distiller
 item.venom_distiller.desc,After applying a status: advance target cooldown by 0.4s. area: adjacent_4; condition: enemy_has_status:poison.
@@ -229,7 +229,7 @@ item.tonic_bottle.name,Restorative Tonic
 item.tonic_bottle.desc,Every 5.0s: heal 7.
 item.renewal_mortar.name,Renewal Mortar
 item.renewal_mortar.desc,After applying a status: apply regeneration:1. area: adjacent_4; condition: source_has_tag:healing.
-item.transfusion_tube.name,Blood Crystal Amulet
+item.transfusion_tube.name,Transfusion Tube
 item.transfusion_tube.desc,After hitting: heal 2. area: adjacent_4; condition: trigger_count_max:8.
 item.philosophers_kettle.name,Revival Kettle
 item.philosophers_kettle.desc,The first time health is low: heal 24. area: same_bag; condition: trigger_count_max:1.
@@ -295,36 +295,36 @@ enemy_archetype.toxic_guard.name,Toxic Guard
 enemy_archetype.burning_bastion.name,Burning Bastion
 enemy_archetype.blood_engine.name,Blood Engine
 enemy_archetype.star_artillery.name,Star Artillery
-enemy.rust_scout_a.name,Bat Scout
-enemy.rust_scout_b.name,Bat Striker
-enemy.road_guard_a.name,Moss Golem Guard
-enemy.road_guard_b.name,Armored Moss Golem
-enemy.trail_breaker.name,Hermit Crab Breaker
-enemy.marsh_brewer.name,Goblin Poison Brewer
-enemy.cinder_runner.name,Fire Snail Runner
-enemy.camp_mender.name,Goblin Mender
-enemy.gear_hunter_elite.name,Elite Antlion
-enemy.thorn_wall_elite.name,Elite Spider
-enemy.furnace_duelist.name,Werewolf Duelist
-enemy.plate_warden.name,Heavy Moss Golem
-enemy.slag_breaker.name,Hermit Crab Crusher
-enemy.coil_brewer.name,Green Snake Brewer
-enemy.kiln_runner.name,Fire Snail Runner
-enemy.red_medic.name,Mummy Medic
-enemy.relay_captain.name,Antlion Captain
-enemy.foundry_raider.name,Sand Lizard Raider
-enemy.cinder_bastion_elite.name,Elite Flame Knight
-enemy.blood_loom_elite.name,Elite Sand Lizard
-enemy.court_blades.name,Werewolf Blade Dancer
-enemy.astral_guard.name,Treant Guard
-enemy.anvil_judge.name,Lava Golem Judge
-enemy.pale_distiller.name,Green Snake Distiller
-enemy.wildfire_choir.name,Burning Fire Snail
-enemy.revival_circle.name,Mummy Healer
-enemy.star_gunner.name,Skeleton Gunner
-enemy.court_raider.name,Skeleton Raider
-enemy.plague_oracle_elite.name,Elite Spider
-enemy.starbreaker_elite.name,Elite Skeleton
+enemy.rust_scout_a.name,Rustwood Scout A
+enemy.rust_scout_b.name,Rustwood Scout B
+enemy.road_guard_a.name,Road Guard A
+enemy.road_guard_b.name,Road Guard B
+enemy.trail_breaker.name,Trail Breaker
+enemy.marsh_brewer.name,Marsh Brewer
+enemy.cinder_runner.name,Cinder Runner
+enemy.camp_mender.name,Camp Mender
+enemy.gear_hunter_elite.name,Elite Gear Hunter
+enemy.thorn_wall_elite.name,Elite Thorn Wall
+enemy.furnace_duelist.name,Furnace Duelist
+enemy.plate_warden.name,Plate Warden
+enemy.slag_breaker.name,Slag Breaker
+enemy.coil_brewer.name,Coil Brewer
+enemy.kiln_runner.name,Kiln Runner
+enemy.red_medic.name,Red Medic
+enemy.relay_captain.name,Relay Captain
+enemy.foundry_raider.name,Foundry Raider
+enemy.cinder_bastion_elite.name,Elite Cinder Bastion
+enemy.blood_loom_elite.name,Elite Blood Loom
+enemy.court_blades.name,Court Blades
+enemy.astral_guard.name,Astral Guard
+enemy.anvil_judge.name,Anvil Judge
+enemy.pale_distiller.name,Pale Distiller
+enemy.wildfire_choir.name,Wildfire Choir
+enemy.revival_circle.name,Revival Circle
+enemy.star_gunner.name,Star Gunner
+enemy.court_raider.name,Court Raider
+enemy.plague_oracle_elite.name,Elite Plague Oracle
+enemy.starbreaker_elite.name,Elite Starbreaker
 affix.accelerated_opening.name,Accelerated Opening
 affix.accelerated_opening.desc,Accelerated Opening openly modifies this encounter.
 affix.armored_start.name,Armored Start
@@ -341,12 +341,12 @@ affix.thick_hide.name,Thick Hide
 affix.thick_hide.desc,Thick Hide openly modifies this encounter.
 affix.restless.name,Restless
 affix.restless.desc,Restless openly modifies this encounter.
-boss.boss_iron_beast.name,Witch
-boss.boss_iron_beast.desc,Witch has an openly previewed phase rule and exploitable weakness.
-boss.boss_cinder_engine.name,Pharaoh
-boss.boss_cinder_engine.desc,Pharaoh has an openly previewed phase rule and exploitable weakness.
-boss.boss_star_regent.name,Demon King
-boss.boss_star_regent.desc,Demon King has an openly previewed phase rule and exploitable weakness.
+boss.boss_iron_beast.name,Rivetback Colossus
+boss.boss_iron_beast.desc,Rivetback Colossus has an openly previewed phase rule and exploitable weakness.
+boss.boss_cinder_engine.name,Cinderflow Engine
+boss.boss_cinder_engine.desc,Cinderflow Engine has an openly previewed phase rule and exploitable weakness.
+boss.boss_star_regent.name,Starforge Regent
+boss.boss_star_regent.desc,Starforge Regent has an openly previewed phase rule and exploitable weakness.
 run_effect.gold.name,Gold Change
 run_effect.heal_flat.name,Flat Healing
 run_effect.heal_pct.name,Percent Healing

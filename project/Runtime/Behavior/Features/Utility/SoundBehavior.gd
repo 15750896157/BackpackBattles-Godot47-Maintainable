@@ -10,7 +10,7 @@ static func returnPlayer(subject: Receiver, player: AudioStreamPlayer):
 
 static func setStream(subject: Receiver, stream, bgmPlayer, volume):
 	if subject.shutting_down: return
-	bgmPlayer.bus = &"PvEAmbient" if Expedition.initialized and stream == subject.postFightBGM_survival else &"BGM"
+	bgmPlayer.bus = &"BGM"
 	bgmPlayer.stream = stream
 	bgmPlayer.volume_db = volume
 	bgmPlayer.play()

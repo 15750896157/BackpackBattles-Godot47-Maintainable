@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bqmlt70gpnip7"]
 
 [ext_resource type="Script" path="res://Interface/PopupMessage.gd" id="1_0elio"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="2_7hhfu"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="2_7hhfu"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="3_rhi2u"]
 [ext_resource type="Script" path="res://Utility/LocalizedControl.gd" id="4_8tv3h"]
 [ext_resource type="Texture2D" path="res://Interface/PopupBox.png" id="5_utu2w"]

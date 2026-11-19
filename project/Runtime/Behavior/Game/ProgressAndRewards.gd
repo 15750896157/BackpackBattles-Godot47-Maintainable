@@ -107,11 +107,10 @@ static func changeCursorSize(subject: Receiver, newSize: float):
 		var factor=clampf(newSize,0.1,256.0/maxf(unscaledImg.get_width(),unscaledImg.get_height()))
 		scaledImg.resize(maxi(1,roundi(factor*unscaledImg.get_width())),maxi(1,roundi(factor*unscaledImg.get_height())),Image.INTERPOLATE_TRILINEAR)
 		subject.scaledCursors[i] = ImageTexture.create_from_image(scaledImg)
-	subject.lastCursorType = -1
 	subject.recalculateCursor()
 
 static func recalculateCursor(subject: Receiver):
-	if subject.isWeb or subject.scaledCursors.size() != subject.cursors.size(): return
+	if subject.isWeb: return
 
 	var cursorType = subject.getCursorType()
 

@@ -1,0 +1,7295 @@
+{
+ "_format": "item_template_overrides_v1",
+ "_note": "新基场景 PvE/Items/ItemBase.tscn（宝石用 GemBase.tscn）+ 本数据运行时覆盖；来源=原版场景逐字段提取",
+ "items": {
+  "Anvil": {
+   "root_name": "Anvil",
+   "script": "res://Items/Exclusive/Anvil.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Anvil.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -2,
+      -1,
+      4
+     ],
+     [
+      -1,
+      -1,
+      6
+     ],
+     [
+      0,
+      -2,
+      6
+     ],
+     [
+      1,
+      -2,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      4
+     ],
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      1,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -40,
+    80,
+    -40,
+    80,
+    40,
+    -80,
+    40
+   ],
+   "bottom_center": [
+    5.0,
+    41.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -81,
+     -35,
+     80,
+     -39,
+     73,
+     -9,
+     46,
+     7,
+     53,
+     41,
+     -47,
+     40,
+     -40,
+     13,
+     -79,
+     -15
+    ]
+   },
+   "definition_ids": [
+    "execution_anvil",
+    "supply_wrath_crest"
+   ]
+  },
+  "Axe": {
+   "root_name": "Axe",
+   "script": "res://Items/Exclusive/Axe.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Axe.png",
+    "position": [
+     26.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      -1,
+      2,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -120,
+    112,
+    -120,
+    112,
+    -40,
+    40,
+    -40,
+    40,
+    128,
+    -40,
+    128
+   ],
+   "bottom_center": [
+    0.0,
+    107.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     91,
+     -121,
+     -39,
+     -116,
+     -35,
+     -78,
+     -15,
+     -70,
+     -9,
+     112,
+     17,
+     121,
+     15,
+     -26,
+     66,
+     -32,
+     89,
+     -70
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      41.0,
+      -80.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      -21.0,
+      -89.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "broad_axe",
+    "supply_double_axe"
+   ]
+  },
+  "BagofStones": {
+   "root_name": "Bag of Stones",
+   "script": "res://Items/BagofStones.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/BagofStones.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    0.5,
+    0.5
+   ],
+   "click_polygon": [
+    -80,
+    -40,
+    80,
+    -40,
+    80,
+    40,
+    -80,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    35.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 29.0,
+     "height": 108.0
+    },
+    "position": [
+     -7.0,
+     5.0
+    ],
+    "rotation": 1.5708
+   },
+   "definition_ids": [
+    "sling",
+    "supply_stone"
+   ]
+  },
+  "Battery": {
+   "root_name": "Battery",
+   "script": "res://Items/Exclusive/Battery.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Battery.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -4,
+      11
+     ],
+     [
+      -1,
+      -3,
+      11
+     ],
+     [
+      -1,
+      -2,
+      11
+     ],
+     [
+      -1,
+      -1,
+      11
+     ],
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    36.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -23,
+     -30,
+     -24,
+     27,
+     -9,
+     37,
+     13,
+     37,
+     24,
+     28,
+     24,
+     -29,
+     9,
+     -36,
+     -9,
+     -36
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        0.623529
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "material": {
+       "res": "res://Items/Exclusive/Materials/BatteryLightning.material"
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        -79.74
+       ]
+      },
+      "scale": {
+       "vec2": [
+        2.0,
+        2.0
+       ]
+      },
+      "z_index": 1,
+      "emitting": false,
+      "amount": 3,
+      "lifetime": 0.8,
+      "speed_scale": 1.48,
+      "explosiveness": 0.13,
+      "randomness": 0.91,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/BatteryDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/LineParticle2.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "charging_weight"
+   ]
+  },
+  "BionicArmor": {
+   "root_name": "Bionic Armor",
+   "script": "res://Items/Exclusive/BionicArmor.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/BionicArmor.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.53,
+     0.53
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      -1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    1.88679,
+    1.88679
+   ],
+   "click_polygon": [
+    -80,
+    -120,
+    80,
+    -120,
+    80,
+    120,
+    -80,
+    120
+   ],
+   "bottom_center": [
+    0.0,
+    108.0
+   ],
+   "body_collision": null,
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -42.0,
+      -74.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      41.0,
+      -75.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      0.0,
+      -46.0
+     ]
+    },
+    {
+     "name": "GemSocket4",
+     "position": [
+      -45.283,
+      73.5849
+     ]
+    },
+    {
+     "name": "GemSocket5",
+     "position": [
+      43.3962,
+      73.5849
+     ]
+    },
+    {
+     "name": "GemSocket6",
+     "position": [
+      3.8147e-06,
+      41.5094
+     ]
+    }
+   ],
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 71.0,
+     "height": 238.0
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.976471,
+        0.639216,
+        0.207843,
+        1.0
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        8.0,
+        8.0,
+        8.0,
+        0.36
+       ]
+      },
+      "show_behind_parent": true,
+      "position": {
+       "vec2": [
+        -2.0,
+        -28.4553
+       ]
+      },
+      "scale": {
+       "vec2": [
+        2.665,
+        2.665
+       ]
+      },
+      "emitting": false,
+      "amount": 3,
+      "lifetime": 2.42,
+      "speed_scale": 1.2,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/SunShieldDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Shine1.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "BionicArmorAnim",
+     "scene": "res://PvE/Items/Anims/BionicArmorAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "bastion_core"
+   ]
+  },
+  "BloodAmulet": {
+   "root_name": "Blood Amulet",
+   "script": "res://Items/BloodAmulet.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/BloodAmulet.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 29.6396,
+     "height": 91.2792
+    },
+    "position": [
+     1.0,
+     1.0
+    ],
+    "rotation": -0.682424
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        10.0,
+        -10.0
+       ]
+      },
+      "emitting": false,
+      "amount": 7,
+      "lifetime": 0.8,
+      "speed_scale": 0.79,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Particles/BloodAmuletDragParticles.tres"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "BloodAmuletAnim",
+     "scene": "res://PvE/Items/Anims/BloodAmuletAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "supply_envy_crest",
+    "transfusion_tube"
+   ]
+  },
+  "BurningTorch": {
+   "root_name": "Burning Torch",
+   "script": "res://Items/BurningTorch.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/BurningTorch.png",
+    "position": [
+     0.0,
+     -7.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    80.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -22,
+     -44,
+     -34,
+     -39,
+     -25,
+     -10,
+     -13,
+     8,
+     -10,
+     72,
+     -1,
+     81,
+     10,
+     71,
+     13,
+     9,
+     27,
+     -12,
+     34,
+     -41,
+     23,
+     -48,
+     14,
+     -59,
+     -11,
+     -64
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      0.0,
+      -51.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.2,
+        1.2,
+        1.2,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "material": {
+       "res": "res://Items/Particles/RubyEggMaterial.material"
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        -98.0
+       ]
+      },
+      "emitting": false,
+      "amount": 3,
+      "lifetime": 0.27,
+      "speed_scale": 0.29,
+      "process_material": {
+       "res": "res://Items/Particles/BurningTorchParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/FireParticle2.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "TorchLight",
+     "scene": "res://PvE/Items/Anims/BurningTorchAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "required_animations": {
+    "Icon/TorchLight/AnimationPlayer": [
+     "Flicker"
+    ],
+    "Icon/TorchLight/FlickerAnimation": [
+     "Flicker"
+    ]
+   },
+   "definition_ids": [
+    "coal_burner"
+   ]
+  },
+  "Chainsaw": {
+   "root_name": "Chainsaw",
+   "script": "res://Items/Exclusive/Chainsaw.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Chainsaw0.png",
+    "position": [
+     2.0,
+     -99.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     -99.0
+    ],
+    "cells": [
+     [
+      0,
+      -2,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -160,
+    40,
+    -160,
+    40,
+    160,
+    -40,
+    160
+   ],
+   "bottom_center": [
+    0.0,
+    -14.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     -2.0,
+     -99.0
+    ],
+    "polygon": [
+     -16,
+     -112,
+     -21,
+     44,
+     -39,
+     79,
+     -12,
+     153,
+     13,
+     153,
+     42,
+     79,
+     22,
+     36,
+     22,
+     -130,
+     8,
+     -156
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -2.0,
+      -95.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      -2.0,
+      -30.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      -2.0,
+      39.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "AnimationPlayer",
+     "scene": "res://PvE/Items/Anims/ChainsawAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "chain_blade"
+   ]
+  },
+  "ClawsofAttack": {
+   "root_name": "Claws of Attack",
+   "script": "res://Items/ClawsofAttack.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/ClawsofAttack.png",
+    "position": [
+     4.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -40,
+    80,
+    -40,
+    80,
+    40,
+    -80,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    41.0
+   ],
+   "body_collision": null,
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -6.0,
+      -3.0
+     ]
+    }
+   ],
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 42.0,
+     "height": 150.0
+    },
+    "position": [
+     0.0,
+     0.0
+    ],
+    "rotation": 1.5708
+   },
+   "definition_ids": [
+    "arsenal_bracer"
+   ]
+  },
+  "Cog": {
+   "root_name": "Cog",
+   "script": "res://Items/Exclusive/Cog.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Cog.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.447368,
+     0.447368
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -2,
+      -1,
+      4
+     ],
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      0,
+      -2,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      4
+     ],
+     [
+      0,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.2353,
+    2.2353
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    33.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CircleShape2D",
+    "params": {
+     "radius": 33.541
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "definition_ids": [
+    "gear_link",
+    "supply_jade_gloves"
+   ]
+  },
+  "Coil": {
+   "root_name": "Coil",
+   "script": "res://Items/Exclusive/Coil.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Coil.png",
+    "position": [
+     1.0,
+     0.0
+    ],
+    "scale": [
+     0.379387,
+     0.379387
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.63583,
+    2.63583
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    29.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -26,
+     -20,
+     -32,
+     5,
+     -30,
+     24,
+     -25,
+     29,
+     28,
+     29,
+     32,
+     24,
+     34,
+     6,
+     28,
+     -21,
+     23,
+     -28,
+     -21,
+     -28
+    ]
+   },
+   "definition_ids": [
+    "caustic_coil"
+   ]
+  },
+  "CursedHairComb": {
+   "root_name": "Cursed Hair Comb",
+   "script": "res://Items/CursedHairComb.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/VampiricHairComb.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -3,
+      -1,
+      6
+     ],
+     [
+      -2,
+      -1,
+      6
+     ],
+     [
+      0,
+      -2,
+      6
+     ],
+     [
+      1,
+      -2,
+      6
+     ],
+     [
+      -2,
+      0,
+      6
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      6
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      4
+     ],
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      -2,
+      2,
+      4
+     ],
+     [
+      0,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    36.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 37.0,
+     "height": 88.0
+    },
+    "position": [
+     1.0,
+     1.0
+    ],
+    "rotation": 1.5708
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        10.0,
+        -12.0
+       ]
+      },
+      "emitting": false,
+      "amount": 12,
+      "lifetime": 0.8,
+      "speed_scale": 0.85,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://PvE/Items/Particles/CursedHairComb_mat10.tres"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "CursedHairCombAnim",
+     "scene": "res://PvE/Items/Anims/CursedHairCombAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "fracture_charm",
+    "supply_voodoo_doll"
+   ]
+  },
+  "CustomerCard": {
+   "root_name": "Customer Card",
+   "script": "res://Items/CustomerCard.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/CustomerCard.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    27.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "RectangleShape2D",
+    "params": {
+     "size": [
+      73.0,
+      53.0
+     ]
+    },
+    "position": [
+     0.5,
+     -0.5
+    ]
+   },
+   "definition_ids": [
+    "merchant_token",
+    "supply_discount_card",
+    "supply_token"
+   ]
+  },
+  "Dagger": {
+   "root_name": "Dagger",
+   "script": "res://Items/Dagger.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Dagger.png",
+    "position": [
+     -1.75,
+     -2.43696
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     7.0,
+     -6.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      8.75,
+      -7.56304
+     ]
+    }
+   ],
+   "definition_ids": [
+    "utility_knife",
+    "supply_dagger",
+    "supply_wooden_knife"
+   ]
+  },
+  "DoubleAxe": {
+   "root_name": "Double Axe",
+   "script": "res://Items/Exclusive/DoubleAxe.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/DoubleAxe.png",
+    "position": [
+     0.0,
+     -4.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     -80.0
+    ],
+    "cells": [
+     [
+      -2,
+      0,
+      3
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -2,
+      1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      -1,
+      2,
+      3
+     ],
+     [
+      -1,
+      3,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -112,
+    -160,
+    112,
+    -160,
+    112,
+    0,
+    40,
+    0,
+    40,
+    160,
+    -40,
+    160,
+    -40,
+    0,
+    -112,
+    0
+   ],
+   "bottom_center": [
+    0.0,
+    77.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     67,
+     -160,
+     -67,
+     -160,
+     -103,
+     -88,
+     -87,
+     -18,
+     -16,
+     32,
+     -11,
+     154,
+     9,
+     154,
+     16,
+     32,
+     83,
+     -15,
+     105,
+     -84
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      70.0,
+      -115.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      -68.0,
+      -116.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      0.0,
+      -91.0
+     ]
+    },
+    {
+     "name": "GemSocket4",
+     "position": [
+      73.0,
+      -42.0
+     ]
+    },
+    {
+     "name": "GemSocket5",
+     "position": [
+      -73.0,
+      -42.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "heavy_cleaver",
+    "supply_battle_axe"
+   ]
+  },
+  "DragonscaleArmor": {
+   "root_name": "Dragonscale Armor",
+   "script": "res://Items/Exclusive/DragonscaleArmor.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/DragonscaleArmor.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      -1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -120,
+    80,
+    -120,
+    80,
+    120,
+    -80,
+    120
+   ],
+   "bottom_center": [
+    0.0,
+    108.0
+   ],
+   "body_collision": null,
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -44.0,
+      -36.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      44.0,
+      -37.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      0.0,
+      26.0
+     ]
+    }
+   ],
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 71.0,
+     "height": 238.0
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "definition_ids": [
+    "layered_plates",
+    "supply_squire_armor"
+   ]
+  },
+  "FlyAgaric": {
+   "root_name": "Fly Agaric",
+   "script": "res://Items/FlyAgaric.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/FlyAgaric.png",
+    "position": [
+     -1.75,
+     -0.43696
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      -1,
+      2,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    -5.0,
+    71.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     5.0
+    ],
+    "polygon": [
+     -1,
+     -75,
+     -28,
+     -64,
+     -38,
+     -39,
+     -12,
+     -33,
+     -17,
+     59,
+     1,
+     64,
+     11,
+     52,
+     7,
+     -33,
+     37,
+     -37,
+     24,
+     -64
+    ]
+   },
+   "definition_ids": [
+    "spore_jar"
+   ]
+  },
+  "Generator": {
+   "root_name": "Generator",
+   "script": "res://Items/Exclusive/Generator.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Generator.png",
+    "position": [
+     0.0,
+     -2.0
+    ],
+    "scale": [
+     0.48,
+     0.48
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      -4,
+      11
+     ],
+     [
+      0,
+      -5,
+      11
+     ],
+     [
+      -2,
+      -3,
+      11
+     ],
+     [
+      -2,
+      -2,
+      11
+     ],
+     [
+      -1,
+      -1,
+      11
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.08333,
+    2.08333
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    73.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -37,
+     72,
+     36,
+     73,
+     36,
+     37,
+     28,
+     25,
+     20,
+     25,
+     20,
+     -10,
+     32,
+     -23,
+     37,
+     -44,
+     29,
+     -64,
+     15,
+     -74,
+     0,
+     -77,
+     -15,
+     -74,
+     -28,
+     -64,
+     -36,
+     -43,
+     -31,
+     -22,
+     -19,
+     -11,
+     -19,
+     25,
+     -30,
+     25,
+     -37,
+     35
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        0.623529
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "material": {
+       "res": "res://Items/Exclusive/Materials/BatteryLightning.material"
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        -154.74
+       ]
+      },
+      "scale": {
+       "vec2": [
+        2.0,
+        2.0
+       ]
+      },
+      "z_index": 1,
+      "emitting": false,
+      "amount": 5,
+      "speed_scale": 1.48,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/BatteryDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/LineParticle2.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "momentum_gear"
+   ]
+  },
+  "Halberd": {
+   "root_name": "Halberd",
+   "script": "res://Items/Exclusive/Halberd.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Halberd.png",
+    "position": [
+     38.0,
+     3.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      0,
+      -3,
+      4
+     ],
+     [
+      1,
+      -3,
+      4
+     ],
+     [
+      2,
+      -3,
+      4
+     ],
+     [
+      0,
+      -2,
+      3
+     ],
+     [
+      1,
+      -2,
+      3
+     ],
+     [
+      2,
+      -2,
+      4
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      1,
+      -1,
+      3
+     ],
+     [
+      2,
+      -1,
+      4
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      4
+     ],
+     [
+      2,
+      0,
+      4
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -160,
+    120,
+    -160,
+    120,
+    0,
+    40,
+    0,
+    40,
+    160,
+    -40,
+    160
+   ],
+   "bottom_center": [
+    0.0,
+    39.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     -2.0,
+     0.0
+    ],
+    "polygon": [
+     15,
+     -133,
+     -30,
+     -137,
+     -6,
+     -25,
+     -5,
+     158,
+     6,
+     160,
+     22,
+     -88,
+     104,
+     -91,
+     115,
+     -123,
+     94,
+     -151,
+     57,
+     -153
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      51.0,
+      -111.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      7.0,
+      -32.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      -37.0,
+      -125.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "HalberdAnim",
+     "scene": "res://PvE/Items/Anims/HalberdAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "crescent_glaive"
+   ]
+  },
+  "Hammer": {
+   "root_name": "Hammer",
+   "script": "res://Items/Hammer.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Hammer.png",
+    "position": [
+     0.0,
+     -15.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     32.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      3
+     ],
+     [
+      0,
+      -2,
+      3
+     ],
+     [
+      1,
+      -2,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -120,
+    -128,
+    120,
+    -128,
+    120,
+    -48,
+    40,
+    -48,
+    40,
+    112,
+    -40,
+    112,
+    -40,
+    -48,
+    -120,
+    -48
+   ],
+   "bottom_center": [
+    0.0,
+    87.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     -2.0,
+     0.0
+    ],
+    "polygon": [
+     -64,
+     -92,
+     -83,
+     -53,
+     -26,
+     -77,
+     -15,
+     84,
+     16,
+     86,
+     24,
+     -72,
+     87,
+     -69,
+     84,
+     -112,
+     -10,
+     -117
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      68.0,
+      -73.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      0.0,
+      -71.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "stone_hammer",
+    "supply_wooden_club"
+   ]
+  },
+  "HealingHerbs": {
+   "root_name": "Healing Herbs",
+   "script": "res://Items/HealingHerbs.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/HealingHerbs.png",
+    "position": [
+     3.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    38.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 24.0,
+     "height": 80.0
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "definition_ids": [
+    "bandage_roll",
+    "healing_herb",
+    "supply_elven_wreath",
+    "supply_gem_green",
+    "supply_potted_plant",
+    "supply_vine_ring"
+   ]
+  },
+  "HeroSword": {
+   "root_name": "Hero Sword",
+   "script": "res://Items/HeroSword.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/HeroSword.png",
+    "position": [
+     2.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      4
+     ],
+     [
+      -1,
+      2,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    2.0,
+    78.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     0,
+     -76,
+     -21,
+     -47,
+     -11,
+     17,
+     -31,
+     25,
+     -35,
+     36,
+     -9,
+     31,
+     -7,
+     69,
+     0,
+     78,
+     9,
+     68,
+     10,
+     31,
+     34,
+     39,
+     32,
+     25,
+     12,
+     17,
+     21,
+     -45
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -2.0,
+      -40.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "self_modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        0.66
+       ]
+      },
+      "position": {
+       "vec2": [
+        -4.0,
+        -10.0
+       ]
+      },
+      "emitting": false,
+      "amount": 6,
+      "lifetime": 0.86,
+      "speed_scale": 0.67,
+      "process_material": {
+       "res": "res://Items/Particles/HeroSwordDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "iron_sword",
+    "supply_iron_longsword"
+   ]
+  },
+  "LeatherArmor": {
+   "root_name": "Leather Armor",
+   "script": "res://Items/LeatherArmor.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/LeatherArmor.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      -1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -120,
+    80,
+    -120,
+    80,
+    120,
+    -80,
+    120
+   ],
+   "bottom_center": [
+    0.0,
+    108.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -35,
+     -100,
+     -1,
+     -115,
+     33,
+     -102,
+     32,
+     -70,
+     61,
+     -58,
+     91,
+     -62,
+     89,
+     -27,
+     43,
+     30,
+     62,
+     97,
+     0,
+     113,
+     -54,
+     91,
+     -37,
+     29,
+     -85,
+     -28,
+     -90,
+     -63,
+     -58,
+     -58,
+     -30,
+     -69
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -45.0,
+      -39.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      50.0,
+      -40.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "leather_wrap",
+    "supply_leather_armor"
+   ]
+  },
+  "LuckyClover": {
+   "root_name": "Lucky Clover",
+   "script": "res://Items/LuckyClover.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/LuckyClover.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "lucky_coin",
+    "supply_greed_crest",
+    "supply_lucky_cat"
+   ]
+  },
+  "MagicMirror": {
+   "root_name": "Magic Mirror",
+   "script": "res://Items/Exclusive/MagicMirror.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/MagicMirror.png",
+    "position": [
+     1.0,
+     -1.5
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      2,
+      -3,
+      4
+     ],
+     [
+      1,
+      -2,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      1,
+      0,
+      4
+     ],
+     [
+      2,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    5.0,
+    78.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -31,
+     -10,
+     -31,
+     -59,
+     -6,
+     -82,
+     20,
+     -64,
+     35,
+     -44,
+     38,
+     -8,
+     23,
+     38,
+     27,
+     59,
+     18,
+     81,
+     -1,
+     63,
+     -2,
+     39
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "material": {
+       "res": "res://Items/Exclusive/Particles/FrozenFlame.material"
+      },
+      "position": {
+       "vec2": [
+        4.0,
+        -32.0
+       ]
+      },
+      "emitting": false,
+      "amount": 10,
+      "lifetime": 0.59,
+      "speed_scale": 0.3,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/FrozenFlameParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/Spot1.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "scout_lens",
+    "supply_elven_charm"
+   ]
+  },
+  "OilLamp": {
+   "root_name": "Oil Lamp",
+   "script": "res://Items/Exclusive/OilLamp.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/OilLamp.png",
+    "position": [
+     0.25,
+     -0.43696
+    ],
+    "scale": [
+     0.47,
+     0.47
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.12766,
+    2.12766
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -8,
+     -73,
+     8,
+     -73,
+     9,
+     -40,
+     18,
+     -5,
+     16,
+     24,
+     33,
+     35,
+     35,
+     53,
+     21,
+     71,
+     -22,
+     71,
+     -34,
+     36,
+     -16,
+     35,
+     -19,
+     -5,
+     -9,
+     -40
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.5,
+        1.5,
+        1.5,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "material": {
+       "res": "res://PvE/Items/Particles/OilLamp_mat30.tres"
+      },
+      "position": {
+       "vec2": [
+        -13.2979,
+        7.31268
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.52,
+        0.605
+       ]
+      },
+      "emitting": false,
+      "amount": 3,
+      "lifetime": 0.27,
+      "speed_scale": 0.36,
+      "process_material": {
+       "res": "res://Items/Particles/FlameDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/FireParticle2.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "TorchLight",
+     "scene": "res://PvE/Items/Anims/OilLampAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "required_animations": {
+    "Icon/TorchLight/FlickerAnimation": [
+     "Flicker"
+    ]
+   },
+   "definition_ids": [
+    "ignition_lens",
+    "supply_chaos_staff"
+   ]
+  },
+  "PerfectAmethyst": {
+   "root_name": "Perfect Amethyst",
+   "script": "res://Items/Gems/Amethyst.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Gems/Sprites/PerfectAmethyst.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.7,
+     0.7
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    1.42857,
+    1.42857
+   ],
+   "click_polygon": [
+    -32,
+    -32,
+    32,
+    -32,
+    32,
+    32,
+    -32,
+    32
+   ],
+   "bottom_center": [
+    0.0,
+    31.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     0,
+     -34,
+     -15,
+     -14,
+     -23,
+     6,
+     -18,
+     23,
+     0,
+     32,
+     17,
+     25,
+     23,
+     7,
+     15,
+     -14
+    ]
+   },
+   "template_scene": "res://PvE/Items/GemBase.tscn",
+   "interface_nodes": [
+    "SocketDetectionArea",
+    "SocketDetectionArea/CollisionShape2D",
+    "GemAnimation"
+   ],
+   "required_animations": {
+    "GemAnimation": [
+     "Sparkle",
+     "HotSwapHover"
+    ]
+   },
+   "definition_ids": [
+    "focus_prism",
+    "supply_elven_gemstone",
+    "supply_gem_purple"
+   ]
+  },
+  "PerpetuumMobile": {
+   "root_name": "Perpetuum Mobile",
+   "script": "res://Items/Exclusive/PerpetuumMobile.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/PerpetuumMobile.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.414557,
+     0.414557
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -1,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.41221,
+    2.41221
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    1.0,
+    32.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -28,
+     -30,
+     -37,
+     5,
+     -31,
+     24,
+     0,
+     39,
+     31,
+     28,
+     40,
+     8,
+     37,
+     -11,
+     31,
+     -36,
+     6,
+     -38,
+     8,
+     -50
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "emitting": false,
+      "amount": 12,
+      "lifetime": 0.56,
+      "speed_scale": 0.69,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/PerpetuumMobileDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "SkillLight",
+     "scene": "res://Items/Animations/SkillLight.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.996078,
+        0.984314,
+        0.694118,
+        1.0
+       ]
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "overdrive_ratchet",
+    "supply_pride_crest"
+   ]
+  },
+  "Piggybank": {
+   "root_name": "Piggybank",
+   "script": "res://Items/Piggybank.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Piggybank.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      0,
+      -2,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      4
+     ],
+     [
+      0,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -40,
+    80,
+    -40,
+    80,
+    40,
+    -80,
+    40
+   ],
+   "bottom_center": [
+    1.0,
+    37.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 36.0,
+     "height": 122.0
+    },
+    "position": [
+     6.0,
+     0.0
+    ],
+    "rotation": 1.5708
+   },
+   "definition_ids": [
+    "salvage_pouch",
+    "supply_salvage_pouch"
+   ]
+  },
+  "PocketSand": {
+   "root_name": "Pocket Sand",
+   "script": "res://Items/PocketSand.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/PocketSand.png",
+    "position": [
+     0.0,
+     -4.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    24.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -11,
+     -23,
+     -34,
+     5,
+     -5,
+     24,
+     37,
+     18,
+     34,
+     6,
+     11,
+     -28
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "emitting": false,
+      "amount": 30,
+      "lifetime": 2.0,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Particles/PocketSandDragParticles.tres"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "quicksand_vial",
+    "supply_ice_cube",
+    "supply_sloth_crest"
+   ]
+  },
+  "PoisonIvy": {
+   "root_name": "Poison Ivy",
+   "script": "res://Items/PoisonIvy.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/PoisonIvy.png",
+    "position": [
+     0.0,
+     2.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -3,
+      -1,
+      4
+     ],
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      1,
+      -2,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -3,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      4
+     ],
+     [
+      1,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    35.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CircleShape2D",
+    "params": {
+     "radius": 38.0132
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "emitting": false,
+      "amount": 6,
+      "lifetime": 0.3,
+      "speed_scale": 0.82,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Particles/PoisonIvyDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/SpikeParticle.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "ActivationParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "emitting": false,
+      "amount": 11,
+      "lifetime": 0.44,
+      "speed_scale": 0.82,
+      "explosiveness": 0.84,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Particles/PoisonIvyActivationParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/SpikeParticle.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "PoisonIvyAnim",
+     "scene": "res://PvE/Items/Anims/PoisonIvyAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "thorn_extract"
+   ]
+  },
+  "Pot": {
+   "root_name": "Pot",
+   "script": "res://Items/Exclusive/Pot.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Pot.png",
+    "position": [
+     -1.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -2,
+      -1,
+      6
+     ],
+     [
+      1,
+      -2,
+      4
+     ],
+     [
+      -3,
+      0,
+      6
+     ],
+     [
+      -2,
+      0,
+      6
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      1,
+      -1,
+      4
+     ],
+     [
+      -3,
+      1,
+      6
+     ],
+     [
+      -2,
+      1,
+      6
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      4
+     ],
+     [
+      -2,
+      2,
+      6
+     ],
+     [
+      1,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80.0,
+    -80.0,
+    80.0,
+    -80.0,
+    80.0,
+    80.0,
+    -80.0,
+    80.0
+   ],
+   "bottom_center": [
+    0.0,
+    62.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -73,
+     -35,
+     -78,
+     -14,
+     -68,
+     5,
+     -68,
+     43,
+     -55,
+     58,
+     -22,
+     68,
+     19,
+     68,
+     52,
+     59,
+     66,
+     46,
+     66,
+     7,
+     77,
+     -5,
+     73,
+     -35,
+     67,
+     -42,
+     72,
+     -70,
+     57,
+     -55,
+     33,
+     -63,
+     0,
+     -64,
+     -30,
+     -59,
+     -60,
+     -45
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -1.0,
+      -40.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        64.0,
+        -14.0
+       ]
+      },
+      "rotation": -0.408407,
+      "z_index": 1,
+      "emitting": false,
+      "amount": 12,
+      "lifetime": 0.8,
+      "speed_scale": 0.9,
+      "explosiveness": 0.28,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/PotDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Light/RingLight.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "renewal_mortar",
+    "supply_herb_pouch"
+   ]
+  },
+  "RegularSapphire": {
+   "root_name": "Regular Sapphire",
+   "script": "res://Items/Gems/Sapphire.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Gems/Sprites/RegularSapphire.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.6,
+     0.6
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    1.66667,
+    1.66667
+   ],
+   "click_polygon": [
+    -32,
+    -32,
+    32,
+    -32,
+    32,
+    32,
+    -32,
+    32
+   ],
+   "bottom_center": [
+    0.0,
+    19.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     18,
+     -18,
+     -18,
+     -18,
+     -18,
+     18,
+     18,
+     18
+    ]
+   },
+   "template_scene": "res://PvE/Items/GemBase.tscn",
+   "interface_nodes": [
+    "SocketDetectionArea",
+    "SocketDetectionArea/CollisionShape2D",
+    "GemAnimation"
+   ],
+   "required_animations": {
+    "GemAnimation": [
+     "Sparkle",
+     "HotSwapHover"
+    ]
+   },
+   "definition_ids": [
+    "glass_bead",
+    "supply_gem_blue"
+   ]
+  },
+  "Repeater": {
+   "root_name": "Repeater",
+   "script": "res://Items/Exclusive/Repeater.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Repeater.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -3,
+      -1,
+      4
+     ],
+     [
+      1,
+      -2,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -3,
+      1,
+      4
+     ],
+     [
+      1,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -25,
+     26,
+     0,
+     36,
+     25,
+     26,
+     35,
+     0,
+     20,
+     -34,
+     0,
+     -36,
+     -24,
+     -25,
+     -35,
+     1
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "emitting": false,
+      "amount": 12,
+      "lifetime": 0.6,
+      "randomness": 0.25,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/RepeaterDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "repeater_crossbow"
+   ]
+  },
+  "Rope": {
+   "root_name": "Rope",
+   "script": "res://Items/Exclusive/Rope.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Rope.png",
+    "position": [
+     0.0,
+     3.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      1,
+      -1,
+      6
+     ],
+     [
+      -1,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -40,
+    80,
+    -40,
+    80,
+    40,
+    -80,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    23.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -67,
+     1,
+     -83,
+     37,
+     58,
+     12,
+     78,
+     15,
+     80,
+     4,
+     53,
+     -7,
+     36,
+     -29,
+     -3,
+     -36,
+     -45,
+     -20
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpeedTimer",
+     "type": "Timer",
+     "props": {
+      "process_mode": 0,
+      "one_shot": true
+     },
+     "script": "res://Utility/MultiTimer.gd",
+     "connections": [
+      {
+       "signal": "multi_timeout",
+       "method": "onSpeedTimeout"
+      }
+     ]
+    }
+   ],
+   "definition_ids": [
+    "storage_hook"
+   ]
+  },
+  "Scissorswords": {
+   "root_name": "Scissorswords",
+   "script": "res://Items/Exclusive/Scissorswords.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/ScissorSwords.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -2,
+      1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      3
+     ],
+     [
+      -1,
+      2,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    0,
+    -120,
+    80,
+    -120,
+    80,
+    -40,
+    160,
+    -40,
+    160,
+    40,
+    0,
+    40,
+    0,
+    120,
+    -80,
+    120,
+    -80,
+    40,
+    -160,
+    40,
+    -160,
+    -40,
+    0,
+    -40
+   ],
+   "bottom_center": [
+    1.0,
+    120.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     -5.0
+    ],
+    "polygon": [
+     88,
+     -107,
+     64,
+     -115,
+     -26,
+     -4,
+     -77,
+     -31,
+     -152,
+     -11,
+     -153,
+     20,
+     -119,
+     40,
+     -72,
+     53,
+     -80,
+     125,
+     -16,
+     93,
+     16,
+     29,
+     152,
+     13,
+     152,
+     5,
+     26,
+     -13
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      41.0,
+      -74.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      118.0,
+      3.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      34.0,
+      1.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "LightsaberGlow",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.0,
+        1.0,
+        1.0,
+        0.384314
+       ]
+      },
+      "material": {
+       "res": "res://Shader/AdditiveCanvasItemMaterial.tres"
+      },
+      "position": {
+       "vec2": [
+        46.0,
+        -78.0
+       ]
+      },
+      "rotation": 0.558505,
+      "texture": {
+       "res": "res://Items/Sprites/Lightsaber_glow.png"
+      }
+     }
+    },
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "self_modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        0.82
+       ]
+      },
+      "position": {
+       "vec2": [
+        -290.0,
+        -238.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        25.0,
+        25.0
+       ]
+      },
+      "emitting": false,
+      "amount": 20,
+      "lifetime": 0.7,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/ScissorSwordsDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "BlindingLightTimer",
+     "type": "Timer",
+     "props": {
+      "process_mode": 0,
+      "one_shot": true
+     },
+     "connections": [
+      {
+       "signal": "timeout",
+       "method": "onBlindingLightTimeout"
+      }
+     ]
+    },
+    {
+     "name": "ActivationParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "modulate": {
+       "color": [
+        1.2,
+        1.2,
+        1.2,
+        1.0
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        1.6,
+        1.5,
+        1.0,
+        0.82
+       ]
+      },
+      "position": {
+       "vec2": [
+        15.0,
+        -25.0
+       ]
+      },
+      "rotation": 0.612611,
+      "emitting": false,
+      "amount": 10,
+      "lifetime": 0.7,
+      "speed_scale": 2.0,
+      "process_material": {
+       "res": "res://Items/Particles/LightsaberActivationParticles.tres"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "twin_needles",
+    "supply_kite_dagger"
+   ]
+  },
+  "ShieldofValor": {
+   "root_name": "Shield of Valor",
+   "script": "res://Items/ShieldofValor.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/ShieldofValor.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      0,
+      -2,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      4
+     ],
+     [
+      -2,
+      2,
+      4
+     ],
+     [
+      -1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      3
+     ],
+     [
+      1,
+      1,
+      4
+     ],
+     [
+      -1,
+      3,
+      4
+     ],
+     [
+      0,
+      2,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -120,
+    80,
+    -120,
+    80,
+    120,
+    -80,
+    120
+   ],
+   "bottom_center": [
+    0.0,
+    97.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -1,
+     -112,
+     -55,
+     -91,
+     -70,
+     -18,
+     -43,
+     51,
+     0,
+     112,
+     41,
+     54,
+     69,
+     -19,
+     55,
+     -94
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      0.0,
+      -85.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      -1.0,
+      71.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.2,
+        1.2,
+        1.2,
+        1.0
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        1.6,
+        1.5,
+        1.0,
+        0.82
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.803,
+        1.0
+       ]
+      },
+      "emitting": false,
+      "amount": 10,
+      "lifetime": 0.7,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Particles/HolyArmorDragParticles.tres"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "tower_shield",
+    "supply_holy_bulwark"
+   ]
+  },
+  "SliceofBread": {
+   "root_name": "Slice of Bread",
+   "script": "res://Items/Exclusive/SliceofBread.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/SliceofBread.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.431208,
+     0.431208
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      -1,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.31907,
+    2.31907
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    31.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -34,
+     -15,
+     -30,
+     -7,
+     -34,
+     7,
+     -31,
+     32,
+     31,
+     32,
+     34,
+     7,
+     29,
+     -7,
+     34,
+     -13,
+     28,
+     -27,
+     0,
+     -34,
+     -28,
+     -27
+    ]
+   },
+   "definition_ids": [
+    "travel_ration",
+    "supply_bread"
+   ]
+  },
+  "SmithingForDummies": {
+   "root_name": "Smithing For Dummies",
+   "script": "res://Items/Exclusive/SmithingForDummies.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/SmithingForDummies.png",
+    "position": [
+     0.0,
+     -0.13
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -2,
+      4
+     ],
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -3,
+      0,
+      4
+     ],
+     [
+      -2,
+      0,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      4
+     ],
+     [
+      1,
+      -1,
+      4
+     ],
+     [
+      -1,
+      1,
+      4
+     ],
+     [
+      -1,
+      2,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    1.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -22,
+     -34,
+     -40,
+     8,
+     -37,
+     27,
+     -12,
+     34,
+     36,
+     12,
+     40,
+     -5
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        1.0
+       ]
+      },
+      "show_behind_parent": true,
+      "position": {
+       "vec2": [
+        -10.0,
+        8.26
+       ]
+      },
+      "emitting": false,
+      "amount": 22,
+      "lifetime": 0.62,
+      "speed_scale": 1.29,
+      "explosiveness": 0.89,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/SmithingForDummiesDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/SparkParticle1.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "SkillLight",
+     "scene": "res://Items/Animations/SkillLight.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        1.0,
+        0.737255,
+        0.513726,
+        1.0
+       ]
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "field_manual",
+    "supply_codex"
+   ]
+  },
+  "Spear": {
+   "root_name": "Spear",
+   "script": "res://Items/Spear.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Spear.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      0,
+      -7,
+      4
+     ],
+     [
+      0,
+      -6,
+      4
+     ],
+     [
+      0,
+      -5,
+      4
+     ],
+     [
+      0,
+      -4,
+      4
+     ],
+     [
+      0,
+      -3,
+      4
+     ],
+     [
+      0,
+      -2,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -160,
+    40,
+    -160,
+    40,
+    160,
+    -40,
+    160
+   ],
+   "bottom_center": [
+    0.0,
+    70.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     -2.0,
+     0.0
+    ],
+    "polygon": [
+     -12,
+     -79,
+     -26,
+     5,
+     -19,
+     119,
+     5,
+     157,
+     28,
+     125,
+     31,
+     58,
+     12,
+     20,
+     18,
+     -77,
+     1,
+     -156
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      0.0,
+      -79.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "hunting_spear",
+    "supply_blossom_bow",
+    "supply_bow",
+    "supply_composite_bow",
+    "supply_elven_bow",
+    "supply_hero_bow",
+    "supply_magic_bow",
+    "supply_spear",
+    "supply_vine_bow",
+    "supply_wooden_bow"
+   ]
+  },
+  "SpikedShield": {
+   "root_name": "Spiked Shield",
+   "script": "res://Items/SpikedShield.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/SpikedShield.png",
+    "position": [
+     -1.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80.0,
+    -80.0,
+    80.0,
+    -80.0,
+    80.0,
+    80.0,
+    -80.0,
+    80.0
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": null,
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "collision_shape": {
+    "type": "CircleShape2D",
+    "params": {
+     "radius": 71.0282
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "definition_ids": [
+    "spiked_guard"
+   ]
+  },
+  "SpikedWall": {
+   "root_name": "Spiked Wall",
+   "script": "res://Items/Exclusive/SpikedWall.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/SpikeWall.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      1,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -120,
+    -80,
+    120,
+    -80,
+    120,
+    80,
+    -120,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -116,
+     -76,
+     -65,
+     -79,
+     80,
+     -84,
+     107,
+     -76,
+     115,
+     -33,
+     103,
+     73,
+     50,
+     81,
+     -84,
+     84,
+     -111,
+     71
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      58.0,
+      -43.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      -69.0,
+      -43.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      -69.0,
+      44.0
+     ]
+    },
+    {
+     "name": "GemSocket4",
+     "position": [
+      61.0,
+      42.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "retaliation_spikes",
+    "supply_thorn_mail"
+   ]
+  },
+  "SpringLoader": {
+   "root_name": "Spring Loader",
+   "script": "res://Items/Exclusive/SpringLoader.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Springloader_shield.png",
+    "position": [
+     0.0,
+     -60.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -45.0
+    ],
+    "cells": [
+     [
+      -1,
+      -2,
+      4
+     ],
+     [
+      0,
+      -3,
+      4
+     ],
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      0,
+      -2,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80.0,
+    -80.0,
+    80.0,
+    -80.0,
+    80.0,
+    80.0,
+    -80.0,
+    80.0
+   ],
+   "click_position": [
+    0.0,
+    -45.0
+   ],
+   "bottom_center": [
+    0.0,
+    17.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     15.0
+    ],
+    "polygon": [
+     0,
+     -122,
+     -41,
+     -114,
+     -66,
+     -95,
+     -74,
+     -71,
+     -64,
+     -44,
+     -34,
+     -25,
+     -34,
+     2,
+     0,
+     17,
+     34,
+     3,
+     34,
+     -24,
+     61,
+     -42,
+     75,
+     -70,
+     62,
+     -99,
+     34,
+     -116
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      0.0,
+      -12.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "VScrollbar",
+     "type": "Sprite2D",
+     "props": {
+      "visible": false,
+      "position": {
+       "vec2": [
+        -1.81899e-12,
+        22.0
+       ]
+      },
+      "rotation": 1.5708,
+      "scale": {
+       "vec2": [
+        0.628792,
+        0.431341
+       ]
+      },
+      "texture": {
+       "res": "res://Interface/VScrollbar.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "clockwork_spring",
+    "supply_copper_watch"
+   ]
+  },
+  "StarofCourage": {
+   "root_name": "Star of Courage",
+   "script": "res://Items/Exclusive/StarofCourage.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/StarofCourage.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.65,
+     0.65
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     0,
+     -24,
+     10,
+     -12,
+     25,
+     -6,
+     17,
+     8,
+     16,
+     23,
+     0,
+     20,
+     -16,
+     23,
+     -17,
+     7,
+     -26,
+     -6,
+     -10,
+     -12
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        0.79
+       ]
+      },
+      "show_behind_parent": true,
+      "position": {
+       "vec2": [
+        10.0,
+        -10.0
+       ]
+      },
+      "emitting": false,
+      "amount": 13,
+      "lifetime": 0.67,
+      "speed_scale": 0.79,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/StarofCourageDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Star.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "Glow",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        0.137255
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        0.992157,
+        0.941176,
+        0.627451,
+        0.835294
+       ]
+      },
+      "material": {
+       "res": "res://Shader/AdditiveCanvasItemMaterial.tres"
+      },
+      "scale": {
+       "vec2": [
+        0.4,
+        0.4
+       ]
+      },
+      "texture": {
+       "res": "res://Assets/Light/CircleLight.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "star_compass",
+    "supply_crown_crest"
+   ]
+  },
+  "StoneArmor": {
+   "root_name": "Stone Armor",
+   "script": "res://Items/Exclusive/StoneArmor.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/StoneArmor.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ],
+     [
+      -1,
+      2,
+      3
+     ],
+     [
+      0,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80,
+    -120,
+    80,
+    -120,
+    80,
+    120,
+    -80,
+    120
+   ],
+   "bottom_center": [
+    0.0,
+    108.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -39,
+     -103,
+     -3,
+     -112,
+     30,
+     -100,
+     35,
+     -69,
+     79,
+     -66,
+     83,
+     -23,
+     53,
+     -4,
+     42,
+     46,
+     65,
+     94,
+     -1,
+     112,
+     -61,
+     94,
+     -38,
+     37,
+     -56,
+     -7,
+     -84,
+     -20,
+     -78,
+     -66,
+     -41,
+     -71
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      -45.0,
+      -39.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      50.0,
+      -40.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "plated_vest",
+    "supply_plate_armor"
+   ]
+  },
+  "StoneBadge": {
+   "root_name": "Stone Badge",
+   "script": "res://Items/Exclusive/StoneBadge.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/StoneBadge.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    32.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CircleShape2D",
+    "params": {
+     "radius": 31.9531
+    },
+    "position": [
+     0.0,
+     0.0
+    ],
+    "rotation": -0.919789
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "emitting": false,
+      "amount": 7,
+      "lifetime": 0.56,
+      "speed_scale": 0.81,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/StoneBadgeDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot_small.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "StoneBadgeAnim",
+     "scene": "res://PvE/Items/Anims/StoneBadgeAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "duelist_mark",
+    "supply_honor_medal",
+    "supply_priest_badge"
+   ]
+  },
+  "ThorsHammer": {
+   "root_name": "Thors Hammer",
+   "script": "res://Items/Exclusive/ThorsHammer.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/ThorsHammer.png",
+    "position": [
+     -2.0,
+     -7.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     32.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      3
+     ],
+     [
+      0,
+      -2,
+      3
+     ],
+     [
+      1,
+      -2,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -120,
+    -128,
+    120,
+    -128,
+    120,
+    -48,
+    40,
+    -48,
+    40,
+    112,
+    -40,
+    112,
+    -40,
+    -48,
+    -120,
+    -48
+   ],
+   "bottom_center": [
+    0.0,
+    87.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     -2.0,
+     0.0
+    ],
+    "polygon": [
+     -106,
+     -65,
+     -103,
+     -51,
+     -85,
+     -65,
+     -62,
+     -65,
+     -58,
+     -49,
+     -12,
+     -49,
+     -9,
+     -38,
+     -10,
+     107,
+     15,
+     108,
+     14,
+     -38,
+     16,
+     -48,
+     62,
+     -48,
+     65,
+     -59,
+     105,
+     -59,
+     105,
+     -112,
+     67,
+     -113,
+     62,
+     -124,
+     -56,
+     -124,
+     -87,
+     -95
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      82.0,
+      -79.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      2.0,
+      -79.0
+     ]
+    },
+    {
+     "name": "GemSocket3",
+     "position": [
+      -75.0,
+      -78.0
+     ]
+    }
+   ],
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        0.65
+       ]
+      },
+      "material": {
+       "res": "res://Items/Exclusive/Particles/TimeMelting.material"
+      },
+      "position": {
+       "vec2": [
+        -208.0,
+        -232.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        4.0,
+        4.0
+       ]
+      },
+      "emitting": false,
+      "amount": 11,
+      "speed_scale": 0.8,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/ThorsHammerDragParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "ThorsHammerAnim",
+     "scene": "res://PvE/Items/Anims/ThorsHammerAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "required_animations": {
+    "Icon/ThorsHammerAnim/Idle": [
+     "Flash"
+    ]
+   },
+   "definition_ids": [
+    "siege_maul"
+   ]
+  },
+  "TimeDilator": {
+   "root_name": "Time Dilator",
+   "script": "res://Items/Exclusive/TimeDilator.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/TimeDilator.png",
+    "position": [
+     0.0,
+     -0.13
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    37.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -10,
+     -33,
+     -29,
+     5,
+     -27,
+     25,
+     -8,
+     36,
+     11,
+     36,
+     27,
+     23,
+     29,
+     5,
+     12,
+     -34,
+     0,
+     -37
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        2.5,
+        2.5,
+        2.5,
+        1.0
+       ]
+      },
+      "self_modulate": {
+       "color": [
+        0.941176,
+        0.858824,
+        0.560784,
+        0.643137
+       ]
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        16.26
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.7,
+        0.7
+       ]
+      },
+      "z_index": 1,
+      "emitting": false,
+      "amount": 1,
+      "process_material": {
+       "res": "res://Items/Particles/CapofResilienceAuraParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Light/RingLight.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "cooling_fan",
+    "supply_ice_pack"
+   ]
+  },
+  "WalrusTusk": {
+   "root_name": "Walrus Tusk",
+   "script": "res://Items/WalrusTusk.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/WalrusTusk.png",
+    "position": [
+     0.25,
+     -0.43696
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     3.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -76,
+     -9,
+     -38,
+     -11,
+     17,
+     -21,
+     70,
+     12,
+     74,
+     15,
+     48,
+     15,
+     -5,
+     -1,
+     -56
+    ]
+   },
+   "definition_ids": [
+    "iron_nail"
+   ]
+  },
+  "Whetstone": {
+   "root_name": "Whetstone",
+   "script": "res://Items/Whetstone.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/Whetstone.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    29.0
+   ],
+   "body_collision": null,
+   "collision_shape": {
+    "type": "CapsuleShape2D",
+    "params": {
+     "radius": 27.0,
+     "height": 64.0
+    },
+    "position": [
+     0.0,
+     1.0
+    ],
+    "rotation": 1.5708
+   },
+   "definition_ids": [
+    "sharpening_stone",
+    "supply_gem_yellow",
+    "supply_whetstone"
+   ]
+  },
+  "WoodenBuckler": {
+   "root_name": "Wooden Buckler",
+   "script": "res://Items/WoodenBuckler.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/WoodenBuckler.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      3
+     ],
+     [
+      0,
+      -1,
+      3
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      0,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -80.0,
+    -80.0,
+    80.0,
+    -80.0,
+    80.0,
+    80.0,
+    -80.0,
+    80.0
+   ],
+   "bottom_center": [
+    0.0,
+    71.0
+   ],
+   "body_collision": null,
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      2.0,
+      0.0
+     ]
+    }
+   ],
+   "collision_shape": {
+    "type": "CircleShape2D",
+    "params": {
+     "radius": 70.0
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "definition_ids": [
+    "buckler"
+   ]
+  },
+  "Wrench": {
+   "root_name": "Wrench",
+   "script": "res://Items/Exclusive/Wrench.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Wrench.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.45,
+     0.45
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ],
+     [
+      -1,
+      2,
+      6
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.22222,
+    2.22222
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    64.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -17,
+     -61,
+     -22,
+     -46,
+     -14,
+     -34,
+     -13,
+     31,
+     -23,
+     44,
+     -17,
+     61,
+     4,
+     71,
+     18,
+     63,
+     22,
+     46,
+     13,
+     34,
+     13,
+     -35,
+     22,
+     -49,
+     17,
+     -65,
+     1,
+     -70
+    ]
+   },
+   "gem_sockets": [
+    {
+     "name": "GemSocket",
+     "position": [
+      1.0,
+      -50.0
+     ]
+    },
+    {
+     "name": "GemSocket2",
+     "position": [
+      1.0,
+      50.0
+     ]
+    }
+   ],
+   "definition_ids": [
+    "repair_kit",
+    "supply_medical_case"
+   ]
+  },
+  "YggdrasilLeaf": {
+   "root_name": "Yggdrasil Leaf",
+   "script": "res://Items/YggdrasilLeaf.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/YggdrasilLeaf.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      -3,
+      4
+     ],
+     [
+      -3,
+      -2,
+      4
+     ],
+     [
+      -1,
+      -2,
+      4
+     ],
+     [
+      1,
+      -3,
+      4
+     ],
+     [
+      -2,
+      -1,
+      4
+     ],
+     [
+      -1,
+      -1,
+      4
+     ],
+     [
+      0,
+      -2,
+      4
+     ],
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -2,
+      1,
+      4
+     ],
+     [
+      0,
+      0,
+      4
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    35.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -34,
+     -34,
+     -40,
+     26,
+     32,
+     43,
+     40,
+     -18,
+     10,
+     -42
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "SpecificDragParticles",
+     "type": "GPUParticles2D",
+     "props": {
+      "modulate": {
+       "color": [
+        2.0,
+        2.0,
+        2.0,
+        1.0
+       ]
+      },
+      "emitting": false,
+      "amount": 12,
+      "local_coords": false,
+      "process_material": {
+       "res": "res://PvE/Items/Particles/YggdrasilLeaf_mat15.tres"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    },
+    {
+     "name": "YggdrasilLeafAnim",
+     "scene": "res://PvE/Items/Anims/YggdrasilLeafAnim.tscn",
+     "parent": "Icon"
+    }
+   ],
+   "definition_ids": [
+    "regeneration_leaf",
+    "supply_elven_tear"
+   ]
+  }
+ }
+}

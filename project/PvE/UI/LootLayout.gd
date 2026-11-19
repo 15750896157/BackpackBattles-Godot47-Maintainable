@@ -26,8 +26,6 @@ static func show_page(page) -> void:
 		return
 	var shade := REF.picture(root, "result_shade", Rect2(0,0,1920,1080), true)
 	root.move_child(shade, 0)
-	# result_shade already contains the PSD layer alpha (204/255).
-	owner.modal_shield.color = Color.TRANSPARENT
 	var header := Control.new()
 	header.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root.add_child(header)
@@ -48,6 +46,7 @@ static func show_page(page) -> void:
 		button.name = data.footer.name
 		action(button, func(): choose(owner, root, epoch, model, -1, {}, not data.won),
 			data.footer.caption, 30, "result_red" if button.name == "LootSkipGold" else "result_gold")
+	REF.fade_in(root)
 	owner.focus_popup()
 
 static func emblem(root: Control, data: Dictionary, key: String, chinese: bool) -> void:
@@ -116,11 +115,10 @@ static func action(button: TextureButton, callback: Callable, caption: String, f
 	var factor := minf(rect.size.x / texture_size.x, rect.size.y / texture_size.y)
 	var fitted := texture_size * factor
 	var fitted_rect := Rect2(rect.get_center() - fitted / 2.0, fitted)
-	# Keep the entire authored click target while the texture fits within it.
-	REF.bind_button(button, rect, callback, caption, font_size)
-	var caption_node: Label = button.get_child(button.get_child_count() - 1)
-	caption_node.position = fitted_rect.position - rect.position - Vector2(0,2)
-	caption_node.size = fitted_rect.size
+	button.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	button.position = fitted_rect.position
+	button.size = fitted_rect.size
+	REF.bind_button(button, fitted_rect, callback, caption, font_size)
 	for child in button.get_children():
 		if child is Label:
 			child.add_theme_color_override("font_color", Color("fff1d0") if key == "result_red" else INK)

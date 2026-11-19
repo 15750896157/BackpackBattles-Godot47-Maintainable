@@ -304,16 +304,16 @@ func check_rest_audio():
 	Expedition.flow.run.current_node = {"type": "rest", "id": "qa_rest_audio", "name_key": "ui.rest"}
 	Expedition.flow._transition("REST")
 	Expedition.show_event()
-	check(await wait_for(func(): return Sound.bgmPlayer1.stream == Sound.postFightBGM_survival and Sound.bgmPlayer1.playing and Sound.bgmPlayer1.bus == &"PvEAmbient"), "REST actually plays original Ambient 6 through ambient bus")
+	check(await wait_for(func(): return not Sound.bgmPlayer1.playing), "REST stays silent after BGM removal (2026-11-18 版权清理)")
 	check(not Sound.bgmPlayer2.playing, "REST has no second overlapping music player")
-	evidence.rest_stream = Sound.bgmPlayer1.stream.resource_path
+	evidence.rest_stream = str(Sound.bgmPlayer1.stream.resource_path) if Sound.bgmPlayer1.stream else "<silent>"
 	evidence.rest_bus = str(Sound.bgmPlayer1.bus)
 	await snapshot("03-rest-original-ambient")
 	Expedition.flow._transition("ROUTE_SELECT")
 	Expedition.show_routes()
-	check(await wait_for(func(): return Sound.bgmPlayer1.stream == Sound.shopBGM and Sound.bgmPlayer1.playing and Sound.bgmPlayer1.bus == &"BGM"), "route returns original shop music to music bus")
+	check(await wait_for(func(): return not Sound.bgmPlayer1.playing), "route return stays silent after BGM removal (2026-11-18 版权清理)")
 	check(not Sound.bgmPlayer2.playing, "route return has no second overlapping music player")
-	evidence.route_stream = Sound.bgmPlayer1.stream.resource_path
+	evidence.route_stream = str(Sound.bgmPlayer1.stream.resource_path) if Sound.bgmPlayer1.stream else "<silent>"
 	evidence.route_bus = str(Sound.bgmPlayer1.bus)
 	await snapshot("04-route-original-shop-music")
 	evidence.rest_fixture = "Valid generated run; REST/current_node are explicit rendering/audio fixtures, not proof of campaign progression."

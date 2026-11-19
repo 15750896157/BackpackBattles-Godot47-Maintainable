@@ -48,10 +48,10 @@ var defaultFonts = Dictionary()
 
 @onready var zapScene = load("res://Items/Animations/Zap.tscn")
 
-const baskervilleRegular = preload("res://Assets/Fonts/LibreBaskerville-Regular.ttf")
-const baskervilleBold = preload("res://Assets/Fonts/LibreBaskerville-Bold.ttf")
-const milonga = preload("res://Assets/Fonts/Milonga-Regular.ttf")
-const glassAniqua = preload("res://Assets/Fonts/GlassAntiqua-Regular.ttf")
+const baskervilleRegular = preload("res://Assets/Fonts/YaHei-Regular.ttc")
+const baskervilleBold = preload("res://Assets/Fonts/YaHei-Bold.ttc")
+const milonga = preload("res://Assets/Fonts/YaHei-Regular.ttc")
+const glassAniqua = preload("res://Assets/Fonts/YaHei-Regular.ttc")
 
 const latinFonts = [baskervilleBold, baskervilleRegular, milonga, glassAniqua]
 

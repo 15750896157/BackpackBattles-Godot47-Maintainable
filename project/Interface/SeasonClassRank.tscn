@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Interface/SeasonClassRank.gd" id="1_kj72x"]
 [ext_resource type="PackedScene" path="res://Interface/LeagueEmblem.tscn" id="2_fjaku"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Bold.ttf" id="3_b6huc"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="3_b6huc"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="4_s6w0o"]
 [ext_resource type="Texture2D" path="res://Assets/TitleScreen/RangerIcon.png" id="5_fe8o0"]
 

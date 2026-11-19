@@ -139,7 +139,7 @@ func render_build(character, build: Dictionary, owner: int):
 				item.occupiedCells.clear()
 				item.setFaceDirectionInstant(0)
 				Game.STORAGEBOX.addItem(item)
-				place_storage_view(item, _flow().placement.storage_positions(build)[str(entry.uid)])
+				place_storage_view(item, build.storage.find(entry))
 				item.makeGrabbable(true)
 			else:
 				Util.reparentNode(item, inventory.itemNode)
@@ -385,7 +385,7 @@ func definition_stats(id: String) -> Dictionary:
 
 func target_origin(item) -> Vector2i:
 	var inventory = Game.PLAYER.INVENTORY
-	var center = inventory.tilemap.to_local(item.getTopLeftGlobal()) + Vector2(40, 40)
+	var center = inventory.tilemap.to_local(item.getTopLeftGlobal() + Vector2(40, 40))
 	return Vector2i(LegacyGrid.cell(inventory.tilemap, center))
 
 func bag_contents(item) -> Array:
@@ -414,7 +414,7 @@ func preview(item) -> Dictionary:
 
 func affected_cells(item, color: int, inventory) -> Dictionary:
 	var result = {inventory.AffectedTile.CanAffect + color: [], inventory.AffectedTile.CannotAffect + color: [], inventory.AffectedTile.AffectsInside: []}
-	if color != Item.Affected.Primary or (item.ownerType == Item.Owner.Shop and not item.dragged): return result
+	if color != Item.Affected.Primary: return result
 	var build: Dictionary = rendered_builds.get(inventory.get_instance_id(), _flow().run.get("build", {})).duplicate(true)
 	var entry = item_entry(item)
 	if item.dragged or item.ownerType == Item.Owner.Shop:
@@ -449,11 +449,14 @@ func affected_cells(item, color: int, inventory) -> Dictionary:
 			if point not in result[tile]: result[tile].append(point)
 	return result
 
-func _buy_to_storage(index: int, slot: int = -1) -> Dictionary:
+func _buy_to_storage(index: int) -> Dictionary:
 	var before = _flow().run.duplicate(true)
 	var draft = before.duplicate(true)
-	var bought = _flow().economy.buy(draft, index, slot)
+	var bought = _flow().economy.buy(draft, index)
 	if not bought.ok: return bought
+	if not bought.stored:
+		var stored = _flow().placement.remove(draft.build, str(bought.entry.uid), true)
+		if not stored.ok: return stored
 	_flow().run.clear()
 	_flow().run.merge(draft, true)
 	_flow().edit_history.record(before, _flow().run)
@@ -479,7 +482,7 @@ func _restore_native(item):
 			if item not in Game.STORAGEBOX.items: Game.STORAGEBOX.addItem(item)
 			fit_native_visual(item, true)
 			item.setFaceDirectionInstant(0)
-			place_storage_view(item, _flow().placement.storage_positions(_flow().run.build)[uid])
+			place_storage_view(item, int(found.index))
 			item.makeGrabbable(true)
 		else:
 			var inventory = Game.PLAYER.INVENTORY
@@ -512,7 +515,6 @@ func drop_item(item) -> int:
 	var origin = target_origin(item)
 	var rotation = int(item.getFaceDirection()) * 90
 	var sale_amount = sell_price(item) if not was_shop else 0
-	var storage_slot := storage_slot_at(item.global_position)
 	var result: Dictionary
 	var drop_result = Item.DropResult.AddedToInventory
 	expedition.syncing = true
@@ -520,8 +522,8 @@ func drop_item(item) -> int:
 	if Game.SELLBOX.isHovered():
 		result = {"ok": false, "error": "missing_item"} if was_shop else _flow().sell(uid)
 		drop_result = Item.DropResult.Sold
-	elif storage_slot >= 0:
-		result = _buy_to_storage(index, storage_slot) if was_shop else _flow().edit("store", uid, {"storage_slot": storage_slot})
+	elif Game.STORAGEBOX.isHovered():
+		result = _buy_to_storage(index) if was_shop else _flow().edit("store", uid)
 		drop_result = Item.DropResult.AddedToStorageBox
 	else:
 		if not was_shop and item.isBag() and item.ownerType == Item.Owner.PlayerInventory:
@@ -614,13 +616,6 @@ func shift_inventory(direction: Vector2) -> Dictionary:
 	_flow().run.clear(); _flow().run.merge(draft, true)
 	_flow().edit_history.record(before, _flow().run)
 	return _flow()._update()
-
-func storage_slot_at(point: Vector2) -> int:
-	var capacity := int(_flow().run.build.storage_capacity)
-	for slot in capacity:
-		if Game.STORAGEBOX.pve_slot_rect(slot).has_point(point):
-			return slot
-	return -1
 
 func place_storage_view(item, index: int):
 	item.makeNonRigidBody()

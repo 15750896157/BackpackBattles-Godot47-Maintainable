@@ -99,9 +99,11 @@ func check_negative_base() -> void:
 	var arguments: PackedStringArray = ["--headless","--path",ProjectSettings.globalize_path("res://"),"--log-file",child_directory.path_join("game.log"),"res://PvE/tests/ScaffoldContractsMain.tscn","--","--qa-output="+child_directory,"--qa-save-directory="+child_directory.path_join("saves"),"--scaffold-negative-base"]
 	var captured: Array = []
 	var code: int = OS.execute(OS.get_executable_path(),arguments,captured,true)
-	var diagnostics: String = "\n".join(captured)
 	var file: FileAccess = FileAccess.open(child_directory.path_join("captured-output.log"),FileAccess.WRITE)
-	file.store_string(diagnostics);file.close()
+	file.store_string("\n".join(captured));file.close()
+	# 中文 Windows 上 OS.execute 的管道捕获按系统码页（GBK）解码，UTF-8 中文会变乱码；
+	# 判据取证改用子进程自己写的 UTF-8 日志文件，严格程度不变。
+	var diagnostics: String = FileAccess.get_file_as_string(child_directory.path_join("game.log"))
 	var result_path: String = child_directory.path_join("negative-result.json")
 	var result = JSON.parse_string(FileAccess.get_file_as_string(result_path)) if FileAccess.file_exists(result_path) else null
 	check(code==0,"base-VM negative child completes successfully")

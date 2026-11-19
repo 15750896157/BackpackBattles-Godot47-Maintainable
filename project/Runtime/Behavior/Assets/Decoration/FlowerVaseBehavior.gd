@@ -1,8 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://Assets/Decoration/FlowerVase.gd")
-
-static func _on_FlowerVase_button_down(subject: Receiver):
+static func _on_FlowerVase_button_down(subject):
 
 	var remainingTime = Util.getRemainingAnimationTime(subject.animation)
 	if remainingTime > 0.2: return
@@ -18,7 +16,7 @@ static func _on_FlowerVase_button_down(subject: Receiver):
 		Sound.playSound(subject.sound, 0, 0.9)
 	subject.state = (subject.state + 1) % 3
 
-static func _gui_input(subject: Receiver, event):
+static func _gui_input(subject, event):
 	if Util.isRightClick(event) and not subject.broken:
 		subject.disable()
 		subject.broken = true

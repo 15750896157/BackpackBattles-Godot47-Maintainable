@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Interface/DamageMeter/DamageMeterEntry.gd" id="1_hjjlw"]
 [ext_resource type="StyleBox" path="res://Interface/DamageMeter/DamageMeterEntryStylebox.tres" id="2_2dnlp"]
 [ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="3_r4gpt"]
-[ext_resource type="FontFile" path="res://Assets/Fonts/LibreBaskerville-Regular.ttf" id="4_j7sda"]
+[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="4_j7sda"]
 [ext_resource type="Script" path="res://Compatibility/LegacyFont.gd" id="5_3tige"]
 [ext_resource type="Texture2D" path="res://Interface/DamageMeter/Plot/Symbol_Triangle.png" id="6_t0n1n"]
 

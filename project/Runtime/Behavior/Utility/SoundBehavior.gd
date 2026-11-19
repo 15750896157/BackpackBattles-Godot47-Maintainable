@@ -20,7 +20,7 @@ static func _ready(subject: Receiver):
 		player.connect("finished", Callable(subject, "returnPlayer").bind(player))
 		subject.availableSoundPlayers_process.append(player)
 
-	subject.loadBGM()
+	# 2026-11-18 版权清理：loadBGM()（空函数）随 BGM 常量一并移除
 
 static func fadeOutBGM(subject: Receiver, fadeOutTime: float):
 	subject.scene_music.cancel()

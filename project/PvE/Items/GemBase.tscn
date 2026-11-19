@@ -1,0 +1,60 @@
+[gd_scene format=3]
+
+;; 宝石新基场景（第二刀）：PvE/Items/ItemBase.tscn 的子场景，
+;; 照抄原版 Items/Item.tscn -> Items/Gems/Gem.tscn 的派生层级。
+;; SocketDetectionArea / GemAnimation（Sparkle/HotSwapHover）从原版 Gem.tscn 逐字节照抄，
+;; 所有宝石共享；逐件差异（贴图/缩放/碰撞）在 PvE/item_template_overrides.json 里按数据覆盖。
+
+[ext_resource type="PackedScene" path="res://PvE/Items/ItemBase.tscn" id="1_base"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 17.8885
+
+[sub_resource type="Animation" id="2"]
+resource_name = "HotSwapHover"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Icon:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(2.5, 2.5, 2.5, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="3"]
+resource_name = "Sparkle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Icon:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.4, 5),
+"transitions": PackedFloat32Array(-2, 1, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.11111, 1.11111, 1.11111, 1), Color(1.7, 1.7, 1.7, 1)]
+}
+
+[node name="GemBase" instance=ExtResource("1_base")]
+
+[node name="SocketDetectionArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SocketDetectionArea" index="0"]
+shape = SubResource("1")
+
+[node name="GemAnimation" type="AnimationPlayer" parent="."]
+autoplay = "Sparkle"
+anims/HotSwapHover = SubResource("2")
+anims/Sparkle = SubResource("3")
