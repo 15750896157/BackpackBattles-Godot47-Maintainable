@@ -3,7 +3,7 @@
 import re, sys, io, json
 from pathlib import Path
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-ROOT = Path(r'd:\GIt\yingx\yinxon\project')
+ROOT = Path(__file__).resolve().parents[2] / 'project'
 data = json.loads((ROOT / 'PvE' / 'asset_bindings.json').read_text(encoding='utf-8-sig'))
 bound = {}
 for bid, b in data['bindings'].items():

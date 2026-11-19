@@ -4,17 +4,16 @@
     [switch]$Headless
 )
 $ErrorActionPreference = 'Stop'
-$workspace = Split-Path -Parent $PSScriptRoot   # tz\ -> 工作区根
-$bundlePath = Join-Path $workspace 'yinxon'
+$bundlePath = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)   # tools\item_template\ -> bundle 根
 $projectPath = Join-Path $bundlePath 'project'
 $enginePath = Join-Path $bundlePath 'engine\Godot_v4.7-stable_win64.exe'
 $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
-$outPath = Join-Path $workspace ('校验\04_本地检查\item_template_qa_' + $stamp)
+$outPath = Join-Path $bundlePath ('校验\04_本地检查\item_template_qa_' + $stamp)
 New-Item -ItemType Directory -Path $outPath -Force | Out-Null
 
 # 门槛一：覆盖数据必须与源场景同步（不同步=提取脚本过期或场景被改，先拦下）
 & py -3 (Join-Path $PSScriptRoot 'extract_item_overrides.py') --check
-if ($LASTEXITCODE -ne 0) { throw 'item_template_overrides.json 与源场景不同步：跑 py -3 tz/extract_item_overrides.py 重生成' }
+if ($LASTEXITCODE -ne 0) { throw 'item_template_overrides.json 与源场景不同步：跑 py -3 tools/item_template/extract_item_overrides.py 重生成' }
 
 # 门槛二：无头跑开发者模式场景，失败非零退出
 $arguments = @('--path', ('"' + $projectPath + '"'), '--rendering-method', 'gl_compatibility')

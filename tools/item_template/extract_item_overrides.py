@@ -6,7 +6,7 @@
 输出：yinxon/project/PvE/item_template_overrides.json（9 件场景，服务 16 个绑定 id）。
 只读分析 + 写一个新 JSON，不改任何游戏原文件。
 
-用法：py -3 tz/extract_item_overrides.py [--check]
+用法：py -3 tools/item_template/extract_item_overrides.py [--check]
   --check = 只校验已生成的 JSON 与源场景仍然一致（供验收调用），不重写。
 
 第二刀新增（2026-11-18）：
@@ -24,7 +24,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(r"d:\GIt\yingx\yinxon\project")
+ROOT = Path(__file__).resolve().parents[2] / "project"
 OUT = ROOT / "PvE" / "item_template_overrides.json"
 
 # 场景文件名（去空格）-> 配置。ids = 一份数据服务的绑定 definition_id 列表。
@@ -85,7 +85,7 @@ SCENES = {
     "DragonscaleArmor": {"ids": ["layered_plates", "supply_squire_armor"], "base": "item", "sub": "Exclusive"},
     "SpikedShield": {"ids": ["spiked_guard"], "base": "item"},
     "WoodenBuckler": {"ids": ["buckler"], "base": "item"},
-    # ---- 第六刀：动画（8 件，动画包场景 PvE/Items/Anims/<Stem>Anim.tscn 由 tz/build_anim_bundles.py 生成）----
+    # ---- 第六刀：动画（8 件，动画包场景 PvE/Items/Anims/<Stem>Anim.tscn 由 tools/item_template/build_anim_bundles.py 生成）----
     # anim_targets = 抽进包场景的目标节点名（连同 Icon 下 AnimationPlayer，结构总账跳过、不进 extra_nodes）。
     "BionicArmor": {"ids": ["bastion_core"], "base": "item", "sub": "Exclusive", "anim_targets": ["CircleLight"]},
     "Chainsaw": {"ids": ["chain_blade"], "base": "item", "sub": "Exclusive", "anim_root_player": True},
@@ -142,6 +142,24 @@ SCENES = {
     "PuzzlebagZ": {"ids": ["bag_step_case"], "base": "item", "sub": "Exclusive"},
     "VineweaveBasket": {"ids": ["bag_herbal_tray"], "base": "item", "sub": "Exclusive"},
     "Toolbox": {"ids": ["bag_hollow_ring"], "base": "item", "sub": "Exclusive"},
+    # ---- 收尾刀（9 件/22 绑定 = 全量 166；特征全是前几刀已支持槽位的组合：
+    #      粒子+碰撞形状（Banner/BoxofRiches/Cauldron）、BuffTimer+ActivationParticles（Sandbag/SpiritBells）、
+    #      药剂瓶实例（DemonicFlask/StrongPestilenceFlask）、宝石孔+内嵌材质粒子（PoisonDagger）。
+    #      唯一新点：BurningCoal = 宝石 + C 模式灯光动画包（TorchLight+FlickerAnimation），
+    #      宝石分支首次接动画包机制，与物品分支同挂 Icon 下）----
+    "BurningBanner": {"ids": ["column_standard", "guardian_standard", "row_banner",
+                               "supply_knight_seal", "supply_weapon_case"], "base": "item", "sub": "Exclusive"},
+    "BoxofRiches": {"ids": ["compact_rack"], "base": "item"},
+    "Sandbag": {"ids": ["counterweight"], "base": "item", "sub": "Exclusive"},
+    "DemonicFlask": {"ids": ["ember_phial", "supply_wooden_staff"], "base": "item"},
+    "BurningCoal": {"ids": ["ember_stone", "supply_flint", "supply_gem_red"], "base": "gem",
+                     "anim_targets": ["TorchLight"], "anim_root_target": "TorchLight",
+                     "required_animations": {"Icon/TorchLight/FlickerAnimation": ["Flicker"]}},
+    "Cauldron": {"ids": ["philosophers_kettle", "supply_gluttony_crest", "wildfire_alembic"],
+                  "base": "item", "sub": "Exclusive"},
+    "StrongPestilenceFlask": {"ids": ["plague_retort", "supply_demonic_codex"], "base": "item"},
+    "SpiritBells": {"ids": ["resonant_bell", "supply_thunder_ring"], "base": "item", "sub": "Exclusive"},
+    "PoisonDagger": {"ids": ["supply_basic_staff", "supply_puppet", "venom_needle"], "base": "item"},
 }
 
 ITEM_TSCN = "res://Items/Item.tscn"
@@ -200,14 +218,16 @@ def _prop_value(raw: str, ext: dict, subres_ctx=None):
     return _scalar(raw)
 
 
-def _dump_subres_tres(subres: dict, ext_lines: dict, sid: str, scene_stem: str) -> str:
+def _dump_subres_tres(subres: dict, ext_lines: dict, sid: str, scene_stem: str,
+                      out_dir: Path = None, fname: str = None) -> str:
     """把场景内嵌 sub_resource（材质类，含嵌套 Curve/Gradient/纹理引用）抽成独立 .tres。
-    幂等：文件已存在直接返回路径。返回 res:// 路径。"""
-    out_dir = ROOT / "PvE" / "Items" / "Particles"
+    幂等：文件已存在直接返回路径。返回 res:// 路径。out_dir/fname 可覆盖默认落点。"""
+    if out_dir is None:
+        out_dir = ROOT / "PvE" / "Items" / "Particles"
+        fname = f"{scene_stem}_mat{re.sub(r'[^A-Za-z0-9]', '_', sid)}.tres"
     out_dir.mkdir(parents=True, exist_ok=True)
-    fname = f"{scene_stem}_mat{re.sub(r'[^A-Za-z0-9]', '_', sid)}.tres"
     dest = out_dir / fname
-    res_path = f"res://PvE/Items/Particles/{fname}"
+    res_path = f"res://{dest.relative_to(ROOT).as_posix()}"
     if dest.exists():
         return res_path
     # 递归收集依赖（嵌套 SubResource 块 + ExtResource 行）
@@ -538,6 +558,9 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
                 continue
             if nparent == "." and name in KNOWN_CHILDREN:
                 continue
+            if expect_base == "gem" and nparent == "." and name == "GemAnimation":
+                # 宝石动画覆盖块（BurningCoal：autoplay + anims/* 整体替换默认集）——专门槽位捕获，跳过
+                continue
             if nparent == "Icon" and name == "Sockets":
                 continue
             if nparent == "Icon" and name == "TileMap":
@@ -581,6 +604,9 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
             name, ntype, nparent, ninst, block = m.group(1), m.group(2), m.group(3), m.group(4), m.group(5)
             if nparent == "." and name in KNOWN_CHILDREN:
                 continue
+            if expect_base == "gem" and nparent == "." and name == "GemAnimation":
+                # 宝石动画覆盖块由专门槽位捕获，不进 extra_nodes
+                continue
             if nparent == "Icon" and name in skip_on_icon:
                 continue
             if nparent == "Icon" and name == "TileMap":
@@ -615,6 +641,33 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
                 spec["connections"] = connections
             extra_nodes.append(spec)
 
+    # --- 宝石动画覆盖（BurningCoal 首例：GemAnimation 覆盖块把 GemBase 默认动画集整个替换）。
+    #     属性行白名单 = autoplay + anims/X = SubResource；每个动画抽独立 .tres（Anims 目录），
+    #     运行时清默认集装回 + 覆盖 autoplay，等价复刻场景合并的「整体替换」语义。---
+    gem_animation_overrides = None
+    if expect_base == "gem":
+        gam = re.search(r'\[node name="GemAnimation" parent="\." index="\d+"\]\s*\n(.*?)(?=\n\[|\s*\Z)', text, re.S)
+        if gam:
+            blk = gam.group(1)
+            for line in blk.strip().splitlines():
+                assert re.match(r'^(autoplay = "|anims/\w+ = SubResource\(")', line), \
+                    f"{path.name}: GemAnimation 覆盖块未知属性行：{line}，停手汇报"
+            gao = {}
+            am = re.search(r'^autoplay = "([^"]+)"$', blk, re.M)
+            if am:
+                gao["autoplay"] = am.group(1)
+            anims = {}
+            for am2 in re.finditer(r'^anims/(\w+) = SubResource\("([^"]+)"\)$', blk, re.M):
+                assert subres[am2.group(2)][0] == "Animation", \
+                    f"{path.name}: GemAnimation anims/{am2.group(1)} 引用的不是 Animation，停手汇报"
+                anims[am2.group(1)] = {"res": _dump_subres_tres(
+                    subres, ext_lines, am2.group(2), path.stem,
+                    out_dir=ROOT / "PvE" / "Items" / "Anims",
+                    fname=f"{path.stem}_{am2.group(1)}.tres")}
+            assert anims, f"{path.name}: GemAnimation 覆盖块没有动画，停手汇报"
+            gao["anims"] = anims
+            gem_animation_overrides = gao
+
     return {
         "root_name": root_name,
         "script": script,
@@ -634,6 +687,7 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
         "gem_sockets": gem_sockets,
         "collision_shape": collision_shape,
         "extra_nodes": extra_nodes,
+        "gem_animation_overrides": gem_animation_overrides,
     }
 
 
@@ -665,12 +719,29 @@ def build() -> dict:
             # Gem.tscn 是 Item.tscn 的实例，按 item 基解析；
             # 其共享额外节点由 GemBase.tscn 承担，不捕获。
             base_data = parse_tscn(ROOT / "Items" / "Gems" / "Gem.tscn", "item", capture_extras=False)
-            scene_data = parse_tscn(ROOT / "Items" / "Gems" / f"{scene_stem}.tscn", "gem", capture_extras=True)
+            scene_data = parse_tscn(ROOT / "Items" / "Gems" / f"{scene_stem}.tscn", "gem", capture_extras=True,
+                                    anim_targets=set(cfg.get("anim_targets", ())))
             data = merge(base_data, scene_data)
             data["template_scene"] = GEM_TEMPLATE
             # GemBase.tscn 承担的共享节点 + 动画，进数据供 QA 在实例上断言
             data["interface_nodes"] = ["SocketDetectionArea", "SocketDetectionArea/CollisionShape2D", "GemAnimation"]
             data["required_animations"] = {"GemAnimation": ["Sparkle", "HotSwapHover"]}
+            # 宝石动画覆盖：默认动画集被整体替换（BurningCoal）→ required_animations 同步换
+            if data.get("gem_animation_overrides") is not None:
+                data["required_animations"]["GemAnimation"] = sorted(data["gem_animation_overrides"]["anims"].keys())
+            # 动画包（首例 BurningCoal：宝石 + C 模式灯光）：与物品分支同机制，挂 Icon 下。
+            if cfg.get("anim_targets") or cfg.get("anim_root_player"):
+                if cfg.get("anim_root_player"):
+                    bundle_name = "AnimationPlayer"
+                elif cfg.get("anim_root_target"):
+                    bundle_name = str(cfg["anim_root_target"])
+                else:
+                    bundle_name = f"{scene_stem}Anim"
+                data["extra_nodes"].append({"name": bundle_name,
+                                             "scene": f"res://PvE/Items/Anims/{scene_stem}Anim.tscn",
+                                             "parent": "Icon"})
+                if cfg.get("required_animations"):
+                    data["required_animations"].update(cfg["required_animations"])
         else:
             sub = cfg.get("sub", "")
             scene_path = ROOT / "Items" / sub / f"{scene_stem}.tscn" if sub else ROOT / "Items" / f"{scene_stem}.tscn"
@@ -731,6 +802,8 @@ def build() -> dict:
             data.pop("icon_tilemap", None)
         if data.get("lock_props") is None:
             data.pop("lock_props", None)
+        if data.get("gem_animation_overrides") is None:
+            data.pop("gem_animation_overrides", None)
         data["definition_ids"] = cfg["ids"]
         items[scene_stem] = data
     out["items"] = items

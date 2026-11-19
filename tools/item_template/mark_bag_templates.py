@@ -4,7 +4,8 @@ import json
 import sys
 from pathlib import Path
 
-BINDINGS = Path(r"d:\GIt\yingx\yinxon\project\PvE\asset_bindings.json")
+ROOT = Path(__file__).resolve().parents[2] / 'project'
+BINDINGS = ROOT / 'PvE' / 'asset_bindings.json'
 IDS = {
     "bag_canvas_frame", "bag_release_armor", "bag_release_bedroll", "bag_release_herbal",
     "bag_release_journey", "bag_release_satchel", "bag_release_supply",
