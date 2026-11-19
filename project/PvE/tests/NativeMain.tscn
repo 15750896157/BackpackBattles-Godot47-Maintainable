@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c0k46lubm0gym"]
 
-[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_lsghi"]
+[ext_resource type="PackedScene" path="res://Code/Core/Main.tscn" id="1_lsghi"]
 [ext_resource type="Script" path="res://PvE/tests/NativeQA.gd" id="2_4h6fc"]
 
 [node name="Main" instance=ExtResource("1_lsghi")]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c3g1fjipvgfws"
+path="res://.godot/imported/Rope_Clickarea.png-ad6d15f1af8e63b8f1bc327e4e730535.res"
+
+[deps]
+
+source_file="res://Art/Assets/Shop/Rope_Clickarea.png"
+dest_files=["res://.godot/imported/Rope_Clickarea.png-ad6d15f1af8e63b8f1bc327e4e730535.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

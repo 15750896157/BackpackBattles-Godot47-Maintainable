@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dalh73hiwhu1t"]
+
+[ext_resource type="Texture2D" path="res://Art/Assets/Divider1.png" id="1_wxbd5"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="2_5l6v2"]
+
+[node name="Divider1" type="TextureRect"]
+offset_right = 468.0
+offset_bottom = 6.0
+custom_minimum_size = Vector2(0, 8)
+mouse_filter = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_wxbd5")
+expand_mode = 1
+script = ExtResource("2_5l6v2")

@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://c0bdiuasch8fc"
+path="res://.godot/imported/ResizeArrow.png-4083fdcdeb83c0ceb4c90dcbe43be8b8.image"
+
+[deps]
+
+source_file="res://Art/Assets/Cursor/ResizeArrow.png"
+dest_files=["res://.godot/imported/ResizeArrow.png-4083fdcdeb83c0ceb4c90dcbe43be8b8.image"]
+
+[params]
+

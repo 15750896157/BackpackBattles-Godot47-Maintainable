@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://ds7wgvhrc1l84"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Item.tscn" id="1_5nn2j"]
+[ext_resource type="Script" path="res://Art/Items/Exclusive/ThorsHammer.gd" id="2_8yhuw"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/ThorsHammer.png" id="3_5vxdd"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/ThorsHammer_active.png" id="4_mu077"]
+[ext_resource type="PackedScene" path="res://Art/Items/GemSocket.tscn" id="5_ran5p"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/TimeMelting.material" id="6_y2gf0"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/ThorsHammerDragParticles.material" id="7_3pm44"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/GlowingDot.png" id="8_na535"]
+[ext_resource type="Script" path="res://Code/Utility/AutoHideParticles.gd" id="9_6jnhj"]
+
+[sub_resource type="PhysicsMaterial" id="1"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[sub_resource type="Shader" id="10"]
+code = "shader_type canvas_item;
+
+uniform float progress : hint_range(-1, 2) = 0.5;
+uniform vec2 direction = vec2(0, 1);
+
+void fragment() {
+	COLOR = texture(TEXTURE, UV);
+	COLOR.rgb *= 1.0 + 0.5 * smoothstep(progress - 0.05, progress + 0.05, dot(UV, direction));
+}"
+
+[sub_resource type="ShaderMaterial" id="11"]
+resource_local_to_scene = true
+shader = SubResource("10")
+shader_parameter/progress = 0.245
+shader_parameter/direction = Vector2(-1, 0)
+
+[sub_resource type="Animation" id="12"]
+resource_name = "Flash"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("WithLight:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[node name="Thors Hammer" instance=ExtResource("1_5nn2j")]
+physics_material_override = SubResource("1")
+script = ExtResource("2_8yhuw")
+__meta__ = {
+"_edit_horizontal_guides_": [],
+"_edit_vertical_guides_": []
+}
+
+[node name="CollisionMap" parent="." index="0"]
+position = Vector2(-40, 32)
+format = 2
+layer_0/tile_data = PackedInt32Array(-65537, 3, 0, -131072, 3, 0, -131071, 3, 0, -65536, 3, 0, 0, 3, 0)
+
+[node name="Icon" parent="." index="1"]
+material = SubResource("11")
+position = Vector2(-2, -7)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_5vxdd")
+
+[node name="WithLight" type="Sprite2D" parent="Icon" index="0"]
+use_parent_material = true
+texture = ExtResource("4_mu077")
+
+[node name="Sockets" parent="Icon" index="1"]
+scale = Vector2(2, 2)
+
+[node name="GemSocket" parent="Icon/Sockets" index="0" instance=ExtResource("5_ran5p")]
+position = Vector2(82, -79)
+
+[node name="GemSocket2" parent="Icon/Sockets" index="1" instance=ExtResource("5_ran5p")]
+position = Vector2(2, -79)
+
+[node name="GemSocket3" parent="Icon/Sockets" index="2" instance=ExtResource("5_ran5p")]
+position = Vector2(-75, -78)
+
+[node name="Idle" type="AnimationPlayer" parent="Icon" index="2"]
+autoplay = "Flash"
+playback_speed = 0.2
+anims/Flash = SubResource("12")
+
+[node name="SpecificDragParticles" type="GPUParticles2D" parent="Icon" index="3"]
+modulate = Color(2, 2, 2, 0.65)
+material = ExtResource("6_y2gf0")
+position = Vector2(-208, -232)
+scale = Vector2(4, 4)
+emitting = false
+amount = 11
+speed_scale = 0.8
+local_coords = false
+process_material = ExtResource("7_3pm44")
+texture = ExtResource("8_na535")
+script = ExtResource("9_6jnhj")
+
+[node name="CollisionPolygon2D" parent="ClickArea" index="0"]
+polygon = PackedVector2Array(-120, -128, 120, -128, 120, -48, 40, -48, 40, 112, -40, 112, -40, -48, -120, -48)
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(0, 87)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="5"]
+visible = false
+position = Vector2(-2, 0)
+polygon = PackedVector2Array(-106, -65, -103, -51, -85, -65, -62, -65, -58, -49, -12, -49, -9, -38, -10, 107, 15, 108, 14, -38, 16, -48, 62, -48, 65, -59, 105, -59, 105, -112, 67, -113, 62, -124, -56, -124, -87, -95)

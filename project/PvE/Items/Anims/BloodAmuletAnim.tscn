@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3]
-[ext_resource type="Material" path="res://Shader/AdditiveCanvasItemMaterial.tres" id="7_gxh8j"]
-[ext_resource type="Texture2D" path="res://Items/Sprites/AmuletGlow.png" id="8_l3aq3"]
+[ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="7_gxh8j"]
+[ext_resource type="Texture2D" path="res://Art/Items/Sprites/AmuletGlow.png" id="8_l3aq3"]
 
 [sub_resource type="Animation" id="7"]
 length = 5.0

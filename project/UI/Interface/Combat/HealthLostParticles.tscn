@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://q42xsvmdjsiw"]
+
+[ext_resource type="Shader" path="res://Art/Shader/DissolveParticle.gdshader" id="1_ayg0x"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/BallParticles.png" id="2_xv0rf"]
+[ext_resource type="Material" path="res://UI/Interface/Combat/HealthLostParticles.material" id="3_8q5wk"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/Snowflake1.png" id="4_23vwk"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="5_fqtpv"]
+
+[sub_resource type="Gradient" id="1"]
+offsets = PackedFloat32Array(0, 0.166667, 0.312925, 0.431973)
+colors = PackedColorArray(0.143311, 0.00587797, 0.00587797, 0, 0.986328, 0.280859, 0.23695, 1, 0.991229, 0.538664, 0.510496, 1, 1, 0.777519, 0.763672, 1)
+
+[sub_resource type="GradientTexture1D" id="2"]
+gradient = SubResource("1")
+width = 100
+
+[sub_resource type="ShaderMaterial" id="3"]
+shader = ExtResource("1_ayg0x")
+shader_parameter/spriteSheet = ExtResource("2_xv0rf")
+shader_parameter/tonemapping = SubResource("2")
+shader_parameter/numFrames = 8.0
+
+[node name="Particles" type="GPUParticles2D"]
+modulate = Color(2, 2, 2, 0.69)
+material = SubResource("3")
+position = Vector2(84, 16)
+emitting = false
+amount = 20
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+process_material = ExtResource("3_8q5wk")
+texture = ExtResource("4_23vwk")
+script = ExtResource("5_fqtpv")

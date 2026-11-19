@@ -83,7 +83,7 @@ func _check_template_item(id: String, holder: Node2D) -> void:
 	if mat is Dictionary:
 		check(icon.material is ShaderMaterial, id + ": icon dissolve material applied")
 	else:
-		check(icon.material == preload("res://Shader/Item.material"), id + ": icon base material retained")
+		check(icon.material == preload("res://Art/Shader/Item.material"), id + ": icon base material retained")
 	var pm = item.physics_material_override
 	check(pm != null and is_equal_approx(float(pm.friction), float(data.physics.friction)) and is_equal_approx(float(pm.bounce), float(data.physics.bounce)), id + ": physics material matches")
 	var map: TileMap = item.get_node("CollisionMap")

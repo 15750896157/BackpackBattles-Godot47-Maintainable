@@ -23,7 +23,7 @@ def stage_project(project: Path, stage: Path) -> Path:
     shutil.copy2(bindings, stage / 'PvE/asset_bindings.json')
     definitions = json.loads(bindings.read_text(encoding='utf-8-sig'))['bindings']
     resources = {entry['png'] for entry in definitions.values()}
-    resources.add('res://Assets/Fonts/Localized/NotoSansSC-Regular_.otf')
+    resources.add('res://UI/Fonts/Localized/NotoSansSC-Regular_.otf')
     for reference in resources:
         source = (project / reference[6:]).resolve()
         if not source.is_relative_to(project) or not source.is_file():

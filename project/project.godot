@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="背包"
-run/main_scene="res://Core/Main.tscn"
+run/main_scene="res://Code/Core/Main.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="BackpackBattles_Local47_PvE"
 config/features=PackedStringArray("4.7", "GL Compatibility")
@@ -29,31 +29,31 @@ buses/default_bus_layout="uid://csuum7oc6bqgu"
 
 [autoload]
 
-ShaderClock="*res://Compatibility/ShaderClock.gd"
-FontSizeBinder="*res://Compatibility/FontSizeBinder.gd"
-LocalServices="*res://LocalServices/LocalStore.gd"
-Steam="*res://LocalServices/LocalSteam.gd"
+ShaderClock="*res://Code/Compatibility/ShaderClock.gd"
+FontSizeBinder="*res://Code/Compatibility/FontSizeBinder.gd"
+LocalServices="*res://Code/LocalServices/LocalStore.gd"
+Steam="*res://Code/LocalServices/LocalSteam.gd"
 ControllerIcons="*res://addons/controller_icons/ControllerIcons.gd"
-Util="*res://Utility/Util.gd"
-AssetStream="*res://Runtime/Loading/AssetStream.gd"
-SteamHelper="*res://Utility/SteamHelper.gd"
-Settings="*res://Utility/Settings.gd"
-InputMapping="*res://Interface/Options/InputMapping.gd"
+Util="*res://Code/Utility/Util.gd"
+AssetStream="*res://Code/Runtime/Loading/AssetStream.gd"
+SteamHelper="*res://Code/Utility/SteamHelper.gd"
+Settings="*res://Code/Utility/Settings.gd"
+InputMapping="*res://UI/Interface/Options/InputMapping.gd"
 SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
-ItemBook="*res://Sheets/ItemBook.gd"
-SkinBook="*res://Utility/SkinBook.gd"
-Game="*res://Core/Game.gd"
-ObjectPool="*res://Utility/ObjectPool.gd"
-RunDatabase="*res://Core/RunDatabase.gd"
-Sound="*res://Utility/Sound.tscn"
-CrazySDK="*res://Utility/CrazySDK.gd"
-CraftingManager="*res://Core/CraftingManager.gd"
-MaterialCompiler="*res://Utility/MaterialCompiler.gd"
-EventBus="*res://Utility/EventBus.gd"
-CustomRules="*res://Utility/CustomRules.gd"
-InputBlocker="*res://Interface/InputBlocker.tscn"
+ItemBook="*res://Data/Sheets/ItemBook.gd"
+SkinBook="*res://Code/Utility/SkinBook.gd"
+Game="*res://Code/Core/Game.gd"
+ObjectPool="*res://Code/Utility/ObjectPool.gd"
+RunDatabase="*res://Code/Core/RunDatabase.gd"
+Sound="*res://Code/Utility/Sound.tscn"
+CrazySDK="*res://Code/Utility/CrazySDK.gd"
+CraftingManager="*res://Code/Core/CraftingManager.gd"
+MaterialCompiler="*res://Code/Utility/MaterialCompiler.gd"
+EventBus="*res://Code/Utility/EventBus.gd"
+CustomRules="*res://Code/Utility/CustomRules.gd"
+InputBlocker="*res://UI/Interface/InputBlocker.tscn"
 Expedition="*res://PvE/NativeExpedition.gd"
-SceneRouter="*res://Runtime/Scene/SceneRouter.gd"
+SceneRouter="*res://Code/Runtime/Scene/SceneRouter.gd"
 _mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
 
 [debug]
@@ -74,7 +74,7 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/mode="canvas_items"
-mouse_cursor/custom_image="res://Assets/Cursor/Cursor_default_small.png"
+mouse_cursor/custom_image="res://Art/Assets/Cursor/Cursor_default_small.png"
 mouse_cursor/custom_image_hotspot=Vector2(20, 25)
 
 [editor_plugins]
@@ -84,13 +84,277 @@ enabled=PackedStringArray()
 [file_customization]
 
 folder_colors={
-"res://Art/": "green",
-"res://Assets/": "teal",
-"res://Atlases/": "blue",
-"res://CharacterClasses/": "purple",
-"res://Compatibility/": "pink",
-"res://Core/": "pink",
-"res://PvE/": "green"
+"res://Animation/": Color(0.75, 0.5, 1, 1),
+"res://Animation/Items/": Color(0.75, 0.5, 1, 1),
+"res://Animation/Items/Animations/": Color(0.75, 0.5, 1, 1),
+"res://Art/": Color(1, 0.35, 0.35, 1),
+"res://Art/20261022/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Buffs/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Character/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Chestnut/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Cursor/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Decoration/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/GoldCoin2.png[/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/GoldCoin2.png[/img][/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Leagues/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Light/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Noise/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Particles/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Shop/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Shop/Shopkeeper/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/TitleScreen/": Color(1, 0.35, 0.35, 1),
+"res://Art/Assets/Trophy.png[/": Color(1, 0.35, 0.35, 1),
+"res://Art/Atlases/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Adventurer/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Animations/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Berserker/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Berserker/Skins/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Berserker/Skins/Normal/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Berserker/Skins/Normal/Default/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Engineer/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Mage/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/NotUnlocked/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Pyromancer/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Pyromancer/Skins/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Pyromancer/Skins/Normal/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Pyromancer/Skins/Normal/Default/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Ranger/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Ranger/Skins/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Ranger/Skins/Normal/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Ranger/Skins/Normal/Default/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Reaper/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Reaper/Skins/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Reaper/Skins/Normal/": Color(1, 0.35, 0.35, 1),
+"res://Art/CharacterClasses/Reaper/Skins/Normal/Default/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/Animations/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/Borders/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/Chess/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/Materials/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/Particles/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/Sprites/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Exclusive/Sprites/Masks/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Gems/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Gems/Sprites/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Masks/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Materials/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Particles/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Sprites/": Color(1, 0.35, 0.35, 1),
+"res://Art/Items/Tiles/": Color(1, 0.35, 0.35, 1),
+"res://Art/Mobile20261027/": Color(1, 0.35, 0.35, 1),
+"res://Art/Polish20261022/": Color(1, 0.35, 0.35, 1),
+"res://Art/Reference20261102/": Color(1, 0.35, 0.35, 1),
+"res://Art/Shader/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261028/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261028/actors/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261028/backgrounds/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261028/items/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261028/status/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261028/ui/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/actors/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/bags/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/bg/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/hud/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/items/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/shop/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/status/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261102/ui/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261109/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261109/actors/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261109/status/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261109/ui/": Color(1, 0.35, 0.35, 1),
+"res://Art/Supplied20261113/": Color(1, 0.35, 0.35, 1),
+"res://Art/TileSets/": Color(1, 0.35, 0.35, 1),
+"res://Art/Touch20261027/": Color(1, 0.35, 0.35, 1),
+"res://Audio/": Color(1, 0.85, 0.3, 1),
+"res://Audio/Runtime/": Color(1, 0.85, 0.3, 1),
+"res://Audio/Sound/": Color(1, 0.85, 0.3, 1),
+"res://Audio/Sound/BGM/": Color(1, 0.85, 0.3, 1),
+"res://Audio/Sound/Furcifer/": Color(1, 0.85, 0.3, 1),
+"res://Code/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Compatibility/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Core/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/LocalServices/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Assets/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Assets/Decoration/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/CharacterClasses/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Compatibility/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Core/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Assets/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Assets/Decoration/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Core/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/BuildHistory/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/Combat/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/CombatLog/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/CombatTimer/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/DamageMeter/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/DamageNumbers/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/Inventory/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/Lobbies/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/Options/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Interface/Wardrobe/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Items/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Items/Animations/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Items/Exclusive/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Items/Exclusive/Animations/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Items/Exclusive/Chess/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Items/Gems/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Items/Tiles/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/LocalServices/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Shader/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Sheets/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Features/Utility/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Game/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/BuildHistory/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/Combat/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/CombatTimer/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/DamageMeter/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/DamageNumbers/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/Lobbies/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/Options/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/Tooltips/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Interface/Wardrobe/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Items/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Items/Exclusive/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Items/Gems/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/LocalServices/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Sheets/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Behavior/Utility/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Compatibility/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Core/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/Combat/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/CombatLog/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/DamageMeter/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/ItemLibrary/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/Lobbies/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/Options/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Interface/Tooltips/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Items/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Items/Animations/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Items/Exclusive/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Items/Exclusive/Animations/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Callbacks/Utility/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Collections/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Compatibility/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Compatibility/Scenes/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Compatibility/Scenes/Resources/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Events/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Loading/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Loading/Scenes/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Random/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Scene/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/Serialization/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/UI/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Runtime/ViewModel/": Color(0.4, 0.85, 0.4, 1),
+"res://Code/Utility/": Color(0.4, 0.85, 0.4, 1),
+"res://Data/": Color(1, 0.6, 0.2, 1),
+"res://Data/Sheets/": Color(1, 0.6, 0.2, 1),
+"res://Data/Sheets/CSV/": Color(1, 0.6, 0.2, 1),
+"res://PvE/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Art/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Items/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Items/Anims/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Items/Particles/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/app/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/combat/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/content/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/content/compiled/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/content/definitions/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/content/tables/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/content/tables/tools/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/core/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/inventory/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/persistence/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/platform/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/run/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Rules/tools/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/Scenes/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/UI/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/tests/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/tests/fixtures/": Color(0.4, 0.85, 0.4, 1),
+"res://PvE/tests/fixtures/router/": Color(0.4, 0.85, 0.4, 1),
+"res://UI/": Color(0.4, 0.65, 1, 1),
+"res://UI/Fonts/": Color(0.4, 0.65, 1, 1),
+"res://UI/Fonts/Localized/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/BuildHistory/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Combat/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Combat/StatIcons/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/CombatLog/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/CombatTimer/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/DamageMeter/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/DamageMeter/Plot/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/DamageNumbers/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Inventory/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/ItemLibrary/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Lobbies/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Options/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/AffectsInside.png[/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/AffectsInside.png[/img][/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/CoinIcon.png[/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/Icon_Melee.png[/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/Icon_Ranged.png[/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/Icon_Ranged.png[/img][/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Tooltips/Icon_Treasure.png[/": Color(0.4, 0.65, 1, 1),
+"res://UI/Interface/Wardrobe/": Color(0.4, 0.65, 1, 1),
+"res://addons/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/clients/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/custom_tools/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/debugger/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/dock_panels/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/export/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/handlers/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/runtime/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/testing/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/.godot_ai_update/backup/4.2.1/utils/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/key/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/luna/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/mouse/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/ouya/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/positional/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/ps3/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/ps4/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/ps5/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/ps5/r2.png[/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/ps5/r2.png[/img][/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/stadia/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/steam/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/steamdeck/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/switch/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/xbox360/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/xboxone/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/assets/xboxseries/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/example/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/controller_icons/objects/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/clients/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/custom_tools/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/debugger/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/dock_panels/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/export/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/handlers/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/runtime/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/testing/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/godot_ai/utils/": Color(0.6, 0.6, 0.6, 1),
+"res://addons/silent_wolf/": Color(0.6, 0.6, 0.6, 1)
 }
 
 [gui]
@@ -541,7 +805,7 @@ pve_prev_region={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://Sheets/CSV/Keywords.en.translation", "res://Sheets/CSV/Dialog.en.translation", "res://Sheets/CSV/Items.en.translation", "res://Sheets/CSV/Interface.en.translation", "res://Sheets/CSV/Interface.ja.translation", "res://Sheets/CSV/Keywords.ja.translation", "res://Sheets/CSV/Dialog.ja.translation", "res://Sheets/CSV/Items.ja.translation", "res://Sheets/CSV/Dialog.ko.translation", "res://Sheets/CSV/Interface.ko.translation", "res://Sheets/CSV/Items.ko.translation", "res://Sheets/CSV/Keywords.ko.translation", "res://Sheets/CSV/Dialog.de.translation", "res://Sheets/CSV/Interface.de.translation", "res://Sheets/CSV/Items.de.translation", "res://Sheets/CSV/Keywords.de.translation", "res://Sheets/CSV/Flavor.de.translation", "res://Sheets/CSV/Flavor.en.translation", "res://Sheets/CSV/Flavor.ja.translation", "res://Sheets/CSV/Flavor.ko.translation", "res://Sheets/CSV/Dialog.es.translation", "res://Sheets/CSV/Dialog.fr.translation", "res://Sheets/CSV/Dialog.pt_BR.translation", "res://Sheets/CSV/Dialog.ru.translation", "res://Sheets/CSV/ExclusiveItems.es.translation", "res://Sheets/CSV/ExclusiveItems.fr.translation", "res://Sheets/CSV/ExclusiveItems.pt_BR.translation", "res://Sheets/CSV/ExclusiveItems.ru.translation", "res://Sheets/CSV/Flavor.es.translation", "res://Sheets/CSV/Flavor.fr.translation", "res://Sheets/CSV/Flavor.pt_BR.translation", "res://Sheets/CSV/Flavor.ru.translation", "res://Sheets/CSV/Interface.es.translation", "res://Sheets/CSV/Interface.fr.translation", "res://Sheets/CSV/Interface.pt_BR.translation", "res://Sheets/CSV/Interface.ru.translation", "res://Sheets/CSV/Items.es.translation", "res://Sheets/CSV/Items.fr.translation", "res://Sheets/CSV/Items.pt_BR.translation", "res://Sheets/CSV/Items.ru.translation", "res://Sheets/CSV/Keywords.es.translation", "res://Sheets/CSV/Keywords.fr.translation", "res://Sheets/CSV/Keywords.pt_BR.translation", "res://Sheets/CSV/Keywords.ru.translation", "res://Sheets/CSV/Dialog.zh_Hans_CN.translation", "res://Sheets/CSV/Dialog.zh_Hant_TW.translation", "res://Sheets/CSV/ExclusiveItems.zh_Hans_CN.translation", "res://Sheets/CSV/ExclusiveItems.zh_Hant_TW.translation", "res://Sheets/CSV/Flavor.zh_Hans_CN.translation", "res://Sheets/CSV/Flavor.zh_Hant_TW.translation", "res://Sheets/CSV/Interface.zh_Hans_CN.translation", "res://Sheets/CSV/Interface.zh_Hant_TW.translation", "res://Sheets/CSV/Items.zh_Hans_CN.translation", "res://Sheets/CSV/Items.zh_Hant_TW.translation", "res://Sheets/CSV/Keywords.zh_Hans_CN.translation", "res://Sheets/CSV/Keywords.zh_Hant_TW.translation", "res://Sheets/CSV/Full.de.translation", "res://Sheets/CSV/Full.en.translation", "res://Sheets/CSV/Full.es.translation", "res://Sheets/CSV/Full.fr.translation", "res://Sheets/CSV/Full.ja.translation", "res://Sheets/CSV/Full.ko.translation", "res://Sheets/CSV/Full.pt_BR.translation", "res://Sheets/CSV/Full.ru.translation", "res://Sheets/CSV/Full.zh_Hans_CN.translation", "res://Sheets/CSV/Full.zh_Hant_TW.translation")
+locale/translations=PackedStringArray("res://Data/Sheets/CSV/Keywords.en.translation", "res://Data/Sheets/CSV/Dialog.en.translation", "res://Data/Sheets/CSV/Items.en.translation", "res://Data/Sheets/CSV/Interface.en.translation", "res://Data/Sheets/CSV/Interface.ja.translation", "res://Data/Sheets/CSV/Keywords.ja.translation", "res://Data/Sheets/CSV/Dialog.ja.translation", "res://Data/Sheets/CSV/Items.ja.translation", "res://Data/Sheets/CSV/Dialog.ko.translation", "res://Data/Sheets/CSV/Interface.ko.translation", "res://Data/Sheets/CSV/Items.ko.translation", "res://Data/Sheets/CSV/Keywords.ko.translation", "res://Data/Sheets/CSV/Dialog.de.translation", "res://Data/Sheets/CSV/Interface.de.translation", "res://Data/Sheets/CSV/Items.de.translation", "res://Data/Sheets/CSV/Keywords.de.translation", "res://Data/Sheets/CSV/Flavor.de.translation", "res://Data/Sheets/CSV/Flavor.en.translation", "res://Data/Sheets/CSV/Flavor.ja.translation", "res://Data/Sheets/CSV/Flavor.ko.translation", "res://Data/Sheets/CSV/Dialog.es.translation", "res://Data/Sheets/CSV/Dialog.fr.translation", "res://Data/Sheets/CSV/Dialog.pt_BR.translation", "res://Data/Sheets/CSV/Dialog.ru.translation", "res://Data/Sheets/CSV/ExclusiveItems.es.translation", "res://Data/Sheets/CSV/ExclusiveItems.fr.translation", "res://Data/Sheets/CSV/ExclusiveItems.pt_BR.translation", "res://Data/Sheets/CSV/ExclusiveItems.ru.translation", "res://Data/Sheets/CSV/Flavor.es.translation", "res://Data/Sheets/CSV/Flavor.fr.translation", "res://Data/Sheets/CSV/Flavor.pt_BR.translation", "res://Data/Sheets/CSV/Flavor.ru.translation", "res://Data/Sheets/CSV/Interface.es.translation", "res://Data/Sheets/CSV/Interface.fr.translation", "res://Data/Sheets/CSV/Interface.pt_BR.translation", "res://Data/Sheets/CSV/Interface.ru.translation", "res://Data/Sheets/CSV/Items.es.translation", "res://Data/Sheets/CSV/Items.fr.translation", "res://Data/Sheets/CSV/Items.pt_BR.translation", "res://Data/Sheets/CSV/Items.ru.translation", "res://Data/Sheets/CSV/Keywords.es.translation", "res://Data/Sheets/CSV/Keywords.fr.translation", "res://Data/Sheets/CSV/Keywords.pt_BR.translation", "res://Data/Sheets/CSV/Keywords.ru.translation", "res://Data/Sheets/CSV/Dialog.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Dialog.zh_Hant_TW.translation", "res://Data/Sheets/CSV/ExclusiveItems.zh_Hans_CN.translation", "res://Data/Sheets/CSV/ExclusiveItems.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Flavor.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Flavor.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Interface.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Interface.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Items.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Items.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Keywords.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Keywords.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Full.de.translation", "res://Data/Sheets/CSV/Full.en.translation", "res://Data/Sheets/CSV/Full.es.translation", "res://Data/Sheets/CSV/Full.fr.translation", "res://Data/Sheets/CSV/Full.ja.translation", "res://Data/Sheets/CSV/Full.ko.translation", "res://Data/Sheets/CSV/Full.pt_BR.translation", "res://Data/Sheets/CSV/Full.ru.translation", "res://Data/Sheets/CSV/Full.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Full.zh_Hant_TW.translation")
 
 [layer_names]
 

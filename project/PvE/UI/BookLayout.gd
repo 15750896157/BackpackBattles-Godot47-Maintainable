@@ -1,7 +1,7 @@
 extends RefCounted
 ## A two-page, read-only catalogue. Craft calls the existing explicit transaction.
 const REF=preload("res://PvE/UI/ReferenceCanvas.gd")
-const CODEX = preload("res://Runtime/ViewModel/CodexVM.gd")
+const CODEX = preload("res://Code/Runtime/ViewModel/CodexVM.gd")
 const PAGE_SIZE = CODEX.PAGE_SIZE
 const CATEGORIES=[["items","造物录","Items"],["bags","行囊录","Bags"],["recipes","合成手札","Recipes"],["enemies","异闻录","Enemies"],["characters","英雄录","Heroes"],["rules","规则辞典","Rules"],["records","远征记录","Records"]]
 const KEYS=["camp","book_cover","book_pages","bookmark_blue","bookmark_purple","bookmark_gold","bookmark_red","bookmark_green","button","button_blue","button_red","close","previous","next","book_entry","book_detail","badge_blue","badge_green","badge_gold","badge_purple","badge_red","result_reward_paper","recipe_row","recipe_detail","detail_title","entry","hero_description","bag_description"]
@@ -217,7 +217,7 @@ func craft_detail(entry: Dictionary, ingredients: Array):
 		owner.menus.runs.selected_recipe = {}
 		owner.perform(result)
 		if result.ok:
-			Sound.playSound(load("res://Assets/Sound/Craft.ogg"), -8)
+			Sound.playSound(load("res://Audio/Sound/Craft.ogg"), -8)
 			show_page("recipes"), ui.words("确认合成", "Confirm craft"), 26)
 	craft.name = "BookConfirmCraft"
 	craft.disabled = not bool(candidate.get("preview_ok", false))

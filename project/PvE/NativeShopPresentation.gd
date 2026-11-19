@@ -2,7 +2,7 @@ extends RefCounted
 ## Stages an editable overlay and scenery for the fixed native shop carrier.
 
 const VIEW = preload("res://PvE/UI/ShopScreen.gd")
-const MODEL = preload("res://Runtime/ViewModel/ShopVM.gd")
+const MODEL = preload("res://Code/Runtime/ViewModel/ShopVM.gd")
 const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const SCREEN_PATH = "res://PvE/UI/ShopScreen.tscn"
 const SCENERY_PATH = "res://PvE/UI/ShopScenery.tscn"

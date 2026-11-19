@@ -42,7 +42,7 @@ func _ready():
 	var tooltip_layer = CanvasLayer.new(); tooltip_layer.layer = 150; tooltip_layer.name = "ItemDetailLayer"; add_child(tooltip_layer)
 	Game.tooltipsNode.reparent(tooltip_layer)
 	Game.recipeTooltipsNode.reparent(tooltip_layer)
-	curtain = preload("res://Runtime/Scene/TransitionLayer.tscn").instantiate()
+	curtain = preload("res://Code/Runtime/Scene/TransitionLayer.tscn").instantiate()
 	curtain.configure(preload("res://PvE/Art/SceneCurtain.gd").new())
 	Game.mainNode.add_child(curtain)
 	lighting = preload("res://PvE/Art/Lighting.gd").new(); add_child(lighting)

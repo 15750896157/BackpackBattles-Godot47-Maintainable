@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" load_steps=6 format=3]
-[ext_resource type="Texture2D" path="res://Assets/Noise/BubbleNoise.png" id="5_0gwyc"]
-[ext_resource type="Texture2D" path="res://Items/Exclusive/Materials/LaboratoryDefaultGradient.tres" id="6_ae0ck"]
-[ext_resource type="Texture2D" path="res://Items/Exclusive/Materials/LaboratoryGradient5.tres" id="7_jk4si"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Noise/BubbleNoise.png" id="5_0gwyc"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Materials/LaboratoryDefaultGradient.tres" id="6_ae0ck"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Materials/LaboratoryGradient5.tres" id="7_jk4si"]
 
 [sub_resource type="Shader" id="12"]
 code = "shader_type canvas_item;

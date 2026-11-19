@@ -6,7 +6,7 @@ extends RefCounted
 
 const TEMPLATE_PATH := "res://PvE/Items/ItemBase.tscn"
 const OVERRIDES_PATH := "res://PvE/item_template_overrides.json"
-const GEM_SOCKET_SCENE := "res://Items/GemSocket.tscn"
+const GEM_SOCKET_SCENE := "res://Art/Items/GemSocket.tscn"
 
 static var _by_definition: Dictionary = {}
 static var _loaded := false

@@ -1,6 +1,6 @@
 extends Node
-const Context = preload("res://Runtime/Scene/TransitionContext.gd")
-const LayerScene = preload("res://Runtime/Scene/TransitionLayer.tscn")
+const Context = preload("res://Code/Runtime/Scene/TransitionContext.gd")
+const LayerScene = preload("res://Code/Runtime/Scene/TransitionLayer.tscn")
 const Barrier = preload("res://PvE/tests/LoadingBarrier.gd")
 
 class FixtureContext extends Context:
@@ -201,7 +201,7 @@ func run_tests():
 	check(Expedition.art.curtain.get_parent() == Game.mainNode, "transition layer lifetime belongs to shell rather than art rebuilds")
 	check(Expedition.loading_screen.layer > Expedition.art.curtain.layer, "shared progress remains above clouds")
 	check(Expedition.native_routes == null or SceneRouter.get_current_node() == Expedition.art.routed_title, "enabled production router owns the title scene")
-	for path in ["res://Runtime/Scene/TransitionLayer.tscn", "res://PvE/tests/TransitionLayerMain.tscn"]:
+	for path in ["res://Code/Runtime/Scene/TransitionLayer.tscn", "res://PvE/tests/TransitionLayerMain.tscn"]:
 		var uid = ResourceLoader.get_resource_uid(path)
 		check(uid != ResourceUID.INVALID_ID and ResourceUID.has_id(uid), "new scene UID is registered automatically: " + path)
 		var resource = ResourceLoader.load(ResourceUID.id_to_text(uid)) if uid != ResourceUID.INVALID_ID else null
@@ -213,7 +213,7 @@ func run_tests():
 	await stop_and_leave_tree()
 	await failure_and_resource_isolation()
 	await Barrier.wait_idle(get_tree())
-	var remaining = Game.mainNode.get_children().filter(func(node): return node.get_script() == preload("res://Runtime/Scene/TransitionLayer.gd"))
+	var remaining = Game.mainNode.get_children().filter(func(node): return node.get_script() == preload("res://Code/Runtime/Scene/TransitionLayer.gd"))
 	check(remaining.size() == 1 and remaining[0] == Expedition.art.curtain, "fixtures leave exactly the persistent production layer")
 	check(not InputBlocker.isActive() and Expedition.loading_screen.mode.is_empty(), "layer matrix leaves no stuck input or loading overlay")
 	check(JSON.stringify({"run": Expedition.flow.run, "flow": Expedition.flow.screen_state, "native": Game.state}, "", true, true) == before, "all transition cases preserve authoritative domain state")

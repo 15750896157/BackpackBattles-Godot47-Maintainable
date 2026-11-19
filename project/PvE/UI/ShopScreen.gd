@@ -3,7 +3,7 @@ extends Control
 
 signal menu_requested(action: StringName)
 
-const ShopVM = preload("res://Runtime/ViewModel/ShopVM.gd")
+const ShopVM = preload("res://Code/Runtime/ViewModel/ShopVM.gd")
 const ART_KEYS = ["codex", "journey", "refresh", "coin", "battle", "settings", "plate1", "price", "sale",
 	"class_badge", "plate2", "plate3", "health", "stamina", "previous", "next"]
 const SCENERY_KEYS = ["shelf", "merchant", "table", "storage_mat", "sell"]

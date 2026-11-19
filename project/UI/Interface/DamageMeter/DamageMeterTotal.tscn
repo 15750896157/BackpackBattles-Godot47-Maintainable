@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://dlhyu45bkqy6f"]
+
+[ext_resource type="Script" path="res://UI/Interface/DamageMeter/DamageMeterTotal.gd" id="1_aac5h"]
+[ext_resource type="StyleBox" path="res://UI/Interface/DamageMeter/DamageMeterEntryStylebox.tres" id="2_albmp"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_ojfvr"]
+[ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_pu03h"]
+[ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="5_p2uld"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Divider1.png" id="6_kntl6"]
+
+[sub_resource type="FontVariation" id="1"]
+base_font = ExtResource("3_ojfvr")
+spacing_top = -4
+spacing_bottom = -5
+script = ExtResource("4_pu03h")
+size = 20
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[sub_resource type="FontVariation" id="2"]
+base_font = ExtResource("3_ojfvr")
+spacing_bottom = -8
+script = ExtResource("4_pu03h")
+size = 22
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[node name="Total" type="Control"]
+offset_right = 387.0
+offset_bottom = 40.0
+custom_minimum_size = Vector2(0, 44)
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+script = ExtResource("1_aac5h")
+
+[node name="Panel" type="Panel" parent="."]
+offset_top = 10.0
+offset_right = 389.0
+offset_bottom = 37.0
+mouse_filter = 1
+theme_override_styles/panel = ExtResource("2_albmp")
+
+[node name="Name" type="RichTextLabel" parent="."]
+offset_left = 5.0
+offset_top = 14.0
+offset_right = 175.0
+offset_bottom = 36.0
+grow_vertical = 2
+clip_contents = false
+mouse_filter = 1
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/normal_font = SubResource("1")
+bbcode_enabled = true
+text = "Total"
+text = "Total"
+fit_content = true
+scroll_active = false
+script = ExtResource("5_p2uld")
+translationKey = "UI_DamageMeter_Total"
+theme_override_font_sizes/normal_font_size = 20
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[node name="AbsoluteDamage" type="Label" parent="."]
+offset_left = 260.0
+offset_top = 4.0
+offset_right = 385.0
+offset_bottom = 36.0
+mouse_filter = 1
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/font = SubResource("2")
+text = "230 (5.3/s)"
+theme_override_font_sizes/font_size = 22
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Divider1" type="Sprite2D" parent="."]
+position = Vector2(194.625, 3.00001)
+scale = Vector2(1.51265, 0.600002)
+texture = ExtResource("6_kntl6")

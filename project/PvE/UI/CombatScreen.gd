@@ -1,7 +1,7 @@
 extends Control
 ## Renders the projected battle state. Native actors and item grids stay in the world.
 
-const CombatVM = preload("res://Runtime/ViewModel/CombatVM.gd")
+const CombatVM = preload("res://Code/Runtime/ViewModel/CombatVM.gd")
 const STATUS_BADGES = preload("res://PvE/Art/StatusBadges.gd")
 const ART_KEYS = ["name", "plate2", "plate3", "health", "stamina", "play", "pause", "timeline_base", "timeline_fill", "settings"]
 

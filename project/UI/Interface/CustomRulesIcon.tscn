@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bb5kp5te0j7to"]
+
+[ext_resource type="Texture2D" path="res://UI/Interface/Lobbies/CustomIcon.png" id="1_sgkr5"]
+[ext_resource type="Texture2D" path="res://UI/Interface/Lobbies/CustomIcon_hovered.png" id="2_m1mkx"]
+[ext_resource type="Script" path="res://UI/Interface/CustomRulesIcon.gd" id="3_8oeh6"]
+
+[node name="CustomRulesIcon" type="TextureButton"]
+offset_right = 33.0
+offset_bottom = 33.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_sgkr5")
+texture_hover = ExtResource("2_m1mkx")
+stretch_mode = 5
+script = ExtResource("3_8oeh6")
+playClickSound = false
+ignore_texture_size = true

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://kschcxolfg04"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Item.tscn" id="1_bqkva"]
+[ext_resource type="Script" path="res://Art/Items/ClawsofAttack.gd" id="2_p4rq1"]
+[ext_resource type="Texture2D" path="res://Art/Items/Sprites/ClawsofAttack.png" id="3_i7jgk"]
+[ext_resource type="PackedScene" path="res://Art/Items/GemSocket.tscn" id="4_yphh0"]
+
+[sub_resource type="PhysicsMaterial" id="1"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[sub_resource type="CapsuleShape2D" id="2"]
+radius = 42.0
+height = 150.0
+
+[node name="Claws of Attack" instance=ExtResource("1_bqkva")]
+physics_material_override = SubResource("1")
+script = ExtResource("2_p4rq1")
+
+[node name="CollisionMap" parent="." index="0"]
+position = Vector2(0, 40)
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 3, 0, -65536, 3, 0)
+
+[node name="Icon" parent="." index="1"]
+position = Vector2(4, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_i7jgk")
+
+[node name="Sockets" parent="Icon" index="0"]
+scale = Vector2(2, 2)
+
+[node name="GemSocket" parent="Icon/Sockets" index="0" instance=ExtResource("4_yphh0")]
+position = Vector2(-6, -3)
+
+[node name="CollisionPolygon2D" parent="ClickArea" index="0"]
+polygon = PackedVector2Array(-80, -40, 80, -40, 80, 40, -80, 40)
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(0, 41)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
+visible = false
+rotation = 1.5708
+shape = SubResource("2")

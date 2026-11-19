@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dmbxyrbpk06sn"]
+
+[ext_resource type="Material" path="res://UI/Interface/Combat/Regeneration.material" id="1_c4hbf"]
+[ext_resource type="Material" path="res://UI/Interface/Combat/RegenerationParticles.material" id="2_m5f1x"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Buffs/Regeneration.png" id="3_mrmbd"]
+[ext_resource type="Script" path="res://Code/Utility/AutoHideParticles.gd" id="4_4ym4s"]
+
+[node name="Particles" type="GPUParticles2D"]
+modulate = Color(3, 3, 3, 0.31)
+material = ExtResource("1_c4hbf")
+position = Vector2(0.98822, -0.871094)
+scale = Vector2(1.8124, 1.8124)
+z_index = 1
+emitting = false
+amount = 1
+lifetime = 0.76
+one_shot = true
+explosiveness = 0.1
+local_coords = false
+process_material = ExtResource("2_m5f1x")
+texture = ExtResource("3_mrmbd")
+script = ExtResource("4_4ym4s")

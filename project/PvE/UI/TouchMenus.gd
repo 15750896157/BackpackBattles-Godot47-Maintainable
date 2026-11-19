@@ -1,6 +1,6 @@
 extends RefCounted
 ## Public page router; page implementations contain no window creation.
-const SHOP_MODEL = preload("res://Runtime/ViewModel/ShopVM.gd")
+const SHOP_MODEL = preload("res://Code/Runtime/ViewModel/ShopVM.gd")
 var owner
 var shell
 var runs

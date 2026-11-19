@@ -1,5 +1,5 @@
 [gd_resource type="ParticleProcessMaterial" load_steps=7 format=3]
-[ext_resource type="Texture2D" path="res://Shader/VerySmoothFadeGradient.tres" id="4_4qf60"]
+[ext_resource type="Texture2D" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="4_4qf60"]
 
 [sub_resource type="Curve" id="5"]
 _limits = [0.0, 1024.0, 0.0, 1.0]

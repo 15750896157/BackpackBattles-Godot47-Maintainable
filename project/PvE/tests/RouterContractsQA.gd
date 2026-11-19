@@ -1,7 +1,7 @@
 extends Node
-const Kernel = preload("res://Runtime/Scene/RouterKernel.gd")
-const Context = preload("res://Runtime/Scene/TransitionContext.gd")
-const LayerScene = preload("res://Runtime/Scene/TransitionLayer.tscn")
+const Kernel = preload("res://Code/Runtime/Scene/RouterKernel.gd")
+const Context = preload("res://Code/Runtime/Scene/TransitionContext.gd")
+const LayerScene = preload("res://Code/Runtime/Scene/TransitionLayer.tscn")
 const Barrier = preload("res://PvE/tests/LoadingBarrier.gd")
 const A = "res://PvE/tests/fixtures/router/A.tscn"
 const B = "res://PvE/tests/fixtures/router/B.tscn"

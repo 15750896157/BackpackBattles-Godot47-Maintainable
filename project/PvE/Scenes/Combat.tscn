@@ -1,172 +1,172 @@
 [gd_scene format=3 uid="uid://i6ndl3r6qexp2"]
 
-[ext_resource type="Texture2D" uid="uid://28a83p40d7ft" path="res://Assets/Particles/Sparkles.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://28a83p40d7ft" path="res://Art/Assets/Particles/Sparkles.png" id="3"]
 
-[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Assets/Trophy.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Art/Assets/Trophy.png" id="9"]
 
-[ext_resource type="Script" uid="uid://j21gsh3u6rb7" path="res://Interface/CombatTimer/CombatTimer.gd" id="15"]
+[ext_resource type="Script" uid="uid://j21gsh3u6rb7" path="res://UI/Interface/CombatTimer/CombatTimer.gd" id="15"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="20"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="20"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="23"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="27"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
 
-[ext_resource type="Texture2D" uid="uid://chegnxuph0hht" path="res://Assets/RedBanner.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://chegnxuph0hht" path="res://Art/Assets/RedBanner.png" id="28"]
 
-[ext_resource type="Texture2D" uid="uid://cudchn161hi6e" path="res://Interface/CombatTimer/CombatSpeed_grabber_hovered.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://cudchn161hi6e" path="res://UI/Interface/CombatTimer/CombatSpeed_grabber_hovered.png" id="29"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="31"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="31"]
 
-[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Assets/Particles/Dust1.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Art/Assets/Particles/Dust1.png" id="32"]
 
-[ext_resource type="Texture2D" uid="uid://xnux6lseawe7" path="res://Assets/BrokenFanfare.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://xnux6lseawe7" path="res://Art/Assets/BrokenFanfare.png" id="41"]
 
-[ext_resource type="Texture2D" uid="uid://blcodc6wmmts4" path="res://Interface/Lobbies/ResultsPanel.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://blcodc6wmmts4" path="res://UI/Interface/Lobbies/ResultsPanel.png" id="45"]
 
-[ext_resource type="Texture2D" uid="uid://6w1urhw50qyb" path="res://Assets/BlueBanner.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://6w1urhw50qyb" path="res://Art/Assets/BlueBanner.png" id="52"]
 
-[ext_resource type="RichTextEffect" path="res://Utility/Jump.tres" id="53"]
+[ext_resource type="RichTextEffect" path="res://Code/Utility/Jump.tres" id="53"]
 
-[ext_resource type="PackedScene" path="res://Interface/WinFanfare.tscn" id="54"]
+[ext_resource type="PackedScene" path="res://UI/Interface/WinFanfare.tscn" id="54"]
 
-[ext_resource type="Texture2D" uid="uid://f45mef5qnxe8" path="res://Interface/CombatTimer/TimerPanel.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://f45mef5qnxe8" path="res://UI/Interface/CombatTimer/TimerPanel.png" id="55"]
 
-[ext_resource type="Texture2D" uid="uid://c6g4rmy84swpk" path="res://Interface/CombatTimer/CombatSpeed_paused.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://c6g4rmy84swpk" path="res://UI/Interface/CombatTimer/CombatSpeed_paused.png" id="56"]
 
-[ext_resource type="Texture2D" uid="uid://bnbk5naf5373j" path="res://Interface/CombatTimer/CombatSpeed_slider.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://bnbk5naf5373j" path="res://UI/Interface/CombatTimer/CombatSpeed_slider.png" id="57"]
 
-[ext_resource type="Texture2D" uid="uid://cemmjvxmx7h5g" path="res://Interface/CombatTimer/CombatSpeed_slider_filled.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://cemmjvxmx7h5g" path="res://UI/Interface/CombatTimer/CombatSpeed_slider_filled.png" id="58"]
 
-[ext_resource type="Texture2D" uid="uid://wavfrmvwvkgg" path="res://Interface/CombatTimer/CombatSpeed_grabber.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://wavfrmvwvkgg" path="res://UI/Interface/CombatTimer/CombatSpeed_grabber.png" id="59"]
 
-[ext_resource type="Texture2D" uid="uid://cc1wq2jj5755n" path="res://Interface/CombatTimer/CombatSpeed_fast.png" id="60"]
+[ext_resource type="Texture2D" uid="uid://cc1wq2jj5755n" path="res://UI/Interface/CombatTimer/CombatSpeed_fast.png" id="60"]
 
-[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Assets/Watch.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Art/Assets/Watch.png" id="66"]
 
-[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Assets/Heart.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
 
-[ext_resource type="PackedScene" path="res://Interface/Trophy.tscn" id="73"]
+[ext_resource type="PackedScene" path="res://UI/Interface/Trophy.tscn" id="73"]
 
-[ext_resource type="Script" uid="uid://dwpp6lc6owqmy" path="res://Core/Combat.gd" id="74"]
+[ext_resource type="Script" uid="uid://dwpp6lc6owqmy" path="res://Code/Core/Combat.gd" id="74"]
 
-[ext_resource type="PackedScene" path="res://Interface/Heart.tscn" id="75"]
+[ext_resource type="PackedScene" path="res://UI/Interface/Heart.tscn" id="75"]
 
-[ext_resource type="PackedScene" path="res://Interface/MovingCounter.tscn" id="76"]
+[ext_resource type="PackedScene" path="res://UI/Interface/MovingCounter.tscn" id="76"]
 
-[ext_resource type="Texture2D" uid="uid://b25ba4a8q4phy" path="res://Interface/CombatTimer/CombatSpeed_paused_hovered.png" id="80"]
+[ext_resource type="Texture2D" uid="uid://b25ba4a8q4phy" path="res://UI/Interface/CombatTimer/CombatSpeed_paused_hovered.png" id="80"]
 
-[ext_resource type="Texture2D" uid="uid://dh2kvv7t16b2p" path="res://Interface/CombatTimer/CombatSpeed_fast_hovered.png" id="81"]
+[ext_resource type="Texture2D" uid="uid://dh2kvv7t16b2p" path="res://UI/Interface/CombatTimer/CombatSpeed_fast_hovered.png" id="81"]
 
-[ext_resource type="PackedScene" path="res://Interface/LeagueEmblem.tscn" id="87"]
+[ext_resource type="PackedScene" path="res://UI/Interface/LeagueEmblem.tscn" id="87"]
 
-[ext_resource type="Script" uid="uid://bwv03lwajwu58" path="res://Interface/SimpleClassLabel.gd" id="88"]
+[ext_resource type="Script" uid="uid://bwv03lwajwu58" path="res://UI/Interface/SimpleClassLabel.gd" id="88"]
 
-[ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
 
-[ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Assets/Particles/Spot1.png" id="95"]
+[ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Art/Assets/Particles/Spot1.png" id="95"]
 
-[ext_resource type="Texture2D" uid="uid://cdxw434t1g1yo" path="res://Assets/PinkBanner.png" id="97"]
+[ext_resource type="Texture2D" uid="uid://cdxw434t1g1yo" path="res://Art/Assets/PinkBanner.png" id="97"]
 
-[ext_resource type="Texture2D" uid="uid://cl226yx2ut7mg" path="res://Assets/Banner3.png" id="98"]
+[ext_resource type="Texture2D" uid="uid://cl226yx2ut7mg" path="res://Art/Assets/Banner3.png" id="98"]
 
-[ext_resource type="Texture2D" uid="uid://4wis32njk0b" path="res://Assets/Particles/Sparkles_gold.png" id="101"]
+[ext_resource type="Texture2D" uid="uid://4wis32njk0b" path="res://Art/Assets/Particles/Sparkles_gold.png" id="101"]
 
-[ext_resource type="PackedScene" path="res://Interface/LeagueProgressBar.tscn" id="108"]
+[ext_resource type="PackedScene" path="res://UI/Interface/LeagueProgressBar.tscn" id="108"]
 
-[ext_resource type="Texture2D" uid="uid://ncdsljqxtkel" path="res://Interface/Combat/RankedSheet.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://ncdsljqxtkel" path="res://UI/Interface/Combat/RankedSheet.png" id="109"]
 
-[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Assets/Particles/GlowingDot_small.png" id="116"]
+[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
 
-[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Utility/AutoHideParticles.gd" id="121"]
+[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
 
-[ext_resource type="Material" path="res://Shader/WinParticles.material" id="131"]
+[ext_resource type="Material" path="res://Art/Shader/WinParticles.material" id="131"]
 
-[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Shader/SmoothFadeGradient.tres" id="135"]
+[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Art/Shader/SmoothFadeGradient.tres" id="135"]
 
-[ext_resource type="Texture2D" uid="uid://bkjtujs031wkq" path="res://Assets/Character/CombatSheet_NameBanner.png" id="136"]
+[ext_resource type="Texture2D" uid="uid://bkjtujs031wkq" path="res://Art/Assets/Character/CombatSheet_NameBanner.png" id="136"]
 
-[ext_resource type="Material" path="res://Shader/WinParticlesCanvas.material" id="138"]
+[ext_resource type="Material" path="res://Art/Shader/WinParticlesCanvas.material" id="138"]
 
-[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Shader/TextDissolveMaterial.tres" id="139"]
+[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
 
-[ext_resource type="Texture2D" uid="uid://xunrrwyavs7s" path="res://Assets/Chestnut/Bottom_back.png" id="140"]
+[ext_resource type="Texture2D" uid="uid://xunrrwyavs7s" path="res://Art/Assets/Chestnut/Bottom_back.png" id="140"]
 
-[ext_resource type="Script" uid="uid://bc42suputcqom" path="res://Utility/InputBlockRect.gd" id="142"]
+[ext_resource type="Script" uid="uid://bc42suputcqom" path="res://Code/Utility/InputBlockRect.gd" id="142"]
 
-[ext_resource type="Texture2D" uid="uid://dyufjkue2vhc2" path="res://Interface/Combat/Eye_open.png" id="143"]
+[ext_resource type="Texture2D" uid="uid://dyufjkue2vhc2" path="res://UI/Interface/Combat/Eye_open.png" id="143"]
 
-[ext_resource type="Texture2D" uid="uid://bn7oiqegl4x0" path="res://Interface/Combat/Eye_open_hovered.png" id="144"]
+[ext_resource type="Texture2D" uid="uid://bn7oiqegl4x0" path="res://UI/Interface/Combat/Eye_open_hovered.png" id="144"]
 
-[ext_resource type="PackedScene" path="res://Interface/CustomRulesIcon.tscn" id="152"]
+[ext_resource type="PackedScene" path="res://UI/Interface/CustomRulesIcon.tscn" id="152"]
 
-[ext_resource type="Script" uid="uid://cgn7sqqu2hg2e" path="res://Interface/FocusGrabbingControl.gd" id="159"]
+[ext_resource type="Script" uid="uid://cgn7sqqu2hg2e" path="res://UI/Interface/FocusGrabbingControl.gd" id="159"]
 
-[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
 
-[ext_resource type="Script" uid="uid://bmdtn4ws1l6oc" path="res://Interface/Combat/HideUIButton.gd" id="161"]
+[ext_resource type="Script" uid="uid://bmdtn4ws1l6oc" path="res://UI/Interface/Combat/HideUIButton.gd" id="161"]
 
-[ext_resource type="Script" uid="uid://cs32daht56s5u" path="res://Interface/BaseSlider.gd" id="162"]
+[ext_resource type="Script" uid="uid://cs32daht56s5u" path="res://UI/Interface/BaseSlider.gd" id="162"]
 
-[ext_resource type="Texture2D" uid="uid://v20pg3r4rv85" path="res://Interface/CombatLog/CombatLogButton.png" id="168"]
+[ext_resource type="Texture2D" uid="uid://v20pg3r4rv85" path="res://UI/Interface/CombatLog/CombatLogButton.png" id="168"]
 
-[ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Items/Exclusive/Animations/GooglyEye.gd" id="170"]
+[ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Art/Items/Exclusive/Animations/GooglyEye.gd" id="170"]
 
-[ext_resource type="Texture2D" uid="uid://cpsde7pbcm3s0" path="res://Interface/CombatLog/CombatLogButton_hovered.png" id="174"]
+[ext_resource type="Texture2D" uid="uid://cpsde7pbcm3s0" path="res://UI/Interface/CombatLog/CombatLogButton_hovered.png" id="174"]
 
-[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Utility/LocalizedControl.gd" id="182"]
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 
-[ext_resource type="Texture2D" uid="uid://cbde3uxf3ijj" path="res://Assets/SurvivalSkull.png" id="188"]
+[ext_resource type="Texture2D" uid="uid://cbde3uxf3ijj" path="res://Art/Assets/SurvivalSkull.png" id="188"]
 
-[ext_resource type="Texture2D" uid="uid://bupksyt64hjpq" path="res://Assets/SmallBlueBanner.png" id="189"]
+[ext_resource type="Texture2D" uid="uid://bupksyt64hjpq" path="res://Art/Assets/SmallBlueBanner.png" id="189"]
 
-[ext_resource type="Texture2D" uid="uid://cmor430cqibbh" path="res://Assets/SurvivalBones.png" id="190"]
+[ext_resource type="Texture2D" uid="uid://cmor430cqibbh" path="res://Art/Assets/SurvivalBones.png" id="190"]
 
-[ext_resource type="PackedScene" path="res://Interface/TrophyParticles.tscn" id="209"]
+[ext_resource type="PackedScene" path="res://UI/Interface/TrophyParticles.tscn" id="209"]
 
-[ext_resource type="PackedScene" path="res://Interface/RunAchievement.tscn" id="211"]
+[ext_resource type="PackedScene" path="res://UI/Interface/RunAchievement.tscn" id="211"]
 
-[ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Items/Exclusive/Sprites/Pupil2.png" id="231"]
+[ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Art/Items/Exclusive/Sprites/Pupil2.png" id="231"]
 
-[ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Assets/Chestnut/Eye.png" id="237"]
+[ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Art/Assets/Chestnut/Eye.png" id="237"]
 
-[ext_resource type="Texture2D" uid="uid://c88u5u8ss7b23" path="res://Assets/Chestnut/Top_front.png" id="238"]
+[ext_resource type="Texture2D" uid="uid://c88u5u8ss7b23" path="res://Art/Assets/Chestnut/Top_front.png" id="238"]
 
-[ext_resource type="Texture2D" uid="uid://ba21tmupdvdxn" path="res://Assets/Chestnut/Bottom_front.png" id="239"]
+[ext_resource type="Texture2D" uid="uid://ba21tmupdvdxn" path="res://Art/Assets/Chestnut/Bottom_front.png" id="239"]
 
-[ext_resource type="Material" path="res://Shader/FatigueParticles.material" id="243"]
+[ext_resource type="Material" path="res://Art/Shader/FatigueParticles.material" id="243"]
 
-[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://Interface/NonLocalizedControl.gd" id="250"]
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://UI/Interface/NonLocalizedControl.gd" id="250"]
 
-[ext_resource type="Material" path="res://Shader/FatigueParticleMat.material" id="255"]
+[ext_resource type="Material" path="res://Art/Shader/FatigueParticleMat.material" id="255"]
 
-[ext_resource type="Script" uid="uid://bv2tkn0o8tt26" path="res://Interface/Combat/WinLabel.gd" id="259"]
+[ext_resource type="Script" uid="uid://bv2tkn0o8tt26" path="res://UI/Interface/Combat/WinLabel.gd" id="259"]
 
-[ext_resource type="Script" uid="uid://ckn2tpmdrwwvg" path="res://Utility/TimedParticles.gd" id="261"]
+[ext_resource type="Script" uid="uid://ckn2tpmdrwwvg" path="res://Code/Utility/TimedParticles.gd" id="261"]
 
-[ext_resource type="Texture2D" uid="uid://cvrupifajxi8x" path="res://Interface/PopupBox.png" id="273"]
+[ext_resource type="Texture2D" uid="uid://cvrupifajxi8x" path="res://UI/Interface/PopupBox.png" id="273"]
 
-[ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Assets/Chestnut/Top_teeth.png" id="274"]
+[ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Art/Assets/Chestnut/Top_teeth.png" id="274"]
 
-[ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Assets/Chestnut/Tongue.png" id="275"]
+[ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Art/Assets/Chestnut/Tongue.png" id="275"]
 
-[ext_resource type="Script" uid="uid://ce86tt4hmhaqq" path="res://Interface/Combat/CombatTugBar.gd" id="304"]
+[ext_resource type="Script" uid="uid://ce86tt4hmhaqq" path="res://UI/Interface/Combat/CombatTugBar.gd" id="304"]
 
-[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 
-[ext_resource type="Script" uid="uid://dn8nyii2qbjm7" path="res://Compatibility/LegacyTween.gd" id="LegacyTweenMigration"]
+[ext_resource type="Script" uid="uid://dn8nyii2qbjm7" path="res://Code/Compatibility/LegacyTween.gd" id="LegacyTweenMigration"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_130.tres" id="m7_shared_130"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_130.tres" id="m7_shared_130"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_148.tres" id="m7_shared_148"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_148.tres" id="m7_shared_148"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_207.tres" id="m7_shared_207"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_207.tres" id="m7_shared_207"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_235.tres" id="m7_shared_235"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_235.tres" id="m7_shared_235"]
 
-[ext_resource type="GradientTexture1D" path="res://Runtime/Compatibility/Scenes/Resources/SharedGradientTexture1D_267.tres" id="m7_shared_267"]
+[ext_resource type="GradientTexture1D" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedGradientTexture1D_267.tres" id="m7_shared_267"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_81.tres" id="m7_shared_81"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_81.tres" id="m7_shared_81"]
 
 [sub_resource type="Animation" id="410"]
 length = 0.001

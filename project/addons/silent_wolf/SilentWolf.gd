@@ -11,10 +11,10 @@ var Scores
 var Players
 var Multiplayer
 func _ready():
-	Auth = load("res://LocalServices/LocalAuth.gd").new()
-	Scores = load("res://LocalServices/LocalScores.gd").new()
-	Players = load("res://LocalServices/LocalPlayers.gd").new()
-	Multiplayer = load("res://LocalServices/LocalMultiplayer.gd").new()
+	Auth = load("res://Code/LocalServices/LocalAuth.gd").new()
+	Scores = load("res://Code/LocalServices/LocalScores.gd").new()
+	Players = load("res://Code/LocalServices/LocalPlayers.gd").new()
+	Multiplayer = load("res://Code/LocalServices/LocalMultiplayer.gd").new()
 	for pair in [[Auth,"Auth"], [Scores,"Scores"], [Players,"Players"], [Multiplayer,"Multiplayer"]]:
 		pair[0].name = pair[1]
 		add_child(pair[0])

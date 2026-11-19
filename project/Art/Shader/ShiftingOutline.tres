@@ -1,0 +1,30 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+
+uniform sampler2D gradient : repeat_disable, filter_linear;
+uniform float speed : hint_range(0.1,10,0.01) = 1.0;
+uniform float frequency : hint_range(0,100,0.01) = 1.0;
+uniform float threshold : hint_range(0, 1, 0.01) = 0.3;
+uniform float fade : hint_range(0, 4, 0.01) = 2;
+
+const vec4 brown = vec4(0.24, 0.15, 0.11, 1);
+
+void fragment(){
+\tCOLOR = texture(TEXTURE, UV);
+\tif (COLOR.r < threshold) {
+\t\tfloat ONE = 1.0;
+\t\tfloat offset = modf(UV.y * frequency + bb_shader_time * speed, ONE);
+\t\tfloat f = clamp((threshold - COLOR.r) *fade, 0 , 1);
+\t\t//f = 1.0;
+\t\tvec3 gradientS = texture(gradient, vec2(offset)).rgb;
+\t\t//COLOR.rgb = gradientS * 1.6 * f;
+\t\t
+\t\tCOLOR.rgb = mix(brown.rgb, gradientS * 1.6, f);
+\t\t
+\t}
+\telse
+\t\tCOLOR = vec4(0.24, 0.15, 0.11, COLOR.a * 0.9);
+}"

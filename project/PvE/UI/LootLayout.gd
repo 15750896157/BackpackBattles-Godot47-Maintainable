@@ -3,7 +3,7 @@ extends RefCounted
 const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const SCREEN = preload("res://PvE/UI/LootScreen.tscn")
 const CARD = preload("res://PvE/UI/LootCard.tscn")
-const MODEL = preload("res://Runtime/ViewModel/LootVM.gd")
+const MODEL = preload("res://Code/Runtime/ViewModel/LootVM.gd")
 const INK = Color("513c26")
 
 static func show_page(page) -> void:

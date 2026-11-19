@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3]
-[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/HalberdShineMask.png" id="10_2x72s"]
-[ext_resource type="Material" path="res://Items/Exclusive/Materials/SteelShine.material" id="9_5e5db"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/HalberdShineMask.png" id="10_2x72s"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Materials/SteelShine.material" id="9_5e5db"]
 
 [sub_resource type="Animation" id="19"]
 resource_name = "Shine"

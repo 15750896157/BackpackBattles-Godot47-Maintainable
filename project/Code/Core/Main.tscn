@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://ceqbfojhtcuqn"]
+
+[ext_resource type="Environment" uid="uid://5vhlv7i5rk1h" path="res://default_env.tres" id="11"]
+
+[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/PlayerMotion.tres" id="m7_library_PlayerMotion"]
+
+[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/LegacyScreenTransitions.tres" id="m7_library_LegacyScreenTransitions"]
+
+[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/ShortcutAnimations.tres" id="m7_library_ShortcutAnimations"]
+
+[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/StartupAnimations.tres" id="m7_library_StartupAnimations"]
+
+[ext_resource type="PackedScene" path="res://PvE/Scenes/Combat.tscn" id="m7_scene_LegacyCombat"]
+
+[ext_resource type="PackedScene" path="res://PvE/Scenes/Shop.tscn" id="m7_scene_LegacyShop"]
+
+[ext_resource type="PackedScene" path="res://PvE/Scenes/Title.tscn" id="m7_scene_LegacyTitle"]
+
+[ext_resource type="PackedScene" path="res://PvE/Scenes/HUD.tscn" id="m7_scene_LegacyUI"]
+
+[node name="Main" type="Node2D" unique_id=2047487197]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=281645886]
+environment = ExtResource("11")
+
+[node name="Combat" parent="." unique_id=1250145469 instance=ExtResource("m7_scene_LegacyCombat")]
+
+[node name="Shop" parent="." unique_id=2020562428 instance=ExtResource("m7_scene_LegacyShop")]
+
+[node name="Player" type="Node2D" parent="." unique_id=772501177]
+z_index = 40
+
+[node name="TitleScreen" parent="." unique_id=1928726272 instance=ExtResource("m7_scene_LegacyTitle")]
+
+[node name="UI" parent="." unique_id=219519902 instance=ExtResource("m7_scene_LegacyUI")]
+
+[node name="PlayerNodeAnimation" type="AnimationPlayer" parent="." unique_id=787226290]
+root_node = NodePath("../SceneAnimation")
+libraries/ = ExtResource("m7_library_PlayerMotion")
+
+[node name="SceneAnimation" type="AnimationPlayer" parent="." unique_id=1670268156]
+root_node = NodePath("../Shop")
+libraries/ = ExtResource("m7_library_LegacyScreenTransitions")
+
+[node name="ShortcutAnimationPlayer" type="AnimationPlayer" parent="." unique_id=2016955769]
+libraries/ = ExtResource("m7_library_ShortcutAnimations")
+
+[node name="SplashscreenAnimation" type="AnimationPlayer" parent="." unique_id=709594107]
+libraries/ = ExtResource("m7_library_StartupAnimations")
+
+[connection signal="pressed" from="Combat/CombatLogButtonNode/CombatLogButton" to="UI/CombatLog/CombatLog" method="onButtonPressed"]
+
+[connection signal="pressed" from="UI/SurvivalPrompt/TakeWin" to="Combat" method="cancelSurvivalMode"]
+
+[connection signal="pressed" from="UI/SurvivalPrompt/StartSurvival" to="Combat" method="startSurvivalMode"]

@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bwcn13q15bh2g"]
+
+[ext_resource type="Texture2D" path="res://UI/Interface/Tooltips/TooltipBase2.png" id="1_i4hyx"]
+[ext_resource type="Script" path="res://UI/Interface/Tooltips/SimpleTooltip.gd" id="2_gk5x4"]
+[ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="3_jtilj"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="4_vkke0"]
+[ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="5_fk7gp"]
+[ext_resource type="RichTextEffect" path="res://UI/Interface/SColorTextEffect.tres" id="6_ir4mc"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="7_vwv8g"]
+
+[sub_resource type="FontVariation" id="4"]
+base_font = ExtResource("4_vkke0")
+script = ExtResource("5_fk7gp")
+size = 40
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[sub_resource type="FontVariation" id="3"]
+base_font = ExtResource("7_vwv8g")
+script = ExtResource("5_fk7gp")
+size = 25
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[node name="Tooltip" type="NinePatchRect" groups=["Tooltip"]]
+offset_right = 585.0
+offset_bottom = 146.0
+texture = ExtResource("1_i4hyx")
+patch_margin_left = 60
+patch_margin_top = 123
+patch_margin_right = 80
+patch_margin_bottom = 76
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("2_gk5x4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+offset_left = 62.0
+offset_top = 49.0
+offset_right = -66.0
+offset_bottom = 150.0
+theme_override_constants/separation = 12
+
+[node name="Name" type="RichTextLabel" parent="VBoxContainer"]
+offset_right = 457.0
+offset_bottom = 55.0
+custom_minimum_size = Vector2(0, 55)
+clip_contents = false
+mouse_filter = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/italics_font = ExtResource("3_jtilj")
+theme_override_fonts/normal_font = SubResource("4")
+bbcode_enabled = true
+text = "Header [b][img=40]res://UI/Interface/Tooltips/Icon_Melee.png[/img][img=0x28]res://UI/Interface/Tooltips/Icon_Ranged.png[/img][/b]"
+text = "Header "
+fit_content = true
+scroll_active = false
+custom_effects = [ExtResource("6_ir4mc")]
+theme_override_font_sizes/normal_font_size = 40
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[node name="Description" type="RichTextLabel" parent="VBoxContainer"]
+offset_top = 67.0
+offset_right = 457.0
+offset_bottom = 101.0
+clip_contents = false
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/italics_font = ExtResource("3_jtilj")
+theme_override_fonts/normal_font = SubResource("3")
+bbcode_enabled = true
+text = "A wooden Buckler. "
+text = "A wooden Buckler. "
+fit_content = true
+scroll_active = false
+custom_effects = [ExtResource("6_ir4mc")]
+theme_override_font_sizes/normal_font_size = 25
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)

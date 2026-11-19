@@ -1,0 +1,26 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=3 format=2]
+
+[sub_resource type="Curve" id=13]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), -0.165151, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=14]
+curve = SubResource( 13 )
+
+[resource]
+lifetime_randomness = 0.13
+particle_flag_disable_z = true
+direction = Vector3( 0, -1, 0 )
+spread = 123.47
+gravity = Vector3( 0, 0, 0 )
+scale_curve = SubResource( 14 )
+initial_velocity_min = 235.657
+initial_velocity_max = 298.3
+angle_min = 0
+angle_max = 720
+orbit_velocity_min = -0
+orbit_velocity_max = 0
+tangential_accel_min = 205
+tangential_accel_max = 500
+scale_min = 1
+scale_max = 1.7
+

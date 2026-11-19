@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://fgoqgv13hxi"]
+
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/RangerBag_Border.png" id="1_e74k2"]
+[ext_resource type="Script" path="res://Art/Items/Tiles/BagBorder.gd" id="2_phu4h"]
+
+[node name="Border" type="Sprite2D"]
+process_priority = -10
+modulate = Color(0.447059, 0.737255, 0.380392, 1)
+z_index = 2
+texture = ExtResource("1_e74k2")
+script = ExtResource("2_phu4h")

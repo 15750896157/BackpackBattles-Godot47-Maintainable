@@ -4,7 +4,7 @@ const READY_TIMEOUT_MS = 25000
 const TITLE_SCENE = "res://PvE/UI/TitleScreen.tscn"
 const COMBAT_SCENE = "res://PvE/UI/CombatScreen.tscn"
 const TITLE_VIEW = preload("res://PvE/UI/TitleScreen.gd")
-const TITLE_MODEL = preload("res://Runtime/ViewModel/TitleVM.gd")
+const TITLE_MODEL = preload("res://Code/Runtime/ViewModel/TitleVM.gd")
 const REFERENCE = preload("res://PvE/UI/ReferenceCanvas.gd")
 const SHOP_PRESENTATION = preload("res://PvE/NativeShopPresentation.gd")
 var owner: Node

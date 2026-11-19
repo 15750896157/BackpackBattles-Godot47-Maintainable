@@ -162,8 +162,8 @@ SCENES = {
     "PoisonDagger": {"ids": ["supply_basic_staff", "supply_puppet", "venom_needle"], "base": "item"},
 }
 
-ITEM_TSCN = "res://Items/Item.tscn"
-GEM_TSCN = "res://Items/Gems/Gem.tscn"
+ITEM_TSCN = "res://Art/Items/Item.tscn"
+GEM_TSCN = "res://Art/Items/Gems/Gem.tscn"
 GEM_TEMPLATE = "res://PvE/Items/GemBase.tscn"
 
 # 根下已知子节点（这些是模板结构，不算「额外节点」）。
@@ -401,7 +401,7 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
     socket_nodes = list(re.finditer(r'\[node name="([^"]+)"(?: type="(\w+)")? parent="Icon/Sockets" index="\d+"(?: instance=ExtResource\("([^"]+)"\))?\]', text))
     for sm in socket_nodes:
         name, ntype, inst = sm.group(1), sm.group(2), sm.group(3)
-        assert inst is not None and ext[inst][1] == "res://Items/GemSocket.tscn", \
+        assert inst is not None and ext[inst][1] == "res://Art/Items/GemSocket.tscn", \
             f"{path.name}: Sockets 下 {name} 不是 GemSocket 实例，停手汇报"
         block_end = text.find("\n[node", sm.end())
         block = text[sm.end():block_end if block_end != -1 else len(text)]

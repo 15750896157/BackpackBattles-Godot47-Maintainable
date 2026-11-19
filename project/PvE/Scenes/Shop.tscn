@@ -1,208 +1,208 @@
 [gd_scene format=3 uid="uid://o88xsc19cab66"]
 
-[ext_resource type="PackedScene" path="res://Interface/ShopOffer.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://UI/Interface/ShopOffer.tscn" id="1"]
 
-[ext_resource type="Script" uid="uid://bygfklwjdevl6" path="res://Core/Shop.gd" id="2"]
+[ext_resource type="Script" uid="uid://bygfklwjdevl6" path="res://Code/Core/Shop.gd" id="2"]
 
-[ext_resource type="Texture2D" uid="uid://wj8ry6wtgctf" path="res://Assets/Shop/Shopkeeper/Shopkeeper.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://wj8ry6wtgctf" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper.png" id="4"]
 
-[ext_resource type="Script" uid="uid://dilxsoyf7jrau" path="res://Interface/StartCombatButton.gd" id="5"]
+[ext_resource type="Script" uid="uid://dilxsoyf7jrau" path="res://UI/Interface/StartCombatButton.gd" id="5"]
 
-[ext_resource type="Texture2D" uid="uid://cqqcwg08rg7fb" path="res://Assets/Decoration/Vase.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cqqcwg08rg7fb" path="res://Art/Assets/Decoration/Vase.png" id="6"]
 
-[ext_resource type="Material" path="res://Shader/StartButtonParticles.material" id="7"]
+[ext_resource type="Material" path="res://Art/Shader/StartButtonParticles.material" id="7"]
 
-[ext_resource type="Texture2D" uid="uid://uy61wstnacts" path="res://Assets/Light/ShopLight.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://uy61wstnacts" path="res://Art/Assets/Light/ShopLight.png" id="12"]
 
-[ext_resource type="Texture2D" uid="uid://b0qmhs5cumgu2" path="res://Assets/Shop/Shopkeeper/Shopkeeper_Tail.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://b0qmhs5cumgu2" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Tail.png" id="13"]
 
-[ext_resource type="Texture2D" uid="uid://blwb7pgiusqys" path="res://Assets/Shop/Shopkeeper/Shopkeeper_Arm.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://blwb7pgiusqys" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Arm.png" id="14"]
 
-[ext_resource type="Script" uid="uid://dgju3at8nmvet" path="res://Interface/Sellbox.gd" id="16"]
+[ext_resource type="Script" uid="uid://dgju3at8nmvet" path="res://UI/Interface/Sellbox.gd" id="16"]
 
-[ext_resource type="Script" uid="uid://b5kvfb2nnhesv" path="res://Interface/Storagebox.gd" id="17"]
+[ext_resource type="Script" uid="uid://b5kvfb2nnhesv" path="res://UI/Interface/Storagebox.gd" id="17"]
 
-[ext_resource type="Texture2D" uid="uid://belp2xtn4ohxw" path="res://Assets/Shop/Shelf3.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://belp2xtn4ohxw" path="res://Art/Assets/Shop/Shelf3.png" id="19"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="20"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="20"]
 
-[ext_resource type="Texture2D" uid="uid://qxp5sf3cy1r8" path="res://Assets/Shop/Sign1.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://qxp5sf3cy1r8" path="res://Art/Assets/Shop/Sign1.png" id="21"]
 
-[ext_resource type="Script" uid="uid://cfkbvlegitxff" path="res://Interface/RerollRope.gd" id="22"]
+[ext_resource type="Script" uid="uid://cfkbvlegitxff" path="res://UI/Interface/RerollRope.gd" id="22"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="23"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
 
-[ext_resource type="Texture2D" uid="uid://teve64bp60d5" path="res://Assets/Shop/Rope.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://teve64bp60d5" path="res://Art/Assets/Shop/Rope.png" id="24"]
 
-[ext_resource type="Texture2D" uid="uid://b2wc3rrkgrsy6" path="res://Assets/Shop/Rope_hovered.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://b2wc3rrkgrsy6" path="res://Art/Assets/Shop/Rope_hovered.png" id="25"]
 
-[ext_resource type="Texture2D" uid="uid://doqp0hgxk7g3h" path="res://Assets/Shop/Storagebox.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://doqp0hgxk7g3h" path="res://Art/Assets/Shop/Storagebox.png" id="26"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="27"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
 
-[ext_resource type="Texture2D" uid="uid://b6y5wgl02kdfb" path="res://Assets/Banner1.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://b6y5wgl02kdfb" path="res://Art/Assets/Banner1.png" id="30"]
 
-[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Assets/Particles/Dust1.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Art/Assets/Particles/Dust1.png" id="32"]
 
-[ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://Interface/ItemLibrary/ItemLibraryButton.gd" id="39"]
+[ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://UI/Interface/ItemLibrary/ItemLibraryButton.gd" id="39"]
 
-[ext_resource type="Texture2D" uid="uid://cwjakn3ae678c" path="res://Assets/Shop/Sign1_progress.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://cwjakn3ae678c" path="res://Art/Assets/Shop/Sign1_progress.png" id="40"]
 
-[ext_resource type="PackedScene" path="res://Assets/Decoration/Shelf.tscn" id="42"]
+[ext_resource type="PackedScene" path="res://Art/Assets/Decoration/Shelf.tscn" id="42"]
 
-[ext_resource type="Texture2D" uid="uid://dnwxewy8uyxda" path="res://Assets/Decoration/Lamp.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://dnwxewy8uyxda" path="res://Art/Assets/Decoration/Lamp.png" id="43"]
 
-[ext_resource type="Script" uid="uid://bqc8rskexqkem" path="res://Assets/Decoration/Lamp.gd" id="44"]
+[ext_resource type="Script" uid="uid://bqc8rskexqkem" path="res://Art/Assets/Decoration/Lamp.gd" id="44"]
 
-[ext_resource type="Texture2D" uid="uid://bl88meprsvp38" path="res://Assets/Decoration/Flower.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://bl88meprsvp38" path="res://Art/Assets/Decoration/Flower.png" id="46"]
 
-[ext_resource type="Texture2D" uid="uid://k4gkbyr7htv1" path="res://Assets/Decoration/Umbrella.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://k4gkbyr7htv1" path="res://Art/Assets/Decoration/Umbrella.png" id="48"]
 
-[ext_resource type="Texture2D" uid="uid://bhnsu4wsegi6i" path="res://Assets/Decoration/Basket.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://bhnsu4wsegi6i" path="res://Art/Assets/Decoration/Basket.png" id="49"]
 
-[ext_resource type="Script" uid="uid://bj5o16777dun5" path="res://Assets/Decoration/FlowerVase.gd" id="50"]
+[ext_resource type="Script" uid="uid://bj5o16777dun5" path="res://Art/Assets/Decoration/FlowerVase.gd" id="50"]
 
-[ext_resource type="Script" uid="uid://cdl0vjitld7ip" path="res://Assets/Decoration/UmbrellaBasket.gd" id="51"]
+[ext_resource type="Script" uid="uid://cdl0vjitld7ip" path="res://Art/Assets/Decoration/UmbrellaBasket.gd" id="51"]
 
-[ext_resource type="Texture2D" uid="uid://cll8uvwt5olq3" path="res://Assets/Speckles.jpg" id="63"]
+[ext_resource type="Texture2D" uid="uid://cll8uvwt5olq3" path="res://Art/Assets/Speckles.jpg" id="63"]
 
-[ext_resource type="Material" path="res://Shader/AdditiveCanvasItemMaterial.tres" id="64"]
+[ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="64"]
 
-[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Assets/Heart.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
 
-[ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Assets/shadow.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Art/Assets/shadow.png" id="77"]
 
-[ext_resource type="Texture2D" uid="uid://do1fve2aungww" path="res://Interface/Tooltips/TooltipBase2.png" id="78"]
+[ext_resource type="Texture2D" uid="uid://do1fve2aungww" path="res://UI/Interface/Tooltips/TooltipBase2.png" id="78"]
 
-[ext_resource type="Texture2D" uid="uid://6u55yi7bnkql" path="res://Assets/Shop/Sign2.png" id="82"]
+[ext_resource type="Texture2D" uid="uid://6u55yi7bnkql" path="res://Art/Assets/Shop/Sign2.png" id="82"]
 
-[ext_resource type="Script" uid="uid://phvtoud7yg0a" path="res://Interface/Textbox.gd" id="83"]
+[ext_resource type="Script" uid="uid://phvtoud7yg0a" path="res://UI/Interface/Textbox.gd" id="83"]
 
-[ext_resource type="Texture2D" uid="uid://nm3kd5t1y46h" path="res://Assets/Shop/Shopkeeper/Speechbubble1.png" id="84"]
+[ext_resource type="Texture2D" uid="uid://nm3kd5t1y46h" path="res://Art/Assets/Shop/Shopkeeper/Speechbubble1.png" id="84"]
 
-[ext_resource type="Script" uid="uid://wwy1n6qvnw4" path="res://Interface/SpeechBubble.gd" id="85"]
+[ext_resource type="Script" uid="uid://wwy1n6qvnw4" path="res://UI/Interface/SpeechBubble.gd" id="85"]
 
-[ext_resource type="RichTextEffect" path="res://Interface/RiseUpTextEffect.tres" id="86"]
+[ext_resource type="RichTextEffect" path="res://UI/Interface/RiseUpTextEffect.tres" id="86"]
 
-[ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
 
-[ext_resource type="Script" uid="uid://duhujpqwo7qfb" path="res://Interface/Shopkeeper.gd" id="93"]
+[ext_resource type="Script" uid="uid://duhujpqwo7qfb" path="res://UI/Interface/Shopkeeper.gd" id="93"]
 
-[ext_resource type="AudioStream" uid="uid://d0r8rfguohu6w" path="res://Assets/Sound/Furcifer/Meow_single4.ogg" id="112"]
+[ext_resource type="AudioStream" uid="uid://d0r8rfguohu6w" path="res://Audio/Sound/Furcifer/Meow_single4.ogg" id="112"]
 
-[ext_resource type="AudioStream" uid="uid://bl0p8w36vbw4j" path="res://Assets/Sound/Furcifer/Meow_single1.ogg" id="113"]
+[ext_resource type="AudioStream" uid="uid://bl0p8w36vbw4j" path="res://Audio/Sound/Furcifer/Meow_single1.ogg" id="113"]
 
-[ext_resource type="AudioStream" uid="uid://ce2wt5rq4yqs6" path="res://Assets/Sound/Furcifer/Meow_single2.ogg" id="114"]
+[ext_resource type="AudioStream" uid="uid://ce2wt5rq4yqs6" path="res://Audio/Sound/Furcifer/Meow_single2.ogg" id="114"]
 
-[ext_resource type="AudioStream" uid="uid://b4v5xib0yvxdh" path="res://Assets/Sound/Furcifer/Meow_single3.ogg" id="115"]
+[ext_resource type="AudioStream" uid="uid://b4v5xib0yvxdh" path="res://Audio/Sound/Furcifer/Meow_single3.ogg" id="115"]
 
-[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Assets/Particles/GlowingDot_small.png" id="116"]
+[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
 
-[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Utility/AutoHideParticles.gd" id="121"]
+[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
 
-[ext_resource type="Texture2D" uid="uid://dg0wiyu5k5stx" path="res://Interface/RedArrow.png" id="132"]
+[ext_resource type="Texture2D" uid="uid://dg0wiyu5k5stx" path="res://UI/Interface/RedArrow.png" id="132"]
 
-[ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Assets/Particles/GlowingDot.png" id="134"]
+[ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Art/Assets/Particles/GlowingDot.png" id="134"]
 
-[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Shader/SmoothFadeGradient.tres" id="135"]
+[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Art/Shader/SmoothFadeGradient.tres" id="135"]
 
-[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Shader/TextDissolveMaterial.tres" id="139"]
+[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
 
-[ext_resource type="Texture2D" uid="uid://xunrrwyavs7s" path="res://Assets/Chestnut/Bottom_back.png" id="140"]
+[ext_resource type="Texture2D" uid="uid://xunrrwyavs7s" path="res://Art/Assets/Chestnut/Bottom_back.png" id="140"]
 
-[ext_resource type="Script" uid="uid://2rxwgbgtiq2u" path="res://Utility/StartButtonArea.gd" id="148"]
+[ext_resource type="Script" uid="uid://2rxwgbgtiq2u" path="res://Code/Utility/StartButtonArea.gd" id="148"]
 
-[ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://Interface/ItemLibrary/ItemLibraryButton.png" id="149"]
+[ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://UI/Interface/ItemLibrary/ItemLibraryButton.png" id="149"]
 
-[ext_resource type="Texture2D" uid="uid://dhw4evbd6yifu" path="res://Assets/Patch1.png" id="150"]
+[ext_resource type="Texture2D" uid="uid://dhw4evbd6yifu" path="res://Art/Assets/Patch1.png" id="150"]
 
-[ext_resource type="Texture2D" uid="uid://dn1lwwajnsbtg" path="res://Assets/Shop/Shopkeeper/Shopkeeper_Head.png" id="153"]
+[ext_resource type="Texture2D" uid="uid://dn1lwwajnsbtg" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Head.png" id="153"]
 
-[ext_resource type="BitMap" uid="uid://c3g1fjipvgfws" path="res://Assets/Shop/Rope_Clickarea.png" id="157"]
+[ext_resource type="BitMap" uid="uid://c3g1fjipvgfws" path="res://Art/Assets/Shop/Rope_Clickarea.png" id="157"]
 
-[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://Interface/FocusGrabbingButton.gd" id="158"]
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://UI/Interface/FocusGrabbingButton.gd" id="158"]
 
-[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
 
-[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://Interface/DraggableScrollContainer.gd" id="163"]
+[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://UI/Interface/DraggableScrollContainer.gd" id="163"]
 
-[ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Items/Exclusive/Animations/GooglyEye.gd" id="170"]
+[ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Art/Items/Exclusive/Animations/GooglyEye.gd" id="170"]
 
-[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://Interface/SmallArrow.png" id="175"]
+[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://UI/Interface/SmallArrow.png" id="175"]
 
-[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Utility/LocalizedControl.gd" id="182"]
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 
-[ext_resource type="Script" uid="uid://uaf63eiohg0j" path="res://Interface/GridStorage.gd" id="194"]
+[ext_resource type="Script" uid="uid://uaf63eiohg0j" path="res://UI/Interface/GridStorage.gd" id="194"]
 
-[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://Interface/AnvilButton.png" id="196"]
+[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://UI/Interface/AnvilButton.png" id="196"]
 
-[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://Interface/RecipeBookButton.gd" id="197"]
+[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://UI/Interface/RecipeBookButton.gd" id="197"]
 
-[ext_resource type="Script" uid="uid://c0jix5lpfg60i" path="res://Interface/RarityHint.gd" id="217"]
+[ext_resource type="Script" uid="uid://c0jix5lpfg60i" path="res://UI/Interface/RarityHint.gd" id="217"]
 
-[ext_resource type="Script" uid="uid://oumlpyrftra6" path="res://Interface/PaintingCanvas.gd" id="218"]
+[ext_resource type="Script" uid="uid://oumlpyrftra6" path="res://UI/Interface/PaintingCanvas.gd" id="218"]
 
-[ext_resource type="Texture2D" uid="uid://k10q48jgqgr1" path="res://Interface/DashedArrow2.png" id="221"]
+[ext_resource type="Texture2D" uid="uid://k10q48jgqgr1" path="res://UI/Interface/DashedArrow2.png" id="221"]
 
-[ext_resource type="Script" uid="uid://vwxjgab4m2py" path="res://Interface/StorageShakeButton.gd" id="222"]
+[ext_resource type="Script" uid="uid://vwxjgab4m2py" path="res://UI/Interface/StorageShakeButton.gd" id="222"]
 
-[ext_resource type="Script" uid="uid://bs38xk6s5nus0" path="res://Utility/ItemBoundChecker.gd" id="227"]
+[ext_resource type="Script" uid="uid://bs38xk6s5nus0" path="res://Code/Utility/ItemBoundChecker.gd" id="227"]
 
-[ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Items/Exclusive/Sprites/Pupil2.png" id="231"]
+[ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Art/Items/Exclusive/Sprites/Pupil2.png" id="231"]
 
-[ext_resource type="PackedScene" path="res://Interface/RerollRopeTag.tscn" id="233"]
+[ext_resource type="PackedScene" path="res://UI/Interface/RerollRopeTag.tscn" id="233"]
 
-[ext_resource type="FontFile" path="res://Interface/Tooltips/ImageFont.tres" id="235"]
+[ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="235"]
 
-[ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Assets/Chestnut/Eye.png" id="237"]
+[ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Art/Assets/Chestnut/Eye.png" id="237"]
 
-[ext_resource type="Texture2D" uid="uid://c88u5u8ss7b23" path="res://Assets/Chestnut/Top_front.png" id="238"]
+[ext_resource type="Texture2D" uid="uid://c88u5u8ss7b23" path="res://Art/Assets/Chestnut/Top_front.png" id="238"]
 
-[ext_resource type="Texture2D" uid="uid://ba21tmupdvdxn" path="res://Assets/Chestnut/Bottom_front.png" id="239"]
+[ext_resource type="Texture2D" uid="uid://ba21tmupdvdxn" path="res://Art/Assets/Chestnut/Bottom_front.png" id="239"]
 
-[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Shader/VerySmoothFadeGradient.tres" id="253"]
+[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="253"]
 
-[ext_resource type="Texture2D" uid="uid://c2rr1fw4lj8hh" path="res://Interface/YellowDot.png" id="262"]
+[ext_resource type="Texture2D" uid="uid://c2rr1fw4lj8hh" path="res://UI/Interface/YellowDot.png" id="262"]
 
-[ext_resource type="Texture2D" uid="uid://cyphw3dnpxm4k" path="res://Interface/ExclamationMark1.png" id="263"]
+[ext_resource type="Texture2D" uid="uid://cyphw3dnpxm4k" path="res://UI/Interface/ExclamationMark1.png" id="263"]
 
-[ext_resource type="Texture2D" uid="uid://bh230x6i51sus" path="res://Interface/Checkmark.png" id="264"]
+[ext_resource type="Texture2D" uid="uid://bh230x6i51sus" path="res://UI/Interface/Checkmark.png" id="264"]
 
-[ext_resource type="Texture2D" uid="uid://1pwg5fm8pmbd" path="res://Assets/Chestnut/ThinkBubble1.png" id="267"]
+[ext_resource type="Texture2D" uid="uid://1pwg5fm8pmbd" path="res://Art/Assets/Chestnut/ThinkBubble1.png" id="267"]
 
-[ext_resource type="Texture2D" uid="uid://bfvd2vcxbcxyh" path="res://Assets/Chestnut/ThinkBubble2.png" id="268"]
+[ext_resource type="Texture2D" uid="uid://bfvd2vcxbcxyh" path="res://Art/Assets/Chestnut/ThinkBubble2.png" id="268"]
 
-[ext_resource type="Script" uid="uid://diqa088xtlced" path="res://Interface/ChestnutTrade.gd" id="269"]
+[ext_resource type="Script" uid="uid://diqa088xtlced" path="res://UI/Interface/ChestnutTrade.gd" id="269"]
 
-[ext_resource type="Texture2D" uid="uid://cmw14ooagfuuu" path="res://Assets/Chestnut/Arrow.png" id="270"]
+[ext_resource type="Texture2D" uid="uid://cmw14ooagfuuu" path="res://Art/Assets/Chestnut/Arrow.png" id="270"]
 
-[ext_resource type="Texture2D" uid="uid://bl71v7dms2dfg" path="res://Assets/Cloud.png" id="271"]
+[ext_resource type="Texture2D" uid="uid://bl71v7dms2dfg" path="res://Art/Assets/Cloud.png" id="271"]
 
-[ext_resource type="Script" uid="uid://dgchvlvcrua0k" path="res://Utility/AutoHideCPUParticles.gd" id="272"]
+[ext_resource type="Script" uid="uid://dgchvlvcrua0k" path="res://Code/Utility/AutoHideCPUParticles.gd" id="272"]
 
-[ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Assets/Chestnut/Top_teeth.png" id="274"]
+[ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Art/Assets/Chestnut/Top_teeth.png" id="274"]
 
-[ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Assets/Chestnut/Tongue.png" id="275"]
+[ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Art/Assets/Chestnut/Tongue.png" id="275"]
 
-[ext_resource type="Texture2D" uid="uid://inu0rlm2tq75" path="res://Interface/ChartRect.png" id="277"]
+[ext_resource type="Texture2D" uid="uid://inu0rlm2tq75" path="res://UI/Interface/ChartRect.png" id="277"]
 
-[ext_resource type="Script" uid="uid://brk8etnil5fil" path="res://Interface/ShopRarityChart.gd" id="278"]
+[ext_resource type="Script" uid="uid://brk8etnil5fil" path="res://UI/Interface/ShopRarityChart.gd" id="278"]
 
-[ext_resource type="Texture2D" uid="uid://ekncntee7c5g" path="res://Shader/SmoothFadeInGradient.tres" id="282"]
+[ext_resource type="Texture2D" uid="uid://ekncntee7c5g" path="res://Art/Shader/SmoothFadeInGradient.tres" id="282"]
 
-[ext_resource type="PackedScene" path="res://Interface/GridStorageEntry.tscn" id="305"]
+[ext_resource type="PackedScene" path="res://UI/Interface/GridStorageEntry.tscn" id="305"]
 
-[ext_resource type="Theme" uid="uid://dehhsf5k62law" path="res://Interface/ScrollbarTheme.tres" id="309"]
+[ext_resource type="Theme" uid="uid://dehhsf5k62law" path="res://UI/Interface/ScrollbarTheme.tres" id="309"]
 
-[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_148.tres" id="m7_shared_148"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_148.tres" id="m7_shared_148"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_17.tres" id="m7_shared_17"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_17.tres" id="m7_shared_17"]
 
-[ext_resource type="GradientTexture1D" path="res://Runtime/Compatibility/Scenes/Resources/SharedGradientTexture1D_267.tres" id="m7_shared_267"]
+[ext_resource type="GradientTexture1D" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedGradientTexture1D_267.tres" id="m7_shared_267"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_81.tres" id="m7_shared_81"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_81.tres" id="m7_shared_81"]
 
 [sub_resource type="Shader" id="288"]
 code = "shader_type canvas_item;

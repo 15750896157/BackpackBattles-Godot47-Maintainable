@@ -1,4 +1,4 @@
-extends "res://Runtime/Scene/TransitionContext.gd"
+extends "res://Code/Runtime/Scene/TransitionContext.gd"
 ## Native compatibility adapter. Domain/singleton access stays out of the layer.
 
 func is_stopping() -> bool:

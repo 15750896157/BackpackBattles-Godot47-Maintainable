@@ -1,7 +1,7 @@
 extends Control
 ## The scene owns layout and feedback. The host supplies the model, art and font.
 
-const TitleVM = preload("res://Runtime/ViewModel/TitleVM.gd")
+const TitleVM = preload("res://Code/Runtime/ViewModel/TitleVM.gd")
 const ART_KEYS = [
 	"title", "title_logo", "select_armorer", "select_archer", "select_alchemist",
 	"title_book", "button", "button_blue", "button_red", "settings",

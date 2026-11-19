@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c1uwyd1ef0e4j"]
+
+[ext_resource type="Script" path="res://Art/Items/Exclusive/Animations/AmuletOfAlchemyAni.gd" id="1_cjvqq"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/AmuletOfAlchemyAni1Particles.material" id="2_4n1t0"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Light/RingLight.png" id="3_2yrhy"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/AmuletOfAlchemyAni2Particles.material" id="4_ovt1i"]
+
+[node name="Node2D" type="Node2D"]
+z_index = 5
+script = ExtResource("1_cjvqq")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+self_modulate = Color(3, 3, 3, 0.768627)
+emitting = false
+lifetime = 0.72
+local_coords = false
+process_material = ExtResource("2_4n1t0")
+texture = ExtResource("3_2yrhy")
+
+[node name="Particles2D2" type="GPUParticles2D" parent="."]
+self_modulate = Color(3, 3, 3, 0.796078)
+emitting = false
+lifetime = 0.72
+one_shot = true
+explosiveness = 1.0
+local_coords = false
+process_material = ExtResource("4_ovt1i")
+texture = ExtResource("3_2yrhy")

@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://dipl1ydaau45b"]
-
-[ext_resource type="Texture2D" path="res://Assets/Fanfare.png" id="1_upnda"]
-
-[node name="Fanfare" type="Sprite2D"]
-position = Vector2(-27.9391, 153.721)
-rotation = -0.542797
-texture = ExtResource("1_upnda")
-offset = Vector2(204.58, -2.39233)

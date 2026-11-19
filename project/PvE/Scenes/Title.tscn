@@ -1,204 +1,204 @@
 [gd_scene format=3 uid="uid://xzbqbx64kczqj"]
 
-[ext_resource type="Texture2D" uid="uid://gsmsgkl7i4v4" path="res://Interface/BackpackButton.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://gsmsgkl7i4v4" path="res://UI/Interface/BackpackButton.png" id="8"]
 
-[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Assets/Trophy.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Art/Assets/Trophy.png" id="9"]
 
-[ext_resource type="Texture2D" uid="uid://cjoukh2vs0q3u" path="res://Interface/DiceButton_disabled.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://cjoukh2vs0q3u" path="res://UI/Interface/DiceButton_disabled.png" id="18"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Bold.ttc" id="23"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="31"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="31"]
 
-[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Assets/Particles/Dust1.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Art/Assets/Particles/Dust1.png" id="32"]
 
-[ext_resource type="Script" uid="uid://c10gnm4cbifci" path="res://Interface/TitleScreen.gd" id="33"]
+[ext_resource type="Script" uid="uid://c10gnm4cbifci" path="res://UI/Interface/TitleScreen.gd" id="33"]
 
-[ext_resource type="Texture2D" uid="uid://bod0c2qixsrea" path="res://Assets/TitleScreen/Title.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://bod0c2qixsrea" path="res://Art/Assets/TitleScreen/Title.png" id="35"]
 
 [ext_resource type="Texture2D" uid="uid://cnan1pfy7ja22" path="res://Art/Supplied20261102/bg/bg_main_menu.png" id="36"]
 
-[ext_resource type="PackedScene" path="res://Interface/LoadoutButton.tscn" id="37"]
+[ext_resource type="PackedScene" path="res://UI/Interface/LoadoutButton.tscn" id="37"]
 
-[ext_resource type="Texture2D" uid="uid://7tmtpn0c6jpb" path="res://Assets/TitleScreen/QuitSign.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://7tmtpn0c6jpb" path="res://Art/Assets/TitleScreen/QuitSign.png" id="38"]
 
-[ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://Interface/ItemLibrary/ItemLibraryButton.gd" id="39"]
+[ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://UI/Interface/ItemLibrary/ItemLibraryButton.gd" id="39"]
 
-[ext_resource type="Material" path="res://Shader/AdditiveCanvasItemMaterial.tres" id="64"]
+[ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="64"]
 
-[ext_resource type="Texture2D" uid="uid://v3uockslbycp" path="res://Assets/TitleScreen/RankedBanner.png" id="65"]
+[ext_resource type="Texture2D" uid="uid://v3uockslbycp" path="res://Art/Assets/TitleScreen/RankedBanner.png" id="65"]
 
-[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Assets/Watch.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Art/Assets/Watch.png" id="66"]
 
-[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Assets/Heart.png" id="67"]
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
 
-[ext_resource type="Texture2D" uid="uid://co3sdi8hdhdk4" path="res://Assets/TitleScreen/ContinueBanner.png" id="68"]
+[ext_resource type="Texture2D" uid="uid://co3sdi8hdhdk4" path="res://Art/Assets/TitleScreen/ContinueBanner.png" id="68"]
 
-[ext_resource type="Texture2D" uid="uid://g1wmombr5guo" path="res://Assets/Light/ContinueBanner_hovered.png" id="69"]
+[ext_resource type="Texture2D" uid="uid://g1wmombr5guo" path="res://Art/Assets/Light/ContinueBanner_hovered.png" id="69"]
 
-[ext_resource type="Texture2D" uid="uid://chvmx2t3v3kcd" path="res://Assets/TitleScreen/UnrankedBanner.png" id="70"]
+[ext_resource type="Texture2D" uid="uid://chvmx2t3v3kcd" path="res://Art/Assets/TitleScreen/UnrankedBanner.png" id="70"]
 
-[ext_resource type="Texture2D" uid="uid://d2nkhkmvk1omu" path="res://Assets/Light/RankedBanner_hovered.png" id="71"]
+[ext_resource type="Texture2D" uid="uid://d2nkhkmvk1omu" path="res://Art/Assets/Light/RankedBanner_hovered.png" id="71"]
 
-[ext_resource type="Texture2D" uid="uid://b62ybs0qkmr7b" path="res://Assets/Light/UnrankedBanner_hovered.png" id="72"]
+[ext_resource type="Texture2D" uid="uid://b62ybs0qkmr7b" path="res://Art/Assets/Light/UnrankedBanner_hovered.png" id="72"]
 
-[ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Assets/shadow.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Art/Assets/shadow.png" id="77"]
 
-[ext_resource type="Texture2D" uid="uid://dlbxd7foyxc15" path="res://Interface/DiceButton.png" id="79"]
+[ext_resource type="Texture2D" uid="uid://dlbxd7foyxc15" path="res://UI/Interface/DiceButton.png" id="79"]
 
-[ext_resource type="Texture2D" uid="uid://bnjbs5syuhk4v" path="res://Assets/TitleScreen/ChineseItemSearch.png" id="91"]
+[ext_resource type="Texture2D" uid="uid://bnjbs5syuhk4v" path="res://Art/Assets/TitleScreen/ChineseItemSearch.png" id="91"]
 
-[ext_resource type="StyleBox" path="res://Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
 
-[ext_resource type="Texture2D" uid="uid://camwo6eou1odc" path="res://Assets/TitleScreen/ConcedeBanner.png" id="96"]
+[ext_resource type="Texture2D" uid="uid://camwo6eou1odc" path="res://Art/Assets/TitleScreen/ConcedeBanner.png" id="96"]
 
-[ext_resource type="Script" uid="uid://ctwltvac4smxu" path="res://Utility/MultiTimer.gd" id="100"]
+[ext_resource type="Script" uid="uid://ctwltvac4smxu" path="res://Code/Utility/MultiTimer.gd" id="100"]
 
-[ext_resource type="Texture2D" uid="uid://bco0m2k5chfeh" path="res://Assets/TitleScreen/ChineseWiki.png" id="111"]
+[ext_resource type="Texture2D" uid="uid://bco0m2k5chfeh" path="res://Art/Assets/TitleScreen/ChineseWiki.png" id="111"]
 
-[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Assets/Particles/GlowingDot_small.png" id="116"]
+[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
 
-[ext_resource type="Texture2D" uid="uid://dcffy3i8ki8ek" path="res://Assets/TitleScreen/ChineseItemSearch_hovered.png" id="118"]
+[ext_resource type="Texture2D" uid="uid://dcffy3i8ki8ek" path="res://Art/Assets/TitleScreen/ChineseItemSearch_hovered.png" id="118"]
 
-[ext_resource type="Texture2D" uid="uid://dcbjxsjuheddj" path="res://Interface/BackpackButton_hovered.png" id="120"]
+[ext_resource type="Texture2D" uid="uid://dcbjxsjuheddj" path="res://UI/Interface/BackpackButton_hovered.png" id="120"]
 
-[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Utility/AutoHideParticles.gd" id="121"]
+[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
 
-[ext_resource type="Texture2D" uid="uid://c7l4w5t4ii31o" path="res://Assets/TitleScreen/PyromancerIcon_disabled.png" id="122"]
+[ext_resource type="Texture2D" uid="uid://c7l4w5t4ii31o" path="res://Art/Assets/TitleScreen/PyromancerIcon_disabled.png" id="122"]
 
-[ext_resource type="Texture2D" uid="uid://nnrjw0ug35re" path="res://Assets/Light/CircleLight.png" id="123"]
+[ext_resource type="Texture2D" uid="uid://nnrjw0ug35re" path="res://Art/Assets/Light/CircleLight.png" id="123"]
 
-[ext_resource type="Texture2D" uid="uid://c3cf02tajrxip" path="res://Assets/TitleScreen/DiscordIcon2_hovered.png" id="124"]
+[ext_resource type="Texture2D" uid="uid://c3cf02tajrxip" path="res://Art/Assets/TitleScreen/DiscordIcon2_hovered.png" id="124"]
 
-[ext_resource type="Texture2D" uid="uid://crwhrrprfvhg0" path="res://Assets/TitleScreen/BerserkerIcon_disabled.png" id="125"]
+[ext_resource type="Texture2D" uid="uid://crwhrrprfvhg0" path="res://Art/Assets/TitleScreen/BerserkerIcon_disabled.png" id="125"]
 
-[ext_resource type="Texture2D" uid="uid://dq0u43x6u5xxa" path="res://Assets/TitleScreen/DiscordIcon2.png" id="126"]
+[ext_resource type="Texture2D" uid="uid://dq0u43x6u5xxa" path="res://Art/Assets/TitleScreen/DiscordIcon2.png" id="126"]
 
-[ext_resource type="FontFile" path="res://Assets/Fonts/YaHei-Regular.ttc" id="128"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="128"]
 
-[ext_resource type="Texture2D" uid="uid://de610uuvae7yc" path="res://Assets/Trophy_Slot.png" id="129"]
+[ext_resource type="Texture2D" uid="uid://de610uuvae7yc" path="res://Art/Assets/Trophy_Slot.png" id="129"]
 
-[ext_resource type="Texture2D" uid="uid://cysvxr38rbd6j" path="res://Assets/TitleScreen/ChineseWiki_hovered.png" id="130"]
+[ext_resource type="Texture2D" uid="uid://cysvxr38rbd6j" path="res://Art/Assets/TitleScreen/ChineseWiki_hovered.png" id="130"]
 
-[ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Assets/Particles/GlowingDot.png" id="134"]
+[ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Art/Assets/Particles/GlowingDot.png" id="134"]
 
-[ext_resource type="PackedScene" path="res://Interface/WishlistButton.tscn" id="137"]
+[ext_resource type="PackedScene" path="res://UI/Interface/WishlistButton.tscn" id="137"]
 
-[ext_resource type="Texture2D" uid="uid://dfaktr0xav66w" path="res://Assets/TitleScreen/AdventurerIcon_disabled.png" id="141"]
+[ext_resource type="Texture2D" uid="uid://dfaktr0xav66w" path="res://Art/Assets/TitleScreen/AdventurerIcon_disabled.png" id="141"]
 
-[ext_resource type="Texture2D" uid="uid://cxh281la1brh" path="res://Assets/Paper1.png" id="147"]
+[ext_resource type="Texture2D" uid="uid://cxh281la1brh" path="res://Art/Assets/Paper1.png" id="147"]
 
-[ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://Interface/ItemLibrary/ItemLibraryButton.png" id="149"]
+[ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://UI/Interface/ItemLibrary/ItemLibraryButton.png" id="149"]
 
-[ext_resource type="Texture2D" uid="uid://b5mcvqvmki050" path="res://Assets/TitleScreen/ContinueBanner_CustomUnranked.png" id="151"]
+[ext_resource type="Texture2D" uid="uid://b5mcvqvmki050" path="res://Art/Assets/TitleScreen/ContinueBanner_CustomUnranked.png" id="151"]
 
-[ext_resource type="PackedScene" path="res://Interface/CustomRulesIcon.tscn" id="152"]
+[ext_resource type="PackedScene" path="res://UI/Interface/CustomRulesIcon.tscn" id="152"]
 
-[ext_resource type="Texture2D" uid="uid://crj0v8khv27hq" path="res://Assets/TitleScreen/RangerIcon_hovered.png" id="156"]
+[ext_resource type="Texture2D" uid="uid://crj0v8khv27hq" path="res://Art/Assets/TitleScreen/RangerIcon_hovered.png" id="156"]
 
-[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://Interface/FocusGrabbingButton.gd" id="158"]
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://UI/Interface/FocusGrabbingButton.gd" id="158"]
 
-[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
 
-[ext_resource type="Texture2D" uid="uid://d4n2vswrpgsi0" path="res://Assets/TitleScreen/PyromancerIcon_hovered.png" id="171"]
+[ext_resource type="Texture2D" uid="uid://d4n2vswrpgsi0" path="res://Art/Assets/TitleScreen/PyromancerIcon_hovered.png" id="171"]
 
-[ext_resource type="Texture2D" uid="uid://l5ce10vedwgt" path="res://Assets/TitleScreen/BerserkerIcon.png" id="176"]
+[ext_resource type="Texture2D" uid="uid://l5ce10vedwgt" path="res://Art/Assets/TitleScreen/BerserkerIcon.png" id="176"]
 
-[ext_resource type="Texture2D" uid="uid://de6lq7h70ky4b" path="res://Assets/TitleScreen/ReaperIcon.png" id="177"]
+[ext_resource type="Texture2D" uid="uid://de6lq7h70ky4b" path="res://Art/Assets/TitleScreen/ReaperIcon.png" id="177"]
 
-[ext_resource type="Texture2D" uid="uid://glhobthueame" path="res://Assets/TitleScreen/PyromancerIcon.png" id="178"]
+[ext_resource type="Texture2D" uid="uid://glhobthueame" path="res://Art/Assets/TitleScreen/PyromancerIcon.png" id="178"]
 
-[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Utility/LocalizedControl.gd" id="182"]
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 
-[ext_resource type="Texture2D" uid="uid://dvsrxxpt7ttvj" path="res://Assets/TitleScreen/RangerIcon.png" id="186"]
+[ext_resource type="Texture2D" uid="uid://dvsrxxpt7ttvj" path="res://Art/Assets/TitleScreen/RangerIcon.png" id="186"]
 
-[ext_resource type="Texture2D" uid="uid://dhhdu67sqfstk" path="res://Assets/TitleScreen/ReaperIcon_hovered.png" id="187"]
+[ext_resource type="Texture2D" uid="uid://dhhdu67sqfstk" path="res://Art/Assets/TitleScreen/ReaperIcon_hovered.png" id="187"]
 
-[ext_resource type="Texture2D" uid="uid://c8pgp73wloo0t" path="res://Assets/TitleScreen/BerserkerIcon_hovered.png" id="192"]
+[ext_resource type="Texture2D" uid="uid://c8pgp73wloo0t" path="res://Art/Assets/TitleScreen/BerserkerIcon_hovered.png" id="192"]
 
-[ext_resource type="Texture2D" uid="uid://bid2lgobuuvbs" path="res://Assets/TitleScreen/YoutubeIcon2.png" id="193"]
+[ext_resource type="Texture2D" uid="uid://bid2lgobuuvbs" path="res://Art/Assets/TitleScreen/YoutubeIcon2.png" id="193"]
 
-[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://Interface/AnvilButton.png" id="196"]
+[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://UI/Interface/AnvilButton.png" id="196"]
 
-[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://Interface/RecipeBookButton.gd" id="197"]
+[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://UI/Interface/RecipeBookButton.gd" id="197"]
 
-[ext_resource type="Texture2D" uid="uid://bi5n6b8q5owur" path="res://Assets/TitleScreen/ReaperIcon_disabled.png" id="202"]
+[ext_resource type="Texture2D" uid="uid://bi5n6b8q5owur" path="res://Art/Assets/TitleScreen/ReaperIcon_disabled.png" id="202"]
 
-[ext_resource type="Texture2D" uid="uid://ccytq0u5adbxk" path="res://Assets/TitleScreen/ButtonPanel.png" id="203"]
+[ext_resource type="Texture2D" uid="uid://ccytq0u5adbxk" path="res://Art/Assets/TitleScreen/ButtonPanel.png" id="203"]
 
-[ext_resource type="Texture2D" uid="uid://1y6pho65pevb" path="res://Assets/TitleScreen/YoutubeIcon2_hovered.png" id="204"]
+[ext_resource type="Texture2D" uid="uid://1y6pho65pevb" path="res://Art/Assets/TitleScreen/YoutubeIcon2_hovered.png" id="204"]
 
-[ext_resource type="Script" uid="uid://dymiil2x8lcdy" path="res://Interface/Wardrobe/WardrobeButton.gd" id="205"]
+[ext_resource type="Script" uid="uid://dymiil2x8lcdy" path="res://UI/Interface/Wardrobe/WardrobeButton.gd" id="205"]
 
-[ext_resource type="Texture2D" uid="uid://crh03kneq3w0" path="res://Interface/Wardrobe/WardrobeButton_hovered.png" id="206"]
+[ext_resource type="Texture2D" uid="uid://crh03kneq3w0" path="res://UI/Interface/Wardrobe/WardrobeButton_hovered.png" id="206"]
 
-[ext_resource type="Texture2D" uid="uid://vte0nsp0dr3x" path="res://Interface/Wardrobe/WardrobeButton.png" id="207"]
+[ext_resource type="Texture2D" uid="uid://vte0nsp0dr3x" path="res://UI/Interface/Wardrobe/WardrobeButton.png" id="207"]
 
-[ext_resource type="Script" uid="uid://cskbteljyahkf" path="res://Interface/TrophyCounter.gd" id="210"]
+[ext_resource type="Script" uid="uid://cskbteljyahkf" path="res://UI/Interface/TrophyCounter.gd" id="210"]
 
-[ext_resource type="Texture2D" uid="uid://cbfk6o6widknk" path="res://Assets/TitleScreen/QuitSignGlow.png" id="214"]
+[ext_resource type="Texture2D" uid="uid://cbfk6o6widknk" path="res://Art/Assets/TitleScreen/QuitSignGlow.png" id="214"]
 
-[ext_resource type="Texture2D" uid="uid://qexrtiw3hsvu" path="res://Assets/TitleScreen/QQIcon.png" id="215"]
+[ext_resource type="Texture2D" uid="uid://qexrtiw3hsvu" path="res://Art/Assets/TitleScreen/QQIcon.png" id="215"]
 
-[ext_resource type="Texture2D" uid="uid://dueyak4v2a6a3" path="res://Assets/TitleScreen/QQIcon_hovered.png" id="216"]
+[ext_resource type="Texture2D" uid="uid://dueyak4v2a6a3" path="res://Art/Assets/TitleScreen/QQIcon_hovered.png" id="216"]
 
-[ext_resource type="Script" uid="uid://d0iepeje2mun3" path="res://Interface/BlackLayer.gd" id="219"]
+[ext_resource type="Script" uid="uid://d0iepeje2mun3" path="res://UI/Interface/BlackLayer.gd" id="219"]
 
-[ext_resource type="Texture2D" uid="uid://ba1h2jee8ky2d" path="res://Assets/TitleScreen/RangerIcon_disabled.png" id="220"]
+[ext_resource type="Texture2D" uid="uid://ba1h2jee8ky2d" path="res://Art/Assets/TitleScreen/RangerIcon_disabled.png" id="220"]
 
-[ext_resource type="Material" path="res://Items/Particles/SkullBadgeParticles.material" id="223"]
+[ext_resource type="Material" path="res://Art/Items/Particles/SkullBadgeParticles.material" id="223"]
 
-[ext_resource type="Material" path="res://Items/Particles/LeafBadgeParticles.material" id="224"]
+[ext_resource type="Material" path="res://Art/Items/Particles/LeafBadgeParticles.material" id="224"]
 
-[ext_resource type="Material" path="res://Items/Particles/WolfBadgeParticles.material" id="225"]
+[ext_resource type="Material" path="res://Art/Items/Particles/WolfBadgeParticles.material" id="225"]
 
-[ext_resource type="Material" path="res://Items/Particles/FlameBadgeParticles.material" id="226"]
+[ext_resource type="Material" path="res://Art/Items/Particles/FlameBadgeParticles.material" id="226"]
 
-[ext_resource type="Texture2D" uid="uid://cega880obc2ec" path="res://Assets/TitleScreen/AdventurerIcon.png" id="232"]
+[ext_resource type="Texture2D" uid="uid://cega880obc2ec" path="res://Art/Assets/TitleScreen/AdventurerIcon.png" id="232"]
 
-[ext_resource type="Texture2D" uid="uid://d0qp4lrhcuyny" path="res://Assets/TitleScreen/AdventurerIcon_hovered.png" id="234"]
+[ext_resource type="Texture2D" uid="uid://d0qp4lrhcuyny" path="res://Art/Assets/TitleScreen/AdventurerIcon_hovered.png" id="234"]
 
-[ext_resource type="Texture2D" uid="uid://1nt80mjn7gsu" path="res://Assets/TitleScreen/ClassPanel2.png" id="242"]
+[ext_resource type="Texture2D" uid="uid://1nt80mjn7gsu" path="res://Art/Assets/TitleScreen/ClassPanel2.png" id="242"]
 
-[ext_resource type="Texture2D" uid="uid://2a1ymexdjs3x" path="res://Assets/TitleScreen/MageIcon.png" id="251"]
+[ext_resource type="Texture2D" uid="uid://2a1ymexdjs3x" path="res://Art/Assets/TitleScreen/MageIcon.png" id="251"]
 
-[ext_resource type="Material" path="res://Shader/RainbowShiftOutline.material" id="252"]
+[ext_resource type="Material" path="res://Art/Shader/RainbowShiftOutline.material" id="252"]
 
-[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Shader/VerySmoothFadeGradient.tres" id="253"]
+[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="253"]
 
-[ext_resource type="Texture2D" uid="uid://y5xfjqld1qvi" path="res://Interface/DiceButton_outline.png" id="254"]
+[ext_resource type="Texture2D" uid="uid://y5xfjqld1qvi" path="res://UI/Interface/DiceButton_outline.png" id="254"]
 
-[ext_resource type="Texture2D" uid="uid://bx7wxcpdciq8s" path="res://Interface/HistoryButton.png" id="256"]
+[ext_resource type="Texture2D" uid="uid://bx7wxcpdciq8s" path="res://UI/Interface/HistoryButton.png" id="256"]
 
-[ext_resource type="Script" uid="uid://ca1783n0vjex6" path="res://Interface/HistoryButton.gd" id="257"]
+[ext_resource type="Script" uid="uid://ca1783n0vjex6" path="res://UI/Interface/HistoryButton.gd" id="257"]
 
-[ext_resource type="Texture2D" uid="uid://babrlcerwswpa" path="res://Assets/TitleScreen/MageIcon_hovered.png" id="258"]
+[ext_resource type="Texture2D" uid="uid://babrlcerwswpa" path="res://Art/Assets/TitleScreen/MageIcon_hovered.png" id="258"]
 
-[ext_resource type="Texture2D" uid="uid://c318paeuirojt" path="res://Assets/TitleScreen/MageIcon_disabled.png" id="260"]
+[ext_resource type="Texture2D" uid="uid://c318paeuirojt" path="res://Art/Assets/TitleScreen/MageIcon_disabled.png" id="260"]
 
-[ext_resource type="Material" path="res://Items/Exclusive/Particles/MagicBadgeDragParticles.material" id="265"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/MagicBadgeDragParticles.material" id="265"]
 
-[ext_resource type="Material" path="res://Items/Exclusive/Particles/TwineBadgeDragParticles.material" id="266"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/TwineBadgeDragParticles.material" id="266"]
 
-[ext_resource type="Texture2D" uid="uid://ivfc4rl66lri" path="res://Assets/TitleScreen/EngineerIcon_disabled.png" id="279"]
+[ext_resource type="Texture2D" uid="uid://ivfc4rl66lri" path="res://Art/Assets/TitleScreen/EngineerIcon_disabled.png" id="279"]
 
-[ext_resource type="Texture2D" uid="uid://d0y6d2ufwi4a8" path="res://Assets/TitleScreen/EngineerIcon_hovered.png" id="280"]
+[ext_resource type="Texture2D" uid="uid://d0y6d2ufwi4a8" path="res://Art/Assets/TitleScreen/EngineerIcon_hovered.png" id="280"]
 
-[ext_resource type="Texture2D" uid="uid://c0n0fof8wlkcb" path="res://Assets/TitleScreen/EngineerIcon.png" id="281"]
+[ext_resource type="Texture2D" uid="uid://c0n0fof8wlkcb" path="res://Art/Assets/TitleScreen/EngineerIcon.png" id="281"]
 
-[ext_resource type="Texture2D" uid="uid://bkxp2j6lj7av0" path="res://Shader/RainbowIntenseGradientTexture.tres" id="283"]
+[ext_resource type="Texture2D" uid="uid://bkxp2j6lj7av0" path="res://Art/Shader/RainbowIntenseGradientTexture.tres" id="283"]
 
-[ext_resource type="Texture2D" uid="uid://b8uxs1kyowhhg" path="res://Assets/TitleScreen/RankedBannerBorder.png" id="284"]
+[ext_resource type="Texture2D" uid="uid://b8uxs1kyowhhg" path="res://Art/Assets/TitleScreen/RankedBannerBorder.png" id="284"]
 
-[ext_resource type="Texture2D" uid="uid://grwjhovxx4fm" path="res://Assets/TitleScreen/UnrankedBannerBorder.png" id="310"]
+[ext_resource type="Texture2D" uid="uid://grwjhovxx4fm" path="res://Art/Assets/TitleScreen/UnrankedBannerBorder.png" id="310"]
 
-[ext_resource type="Script" uid="uid://cc4764qbedad5" path="res://Items/ItemPushZone.gd" id="312"]
+[ext_resource type="Script" uid="uid://cc4764qbedad5" path="res://Art/Items/ItemPushZone.gd" id="312"]
 
-[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_17.tres" id="m7_shared_17"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_17.tres" id="m7_shared_17"]
 
-[ext_resource type="FontVariation" path="res://Runtime/Compatibility/Scenes/Resources/SharedFontVariation_80.tres" id="m7_shared_80"]
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_80.tres" id="m7_shared_80"]
 
 [sub_resource type="PhysicsMaterial" id="149"]
 friction = 0.32

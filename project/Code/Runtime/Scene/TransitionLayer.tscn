@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cdx12c50k8sbo"]
+
+[ext_resource type="Script" path="res://Code/Runtime/Scene/TransitionLayer.gd" id="1_layer"]
+[ext_resource type="Texture2D" path="res://Art/Polish20261022/cloud.png" id="2_cloud"]
+[ext_resource type="Shader" path="res://PvE/Art/CloudWipe.gdshader" id="3_shader"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cloud"]
+resource_local_to_scene = true
+shader = ExtResource("3_shader")
+shader_parameter/coverage = 0.0
+shader_parameter/uncover = false
+shader_parameter/reduced_motion = false
+shader_parameter/reduced_flash = false
+
+[node name="TransitionLayer" type="CanvasLayer"]
+process_mode = 3
+layer = 900
+script = ExtResource("1_layer")
+
+[node name="Veil" type="ColorRect" parent="."]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.09, 0.065, 0.045, 0)
+
+[node name="Cloud" type="TextureRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_cloud")
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_cloud")
+expand_mode = 1

@@ -36,7 +36,7 @@ func run_tests():
 	Game.sceneAnimation.advance(100)
 	Game.state = Game.State.Title
 	await frames()
-	check(ProjectSettings.get_setting("application/run/main_scene") == "res://Core/Main.tscn", "original main scene is entry")
+	check(ProjectSettings.get_setting("application/run/main_scene") == "res://Code/Core/Main.tscn", "original main scene is entry")
 	check(Game.mainNode == get_parent(), "original Main is the runtime root")
 	check(Expedition.db.errors.is_empty(), "PVE configuration loaded")
 	check(is_instance_valid(Game.PLAYER) and Game.PLAYER.INVENTORY != null, "original Player and Inventory exist")
@@ -105,7 +105,7 @@ func run_tests():
 	Expedition.menus.library.show_page("items")
 	await frames()
 	var seen:Dictionary={}
-	var catalogue_expected: Array = Expedition.db.rows("items") if load("res://Runtime/ViewModel/CodexVM.gd").DEBUG_UNLOCK_ALL else Expedition.db.catalogue_rows("items", not Expedition.db.release_run(Expedition.flow.run))
+	var catalogue_expected: Array = Expedition.db.rows("items") if load("res://Code/Runtime/ViewModel/CodexVM.gd").DEBUG_UNLOCK_ALL else Expedition.db.catalogue_rows("items", not Expedition.db.release_run(Expedition.flow.run))
 	for page_index in int(ceil(catalogue_expected.size()/4.0)):
 		Expedition.menus.library.page=page_index;Expedition.menus.library.populate();await frames()
 		var cards=Expedition.menus.library.body.find_children("*","Button",true,false).filter(func(card):return card.has_meta("definition_id"))

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cjg8m4vkyg5in"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Item.tscn" id="1_0w7u4"]
+[ext_resource type="Script" path="res://Art/Items/Exclusive/DoubleAxe.gd" id="2_2wknp"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/DoubleAxe.png" id="3_eilu2"]
+[ext_resource type="PackedScene" path="res://Art/Items/GemSocket.tscn" id="4_thxrm"]
+
+[sub_resource type="PhysicsMaterial" id="1"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[node name="Double Axe" instance=ExtResource("1_0w7u4")]
+physics_material_override = SubResource("1")
+script = ExtResource("2_2wknp")
+
+[node name="CollisionMap" parent="." index="0"]
+position = Vector2(40, -80)
+format = 2
+layer_0/tile_data = PackedInt32Array(-2, 3, 0, -1, 3, 0, -65536, 3, 0, 65534, 3, 0, 65535, 3, 0, 0, 3, 0, 131071, 3, 0, 196607, 3, 0)
+
+[node name="Icon" parent="." index="1"]
+position = Vector2(0, -4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_eilu2")
+
+[node name="Sockets" parent="Icon" index="0"]
+scale = Vector2(2, 2)
+
+[node name="GemSocket" parent="Icon/Sockets" index="0" instance=ExtResource("4_thxrm")]
+position = Vector2(70, -115)
+
+[node name="GemSocket2" parent="Icon/Sockets" index="1" instance=ExtResource("4_thxrm")]
+position = Vector2(-68, -116)
+
+[node name="GemSocket3" parent="Icon/Sockets" index="2" instance=ExtResource("4_thxrm")]
+position = Vector2(0, -91)
+
+[node name="GemSocket4" parent="Icon/Sockets" index="3" instance=ExtResource("4_thxrm")]
+position = Vector2(73, -42)
+
+[node name="GemSocket5" parent="Icon/Sockets" index="4" instance=ExtResource("4_thxrm")]
+position = Vector2(-73, -42)
+
+[node name="CollisionPolygon2D" parent="ClickArea" index="0"]
+polygon = PackedVector2Array(-112, -160, 112, -160, 112, 0, 40, 0, 40, 160, -40, 160, -40, 0, -112, 0)
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(0, 77)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="5"]
+visible = false
+polygon = PackedVector2Array(67, -160, -67, -160, -103, -88, -87, -18, -16, 32, -11, 154, 9, 154, 16, 32, 83, -15, 105, -84)

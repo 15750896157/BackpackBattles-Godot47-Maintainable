@@ -1,0 +1,12 @@
+[gd_resource type="FontVariation" format=3]
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+[resource]
+base_font = ExtResource("27")
+spacing_bottom = -8
+script = ExtResource("LegacyFontMigration")
+size = 19
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)

@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://did71u34s76cr"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Item.tscn" id="1_n3edn"]
+[ext_resource type="Script" path="res://Art/Items/HealingHerbs.gd" id="2_kb4gh"]
+[ext_resource type="Texture2D" path="res://Art/Items/Sprites/HealingHerbs.png" id="3_du5yj"]
+
+[sub_resource type="PhysicsMaterial" id="1"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[sub_resource type="CapsuleShape2D" id="2"]
+radius = 24.0
+height = 80.0
+
+[node name="Healing Herbs" instance=ExtResource("1_n3edn")]
+physics_material_override = SubResource("1")
+script = ExtResource("2_kb4gh")
+
+[node name="CollisionMap" parent="." index="0"]
+position = Vector2(40, 40)
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 3, 0)
+
+[node name="Icon" parent="." index="1"]
+position = Vector2(3, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_du5yj")
+
+[node name="Sockets" parent="Icon" index="0"]
+scale = Vector2(2, 2)
+
+[node name="CollisionPolygon2D" parent="ClickArea" index="0"]
+polygon = PackedVector2Array(-40, -40, 40, -40, 40, 40, -40, 40)
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(0, 38)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="6"]
+visible = false
+shape = SubResource("2")
