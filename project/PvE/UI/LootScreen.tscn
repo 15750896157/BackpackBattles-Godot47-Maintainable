@@ -42,10 +42,10 @@ ignore_texture_size = true
 stretch_mode = 5
 
 [node name="Continue" type="TextureButton" parent="."]
-offset_left = 735.0
-offset_top = 927.0
-offset_right = 1185.0
-offset_bottom = 988.0
+offset_left = 795.0
+offset_top = 920.0
+offset_right = 1125.0
+offset_bottom = 995.0
 visible = false
 mouse_default_cursor_shape = 2
 ignore_texture_size = true

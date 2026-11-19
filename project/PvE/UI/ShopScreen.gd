@@ -4,7 +4,7 @@ extends Control
 signal menu_requested(action: StringName)
 
 const ShopVM = preload("res://Runtime/ViewModel/ShopVM.gd")
-const ART_KEYS = ["codex", "journey", "refresh", "coin", "battle", "settings", "plate1", "price", "sale",
+const ART_KEYS = ["codex", "refresh", "coin", "battle", "settings", "plate1", "price", "sale",
 	"class_badge", "plate2", "plate3", "health", "stamina", "previous", "next"]
 const SCENERY_KEYS = ["shelf", "merchant", "table", "storage_mat", "sell"]
 const TWO_LINE_DISCOUNT_HEIGHT = 53.0
@@ -84,7 +84,6 @@ func _ready() -> void:
 	$Action_refresh.pressed.connect(_refresh_stock)
 	$ArtStartBattle.pressed.connect(_start)
 	$Action_codex.pressed.connect(menu_requested.emit.bind(&"codex"))
-	$Action_journey.pressed.connect(menu_requested.emit.bind(&"journey"))
 	$Action_shop_settings.pressed.connect(menu_requested.emit.bind(&"settings"))
 	for button in find_children("*", "TextureButton", true, false):
 		button.mouse_entered.connect(_feedback.bind(button, Color(1.10, 1.06, 1.0)))

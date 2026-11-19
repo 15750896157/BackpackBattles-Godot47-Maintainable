@@ -111,18 +111,22 @@ static func cards(root: Control, data: Dictionary, owner, model, epoch: int) -> 
 static func action(button: TextureButton, callback: Callable, caption: String, font_size: int, key: String) -> void:
 	var rect := Rect2(button.position, button.size)
 	button.texture_normal = REF.texture(key)
-	var texture_size := button.texture_normal.get_size()
-	var factor := minf(rect.size.x / texture_size.x, rect.size.y / texture_size.y)
-	var fitted := texture_size * factor
-	var fitted_rect := Rect2(rect.get_center() - fitted / 2.0, fitted)
-	button.set_anchors_preset(Control.PRESET_TOP_LEFT)
-	button.position = fitted_rect.position
-	button.size = fitted_rect.size
-	REF.bind_button(button, fitted_rect, callback, caption, font_size)
-	for child in button.get_children():
-		if child is Label:
-			child.add_theme_color_override("font_color", Color("fff1d0") if key == "result_red" else INK)
-			child.add_theme_constant_override("outline_size", 0)
+	# 贴图实际画出来的药丸区域。等比缩放时它比按钮框窄，若按整块按钮框排字，
+	# 文案会撑出药丸两端（胜利页底部按钮原来就是这样溢出的）。
+	var drawn := rect
+	if button.stretch_mode != TextureButton.STRETCH_SCALE:
+		var texture_size := button.texture_normal.get_size()
+		var factor := minf(rect.size.x / texture_size.x, rect.size.y / texture_size.y)
+		var fitted := texture_size * factor
+		drawn = Rect2(rect.get_center() - fitted / 2.0, fitted)
+	# Keep the entire authored click target while the texture fits within it.
+	REF.bind_button(button, rect, callback, caption, font_size)
+	var caption_node: Label = button.get_child(button.get_child_count() - 1)
+	var ink := Color("fff1d0") if key == "result_red" else INK
+	caption_node.position = drawn.position - rect.position
+	caption_node.size = drawn.size
+	# 按药丸内框收紧字号并居中，保证任何长度的文案都完整落在药丸里。
+	REF.bind_text(caption_node, caption, drawn.size, font_size, ink, 0)
 	button.show()
 
 static func label(parent: Control, path: String, value: String, size: int, color: Color = INK, outline: int = 0) -> void:

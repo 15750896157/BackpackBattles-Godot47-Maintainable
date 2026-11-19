@@ -12,7 +12,6 @@ static func shop(art):
 	art.picture("storage_mat",shop_rect(Rect2(456,893,1165,266)),art.scenery).name="StorageCloth"
 	art.picture("sell",shop_rect(Rect2(162,886,302,237)),art.scenery)
 	art.button("codex",shop_rect(Rect2(463,807,243,119)),art.open_book)
-	art.button("journey",shop_rect(Rect2(1736,465,100,140)),art.open_intel)
 	art.button("refresh",shop_rect(Rect2(799,-97,122,322)),art._refresh_shop)
 	REF.picture(art.ui,"coin",shop_rect(Rect2(819,88,27,27)))
 	art.text("",shop_rect(Rect2(846,86,35,36)),art.ui,29,Color("fff4d1")).name = "RefreshCost"
@@ -61,11 +60,16 @@ static func combat(art):
 	combat_shadows(art)
 	art.picture("timeline_base",Rect2(746,26,490,61),art.ui)
 	var progress = TextureProgressBar.new(); progress.name="ArtTimeline";progress.texture_progress=art.texture("timeline_fill")
-	progress.position=Vector2(747,27);progress.size=Vector2(487,20);progress.nine_patch_stretch=true;progress.mouse_filter=Control.MOUSE_FILTER_IGNORE;art.ui.add_child(progress)
-	art.button("play",Rect2(978,51,32,36),func():
+	progress.position=Vector2(747,25);progress.size=Vector2(487,20);progress.nine_patch_stretch=true;progress.mouse_filter=Control.MOUSE_FILTER_IGNORE;art.ui.add_child(progress)
+	# 暂停图标要落在时间轴底图的圆形凹槽里并上下左右都居中：hud_timeline_base.png 为 560x70，
+	# 凹槽纵向占 15~69 像素，映射到 Rect2(746,26,490,61) 后其竖直中心约为 y=62.6；
+	# 图标贴图 37x36 按 32x36 居中缩放后实绘高 31，故 rect y=45 时图标中心与凹槽中心重合。
+	# 横向实测：贴图 560x70 缩放 0.8714（KEEP_ASPECT_CENTERED 上下留白 1px）后，
+	# 凹槽中心（贴图列 231~327 的中心 279）落在舞台 x≈990，图标中心 = rect.x+16，故 rect x 取 974，再按视觉右移 1px 定为 975。
+	art.button("play",Rect2(975,45,32,36),func():
 		if Expedition.flow.combat_paused:Game.combatTimer.unpause()
 		else:Game.combatTimer.onPauseButtonPressed()).name="CombatPausePlay"
-	REF.zone(art.ui,Rect2(961,44,66,57),func():
+	REF.zone(art.ui,Rect2(958,38,66,57),func():
 		if Expedition.flow.combat_paused:Game.combatTimer.unpause()
 		else:Game.combatTimer.onPauseButtonPressed()).name="CombatPauseTarget"
 	var speed=REF.zone(art.ui,Rect2(1240,12,78,59),Game.combatTimer.onFastButtonPressed);speed.name="CombatSpeed"

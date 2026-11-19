@@ -113,13 +113,19 @@ func filters():
 	if category=="characters":
 		REF.text(body,ui.words("英雄 · 旅途伙伴","Heroes · Expedition companions"),Rect2(207,222,620,54),27)
 		return
-	filter_button(ui.words("已发现" if only_seen else "全部条目","Discovered" if only_seen else "All entries"),Rect2(207,207,186,50),func():only_seen=not only_seen;only_available=false;page=0;populate(),"BookSeenFilter")
+	# 第一行的三枚筛选标签等宽排布（1:1:1），合计占满 207~827 的书页宽度。
+	var label_width := 200.0
+	var label_gap := 10.0
+	var row_y := 207.0
+	filter_button(ui.words("已发现" if only_seen else "全部条目","Discovered" if only_seen else "All entries"),Rect2(207,row_y,label_width,50),func():only_seen=not only_seen;only_available=false;page=0;populate(),"BookSeenFilter")
 	var context := model.snapshot()
 	var pools: Array = context.pools
-	filter_button((ui.words("全部归属","All pools") if owner_filter=="all" else ui.words("公共","Public") if owner_filter=="public" else owner.t("character."+owner_filter+".name"))+" ›",Rect2(402,207,210,50),func():cycle_filter("owner_filter",pools),"BookPoolFilter")
-	filter_button(ui.words("稀有度","Rarity")+" ›" if rarity_filter=="all" else owner.t("rarity."+rarity_filter)+" ›",Rect2(621,207,206,50),func():cycle_filter("rarity_filter",["all","common","rare","legendary"]),"BookRarityFilter")
+	filter_button((ui.words("全部归属","All pools") if owner_filter=="all" else ui.words("公共","Public") if owner_filter=="public" else owner.t("character."+owner_filter+".name"))+" ›",Rect2(207+label_width+label_gap,row_y,label_width,50),func():cycle_filter("owner_filter",pools),"BookPoolFilter")
+	filter_button(ui.words("稀有度","Rarity")+" ›" if rarity_filter=="all" else owner.t("rarity."+rarity_filter+".name")+" ›",Rect2(207+(label_width+label_gap)*2,row_y,label_width,50),func():cycle_filter("rarity_filter",["all","common","rare","legendary"]),"BookRarityFilter")
 	var tag_ids: Array = context.tags
-	filter_button((ui.words("全部标签","All tags") if tag_filter=="all" else owner.detail_views.tag_name(tag_filter))+"  ›",Rect2(207,261,620,45),func():cycle_filter("tag_filter",tag_ids),"BookTagFilter")
+	# 第二行只有标签筛选一枚，保持与第一行同宽并相对整行居中（207~827 的中心为 517）。
+	var row_span := label_width*3.0+label_gap*2.0
+	filter_button((ui.words("全部标签","All tags") if tag_filter=="all" else owner.detail_views.tag_name(tag_filter))+"  ›",Rect2(207+(row_span-label_width)/2.0,row_y+54,label_width,50),func():cycle_filter("tag_filter",tag_ids),"BookTagFilter")
 	if category=="recipes" and can_craft():
 		filter_button(ui.words("只看可合成" if not only_available else "查看全部","Craftable only" if not only_available else "All recipes"),Rect2(1070,887,300,56),func():only_available=not only_available;page=0;populate(),"BookCraftableFilter")
 func page_buttons(parent:Node,count:int,callback:Callable):
