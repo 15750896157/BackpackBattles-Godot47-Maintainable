@@ -4785,7 +4785,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "c7ea9a4675e474c75f8deee67fa78d201184d81cb1b09439739a255a1589e313"
+      "png_sha256": "c7ea9a4675e474c75f8deee67fa78d201184d81cb1b09439739a255a1589e313",
+      "template": "ItemBase"
     },
     "bag_corner_satchel": {
       "name": "Puzzlebag L",
@@ -4880,7 +4881,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "dfb142ab9a76feec25b9490517e927ee4a0d2aea6b5d7936ef50815e23407bc3"
+      "png_sha256": "dfb142ab9a76feec25b9490517e927ee4a0d2aea6b5d7936ef50815e23407bc3",
+      "template": "ItemBase"
     },
     "bag_tool_roll": {
       "name": "Holdall",
@@ -4970,7 +4972,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "82e9b7c26a0c097bc96bf0f3364a0ec5900fad403d530bedca8ed32fb200ff6e"
+      "png_sha256": "82e9b7c26a0c097bc96bf0f3364a0ec5900fad403d530bedca8ed32fb200ff6e",
+      "template": "ItemBase"
     },
     "bag_guard_harness": {
       "name": "Berserker Bag",
@@ -5064,7 +5067,8 @@
         "p4": "25:damresistance",
         "p5": ""
       },
-      "png_sha256": "3b128d642fec297ad306943602b1bf2cd94bbcbda01c1b9da2116068a5313976"
+      "png_sha256": "3b128d642fec297ad306943602b1bf2cd94bbcbda01c1b9da2116068a5313976",
+      "template": "ItemBase"
     },
     "bag_herbal_tray": {
       "name": "Vineweave Basket",
@@ -5174,7 +5178,8 @@
         "p4": "1:round1",
         "p5": "10:round2"
       },
-      "png_sha256": "d5f00753072380885b3b4381c10a2c56da67a8123d25e6eadb5fdf3b4b210230"
+      "png_sha256": "d5f00753072380885b3b4381c10a2c56da67a8123d25e6eadb5fdf3b4b210230",
+      "template": "ItemBase"
     },
     "bag_gear_sling": {
       "name": "Engineer Bag 2",
@@ -5272,7 +5277,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "119b0ce23e4b8d1d1ae816de97d04f80b31833f3cb2a74fb91eed45c32cf7c0d"
+      "png_sha256": "119b0ce23e4b8d1d1ae816de97d04f80b31833f3cb2a74fb91eed45c32cf7c0d",
+      "template": "ItemBase"
     },
     "bag_cross_brace": {
       "name": "Puzzlebag T",
@@ -5367,7 +5373,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "ccb064240a70c97099444cf59b4409600a8895074c0d1a72a6a3242df4635922"
+      "png_sha256": "ccb064240a70c97099444cf59b4409600a8895074c0d1a72a6a3242df4635922",
+      "template": "ItemBase"
     },
     "bag_hollow_ring": {
       "name": "Toolbox",
@@ -5474,7 +5481,8 @@
         "p4": "35:lifesteal",
         "p5": ""
       },
-      "png_sha256": "5aaaf32ce05f146b8f4ec4cf5066d3649e75c67514ae730fab15047d0c9de1d0"
+      "png_sha256": "5aaaf32ce05f146b8f4ec4cf5066d3649e75c67514ae730fab15047d0c9de1d0",
+      "template": "ItemBase"
     },
     "bag_step_case": {
       "name": "Puzzlebag Z",
@@ -5565,7 +5573,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "3cd5c1e6b0d52a40d704bbb9b4a30d79b61e9402321f4014bd40f83babf4dd15"
+      "png_sha256": "3cd5c1e6b0d52a40d704bbb9b4a30d79b61e9402321f4014bd40f83babf4dd15",
+      "template": "ItemBase"
     },
     "bag_twin_wing": {
       "name": "Puzzlebag S",
@@ -5656,7 +5665,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "5d3f3f83eb764f8b9f77da4507976478625c31c8c38e591891f046fe6f558e8d"
+      "png_sha256": "5d3f3f83eb764f8b9f77da4507976478625c31c8c38e591891f046fe6f558e8d",
+      "template": "ItemBase"
     },
     "supply_apprentice_robe": {
       "name": "Heroic Potion",
@@ -10560,7 +10570,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "cf044326fe6a878ea914e22de82a916c58550afbfb5eadf312e3df49d84cd7ca"
+      "png_sha256": "cf044326fe6a878ea914e22de82a916c58550afbfb5eadf312e3df49d84cd7ca",
+      "template": "ItemBase"
     },
     "bag_release_satchel": {
       "name": "Leather Bag",
@@ -10654,7 +10665,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "6e1f6efc146a02abae339f48a1f5f5020f0920d368e4e2ff6eb5225bf38b4acc"
+      "png_sha256": "6e1f6efc146a02abae339f48a1f5f5020f0920d368e4e2ff6eb5225bf38b4acc",
+      "template": "ItemBase"
     },
     "bag_release_bedroll": {
       "name": "Leather Bag",
@@ -10748,7 +10760,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "156311869332b1ef4b746cb24c70ba90d3b13f3ff53942d9258193d86a329994"
+      "png_sha256": "156311869332b1ef4b746cb24c70ba90d3b13f3ff53942d9258193d86a329994",
+      "template": "ItemBase"
     },
     "bag_release_weapon": {
       "name": "Leather Bag",
@@ -10842,7 +10855,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "156311869332b1ef4b746cb24c70ba90d3b13f3ff53942d9258193d86a329994"
+      "png_sha256": "156311869332b1ef4b746cb24c70ba90d3b13f3ff53942d9258193d86a329994",
+      "template": "ItemBase"
     },
     "bag_release_herbal": {
       "name": "Leather Bag",
@@ -10936,7 +10950,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "cf044326fe6a878ea914e22de82a916c58550afbfb5eadf312e3df49d84cd7ca"
+      "png_sha256": "cf044326fe6a878ea914e22de82a916c58550afbfb5eadf312e3df49d84cd7ca",
+      "template": "ItemBase"
     },
     "bag_release_armor": {
       "name": "Leather Bag",
@@ -11030,7 +11045,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "6e1f6efc146a02abae339f48a1f5f5020f0920d368e4e2ff6eb5225bf38b4acc"
+      "png_sha256": "6e1f6efc146a02abae339f48a1f5f5020f0920d368e4e2ff6eb5225bf38b4acc",
+      "template": "ItemBase"
     },
     "bag_release_transport": {
       "name": "Leather Bag",
@@ -11124,7 +11140,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "5372e6a30dbbb6a66047275ff2d10f501a06a9ad4cd26a91d905fb7b7808cee9"
+      "png_sha256": "5372e6a30dbbb6a66047275ff2d10f501a06a9ad4cd26a91d905fb7b7808cee9",
+      "template": "ItemBase"
     },
     "bag_release_supply": {
       "name": "Leather Bag",
@@ -11218,7 +11235,8 @@
         "p4": "",
         "p5": ""
       },
-      "png_sha256": "18f370c7d691af01dab7548c5427c2818e3dfc2ca2a998e68510d2292f2ed78c"
+      "png_sha256": "18f370c7d691af01dab7548c5427c2818e3dfc2ca2a998e68510d2292f2ed78c",
+      "template": "ItemBase"
     }
   },
   "roles": {

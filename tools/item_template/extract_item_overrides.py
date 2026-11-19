@@ -123,6 +123,25 @@ SCENES = {
                                  "supply_lust_crest", "supply_vampire_fang"], "base": "item", "sub": "Exclusive"},
     "PestilenceFlask": {"ids": ["toxin_bottle", "supply_voodoo_staff"], "base": "item"},
     "Laboratory": {"ids": ["venom_distiller"], "base": "item", "sub": "Exclusive"},
+    # ---- 格区刀（10 件/18 绑定；侦查：tile_set 10 件全同一个 Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres；
+    #      Icon/TileMap 是 Bag.gd @onready $Icon/TileMap 硬接口（潜在格显示，modulate 半透明）；
+    #      Border = Items/Tiles/BagBorder.tscn 实例挂 Icon（extra_nodes scene 模式现成支持，
+    #      其有无决定 Bag.hasBagEffect()），9 件 Exclusive 有、LeatherBag 无；
+    #      VineweaveBasket 带 SaleParticles（GPUParticles2D+AutoHideParticles.gd，extra_nodes 现成）。
+    #      本刀同修第五刀漏收的 Lock 覆盖（WoodenBuckler/SpikedShield/Pot 的锁图标 modulate/position/scale
+    #      被 KNOWN_CHILDREN 静默跳过）+ Toolbox body modulate）----
+    "LeatherBag": {"ids": ["bag_canvas_frame", "bag_release_armor", "bag_release_bedroll", "bag_release_herbal",
+                            "bag_release_journey", "bag_release_satchel", "bag_release_supply",
+                            "bag_release_transport", "bag_release_weapon"], "base": "item"},
+    "BerserkerBag": {"ids": ["bag_guard_harness"], "base": "item", "sub": "Exclusive"},
+    "EngineerBag2": {"ids": ["bag_gear_sling"], "base": "item", "sub": "Exclusive"},
+    "Holdall": {"ids": ["bag_tool_roll"], "base": "item", "sub": "Exclusive"},
+    "PuzzlebagL": {"ids": ["bag_corner_satchel"], "base": "item", "sub": "Exclusive"},
+    "PuzzlebagS": {"ids": ["bag_twin_wing"], "base": "item", "sub": "Exclusive"},
+    "PuzzlebagT": {"ids": ["bag_cross_brace"], "base": "item", "sub": "Exclusive"},
+    "PuzzlebagZ": {"ids": ["bag_step_case"], "base": "item", "sub": "Exclusive"},
+    "VineweaveBasket": {"ids": ["bag_herbal_tray"], "base": "item", "sub": "Exclusive"},
+    "Toolbox": {"ids": ["bag_hollow_ring"], "base": "item", "sub": "Exclusive"},
 }
 
 ITEM_TSCN = "res://Items/Item.tscn"
@@ -298,9 +317,32 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
     # --- Icon ---
     icon = re.search(r'\[node name="Icon" parent="\." index="\d+"\]\s*\n(.*?)(?=\n\[node)', text, re.S)
     ib = icon.group(1)
+    # Icon 块属性白名单：texture/position/scale/material = 既有槽位；rotation/offset = 药剂刀漏收、
+    # 本刀补上（PestilenceFlask offset=(4,-17) 显式写了——不收则模板贴图位置差 21px）；
+    # __meta__ = 编辑器残留。script = Icon 挂脚本（第三刀漏收的 SpringLoader 的
+    # SpringloaderVisual.gd 弹簧回弹；挂脚本时白名单外的属性 = 脚本 @export 参数，全收）。
+    # 没挂脚本却出现别的 = 停手汇报。
+    ib_keys = set(re.findall(r'^(\w+) = ', ib, re.M))
+    base_icon_keys = {"texture", "position", "scale", "material", "rotation", "offset", "__meta__", "script"}
+    icon_script = None
+    icon_script_props = None
+    if "script" in ib_keys:
+        sc_m = re.search(r'script = ExtResource\("([^"]+)"\)', ib)
+        assert sc_m, f"{path.name}: Icon script 不是 ExtResource，停手汇报"
+        icon_script = ext[sc_m.group(1)][1]
+        prop_keys = ib_keys - base_icon_keys
+        icon_script_props = {}
+        for pk in prop_keys:
+            pv_m = re.search(r'^%s = (.+)$' % pk, ib, re.M)
+            icon_script_props[pk] = _scalar(pv_m.group(1))
+    else:
+        assert ib_keys <= base_icon_keys, \
+            f"{path.name}: Icon 块有未知属性 {ib_keys}，停手汇报"
     tex = ext[re.search(r'texture = ExtResource\("([^"]+)"\)', ib).group(1)][1]
     pos_m = re.search(r'position = Vector2\(([^)]+)\)', ib)
     scale_m = re.search(r'scale = Vector2\(([^)]+)\)', ib)
+    rot_m = re.search(r'^rotation = (-?[\d.eE+-]+)$', ib, re.M)
+    off_m = re.search(r'offset = Vector2\(([^)]+)\)', ib)
     # Icon material（溶解 shader 参数）
     material = None
     mat_m = re.search(r'material = SubResource\("(\d+)"\)', ib)
@@ -323,6 +365,13 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
         "scale": ([float(v) for v in scale_m.group(1).split(",")] if scale_m else [2.0, 2.0]),
         "material": material,
     }
+    if rot_m:
+        icon_data["rotation"] = float(rot_m.group(1))
+    if off_m:
+        icon_data["offset"] = [float(v) for v in off_m.group(1).split(",")]
+    if icon_script is not None:
+        icon_data["script"] = icon_script
+        icon_data["script_props"] = icon_script_props
     # --- Sockets scale（允许缺失）---
     socks = re.search(r'\[node name="Sockets" parent="Icon" index="\d+"\]\s*\nscale = Vector2\(([^)]+)\)', text)
     sockets_scale = [float(v) for v in socks.group(1).split(",")] if socks else None
@@ -374,16 +423,75 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
     # --- BottomCenter ---
     bc = re.search(r'\[node name="BottomCenter" parent="\." index="\d+"\]\s*\nposition = Vector2\(([^)]+)\)', text)
     bottom_center = [float(v) for v in bc.group(1).split(",")] if bc else None
+    # --- 格区 TileMap（Icon 下，Bag.gd @onready $Icon/TileMap 硬接口：潜在格半透明显示）。
+    #     属性白名单 {modulate, position, scale, tile_set, format, tile_data}；
+    #     tile_data 解码同 CollisionMap（三元组 packed/tile_id/alt）。
+    #     modulate 全场景固定 Color(1,1,1,0.501961)；tile_set 全场景同一个 Compatibility .tres。---
+    icon_tilemap = None
+    itm = re.search(
+        r'\[node name="TileMap" type="TileMap" parent="Icon" index="\d+"\]\s*\n(.*?)(?=\n\[|\s*\Z)', text, re.S)
+    if itm:
+        blk = itm.group(1)
+        itm_keys = set(re.findall(r'^(\w+) = ', blk, re.M))
+        assert itm_keys <= {"modulate", "position", "scale", "tile_set", "format"}, \
+            f"{path.name}: Icon/TileMap 有未知属性 {itm_keys}，停手汇报"
+        itm_cells = []
+        raw_m = re.search(r'layer_0/tile_data = PackedInt32Array\(([^)]*)\)', blk)
+        if raw_m and raw_m.group(1).strip():
+            raw = [int(v.strip()) for v in raw_m.group(1).split(",")]
+            assert len(raw) % 3 == 0, f"{path.name}: TileMap tile_data 不是 3 的倍数"
+            for i in range(0, len(raw), 3):
+                packed, tile_id, _flip = raw[i], raw[i + 1], raw[i + 2]
+                x = packed & 0xFFFF
+                if x >= 0x8000:
+                    x -= 0x10000
+                y = (packed - x) // 65536
+                itm_cells.append([x, y, tile_id])
+        ts_m = re.search(r'tile_set = ExtResource\("([^"]+)"\)', blk)
+        assert ts_m, f"{path.name}: Icon/TileMap tile_set 不是 ExtResource，停手汇报"
+        assert ext[ts_m.group(1)][0] == "TileSet", f"{path.name}: Icon/TileMap tile_set 不是 TileSet，停手汇报"
+        icon_tilemap = {
+            "modulate": [float(v.strip()) for v in re.search(
+                r'modulate = Color\(([^)]+)\)', blk).group(1).split(",")],
+            "position": [float(v.strip()) for v in re.search(
+                r'position = Vector2\(([^)]+)\)', blk).group(1).split(",")],
+            "scale": [float(v.strip()) for v in re.search(
+                r'scale = Vector2\(([^)]+)\)', blk).group(1).split(",")],
+            "tile_set": ext[ts_m.group(1)][1],
+            "cells": itm_cells,
+        }
+    # --- Lock 覆盖（锁图标 Sprite2D，基场景默认 modulate 0.48/scale 1.18；4 件场景覆盖 modulate 1/
+    #     position 0,-3x/scale 0.3——其中 3 件是第五刀已迁移件，本刀补收=修第五刀漏收 bug）。
+    #     白名单 {modulate, position, scale}；空块（无属性行）= 纯编辑器残留，跳过。---
+    lock_props = None
+    lk = re.search(r'\[node name="Lock" parent="\." index="\d+"\]\s*\n(.*?)(?=\n\[|\s*\Z)', text, re.S)
+    if lk and lk.group(1).strip():
+        lk_keys = set(re.findall(r'^(\w+) = ', lk.group(1), re.M))
+        assert lk_keys <= {"modulate", "position", "scale"}, \
+            f"{path.name}: Lock 有未知属性 {lk_keys}，停手汇报"
+        lock_props = {}
+        lkm = re.search(r'modulate = Color\(([^)]+)\)', lk.group(1))
+        if lkm:
+            lock_props["modulate"] = [float(v.strip()) for v in lkm.group(1).split(",")]
+        lkp = re.search(r'position = Vector2\(([^)]+)\)', lk.group(1))
+        if lkp:
+            lock_props["position"] = [float(v.strip()) for v in lkp.group(1).split(",")]
+        lks = re.search(r'scale = Vector2\(([^)]+)\)', lk.group(1))
+        if lks:
+            lock_props["scale"] = [float(v.strip()) for v in lks.group(1).split(",")]
     # --- 根下碰撞形状（CollisionPolygon2D；index 不限，visible 行可省=继承基场景的 false；
-    #     type= 可省——继承节点的覆盖段不重述 type，宝石场景就是这种情况）---
+    #     type= 可省——继承节点的覆盖段不重述 type，宝石场景就是这种情况；
+    #     modulate 行（Toolbox 1,1,1,0.2）= visible=false 下无视觉效果的残留，忠实收数据）---
     body = re.search(
-        r'\[node name="CollisionPolygon2D"(?: type="CollisionPolygon2D")? parent="\." index="\d+"\]\s*\n(?:visible = false\s*\n)?(?:position = Vector2\(([^)]+)\)\s*\n)?polygon = PackedVector2Array\(([^)]*)\)',
+        r'\[node name="CollisionPolygon2D"(?: type="CollisionPolygon2D")? parent="\." index="\d+"\]\s*\n(?:visible = false\s*\n)?(?:modulate = Color\(([^)]+)\)\s*\n)?(?:position = Vector2\(([^)]+)\)\s*\n)?polygon = PackedVector2Array\(([^)]*)\)',
         text)
     body_collision = None
     if body:
-        body_pos = [float(v) for v in body.group(1).split(",")] if body.group(1) else [0.0, 0.0]
+        body_pos = [float(v) for v in body.group(2).split(",")] if body.group(2) else [0.0, 0.0]
         body_collision = {"type": "polygon", "position": body_pos,
-                          "polygon": json.loads("[" + body.group(2).replace(", ", ",") + "]")}
+                          "polygon": json.loads("[" + body.group(3).replace(", ", ",") + "]")}
+        if body.group(1):
+            body_collision["modulate"] = [float(v.strip()) for v in body.group(1).split(",")]
     # --- 根下碰撞形状槽位（CollisionShape2D + 内嵌 Shape2D 子资源；装备触发区的感应范围）---
     #     只认圆/胶囊/矩形三种形状；节点属性只认 visible(false)/position/rotation/shape，
     #     出现别的 = 超出本刀范围，停手汇报。
@@ -432,6 +540,9 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
                 continue
             if nparent == "Icon" and name == "Sockets":
                 continue
+            if nparent == "Icon" and name == "TileMap":
+                # 格区 TileMap = 专门槽位（icon_tilemap），不进 extra_nodes
+                continue
             if nparent == "Icon" and name in skip_on_icon:
                 continue
             # 动画包成员的子节点（如 Icon/TorchLight 下的闪烁 AnimationPlayer）进包场景，跳过；
@@ -456,17 +567,23 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
         # 先收集全部信号连接，校验 from 必须指向额外节点、to 必须是根
         all_connections = [(c.group(1), c.group(2), c.group(3), c.group(4))
                            for c in re.finditer(r'\[connection signal="(\w+)" from="([^"]+)" to="([^"]+)" method="(\w+)"\]', text)]
-        extra_names = {m.group(1) for m in re.finditer(r'\[node name="(\w+)"(?: type="\w+")? parent="(\.|Icon)" index="\d+"(?: instance=ExtResource\("[^"]+"\))?\]', text)
-                       if not (m.group(2) == "." and m.group(1) in KNOWN_CHILDREN)
-                       and not (m.group(2) == "Icon" and m.group(1) in skip_on_icon)}
+        # groups=[...]（如 Spring 的 hasShadow 影子组）= 节点进组，属运行时语义，必须收（第三刀漏收 bug）。
+        _NODE_HDR = (r'\[node name="(\w+)"(?: type="(\w+)")? parent="(\.|Icon)" index="\d+"'
+                     r'(?: groups=\[[^\]]*\])?(?: instance=ExtResource\("([^"]+)"\))?\]')
+        extra_names = {m.group(1) for m in re.finditer(_NODE_HDR, text)
+                       if not (m.group(3) == "." and m.group(1) in KNOWN_CHILDREN)
+                       and not (m.group(3) == "Icon" and m.group(1) == "TileMap")
+                       and not (m.group(3) == "Icon" and m.group(1) in skip_on_icon)}
         for sig, frm, to, _method in all_connections:
             assert frm in extra_names, f"{path.name}: 连接来源 {frm} 不是额外节点，停手汇报"
             assert to == ".", f"{path.name}: 连接目标 {to} 不是根节点，停手汇报"
-        for m in re.finditer(r'\[node name="(\w+)"(?: type="(\w+)")? parent="(\.|Icon)" index="\d+"(?: instance=ExtResource\("([^"]+)"\))?\]\s*\n(.*?)(?=\n\[|\s*\Z)', text, re.S):
+        for m in re.finditer(_NODE_HDR + r'\s*\n(.*?)(?=\n\[|\s*\Z)', text, re.S):
             name, ntype, nparent, ninst, block = m.group(1), m.group(2), m.group(3), m.group(4), m.group(5)
             if nparent == "." and name in KNOWN_CHILDREN:
                 continue
             if nparent == "Icon" and name in skip_on_icon:
+                continue
+            if nparent == "Icon" and name == "TileMap":
                 continue
             if nparent == "Icon" and name == "Sockets":
                 continue
@@ -478,6 +595,9 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
             assert nparent in EXTRA_NODE_PARENTS, f"{path.name}: 额外节点 {name} 挂载 {nparent} 不在白名单，停手汇报"
             if nparent != ".":
                 spec["parent"] = nparent
+            groups_m = re.search(r'\[node name="%s"(?: type="\w+")? parent="(?:\.|Icon)" index="\d+" groups=\[([^\]]*)\]' % name, text)
+            if groups_m:
+                spec["groups"] = re.findall(r'"([^"]+)"', groups_m.group(1))
             script_m = re.search(r'script = ExtResource\("([^"]+)"\)', block)
             props = {}
             for pm_line in re.finditer(r'^(\w+) = (.+)$', block, re.M):
@@ -509,6 +629,8 @@ def parse_tscn(path: Path, expect_base: str, capture_extras: bool, anim_targets:
         "click_area_visible": click_area_visible,
         "bottom_center": bottom_center,
         "body_collision": body_collision,
+        "icon_tilemap": icon_tilemap,
+        "lock_props": lock_props,
         "gem_sockets": gem_sockets,
         "collision_shape": collision_shape,
         "extra_nodes": extra_nodes,
@@ -525,7 +647,7 @@ def merge(base: dict, overlay: dict) -> dict:
         elif key in ("extra_nodes", "gem_sockets"):
             eff[key] = ov or base.get(key) or []
         else:
-            eff[key] = ov if ov is not None else base[key]
+            eff[key] = ov if ov is not None else base.get(key)
     # 必有字段断言：合并完不允许缺
     for key in ("collision_map", "click_polygon", "bottom_center", "body_collision", "sockets_scale"):
         assert eff.get(key) is not None, f"合并后 {key} 缺失，停手汇报"
@@ -605,6 +727,10 @@ def build() -> dict:
             data.pop("click_area_position", None)
         if data.get("click_area_visible") is None:
             data.pop("click_area_visible", None)
+        if data.get("icon_tilemap") is None:
+            data.pop("icon_tilemap", None)
+        if data.get("lock_props") is None:
+            data.pop("lock_props", None)
         data["definition_ids"] = cfg["ids"]
         items[scene_stem] = data
     out["items"] = items

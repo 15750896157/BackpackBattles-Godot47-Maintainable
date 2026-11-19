@@ -491,6 +491,187 @@
     "charging_weight"
    ]
   },
+  "BerserkerBag": {
+   "root_name": "Berserker Bag",
+   "script": "res://Items/Exclusive/BerserkerBag.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/DuffleBag.png",
+    "position": [
+     -4.0,
+     0.0
+    ],
+    "scale": [
+     0.45,
+     0.45
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.22222,
+    2.22222
+   ],
+   "click_polygon": [
+    -128,
+    -88,
+    128,
+    -88,
+    128,
+    88,
+    -128,
+    88
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": null,
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -80.0,
+     0.0
+    ],
+    "scale": [
+     2.222,
+     2.222
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "collision_shape": {
+    "type": "RectangleShape2D",
+    "params": {
+     "size": [
+      245.0,
+      170.0
+     ]
+    },
+    "position": [
+     -0.5,
+     2.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.966797,
+        0.892485,
+        0.343111,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        3.33334,
+        -2.42841e-07
+       ]
+      },
+      "rotation": 1.5708,
+      "scale": {
+       "vec2": [
+        0.95,
+        1.00937
+       ]
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_guard_harness"
+   ]
+  },
   "BionicArmor": {
    "root_name": "Bionic Armor",
    "script": "res://Items/Exclusive/BionicArmor.gd",
@@ -2162,6 +2343,242 @@
     "supply_squire_armor"
    ]
   },
+  "EngineerBag2": {
+   "root_name": "Engineer Bag 2",
+   "script": "res://Items/Exclusive/EngineerBag2.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/BoxofCogs.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      -2,
+      1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      -1,
+      2,
+      2
+     ],
+     [
+      0,
+      1,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -96,
+    -136,
+    96,
+    -136,
+    96,
+    -56,
+    168,
+    -56,
+    168,
+    56,
+    96,
+    56,
+    96,
+    136,
+    -96,
+    136,
+    -96,
+    56,
+    -176,
+    56,
+    -176,
+    -56,
+    -96,
+    -56
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -90,
+     50,
+     -91,
+     125,
+     86,
+     127,
+     86,
+     49,
+     162,
+     49,
+     162,
+     -50,
+     87,
+     -50,
+     86,
+     -125,
+     -91,
+     -125,
+     -90,
+     -50,
+     -168,
+     -50,
+     -168,
+     50
+    ]
+   },
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     0.0,
+     -74.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      -2,
+      1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      -1,
+      2,
+      2
+     ],
+     [
+      0,
+      1,
+      2
+     ]
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "visible": false,
+      "modulate": {
+       "color": [
+        0.94902,
+        0.74902,
+        0.435294,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        0.0,
+        2.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.907877,
+        0.95
+       ]
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_gear_sling"
+   ]
+  },
   "FlyAgaric": {
    "root_name": "Fly Agaric",
    "script": "res://Items/FlyAgaric.gd",
@@ -2650,6 +3067,36 @@
     }
    ],
    "extra_nodes": [
+    {
+     "name": "Aura",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "groups": [
+      "Weapon"
+     ],
+     "props": {
+      "visible": false,
+      "material": {
+       "res": "res://PvE/Items/Particles/Halberd_mat14.tres"
+      },
+      "position": {
+       "vec2": [
+        58.0,
+        -170.0
+       ]
+      },
+      "rotation": 0.360734,
+      "scale": {
+       "vec2": [
+        1.19947,
+        1.69874
+       ]
+      },
+      "texture": {
+       "res": "res://CharacterClasses/Pyromancer/Skins/Normal/Default/Flame.png"
+      }
+     }
+    },
     {
      "name": "HalberdAnim",
      "scene": "res://PvE/Items/Anims/HalberdAnim.tscn",
@@ -3358,6 +3805,181 @@
     "supply_mana_gem"
    ]
   },
+  "Holdall": {
+   "root_name": "Holdall",
+   "script": "res://Items/Exclusive/Holdall.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/Holdall.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -128,
+    -88,
+    128,
+    -88,
+    128,
+    88,
+    -128,
+    88
+   ],
+   "bottom_center": [
+    0.0,
+    92.0
+   ],
+   "body_collision": null,
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -80.0,
+     0.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "collision_shape": {
+    "type": "RectangleShape2D",
+    "params": {
+     "size": [
+      254.0,
+      174.0
+     ]
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.996078,
+        0.760784,
+        0.572549,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        3.33334,
+        -2.42841e-07
+       ]
+      },
+      "rotation": 1.5708
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_tool_roll"
+   ]
+  },
   "Laboratory": {
    "root_name": "Laboratory",
    "script": "res://Items/Exclusive/Laboratory.gd",
@@ -3721,6 +4343,145 @@
    "definition_ids": [
     "leather_wrap",
     "supply_leather_armor"
+   ]
+  },
+  "LeatherBag": {
+   "root_name": "Leather Bag",
+   "script": "res://Items/Bag.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Sprites/LeatherBag.png",
+    "position": [
+     -4.0,
+     0.0
+    ],
+    "scale": [
+     0.4,
+     0.4
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     0.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.5,
+    2.5
+   ],
+   "click_polygon": [
+    -88,
+    -88,
+    96,
+    -88,
+    96,
+    88,
+    -88,
+    88
+   ],
+   "bottom_center": [
+    0.0,
+    89.0
+   ],
+   "body_collision": null,
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     10.0,
+     0.0
+    ],
+    "scale": [
+     2.5,
+     2.5
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ]
+    ]
+   },
+   "collision_shape": {
+    "type": "RectangleShape2D",
+    "params": {
+     "size": [
+      152.0,
+      160.0
+     ]
+    },
+    "position": [
+     4.0,
+     0.0
+    ]
+   },
+   "definition_ids": [
+    "bag_canvas_frame",
+    "bag_release_armor",
+    "bag_release_bedroll",
+    "bag_release_herbal",
+    "bag_release_journey",
+    "bag_release_satchel",
+    "bag_release_supply",
+    "bag_release_transport",
+    "bag_release_weapon"
    ]
   },
   "LuckyClover": {
@@ -5129,6 +5890,22 @@
      -45
     ]
    },
+   "lock_props": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "position": [
+     0.0,
+     -34.0
+    ],
+    "scale": [
+     0.3,
+     0.3
+    ]
+   },
    "gem_sockets": [
     {
      "name": "GemSocket",
@@ -5179,6 +5956,729 @@
    "definition_ids": [
     "renewal_mortar",
     "supply_herb_pouch"
+   ]
+  },
+  "PuzzlebagL": {
+   "root_name": "Puzzlebag L",
+   "script": "res://Items/Exclusive/PuzzlebagL.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/PuzzlebagL.png",
+    "position": [
+     4.0,
+     -38.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -36.0,
+     -38.0
+    ],
+    "cells": [
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -128,
+    0,
+    32,
+    0,
+    32,
+    -88,
+    128,
+    -88,
+    128,
+    88,
+    -128,
+    88
+   ],
+   "click_area_position": [
+    4.0,
+    -38.0
+   ],
+   "bottom_center": [
+    0.0,
+    51.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     4.0,
+     -38.0
+    ],
+    "polygon": [
+     33,
+     -80,
+     85,
+     -90,
+     117,
+     -81,
+     119,
+     -4,
+     125,
+     71,
+     110,
+     89,
+     -69,
+     90,
+     -113,
+     79,
+     -123,
+     37,
+     -114,
+     -6,
+     22,
+     -9
+    ]
+   },
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -80.0,
+     0.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.996078,
+        0.611765,
+        0.572549,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        3.33334,
+        -2.42841e-07
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Borders/PuzzlebagL_Border.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_corner_satchel"
+   ]
+  },
+  "PuzzlebagS": {
+   "root_name": "Puzzlebag S",
+   "script": "res://Items/Exclusive/PuzzlebagS.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/PuzzlebagS.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -128,
+    0,
+    -48,
+    0,
+    -48,
+    -88,
+    40,
+    -88,
+    128,
+    -88,
+    128,
+    0,
+    48,
+    0,
+    47.3571,
+    88,
+    -128,
+    88
+   ],
+   "bottom_center": [
+    1.0,
+    86.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     128,
+     -88,
+     128,
+     8,
+     48,
+     8,
+     48,
+     88,
+     -129,
+     89,
+     -128,
+     -8,
+     -48,
+     -8,
+     -46,
+     -89
+    ]
+   },
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -80.0,
+     0.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ]
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.654902,
+        0.882353,
+        0.447059,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        3.33334,
+        -2.42841e-07
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Borders/PuzzlebagS_Border.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_twin_wing"
+   ]
+  },
+  "PuzzlebagT": {
+   "root_name": "Puzzlebag T",
+   "script": "res://Items/Exclusive/PuzzlebagT.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/PuzzlebagT.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -128,
+    0,
+    -40,
+    0,
+    -40,
+    -88,
+    40,
+    -88,
+    40,
+    0,
+    128,
+    0,
+    128,
+    88,
+    -128,
+    88
+   ],
+   "bottom_center": [
+    0.0,
+    84.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     48,
+     -92,
+     46,
+     -19,
+     59,
+     -8,
+     127,
+     -10,
+     128,
+     88,
+     -3,
+     84,
+     -129,
+     89,
+     -128,
+     -12,
+     -59,
+     -10,
+     -45,
+     -25,
+     -46,
+     -89
+    ]
+   },
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -80.0,
+     0.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.996078,
+        0.921569,
+        0.572549,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        3.33334,
+        -2.42841e-07
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Borders/PuzzlebagT_Border.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_cross_brace"
+   ]
+  },
+  "PuzzlebagZ": {
+   "root_name": "Puzzlebag Z",
+   "script": "res://Items/Exclusive/PuzzlebagZ.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/PuzzlebagZ.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -128,
+    0,
+    -128,
+    -88,
+    40,
+    -88,
+    40,
+    0,
+    128,
+    0,
+    128,
+    88,
+    47.3571,
+    88,
+    -39.9801,
+    88,
+    -40,
+    0
+   ],
+   "bottom_center": [
+    7.0,
+    86.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     126,
+     -13,
+     130,
+     82,
+     21,
+     91,
+     -43,
+     82,
+     -43,
+     4,
+     -119,
+     2,
+     -128,
+     -87,
+     51,
+     -89,
+     50,
+     -11
+    ]
+   },
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -80.0,
+     0.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ]
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.854902,
+        0.572549,
+        0.996078,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        3.33334,
+        -2.42841e-07
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Borders/PuzzlebagS_Border.png"
+      },
+      "flip_h": true
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_step_case"
    ]
   },
   "RegularSapphire": {
@@ -6542,6 +8042,22 @@
     72.0
    ],
    "body_collision": null,
+   "lock_props": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "position": [
+     0.0,
+     -34.0
+    ],
+    "scale": [
+     0.3,
+     0.3
+    ]
+   },
    "gem_sockets": [
     {
      "name": "GemSocket",
@@ -6729,7 +8245,14 @@
      0.5,
      0.5
     ],
-    "material": null
+    "material": null,
+    "script": "res://Items/Exclusive/SpringloaderVisual.gd",
+    "script_props": {
+     "accelFactor": 0.12,
+     "speed": 4.0,
+     "friction": 0.96,
+     "maxScale": 0.7
+    }
    },
    "collision_map": {
     "position": [
@@ -6849,6 +8372,38 @@
     }
    ],
    "extra_nodes": [
+    {
+     "name": "Spring",
+     "type": "Sprite2D",
+     "parent": "Icon",
+     "groups": [
+      "hasShadow"
+     ],
+     "props": {
+      "show_behind_parent": true,
+      "position": {
+       "vec2": [
+        0.0,
+        -26.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        1.0,
+        0.877
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Sprites/Springloader_spring.png"
+      },
+      "offset": {
+       "vec2": [
+        0.0,
+        112.0
+       ]
+      }
+     }
+    },
     {
      "name": "VScrollbar",
      "type": "Sprite2D",
@@ -7624,6 +9179,252 @@
     "supply_ice_pack"
    ]
   },
+  "Toolbox": {
+   "root_name": "Toolbox",
+   "script": "res://Items/Exclusive/Toolbox.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/UtilityPouch.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     -32.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      -1,
+      2,
+      2
+     ],
+     [
+      1,
+      1,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -128,
+    -120,
+    128,
+    -120,
+    128,
+    136,
+    40,
+    136,
+    40,
+    56,
+    -40,
+    56,
+    -40,
+    136,
+    -128,
+    136
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -122,
+     -112,
+     125,
+     -114,
+     126,
+     133,
+     34,
+     131,
+     36,
+     51,
+     -37,
+     50,
+     -34,
+     132,
+     -118,
+     132,
+     -127,
+     111
+    ],
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.2
+    ]
+   },
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -86.0,
+     -67.1111
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      -1,
+      2,
+      2
+     ],
+     [
+      1,
+      1,
+      2
+     ]
+    ]
+   },
+   "lock_props": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "position": [
+     0.0,
+     -39.0
+    ],
+    "scale": [
+     0.3,
+     0.3
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.682353,
+        0.831373,
+        0.890196,
+        1.0
+       ]
+      },
+      "position": {
+       "vec2": [
+        3.99998,
+        18.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.931298,
+        0.930769
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Borders/Toolbox_Border.png"
+      }
+     }
+    }
+   ],
+   "definition_ids": [
+    "bag_hollow_ring"
+   ]
+  },
   "VampiricPotion": {
    "root_name": "Vampiric Potion",
    "script": "res://Items/Exclusive/VampiricPotion.gd",
@@ -7819,6 +9620,241 @@
     "supply_blood_ring",
     "supply_lust_crest",
     "supply_vampire_fang"
+   ]
+  },
+  "VineweaveBasket": {
+   "root_name": "Vineweave Basket",
+   "script": "res://Items/Exclusive/VineweaveBasket.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Items/Exclusive/Sprites/VineweaveBasket.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": {
+     "shader": "res://PvE/Items/ItemDissolve.gdshader",
+     "params": {
+      "progress": 0.245,
+      "direction": [
+       -1,
+       0
+      ]
+     }
+    }
+   },
+   "collision_map": {
+    "position": [
+     -40.0,
+     -40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      -1,
+      2,
+      2
+     ],
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      1,
+      1,
+      2
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -128,
+    -128,
+    128,
+    -128,
+    128,
+    128,
+    -128,
+    128
+   ],
+   "bottom_center": [
+    0.0,
+    72.0
+   ],
+   "body_collision": null,
+   "icon_tilemap": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     0.501961
+    ],
+    "position": [
+     -80.0,
+     -80.0
+    ],
+    "scale": [
+     2.0,
+     2.0
+    ],
+    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "cells": [
+     [
+      -1,
+      0,
+      2
+     ],
+     [
+      0,
+      -1,
+      2
+     ],
+     [
+      1,
+      -1,
+      2
+     ],
+     [
+      -1,
+      1,
+      2
+     ],
+     [
+      0,
+      0,
+      2
+     ],
+     [
+      1,
+      0,
+      2
+     ],
+     [
+      -1,
+      2,
+      2
+     ],
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      1,
+      1,
+      2
+     ]
+    ]
+   },
+   "collision_shape": {
+    "type": "RectangleShape2D",
+    "params": {
+     "size": [
+      256.0,
+      258.0
+     ]
+    },
+    "position": [
+     0.0,
+     0.0
+    ]
+   },
+   "extra_nodes": [
+    {
+     "name": "Border",
+     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        0.792157,
+        0.898039,
+        0.419608,
+        1.0
+       ]
+      },
+      "scale": {
+       "vec2": [
+        0.907877,
+        0.95
+       ]
+      },
+      "texture": {
+       "res": "res://Items/Exclusive/Borders/Firepit_Border.png"
+      }
+     }
+    },
+    {
+     "name": "SaleParticles",
+     "type": "GPUParticles2D",
+     "parent": "Icon",
+     "props": {
+      "modulate": {
+       "color": [
+        3.0,
+        3.0,
+        3.0,
+        0.827451
+       ]
+      },
+      "z_index": 5,
+      "emitting": false,
+      "amount": 40,
+      "lifetime": 2.0,
+      "one_shot": true,
+      "explosiveness": 0.45,
+      "process_material": {
+       "res": "res://Items/Exclusive/Particles/VineweaveBasketSaleParticles.material"
+      },
+      "texture": {
+       "res": "res://Assets/Particles/GlowingDot.png"
+      }
+     },
+     "script": "res://Utility/AutoHideParticles.gd"
+    }
+   ],
+   "definition_ids": [
+    "bag_herbal_tray"
    ]
   },
   "WalrusTusk": {
@@ -8068,6 +10104,22 @@
     71.0
    ],
    "body_collision": null,
+   "lock_props": {
+    "modulate": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "position": [
+     0.0,
+     -38.0
+    ],
+    "scale": [
+     0.3,
+     0.3
+    ]
+   },
    "gem_sockets": [
     {
      "name": "GemSocket",

@@ -67,6 +67,18 @@ func _check_template_item(id: String, holder: Node2D) -> void:
 	check(icon.texture != null and str(icon.texture.resource_path) == str(data.icon.texture), id + ": icon texture matches")
 	check(icon.scale.is_equal_approx(Vector2(data.icon.scale[0], data.icon.scale[1])), id + ": icon scale matches")
 	check(icon.position.is_equal_approx(Vector2(data.icon.position[0], data.icon.position[1])), id + ": icon position matches")
+	# Icon rotation/offset（药剂刀漏收、格区刀补上：PestilenceFlask offset=(4,-17)）
+	if data.icon.has("rotation"):
+		check(is_equal_approx(icon.rotation, float(data.icon.rotation)), id + ": icon rotation matches")
+	if data.icon.has("offset"):
+		check(icon.offset.is_equal_approx(Vector2(data.icon.offset[0], data.icon.offset[1])), id + ": icon offset matches")
+	# Icon 挂脚本（第三刀漏收、格区刀补上：SpringLoader 弹簧回弹）+ @export 覆盖
+	if data.icon.has("script"):
+		check(icon.get_script() != null and str(icon.get_script().resource_path) == str(data.icon.script), id + ": icon script matches")
+		for sp_key in data.icon.script_props:
+			var sp_got = icon.get(sp_key)
+			var sp_expect = data.icon.script_props[sp_key]
+			check((sp_got is float or sp_got is int) and is_equal_approx(float(sp_got), float(sp_expect)), id + ": icon script prop matches " + sp_key)
 	var mat = data.icon.get("material")
 	if mat is Dictionary:
 		check(icon.material is ShaderMaterial, id + ": icon dissolve material applied")
@@ -111,6 +123,9 @@ func _check_template_item(id: String, holder: Node2D) -> void:
 		check(body != null and not body.visible, id + ": body collision polygon present and hidden")
 		if body is CollisionPolygon2D:
 			check(body.polygon.size() * 2 == data.body_collision.polygon.size() and _poly_equal(body.polygon, data.body_collision.polygon), id + ": body collision polygon matches")
+			if data.body_collision.has("modulate"):
+				var bm = data.body_collision.modulate
+				check(body.modulate.is_equal_approx(Color(bm[0], bm[1], bm[2], bm[3])), id + ": body collision modulate matches")
 	var click_poly: PackedVector2Array = item.get_node("ClickArea/CollisionPolygon2D").polygon
 	check(click_poly.size() * 2 == data.click_polygon.size() and _poly_equal(click_poly, data.click_polygon), id + ": click polygon matches")
 	if data.has("click_position"):
@@ -132,6 +147,33 @@ func _check_template_item(id: String, holder: Node2D) -> void:
 			var got_scalar = item.get(key)
 			check((got_scalar is float or got_scalar is int) and is_equal_approx(float(got_scalar), float(expect_root)), id + ": root prop matches " + key)
 	check(item.get_node("Icon/Sockets").scale.is_equal_approx(Vector2(data.sockets_scale[0], data.sockets_scale[1])), id + ": sockets scale matches")
+	# --- 格区 TileMap（Bag 硬接口 $Icon/TileMap）：节点/属性/潜在格逐项对照 ---
+	if data.has("icon_tilemap"):
+		var spec_tm: Dictionary = data.icon_tilemap
+		check(item.has_node("Icon/TileMap"), id + ": bag tilemap present")
+		if item.has_node("Icon/TileMap"):
+			var bag_map: TileMap = item.get_node("Icon/TileMap")
+			var tm_mod = spec_tm.modulate
+			check(bag_map.modulate.is_equal_approx(Color(tm_mod[0], tm_mod[1], tm_mod[2], tm_mod[3])), id + ": bag tilemap modulate matches")
+			check(bag_map.position.is_equal_approx(Vector2(spec_tm.position[0], spec_tm.position[1])), id + ": bag tilemap position matches")
+			check(bag_map.scale.is_equal_approx(Vector2(spec_tm.scale[0], spec_tm.scale[1])), id + ": bag tilemap scale matches")
+			check(bag_map.tile_set != null and str(bag_map.tile_set.resource_path) == str(spec_tm.tile_set), id + ": bag tilemap tile_set matches")
+			var tm_expected := {}
+			for cell in spec_tm.cells:
+				tm_expected[Vector2i(cell[0], cell[1])] = int(cell[2])
+			var tm_actual := {}
+			for cell in bag_map.get_used_cells(0):
+				tm_actual[cell] = bag_map.get_cell_source_id(0, cell)
+			check(tm_actual == tm_expected, id + ": bag tilemap cells match (" + str(tm_actual) + " vs " + str(tm_expected) + ")")
+	# --- Lock 覆盖（第五刀漏收、格区刀补上）---
+	for key in data.get("lock_props", {}):
+		var lock: Sprite2D = item.get_node("Lock")
+		var lv = data.lock_props[key]
+		if lv is Array and lv.size() == 4:
+			var lc := Color(lv[0], lv[1], lv[2], lv[3])
+			check(lock.modulate.is_equal_approx(lc), id + ": lock modulate matches")
+		elif lv is Array and lv.size() == 2:
+			check(lock.get(key).is_equal_approx(Vector2(lv[0], lv[1])), id + ": lock " + key + " matches")
 	# --- 条件槽位·宝石孔：孔位数量/名字/坐标/场景来源，进树前逐项对照数据 ---
 	var socket_specs: Array = data.get("gem_sockets", [])
 	check(item.get_node("Icon/Sockets").get_child_count() == socket_specs.size(), id + ": gem socket count matches (" + str(item.get_node("Icon/Sockets").get_child_count()) + "/" + str(socket_specs.size()) + ")")
@@ -158,6 +200,9 @@ func _check_template_item(id: String, holder: Node2D) -> void:
 				check(str(n.scene_file_path) == str(spec.scene), id + ": extra scene instance matches " + p)
 			else:
 				check(str(n.get_class()) == str(spec.type), id + ": extra node class matches " + p)
+			# groups（第三/六刀漏收、格区刀补上：Spring hasShadow 影子组、Aura Weapon 组）
+			for group in spec.get("groups", []):
+				check(n.is_in_group(str(group)), id + ": extra node group matches " + p + "@" + str(group))
 			if str(spec.get("script", "")) != "":
 				check(str(n.get_script().resource_path) == str(spec.script), id + ": extra node script matches " + p)
 			for key in spec.get("props", {}):

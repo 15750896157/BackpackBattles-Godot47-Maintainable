@@ -41,6 +41,9 @@ static func preload_paths(definition_id: String) -> Array:
 	# 宝石孔：整场景实例 GemSocket.tscn
 	if not data.get("gem_sockets", []).is_empty() and not paths.has(GEM_SOCKET_SCENE):
 		paths.append(GEM_SOCKET_SCENE)
+	# 格区 TileMap：外部 TileSet .tres
+	if data.has("icon_tilemap") and not paths.has(str(data.icon_tilemap.tile_set)):
+		paths.append(str(data.icon_tilemap.tile_set))
 	# 条件槽位（粒子等）额外节点引用的资源（.tres/.material/.png；整场景实例的 .tscn）
 	for spec in data.get("extra_nodes", []):
 		if str(spec.get("scene", "")) != "" and not paths.has(str(spec.scene)):
@@ -66,6 +69,10 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 	var icon: Sprite2D = item.get_node("Icon")
 	icon.position = Vector2(data.icon.position[0], data.icon.position[1])
 	icon.scale = Vector2(data.icon.scale[0], data.icon.scale[1])
+	if data.icon.has("rotation"):
+		icon.rotation = float(data.icon.rotation)
+	if data.icon.has("offset"):
+		icon.offset = Vector2(data.icon.offset[0], data.icon.offset[1])
 	icon.texture = await AssetStream.request_resource(str(data.icon.texture), scope)
 	if icon.texture == null:
 		push_error("ItemTemplate: icon texture missing " + str(data.icon.texture))
@@ -78,6 +85,12 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 			var value = mat.params[key]
 			material.set_shader_parameter(key, Vector2(value[0], value[1]) if value is Array else value)
 		icon.material = material
+	# Icon 挂脚本（SpringLoader 的 SpringloaderVisual.gd 弹簧回弹）：进树前 set_script + @export 覆盖，
+	# @onready（$Spring/$Sockets/get_parent）在 _ready 才解析，节点此刻已由数据建全。
+	if data.icon.has("script"):
+		icon.set_script(load(str(data.icon.script)))
+		for key in data.icon.script_props:
+			icon.set(key, data.icon.script_props[key])
 	item.get_node("Icon/Sockets").scale = Vector2(data.sockets_scale[0], data.sockets_scale[1])
 	# 宝石孔：按数据实例化 GemSocket.tscn，位置是 Sockets 本地坐标。必须在进树前挂好，
 	# Item.gd 的 @onready sockets = $Icon/Sockets.get_children() 才收得到。
@@ -94,6 +107,18 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 	map.clear()
 	for cell in data.collision_map.cells:
 		map.set_cell(0, Vector2i(cell[0], cell[1]), int(cell[2]), Vector2i.ZERO, 0)
+	# 格区 TileMap（Bag.gd @onready $Icon/TileMap 硬接口：潜在格半透明显示）。进树前建好铺好。
+	if data.has("icon_tilemap"):
+		var spec_tm: Dictionary = data.icon_tilemap
+		var bag_map: TileMap = TileMap.new()
+		bag_map.name = "TileMap"
+		bag_map.tile_set = await AssetStream.request_resource(str(spec_tm.tile_set), scope)
+		bag_map.modulate = Color(spec_tm.modulate[0], spec_tm.modulate[1], spec_tm.modulate[2], spec_tm.modulate[3])
+		bag_map.position = Vector2(spec_tm.position[0], spec_tm.position[1])
+		bag_map.scale = Vector2(spec_tm.scale[0], spec_tm.scale[1])
+		for cell in spec_tm.cells:
+			bag_map.set_cell(0, Vector2i(cell[0], cell[1]), int(cell[2]), Vector2i.ZERO, 0)
+		item.get_node("Icon").add_child(bag_map)
 	item.get_node("ClickArea/CollisionPolygon2D").polygon = _poly(data.click_polygon)
 	if data.has("click_position"):
 		item.get_node("ClickArea/CollisionPolygon2D").position = Vector2(data.click_position[0], data.click_position[1])
@@ -103,6 +128,12 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 	if data.get("click_area_visible", false):
 		item.get_node("ClickArea").visible = true
 	item.get_node("BottomCenter").position = Vector2(data.bottom_center[0], data.bottom_center[1])
+	# Lock 覆盖（锁图标 Sprite2D：第五刀漏收、本刀补上——Pot/SpikedShield/WoodenBuckler/Toolbox 的
+	# modulate 1/position 0,-3x/scale 0.3，不覆盖则锁图标显示基场景默认样式）。
+	for key in data.get("lock_props", {}):
+		var lock: Sprite2D = item.get_node("Lock")
+		var lv = data.lock_props[key]
+		lock.set(key, Color(lv[0], lv[1], lv[2], lv[3]) if lv is Array and lv.size() == 4 else Vector2(lv[0], lv[1]))
 	# 物理体（硬接口，LifecycleAndText 会 get_node）：多边形（CollisionPolygon2D）
 	# 或形状（CollisionShape2D：圆/胶囊/矩形，进树前建 shape 资源），按数据二选一。
 	if data.has("collision_shape"):
@@ -125,6 +156,9 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 		body_poly.visible = false
 		body_poly.position = Vector2(data.body_collision.position[0], data.body_collision.position[1])
 		body_poly.polygon = _poly(data.body_collision.polygon)
+		if data.body_collision.has("modulate"):
+			var bm = data.body_collision.modulate
+			body_poly.modulate = Color(bm[0], bm[1], bm[2], bm[3])
 		item.add_child(body_poly)
 	# 额外节点（如 Rope 的 SpeedTimer、粒子槽位的 SpecificDragParticles）：
 	# 按数据动态创建 + 接线，进树前就位，@onready 才接得到。
@@ -139,6 +173,8 @@ static func apply(item: Node, data: Dictionary, scope: String) -> bool:
 		else:
 			node = ClassDB.instantiate(str(spec.type))
 		node.name = str(spec.name)
+		for group in spec.get("groups", []):
+			node.add_to_group(str(group))
 		for key in spec.get("props", {}):
 			node.set(key, await _decode(spec.props[key], scope))
 		if str(spec.get("script", "")) != "":
