@@ -1,5 +1,5 @@
 extends Node
-var output=""
+var output="user://combat_anchors_qa"
 var samples:Array=[]
 var failures:Array=[]
 func _ready():

@@ -39,31 +39,9 @@ func fromSerialized(data: Array):
 func checkVersion():
 	return load("res://Runtime/Behavior/Features/Utility/RunDataBehavior.gd").checkVersion(self)
 
-func deserializeMetadata(string: String):
-	return load("res://Runtime/Behavior/Utility/RunDataBehavior.gd").deserializeMetadata(self, string)
-
-static func serializeCharacterData(addToBitstream: BitStream,
-	withNewClasses: bool) -> void :
-	load("res://Runtime/Behavior/Utility/RunDataBehavior.gd").serializeCharacterData(addToBitstream, withNewClasses)
-
-static func deserializeCharacterData(bitStream, withNewClasses: bool):
-	return load("res://Runtime/Behavior/Utility/RunDataBehavior.gd").deserializeCharacterData(bitStream, withNewClasses)
-
-const dictIndex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
-
-func parseRounds(wholeRun: Dictionary):
-	for index in dictIndex:
-		if index in wholeRun:
-			rounds.push_back(wholeRun[index])
-		else:
-			break
-
 func deserializeRound(roundIndex):
 	return createRoundDict(rounds[roundIndex - 1], characterClass,
 		loadout, encodedName, chibiStyle, skins.duplicate(), entryVersion)
-
-func deserializeItemsOfRound(roundIndex):
-	return deserializeItems(rounds[roundIndex - 1], entryVersion)
 
 static func deserializeItems(metadataString: String, version):
 	return load("res://Runtime/Behavior/Utility/RunDataBehavior.gd").deserializeItems(metadataString, version)
@@ -129,18 +107,4 @@ func isAvailableForClassOrAppropriated(descriptor, itemCounter) -> bool:
 
 func isRoundValid(roundNum: int, currentRound: int):
 	return load("res://Runtime/Behavior/Utility/RunDataBehavior.gd").isRoundValid(self, roundNum, currentRound)
-
-func fromSilentWolfScore(score: Dictionary):
-	return load("res://Runtime/Behavior/Features/Utility/RunDataBehavior.gd").fromSilentWolfScore(self, score)
-
-func fromSteamScore(dict: Dictionary, lobbyMode: bool):
-	return load("res://Runtime/Behavior/Features/Utility/RunDataBehavior.gd").fromSteamScore(self, dict, lobbyMode)
-
-const VERSION_FIELD = "d"
-const sharedFields = [VERSION_FIELD, "r", "id", "0", "1", "2", "3", "4"]
-const swFields = sharedFields
-const steamFields = ["d", "r", "id", "0", "1", "2", "3", "4", "ugc", "p"]
-
-func fromData(playername, run: Dictionary, lobbyMode: bool = false):
-	return load("res://Runtime/Behavior/Utility/RunDataBehavior.gd").fromData(self, playername, run, lobbyMode)
 

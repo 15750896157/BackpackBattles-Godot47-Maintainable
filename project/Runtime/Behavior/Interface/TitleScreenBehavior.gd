@@ -5,7 +5,6 @@ const Receiver = preload("res://Interface/TitleScreen.gd")
 static func _ready(subject: Receiver) -> void :
 	if Expedition.enabled:
 		subject.call_deferred("_pve_refresh_title")
-	subject.get_node("TitleNode/Lobbies").visible = Game.LOBBIES_ENABLED
 	subject.get_node("%Quit").visible = not OS.has_feature("web")
 
 	subject.get_node("%RankedBannerHovered").hide()
@@ -47,7 +46,6 @@ static func ready_deferred(subject: Receiver):
 	subject.warpPointNodes.push_back(subject.continueButton)
 	subject.warpPointNodes.push_back(subject.rankedButton)
 	subject.warpPointNodes.push_back(subject.unrankedButton)
-	subject.warpPointNodes.push_back(subject.otherModesButton)
 	subject.warpPointNodes.push_back(subject.concedeButton)
 	subject.warpPointNodes.push_back(subject.get_node("Node2D/Background/Quit/QuitButton"))
 	subject.warpPointNodes.push_back(Game.versionButton)
@@ -237,8 +235,6 @@ static func applyImpulse(subject: Receiver, item):
 static func _pve_refresh_title(subject: Receiver):
 	while not Expedition.initialized:
 		await subject.get_tree().process_frame
-	subject.get_node("TitleNode/Lobbies").hide()
-	subject.otherModesButton.hide()
 	subject.randomClassButton.hide()
 	subject.randomClassHint.hide()
 	subject.loadoutButtons[2].hide()
@@ -280,16 +276,6 @@ static func updateLocale(subject: Receiver):
 			banner_label.shrinkIfTooBig(banner_label.text)
 		subject.updateLoadoutLocale(Game.curClass)
 	return
-
-static func otherModesUIPressed(subject: Receiver):
-	if not Game.draggedItem and not Game.runStarted:
-
-		if Game.otherModesUI == null:
-			Game.otherModesUI = load("res://Interface/Lobbies/OtherModesUI.tscn").instantiate()
-			Game.otherModesUI.connect("cancel", Callable(subject, "onOtherModeClosed"))
-
-		Game.otherModesUI.open()
-		subject.disableButtons(true)
 
 static func onCursorWarp(subject: Receiver):
 	if is_instance_valid(Game.wardrobe) and Game.wardrobe.isOpen:

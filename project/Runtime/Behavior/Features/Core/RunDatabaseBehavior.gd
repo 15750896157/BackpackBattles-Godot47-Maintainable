@@ -32,31 +32,3 @@ static func getRoundData(subject: Receiver, roundNum):
 	if subject.rounds.size() < roundNum and Game.EDITOR:
 		return subject.rounds[min(roundNum, subject.rounds.size() - 1)]
 	return subject.rounds[roundNum]
-
-static func pushRun(subject: Receiver):
-
-	if not Game.canCommitRun:
-		return
-
-	if subject.facedNoConnectionDarkReflection > 0 and not Game.BETA:
-		return
-
-	var data = subject.getRunDict()
-	var playerName = subject.getPlayerName()
-
-	Util.callNextFrame(subject, "actuallyPersistRun", [playerName, data])
-
-static func getPlayerName(subject: Receiver) -> String:
-	var playerName = Game.getPlayerName()
-	if not Profanity.isGood(playerName):
-		playerName = Util.pickRandomElement(subject.replaceNames)
-
-	playerName = Util.sharedBitstream.serializeString(playerName)
-	return playerName
-
-static func actuallyPersistRun(subject: Receiver, playerName, data: Dictionary):
-	var sequence = maxi(subject.swSequenceNumber, LocalServices.stat("local_run_sequence") + 1)
-	LocalServices.set_stat("local_run_sequence", sequence)
-	LocalServices.persist_score(subject.getLeaderboard(), playerName, sequence, data, "player_recorded")
-	subject.swSequenceNumber = sequence + 1
-	subject.sendRunRequest()

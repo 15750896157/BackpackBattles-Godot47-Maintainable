@@ -56,9 +56,6 @@ func _pack(width: int, offset: int = 0) -> PackedByteArray:
 func _append_word(value: int, width: int):
 	pushBitsize(value, width)
 
-func toByteArray():
-	return _pack(8)
-
 func fromByteArray(bytes: PackedByteArray):
 	# Existing callers explicitly reset the read cursor; only payload is replaced.
 	bits.clear()
@@ -78,41 +75,6 @@ func fromGodotString(encoded: String):
 		_append_word(word, 6)
 	return true
 
-func toGodotString_legacy() -> String:
-	var result = ""
-	for byte in toByteArray():
-		result += String.chr(byte + 65)
-	return result
-
-func fromGodotString_legacy(encoded: String):
-	var bytes = PackedByteArray()
-	for character in encoded:
-		bytes.append(character.unicode_at(0) - 65)
-	fromByteArray(bytes)
-
-func serializeInt(value: int, width: int = 64) -> String:
-	return serializeIntArray([value], width)
-
-func serializeIntArray(values: Array, width: int = 64) -> String:
-	clear()
-	for value in values:
-		pushBitsize(value, width)
-	return toGodotString()
-
-func deserializeInt(encoded: String, width: int = 64) -> int:
-	clear()
-	fromGodotString(encoded)
-	return pullBitsize(width)
-
-func deserializeIntArray(encoded: String, width: int = 64) -> Array:
-	clear()
-	fromGodotString(encoded)
-	# Preserve the existing encoded-character count contract, including exhaustion.
-	var result: Array = []
-	for index in encoded.length():
-		result.append(pullBitsize(width))
-	return result
-
 func serializeString(value: String) -> String:
 	clear()
 	fromByteArray(value.to_utf8_buffer())
@@ -125,39 +87,3 @@ func deserializeString(encoded: String) -> String:
 	for index in bits.size() / 8:
 		bytes.append(pullBitsize(8))
 	return bytes.get_string_from_utf8()
-
-func pprint():
-	return "".join(bits.map(func(bit): return str(bit)))
-
-func fromString(value):
-	bits.clear()
-	last_bit = 0
-	for character in value:
-		pushBit(int(character == "1"))
-
-func toUtf8() -> String:
-	# Compatibility for the old diagnostic API, including its temporary file.
-	var file = File.new()
-	file.open("user://score.dat", File.WRITE_READ)
-	file.store_buffer(toByteArray())
-	var text = file.get_as_text(false)
-	file.close()
-	print("utf8: ", text)
-	return text
-
-func fromUtf8(value: String):
-	fromByteArray(value.to_utf8_buffer())
-	print("num bits after conversion: ", bits.size())
-
-func toAsciiString() -> String:
-	var bytes = toByteArray()
-	print("num bits before conversion: ", bits.size())
-	print(bytes)
-	return bytes.get_string_from_ascii()
-
-func fromAsciiString(value: String):
-	var bytes = value.to_ascii_buffer()
-	print("ascii: ", value)
-	print("converted byte array: ", bytes)
-	fromByteArray(bytes)
-	print("num bits after conversion: ", bits.size())

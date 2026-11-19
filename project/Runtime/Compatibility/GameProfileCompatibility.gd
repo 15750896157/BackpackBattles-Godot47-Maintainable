@@ -35,7 +35,7 @@ func getNumClasses() -> int:
 	return getClassEnum().size()
 
 func isInLobby() -> bool:
-	return RunDatabase.lobbies.isInLobby()
+	return RunDatabase.lobbies != null and RunDatabase.lobbies.isInLobby()
 
 func getEffectiveMode() -> int:
 	if curMode == Mode.History:

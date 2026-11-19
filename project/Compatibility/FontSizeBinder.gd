@@ -23,4 +23,3 @@ func _unbind(font_id: int, callback: Callable) -> void:
 
 func _apply_ids(node_id: int, key: String, font_id: int) -> void:
 	load("res://Runtime/Callbacks/Compatibility/CallbacksF.gd").ForFontSizeBinder._apply_ids(self, node_id, key, font_id)
-

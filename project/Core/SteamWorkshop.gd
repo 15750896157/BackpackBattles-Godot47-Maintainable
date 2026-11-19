@@ -33,12 +33,6 @@ func finalize() -> void:
 	_db().onSteamRunsReceived()
 func hasRuns() -> bool:
 	return not parsedRuns.is_empty()
-func pushScore(metadata_text: String, sequence: int) -> void:
-	load("res://Runtime/Behavior/Core/SteamWorkshopBehavior.gd").pushScore(self, metadata_text, sequence)
-
-func parseMetadata(handle: int, results_returned: int, runArr: Array, lobbyMode: bool) -> void:
-	load("res://Runtime/Behavior/Core/SteamWorkshopBehavior.gd").parseMetadata(self, handle, results_returned, runArr, lobbyMode)
-
 func onSteamLeaderboardFindResult(handle: int, _found: int) -> void:
 	leaderboardHandle = handle
 func onSteamLeaderboardDownloaded(_message: String, _handle: int, _entries: Array) -> void:

@@ -35,22 +35,3 @@ static func isAvailableForClassOrAppropriated(subject: Receiver, descriptor, ite
 			if itemCounter[item.itemIndex] != 0:
 				return true
 	return false
-
-static func fromSilentWolfScore(subject: Receiver, score: Dictionary):
-	for field in subject.swFields:
-		if not field in score.metadata:
-			Util.eprint("no field ", field)
-			return subject.DeserializeResult.VERSION_TOO_OLD
-
-	subject.runId = score.score_id
-	return subject.fromData(score.player_name, score.metadata)
-
-static func fromSteamScore(subject: Receiver, dict: Dictionary, lobbyMode: bool):
-	if not lobbyMode:
-		for field in subject.steamFields:
-			if not field in dict:
-				Util.eprint("no field ", field)
-				return subject.DeserializeResult.VERSION_TOO_OLD
-
-	subject.runId = dict["ugc"]
-	return subject.fromData(dict["p"], dict, lobbyMode)

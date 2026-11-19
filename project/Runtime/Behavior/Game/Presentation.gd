@@ -79,6 +79,7 @@ static func onWaitingForMembersTimeout(subject: Receiver):
 		print("Offline members: ", membersList)
 
 static func forceLeaveLobby(subject: Receiver):
+	if RunDatabase.lobbies == null: return
 	Util.tryDisconnect(RunDatabase.lobbies, "found_opponent", subject, "finishForceSwitchToCombat")
 	InputBlocker.deactivate(InputBlocker.Source.Lobby)
 

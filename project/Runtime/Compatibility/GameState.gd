@@ -24,7 +24,7 @@ const SKILLS_ENABLED = true
 const USE_ICONS = true
 const BUILD_HISTORY_ENABLED = true
 const RECIPE_TOOLTIPS_ENABLED = true
-const LOBBIES_ENABLED = true
+const LOBBIES_ENABLED = false
 const STAT_DISPLAY_ENABLED = true
 const ACHIEVEMENTS_ENABLED = true
 

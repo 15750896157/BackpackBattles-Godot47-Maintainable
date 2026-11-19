@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bg43pt7v8k2wb"]
+[gd_scene format=3 uid="uid://xzbqbx64kczqj"]
 
 [ext_resource type="Texture2D" uid="uid://gsmsgkl7i4v4" path="res://Interface/BackpackButton.png" id="8"]
 
@@ -191,8 +191,6 @@
 [ext_resource type="Texture2D" uid="uid://b8uxs1kyowhhg" path="res://Assets/TitleScreen/RankedBannerBorder.png" id="284"]
 
 [ext_resource type="Texture2D" uid="uid://grwjhovxx4fm" path="res://Assets/TitleScreen/UnrankedBannerBorder.png" id="310"]
-
-[ext_resource type="Texture2D" uid="uid://whnee46xlevp" path="res://Assets/TitleScreen/OtherModesBannerBorder.png" id="311"]
 
 [ext_resource type="Script" uid="uid://cc4764qbedad5" path="res://Items/ItemPushZone.gd" id="312"]
 
@@ -1143,121 +1141,6 @@ offset_bottom = 104.0
 z_index = 2
 position = Vector2(0, -0.889038)
 
-[node name="Lobbies" type="Node2D" parent="TitleNode" unique_id=1435062159]
-position = Vector2(856, 504)
-
-[node name="OtherGameGlow" type="Sprite2D" parent="TitleNode/Lobbies" unique_id=1092907874]
-visible = false
-modulate = Color(0.436811, 1, 0.329412, 0.780392)
-material = ExtResource("64")
-position = Vector2(317.836, -60)
-scale = Vector2(0.858999, 0.752426)
-texture = ExtResource("69")
-
-[node name="OtherGameButton" type="TextureButton" parent="TitleNode/Lobbies" unique_id=784970643]
-unique_name_in_owner = true
-offset_left = 205.0
-offset_top = -213.0
-offset_right = 440.0
-offset_bottom = 85.0
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("68")
-ignore_texture_size = true
-script = ExtResource("160")
-showOnHover = NodePath("../OtherGameGlow")
-
-[node name="RandomBorder" type="Sprite2D" parent="TitleNode/Lobbies/OtherGameButton" unique_id=236910453]
-material = SubResource("456")
-position = Vector2(117.5, 149.389)
-scale = Vector2(1.72593, 1.41827)
-texture = ExtResource("311")
-
-[node name="Label8" type="Label" parent="TitleNode/Lobbies" unique_id=455587047]
-custom_minimum_size = Vector2(165, 0)
-offset_left = 234.0
-offset_top = -139.0
-offset_right = 399.0
-offset_bottom = -11.0
-theme_override_colors/font_color = Color(1, 0.883043, 0.589844, 1)
-theme_override_colors/font_shadow_color = Color(0.168627, 0.027451, 0.027451, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
-theme_override_constants/shadow_offset_x = 3
-theme_override_constants/shadow_offset_y = 2
-theme_override_constants/outline_size = 3
-theme_override_fonts/font = SubResource("79")
-theme_override_font_sizes/font_size = 33
-text = "Other
-Game
-Modes"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-script = ExtResource("182")
-translationKey = "BUTTON_OtherGameModes"
-maxSize = 165.0
-
-[node name="CreateLobbyButton" type="TextureButton" parent="TitleNode/Lobbies" unique_id=579239981]
-unique_name_in_owner = true
-visible = false
-offset_left = 204.0
-offset_top = -187.653
-offset_right = 439.0
-offset_bottom = 10.3472
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("68")
-ignore_texture_size = true
-script = ExtResource("160")
-
-[node name="Label6" type="Label" parent="TitleNode/Lobbies" unique_id=821858759]
-visible = false
-offset_left = 236.0
-offset_top = -141.653
-offset_right = 393.0
-offset_bottom = -45.6528
-theme_override_colors/font_color = Color(1, 0.883043, 0.589844, 1)
-theme_override_colors/font_shadow_color = Color(0.168627, 0.027451, 0.027451, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
-theme_override_constants/shadow_offset_x = 3
-theme_override_constants/shadow_offset_y = 2
-theme_override_constants/outline_size = 3
-theme_override_fonts/font = SubResource("79")
-theme_override_font_sizes/font_size = 33
-text = "Create Lobby"
-horizontal_alignment = 1
-autowrap_mode = 3
-script = ExtResource("182")
-
-[node name="JoinLobbyButton" type="TextureButton" parent="TitleNode/Lobbies" unique_id=1754833533]
-unique_name_in_owner = true
-visible = false
-offset_left = 205.0
-offset_top = -16.6528
-offset_right = 440.0
-offset_bottom = 181.347
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("68")
-ignore_texture_size = true
-script = ExtResource("160")
-
-[node name="Label7" type="Label" parent="TitleNode/Lobbies" unique_id=1632283276]
-visible = false
-offset_left = 236.0
-offset_top = 34.3472
-offset_right = 393.0
-offset_bottom = 133.347
-theme_override_colors/font_color = Color(1, 0.883043, 0.589844, 1)
-theme_override_colors/font_shadow_color = Color(0.168627, 0.027451, 0.027451, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
-theme_override_constants/shadow_offset_x = 3
-theme_override_constants/shadow_offset_y = 2
-theme_override_constants/outline_size = 3
-theme_override_fonts/font = SubResource("79")
-theme_override_font_sizes/font_size = 33
-text = "Join Lobby"
-horizontal_alignment = 1
-autowrap_mode = 3
-script = ExtResource("182")
-
 [node name="RankedBannerHovered" type="Sprite2D" parent="TitleNode" unique_id=1238824313]
 unique_name_in_owner = true
 visible = false
@@ -1985,12 +1868,6 @@ shape = SubResource("457")
 [connection signal="pressed" from="ButtonsNode/ChineseWikiButton" to="." method="_on_ChineseWikiButton_pressed"]
 
 [connection signal="pressed" from="ButtonsNode/ChineseItemSearch" to="." method="_on_ChineseItemSearch_pressed"]
-
-[connection signal="pressed" from="TitleNode/Lobbies/OtherGameButton" to="." method="otherModesUIPressed"]
-
-[connection signal="pressed" from="TitleNode/Lobbies/CreateLobbyButton" to="." method="onCreateLobbyPressed"]
-
-[connection signal="pressed" from="TitleNode/Lobbies/JoinLobbyButton" to="." method="onJoinLobbyPressed"]
 
 [connection signal="mouse_entered" from="TitleNode/RankedButton" to="." method="onRankedHover"]
 

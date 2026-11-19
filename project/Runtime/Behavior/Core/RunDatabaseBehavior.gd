@@ -35,8 +35,8 @@ static func parseSingleScore(subject: Receiver, score, steam: bool, lobbyMode: b
 				runData.encodedName = Util.sharedBitstream.serializeString("Local Practice%02d" % practice_number)
 			return runData
 		return null
-	var result = runData.fromSteamScore(score, lobbyMode) if steam else runData.fromSilentWolfScore(score)
-	return runData if result == RunData.DeserializeResult.VERSION_OK else null
+	# 旧数字压缩格式已剔除：无 _local_serialized 字段的旧记录一律跳过
+	return null
 
 static func onSteamRunsReceived(subject: Receiver):
 	print("received Steam: ", subject.steamLeaderboard.parsedRuns.size())
@@ -278,39 +278,6 @@ static func serializeRound(subject: Receiver) -> String:
 			item.getDataPersistent(bitStream)
 
 	return bitStream.toGodotString()
-
-static func serializeMetadata(subject: Receiver) -> BitStream:
-	var bitStream = BitStream.new()
-	var versionSplit = Game.VERSION.split(".")
-	bitStream.push(int(versionSplit[0]), 4)
-	bitStream.push(int(versionSplit[1]), 16)
-	bitStream.push(int(versionSplit[2]), 64)
-
-	for result in Game.roundResults:
-		bitStream.push(result, Game.RoundResult.size())
-
-	RunData.serializeCharacterData(bitStream, Game.FULLVERSION)
-
-	return bitStream
-
-static func getRunDict(subject: Receiver) -> Dictionary:
-	var data = Dictionary()
-	data[RunData.VERSION_FIELD] = subject.serializeMetadata().toGodotString()
-
-	var rating = Game.getRunRating(Game.curClass)
-	if Game.curMode == Game.Mode.Ranked:
-		data["r"] = rating
-	else:
-		data["r"] = subject.UNRANKED_RATING
-
-	data["id"] = Game.getPlayerIdentifier()
-
-	var roundIndex = 0
-	for r in subject.rounds:
-		data[str(roundIndex)] = r
-		roundIndex += 1
-
-	return data
 
 static func _seed_local_opponents(subject: Receiver):
 	if not is_instance_valid(Game.PLAYER):

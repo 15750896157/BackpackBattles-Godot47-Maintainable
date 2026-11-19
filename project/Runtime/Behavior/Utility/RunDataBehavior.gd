@@ -26,32 +26,6 @@ static func fromSerialized(subject: Receiver, data: Array):
 
 	return - 1
 
-static func deserializeMetadata(subject: Receiver, string: String):
-	var bitStream = BitStream.new()
-	var res = bitStream.fromGodotString(string)
-	if not res:
-		Util.eassert(false)
-		return subject.DeserializeResult.VERSION_TOO_OLD
-
-	subject.entryVersion += str(bitStream.pull(4)) + "."
-	subject.entryVersion += str(bitStream.pull(16)) + "."
-	subject.entryVersion += str(bitStream.pull(64))
-	var versionRes = subject.checkVersion()
-
-	if versionRes == subject.DeserializeResult.VERSION_OK:
-		for i in Game.getMaxNumberOfRounds():
-			subject.results.push_back(bitStream.pull(Game.RoundResult.size()))
-
-		var withNewClasses = Util.laterOrEqual(subject.entryVersion, "1.0.0")
-
-		var data = subject.deserializeCharacterData(bitStream, withNewClasses)
-		subject.characterClass = data[0]
-		subject.loadout = data[1]
-		subject.chibiStyle = data[2]
-		subject.skins = data[3]
-
-	return versionRes
-
 static func countItems(subject: Receiver, untilRound):
 	var itemCounter = []
 	itemCounter.resize(ItemBook.getNumItems())
@@ -241,55 +215,6 @@ static func isRoundValid(subject: Receiver, roundNum: int, currentRound: int):
 		return subject.Validity.Invalid
 
 	return validity
-
-static func fromData(subject: Receiver, playername, run: Dictionary, lobbyMode: bool):
-	subject.encodedName = playername
-
-	var metaData = run.get(subject.VERSION_FIELD)
-	if not metaData:
-		return subject.DeserializeResult.VERSION_TOO_OLD
-
-	var res = subject.deserializeMetadata(metaData)
-	if res != subject.DeserializeResult.VERSION_OK:
-		return res
-
-	subject.rating = run.get("r", - 1000)
-
-	subject.playerId = run.get("id", "")
-
-	subject.parseRounds(run)
-
-	return subject.DeserializeResult.VERSION_OK
-
-static func serializeCharacterData(addToBitstream: BitStream, withNewClasses: bool) -> void :
-
-	if withNewClasses:
-		addToBitstream.push(Game.curClass, Game.Classes_Full.size())
-	else:
-		addToBitstream.push(Game.curClass, Game.Classes.size())
-
-	var _loadout = Game.curLoadout
-	if Game.randomCharacter:
-		_loadout = Game.Loadout.RandomCharacter
-	addToBitstream.push(_loadout, Game.Loadout.size())
-
-	addToBitstream.push(int(Game.getChibiMode()), 2)
-	for slot in Game.SkinSlot.size():
-		addToBitstream.push(Game.getSelectedSkin(slot), SkinBook.MAX_SKINS)
-
-static func deserializeCharacterData(bitStream, withNewClasses: bool):
-	var _characterClass
-	if withNewClasses:
-		_characterClass = bitStream.pull(Game.Classes_Full.size())
-	else:
-		_characterClass = bitStream.pull(Game.Classes.size())
-	var _loadout = bitStream.pull(Game.Loadout.size())
-	var _chibi = bool(bitStream.pull(2))
-	var _skins = []
-	for slot in Game.SkinSlot.size():
-		_skins.push_back(bitStream.pull(SkinBook.MAX_SKINS))
-
-	return [_characterClass, _loadout, _chibi, _skins]
 
 static func deserializeItems(metadataString: String, version):
 	var bitStream = BitStream.new()

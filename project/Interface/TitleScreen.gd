@@ -30,8 +30,7 @@ const continueBanner_custom = preload("res://Assets/TitleScreen/ContinueBanner_C
 @onready var randomClassHint = $AboveBlackLayer/Class/Loadouts/RandomHint
 @onready var randomClassNodes = [
 	$TitleNode/RankedButton/RandomBorder,
-	$TitleNode/UnrankedButton/RandomBorder,
-	$TitleNode/Lobbies/OtherGameButton/RandomBorder]
+	$TitleNode/UnrankedButton/RandomBorder]
 
 @onready var loadoutButtons = [
 	$AboveBlackLayer/Class/Loadouts/VBoxContainer/LoadoutButton,
@@ -39,7 +38,6 @@ const continueBanner_custom = preload("res://Assets/TitleScreen/ContinueBanner_C
 	$AboveBlackLayer/Class/Loadouts/VBoxContainer/LoadoutButton3
 ]
 
-@onready var otherModesButton = $TitleNode/Lobbies/OtherGameButton
 @onready var loadoutInputBlocker = Game.UINode.get_node("InputBlocker")
 
 var randomClassParticles = null
@@ -239,19 +237,12 @@ func _on_ChineseItemSearch_pressed():
 	Expedition.show_codex()
 	return
 
-func otherModesUIPressed():
-	return load("res://Runtime/Behavior/Interface/TitleScreenBehavior.gd").otherModesUIPressed(self)
-
-func onOtherModeClosed():
-	checkSavedRunState()
-
 func disableButtons(disabled: bool):
 
 	rankedButton.disabled = disabled
 	unrankedButton.disabled = disabled
 	concedeButton.disabled = disabled
 	continueButton.disabled = disabled
-	otherModesButton.disabled = disabled
 	customRulesIcon.disabled = disabled
 
 func onCursorWarp():
