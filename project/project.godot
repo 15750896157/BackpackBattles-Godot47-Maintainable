@@ -317,7 +317,7 @@ folder_colors={
 "res://UI/Interface/Tooltips/Icon_Ranged.png[//": "purple",
 "res://UI/Interface/Tooltips/Icon_Ranged.png[/img][//": "purple",
 "res://UI/Interface/Tooltips/Icon_Treasure.png[//": "purple",
-"res://UI/Interface/Wardrobe//": "purple",
+"res://PvE/UI/Wardrobe//": "purple",
 "res://addons/": "pink",
 "res://addons/.godot_ai_update//": "pink",
 "res://addons/.godot_ai_update/backup//": "pink",

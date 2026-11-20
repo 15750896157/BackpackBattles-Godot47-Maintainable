@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Wardrobe/SkinSlotButton.gd")
+const Receiver = preload("res://PvE/UI/Wardrobe/SkinSlotButton.gd")
 
 static func onPressed(subject: Receiver):
 

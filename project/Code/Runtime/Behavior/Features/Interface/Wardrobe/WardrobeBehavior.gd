@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Wardrobe/Wardrobe.gd")
+const Receiver = preload("res://PvE/UI/Wardrobe/Wardrobe.gd")
 
 static func close(subject: Receiver):
 	if subject.visible and not subject.closing:

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://v1w04dsvjkwa"]
 
-[ext_resource type="Script" path="res://UI/Interface/Wardrobe/DressUpSprite.gd" id="1_28mgs"]
+[ext_resource type="Script" path="res://PvE/UI/Wardrobe/DressUpSprite.gd" id="1_28mgs"]
 [ext_resource type="Texture2D" path="res://Art/Assets/shadow.png" id="2_5ts7n"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/Reaper/Skins/Normal/Default/Body.png" id="3_0i1tr"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/Reaper/Skins/Normal/Default/Head.png" id="4_nj6ck"]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dg7eshunlkys5"]
 
-[ext_resource type="Script" path="res://UI/Interface/Wardrobe/DressUpSprite.gd" id="1_wkqje"]
+[ext_resource type="Script" path="res://PvE/UI/Wardrobe/DressUpSprite.gd" id="1_wkqje"]
 [ext_resource type="Texture2D" path="res://Art/Assets/shadow.png" id="2_5sli2"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/Berserker/Skins/Normal/Default/LeftUpperArm.png" id="3_pocwi"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/Berserker/Skins/Normal/Default/LeftLowerArm.png" id="4_kvvc1"]

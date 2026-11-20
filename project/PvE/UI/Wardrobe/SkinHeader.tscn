@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/Ranger/Skins/Normal/Default/Default.png" id="1_ydnft"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/Ranger/Skins/Normal/Default/Default_hovered.png" id="2_x2o3p"]
-[ext_resource type="Script" path="res://UI/Interface/Wardrobe/SkinHeader.gd" id="3_m2mxh"]
+[ext_resource type="Script" path="res://PvE/UI/Wardrobe/SkinHeader.gd" id="3_m2mxh"]
 
 [node name="SkinHeader" type="TextureButton"]
 offset_right = 40.0

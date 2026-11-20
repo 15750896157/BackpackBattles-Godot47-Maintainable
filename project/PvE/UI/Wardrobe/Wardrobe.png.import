@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crh03kneq3w0"
-path="res://.godot/imported/WardrobeButton_hovered.png-f7e5ecdd44bd91730bd8a3494294cbfe.ctex"
+uid="uid://c3c51a38v3uj6"
+path="res://.godot/imported/Wardrobe.png-479d19d779dc17220accad1b7ed0b342.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/Wardrobe/WardrobeButton_hovered.png"
-dest_files=["res://.godot/imported/WardrobeButton_hovered.png-f7e5ecdd44bd91730bd8a3494294cbfe.ctex"]
+source_file="res://PvE/UI/Wardrobe/Wardrobe.png"
+dest_files=["res://.godot/imported/Wardrobe.png-479d19d779dc17220accad1b7ed0b342.ctex"]
 
 [params]
 

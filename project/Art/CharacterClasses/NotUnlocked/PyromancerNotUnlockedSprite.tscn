@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c70byi62hk4yf"]
 
-[ext_resource type="Script" path="res://UI/Interface/Wardrobe/DressUpSprite.gd" id="1_1anpt"]
+[ext_resource type="Script" path="res://PvE/UI/Wardrobe/DressUpSprite.gd" id="1_1anpt"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/NotUnlocked/PyromancerSilhuette.png" id="2_yc1eo"]
 [ext_resource type="Texture2D" path="res://Art/Assets/shadow.png" id="3_7mq5f"]
 [ext_resource type="PackedScene" path="res://UI/Interface/WishlistButton.tscn" id="4_88m8o"]

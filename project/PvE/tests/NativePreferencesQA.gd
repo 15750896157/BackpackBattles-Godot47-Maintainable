@@ -278,7 +278,7 @@ func check_wardrobe_lifetime() -> void:
 	check(await wait_for(finished_build, 25.0), "native wardrobe opens and builds its actual skin rows")
 	if not is_instance_valid(Game.wardrobe): return
 	var wardrobe = Game.wardrobe
-	check(wardrobe.scene_file_path == "res://UI/Interface/Wardrobe/Wardrobe.tscn"
+	check(wardrobe.scene_file_path == "res://PvE/UI/Wardrobe/Wardrobe.tscn"
 		and wardrobe.selectedSkins.size() == Game.SkinSlot.size(), "original scene has a selection for each slot")
 	await snapshot("wardrobe")
 	var alternate: int = Game.Classes_Full.Reaper if original_class == Game.Classes_Full.Berserker else Game.Classes_Full.Berserker

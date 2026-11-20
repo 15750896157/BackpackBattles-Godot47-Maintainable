@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c0t7tcmeqoeyg"]
 
-[ext_resource type="Script" path="res://UI/Interface/Wardrobe/SkinSlotButton.gd" id="1_8e6n4"]
-[ext_resource type="Texture2D" path="res://UI/Interface/Wardrobe/SkinSlotButton.png" id="2_3kxkr"]
+[ext_resource type="Script" path="res://PvE/UI/Wardrobe/SkinSlotButton.gd" id="1_8e6n4"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Wardrobe/SkinSlotButton.png" id="2_3kxkr"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="3_cvgkm"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/Ranger/Skins/Normal/Default/Default.png" id="4_pwe8d"]
 [ext_resource type="Texture2D" path="res://UI/Interface/KeyLock.png" id="5_yqtw4"]
