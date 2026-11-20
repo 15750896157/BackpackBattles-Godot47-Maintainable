@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Sellbox.gd")
+const Receiver = preload("res://PvE/UI/Inventory/Sellbox.gd")
 
 static func onItemPickedUp(subject: Receiver):
 	if Game.state != Game.State.Shop: return

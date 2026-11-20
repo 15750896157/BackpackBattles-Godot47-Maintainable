@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://by01lvow2uab7"]
 
-[ext_resource type="Material" path="res://UI/Interface/Inventory/DropParticles.tres" id="1_te785"]
+[ext_resource type="Material" path="res://PvE/UI/Inventory/DropParticles.tres" id="1_te785"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Particles/Dust1.png" id="2_5m81o"]
 [ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="3_fulat"]
 

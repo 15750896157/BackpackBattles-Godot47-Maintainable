@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://o88xsc19cab66"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/ShopOffer.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/ShopOffer.tscn" id="1"]
 
 [ext_resource type="Script" uid="uid://bygfklwjdevl6" path="res://Code/Core/Shop.gd" id="2"]
 
@@ -18,9 +18,9 @@
 
 [ext_resource type="Texture2D" uid="uid://blwb7pgiusqys" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Arm.png" id="14"]
 
-[ext_resource type="Script" uid="uid://dgju3at8nmvet" path="res://UI/Interface/Sellbox.gd" id="16"]
+[ext_resource type="Script" uid="uid://dgju3at8nmvet" path="res://PvE/UI/Inventory/Sellbox.gd" id="16"]
 
-[ext_resource type="Script" uid="uid://b5kvfb2nnhesv" path="res://UI/Interface/Storagebox.gd" id="17"]
+[ext_resource type="Script" uid="uid://b5kvfb2nnhesv" path="res://PvE/UI/Inventory/Storagebox.gd" id="17"]
 
 [ext_resource type="Texture2D" uid="uid://belp2xtn4ohxw" path="res://Art/Assets/Shop/Shelf3.png" id="19"]
 
@@ -132,7 +132,7 @@
 
 [ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 
-[ext_resource type="Script" uid="uid://uaf63eiohg0j" path="res://UI/Interface/GridStorage.gd" id="194"]
+[ext_resource type="Script" uid="uid://uaf63eiohg0j" path="res://PvE/UI/Inventory/GridStorage.gd" id="194"]
 
 [ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://UI/Interface/AnvilButton.png" id="196"]
 
@@ -144,7 +144,7 @@
 
 [ext_resource type="Texture2D" uid="uid://k10q48jgqgr1" path="res://UI/Interface/DashedArrow2.png" id="221"]
 
-[ext_resource type="Script" uid="uid://vwxjgab4m2py" path="res://UI/Interface/StorageShakeButton.gd" id="222"]
+[ext_resource type="Script" uid="uid://vwxjgab4m2py" path="res://PvE/UI/Inventory/StorageShakeButton.gd" id="222"]
 
 [ext_resource type="Script" uid="uid://bs38xk6s5nus0" path="res://Code/Utility/ItemBoundChecker.gd" id="227"]
 
@@ -190,7 +190,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ekncntee7c5g" path="res://Art/Shader/SmoothFadeInGradient.tres" id="282"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/GridStorageEntry.tscn" id="305"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Inventory/GridStorageEntry.tscn" id="305"]
 
 [ext_resource type="Theme" uid="uid://dehhsf5k62law" path="res://UI/Interface/ScrollbarTheme.tres" id="309"]
 

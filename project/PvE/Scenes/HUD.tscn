@@ -128,7 +128,7 @@
 
 [ext_resource type="Texture2D" uid="uid://kgyipd5hrp05" path="res://UI/Interface/Undo.png" id="293"]
 
-[ext_resource type="Texture2D" uid="uid://c835eyv844o1h" path="res://UI/Interface/PushToStorage_hovered.png" id="294"]
+[ext_resource type="Texture2D" uid="uid://c835eyv844o1h" path="res://PvE/UI/Shop/PushToStorage_hovered.png" id="294"]
 
 [ext_resource type="Texture2D" uid="uid://bh422kvufntkf" path="res://UI/Interface/Undo_hovered.png" id="295"]
 
@@ -146,15 +146,15 @@
 
 [ext_resource type="Texture2D" uid="uid://bpc02kg2gv3vw" path="res://UI/Interface/EditModeDefault_hovered.png" id="301"]
 
-[ext_resource type="Texture2D" uid="uid://dty7rpx2i2ibd" path="res://UI/Interface/PushToStorage.png" id="302"]
+[ext_resource type="Texture2D" uid="uid://dty7rpx2i2ibd" path="res://PvE/UI/Shop/PushToStorage.png" id="302"]
 
 [ext_resource type="Texture2D" uid="uid://dotuwlq64a2oi" path="res://UI/Interface/Undo_disabled.png" id="303"]
 
-[ext_resource type="Texture2D" uid="uid://cbb5ada23nxv" path="res://UI/Interface/GridStorage_hovered.png" id="306"]
+[ext_resource type="Texture2D" uid="uid://cbb5ada23nxv" path="res://PvE/UI/Inventory/GridStorage_hovered.png" id="306"]
 
-[ext_resource type="Texture2D" uid="uid://dgx8m1ssv82ub" path="res://UI/Interface/GridStorage.png" id="307"]
+[ext_resource type="Texture2D" uid="uid://dgx8m1ssv82ub" path="res://PvE/UI/Inventory/GridStorage.png" id="307"]
 
-[ext_resource type="Texture2D" uid="uid://ducg2muy3h3wk" path="res://UI/Interface/GridStorage_pressed.png" id="308"]
+[ext_resource type="Texture2D" uid="uid://ducg2muy3h3wk" path="res://PvE/UI/Inventory/GridStorage_pressed.png" id="308"]
 
 [ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 

@@ -6,7 +6,7 @@ var icons = {
 	Game.InventoryEditMode.ItemLayer: preload("res://UI/Interface/EditModeItems.png")
 }
 
-var gridStorageIcon = preload("res://UI/Interface/GridStorage.png")
+var gridStorageIcon = preload("res://PvE/UI/Inventory/GridStorage.png")
 
 var sprite
 var animation

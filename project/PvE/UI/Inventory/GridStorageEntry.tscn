@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://551edmgv057l"]
 
-[ext_resource type="Script" path="res://UI/Interface/GridStorageEntry.gd" id="1_1pf2t"]
-[ext_resource type="Texture2D" path="res://UI/Interface/GridStorageEntry.png" id="2_pvld0"]
+[ext_resource type="Script" path="res://PvE/UI/Inventory/GridStorageEntry.gd" id="1_1pf2t"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Inventory/GridStorageEntry.png" id="2_pvld0"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_qmfip"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_gf7vm"]
 [ext_resource type="Script" path="res://UI/Interface/NonLocalized_KeepFont.gd" id="5_l7gqe"]

@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://dpr7r7dpe1s72"]
+[gd_scene format=3 uid="uid://bk60w3re45gtq"]
 
-[ext_resource type="Texture2D" path="res://Art/Items/Tiles/AffectedTile_secondary.png" id="1_2rlgc"]
-[ext_resource type="Script" path="res://UI/Interface/Inventory/AffectedStarAnimation.gd" id="2_k54q0"]
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/AffectedTile_lightning.png" id="1_rdep7"]
+[ext_resource type="Script" path="res://PvE/UI/Inventory/AffectedStarAnimation.gd" id="2_snpg2"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "PopIn"
@@ -49,8 +49,8 @@ tracks/2/keys = {
 modulate = Color(1, 1, 1, 0)
 scale = Vector2(2, 2)
 z_index = 5
-texture = ExtResource("1_2rlgc")
-script = ExtResource("2_k54q0")
+texture = ExtResource("1_rdep7")
+script = ExtResource("2_snpg2")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/PopIn = SubResource("1")

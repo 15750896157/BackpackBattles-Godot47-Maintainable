@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbb5ada23nxv"
-path="res://.godot/imported/GridStorage_hovered.png-88501507021283d48c2118b7264301a2.ctex"
+uid="uid://ducg2muy3h3wk"
+path="res://.godot/imported/GridStorage_pressed.png-ad982e6785f4c118cdc578eae6d79237.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/GridStorage_hovered.png"
-dest_files=["res://.godot/imported/GridStorage_hovered.png-88501507021283d48c2118b7264301a2.ctex"]
+source_file="res://PvE/UI/Inventory/GridStorage_pressed.png"
+dest_files=["res://.godot/imported/GridStorage_pressed.png-ad982e6785f4c118cdc578eae6d79237.ctex"]
 
 [params]
 

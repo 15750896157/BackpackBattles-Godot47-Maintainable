@@ -8,19 +8,19 @@
     "res://PvE/UI/Tooltips/LegendaryTooltip.tscn",
     "res://PvE/UI/Tooltips/GodlyTooltip.tscn",
     "res://PvE/UI/Tooltips/UniqueTooltip.tscn",
-    "res://UI/Interface/Inventory/AffectedStarAnimation.tscn",
-    "res://UI/Interface/Inventory/AffectedStarAnimationSecondary.tscn",
-    "res://UI/Interface/Inventory/AffectedStarAnimationTertiary.tscn",
-    "res://UI/Interface/Inventory/AffectedStarAnimationLightning.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimation.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimationSecondary.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimationTertiary.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimationLightning.tscn",
     "res://Art/Items/Exclusive/Animations/CanAffectVisual.tscn",
-    "res://UI/Interface/Inventory/GlobalAffectVisual.tscn",
+    "res://PvE/UI/Inventory/GlobalAffectVisual.tscn",
     "res://UI/Interface/DustParticles.tscn"
   ],
   "shop": [
-    "res://UI/Interface/Inventory/DropParticles.tscn",
-    "res://UI/Interface/Inventory/ItemSparks.tscn",
-    "res://UI/Interface/Inventory/ItemHoverSparks.tscn",
-    "res://UI/Interface/Inventory/ItemRotationSparks.tscn",
+    "res://PvE/UI/Inventory/DropParticles.tscn",
+    "res://PvE/UI/Inventory/ItemSparks.tscn",
+    "res://PvE/UI/Inventory/ItemHoverSparks.tscn",
+    "res://PvE/UI/Inventory/ItemRotationSparks.tscn",
     "res://PvE/UI/Tooltips/RecipeTooltip.tscn",
     "res://PvE/UI/Tooltips/BuildIntoRecipesTooltip.tscn"
   ],
@@ -29,7 +29,7 @@
       "res://Art/Items/Shadow.tscn"
     ],
     "dropParticlesScene": [
-      "res://UI/Interface/Inventory/DropParticles.tscn"
+      "res://PvE/UI/Inventory/DropParticles.tscn"
     ],
     "tooltipScenes": [
       "res://PvE/UI/Tooltips/CommonTooltip.tscn",
@@ -46,13 +46,13 @@
       "res://UI/Interface/DustParticles.tscn"
     ],
     "sparksScene": [
-      "res://UI/Interface/Inventory/ItemSparks.tscn"
+      "res://PvE/UI/Inventory/ItemSparks.tscn"
     ],
     "hoverSparksScene": [
-      "res://UI/Interface/Inventory/ItemHoverSparks.tscn"
+      "res://PvE/UI/Inventory/ItemHoverSparks.tscn"
     ],
     "rotationSparksScene": [
-      "res://UI/Interface/Inventory/ItemRotationSparks.tscn"
+      "res://PvE/UI/Inventory/ItemRotationSparks.tscn"
     ],
     "typeTransformationParticles": [
       "res://Art/Items/Particles/DarkTransformationParticles.tscn",
@@ -65,7 +65,7 @@
       "res://Art/Items/CatalystBond.tscn"
     ],
     "craftingLabelScene": [
-      "res://UI/Interface/Inventory/CraftingProgressLabel.tscn"
+      "res://PvE/UI/Inventory/CraftingProgressLabel.tscn"
     ],
     "craftingReadyAnimation": [
       "res://Animation/Items/Animations/CraftingReadyAnimation.tscn"
@@ -77,16 +77,16 @@
       "res://Animation/Items/Animations/CatalystReadyAnimation.tscn"
     ],
     "lockLabelScene": [
-      "res://UI/Interface/Inventory/CraftingLockLabel.tscn"
+      "res://PvE/UI/Inventory/CraftingLockLabel.tscn"
     ],
     "affectedAnis": [
-      "res://UI/Interface/Inventory/AffectedStarAnimation.tscn",
-      "res://UI/Interface/Inventory/AffectedStarAnimationSecondary.tscn",
-      "res://UI/Interface/Inventory/AffectedStarAnimationTertiary.tscn",
-      "res://UI/Interface/Inventory/AffectedStarAnimationLightning.tscn"
+      "res://PvE/UI/Inventory/AffectedStarAnimation.tscn",
+      "res://PvE/UI/Inventory/AffectedStarAnimationSecondary.tscn",
+      "res://PvE/UI/Inventory/AffectedStarAnimationTertiary.tscn",
+      "res://PvE/UI/Inventory/AffectedStarAnimationLightning.tscn"
     ],
     "globalAffectVisual": [
-      "res://UI/Interface/Inventory/GlobalAffectVisual.tscn"
+      "res://PvE/UI/Inventory/GlobalAffectVisual.tscn"
     ],
     "canAffectVisual": [
       "res://Art/Items/Exclusive/Animations/CanAffectVisual.tscn"

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://5ieb1mwm77uo"]
 
-[ext_resource type="Script" path="res://UI/Interface/ShopOffer.gd" id="1_sc036"]
+[ext_resource type="Script" path="res://PvE/UI/Shop/ShopOffer.gd" id="1_sc036"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Shop/Pricesign.png" id="2_cq4hr"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="3_i64c2"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_y5nkl"]

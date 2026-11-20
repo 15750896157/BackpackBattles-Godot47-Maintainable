@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbyblmx5832ci"]
 
-[ext_resource type="Script" path="res://UI/Interface/Inventory/CraftingProgressLabel.gd" id="1_sfbwc"]
+[ext_resource type="Script" path="res://PvE/UI/Inventory/CraftingProgressLabel.gd" id="1_sfbwc"]
 [ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="2_adjo2"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_osmt0"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_de045"]

@@ -36,7 +36,7 @@ class ForPullButton:
 			subject.deactivate()
 
 class ForPushToStorageButton:
-	const Receiver = preload("res://UI/Interface/PushToStorageButton.gd")
+	const Receiver = preload("res://PvE/UI/Shop/PushToStorageButton.gd")
 
 	static func _unhandled_input(subject: Receiver, event):
 		if InputBlocker.isActive(): return

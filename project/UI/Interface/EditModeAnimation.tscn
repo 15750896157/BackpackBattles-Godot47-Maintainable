@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cadfcfgj5bd65"]
 
 [ext_resource type="Script" path="res://UI/Interface/EditModeAnimation.gd" id="1_vo7mx"]
-[ext_resource type="Texture2D" path="res://UI/Interface/GridStorage.png" id="2_5mn5s"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Inventory/GridStorage.png" id="2_5mn5s"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Appear"

@@ -319,7 +319,7 @@ var shadowScene:
 		return AssetStream.resolve("res://Art/Items/Shadow.tscn")
 var dropParticlesScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Inventory/DropParticles.tscn")
+		return AssetStream.resolve("res://PvE/UI/Inventory/DropParticles.tscn")
 var tooltipScenes:
 	get:
 		return [
@@ -343,13 +343,13 @@ const lockSound = preload("res://Audio/Sound/Lock.wav")
 const unlockSound = preload("res://Audio/Sound/Unlock.wav")
 var sparksScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Inventory/ItemSparks.tscn")
+		return AssetStream.resolve("res://PvE/UI/Inventory/ItemSparks.tscn")
 var hoverSparksScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Inventory/ItemHoverSparks.tscn")
+		return AssetStream.resolve("res://PvE/UI/Inventory/ItemHoverSparks.tscn")
 var rotationSparksScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Inventory/ItemRotationSparks.tscn")
+		return AssetStream.resolve("res://PvE/UI/Inventory/ItemRotationSparks.tscn")
 var typeTransformationParticles:
 	get:
 		return {
@@ -364,7 +364,7 @@ var catalystBondScene:
 		return AssetStream.resolve("res://Art/Items/CatalystBond.tscn")
 var craftingLabelScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Inventory/CraftingProgressLabel.tscn")
+		return AssetStream.resolve("res://PvE/UI/Inventory/CraftingProgressLabel.tscn")
 var craftingReadyAnimation:
 	get:
 		return AssetStream.resolve("res://Animation/Items/Animations/CraftingReadyAnimation.tscn")
@@ -376,14 +376,14 @@ var catalystReadyAnimation:
 		return AssetStream.resolve("res://Animation/Items/Animations/CatalystReadyAnimation.tscn")
 var lockLabelScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Inventory/CraftingLockLabel.tscn")
+		return AssetStream.resolve("res://PvE/UI/Inventory/CraftingLockLabel.tscn")
 var affectedAnis:
 	get:
 		return {
-			Affected.Primary: AssetStream.resolve("res://UI/Interface/Inventory/AffectedStarAnimation.tscn"),
-			Affected.Secondary: AssetStream.resolve("res://UI/Interface/Inventory/AffectedStarAnimationSecondary.tscn"),
-			Affected.Tertiary: AssetStream.resolve("res://UI/Interface/Inventory/AffectedStarAnimationTertiary.tscn"),
-			Affected.Lightning: AssetStream.resolve("res://UI/Interface/Inventory/AffectedStarAnimationLightning.tscn")}
+			Affected.Primary: AssetStream.resolve("res://PvE/UI/Inventory/AffectedStarAnimation.tscn"),
+			Affected.Secondary: AssetStream.resolve("res://PvE/UI/Inventory/AffectedStarAnimationSecondary.tscn"),
+			Affected.Tertiary: AssetStream.resolve("res://PvE/UI/Inventory/AffectedStarAnimationTertiary.tscn"),
+			Affected.Lightning: AssetStream.resolve("res://PvE/UI/Inventory/AffectedStarAnimationLightning.tscn")}
 const affectedSounds = {
 	Affected.Primary: preload("res://Audio/Sound/Chime1.mp3"),
 	Affected.Secondary: preload("res://Audio/Sound/Chime2.mp3"),
@@ -396,7 +396,7 @@ const affectedSoundsVolume = {
 	Affected.Lightning: - 1}
 var globalAffectVisual:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Inventory/GlobalAffectVisual.tscn")
+		return AssetStream.resolve("res://PvE/UI/Inventory/GlobalAffectVisual.tscn")
 
 const cellSize = Vector2(80, 80)
 const halfCellSize = 0.5 * cellSize

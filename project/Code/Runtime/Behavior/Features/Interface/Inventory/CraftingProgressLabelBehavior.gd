@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Inventory/CraftingProgressLabel.gd")
+const Receiver = preload("res://PvE/UI/Inventory/CraftingProgressLabel.gd")
 
 static func showProgress(subject: Receiver, itemName: String, num: int, outOf: int, ingredientCounter: Array) -> void :
 	subject.updateLabel(itemName, num, outOf, ingredientCounter)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d161w751p85oo"]
 
-[ext_resource type="Script" path="res://UI/Interface/Inventory/CraftingLockLabel.gd" id="1_xdeu5"]
+[ext_resource type="Script" path="res://PvE/UI/Inventory/CraftingLockLabel.gd" id="1_xdeu5"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="2_kbevt"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_ok4nr"]
 

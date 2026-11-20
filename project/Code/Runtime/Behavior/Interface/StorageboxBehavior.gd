@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Storagebox.gd")
+const Receiver = preload("res://PvE/UI/Inventory/Storagebox.gd")
 
 static func shake(subject: Receiver, collisionPoint, strong: bool):
 	if collisionPoint.y > 980:

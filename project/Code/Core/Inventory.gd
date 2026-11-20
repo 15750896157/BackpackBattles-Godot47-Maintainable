@@ -32,7 +32,7 @@ enum AffectedTile{
 }
 
 const shiftSound = preload("res://Audio/Sound/Switch.wav")
-var shiftCollisionAni = load("res://UI/Interface/InventoryBorder.tscn")
+var shiftCollisionAni = load("res://PvE/UI/Inventory/InventoryBorder.tscn")
 
 const MAX_SIZE = Vector2(10, 10)
 @export var inventorySize = Vector2(9, 7)

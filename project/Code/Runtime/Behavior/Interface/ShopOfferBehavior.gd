@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/ShopOffer.gd")
+const Receiver = preload("res://PvE/UI/Shop/ShopOffer.gd")
 
 static func _input(subject: Receiver, event: InputEvent) -> void :
 	if Expedition.enabled and (event is InputEventJoypadButton or (is_instance_valid(Game.PLAYER) and Game.PLAYER.INVENTORY.pve_navigation_active)):
