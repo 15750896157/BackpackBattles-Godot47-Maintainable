@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjkoq315mev2m"
-path="res://.godot/imported/PlayFromStart_normal.png-17b6f40e926ea8eae6a66113e28282e4.ctex"
+uid="uid://bp8i4tush30sk"
+path="res://.godot/imported/CloseButton_hovered.png-9a73d80459adb1db68c7643a8df12d45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/CombatLog/PlayFromStart_normal.png"
-dest_files=["res://.godot/imported/PlayFromStart_normal.png-17b6f40e926ea8eae6a66113e28282e4.ctex"]
+source_file="res://PvE/UI/Combat/CombatLog/CloseButton_hovered.png"
+dest_files=["res://.godot/imported/CloseButton_hovered.png-9a73d80459adb1db68c7643a8df12d45.ctex"]
 
 [params]
 

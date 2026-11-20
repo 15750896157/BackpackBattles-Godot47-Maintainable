@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1nldfbsmte5o"
-path="res://.godot/imported/Play_playing.png-7515a976f9a6152234bf8dde3c89ed1d.ctex"
+uid="uid://bxg8c3hn80pn7"
+path="res://.godot/imported/Play_normal.png-787eff8f4bd69a8811278b6617b931cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/CombatLog/Play_playing.png"
-dest_files=["res://.godot/imported/Play_playing.png-7515a976f9a6152234bf8dde3c89ed1d.ctex"]
+source_file="res://PvE/UI/Combat/CombatLog/Play_normal.png"
+dest_files=["res://.godot/imported/Play_normal.png-787eff8f4bd69a8811278b6617b931cb.ctex"]
 
 [params]
 

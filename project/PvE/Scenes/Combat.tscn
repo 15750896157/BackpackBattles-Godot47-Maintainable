@@ -108,11 +108,11 @@
 
 [ext_resource type="Script" uid="uid://cs32daht56s5u" path="res://UI/Interface/BaseSlider.gd" id="162"]
 
-[ext_resource type="Texture2D" uid="uid://v20pg3r4rv85" path="res://UI/Interface/CombatLog/CombatLogButton.png" id="168"]
+[ext_resource type="Texture2D" uid="uid://v20pg3r4rv85" path="res://PvE/UI/Combat/CombatLog/CombatLogButton.png" id="168"]
 
 [ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Art/Items/Exclusive/Animations/GooglyEye.gd" id="170"]
 
-[ext_resource type="Texture2D" uid="uid://cpsde7pbcm3s0" path="res://UI/Interface/CombatLog/CombatLogButton_hovered.png" id="174"]
+[ext_resource type="Texture2D" uid="uid://cpsde7pbcm3s0" path="res://PvE/UI/Combat/CombatLog/CombatLogButton_hovered.png" id="174"]
 
 [ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 

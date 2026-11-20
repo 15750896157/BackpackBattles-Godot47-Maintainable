@@ -4,8 +4,8 @@
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="2_oxybh"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_vl11s"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="4_lpy4l"]
-[ext_resource type="StyleBox" path="res://UI/Interface/CombatLog/LogLinePlayerStylebox_connected.tres" id="5_5w17k"]
-[ext_resource type="Script" path="res://UI/Interface/CombatLog/CombatLogLine.gd" id="6_sos8m"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox_connected.tres" id="5_5w17k"]
+[ext_resource type="Script" path="res://PvE/UI/Combat/CombatLog/CombatLogLine.gd" id="6_sos8m"]
 
 [sub_resource type="FontVariation" id="206"]
 base_font = ExtResource("2_oxybh")

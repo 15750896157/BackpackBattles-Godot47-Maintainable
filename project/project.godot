@@ -293,7 +293,7 @@ folder_colors={
 "res://UI/Interface/BuildHistory//": "purple",
 "res://UI/Interface/Combat//": "purple",
 "res://UI/Interface/Combat/StatIcons//": "purple",
-"res://UI/Interface/CombatLog//": "purple",
+"res://PvE/UI/Combat/CombatLog//": "purple",
 "res://PvE/UI/Combat/CombatTimer//": "purple",
 "res://PvE/UI/Combat/DamageMeter//": "purple",
 "res://PvE/UI/Combat/DamageMeter/Plot//": "purple",

@@ -5,8 +5,8 @@
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_rhi2u"]
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="4_8tv3h"]
 [ext_resource type="Texture2D" path="res://UI/Interface/PopupBox.png" id="5_utu2w"]
-[ext_resource type="Texture2D" path="res://UI/Interface/CombatLog/CloseButton.png" id="6_hule8"]
-[ext_resource type="Texture2D" path="res://UI/Interface/CombatLog/CloseButton_hovered.png" id="7_atwt4"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/CombatLog/CloseButton.png" id="6_hule8"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/CombatLog/CloseButton_hovered.png" id="7_atwt4"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="8_ygl3q"]
 
 [sub_resource type="FontVariation" id="1"]

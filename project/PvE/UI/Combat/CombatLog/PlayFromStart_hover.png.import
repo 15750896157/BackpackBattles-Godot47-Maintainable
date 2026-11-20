@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1yolxem7adcf"
-path="res://.godot/imported/Play_disabled.png-60e41388f35673cf4aa5788b029230d4.ctex"
+uid="uid://brpi3q01skekf"
+path="res://.godot/imported/PlayFromStart_hover.png-4dc7552cac5f87687ae622e12f240098.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/CombatLog/Play_disabled.png"
-dest_files=["res://.godot/imported/Play_disabled.png-60e41388f35673cf4aa5788b029230d4.ctex"]
+source_file="res://PvE/UI/Combat/CombatLog/PlayFromStart_hover.png"
+dest_files=["res://.godot/imported/PlayFromStart_hover.png-4dc7552cac5f87687ae622e12f240098.ctex"]
 
 [params]
 

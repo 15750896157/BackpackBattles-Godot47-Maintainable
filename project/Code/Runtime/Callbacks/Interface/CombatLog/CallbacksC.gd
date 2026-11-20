@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForCombatLogFilterButtonWithStylebox:
-	const Receiver = preload("res://UI/Interface/CombatLog/CombatLogFilterButtonWithStylebox.gd")
+	const Receiver = preload("res://PvE/UI/Combat/CombatLog/CombatLogFilterButtonWithStylebox.gd")
 
 	static func updateStyleboxes(subject: Receiver):
 		if subject.isPressed:

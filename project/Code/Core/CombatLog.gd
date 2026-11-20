@@ -12,21 +12,21 @@ enum GlobalStat{
 	TimeAdvance = 0,
 }
 
-const logLineScene = preload("res://UI/Interface/CombatLog/CombatLogLine.tscn")
-const logLineTooltipScene = preload("res://UI/Interface/CombatLog/LogLineTooltip.tscn")
+const logLineScene = preload("res://PvE/UI/Combat/CombatLog/CombatLogLine.tscn")
+const logLineTooltipScene = preload("res://PvE/UI/Combat/CombatLog/LogLineTooltip.tscn")
 
 const playerStyleboxes = [
-	preload("res://UI/Interface/CombatLog/LogLinePlayerStylebox.tres"),
-	preload("res://UI/Interface/CombatLog/LogLinePlayerStylebox_hovered.tres"),
-	preload("res://UI/Interface/CombatLog/LogLinePlayerStylebox_connected.tres"),
-	preload("res://UI/Interface/CombatLog/LogLinePlayerStylebox_tooltip.tres")
+	preload("res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox.tres"),
+	preload("res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox_hovered.tres"),
+	preload("res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox_connected.tres"),
+	preload("res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox_tooltip.tres")
 ]
 
 const opponentStyleboxes = [
-	preload("res://UI/Interface/CombatLog/LogLineOpponentStylebox.tres"),
-	preload("res://UI/Interface/CombatLog/LogLineOpponentStylebox_hovered.tres"),
-	preload("res://UI/Interface/CombatLog/LogLineOpponentStylebox_connected.tres"),
-	preload("res://UI/Interface/CombatLog/LogLineOpponentStylebox_tooltip.tres")
+	preload("res://PvE/UI/Combat/CombatLog/LogLineOpponentStylebox.tres"),
+	preload("res://PvE/UI/Combat/CombatLog/LogLineOpponentStylebox_hovered.tres"),
+	preload("res://PvE/UI/Combat/CombatLog/LogLineOpponentStylebox_connected.tres"),
+	preload("res://PvE/UI/Combat/CombatLog/LogLineOpponentStylebox_tooltip.tres")
 ]
 
 var fadedStyleboxes: Dictionary

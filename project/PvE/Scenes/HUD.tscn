@@ -44,15 +44,15 @@
 
 [ext_resource type="Texture2D" uid="uid://ci7tom5cvdnku" path="res://UI/Interface/Tooltips/TooltipBase.png" id="169"]
 
-[ext_resource type="StyleBox" path="res://UI/Interface/CombatLog/LogLinePlayerStylebox.tres" id="172"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox.tres" id="172"]
 
-[ext_resource type="StyleBox" path="res://UI/Interface/CombatLog/LogLineOpponentStylebox.tres" id="173"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLineOpponentStylebox.tres" id="173"]
 
 [ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://UI/Interface/SmallArrow.png" id="175"]
 
-[ext_resource type="Texture2D" uid="uid://cgd7d65brf5bi" path="res://UI/Interface/CombatLog/CloseButton.png" id="179"]
+[ext_resource type="Texture2D" uid="uid://cgd7d65brf5bi" path="res://PvE/UI/Combat/CombatLog/CloseButton.png" id="179"]
 
-[ext_resource type="Texture2D" uid="uid://bp8i4tush30sk" path="res://UI/Interface/CombatLog/CloseButton_hovered.png" id="180"]
+[ext_resource type="Texture2D" uid="uid://bp8i4tush30sk" path="res://PvE/UI/Combat/CombatLog/CloseButton_hovered.png" id="180"]
 
 [ext_resource type="PackedScene" path="res://UI/Interface/Options/ItemListButton.tscn" id="181"]
 
@@ -84,29 +84,29 @@
 
 [ext_resource type="PackedScene" path="res://UI/Interface/Searchbar.tscn" id="212"]
 
-[ext_resource type="Script" uid="uid://cjxjy3ngaxlau" path="res://UI/Interface/CombatLog/CombatLogFilterPanel.gd" id="213"]
+[ext_resource type="Script" uid="uid://cjxjy3ngaxlau" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterPanel.gd" id="213"]
 
-[ext_resource type="Texture2D" uid="uid://1yolxem7adcf" path="res://UI/Interface/CombatLog/Play_disabled.png" id="228"]
+[ext_resource type="Texture2D" uid="uid://1yolxem7adcf" path="res://PvE/UI/Combat/CombatLog/Play_disabled.png" id="228"]
 
-[ext_resource type="Texture2D" uid="uid://cjkoq315mev2m" path="res://UI/Interface/CombatLog/PlayFromStart_normal.png" id="229"]
+[ext_resource type="Texture2D" uid="uid://cjkoq315mev2m" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_normal.png" id="229"]
 
-[ext_resource type="Texture2D" uid="uid://brpi3q01skekf" path="res://UI/Interface/CombatLog/PlayFromStart_hover.png" id="230"]
+[ext_resource type="Texture2D" uid="uid://brpi3q01skekf" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_hover.png" id="230"]
 
-[ext_resource type="Texture2D" uid="uid://bxg8c3hn80pn7" path="res://UI/Interface/CombatLog/Play_normal.png" id="236"]
+[ext_resource type="Texture2D" uid="uid://bxg8c3hn80pn7" path="res://PvE/UI/Combat/CombatLog/Play_normal.png" id="236"]
 
-[ext_resource type="Texture2D" uid="uid://d037f5p3n0j62" path="res://UI/Interface/CombatLog/PlayFromStart_disabled.png" id="240"]
+[ext_resource type="Texture2D" uid="uid://d037f5p3n0j62" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_disabled.png" id="240"]
 
-[ext_resource type="Texture2D" uid="uid://cigygfyyro3j" path="res://UI/Interface/CombatLog/Play_hover.png" id="241"]
+[ext_resource type="Texture2D" uid="uid://cigygfyyro3j" path="res://PvE/UI/Combat/CombatLog/Play_hover.png" id="241"]
 
 [ext_resource type="Texture2D" uid="uid://b0db8oy7s58x2" path="res://UI/Interface/NextOptionArrow.png" id="244"]
 
-[ext_resource type="Texture2D" uid="uid://d1nldfbsmte5o" path="res://UI/Interface/CombatLog/Play_playing.png" id="245"]
+[ext_resource type="Texture2D" uid="uid://d1nldfbsmte5o" path="res://PvE/UI/Combat/CombatLog/Play_playing.png" id="245"]
 
-[ext_resource type="Texture2D" uid="uid://ckr2ds1yy8cru" path="res://UI/Interface/CombatLog/PlayFromStart_playing.png" id="246"]
+[ext_resource type="Texture2D" uid="uid://ckr2ds1yy8cru" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_playing.png" id="246"]
 
-[ext_resource type="Script" uid="uid://dkfm41ytvypeq" path="res://UI/Interface/CombatLog/CombatLogFilterButton.gd" id="247"]
+[ext_resource type="Script" uid="uid://dkfm41ytvypeq" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButton.gd" id="247"]
 
-[ext_resource type="Script" uid="uid://kwhpyuwjwr5" path="res://UI/Interface/CombatLog/CombatLogFilterButtonWithStylebox.gd" id="248"]
+[ext_resource type="Script" uid="uid://kwhpyuwjwr5" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButtonWithStylebox.gd" id="248"]
 
 [ext_resource type="Script" uid="uid://do60tnyf6l77b" path="res://Code/Utility/UndoStack.gd" id="249"]
 

@@ -3,14 +3,14 @@
 importer="texture_atlas"
 type="Texture2D"
 uid="uid://v20pg3r4rv85"
-path="res://.godot/imported/CombatLogButton.png-56f8e684598524b52f6b12d73804933d.res"
+path="res://.godot/imported/CombatLogButton.png-53ed06613e726d6fec46519e65e34f32.res"
 group_file="res://Art/Atlases/Combat_atlas.png"
 valid=true
 [deps]
 
 
-source_file="res://UI/Interface/CombatLog/CombatLogButton.png"
-dest_files=["res://.godot/imported/CombatLogButton.png-56f8e684598524b52f6b12d73804933d.res"]
+source_file="res://PvE/UI/Combat/CombatLog/CombatLogButton.png"
+dest_files=["res://.godot/imported/CombatLogButton.png-53ed06613e726d6fec46519e65e34f32.res"]
 
 [params]
 
