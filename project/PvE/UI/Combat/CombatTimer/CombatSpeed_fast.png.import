@@ -3,14 +3,14 @@
 importer="texture_atlas"
 type="Texture2D"
 uid="uid://cc1wq2jj5755n"
-path="res://.godot/imported/CombatSpeed_fast.png-b21deb686d71a7d6957d79dcdace33d4.res"
+path="res://.godot/imported/CombatSpeed_fast.png-0b4beeeb546644313019d3691210b74b.res"
 group_file="res://Art/Atlases/Combat_atlas.png"
 valid=true
 [deps]
 
 
-source_file="res://UI/Interface/CombatTimer/CombatSpeed_fast.png"
-dest_files=["res://.godot/imported/CombatSpeed_fast.png-b21deb686d71a7d6957d79dcdace33d4.res"]
+source_file="res://PvE/UI/Combat/CombatTimer/CombatSpeed_fast.png"
+dest_files=["res://.godot/imported/CombatSpeed_fast.png-0b4beeeb546644313019d3691210b74b.res"]
 
 [params]
 

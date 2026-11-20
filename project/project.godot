@@ -294,7 +294,7 @@ folder_colors={
 "res://UI/Interface/Combat//": "purple",
 "res://UI/Interface/Combat/StatIcons//": "purple",
 "res://UI/Interface/CombatLog//": "purple",
-"res://UI/Interface/CombatTimer//": "purple",
+"res://PvE/UI/Combat/CombatTimer//": "purple",
 "res://PvE/UI/Combat/DamageMeter//": "purple",
 "res://PvE/UI/Combat/DamageMeter/Plot//": "purple",
 "res://PvE/UI/Feedback/DamageNumbers//": "purple",

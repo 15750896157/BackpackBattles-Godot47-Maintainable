@@ -4,7 +4,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Art/Assets/Trophy.png" id="9"]
 
-[ext_resource type="Script" uid="uid://j21gsh3u6rb7" path="res://UI/Interface/CombatTimer/CombatTimer.gd" id="15"]
+[ext_resource type="Script" uid="uid://j21gsh3u6rb7" path="res://PvE/UI/Combat/CombatTimer/CombatTimer.gd" id="15"]
 
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="20"]
 
@@ -14,7 +14,7 @@
 
 [ext_resource type="Texture2D" uid="uid://chegnxuph0hht" path="res://Art/Assets/RedBanner.png" id="28"]
 
-[ext_resource type="Texture2D" uid="uid://cudchn161hi6e" path="res://UI/Interface/CombatTimer/CombatSpeed_grabber_hovered.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://cudchn161hi6e" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_grabber_hovered.png" id="29"]
 
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="31"]
 
@@ -30,17 +30,17 @@
 
 [ext_resource type="PackedScene" path="res://UI/Interface/WinFanfare.tscn" id="54"]
 
-[ext_resource type="Texture2D" uid="uid://f45mef5qnxe8" path="res://UI/Interface/CombatTimer/TimerPanel.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://f45mef5qnxe8" path="res://PvE/UI/Combat/CombatTimer/TimerPanel.png" id="55"]
 
-[ext_resource type="Texture2D" uid="uid://c6g4rmy84swpk" path="res://UI/Interface/CombatTimer/CombatSpeed_paused.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://c6g4rmy84swpk" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_paused.png" id="56"]
 
-[ext_resource type="Texture2D" uid="uid://bnbk5naf5373j" path="res://UI/Interface/CombatTimer/CombatSpeed_slider.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://bnbk5naf5373j" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_slider.png" id="57"]
 
-[ext_resource type="Texture2D" uid="uid://cemmjvxmx7h5g" path="res://UI/Interface/CombatTimer/CombatSpeed_slider_filled.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://cemmjvxmx7h5g" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_slider_filled.png" id="58"]
 
-[ext_resource type="Texture2D" uid="uid://wavfrmvwvkgg" path="res://UI/Interface/CombatTimer/CombatSpeed_grabber.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://wavfrmvwvkgg" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_grabber.png" id="59"]
 
-[ext_resource type="Texture2D" uid="uid://cc1wq2jj5755n" path="res://UI/Interface/CombatTimer/CombatSpeed_fast.png" id="60"]
+[ext_resource type="Texture2D" uid="uid://cc1wq2jj5755n" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_fast.png" id="60"]
 
 [ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Art/Assets/Watch.png" id="66"]
 
@@ -54,9 +54,9 @@
 
 [ext_resource type="PackedScene" path="res://UI/Interface/MovingCounter.tscn" id="76"]
 
-[ext_resource type="Texture2D" uid="uid://b25ba4a8q4phy" path="res://UI/Interface/CombatTimer/CombatSpeed_paused_hovered.png" id="80"]
+[ext_resource type="Texture2D" uid="uid://b25ba4a8q4phy" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_paused_hovered.png" id="80"]
 
-[ext_resource type="Texture2D" uid="uid://dh2kvv7t16b2p" path="res://UI/Interface/CombatTimer/CombatSpeed_fast_hovered.png" id="81"]
+[ext_resource type="Texture2D" uid="uid://dh2kvv7t16b2p" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_fast_hovered.png" id="81"]
 
 [ext_resource type="PackedScene" path="res://UI/Interface/LeagueEmblem.tscn" id="87"]
 

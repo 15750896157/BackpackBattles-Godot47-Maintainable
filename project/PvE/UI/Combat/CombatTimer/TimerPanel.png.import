@@ -3,14 +3,14 @@
 importer="texture_atlas"
 type="Texture2D"
 uid="uid://f45mef5qnxe8"
-path="res://.godot/imported/TimerPanel.png-c246d11b9a50dd7f3ddcf40265d13a22.res"
+path="res://.godot/imported/TimerPanel.png-0f4eeb8099802e99cc2e9cba3b8885d0.res"
 group_file="res://Art/Atlases/Combat_atlas.png"
 valid=true
 [deps]
 
 
-source_file="res://UI/Interface/CombatTimer/TimerPanel.png"
-dest_files=["res://.godot/imported/TimerPanel.png-c246d11b9a50dd7f3ddcf40265d13a22.res"]
+source_file="res://PvE/UI/Combat/CombatTimer/TimerPanel.png"
+dest_files=["res://.godot/imported/TimerPanel.png-0f4eeb8099802e99cc2e9cba3b8885d0.res"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cemmjvxmx7h5g"
-path="res://.godot/imported/CombatSpeed_slider_filled.png-eebc09ccf87cafff1e39ea4be923292c.ctex"
+uid="uid://bnbk5naf5373j"
+path="res://.godot/imported/CombatSpeed_slider.png-6854f89cb56234e44462dba9a8d35a30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/CombatTimer/CombatSpeed_slider_filled.png"
-dest_files=["res://.godot/imported/CombatSpeed_slider_filled.png-eebc09ccf87cafff1e39ea4be923292c.ctex"]
+source_file="res://PvE/UI/Combat/CombatTimer/CombatSpeed_slider.png"
+dest_files=["res://.godot/imported/CombatSpeed_slider.png-6854f89cb56234e44462dba9a8d35a30.ctex"]
 
 [params]
 
