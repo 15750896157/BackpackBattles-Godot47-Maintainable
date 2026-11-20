@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dw3g2c6mx1ipv"]
 
-[ext_resource type="Texture2D" path="res://UI/Interface/DamageMeter/Plot/LineTexture2.png" id="1_xs3w4"]
-[ext_resource type="Script" path="res://UI/Interface/DamageMeter/PlotLine.gd" id="2_qpwc3"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/Plot/LineTexture2.png" id="1_xs3w4"]
+[ext_resource type="Script" path="res://PvE/UI/Combat/DamageMeter/PlotLine.gd" id="2_qpwc3"]
 
 [node name="Line2D" type="Line2D"]
 points = PackedVector2Array(0, 0, 65, -92, 187, -156, 242, -50, 353, -106)

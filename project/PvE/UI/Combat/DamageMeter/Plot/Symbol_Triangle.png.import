@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lk5fcxdeqwda"
-path="res://.godot/imported/Symbol_Tear.png-d1ad683bff2b74c5783a51e59b6c60d2.ctex"
+uid="uid://uvvl2j6qi588"
+path="res://.godot/imported/Symbol_Triangle.png-9f26de0e4672affe8d89569ee38790fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/DamageMeter/Plot/Symbol_Tear.png"
-dest_files=["res://.godot/imported/Symbol_Tear.png-d1ad683bff2b74c5783a51e59b6c60d2.ctex"]
+source_file="res://PvE/UI/Combat/DamageMeter/Plot/Symbol_Triangle.png"
+dest_files=["res://.godot/imported/Symbol_Triangle.png-9f26de0e4672affe8d89569ee38790fb.ctex"]
 
 [params]
 

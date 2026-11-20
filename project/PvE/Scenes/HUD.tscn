@@ -72,13 +72,13 @@
 
 [ext_resource type="Texture2D" uid="uid://bocbt7v4y2ocp" path="res://UI/Interface/ArrowButton2.png" id="195"]
 
-[ext_resource type="Script" uid="uid://blw2bqk1vtqp0" path="res://UI/Interface/DamageMeter/DamageMeter.gd" id="198"]
+[ext_resource type="Script" uid="uid://blw2bqk1vtqp0" path="res://PvE/UI/Combat/DamageMeter/DamageMeter.gd" id="198"]
 
-[ext_resource type="Texture2D" uid="uid://xb8l32d6vy3l" path="res://UI/Interface/DamageMeter/DamageMeterIcon.png" id="199"]
+[ext_resource type="Texture2D" uid="uid://xb8l32d6vy3l" path="res://PvE/UI/Combat/DamageMeter/DamageMeterIcon.png" id="199"]
 
-[ext_resource type="Texture2D" uid="uid://b4a3pv716m4cw" path="res://UI/Interface/DamageMeter/OpenButton_right.png" id="200"]
+[ext_resource type="Texture2D" uid="uid://b4a3pv716m4cw" path="res://PvE/UI/Combat/DamageMeter/OpenButton_right.png" id="200"]
 
-[ext_resource type="Texture2D" uid="uid://1s0j362ae17" path="res://UI/Interface/DamageMeter/OpenButton_right_hovered.png" id="201"]
+[ext_resource type="Texture2D" uid="uid://1s0j362ae17" path="res://PvE/UI/Combat/DamageMeter/OpenButton_right_hovered.png" id="201"]
 
 [ext_resource type="Script" uid="uid://dqggfmc7fca2w" path="res://UI/Interface/Options/OptionsButton.gd" id="208"]
 

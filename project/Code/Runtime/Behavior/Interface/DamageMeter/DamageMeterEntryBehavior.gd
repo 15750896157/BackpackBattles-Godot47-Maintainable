@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/DamageMeter/DamageMeterEntry.gd")
+const Receiver = preload("res://PvE/UI/Combat/DamageMeter/DamageMeterEntry.gd")
 
 static func init(subject: Receiver, _player: bool, _source, _absValue, _dps: float, relValue: float, relToLargest: float, _plot, _damageMeter):
 

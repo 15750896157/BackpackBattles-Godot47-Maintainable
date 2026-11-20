@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForDamageMeterTotal:
-	const Receiver = preload("res://UI/Interface/DamageMeter/DamageMeterTotal.gd")
+	const Receiver = preload("res://PvE/UI/Combat/DamageMeter/DamageMeterTotal.gd")
 
 	static func init(subject: Receiver, absValue, dps: float):
 		subject.absDamageLabel.text = Util.tra("UI_DamageMeter_Format").format({

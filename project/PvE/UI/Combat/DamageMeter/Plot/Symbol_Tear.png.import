@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh713akgnuwiq"
-path="res://.godot/imported/Symbol_Circle.png-3ae2ce71424ef21e15a51d4c84ee6def.ctex"
+uid="uid://lk5fcxdeqwda"
+path="res://.godot/imported/Symbol_Tear.png-bcbb1cedb3ac278f9a67d7dc79a10693.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/DamageMeter/Plot/Symbol_Circle.png"
-dest_files=["res://.godot/imported/Symbol_Circle.png-3ae2ce71424ef21e15a51d4c84ee6def.ctex"]
+source_file="res://PvE/UI/Combat/DamageMeter/Plot/Symbol_Tear.png"
+dest_files=["res://.godot/imported/Symbol_Tear.png-bcbb1cedb3ac278f9a67d7dc79a10693.ctex"]
 
 [params]
 

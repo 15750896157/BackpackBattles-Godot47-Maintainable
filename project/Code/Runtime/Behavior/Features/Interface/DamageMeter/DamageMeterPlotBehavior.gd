@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/DamageMeter/DamageMeterPlot.gd")
+const Receiver = preload("res://PvE/UI/Combat/DamageMeter/DamageMeterPlot.gd")
 
 static func preset(subject: Receiver):
 	subject.linesNode = subject.get_node("Lines")

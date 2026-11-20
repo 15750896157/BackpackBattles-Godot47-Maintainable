@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4a3pv716m4cw"
-path="res://.godot/imported/OpenButton_right.png-a116a950259ccc46acb62af5826003df.ctex"
+uid="uid://bgksmopyhdvlc"
+path="res://.godot/imported/Symbol_Square.png-4e647e25d8f47bbbb6398736aab4f0f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Interface/DamageMeter/OpenButton_right.png"
-dest_files=["res://.godot/imported/OpenButton_right.png-a116a950259ccc46acb62af5826003df.ctex"]
+source_file="res://PvE/UI/Combat/DamageMeter/Plot/Symbol_Square.png"
+dest_files=["res://.godot/imported/Symbol_Square.png-4e647e25d8f47bbbb6398736aab4f0f0.ctex"]
 
 [params]
 

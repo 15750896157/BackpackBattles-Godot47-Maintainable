@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://whbdkkkmmif6"]
 
-[ext_resource type="Texture2D" path="res://UI/Interface/DamageMeter/Plot/Symbol_Triangle.png" id="1_ovlei"]
-[ext_resource type="Script" path="res://UI/Interface/DamageMeter/PlotLinePoint.gd" id="2_4ukb6"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/Plot/Symbol_Triangle.png" id="1_ovlei"]
+[ext_resource type="Script" path="res://PvE/UI/Combat/DamageMeter/PlotLinePoint.gd" id="2_4ukb6"]
 
 [node name="PlotPoint" type="TextureRect"]
 offset_right = 15.0

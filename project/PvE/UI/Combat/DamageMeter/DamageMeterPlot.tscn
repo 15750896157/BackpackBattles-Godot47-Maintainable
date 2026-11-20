@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://eh2kys41mwwx"]
 
-[ext_resource type="Script" path="res://UI/Interface/DamageMeter/DamageMeterPlot.gd" id="1_ou6vu"]
-[ext_resource type="Texture2D" path="res://UI/Interface/DamageMeter/Plot/CoordinateSystem.png" id="2_mx8f4"]
+[ext_resource type="Script" path="res://PvE/UI/Combat/DamageMeter/DamageMeterPlot.gd" id="1_ou6vu"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/Plot/CoordinateSystem.png" id="2_mx8f4"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_s5vg5"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_4fpo3"]
-[ext_resource type="Texture2D" path="res://UI/Interface/DamageMeter/Plot/LineTexture2.png" id="5_kyfcq"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/Plot/LineTexture2.png" id="5_kyfcq"]
 
 [sub_resource type="StyleBoxFlat" id="330"]
 bg_color = Color(0.592157, 0.913725, 0.945098, 0.309804)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dlhyu45bkqy6f"]
 
-[ext_resource type="Script" path="res://UI/Interface/DamageMeter/DamageMeterTotal.gd" id="1_aac5h"]
-[ext_resource type="StyleBox" path="res://UI/Interface/DamageMeter/DamageMeterEntryStylebox.tres" id="2_albmp"]
+[ext_resource type="Script" path="res://PvE/UI/Combat/DamageMeter/DamageMeterTotal.gd" id="1_aac5h"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Combat/DamageMeter/DamageMeterEntryStylebox.tres" id="2_albmp"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_ojfvr"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_pu03h"]
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="5_p2uld"]

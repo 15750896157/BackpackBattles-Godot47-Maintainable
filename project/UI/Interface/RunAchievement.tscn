@@ -9,8 +9,8 @@
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="7_ohxoc"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="8_huyi8"]
 [ext_resource type="PackedScene" path="res://UI/Interface/LeagueEmblem.tscn" id="9_33bjp"]
-[ext_resource type="Texture2D" path="res://UI/Interface/DamageMeter/OpenButton_right.png" id="10_mk46y"]
-[ext_resource type="Texture2D" path="res://UI/Interface/DamageMeter/OpenButton_right_hovered.png" id="11_gsnbb"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/OpenButton_right.png" id="10_mk46y"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/OpenButton_right_hovered.png" id="11_gsnbb"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="12_8tupt"]
 
 [sub_resource type="FontVariation" id="2"]
