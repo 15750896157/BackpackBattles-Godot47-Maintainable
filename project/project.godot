@@ -38,7 +38,7 @@ Util="*res://Code/Utility/Util.gd"
 AssetStream="*res://Code/Runtime/Loading/AssetStream.gd"
 SteamHelper="*res://Code/Utility/SteamHelper.gd"
 Settings="*res://Code/Utility/Settings.gd"
-InputMapping="*res://UI/Interface/Options/InputMapping.gd"
+InputMapping="*res://PvE/UI/Settings/InputMapping/InputMapping.gd"
 SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
 ItemBook="*res://Data/Sheets/ItemBook.gd"
 SkinBook="*res://Code/Utility/SkinBook.gd"
@@ -51,7 +51,7 @@ CraftingManager="*res://Code/Core/CraftingManager.gd"
 MaterialCompiler="*res://Code/Utility/MaterialCompiler.gd"
 EventBus="*res://Code/Utility/EventBus.gd"
 CustomRules="*res://Code/Utility/CustomRules.gd"
-InputBlocker="*res://UI/Interface/InputBlocker.tscn"
+InputBlocker="*res://PvE/UI/Feedback/InputBlocker/InputBlocker.tscn"
 Expedition="*res://PvE/NativeExpedition.gd"
 SceneRouter="*res://Code/Runtime/Scene/SceneRouter.gd"
 _mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
@@ -290,7 +290,9 @@ folder_colors={
 "res://UI/Fonts//": "purple",
 "res://UI/Fonts/Localized//": "purple",
 "res://UI/Interface//": "purple",
-"res://UI/Interface/BuildHistory//": "purple",
+"res://PvE/UI/BuildHistory//": "purple",
+"res://PvE/UI/Feedback/InputBlocker//": "purple",
+"res://PvE/UI/Settings/InputMapping//": "purple",
 "res://UI/Interface/Combat//": "purple",
 "res://UI/Interface/Combat/StatIcons//": "purple",
 "res://PvE/UI/Combat/CombatLog//": "purple",

@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForInputMapping:
-	const Receiver = preload("res://UI/Interface/Options/InputMapping.gd")
+	const Receiver = preload("res://PvE/UI/Settings/InputMapping/InputMapping.gd")
 
 	static func _ready(subject: Receiver):
 		for action in InputMap.get_actions():
