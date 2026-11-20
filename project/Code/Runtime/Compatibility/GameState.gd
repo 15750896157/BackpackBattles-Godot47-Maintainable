@@ -384,13 +384,13 @@ const classIcons = [
 ]
 
 const classNameBanners = [
-	preload("res://UI/Interface/Combat/NameBanner_Ranger.png"),
-	preload("res://UI/Interface/Combat/NameBanner_Reaper.png"),
-	preload("res://UI/Interface/Combat/NameBanner_Berserker.png"),
-	preload("res://UI/Interface/Combat/NameBanner_Pyromancer.png"),
-	preload("res://UI/Interface/Combat/NameBanner_Mage.png"),
-	preload("res://UI/Interface/Combat/NameBanner_Adventurer.png"),
-	preload("res://UI/Interface/Combat/NameBanner_Engineer.png")
+	preload("res://PvE/UI/Combat/NameBanners/NameBanner_Ranger.png"),
+	preload("res://PvE/UI/Combat/NameBanners/NameBanner_Reaper.png"),
+	preload("res://PvE/UI/Combat/NameBanners/NameBanner_Berserker.png"),
+	preload("res://PvE/UI/Combat/NameBanners/NameBanner_Pyromancer.png"),
+	preload("res://PvE/UI/Combat/NameBanners/NameBanner_Mage.png"),
+	preload("res://PvE/UI/Combat/NameBanners/NameBanner_Adventurer.png"),
+	preload("res://PvE/UI/Combat/NameBanners/NameBanner_Engineer.png")
 ]
 
 const neutralClassIcon = preload("res://Art/Assets/TitleScreen/NeutralIcon.png")
@@ -566,7 +566,7 @@ const cursorOffsets = {
 
 var cursor = Cursor.HARDWARE_SMALL
 var softwareCursor = null
-var softwareCursorScene = load("res://UI/Interface/Cursor.tscn")
+var softwareCursorScene = load("res://PvE/UI/Cursor/Cursor.tscn")
 var lastCursorType = -1 # Apply the supplied cursor at startup, before the first mouse motion.
 
 var cursors = preload("res://PvE/Art/CursorArt.gd").images() + [
@@ -714,7 +714,7 @@ var curEditModeAni = null
 var processThread = null
 var checkI = 0
 
-var clickParticles = load("res://UI/Interface/ClickParticles.tscn")
+var clickParticles = load("res://PvE/UI/Feedback/ClickParticles/ClickParticles.tscn")
 
 const clickSound = preload("res://Audio/Sound/Sand1.mp3")
 
@@ -740,7 +740,7 @@ const ratingVelo = 0.63
 
 const decodeOffset = int(pow(2, 32))
 
-var coinParticles = load("res://UI/Interface/CoinParticles.tscn")
+var coinParticles = load("res://PvE/UI/Feedback/CoinParticles/CoinParticles.tscn")
 
 const specialItemBoughtSound = preload("res://Audio/Sound/LevelUp2.ogg")
 
@@ -763,7 +763,7 @@ const warpCDFrames_initial = 20
 const warpCDFrames_rapid = 10
 
 const maxWarpAngle = deg_to_rad(50.0)
-var cursorWarpTrail = load("res://UI/Interface/CursorWarpTrail.tscn")
+var cursorWarpTrail = load("res://PvE/UI/Cursor/CursorWarpTrail.tscn")
 var pointsOfInterest: Array
 var pointsOfInterestInfo: Dictionary
 var warpPointOcclusionRects: Array

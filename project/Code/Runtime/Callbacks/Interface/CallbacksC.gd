@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForCursor:
-	const Receiver = preload("res://UI/Interface/Cursor.gd")
+	const Receiver = preload("res://PvE/UI/Cursor/Cursor.gd")
 
 	static func _process(subject: Receiver, _delta: float) -> void :
 		var texIndex = Game.CursorTypes.DEFAULT

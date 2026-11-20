@@ -2,7 +2,7 @@
 
 [ext_resource type="Material" path="res://Art/Shader/CoinParticles.material" id="1_n8bj4"]
 [ext_resource type="Texture2D" path="res://Art/Assets/GoldCoin2.png" id="2_sl0cn"]
-[ext_resource type="Script" path="res://UI/Interface/CoinParticles.gd" id="3_l3br5"]
+[ext_resource type="Script" path="res://PvE/UI/Feedback/CoinParticles/CoinParticles.gd" id="3_l3br5"]
 
 [node name="CoinParticles" type="GPUParticles2D"]
 z_as_relative = false

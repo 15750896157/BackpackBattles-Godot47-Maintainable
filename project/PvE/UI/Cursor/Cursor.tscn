@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://7gxctxjwtcoj"]
 
-[ext_resource type="Script" path="res://UI/Interface/Cursor.gd" id="1_sqemm"]
+[ext_resource type="Script" path="res://PvE/UI/Cursor/Cursor.gd" id="1_sqemm"]
 [ext_resource type="Texture2D" path="res://Art/Supplied20261102/ui/ui_hand_hint.png" id="2_hqcmp"]
 
 [node name="Cursor" type="Node2D"]

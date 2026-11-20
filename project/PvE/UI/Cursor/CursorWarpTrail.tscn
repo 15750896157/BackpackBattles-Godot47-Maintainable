@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://du0v0dyfvm1oq"]
 
 [ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/DashedLine.png" id="1_lhceq"]
-[ext_resource type="Script" path="res://UI/Interface/CursorWarpTrail.gd" id="2_px27c"]
+[ext_resource type="Script" path="res://PvE/UI/Cursor/CursorWarpTrail.gd" id="2_px27c"]
 
 [sub_resource type="Gradient" id="1"]
 offsets = PackedFloat32Array(0, 0.271654, 1)
