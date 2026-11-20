@@ -42,7 +42,7 @@
 
 [ext_resource type="Script" uid="uid://b7ucuqgtek05h" path="res://Code/Core/CombatLog.gd" id="167"]
 
-[ext_resource type="Texture2D" uid="uid://ci7tom5cvdnku" path="res://UI/Interface/Tooltips/TooltipBase.png" id="169"]
+[ext_resource type="Texture2D" uid="uid://ci7tom5cvdnku" path="res://PvE/UI/Tooltips/TooltipBase.png" id="169"]
 
 [ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox.tres" id="172"]
 

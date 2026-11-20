@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForTooltipItemLayout:
-	const Receiver = preload("res://UI/Interface/Tooltips/TooltipItemLayout.gd")
+	const Receiver = preload("res://PvE/UI/Tooltips/TooltipItemLayout.gd")
 
 	static func addItem(subject: Receiver, descriptor, maxSize, tooltip, defaultScaling):
 		var ingredient = descriptor.instantiate_pooled()

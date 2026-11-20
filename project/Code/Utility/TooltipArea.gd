@@ -2,7 +2,7 @@ extends Control
 
 @export var keyword: String
 @export var highlightingNodes: Array[NodePath] = []
-@export var tooltipScene: PackedScene = preload("res://UI/Interface/Tooltips/SimpleTooltip.tscn")
+@export var tooltipScene: PackedScene = preload("res://PvE/UI/Tooltips/SimpleTooltip.tscn")
 
 var tooltip
 var params = {}

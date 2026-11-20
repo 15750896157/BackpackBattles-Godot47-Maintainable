@@ -1,6 +1,6 @@
 extends FocusGrabbingTextureButton
 
-const tooltipScene = preload("res://UI/Interface/Tooltips/CustomRulesTooltip.tscn")
+const tooltipScene = preload("res://PvE/UI/Tooltips/CustomRulesTooltip.tscn")
 
 @export var lobbyMode = false
 

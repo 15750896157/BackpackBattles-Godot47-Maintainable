@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForSimpleTooltip:
-	const Receiver = preload("res://UI/Interface/Tooltips/SimpleTooltip.gd")
+	const Receiver = preload("res://PvE/UI/Tooltips/SimpleTooltip.gd")
 
 	static func setParams(subject: Receiver, header, description):
 		if Expedition.enabled and Expedition.db != null and subject.has_meta("pve_description_key"):
@@ -16,7 +16,7 @@ class ForSimpleTooltip:
 		Util.localizeFonts(subject)
 
 class ForSubclassSubtooltip:
-	const Receiver = preload("res://UI/Interface/Tooltips/SubclassSubtooltip.gd")
+	const Receiver = preload("res://PvE/UI/Tooltips/SubclassSubtooltip.gd")
 
 	static func setSubclass(subject: Receiver, descriptor):
 		if subject.item != null:

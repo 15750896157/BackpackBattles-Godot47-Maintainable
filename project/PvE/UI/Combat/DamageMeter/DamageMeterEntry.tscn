@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://PvE/UI/Combat/DamageMeter/DamageMeterEntry.gd" id="1_hjjlw"]
 [ext_resource type="StyleBox" path="res://PvE/UI/Combat/DamageMeter/DamageMeterEntryStylebox.tres" id="2_2dnlp"]
-[ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="3_r4gpt"]
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="3_r4gpt"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="4_j7sda"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="5_3tige"]
 [ext_resource type="Texture2D" path="res://PvE/UI/Combat/DamageMeter/Plot/Symbol_Triangle.png" id="6_t0n1n"]

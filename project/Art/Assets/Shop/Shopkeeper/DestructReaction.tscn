@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dkn27nw6rp6m8"]
 
-[ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="1_iphc4"]
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="1_iphc4"]
 [ext_resource type="FontFile" path="res://UI/Fonts/LibreBaskerville-Bold.ttf" id="2_q2mr3"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_33iwi"]
 [ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="4_rrvdr"]

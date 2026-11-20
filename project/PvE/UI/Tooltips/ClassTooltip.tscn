@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://1q1u3bmik7k3"]
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Tooltips/SimpleTooltip.tscn" id="1_2eiow"]
+[ext_resource type="Script" path="res://PvE/UI/Tooltips/ClassTooltip.gd" id="2_5fsph"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Tooltips/SubclassSubtooltip.tscn" id="3_0f2sp"]
+
+[node name="Tooltip" instance=ExtResource("1_2eiow")]
+patch_margin_top = 123
+script = ExtResource("2_5fsph")
+Y_BORDER = 330
+
+[node name="Subclasses" type="Control" parent="VBoxContainer" index="2"]
+offset_top = 113.0
+offset_right = 457.0
+offset_bottom = 413.0
+custom_minimum_size = Vector2(0, 300)
+
+[node name="Subclass1" parent="VBoxContainer/Subclasses" index="0" instance=ExtResource("3_0f2sp")]
+offset_left = 0.0
+offset_top = 166.0
+offset_right = -5.5
+offset_bottom = 316.0
+
+[node name="Subclass2" parent="VBoxContainer/Subclasses" index="1" instance=ExtResource("3_0f2sp")]
+offset_left = 241.0
+offset_top = 166.0
+offset_right = 235.5
+offset_bottom = 316.0
+
+[node name="Subclass3" parent="VBoxContainer/Subclasses" index="2" instance=ExtResource("3_0f2sp")]
+offset_left = 0.0
+offset_top = 332.0
+offset_right = -0.5
+offset_bottom = 482.0
+
+[node name="Subclass4" parent="VBoxContainer/Subclasses" index="3" instance=ExtResource("3_0f2sp")]
+offset_left = 241.0
+offset_top = 332.0
+offset_right = 235.5
+offset_bottom = 482.0
+
+[node name="Subclass5" parent="VBoxContainer/Subclasses" index="4" instance=ExtResource("3_0f2sp")]
+offset_left = 128.0
+offset_top = 1.0
+offset_right = 122.5
+offset_bottom = 151.0

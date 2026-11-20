@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Tooltips/Tooltip.gd")
+const Receiver = preload("res://PvE/UI/Tooltips/Tooltip.gd")
 
 static func align(subject: Receiver, toolPos: Vector2, toolSize: Vector2, alignment):
 	if not subject.is_inside_tree(): return

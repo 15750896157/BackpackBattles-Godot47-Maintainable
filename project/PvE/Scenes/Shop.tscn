@@ -72,7 +72,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Art/Assets/shadow.png" id="77"]
 
-[ext_resource type="Texture2D" uid="uid://do1fve2aungww" path="res://UI/Interface/Tooltips/TooltipBase2.png" id="78"]
+[ext_resource type="Texture2D" uid="uid://do1fve2aungww" path="res://PvE/UI/Tooltips/TooltipBase2.png" id="78"]
 
 [ext_resource type="Texture2D" uid="uid://6u55yi7bnkql" path="res://Art/Assets/Shop/Sign2.png" id="82"]
 
@@ -152,7 +152,7 @@
 
 [ext_resource type="PackedScene" path="res://UI/Interface/RerollRopeTag.tscn" id="233"]
 
-[ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="235"]
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="235"]
 
 [ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Art/Assets/Chestnut/Eye.png" id="237"]
 

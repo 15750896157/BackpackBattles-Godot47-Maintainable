@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bo61iefcwtdaw"]
 
 [ext_resource type="Script" path="res://UI/Interface/NotEnoughGoldLabel.gd" id="1_0y4ya"]
-[ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="2_3cabk"]
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="2_3cabk"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_ali2c"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_5a1bs"]
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="5_3l62e"]

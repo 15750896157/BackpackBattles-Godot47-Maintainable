@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Tooltips/BuildIntoRecipe.gd")
+const Receiver = preload("res://PvE/UI/Tooltips/BuildIntoRecipe.gd")
 
 static func setRecipe(subject: Receiver, recipe, tooltip):
 

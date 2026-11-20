@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cf0gbcx2ga2kj"]
 
-[ext_resource type="Script" path="res://UI/Interface/Tooltips/Tooltip.gd" id="1_dnqv3"]
+[ext_resource type="Script" path="res://PvE/UI/Tooltips/Tooltip.gd" id="1_dnqv3"]
 [ext_resource type="PackedScene" path="res://PvE/UI/Combat/CombatLog/CombatLogLine.tscn" id="2_5a5c7"]
 [ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox_tooltip.tres" id="3_x51gf"]
 

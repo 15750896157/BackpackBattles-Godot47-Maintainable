@@ -1,7 +1,7 @@
 extends Node2D
 
 const scaleCurve = preload("res://UI/Interface/Combat/BlockShieldScale.tres")
-const tooltipScene = preload("res://UI/Interface/Tooltips/SimpleTooltip.tscn")
+const tooltipScene = preload("res://PvE/UI/Tooltips/SimpleTooltip.tscn")
 
 @export var keyword: String
 @export var scaleThreshold = 50

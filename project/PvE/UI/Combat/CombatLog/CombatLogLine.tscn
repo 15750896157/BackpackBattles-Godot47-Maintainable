@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://soq75aj3fsj1"]
 
-[ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="1_s6jbq"]
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="1_s6jbq"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="2_oxybh"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_vl11s"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="4_lpy4l"]

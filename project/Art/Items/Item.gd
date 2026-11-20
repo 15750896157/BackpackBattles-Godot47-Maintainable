@@ -323,16 +323,16 @@ var dropParticlesScene:
 var tooltipScenes:
 	get:
 		return [
-			AssetStream.resolve("res://UI/Interface/Tooltips/CommonTooltip.tscn"),
-			AssetStream.resolve("res://UI/Interface/Tooltips/RareTooltip.tscn"),
-			AssetStream.resolve("res://UI/Interface/Tooltips/EpicTooltip.tscn"),
-			AssetStream.resolve("res://UI/Interface/Tooltips/LegendaryTooltip.tscn"),
-			AssetStream.resolve("res://UI/Interface/Tooltips/GodlyTooltip.tscn"),
-			AssetStream.resolve("res://UI/Interface/Tooltips/UniqueTooltip.tscn")]
+			AssetStream.resolve("res://PvE/UI/Tooltips/CommonTooltip.tscn"),
+			AssetStream.resolve("res://PvE/UI/Tooltips/RareTooltip.tscn"),
+			AssetStream.resolve("res://PvE/UI/Tooltips/EpicTooltip.tscn"),
+			AssetStream.resolve("res://PvE/UI/Tooltips/LegendaryTooltip.tscn"),
+			AssetStream.resolve("res://PvE/UI/Tooltips/GodlyTooltip.tscn"),
+			AssetStream.resolve("res://PvE/UI/Tooltips/UniqueTooltip.tscn")]
 
 var recipeTooltip:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Tooltips/RecipeTooltip.tscn")
+		return AssetStream.resolve("res://PvE/UI/Tooltips/RecipeTooltip.tscn")
 const rotateSound = preload("res://Audio/Sound/Grind.wav")
 const grabSound = preload("res://Audio/Sound/Swing1.wav")
 var dustParticles:
@@ -1129,7 +1129,7 @@ func respondToHover():
 
 var buildIntoRecipesTooltipScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/Tooltips/BuildIntoRecipesTooltip.tscn")
+		return AssetStream.resolve("res://PvE/UI/Tooltips/BuildIntoRecipesTooltip.tscn")
 var buildIntoRecipesTooltip = null
 var owningBuildIntoRecipesTooltip = null
 var ownerTypesWithBuildTooltip = {

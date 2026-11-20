@@ -31,14 +31,14 @@ static func _ready(subject: Receiver):
 	var reversed = subject.invertDictionary(ItemDescriptor.StuffedClasses)
 	for classI in ItemDescriptor.StuffedClasses.values():
 		if classI > 0 and classI < ItemDescriptor.StuffedClasses.Neutral:
-			subject.uniqueTooltipTextures[classI] = load(str("res://UI/Interface/Tooltips/TooltipBase_", reversed[classI], ".png"))
-			subject.uniqueTooltipDivider[classI] = load(str("res://UI/Interface/Tooltips/Divider_", reversed[classI], ".png"))
-			subject.uniqueTooltipIcon[classI] = load(str("res://UI/Interface/Tooltips/TooltipIcon_", reversed[classI], ".png"))
+			subject.uniqueTooltipTextures[classI] = load(str("res://PvE/UI/Tooltips/TooltipBase_", reversed[classI], ".png"))
+			subject.uniqueTooltipDivider[classI] = load(str("res://PvE/UI/Tooltips/Divider_", reversed[classI], ".png"))
+			subject.uniqueTooltipIcon[classI] = load(str("res://PvE/UI/Tooltips/TooltipIcon_", reversed[classI], ".png"))
 			if Game.isClassUnlockedStuffed(classI):
 				subject.bannerGradients[classI] = load(str("res://Art/CharacterClasses/", reversed[classI], "/BannerGradient.tres"))
 
-	subject.uniqueTooltipTextures[ItemDescriptor.StuffedClasses.Neutral] = load("res://UI/Interface/Tooltips/TooltipBase_Unique.png")
-	subject.uniqueTooltipDivider[ItemDescriptor.StuffedClasses.Neutral] = load("res://UI/Interface/Tooltips/Divider2_Unique.png")
+	subject.uniqueTooltipTextures[ItemDescriptor.StuffedClasses.Neutral] = load("res://PvE/UI/Tooltips/TooltipBase_Unique.png")
+	subject.uniqueTooltipDivider[ItemDescriptor.StuffedClasses.Neutral] = load("res://PvE/UI/Tooltips/Divider2_Unique.png")
 
 static func prepareFonts(subject: Receiver):
 	subject.damageNumberFonts.resize(201)

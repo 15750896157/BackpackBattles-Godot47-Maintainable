@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Tooltips/ItemTooltip.gd")
+const Receiver = preload("res://PvE/UI/Tooltips/ItemTooltip.gd")
 
 static func preset(subject: Receiver):
 	subject.vboxcontainer = subject.get_node("VBoxContainer")

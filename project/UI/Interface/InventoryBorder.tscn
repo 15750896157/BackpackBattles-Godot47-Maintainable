@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cark4luwiy3qv"]
 
-[ext_resource type="Texture2D" path="res://UI/Interface/Tooltips/Divider2_Common.png" id="1_hd4ro"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Tooltips/Divider2_Common.png" id="1_hd4ro"]
 [ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="2_vywx5"]
 
 [sub_resource type="Animation" id="1"]

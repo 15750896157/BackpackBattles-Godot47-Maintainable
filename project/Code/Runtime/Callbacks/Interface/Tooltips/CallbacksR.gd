@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForRelatedItems:
-	const Receiver = preload("res://UI/Interface/Tooltips/RelatedItems.gd")
+	const Receiver = preload("res://PvE/UI/Tooltips/RelatedItems.gd")
 
 	static func setItem(subject: Receiver, item, tooltip):
 		var relatedItems = item.getRelatedItems()

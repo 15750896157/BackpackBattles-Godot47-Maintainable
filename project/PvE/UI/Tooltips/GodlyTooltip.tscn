@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://botu4i0wji008"]
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Tooltips/ItemTooltip.tscn" id="1_vpwcm"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Tooltips/TooltipBase_Godly.png" id="2_n6a44"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Tooltips/Divider2_Godly.png" id="3_1edqa"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Tooltips/Divider1_Godly.png" id="4_avpea"]
+
+[node name="Tooltip" instance=ExtResource("1_vpwcm")]
+offset_left = -40.0
+offset_top = -96.0
+offset_right = 569.0
+offset_bottom = 251.0
+texture = ExtResource("2_n6a44")
+patch_margin_left = 0
+patch_margin_top = 183
+patch_margin_right = 0
+patch_margin_bottom = 153
+Y_BORDER = 180
+
+[node name="VBoxContainer" parent="." index="0"]
+offset_left = 59.0
+offset_top = 115.0
+offset_right = 529.0
+offset_bottom = 282.0
+
+[node name="Divider1" parent="VBoxContainer" index="3"]
+offset_right = 432.0
+texture = ExtResource("3_1edqa")
+
+[node name="Divider2" parent="VBoxContainer" index="4"]
+texture = ExtResource("4_avpea")
+
+[node name="Spacer" parent="VBoxContainer/HBoxContainer" index="0"]
+offset_right = 101.0
+
+[node name="Rarity" parent="VBoxContainer/HBoxContainer" index="1"]
+offset_left = 96.0
+offset_right = 175.0
+text = "Godly"
+
+[node name="Spacer2" parent="VBoxContainer/HBoxContainer" index="2"]
+offset_left = 170.0
+offset_right = 271.0
+
+[node name="HBoxContainer" parent="VBoxContainer/HBoxContainer" index="3"]
+offset_left = 266.0
+offset_right = 373.0
+
+[node name="Spacer3" parent="VBoxContainer/HBoxContainer" index="4"]
+offset_left = 368.0

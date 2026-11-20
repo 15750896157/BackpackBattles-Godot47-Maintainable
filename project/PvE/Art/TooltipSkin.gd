@@ -22,7 +22,7 @@ static func apply(subject):
 		subject.axis_stretch_vertical = NinePatchRect.AXIS_STRETCH_MODE_STRETCH
 	subject.divider1.texture = divider
 	for node in subject.toReturn:
-		if node is TextureRect and node.scene_file_path == "res://UI/Interface/Tooltips/TooltipDivider.tscn":
+		if node is TextureRect and node.scene_file_path == "res://PvE/UI/Tooltips/TooltipDivider.tscn":
 			node.texture = divider
 	var definition = Expedition.flow.placement.definition(str(subject.item.get_meta("pve_definition_id","")))
 	if not definition.is_empty(): subject.nameLabel.text = "[center]"+Expedition.t(str(definition.name_key))+"[/center]"

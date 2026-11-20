@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Tooltips/RecipeTooltip.gd")
+const Receiver = preload("res://PvE/UI/Tooltips/RecipeTooltip.gd")
 
 static func setItem(subject: Receiver, item):
 	subject.nameLabel.text = item.getTranslatedName()
