@@ -1,7 +1,7 @@
 extends "res://PvE/UI/Tooltips/TooltipItemLayout.gd"
 
 const ingredientLabelScene = preload("res://UI/Interface/IngredientLabel.tscn")
-const catalystHatchingScene = preload("res://UI/Interface/ItemLibrary/CatalystHatching.tscn")
+const catalystHatchingScene = preload("res://PvE/UI/ItemLibrary/CatalystHatching.tscn")
 const ownedIconScene = preload("res://PvE/UI/Tooltips/OwnedIcon.tscn")
 const shopIconScene = preload("res://PvE/UI/Tooltips/ShopIcon.tscn")
 

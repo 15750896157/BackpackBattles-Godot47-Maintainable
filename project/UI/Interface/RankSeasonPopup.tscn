@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://beo4ktw35crlp"]
 
 [ext_resource type="Script" path="res://UI/Interface/RankSeasonPopup.gd" id="1_tpw1n"]
-[ext_resource type="Texture2D" path="res://UI/Interface/Options/OptionsSheet.png" id="2_1pq5d"]
-[ext_resource type="FontVariation" path="res://UI/Interface/Options/OptionsFont.tres" id="3_ihn4v"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Options/OptionsSheet.png" id="2_1pq5d"]
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="3_ihn4v"]
 [ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="4_g06st"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingControl.gd" id="5_f2x26"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="6_nvkxs"]

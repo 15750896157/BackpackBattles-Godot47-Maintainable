@@ -1,13 +1,13 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Combat/CharacterStatIcon.gd")
+const Receiver = preload("res://PvE/UI/Combat/Hud/CharacterStatIcon.gd")
 
 static func setStat(subject: Receiver, _stat: int):
 	subject.stat = _stat
 	var statName = Character.Stat.keys()[subject.stat]
 	subject.positiveKeyword = "STAT_" + statName
 	subject.negativeKeyword = subject.positiveKeyword + "_NEGATIVE"
-	var fileName = "res://UI/Interface/Combat/StatIcons/" + statName
+	var fileName = "res://PvE/UI/Combat/Hud/StatIcons/" + statName
 	subject.positiveTexture = load(fileName + ".png")
 	Util.statIcons[subject.stat] = subject.positiveTexture
 	if Util.sharedDirectory.file_exists(fileName + "_negative.png.import"):

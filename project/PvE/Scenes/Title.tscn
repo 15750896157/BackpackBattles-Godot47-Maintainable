@@ -22,7 +22,7 @@
 
 [ext_resource type="Texture2D" uid="uid://7tmtpn0c6jpb" path="res://Art/Assets/TitleScreen/QuitSign.png" id="38"]
 
-[ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://UI/Interface/ItemLibrary/ItemLibraryButton.gd" id="39"]
+[ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://PvE/UI/ItemLibrary/ItemLibraryButton.gd" id="39"]
 
 [ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="64"]
 
@@ -88,7 +88,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cxh281la1brh" path="res://Art/Assets/Paper1.png" id="147"]
 
-[ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://UI/Interface/ItemLibrary/ItemLibraryButton.png" id="149"]
+[ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://PvE/UI/ItemLibrary/ItemLibraryButton.png" id="149"]
 
 [ext_resource type="Texture2D" uid="uid://b5mcvqvmki050" path="res://Art/Assets/TitleScreen/ContinueBanner_CustomUnranked.png" id="151"]
 

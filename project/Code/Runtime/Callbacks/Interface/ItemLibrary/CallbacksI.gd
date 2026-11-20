@@ -4,7 +4,7 @@ extends RefCounted
 ## (their receivers ItemFilterButton.gd / ItemRecordIcons.gd retired with the old item library panel).
 
 class ForItemRecordStar:
-	const Receiver = preload("res://UI/Interface/ItemLibrary/ItemRecordStar.gd")
+	const Receiver = preload("res://PvE/UI/ItemLibrary/ItemRecordStar.gd")
 
 	static func setStarType(subject: Receiver, starType: int):
 		if starType != - 1:

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://UI/Interface/RankSeason3Popup.gd" id="1_ab4cx"]
 [ext_resource type="Texture2D" path="res://PvE/UI/Tooltips/TooltipBase2.png" id="2_gicpj"]
-[ext_resource type="FontVariation" path="res://UI/Interface/Options/OptionsFont.tres" id="3_cf4qp"]
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="3_cf4qp"]
 [ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="4_rkup8"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingControl.gd" id="5_k5s8q"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="6_y8rlo"]

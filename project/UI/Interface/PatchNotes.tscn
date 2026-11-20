@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ygimprkyav0q"]
 
 [ext_resource type="Script" path="res://UI/Interface/PatchNotes.gd" id="1_emteb"]
-[ext_resource type="Texture2D" path="res://UI/Interface/Options/OptionsSheet.png" id="2_adguo"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Options/OptionsSheet.png" id="2_adguo"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_ws2ym"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_0gibh"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="5_qq2m3"]
@@ -12,7 +12,7 @@
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="10_ufawx"]
 [ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="11_k4bti"]
 [ext_resource type="Script" path="res://Code/Utility/DraggableRichTextLabel.gd" id="12_s458w"]
-[ext_resource type="FontVariation" path="res://UI/Interface/Options/OptionsFont.tres" id="13_6kkuj"]
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="13_6kkuj"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingControl.gd" id="14_aoc4b"]
 
 [sub_resource type="Animation" id="199"]

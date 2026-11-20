@@ -22,7 +22,7 @@
 
 [ext_resource type="Texture2D" uid="uid://xnux6lseawe7" path="res://Art/Assets/BrokenFanfare.png" id="41"]
 
-[ext_resource type="Texture2D" uid="uid://blcodc6wmmts4" path="res://UI/Interface/Lobbies/ResultsPanel.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://blcodc6wmmts4" path="res://PvE/UI/Lobbies/ResultsPanel.png" id="45"]
 
 [ext_resource type="Texture2D" uid="uid://6w1urhw50qyb" path="res://Art/Assets/BlueBanner.png" id="52"]
 
@@ -74,7 +74,7 @@
 
 [ext_resource type="PackedScene" path="res://UI/Interface/LeagueProgressBar.tscn" id="108"]
 
-[ext_resource type="Texture2D" uid="uid://ncdsljqxtkel" path="res://UI/Interface/Combat/RankedSheet.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://ncdsljqxtkel" path="res://PvE/UI/Combat/Hud/RankedSheet.png" id="109"]
 
 [ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
 
@@ -94,9 +94,9 @@
 
 [ext_resource type="Script" uid="uid://bc42suputcqom" path="res://Code/Utility/InputBlockRect.gd" id="142"]
 
-[ext_resource type="Texture2D" uid="uid://dyufjkue2vhc2" path="res://UI/Interface/Combat/Eye_open.png" id="143"]
+[ext_resource type="Texture2D" uid="uid://dyufjkue2vhc2" path="res://PvE/UI/Combat/Hud/Eye_open.png" id="143"]
 
-[ext_resource type="Texture2D" uid="uid://bn7oiqegl4x0" path="res://UI/Interface/Combat/Eye_open_hovered.png" id="144"]
+[ext_resource type="Texture2D" uid="uid://bn7oiqegl4x0" path="res://PvE/UI/Combat/Hud/Eye_open_hovered.png" id="144"]
 
 [ext_resource type="PackedScene" path="res://UI/Interface/CustomRulesIcon.tscn" id="152"]
 
@@ -104,7 +104,7 @@
 
 [ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
 
-[ext_resource type="Script" uid="uid://bmdtn4ws1l6oc" path="res://UI/Interface/Combat/HideUIButton.gd" id="161"]
+[ext_resource type="Script" uid="uid://bmdtn4ws1l6oc" path="res://PvE/UI/Combat/Hud/HideUIButton.gd" id="161"]
 
 [ext_resource type="Script" uid="uid://cs32daht56s5u" path="res://UI/Interface/BaseSlider.gd" id="162"]
 
@@ -140,7 +140,7 @@
 
 [ext_resource type="Material" path="res://Art/Shader/FatigueParticleMat.material" id="255"]
 
-[ext_resource type="Script" uid="uid://bv2tkn0o8tt26" path="res://UI/Interface/Combat/WinLabel.gd" id="259"]
+[ext_resource type="Script" uid="uid://bv2tkn0o8tt26" path="res://PvE/UI/Combat/Hud/WinLabel.gd" id="259"]
 
 [ext_resource type="Script" uid="uid://ckn2tpmdrwwvg" path="res://Code/Utility/TimedParticles.gd" id="261"]
 
@@ -150,7 +150,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Art/Assets/Chestnut/Tongue.png" id="275"]
 
-[ext_resource type="Script" uid="uid://ce86tt4hmhaqq" path="res://UI/Interface/Combat/CombatTugBar.gd" id="304"]
+[ext_resource type="Script" uid="uid://ce86tt4hmhaqq" path="res://PvE/UI/Combat/Hud/CombatTugBar.gd" id="304"]
 
 [ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 

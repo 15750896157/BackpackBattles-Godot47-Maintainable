@@ -1,7 +1,7 @@
 extends Node
 
-const defaultIcon = preload("res://UI/Interface/Lobbies/CustomIcon.png")
-const activeIcon = preload("res://UI/Interface/Lobbies/CustomIcon_hovered.png")
+const defaultIcon = preload("res://PvE/UI/Lobbies/CustomIcon.png")
+const activeIcon = preload("res://PvE/UI/Lobbies/CustomIcon_hovered.png")
 
 const UNRANKED = - 1
 const MIN_BONUS_GOLD = - 10

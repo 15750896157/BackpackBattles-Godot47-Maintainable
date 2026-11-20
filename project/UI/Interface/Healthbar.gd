@@ -1,6 +1,6 @@
 extends Node2D
 
-const healthLostParticles = preload("res://UI/Interface/Combat/HealthLostParticles.tscn")
+const healthLostParticles = preload("res://PvE/UI/Combat/Hud/HealthLostParticles.tscn")
 const barWidth = 216
 
 @onready var bar = $Bar

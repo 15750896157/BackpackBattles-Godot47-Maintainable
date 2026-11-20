@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xx4dk0nc5dui"]
 
-[ext_resource type="Script" path="res://UI/Interface/Combat/BlockHud.gd" id="1_6l4y0"]
+[ext_resource type="Script" path="res://PvE/UI/Combat/Hud/BlockHud.gd" id="1_6l4y0"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Buffs/Block.png" id="2_7p6k3"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="3_d7jot"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_bvdpm"]

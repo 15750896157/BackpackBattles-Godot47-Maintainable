@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://tkwjs3qm7rv3"]
 
-[ext_resource type="FontVariation" path="res://UI/Interface/Options/OptionsFont.tres" id="1_w2cqg"]
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="1_w2cqg"]
 [ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="2_r74dw"]
 [ext_resource type="Script" path="res://UI/Interface/NameLineEdit.gd" id="3_vbwn2"]
 

@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Combat/BlockHud.gd")
+const Receiver = preload("res://PvE/UI/Combat/Hud/BlockHud.gd")
 
 static func _ready(subject: Receiver) -> void :
 	subject.sprite.scale = Vector2.ZERO

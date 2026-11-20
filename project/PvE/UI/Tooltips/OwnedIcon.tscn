@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bnw722ehtmu5d"]
 
-[ext_resource type="Texture2D" path="res://UI/Interface/Options/Checked2.png" id="1_m28rn"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Options/Checked2.png" id="1_m28rn"]
 [ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="2_vxys7"]
 
 [node name="Owned" type="Sprite2D"]

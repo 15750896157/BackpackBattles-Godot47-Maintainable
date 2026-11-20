@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://bpmvlpvta8l1w"]
 
 [ext_resource type="Script" path="res://UI/Interface/BoughtNothingWarning.gd" id="1_yxsgs"]
-[ext_resource type="Texture2D" path="res://UI/Interface/Options/OptionsSheet.png" id="2_e278x"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Options/OptionsSheet.png" id="2_e278x"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="3_r2g5l"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_f6k6p"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="5_qjhci"]
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="6_3mxyw"]
-[ext_resource type="FontVariation" path="res://UI/Interface/Options/OptionsFont.tres" id="7_qs68m"]
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="7_qs68m"]
 [ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="8_3mato"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingControl.gd" id="9_id52b"]
 

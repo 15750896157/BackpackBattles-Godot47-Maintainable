@@ -14,7 +14,7 @@ const rankUpSound2 = preload("res://Audio/Sound/RankUp2.ogg")
 const rankDownSound = preload("res://Audio/Sound/RankDown.ogg")
 const combatStartSound = preload("res://Audio/Sound/Drumroll.ogg")
 const clipMaterial = preload("res://Art/Shader/MaskClip.tres")
-const eatTrophyParticles = preload("res://UI/Interface/Combat/EatTrophyParticles.tscn")
+const eatTrophyParticles = preload("res://PvE/UI/Combat/Hud/EatTrophyParticles.tscn")
 const chestnutLandSound = preload("res://Audio/Sound/Impact.ogg")
 const swordClashSound = preload("res://Audio/Sound/SwordClash.mp3")
 

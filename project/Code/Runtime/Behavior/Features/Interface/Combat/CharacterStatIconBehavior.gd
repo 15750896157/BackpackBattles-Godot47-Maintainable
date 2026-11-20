@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Combat/CharacterStatIcon.gd")
+const Receiver = preload("res://PvE/UI/Combat/Hud/CharacterStatIcon.gd")
 
 static func setStatValue(subject: Receiver, value):
 	if subject.default == null:

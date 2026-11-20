@@ -6,7 +6,7 @@
 
 [ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
 
-[ext_resource type="Texture2D" uid="uid://cl8ufe5ntpbpe" path="res://UI/Interface/Options/OptionsButton.png" id="90"]
+[ext_resource type="Texture2D" uid="uid://cl8ufe5ntpbpe" path="res://PvE/UI/Options/OptionsButton.png" id="90"]
 
 [ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
 
@@ -16,13 +16,13 @@
 
 [ext_resource type="Script" uid="uid://banoet6ywadah" path="res://UI/Interface/VersionLabel.gd" id="99"]
 
-[ext_resource type="Texture2D" uid="uid://cjwnf87milum2" path="res://UI/Interface/Options/OptionsButton_hovered.png" id="117"]
+[ext_resource type="Texture2D" uid="uid://cjwnf87milum2" path="res://PvE/UI/Options/OptionsButton_hovered.png" id="117"]
 
 [ext_resource type="Texture2D" uid="uid://c51mb2u38n3ii" path="res://Art/Assets/Frame2.png" id="119"]
 
 [ext_resource type="Texture2D" uid="uid://djy7ba53m2yri" path="res://UI/Interface/DropdownArrow.png" id="127"]
 
-[ext_resource type="FontVariation" path="res://UI/Interface/Options/OptionsFont.tres" id="133"]
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="133"]
 
 [ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
 
@@ -54,7 +54,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bp8i4tush30sk" path="res://PvE/UI/Combat/CombatLog/CloseButton_hovered.png" id="180"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/Options/ItemListButton.tscn" id="181"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Options/ItemListButton.tscn" id="181"]
 
 [ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 
@@ -62,7 +62,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b4n8uhlaqc05i" path="res://UI/Interface/SurvivalButton.png" id="184"]
 
-[ext_resource type="Texture2D" uid="uid://bkrc550l6x8vj" path="res://UI/Interface/Combat/CancelSurvivalButton.png" id="185"]
+[ext_resource type="Texture2D" uid="uid://bkrc550l6x8vj" path="res://PvE/UI/Combat/Hud/CancelSurvivalButton.png" id="185"]
 
 [ext_resource type="Texture2D" uid="uid://cbde3uxf3ijj" path="res://Art/Assets/SurvivalSkull.png" id="188"]
 
@@ -80,7 +80,7 @@
 
 [ext_resource type="Texture2D" uid="uid://1s0j362ae17" path="res://PvE/UI/Combat/DamageMeter/OpenButton_right_hovered.png" id="201"]
 
-[ext_resource type="Script" uid="uid://dqggfmc7fca2w" path="res://UI/Interface/Options/OptionsButton.gd" id="208"]
+[ext_resource type="Script" uid="uid://dqggfmc7fca2w" path="res://PvE/UI/Options/OptionsButton.gd" id="208"]
 
 [ext_resource type="PackedScene" path="res://UI/Interface/Searchbar.tscn" id="212"]
 

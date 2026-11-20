@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_slider.png" id="7_70i47"]
 [ext_resource type="Texture2D" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_slider_filled.png" id="8_wsgfg"]
 [ext_resource type="Script" path="res://UI/Interface/BaseSlider.gd" id="9_vb0vn"]
-[ext_resource type="FontVariation" path="res://UI/Interface/Options/OptionsFont.tres" id="10_vmgyg"]
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="10_vmgyg"]
 [ext_resource type="Script" path="res://UI/Interface/NonLocalizedControl.gd" id="11_p0y1d"]
 
 [sub_resource type="FontVariation" id="343"]

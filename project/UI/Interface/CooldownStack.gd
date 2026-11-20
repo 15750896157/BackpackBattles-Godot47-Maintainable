@@ -1,4 +1,4 @@
-extends "res://UI/Interface/Combat/BlockHud.gd"
+extends "res://PvE/UI/Combat/Hud/BlockHud.gd"
 
 @export var cooldown = 2.0
 @export var offset = 0.0

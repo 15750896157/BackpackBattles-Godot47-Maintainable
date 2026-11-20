@@ -9,8 +9,8 @@
 [ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="7_pnpr8"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="8_6u5qy"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Leagues/League_Bronze.png" id="9_q2bqs"]
-[ext_resource type="Texture2D" path="res://UI/Interface/Options/Unchecked.png" id="10_bdk7p"]
-[ext_resource type="Texture2D" path="res://UI/Interface/Options/Checked.png" id="11_840js"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Options/Unchecked.png" id="10_bdk7p"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Options/Checked.png" id="11_840js"]
 [ext_resource type="Script" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="12_1p1by"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Divider1.png" id="13_llefl"]
 
