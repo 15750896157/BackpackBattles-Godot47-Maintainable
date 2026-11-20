@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" path="res://PvE/UI/Inventory/GridStorageEntry.png" id="2_pvld0"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="3_qmfip"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_gf7vm"]
-[ext_resource type="Script" path="res://UI/Interface/NonLocalized_KeepFont.gd" id="5_l7gqe"]
+[ext_resource type="Script" path="res://PvE/UI/Common/NonLocalized_KeepFont.gd" id="5_l7gqe"]
 
 [sub_resource type="StyleBoxFlat" id="1"]
 bg_color = Color(1, 0.92549, 0.831373, 0.470588)

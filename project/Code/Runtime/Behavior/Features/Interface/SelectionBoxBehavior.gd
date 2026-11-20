@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/SelectionBox.gd")
+const Receiver = preload("res://PvE/UI/Common/SelectionBox.gd")
 
 static func startSelecting(subject: Receiver):
 	subject.set_process(true)

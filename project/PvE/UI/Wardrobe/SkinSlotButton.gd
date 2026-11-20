@@ -1,10 +1,10 @@
 extends Control
 
-const notEnoughTrophiesLabel = preload("res://UI/Interface/NotEnoughTrophiesLabel.tscn")
+const notEnoughTrophiesLabel = preload("res://PvE/UI/Feedback/NotEnoughTrophiesLabel.tscn")
 const normalTex = preload("res://PvE/UI/Wardrobe/SkinSlotButton.png")
 const hoverTex = preload("res://PvE/UI/Wardrobe/SkinSlotButton_hovered.png")
 
-const trophyParticles = preload("res://UI/Interface/TrophyParticles.tscn")
+const trophyParticles = preload("res://PvE/UI/Feedback/TrophyParticles.tscn")
 const buySound1 = preload("res://Audio/Sound/Glitter.wav")
 const buySound2 = preload("res://Audio/Sound/Bell.wav")
 const notEnoughTrophiesSound = preload("res://Audio/Sound/Fanfare_sadtoot.ogg")

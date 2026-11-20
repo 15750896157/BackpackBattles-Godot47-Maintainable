@@ -289,7 +289,6 @@ folder_colors={
 "res://UI/": "purple",
 "res://UI/Fonts//": "purple",
 "res://UI/Fonts/Localized//": "purple",
-"res://UI/Interface//": "purple",
 "res://PvE/UI/BuildHistory//": "purple",
 "res://PvE/UI/Feedback/InputBlocker//": "purple",
 "res://PvE/UI/Settings/InputMapping//": "purple",

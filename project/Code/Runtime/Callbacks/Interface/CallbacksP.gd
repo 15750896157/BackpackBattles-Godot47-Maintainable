@@ -12,7 +12,7 @@ class ForPopupMessage:
 		subject.timer.start(subject.duration)
 
 class ForPullButton:
-	const Receiver = preload("res://UI/Interface/PullButton.gd")
+	const Receiver = preload("res://PvE/UI/Shop/PullButton.gd")
 
 	static func _physics_process(subject: Receiver, delta):
 		if subject.disabled: return

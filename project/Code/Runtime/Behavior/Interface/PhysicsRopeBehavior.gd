@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/PhysicsRope.gd")
+const Receiver = preload("res://PvE/UI/Shop/PhysicsRope.gd")
 
 static func _ready(subject: Receiver):
 	Game.connect("switch_to_shop", Callable(subject, "onSwitchToShop"))

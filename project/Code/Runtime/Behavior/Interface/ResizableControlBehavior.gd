@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/ResizableControl.gd")
+const Receiver = preload("res://PvE/UI/Common/ResizableControl.gd")
 
 static func _process(subject: Receiver, delta):
 	if subject.verticalResizing:

@@ -606,7 +606,7 @@ static func addRecord(subject: Receiver, statistic: int, descriptor: ItemDescrip
 
 static func showWarning(subject: Receiver, textKey, confirmKey, cancelKey):
 	if subject.warning == null:
-		subject.warning = load("res://UI/Interface/BoughtNothingWarning.tscn").instantiate()
+		subject.warning = load("res://PvE/UI/Feedback/BoughtNothingWarning.tscn").instantiate()
 
 	if not subject.warning.is_inside_tree():
 		subject.warning.open(textKey, confirmKey, cancelKey)

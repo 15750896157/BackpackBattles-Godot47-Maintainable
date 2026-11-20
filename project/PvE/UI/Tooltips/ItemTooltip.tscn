@@ -7,7 +7,7 @@
 [ext_resource type="RichTextEffect" path="res://PvE/UI/Tooltips/ItemNameEffect.tres" id="5_h1api"]
 [ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="6_bvdk2"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="7_hybfc"]
-[ext_resource type="RichTextEffect" path="res://UI/Interface/SColorTextEffect.tres" id="8_u4cf5"]
+[ext_resource type="RichTextEffect" path="res://PvE/UI/Common/SColorTextEffect.tres" id="8_u4cf5"]
 [ext_resource type="PackedScene" path="res://PvE/UI/Tooltips/TooltipDivider.tscn" id="9_c3e1c"]
 
 [sub_resource type="FontVariation" id="2"]

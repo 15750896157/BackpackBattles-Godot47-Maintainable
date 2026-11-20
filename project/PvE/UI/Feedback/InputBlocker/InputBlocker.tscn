@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dabonca6hb47l"]
 
 [ext_resource type="Script" path="res://PvE/UI/Feedback/InputBlocker/InputBlocker.gd" id="1_blx51"]
-[ext_resource type="Script" path="res://UI/Interface/InputEaterRect.gd" id="2_oj7vw"]
+[ext_resource type="Script" path="res://PvE/UI/Common/InputEaterRect.gd" id="2_oj7vw"]
 
 [node name="InputBlocker" type="Node2D"]
 process_mode = 3

@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForLeagueProgressUI:
-	const Receiver = preload("res://UI/Interface/LeagueProgressUI.gd")
+	const Receiver = preload("res://PvE/UI/League/LeagueProgressUI.gd")
 
 	static func updateUI(subject: Receiver, charClass):
 		subject.rankingLabel.text = str(Game.getRanking(charClass))

@@ -18,7 +18,7 @@ const treasureAnimation = preload("res://Animation/Items/Animations/TreasurePuls
 
 const treasureSound = preload("res://Audio/Sound/Glitter.wav")
 
-const neutralBannerMaterial = preload("res://Art/Shader/SkillBanner_Neutral.material")
+const neutralBannerMaterial = preload("res://Art/Shader/SkillBanner_Neutral.tres")
 const classBannerMaterial = preload("res://Art/Shader/ClassBanner.material")
 const craftingPulse = preload("res://Animation/Items/Animations/CraftingShopPulse.tscn")
 const specialShopParticles = preload("res://Art/Shader/SpecialShopParticles.tscn")
@@ -41,7 +41,7 @@ const throwOutDur = 0.6
 @onready var subclassAnimation = $Subclass/AnimationPlayer
 
 @onready var bannerTexture_singleLine = banner.texture
-const bannerTexture_doubleLine = preload("res://UI/Interface/SkillBanner.png")
+const bannerTexture_doubleLine = preload("res://PvE/UI/Title/SkillBanner.png")
 @onready var bannerMargins = [banner.offset_left, banner.offset_top, banner.offset_right, banner.offset_bottom]
 
 func _input(event: InputEvent) -> void :

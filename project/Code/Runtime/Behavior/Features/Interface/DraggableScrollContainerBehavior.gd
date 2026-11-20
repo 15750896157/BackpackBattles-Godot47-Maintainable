@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/DraggableScrollContainer.gd")
+const Receiver = preload("res://PvE/UI/Common/DraggableScrollContainer.gd")
 
 static func _ready(subject: Receiver):
 	subject.scrollBar.connect("mouse_entered", Callable(subject, "onScrollbarHover"))

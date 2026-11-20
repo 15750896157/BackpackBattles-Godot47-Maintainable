@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForSeasonClassRank:
-	const Receiver = preload("res://UI/Interface/SeasonClassRank.gd")
+	const Receiver = preload("res://PvE/UI/League/SeasonClassRank.gd")
 
 	static func setLeague(subject: Receiver, classI: int, leagueExact: float):
 		subject.icon.texture = Game.classIcons[classI]
@@ -11,7 +11,7 @@ class ForSeasonClassRank:
 		subject.emblem.setLeague(league)
 
 class ForShopRarityChart:
-	const Receiver = preload("res://UI/Interface/ShopRarityChart.gd")
+	const Receiver = preload("res://PvE/UI/Shop/ShopRarityChart.gd")
 
 	static func onShopOpened(subject: Receiver):
 		var odds = Game.shopSceneNode.getRarityOddsForCurRound()
@@ -36,7 +36,7 @@ class ForShopRarityChart:
 				tween.tween_property(bar, "custom_minimum_size:y", ySize, subject.ANI_DUR)
 
 class ForSnowGlobe:
-	const Receiver = preload("res://UI/Interface/SnowGlobe.gd")
+	const Receiver = preload("res://PvE/UI/Feedback/SnowGlobe.gd")
 
 	static func _ready(subject: Receiver):
 		subject.get_node("Button").connect("pressed", Callable(subject, "onButtonPressed"))
@@ -44,7 +44,7 @@ class ForSnowGlobe:
 		Game.connect("return_to_title", Callable(subject, "onShopToTitle"))
 
 class ForStaminabar:
-	const Receiver = preload("res://UI/Interface/Staminabar.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/Staminabar.gd")
 
 	static func _ready(subject: Receiver) -> void :
 		subject.set_process(false)
@@ -63,7 +63,7 @@ class ForStaminabar:
 		subject.updateNumber()
 
 class ForStaminaGainCounter:
-	const Receiver = preload("res://UI/Interface/StaminaGainCounter.gd")
+	const Receiver = preload("res://PvE/UI/Feedback/StaminaGainCounter.gd")
 
 	static func _ready(subject: Receiver) -> void :
 		Game.PLAYER.connect("class_changed", Callable(subject, "updateText"))
@@ -71,7 +71,7 @@ class ForStaminaGainCounter:
 		subject.updateText()
 
 class ForStaminaUseCounter:
-	const Receiver = preload("res://UI/Interface/StaminaUseCounter.gd")
+	const Receiver = preload("res://PvE/UI/Feedback/StaminaUseCounter.gd")
 
 	static func updateLocale(subject: Receiver):
 		subject.updateQueued = false
@@ -112,7 +112,7 @@ class ForStaminaUseCounter:
 		}
 
 class ForSwitchModeUI:
-	const Receiver = preload("res://UI/Interface/SwitchModeUI.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/SwitchModeUI.gd")
 
 	static func startGame(subject: Receiver):
 		CustomRules.setSwitchMode(CustomRules.SwitchModeState.Ranked)

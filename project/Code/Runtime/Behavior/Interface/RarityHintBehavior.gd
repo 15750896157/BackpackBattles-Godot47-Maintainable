@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/RarityHint.gd")
+const Receiver = preload("res://PvE/UI/Shop/RarityHint.gd")
 
 static func updateLocale(subject: Receiver):
 	subject.raritiesLabel = subject.get_node("Rarities")

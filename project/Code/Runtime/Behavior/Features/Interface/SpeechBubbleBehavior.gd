@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/SpeechBubble.gd")
+const Receiver = preload("res://PvE/UI/Shop/SpeechBubble.gd")
 
 static func say(subject: Receiver, text, presentTime: float, tutorialStep):
 	if presentTime < 0:

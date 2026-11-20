@@ -27,7 +27,7 @@ const yellow = Color(1, 0.890196, 0)
 const labelFormat = "[center][color=#{col}]{name}\n{num}/{outOf}[/color]{bonded}{missing}"
 const bondedFormat = "\n[color=#{col}]{icon} {name} {num}/{outOf}"
 
-const missingMark = preload("res://UI/Interface/HookArrow.png")
+const missingMark = preload("res://PvE/UI/Common/HookArrow.png")
 
 func updateLabel(itemName: String, num: int, outOf: int,
 	ingredientCounter: Array):

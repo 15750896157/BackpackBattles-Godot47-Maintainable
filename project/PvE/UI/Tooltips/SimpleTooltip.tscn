@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="3_jtilj"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="4_vkke0"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="5_fk7gp"]
-[ext_resource type="RichTextEffect" path="res://UI/Interface/SColorTextEffect.tres" id="6_ir4mc"]
+[ext_resource type="RichTextEffect" path="res://PvE/UI/Common/SColorTextEffect.tres" id="6_ir4mc"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="7_vwv8g"]
 
 [sub_resource type="FontVariation" id="4"]

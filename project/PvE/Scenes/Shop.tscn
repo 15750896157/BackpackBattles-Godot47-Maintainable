@@ -6,7 +6,7 @@
 
 [ext_resource type="Texture2D" uid="uid://wj8ry6wtgctf" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper.png" id="4"]
 
-[ext_resource type="Script" uid="uid://dilxsoyf7jrau" path="res://UI/Interface/StartCombatButton.gd" id="5"]
+[ext_resource type="Script" uid="uid://dilxsoyf7jrau" path="res://PvE/UI/Combat/Hud/StartCombatButton.gd" id="5"]
 
 [ext_resource type="Texture2D" uid="uid://cqqcwg08rg7fb" path="res://Art/Assets/Decoration/Vase.png" id="6"]
 
@@ -28,7 +28,7 @@
 
 [ext_resource type="Texture2D" uid="uid://qxp5sf3cy1r8" path="res://Art/Assets/Shop/Sign1.png" id="21"]
 
-[ext_resource type="Script" uid="uid://cfkbvlegitxff" path="res://UI/Interface/RerollRope.gd" id="22"]
+[ext_resource type="Script" uid="uid://cfkbvlegitxff" path="res://PvE/UI/Shop/RerollRope.gd" id="22"]
 
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
 
@@ -76,17 +76,17 @@
 
 [ext_resource type="Texture2D" uid="uid://6u55yi7bnkql" path="res://Art/Assets/Shop/Sign2.png" id="82"]
 
-[ext_resource type="Script" uid="uid://phvtoud7yg0a" path="res://UI/Interface/Textbox.gd" id="83"]
+[ext_resource type="Script" uid="uid://phvtoud7yg0a" path="res://PvE/UI/Common/Textbox.gd" id="83"]
 
 [ext_resource type="Texture2D" uid="uid://nm3kd5t1y46h" path="res://Art/Assets/Shop/Shopkeeper/Speechbubble1.png" id="84"]
 
-[ext_resource type="Script" uid="uid://wwy1n6qvnw4" path="res://UI/Interface/SpeechBubble.gd" id="85"]
+[ext_resource type="Script" uid="uid://wwy1n6qvnw4" path="res://PvE/UI/Shop/SpeechBubble.gd" id="85"]
 
-[ext_resource type="RichTextEffect" path="res://UI/Interface/RiseUpTextEffect.tres" id="86"]
+[ext_resource type="RichTextEffect" path="res://PvE/UI/Feedback/RiseUpTextEffect.tres" id="86"]
 
-[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
 
-[ext_resource type="Script" uid="uid://duhujpqwo7qfb" path="res://UI/Interface/Shopkeeper.gd" id="93"]
+[ext_resource type="Script" uid="uid://duhujpqwo7qfb" path="res://PvE/UI/Shop/Shopkeeper.gd" id="93"]
 
 [ext_resource type="AudioStream" uid="uid://d0r8rfguohu6w" path="res://Audio/Sound/Furcifer/Meow_single4.ogg" id="112"]
 
@@ -100,7 +100,7 @@
 
 [ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
 
-[ext_resource type="Texture2D" uid="uid://dg0wiyu5k5stx" path="res://UI/Interface/RedArrow.png" id="132"]
+[ext_resource type="Texture2D" uid="uid://dg0wiyu5k5stx" path="res://PvE/UI/Common/RedArrow.png" id="132"]
 
 [ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Art/Assets/Particles/GlowingDot.png" id="134"]
 
@@ -120,29 +120,29 @@
 
 [ext_resource type="BitMap" uid="uid://c3g1fjipvgfws" path="res://Art/Assets/Shop/Rope_Clickarea.png" id="157"]
 
-[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://UI/Interface/FocusGrabbingButton.gd" id="158"]
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://PvE/UI/Common/FocusGrabbingButton.gd" id="158"]
 
-[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
 
-[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://UI/Interface/DraggableScrollContainer.gd" id="163"]
+[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://PvE/UI/Common/DraggableScrollContainer.gd" id="163"]
 
 [ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Art/Items/Exclusive/Animations/GooglyEye.gd" id="170"]
 
-[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://UI/Interface/SmallArrow.png" id="175"]
+[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://PvE/UI/Common/SmallArrow.png" id="175"]
 
 [ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 
 [ext_resource type="Script" uid="uid://uaf63eiohg0j" path="res://PvE/UI/Inventory/GridStorage.gd" id="194"]
 
-[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://UI/Interface/AnvilButton.png" id="196"]
+[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://PvE/UI/Inventory/AnvilButton.png" id="196"]
 
-[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://UI/Interface/RecipeBookButton.gd" id="197"]
+[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://PvE/UI/Title/RecipeBookButton.gd" id="197"]
 
-[ext_resource type="Script" uid="uid://c0jix5lpfg60i" path="res://UI/Interface/RarityHint.gd" id="217"]
+[ext_resource type="Script" uid="uid://c0jix5lpfg60i" path="res://PvE/UI/Shop/RarityHint.gd" id="217"]
 
-[ext_resource type="Script" uid="uid://oumlpyrftra6" path="res://UI/Interface/PaintingCanvas.gd" id="218"]
+[ext_resource type="Script" uid="uid://oumlpyrftra6" path="res://PvE/UI/Title/PaintingCanvas.gd" id="218"]
 
-[ext_resource type="Texture2D" uid="uid://k10q48jgqgr1" path="res://UI/Interface/DashedArrow2.png" id="221"]
+[ext_resource type="Texture2D" uid="uid://k10q48jgqgr1" path="res://PvE/UI/Common/DashedArrow2.png" id="221"]
 
 [ext_resource type="Script" uid="uid://vwxjgab4m2py" path="res://PvE/UI/Inventory/StorageShakeButton.gd" id="222"]
 
@@ -150,7 +150,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Art/Items/Exclusive/Sprites/Pupil2.png" id="231"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/RerollRopeTag.tscn" id="233"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/RerollRopeTag.tscn" id="233"]
 
 [ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="235"]
 
@@ -162,17 +162,17 @@
 
 [ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="253"]
 
-[ext_resource type="Texture2D" uid="uid://c2rr1fw4lj8hh" path="res://UI/Interface/YellowDot.png" id="262"]
+[ext_resource type="Texture2D" uid="uid://c2rr1fw4lj8hh" path="res://PvE/UI/Common/YellowDot.png" id="262"]
 
-[ext_resource type="Texture2D" uid="uid://cyphw3dnpxm4k" path="res://UI/Interface/ExclamationMark1.png" id="263"]
+[ext_resource type="Texture2D" uid="uid://cyphw3dnpxm4k" path="res://PvE/UI/Common/ExclamationMark1.png" id="263"]
 
-[ext_resource type="Texture2D" uid="uid://bh230x6i51sus" path="res://UI/Interface/Checkmark.png" id="264"]
+[ext_resource type="Texture2D" uid="uid://bh230x6i51sus" path="res://PvE/UI/Common/Checkmark.png" id="264"]
 
 [ext_resource type="Texture2D" uid="uid://1pwg5fm8pmbd" path="res://Art/Assets/Chestnut/ThinkBubble1.png" id="267"]
 
 [ext_resource type="Texture2D" uid="uid://bfvd2vcxbcxyh" path="res://Art/Assets/Chestnut/ThinkBubble2.png" id="268"]
 
-[ext_resource type="Script" uid="uid://diqa088xtlced" path="res://UI/Interface/ChestnutTrade.gd" id="269"]
+[ext_resource type="Script" uid="uid://diqa088xtlced" path="res://PvE/UI/Shop/ChestnutTrade.gd" id="269"]
 
 [ext_resource type="Texture2D" uid="uid://cmw14ooagfuuu" path="res://Art/Assets/Chestnut/Arrow.png" id="270"]
 
@@ -184,15 +184,15 @@
 
 [ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Art/Assets/Chestnut/Tongue.png" id="275"]
 
-[ext_resource type="Texture2D" uid="uid://inu0rlm2tq75" path="res://UI/Interface/ChartRect.png" id="277"]
+[ext_resource type="Texture2D" uid="uid://inu0rlm2tq75" path="res://PvE/UI/Shop/ChartRect.png" id="277"]
 
-[ext_resource type="Script" uid="uid://brk8etnil5fil" path="res://UI/Interface/ShopRarityChart.gd" id="278"]
+[ext_resource type="Script" uid="uid://brk8etnil5fil" path="res://PvE/UI/Shop/ShopRarityChart.gd" id="278"]
 
 [ext_resource type="Texture2D" uid="uid://ekncntee7c5g" path="res://Art/Shader/SmoothFadeInGradient.tres" id="282"]
 
 [ext_resource type="PackedScene" path="res://PvE/UI/Inventory/GridStorageEntry.tscn" id="305"]
 
-[ext_resource type="Theme" uid="uid://dehhsf5k62law" path="res://UI/Interface/ScrollbarTheme.tres" id="309"]
+[ext_resource type="Theme" uid="uid://dehhsf5k62law" path="res://PvE/UI/Common/ScrollbarTheme.tres" id="309"]
 
 [ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 

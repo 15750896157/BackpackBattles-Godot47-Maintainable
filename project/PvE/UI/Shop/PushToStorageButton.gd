@@ -1,8 +1,8 @@
 extends PullButton
 
-const arrow = preload("res://UI/Interface/ArrowButton2.png")
-const arrow_hovered = preload("res://UI/Interface/ArrowButton2_hovered.png")
-const windParticles = preload("res://UI/Interface/WindParticles.tscn")
+const arrow = preload("res://PvE/UI/Common/ArrowButton2.png")
+const arrow_hovered = preload("res://PvE/UI/Common/ArrowButton2_hovered.png")
+const windParticles = preload("res://PvE/UI/Feedback/WindParticles.tscn")
 const windSound = preload("res://Audio/Sound/Swoosh1.wav")
 
 @onready var hint = get_parent().get_node("PushToStorageHint")

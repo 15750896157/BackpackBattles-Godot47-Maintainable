@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bw8skv6k7m0ud"]
+
+[ext_resource type="Script" path="res://PvE/UI/Shop/RopeSegment.gd" id="1_4tuby"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Pixel.png" id="2_l8pnv"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(120, 48)
+
+[node name="RopeSegment" type="RigidBody2D"]
+collision_layer = 16
+collision_mask = 0
+input_pickable = true
+gravity_scale = 12.29
+linear_damp = -0.983
+angular_damp = -0.955
+script = ExtResource("1_4tuby")
+
+[node name="Start" type="Marker2D" parent="."]
+position = Vector2(0, -25)
+
+[node name="Pixel" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(10, 50)
+texture = ExtResource("2_l8pnv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4.76837e-07)
+shape = SubResource("1")
+
+[node name="End" type="Marker2D" parent="."]
+position = Vector2(0, 25)
+
+[node name="ClickArea" type="Control" parent="."]
+offset_left = -30.0
+offset_top = -24.0
+offset_right = 30.0
+offset_bottom = 24.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+
+[connection signal="mouse_entered" from="ClickArea" to="." method="onMouseEntered"]
+[connection signal="mouse_exited" from="ClickArea" to="." method="onMouseExited"]

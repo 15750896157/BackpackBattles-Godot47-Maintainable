@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://d4eixvxs3atji"]
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="1_wm3vm"]
+[ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="2_qa0ko"]
+[ext_resource type="Script" path="res://PvE/UI/Tooltips/TooltipLabel.gd" id="3_0psdc"]
+
+[sub_resource type="FontVariation" id="1"]
+base_font = ExtResource("1_wm3vm")
+script = ExtResource("2_qa0ko")
+size = 22
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[node name="TooltipLabel" type="Label"]
+offset_right = 414.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/font = SubResource("1")
+text = "Tooltip"
+script = ExtResource("3_0psdc")
+theme_override_font_sizes/font_size = 22
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+horizontal_alignment = 1

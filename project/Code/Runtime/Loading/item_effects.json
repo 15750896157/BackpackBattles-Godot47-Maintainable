@@ -14,7 +14,7 @@
     "res://PvE/UI/Inventory/AffectedStarAnimationLightning.tscn",
     "res://Art/Items/Exclusive/Animations/CanAffectVisual.tscn",
     "res://PvE/UI/Inventory/GlobalAffectVisual.tscn",
-    "res://UI/Interface/DustParticles.tscn"
+    "res://PvE/UI/Feedback/DustParticles.tscn"
   ],
   "shop": [
     "res://PvE/UI/Inventory/DropParticles.tscn",
@@ -43,7 +43,7 @@
       "res://PvE/UI/Tooltips/RecipeTooltip.tscn"
     ],
     "dustParticles": [
-      "res://UI/Interface/DustParticles.tscn"
+      "res://PvE/UI/Feedback/DustParticles.tscn"
     ],
     "sparksScene": [
       "res://PvE/UI/Inventory/ItemSparks.tscn"
@@ -95,7 +95,7 @@
       "res://PvE/UI/Tooltips/BuildIntoRecipesTooltip.tscn"
     ],
     "outOfStaminaLabelScene": [
-      "res://UI/Interface/OutOfStaminaLabel.tscn"
+      "res://PvE/UI/Combat/Hud/OutOfStaminaLabel.tscn"
     ],
     "fuseParticlesScene1": [
       "res://Art/Shader/ItemsFusingParticles.tscn"

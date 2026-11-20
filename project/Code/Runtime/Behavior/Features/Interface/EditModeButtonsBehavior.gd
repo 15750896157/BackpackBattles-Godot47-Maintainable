@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/EditModeButtons.gd")
+const Receiver = preload("res://PvE/UI/Title/EditModeButtons.gd")
 
 static func _ready(subject: Receiver):
 	Game.connect("edit_mode_changed", Callable(subject, "onEditModeChanged"))

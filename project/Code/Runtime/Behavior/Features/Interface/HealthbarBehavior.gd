@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Healthbar.gd")
+const Receiver = preload("res://PvE/UI/Combat/Hud/Healthbar.gd")
 
 static func _ready(subject: Receiver) -> void :
 	subject.character.connect("health_changed_ui", Callable(subject, "onHealthChanged"))

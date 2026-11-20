@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ds6ys47qsesq5"]
 
 [ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="1_3j0gn"]
-[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="2_ynidw"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="2_ynidw"]
 [ext_resource type="Script" path="res://PvE/UI/Options/ItemListButton.gd" id="3_wiyrg"]
 
 [sub_resource type="StyleBoxFlat" id="5"]

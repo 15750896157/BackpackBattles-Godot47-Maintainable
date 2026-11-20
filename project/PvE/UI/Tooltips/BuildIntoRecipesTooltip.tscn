@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="5_yl7t4"]
 [ext_resource type="PackedScene" path="res://Code/Utility/DefaultRichTextLabel.tscn" id="6_66n3q"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="7_hm40c"]
-[ext_resource type="Texture2D" path="res://UI/Interface/KeyLock.png" id="8_ysc1u"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Common/KeyLock.png" id="8_ysc1u"]
 
 [sub_resource type="FontVariation" id="2"]
 base_font = ExtResource("3_murwp")

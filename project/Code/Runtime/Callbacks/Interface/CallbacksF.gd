@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForFocusGrabbingControl:
-	const Receiver = preload("res://UI/Interface/FocusGrabbingControl.gd")
+	const Receiver = preload("res://PvE/UI/Common/FocusGrabbingControl.gd")
 
 	static func enable(subject: Receiver):
 		subject.disabled = false

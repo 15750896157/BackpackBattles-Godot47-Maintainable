@@ -3,7 +3,7 @@
 [ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="1_ip0jp"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="2_5uqod"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_ewx4e"]
-[ext_resource type="RichTextEffect" path="res://UI/Interface/SColorTextEffect.tres" id="4_xxnak"]
+[ext_resource type="RichTextEffect" path="res://PvE/UI/Common/SColorTextEffect.tres" id="4_xxnak"]
 [ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="5_li1jy"]
 
 [sub_resource type="FontVariation" id="1"]

@@ -9770,7 +9770,7 @@
        ]
       },
       "texture": {
-       "res": "res://UI/Interface/VScrollbar.png"
+       "res": "res://PvE/UI/Common/VScrollbar.png"
       }
      }
     }

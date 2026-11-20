@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/Shopkeeper.gd")
+const Receiver = preload("res://PvE/UI/Shop/Shopkeeper.gd")
 
 static func onShopkeeperClicked(subject: Receiver):
 	if Game.speechBubble.isSpeaking(): return

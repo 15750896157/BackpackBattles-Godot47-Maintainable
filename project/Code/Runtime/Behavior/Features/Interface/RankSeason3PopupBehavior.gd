@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/RankSeason3Popup.gd")
+const Receiver = preload("res://PvE/UI/League/RankSeason3Popup.gd")
 
 static func _ready(subject: Receiver):
 	Game.pause(Game.PauseSource.PatchNotes)

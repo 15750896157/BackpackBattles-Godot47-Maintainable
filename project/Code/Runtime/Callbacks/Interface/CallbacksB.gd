@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForBoughtNothingWarning:
-	const Receiver = preload("res://UI/Interface/BoughtNothingWarning.gd")
+	const Receiver = preload("res://PvE/UI/Feedback/BoughtNothingWarning.gd")
 
 	static func open(subject: Receiver, textKey, confirmKey, cancelKey):
 		Game.UINode.add_child(subject)

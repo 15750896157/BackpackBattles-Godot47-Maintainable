@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Code/Utility/TooltipArea.gd" id="3_1uogl"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="4_8tt60"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="5_5gjda"]
-[ext_resource type="Script" path="res://UI/Interface/NonLocalized_KeepFont.gd" id="6_374re"]
+[ext_resource type="Script" path="res://PvE/UI/Common/NonLocalized_KeepFont.gd" id="6_374re"]
 
 [sub_resource type="FontVariation" id="1"]
 base_font = ExtResource("4_8tt60")

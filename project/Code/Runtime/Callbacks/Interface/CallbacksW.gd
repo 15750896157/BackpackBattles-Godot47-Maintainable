@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForWishlistButton:
-	const Receiver = preload("res://UI/Interface/WishlistButton.gd")
+	const Receiver = preload("res://PvE/UI/Title/WishlistButton.gd")
 
 	static func _ready(subject: Receiver) -> void :
 		if Game.TRAILER or Game.PLAYTEST or Game.FULLVERSION:
@@ -14,7 +14,7 @@ class ForWishlistButton:
 				subject.updateLocale()
 
 class ForWishlistPopup:
-	const Receiver = preload("res://UI/Interface/WishlistPopup.gd")
+	const Receiver = preload("res://PvE/UI/Title/WishlistPopup.gd")
 
 	static func close(subject: Receiver):
 		if subject.animation.current_animation == "":

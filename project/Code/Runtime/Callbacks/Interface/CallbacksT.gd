@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForTooltipLabel:
-	const Receiver = preload("res://UI/Interface/TooltipLabel.gd")
+	const Receiver = preload("res://PvE/UI/Tooltips/TooltipLabel.gd")
 
 	static func positionLabel(subject: Receiver, control, offset):
 		subject.global_position = control.global_position
@@ -19,7 +19,7 @@ class ForTooltipLabel:
 			subject.global_position.y += difToTopBorder
 
 class ForTrophy:
-	const Receiver = preload("res://UI/Interface/Trophy.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/Trophy.gd")
 
 	static func moveToPos(subject: Receiver, pos: Vector2):
 		subject.animation.play("Move")
@@ -35,7 +35,7 @@ class ForTrophy:
 		Util.callDelayed(Sound, "playRising", 1.0, [subject.arriveSound])
 
 class ForTugofWarAnimation:
-	const Receiver = preload("res://UI/Interface/TugofWarAnimation.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/TugofWarAnimation.gd")
 
 	static func _physics_process(subject: Receiver, delta):
 		if not is_instance_valid(Game.PLAYER) or not is_instance_valid(Game.OPPONENT) or not is_instance_valid(subject.oppoSword):

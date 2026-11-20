@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForMaxStaminaLabel:
-	const Receiver = preload("res://UI/Interface/MaxStaminaLabel.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/MaxStaminaLabel.gd")
 
 	static func _ready(subject: Receiver) -> void :
 		Game.PLAYER.connect("class_changed", Callable(subject, "updateText"))
@@ -10,7 +10,7 @@ class ForMaxStaminaLabel:
 		subject.updateText()
 
 class ForMovingCounter:
-	const Receiver = preload("res://UI/Interface/MovingCounter.gd")
+	const Receiver = preload("res://PvE/UI/Feedback/MovingCounter.gd")
 
 	static func _physics_process(subject: Receiver, _delta):
 		var dif: float = subject.targetValue - subject.currentValue

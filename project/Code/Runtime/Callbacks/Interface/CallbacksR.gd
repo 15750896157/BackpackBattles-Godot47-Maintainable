@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForRankingUI:
-	const Receiver = preload("res://UI/Interface/RankingUI.gd")
+	const Receiver = preload("res://PvE/UI/League/RankingUI.gd")
 
 	static func _ready(subject: Receiver) -> void :
 		subject.add_to_group("Localized")
@@ -24,7 +24,7 @@ class ForRankingUI:
 		subject.switchModeIcon.visible = Game.isRankedSwitchMode()
 
 class ForRankSeasonPopup:
-	const Receiver = preload("res://UI/Interface/RankSeasonPopup.gd")
+	const Receiver = preload("res://PvE/UI/League/RankSeasonPopup.gd")
 
 	static func _ready(subject: Receiver):
 		Game.pause(Game.PauseSource.PatchNotes)
@@ -56,7 +56,7 @@ class ForRankSeasonPopup:
 		Game.saveGame()
 
 class ForRerollRopeTag:
-	const Receiver = preload("res://UI/Interface/RerollRopeTag.gd")
+	const Receiver = preload("res://PvE/UI/Shop/RerollRopeTag.gd")
 
 	static func getColor(subject: Receiver, cost):
 		var color
@@ -72,7 +72,7 @@ class ForRerollRopeTag:
 		return color
 
 class ForRopeSegment:
-	const Receiver = preload("res://UI/Interface/RopeSegment.gd")
+	const Receiver = preload("res://PvE/UI/Shop/RopeSegment.gd")
 
 	static func _ready(subject: Receiver):
 		if not subject.ending:
@@ -100,7 +100,7 @@ class ForRopeSegment:
 			subject.resetPending = false
 
 class ForRotateHint:
-	const Receiver = preload("res://UI/Interface/RotateHint.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/RotateHint.gd")
 
 	static func updateLocale(subject: Receiver):
 		if Game.usingController:

@@ -28,7 +28,7 @@
 
 [ext_resource type="RichTextEffect" path="res://Code/Utility/Jump.tres" id="53"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/WinFanfare.tscn" id="54"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Feedback/WinFanfare.tscn" id="54"]
 
 [ext_resource type="Texture2D" uid="uid://f45mef5qnxe8" path="res://PvE/UI/Combat/CombatTimer/TimerPanel.png" id="55"]
 
@@ -46,23 +46,23 @@
 
 [ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/Trophy.tscn" id="73"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/Trophy.tscn" id="73"]
 
 [ext_resource type="Script" uid="uid://dwpp6lc6owqmy" path="res://Code/Core/Combat.gd" id="74"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/Heart.tscn" id="75"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/Heart.tscn" id="75"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/MovingCounter.tscn" id="76"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Feedback/MovingCounter.tscn" id="76"]
 
 [ext_resource type="Texture2D" uid="uid://b25ba4a8q4phy" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_paused_hovered.png" id="80"]
 
 [ext_resource type="Texture2D" uid="uid://dh2kvv7t16b2p" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_fast_hovered.png" id="81"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/LeagueEmblem.tscn" id="87"]
+[ext_resource type="PackedScene" path="res://PvE/UI/League/LeagueEmblem.tscn" id="87"]
 
-[ext_resource type="Script" uid="uid://bwv03lwajwu58" path="res://UI/Interface/SimpleClassLabel.gd" id="88"]
+[ext_resource type="Script" uid="uid://bwv03lwajwu58" path="res://PvE/UI/Common/SimpleClassLabel.gd" id="88"]
 
-[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
 
 [ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Art/Assets/Particles/Spot1.png" id="95"]
 
@@ -72,7 +72,7 @@
 
 [ext_resource type="Texture2D" uid="uid://4wis32njk0b" path="res://Art/Assets/Particles/Sparkles_gold.png" id="101"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/LeagueProgressBar.tscn" id="108"]
+[ext_resource type="PackedScene" path="res://PvE/UI/League/LeagueProgressBar.tscn" id="108"]
 
 [ext_resource type="Texture2D" uid="uid://ncdsljqxtkel" path="res://PvE/UI/Combat/Hud/RankedSheet.png" id="109"]
 
@@ -98,15 +98,15 @@
 
 [ext_resource type="Texture2D" uid="uid://bn7oiqegl4x0" path="res://PvE/UI/Combat/Hud/Eye_open_hovered.png" id="144"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/CustomRulesIcon.tscn" id="152"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Lobbies/CustomRulesIcon.tscn" id="152"]
 
-[ext_resource type="Script" uid="uid://cgn7sqqu2hg2e" path="res://UI/Interface/FocusGrabbingControl.gd" id="159"]
+[ext_resource type="Script" uid="uid://cgn7sqqu2hg2e" path="res://PvE/UI/Common/FocusGrabbingControl.gd" id="159"]
 
-[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
 
 [ext_resource type="Script" uid="uid://bmdtn4ws1l6oc" path="res://PvE/UI/Combat/Hud/HideUIButton.gd" id="161"]
 
-[ext_resource type="Script" uid="uid://cs32daht56s5u" path="res://UI/Interface/BaseSlider.gd" id="162"]
+[ext_resource type="Script" uid="uid://cs32daht56s5u" path="res://PvE/UI/Common/BaseSlider.gd" id="162"]
 
 [ext_resource type="Texture2D" uid="uid://v20pg3r4rv85" path="res://PvE/UI/Combat/CombatLog/CombatLogButton.png" id="168"]
 
@@ -122,9 +122,9 @@
 
 [ext_resource type="Texture2D" uid="uid://cmor430cqibbh" path="res://Art/Assets/SurvivalBones.png" id="190"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/TrophyParticles.tscn" id="209"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Feedback/TrophyParticles.tscn" id="209"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/RunAchievement.tscn" id="211"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Title/RunAchievement.tscn" id="211"]
 
 [ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Art/Items/Exclusive/Sprites/Pupil2.png" id="231"]
 
@@ -136,7 +136,7 @@
 
 [ext_resource type="Material" path="res://Art/Shader/FatigueParticles.material" id="243"]
 
-[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://UI/Interface/NonLocalizedControl.gd" id="250"]
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://PvE/UI/Common/NonLocalizedControl.gd" id="250"]
 
 [ext_resource type="Material" path="res://Art/Shader/FatigueParticleMat.material" id="255"]
 
@@ -144,7 +144,7 @@
 
 [ext_resource type="Script" uid="uid://ckn2tpmdrwwvg" path="res://Code/Utility/TimedParticles.gd" id="261"]
 
-[ext_resource type="Texture2D" uid="uid://cvrupifajxi8x" path="res://UI/Interface/PopupBox.png" id="273"]
+[ext_resource type="Texture2D" uid="uid://cvrupifajxi8x" path="res://PvE/UI/Feedback/PopupBox.png" id="273"]
 
 [ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Art/Assets/Chestnut/Top_teeth.png" id="274"]
 

@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/TitleScreen.gd")
+const Receiver = preload("res://PvE/UI/Title/TitleScreen.gd")
 
 static func _ready(subject: Receiver) -> void :
 	if Expedition.enabled:
@@ -190,7 +190,7 @@ static func dropItem(subject: Receiver, _item):
 			if child is Item: paths.append(child.descriptor.scene_path)
 		paths.append(descriptor.scene_path)
 		paths.append("res://Art/Items/Shadow.tscn")
-		paths.append("res://UI/Interface/DustParticles.tscn")
+		paths.append("res://PvE/UI/Feedback/DustParticles.tscn")
 		if not await AssetStream.prepare(paths, "title-decoration"): return
 		item = await AssetStream.instantiate_path(descriptor.scene_path, "title-decoration")
 		if item == null: return

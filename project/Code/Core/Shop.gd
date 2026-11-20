@@ -7,8 +7,8 @@ signal shop_refreshed
 const shopOpenSound = preload("res://Audio/Sound/ShopBell.ogg")
 const rerollSound = preload("res://Audio/Sound/Bell_short.ogg")
 const throwOutSound = preload("res://Audio/Sound/Throwaway.mp3")
-static var notEnoughGoldLabel = load("res://UI/Interface/NotEnoughGoldLabel.tscn")
-var highRollParticlesScene = load("res://UI/Interface/HighRollParticles2D.tscn")
+static var notEnoughGoldLabel = load("res://PvE/UI/Feedback/NotEnoughGoldLabel.tscn")
+var highRollParticlesScene = load("res://PvE/UI/Feedback/HighRollParticles2D.tscn")
 const skillRoundSound = preload("res://Audio/Sound/LevelUp1.ogg")
 
 @onready var slots = [

@@ -10,10 +10,10 @@ var lightColors = {
 }
 
 var stars = {
-	Game.ItemRecordStar.Bronze: preload("res://UI/Interface/BronzeStar.png"),
-	Game.ItemRecordStar.Silver: preload("res://UI/Interface/SilverStar.png"),
-	Game.ItemRecordStar.Gold: preload("res://UI/Interface/GoldStar.png"),
-	Game.ItemRecordStar.Diamond: preload("res://UI/Interface/Diamond.png")
+	Game.ItemRecordStar.Bronze: preload("res://PvE/UI/ItemLibrary/BronzeStar.png"),
+	Game.ItemRecordStar.Silver: preload("res://PvE/UI/ItemLibrary/SilverStar.png"),
+	Game.ItemRecordStar.Gold: preload("res://PvE/UI/ItemLibrary/GoldStar.png"),
+	Game.ItemRecordStar.Diamond: preload("res://PvE/UI/Common/Diamond.png")
 }
 
 const noStarModulate = Color(0.054902, 0.039216, 0.031373, 0.333333)

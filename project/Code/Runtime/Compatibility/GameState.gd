@@ -394,7 +394,7 @@ const classNameBanners = [
 ]
 
 const neutralClassIcon = preload("res://Art/Assets/TitleScreen/NeutralIcon.png")
-const randomClassIcon = preload("res://UI/Interface/DiceIcon.png")
+const randomClassIcon = preload("res://PvE/UI/Shop/DiceIcon.png")
 const transitionSounds = [
 	preload("res://Audio/Sound/TurningPage1.wav"),
 	preload("res://Audio/Sound/TurningPage2.wav"),
@@ -406,8 +406,8 @@ const loseSound = preload("res://Audio/Sound/Lose.ogg")
 var rainbowRevealParticles = load("res://Art/Shader/RainbowRevealParticles.tscn")
 var affectsLineScene = load("res://Art/Items/Exclusive/Animations/AffectsLine.tscn")
 
-var rankSeason2Popup = load("res://UI/Interface/RankSeasonPopup.tscn")
-var rankSeason3Popup = load("res://UI/Interface/RankSeason3Popup.tscn")
+var rankSeason2Popup = load("res://PvE/UI/League/RankSeasonPopup.tscn")
+var rankSeason3Popup = load("res://PvE/UI/League/RankSeason3Popup.tscn")
 var electricalChargeScene = load("res://Art/Items/ElectricalCharge.tscn")
 var notCraftingAnimation = load("res://Art/Items/Exclusive/Animations/NotCraftingAnimation.tscn")
 
@@ -708,7 +708,7 @@ const leagueThresholds = [
 
 var leavingLobby = false
 
-var editModeAnimation = load("res://UI/Interface/EditModeAnimation.tscn")
+var editModeAnimation = load("res://PvE/UI/Title/EditModeAnimation.tscn")
 var curEditModeAni = null
 
 var processThread = null
@@ -720,7 +720,7 @@ const clickSound = preload("res://Audio/Sound/Sand1.mp3")
 
 const oppoBonusOffset = 800.0
 const switchAniParableOffset = 200.0
-var switchAni = load("res://UI/Interface/SwitchAnimation.tscn")
+var switchAni = load("res://PvE/UI/Combat/Hud/SwitchAnimation.tscn")
 
 enum ShopBGM{
 	Default = 0,

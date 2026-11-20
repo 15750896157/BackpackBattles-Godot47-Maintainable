@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForNameLineEdit:
-	const Receiver = preload("res://UI/Interface/NameLineEdit.gd")
+	const Receiver = preload("res://PvE/UI/Title/NameLineEdit.gd")
 
 	static func _ready(subject: Receiver) -> void :
 		subject.set_physics_process(false)

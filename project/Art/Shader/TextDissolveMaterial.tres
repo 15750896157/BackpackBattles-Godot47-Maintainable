@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://imoyc55aghbq"]
 
-[ext_resource type="Texture2D" uid="uid://dao1wufixluqj" path="res://Art/Assets/Noise/BubbleNoise.png" id="1"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Noise/BubbleNoise.png" id="1"]
 
 [sub_resource type="Shader" id="195"]
 code = "shader_type canvas_item;

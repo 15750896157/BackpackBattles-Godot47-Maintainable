@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Art/Items/Exclusive/SpringloaderVisual.gd" id="4_2t4th"]
 [ext_resource type="PackedScene" path="res://Art/Items/GemSocket.tscn" id="5_rnyv3"]
 [ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/Springloader_spring.png" id="6_y5cl8"]
-[ext_resource type="Texture2D" path="res://UI/Interface/VScrollbar.png" id="7_efn1u"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Common/VScrollbar.png" id="7_efn1u"]
 
 [sub_resource type="PhysicsMaterial" id="1"]
 resource_local_to_scene = true

@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/GoldCounter.gd")
+const Receiver = preload("res://PvE/UI/Feedback/GoldCounter.gd")
 
 static func updateTooltip(subject: Receiver, forRound):
 	if CustomRules.isSwitchMode():

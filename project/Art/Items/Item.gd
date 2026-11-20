@@ -337,7 +337,7 @@ const rotateSound = preload("res://Audio/Sound/Grind.wav")
 const grabSound = preload("res://Audio/Sound/Swing1.wav")
 var dustParticles:
 	get:
-		return AssetStream.resolve("res://UI/Interface/DustParticles.tscn")
+		return AssetStream.resolve("res://PvE/UI/Feedback/DustParticles.tscn")
 const hoverSound = preload("res://Audio/Sound/Click4.wav")
 const lockSound = preload("res://Audio/Sound/Lock.wav")
 const unlockSound = preload("res://Audio/Sound/Unlock.wav")
@@ -2062,7 +2062,7 @@ func fillUpStamina():
 
 var outOfStaminaLabelScene:
 	get:
-		return AssetStream.resolve("res://UI/Interface/OutOfStaminaLabel.tscn")
+		return AssetStream.resolve("res://PvE/UI/Combat/Hud/OutOfStaminaLabel.tscn")
 const outOfStaminaSound = preload("res://Audio/Sound/Fanfare_sadtoot.ogg")
 
 func playOutOfStaminaAnimation():

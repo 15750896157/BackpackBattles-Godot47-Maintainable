@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://PvE/UI/Wardrobe/DressUpSprite.gd" id="1_1anpt"]
 [ext_resource type="Texture2D" path="res://Art/CharacterClasses/NotUnlocked/PyromancerSilhuette.png" id="2_yc1eo"]
 [ext_resource type="Texture2D" path="res://Art/Assets/shadow.png" id="3_7mq5f"]
-[ext_resource type="PackedScene" path="res://UI/Interface/WishlistButton.tscn" id="4_88m8o"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Title/WishlistButton.tscn" id="4_88m8o"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Jump"

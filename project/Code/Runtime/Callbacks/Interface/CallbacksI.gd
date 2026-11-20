@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForIngameCharacterHUD:
-	const Receiver = preload("res://UI/Interface/IngameCharacterHUD.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/IngameCharacterHUD.gd")
 
 	static func updateLabels(subject: Receiver):
 		subject.triesNode.hide()

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dcrs42re7co0w"]
 
-[ext_resource type="Script" path="res://UI/Interface/SnowGlobe.gd" id="1_r687n"]
+[ext_resource type="Script" path="res://PvE/UI/Feedback/SnowGlobe.gd" id="1_r687n"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Decoration/SnowGlobe.png" id="2_15ah7"]
-[ext_resource type="Script" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="3_p6xmd"]
+[ext_resource type="Script" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="3_p6xmd"]
 [ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/IceDragon.material" id="4_ulis0"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Particles/Snowflake1.png" id="5_phb2v"]
 [ext_resource type="Script" path="res://Code/Utility/AutoHideParticles.gd" id="6_7e84f"]

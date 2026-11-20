@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/PatchNotes.gd")
+const Receiver = preload("res://PvE/UI/Title/PatchNotes.gd")
 
 static func init(subject: Receiver) -> void :
 	subject.get_node("Version").text = "Version " + str(Game.VERSION) + Game.SUBVERSION

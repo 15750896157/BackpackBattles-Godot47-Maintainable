@@ -1,6 +1,6 @@
 extends Node
 
-const achievementPopupScene = preload("res://UI/Interface/AchievementPopup.tscn")
+const achievementPopupScene = preload("res://PvE/UI/Feedback/AchievementPopup.tscn")
 
 var IS_INIT: bool = false
 var IS_OWNED: bool = false

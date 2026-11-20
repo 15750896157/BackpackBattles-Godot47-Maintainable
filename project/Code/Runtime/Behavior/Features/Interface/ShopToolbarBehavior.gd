@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/ShopToolbar.gd")
+const Receiver = preload("res://PvE/UI/Shop/ShopToolbar.gd")
 
 static func unhide(subject: Receiver):
 	subject.show()

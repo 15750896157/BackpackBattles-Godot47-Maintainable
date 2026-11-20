@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/RunAchievement.gd")
+const Receiver = preload("res://PvE/UI/Title/RunAchievement.gd")
 
 static func updateRecord(subject: Receiver):
 	for oldItem in subject.itemRect.get_children():

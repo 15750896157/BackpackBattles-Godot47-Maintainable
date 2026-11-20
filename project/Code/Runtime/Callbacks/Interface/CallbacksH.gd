@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForHeart:
-	const Receiver = preload("res://UI/Interface/Heart.gd")
+	const Receiver = preload("res://PvE/UI/Combat/Hud/Heart.gd")
 
 	static func heal(subject: Receiver):
 		if not subject.isFull:

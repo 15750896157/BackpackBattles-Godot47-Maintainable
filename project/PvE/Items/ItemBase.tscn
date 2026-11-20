@@ -12,7 +12,7 @@
 [ext_resource type="Material" path="res://Art/Items/Particles/DragParticles.tres" id="10_kcq8s"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Particles/GlowingDot.png" id="11_lbprm"]
 [ext_resource type="Script" path="res://Code/Utility/AutoHideParticles.gd" id="12_yimd0"]
-[ext_resource type="Texture2D" path="res://UI/Interface/KeyLock.png" id="13_iofr4"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Common/KeyLock.png" id="13_iofr4"]
 
 [ext_resource type="Texture2D" path="res://Art/Items/Tiles/CanAdd.png" id="M1_kept_1"]
 [ext_resource type="Texture2D" path="res://Art/Items/Tiles/CantAdd.png" id="M1_kept_2"]

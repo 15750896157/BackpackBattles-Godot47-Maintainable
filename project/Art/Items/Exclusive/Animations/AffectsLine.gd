@@ -8,10 +8,10 @@ const colors = {
 }
 
 const starTextures = {
-	Item.Affected.Primary: preload("res://UI/Interface/AffectsArrowPrimary.png"),
-	Item.Affected.Secondary: preload("res://UI/Interface/AffectsArrowSecondary.png"),
-	Item.Affected.Tertiary: preload("res://UI/Interface/AffectsArrowTertiary.png"),
-	Item.Affected.Lightning: preload("res://UI/Interface/AffectsArrowLightning.png")
+	Item.Affected.Primary: preload("res://PvE/UI/Inventory/AffectsArrowPrimary.png"),
+	Item.Affected.Secondary: preload("res://PvE/UI/Inventory/AffectsArrowSecondary.png"),
+	Item.Affected.Tertiary: preload("res://PvE/UI/Inventory/AffectsArrowTertiary.png"),
+	Item.Affected.Lightning: preload("res://PvE/UI/Inventory/AffectsArrowLightning.png")
 }
 
 var poolingHandle

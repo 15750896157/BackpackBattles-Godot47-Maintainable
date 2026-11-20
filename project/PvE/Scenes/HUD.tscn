@@ -8,37 +8,37 @@
 
 [ext_resource type="Texture2D" uid="uid://cl8ufe5ntpbpe" path="res://PvE/UI/Options/OptionsButton.png" id="90"]
 
-[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
 
 [ext_resource type="Texture2D" uid="uid://dosh4tem3u812" path="res://Art/Assets/Noise/Noise3.png" id="94"]
 
 [ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Art/Assets/Particles/Spot1.png" id="95"]
 
-[ext_resource type="Script" uid="uid://banoet6ywadah" path="res://UI/Interface/VersionLabel.gd" id="99"]
+[ext_resource type="Script" uid="uid://banoet6ywadah" path="res://PvE/UI/Title/VersionLabel.gd" id="99"]
 
 [ext_resource type="Texture2D" uid="uid://cjwnf87milum2" path="res://PvE/UI/Options/OptionsButton_hovered.png" id="117"]
 
 [ext_resource type="Texture2D" uid="uid://c51mb2u38n3ii" path="res://Art/Assets/Frame2.png" id="119"]
 
-[ext_resource type="Texture2D" uid="uid://djy7ba53m2yri" path="res://UI/Interface/DropdownArrow.png" id="127"]
+[ext_resource type="Texture2D" uid="uid://djy7ba53m2yri" path="res://PvE/UI/Common/DropdownArrow.png" id="127"]
 
 [ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="133"]
 
 [ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
 
-[ext_resource type="Texture2D" uid="uid://ccu3t3mto58qi" path="res://UI/Interface/VScrollbar_grabber.png" id="145"]
+[ext_resource type="Texture2D" uid="uid://ccu3t3mto58qi" path="res://PvE/UI/Common/VScrollbar_grabber.png" id="145"]
 
-[ext_resource type="Texture2D" uid="uid://d7yocxbe6qtu" path="res://UI/Interface/VScrollbar.png" id="146"]
+[ext_resource type="Texture2D" uid="uid://d7yocxbe6qtu" path="res://PvE/UI/Common/VScrollbar.png" id="146"]
 
-[ext_resource type="Script" uid="uid://d2sujvy0oeb6u" path="res://UI/Interface/SelectionBox.gd" id="154"]
+[ext_resource type="Script" uid="uid://d2sujvy0oeb6u" path="res://PvE/UI/Common/SelectionBox.gd" id="154"]
 
-[ext_resource type="Texture2D" uid="uid://2p1m2j7cav4c" path="res://UI/Interface/SelectBox.png" id="155"]
+[ext_resource type="Texture2D" uid="uid://2p1m2j7cav4c" path="res://PvE/UI/Common/SelectBox.png" id="155"]
 
-[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://UI/Interface/FocusGrabbingButton.gd" id="158"]
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://PvE/UI/Common/FocusGrabbingButton.gd" id="158"]
 
-[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
 
-[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://UI/Interface/DraggableScrollContainer.gd" id="163"]
+[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://PvE/UI/Common/DraggableScrollContainer.gd" id="163"]
 
 [ext_resource type="Script" uid="uid://b7ucuqgtek05h" path="res://Code/Core/CombatLog.gd" id="167"]
 
@@ -48,7 +48,7 @@
 
 [ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLineOpponentStylebox.tres" id="173"]
 
-[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://UI/Interface/SmallArrow.png" id="175"]
+[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://PvE/UI/Common/SmallArrow.png" id="175"]
 
 [ext_resource type="Texture2D" uid="uid://cgd7d65brf5bi" path="res://PvE/UI/Combat/CombatLog/CloseButton.png" id="179"]
 
@@ -58,9 +58,9 @@
 
 [ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
 
-[ext_resource type="Script" uid="uid://buxnrmrd07ct4" path="res://UI/Interface/ConnectingLabel.gd" id="183"]
+[ext_resource type="Script" uid="uid://buxnrmrd07ct4" path="res://PvE/UI/Title/ConnectingLabel.gd" id="183"]
 
-[ext_resource type="Texture2D" uid="uid://b4n8uhlaqc05i" path="res://UI/Interface/SurvivalButton.png" id="184"]
+[ext_resource type="Texture2D" uid="uid://b4n8uhlaqc05i" path="res://PvE/UI/Combat/Hud/SurvivalButton.png" id="184"]
 
 [ext_resource type="Texture2D" uid="uid://bkrc550l6x8vj" path="res://PvE/UI/Combat/Hud/CancelSurvivalButton.png" id="185"]
 
@@ -68,9 +68,9 @@
 
 [ext_resource type="Texture2D" uid="uid://cmor430cqibbh" path="res://Art/Assets/SurvivalBones.png" id="190"]
 
-[ext_resource type="Script" uid="uid://bfi1u7fj6yx5n" path="res://UI/Interface/ReactiveButton.gd" id="191"]
+[ext_resource type="Script" uid="uid://bfi1u7fj6yx5n" path="res://PvE/UI/Common/ReactiveButton.gd" id="191"]
 
-[ext_resource type="Texture2D" uid="uid://bocbt7v4y2ocp" path="res://UI/Interface/ArrowButton2.png" id="195"]
+[ext_resource type="Texture2D" uid="uid://bocbt7v4y2ocp" path="res://PvE/UI/Common/ArrowButton2.png" id="195"]
 
 [ext_resource type="Script" uid="uid://blw2bqk1vtqp0" path="res://PvE/UI/Combat/DamageMeter/DamageMeter.gd" id="198"]
 
@@ -82,7 +82,7 @@
 
 [ext_resource type="Script" uid="uid://dqggfmc7fca2w" path="res://PvE/UI/Options/OptionsButton.gd" id="208"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/Searchbar.tscn" id="212"]
+[ext_resource type="PackedScene" path="res://PvE/UI/ItemLibrary/Searchbar.tscn" id="212"]
 
 [ext_resource type="Script" uid="uid://cjxjy3ngaxlau" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterPanel.gd" id="213"]
 
@@ -98,7 +98,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cigygfyyro3j" path="res://PvE/UI/Combat/CombatLog/Play_hover.png" id="241"]
 
-[ext_resource type="Texture2D" uid="uid://b0db8oy7s58x2" path="res://UI/Interface/NextOptionArrow.png" id="244"]
+[ext_resource type="Texture2D" uid="uid://b0db8oy7s58x2" path="res://PvE/UI/Common/NextOptionArrow.png" id="244"]
 
 [ext_resource type="Texture2D" uid="uid://d1nldfbsmte5o" path="res://PvE/UI/Combat/CombatLog/Play_playing.png" id="245"]
 
@@ -110,31 +110,31 @@
 
 [ext_resource type="Script" uid="uid://do60tnyf6l77b" path="res://Code/Utility/UndoStack.gd" id="249"]
 
-[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://UI/Interface/NonLocalizedControl.gd" id="250"]
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://PvE/UI/Common/NonLocalizedControl.gd" id="250"]
 
-[ext_resource type="Script" uid="uid://citm7h2d08nsr" path="res://UI/Interface/EditModeButtons.gd" id="285"]
+[ext_resource type="Script" uid="uid://citm7h2d08nsr" path="res://PvE/UI/Title/EditModeButtons.gd" id="285"]
 
-[ext_resource type="Texture2D" uid="uid://cly5g1i512kmb" path="res://UI/Interface/EditModeBags.png" id="287"]
+[ext_resource type="Texture2D" uid="uid://cly5g1i512kmb" path="res://PvE/UI/Title/EditModeBags.png" id="287"]
 
-[ext_resource type="Texture2D" uid="uid://db3lf2bjdv2ms" path="res://UI/Interface/EditModeItems.png" id="288"]
+[ext_resource type="Texture2D" uid="uid://db3lf2bjdv2ms" path="res://PvE/UI/Title/EditModeItems.png" id="288"]
 
-[ext_resource type="Texture2D" uid="uid://bmknel5bqn6al" path="res://UI/Interface/EditModeBags_hovered.png" id="289"]
+[ext_resource type="Texture2D" uid="uid://bmknel5bqn6al" path="res://PvE/UI/Title/EditModeBags_hovered.png" id="289"]
 
-[ext_resource type="Texture2D" uid="uid://4f1eg7x7xyrw" path="res://UI/Interface/EditModeItems_hovered.png" id="290"]
+[ext_resource type="Texture2D" uid="uid://4f1eg7x7xyrw" path="res://PvE/UI/Title/EditModeItems_hovered.png" id="290"]
 
-[ext_resource type="Texture2D" uid="uid://iv0h6b6dj5dj" path="res://UI/Interface/ArrowButton_up2_hovered.png" id="291"]
+[ext_resource type="Texture2D" uid="uid://iv0h6b6dj5dj" path="res://PvE/UI/Common/ArrowButton_up2_hovered.png" id="291"]
 
-[ext_resource type="Texture2D" uid="uid://buqi57avtialq" path="res://UI/Interface/ArrowButton_up2.png" id="292"]
+[ext_resource type="Texture2D" uid="uid://buqi57avtialq" path="res://PvE/UI/Common/ArrowButton_up2.png" id="292"]
 
-[ext_resource type="Texture2D" uid="uid://kgyipd5hrp05" path="res://UI/Interface/Undo.png" id="293"]
+[ext_resource type="Texture2D" uid="uid://kgyipd5hrp05" path="res://PvE/UI/Common/Undo.png" id="293"]
 
 [ext_resource type="Texture2D" uid="uid://c835eyv844o1h" path="res://PvE/UI/Shop/PushToStorage_hovered.png" id="294"]
 
-[ext_resource type="Texture2D" uid="uid://bh422kvufntkf" path="res://UI/Interface/Undo_hovered.png" id="295"]
+[ext_resource type="Texture2D" uid="uid://bh422kvufntkf" path="res://PvE/UI/Common/Undo_hovered.png" id="295"]
 
-[ext_resource type="Script" uid="uid://qtu8mf5cadbn" path="res://UI/Interface/ShopToolbar.gd" id="296"]
+[ext_resource type="Script" uid="uid://qtu8mf5cadbn" path="res://PvE/UI/Shop/ShopToolbar.gd" id="296"]
 
-[ext_resource type="Texture2D" uid="uid://qsq7tb83u0j5" path="res://UI/Interface/ToolbarPanel.png" id="297"]
+[ext_resource type="Texture2D" uid="uid://qsq7tb83u0j5" path="res://PvE/UI/Shop/ToolbarPanel.png" id="297"]
 
 [ext_resource type="Texture2D" uid="uid://bi4mw5urbyp1t" path="res://商店背景.png" id="297_y1jck"]
 
@@ -142,13 +142,13 @@
 
 [ext_resource type="Material" path="res://Art/Items/Particles/SubtractiveCanvasItem.material" id="299"]
 
-[ext_resource type="Texture2D" uid="uid://dd8yhfybnqma2" path="res://UI/Interface/EditModeDefault.png" id="300"]
+[ext_resource type="Texture2D" uid="uid://dd8yhfybnqma2" path="res://PvE/UI/Title/EditModeDefault.png" id="300"]
 
-[ext_resource type="Texture2D" uid="uid://bpc02kg2gv3vw" path="res://UI/Interface/EditModeDefault_hovered.png" id="301"]
+[ext_resource type="Texture2D" uid="uid://bpc02kg2gv3vw" path="res://PvE/UI/Title/EditModeDefault_hovered.png" id="301"]
 
 [ext_resource type="Texture2D" uid="uid://dty7rpx2i2ibd" path="res://PvE/UI/Shop/PushToStorage.png" id="302"]
 
-[ext_resource type="Texture2D" uid="uid://dotuwlq64a2oi" path="res://UI/Interface/Undo_disabled.png" id="303"]
+[ext_resource type="Texture2D" uid="uid://dotuwlq64a2oi" path="res://PvE/UI/Common/Undo_disabled.png" id="303"]
 
 [ext_resource type="Texture2D" uid="uid://cbb5ada23nxv" path="res://PvE/UI/Inventory/GridStorage_hovered.png" id="306"]
 

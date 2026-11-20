@@ -9,8 +9,8 @@
 [ext_resource type="Material" path="res://Art/Shader/ShopOfferUniqueParticles.material" id="7_o0bk4"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Particles/GlowingDot_small.png" id="8_pljf0"]
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="9_xdwyl"]
-[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="10_0rand"]
-[ext_resource type="Script" path="res://UI/Interface/FocusGrabbingButton.gd" id="11_43iw4"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="10_0rand"]
+[ext_resource type="Script" path="res://PvE/UI/Common/FocusGrabbingButton.gd" id="11_43iw4"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Shop/ReservedTag.png" id="12_3xdwl"]
 [ext_resource type="Texture2D" path="res://Art/Assets/Shop/ReservedTag_front.png" id="13_vgbiu"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="14_bhp6q"]
@@ -20,7 +20,7 @@
 [ext_resource type="Material" path="res://Art/Shader/TextDissolveMaterial.tres" id="18_y8lmb"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="19_63brh"]
 [ext_resource type="Material" path="res://Art/Shader/ClassBanner.material" id="20_uleab"]
-[ext_resource type="Texture2D" path="res://UI/Interface/Banner3.png" id="21_2xcen"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Title/Banner3.png" id="21_2xcen"]
 
 [sub_resource type="FontVariation" id="2"]
 base_font = ExtResource("3_i64c2")

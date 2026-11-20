@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://xzbqbx64kczqj"]
 
-[ext_resource type="Texture2D" uid="uid://gsmsgkl7i4v4" path="res://UI/Interface/BackpackButton.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://gsmsgkl7i4v4" path="res://PvE/UI/Inventory/BackpackButton.png" id="8"]
 
 [ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Art/Assets/Trophy.png" id="9"]
 
-[ext_resource type="Texture2D" uid="uid://cjoukh2vs0q3u" path="res://UI/Interface/DiceButton_disabled.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://cjoukh2vs0q3u" path="res://PvE/UI/Shop/DiceButton_disabled.png" id="18"]
 
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
 
@@ -12,13 +12,13 @@
 
 [ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Art/Assets/Particles/Dust1.png" id="32"]
 
-[ext_resource type="Script" uid="uid://c10gnm4cbifci" path="res://UI/Interface/TitleScreen.gd" id="33"]
+[ext_resource type="Script" uid="uid://c10gnm4cbifci" path="res://PvE/UI/Title/TitleScreen.gd" id="33"]
 
 [ext_resource type="Texture2D" uid="uid://bod0c2qixsrea" path="res://Art/Assets/TitleScreen/Title.png" id="35"]
 
 [ext_resource type="Texture2D" uid="uid://cnan1pfy7ja22" path="res://Art/Supplied20261102/bg/bg_main_menu.png" id="36"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/LoadoutButton.tscn" id="37"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Title/LoadoutButton.tscn" id="37"]
 
 [ext_resource type="Texture2D" uid="uid://7tmtpn0c6jpb" path="res://Art/Assets/TitleScreen/QuitSign.png" id="38"]
 
@@ -44,11 +44,11 @@
 
 [ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Art/Assets/shadow.png" id="77"]
 
-[ext_resource type="Texture2D" uid="uid://dlbxd7foyxc15" path="res://UI/Interface/DiceButton.png" id="79"]
+[ext_resource type="Texture2D" uid="uid://dlbxd7foyxc15" path="res://PvE/UI/Shop/DiceButton.png" id="79"]
 
 [ext_resource type="Texture2D" uid="uid://bnjbs5syuhk4v" path="res://Art/Assets/TitleScreen/ChineseItemSearch.png" id="91"]
 
-[ext_resource type="StyleBox" path="res://UI/Interface/EmptyStylebox.tres" id="92"]
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
 
 [ext_resource type="Texture2D" uid="uid://camwo6eou1odc" path="res://Art/Assets/TitleScreen/ConcedeBanner.png" id="96"]
 
@@ -60,7 +60,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dcffy3i8ki8ek" path="res://Art/Assets/TitleScreen/ChineseItemSearch_hovered.png" id="118"]
 
-[ext_resource type="Texture2D" uid="uid://dcbjxsjuheddj" path="res://UI/Interface/BackpackButton_hovered.png" id="120"]
+[ext_resource type="Texture2D" uid="uid://dcbjxsjuheddj" path="res://PvE/UI/Inventory/BackpackButton_hovered.png" id="120"]
 
 [ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
 
@@ -82,7 +82,7 @@
 
 [ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Art/Assets/Particles/GlowingDot.png" id="134"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/WishlistButton.tscn" id="137"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Title/WishlistButton.tscn" id="137"]
 
 [ext_resource type="Texture2D" uid="uid://dfaktr0xav66w" path="res://Art/Assets/TitleScreen/AdventurerIcon_disabled.png" id="141"]
 
@@ -92,13 +92,13 @@
 
 [ext_resource type="Texture2D" uid="uid://b5mcvqvmki050" path="res://Art/Assets/TitleScreen/ContinueBanner_CustomUnranked.png" id="151"]
 
-[ext_resource type="PackedScene" path="res://UI/Interface/CustomRulesIcon.tscn" id="152"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Lobbies/CustomRulesIcon.tscn" id="152"]
 
 [ext_resource type="Texture2D" uid="uid://crj0v8khv27hq" path="res://Art/Assets/TitleScreen/RangerIcon_hovered.png" id="156"]
 
-[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://UI/Interface/FocusGrabbingButton.gd" id="158"]
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://PvE/UI/Common/FocusGrabbingButton.gd" id="158"]
 
-[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://UI/Interface/FocusGrabbingTextureButton.gd" id="160"]
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
 
 [ext_resource type="Texture2D" uid="uid://d4n2vswrpgsi0" path="res://Art/Assets/TitleScreen/PyromancerIcon_hovered.png" id="171"]
 
@@ -118,9 +118,9 @@
 
 [ext_resource type="Texture2D" uid="uid://bid2lgobuuvbs" path="res://Art/Assets/TitleScreen/YoutubeIcon2.png" id="193"]
 
-[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://UI/Interface/AnvilButton.png" id="196"]
+[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://PvE/UI/Inventory/AnvilButton.png" id="196"]
 
-[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://UI/Interface/RecipeBookButton.gd" id="197"]
+[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://PvE/UI/Title/RecipeBookButton.gd" id="197"]
 
 [ext_resource type="Texture2D" uid="uid://bi5n6b8q5owur" path="res://Art/Assets/TitleScreen/ReaperIcon_disabled.png" id="202"]
 
@@ -134,7 +134,7 @@
 
 [ext_resource type="Texture2D" uid="uid://vte0nsp0dr3x" path="res://PvE/UI/Wardrobe/WardrobeButton.png" id="207"]
 
-[ext_resource type="Script" uid="uid://cskbteljyahkf" path="res://UI/Interface/TrophyCounter.gd" id="210"]
+[ext_resource type="Script" uid="uid://cskbteljyahkf" path="res://PvE/UI/Combat/Hud/TrophyCounter.gd" id="210"]
 
 [ext_resource type="Texture2D" uid="uid://cbfk6o6widknk" path="res://Art/Assets/TitleScreen/QuitSignGlow.png" id="214"]
 
@@ -142,7 +142,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dueyak4v2a6a3" path="res://Art/Assets/TitleScreen/QQIcon_hovered.png" id="216"]
 
-[ext_resource type="Script" uid="uid://d0iepeje2mun3" path="res://UI/Interface/BlackLayer.gd" id="219"]
+[ext_resource type="Script" uid="uid://d0iepeje2mun3" path="res://PvE/UI/Common/BlackLayer.gd" id="219"]
 
 [ext_resource type="Texture2D" uid="uid://ba1h2jee8ky2d" path="res://Art/Assets/TitleScreen/RangerIcon_disabled.png" id="220"]
 
@@ -166,11 +166,11 @@
 
 [ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="253"]
 
-[ext_resource type="Texture2D" uid="uid://y5xfjqld1qvi" path="res://UI/Interface/DiceButton_outline.png" id="254"]
+[ext_resource type="Texture2D" uid="uid://y5xfjqld1qvi" path="res://PvE/UI/Shop/DiceButton_outline.png" id="254"]
 
-[ext_resource type="Texture2D" uid="uid://bx7wxcpdciq8s" path="res://UI/Interface/HistoryButton.png" id="256"]
+[ext_resource type="Texture2D" uid="uid://bx7wxcpdciq8s" path="res://PvE/UI/Title/HistoryButton.png" id="256"]
 
-[ext_resource type="Script" uid="uid://ca1783n0vjex6" path="res://UI/Interface/HistoryButton.gd" id="257"]
+[ext_resource type="Script" uid="uid://ca1783n0vjex6" path="res://PvE/UI/Title/HistoryButton.gd" id="257"]
 
 [ext_resource type="Texture2D" uid="uid://babrlcerwswpa" path="res://Art/Assets/TitleScreen/MageIcon_hovered.png" id="258"]
 
