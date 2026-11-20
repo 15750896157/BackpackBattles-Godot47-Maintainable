@@ -10,13 +10,13 @@
 
 [ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/StartupAnimations.tres" id="m7_library_StartupAnimations"]
 
-[ext_resource type="PackedScene" path="res://PvE/Scenes/Combat.tscn" id="m7_scene_LegacyCombat"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/CombatRoot.tscn" id="m7_scene_LegacyCombat"]
 
-[ext_resource type="PackedScene" path="res://PvE/Scenes/Shop.tscn" id="m7_scene_LegacyShop"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/ShopRoot.tscn" id="m7_scene_LegacyShop"]
 
-[ext_resource type="PackedScene" path="res://PvE/Scenes/Title.tscn" id="m7_scene_LegacyTitle"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Title/TitleScreenRoot.tscn" id="m7_scene_LegacyTitle"]
 
-[ext_resource type="PackedScene" path="res://PvE/Scenes/HUD.tscn" id="m7_scene_LegacyUI"]
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/HudRoot.tscn" id="m7_scene_LegacyUI"]
 
 [node name="Main" type="Node2D" unique_id=2047487197]
 
