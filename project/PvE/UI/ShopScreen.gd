@@ -124,8 +124,10 @@ func refresh_display() -> void:
 	if _model == null or not is_inside_tree() or not is_node_ready():
 		return
 	var state := _model.snapshot()
-	if state.mode != "SHOP_PREPARE":
-		hide()
+	# Event and rest pages share the shop carrier, so the overlay steps aside for them
+	# and must come back once the flow returns to the shop.
+	visible = state.mode == "SHOP_PREPARE"
+	if not visible:
 		return
 	var host: Dictionary = _read_display.call()
 	var chinese := str(host.locale).begins_with("zh")

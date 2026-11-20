@@ -20,7 +20,7 @@ static func initDefaults(subject: Receiver):
 	else:
 		subject.defaults[subject.Setting.pick_offset] = 0.0
 
-	subject.defaults[subject.Setting.window_mode] = "fullscreen"
+	subject.defaults[subject.Setting.window_mode] = "windowed"
 	subject.defaults[subject.Setting.vsync] = true
 	subject.defaults[subject.Setting.resolution] = "1920x1080"
 	subject.defaults[subject.Setting.fps_limit] = 144
