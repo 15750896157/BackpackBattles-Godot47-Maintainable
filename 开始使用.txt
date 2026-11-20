@@ -1,0 +1,8 @@
+Godot 4.7 本地 PvE 工程（2026-11-06）
+
+双击 launch-game.cmd 运行，launch-editor.cmd 打开工程。也可以用 Godot 4.7 直接打开 project/project.godot。
+点击标题的开始游戏。有有效存档时可选择继续或新游戏。只有确认新局出发才会替换进度。
+商店木挂牌开战，书本打开图鉴和合成，敌情海报进入路线或敌情，齿轮打开设置。道具可拖放，拿起后可用屏幕箭头旋转。
+在游戏内保存并返回主页后，可从标题继续。打开存档位置用 open-saves.cmd。
+
+verify-project.cmd 执行 32 个 Windows 原生验证阶段，结果在 verification 下。维护入口为 docs/后续更新指南.txt，重构与验收记录见 docs/架构重构_当前进度.md。
