@@ -1,0 +1,1051 @@
+[gd_scene format=3 uid="uid://blsht4fa8xwij"]
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
+
+
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
+
+
+[ext_resource type="Texture2D" uid="uid://dosh4tem3u812" path="res://Art/Assets/Noise/Noise3.png" id="94"]
+
+
+[ext_resource type="Texture2D" uid="uid://djy7ba53m2yri" path="res://PvE/UI/Common/DropdownArrow.png" id="127"]
+
+
+[ext_resource type="FontVariation" path="res://PvE/UI/Options/OptionsFont.tres" id="133"]
+
+
+[ext_resource type="Texture2D" uid="uid://ccu3t3mto58qi" path="res://PvE/UI/Common/VScrollbar_grabber.png" id="145"]
+
+
+[ext_resource type="Texture2D" uid="uid://d7yocxbe6qtu" path="res://PvE/UI/Common/VScrollbar.png" id="146"]
+
+
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://PvE/UI/Common/FocusGrabbingButton.gd" id="158"]
+
+
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
+
+
+[ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://PvE/UI/Common/DraggableScrollContainer.gd" id="163"]
+
+
+[ext_resource type="Script" uid="uid://b7ucuqgtek05h" path="res://Code/Core/CombatLog.gd" id="167"]
+
+
+[ext_resource type="Texture2D" uid="uid://ci7tom5cvdnku" path="res://PvE/UI/Tooltips/TooltipBase.png" id="169"]
+
+
+[ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLinePlayerStylebox.tres" id="172"]
+
+
+[ext_resource type="StyleBox" path="res://PvE/UI/Combat/CombatLog/LogLineOpponentStylebox.tres" id="173"]
+
+
+[ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://PvE/UI/Common/SmallArrow.png" id="175"]
+
+
+[ext_resource type="Texture2D" uid="uid://cgd7d65brf5bi" path="res://PvE/UI/Combat/CombatLog/CloseButton.png" id="179"]
+
+
+[ext_resource type="Texture2D" uid="uid://bp8i4tush30sk" path="res://PvE/UI/Combat/CombatLog/CloseButton_hovered.png" id="180"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Options/ItemListButton.tscn" id="181"]
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+[ext_resource type="Script" uid="uid://blw2bqk1vtqp0" path="res://PvE/UI/Combat/DamageMeter/DamageMeter.gd" id="198"]
+
+
+[ext_resource type="Texture2D" uid="uid://xb8l32d6vy3l" path="res://PvE/UI/Combat/DamageMeter/DamageMeterIcon.png" id="199"]
+
+
+[ext_resource type="Texture2D" uid="uid://b4a3pv716m4cw" path="res://PvE/UI/Combat/DamageMeter/OpenButton_right.png" id="200"]
+
+
+[ext_resource type="Texture2D" uid="uid://1s0j362ae17" path="res://PvE/UI/Combat/DamageMeter/OpenButton_right_hovered.png" id="201"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/ItemLibrary/Searchbar.tscn" id="212"]
+
+
+[ext_resource type="Script" uid="uid://cjxjy3ngaxlau" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterPanel.gd" id="213"]
+
+
+[ext_resource type="Texture2D" uid="uid://1yolxem7adcf" path="res://PvE/UI/Combat/CombatLog/Play_disabled.png" id="228"]
+
+
+[ext_resource type="Texture2D" uid="uid://cjkoq315mev2m" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_normal.png" id="229"]
+
+
+[ext_resource type="Texture2D" uid="uid://brpi3q01skekf" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_hover.png" id="230"]
+
+
+[ext_resource type="Texture2D" uid="uid://bxg8c3hn80pn7" path="res://PvE/UI/Combat/CombatLog/Play_normal.png" id="236"]
+
+
+[ext_resource type="Texture2D" uid="uid://d037f5p3n0j62" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_disabled.png" id="240"]
+
+
+[ext_resource type="Texture2D" uid="uid://cigygfyyro3j" path="res://PvE/UI/Combat/CombatLog/Play_hover.png" id="241"]
+
+
+[ext_resource type="Texture2D" uid="uid://b0db8oy7s58x2" path="res://PvE/UI/Common/NextOptionArrow.png" id="244"]
+
+
+[ext_resource type="Texture2D" uid="uid://d1nldfbsmte5o" path="res://PvE/UI/Combat/CombatLog/Play_playing.png" id="245"]
+
+
+[ext_resource type="Texture2D" uid="uid://ckr2ds1yy8cru" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_playing.png" id="246"]
+
+
+[ext_resource type="Script" uid="uid://dkfm41ytvypeq" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButton.gd" id="247"]
+
+
+[ext_resource type="Script" uid="uid://kwhpyuwjwr5" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButtonWithStylebox.gd" id="248"]
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_207.tres" id="m7_shared_207"]
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_235.tres" id="m7_shared_235"]
+
+
+[sub_resource type="StyleBoxTexture" id="322"]
+texture = ExtResource("145")
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+region_rect = Rect2(-14.8741, 0, 70.4767, 64.1349)
+
+
+[sub_resource type="StyleBoxTexture" id="323"]
+texture = ExtResource("146")
+region_rect = Rect2(-6, 0.0862274, 57.0044, 461.484)
+
+
+[sub_resource type="Theme" id="205"]
+VScrollBar/styles/grabber = SubResource("322")
+VScrollBar/styles/grabber_highlight = SubResource("322")
+VScrollBar/styles/grabber_pressed = SubResource("322")
+VScrollBar/styles/scroll = SubResource("323")
+
+
+[sub_resource type="FontVariation" id="330"]
+base_font = ExtResource("27")
+script = ExtResource("LegacyFontMigration")
+size = 19
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="StyleBoxFlat" id="331"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.145098, 0.129412, 0.109804, 0.623529)
+border_color = Color(0.423529, 0.423529, 0.423529, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+
+[sub_resource type="StyleBoxFlat" id="334"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.290196, 0.266667, 0.235294, 0.623529)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.92549, 0.831373, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+
+[sub_resource type="StyleBoxFlat" id="337"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0.92549, 0.831373, 0.623529)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.84745, 0.0917969, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+
+[sub_resource type="FontVariation" id="332"]
+base_font = ExtResource("27")
+script = ExtResource("LegacyFontMigration")
+size = 19
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="StyleBoxFlat" id="333"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.137255, 0.109804, 0.109804, 0.6)
+border_color = Color(0.686275, 0.686275, 0.686275, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+
+[sub_resource type="StyleBoxFlat" id="335"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.160784, 0.145098, 0.145098, 0.6)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.92549, 0.831373, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+anti_aliasing_size = 1.184
+
+
+[sub_resource type="StyleBoxFlat" id="338"]
+content_margin_left = 6.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0.501961, 0, 0, 0.6)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.84745, 0.0917969, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+
+[sub_resource type="Animation" id="418"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerDamageMeter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FilterPanel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OpponentDamageMeter:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+
+[sub_resource type="Animation" id="419"]
+resource_name = "Tutorial"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerDamageMeter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OpponentDamageMeter:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FilterPanel:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6gdxt"]
+_data = {
+&"RESET": SubResource("418"),
+&"Tutorial": SubResource("419")
+}
+
+
+[sub_resource type="Shader" id="134"]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+varying vec4 legacy_modulate;
+
+uniform sampler2D overlapGradient : repeat_disable, filter_linear;
+uniform sampler2D tex2 : repeat_enable, filter_linear;
+uniform vec2 scroll1 = vec2(0.2, -0.3);
+uniform vec2 scroll2 = vec2(0.1, -0.4);
+uniform float tex2_scale = 0.5;
+uniform float tex1_scale = 1.0;
+varying float particleId;
+
+void vertex(){
+	legacy_modulate = COLOR;
+	particleId = INSTANCE_CUSTOM.z;
+	
+}
+
+
+void fragment() {
+	COLOR = vec4(1.0);
+	
+	float adjustedTime = bb_shader_time + particleId * 11374.293247;
+	float tex1_intensity = texture(tex2, tex1_scale * (UV + adjustedTime * scroll1)).r;
+	float tex2_intensity = texture(tex2, tex2_scale * (UV + adjustedTime * scroll2)).r;
+	float mask = texture(TEXTURE,UV).r;
+	float intensity = tex1_intensity * tex2_intensity * mask * COLOR.a * legacy_modulate.a;
+	vec4 overlapColor = texture(overlapGradient, vec2(intensity * 2.0));
+	COLOR.a = 1.0; // already used in intensity
+	COLOR.rgb *= legacy_modulate.rgb;
+	COLOR *= overlapColor;
+
+}"
+
+
+[sub_resource type="Gradient" id="244"]
+offsets = PackedFloat32Array(0, 0.047619, 0.236)
+colors = PackedColorArray(0.783203, 0.486443, 0, 0, 1, 0.70623, 0.203125, 1, 1, 0.958958, 0.773438, 1)
+
+
+[sub_resource type="GradientTexture1D" id="245"]
+gradient = SubResource("244")
+width = 200
+
+
+[sub_resource type="ShaderMaterial" id="246"]
+shader = SubResource("134")
+shader_parameter/overlapGradient = SubResource("245")
+shader_parameter/tex2 = ExtResource("94")
+shader_parameter/scroll1 = Vector2(0.2, -0.6987)
+shader_parameter/scroll2 = Vector2(0.1, -0.3145)
+shader_parameter/tex2_scale = 0.5
+shader_parameter/tex1_scale = 1.0
+
+
+[sub_resource type="Gradient" id="247"]
+colors = PackedColorArray(0.873047, 0.873047, 0.873047, 0.92549, 1, 1, 1, 1)
+
+
+[sub_resource type="GradientTexture1D" id="248"]
+gradient = SubResource("247")
+width = 100
+
+
+[node name="CombatLog" type="Node2D" unique_id=1603415123]
+z_index = 1
+
+
+[node name="CombatLog" type="NinePatchRect" parent="." unique_id=209770747]
+visible = false
+custom_minimum_size = Vector2(480, 300)
+offset_left = 686.0
+offset_top = 274.0
+offset_right = 1218.0
+offset_bottom = 764.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("169")
+patch_margin_left = 24
+patch_margin_top = 28
+patch_margin_right = 30
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("167")
+draggable = true
+
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CombatLog" unique_id=885898824]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 64.0
+offset_right = -20.0
+offset_bottom = -22.0
+theme = SubResource("205")
+script = ExtResource("163")
+scrollEnabled = false
+
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CombatLog/ScrollContainer" unique_id=2124570422]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+
+[node name="Label" type="Label" parent="CombatLog" unique_id=1681775050]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 19.0
+offset_right = 194.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = "Combat Log"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_CombatLog"
+
+
+[node name="PlayerButton" type="Button" parent="CombatLog" unique_id=996434054]
+custom_minimum_size = Vector2(83, 26)
+layout_mode = 0
+offset_left = 220.0
+offset_top = 24.0
+offset_right = 303.0
+offset_bottom = 50.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_pressed_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = SubResource("330")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("331")
+theme_override_styles/pressed = ExtResource("172")
+theme_override_styles/hover = SubResource("334")
+theme_override_styles/focus = ExtResource("92")
+text = "You"
+script = ExtResource("248")
+hoverPressedStylebox = SubResource("337")
+isPressed = true
+translationKey = "LOG_Player"
+
+
+[node name="OpponentButton" type="Button" parent="CombatLog" unique_id=309758447]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 0
+offset_left = 315.0
+offset_top = 24.0
+offset_right = 451.0
+offset_bottom = 52.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = SubResource("332")
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = SubResource("333")
+theme_override_styles/pressed = ExtResource("173")
+theme_override_styles/hover = SubResource("335")
+theme_override_styles/focus = ExtResource("92")
+text = "Opponent"
+script = ExtResource("248")
+hoverPressedStylebox = SubResource("338")
+isPressed = true
+translationKey = "LOG_Opponent"
+
+
+[node name="HoverHint" type="Label" parent="CombatLog" unique_id=1911300759]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -181.0
+offset_top = 59.0
+offset_right = 185.0
+offset_bottom = 85.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("m7_shared_235")
+theme_override_font_sizes/font_size = 19
+text = "Hover entries to jump back in time."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "HINT_HoverLog"
+
+
+[node name="DragHint" type="Label" parent="CombatLog" unique_id=918597270]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -252.0
+offset_top = 60.0
+offset_right = 252.0
+offset_bottom = 94.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("m7_shared_235")
+theme_override_font_sizes/font_size = 19
+text = "Drag to move. Pull the bottom to resize."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "HINT_DragLog"
+
+
+[node name="LineArrow" type="Sprite2D" parent="CombatLog" unique_id=1457908742]
+position = Vector2(-4, 116)
+scale = Vector2(0.343201, 0.433038)
+texture = ExtResource("175")
+
+
+[node name="CloseButton" type="TextureButton" parent="CombatLog" unique_id=1198241220]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -63.0
+offset_top = 12.0
+offset_right = -13.0
+offset_bottom = 62.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("179")
+texture_pressed = ExtResource("180")
+texture_hover = ExtResource("180")
+script = ExtResource("160")
+
+
+[node name="VerticalResizeButton" type="Button" parent="CombatLog" unique_id=1343276180]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -23.0
+offset_right = -56.0
+offset_bottom = 34.0
+mouse_filter = 1
+mouse_default_cursor_shape = 9
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+
+[node name="HorizontalResizeButton" type="Button" parent="CombatLog" unique_id=1243984013]
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -46.0
+offset_right = 11.0
+offset_bottom = 38.0
+mouse_filter = 1
+mouse_default_cursor_shape = 10
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+
+[node name="PlayerDamageMeter" type="NinePatchRect" parent="CombatLog" unique_id=386020720]
+show_behind_parent = true
+custom_minimum_size = Vector2(77, 115)
+layout_mode = 0
+offset_left = -459.0
+offset_top = 3.0
+offset_right = 14.0
+offset_bottom = 332.0
+grow_horizontal = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("169")
+patch_margin_left = 24
+patch_margin_top = 28
+patch_margin_right = 30
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("198")
+player = true
+
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CombatLog/PlayerDamageMeter" unique_id=1546097557]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 65.0
+offset_right = 10.0
+offset_bottom = -20.0
+theme = SubResource("205")
+script = ExtResource("163")
+
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CombatLog/PlayerDamageMeter/ScrollContainer" unique_id=1380889810]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+
+[node name="OpenButton" type="TextureButton" parent="CombatLog/PlayerDamageMeter" unique_id=1757519962]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -70.0
+offset_top = 9.0
+offset_right = -7.0
+offset_bottom = 112.0
+pivot_offset = Vector2(26.6412, 23.0017)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("200")
+texture_pressed = ExtResource("200")
+texture_hover = ExtResource("201")
+ignore_texture_size = true
+flip_h = true
+script = ExtResource("160")
+
+
+[node name="Label" type="Label" parent="CombatLog/PlayerDamageMeter" unique_id=934693709]
+visible = false
+layout_mode = 0
+offset_left = 21.0
+offset_top = 19.0
+offset_right = 224.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = "Damage Dealt"
+script = ExtResource("182")
+translationKey = "UI_DamageMeter_Player"
+
+
+[node name="VerticalResizeButton" type="Button" parent="CombatLog/PlayerDamageMeter" unique_id=1189606822]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = -17.0
+offset_right = -48.0
+offset_bottom = 33.0
+mouse_filter = 1
+mouse_default_cursor_shape = 9
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+
+[node name="Icon" type="TextureRect" parent="CombatLog/PlayerDamageMeter" unique_id=1697568450]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -60.0
+offset_top = 62.0
+offset_right = -21.0
+offset_bottom = 94.0
+mouse_filter = 2
+texture = ExtResource("199")
+flip_h = true
+
+
+[node name="Node2D" type="Node2D" parent="CombatLog/PlayerDamageMeter" unique_id=1447007292]
+z_index = 2
+
+
+[node name="MetricList" parent="CombatLog/PlayerDamageMeter/Node2D" unique_id=612400058 instance=ExtResource("181")]
+offset_left = 9.0
+offset_top = 15.0
+offset_right = 283.0
+offset_bottom = 61.0
+text = "Damage Dealt"
+icon = ExtResource("127")
+expand_icon = true
+openWithClick = true
+
+
+[node name="OpponentDamageMeter" type="NinePatchRect" parent="CombatLog" unique_id=1835151637]
+show_behind_parent = true
+custom_minimum_size = Vector2(77, 115)
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -15.0
+offset_top = 3.0
+offset_right = 427.0
+offset_bottom = 351.0
+grow_horizontal = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+texture = ExtResource("169")
+patch_margin_left = 24
+patch_margin_top = 28
+patch_margin_right = 30
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("198")
+
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CombatLog/OpponentDamageMeter" unique_id=1093777240]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = 65.0
+offset_right = 13.0
+offset_bottom = -19.0
+theme = SubResource("205")
+script = ExtResource("163")
+
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CombatLog/OpponentDamageMeter/ScrollContainer" unique_id=1215710087]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+
+[node name="OpenButton" type="TextureButton" parent="CombatLog/OpponentDamageMeter" unique_id=1994034888]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 9.0
+offset_right = 68.0
+offset_bottom = 112.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("200")
+texture_hover = ExtResource("201")
+ignore_texture_size = true
+flip_h = true
+script = ExtResource("160")
+
+
+[node name="Label" type="Label" parent="CombatLog/OpponentDamageMeter" unique_id=391095006]
+visible = false
+custom_minimum_size = Vector2(208, 0)
+layout_mode = 0
+offset_left = 211.0
+offset_top = 22.0
+offset_right = 419.0
+offset_bottom = 54.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = " Damage Taken"
+horizontal_alignment = 2
+script = ExtResource("182")
+translationKey = "UI_DamageMeter_Opponent"
+maxSize = 356.0
+
+
+[node name="VerticalResizeButton" type="Button" parent="CombatLog/OpponentDamageMeter" unique_id=1646508455]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -22.0
+offset_right = -21.0
+offset_bottom = 29.0
+mouse_filter = 1
+mouse_default_cursor_shape = 9
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+
+[node name="Icon" type="TextureRect" parent="CombatLog/OpponentDamageMeter" unique_id=1951052057]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 63.0
+offset_right = 59.0
+offset_bottom = 95.0
+mouse_filter = 2
+texture = ExtResource("199")
+
+
+[node name="Node2D" type="Node2D" parent="CombatLog/OpponentDamageMeter" unique_id=514535052]
+z_index = 2
+
+
+[node name="MetricList" parent="CombatLog/OpponentDamageMeter/Node2D" unique_id=1203804649 instance=ExtResource("181")]
+offset_left = 165.0
+offset_top = 21.0
+offset_right = 433.0
+offset_bottom = 67.0
+grow_horizontal = 0
+text = "Damage Taken"
+icon = ExtResource("127")
+alignment = 2
+icon_alignment = 2
+openWithClick = true
+
+
+[node name="AboveLog" type="Node2D" parent="CombatLog" unique_id=1739114911]
+z_index = 1
+position = Vector2(-686, -274)
+
+
+[node name="FilterPanel" type="NinePatchRect" parent="CombatLog" unique_id=457724573]
+show_behind_parent = true
+layout_mode = 0
+offset_top = -99.0
+offset_right = 528.0
+offset_bottom = 20.0
+mouse_filter = 0
+texture = ExtResource("169")
+patch_margin_left = 25
+patch_margin_top = 25
+patch_margin_right = 25
+patch_margin_bottom = 25
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+script = ExtResource("213")
+
+
+[node name="OpenButton" type="TextureButton" parent="CombatLog/FilterPanel" unique_id=1882198198]
+layout_mode = 0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -64.0
+offset_right = 60.0
+offset_bottom = -9.0
+rotation = 90.0
+pivot_offset = Vector2(26.6412, 23.0017)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("200")
+texture_pressed = ExtResource("200")
+texture_hover = ExtResource("201")
+ignore_texture_size = true
+script = ExtResource("160")
+
+
+[node name="Searchbar" parent="CombatLog/FilterPanel" unique_id=914981454 instance=ExtResource("212")]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 55.0
+offset_right = 321.0
+offset_bottom = 95.0
+
+
+[node name="Activations" type="Button" parent="CombatLog/FilterPanel" unique_id=1795759505]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 8.0
+offset_right = 513.0
+offset_bottom = 54.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_focus_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_disabled_color = Color(0.501953, 0.364891, 0.308819, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("133")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/focus = ExtResource("92")
+text = "Show Activations"
+icon = ExtResource("244")
+flat = true
+alignment = 2
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("247")
+
+
+[node name="PlayFromStartButton" type="TextureButton" parent="CombatLog/FilterPanel" unique_id=940370283]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 51.0
+offset_right = 474.0
+offset_bottom = 96.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("229")
+texture_pressed = ExtResource("246")
+texture_hover = ExtResource("230")
+texture_disabled = ExtResource("240")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="PlayFromEndButton" type="TextureButton" parent="CombatLog/FilterPanel" unique_id=388892965]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 51.0
+offset_right = 420.0
+offset_bottom = 96.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("229")
+texture_pressed = ExtResource("246")
+texture_hover = ExtResource("230")
+texture_disabled = ExtResource("240")
+ignore_texture_size = true
+stretch_mode = 5
+flip_h = true
+script = ExtResource("160")
+
+
+[node name="PlayButton" type="TextureButton" parent="CombatLog/FilterPanel" unique_id=2127555747]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 54.0
+offset_right = 519.0
+offset_bottom = 93.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("236")
+texture_pressed = ExtResource("245")
+texture_hover = ExtResource("241")
+texture_disabled = ExtResource("228")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="PlayBackButton" type="TextureButton" parent="CombatLog/FilterPanel" unique_id=1770422409]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 54.0
+offset_right = 372.0
+offset_bottom = 93.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("236")
+texture_pressed = ExtResource("245")
+texture_hover = ExtResource("241")
+texture_disabled = ExtResource("228")
+ignore_texture_size = true
+stretch_mode = 5
+flip_h = true
+script = ExtResource("160")
+
+
+[node name="ScrollTimer" type="Timer" parent="CombatLog" unique_id=1753068039]
+one_shot = true
+
+
+[node name="TutorialAni" type="AnimationPlayer" parent="CombatLog" unique_id=45145922]
+libraries/ = SubResource("AnimationLibrary_6gdxt")
+
+
+[connection signal="pressed" from="CombatLog/CloseButton" to="CombatLog" method="_on_CloseButton_pressed"]
+
+
+[connection signal="pressed" from="CombatLog/PlayerDamageMeter/OpenButton" to="CombatLog/PlayerDamageMeter" method="_on_OpenButton_pressed"]
+
+
+[connection signal="item_selected" from="CombatLog/PlayerDamageMeter/Node2D/MetricList" to="CombatLog/PlayerDamageMeter" method="onMetricSelected"]
+
+
+[connection signal="pressed" from="CombatLog/OpponentDamageMeter/OpenButton" to="CombatLog/OpponentDamageMeter" method="_on_OpenButton_pressed"]
+
+
+[connection signal="item_selected" from="CombatLog/OpponentDamageMeter/Node2D/MetricList" to="CombatLog/OpponentDamageMeter" method="onMetricSelected"]
+
+
+[connection signal="pressed" from="CombatLog/FilterPanel/OpenButton" to="CombatLog/FilterPanel" method="_on_OpenButton_pressed"]
+
+
+[connection signal="toggled" from="CombatLog/FilterPanel/Activations" to="CombatLog/FilterPanel" method="onActivationsButtonPressed"]
+
+
+[connection signal="toggled" from="CombatLog/FilterPanel/PlayFromStartButton" to="CombatLog/FilterPanel" method="onPlayFromStartButtonToggled"]
+
+
+[connection signal="toggled" from="CombatLog/FilterPanel/PlayFromEndButton" to="CombatLog/FilterPanel" method="onPlayFromEndButtonToggled"]
+
+
+[connection signal="toggled" from="CombatLog/FilterPanel/PlayButton" to="CombatLog/FilterPanel" method="onPlayButtonToggled"]
+
+
+[connection signal="toggled" from="CombatLog/FilterPanel/PlayBackButton" to="CombatLog/FilterPanel" method="onPlayBackwardsButtonToggled"]
+
+
+[connection signal="timeout" from="CombatLog/ScrollTimer" to="CombatLog" method="scrollTimerTimeout"]

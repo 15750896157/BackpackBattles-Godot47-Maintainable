@@ -1,0 +1,507 @@
+[gd_scene format=3 uid="uid://vmpshyaums7aa"]
+
+[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Art/Assets/Trophy.png" id="9"]
+
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Art/Assets/Watch.png" id="66"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/League/LeagueEmblem.tscn" id="87"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://dyufjkue2vhc2" path="res://PvE/UI/Combat/Hud/Eye_open.png" id="143"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://bn7oiqegl4x0" path="res://PvE/UI/Combat/Hud/Eye_open_hovered.png" id="144"]
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Lobbies/CustomRulesIcon.tscn" id="152"]
+
+
+
+[ext_resource type="Script" uid="uid://bmdtn4ws1l6oc" path="res://PvE/UI/Combat/Hud/HideUIButton.gd" id="161"]
+
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://bupksyt64hjpq" path="res://Art/Assets/SmallBlueBanner.png" id="189"]
+
+
+
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://PvE/UI/Common/NonLocalizedControl.gd" id="250"]
+
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_207.tres" id="m7_shared_207"]
+
+
+
+[sub_resource type="Animation" id="67"]
+resource_name = "HideTimer"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(2.82843, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -400)]
+}
+
+
+
+[sub_resource type="Animation" id="143"]
+resource_name = "Hide"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Counter:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+
+
+[sub_resource type="Animation" id="144"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GPUParticles2D:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Counter:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Counter:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Counter:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+
+
+[sub_resource type="FontVariation" id="37"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 30
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+[sub_resource type="Animation" id="408"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+
+
+[sub_resource type="Animation" id="409"]
+resource_name = "Tutorial"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(2, 2, 2, 1)]
+}
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ownyt"]
+_data = {
+&"RESET": SubResource("408"),
+&"Tutorial": SubResource("409")
+}
+
+
+
+[sub_resource type="FontVariation" id="208"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 35
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+[node name="AboveUI" type="Node2D" unique_id=1131694307]
+z_index = 51
+
+
+
+[node name="HideUIButton" type="TextureButton" parent="." unique_id=216652109]
+visible = false
+offset_left = 886.0
+offset_top = 21.0
+offset_right = 1033.0
+offset_bottom = 127.0
+pivot_offset = Vector2(74, 45)
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource("143")
+texture_hover = ExtResource("144")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("161")
+
+
+
+[node name="HideLabel" type="Label" parent="HideUIButton" unique_id=1114469143]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 25.0
+offset_right = 375.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("37")
+theme_override_font_sizes/font_size = 30
+text = "Hide"
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_HideUI"
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HideUIButton" unique_id=1885264991]
+libraries/ = SubResource("AnimationLibrary_ownyt")
+
+
+
+[node name="CurrentStats" type="Node2D" parent="." unique_id=1160021574]
+visible = false
+
+
+
+[node name="RoundResult" type="Label" parent="CurrentStats" unique_id=34564976]
+offset_left = 828.0
+offset_top = 432.0
+offset_right = 1098.0
+offset_bottom = 464.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = "Round won!"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_RoundWon"
+
+
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CurrentStats" unique_id=1483792578]
+offset_left = 849.0
+offset_top = 310.0
+offset_right = 1075.0
+offset_bottom = 442.0
+alignment = 1
+
+
+
+[node name="Round" type="VBoxContainer" parent="CurrentStats/HBoxContainer" unique_id=740902897]
+layout_mode = 2
+theme_override_constants/separation = -10
+alignment = 1
+
+
+
+[node name="Round" type="Label" parent="CurrentStats/HBoxContainer/Round" unique_id=1537604582]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("208")
+theme_override_font_sizes/font_size = 35
+text = "3"
+horizontal_alignment = 1
+script = ExtResource("250")
+
+
+
+[node name="TextureRect" type="TextureRect" parent="CurrentStats/HBoxContainer/Round" unique_id=2067011333]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+texture = ExtResource("66")
+expand_mode = 1
+stretch_mode = 6
+
+
+
+[node name="Wins" type="VBoxContainer" parent="CurrentStats/HBoxContainer" unique_id=1554218803]
+layout_mode = 2
+theme_override_constants/separation = -10
+alignment = 1
+
+
+
+[node name="Wins" type="Label" parent="CurrentStats/HBoxContainer/Wins" unique_id=856476653]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("208")
+theme_override_font_sizes/font_size = 35
+text = "3"
+horizontal_alignment = 1
+script = ExtResource("250")
+
+
+
+[node name="TextureRect" type="TextureRect" parent="CurrentStats/HBoxContainer/Wins" unique_id=313430767]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+
+
+[node name="Trophy" type="Sprite2D" parent="CurrentStats/HBoxContainer/Wins/TextureRect" unique_id=1212426571]
+position = Vector2(36, 42)
+scale = Vector2(0.375409, 0.375409)
+texture = ExtResource("9")
+
+
+
+[node name="Tries" type="VBoxContainer" parent="CurrentStats/HBoxContainer" unique_id=675837482]
+layout_mode = 2
+theme_override_constants/separation = -10
+alignment = 1
+
+
+
+[node name="Tries" type="Label" parent="CurrentStats/HBoxContainer/Tries" unique_id=745961509]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("208")
+theme_override_font_sizes/font_size = 35
+text = "3"
+horizontal_alignment = 1
+script = ExtResource("250")
+
+
+
+[node name="TextureRect" type="TextureRect" parent="CurrentStats/HBoxContainer/Tries" unique_id=1564184166]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+
+
+[node name="Heart" type="Sprite2D" parent="CurrentStats/HBoxContainer/Tries/TextureRect" unique_id=941644971]
+position = Vector2(37, 42)
+scale = Vector2(0.355295, 0.355295)
+texture = ExtResource("67")
+
+
+
+[node name="UnrankedBanner" type="Sprite2D" parent="CurrentStats" unique_id=804618218]
+show_behind_parent = true
+position = Vector2(965, 502)
+scale = Vector2(0.639385, 0.611111)
+texture = ExtResource("189")
+
+
+
+[node name="Unranked" type="Label" parent="CurrentStats" unique_id=301306270]
+offset_left = 870.0
+offset_top = 489.0
+offset_right = 1056.0
+offset_bottom = 521.0
+grow_horizontal = 2
+pivot_offset = Vector2(92, 12)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = "Unranked"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_Unranked"
+
+
+
+[node name="LeagueEmblem" parent="CurrentStats" unique_id=1371642843 instance=ExtResource("87")]
+visible = false
+position = Vector2(964, 528)
+
+
+
+[node name="Rank" type="Label" parent="CurrentStats" unique_id=977295937]
+visible = false
+offset_left = 926.0
+offset_top = 507.0
+offset_right = 1001.0
+offset_bottom = 539.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_207")
+theme_override_font_sizes/font_size = 25
+text = "39"
+horizontal_alignment = 1
+
+
+
+[node name="CustomRulesIcon" parent="CurrentStats" unique_id=1727906979 instance=ExtResource("152")]
+offset_left = 935.0
+offset_top = 536.0
+offset_right = 992.0
+offset_bottom = 593.0
+
+
+
+[connection signal="pressed" from="HideUIButton" to="HideUIButton" method="toggleUI"]

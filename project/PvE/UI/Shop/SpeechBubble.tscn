@@ -1,0 +1,583 @@
+[gd_scene format=3 uid="uid://hrybcesk1aao"]
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+
+
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
+
+
+
+
+
+
+[ext_resource type="Script" uid="uid://phvtoud7yg0a" path="res://PvE/UI/Common/Textbox.gd" id="83"]
+
+
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://nm3kd5t1y46h" path="res://Art/Assets/Shop/Shopkeeper/Speechbubble1.png" id="84"]
+
+
+
+
+
+
+[ext_resource type="Script" uid="uid://wwy1n6qvnw4" path="res://PvE/UI/Shop/SpeechBubble.gd" id="85"]
+
+
+
+
+
+
+[ext_resource type="RichTextEffect" path="res://PvE/UI/Feedback/RiseUpTextEffect.tres" id="86"]
+
+
+
+
+
+
+[ext_resource type="AudioStream" uid="uid://d0r8rfguohu6w" path="res://Audio/Sound/Furcifer/Meow_single4.ogg" id="112"]
+
+
+
+
+
+
+[ext_resource type="AudioStream" uid="uid://bl0p8w36vbw4j" path="res://Audio/Sound/Furcifer/Meow_single1.ogg" id="113"]
+
+
+
+
+
+
+[ext_resource type="AudioStream" uid="uid://ce2wt5rq4yqs6" path="res://Audio/Sound/Furcifer/Meow_single2.ogg" id="114"]
+
+
+
+
+
+
+[ext_resource type="AudioStream" uid="uid://b4v5xib0yvxdh" path="res://Audio/Sound/Furcifer/Meow_single3.ogg" id="115"]
+
+
+
+
+
+
+[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
+
+
+
+
+
+
+[ext_resource type="Script" uid="uid://uaf63eiohg0j" path="res://PvE/UI/Inventory/GridStorage.gd" id="194"]
+
+
+
+
+
+
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="235"]
+
+
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://c2rr1fw4lj8hh" path="res://PvE/UI/Common/YellowDot.png" id="262"]
+
+
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://cyphw3dnpxm4k" path="res://PvE/UI/Common/ExclamationMark1.png" id="263"]
+
+
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bh230x6i51sus" path="res://PvE/UI/Common/Checkmark.png" id="264"]
+
+
+
+
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+
+
+
+
+[sub_resource type="FontVariation" id="121"]
+base_font = ExtResource("27")
+spacing_top = -1
+spacing_bottom = -1
+script = ExtResource("LegacyFontMigration")
+size = 25
+use_mipmaps = true
+
+
+
+
+
+
+[sub_resource type="FontVariation" id="194"]
+base_font = ExtResource("23")
+spacing_top = -1
+spacing_bottom = -1
+script = ExtResource("LegacyFontMigration")
+size = 25
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+use_mipmaps = true
+
+
+
+
+
+
+[sub_resource type="Animation" id="122"]
+resource_name = "Hide"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2.14355, 0.5),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+
+
+
+
+
+
+[sub_resource type="Animation" id="124"]
+resource_name = "RESET"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(0.5),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+
+
+
+
+
+[sub_resource type="Animation" id="123"]
+resource_name = "Show"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
+}
+
+
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_egpst"]
+_data = {
+&"Hide": SubResource("122"),
+&"RESET": SubResource("124"),
+&"Show": SubResource("123")
+}
+
+
+
+
+
+
+[sub_resource type="Animation" id="397"]
+resource_name = "Check"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Check:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.4),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1.5, 1.5), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Line:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Dot:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Check:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Check/Checkmark:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.7),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1), Color(1, 1, 1, 1)]
+}
+
+
+
+
+
+
+[sub_resource type="Animation" id="391"]
+resource_name = "Idle"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.51799, 0.87598, 1.24755),
+"transitions": PackedFloat32Array(1, -2, -2, -2),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, -30), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Dot:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.516516, 0.87598, 1.2506, 1.32686, 1.61382),
+"transitions": PackedFloat32Array(-2, 1, -2, 2, 0.5, -2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 0.7), Vector2(1.5, 0.7), Vector2(0.607, 1.3), Vector2(1, 1), Vector2(1.3, 0.8), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Line:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.00610051, 0.396533, 0.533794, 0.899825, 1.24755, 1.33601, 1.59223),
+"transitions": PackedFloat32Array(-2, -2, -2, -2, 0.5, -2, -2),
+"update": 0,
+"values": [Vector2(0, -55), Vector2(0, -40), Vector2(0, -40), Vector2(0, -110), Vector2(0, -50), Vector2(0, -40), Vector2(0, -55)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Line:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.00610051, 0.396533, 0.896774, 1.25365, 1.34211, 1.61053),
+"transitions": PackedFloat32Array(-2, -2, 2, 0.5, -2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 0.8), Vector2(0.8, 1.2), Vector2(1, 1), Vector2(1.15, 0.9), Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+
+
+
+
+[sub_resource type="Animation" id="392"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Dot:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Line:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -55)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Line:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Check:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+
+
+
+
+[sub_resource type="Animation" id="393"]
+resource_name = "Show"
+
+
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_slqfk"]
+_data = {
+&"Check": SubResource("397"),
+&"Idle": SubResource("391"),
+&"RESET": SubResource("392"),
+&"Show": SubResource("393")
+}
+
+
+
+
+
+
+[sub_resource type="RectangleShape2D" id="262"]
+size = Vector2(1113.588, 1608.29)
+
+
+
+
+
+
+[node name="SpeechBubble" type="Node2D" unique_id=254935309]
+unique_name_in_owner = true
+z_index = 33
+position = Vector2(1555, 824)
+scale = Vector2(1e-05, 1e-05)
+script = ExtResource("85")
+
+
+
+
+
+
+[node name="Speechbubble" type="Sprite2D" parent="." unique_id=986096367]
+position = Vector2(-541, -119)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("84")
+centered = false
+
+
+
+
+
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=592367478]
+clip_contents = false
+offset_left = -500.0
+offset_top = -86.0
+offset_right = -83.0
+offset_bottom = 50.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = SubResource("121")
+theme_override_fonts/bold_font = SubResource("194")
+theme_override_fonts/italics_font = ExtResource("235")
+theme_override_font_sizes/normal_font_size = 25
+theme_override_font_sizes/bold_font_size = 25
+bbcode_enabled = true
+text = "line1
+line2
+line3
+line4"
+fit_content = true
+scroll_active = false
+custom_effects = [ExtResource("86")]
+script = ExtResource("83")
+sounds = Array[AudioStream]([ExtResource("113"), ExtResource("114"), ExtResource("115"), ExtResource("112")])
+
+
+
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=572901328]
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_egpst")
+
+
+
+
+
+
+[node name="Tutorial" type="Node2D" parent="." unique_id=577561061]
+visible = false
+position = Vector2(-521, -48)
+scale = Vector2(0.7, 0.7)
+
+
+
+
+
+
+[node name="Line" type="Sprite2D" parent="Tutorial" unique_id=161960512]
+position = Vector2(0, -55)
+texture = ExtResource("263")
+
+
+
+
+
+
+[node name="Dot" type="Sprite2D" parent="Tutorial" unique_id=1056028058]
+texture = ExtResource("262")
+offset = Vector2(0, -8.57141)
+
+
+
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Tutorial" unique_id=209305392]
+libraries/ = SubResource("AnimationLibrary_slqfk")
+
+
+
+
+
+
+[node name="Check" type="Node2D" parent="Tutorial" unique_id=1034314058]
+visible = false
+position = Vector2(5.71423, -54.2858)
+
+
+
+
+
+
+[node name="Checkmark" type="Sprite2D" parent="Tutorial/Check" unique_id=686967553]
+position = Vector2(-1.42859, 1.42859)
+scale = Vector2(1.98214, 1.98214)
+texture = ExtResource("264")

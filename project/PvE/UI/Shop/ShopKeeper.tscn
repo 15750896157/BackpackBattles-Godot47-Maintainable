@@ -1,0 +1,494 @@
+[gd_scene format=3 uid="uid://cgvgbq5yo7scc"]
+
+[ext_resource type="Texture2D" uid="uid://wj8ry6wtgctf" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper.png" id="4"]
+
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://b0qmhs5cumgu2" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Tail.png" id="13"]
+
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://blwb7pgiusqys" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Arm.png" id="14"]
+
+
+
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+
+
+
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
+
+
+
+
+
+[ext_resource type="Script" uid="uid://duhujpqwo7qfb" path="res://PvE/UI/Shop/Shopkeeper.gd" id="93"]
+
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dn1lwwajnsbtg" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Head.png" id="153"]
+
+
+
+
+
+[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://PvE/UI/Common/FocusGrabbingButton.gd" id="158"]
+
+
+
+
+
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="235"]
+
+
+
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+
+
+
+[sub_resource type="Animation" id="104"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperTail2:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+
+
+
+
+[sub_resource type="Animation" id="105"]
+resource_name = "Swing"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperTail2:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 4.9),
+"transitions": PackedFloat32Array(-1.41421, -1.41421),
+"update": 0,
+"values": [0.0, -59.8]
+}
+
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g7wym"]
+_data = {
+&"RESET": SubResource("104"),
+&"Swing": SubResource("105")
+}
+
+
+
+
+
+[sub_resource type="Animation" id="100"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperTail:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+
+
+
+
+[sub_resource type="Animation" id="101"]
+resource_name = "Swing"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperTail:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 4.8),
+"transitions": PackedFloat32Array(-1.27456, -1.27456),
+"update": 0,
+"values": [0.0, -54.0]
+}
+
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cp5sj"]
+_data = {
+&"RESET": SubResource("100"),
+&"Swing": SubResource("101")
+}
+
+
+
+
+
+[sub_resource type="Animation" id="102"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperTail3:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+
+
+
+
+[sub_resource type="Animation" id="103"]
+resource_name = "Swing"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperTail3:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 4.8),
+"transitions": PackedFloat32Array(-1.36604, -1.36604),
+"update": 0,
+"values": [0.0, -60.0]
+}
+
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lqebf"]
+_data = {
+&"RESET": SubResource("102"),
+&"Swing": SubResource("103")
+}
+
+
+
+
+
+[sub_resource type="Animation" id="106"]
+resource_name = "Idle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperHead:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [0.0, 3.1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShopkeeperArm:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5.8),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [0.0, 8.0]
+}
+
+
+
+
+
+[sub_resource type="Animation" id="107"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopkeeperHead:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShopkeeperArm:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_luvv7"]
+_data = {
+&"Idle": SubResource("106"),
+&"RESET": SubResource("107")
+}
+
+
+
+
+
+[sub_resource type="FontVariation" id="258"]
+base_font = ExtResource("23")
+spacing_top = -5
+script = ExtResource("LegacyFontMigration")
+size = 25
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+
+
+[sub_resource type="Animation" id="13"]
+resource_name = "IdleOpen"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChompDust:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+
+
+
+
+[sub_resource type="Animation" id="14"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChompDust:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Chestnut/Top:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2.63902),
+"update": 0,
+"values": [0.0]
+}
+
+
+
+
+
+[node name="ShopKeeper" type="Node2D" unique_id=1354802380]
+z_index = 2
+position = Vector2(1619, 1034)
+script = ExtResource("93")
+
+
+
+
+
+[node name="Shopkeeper" type="Sprite2D" parent="." unique_id=191938007]
+position = Vector2(24, -97)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("4")
+
+
+
+
+
+[node name="ShopkeeperHead" type="Sprite2D" parent="Shopkeeper" unique_id=547573527]
+position = Vector2(-19.9996, -140)
+scale = Vector2(0.966733, 0.966732)
+texture = ExtResource("153")
+offset = Vector2(-3.49448, -66.1259)
+
+
+
+
+
+[node name="ShopkeeperTail2" type="Sprite2D" parent="Shopkeeper" unique_id=1090432639]
+self_modulate = Color(0.929412, 0.85098, 0.85098, 1)
+show_behind_parent = true
+position = Vector2(-21.3949, 8.7486)
+scale = Vector2(1.10279, 1.10279)
+texture = ExtResource("13")
+offset = Vector2(87.0692, -89.0427)
+
+
+
+
+
+[node name="Tail" type="AnimationPlayer" parent="Shopkeeper/ShopkeeperTail2" unique_id=745992121]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_g7wym")
+autoplay = &"Swing"
+
+
+
+
+
+[node name="ShopkeeperTail" type="Sprite2D" parent="Shopkeeper" unique_id=608554518]
+self_modulate = Color(0.941176, 0.913725, 0.913725, 1)
+show_behind_parent = true
+position = Vector2(-19.3526, 37.7375)
+scale = Vector2(1.06873, 1.06873)
+texture = ExtResource("13")
+offset = Vector2(83.216, -84.184)
+
+
+
+
+
+[node name="Tail" type="AnimationPlayer" parent="Shopkeeper/ShopkeeperTail" unique_id=437734167]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_cp5sj")
+autoplay = &"Swing"
+
+
+
+
+
+[node name="ShopkeeperTail3" type="Sprite2D" parent="Shopkeeper" unique_id=36272263]
+show_behind_parent = true
+position = Vector2(-31.9318, 5.8058)
+texture = ExtResource("13")
+offset = Vector2(83.216, -84.184)
+
+
+
+
+
+[node name="Tail" type="AnimationPlayer" parent="Shopkeeper/ShopkeeperTail3" unique_id=1415627955]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_lqebf")
+autoplay = &"Swing"
+
+
+
+
+
+[node name="ShopkeeperArm" type="Sprite2D" parent="Shopkeeper" unique_id=202096708]
+show_behind_parent = true
+position = Vector2(-60.9608, -99.666)
+texture = ExtResource("14")
+offset = Vector2(-64.8312, 15.4819)
+
+
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Shopkeeper" unique_id=1357009606]
+libraries/ = SubResource("AnimationLibrary_luvv7")
+autoplay = &"Idle"
+
+
+
+
+
+[node name="FurciferButton" type="Button" parent="." unique_id=1649944910]
+offset_left = -54.0
+offset_top = -299.0
+offset_right = 83.0
+offset_bottom = 26.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = ExtResource("92")
+flat = true
+script = ExtResource("158")
+
+
+
+
+
+[node name="ShopKeeperHint" type="RichTextLabel" parent="." unique_id=2067907432 groups=["Tooltip"]]
+visible = false
+clip_contents = false
+offset_left = -107.0
+offset_top = -106.0
+offset_right = 112.0
+offset_bottom = 2.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = SubResource("258")
+theme_override_fonts/italics_font = ExtResource("235")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "Click me
+for valuabletips!"
+fit_content = true
+scroll_active = false
+meta_underlined = false

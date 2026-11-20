@@ -7,8 +7,8 @@ static func _ready(subject: Receiver) -> void :
 		subject.call_deferred("_pve_refresh_title")
 	subject.get_node("%Quit").visible = not OS.has_feature("web")
 
-	subject.get_node("%RankedBannerHovered").hide()
-	subject.get_node("%UnrankedBannerHovered").hide()
+	subject.get_node("TitleNode/RankedBannerHovered").hide()
+	subject.get_node("TitleNode/UnrankedBannerHovered").hide()
 
 	Game.connect("continue_loaded", Callable(subject, "checkSavedRunState"))
 	Game.connect("return_to_title", Callable(subject, "checkSavedRunState"))
@@ -262,9 +262,9 @@ static func _pve_refresh_continue(subject: Receiver):
 	subject.rankedButton.disabled = false
 	subject.unrankedButton.disabled = false
 	if valid:
-		subject.get_node("%LastRunRound").text = str((int(saved.data.act) - 1) * 5 + int(saved.data.step))
-		subject.get_node("%LastRunWins").text = str(saved.data.get("logs", []).filter(func(entry): return int(entry.get("winner", 1)) == 0).size())
-		subject.get_node("%LastRunTries").text = str(int(ceil(float(saved.data.health))))
+		subject.get_node("TitleNode/Continue/LastRunRound").text = str((int(saved.data.act) - 1) * 5 + int(saved.data.step))
+		subject.get_node("TitleNode/Continue/LastRunWins").text = str(saved.data.get("logs", []).filter(func(entry): return int(entry.get("winner", 1)) == 0).size())
+		subject.get_node("TitleNode/Continue/LastRunTries").text = str(int(ceil(float(saved.data.health))))
 	subject.updateClassNodes(Game.curClass, false)
 
 static func updateLocale(subject: Receiver):

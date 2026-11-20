@@ -1,0 +1,372 @@
+[gd_scene format=3 uid="uid://fttbmltqfh8h7"]
+
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
+
+
+
+
+[ext_resource type="Script" uid="uid://citm7h2d08nsr" path="res://PvE/UI/Title/EditModeButtons.gd" id="285"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://cly5g1i512kmb" path="res://PvE/UI/Title/EditModeBags.png" id="287"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://db3lf2bjdv2ms" path="res://PvE/UI/Title/EditModeItems.png" id="288"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bmknel5bqn6al" path="res://PvE/UI/Title/EditModeBags_hovered.png" id="289"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://4f1eg7x7xyrw" path="res://PvE/UI/Title/EditModeItems_hovered.png" id="290"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://iv0h6b6dj5dj" path="res://PvE/UI/Common/ArrowButton_up2_hovered.png" id="291"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://buqi57avtialq" path="res://PvE/UI/Common/ArrowButton_up2.png" id="292"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://kgyipd5hrp05" path="res://PvE/UI/Common/Undo.png" id="293"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://c835eyv844o1h" path="res://PvE/UI/Shop/PushToStorage_hovered.png" id="294"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bh422kvufntkf" path="res://PvE/UI/Common/Undo_hovered.png" id="295"]
+
+
+
+
+[ext_resource type="Script" uid="uid://qtu8mf5cadbn" path="res://PvE/UI/Shop/ShopToolbar.gd" id="296"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://qsq7tb83u0j5" path="res://PvE/UI/Shop/ToolbarPanel.png" id="297"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bwiqia65eou0u" path="res://Art/Assets/Patch3.png" id="298"]
+
+
+
+
+[ext_resource type="Material" path="res://Art/Items/Particles/SubtractiveCanvasItem.material" id="299"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dd8yhfybnqma2" path="res://PvE/UI/Title/EditModeDefault.png" id="300"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bpc02kg2gv3vw" path="res://PvE/UI/Title/EditModeDefault_hovered.png" id="301"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dty7rpx2i2ibd" path="res://PvE/UI/Shop/PushToStorage.png" id="302"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dotuwlq64a2oi" path="res://PvE/UI/Common/Undo_disabled.png" id="303"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://cbb5ada23nxv" path="res://PvE/UI/Inventory/GridStorage_hovered.png" id="306"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dgx8m1ssv82ub" path="res://PvE/UI/Inventory/GridStorage.png" id="307"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://ducg2muy3h3wk" path="res://PvE/UI/Inventory/GridStorage_pressed.png" id="308"]
+
+
+
+
+[sub_resource type="Animation" id="452"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+
+
+
+[sub_resource type="Animation" id="451"]
+resource_name = "Tutorial"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.3, 1.3, 1.3, 1)]
+}
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_32r38"]
+_data = {
+&"RESET": SubResource("452"),
+&"Tutorial": SubResource("451")
+}
+
+
+
+
+[node name="Toolbar" type="Node2D" unique_id=855441187]
+z_index = -50
+position = Vector2(581, 1041)
+script = ExtResource("296")
+
+
+
+
+[node name="Panel" type="NinePatchRect" parent="." unique_id=2132583948]
+offset_left = -189.0
+offset_top = -33.0
+offset_right = 115.0
+offset_bottom = 155.0
+texture = ExtResource("297")
+patch_margin_right = 80
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+
+
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="." unique_id=461992155]
+modulate = Color(0.054902, 0.0588235, 0.0627451, 1)
+material = ExtResource("299")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -129.0
+offset_top = 27.0
+offset_right = -9.0
+offset_bottom = 70.0
+texture = ExtResource("298")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+
+
+
+[node name="ToolbarButton" type="TextureButton" parent="." unique_id=42135487]
+offset_left = -173.0
+offset_top = -21.0
+offset_right = -125.0
+offset_bottom = 16.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("292")
+texture_pressed = ExtResource("291")
+texture_hover = ExtResource("291")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+
+
+[node name="UndoButton" type="TextureButton" parent="." unique_id=1330300816]
+offset_left = -119.0
+offset_top = 22.0
+offset_right = -74.0
+offset_bottom = 72.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("293")
+texture_hover = ExtResource("295")
+texture_disabled = ExtResource("303")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_undo"
+tooltipOffset = Vector2(0, -20)
+showTooltipWhenDisabled = true
+
+
+
+
+[node name="RedoButton" type="TextureButton" parent="." unique_id=1951425701]
+offset_left = -63.0
+offset_top = 22.0
+offset_right = -18.0
+offset_bottom = 72.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("293")
+texture_hover = ExtResource("295")
+texture_disabled = ExtResource("303")
+ignore_texture_size = true
+stretch_mode = 5
+flip_h = true
+script = ExtResource("160")
+tooltipKey = "KEYBIND_redo"
+tooltipOffset = Vector2(0, -20)
+showTooltipWhenDisabled = true
+
+
+
+
+[node name="PushToStorageButton" type="TextureButton" parent="." unique_id=868138674]
+offset_left = 3.0
+offset_top = 22.0
+offset_right = 53.0
+offset_bottom = 72.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("302")
+texture_hover = ExtResource("294")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "HINT_PushToStorage"
+tooltipOffset = Vector2(0, -20)
+
+
+
+
+[node name="GridStorageButton" type="TextureButton" parent="." unique_id=1258399157]
+offset_left = 27.0
+offset_top = 73.0
+offset_right = 77.0
+offset_bottom = 123.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("307")
+texture_pressed = ExtResource("308")
+texture_hover = ExtResource("306")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "BUTTON_GridStorage"
+tooltipOffset = Vector2(0, -20)
+
+
+
+
+[node name="EditModeButtons" type="Node2D" parent="." unique_id=1105774384]
+position = Vector2(-155, 85)
+script = ExtResource("285")
+
+
+
+
+[node name="NinePatchRect" type="NinePatchRect" parent="EditModeButtons" unique_id=397990279]
+modulate = Color(0.054902, 0.0588235, 0.0627451, 1)
+material = ExtResource("299")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = -11.0
+offset_right = 169.0
+offset_bottom = 38.0
+texture = ExtResource("298")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 7
+patch_margin_bottom = 9
+
+
+
+
+[node name="Default" type="TextureButton" parent="EditModeButtons" unique_id=1551893898]
+offset_left = 11.0
+offset_top = -12.0
+offset_right = 61.0
+offset_bottom = 38.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("300")
+texture_pressed = ExtResource("301")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_edit_all"
+tooltipOffset = Vector2(0, -20)
+
+
+
+
+[node name="BagLayer" type="TextureButton" parent="EditModeButtons" unique_id=1548462973]
+offset_left = 63.0
+offset_top = -12.0
+offset_right = 113.0
+offset_bottom = 38.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("287")
+texture_pressed = ExtResource("289")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_edit_bags"
+tooltipOffset = Vector2(0, -20)
+
+
+
+
+[node name="ItemLayer" type="TextureButton" parent="EditModeButtons" unique_id=478399514]
+offset_left = 113.0
+offset_top = -12.0
+offset_right = 163.0
+offset_bottom = 38.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("288")
+texture_pressed = ExtResource("290")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+tooltipKey = "KEYBIND_edit_items"
+tooltipOffset = Vector2(0, -20)
+
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1381156348]
+libraries/ = SubResource("AnimationLibrary_32r38")

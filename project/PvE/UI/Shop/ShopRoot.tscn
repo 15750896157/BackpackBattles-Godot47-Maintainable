@@ -1,208 +1,416 @@
-[gd_scene format=3 uid="uid://o88xsc19cab66"]
+[gd_scene format=3 uid="uid://dn1c06bimnowv"]
 
 [ext_resource type="PackedScene" path="res://PvE/UI/Shop/ShopOffer.tscn" id="1"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://bygfklwjdevl6" path="res://Code/Core/Shop.gd" id="2"]
 
-[ext_resource type="Texture2D" uid="uid://wj8ry6wtgctf" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper.png" id="4"]
+
+
+
+
 
 [ext_resource type="Script" uid="uid://dilxsoyf7jrau" path="res://PvE/UI/Combat/Hud/StartCombatButton.gd" id="5"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://cqqcwg08rg7fb" path="res://Art/Assets/Decoration/Vase.png" id="6"]
+
+
+
+
+
 
 [ext_resource type="Material" path="res://Art/Shader/StartButtonParticles.material" id="7"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://uy61wstnacts" path="res://Art/Assets/Light/ShopLight.png" id="12"]
 
-[ext_resource type="Texture2D" uid="uid://b0qmhs5cumgu2" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Tail.png" id="13"]
 
-[ext_resource type="Texture2D" uid="uid://blwb7pgiusqys" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Arm.png" id="14"]
+
+
+
 
 [ext_resource type="Script" uid="uid://dgju3at8nmvet" path="res://PvE/UI/Inventory/Sellbox.gd" id="16"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://b5kvfb2nnhesv" path="res://PvE/UI/Inventory/Storagebox.gd" id="17"]
+
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://belp2xtn4ohxw" path="res://Art/Assets/Shop/Shelf3.png" id="19"]
 
+
+
+
+
+
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="20"]
+
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://qxp5sf3cy1r8" path="res://Art/Assets/Shop/Sign1.png" id="21"]
 
-[ext_resource type="Script" uid="uid://cfkbvlegitxff" path="res://PvE/UI/Shop/RerollRope.gd" id="22"]
+
+
+
+
 
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
 
-[ext_resource type="Texture2D" uid="uid://teve64bp60d5" path="res://Art/Assets/Shop/Rope.png" id="24"]
 
-[ext_resource type="Texture2D" uid="uid://b2wc3rrkgrsy6" path="res://Art/Assets/Shop/Rope_hovered.png" id="25"]
 
-[ext_resource type="Texture2D" uid="uid://doqp0hgxk7g3h" path="res://Art/Assets/Shop/Storagebox.png" id="26"]
+
+
 
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://b6y5wgl02kdfb" path="res://Art/Assets/Banner1.png" id="30"]
 
-[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Art/Assets/Particles/Dust1.png" id="32"]
+
+
+
+
 
 [ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://PvE/UI/ItemLibrary/ItemLibraryButton.gd" id="39"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://cwjakn3ae678c" path="res://Art/Assets/Shop/Sign1_progress.png" id="40"]
+
+
+
+
+
 
 [ext_resource type="PackedScene" path="res://Art/Assets/Decoration/Shelf.tscn" id="42"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://dnwxewy8uyxda" path="res://Art/Assets/Decoration/Lamp.png" id="43"]
+
+
+
+
+
 
 [ext_resource type="Script" uid="uid://bqc8rskexqkem" path="res://Art/Assets/Decoration/Lamp.gd" id="44"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://bl88meprsvp38" path="res://Art/Assets/Decoration/Flower.png" id="46"]
+
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://k4gkbyr7htv1" path="res://Art/Assets/Decoration/Umbrella.png" id="48"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://bhnsu4wsegi6i" path="res://Art/Assets/Decoration/Basket.png" id="49"]
+
+
+
+
+
 
 [ext_resource type="Script" uid="uid://bj5o16777dun5" path="res://Art/Assets/Decoration/FlowerVase.gd" id="50"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://cdl0vjitld7ip" path="res://Art/Assets/Decoration/UmbrellaBasket.gd" id="51"]
+
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://cll8uvwt5olq3" path="res://Art/Assets/Speckles.jpg" id="63"]
 
+
+
+
+
+
 [ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="64"]
 
-[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Art/Assets/shadow.png" id="77"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://do1fve2aungww" path="res://PvE/UI/Tooltips/TooltipBase2.png" id="78"]
+
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://6u55yi7bnkql" path="res://Art/Assets/Shop/Sign2.png" id="82"]
 
-[ext_resource type="Script" uid="uid://phvtoud7yg0a" path="res://PvE/UI/Common/Textbox.gd" id="83"]
 
-[ext_resource type="Texture2D" uid="uid://nm3kd5t1y46h" path="res://Art/Assets/Shop/Shopkeeper/Speechbubble1.png" id="84"]
+
+
+
 
 [ext_resource type="Script" uid="uid://wwy1n6qvnw4" path="res://PvE/UI/Shop/SpeechBubble.gd" id="85"]
 
-[ext_resource type="RichTextEffect" path="res://PvE/UI/Feedback/RiseUpTextEffect.tres" id="86"]
+
+
+
+
 
 [ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://duhujpqwo7qfb" path="res://PvE/UI/Shop/Shopkeeper.gd" id="93"]
 
-[ext_resource type="AudioStream" uid="uid://d0r8rfguohu6w" path="res://Audio/Sound/Furcifer/Meow_single4.ogg" id="112"]
 
-[ext_resource type="AudioStream" uid="uid://bl0p8w36vbw4j" path="res://Audio/Sound/Furcifer/Meow_single1.ogg" id="113"]
 
-[ext_resource type="AudioStream" uid="uid://ce2wt5rq4yqs6" path="res://Audio/Sound/Furcifer/Meow_single2.ogg" id="114"]
 
-[ext_resource type="AudioStream" uid="uid://b4v5xib0yvxdh" path="res://Audio/Sound/Furcifer/Meow_single3.ogg" id="115"]
 
-[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
 
 [ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
 
-[ext_resource type="Texture2D" uid="uid://dg0wiyu5k5stx" path="res://PvE/UI/Common/RedArrow.png" id="132"]
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Art/Assets/Particles/GlowingDot.png" id="134"]
 
-[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Art/Shader/SmoothFadeGradient.tres" id="135"]
+
+
+
+
 
 [ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
 
-[ext_resource type="Texture2D" uid="uid://xunrrwyavs7s" path="res://Art/Assets/Chestnut/Bottom_back.png" id="140"]
 
-[ext_resource type="Script" uid="uid://2rxwgbgtiq2u" path="res://Code/Utility/StartButtonArea.gd" id="148"]
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://PvE/UI/ItemLibrary/ItemLibraryButton.png" id="149"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://dhw4evbd6yifu" path="res://Art/Assets/Patch1.png" id="150"]
 
-[ext_resource type="Texture2D" uid="uid://dn1lwwajnsbtg" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Head.png" id="153"]
 
-[ext_resource type="BitMap" uid="uid://c3g1fjipvgfws" path="res://Art/Assets/Shop/Rope_Clickarea.png" id="157"]
 
-[ext_resource type="Script" uid="uid://brs2vbyqmnrtd" path="res://PvE/UI/Common/FocusGrabbingButton.gd" id="158"]
+
+
 
 [ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://ddv7fc4ulucov" path="res://PvE/UI/Common/DraggableScrollContainer.gd" id="163"]
 
-[ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Art/Items/Exclusive/Animations/GooglyEye.gd" id="170"]
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://d4a5m6d2lcm4a" path="res://PvE/UI/Common/SmallArrow.png" id="175"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+
+
+
 
 [ext_resource type="Script" uid="uid://uaf63eiohg0j" path="res://PvE/UI/Inventory/GridStorage.gd" id="194"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://PvE/UI/Inventory/AnvilButton.png" id="196"]
+
+
+
+
+
 
 [ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://PvE/UI/Title/RecipeBookButton.gd" id="197"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://c0jix5lpfg60i" path="res://PvE/UI/Shop/RarityHint.gd" id="217"]
+
+
+
+
+
 
 [ext_resource type="Script" uid="uid://oumlpyrftra6" path="res://PvE/UI/Title/PaintingCanvas.gd" id="218"]
 
+
+
+
+
+
 [ext_resource type="Texture2D" uid="uid://k10q48jgqgr1" path="res://PvE/UI/Common/DashedArrow2.png" id="221"]
 
-[ext_resource type="Script" uid="uid://vwxjgab4m2py" path="res://PvE/UI/Inventory/StorageShakeButton.gd" id="222"]
 
-[ext_resource type="Script" uid="uid://bs38xk6s5nus0" path="res://Code/Utility/ItemBoundChecker.gd" id="227"]
 
-[ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Art/Items/Exclusive/Sprites/Pupil2.png" id="231"]
 
-[ext_resource type="PackedScene" path="res://PvE/UI/Shop/RerollRopeTag.tscn" id="233"]
+
 
 [ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="235"]
 
-[ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Art/Assets/Chestnut/Eye.png" id="237"]
 
-[ext_resource type="Texture2D" uid="uid://c88u5u8ss7b23" path="res://Art/Assets/Chestnut/Top_front.png" id="238"]
 
-[ext_resource type="Texture2D" uid="uid://ba21tmupdvdxn" path="res://Art/Assets/Chestnut/Bottom_front.png" id="239"]
 
-[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="253"]
+
 
 [ext_resource type="Texture2D" uid="uid://c2rr1fw4lj8hh" path="res://PvE/UI/Common/YellowDot.png" id="262"]
 
-[ext_resource type="Texture2D" uid="uid://cyphw3dnpxm4k" path="res://PvE/UI/Common/ExclamationMark1.png" id="263"]
 
-[ext_resource type="Texture2D" uid="uid://bh230x6i51sus" path="res://PvE/UI/Common/Checkmark.png" id="264"]
 
-[ext_resource type="Texture2D" uid="uid://1pwg5fm8pmbd" path="res://Art/Assets/Chestnut/ThinkBubble1.png" id="267"]
 
-[ext_resource type="Texture2D" uid="uid://bfvd2vcxbcxyh" path="res://Art/Assets/Chestnut/ThinkBubble2.png" id="268"]
 
-[ext_resource type="Script" uid="uid://diqa088xtlced" path="res://PvE/UI/Shop/ChestnutTrade.gd" id="269"]
-
-[ext_resource type="Texture2D" uid="uid://cmw14ooagfuuu" path="res://Art/Assets/Chestnut/Arrow.png" id="270"]
-
-[ext_resource type="Texture2D" uid="uid://bl71v7dms2dfg" path="res://Art/Assets/Cloud.png" id="271"]
-
-[ext_resource type="Script" uid="uid://dgchvlvcrua0k" path="res://Code/Utility/AutoHideCPUParticles.gd" id="272"]
-
-[ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Art/Assets/Chestnut/Top_teeth.png" id="274"]
-
-[ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Art/Assets/Chestnut/Tongue.png" id="275"]
 
 [ext_resource type="Texture2D" uid="uid://inu0rlm2tq75" path="res://PvE/UI/Shop/ChartRect.png" id="277"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://brk8etnil5fil" path="res://PvE/UI/Shop/ShopRarityChart.gd" id="278"]
+
+
+
+
+
 
 [ext_resource type="Texture2D" uid="uid://ekncntee7c5g" path="res://Art/Shader/SmoothFadeInGradient.tres" id="282"]
 
+
+
+
+
+
 [ext_resource type="PackedScene" path="res://PvE/UI/Inventory/GridStorageEntry.tscn" id="305"]
+
+
+
+
+
 
 [ext_resource type="Theme" uid="uid://dehhsf5k62law" path="res://PvE/UI/Common/ScrollbarTheme.tres" id="309"]
 
+
+
+
+
+
 [ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
 
-[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_148.tres" id="m7_shared_148"]
+
+
+
+
 
 [ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_17.tres" id="m7_shared_17"]
 
-[ext_resource type="GradientTexture1D" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedGradientTexture1D_267.tres" id="m7_shared_267"]
 
-[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_81.tres" id="m7_shared_81"]
+
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/Sellbox.tscn" id="split_Sellbox"]
+
+
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/Reroll.tscn" id="split_Reroll"]
+
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/Storagebox.tscn" id="split_Storagebox"]
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/ShopKeeper.tscn" id="split_ShopKeeper"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/SpeechBubble.tscn" id="split_SpeechBubble"]
 
 [sub_resource type="Shader" id="288"]
 code = "shader_type canvas_item;
@@ -220,9 +428,19 @@ void fragment() {
 	
 }"
 
+
+
+
+
+
 [sub_resource type="ShaderMaterial" id="289"]
 shader = SubResource("288")
 shader_parameter/overlayTexture = ExtResource("63")
+
+
+
+
+
 
 [sub_resource type="Animation" id="406"]
 length = 0.001
@@ -238,6 +456,11 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
+
+
+
+
+
 
 [sub_resource type="Animation" id="407"]
 resource_name = "Tutorial"
@@ -256,11 +479,21 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1), Color(1.3, 1.3, 1.3, 1)]
 }
 
+
+
+
+
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p2rcj"]
 _data = {
 &"RESET": SubResource("406"),
 &"Tutorial": SubResource("407")
 }
+
+
+
+
+
 
 [sub_resource type="FontVariation" id="16"]
 base_font = ExtResource("20")
@@ -270,6 +503,11 @@ size = 38
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 use_mipmaps = true
 
+
+
+
+
+
 [sub_resource type="FontVariation" id="356"]
 base_font = ExtResource("20")
 spacing_top = -2
@@ -278,6 +516,11 @@ script = ExtResource("LegacyFontMigration")
 size = 33
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
+
+
+
+
+
 [sub_resource type="FontVariation" id="368"]
 base_font = ExtResource("20")
 spacing_top = -10
@@ -285,6 +528,11 @@ script = ExtResource("LegacyFontMigration")
 size = 36
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 use_mipmaps = true
+
+
+
+
+
 
 [sub_resource type="Shader" id="390"]
 code = "shader_type canvas_item;
@@ -299,9 +547,19 @@ void fragment() {
 	COLOR.a *= step(relativeAngle, revealState);
 }"
 
+
+
+
+
+
 [sub_resource type="ShaderMaterial" id="44"]
 shader = SubResource("390")
 shader_parameter/revealState = -1.0
+
+
+
+
+
 
 [sub_resource type="Animation" id="45"]
 resource_name = "Pulse"
@@ -318,6 +576,11 @@ tracks/0/keys = {
 "update": 0,
 "values": [Color(1, 0.945098, 0.109804, 1), Color(2, 1.6, 0.8, 1)]
 }
+
+
+
+
+
 
 [sub_resource type="Animation" id="174"]
 length = 0.001
@@ -405,6 +668,11 @@ tracks/6/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
+
+
+
+
+
 
 [sub_resource type="Animation" id="175"]
 resource_name = "TurnAround"
@@ -546,6 +814,11 @@ tracks/10/keys = {
 }]
 }
 
+
+
+
+
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jrxrb"]
 _data = {
 &"Pulse": SubResource("45"),
@@ -553,11 +826,21 @@ _data = {
 &"TurnAround": SubResource("175")
 }
 
+
+
+
+
+
 [sub_resource type="Curve2D" id="454"]
 _data = {
 "points": PackedVector2Array(-37.2618, 0, 37.2618, 0, 148, 20, -12.3331, -7.00747, 12.3331, 7.00747, 198, 38, -13.174, -18.78, 13.174, 18.78, 239, 52, -1.40149, -17.6588, 1.40149, 17.6588, 280, 99, 18.78, -6.16657, -18.78, 6.16657, 228, 159, 19.9012, 0.280299, -19.9012, -0.280299, 148, 180, 16.5376, 3.36359, -16.5376, -3.36359, 66, 158, -0.280299, 18.4997, 0.280299, -18.4997, 17, 99, -15.4164, 13.7346, 15.4164, -13.7346, 58, 50, -12.3331, 10.3711, 12.3331, -10.3711, 99, 38, -17.3785, 1.40149, 17.3785, -1.40149, 146, 19)
 }
 point_count = 11
+
+
+
+
+
 
 [sub_resource type="ParticleProcessMaterial" id="453"]
 lifetime_randomness = 0.26
@@ -573,6 +856,11 @@ scale_min = 0.61
 scale_max = 0.8206
 color_ramp = ExtResource("282")
 
+
+
+
+
+
 [sub_resource type="FontVariation" id="318"]
 base_font = ExtResource("23")
 spacing_top = -5
@@ -581,6 +869,11 @@ size = 28
 outline_size = 3
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
+
+
+
+
+
 [sub_resource type="FontVariation" id="321"]
 base_font = ExtResource("23")
 spacing_top = -5
@@ -588,6 +881,11 @@ script = ExtResource("LegacyFontMigration")
 size = 32
 outline_size = 4
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+
+
 
 [sub_resource type="Animation" id="320"]
 resource_name = "RESET"
@@ -604,6 +902,11 @@ tracks/0/keys = {
 "update": 1,
 "values": [false]
 }
+
+
+
+
+
 
 [sub_resource type="Animation" id="319"]
 resource_name = "Show"
@@ -633,13 +936,28 @@ tracks/1/keys = {
 "values": [true, false]
 }
 
+
+
+
+
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ux031"]
 _data = {
 &"RESET": SubResource("320"),
 &"Show": SubResource("319")
 }
 
+
+
+
+
+
 [sub_resource type="StyleBoxEmpty" id="49"]
+
+
+
+
+
 
 [sub_resource type="Animation" id="50"]
 resource_name = "Click"
@@ -681,6 +999,11 @@ tracks/2/keys = {
 "values": [Vector2(-3, -82)]
 }
 
+
+
+
+
+
 [sub_resource type="Animation" id="51"]
 resource_name = "Click2"
 length = 2.5
@@ -720,6 +1043,11 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(-3, -82)]
 }
+
+
+
+
+
 
 [sub_resource type="Animation" id="52"]
 resource_name = "Click3"
@@ -761,6 +1089,11 @@ tracks/2/keys = {
 "values": [Vector2(-3, -82), Vector2(-3, -350), Vector2(-3, -82)]
 }
 
+
+
+
+
+
 [sub_resource type="Animation" id="448"]
 length = 0.001
 tracks/0/type = "value"
@@ -800,6 +1133,11 @@ tracks/2/keys = {
 "values": [0.0]
 }
 
+
+
+
+
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vg3bn"]
 _data = {
 &"Click": SubResource("50"),
@@ -808,11 +1146,18 @@ _data = {
 &"RESET": SubResource("448")
 }
 
+
+
+
+
+
 [sub_resource type="RectangleShape2D" id="7"]
 size = Vector2(432, 1016)
 
-[sub_resource type="RectangleShape2D" id="325"]
-size = Vector2(752, 426)
+
+
+
+
 
 [sub_resource type="FontVariation" id="277"]
 base_font = ExtResource("20")
@@ -823,307 +1168,18 @@ size = 31
 outline_size = 3
 outline_color = Color(0.27451, 0.211765, 0.14902, 1)
 
+
+
+
+
+
 [sub_resource type="PhysicsMaterial" id="11"]
 friction = 2.0
 
-[sub_resource type="RectangleShape2D" id="291"]
-size = Vector2(1933, 1844)
 
-[sub_resource type="RectangleShape2D" id="308"]
-size = Vector2(432, 181)
 
-[sub_resource type="Animation" id="422"]
-resource_name = "Landing1"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, -10), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
 
-[sub_resource type="Animation" id="424"]
-resource_name = "Landing2"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, -10), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [0.0, 3.0, 0.0]
-}
 
-[sub_resource type="Animation" id="425"]
-resource_name = "Landing3"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, -10), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [0.0, -3.0, 0.0]
-}
-
-[sub_resource type="Animation" id="423"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="426"]
-resource_name = "ShakeCenter"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0487392, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, 5), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(-2),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="429"]
-resource_name = "ShakeCenterStrong"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.051587, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, 2), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(-2),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="427"]
-resource_name = "ShakeLeft"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, 5), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [0.0, -0.7, 0.0]
-}
-
-[sub_resource type="Animation" id="430"]
-resource_name = "ShakeLeftStrong"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, 0), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [0.0, -1.5, 0.0]
-}
-
-[sub_resource type="Animation" id="428"]
-resource_name = "ShakeRight"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, 5), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [0.0, 0.7, 0.0]
-}
-
-[sub_resource type="Animation" id="431"]
-resource_name = "ShakeRightStrong"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Storagebox:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(229.5, 10), Vector2(229.5, 0), Vector2(229.5, 10)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Storagebox:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.3),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [0.0, 1.5, 0.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_uegjt"]
-_data = {
-&"Landing1": SubResource("422"),
-&"Landing2": SubResource("424"),
-&"Landing3": SubResource("425"),
-&"RESET": SubResource("423"),
-&"ShakeCenter": SubResource("426"),
-&"ShakeCenterStrong": SubResource("429"),
-&"ShakeLeft": SubResource("427"),
-&"ShakeLeftStrong": SubResource("430"),
-&"ShakeRight": SubResource("428"),
-&"ShakeRightStrong": SubResource("431")
-}
 
 [sub_resource type="Animation" id="46"]
 resource_name = "Click"
@@ -1153,6 +1209,11 @@ tracks/1/keys = {
 "values": [Vector2(-59, -10), Vector2(-59, -13), Vector2(-59, -10)]
 }
 
+
+
+
+
+
 [sub_resource type="Animation" id="48"]
 resource_name = "RESET"
 length = 0.001
@@ -1181,6 +1242,11 @@ tracks/1/keys = {
 "values": [Vector2(1, 1)]
 }
 
+
+
+
+
+
 [sub_resource type="Animation" id="47"]
 resource_name = "Roll"
 tracks/0/type = "value"
@@ -1208,6 +1274,11 @@ tracks/1/keys = {
 "values": [Vector2(-59, -10), Vector2(-59, -20), Vector2(-59, -5), Vector2(-59, -10), Vector2(-59, -10)]
 }
 
+
+
+
+
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_owfl4"]
 _data = {
 &"Click": SubResource("46"),
@@ -1215,148 +1286,10 @@ _data = {
 &"Roll": SubResource("47")
 }
 
-[sub_resource type="Animation" id="284"]
-resource_name = "MoveDown"
-length = 0.7
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Shop/Reroll:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(0.482968, 1),
-"update": 0,
-"values": [Vector2(0, -600), Vector2(0, 0)]
-}
 
-[sub_resource type="Animation" id="285"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Shop/Reroll:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_km8ui"]
-_data = {
-&"MoveDown": SubResource("284"),
-&"RESET": SubResource("285")
-}
 
-[sub_resource type="Animation" id="171"]
-resource_name = "HideArrow"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RedArrow:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("RedArrow:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
 
-[sub_resource type="Animation" id="172"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RedArrow:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("RedArrow:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [false]
-}
-
-[sub_resource type="Animation" id="173"]
-resource_name = "ShowArrow"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("RedArrow:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("RedArrow:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_7etxa"]
-_data = {
-&"HideArrow": SubResource("171"),
-&"RESET": SubResource("172"),
-&"ShowArrow": SubResource("173")
-}
-
-[sub_resource type="Animation" id="170"]
-resource_name = "ArrowIdle"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(1100, 200), Vector2(1110, 200)]
-}
 
 [sub_resource type="Animation" id="309"]
 length = 0.001
@@ -1373,195 +1306,10 @@ tracks/0/keys = {
 "values": [Vector2(1070, 200)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_xmvlh"]
-_data = {
-&"ArrowIdle": SubResource("170"),
-&"RESET": SubResource("309")
-}
 
-[sub_resource type="Animation" id="104"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperTail2:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
 
-[sub_resource type="Animation" id="105"]
-resource_name = "Swing"
-length = 10.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperTail2:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 4.9),
-"transitions": PackedFloat32Array(-1.41421, -1.41421),
-"update": 0,
-"values": [0.0, -59.8]
-}
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_g7wym"]
-_data = {
-&"RESET": SubResource("104"),
-&"Swing": SubResource("105")
-}
 
-[sub_resource type="Animation" id="100"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperTail:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="101"]
-resource_name = "Swing"
-length = 10.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperTail:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 4.8),
-"transitions": PackedFloat32Array(-1.27456, -1.27456),
-"update": 0,
-"values": [0.0, -54.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_cp5sj"]
-_data = {
-&"RESET": SubResource("100"),
-&"Swing": SubResource("101")
-}
-
-[sub_resource type="Animation" id="102"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperTail3:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="103"]
-resource_name = "Swing"
-length = 10.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperTail3:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 4.8),
-"transitions": PackedFloat32Array(-1.36604, -1.36604),
-"update": 0,
-"values": [0.0, -60.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_lqebf"]
-_data = {
-&"RESET": SubResource("102"),
-&"Swing": SubResource("103")
-}
-
-[sub_resource type="Animation" id="106"]
-resource_name = "Idle"
-length = 10.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperHead:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [0.0, 3.1]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ShopkeeperArm:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 5.8),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [0.0, 8.0]
-}
-
-[sub_resource type="Animation" id="107"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ShopkeeperHead:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ShopkeeperArm:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_luvv7"]
-_data = {
-&"Idle": SubResource("106"),
-&"RESET": SubResource("107")
-}
-
-[sub_resource type="FontVariation" id="258"]
-base_font = ExtResource("23")
-spacing_top = -5
-script = ExtResource("LegacyFontMigration")
-size = 25
-outline_size = 3
-outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
 [sub_resource type="FontVariation" id="121"]
 base_font = ExtResource("27")
@@ -1570,6 +1318,11 @@ spacing_bottom = -1
 script = ExtResource("LegacyFontMigration")
 size = 25
 use_mipmaps = true
+
+
+
+
+
 
 [sub_resource type="FontVariation" id="194"]
 base_font = ExtResource("23")
@@ -1581,320 +1334,18 @@ outline_size = 3
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 use_mipmaps = true
 
-[sub_resource type="Animation" id="122"]
-resource_name = "Hide"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(2.14355, 0.5),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(0, 0)]
-}
 
-[sub_resource type="Animation" id="124"]
-resource_name = "RESET"
-length = 0.01
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(0.5),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
 
-[sub_resource type="Animation" id="123"]
-resource_name = "Show"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(0.5, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(1, 1)]
-}
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_egpst"]
-_data = {
-&"Hide": SubResource("122"),
-&"RESET": SubResource("124"),
-&"Show": SubResource("123")
-}
 
-[sub_resource type="Animation" id="397"]
-resource_name = "Check"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Check:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.4),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(1.5, 1.5), Vector2(1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Line:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(0, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Dot:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(0, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Check:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Check/Checkmark:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.7),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="391"]
-resource_name = "Idle"
-length = 3.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Dot:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.51799, 0.87598, 1.24755),
-"transitions": PackedFloat32Array(1, -2, -2, -2),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, -30), Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Dot:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.516516, 0.87598, 1.2506, 1.32686, 1.61382),
-"transitions": PackedFloat32Array(-2, 1, -2, 2, 0.5, -2, -2),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.5, 0.7), Vector2(1.5, 0.7), Vector2(0.607, 1.3), Vector2(1, 1), Vector2(1.3, 0.8), Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Line:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.00610051, 0.396533, 0.533794, 0.899825, 1.24755, 1.33601, 1.59223),
-"transitions": PackedFloat32Array(-2, -2, -2, -2, 0.5, -2, -2),
-"update": 0,
-"values": [Vector2(0, -55), Vector2(0, -40), Vector2(0, -40), Vector2(0, -110), Vector2(0, -50), Vector2(0, -40), Vector2(0, -55)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Line:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.00610051, 0.396533, 0.896774, 1.25365, 1.34211, 1.61053),
-"transitions": PackedFloat32Array(-2, -2, 2, 0.5, -2, -2),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.2, 0.8), Vector2(0.8, 1.2), Vector2(1, 1), Vector2(1.15, 0.9), Vector2(1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath(".:visible")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="392"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Dot:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Dot:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Line:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, -55)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Line:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath(".:visible")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Check:visible")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
-[sub_resource type="Animation" id="393"]
-resource_name = "Show"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_slqfk"]
-_data = {
-&"Check": SubResource("397"),
-&"Idle": SubResource("391"),
-&"RESET": SubResource("392"),
-&"Show": SubResource("393")
-}
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(427, 302)
 
-[sub_resource type="Animation" id="421"]
-resource_name = "Idle"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.9),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [17.0, 6.6]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.9),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(1.2, 1), Vector2(1, 1)]
-}
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ojdvg"]
-_data = {
-&"Idle": SubResource("421")
-}
 
-[sub_resource type="FontVariation" id="355"]
-base_font = ExtResource("23")
-spacing_top = -5
-spacing_bottom = -5
-script = ExtResource("LegacyFontMigration")
-size = 46
-outline_size = 4
-outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
 
 [sub_resource type="FontVariation" id="6"]
 base_font = ExtResource("23")
@@ -1904,113 +1355,10 @@ size = 22
 outline_size = 1
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
-[sub_resource type="Gradient" id="384"]
-colors = PackedColorArray(0.972656, 0.89384, 0.503426, 1, 0.974609, 0.577723, 0.243652, 1)
 
-[sub_resource type="GradientTexture1D" id="385"]
-gradient = SubResource("384")
-width = 100
 
-[sub_resource type="ParticleProcessMaterial" id="386"]
-lifetime_randomness = 0.38
-particle_flag_disable_z = true
-emission_shape = 2
-emission_sphere_radius = 1.0
-angle_max = 720.0
-direction = Vector3(0, -1, 0)
-spread = 3.75
-initial_velocity_min = 479.1636
-initial_velocity_max = 694.44
-angular_velocity_min = -720.0
-angular_velocity_max = 720.0
-gravity = Vector3(0, 0, 0)
-scale_min = 2.314
-scale_max = 3.19
-color_ramp = ExtResource("253")
-color_initial_ramp = SubResource("385")
 
-[sub_resource type="Animation" id="Animation_p2yr7"]
-resource_name = "EatCoin"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Chestnut/Top:rotation_degrees")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.31746, 0.958201),
-"transitions": PackedFloat32Array(-2.63902, -2.63902, -2.63902),
-"update": 0,
-"values": [0.0, 50.0, 0.0]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.84),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"close"
-}]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ChompDust:emitting")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [false]
-}
 
-[sub_resource type="Animation" id="Animation_ypgvu"]
-resource_name = "EatGold"
-length = 1.5
-tracks/0/type = "method"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(1.33),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"close"
-}]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ChompDust:emitting")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Chestnut/Top:rotation_degrees")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.551148, 1.5),
-"transitions": PackedFloat32Array(-2.63902, -2.63902, -2.63902),
-"update": 0,
-"values": [0.0, 50.0, 0.0]
-}
 
 [sub_resource type="Animation" id="12"]
 resource_name = "Hover"
@@ -2040,653 +1388,58 @@ tracks/1/keys = {
 "values": [0.0, 50.0]
 }
 
-[sub_resource type="Animation" id="13"]
-resource_name = "IdleOpen"
-length = 6.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ChompDust:emitting")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [false]
-}
 
-[sub_resource type="Animation" id="14"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ChompDust:emitting")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Chestnut/Top:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(-2.63902),
-"update": 0,
-"values": [0.0]
-}
 
-[sub_resource type="Animation" id="15"]
-resource_name = "Sell"
-length = 5.0
-tracks/0/type = "method"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.32, 0.91, 1.46, 2.07, 3.32, 4.33),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"values": [{
-"args": [],
-"method": &"chomp"
-}, {
-"args": [],
-"method": &"chomp"
-}, {
-"args": [],
-"method": &"chomp"
-}, {
-"args": [],
-"method": &"chomp"
-}, {
-"args": [],
-"method": &"burp"
-}, {
-"args": [],
-"method": &"close"
-}]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ChompDust:emitting")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 1.6, 3.5, 4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [false, true, false, true, false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Chestnut/Top:rotation_degrees")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 2.3, 3.3, 3.6, 4, 4.4),
-"transitions": PackedFloat32Array(2, -2, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902),
-"update": 0,
-"values": [50.0, 0.0, 8.4, 0.0, 9.2, 0.0, 7.7, 0.0, 0.0, 12.8, 17.2, 0.0]
-}
 
-[sub_resource type="Animation" id="Animation_a74tq"]
-resource_name = "SpitGold"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ChompDust:emitting")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Chestnut/Top:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 0.9),
-"transitions": PackedFloat32Array(-2.63902, -2.63902, -2.63902),
-"update": 0,
-"values": [0.0, 12.8, 0.0]
-}
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_m83kg"]
-_data = {
-&"EatCoin": SubResource("Animation_p2yr7"),
-&"EatGold": SubResource("Animation_ypgvu"),
-&"Hover": SubResource("12"),
-&"IdleOpen": SubResource("13"),
-&"RESET": SubResource("14"),
-&"Sell": SubResource("15"),
-&"SpitGold": SubResource("Animation_a74tq")
-}
-
-[sub_resource type="Animation" id="380"]
-length = 0.001
-
-[sub_resource type="Animation" id="381"]
-resource_name = "Trade"
-tracks/0/type = "method"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("HeartParticles")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"activate"
-}]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_dgw42"]
-_data = {
-&"RESET": SubResource("380"),
-&"Trade": SubResource("381")
-}
-
-[sub_resource type="ParticleProcessMaterial" id="265"]
-particle_flag_disable_z = true
-emission_shape = 2
-emission_sphere_radius = 1.0
-angle_max = 720.0
-direction = Vector3(-1, -1, 0)
-spread = 26.49
-initial_velocity_min = 201.6817
-initial_velocity_max = 242.99
-angular_velocity_min = -80.75
-angular_velocity_max = 80.75
-gravity = Vector3(0, 200, 0)
-scale_min = 0.09
-scale_max = 0.2083
-color_ramp = ExtResource("135")
-color_initial_ramp = ExtResource("m7_shared_267")
-
-[sub_resource type="Curve" id="382"]
-_data = [Vector2(0, 0.595455), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.1505, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="Gradient" id="383"]
-offsets = PackedFloat32Array(0, 0.102941, 0.772727, 1)
-colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
-
-[sub_resource type="Animation" id="374"]
-resource_name = "Idle"
-length = 1.7
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ThinkBubble3:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 0.3, 0.5, 0.8, 1, 1.2, 1.5),
-"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2, -2),
-"update": 0,
-"values": [Vector2(59.9998, -42), Vector2(60, -37), Vector2(59.9998, -42), Vector2(63, -38), Vector2(60, -39), Vector2(63, -42), Vector2(58, -42)]
-}
-
-[sub_resource type="Animation" id="375"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ThinkBubble3:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(59.9998, -42)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_hkq6b"]
-_data = {
-&"Idle": SubResource("374"),
-&"RESET": SubResource("375")
-}
-
-[sub_resource type="Animation" id="376"]
-resource_name = "Idle"
-length = 1.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ThinkBubble2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.7, 1, 1.2),
-"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2),
-"update": 0,
-"values": [Vector2(79, -27), Vector2(76, -23), Vector2(76, -30), Vector2(78, -26), Vector2(79, -24), Vector2(74, -27)]
-}
-
-[sub_resource type="Animation" id="377"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ThinkBubble2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(79, -27)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_uj84n"]
-_data = {
-&"Idle": SubResource("376"),
-&"RESET": SubResource("377")
-}
-
-[sub_resource type="Animation" id="371"]
-resource_name = "EndTrade"
-length = 0.5
-tracks/0/type = "method"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.5),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"reset"
-}]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ThinkBubble3:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(0.391176, 0.391176), Vector2(0, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("ThinkBubble2:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(0.532353, 0.532353), Vector2(0, 0)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Node2D:scale")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 0.4),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(0, 0)]
-}
-
-[sub_resource type="Animation" id="373"]
-resource_name = "NewTrade"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ThinkBubble3:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(-2),
-"update": 0,
-"values": [Vector2(0.391176, 0.391176)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ThinkBubble2:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(-2),
-"update": 0,
-"values": [Vector2(0.532353, 0.532353)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.171918, 0.4),
-"transitions": PackedFloat32Array(-2, -2, -2),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = false
-tracks/4/path = NodePath("GPUParticles2D:emitting")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "method"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("GPUParticles2D")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"restart"
-}]
-}
-
-[sub_resource type="Animation" id="369"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ThinkBubble3:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.391176, 0.391176)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ThinkBubble2:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.532353, 0.532353)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath(".:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="370"]
-resource_name = "ShowTrade"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ThinkBubble3:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.158842),
-"transitions": PackedFloat32Array(-2, -2),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0.391176, 0.391176)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ThinkBubble2:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.235959),
-"transitions": PackedFloat32Array(-2, -2, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0.532353, 0.532353)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.164041, 0.355573, 0.598814),
-"transitions": PackedFloat32Array(1, -2, -2, 1),
-"update": 0,
-"values": [Vector2(0, 0), Vector2(0, 0), Vector2(1.3, 1.3), Vector2(1, 1)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("GPUParticles2D:emitting")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "method"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("GPUParticles2D")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"restart"
-}]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath(".:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0, 0.0640119, 0.326939, 1),
-"transitions": PackedFloat32Array(1, -2, -2, -2),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ane01"]
-_data = {
-&"EndTrade": SubResource("371"),
-&"NewTrade": SubResource("373"),
-&"RESET": SubResource("369"),
-&"ShowTrade": SubResource("370")
-}
-
-[sub_resource type="Animation" id="378"]
-resource_name = "Idle"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.235369, 0.5, 0.8, 1.1, 1.4, 1.7),
-"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2, -2),
-"update": 0,
-"values": [Vector2(182, 23), Vector2(187, 26), Vector2(182, 23), Vector2(178, 15), Vector2(189, 15), Vector2(185.5, 19), Vector2(182, 24)]
-}
-
-[sub_resource type="Animation" id="379"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(182, 23)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_6jxvq"]
-_data = {
-&"Idle": SubResource("378"),
-&"RESET": SubResource("379")
-}
-
-[sub_resource type="FontVariation" id="405"]
-base_font = ExtResource("27")
-script = ExtResource("LegacyFontMigration")
-size = 23
-outline_size = 1
-outline_color = Color(0.709804, 0.47451, 0.239216, 1)
-use_mipmaps = true
-
-[sub_resource type="ParticleProcessMaterial" id="372"]
-lifetime_randomness = 0.16
-particle_flag_disable_z = true
-angle_max = 720.0
-spread = 180.0
-initial_velocity_min = 262.5
-initial_velocity_max = 375.0
-gravity = Vector3(0, 100, 0)
-damping_min = 300.0
-damping_max = 300.0
-scale_min = 0.12
-scale_max = 0.3928
-color_ramp = ExtResource("135")
 
 [sub_resource type="RectangleShape2D" id="8"]
 size = Vector2(1957, 1317)
 
+
+
+
+
+
 [sub_resource type="RectangleShape2D" id="9"]
 size = Vector2(1114, 1065.922)
+
+
+
+
+
 
 [sub_resource type="RectangleShape2D" id="262"]
 size = Vector2(1113.588, 1608.29)
 
+
+
+
+
+
 [sub_resource type="RectangleShape2D" id="437"]
 size = Vector2(1113.588, 1553.104)
+
+
+
+
+
 
 [sub_resource type="RectangleShape2D" id="261"]
 size = Vector2(1125, 1076.282)
 
+
+
+
+
+
 [sub_resource type="RectangleShape2D" id="10"]
 size = Vector2(2034, 1103.5)
+
+
+
+
+
 
 [sub_resource type="FontVariation" id="287"]
 base_font = ExtResource("27")
@@ -2697,6 +1450,11 @@ size = 21
 outline_size = 3
 outline_color = Color(0.27451, 0.211765, 0.14902, 1)
 
+
+
+
+
+
 [sub_resource type="FontVariation" id="312"]
 base_font = ExtResource("23")
 spacing_top = -3
@@ -2705,6 +1463,11 @@ size = 19
 outline_size = 2
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
 
+
+
+
+
+
 [sub_resource type="FontVariation" id="286"]
 base_font = ExtResource("23")
 spacing_top = -5
@@ -2712,6 +1475,11 @@ script = ExtResource("LegacyFontMigration")
 size = 22
 outline_size = 2
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+
+
 
 [sub_resource type="Animation" id="53"]
 resource_name = "Click1"
@@ -2752,6 +1520,11 @@ tracks/2/keys = {
 "values": [0, 5, 0]
 }
 
+
+
+
+
+
 [sub_resource type="Animation" id="54"]
 resource_name = "Click2"
 tracks/0/type = "value"
@@ -2790,6 +1563,11 @@ tracks/2/keys = {
 "update": 1,
 "values": [0, 5, 0]
 }
+
+
+
+
+
 
 [sub_resource type="Animation" id="55"]
 length = 0.001
@@ -2830,12 +1608,22 @@ tracks/2/keys = {
 "values": [0]
 }
 
+
+
+
+
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_srtrc"]
 _data = {
 &"Click1": SubResource("53"),
 &"Click2": SubResource("54"),
 &"RESET": SubResource("55")
 }
+
+
+
+
+
 
 [sub_resource type="FontVariation" id="367"]
 base_font = ExtResource("23")
@@ -2844,6 +1632,11 @@ script = ExtResource("LegacyFontMigration")
 size = 26
 outline_size = 3
 outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+
+
 
 [sub_resource type="Animation" id="412"]
 length = 0.001
@@ -2871,6 +1664,11 @@ tracks/1/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
+
+
+
+
+
 
 [sub_resource type="Animation" id="413"]
 resource_name = "Tutorial"
@@ -2901,20 +1699,40 @@ tracks/1/keys = {
 "values": [Color(1, 1, 1, 1), Color(1.4, 1.4, 1.4, 1)]
 }
 
+
+
+
+
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nv4jn"]
 _data = {
 &"RESET": SubResource("412"),
 &"Tutorial": SubResource("413")
 }
 
+
+
+
+
+
 [node name="Shop" type="Node2D" unique_id=2020562428]
 z_index = 10
 script = ExtResource("2")
+
+
+
+
+
 
 [node name="Background" type="Sprite2D" parent="." unique_id=2023039925]
 z_index = -2
 position = Vector2(-26, 0)
 centered = false
+
+
+
+
+
 
 [node name="TextureRect" type="TextureButton" parent="." unique_id=56973987]
 visible = false
@@ -2927,19 +1745,39 @@ scale = Vector2(3, 3)
 script = ExtResource("218")
 paintColor = Color(0, 0.694118, 1, 1)
 
+
+
+
+
+
 [node name="ShopSign" type="Sprite2D" parent="." unique_id=1145179458]
 show_behind_parent = true
 position = Vector2(1479.5, 53)
 scale = Vector2(0.336, 0.295)
 texture = ExtResource("82")
 
+
+
+
+
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ShopSign" unique_id=50159371]
 libraries/ = SubResource("AnimationLibrary_p2rcj")
+
+
+
+
+
 
 [node name="RarityChart" type="Node2D" parent="ShopSign" unique_id=2134302883]
 position = Vector2(-224.702, 123.051)
 scale = Vector2(2.97619, 3.38983)
 script = ExtResource("278")
+
+
+
+
+
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ShopSign/RarityChart" unique_id=768618711]
 modulate = Color(1.50196, 1.50196, 1.50196, 0.262745)
@@ -2950,6 +1788,11 @@ offset_right = 143.0
 offset_bottom = 1.0
 pivot_offset = Vector2(0, 51)
 theme_override_constants/separation = 14
+
+
+
+
+
 
 [node name="Common" type="NinePatchRect" parent="ShopSign/RarityChart/HBoxContainer" unique_id=2144968034]
 modulate = Color(0.592157, 0.843137, 0.882353, 1)
@@ -2962,6 +1805,11 @@ patch_margin_left = 6
 patch_margin_top = 5
 patch_margin_right = 6
 
+
+
+
+
+
 [node name="Rare" type="NinePatchRect" parent="ShopSign/RarityChart/HBoxContainer" unique_id=1888084669]
 modulate = Color(0.407843, 0.596078, 0.968627, 1)
 custom_minimum_size = Vector2(0, 15)
@@ -2972,6 +1820,11 @@ texture = ExtResource("277")
 patch_margin_left = 6
 patch_margin_top = 5
 patch_margin_right = 6
+
+
+
+
+
 
 [node name="Epic" type="NinePatchRect" parent="ShopSign/RarityChart/HBoxContainer" unique_id=294236796]
 modulate = Color(0.882353, 0.423529, 0.988235, 1)
@@ -2984,6 +1837,11 @@ patch_margin_left = 6
 patch_margin_top = 5
 patch_margin_right = 6
 
+
+
+
+
+
 [node name="Legendary" type="NinePatchRect" parent="ShopSign/RarityChart/HBoxContainer" unique_id=1673637369]
 modulate = Color(0.988235, 0.65098, 0.294118, 1)
 custom_minimum_size = Vector2(0, 15)
@@ -2995,6 +1853,11 @@ patch_margin_left = 6
 patch_margin_top = 5
 patch_margin_right = 6
 
+
+
+
+
+
 [node name="Godly" type="NinePatchRect" parent="ShopSign/RarityChart/HBoxContainer" unique_id=1242685139]
 modulate = Color(0.878431, 0.870588, 0.478431, 1)
 custom_minimum_size = Vector2(0, 3)
@@ -3005,6 +1868,11 @@ texture = ExtResource("277")
 patch_margin_left = 6
 patch_margin_top = 5
 patch_margin_right = 6
+
+
+
+
+
 
 [node name="ShopLabel" type="Label" parent="." unique_id=904019754]
 visible = false
@@ -3028,6 +1896,11 @@ vertical_alignment = 1
 script = ExtResource("182")
 translationKey = "UI_Shop"
 maxSize = 117.0
+
+
+
+
+
 
 [node name="ChooseOneLabel" type="Label" parent="." unique_id=179391387]
 custom_minimum_size = Vector2(158, 50)
@@ -3054,10 +1927,20 @@ maxSize = 158.0
 maxSizeY = 50.0
 shrinkLimit = 8
 
+
+
+
+
+
 [node name="InventorySign" type="Sprite2D" parent="." unique_id=318101100]
 position = Vector2(387, 54)
 scale = Vector2(0.336, 0.295)
 texture = ExtResource("82")
+
+
+
+
+
 
 [node name="InventoryLabel" type="Label" parent="." unique_id=656668287]
 offset_left = 309.0
@@ -3081,6 +1964,11 @@ script = ExtResource("182")
 translationKey = "UI_Inventory"
 maxSize = 163.0
 
+
+
+
+
+
 [node name="StartCombatButton" type="Button" parent="." unique_id=1760800435]
 modulate = Color(1.2, 1.2, 1.2, 1)
 offset_left = 825.0
@@ -3100,6 +1988,11 @@ expand_icon = true
 script = ExtResource("5")
 progress = 1.0
 
+
+
+
+
+
 [node name="Label2" type="Label" parent="StartCombatButton" unique_id=270851051 groups=["NotLocalized"]]
 layout_mode = 0
 offset_left = 30.0
@@ -3114,6 +2007,11 @@ theme_override_font_sizes/font_size = 38
 text = "~                    ~"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+
+
+
+
 
 [node name="StartLabel" type="Label" parent="StartCombatButton" unique_id=1996079179]
 custom_minimum_size = Vector2(198, 108)
@@ -3143,6 +2041,11 @@ translationKey = "BUTTON_StartBattle"
 maxSize = 198.0
 maxSizeY = 108.0
 
+
+
+
+
+
 [node name="Label3" type="Label" parent="StartCombatButton" unique_id=848254448]
 visible = false
 custom_minimum_size = Vector2(201, 71)
@@ -3171,6 +2074,11 @@ translationKey = "UI_Matching"
 maxSize = 210.0
 maxSizeY = 71.0
 
+
+
+
+
+
 [node name="Progress" type="Sprite2D" parent="StartCombatButton" unique_id=677244888]
 visible = false
 modulate = Color(2, 1.6, 0.8, 1)
@@ -3179,9 +2087,19 @@ position = Vector2(149, 99)
 scale = Vector2(0.68046, 0.672535)
 texture = ExtResource("40")
 
+
+
+
+
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="StartCombatButton" unique_id=1060817029]
 callback_mode_process = 0
 libraries/ = SubResource("AnimationLibrary_jrxrb")
+
+
+
+
+
 
 [node name="StartParticles" type="GPUParticles2D" parent="StartCombatButton" unique_id=662875311]
 modulate = Color(1.8, 1.6, 1, 1)
@@ -3197,11 +2115,26 @@ explosiveness = 0.82
 process_material = ExtResource("7")
 script = ExtResource("121")
 
+
+
+
+
+
 [node name="Path3D" type="Path2D" parent="StartCombatButton" unique_id=1019620574]
 curve = SubResource("454")
 
+
+
+
+
+
 [node name="PathFollow2D" type="PathFollow2D" parent="StartCombatButton/Path3D" unique_id=327006006]
 position = Vector2(148, 20)
+
+
+
+
+
 
 [node name="PathParticles" type="GPUParticles2D" parent="StartCombatButton/Path3D/PathFollow2D" unique_id=300417347]
 modulate = Color(1.8, 1.6, 1, 1)
@@ -3213,9 +2146,19 @@ texture = ExtResource("134")
 process_material = SubResource("453")
 script = ExtResource("121")
 
+
+
+
+
+
 [node name="Hints" type="Node2D" parent="." unique_id=408015451]
 z_index = 33
 position = Vector2(830, 272)
+
+
+
+
+
 
 [node name="StorageHint" type="RichTextLabel" parent="Hints" unique_id=1885205054]
 visible = false
@@ -3244,8 +2187,18 @@ scroll_active = false
 script = ExtResource("182")
 prefix = "[center]"
 
+
+
+
+
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Hints/StorageHint" unique_id=1037655992]
 libraries/ = SubResource("AnimationLibrary_ux031")
+
+
+
+
+
 
 [node name="FlowerVase" type="Button" parent="." unique_id=2118867285]
 offset_left = 683.0
@@ -3256,11 +2209,21 @@ theme_override_styles/focus = SubResource("49")
 flat = true
 script = ExtResource("50")
 
+
+
+
+
+
 [node name="Vase" type="Sprite2D" parent="FlowerVase" unique_id=1393940305]
 z_index = -1
 position = Vector2(48, 162)
 texture = ExtResource("6")
 offset = Vector2(-2, -53)
+
+
+
+
+
 
 [node name="Flower" type="Sprite2D" parent="FlowerVase/Vase" unique_id=2034179670]
 show_behind_parent = true
@@ -3268,13 +2231,28 @@ position = Vector2(-3, -82)
 texture = ExtResource("46")
 offset = Vector2(-4, -28)
 
+
+
+
+
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="FlowerVase" unique_id=2042932229]
 libraries/ = SubResource("AnimationLibrary_vg3bn")
+
+
+
+
+
 
 [node name="Lamp" type="Node2D" parent="." unique_id=1921188337]
 position = Vector2(1171, 6)
 scale = Vector2(0.7, 0.7)
 script = ExtResource("44")
+
+
+
+
+
 
 [node name="ShopLight" type="Sprite2D" parent="Lamp" unique_id=1560572858]
 modulate = Color(1, 0.984314, 0.737255, 0.309804)
@@ -3284,6 +2262,11 @@ scale = Vector2(0.649414, 1.1363)
 texture = ExtResource("12")
 flip_v = true
 
+
+
+
+
+
 [node name="Button" type="TextureButton" parent="Lamp" unique_id=1825925553]
 offset_left = -79.5356
 offset_top = 6.0
@@ -3292,6 +2275,11 @@ offset_bottom = 237.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource("43")
 script = ExtResource("160")
+
+
+
+
+
 
 [node name="OffScreenItemIndicator" type="TextureButton" parent="." unique_id=1292571507]
 visible = false
@@ -3304,239 +2292,125 @@ texture_normal = ExtResource("175")
 ignore_texture_size = true
 script = ExtResource("160")
 
+
+
+
+
+
 [node name="Indicator" type="Node2D" parent="." unique_id=1814612014]
 z_index = 6
 
-[node name="Storagebox" type="Node2D" parent="." unique_id=218403461]
+
+
+
+
+
+[node name="Storagebox" parent="." unique_id=218403461 instance=ExtResource("split_Storagebox")]
 z_index = 4
 position = Vector2(977, 769)
 script = ExtResource("17")
 
-[node name="DustPosition1" type="Marker2D" parent="Storagebox" unique_id=1195050116]
-position = Vector2(-157, 231)
-rotation = -0.263545
 
-[node name="DustPosition2" type="Marker2D" parent="Storagebox" unique_id=335381055]
-position = Vector2(180, 231)
-rotation = 0.279253
-scale = Vector2(-1, 1)
 
-[node name="StorageArea" type="Area2D" parent="Storagebox" unique_id=744835058]
-visible = false
-collision_layer = 0
-collision_mask = 17
-script = ExtResource("227")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Storagebox/StorageArea" unique_id=474136097]
-modulate = Color(0.658824, 0.835294, 0.521569, 1)
-position = Vector2(14, -269)
-shape = SubResource("7")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Storagebox/StorageArea" unique_id=1070356164]
-modulate = Color(0.658824, 0.835294, 0.521569, 1)
-position = Vector2(-574, 90)
-shape = SubResource("325")
-
-[node name="Timer" type="Timer" parent="Storagebox/StorageArea" unique_id=1971176580]
-wait_time = 2.0
-autostart = true
-
-[node name="IndicatorTimer" type="Timer" parent="Storagebox/StorageArea" unique_id=1304091993]
-one_shot = true
-
-[node name="Center" type="Marker2D" parent="Storagebox" unique_id=716885140]
-position = Vector2(0, -200)
-
-[node name="StorageShakeButton" type="Button" parent="Storagebox" unique_id=63234351]
-offset_left = -210.0
-offset_top = 277.0
-offset_right = 242.0
-offset_bottom = 316.0
-mouse_default_cursor_shape = 2
-theme_override_styles/focus = ExtResource("92")
-flat = true
-script = ExtResource("222")
-pullVector = Vector2(1, -400)
-movebackTime = 0.3
-moveBackAfterTrigger = false
-
-[node name="Storagebox" type="Sprite2D" parent="Storagebox/StorageShakeButton" unique_id=1107341815]
-z_index = -1
-position = Vector2(229.5, 10)
-texture = ExtResource("26")
-offset = Vector2(0, -157)
-
-[node name="Label" type="Label" parent="Storagebox/StorageShakeButton/Storagebox" unique_id=1348332474]
-offset_left = -84.6423
-offset_top = -118.0
-offset_right = 78.3577
-offset_bottom = -67.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_outline_color = Color(0.27451, 0.211765, 0.14902, 1)
-theme_override_constants/shadow_offset_x = 0
-theme_override_constants/shadow_offset_y = 0
-theme_override_constants/outline_size = 3
-theme_override_fonts/font = SubResource("277")
-theme_override_font_sizes/font_size = 31
-text = "STORAGE"
-horizontal_alignment = 1
-vertical_alignment = 1
-uppercase = true
-script = ExtResource("182")
-translationKey = "UI_Storage"
-
-[node name="BottomCollisionBody" type="RigidBody2D" parent="Storagebox/StorageShakeButton" unique_id=1485820333]
-collision_mask = 0
-physics_material_override = SubResource("11")
-linear_velocity = Vector2(0, -200)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Storagebox/StorageShakeButton/BottomCollisionBody" unique_id=1945416850]
-visible = false
-position = Vector2(191.5, 884)
-shape = SubResource("291")
-
-[node name="StartButtonArea" type="Area2D" parent="Storagebox" unique_id=1029204675]
-visible = false
-position = Vector2(15, -662)
-collision_layer = 0
-monitorable = false
-script = ExtResource("148")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Storagebox/StartButtonArea" unique_id=1833510435]
-position = Vector2(-3, 2.5)
-shape = SubResource("308")
-
-[node name="Timer" type="Timer" parent="Storagebox/StartButtonArea" unique_id=929287410]
-one_shot = true
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Storagebox" unique_id=1300896654]
-root_node = NodePath("../StorageShakeButton")
-libraries/ = SubResource("AnimationLibrary_uegjt")
 
 [node name="Shelf" parent="." unique_id=1559152570 instance=ExtResource("42")]
 position = Vector2(1682, 246)
 
+
+
+
+
+
 [node name="AnimationPlayer" parent="Shelf" index="0"]
 libraries/ = SubResource("AnimationLibrary_owfl4")
+
+
+
+
+
 
 [node name="Button" parent="Shelf" index="1"]
 offset_left = -261.0
 offset_right = 168.0
 
+
+
+
+
+
 [node name="Shelf" parent="Shelf" index="2"]
 texture = ExtResource("19")
+
+
+
+
+
 
 [node name="Shelf2" parent="." unique_id=2091791241 instance=ExtResource("42")]
 position = Vector2(1564, 474)
 
+
+
+
+
+
 [node name="Shelf3" parent="." unique_id=1775665787 instance=ExtResource("42")]
 position = Vector2(1570, 714)
+
+
+
+
+
 
 [node name="ShopOffer1" parent="." unique_id=1947252131 instance=ExtResource("1")]
 position = Vector2(1417, 475)
 
+
+
+
+
+
 [node name="ShopOffer2" parent="." unique_id=1983785529 instance=ExtResource("1")]
 position = Vector2(1682, 247)
+
+
+
+
+
 
 [node name="ShopOffer3" parent="." unique_id=1053251361 instance=ExtResource("1")]
 position = Vector2(1421, 715)
 
+
+
+
+
+
 [node name="ShopOffer4" parent="." unique_id=1977291068 instance=ExtResource("1")]
 position = Vector2(1740, 714)
+
+
+
+
+
 
 [node name="ShopOffer5" parent="." unique_id=1120324256 instance=ExtResource("1")]
 position = Vector2(1734, 475)
 
-[node name="Reroll" type="Node2D" parent="." unique_id=1921489028]
+
+
+
+
+
+[node name="Reroll" parent="." unique_id=1921489028 instance=ExtResource("split_Reroll")]
 z_index = 2
 
-[node name="RerollRopeAnimation" type="AnimationPlayer" parent="Reroll" unique_id=90764725]
-root_node = NodePath("../../..")
-libraries/ = SubResource("AnimationLibrary_km8ui")
 
-[node name="RerollRope" type="TextureButton" parent="Reroll" unique_id=1835755186 groups=["PullButton"]]
-modulate = Color(1.1, 1.1, 1.1, 1)
-offset_left = 1207.0
-offset_top = -600.0
-offset_right = 1369.0
-offset_bottom = 294.0
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("24")
-texture_hover = ExtResource("25")
-texture_click_mask = ExtResource("157")
-script = ExtResource("22")
 
-[node name="Tag" parent="Reroll/RerollRope" unique_id=630668979 instance=ExtResource("233")]
-position = Vector2(0.578, -10)
 
-[node name="RopeHint" type="Node2D" parent="Reroll" unique_id=941460880 groups=["Tooltip"]]
-visible = false
-position = Vector2(-26, -125)
 
-[node name="Background" type="Sprite2D" parent="Reroll/RopeHint" unique_id=184754572]
-position = Vector2(1262, 272)
-scale = Vector2(0.399553, 0.307942)
-texture = ExtResource("78")
-
-[node name="RopeHint" type="RichTextLabel" parent="Reroll/RopeHint" unique_id=350590931]
-clip_contents = false
-offset_left = 1197.0
-offset_top = 218.0
-offset_right = 1320.0
-offset_bottom = 331.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_constants/shadow_offset_x = 3
-theme_override_constants/shadow_offset_y = 4
-theme_override_constants/outline_size = 3
-theme_override_fonts/normal_font = ExtResource("m7_shared_148")
-theme_override_font_sizes/normal_font_size = 30
-bbcode_enabled = true
-text = "Pull to reroll for 1"
-fit_content = true
-scroll_active = false
-
-[node name="LabelPosition" type="Marker2D" parent="Reroll" unique_id=1103786314]
-position = Vector2(1298, 319)
-
-[node name="RedArrowAnimationPlayer" type="AnimationPlayer" parent="Reroll" unique_id=1181553280]
-callback_mode_process = 0
-libraries/ = SubResource("AnimationLibrary_7etxa")
-
-[node name="RedArrow" type="Sprite2D" parent="Reroll" unique_id=1397078207]
-visible = false
-position = Vector2(1070, 200)
-scale = Vector2(0.860632, 0.75)
-texture = ExtResource("132")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Reroll/RedArrow" unique_id=1611096283]
-libraries/ = SubResource("AnimationLibrary_xmvlh")
-autoplay = &"ArrowIdle"
-
-[node name="Hint" type="Label" parent="Reroll/RedArrow" unique_id=477009712]
-offset_left = -133.332
-offset_top = -52.0
-offset_right = 152.668
-offset_bottom = 54.0
-scale = Vector2(0.861, 1)
-theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/outline_size = 3
-theme_override_fonts/font = ExtResource("m7_shared_81")
-theme_override_font_sizes/font_size = 36
-text = "Runterziehen"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-script = ExtResource("182")
-translationKey = "HINT_Reroll2"
 
 [node name="Shadow" type="Sprite2D" parent="." unique_id=1945297306]
 modulate = Color(1, 1, 1, 0.584314)
@@ -3545,460 +2419,43 @@ position = Vector2(1605, 1031)
 scale = Vector2(2.49398, 1.14)
 texture = ExtResource("77")
 
-[node name="ShopKeeper" type="Node2D" parent="." unique_id=1354802380]
+
+
+
+
+
+[node name="ShopKeeper" parent="." unique_id=1354802380 instance=ExtResource("split_ShopKeeper")]
 z_index = 2
 position = Vector2(1619, 1034)
 script = ExtResource("93")
 
-[node name="Shopkeeper" type="Sprite2D" parent="ShopKeeper" unique_id=191938007]
-position = Vector2(24, -97)
-scale = Vector2(0.75, 0.75)
-texture = ExtResource("4")
 
-[node name="ShopkeeperHead" type="Sprite2D" parent="ShopKeeper/Shopkeeper" unique_id=547573527]
-position = Vector2(-19.9996, -140)
-scale = Vector2(0.966733, 0.966732)
-texture = ExtResource("153")
-offset = Vector2(-3.49448, -66.1259)
 
-[node name="ShopkeeperTail2" type="Sprite2D" parent="ShopKeeper/Shopkeeper" unique_id=1090432639]
-self_modulate = Color(0.929412, 0.85098, 0.85098, 1)
-show_behind_parent = true
-position = Vector2(-21.3949, 8.7486)
-scale = Vector2(1.10279, 1.10279)
-texture = ExtResource("13")
-offset = Vector2(87.0692, -89.0427)
 
-[node name="Tail" type="AnimationPlayer" parent="ShopKeeper/Shopkeeper/ShopkeeperTail2" unique_id=745992121]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_g7wym")
-autoplay = &"Swing"
 
-[node name="ShopkeeperTail" type="Sprite2D" parent="ShopKeeper/Shopkeeper" unique_id=608554518]
-self_modulate = Color(0.941176, 0.913725, 0.913725, 1)
-show_behind_parent = true
-position = Vector2(-19.3526, 37.7375)
-scale = Vector2(1.06873, 1.06873)
-texture = ExtResource("13")
-offset = Vector2(83.216, -84.184)
 
-[node name="Tail" type="AnimationPlayer" parent="ShopKeeper/Shopkeeper/ShopkeeperTail" unique_id=437734167]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_cp5sj")
-autoplay = &"Swing"
-
-[node name="ShopkeeperTail3" type="Sprite2D" parent="ShopKeeper/Shopkeeper" unique_id=36272263]
-show_behind_parent = true
-position = Vector2(-31.9318, 5.8058)
-texture = ExtResource("13")
-offset = Vector2(83.216, -84.184)
-
-[node name="Tail" type="AnimationPlayer" parent="ShopKeeper/Shopkeeper/ShopkeeperTail3" unique_id=1415627955]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_lqebf")
-autoplay = &"Swing"
-
-[node name="ShopkeeperArm" type="Sprite2D" parent="ShopKeeper/Shopkeeper" unique_id=202096708]
-show_behind_parent = true
-position = Vector2(-60.9608, -99.666)
-texture = ExtResource("14")
-offset = Vector2(-64.8312, 15.4819)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ShopKeeper/Shopkeeper" unique_id=1357009606]
-libraries/ = SubResource("AnimationLibrary_luvv7")
-autoplay = &"Idle"
-
-[node name="FurciferButton" type="Button" parent="ShopKeeper" unique_id=1649944910]
-offset_left = -54.0
-offset_top = -299.0
-offset_right = 83.0
-offset_bottom = 26.0
-mouse_default_cursor_shape = 2
-theme_override_styles/focus = ExtResource("92")
-flat = true
-script = ExtResource("158")
-
-[node name="ShopKeeperHint" type="RichTextLabel" parent="ShopKeeper" unique_id=2067907432 groups=["Tooltip"]]
-visible = false
-clip_contents = false
-offset_left = -107.0
-offset_top = -106.0
-offset_right = 112.0
-offset_bottom = 2.0
-mouse_filter = 2
-theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_constants/shadow_offset_x = 3
-theme_override_constants/shadow_offset_y = 3
-theme_override_constants/outline_size = 3
-theme_override_fonts/normal_font = SubResource("258")
-theme_override_fonts/italics_font = ExtResource("235")
-theme_override_font_sizes/normal_font_size = 25
-bbcode_enabled = true
-text = "Click me
-for valuabletips!"
-fit_content = true
-scroll_active = false
-meta_underlined = false
-
-[node name="SpeechBubble" type="Node2D" parent="." unique_id=254935309]
+[node name="SpeechBubble" parent="." unique_id=254935309 instance=ExtResource("split_SpeechBubble")]
 unique_name_in_owner = true
 z_index = 33
 position = Vector2(1555, 824)
 scale = Vector2(1e-05, 1e-05)
 script = ExtResource("85")
 
-[node name="Speechbubble" type="Sprite2D" parent="SpeechBubble" unique_id=986096367]
-position = Vector2(-541, -119)
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("84")
-centered = false
 
-[node name="RichTextLabel" type="RichTextLabel" parent="SpeechBubble" unique_id=592367478]
-clip_contents = false
-offset_left = -500.0
-offset_top = -86.0
-offset_right = -83.0
-offset_bottom = 50.0
-mouse_filter = 2
-theme_override_colors/default_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 0
-theme_override_fonts/normal_font = SubResource("121")
-theme_override_fonts/bold_font = SubResource("194")
-theme_override_fonts/italics_font = ExtResource("235")
-theme_override_font_sizes/normal_font_size = 25
-theme_override_font_sizes/bold_font_size = 25
-bbcode_enabled = true
-text = "line1
-line2
-line3
-line4"
-fit_content = true
-scroll_active = false
-custom_effects = [ExtResource("86")]
-script = ExtResource("83")
-sounds = Array[AudioStream]([ExtResource("113"), ExtResource("114"), ExtResource("115"), ExtResource("112")])
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SpeechBubble" unique_id=572901328]
-callback_mode_process = 0
-libraries/ = SubResource("AnimationLibrary_egpst")
 
-[node name="Tutorial" type="Node2D" parent="SpeechBubble" unique_id=577561061]
-visible = false
-position = Vector2(-521, -48)
-scale = Vector2(0.7, 0.7)
 
-[node name="Line" type="Sprite2D" parent="SpeechBubble/Tutorial" unique_id=161960512]
-position = Vector2(0, -55)
-texture = ExtResource("263")
 
-[node name="Dot" type="Sprite2D" parent="SpeechBubble/Tutorial" unique_id=1056028058]
-texture = ExtResource("262")
-offset = Vector2(0, -8.57141)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SpeechBubble/Tutorial" unique_id=209305392]
-libraries/ = SubResource("AnimationLibrary_slqfk")
-
-[node name="Check" type="Node2D" parent="SpeechBubble/Tutorial" unique_id=1034314058]
-visible = false
-position = Vector2(5.71423, -54.2858)
-
-[node name="Checkmark" type="Sprite2D" parent="SpeechBubble/Tutorial/Check" unique_id=686967553]
-position = Vector2(-1.42859, 1.42859)
-scale = Vector2(1.98214, 1.98214)
-texture = ExtResource("264")
-
-[node name="Sellbox" type="Area2D" parent="." unique_id=238923136]
+[node name="Sellbox" parent="." unique_id=238923136 instance=ExtResource("split_Sellbox")]
 z_index = 3
 position = Vector2(1429, 909)
 monitorable = false
 script = ExtResource("16")
 
-[node name="HintArea" type="Control" parent="Sellbox" unique_id=1257058900]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -109.0
-offset_top = -112.0
-offset_right = 65.0
-offset_bottom = 116.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sellbox" unique_id=993597010]
-visible = false
-position = Vector2(82.5, -72)
-shape = SubResource("1")
 
-[node name="Chestnut" type="Node2D" parent="Sellbox" unique_id=2134722366]
-z_index = 4
-position = Vector2(-25, 66)
-scale = Vector2(0.45, 0.45)
 
-[node name="BottomBack" type="Sprite2D" parent="Sellbox/Chestnut" unique_id=1451801748]
-z_index = -9
-position = Vector2(-13.3333, -248.889)
-texture = ExtResource("140")
 
-[node name="Tongue" type="Sprite2D" parent="Sellbox/Chestnut" unique_id=422140656]
-z_index = -9
-position = Vector2(108.889, -146.667)
-rotation = 0.133119
-scale = Vector2(1.01975, 1)
-texture = ExtResource("275")
-offset = Vector2(-71.1116, -20)
-
-[node name="TongueAnimation" type="AnimationPlayer" parent="Sellbox/Chestnut/Tongue" unique_id=154535596]
-libraries/ = SubResource("AnimationLibrary_ojdvg")
-autoplay = &"Idle"
-
-[node name="BottomFront" type="Sprite2D" parent="Sellbox/Chestnut" unique_id=1396823332]
-position = Vector2(-13, -63)
-texture = ExtResource("239")
-
-[node name="Top" type="Sprite2D" parent="Sellbox/Chestnut" unique_id=1296705366]
-position = Vector2(217.778, -184.444)
-texture = ExtResource("238")
-offset = Vector2(-231.111, -100)
-
-[node name="TopTeeth" type="Sprite2D" parent="Sellbox/Chestnut/Top" unique_id=2019493455]
-z_index = -1
-position = Vector2(-272.383, 23.2065)
-texture = ExtResource("274")
-
-[node name="Eye" type="Sprite2D" parent="Sellbox/Chestnut/Top" unique_id=1398501005]
-position = Vector2(-275.556, -73.3334)
-scale = Vector2(1, 1.28853)
-texture = ExtResource("237")
-
-[node name="Pupil" type="Sprite2D" parent="Sellbox/Chestnut/Top/Eye" unique_id=340960835]
-position = Vector2(0, -0.0430908)
-scale = Vector2(1.554, 1)
-texture = ExtResource("231")
-script = ExtResource("170")
-friction = 0.08
-eyeRadius = 13.0
-mouseFollowStrength = 0.012
-aspect = Vector2(0.85, 1.05)
-mouseLimit = 16.434
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Sellbox/Chestnut" unique_id=190431440]
-visible = false
-clip_contents = false
-offset_left = -111.333
-offset_top = -103.0
-offset_right = 186.667
-offset_bottom = 47.0002
-pivot_offset = Vector2(140.042, 64.9648)
-theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_constants/shadow_offset_x = 3
-theme_override_constants/shadow_offset_y = 3
-theme_override_constants/outline_size = 4
-theme_override_fonts/normal_font = SubResource("355")
-theme_override_fonts/italics_font = ExtResource("235")
-theme_override_font_sizes/normal_font_size = 46
-bbcode_enabled = true
-text = "Drop here to sell for $price gold"
-scroll_active = false
-script = ExtResource("182")
-prefix = "[center]"
-
-[node name="SellHint" type="Label" parent="Sellbox/Chestnut" unique_id=701226718 groups=["Tooltip"]]
-visible = false
-custom_minimum_size = Vector2(131, 0)
-offset_left = -137.778
-offset_top = -102.222
-offset_right = 19.2224
-offset_bottom = -21.2222
-scale = Vector2(2, 2)
-theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
-theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/outline_size = 1
-theme_override_fonts/font = SubResource("6")
-theme_override_font_sizes/font_size = 22
-text = "Drop items here to sell them!"
-horizontal_alignment = 1
-autowrap_mode = 3
-script = ExtResource("182")
-translationKey = "HINT_Sell"
-
-[node name="BottomPos" type="Marker2D" parent="Sellbox/Chestnut" unique_id=1815982188]
-position = Vector2(62.1797, 68.3684)
-scale = Vector2(2.22222, 2.22222)
-
-[node name="Light3D" type="Sprite2D" parent="Sellbox/Chestnut" unique_id=925067073]
-modulate = Color(1, 1, 1, 0)
-self_modulate = Color(4, 3, 1, 0.25)
-show_behind_parent = true
-z_index = -2
-position = Vector2(-2.26489, -267.187)
-scale = Vector2(1.56217, 1.95269)
-texture = ExtResource("12")
-
-[node name="Particles" type="GPUParticles2D" parent="Sellbox/Chestnut" unique_id=255327235]
-modulate = Color(3, 3, 3, 1)
-z_index = -1
-position = Vector2(-2.26489, -131.632)
-rotation = -0.0628318
-scale = Vector2(1.11111, 1.11111)
-emitting = false
-amount = 28
-texture = ExtResource("116")
-lifetime = 0.5
-process_material = SubResource("386")
-script = ExtResource("121")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sellbox" unique_id=1207311811]
-libraries/ = SubResource("AnimationLibrary_m83kg")
-
-[node name="TradeAnimation" type="AnimationPlayer" parent="Sellbox" unique_id=260807026]
-libraries/ = SubResource("AnimationLibrary_dgw42")
-
-[node name="GoldPos" type="Marker2D" parent="Sellbox" unique_id=1532405143]
-position = Vector2(36, 33)
-
-[node name="Shadow" type="Sprite2D" parent="Sellbox" unique_id=794655188]
-modulate = Color(1, 1, 1, 0.611765)
-position = Vector2(-7.91191, 99.0591)
-rotation = -0.0383972
-scale = Vector2(3.70265, 1.95497)
-texture = ExtResource("77")
-
-[node name="ChompDust" type="GPUParticles2D" parent="Sellbox" unique_id=1472587550]
-modulate = Color(1, 1, 1, 0.717647)
-position = Vector2(-34, -9)
-emitting = false
-amount = 16
-texture = ExtResource("32")
-process_material = SubResource("265")
-
-[node name="HeartParticles" type="CPUParticles2D" parent="Sellbox" unique_id=1327098558]
-show_behind_parent = true
-position = Vector2(-24, -23)
-emitting = false
-amount = 10
-texture = ExtResource("67")
-lifetime = 1.3
-one_shot = true
-explosiveness = 0.79
-lifetime_randomness = 0.43
-emission_shape = 1
-emission_sphere_radius = 25.95
-direction = Vector2(0, -1)
-spread = 75.0
-gravity = Vector2(0, -98)
-scale_amount_curve = SubResource("382")
-color_ramp = SubResource("383")
-script = ExtResource("272")
-
-[node name="Trade" type="Node2D" parent="Sellbox" unique_id=1014074437]
-visible = false
-z_index = 35
-script = ExtResource("269")
-
-[node name="ThinkBubble3" type="Sprite2D" parent="Sellbox/Trade" unique_id=876615577]
-modulate = Color(0.913725, 0.862745, 0.803922, 1)
-z_index = -3
-position = Vector2(59.9998, -42)
-scale = Vector2(0.391176, 0.391176)
-texture = ExtResource("268")
-
-[node name="IdleAnimation" type="AnimationPlayer" parent="Sellbox/Trade/ThinkBubble3" unique_id=1029645539]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_hkq6b")
-
-[node name="ThinkBubble2" type="Sprite2D" parent="Sellbox/Trade" unique_id=897883294]
-modulate = Color(0.913725, 0.862745, 0.803922, 1)
-position = Vector2(79, -27)
-scale = Vector2(0.532353, 0.532353)
-texture = ExtResource("268")
-
-[node name="IdleAnimation" type="AnimationPlayer" parent="Sellbox/Trade/ThinkBubble2" unique_id=823180205]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_uj84n")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sellbox/Trade" unique_id=489857077]
-libraries/ = SubResource("AnimationLibrary_ane01")
-
-[node name="Node2D" type="Node2D" parent="Sellbox/Trade" unique_id=872823689]
-position = Vector2(182, 23)
-
-[node name="IdleAnimation" type="AnimationPlayer" parent="Sellbox/Trade/Node2D" unique_id=785657182]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_6jxvq")
-
-[node name="ThinkBubble1" type="Sprite2D" parent="Sellbox/Trade/Node2D" unique_id=1552136537]
-position = Vector2(-88.3276, 25.2595)
-scale = Vector2(0.658996, 0.658996)
-texture = ExtResource("267")
-offset = Vector2(150.229, -42.4889)
-
-[node name="Label" type="Label" parent="Sellbox/Trade/Node2D" unique_id=276227176]
-offset_left = -46.0
-offset_top = -67.0
-offset_right = 63.0
-offset_bottom = -41.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
-theme_override_colors/font_outline_color = Color(0.709804, 0.47451, 0.239216, 1)
-theme_override_constants/shadow_offset_x = 0
-theme_override_constants/shadow_offset_y = 0
-theme_override_constants/outline_size = 1
-theme_override_fonts/font = SubResource("405")
-theme_override_font_sizes/font_size = 23
-text = "Trade"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
-script = ExtResource("182")
-translationKey = "UI_Trade"
-
-[node name="Arrow" type="Sprite2D" parent="Sellbox/Trade/Node2D" unique_id=1729050771]
-position = Vector2(11, 0)
-scale = Vector2(0.462963, 0.462963)
-texture = ExtResource("270")
-
-[node name="Item1" type="Node2D" parent="Sellbox/Trade/Node2D" unique_id=1773704124]
-position = Vector2(-50.3276, 0.25946)
-
-[node name="HoverArea" type="Control" parent="Sellbox/Trade/Node2D/Item1" unique_id=340662588]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -36.0
-offset_top = -41.0
-offset_right = 37.0
-offset_bottom = 37.0
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-
-[node name="Item2" type="Node2D" parent="Sellbox/Trade/Node2D" unique_id=23403747]
-position = Vector2(70.6724, 0.25946)
-
-[node name="HoverArea" type="Control" parent="Sellbox/Trade/Node2D/Item2" unique_id=1477285373]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -35.0
-offset_top = -39.0
-offset_right = 38.0
-offset_bottom = 39.0
-mouse_filter = 1
-mouse_default_cursor_shape = 2
-
-[node name="GPUParticles2D" type="GPUParticles2D" parent="Sellbox/Trade" unique_id=1885298881]
-modulate = Color(0.996078, 0.886275, 0.764706, 1)
-z_index = -1
-position = Vector2(182, 18)
-emitting = false
-amount = 20
-texture = ExtResource("271")
-lifetime = 1.1
-one_shot = true
-explosiveness = 1.0
-process_material = SubResource("372")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1589007039 groups=["Wall"]]
 visible = false
@@ -4006,31 +2463,66 @@ modulate = Color(0.270588, 0.980392, 0.231373, 1)
 collision_mask = 0
 physics_material_override = SubResource("11")
 
+
+
+
+
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1680088584]
 position = Vector2(961.5, 1682.5)
 shape = SubResource("8")
 
+
+
+
+
+
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=908924264]
 position = Vector2(223, 529.961)
 shape = SubResource("9")
+
+
+
+
+
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=16758996]
 position = Vector2(-3.18022, -588.917)
 rotation = -0.322886
 shape = SubResource("262")
 
+
+
+
+
+
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=55914263]
 position = Vector2(1985.26, -564.909)
 rotation = -2.81871
 shape = SubResource("437")
 
+
+
+
+
+
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=581639440]
 position = Vector2(1773.5, 533.141)
 shape = SubResource("261")
 
+
+
+
+
+
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1807664551]
 position = Vector2(997, -1442)
 shape = SubResource("10")
+
+
+
+
+
 
 [node name="Banner1" type="Sprite2D" parent="." unique_id=234316990]
 visible = false
@@ -4038,16 +2530,31 @@ position = Vector2(984, 291)
 scale = Vector2(1.0526, 1.01633)
 texture = ExtResource("30")
 
+
+
+
+
+
 [node name="RarityHint" type="Node2D" parent="." unique_id=1836084768 groups=["Localized", "Tooltip"]]
 visible = false
 z_index = 35
 position = Vector2(1138, 33)
 script = ExtResource("217")
 
+
+
+
+
+
 [node name="Background" type="Sprite2D" parent="RarityHint" unique_id=375666026]
 position = Vector2(132.16, 135.799)
 scale = Vector2(0.696624, 0.503083)
 texture = ExtResource("78")
+
+
+
+
+
 
 [node name="Label" type="Label" parent="RarityHint" unique_id=245230619]
 offset_top = 6.0
@@ -4070,6 +2577,11 @@ translationKey = "UI_ItemChances"
 prefix = "- "
 suffix = " -"
 
+
+
+
+
+
 [node name="SaleUnique" type="RichTextLabel" parent="RarityHint" unique_id=1631421917]
 clip_contents = false
 offset_left = 18.0
@@ -4090,6 +2602,11 @@ bbcode_enabled = true
 text = "Sale: 10%. Unique on Shop entered: 2%"
 fit_content = true
 scroll_active = false
+
+
+
+
+
 
 [node name="Rarities" type="RichTextLabel" parent="RarityHint" unique_id=1090529750]
 clip_contents = false
@@ -4116,6 +2633,11 @@ Godly:"
 fit_content = true
 scroll_active = false
 
+
+
+
+
+
 [node name="Fractions" type="RichTextLabel" parent="RarityHint" unique_id=317707624]
 clip_contents = false
 offset_left = 169.0
@@ -4141,6 +2663,11 @@ text = "10%
 fit_content = true
 scroll_active = false
 
+
+
+
+
+
 [node name="RarityTooltipArea" type="Control" parent="." unique_id=239269360]
 layout_mode = 3
 anchors_preset = 0
@@ -4149,6 +2676,11 @@ offset_top = 28.0
 offset_right = 1560.0
 offset_bottom = 105.0
 mouse_default_cursor_shape = 2
+
+
+
+
+
 
 [node name="UmbrellaBasket" type="Button" parent="." unique_id=610527494]
 offset_left = 1787.0
@@ -4159,34 +2691,74 @@ theme_override_styles/focus = SubResource("49")
 flat = true
 script = ExtResource("51")
 
+
+
+
+
+
 [node name="Umbrella" type="Sprite2D" parent="UmbrellaBasket" unique_id=765880710]
 position = Vector2(70, 134)
 texture = ExtResource("48")
 region_rect = Rect2(0, 0, 84, 225)
+
+
+
+
+
 
 [node name="Basket" type="Sprite2D" parent="UmbrellaBasket" unique_id=2145258697]
 position = Vector2(63.7499, 186.958)
 scale = Vector2(1.05056, 1.05056)
 texture = ExtResource("49")
 
+
+
+
+
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="UmbrellaBasket" unique_id=87502648]
 libraries/ = SubResource("AnimationLibrary_srtrc")
+
+
+
+
+
 
 [node name="GoldPos" type="Marker2D" parent="." unique_id=2119167998]
 position = Vector2(975, -47)
 
+
+
+
+
+
 [node name="Items" type="Node2D" parent="." unique_id=21694858]
+
+
+
+
+
 
 [node name="PushToStorageHint" type="Node2D" parent="." unique_id=1572445902 groups=["Tooltip"]]
 visible = false
 z_index = 44
 position = Vector2(580, 817)
 
+
+
+
+
+
 [node name="Background" type="Sprite2D" parent="PushToStorageHint" unique_id=1664167840]
 position = Vector2(74.1678, 72.0538)
 rotation = 1.5708
 scale = Vector2(0.36408, 0.308486)
 texture = ExtResource("78")
+
+
+
+
+
 
 [node name="Hint" type="RichTextLabel" parent="PushToStorageHint" unique_id=1167987352]
 custom_minimum_size = Vector2(156, 108)
@@ -4213,17 +2785,32 @@ script = ExtResource("182")
 translationKey = "HINT_PushToStorage"
 prefix = "[center]"
 
+
+
+
+
+
 [node name="DashedArrow" type="Sprite2D" parent="PushToStorageHint" unique_id=1942267252]
 visible = false
 z_index = -35
 position = Vector2(176, -19)
 texture = ExtResource("221")
 
+
+
+
+
+
 [node name="Patch1" type="Sprite2D" parent="." unique_id=1370033684]
 modulate = Color(1, 1, 1, 0.839216)
 position = Vector2(1814.25, 950)
 scale = Vector2(1.03659, 0.783505)
 texture = ExtResource("150")
+
+
+
+
+
 
 [node name="Label4" type="Label" parent="." unique_id=1587387980]
 visible = false
@@ -4246,6 +2833,11 @@ autowrap_mode = 3
 script = ExtResource("182")
 translationKey = "BUTTON_RecipeBook"
 
+
+
+
+
+
 [node name="RecipeBookButton" type="Button" parent="." unique_id=1946970714]
 offset_left = 1727.0
 offset_top = 954.0
@@ -4265,6 +2857,11 @@ icon_alignment = 2
 expand_icon = true
 script = ExtResource("197")
 
+
+
+
+
+
 [node name="ItemLibraryButton" type="Button" parent="." unique_id=934599485]
 offset_left = 1730.0
 offset_top = 882.0
@@ -4283,9 +2880,19 @@ icon_alignment = 2
 expand_icon = true
 script = ExtResource("39")
 
+
+
+
+
+
 [node name="ItemLibraryTutorial" type="AnimationPlayer" parent="ItemLibraryButton" unique_id=1390352478]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_nv4jn")
+
+
+
+
+
 
 [node name="RecipeBookLabel" type="Label" parent="." unique_id=764894356]
 offset_left = 1732.0
@@ -4307,6 +2914,11 @@ autowrap_mode = 3
 script = ExtResource("182")
 translationKey = "BUTTON_RecipeBook"
 
+
+
+
+
+
 [node name="ItemLibraryLabel" type="Label" parent="." unique_id=442735842]
 offset_left = 1716.0
 offset_top = 906.0
@@ -4327,9 +2939,19 @@ autowrap_mode = 3
 script = ExtResource("182")
 translationKey = "BUTTON_ItemLibrary"
 
+
+
+
+
+
 [node name="GridStorage" type="Node2D" parent="." unique_id=1797334595]
 z_index = 30
 script = ExtResource("194")
+
+
+
+
+
 
 [node name="ScrollContainer" type="ScrollContainer" parent="GridStorage" unique_id=161636262]
 offset_left = 780.0
@@ -4340,6 +2962,11 @@ theme = ExtResource("309")
 script = ExtResource("163")
 detectZoom = true
 
+
+
+
+
+
 [node name="GridContainer" type="GridContainer" parent="GridStorage/ScrollContainer" unique_id=1618517982]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -4349,67 +2976,164 @@ theme_override_constants/h_separation = -3
 theme_override_constants/v_separation = -3
 columns = 5
 
+
+
+
+
+
 [node name="GridStorageEntry" parent="GridStorage/ScrollContainer/GridContainer" unique_id=1244572721 instance=ExtResource("305")]
 layout_mode = 2
 
+
+
+
+
+
 [node name="BannerTimer" type="Timer" parent="." unique_id=1103157229]
+
+
+
+
+
 
 [connection signal="button_down" from="StartCombatButton" to="StartCombatButton" method="onButtonDown"]
 
+
+
+
+
+
 [connection signal="button_up" from="StartCombatButton" to="StartCombatButton" method="onButtonUp"]
+
+
+
+
+
 
 [connection signal="mouse_entered" from="StartCombatButton" to="ShopKeeper" method="onStartHovered"]
 
+
+
+
+
+
 [connection signal="pressed" from="StartCombatButton" to="StartCombatButton" method="onPressed"]
+
+
+
+
+
 
 [connection signal="button_down" from="FlowerVase" to="FlowerVase" method="_on_FlowerVase_button_down"]
 
+
+
+
+
+
 [connection signal="button_down" from="Lamp/Button" to="Lamp" method="onLampPressed"]
+
+
+
+
+
 
 [connection signal="gui_input" from="Lamp/Button" to="Lamp" method="_gui_input"]
 
+
+
+
+
+
 [connection signal="button_down" from="OffScreenItemIndicator" to="Storagebox/StorageArea" method="onIndicatorPressed"]
 
-[connection signal="body_entered" from="Storagebox/StorageArea" to="Storagebox/StorageArea" method="onBodyEntered"]
 
-[connection signal="body_exited" from="Storagebox/StorageArea" to="Storagebox/StorageArea" method="onBodyExited"]
 
-[connection signal="timeout" from="Storagebox/StorageArea/Timer" to="Storagebox/StorageArea" method="checkBodies"]
 
-[connection signal="timeout" from="Storagebox/StorageArea/IndicatorTimer" to="Storagebox/StorageArea" method="onIndicatorTimeout"]
 
-[connection signal="body_entered" from="Storagebox/StartButtonArea" to="Storagebox/StartButtonArea" method="onItemEntered"]
-
-[connection signal="body_exited" from="Storagebox/StartButtonArea" to="Storagebox/StartButtonArea" method="onItemExited"]
-
-[connection signal="timeout" from="Storagebox/StartButtonArea/Timer" to="Storagebox/StartButtonArea" method="onTimeout"]
-
-[connection signal="button_down" from="Reroll/RerollRope" to="Reroll/RerollRope" method="_button_down"]
-
-[connection signal="button_up" from="Reroll/RerollRope" to="Reroll/RerollRope" method="_button_up"]
 
 [connection signal="mouse_entered" from="ShopKeeper/FurciferButton" to="ShopKeeper" method="onHover"]
 
+
+
+
+
+
 [connection signal="mouse_exited" from="ShopKeeper/FurciferButton" to="ShopKeeper" method="onHoverEnd"]
+
+
+
+
+
 
 [connection signal="pressed" from="ShopKeeper/FurciferButton" to="ShopKeeper" method="onShopkeeperClicked"]
 
+
+
+
+
+
 [connection signal="closed" from="SpeechBubble" to="ShopKeeper" method="onSpeechbubbleClosed"]
+
+
+
+
+
 
 [connection signal="text_finished" from="SpeechBubble/RichTextLabel" to="SpeechBubble" method="onTextFinished"]
 
+
+
+
+
+
 [connection signal="animation_finished" from="SpeechBubble/AnimationPlayer" to="SpeechBubble" method="onAnimationFinished"]
+
+
+
+
+
 
 [connection signal="gui_input" from="Sellbox/HintArea" to="Sellbox" method="_gui_input"]
 
+
+
+
+
+
 [connection signal="mouse_entered" from="Sellbox/HintArea" to="Sellbox" method="onHoverHintArea"]
+
+
+
+
+
 
 [connection signal="mouse_exited" from="Sellbox/HintArea" to="Sellbox" method="onHoverHintAreaEnd"]
 
+
+
+
+
+
 [connection signal="mouse_entered" from="RarityTooltipArea" to="RarityHint" method="show"]
+
+
+
+
+
 
 [connection signal="mouse_exited" from="RarityTooltipArea" to="RarityHint" method="hide"]
 
+
+
+
+
+
 [connection signal="button_down" from="UmbrellaBasket" to="UmbrellaBasket" method="_on_UmbrellaBasket_button_down"]
+
+
+
+
+
 
 [editable path="Shelf"]

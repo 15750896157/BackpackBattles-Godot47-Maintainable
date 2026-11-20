@@ -1,0 +1,1324 @@
+[gd_scene format=3 uid="uid://bc24meacq83k5"]
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Shop/ShopOffer.tscn" id="1"]
+
+
+[ext_resource type="Texture2D" uid="uid://cqqcwg08rg7fb" path="res://Art/Assets/Decoration/Vase.png" id="6"]
+
+
+[ext_resource type="Texture2D" uid="uid://uy61wstnacts" path="res://Art/Assets/Light/ShopLight.png" id="12"]
+
+
+[ext_resource type="Texture2D" uid="uid://b0qmhs5cumgu2" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Tail.png" id="13"]
+
+
+[ext_resource type="Texture2D" uid="uid://blwb7pgiusqys" path="res://Art/Assets/Shop/Shopkeeper/Shopkeeper_Arm.png" id="14"]
+
+
+[ext_resource type="Script" uid="uid://dgju3at8nmvet" path="res://PvE/UI/Inventory/Sellbox.gd" id="16"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="20"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
+
+
+[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Art/Assets/Particles/Dust1.png" id="32"]
+
+
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
+
+
+[ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Art/Assets/shadow.png" id="77"]
+
+
+[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
+
+
+[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
+
+
+[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Art/Shader/SmoothFadeGradient.tres" id="135"]
+
+
+[ext_resource type="Texture2D" uid="uid://xunrrwyavs7s" path="res://Art/Assets/Chestnut/Bottom_back.png" id="140"]
+
+
+[ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Art/Items/Exclusive/Animations/GooglyEye.gd" id="170"]
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+[ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Art/Items/Exclusive/Sprites/Pupil2.png" id="231"]
+
+
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="235"]
+
+
+[ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Art/Assets/Chestnut/Eye.png" id="237"]
+
+
+[ext_resource type="Texture2D" uid="uid://c88u5u8ss7b23" path="res://Art/Assets/Chestnut/Top_front.png" id="238"]
+
+
+[ext_resource type="Texture2D" uid="uid://ba21tmupdvdxn" path="res://Art/Assets/Chestnut/Bottom_front.png" id="239"]
+
+
+[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="253"]
+
+
+[ext_resource type="Texture2D" uid="uid://1pwg5fm8pmbd" path="res://Art/Assets/Chestnut/ThinkBubble1.png" id="267"]
+
+
+[ext_resource type="Texture2D" uid="uid://bfvd2vcxbcxyh" path="res://Art/Assets/Chestnut/ThinkBubble2.png" id="268"]
+
+
+[ext_resource type="Script" uid="uid://diqa088xtlced" path="res://PvE/UI/Shop/ChestnutTrade.gd" id="269"]
+
+
+[ext_resource type="Texture2D" uid="uid://cmw14ooagfuuu" path="res://Art/Assets/Chestnut/Arrow.png" id="270"]
+
+
+[ext_resource type="Texture2D" uid="uid://bl71v7dms2dfg" path="res://Art/Assets/Cloud.png" id="271"]
+
+
+[ext_resource type="Script" uid="uid://dgchvlvcrua0k" path="res://Code/Utility/AutoHideCPUParticles.gd" id="272"]
+
+
+[ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Art/Assets/Chestnut/Top_teeth.png" id="274"]
+
+
+[ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Art/Assets/Chestnut/Tongue.png" id="275"]
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+[ext_resource type="GradientTexture1D" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedGradientTexture1D_267.tres" id="m7_shared_267"]
+
+
+[sub_resource type="FontVariation" id="16"]
+base_font = ExtResource("20")
+spacing_top = -10
+script = ExtResource("LegacyFontMigration")
+size = 38
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+use_mipmaps = true
+
+
+[sub_resource type="Animation" id="170"]
+resource_name = "ArrowIdle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(1100, 200), Vector2(1110, 200)]
+}
+
+
+[sub_resource type="FontVariation" id="121"]
+base_font = ExtResource("27")
+spacing_top = -1
+spacing_bottom = -1
+script = ExtResource("LegacyFontMigration")
+size = 25
+use_mipmaps = true
+
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(427, 302)
+
+
+[sub_resource type="Animation" id="421"]
+resource_name = "Idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [17.0, 6.6]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(1.2, 1), Vector2(1, 1)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ojdvg"]
+_data = {
+&"Idle": SubResource("421")
+}
+
+
+[sub_resource type="FontVariation" id="355"]
+base_font = ExtResource("23")
+spacing_top = -5
+spacing_bottom = -5
+script = ExtResource("LegacyFontMigration")
+size = 46
+outline_size = 4
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="FontVariation" id="6"]
+base_font = ExtResource("23")
+spacing_top = -5
+script = ExtResource("LegacyFontMigration")
+size = 22
+outline_size = 1
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Gradient" id="384"]
+colors = PackedColorArray(0.972656, 0.89384, 0.503426, 1, 0.974609, 0.577723, 0.243652, 1)
+
+
+[sub_resource type="GradientTexture1D" id="385"]
+gradient = SubResource("384")
+width = 100
+
+
+[sub_resource type="ParticleProcessMaterial" id="386"]
+lifetime_randomness = 0.38
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 3.75
+initial_velocity_min = 479.1636
+initial_velocity_max = 694.44
+angular_velocity_min = -720.0
+angular_velocity_max = 720.0
+gravity = Vector3(0, 0, 0)
+scale_min = 2.314
+scale_max = 3.19
+color_ramp = ExtResource("253")
+color_initial_ramp = SubResource("385")
+
+
+[sub_resource type="Animation" id="Animation_p2yr7"]
+resource_name = "EatCoin"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Chestnut/Top:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.31746, 0.958201),
+"transitions": PackedFloat32Array(-2.63902, -2.63902, -2.63902),
+"update": 0,
+"values": [0.0, 50.0, 0.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.84),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"close"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ChompDust:emitting")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+
+[sub_resource type="Animation" id="Animation_ypgvu"]
+resource_name = "EatGold"
+length = 1.5
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.33),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"close"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ChompDust:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Chestnut/Top:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.551148, 1.5),
+"transitions": PackedFloat32Array(-2.63902, -2.63902, -2.63902),
+"update": 0,
+"values": [0.0, 50.0, 0.0]
+}
+
+
+[sub_resource type="Animation" id="12"]
+resource_name = "Hover"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChompDust:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Chestnut/Top:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(-2.63902, -2.63902),
+"update": 0,
+"values": [0.0, 50.0]
+}
+
+
+[sub_resource type="Animation" id="13"]
+resource_name = "IdleOpen"
+length = 6.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChompDust:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+
+[sub_resource type="Animation" id="14"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChompDust:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Chestnut/Top:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2.63902),
+"update": 0,
+"values": [0.0]
+}
+
+
+[sub_resource type="Animation" id="15"]
+resource_name = "Sell"
+length = 5.0
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.32, 0.91, 1.46, 2.07, 3.32, 4.33),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"chomp"
+}, {
+"args": [],
+"method": &"chomp"
+}, {
+"args": [],
+"method": &"chomp"
+}, {
+"args": [],
+"method": &"chomp"
+}, {
+"args": [],
+"method": &"burp"
+}, {
+"args": [],
+"method": &"close"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ChompDust:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.6, 3.5, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Chestnut/Top:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.8, 1.1, 1.4, 1.7, 2, 2.3, 3.3, 3.6, 4, 4.4),
+"transitions": PackedFloat32Array(2, -2, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902, -2.63902),
+"update": 0,
+"values": [50.0, 0.0, 8.4, 0.0, 9.2, 0.0, 7.7, 0.0, 0.0, 12.8, 17.2, 0.0]
+}
+
+
+[sub_resource type="Animation" id="Animation_a74tq"]
+resource_name = "SpitGold"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChompDust:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Chestnut/Top:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.9),
+"transitions": PackedFloat32Array(-2.63902, -2.63902, -2.63902),
+"update": 0,
+"values": [0.0, 12.8, 0.0]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m83kg"]
+_data = {
+&"EatCoin": SubResource("Animation_p2yr7"),
+&"EatGold": SubResource("Animation_ypgvu"),
+&"Hover": SubResource("12"),
+&"IdleOpen": SubResource("13"),
+&"RESET": SubResource("14"),
+&"Sell": SubResource("15"),
+&"SpitGold": SubResource("Animation_a74tq")
+}
+
+
+[sub_resource type="Animation" id="380"]
+length = 0.001
+
+
+[sub_resource type="Animation" id="381"]
+resource_name = "Trade"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HeartParticles")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"activate"
+}]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dgw42"]
+_data = {
+&"RESET": SubResource("380"),
+&"Trade": SubResource("381")
+}
+
+
+[sub_resource type="ParticleProcessMaterial" id="265"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(-1, -1, 0)
+spread = 26.49
+initial_velocity_min = 201.6817
+initial_velocity_max = 242.99
+angular_velocity_min = -80.75
+angular_velocity_max = 80.75
+gravity = Vector3(0, 200, 0)
+scale_min = 0.09
+scale_max = 0.2083
+color_ramp = ExtResource("135")
+color_initial_ramp = ExtResource("m7_shared_267")
+
+
+[sub_resource type="Curve" id="382"]
+_data = [Vector2(0, 0.595455), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.1505, 0.0, 0, 0]
+point_count = 2
+
+
+[sub_resource type="Gradient" id="383"]
+offsets = PackedFloat32Array(0, 0.102941, 0.772727, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+
+[sub_resource type="Animation" id="374"]
+resource_name = "Idle"
+length = 1.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ThinkBubble3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.3, 0.5, 0.8, 1, 1.2, 1.5),
+"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2, -2),
+"update": 0,
+"values": [Vector2(59.9998, -42), Vector2(60, -37), Vector2(59.9998, -42), Vector2(63, -38), Vector2(60, -39), Vector2(63, -42), Vector2(58, -42)]
+}
+
+
+[sub_resource type="Animation" id="375"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ThinkBubble3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(59.9998, -42)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hkq6b"]
+_data = {
+&"Idle": SubResource("374"),
+&"RESET": SubResource("375")
+}
+
+
+[sub_resource type="Animation" id="376"]
+resource_name = "Idle"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ThinkBubble2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.7, 1, 1.2),
+"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2),
+"update": 0,
+"values": [Vector2(79, -27), Vector2(76, -23), Vector2(76, -30), Vector2(78, -26), Vector2(79, -24), Vector2(74, -27)]
+}
+
+
+[sub_resource type="Animation" id="377"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ThinkBubble2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(79, -27)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uj84n"]
+_data = {
+&"Idle": SubResource("376"),
+&"RESET": SubResource("377")
+}
+
+
+[sub_resource type="Animation" id="371"]
+resource_name = "EndTrade"
+length = 0.5
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"reset"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ThinkBubble3:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(0.391176, 0.391176), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ThinkBubble2:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(0.532353, 0.532353), Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Node2D:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+
+
+[sub_resource type="Animation" id="373"]
+resource_name = "NewTrade"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ThinkBubble3:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2),
+"update": 0,
+"values": [Vector2(0.391176, 0.391176)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ThinkBubble2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2),
+"update": 0,
+"values": [Vector2(0.532353, 0.532353)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.171918, 0.4),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("GPUParticles2D:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GPUParticles2D")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
+
+
+[sub_resource type="Animation" id="369"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ThinkBubble3:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.391176, 0.391176)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ThinkBubble2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.532353, 0.532353)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+
+[sub_resource type="Animation" id="370"]
+resource_name = "ShowTrade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ThinkBubble3:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.158842),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.391176, 0.391176)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ThinkBubble2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.235959),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0.532353, 0.532353)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.164041, 0.355573, 0.598814),
+"transitions": PackedFloat32Array(1, -2, -2, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(1.3, 1.3), Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GPUParticles2D:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GPUParticles2D")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.0640119, 0.326939, 1),
+"transitions": PackedFloat32Array(1, -2, -2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1.5, 1.5, 1.5, 1), Color(1, 1, 1, 1)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ane01"]
+_data = {
+&"EndTrade": SubResource("371"),
+&"NewTrade": SubResource("373"),
+&"RESET": SubResource("369"),
+&"ShowTrade": SubResource("370")
+}
+
+
+[sub_resource type="Animation" id="378"]
+resource_name = "Idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.235369, 0.5, 0.8, 1.1, 1.4, 1.7),
+"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2, -2),
+"update": 0,
+"values": [Vector2(182, 23), Vector2(187, 26), Vector2(182, 23), Vector2(178, 15), Vector2(189, 15), Vector2(185.5, 19), Vector2(182, 24)]
+}
+
+
+[sub_resource type="Animation" id="379"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(182, 23)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6jxvq"]
+_data = {
+&"Idle": SubResource("378"),
+&"RESET": SubResource("379")
+}
+
+
+[sub_resource type="FontVariation" id="405"]
+base_font = ExtResource("27")
+script = ExtResource("LegacyFontMigration")
+size = 23
+outline_size = 1
+outline_color = Color(0.709804, 0.47451, 0.239216, 1)
+use_mipmaps = true
+
+
+[sub_resource type="ParticleProcessMaterial" id="372"]
+lifetime_randomness = 0.16
+particle_flag_disable_z = true
+angle_max = 720.0
+spread = 180.0
+initial_velocity_min = 262.5
+initial_velocity_max = 375.0
+gravity = Vector3(0, 100, 0)
+damping_min = 300.0
+damping_max = 300.0
+scale_min = 0.12
+scale_max = 0.3928
+color_ramp = ExtResource("135")
+
+
+[node name="Sellbox" type="Area2D" unique_id=238923136]
+z_index = 3
+position = Vector2(1429, 909)
+monitorable = false
+script = ExtResource("16")
+
+
+[node name="HintArea" type="Control" parent="." unique_id=1257058900]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -109.0
+offset_top = -112.0
+offset_right = 65.0
+offset_bottom = 116.0
+
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=993597010]
+visible = false
+position = Vector2(82.5, -72)
+shape = SubResource("1")
+
+
+[node name="Chestnut" type="Node2D" parent="." unique_id=2134722366]
+z_index = 4
+position = Vector2(-25, 66)
+scale = Vector2(0.45, 0.45)
+
+
+[node name="BottomBack" type="Sprite2D" parent="Chestnut" unique_id=1451801748]
+z_index = -9
+position = Vector2(-13.3333, -248.889)
+texture = ExtResource("140")
+
+
+[node name="Tongue" type="Sprite2D" parent="Chestnut" unique_id=422140656]
+z_index = -9
+position = Vector2(108.889, -146.667)
+rotation = 0.133119
+scale = Vector2(1.01975, 1)
+texture = ExtResource("275")
+offset = Vector2(-71.1116, -20)
+
+
+[node name="TongueAnimation" type="AnimationPlayer" parent="Chestnut/Tongue" unique_id=154535596]
+libraries/ = SubResource("AnimationLibrary_ojdvg")
+autoplay = &"Idle"
+
+
+[node name="BottomFront" type="Sprite2D" parent="Chestnut" unique_id=1396823332]
+position = Vector2(-13, -63)
+texture = ExtResource("239")
+
+
+[node name="Top" type="Sprite2D" parent="Chestnut" unique_id=1296705366]
+position = Vector2(217.778, -184.444)
+texture = ExtResource("238")
+offset = Vector2(-231.111, -100)
+
+
+[node name="TopTeeth" type="Sprite2D" parent="Chestnut/Top" unique_id=2019493455]
+z_index = -1
+position = Vector2(-272.383, 23.2065)
+texture = ExtResource("274")
+
+
+[node name="Eye" type="Sprite2D" parent="Chestnut/Top" unique_id=1398501005]
+position = Vector2(-275.556, -73.3334)
+scale = Vector2(1, 1.28853)
+texture = ExtResource("237")
+
+
+[node name="Pupil" type="Sprite2D" parent="Chestnut/Top/Eye" unique_id=340960835]
+position = Vector2(0, -0.0430908)
+scale = Vector2(1.554, 1)
+texture = ExtResource("231")
+script = ExtResource("170")
+friction = 0.08
+eyeRadius = 13.0
+mouseFollowStrength = 0.012
+aspect = Vector2(0.85, 1.05)
+mouseLimit = 16.434
+
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Chestnut" unique_id=190431440]
+visible = false
+clip_contents = false
+offset_left = -111.333
+offset_top = -103.0
+offset_right = 186.667
+offset_bottom = 47.0002
+pivot_offset = Vector2(140.042, 64.9648)
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 4
+theme_override_fonts/normal_font = SubResource("355")
+theme_override_fonts/italics_font = ExtResource("235")
+theme_override_font_sizes/normal_font_size = 46
+bbcode_enabled = true
+text = "Drop here to sell for $price gold"
+scroll_active = false
+script = ExtResource("182")
+prefix = "[center]"
+
+
+[node name="SellHint" type="Label" parent="Chestnut" unique_id=701226718 groups=["Tooltip"]]
+visible = false
+custom_minimum_size = Vector2(131, 0)
+offset_left = -137.778
+offset_top = -102.222
+offset_right = 19.2224
+offset_bottom = -21.2222
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = SubResource("6")
+theme_override_font_sizes/font_size = 22
+text = "Drop items here to sell them!"
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "HINT_Sell"
+
+
+[node name="BottomPos" type="Marker2D" parent="Chestnut" unique_id=1815982188]
+position = Vector2(62.1797, 68.3684)
+scale = Vector2(2.22222, 2.22222)
+
+
+[node name="Light3D" type="Sprite2D" parent="Chestnut" unique_id=925067073]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(4, 3, 1, 0.25)
+show_behind_parent = true
+z_index = -2
+position = Vector2(-2.26489, -267.187)
+scale = Vector2(1.56217, 1.95269)
+texture = ExtResource("12")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Chestnut" unique_id=255327235]
+modulate = Color(3, 3, 3, 1)
+z_index = -1
+position = Vector2(-2.26489, -131.632)
+rotation = -0.0628318
+scale = Vector2(1.11111, 1.11111)
+emitting = false
+amount = 28
+texture = ExtResource("116")
+lifetime = 0.5
+process_material = SubResource("386")
+script = ExtResource("121")
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1207311811]
+libraries/ = SubResource("AnimationLibrary_m83kg")
+
+
+[node name="TradeAnimation" type="AnimationPlayer" parent="." unique_id=260807026]
+libraries/ = SubResource("AnimationLibrary_dgw42")
+
+
+[node name="GoldPos" type="Marker2D" parent="." unique_id=1532405143]
+position = Vector2(36, 33)
+
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=794655188]
+modulate = Color(1, 1, 1, 0.611765)
+position = Vector2(-7.91191, 99.0591)
+rotation = -0.0383972
+scale = Vector2(3.70265, 1.95497)
+texture = ExtResource("77")
+
+
+[node name="ChompDust" type="GPUParticles2D" parent="." unique_id=1472587550]
+modulate = Color(1, 1, 1, 0.717647)
+position = Vector2(-34, -9)
+emitting = false
+amount = 16
+texture = ExtResource("32")
+process_material = SubResource("265")
+
+
+[node name="HeartParticles" type="CPUParticles2D" parent="." unique_id=1327098558]
+show_behind_parent = true
+position = Vector2(-24, -23)
+emitting = false
+amount = 10
+texture = ExtResource("67")
+lifetime = 1.3
+one_shot = true
+explosiveness = 0.79
+lifetime_randomness = 0.43
+emission_shape = 1
+emission_sphere_radius = 25.95
+direction = Vector2(0, -1)
+spread = 75.0
+gravity = Vector2(0, -98)
+scale_amount_curve = SubResource("382")
+color_ramp = SubResource("383")
+script = ExtResource("272")
+
+
+[node name="Trade" type="Node2D" parent="." unique_id=1014074437]
+visible = false
+z_index = 35
+script = ExtResource("269")
+
+
+[node name="ThinkBubble3" type="Sprite2D" parent="Trade" unique_id=876615577]
+modulate = Color(0.913725, 0.862745, 0.803922, 1)
+z_index = -3
+position = Vector2(59.9998, -42)
+scale = Vector2(0.391176, 0.391176)
+texture = ExtResource("268")
+
+
+[node name="IdleAnimation" type="AnimationPlayer" parent="Trade/ThinkBubble3" unique_id=1029645539]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_hkq6b")
+
+
+[node name="ThinkBubble2" type="Sprite2D" parent="Trade" unique_id=897883294]
+modulate = Color(0.913725, 0.862745, 0.803922, 1)
+position = Vector2(79, -27)
+scale = Vector2(0.532353, 0.532353)
+texture = ExtResource("268")
+
+
+[node name="IdleAnimation" type="AnimationPlayer" parent="Trade/ThinkBubble2" unique_id=823180205]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_uj84n")
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Trade" unique_id=489857077]
+libraries/ = SubResource("AnimationLibrary_ane01")
+
+
+[node name="Node2D" type="Node2D" parent="Trade" unique_id=872823689]
+position = Vector2(182, 23)
+
+
+[node name="IdleAnimation" type="AnimationPlayer" parent="Trade/Node2D" unique_id=785657182]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_6jxvq")
+
+
+[node name="ThinkBubble1" type="Sprite2D" parent="Trade/Node2D" unique_id=1552136537]
+position = Vector2(-88.3276, 25.2595)
+scale = Vector2(0.658996, 0.658996)
+texture = ExtResource("267")
+offset = Vector2(150.229, -42.4889)
+
+
+[node name="Label" type="Label" parent="Trade/Node2D" unique_id=276227176]
+offset_left = -46.0
+offset_top = -67.0
+offset_right = 63.0
+offset_bottom = -41.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.709804, 0.47451, 0.239216, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = SubResource("405")
+theme_override_font_sizes/font_size = 23
+text = "Trade"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "UI_Trade"
+
+
+[node name="Arrow" type="Sprite2D" parent="Trade/Node2D" unique_id=1729050771]
+position = Vector2(11, 0)
+scale = Vector2(0.462963, 0.462963)
+texture = ExtResource("270")
+
+
+[node name="Item1" type="Node2D" parent="Trade/Node2D" unique_id=1773704124]
+position = Vector2(-50.3276, 0.25946)
+
+
+[node name="HoverArea" type="Control" parent="Trade/Node2D/Item1" unique_id=340662588]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -36.0
+offset_top = -41.0
+offset_right = 37.0
+offset_bottom = 37.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+
+
+[node name="Item2" type="Node2D" parent="Trade/Node2D" unique_id=23403747]
+position = Vector2(70.6724, 0.25946)
+
+
+[node name="HoverArea" type="Control" parent="Trade/Node2D/Item2" unique_id=1477285373]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -35.0
+offset_top = -39.0
+offset_right = 38.0
+offset_bottom = 39.0
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Trade" unique_id=1885298881]
+modulate = Color(0.996078, 0.886275, 0.764706, 1)
+z_index = -1
+position = Vector2(182, 18)
+emitting = false
+amount = 20
+texture = ExtResource("271")
+lifetime = 1.1
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("372")

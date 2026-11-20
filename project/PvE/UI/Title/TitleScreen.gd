@@ -11,13 +11,13 @@ const continueBanner_unranked = preload("res://Art/Assets/TitleScreen/ContinueBa
 const continueBanner_custom = preload("res://Art/Assets/TitleScreen/ContinueBanner_CustomUnranked.png")
 
 @onready var itemNode = $ItemNode
-@onready var rankedButton = $"%RankedButton"
-@onready var unrankedButton = $"%UnrankedButton"
-@onready var continueButton = $"%ContinueButton"
+@onready var rankedButton = $"TitleNode/RankedButton"
+@onready var unrankedButton = $"TitleNode/UnrankedButton"
+@onready var continueButton = $"TitleNode/Continue/ContinueButton"
 @onready var continueNode = $TitleNode/Continue
 @onready var customRulesIcon = $TitleNode/Continue/CustomRulesIcon
 @onready var concedeAnimation = $TitleNode/Concede/AnimationPlayer
-@onready var concedeButton = $"%ConcedeButton"
+@onready var concedeButton = $"TitleNode/Concede/ConcedeButton"
 
 @onready var quitGlow = $Node2D/Background/Quit/QuitSign/QuitSignGlow
 @onready var smokeParticles = $Node2D/Background/SmokeParticles2D
@@ -170,29 +170,29 @@ const hoverColor = Color(1.3, 1.3, 1.3)
 
 func onRankedHover() -> void :
 	if not rankedButton.disabled:
-		$"%RankedBannerHovered".show()
+		$"TitleNode/RankedBannerHovered".show()
 		rankedButton.modulate = hoverColor
 
 func onRankedHoverEnd() -> void :
-	$"%RankedBannerHovered".hide()
+	$"TitleNode/RankedBannerHovered".hide()
 	rankedButton.modulate = Color.WHITE
 
 func onUnrankedHover() -> void :
 	if not unrankedButton.disabled:
-		$"%UnrankedBannerHovered".show()
+		$"TitleNode/UnrankedBannerHovered".show()
 		unrankedButton.modulate = hoverColor
 
 func onUnrankedHoverEnd() -> void :
-	$"%UnrankedBannerHovered".hide()
+	$"TitleNode/UnrankedBannerHovered".hide()
 	unrankedButton.modulate = Color.WHITE
 
 func onContinueHover() -> void :
 	if not continueButton.disabled:
-		$"%ContinueBannerHovered".show()
+		$"TitleNode/Continue/ContinueButton/ContinueBannerHovered".show()
 		continueButton.modulate = hoverColor
 
 func onContinueHoverEnd() -> void :
-	$"%ContinueBannerHovered".hide()
+	$"TitleNode/Continue/ContinueButton/ContinueBannerHovered".hide()
 	continueButton.modulate = Color.WHITE
 
 func onQuitHover():
@@ -203,11 +203,11 @@ func onQuitHoverEnd():
 
 func onConcedeHover():
 	if not concedeButton.disabled:
-		$"%ConcedeBannerHovered".show()
+		$"TitleNode/Concede/ConcedeButton/ConcedeBannerHovered".show()
 		concedeButton.modulate = hoverColor
 
 func onConcedeHoverEnd():
-	$"%ConcedeBannerHovered".hide()
+	$"TitleNode/Concede/ConcedeButton/ConcedeBannerHovered".hide()
 	concedeButton.modulate = Color.WHITE
 
 func _on_SteamButton_pressed() -> void :
