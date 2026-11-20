@@ -1,43 +1,7 @@
 extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
-
-class ForItemFilterButton:
-	const Receiver = preload("res://UI/Interface/ItemLibrary/ItemFilterButton.gd")
-
-	static func toggleGroup(subject: Receiver):
-		var invertMode = subject.button_pressed
-
-		if subject.button_pressed:
-			for sibling in subject.siblings:
-				if sibling.button_pressed:
-					invertMode = false
-					break
-		if invertMode:
-			subject.button_pressed = false
-			for sibling in subject.siblings:
-				sibling.button_pressed = true
-		else:
-			subject.button_pressed = true
-			for sibling in subject.siblings:
-				sibling.button_pressed = false
-
-class ForItemRecordIcons:
-	const Receiver = preload("res://UI/Interface/ItemLibrary/ItemRecordIcons.gd")
-
-	static func setItem(subject: Receiver, item: Item):
-		subject.star.setItem(item)
-
-		var bestRankSurvival = Game.getItemStatistics(Game.ItemStatistic.BestRankSurvival,
-			item.descriptor)
-
-		if bestRankSurvival != null:
-			subject.rankLabel.show()
-			subject.leagueSprite.show()
-			subject.rankLight.show()
-			var ranking = snapped(bestRankSurvival, 0.01)
-			subject.rankLabel.text = str(int(fmod(ranking, 1.0) * 100.0))
-			subject.leagueSprite.texture = Game.leagueIcons[int(ranking)]
-			subject.rankLight.self_modulate = Game.leagueColors[int(ranking)]
+## 2026-11-20 ui_converge1: removed dead classes ForItemFilterButton / ForItemRecordIcons
+## (their receivers ItemFilterButton.gd / ItemRecordIcons.gd retired with the old item library panel).
 
 class ForItemRecordStar:
 	const Receiver = preload("res://UI/Interface/ItemLibrary/ItemRecordStar.gd")
