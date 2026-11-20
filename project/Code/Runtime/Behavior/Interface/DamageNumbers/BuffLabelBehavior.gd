@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/DamageNumbers/BuffLabel.gd")
+const Receiver = preload("res://PvE/UI/Feedback/DamageNumbers/BuffLabel.gd")
 
 static func spawnLabel(subject: Receiver, type, amount, changeType, appliedToOpponent):
 	Util.localizeFonts(subject.label)

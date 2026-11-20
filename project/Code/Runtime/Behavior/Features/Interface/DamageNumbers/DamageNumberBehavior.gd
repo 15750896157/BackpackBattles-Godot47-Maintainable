@@ -1,6 +1,6 @@
 extends RefCounted
 ## Domain behavior. Scene state and overridable API remain on the typed subject.
-const Receiver = preload("res://UI/Interface/DamageNumbers/DamageNumber.gd")
+const Receiver = preload("res://PvE/UI/Feedback/DamageNumbers/DamageNumber.gd")
 
 static func _ready(subject: Receiver):
 	subject.linear_velocity = Vector2.ZERO

@@ -73,7 +73,7 @@ func _ready():
 	return load("res://Code/Runtime/Behavior/Utility/UtilBehavior.gd")._ready(self)
 
 var damageNumberFonts: Array
-const baseDamageNumberFont: LegacyFont = preload("res://UI/Interface/DamageNumbers/DamageNumberBaseFont.tres")
+const baseDamageNumberFont: LegacyFont = preload("res://PvE/UI/Feedback/DamageNumbers/DamageNumberBaseFont.tres")
 
 func prepareFonts():
 	return load("res://Code/Runtime/Behavior/Utility/UtilBehavior.gd").prepareFonts(self)
@@ -416,8 +416,8 @@ func reparentNode(node, newParent):
 func getGlobalZ(target: Node2D) -> int:
 	return load("res://Code/Runtime/Behavior/Features/Utility/UtilBehavior.gd").getGlobalZ(self, target)
 
-@onready var NUMBERLABEL_SCENE = load("res://UI/Interface/DamageNumbers/DamageNumber.tscn")
-@onready var BUFFLABEL_SCENE = load("res://UI/Interface/DamageNumbers/BuffLabel.tscn")
+@onready var NUMBERLABEL_SCENE = load("res://PvE/UI/Feedback/DamageNumbers/DamageNumber.tscn")
+@onready var BUFFLABEL_SCENE = load("res://PvE/UI/Feedback/DamageNumbers/BuffLabel.tscn")
 
 func randBuffLabelDir() -> Vector2:
 	return Vector2(0, rng.randf_range( - 75, - 120))

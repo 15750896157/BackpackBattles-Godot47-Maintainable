@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://oydww8whpy03"]
 
-[ext_resource type="Script" path="res://UI/Interface/DamageNumbers/BuffLabel.gd" id="1_smqa4"]
+[ext_resource type="Script" path="res://PvE/UI/Feedback/DamageNumbers/BuffLabel.gd" id="1_smqa4"]
 [ext_resource type="FontFile" path="res://UI/Interface/Tooltips/ImageFont.tres" id="2_05w3a"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="3_1h4fu"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_yts7f"]

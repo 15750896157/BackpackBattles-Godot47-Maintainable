@@ -297,7 +297,7 @@ folder_colors={
 "res://UI/Interface/CombatTimer//": "purple",
 "res://UI/Interface/DamageMeter//": "purple",
 "res://UI/Interface/DamageMeter/Plot//": "purple",
-"res://UI/Interface/DamageNumbers//": "purple",
+"res://PvE/UI/Feedback/DamageNumbers//": "purple",
 "res://UI/Interface/Inventory//": "purple",
 "res://UI/Interface/ItemLibrary//": "purple",
 "res://UI/Interface/Lobbies//": "purple",
