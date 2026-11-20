@@ -2,7 +2,7 @@ extends RefCounted
 ## Related leaf callbacks. Each namespace keeps its original typed scene receiver.
 
 class ForPopupMessage:
-	const Receiver = preload("res://UI/Interface/PopupMessage.gd")
+	const Receiver = preload("res://PvE/UI/Feedback/PopupMessage/PopupMessage.gd")
 
 	static func setText(subject: Receiver, key: String):
 		Util.localizeFonts(subject.label)

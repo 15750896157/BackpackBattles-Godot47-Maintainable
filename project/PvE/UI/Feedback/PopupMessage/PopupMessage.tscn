@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqmlt70gpnip7"]
 
-[ext_resource type="Script" path="res://UI/Interface/PopupMessage.gd" id="1_0elio"]
+[ext_resource type="Script" path="res://PvE/UI/Feedback/PopupMessage/PopupMessage.gd" id="1_0elio"]
 [ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="2_7hhfu"]
 [ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_rhi2u"]
 [ext_resource type="Script" path="res://Code/Utility/LocalizedControl.gd" id="4_8tv3h"]

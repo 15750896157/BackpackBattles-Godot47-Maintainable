@@ -44,7 +44,7 @@ var uniqueTooltipIcon: Dictionary
 
 var defaultFonts = Dictionary()
 
-@onready var popupMessageScene = load("res://UI/Interface/PopupMessage.tscn")
+@onready var popupMessageScene = load("res://PvE/UI/Feedback/PopupMessage/PopupMessage.tscn")
 
 @onready var zapScene = load("res://Animation/Items/Animations/Zap.tscn")
 
