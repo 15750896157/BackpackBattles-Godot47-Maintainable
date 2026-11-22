@@ -9,6 +9,7 @@ const CATALOG = preload("res://PvE/Art/SuppliedArt.gd")
 const COMBAT_SCREEN = preload("res://PvE/UI/CombatScreen.gd")
 const SHOP_SCREEN = preload("res://PvE/UI/ShopScreen.gd")
 const REFERENCE_STAGES = preload("res://PvE/Art/ReferenceStages.gd")
+const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const STATUS_BADGES = preload("res://PvE/Art/StatusBadges.gd")
 var curtain
 var lighting
@@ -205,17 +206,17 @@ func text(value: String, rect: Rect2, parent: Node, size: int = 28, color: Color
 	var node = Label.new(); node.text = local(value); node.set_meta("art_text", value); node.set_meta("art_font_size", size)
 	node.position = rect.position; node.size = rect.size
 	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	node.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	node.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	node.add_theme_font_override("font", Expedition.ui_font)
-	node.add_theme_font_size_override("font_size", size)
+	node.add_theme_font_size_override("font_size", REF.font_step(size))
 	node.add_theme_color_override("font_color", color)
 	node.add_theme_color_override("font_outline_color", Color("171b20"))
 	node.add_theme_constant_override("outline_size", 3)
 	if color.get_luminance() < 0.3:
 		node.add_theme_color_override("font_outline_color",Color("fff1cc"))
 		node.add_theme_constant_override("outline_size",1)
-	parent.add_child(node); return node
+	parent.add_child(node)
+	REF.center_label(node)
+	return node
 
 func button(key: String, rect: Rect2, action: Callable, caption: String = "") -> TextureButton:
 	var node = TextureButton.new(); node.name = "Action_" + key

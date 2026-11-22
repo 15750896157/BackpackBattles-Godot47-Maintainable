@@ -15,6 +15,20 @@ func inspect_page(name:String):
 		if label.has_meta("text_deck"):
 			var restored="".join(label.get_meta("deck_pages"))
 			check(restored.replace("\n","").replace(" ","")==str(label.get_meta("source_text")).replace("\n","").replace(" ",""),name+": complete paged rule text retained")
+	# Every button caption spans the button and is centred. Cards that place an icon
+	# plus inset text keep their own composition and are skipped here.
+	for button in scope.find_children("*","BaseButton",true,false):
+		if not button.is_visible_in_tree():continue
+		if button is Button and not button is CheckBox and not button is CheckButton and not button.text.strip_edges().is_empty():
+			check(button.alignment==HORIZONTAL_ALIGNMENT_CENTER,name+": button text centred "+str(button.name))
+		var br=button.get_global_rect()
+		for child in button.get_children():
+			if not child is Label or not child.is_visible_in_tree() or child.text.strip_edges().is_empty():continue
+			var lr=child.get_global_rect()
+			if lr.position.x>br.position.x+2.0 or lr.size.x<br.size.x*0.9:continue
+			check(child.horizontal_alignment==HORIZONTAL_ALIGNMENT_CENTER,name+": caption centred horizontally "+str(button.name))
+			check(child.vertical_alignment==VERTICAL_ALIGNMENT_CENTER,name+": caption centred vertically "+str(button.name))
+			check(br.grow(4).encloses(lr),name+": caption stays inside "+str(button.name))
 	var before=Expedition.popup_scroll.scroll_vertical
 	var wheel=InputEventMouseButton.new();wheel.button_index=MOUSE_BUTTON_WHEEL_DOWN;wheel.pressed=true;wheel.position=Vector2(700,500)
 	get_viewport().push_input(wheel,true);await get_tree().process_frame

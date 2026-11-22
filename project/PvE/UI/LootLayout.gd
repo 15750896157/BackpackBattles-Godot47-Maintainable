@@ -128,5 +128,6 @@ static func action(button: TextureButton, callback: Callable, caption: String, f
 static func label(parent: Control, path: String, value: String, size: int, color: Color = INK, outline: int = 0) -> void:
 	var node: Label = parent.get_node(path)
 	REF.bind_text(node, value, node.size, size, color, outline)
+	REF.center_label(node)
 	node.show()
 

@@ -7,4 +7,3 @@ var activationParticles = load("res://Art/Items/Exclusive/Particles/SnowStickAct
 
 func onPreDealDamage_early(damageRes: DamageResult):
 	return load("res://Code/Runtime/Callbacks/Items/Exclusive/CallbacksS.gd").ForSnowStick.onPreDealDamage_early(self, damageRes)
-

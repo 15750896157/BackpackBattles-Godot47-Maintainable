@@ -97,6 +97,7 @@ func icon_button(parent: Node, key: String, caption: String, callback: Callable,
 	label.autowrap_mode=TextServer.AUTOWRAP_OFF
 	label.add_theme_font_size_override("font_size",mini(26,roundi(22*owner.preferences.values.ui_scale)))
 	label.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);label.offset_top = -34
+	REF.center_label(label)
 	button.pressed.connect(callback)
 	button.button_down.connect(func(): picture.modulate = Color(0.78,0.78,0.78))
 	button.button_up.connect(func(): picture.modulate = Color.WHITE)

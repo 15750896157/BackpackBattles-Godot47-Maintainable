@@ -170,6 +170,7 @@ func button(text: String, action: Callable, parent: Node = null, disabled: bool 
 	if parent == null: parent = popup_content
 	var node = Button.new()
 	node.text = text
+	node.alignment = HORIZONTAL_ALIGNMENT_CENTER
 	node.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	node.custom_minimum_size = Vector2(0, 60)
 	node.size_flags_horizontal = Control.SIZE_EXPAND_FILL

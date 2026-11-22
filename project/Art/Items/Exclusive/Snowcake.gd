@@ -10,4 +10,3 @@ func _ready():
 
 func doCooldownEffect():
 	return load("res://Code/Runtime/Callbacks/Items/Exclusive/CallbacksS.gd").ForSnowcake.doCooldownEffect(self)
-

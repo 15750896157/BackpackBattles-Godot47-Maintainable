@@ -4,6 +4,32 @@ extends RefCounted
 const ROOT = "res://Art/Reference20261102/"
 const INK = Color("513c26")
 const PAPER = Color("fff1cc")
+## One caption ladder for every button in the game. Callers ask for a size,
+## the canvas snaps it to the nearest ladder step so text never drifts.
+const FONT_STEPS = [96, 80, 72, 64, 56, 48, 44, 40, 36, 32, 28, 24, 20, 16]
+
+static func font_step(size: int) -> int:
+	for step in FONT_STEPS:
+		if step <= size: return step
+	return FONT_STEPS[FONT_STEPS.size() - 1]
+
+## Chinese glyphs sit a couple of pixels low inside Godot's centred line box.
+## Lift the label box by a small, size-proportional amount so the visible text
+## lands on the visual centre instead of the metric centre.
+static func caption_lift(size: int) -> float:
+	return float(maxi(1, roundi(float(size) * 0.055)))
+
+## Idempotent: safe to call on every refresh tick, only the delta is applied.
+static func center_label(label: Label) -> void:
+	if label == null: return
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	var size := label.get_theme_font_size("font_size")
+	var want := caption_lift(size)
+	var applied := float(label.get_meta("caption_lift", 0.0))
+	if not is_equal_approx(want, applied):
+		label.position.y += applied - want
+		label.set_meta("caption_lift", want)
 
 static func path(key: String) -> String:
 	var replacement=preload("res://PvE/Art/SuppliedArt.gd").ui_path(key)
@@ -29,23 +55,25 @@ static func picture(parent: Node, key: String, rect: Rect2, exact: bool = false)
 
 static func text(parent: Node, value: String, rect: Rect2, size: int = 28, color: Color = INK, outline: int = 0) -> Label:
 	var label = Label.new()
-	label.text = value; label.position = rect.position; label.size = rect.size
-	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.position = rect.position; label.size = rect.size
 	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	bind_text(label, value, rect.size, size, color, outline)
 	parent.add_child(label)
+	center_label(label)
 	return label
 
 static func bind_text(label: Label, value: String, extent: Vector2, size: int, color: Color, outline: int) -> void:
 	label.text = value
 	label.add_theme_font_override("font", Expedition.ui_font)
-	var fitted=size
-	while fitted>16:
-		var width=0.0
-		for line in value.split("\n"):width=maxf(width,Expedition.ui_font.get_string_size(line,HORIZONTAL_ALIGNMENT_LEFT,-1,fitted).x)
-		if width<=extent.x-8 and Expedition.ui_font.get_height(fitted)*value.split("\n").size()<=extent.y:break
-		fitted-=1
+	label.autowrap_mode = TextServer.AUTOWRAP_OFF
+	var lines = value.split("\n")
+	var fitted = font_step(size)
+	var smallest = FONT_STEPS[FONT_STEPS.size() - 1]
+	while fitted > smallest:
+		var width = 0.0
+		for line in lines: width = maxf(width, Expedition.ui_font.get_string_size(line, HORIZONTAL_ALIGNMENT_LEFT, -1, fitted).x)
+		if width <= extent.x - 8 and Expedition.ui_font.get_height(fitted) * lines.size() <= extent.y: break
+		fitted = font_step(fitted - 1)
 	label.add_theme_font_size_override("font_size", fitted)
 	label.add_theme_color_override("font_color", color)
 	label.add_theme_color_override("font_outline_color", Color("734b2d"))

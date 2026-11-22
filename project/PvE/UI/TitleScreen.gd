@@ -2,9 +2,10 @@ extends Control
 ## The scene owns layout and feedback. The host supplies the model, art and font.
 
 const TitleVM = preload("res://Code/Runtime/ViewModel/TitleVM.gd")
+const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const ART_KEYS = [
 	"title", "title_logo", "select_armorer", "select_archer", "select_alchemist",
-	"title_book", "button", "button_blue", "button_red", "settings",
+	"title_book", "button", "button_blue", "button_red", "settings", "hand",
 ]
 const HOVER_TINT := Color(1.08, 1.06, 1.0)
 const PRESS_TINT := Color(0.82, 0.82, 0.82)
@@ -16,6 +17,7 @@ var _font: Font
 @onready var _background: TextureRect = $Ref_title
 @onready var _logo: TextureRect = $Ref_title_logo
 @onready var _portrait: TextureRect = $SavedPortrait
+@onready var _hand: TextureRect = $TitleHand
 @onready var _settings: TextureButton = $TitleSettings
 @onready var _codex: TextureButton = $TitleCodex
 @onready var _start: TextureButton = $TitleStart
@@ -74,6 +76,7 @@ func _apply_bindings() -> void:
 	_background.texture = _art["title"]
 	_logo.texture = _art["title_logo"]
 	_settings.texture_normal = _art["settings"]
+	_hand.texture = _art["hand"]
 	_codex.texture_normal = _art["title_book"]
 	_start.texture_normal = _art["button"]
 	_exit.texture_normal = _art["button_blue"]
@@ -90,6 +93,7 @@ func _render() -> void:
 	var chinese := str(state.locale).begins_with("zh")
 	_portrait.texture = _art.get("select_" + str(state.character_id)) if can_continue else null
 	_portrait.visible = can_continue
+	_hand.visible = not can_continue
 	_new_run.visible = can_continue
 	var primary := "开始游戏" if chinese else "Start game"
 	if can_continue:
@@ -107,8 +111,10 @@ func _set_caption(button: TextureButton, caption: String) -> void:
 		if width <= label.size.x - 8 and _font.get_height(size) <= label.size.y:
 			break
 		size -= 1
-	label.add_theme_font_size_override("font_size", size)
+	var snapped := int(REF.font_step(size))
+	label.add_theme_font_size_override("font_size", snapped if snapped <= size else size)
 	label.text = caption
+	REF.center_label(label)
 	button.set_meta("action_caption", caption)
 
 func _hover(button: TextureButton, color: Color) -> void:

@@ -3,6 +3,7 @@ extends Control
 
 const CombatVM = preload("res://Code/Runtime/ViewModel/CombatVM.gd")
 const STATUS_BADGES = preload("res://PvE/Art/StatusBadges.gd")
+const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const ART_KEYS = ["name", "plate2", "plate3", "health", "stamina", "play", "pause", "timeline_base", "timeline_fill", "settings"]
 
 var _model: CombatVM
@@ -147,7 +148,11 @@ func _fit_label(label: Label, scale_factor: float) -> void:
 		if width <= label.size.x - 6 and _font.get_height(font_size) * lines.size() <= label.size.y:
 			break
 		font_size -= 1
-	label.add_theme_font_size_override("font_size", font_size)
+	var snapped := int(REF.font_step(font_size))
+	label.add_theme_font_size_override("font_size", snapped if snapped <= font_size else font_size)
+	# Button captions use the shared visual-centre compensation; HUD readouts keep their own layout.
+	if label.get_parent() is BaseButton and label.vertical_alignment == VERTICAL_ALIGNMENT_CENTER:
+		REF.center_label(label)
 
 func _button_feedback(button: BaseButton, tint: Color) -> void:
 	if button.disabled:
