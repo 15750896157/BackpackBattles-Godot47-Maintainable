@@ -126,6 +126,10 @@ func refresh_display() -> void:
 	if state.mode != "SHOP_PREPARE":
 		hide()
 		return
+	# 休息页、地图页等弹层期间覆盖层会被隐藏；回到商店时必须恢复，
+	# 否则商店只剩底图与原生货架，商店自身的所有控件都看不到。
+	if not visible:
+		show()
 	var host: Dictionary = _read_display.call()
 	var chinese := str(host.locale).begins_with("zh")
 	var shop: Dictionary = state.shop

@@ -13,4 +13,5 @@ Thumbs.db
 
 # Generated test evidence and private authoring inputs
 /verification/
+/project/verification/
 /inputs/
