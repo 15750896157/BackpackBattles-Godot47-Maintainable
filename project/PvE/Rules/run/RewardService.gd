@@ -40,7 +40,8 @@ func content_pool(run: Dictionary, type: String, params: Dictionary) -> Array:
 	var pool: Array = []
 	var is_bag = type == "bag_pool"
 	for row in db.rows("bags" if is_bag else "items"):
-		if db.release_contains("bags" if is_bag else "items",row.id)!=db.release_run(run):continue
+		# 物品奖励只按归属过滤；背包仍走发布清单。
+		if is_bag and db.release_contains("bags",row.id)!=db.release_run(run):continue
 		if int(row.chapter_min) > int(run.act) and not bool(params.get("ignore_chapter_gate", false)): continue
 		var rarity = str(params.get("rarity", ""))
 		if not rarity.is_empty() and row.rarity not in rarity.split("_or_"): continue

@@ -18,7 +18,9 @@ static func _process(subject: Receiver, delta: float) -> void :
 	if subject.dragged:
 		var pos = subject.global_position
 		if not bool(subject.get_meta("pve_grid_navigation", false)):
-			subject.global_position = Util.getMousePosInWindow()
+			# 图标在根节点内部按格子居中，根节点贴鼠标会让物品整体偏到光标右下，
+			# 这里改为让可见图像的几何中心对准鼠标。
+			subject.global_position = Util.getMousePosInWindow() - dragCenterOffset(subject)
 			subject.global_position.y -= Settings.getVal(Settings.Setting.pick_offset) * Settings.PICK_OFFSET
 
 		var dif = subject.global_position - pos
@@ -137,6 +139,14 @@ static func _process(subject: Receiver, delta: float) -> void :
 			particles.scale = Vector2(0.3, 0.3) * sqrt(subject.getNumCells()) + Vector2(0.1, 0.1)
 
 		subject.lastVelocity = curVelocity
+
+## 拖拽时让可见图像（PvE 布局算出的视觉包围盒）的中心对准鼠标。
+## 旧版物品没有该元数据时返回零向量，保持原有"根节点贴鼠标"的行为。
+static func dragCenterOffset(subject: Receiver) -> Vector2:
+	var bounds = subject.get_meta("pve_visual_bounds", null)
+	if bounds is Rect2:
+		return subject.global_transform * bounds.get_center() - subject.global_position
+	return Vector2.ZERO
 
 static func rotateTo(subject: Receiver, targetRotation, duration):
 	subject.rotationTween = Util.refreshTween(subject.rotationTween)

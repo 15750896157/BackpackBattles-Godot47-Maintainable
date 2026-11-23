@@ -131,8 +131,12 @@ func run_tests():
 			check(await wait_for(func():return Expedition.flow.screen_state=="SHOP_PREPARE" and Game.state==Game.State.Shop,15.0),"one claim returns directly to shop")
 	await Expedition.return_to_title();await settle();await note("04-title-after-result")
 	check(not InputBlocker.isActive(),"title has no transition or menu input shield")
-	Expedition.art.ui.get_node("TitleNewRun" if Expedition.art.ui.has_node("TitleNewRun") else "TitleStart").pressed.emit();await settle()
-	check(Expedition.current_page=="SETUP" and Expedition.panel.visible,"new-game title banner opens setup after battle")
+	var title=Expedition.art.ui
+	if title.has_node("TitleNewRun"):
+		title.get_node("TitleNewRun").pressed.emit();await settle()
+		check(str(Expedition.flow.run.get("state",""))=="RUN_RESULT","ending the current run keeps the player on the title")
+	title.get_node("TitleStart").pressed.emit();await settle()
+	check(Expedition.current_page=="SETUP" and Expedition.panel.visible,"start opens setup after the current run ends")
 	Expedition.create_run("armorer","armorer_blades","tutorial",1340,true)
 	check(await wait_for(func():return Expedition.current_page=="ROUTE_SELECT",4.0),"new game actually leaves setup and shows routes")
 	if Expedition.render_pending: finish();return

@@ -65,6 +65,9 @@ func start_or_continue() -> bool:
 func start_new_run() -> bool:
 	return _activate(&"new_run")
 
+func end_run() -> bool:
+	return _activate(&"end_run")
+
 func open_settings() -> bool:
 	return _activate(&"settings")
 

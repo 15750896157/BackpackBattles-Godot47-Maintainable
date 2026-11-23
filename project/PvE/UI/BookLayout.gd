@@ -18,12 +18,14 @@ var rarity_filter="all"
 var tag_filter="all"
 var rotation=0
 var selection=""
+var detail_entry:Dictionary={}
 var listing:VBoxContainer
 var detail:VBoxContainer
 var root:Control
 var body:Control
 var matches:Array=[]
 var blueprint:Control
+var tabs:Dictionary={}
 var model: CODEX
 
 func _init(host, shell):
@@ -43,13 +45,29 @@ func show_page(section:String=""):
 	REF.picture(root,"book_pages",Rect2(163,116,1364,885),true)
 	REF.button(root,"close",Rect2(1668,73,92,96),owner.view_return).name="CloseMenu"
 	var colors=["blue","gold","green","red","purple","blue","gold"]
+	tabs.clear()
 	for index in CATEGORIES.size():
-		var entry=CATEGORIES[index];var tab=REF.button(root,"bookmark_"+colors[index],Rect2(1505,148+index*82,168,72),func():show_page(entry[0]),ui.words(entry[1],entry[2]),24)
+		var entry=CATEGORIES[index];var tab=REF.button(root,"bookmark_"+colors[index],Rect2(1505,148+index*82,168,72),func():switch_page(entry[0]),ui.words(entry[1],entry[2]),24)
 		tab.name="BookTab_"+entry[0];tab.modulate=Color.WHITE if category==entry[0] else Color(0.78,0.78,0.78)
+		tabs[entry[0]]=tab
 	REF.text(root,ui.words("冒险者造物与异闻手记","Adventurer's field journal"),Rect2(206,142,620,52),31)
 	body=Control.new();body.name="BookSpread";root.add_child(body)
 	populate();REF.fade_in(root)
 func can_craft() -> bool: return model.snapshot().can_craft
+## 页签切换沿用角色选择页的过渡：整本书留在原地，只重画左右两页，
+## 不再重建画布、也不整屏淡入。
+func switch_page(section:String):
+	if section==category:return
+	category=section;page=0;selection="";rotation=0;detail_entry={}
+	only_available=false;owner_filter="all";rarity_filter="all";tag_filter="all"
+	owner.detail_views.category=category
+	owner.current_page="CRAFTING" if category=="recipes" and can_craft() else "CODEX"
+	refresh_tabs()
+	populate()
+func refresh_tabs():
+	for key in tabs:
+		var tab=tabs[key]
+		if is_instance_valid(tab):tab.modulate=Color.WHITE if key==category else Color(0.78,0.78,0.78)
 func cycle_filter(key:String,values:Array):
 	var value=get(key);set(key,values[(values.find(value)+1)%values.size()]);page=0;selection="";populate()
 func filter_button(caption:String,rect:Rect2,callback:Callable,name:String):
@@ -81,16 +99,24 @@ func populate():
 	for index: int in result.visible.size():
 		var entry: Dictionary = result.visible[index]
 		var column := index % 2
-		var y := 314 + (index / 2) * 290
+		var y := 288 + (index / 2) * 290
 		var card=Button.new();card.position=Vector2(207+column*316,y);card.size=Vector2(304,282);card.name="BookEntry_"+entry.id;card.set_meta("definition_id",entry.id)
 		if use_rows:
-			card.position = Vector2(207,314 + index*146)
+			card.position = Vector2(207,288 + index*144)
 			card.size = Vector2(620,134)
-		for state in ["normal","hover","pressed","disabled","focus"]:
-			var style:=StyleBoxTexture.new()
-			style.texture=REF.texture("recipe_row" if use_rows else "entry")
-			style.modulate_color=Color.WHITE if entry.id==selection or state=="hover" else Color(1.0,1.0,1.0,0.69)
-			card.add_theme_stylebox_override(state,style)
+		var normal:=StyleBoxFlat.new()
+		normal.bg_color=Color(0.97,0.89,0.71,0.96)
+		normal.set_corner_radius_all(10)
+		normal.set_border_width_all(2)
+		normal.border_color=Color(0.45,0.32,0.18,0.55)
+		var hover:=normal.duplicate() as StyleBoxFlat;hover.bg_color=Color(1.0,0.95,0.80,0.98);hover.border_color=Color(0.66,0.46,0.18,0.75)
+		var highlighted:=normal.duplicate() as StyleBoxFlat;highlighted.bg_color=Color(1.0,0.94,0.76,1.0);highlighted.set_border_width_all(3);highlighted.border_color=Color(0.78,0.54,0.18,0.95)
+		var focus:=normal.duplicate() as StyleBoxFlat;focus.border_color=Color(0.78,0.54,0.18,0.8)
+		card.add_theme_stylebox_override("normal",highlighted if entry.id==selection else normal)
+		card.add_theme_stylebox_override("hover",hover)
+		card.add_theme_stylebox_override("pressed",highlighted)
+		card.add_theme_stylebox_override("focus",focus)
+		card.add_theme_stylebox_override("disabled",normal)
 		body.add_child(card);card.pressed.connect(func():selection=entry.id;rotation=0;populate())
 		var image=ui.picture(card,null,Vector2.ZERO);image.position=Vector2(63,91);image.size=Vector2(178,145)
 		image.name = "BookEntryIcon"
@@ -111,24 +137,81 @@ func populate():
 	else:REF.text(body,ui.words("暂无符合条件的内容","No matching entries"),Rect2(938,440,540,150),28)
 func filters():
 	if category=="characters":
-		REF.text(body,ui.words("英雄 · 旅途伙伴","Heroes · Expedition companions"),Rect2(207,222,620,54),27)
+		REF.text(body,ui.words("英雄 · 旅途伙伴","Heroes · Expedition companions"),Rect2(207,198,620,54),27)
 		return
-	filter_button(ui.words("已发现" if only_seen else "全部条目","Discovered" if only_seen else "All entries"),Rect2(207,207,186,50),func():only_seen=not only_seen;only_available=false;page=0;populate(),"BookSeenFilter")
+	filter_bar(Rect2(203,198,628,52))
 	var context := model.snapshot()
 	var pools: Array = context.pools
-	filter_button((ui.words("全部归属","All pools") if owner_filter=="all" else ui.words("公共","Public") if owner_filter=="public" else owner.t("character."+owner_filter+".name"))+" ›",Rect2(402,207,210,50),func():cycle_filter("owner_filter",pools),"BookPoolFilter")
-	filter_button(ui.words("稀有度","Rarity")+" ›" if rarity_filter=="all" else owner.t("rarity."+rarity_filter)+" ›",Rect2(621,207,206,50),func():cycle_filter("rarity_filter",["all","common","rare","legendary"]),"BookRarityFilter")
+	segment_button(ui.words("已发现" if only_seen else "全部条目","Discovered" if only_seen else "All entries"),Rect2(207,202,152,44),func():only_seen=not only_seen;only_available=false;page=0;populate(),"BookSeenFilter",only_seen)
+	var pool_caption: String = ui.words("归属·全部","Pool·All") if owner_filter=="all" else ui.words("归属·公共","Pool·Public") if owner_filter=="public" else ui.words("归属·","Pool·")+owner.t("character."+owner_filter+".name")
+	segment_button(pool_caption,Rect2(363,202,152,44),func():cycle_filter("owner_filter",pools),"BookPoolFilter",owner_filter!="all")
+	var rarity_caption: String = ui.words("稀有·不限","Rarity·Any") if rarity_filter=="all" else ui.words("稀有·","Rarity·")+owner.t("rarity."+rarity_filter+".name")
+	segment_button(rarity_caption,Rect2(519,202,152,44),func():cycle_filter("rarity_filter",["all","common","rare","legendary"]),"BookRarityFilter",rarity_filter!="all")
 	var tag_ids: Array = context.tags
-	filter_button((ui.words("全部标签","All tags") if tag_filter=="all" else owner.detail_views.tag_name(tag_filter))+"  ›",Rect2(207,261,620,45),func():cycle_filter("tag_filter",tag_ids),"BookTagFilter")
+	var tag_caption: String = ui.words("标签·全部","Tag·All") if tag_filter=="all" else ui.words("标签·","Tag·")+owner.detail_views.tag_name(tag_filter)
+	segment_button(tag_caption,Rect2(675,202,152,44),func():cycle_filter("tag_filter",tag_ids),"BookTagFilter",tag_filter!="all")
+	var hint := ""
+	if category in ["items","bags"]:hint=ui.words("点卡片查看详情 · 滚轮 / Q / E 旋转蓝图","Tap a card for details · Wheel / Q / E rotates")
+	elif category=="recipes":hint=ui.words("点配方查看材料 · 选中后点「确认合成」","Pick a recipe · then confirm to craft")
+	if not hint.is_empty():REF.text(body,hint,Rect2(207,254,620,28),20,Color("6b4a2d"))
 	if category=="recipes" and can_craft():
 		filter_button(ui.words("只看可合成" if not only_available else "查看全部","Craftable only" if not only_available else "All recipes"),Rect2(1070,887,300,56),func():only_available=not only_available;page=0;populate(),"BookCraftableFilter")
+func filter_bar(rect:Rect2):
+	var bar=Panel.new();bar.name="BookFilterBar";bar.position=rect.position;bar.size=rect.size
+	bar.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	var style=StyleBoxFlat.new()
+	style.bg_color=Color(0.36,0.25,0.13,0.13)
+	style.set_corner_radius_all(12)
+	style.set_border_width_all(1)
+	style.border_color=Color(0.42,0.30,0.16,0.25)
+	bar.add_theme_stylebox_override("panel",style)
+	body.add_child(bar)
+func segment_button(caption:String,rect:Rect2,callback:Callable,name:String,active:bool):
+	var button=Button.new();button.name=name;button.text=caption
+	button.position=rect.position;button.size=rect.size
+	button.alignment=HORIZONTAL_ALIGNMENT_CENTER
+	button.focus_mode=Control.FOCUS_ALL
+	button.mouse_default_cursor_shape=Control.CURSOR_POINTING_HAND
+	button.add_theme_font_override("font",Expedition.ui_font)
+	button.add_theme_font_size_override("font_size",20)
+	for key in ["font_color","font_hover_color","font_pressed_color","font_focus_color"]:
+		button.add_theme_color_override(key,REF.INK)
+	var normal=StyleBoxFlat.new()
+	normal.bg_color=Color(0.94,0.83,0.60,0.92) if active else Color(1,1,1,0.22)
+	normal.set_corner_radius_all(9)
+	normal.set_border_width_all(1)
+	normal.border_color=Color(0.47,0.34,0.19,0.45 if active else 0.20)
+	var hover=normal.duplicate() as StyleBoxFlat;hover.bg_color=Color(0.97,0.90,0.72,0.95);hover.border_color=Color(0.47,0.34,0.19,0.5)
+	var pressed=normal.duplicate() as StyleBoxFlat;pressed.bg_color=Color(0.88,0.75,0.51,0.95)
+	button.add_theme_stylebox_override("normal",normal)
+	button.add_theme_stylebox_override("hover",hover)
+	button.add_theme_stylebox_override("pressed",pressed)
+	button.add_theme_stylebox_override("focus",normal)
+	button.add_theme_stylebox_override("disabled",normal)
+	button.pressed.connect(callback)
+	body.add_child(button)
+	return button
 func page_buttons(parent:Node,count:int,callback:Callable):
-	var previous=REF.button(parent,"previous",Rect2(223,920,70,58),func():page=maxi(0,page-1);selection="";callback.call());previous.name="ListPrevious";previous.disabled=page==0
-	REF.text(parent,str(page+1)+" / "+str(count),Rect2(363,920,302,58),24)
-	var next=REF.button(parent,"next",Rect2(737,920,70,58),func():page=mini(count-1,page+1);selection="";callback.call());next.name="ListNext";next.disabled=page+1>=count
+	var previous=REF.button(parent,"previous",Rect2(341,920,64,54),func():page=maxi(0,page-1);selection="";callback.call());previous.name="ListPrevious";previous.disabled=page==0
+	REF.text(parent,str(page+1)+" / "+str(count),Rect2(413,920,160,54),24)
+	var next=REF.button(parent,"next",Rect2(581,920,64,54),func():page=mini(count-1,page+1);selection="";callback.call());next.name="ListNext";next.disabled=page+1>=count
+func rotate_blueprint(clockwise:bool)->bool:
+	if category not in ["items","bags"] or selection.is_empty() or detail_entry.is_empty():return false
+	if not is_instance_valid(blueprint) or blueprint.cells.is_empty():return false
+	rotation=posmod(rotation+(90 if clockwise else -90),360)
+	Sound.playSound(load("res://Audio/Sound/Grind.wav"),-6)
+	blueprint.spin(clockwise,refresh_blueprint)
+	return true
+## 只刷新蓝图本身，避免整页重建打断阅读。
+func refresh_blueprint():
+	if not is_instance_valid(blueprint) or detail_entry.is_empty():return
+	var projected := model.detail(category,detail_entry,rotation)
+	blueprint.configure(detail_entry.id,rotation,detail_entry.known,projected.cells,projected.effects)
+	blueprint.fill_art(detail_entry.id,owner.popup_epoch,projected.base_cells)
 func make_column(rect:Rect2)->VBoxContainer:
 	var result=VBoxContainer.new();result.position=rect.position;result.size=rect.size;body.add_child(result);return result
 func show_detail(entry:Dictionary):
+	detail_entry=entry
 	if category=="enemies":
 		var portrait: TextureRect = ui.picture(body,owner.menus.journey.portrait(enemy_node(entry.data)),Vector2.ZERO)
 		portrait.position=Vector2(1002,233);portrait.size=Vector2(389,371)
@@ -164,15 +247,31 @@ func show_detail(entry:Dictionary):
 			craft_detail(entry,projected.ingredients)
 		return
 	REF.picture(body,"bag_description",Rect2(906,229,593,656),true)
+	REF.text(body,ui.words("占格与作用范围蓝图","Footprint & effect blueprint"),Rect2(926,236,300,30),20,Color("7a5736"))
+	REF.text(body,ui.words("滚轮 / Q / E 旋转","Wheel / Q / E to rotate"),Rect2(1180,236,300,30),20,Color("7a5736"))
 	blueprint=preload("res://PvE/UI/Blueprint.gd").new();blueprint.position=Vector2(970,287);blueprint.size=Vector2(420,320);body.add_child(blueprint)
 	blueprint.configure(entry.id, rotation, entry.known, projected.cells, projected.effects)
 	blueprint.fill_art(entry.id, owner.popup_epoch, projected.base_cells)
-	REF.text(body, projected.info, Rect2(926,665,565,45),23).autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-	REF.button(body,"previous",Rect2(938,605,62,48),func():rotation=posmod(rotation-90,360);populate()).name="BlueprintLeft"
-	REF.text(body,str(rotation)+"°",Rect2(1012,605,150,48),23)
-	REF.button(body,"next",Rect2(1176,605,62,48),func():rotation=posmod(rotation+90,360);populate()).name="BlueprintRight"
-	detail=make_column(Rect2(927,723,565,160))
-	ui.text_pages(detail, projected.description, 555, 132 if entry.known else 150, 23 if entry.known else 24)
+	var rarity_name: String = owner.t("rarity."+str(entry.definition.get("rarity","common"))+".name") if entry.known else ui.words("未发现","Unknown")
+	var price_text: String = ("%d" % int(entry.definition.get("base_price",0))) if entry.known else "—"
+	info_chip(Rect2(917,614,180,60),ui.words("稀有度","Rarity"),rarity_name)
+	info_chip(Rect2(1112,614,180,60),ui.words("占用格数","Cells"),"%d %s" % [projected.cells.size(),ui.words("格","cells")])
+	info_chip(Rect2(1307,614,180,60),ui.words("基础价格","Base price"),price_text)
+	detail=make_column(Rect2(927,690,565,120))
+	ui.text_pages(detail, projected.description, 555, 110 if entry.known else 118, 22)
+
+func info_chip(rect:Rect2,caption:String,value:String):
+	var chip=Panel.new();chip.position=rect.position;chip.size=rect.size
+	chip.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	var style=StyleBoxFlat.new()
+	style.bg_color=Color(0.97,0.90,0.72,0.95)
+	style.set_corner_radius_all(8)
+	style.set_border_width_all(1)
+	style.border_color=Color(0.47,0.34,0.19,0.40)
+	chip.add_theme_stylebox_override("panel",style)
+	body.add_child(chip)
+	REF.text(chip,caption,Rect2(4,4,rect.size.x-8,24),20,Color("7a5736"))
+	REF.text(chip,value,Rect2(4,27,rect.size.x-8,30),24,REF.INK)
 
 func draw_badge(card: Control, entry: Dictionary) -> void:
 	var caption: String
@@ -238,8 +337,8 @@ func other_pages():
 	else:
 		var projected := model.records_page(record_mode, page)
 		page = projected.page
-		filter_button(ui.words("成就" if record_mode==0 else "历程","Achievements" if record_mode==0 else "History"),
-			Rect2(217,207,270,54), func(): record_mode=1-record_mode;page=0;populate(), "BookRecordMode")
+		segment_button(ui.words("成就" if record_mode==0 else "历程","Achievements" if record_mode==0 else "History"),
+			Rect2(207,198,270,48), func(): record_mode=1-record_mode;page=0;populate(), "BookRecordMode", true)
 		for line in projected.rows:
 			owner.label(line, listing, 24)
 		page_buttons(body, projected.count, populate)

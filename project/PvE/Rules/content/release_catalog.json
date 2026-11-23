@@ -2,10 +2,10 @@
   "id": "new_plan_20261102",
   "chapters": 3,
   "selectable_characters": ["armorer", "archer", "alchemist"],
-  "compatibility_loadouts": {"alchemist": ["alchemist_toxin", "alchemist_ember"]},
   "characters": [
     "armorer",
-    "archer"
+    "archer",
+    "alchemist"
   ],
   "loadouts": {
     "armorer": [
@@ -15,6 +15,10 @@
     "archer": [
       "archer_precision",
       "archer_embers"
+    ],
+    "alchemist": [
+      "alchemist_toxin",
+      "alchemist_ember"
     ]
   },
   "items": [
@@ -93,7 +97,21 @@
     "supply_wooden_club",
     "supply_wooden_knife",
     "supply_wooden_staff",
-    "supply_wrath_crest"
+    "supply_wrath_crest",
+    "caustic_coil",
+    "coal_burner",
+    "ember_phial",
+    "ignition_lens",
+    "philosophers_kettle",
+    "plague_retort",
+    "renewal_mortar",
+    "spore_jar",
+    "thorn_extract",
+    "tonic_bottle",
+    "toxin_bottle",
+    "transfusion_tube",
+    "venom_distiller",
+    "wildfire_alembic"
   ],
   "bags": [
     "bag_release_journey",
@@ -123,7 +141,16 @@
     "recipe_supply_thorn_mail",
     "recipe_supply_dusk_robe",
     "recipe_supply_blood_crystal_necklace",
-    "recipe_supply_holy_cross"
+    "recipe_supply_holy_cross",
+    "recipe_ember_phial",
+    "recipe_ignition_lens",
+    "recipe_philosophers_kettle",
+    "recipe_plague_retort",
+    "recipe_tonic_bottle",
+    "recipe_toxin_bottle",
+    "recipe_transfusion_tube",
+    "recipe_venom_distiller",
+    "recipe_wildfire_alembic"
   ],
   "bag_tints": {
     "bag_release_journey": "#ffffff",

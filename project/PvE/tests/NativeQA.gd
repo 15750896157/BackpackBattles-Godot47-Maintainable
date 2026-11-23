@@ -105,7 +105,7 @@ func run_tests():
 	Expedition.menus.library.show_page("items")
 	await frames()
 	var seen:Dictionary={}
-	var catalogue_expected: Array = Expedition.db.rows("items") if load("res://Code/Runtime/ViewModel/CodexVM.gd").DEBUG_UNLOCK_ALL else Expedition.db.catalogue_rows("items", not Expedition.db.release_run(Expedition.flow.run))
+	var catalogue_expected: Array = Expedition.db.rows("items")
 	for page_index in int(ceil(catalogue_expected.size()/4.0)):
 		Expedition.menus.library.page=page_index;Expedition.menus.library.populate();await frames()
 		var cards=Expedition.menus.library.body.find_children("*","Button",true,false).filter(func(card):return card.has_meta("definition_id"))

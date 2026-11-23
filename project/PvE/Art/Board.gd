@@ -5,6 +5,7 @@ var cell_texture: Texture2D
 var empty_texture: Texture2D
 var guide_texture: Texture2D
 var active_cells: Dictionary = {}
+var occupied_cells: Dictionary = {}
 var showing_empty = false
 var seams: Dictionary = {}
 var specials:Array=[]
@@ -17,6 +18,9 @@ func configure(data: Dictionary):
 	active_cells.clear()
 	for bag in build.get("bags", []):
 		for cell in Expedition.flow.placement.cells(bag): active_cells[Vector2i(cell)] = true
+	occupied_cells.clear()
+	for item in build.get("items", []):
+		for cell in Expedition.flow.placement.cells(item): occupied_cells[Vector2i(cell)] = true
 	specials=Expedition.flow.spatial.special_cells(build)
 	queue_redraw()
 func _draw():
@@ -24,15 +28,18 @@ func _draw():
 	for y in int(build.get("height", 7)):
 		for x in int(build.get("width", 9)):
 			var active = active_cells.has(Vector2i(x, y))
+			var placed = occupied_cells.has(Vector2i(x, y))
 			var tile = Rect2(Vector2(x,y)*80.0+Vector2(3,3),Vector2(74,74))
 			if not active and not showing_empty:
 				if guide_texture != null:
 					draw_texture_rect(guide_texture,tile,false,Color(1,1,1,0.21))
 				continue
-			var image=cell_texture if active else empty_texture
-			if image!=null:draw_texture_rect(image,tile,false,Color(1,1,1,0.24 if active else 0.15))
+			# 已放置物品的格子深色，口袋内的空格浅色；口袋外保持透明。
+			var image=cell_texture if placed else empty_texture
+			var alpha=0.40 if placed else (0.22 if active else 0.15)
+			if image!=null:draw_texture_rect(image,tile,false,Color(1,1,1,alpha))
 			# Fine translucent seams reveal the leather instead of a white tile fill.
-			draw_style_box(_seam(active),tile)
+			draw_style_box(_seam(placed),tile)
 	for special in specials:
 		var rect=Rect2(Vector2(special.cell)*80.0+Vector2(5,5),Vector2(70,70))
 		draw_rect(rect,Color(1,0.78,0.3,0.42),false,2)

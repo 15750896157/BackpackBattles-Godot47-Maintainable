@@ -29,7 +29,7 @@ func snapshot() -> Dictionary:
 		"active": active,
 		"legacy": legacy,
 		"can_craft": active and _flow.screen_state == "SHOP_PREPARE",
-		"pools": ["all", "public", "armorer", "alchemist"] if legacy else ["all", "public"] + _flow.db.release_catalog.characters,
+		"pools": ["all", "public", "armorer", "archer", "alchemist"],
 		"tags": ["all"] + _flow.db.rows("tags").map(func(row): return row.id),
 	}
 
@@ -37,7 +37,7 @@ func catalogue(category: String, filters: Dictionary, requested_page: int,
 		selection: String, requested_recipe: String) -> Dictionary:
 	var context := snapshot()
 	var profile: Dictionary = _flow.profile_service.profile
-	var source: Array = _flow.db.rows("enemy_builds") + _flow.db.rows("bosses") if category == "enemies" else _flow.db.catalogue_rows(category, context.legacy)
+	var source: Array = _flow.db.rows("enemy_builds") + _flow.db.rows("bosses") if category == "enemies" else (_flow.db.rows("items") if category == "items" else _flow.db.catalogue_rows(category, context.legacy))
 	# 调试：绕过 release_catalog 发布清单过滤，图鉴显示全表物品。
 	if DEBUG_UNLOCK_ALL and category in ["items", "bags", "recipes"]:
 		source = _flow.db.rows(category)

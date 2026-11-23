@@ -59,16 +59,16 @@ static func combat(art):
 	art.hero_hud = art._hud(Rect2(386,887,568,152),"玩家")
 	art.enemy_hud = art._hud(Rect2(966,887,568,152),"敌人")
 	combat_shadows(art)
-	art.picture("timeline_base",Rect2(746,26,490,61),art.ui)
+	art.picture("timeline_base",Rect2(715,26,490,61),art.ui)
 	var progress = TextureProgressBar.new(); progress.name="ArtTimeline";progress.texture_progress=art.texture("timeline_fill")
-	progress.position=Vector2(747,27);progress.size=Vector2(487,20);progress.nine_patch_stretch=true;progress.mouse_filter=Control.MOUSE_FILTER_IGNORE;art.ui.add_child(progress)
-	art.button("play",Rect2(978,51,32,36),func():
+	progress.position=Vector2(716.5,27);progress.size=Vector2(487,20);progress.nine_patch_stretch=true;progress.mouse_filter=Control.MOUSE_FILTER_IGNORE;art.ui.add_child(progress)
+	art.button("play",Rect2(944,51,32,36),func():
 		if Expedition.flow.combat_paused:Game.combatTimer.unpause()
 		else:Game.combatTimer.onPauseButtonPressed()).name="CombatPausePlay"
-	REF.zone(art.ui,Rect2(961,44,66,57),func():
+	REF.zone(art.ui,Rect2(927,44,66,57),func():
 		if Expedition.flow.combat_paused:Game.combatTimer.unpause()
 		else:Game.combatTimer.onPauseButtonPressed()).name="CombatPauseTarget"
-	var speed=REF.zone(art.ui,Rect2(1240,12,78,59),Game.combatTimer.onFastButtonPressed);speed.name="CombatSpeed"
+	var speed=REF.zone(art.ui,Rect2(1209,12,78,59),Game.combatTimer.onFastButtonPressed);speed.name="CombatSpeed"
 	art.text("×1",Rect2(0,0,78,59),speed,40).name="SpeedCaption"
 	art.button("settings",Rect2(1822,14,59,59),Expedition.show_settings).name="Action_combat_settings"
 
