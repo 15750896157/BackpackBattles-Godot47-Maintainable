@@ -12,17 +12,26 @@ func portrait_path(node:Dictionary)->String:
 func portrait(node:Dictionary)->Texture2D:
 	return load(portrait_path(node))
 func choose_route():
-	if owner.db.release_run(owner.flow.run) or bool(owner.flow.run.get("route_pending",false)):
+	# The route page shown right after character selection must be identical for
+	# every hero. The release/compatibility content-track split used to send
+	# armorer and archer to the native card screen while alchemist received the
+	# shared parchment page. Keep the native card screen only for the route
+	# prompt raised after a battle, where route_pending is set.
+	if bool(owner.flow.run.get("route_pending",false)):
 		if owner.native_routes != null:
 			_open_editable_route()
 		else:
 			preload("res://PvE/UI/RouteLayout.gd").show_page(self)
 		return
+	_show_shared_route_page()
+
+func _show_shared_route_page() -> void:
 	ui.open("ROUTE_SELECT",ui.words("选择路线","Choose route"))
 	var choices=ui.row()
 	for index in owner.flow.run.route_candidates.size():
 		var node=owner.flow.run.route_candidates[index];var column=ui.column(choices)
 		var card=ui.card(column,owner.enemy_name(node) if node.type.ends_with("combat") or node.type=="boss" else owner.t(node.name_key),portrait(node),func():owner.perform(owner.flow.choose_route(index)),owner.t(node.name_key))
+		card.name="RouteChoice_"+str(index)
 		card.set_meta("route_index",index);card.custom_minimum_size.y=265
 		var badges=ui.row(column)
 		for reward in owner.db.rows("reward_entries"):
