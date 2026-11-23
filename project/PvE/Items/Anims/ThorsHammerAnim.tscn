@@ -1,5 +1,5 @@
 [gd_scene load_steps=3 format=3]
-[ext_resource type="Texture2D" path="res://Items/Exclusive/Sprites/ThorsHammer_active.png" id="4_mu077"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/ThorsHammer_active.png" id="4_mu077"]
 
 [sub_resource type="Animation" id="12"]
 resource_name = "Flash"

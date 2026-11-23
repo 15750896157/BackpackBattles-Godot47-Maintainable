@@ -253,7 +253,7 @@ func run_tests():
 	Expedition.preferences.apply()
 	Expedition.preferences.save()
 	var file = FileAccess.open(output.path_join("feedback-report.json"), FileAccess.WRITE)
-	file.store_string(JSON.stringify({"checks": checks, "failures": failures, "entry": "res://Core/Main.tscn", "engine": Engine.get_version_info().string, "evidence": evidence}, "  ")); file.close()
+	file.store_string(JSON.stringify({"checks": checks, "failures": failures, "entry": "res://Code/Core/Main.tscn", "engine": Engine.get_version_info().string, "evidence": evidence}, "  ")); file.close()
 	print("NATIVE_FEEDBACK_QA " + JSON.stringify({"checks": checks, "failures": failures}))
 	Game._begin_shutdown()
 	await AssetStream.drain()

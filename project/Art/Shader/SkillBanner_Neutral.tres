@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3]
+
+[ext_resource type="Shader" path="res://Art/Shader/DissolveRemapColor.gdshader" id="1_6l7cc"]
+[ext_resource type="Texture2D" path="res://PvE/UI/Common/NeutralBannerGradient.tres" id="2_ulx7i"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Noise/BubbleNoise.png" id="3_ifun3"]
+
+[resource]
+shader = ExtResource("1_6l7cc")
+shader_parameter/noise = ExtResource("3_ifun3")
+shader_parameter/scale = Vector2(5, 4)
+shader_parameter/gradient = ExtResource("2_ulx7i")
+shader_parameter/use2ndGradient = false
+shader_parameter/xPos = null

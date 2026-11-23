@@ -1,5 +1,5 @@
 [gd_scene load_steps=3 format=3]
-[ext_resource type="Texture2D" path="res://Assets/Light/CircleLight.png" id="7_j5oj3"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Light/CircleLight.png" id="7_j5oj3"]
 
 [sub_resource type="Animation" id="3"]
 resource_name = "Pulse"

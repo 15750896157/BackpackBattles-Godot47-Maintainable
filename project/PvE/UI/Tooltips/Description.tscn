@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://ybbhmkfrtylo"]
+
+[ext_resource type="FontFile" path="res://PvE/UI/Tooltips/ImageFont.tres" id="1_ip0jp"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="2_5uqod"]
+[ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="3_ewx4e"]
+[ext_resource type="RichTextEffect" path="res://PvE/UI/Common/SColorTextEffect.tres" id="4_xxnak"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="5_li1jy"]
+
+[sub_resource type="FontVariation" id="1"]
+base_font = ExtResource("2_5uqod")
+script = ExtResource("3_ewx4e")
+size = 22
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[node name="Description" type="RichTextLabel"]
+modulate = Color(0.960784, 0.960784, 0.960784, 1)
+offset_top = 61.0
+offset_right = 448.0
+offset_bottom = 91.0
+clip_contents = false
+mouse_filter = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_fonts/italics_font = ExtResource("1_ip0jp")
+theme_override_fonts/normal_font = SubResource("1")
+bbcode_enabled = true
+text = "A wooden Buckler. "
+text = "A wooden Buckler. "
+fit_content = true
+scroll_active = false
+custom_effects = [ExtResource("4_xxnak")]
+script = ExtResource("5_li1jy")
+theme_override_font_sizes/normal_font_size = 22
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)

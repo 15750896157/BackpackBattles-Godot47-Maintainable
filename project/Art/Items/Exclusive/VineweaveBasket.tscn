@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://cuqn3sdxhwrxb"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Item.tscn" id="1_1gv6b"]
+[ext_resource type="Script" path="res://Art/Items/Exclusive/VineweaveBasket.gd" id="2_rv70m"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/VineweaveBasket.png" id="3_kpp7q"]
+[ext_resource type="TileSet" path="res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres" id="4_tnv27"]
+[ext_resource type="PackedScene" path="res://Art/Items/Tiles/BagBorder.tscn" id="5_hfo8h"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Borders/Firepit_Border.png" id="6_xp3vx"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/VineweaveBasketSaleParticles.material" id="7_12l4o"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/GlowingDot.png" id="8_31lic"]
+[ext_resource type="Script" path="res://Code/Utility/AutoHideParticles.gd" id="9_qguaq"]
+
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/PotentialSpace.png" id="M1_kept_1"]
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/CantAdd.png" id="M1_kept_2"]
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/CanAdd.png" id="M1_kept_3"]
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/Collision.png" id="M1_kept_4"]
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/Slot.png" id="M1_kept_5"]
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/FilledSlot.png" id="M1_kept_6"]
+[ext_resource type="Texture2D" path="res://Art/Items/Tiles/Hover.png" id="M1_kept_7"]
+
+[sub_resource type="PhysicsMaterial" id="2"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[sub_resource type="Shader" id="10"]
+code = "shader_type canvas_item;
+
+uniform float progress : hint_range(-1, 2) = 0.5;
+uniform vec2 direction = vec2(0, 1);
+
+void fragment() {
+	COLOR = texture(TEXTURE, UV);
+	COLOR.rgb *= 1.0 + 0.5 * smoothstep(progress - 0.05, progress + 0.05, dot(UV, direction));
+}"
+
+[sub_resource type="ShaderMaterial" id="11"]
+resource_local_to_scene = true
+shader = SubResource("10")
+shader_parameter/progress = 0.245
+shader_parameter/direction = Vector2(-1, 0)
+
+[sub_resource type="RectangleShape2D" id="12"]
+size = Vector2(256, 258)
+
+[node name="Vineweave Basket" instance=ExtResource("1_1gv6b")]
+physics_material_override = SubResource("2")
+script = ExtResource("2_rv70m")
+
+[node name="CollisionMap" parent="." index="0"]
+position = Vector2(-40, -40)
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 2, 0, -65536, 2, 0, -65535, 2, 0, 65535, 2, 0, 0, 2, 0, 1, 2, 0, 131071, 2, 0, 65536, 2, 0, 65537, 2, 0)
+
+[node name="Icon" parent="." index="1"]
+material = SubResource("11")
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_kpp7q")
+
+[node name="TileMap" type="TileMap" parent="Icon" index="0"]
+modulate = Color(1, 1, 1, 0.501961)
+position = Vector2(-80, -80)
+scale = Vector2(2, 2)
+tile_set = ExtResource("4_tnv27")
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 2, 0, -65536, 2, 0, -65535, 2, 0, 65535, 2, 0, 0, 2, 0, 1, 2, 0, 131071, 2, 0, 65536, 2, 0, 65537, 2, 0)
+
+[node name="Sockets" parent="Icon" index="1"]
+scale = Vector2(2, 2)
+
+[node name="Border" parent="Icon" index="2" instance=ExtResource("5_hfo8h")]
+modulate = Color(0.792157, 0.898039, 0.419608, 1)
+scale = Vector2(0.907877, 0.95)
+texture = ExtResource("6_xp3vx")
+
+[node name="SaleParticles" type="GPUParticles2D" parent="Icon" index="3"]
+modulate = Color(3, 3, 3, 0.827451)
+z_index = 5
+emitting = false
+amount = 40
+lifetime = 2.0
+one_shot = true
+explosiveness = 0.45
+process_material = ExtResource("7_12l4o")
+texture = ExtResource("8_31lic")
+script = ExtResource("9_qguaq")
+
+[node name="CollisionPolygon2D" parent="ClickArea" index="0"]
+polygon = PackedVector2Array(-128, -128, 128, -128, 128, 128, -128, 128)
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(0, 72)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="5"]
+visible = false
+shape = SubResource("12")

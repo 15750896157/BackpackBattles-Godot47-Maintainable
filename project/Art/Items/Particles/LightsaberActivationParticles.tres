@@ -1,0 +1,25 @@
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://cpj7r8ps6mm37"]
+
+[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="1"]
+
+[sub_resource type="Curve" id="12"]
+_limits = [0.0, 1024.0, 0.0, 1.0]
+_data = [Vector2(0, 480.582), 0.0, 0.0, 0, 0, Vector2(0.196262, 98.9091), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="13"]
+width = 100
+curve = SubResource("12")
+
+[resource]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+angular_velocity_min = -267.5
+angular_velocity_max = 267.5
+gravity = Vector3(0, 0, 0)
+radial_accel_curve = SubResource("13")
+scale_min = 1.4012
+scale_max = 1.68
+color_ramp = ExtResource("1")

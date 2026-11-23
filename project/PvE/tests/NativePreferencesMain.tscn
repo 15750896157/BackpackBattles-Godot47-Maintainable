@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cieu1j8vhqv84"]
 
-[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_p3ura"]
+[ext_resource type="PackedScene" path="res://Code/Core/Main.tscn" id="1_p3ura"]
 [ext_resource type="Script" path="res://PvE/tests/NativePreferencesQA.gd" id="2_xar3c"]
 
 [node name="Main" instance=ExtResource("1_p3ura")]

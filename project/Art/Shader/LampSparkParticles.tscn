@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ia8iabiq3rhg"]
+
+[ext_resource type="Material" path="res://Art/Shader/LampSparkParticles.material" id="1_t6u6t"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/SparkParticle1.png" id="2_jgfm4"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="3_mjylh"]
+
+[node name="LampSparks" type="GPUParticles2D"]
+modulate = Color(3, 3, 3, 0.85098)
+show_behind_parent = true
+position = Vector2(0.42859, 149.428)
+scale = Vector2(2, 2)
+emitting = false
+amount = 4
+lifetime = 0.72
+one_shot = true
+preprocess = 0.12
+speed_scale = 1.69
+explosiveness = 1.0
+local_coords = false
+process_material = ExtResource("1_t6u6t")
+texture = ExtResource("2_jgfm4")
+script = ExtResource("3_mjylh")

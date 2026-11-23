@@ -1,0 +1,17 @@
+[gd_resource type="ParticleProcessMaterial" format=3]
+
+[ext_resource type="Texture2D" path="res://Art/Shader/SmoothFadeGradient.tres" id="1"]
+
+[resource]
+lifetime_randomness = 0.26
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 24.16
+direction = Vector3(0, -1, 0)
+spread = 139.25
+initial_velocity_min = 226.8
+initial_velocity_max = 630.0
+gravity = Vector3(0, 300, 0)
+scale_min = 0.29
+scale_max = 0.9077
+color_ramp = ExtResource("1")

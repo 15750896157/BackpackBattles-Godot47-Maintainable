@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bpt1n0ia2pxv0"]
+
+[ext_resource type="Script" path="res://Code/Utility/TooltipArea.gd" id="1_gv1it"]
+
+[node name="TooltipArea" type="Control"]
+offset_left = -1.0
+offset_right = 373.0
+offset_bottom = 124.0
+script = ExtResource("1_gv1it")

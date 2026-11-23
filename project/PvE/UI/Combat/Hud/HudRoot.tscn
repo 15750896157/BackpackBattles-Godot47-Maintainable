@@ -1,0 +1,733 @@
+[gd_scene format=3 uid="uid://z2qcrafaja7uw"]
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://cl8ufe5ntpbpe" path="res://PvE/UI/Options/OptionsButton.png" id="90"]
+
+
+
+
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
+
+
+
+
+[ext_resource type="Script" uid="uid://banoet6ywadah" path="res://PvE/UI/Title/VersionLabel.gd" id="99"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://cjwnf87milum2" path="res://PvE/UI/Options/OptionsButton_hovered.png" id="117"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://c51mb2u38n3ii" path="res://Art/Assets/Frame2.png" id="119"]
+
+
+
+
+[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
+
+
+
+
+[ext_resource type="Script" uid="uid://d2sujvy0oeb6u" path="res://PvE/UI/Common/SelectionBox.gd" id="154"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://2p1m2j7cav4c" path="res://PvE/UI/Common/SelectBox.png" id="155"]
+
+
+
+
+[ext_resource type="Script" uid="uid://buxnrmrd07ct4" path="res://PvE/UI/Title/ConnectingLabel.gd" id="183"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://cbde3uxf3ijj" path="res://Art/Assets/SurvivalSkull.png" id="188"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bocbt7v4y2ocp" path="res://PvE/UI/Common/ArrowButton2.png" id="195"]
+
+
+
+
+[ext_resource type="Script" uid="uid://dqggfmc7fca2w" path="res://PvE/UI/Options/OptionsButton.gd" id="208"]
+
+
+
+
+[ext_resource type="Script" uid="uid://dkfm41ytvypeq" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButton.gd" id="247"]
+
+
+
+
+[ext_resource type="Script" uid="uid://kwhpyuwjwr5" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButtonWithStylebox.gd" id="248"]
+
+
+
+
+[ext_resource type="Script" uid="uid://do60tnyf6l77b" path="res://Code/Utility/UndoStack.gd" id="249"]
+
+
+
+
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://PvE/UI/Common/NonLocalizedControl.gd" id="250"]
+
+
+
+
+[ext_resource type="Script" uid="uid://qtu8mf5cadbn" path="res://PvE/UI/Shop/ShopToolbar.gd" id="296"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bi4mw5urbyp1t" path="res://商店背景.png" id="297_y1jck"]
+
+
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_80.tres" id="m7_shared_80"]
+
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/CombatLog/CombatLog.tscn" id="split_CombatLog"]
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/SurvivalPrompt.tscn" id="split_SurvivalPrompt"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/Toolbar.tscn" id="split_Toolbar"]
+
+[sub_resource type="Animation" id="340"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+
+
+[sub_resource type="Animation" id="341"]
+resource_name = "RestoreSnapshot"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ayhut"]
+_data = {
+&"RESET": SubResource("340"),
+&"RestoreSnapshot": SubResource("341")
+}
+
+
+
+
+[sub_resource type="FontVariation" id="339"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 35
+outline_size = 4
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+
+[sub_resource type="RectangleShape2D" id="324"]
+size = Vector2(282, 161)
+
+
+
+
+[sub_resource type="Gradient" id="247"]
+colors = PackedColorArray(0.873047, 0.873047, 0.873047, 0.92549, 1, 1, 1, 1)
+
+
+
+
+[sub_resource type="GradientTexture1D" id="248"]
+gradient = SubResource("247")
+width = 100
+
+
+
+
+[sub_resource type="Gradient" id="282"]
+offsets = PackedFloat32Array(0, 0.114286, 0.280952, 0.671429, 0.952381)
+colors = PackedColorArray(1, 1, 1, 0.192157, 1, 1, 1, 0.603922, 1, 1, 1, 1, 1, 1, 1, 0.117647, 1, 1, 1, 0)
+
+
+
+
+[sub_resource type="GradientTexture1D" id="139"]
+gradient = SubResource("282")
+width = 100
+
+
+
+
+[sub_resource type="Curve" id="283"]
+_limits = [0.0, 1.43, 0.0, 1.0]
+_data = [Vector2(0, 0.561443), 0.0, 0.772704, 0, 0, Vector2(1, 1.43), 1.71675, 0.0, 0, 0]
+point_count = 2
+
+
+
+
+[sub_resource type="CurveTexture" id="141"]
+width = 200
+curve = SubResource("283")
+
+
+
+
+[sub_resource type="ParticleProcessMaterial" id="249"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 0.65
+initial_velocity_min = 281.512
+initial_velocity_max = 365.6
+angular_velocity_min = -124.1
+angular_velocity_max = 124.1
+gravity = Vector3(0, 300, 0)
+scale_min = 0.12
+scale_max = 0.252
+scale_curve = SubResource("141")
+color_ramp = SubResource("139")
+color_initial_ramp = SubResource("248")
+anim_offset_max = 1.0
+
+
+
+
+[sub_resource type="Animation" id="250"]
+resource_name = "Confirm"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("TakeWin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-600, 844), Vector2(401, 844)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("StartSurvival:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1940, 842), Vector2(940, 842)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SurvivalSkull:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(2.21914, 2.21914, -2),
+"update": 0,
+"values": [Vector2(0.652074, 0.652074), Vector2(0.652074, 0.652074), Vector2(2, 2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SurvivalSkull:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 3.86374, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TakeWin:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StartSurvival:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TakeWin:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.2974, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("StartSurvival:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 2.46229, 1),
+"update": 0,
+"values": [Color(2, 2, 2, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("GPUParticles2D:emitting")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+
+
+[sub_resource type="FontVariation" id="188"]
+base_font = ExtResource("23")
+spacing_top = -5
+script = ExtResource("LegacyFontMigration")
+size = 32
+outline_size = 4
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+
+[sub_resource type="Animation" id="189"]
+resource_name = "Connecting"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 12, 13]
+}
+
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pqkye"]
+_data = {
+&"Connecting": SubResource("189")
+}
+
+
+
+
+[node name="UI" type="Node2D" unique_id=219519902]
+z_index = 100
+
+
+
+
+[node name="Toolbar" parent="." unique_id=855441187 instance=ExtResource("split_Toolbar")]
+z_index = -50
+position = Vector2(581, 1041)
+script = ExtResource("296")
+
+
+
+
+[node name="UndoStack" type="Node2D" parent="." unique_id=363487090]
+visible = false
+position = Vector2(973, 250)
+script = ExtResource("249")
+
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UndoStack" unique_id=1867502647]
+libraries/ = SubResource("AnimationLibrary_ayhut")
+
+
+
+
+[node name="Label" type="Label" parent="UndoStack" unique_id=1084115778]
+offset_left = -67.0
+offset_top = 1.0
+offset_right = 72.0
+offset_bottom = 47.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("339")
+theme_override_font_sizes/font_size = 35
+text = "4/15"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("250")
+
+
+
+
+[node name="RightArrow" type="Sprite2D" parent="UndoStack" unique_id=1977308117]
+position = Vector2(0.526733, -16.213)
+rotation = -0.603884
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("195")
+
+
+
+
+[node name="LeftArrow" type="Sprite2D" parent="UndoStack" unique_id=1391919397]
+position = Vector2(-0.922607, -16.8698)
+rotation = -3.75595
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("195")
+
+
+
+
+[node name="OptionsButton" type="TextureButton" parent="." unique_id=1516369156 groups=["PinnedControl"]]
+offset_left = 1794.0
+offset_top = 13.0
+offset_right = 1903.0
+offset_bottom = 126.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("90")
+texture_pressed = ExtResource("117")
+texture_hover = ExtResource("117")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("208")
+tooltipKey = "UI_Options"
+
+
+
+
+[node name="SelectionBox" type="Node2D" parent="." unique_id=1875983399]
+script = ExtResource("154")
+
+
+
+
+[node name="BoxVisual" type="NinePatchRect" parent="SelectionBox" unique_id=1017791792]
+visible = false
+offset_left = -100.0
+offset_top = 58.0
+offset_right = -73.0
+offset_bottom = 85.0
+texture = ExtResource("155")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+
+
+
+[node name="Area2D" type="Area2D" parent="SelectionBox" unique_id=124835843]
+visible = false
+collision_layer = 0
+collision_mask = 5
+monitorable = false
+
+
+
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SelectionBox/Area2D" unique_id=418593538]
+shape = SubResource("324")
+disabled = true
+
+
+
+
+[node name="Labels" type="Node2D" parent="." unique_id=1091633683]
+
+
+
+
+[node name="CombatLog" parent="." unique_id=1603415123 instance=ExtResource("split_CombatLog")]
+z_index = 1
+
+
+
+
+[node name="SurvivalPrompt" parent="." unique_id=1061008894 instance=ExtResource("split_SurvivalPrompt")]
+unique_name_in_owner = true
+visible = false
+
+
+
+
+[node name="WardrobePlaceholder" type="Node2D" parent="." unique_id=220946469]
+
+
+
+
+[node name="OptionsPlaceholder" type="Node2D" parent="." unique_id=475806588]
+
+
+
+
+[node name="RecipeBookPlaceholder" type="Node2D" parent="." unique_id=641071365]
+
+
+
+
+[node name="ItemLibraryPlaceholder" type="Node2D" parent="." unique_id=1269533258]
+
+
+
+
+[node name="BuildHistoryPlaceholder" type="Node2D" parent="." unique_id=1772218815]
+
+
+
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=72641420]
+visible = false
+modulate = Color(1, 1, 1, 0)
+offset_right = 1914.0
+offset_bottom = 1057.0
+color = Color(0, 0, 0, 0.47451)
+
+
+
+
+[node name="RecipeTooltips" type="Node2D" parent="." unique_id=1533225335]
+z_index = 4
+
+
+
+
+[node name="Tooltips" type="Node2D" parent="." unique_id=1011998812]
+z_index = 6
+
+
+
+
+[node name="Frame" type="Sprite2D" parent="." unique_id=156344349]
+z_index = 100
+texture = ExtResource("119")
+centered = false
+
+
+
+
+[node name="Version" type="Button" parent="Frame" unique_id=2062746243 groups=["NotLocalized", "PinnedControl"]]
+offset_left = 1688.0
+offset_top = 1033.0
+offset_right = 1912.0
+offset_bottom = 1077.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_hover_color = Color(1, 0.890196, 0.215686, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/focus = ExtResource("92")
+text = "0.0.0"
+flat = true
+alignment = 2
+script = ExtResource("99")
+
+
+
+
+[node name="ConnectingLabel" type="RichTextLabel" parent="." unique_id=1445850498]
+process_mode = 3
+visible = false
+clip_contents = false
+offset_left = 40.0
+offset_top = 32.0
+offset_right = 289.0
+offset_bottom = 82.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 4
+theme_override_fonts/normal_font = SubResource("188")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Connecting..."
+scroll_active = false
+visible_characters = 10
+visible_ratio = 0.769231
+script = ExtResource("183")
+
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ConnectingLabel" unique_id=1021722442]
+libraries/ = SubResource("AnimationLibrary_pqkye")
+
+
+
+
+[node name="AnimationTimer" type="Timer" parent="ConnectingLabel" unique_id=206135074]
+wait_time = 0.5
+autostart = true
+
+
+
+
+[node name="Splashscreen" type="Sprite2D" parent="." unique_id=1234445352]
+z_index = 100
+position = Vector2(960, 540)
+texture = ExtResource("297_y1jck")
+
+
+
+
+[node name="InputBlocker" type="Control" parent="." unique_id=445748395]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 1900.0
+offset_bottom = 1061.0
+
+
+
+
+[connection signal="area_entered" from="SelectionBox/Area2D" to="SelectionBox" method="onItemAreaEntered"]
+
+
+
+
+[connection signal="area_exited" from="SelectionBox/Area2D" to="SelectionBox" method="onItemAreaExited"]
+
+
+
+
+[connection signal="pressed" from="Frame/Version" to="Frame/Version" method="onPressed"]
+
+
+
+
+[connection signal="timeout" from="ConnectingLabel/AnimationTimer" to="ConnectingLabel" method="timeout"]

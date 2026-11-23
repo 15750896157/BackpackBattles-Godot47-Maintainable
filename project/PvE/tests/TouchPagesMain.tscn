@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://boj7y34rif51i"]
 
-[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_c84yf"]
+[ext_resource type="PackedScene" path="res://Code/Core/Main.tscn" id="1_c84yf"]
 [ext_resource type="Script" path="res://PvE/tests/TouchPagesQA.gd" id="2_q37y8"]
 
 [node name="Main" instance=ExtResource("1_c84yf")]

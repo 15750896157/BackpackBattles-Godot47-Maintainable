@@ -1,4 +1,5 @@
 extends Node
+const REF=preload("res://PvE/UI/ReferenceCanvas.gd")
 var output=""
 var checks:Array=[]
 var failures:Array=[]
@@ -20,6 +21,33 @@ func shot(name):
 func rect_data(node:Control)->Array:
 	var rect=node.get_global_rect()
 	return [rect.position.x,rect.position.y,rect.size.x,rect.size.y]
+func caption_of(button:Control,node_name:String="Caption")->Label:
+	return button.get_node_or_null(node_name) as Label
+## One shared standard for every button caption in the game: centred on both
+## axes, inside its button, and sized from the shared ladder.
+func check_caption(label:Label,button:Control,name:String,centred:bool=true):
+	if label==null or not label.is_visible_in_tree():return
+	check(label.horizontal_alignment==HORIZONTAL_ALIGNMENT_CENTER,name+": caption centred horizontally")
+	check(label.vertical_alignment==VERTICAL_ALIGNMENT_CENTER,name+": caption centred vertically")
+	var br=button.get_global_rect();var lr=label.get_global_rect()
+	check(br.grow(4).encloses(lr),name+": caption stays inside its button")
+	if centred:
+		check(absf(lr.get_center().x-br.get_center().x)<=2.5,name+": caption centred on X")
+		check(absf(lr.get_center().y-br.get_center().y)<=4.0,name+": caption centred on Y")
+	var size=label.get_theme_font_size("font_size")
+	check(size>=16 and REF.font_step(size)==size,name+": caption size "+str(size)+" is on the shared ladder")
+func check_caption_block(labels:Array,button:Control,name:String):
+	var block=Rect2();var first=true
+	for label in labels:
+		if label==null or not label.is_visible_in_tree():continue
+		check(label.horizontal_alignment==HORIZONTAL_ALIGNMENT_CENTER,name+": caption line centred horizontally")
+		var lr=label.get_global_rect()
+		block=lr if first else block.merge(lr);first=false
+	if first:return
+	var br=button.get_global_rect()
+	check(br.grow(2).encloses(block),name+": caption block stays inside its button")
+	check(absf(block.get_center().x-br.get_center().x)<=2.5,name+": caption block centred on X")
+	check(absf(block.get_center().y-br.get_center().y)<=3.0,name+": caption block centred on Y")
 func capture_geometry(name:String,root:Node):
 	var values={}
 	for node in root.find_children("*","Control",true,false):
@@ -51,6 +79,8 @@ func run_tests():
 	await Expedition.art.curtain.reveal(cloud_ticket);await settle()
 	capture_geometry("title",Expedition.art.ui)
 	check(Expedition.art.ui.has_node("TitleExit"),"new title exit exists")
+	for name in ["TitleStart","TitleExit","TitleNewRun"]:
+		check_caption(caption_of(Expedition.art.ui.get_node(name)),Expedition.art.ui.get_node(name),"title "+name)
 	await click(Expedition.art.ui.get_node("TitleSettings"));await settle();await shot("02-settings")
 	capture_geometry("settings",Expedition.panel)
 	check(Expedition.current_page=="SETTINGS","title settings receives a viewport click")
@@ -69,6 +99,9 @@ func run_tests():
 	await settle();await shot("05-shop")
 	capture_geometry("shop",Expedition.art.ui)
 	capture_geometry("shop-scenery",Expedition.art.scenery)
+	var sign=Expedition.art.ui.get_node("ArtStartBattle")
+	check_caption_block([sign.get_node("StageCaption"),sign.get_node("StageNumber")],sign,"shop start sign")
+	check_caption(caption_of(Expedition.art.ui.get_node("Offer0/PriceTag"),"Price"),Expedition.art.ui.get_node("Offer0/PriceTag"),"shop price tag",false)
 	check(Game.state==Game.State.Shop,"new selection reaches native shop")
 	check(Expedition.hud_layer.get_instance_id() == hud_id and Expedition.overlay.get_instance_id() == dialog_id, "same HUD and dialog shell survive entering shop")
 	check(Expedition.status.text == Expedition.t("ui.run_header", {"act": int(Expedition.flow.run.act), "step": int(Expedition.flow.run.step), "hp": ceili(float(Expedition.flow.run.health)), "max_hp": ceili(float(Expedition.flow.run.max_health)), "gold": int(Expedition.flow.run.gold)}), "HUD observes the authoritative run header")
@@ -118,6 +151,7 @@ func run_tests():
 	await click(Expedition.art.ui.get_node("ArtStartBattle"));await settle();await shot("11-combat")
 	capture_geometry("combat",Expedition.art.ui)
 	geometry["grid_origins"]=[Game.PLAYER.INVENTORY.tilemap.global_position,Game.OPPONENT.INVENTORY.tilemap.global_position]
+	check_caption(caption_of(Expedition.art.ui.get_node("CombatSpeed"),"SpeedCaption"),Expedition.art.ui.get_node("CombatSpeed"),"combat speed")
 	check(Game.state==Game.State.Combat,"new hanging sign starts native combat")
 	check(Expedition.hud_layer.get_instance_id() == hud_id and Expedition.overlay.get_instance_id() == dialog_id, "same HUD and dialog shell survive combat")
 	if Game.state==Game.State.Combat:

@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=6 format=3]
-[ext_resource type="Shader" path="res://Shader/Booze.gdshader" id="5_tbcp0"]
-[ext_resource type="Texture2D" path="res://Assets/Noise/PoisonNoise.png" id="6_4n3fi"]
+[ext_resource type="Shader" path="res://Art/Shader/Booze.gdshader" id="5_tbcp0"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Noise/PoisonNoise.png" id="6_4n3fi"]
 
 [sub_resource type="Gradient" id="3"]
 offsets = PackedFloat32Array(0.265537, 0.293785, 0.412429, 0.531073, 0.644068, 0.751412, 1)

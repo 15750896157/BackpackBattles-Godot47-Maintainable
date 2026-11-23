@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://j2561jy4md6r"]
+
+[ext_resource type="Material" path="res://Art/Items/Materials/White-EyesBlueDragon.material" id="1_27tpp"]
+[ext_resource type="Material" path="res://Art/Items/Particles/White-EyesBlueDragonDragParticles.tres" id="2_4ex01"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/Snowflake1.png" id="3_t56wk"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="4_iu5uv"]
+
+[node name="ActivationParticles" type="GPUParticles2D"]
+modulate = Color(1.2, 1.2, 1.2, 1)
+show_behind_parent = true
+material = ExtResource("1_27tpp")
+position = Vector2(64, -242)
+scale = Vector2(1.238, 1.238)
+emitting = false
+amount = 9
+lifetime = 0.66
+speed_scale = 0.77
+explosiveness = 1.0
+local_coords = false
+process_material = ExtResource("2_4ex01")
+texture = ExtResource("3_t56wk")
+script = ExtResource("4_iu5uv")

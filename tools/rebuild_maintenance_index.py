@@ -8,13 +8,13 @@ import re
 BUNDLE = Path(__file__).resolve().parents[1]
 PROJECT = BUNDLE / "project"
 INDEX = BUNDLE / "docs/代码维护索引.json"
-GAME_ENTRY = "Core/Game.gd"
+GAME_ENTRY = "Code/Core/Game.gd"
 GAME_SCRIPTS = (
     GAME_ENTRY,
-    "Runtime/Compatibility/GameState.gd",
-    "Runtime/Compatibility/GameProfileCompatibility.gd",
-    "Runtime/Compatibility/GameRunCompatibility.gd",
-    "Runtime/Compatibility/GameInteractionCompatibility.gd",
+    "Code/Runtime/Compatibility/GameState.gd",
+    "Code/Runtime/Compatibility/GameProfileCompatibility.gd",
+    "Code/Runtime/Compatibility/GameRunCompatibility.gd",
+    "Code/Runtime/Compatibility/GameInteractionCompatibility.gd",
 )
 TOP_LEVEL = re.compile(r"(?m)^(?:(?:static )?func|@onready var|var|const|signal|enum|class)\s+(\w+)")
 DELEGATE = re.compile(r'(?:preload|load)\("res://([^"]+\.gd)"\)\.([\w.]+)\(')

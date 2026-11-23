@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b3knkdodhm3qv"]
 
-[ext_resource type="PackedScene" path="res://Core/Main.tscn" id="1_rmwt3"]
+[ext_resource type="PackedScene" path="res://Code/Core/Main.tscn" id="1_rmwt3"]
 [ext_resource type="Script" path="res://PvE/tests/MobileUIQA.gd" id="2_qon4d"]
 
 [node name="Main" instance=ExtResource("1_rmwt3")]

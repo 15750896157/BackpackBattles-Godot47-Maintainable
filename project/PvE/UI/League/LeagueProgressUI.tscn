@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://busty8wnhtrfq"]
+
+[ext_resource type="Script" path="res://PvE/UI/League/LeagueProgressUI.gd" id="1_8pqs2"]
+[ext_resource type="PackedScene" path="res://PvE/UI/League/LeagueEmblem.tscn" id="2_f1hrp"]
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="3_jk8ol"]
+[ext_resource type="Script" path="res://Code/Compatibility/LegacyFont.gd" id="4_7iq0f"]
+[ext_resource type="PackedScene" path="res://PvE/UI/League/LeagueProgressBar.tscn" id="5_pdups"]
+
+[sub_resource type="FontVariation" id="37"]
+base_font = ExtResource("3_jk8ol")
+script = ExtResource("4_7iq0f")
+size = 40
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[sub_resource type="Shader" id="153"]
+code = "shader_type canvas_item;
+
+uniform float progress : hint_range(0.0, 1.0);
+
+void fragment(){
+	vec4 texCol = texture(TEXTURE, UV);
+	COLOR = texCol;
+	//if (COLOR.r < 0.9){
+	//COLOR.rgb *= smoothstep(progress-0.02, progress+0.02, 1.0-UV.x);
+	float p = 1.0 - progress;
+	COLOR.a *= smoothstep(p-0.01, p+0.01, 1.0-UV.x);
+	
+	
+}"
+
+[sub_resource type="ShaderMaterial" id="152"]
+shader = SubResource("153")
+shader_parameter/progress = 0.718
+
+[sub_resource type="FontVariation" id="24"]
+base_font = ExtResource("3_jk8ol")
+script = ExtResource("4_7iq0f")
+size = 25
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+[node name="LeagueProgress" type="Node2D"]
+script = ExtResource("1_8pqs2")
+
+[node name="LeagueEmblem" parent="." instance=ExtResource("2_f1hrp")]
+position = Vector2(67.0001, 144.25)
+
+[node name="Ranking" type="Label" parent="."]
+offset_left = -12.9999
+offset_top = 118.25
+offset_right = 147.0
+offset_bottom = 168.25
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = SubResource("37")
+text = "???"
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 40
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+horizontal_alignment = 1
+
+[node name="LeagueProgressBar" parent="." instance=ExtResource("5_pdups")]
+material = SubResource("152")
+position = Vector2(68.5001, 190.75)
+scale = Vector2(0.415468, 0.535714)
+
+[node name="League" type="Label" parent="."]
+offset_left = -44.9999
+offset_top = 183.25
+offset_right = 179.0
+offset_bottom = 215.25
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = SubResource("24")
+text = "?"
+autowrap_mode = 3
+theme_override_font_sizes/font_size = 25
+theme_override_constants/outline_size = 3
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+horizontal_alignment = 1

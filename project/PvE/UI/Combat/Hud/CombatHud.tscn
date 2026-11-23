@@ -1,0 +1,3095 @@
+[gd_scene format=3 uid="uid://fc14jb9ka6fvc"]
+
+[ext_resource type="Texture2D" uid="uid://28a83p40d7ft" path="res://Art/Assets/Particles/Sparkles.png" id="3"]
+
+
+[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Art/Assets/Trophy.png" id="9"]
+
+
+[ext_resource type="Script" uid="uid://j21gsh3u6rb7" path="res://PvE/UI/Combat/CombatTimer/CombatTimer.gd" id="15"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="20"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="27"]
+
+
+[ext_resource type="Texture2D" uid="uid://chegnxuph0hht" path="res://Art/Assets/RedBanner.png" id="28"]
+
+
+[ext_resource type="Texture2D" uid="uid://cudchn161hi6e" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_grabber_hovered.png" id="29"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="31"]
+
+
+[ext_resource type="Texture2D" uid="uid://cdo4rp1dgjgtu" path="res://Art/Assets/Particles/Dust1.png" id="32"]
+
+
+[ext_resource type="Texture2D" uid="uid://xnux6lseawe7" path="res://Art/Assets/BrokenFanfare.png" id="41"]
+
+
+[ext_resource type="Texture2D" uid="uid://blcodc6wmmts4" path="res://PvE/UI/Lobbies/ResultsPanel.png" id="45"]
+
+
+[ext_resource type="Texture2D" uid="uid://6w1urhw50qyb" path="res://Art/Assets/BlueBanner.png" id="52"]
+
+
+[ext_resource type="RichTextEffect" path="res://Code/Utility/Jump.tres" id="53"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Feedback/WinFanfare.tscn" id="54"]
+
+
+[ext_resource type="Texture2D" uid="uid://f45mef5qnxe8" path="res://PvE/UI/Combat/CombatTimer/TimerPanel.png" id="55"]
+
+
+[ext_resource type="Texture2D" uid="uid://c6g4rmy84swpk" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_paused.png" id="56"]
+
+
+[ext_resource type="Texture2D" uid="uid://bnbk5naf5373j" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_slider.png" id="57"]
+
+
+[ext_resource type="Texture2D" uid="uid://cemmjvxmx7h5g" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_slider_filled.png" id="58"]
+
+
+[ext_resource type="Texture2D" uid="uid://wavfrmvwvkgg" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_grabber.png" id="59"]
+
+
+[ext_resource type="Texture2D" uid="uid://cc1wq2jj5755n" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_fast.png" id="60"]
+
+
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/Trophy.tscn" id="73"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/Heart.tscn" id="75"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Feedback/MovingCounter.tscn" id="76"]
+
+
+[ext_resource type="Texture2D" uid="uid://b25ba4a8q4phy" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_paused_hovered.png" id="80"]
+
+
+[ext_resource type="Texture2D" uid="uid://dh2kvv7t16b2p" path="res://PvE/UI/Combat/CombatTimer/CombatSpeed_fast_hovered.png" id="81"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/League/LeagueEmblem.tscn" id="87"]
+
+
+[ext_resource type="Script" uid="uid://bwv03lwajwu58" path="res://PvE/UI/Common/SimpleClassLabel.gd" id="88"]
+
+
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
+
+
+[ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Art/Assets/Particles/Spot1.png" id="95"]
+
+
+[ext_resource type="Texture2D" uid="uid://cdxw434t1g1yo" path="res://Art/Assets/PinkBanner.png" id="97"]
+
+
+[ext_resource type="Texture2D" uid="uid://cl226yx2ut7mg" path="res://Art/Assets/Banner3.png" id="98"]
+
+
+[ext_resource type="Texture2D" uid="uid://4wis32njk0b" path="res://Art/Assets/Particles/Sparkles_gold.png" id="101"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/League/LeagueProgressBar.tscn" id="108"]
+
+
+[ext_resource type="Texture2D" uid="uid://ncdsljqxtkel" path="res://PvE/UI/Combat/Hud/RankedSheet.png" id="109"]
+
+
+[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
+
+
+[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
+
+
+[ext_resource type="Material" path="res://Art/Shader/WinParticles.material" id="131"]
+
+
+[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Art/Shader/SmoothFadeGradient.tres" id="135"]
+
+
+[ext_resource type="Texture2D" uid="uid://bkjtujs031wkq" path="res://Art/Assets/Character/CombatSheet_NameBanner.png" id="136"]
+
+
+[ext_resource type="Material" path="res://Art/Shader/WinParticlesCanvas.material" id="138"]
+
+
+[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
+
+
+[ext_resource type="Texture2D" uid="uid://xunrrwyavs7s" path="res://Art/Assets/Chestnut/Bottom_back.png" id="140"]
+
+
+[ext_resource type="Script" uid="uid://bc42suputcqom" path="res://Code/Utility/InputBlockRect.gd" id="142"]
+
+
+[ext_resource type="Texture2D" uid="uid://dyufjkue2vhc2" path="res://PvE/UI/Combat/Hud/Eye_open.png" id="143"]
+
+
+[ext_resource type="Texture2D" uid="uid://bn7oiqegl4x0" path="res://PvE/UI/Combat/Hud/Eye_open_hovered.png" id="144"]
+
+
+[ext_resource type="Script" uid="uid://cgn7sqqu2hg2e" path="res://PvE/UI/Common/FocusGrabbingControl.gd" id="159"]
+
+
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
+
+
+[ext_resource type="Script" uid="uid://cs32daht56s5u" path="res://PvE/UI/Common/BaseSlider.gd" id="162"]
+
+
+[ext_resource type="Script" uid="uid://bsjwhjol11gh0" path="res://Art/Items/Exclusive/Animations/GooglyEye.gd" id="170"]
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+[ext_resource type="Texture2D" uid="uid://cbde3uxf3ijj" path="res://Art/Assets/SurvivalSkull.png" id="188"]
+
+
+[ext_resource type="Texture2D" uid="uid://cmor430cqibbh" path="res://Art/Assets/SurvivalBones.png" id="190"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Feedback/TrophyParticles.tscn" id="209"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Title/RunAchievement.tscn" id="211"]
+
+
+[ext_resource type="Texture2D" uid="uid://cpdp4m6q4vu2f" path="res://Art/Items/Exclusive/Sprites/Pupil2.png" id="231"]
+
+
+[ext_resource type="Texture2D" uid="uid://bsg5dpnyicwvu" path="res://Art/Assets/Chestnut/Eye.png" id="237"]
+
+
+[ext_resource type="Texture2D" uid="uid://c88u5u8ss7b23" path="res://Art/Assets/Chestnut/Top_front.png" id="238"]
+
+
+[ext_resource type="Texture2D" uid="uid://ba21tmupdvdxn" path="res://Art/Assets/Chestnut/Bottom_front.png" id="239"]
+
+
+[ext_resource type="Material" path="res://Art/Shader/FatigueParticles.material" id="243"]
+
+
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://PvE/UI/Common/NonLocalizedControl.gd" id="250"]
+
+
+[ext_resource type="Material" path="res://Art/Shader/FatigueParticleMat.material" id="255"]
+
+
+[ext_resource type="Script" uid="uid://bv2tkn0o8tt26" path="res://PvE/UI/Combat/Hud/WinLabel.gd" id="259"]
+
+
+[ext_resource type="Script" uid="uid://ckn2tpmdrwwvg" path="res://Code/Utility/TimedParticles.gd" id="261"]
+
+
+[ext_resource type="Texture2D" uid="uid://cvrupifajxi8x" path="res://PvE/UI/Feedback/PopupBox.png" id="273"]
+
+
+[ext_resource type="Texture2D" uid="uid://bu21vdlhtuuoo" path="res://Art/Assets/Chestnut/Top_teeth.png" id="274"]
+
+
+[ext_resource type="Texture2D" uid="uid://dr3jjyrmqx51f" path="res://Art/Assets/Chestnut/Tongue.png" id="275"]
+
+
+[ext_resource type="Script" uid="uid://ce86tt4hmhaqq" path="res://PvE/UI/Combat/Hud/CombatTugBar.gd" id="304"]
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_130.tres" id="m7_shared_130"]
+
+
+[ext_resource type="GradientTexture1D" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedGradientTexture1D_267.tres" id="m7_shared_267"]
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_81.tres" id="m7_shared_81"]
+
+
+[sub_resource type="FontVariation" id="2"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 60
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="StyleBoxTexture" id="56"]
+texture = ExtResource("57")
+region_rect = Rect2(0, 0, 585, 50)
+
+
+[sub_resource type="StyleBoxTexture" id="58"]
+texture = ExtResource("58")
+axis_stretch_horizontal = 1
+region_rect = Rect2(0, 0, 585, 50)
+
+
+[sub_resource type="FontVariation" id="59"]
+base_font = ExtResource("20")
+script = ExtResource("LegacyFontMigration")
+size = 46
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="FontVariation" id="327"]
+base_font = ExtResource("27")
+spacing_glyph = -1
+script = ExtResource("LegacyFontMigration")
+size = 41
+outline_size = 4
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="67"]
+resource_name = "HideTimer"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(2.82843, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -400)]
+}
+
+
+[sub_resource type="Animation" id="108"]
+resource_name = "RESET"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -400)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xu6pu"]
+_data = {
+&"HideTimer": SubResource("67"),
+&"RESET": SubResource("108")
+}
+
+
+[sub_resource type="Animation" id="143"]
+resource_name = "Hide"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Counter:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Label2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+
+[sub_resource type="Animation" id="144"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GPUParticles2D:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Counter:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Counter:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Counter:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+
+[sub_resource type="Animation" id="145"]
+resource_name = "Start"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label2:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GPUParticles2D:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Counter:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.5, 2.95),
+"transitions": PackedFloat32Array(1, 0.482968, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Label2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.5, 2.96218),
+"transitions": PackedFloat32Array(1, 1.8025, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Label2:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Counter:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+
+[sub_resource type="Animation" id="146"]
+resource_name = "Tick"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Counter:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0694975, 0.231578),
+"transitions": PackedFloat32Array(-2, 2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.3, 1.3), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Counter:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.063397, 0.239653),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.603922, 0.603922, 1), Color(1, 1, 1, 1)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ij26w"]
+_data = {
+&"Hide": SubResource("143"),
+&"RESET": SubResource("144"),
+&"Start": SubResource("145"),
+&"Tick": SubResource("146")
+}
+
+
+[sub_resource type="FontVariation" id="78"]
+base_font = ExtResource("31")
+script = ExtResource("LegacyFontMigration")
+size = 50
+outline_size = 5
+outline_color = Color(0.054902, 0.0901961, 0.286275, 1)
+use_mipmaps = true
+
+
+[sub_resource type="FontVariation" id="32"]
+base_font = ExtResource("31")
+script = ExtResource("LegacyFontMigration")
+size = 50
+outline_size = 5
+outline_color = Color(0.286275, 0.054902, 0.054902, 1)
+use_mipmaps = true
+
+
+[sub_resource type="Gradient" id="26"]
+colors = PackedColorArray(1, 0.868355, 0.433594, 1, 1, 1, 1, 1)
+
+
+[sub_resource type="GradientTexture1D" id="27"]
+gradient = SubResource("26")
+width = 50
+
+
+[sub_resource type="Curve" id="403"]
+_data = [Vector2(0, 0.486364), 0.0, 6.22273, 0, 0, Vector2(0.0765766, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+
+[sub_resource type="CurveTexture" id="404"]
+width = 100
+curve = SubResource("403")
+
+
+[sub_resource type="ParticleProcessMaterial" id="69"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 14.94
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 18.06
+initial_velocity_min = 76.698
+initial_velocity_max = 213.05
+angular_velocity_min = -142.07
+angular_velocity_max = 142.07
+gravity = Vector3(0, 500, 0)
+scale_min = 0.87
+scale_max = 0.9584
+scale_curve = SubResource("404")
+color_initial_ramp = SubResource("27")
+anim_speed_min = 8.2246
+anim_speed_max = 13.94
+
+
+[sub_resource type="FontVariation" id="37"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 30
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="95"]
+resource_name = "Appear"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.420448, 1),
+"update": 0,
+"values": [-2000.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+[sub_resource type="Animation" id="97"]
+resource_name = "Disappear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.37841, 1),
+"update": 0,
+"values": [0.0, 2000.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+[sub_resource type="Animation" id="96"]
+resource_name = "RESET"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aguce"]
+_data = {
+&"Appear": SubResource("95"),
+&"Disappear": SubResource("97"),
+&"RESET": SubResource("96")
+}
+
+
+[sub_resource type="Animation" id="98"]
+resource_name = "Appear"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.450625, 1),
+"update": 0,
+"values": [2000.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+[sub_resource type="Animation" id="99"]
+resource_name = "Disappear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [0.0, -2000.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+[sub_resource type="Animation" id="110"]
+resource_name = "RESET"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(0.392292),
+"update": 0,
+"values": [Vector2(-2000, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kfei5"]
+_data = {
+&"Appear": SubResource("98"),
+&"Disappear": SubResource("99"),
+&"RESET": SubResource("110")
+}
+
+
+[sub_resource type="Shader" id="151"]
+code = "shader_type canvas_item;
+
+uniform float progress : hint_range(0.0, 1.0);
+
+void fragment(){
+	vec4 texCol = texture(TEXTURE, UV);
+	COLOR = texCol;
+	//if (COLOR.r < 0.9){
+	//COLOR.rgb *= smoothstep(progress-0.02, progress+0.02, 1.0-UV.x);
+	float p = 1.0 - progress;
+	COLOR.a *= smoothstep(p-0.01, p+0.01, 1.0-UV.x);
+	
+	
+}"
+
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y1jck"]
+resource_local_to_scene = true
+shader = SubResource("151")
+shader_parameter/progress = 0.718
+
+
+[sub_resource type="Gradient" id="155"]
+offsets = PackedFloat32Array(0, 0.625641, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+
+[sub_resource type="GradientTexture1D" id="156"]
+gradient = SubResource("155")
+width = 50
+
+
+[sub_resource type="ParticleProcessMaterial" id="157"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 94.65
+direction = Vector3(0, -1, 0)
+spread = 104.2
+initial_velocity_min = 221.5078
+initial_velocity_max = 381.91
+orbit_velocity_min = -0.2
+orbit_velocity_max = 0.06
+gravity = Vector3(0, 0, 0)
+scale_min = 1.3082
+scale_max = 1.67
+color_ramp = SubResource("156")
+
+
+[sub_resource type="Animation" id="159"]
+resource_name = "DecreasePower"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeagueEmblem:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0911854, 0.489119),
+"transitions": PackedFloat32Array(0.450625, 2.82843, 1),
+"update": 0,
+"values": [Vector2(0.816406, 0.816406), Vector2(0.7, 0.7), Vector2(0.816406, 0.816406)]
+}
+
+
+[sub_resource type="Animation" id="160"]
+resource_name = "IncreasePower"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeagueEmblem:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.12383, 0.48259),
+"transitions": PackedFloat32Array(0.450625, 2.82843, 1),
+"update": 0,
+"values": [Vector2(0.816406, 0.816406), Vector2(0.9, 0.9), Vector2(0.816406, 0.816406)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EmblemParticles")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.00652887),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
+
+
+[sub_resource type="Animation" id="158"]
+resource_name = "RankDown"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeagueEmblem:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.12383, 0.48259),
+"transitions": PackedFloat32Array(0.450625, 2.82843, 1),
+"update": 0,
+"values": [Vector2(0.816406, 0.816406), Vector2(0.9, 0.9), Vector2(0.816406, 0.816406)]
+}
+
+
+[sub_resource type="Animation" id="401"]
+resource_name = "RankUp"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeagueEmblem:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.12383, 0.48259),
+"transitions": PackedFloat32Array(0.450625, -2, 1),
+"update": 0,
+"values": [Vector2(0.816406, 0.816406), Vector2(1.1, 1.1), Vector2(0.816406, 0.816406)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jsmgk"]
+_data = {
+&"DecreasePower": SubResource("159"),
+&"IncreasePower": SubResource("160"),
+&"RankDown": SubResource("158"),
+&"RankUp": SubResource("401")
+}
+
+
+[sub_resource type="FontVariation" id="86"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 80
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="FontVariation" id="402"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 100
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="394"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../RankUpBonusText:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+[sub_resource type="Animation" id="395"]
+resource_name = "ShowBonus"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../RankUpBonusText:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../RankUpBonusText:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../RankUpBonusText:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 6.8, 7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 6.8, 7),
+"transitions": PackedFloat32Array(-2, -2, -2, -2, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1.2, 1.2), Vector2(1, 1), Vector2(1, 1), Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.4, 1.6, 1.7, 1.9, 2.1, 2.3),
+"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2, -2),
+"update": 0,
+"values": [0.0, 0.0, 6.8, -6.0, 6.8, -6.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uskf4"]
+_data = {
+&"RESET": SubResource("394"),
+&"ShowBonus": SubResource("395")
+}
+
+
+[sub_resource type="FontVariation" id="396"]
+base_font = ExtResource("31")
+spacing_top = -1
+spacing_bottom = -9
+script = ExtResource("LegacyFontMigration")
+size = 50
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="109"]
+resource_name = "Appear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.378929, 1),
+"update": 0,
+"values": [Vector2(0, 1000), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+[sub_resource type="Animation" id="111"]
+resource_name = "Disappear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.46229, 0.378929),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 1000)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+[sub_resource type="Animation" id="112"]
+resource_name = "RESET"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(0.378929),
+"update": 0,
+"values": [Vector2(0, 1000)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jr1o4"]
+_data = {
+&"Appear": SubResource("109"),
+&"Disappear": SubResource("111"),
+&"RESET": SubResource("112")
+}
+
+
+[sub_resource type="ParticleProcessMaterial" id="154"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+direction = Vector3(0, -1, 0)
+spread = 41.27
+initial_velocity_min = 80.0458
+initial_velocity_max = 138.01
+gravity = Vector3(0, 0, 0)
+scale_min = 0.99
+scale_max = 0.9954
+color_ramp = SubResource("156")
+
+
+[sub_resource type="FontVariation" id="304"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 40
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="305"]
+resource_name = "Hide"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+
+[sub_resource type="Animation" id="306"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+
+[sub_resource type="Animation" id="307"]
+resource_name = "Show"
+length = 1.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.817141, 0.994971, 1.25085),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.00093),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"updateSurvivalCounter"
+}]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w6hwf"]
+_data = {
+&"Hide": SubResource("305"),
+&"RESET": SubResource("306"),
+&"Show": SubResource("307")
+}
+
+
+[sub_resource type="ParticleProcessMaterial" id="414"]
+lifetime_randomness = 0.21
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 74.13
+initial_velocity_min = 230.1518
+initial_velocity_max = 500.33
+angular_velocity_min = -80.75
+angular_velocity_max = 80.75
+gravity = Vector3(0, 500, 0)
+damping_min = 100.0
+damping_max = 100.0
+scale_min = 0.26
+scale_max = 0.408
+color_ramp = ExtResource("135")
+color_initial_ramp = ExtResource("m7_shared_267")
+
+
+[sub_resource type="FontVariation" id="352"]
+base_font = ExtResource("31")
+script = ExtResource("LegacyFontMigration")
+size = 42
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="415"]
+resource_name = "Close"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.09),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"playCloseSound"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BottomFront/Top:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.601095, 0.801421),
+"transitions": PackedFloat32Array(2.63902, 0.420448, 2.14355, 1),
+"update": 0,
+"values": [57.3, 0.0, 3.2, 0.0]
+}
+
+
+[sub_resource type="Animation" id="416"]
+resource_name = "DropAndOpen"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.695661, 0.87, 1.03),
+"transitions": PackedFloat32Array(2, 0.329877, 2.92817, 1),
+"update": 0,
+"values": [Vector2(0, -1080), Vector2(0, 0), Vector2(0, -40), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("../ChestnutDustParticles:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.63885),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../ChestnutDustParticles")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.633533),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"activate"
+}]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1, 0.71, 1.63),
+"transitions": PackedFloat32Array(1, 1, 1),
+"values": [{
+"args": [],
+"method": &"playDropSound"
+}, {
+"args": [],
+"method": &"playLandSound"
+}, {
+"args": [],
+"method": &"playOpenSound"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BottomFront/Top:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.698622, 0.911246, 1.1, 1.58, 1.93),
+"transitions": PackedFloat32Array(-2.63902, 0.5, 0.5, -2.63902, -2.63902, -2.63902),
+"update": 0,
+"values": [0.0, 0.0, 6.9, 0.0, 0.0, 57.3]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BottomFront:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.698622, 0.863514, 1.02407, 1.14123, 1.35385),
+"transitions": PackedFloat32Array(0.5, 0.5, 2, 0.5, -2, 0.5),
+"update": 0,
+"values": [0.0, 0.0, 4.3, 0.0, -2.0, 0.0]
+}
+
+
+[sub_resource type="Animation" id="417"]
+resource_name = "EatTrophy"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BottomFront/Top:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.016324, 0.1),
+"transitions": PackedFloat32Array(0.5, -2, 1),
+"update": 0,
+"values": [57.3, 60.2, 57.3]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xbe1y"]
+_data = {
+&"Close": SubResource("415"),
+&"DropAndOpen": SubResource("416"),
+&"EatTrophy": SubResource("417")
+}
+
+
+[sub_resource type="FontVariation" id="131"]
+base_font = ExtResource("31")
+script = ExtResource("LegacyFontMigration")
+size = 70
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="357"]
+resource_name = "Appear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.450626, 1),
+"update": 0,
+"values": [Vector2(0, -800), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Lose:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1.86607, 0.5),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../LoseParticles1:emitting")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../LoseParticles2:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Win:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(3.24901, 0.5),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+tracks/6/type = "animation"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Trophies/Animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"clips": PackedStringArray("Disappear"),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("LobbyFinishButton:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../Trophies:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+[sub_resource type="Animation" id="363"]
+resource_name = "Disappear"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.2974, 0.517633),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -800)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LobbyFinishButton:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+[sub_resource type="Animation" id="358"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ep867"]
+_data = {
+&"Appear": SubResource("357"),
+&"Disappear": SubResource("363"),
+&"RESET": SubResource("358")
+}
+
+
+[sub_resource type="FontVariation" id="364"]
+base_font = ExtResource("31")
+script = ExtResource("LegacyFontMigration")
+size = 55
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="FontVariation" id="365"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 40
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="FontVariation" id="420"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 31
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="FontVariation" id="313"]
+base_font = ExtResource("31")
+script = ExtResource("LegacyFontMigration")
+size = 40
+outline_size = 5
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+[sub_resource type="Animation" id="314"]
+resource_name = "Appear"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+[sub_resource type="Animation" id="315"]
+resource_name = "Disappear"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+
+[sub_resource type="Animation" id="316"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8m1pd"]
+_data = {
+&"Appear": SubResource("314"),
+&"Disappear": SubResource("315"),
+&"RESET": SubResource("316")
+}
+
+
+[sub_resource type="Animation" id="92"]
+resource_name = "Sell"
+length = 5.0
+
+
+[node name="UI" type="Node2D" unique_id=248287066]
+z_index = 50
+
+
+[node name="CombatTimer" type="Node2D" parent="." unique_id=29162421]
+unique_name_in_owner = true
+position = Vector2(0, -400)
+script = ExtResource("15")
+
+
+[node name="Panel" type="Sprite2D" parent="CombatTimer" unique_id=701053369]
+position = Vector2(966.725, 82.225)
+scale = Vector2(0.704352, 0.665018)
+texture = ExtResource("55")
+
+
+[node name="FatigueStartTimer" type="Timer" parent="CombatTimer" unique_id=143365017]
+one_shot = true
+
+
+[node name="FatigueTickTimer" type="Timer" parent="CombatTimer" unique_id=1127484129]
+one_shot = true
+
+
+[node name="TimerLabel" type="Label" parent="CombatTimer" unique_id=305757116]
+visible = false
+offset_left = 867.0
+offset_top = 33.0
+offset_right = 1051.0
+offset_bottom = 109.0
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("2")
+theme_override_font_sizes/font_size = 60
+text = "20"
+horizontal_alignment = 1
+
+
+[node name="SpeedSlider" type="HSlider" parent="CombatTimer" unique_id=897733576]
+offset_left = 786.0
+offset_top = 23.0
+offset_right = 1371.0
+offset_bottom = 131.0
+scale = Vector2(0.48, 0.6)
+mouse_default_cursor_shape = 2
+theme_override_icons/grabber = ExtResource("59")
+theme_override_icons/grabber_highlight = ExtResource("29")
+theme_override_icons/grabber_disabled = ExtResource("59")
+theme_override_styles/slider = SubResource("56")
+theme_override_styles/grabber_area = SubResource("58")
+theme_override_styles/grabber_area_highlight = SubResource("58")
+max_value = 2.0
+step = 0.1
+value = 0.5
+script = ExtResource("162")
+
+
+[node name="Speed" type="Label" parent="CombatTimer" unique_id=1533196013]
+offset_left = 1069.0
+offset_top = 24.0
+offset_right = 1153.0
+offset_bottom = 87.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("59")
+theme_override_font_sizes/font_size = 46
+text = "x3.5"
+
+
+[node name="Time" type="Label" parent="CombatTimer" unique_id=258428979]
+offset_left = 907.0
+offset_top = 86.0
+offset_right = 1023.0
+offset_bottom = 138.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("327")
+theme_override_font_sizes/font_size = 41
+text = "12.0"
+horizontal_alignment = 1
+
+
+[node name="PauseButton" type="TextureButton" parent="CombatTimer" unique_id=898536107]
+offset_left = 822.0
+offset_top = 90.0
+offset_right = 869.0
+offset_bottom = 135.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("56")
+texture_hover = ExtResource("80")
+ignore_texture_size = true
+script = ExtResource("160")
+
+
+[node name="FastButton" type="TextureButton" parent="CombatTimer" unique_id=1346363702]
+offset_left = 1058.0
+offset_top = 91.0
+offset_right = 1110.0
+offset_bottom = 136.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("60")
+texture_hover = ExtResource("81")
+ignore_texture_size = true
+script = ExtResource("160")
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CombatTimer" unique_id=1797707576]
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_xu6pu")
+
+
+[node name="Fatigue" type="Node2D" parent="." unique_id=1104527336]
+
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Fatigue" unique_id=1512599506]
+z_index = -49
+material = ExtResource("255")
+position = Vector2(985, 672)
+emitting = false
+amount = 14
+texture = ExtResource("95")
+lifetime = 1.22
+speed_scale = 0.62
+process_material = ExtResource("243")
+
+
+[node name="Label2" type="Label" parent="Fatigue" unique_id=1520904822]
+modulate = Color(1, 1, 1, 0)
+material = ExtResource("139")
+offset_left = 792.0
+offset_top = 488.0
+offset_right = 1155.0
+offset_bottom = 564.0
+grow_horizontal = 2
+pivot_offset = Vector2(182, 25)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "Fatigue sets in..."
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+script = ExtResource("182")
+translationKey = "UI_FatigueStart"
+
+
+[node name="Counter" type="Label" parent="Fatigue" unique_id=1542104060]
+modulate = Color(1, 1, 1, 0)
+material = ExtResource("139")
+offset_left = 720.0
+offset_top = 559.0
+offset_right = 1215.0
+offset_bottom = 635.0
+pivot_offset = Vector2(244, 36)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "Fatigue: 1"
+horizontal_alignment = 1
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fatigue" unique_id=795271047]
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_ij26w")
+
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=723198817]
+visible = false
+modulate = Color(1, 1, 1, 0)
+offset_right = 1914.0
+offset_bottom = 1057.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.611765)
+script = ExtResource("142")
+
+
+[node name="Win" type="Node2D" parent="." unique_id=2110682990]
+visible = false
+position = Vector2(972, 271.1)
+scale = Vector2(1e-05, 1e-05)
+
+
+[node name="Fanfare1" parent="Win" unique_id=2123451285 instance=ExtResource("54")]
+
+
+[node name="Fanfare2" parent="Win" unique_id=316184160 instance=ExtResource("54")]
+position = Vector2(34.0001, 157)
+rotation = -2.57319
+
+
+[node name="BlueBanner" type="Sprite2D" parent="Win" unique_id=1266530583]
+position = Vector2(18, 53.4694)
+texture = ExtResource("52")
+
+
+[node name="WinLabel" type="RichTextLabel" parent="Win" unique_id=618805136]
+custom_minimum_size = Vector2(365, 0)
+clip_contents = false
+offset_left = -192.0
+offset_top = -83.0
+offset_right = 191.0
+offset_bottom = 47.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.054902, 0.0901961, 0.286275, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = SubResource("78")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "Round won!"
+fit_content = true
+scroll_active = false
+custom_effects = [ExtResource("53")]
+script = ExtResource("259")
+translationKey = "UI_RoundWon"
+suffix = "[/center][/jump]"
+
+
+[node name="WinParticles1" type="GPUParticles2D" parent="." unique_id=226773111]
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+z_index = 3
+material = ExtResource("138")
+position = Vector2(657, 211.1)
+rotation = -0.680678
+emitting = false
+amount = 161
+texture = ExtResource("101")
+lifetime = 6.34
+speed_scale = 1.44
+explosiveness = 0.96
+visibility_rect = Rect2(-10000, -10000, 20000, 20000)
+process_material = ExtResource("131")
+script = ExtResource("261")
+
+
+[node name="WinParticles2" type="GPUParticles2D" parent="." unique_id=321745724]
+modulate = Color(2, 2, 2, 1)
+z_index = 3
+material = ExtResource("138")
+position = Vector2(1298, 201.1)
+rotation = 0.908745
+emitting = false
+amount = 161
+texture = ExtResource("101")
+lifetime = 6.34
+speed_scale = 1.44
+explosiveness = 0.96
+visibility_rect = Rect2(-10000, -10000, 20000, 20000)
+process_material = ExtResource("131")
+script = ExtResource("261")
+
+
+[node name="Lose" type="Node2D" parent="." unique_id=729314572]
+visible = false
+position = Vector2(960, 262)
+scale = Vector2(1e-05, 1e-05)
+
+
+[node name="RedBanner" type="Sprite2D" parent="Lose" unique_id=905143431]
+position = Vector2(-5.72043, 215.946)
+rotation = 0.0355711
+texture = ExtResource("28")
+
+
+[node name="LoseLabel" type="RichTextLabel" parent="Lose/RedBanner" unique_id=619891315]
+custom_minimum_size = Vector2(443, 68)
+clip_contents = false
+offset_left = -204.0
+offset_top = -304.0
+offset_right = 239.0
+offset_bottom = -236.0
+grow_horizontal = 2
+rotation = 8.9
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.286275, 0.054902, 0.054902, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = SubResource("32")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "Round  lost"
+scroll_active = false
+script = ExtResource("182")
+translationKey = "BANNER_RoundLost"
+prefix = "[center][wave]"
+maxSize = 443.0
+maxSizeY = 68.0
+
+
+[node name="BrokenFanfare1" type="Sprite2D" parent="Lose/RedBanner" unique_id=812943111]
+show_behind_parent = true
+position = Vector2(-84.8403, -226.92)
+rotation = 2.9429
+texture = ExtResource("41")
+offset = Vector2(106.464, 48.2736)
+
+
+[node name="BrokenFanfare2" type="Sprite2D" parent="Lose/RedBanner" unique_id=1882265465]
+show_behind_parent = true
+position = Vector2(88.1951, -212.168)
+rotation = 2.82876
+texture = ExtResource("41")
+offset = Vector2(-97.4871, -44.1978)
+flip_h = true
+flip_v = true
+
+
+[node name="LoseParticles1" type="GPUParticles2D" parent="." unique_id=909847289]
+modulate = Color(2, 2, 2, 1)
+z_index = 3
+material = ExtResource("138")
+position = Vector2(633, 238)
+rotation = -1.06837
+emitting = false
+amount = 9
+texture = ExtResource("3")
+lifetime = 3.0
+speed_scale = 1.44
+explosiveness = 0.13
+visibility_rect = Rect2(-10000, -10000, 20000, 20000)
+process_material = SubResource("69")
+script = ExtResource("261")
+
+
+[node name="LoseParticles2" type="GPUParticles2D" parent="." unique_id=1087573441]
+modulate = Color(2, 2, 2, 1)
+z_index = 3
+material = ExtResource("138")
+position = Vector2(1274, 277)
+rotation = 2.45808
+emitting = false
+amount = 9
+texture = ExtResource("3")
+lifetime = 3.0
+speed_scale = 1.44
+explosiveness = 0.13
+visibility_rect = Rect2(-10000, -10000, 20000, 20000)
+process_material = SubResource("69")
+script = ExtResource("261")
+
+
+[node name="ClickToContinue" type="Label" parent="." unique_id=2049119184]
+visible = false
+modulate = Color(1, 1, 1, 0)
+material = ExtResource("139")
+offset_left = 812.0
+offset_top = 979.0
+offset_right = 1136.0
+offset_bottom = 1018.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("37")
+theme_override_font_sizes/font_size = 30
+text = "Click to continue."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "BUTTON_SkipAnimation"
+
+
+[node name="Trophies" type="Node2D" parent="." unique_id=1393521790]
+visible = false
+position = Vector2(-2000, 0)
+
+
+[node name="Banner1" type="Sprite2D" parent="Trophies" unique_id=1552159391]
+position = Vector2(962.25, 554.5)
+scale = Vector2(0.920052, 0.532308)
+texture = ExtResource("98")
+
+
+[node name="Label" type="Label" parent="Trophies" unique_id=1023077864]
+offset_left = 131.5
+offset_top = 512.0
+offset_right = 299.5
+offset_bottom = 588.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "Wins"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_Wins"
+maxSize = 168.0
+
+
+[node name="Trophy1" parent="Trophies" unique_id=1875236758 instance=ExtResource("73")]
+position = Vector2(352.5, 546)
+
+
+[node name="Trophy2" parent="Trophies" unique_id=1908328875 instance=ExtResource("73")]
+position = Vector2(492.5, 546)
+
+
+[node name="Trophy3" parent="Trophies" unique_id=1620584787 instance=ExtResource("73")]
+position = Vector2(639.5, 546)
+
+
+[node name="Trophy4" parent="Trophies" unique_id=125578723 instance=ExtResource("73")]
+position = Vector2(785.5, 546)
+
+
+[node name="Trophy5" parent="Trophies" unique_id=844770105 instance=ExtResource("73")]
+position = Vector2(932.5, 546)
+
+
+[node name="Trophy6" parent="Trophies" unique_id=688020513 instance=ExtResource("73")]
+position = Vector2(1076.5, 546)
+
+
+[node name="Trophy7" parent="Trophies" unique_id=1020657514 instance=ExtResource("73")]
+position = Vector2(1223.5, 546)
+
+
+[node name="Trophy8" parent="Trophies" unique_id=2021478503 instance=ExtResource("73")]
+position = Vector2(1370.5, 546)
+
+
+[node name="Trophy9" parent="Trophies" unique_id=552924419 instance=ExtResource("73")]
+position = Vector2(1513.5, 546)
+
+
+[node name="Trophy10" parent="Trophies" unique_id=1302881262 instance=ExtResource("73")]
+position = Vector2(1657.5, 546)
+
+
+[node name="SurvivalTrophies" type="Node2D" parent="Trophies" unique_id=1607576133]
+visible = false
+position = Vector2(0, -36)
+
+
+[node name="Trophy1" parent="Trophies/SurvivalTrophies" unique_id=800258586 instance=ExtResource("73")]
+visible = false
+position = Vector2(421.5, 536)
+
+
+[node name="Trophy2" parent="Trophies/SurvivalTrophies" unique_id=1347036766 instance=ExtResource("73")]
+visible = false
+position = Vector2(561.5, 536)
+
+
+[node name="Trophy3" parent="Trophies/SurvivalTrophies" unique_id=820867929 instance=ExtResource("73")]
+visible = false
+position = Vector2(708.5, 536)
+
+
+[node name="Trophy4" parent="Trophies/SurvivalTrophies" unique_id=95768963 instance=ExtResource("73")]
+visible = false
+position = Vector2(854.5, 536)
+
+
+[node name="Trophy5" parent="Trophies/SurvivalTrophies" unique_id=310318939 instance=ExtResource("73")]
+visible = false
+position = Vector2(1001.5, 536)
+
+
+[node name="Trophy6" parent="Trophies/SurvivalTrophies" unique_id=810884505 instance=ExtResource("73")]
+visible = false
+position = Vector2(1145.5, 536)
+
+
+[node name="Trophy7" parent="Trophies/SurvivalTrophies" unique_id=617698681 instance=ExtResource("73")]
+visible = false
+position = Vector2(1292.5, 536)
+
+
+[node name="Trophy8" parent="Trophies/SurvivalTrophies" unique_id=335281042 instance=ExtResource("73")]
+visible = false
+position = Vector2(1439.5, 536)
+
+
+[node name="Trophy9" parent="Trophies/SurvivalTrophies" unique_id=1249236659 instance=ExtResource("73")]
+visible = false
+position = Vector2(1582.5, 536)
+
+
+[node name="Trophy10" parent="Trophies/SurvivalTrophies" unique_id=964456328 instance=ExtResource("73")]
+visible = false
+position = Vector2(1726.5, 536)
+
+
+[node name="Animation" type="AnimationPlayer" parent="Trophies" unique_id=981619290]
+libraries/ = SubResource("AnimationLibrary_aguce")
+
+
+[node name="Hearts" type="Node2D" parent="." unique_id=292261054]
+visible = false
+position = Vector2(-2000, 0)
+
+
+[node name="Banner1" type="Sprite2D" parent="Hearts" unique_id=1613441321]
+modulate = Color(0.92549, 0.694118, 0.556863, 1)
+position = Vector2(953.5, 753)
+scale = Vector2(0.898642, 0.701031)
+texture = ExtResource("97")
+
+
+[node name="Label" type="Label" parent="Hearts" unique_id=1203836382]
+offset_left = 513.0
+offset_top = 660.0
+offset_right = 698.0
+offset_bottom = 736.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "Tries"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_Tries"
+
+
+[node name="Heart1" parent="Hearts" unique_id=1931891552 instance=ExtResource("75")]
+position = Vector2(758, 701)
+
+
+[node name="Heart2" parent="Hearts" unique_id=2058974697 instance=ExtResource("75")]
+position = Vector2(899, 701)
+
+
+[node name="Heart3" parent="Hearts" unique_id=1339578135 instance=ExtResource("75")]
+position = Vector2(1037, 701)
+
+
+[node name="Heart4" parent="Hearts" unique_id=1624654526 instance=ExtResource("75")]
+position = Vector2(1175, 701)
+
+
+[node name="Heart5" parent="Hearts" unique_id=1439266378 instance=ExtResource("75")]
+position = Vector2(1314, 701)
+
+
+[node name="Animation" type="AnimationPlayer" parent="Hearts" unique_id=2009096800]
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_kfei5")
+
+
+[node name="Ranked" type="Node2D" parent="." unique_id=901041195]
+visible = false
+position = Vector2(0, 1000)
+
+
+[node name="TooltipBase2" type="Sprite2D" parent="Ranked" unique_id=811111665]
+position = Vector2(974.28, 843.19)
+scale = Vector2(1.11468, 1.13037)
+texture = ExtResource("109")
+
+
+[node name="LeagueProgressBar" parent="Ranked" unique_id=973172604 instance=ExtResource("108")]
+self_modulate = Color(2, 2, 2, 1)
+material = SubResource("ShaderMaterial_y1jck")
+position = Vector2(979.28, 1021)
+
+
+[node name="EmblemParticles" type="GPUParticles2D" parent="Ranked" unique_id=1675432202]
+self_modulate = Color(2, 2, 2, 1)
+position = Vector2(966, 808)
+emitting = false
+amount = 30
+texture = ExtResource("116")
+lifetime = 0.47
+one_shot = true
+explosiveness = 0.82
+process_material = SubResource("157")
+
+
+[node name="LeagueEmblem" parent="Ranked" unique_id=1855229288 instance=ExtResource("87")]
+modulate = Color(1.2, 1.2, 1.2, 1)
+position = Vector2(965.28, 817.625)
+scale = Vector2(0.816406, 0.816406)
+
+
+[node name="LaurelWreath" parent="Ranked/LeagueEmblem" index="0"]
+visible = false
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Ranked/LeagueEmblem" unique_id=632190826]
+root_node = NodePath("../..")
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_jsmgk")
+
+
+[node name="Ranking" parent="Ranked" unique_id=403032732 instance=ExtResource("76")]
+offset_left = 787.28
+offset_top = 759.625
+offset_right = 1143.28
+offset_bottom = 859.625
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("86")
+theme_override_font_sizes/font_size = 80
+text = "135"
+horizontal_alignment = 1
+
+
+[node name="Dif" parent="Ranked" unique_id=1933950323 instance=ExtResource("76")]
+offset_left = 1136.0
+offset_top = 859.0
+offset_right = 1324.0
+offset_bottom = 959.0
+pivot_offset = Vector2(113, 55)
+theme_override_colors/font_color = Color(0.584314, 1, 0.470588, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("86")
+theme_override_font_sizes/font_size = 80
+text = "+13"
+prefix = "+"
+
+
+[node name="RankUpBonus" type="Label" parent="Ranked" unique_id=2120841170]
+visible = false
+offset_left = 866.0
+offset_top = 567.0
+offset_right = 1054.0
+offset_bottom = 691.0
+scale = Vector2(1e-05, 1e-05)
+pivot_offset = Vector2(96, 52)
+theme_override_colors/font_color = Color(0.560784, 1, 0.439216, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("402")
+theme_override_font_sizes/font_size = 100
+text = "+10"
+horizontal_alignment = 1
+script = ExtResource("250")
+
+
+[node name="BonusAnimationPlayer" type="AnimationPlayer" parent="Ranked" unique_id=1164450233]
+root_node = NodePath("../RankUpBonus")
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_uskf4")
+
+
+[node name="RankUpBonusText" type="Label" parent="Ranked" unique_id=1651783565]
+visible = false
+modulate = Color(1, 1, 1, 0)
+material = ExtResource("139")
+offset_left = 1103.0
+offset_top = 611.0
+offset_right = 1382.0
+offset_bottom = 723.0
+pivot_offset = Vector2(141.511, 63.2977)
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("396")
+theme_override_font_sizes/font_size = 50
+text = "Rank-Up Bonus!"
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "UI_RankUpBonus"
+
+
+[node name="League" type="Label" parent="Ranked" unique_id=893340788]
+offset_left = 781.28
+offset_top = 944.0
+offset_right = 1154.28
+offset_bottom = 994.0
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.92549, 0.12549, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_81")
+theme_override_font_sizes/font_size = 36
+text = "Gold"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+
+[node name="RankingLabel" type="Label" parent="Ranked" unique_id=1113228628]
+offset_left = 546.0
+offset_top = 822.0
+offset_right = 804.0
+offset_bottom = 872.0
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_81")
+theme_override_font_sizes/font_size = 36
+text = "Ranking"
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "UI_Ranking"
+
+
+[node name="Class" type="Label" parent="Ranked" unique_id=927638681]
+offset_left = 544.0
+offset_top = 890.0
+offset_right = 806.0
+offset_bottom = 940.0
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.482353, 0.768627, 0.243137, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_81")
+theme_override_font_sizes/font_size = 36
+text = "Ranger"
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("88")
+
+
+[node name="RankedAnimation" type="AnimationPlayer" parent="Ranked" unique_id=1795705302]
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_jr1o4")
+
+
+[node name="BarBorderParticles" type="GPUParticles2D" parent="Ranked" unique_id=1529225934]
+self_modulate = Color(2, 2, 2, 1)
+position = Vector2(1108, 1020)
+amount = 40
+texture = ExtResource("116")
+lifetime = 0.47
+process_material = SubResource("154")
+
+
+[node name="10Wins" type="Node2D" parent="." unique_id=1841252861]
+visible = false
+z_index = 3
+position = Vector2(950, 285)
+scale = Vector2(1e-05, 1e-05)
+
+
+[node name="10WinsParticles" type="GPUParticles2D" parent="10Wins" unique_id=1982548326]
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+material = ExtResource("138")
+position = Vector2(-17, 43.0002)
+emitting = false
+amount = 161
+texture = ExtResource("101")
+lifetime = 6.34
+one_shot = true
+speed_scale = 1.44
+explosiveness = 0.96
+process_material = ExtResource("131")
+
+
+[node name="CombatSheetNameBanner" type="Sprite2D" parent="10Wins" unique_id=1644018895]
+position = Vector2(-8.86804, 42.1324)
+rotation = -0.0401426
+scale = Vector2(1, 1.19643)
+texture = ExtResource("136")
+
+
+[node name="Label" type="Label" parent="10Wins" unique_id=920386685]
+custom_minimum_size = Vector2(422, 0)
+offset_left = -209.0
+offset_top = 5.0
+offset_right = 213.0
+offset_bottom = 81.0
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "10 Win Bonus!"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "BANNER_10Wins"
+
+
+[node name="TrophyParticles" parent="10Wins" unique_id=985653459 instance=ExtResource("209")]
+
+
+[node name="SurviveRoundsCounter" type="Node2D" parent="." unique_id=876229170]
+visible = false
+position = Vector2(991, 912)
+
+
+[node name="Label" type="Label" parent="SurviveRoundsCounter" unique_id=195224444]
+material = ExtResource("139")
+offset_left = -319.875
+offset_top = -26.9781
+offset_right = 356.125
+offset_bottom = 23.0219
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("304")
+theme_override_font_sizes/font_size = 40
+text = "Survive 5 more rounds."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_SurviveCounter"
+
+
+[node name="SurvivalBones" type="Sprite2D" parent="SurviveRoundsCounter" unique_id=329218249]
+material = ExtResource("139")
+position = Vector2(327.625, -6.47815)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("190")
+flip_h = true
+
+
+[node name="SurvivalSkull" type="Sprite2D" parent="SurviveRoundsCounter" unique_id=687051455]
+material = ExtResource("139")
+position = Vector2(327.625, -8.47815)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("188")
+flip_h = true
+
+
+[node name="SurvivalBones2" type="Sprite2D" parent="SurviveRoundsCounter" unique_id=1621429409]
+material = ExtResource("139")
+position = Vector2(-289.375, -3.47815)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("190")
+
+
+[node name="SurvivalSkull2" type="Sprite2D" parent="SurviveRoundsCounter" unique_id=1365248737]
+material = ExtResource("139")
+position = Vector2(-289.375, -5.47815)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("188")
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SurviveRoundsCounter" unique_id=1133846293]
+libraries/ = SubResource("AnimationLibrary_w6hwf")
+
+
+[node name="PerfectRun" type="Node2D" parent="." unique_id=2065518830]
+visible = false
+z_index = 3
+position = Vector2(954, 434)
+
+
+[node name="PerfectRunParticles" type="GPUParticles2D" parent="PerfectRun" unique_id=1385750793]
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+material = ExtResource("138")
+position = Vector2(-5, 7)
+emitting = false
+amount = 161
+texture = ExtResource("101")
+lifetime = 6.34
+one_shot = true
+speed_scale = 1.44
+explosiveness = 0.96
+process_material = ExtResource("131")
+
+
+[node name="Banner" type="Sprite2D" parent="PerfectRun" unique_id=1384230868]
+position = Vector2(16.3427, 8.66234)
+rotation = -0.0453786
+scale = Vector2(1.44149, 1.18304)
+texture = ExtResource("136")
+
+
+[node name="Label" type="Label" parent="PerfectRun" unique_id=1458170573]
+custom_minimum_size = Vector2(612, 0)
+offset_left = -285.0
+offset_top = -27.0
+offset_right = 327.0
+offset_bottom = 49.0
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "Perfect Survival Bonus!"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "BANNER_PerfectWin"
+
+
+[node name="TriesLeft" type="Node2D" parent="." unique_id=147882342]
+visible = false
+position = Vector2(945, 520)
+scale = Vector2(1e-05, 1e-05)
+
+
+[node name="Banner" type="Sprite2D" parent="TriesLeft" unique_id=136107975]
+position = Vector2(7.7261, -3.11573)
+rotation = -0.0453786
+scale = Vector2(0.904917, 1.18304)
+texture = ExtResource("136")
+
+
+[node name="TriesLeftLabel" type="Label" parent="TriesLeft" unique_id=1789307717]
+custom_minimum_size = Vector2(381, 0)
+offset_left = -176.0
+offset_top = -38.0
+offset_right = 205.0
+offset_bottom = 38.0
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "4 Tries Left"
+horizontal_alignment = 1
+script = ExtResource("182")
+
+
+[node name="RunAchievement" parent="." unique_id=1162765827 instance=ExtResource("211")]
+visible = false
+position = Vector2(270, 830)
+
+
+[node name="ChestnutDustParticles" type="GPUParticles2D" parent="." unique_id=482474560]
+z_index = 6
+position = Vector2(1692, 1045.12)
+emitting = false
+amount = 25
+texture = ExtResource("32")
+lifetime = 1.49
+one_shot = true
+explosiveness = 0.98
+process_material = SubResource("414")
+script = ExtResource("121")
+
+
+[node name="Chestnut" type="Node2D" parent="." unique_id=2075853565]
+z_index = 3
+position = Vector2(0, -1080)
+
+
+[node name="BottomFront" type="Sprite2D" parent="Chestnut" unique_id=92472851]
+z_index = 2
+position = Vector2(1711, 1053)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("239")
+offset = Vector2(-38.5553, -169.667)
+
+
+[node name="BottomBack" type="Sprite2D" parent="Chestnut/BottomFront" unique_id=1531494676]
+show_behind_parent = true
+z_index = -2
+position = Vector2(-38.8884, -355.556)
+texture = ExtResource("140")
+
+
+[node name="Tongue" type="Sprite2D" parent="Chestnut/BottomFront" unique_id=794171171]
+show_behind_parent = true
+z_index = -2
+position = Vector2(83.3339, -253.334)
+rotation = 0.380482
+texture = ExtResource("275")
+offset = Vector2(-71.1116, -20)
+
+
+[node name="TrophiesLabel" type="Label" parent="Chestnut/BottomFront" unique_id=794903940]
+offset_left = -132.222
+offset_top = -106.667
+offset_right = 146.778
+offset_bottom = -50.6666
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("352")
+theme_override_font_sizes/font_size = 42
+text = "Trophies"
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "UI_Trophies"
+
+
+[node name="TrophyCounter" parent="Chestnut/BottomFront" unique_id=1032786472 instance=ExtResource("76")]
+offset_left = -168.889
+offset_top = -206.667
+offset_right = 165.111
+offset_bottom = -106.667
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("86")
+theme_override_font_sizes/font_size = 80
+horizontal_alignment = 1
+
+
+[node name="Top" type="Sprite2D" parent="Chestnut/BottomFront" unique_id=1619913903]
+position = Vector2(192.223, -291.111)
+rotation = 1.00007
+texture = ExtResource("238")
+offset = Vector2(-231.111, -100)
+
+
+[node name="TopTeeth" type="Sprite2D" parent="Chestnut/BottomFront/Top" unique_id=44176050]
+z_index = -1
+position = Vector2(-272.383, 23.2065)
+texture = ExtResource("274")
+
+
+[node name="Eye" type="Sprite2D" parent="Chestnut/BottomFront/Top" unique_id=476284390]
+position = Vector2(-275.556, -73.3334)
+scale = Vector2(1, 1.28853)
+texture = ExtResource("237")
+
+
+[node name="Pupil" type="Sprite2D" parent="Chestnut/BottomFront/Top/Eye" unique_id=1867676741]
+position = Vector2(0, -0.0430908)
+scale = Vector2(1.554, 1)
+texture = ExtResource("231")
+script = ExtResource("170")
+friction = 0.08
+eyeRadius = 13.0
+mouseFollowStrength = 0.012
+aspect = Vector2(0.85, 1.05)
+mouseLimit = 16.434
+
+
+[node name="Marker2D" type="Marker2D" parent="Chestnut" unique_id=257873115]
+position = Vector2(1723, 894)
+
+
+[node name="ChestnutAnimation" type="AnimationPlayer" parent="Chestnut" unique_id=228424444]
+libraries/ = SubResource("AnimationLibrary_xbe1y")
+
+
+[node name="RunOverLabel" type="Label" parent="." unique_id=529351080]
+unique_name_in_owner = true
+offset_left = 733.0
+offset_top = 89.0
+offset_right = 1171.0
+offset_bottom = 178.0
+scale = Vector2(1e-05, 1e-05)
+pivot_offset = Vector2(219, 52)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("131")
+theme_override_font_sizes/font_size = 70
+text = "Game won!"
+horizontal_alignment = 1
+
+
+[node name="LobbyResult" type="Node2D" parent="." unique_id=1634072835]
+visible = false
+
+
+[node name="ResultsPanel" type="Sprite2D" parent="LobbyResult" unique_id=342452438]
+position = Vector2(966, 308)
+scale = Vector2(0.922414, 0.922414)
+texture = ExtResource("45")
+
+
+[node name="PopupBox" type="NinePatchRect" parent="LobbyResult" unique_id=1659626868]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 608.0
+offset_top = 104.0
+offset_right = 1342.0
+offset_bottom = 479.0
+texture = ExtResource("273")
+patch_margin_left = 45
+patch_margin_top = 118
+patch_margin_right = 45
+patch_margin_bottom = 132
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LobbyResult" unique_id=767030161]
+libraries/ = SubResource("AnimationLibrary_ep867")
+
+
+[node name="LobbyFinished" type="Label" parent="LobbyResult" unique_id=1226804209]
+offset_left = 668.0
+offset_top = 157.0
+offset_right = 1260.0
+offset_bottom = 227.0
+grow_horizontal = 2
+pivot_offset = Vector2(304, 33)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("364")
+theme_override_font_sizes/font_size = 55
+text = "Lobby Results"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_LobbyResults"
+prefix = "~ "
+suffix = " ~"
+
+
+[node name="Result_Score" type="Label" parent="LobbyResult" unique_id=1140400076]
+offset_left = 657.0
+offset_top = 282.0
+offset_right = 964.0
+offset_bottom = 345.0
+grow_horizontal = 2
+pivot_offset = Vector2(219, 52)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("365")
+theme_override_font_sizes/font_size = 40
+text = "Score: 24"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_ResultScore"
+
+
+[node name="Result_Rank" type="Label" parent="LobbyResult" unique_id=188119712]
+offset_left = 985.0
+offset_top = 281.0
+offset_right = 1282.0
+offset_bottom = 344.0
+grow_horizontal = 2
+pivot_offset = Vector2(219, 52)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("365")
+theme_override_font_sizes/font_size = 40
+text = "Rank: 1"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_ResultRank"
+
+
+[node name="Trophy" type="Sprite2D" parent="LobbyResult" unique_id=1677486614]
+visible = false
+z_index = 2
+position = Vector2(1281.13, 294.376)
+scale = Vector2(0.773707, 0.773707)
+texture = ExtResource("9")
+
+
+[node name="LobbyFinishButton" type="Button" parent="LobbyResult" unique_id=1504381155]
+offset_left = 720.0
+offset_top = 378.0
+offset_right = 1204.0
+offset_bottom = 430.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.84745, 0.0917969, 1)
+theme_override_colors/font_hover_color = Color(1, 0.84745, 0.0917969, 1)
+theme_override_colors/font_disabled_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("420")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/focus = ExtResource("92")
+disabled = true
+text = "Return to Title"
+flat = true
+script = ExtResource("159")
+translationKey = "BUTTON_Title"
+
+
+[node name="TrophyPosition" type="Marker2D" parent="LobbyResult" unique_id=856155026]
+position = Vector2(1282, 295)
+
+
+[node name="SubclassHealLabel" type="Label" parent="." unique_id=1541311299]
+visible = false
+material = ExtResource("139")
+offset_left = 1454.0
+offset_top = 676.0
+offset_right = 1852.0
+offset_bottom = 784.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("313")
+theme_override_font_sizes/font_size = 40
+text = "Subclass unlocked!"
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_SubclassHeal"
+
+
+[node name="SubclassHealLabel2" type="Label" parent="SubclassHealLabel" unique_id=1333864515]
+material = ExtResource("139")
+use_parent_material = true
+layout_mode = 0
+offset_left = 98.0
+offset_top = 84.0
+offset_right = 186.0
+offset_bottom = 149.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("313")
+theme_override_font_sizes/font_size = 40
+text = "+1"
+horizontal_alignment = 1
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubclassHealLabel" unique_id=1311399070]
+libraries/ = SubResource("AnimationLibrary_8m1pd")
+
+
+[node name="Heart" type="Sprite2D" parent="SubclassHealLabel" unique_id=2135514347]
+use_parent_material = true
+position = Vector2(213, 108)
+scale = Vector2(0.548, 0.548)
+texture = ExtResource("67")
+
+
+[editable path="Ranked/LeagueEmblem"]
+
+[connection signal="timeout" from="CombatTimer/FatigueStartTimer" to="CombatTimer" method="startFatigue"]
+
+
+[connection signal="timeout" from="CombatTimer/FatigueTickTimer" to="CombatTimer" method="dealFatigueDamage"]
+
+
+[connection signal="value_changed" from="CombatTimer/SpeedSlider" to="CombatTimer" method="onSpeedChanged"]
+
+
+[connection signal="pressed" from="CombatTimer/PauseButton" to="CombatTimer" method="onPauseButtonPressed"]
+
+
+[connection signal="pressed" from="CombatTimer/FastButton" to="CombatTimer" method="onFastButtonPressed"]

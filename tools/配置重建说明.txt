@@ -20,7 +20,7 @@ CSV 可为 UTF-8 或带 BOM 的 UTF-8；字段、类型、主键、清单行数�
 已有 content/definitions 下的只读 Godot Resource 定义由 ContentDB 从缓存构造，不需要另外生成 .tres。
 此工具不会创建图标、SVG、PNG、音效、音乐、字体、动画、特效或其他替代素材。
 72物品与10背包必须逐一对应 asset_bindings.json 的原 PNG 与场景；源 PNG/场景有字节改动会明确报错。
-icon_ref 使用原工程根目录 res://Items/... 路径，不能加 PvE/Rules 前缀。
+icon_ref 使用原工程根目录 res://Art/Items/... 路径，不能加 PvE/Rules 前缀。
 vfx_ref 使用原动画场景或原物品场景；vfx_catalog 仅记录这些来源，不绘制新特效。
 绑定清单中的原占格和规划占格可能不同，逻辑格由 NativeBuildBridge 处理，不可把原外观占格当作新规则。
 

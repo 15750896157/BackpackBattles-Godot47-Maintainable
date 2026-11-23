@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://dxx2x5p3s73wo"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Item.tscn" id="1_gpoeq"]
+[ext_resource type="Script" path="res://Art/Items/Exclusive/Generator.gd" id="2_7lqo0"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/Generator.png" id="3_fc3wk"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Materials/BatteryLightning.material" id="4_beulq"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/BatteryDragParticles.material" id="5_ll5ao"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/LineParticle2.png" id="6_l3h7k"]
+[ext_resource type="Script" path="res://Code/Utility/AutoHideParticles.gd" id="7_rbx6x"]
+
+[sub_resource type="PhysicsMaterial" id="1"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[sub_resource type="Shader" id="10"]
+code = "shader_type canvas_item;
+
+uniform float progress : hint_range(-1, 2) = 0.5;
+uniform vec2 direction = vec2(0, 1);
+
+void fragment() {
+	COLOR = texture(TEXTURE, UV);
+	COLOR.rgb *= 1.0 + 0.5 * smoothstep(progress - 0.05, progress + 0.05, dot(UV, direction));
+}"
+
+[sub_resource type="ShaderMaterial" id="11"]
+resource_local_to_scene = true
+shader = SubResource("10")
+shader_parameter/progress = 0.245
+shader_parameter/direction = Vector2(-1, 0)
+
+[node name="Generator" instance=ExtResource("1_gpoeq")]
+physics_material_override = SubResource("1")
+script = ExtResource("2_7lqo0")
+
+[node name="CollisionMap" parent="." index="0"]
+position = Vector2(40, 0)
+format = 2
+layer_0/tile_data = PackedInt32Array(-262145, 11, 0, -327680, 11, 0, -196610, 11, 0, -131074, 11, 0, -65537, 11, 0, -1, 3, 0, 65535, 3, 0)
+
+[node name="Icon" parent="." index="1"]
+material = SubResource("11")
+position = Vector2(0, -2)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("3_fc3wk")
+
+[node name="Sockets" parent="Icon" index="0"]
+scale = Vector2(2.08333, 2.08333)
+
+[node name="SpecificDragParticles" type="GPUParticles2D" parent="Icon" index="1"]
+modulate = Color(3, 3, 3, 0.623529)
+self_modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+material = ExtResource("4_beulq")
+position = Vector2(0, -154.74)
+scale = Vector2(2, 2)
+z_index = 1
+emitting = false
+amount = 5
+speed_scale = 1.48
+local_coords = false
+process_material = ExtResource("5_ll5ao")
+texture = ExtResource("6_l3h7k")
+script = ExtResource("7_rbx6x")
+
+[node name="CollisionPolygon2D" parent="ClickArea" index="0"]
+polygon = PackedVector2Array(-40, -80, 40, -80, 40, 80, -40, 80)
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(0, 73)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="7"]
+visible = false
+polygon = PackedVector2Array(-37, 72, 36, 73, 36, 37, 28, 25, 20, 25, 20, -10, 32, -23, 37, -44, 29, -64, 15, -74, 0, -77, -15, -74, -28, -64, -36, -43, -31, -22, -19, -11, -19, 25, -30, 25, -37, 35)

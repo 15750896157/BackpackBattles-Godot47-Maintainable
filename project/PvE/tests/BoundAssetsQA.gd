@@ -13,7 +13,7 @@ func run_tests():
 	while not Expedition.initialized:await get_tree().process_frame
 	DirAccess.make_dir_recursive_absolute(output)
 	var holder=Node2D.new();holder.hide();Game.mainNode.add_child(holder)
-	for path in ["res://Runtime/Loading/Scenes/CombatBackdrop1.tscn","res://Runtime/Loading/Scenes/CombatBackdrop2.tscn","res://Runtime/Loading/Scenes/CombatBackdrop3.tscn"]:
+	for path in ["res://Code/Runtime/Loading/Scenes/CombatBackdrop1.tscn","res://Code/Runtime/Loading/Scenes/CombatBackdrop2.tscn","res://Code/Runtime/Loading/Scenes/CombatBackdrop3.tscn"]:
 		check(await AssetStream.prepare([path],"chapter-probe"),path+": chapter background loads")
 		var chapter=await AssetStream.instantiate_path(path,"chapter-probe")
 		check(is_instance_valid(chapter),path+": chapter scene constructs")

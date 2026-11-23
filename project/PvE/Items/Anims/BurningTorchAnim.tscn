@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3]
-[ext_resource type="Material" path="res://Shader/AdditiveCanvasItemMaterial.tres" id="4_3p8la"]
-[ext_resource type="Texture2D" path="res://Items/Sprites/TorchLight.png" id="5_cx7xr"]
-[ext_resource type="Script" path="res://Items/Animations/FlickerAnimation.gd" id="6_umvoq"]
+[ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="4_3p8la"]
+[ext_resource type="Texture2D" path="res://Art/Items/Sprites/TorchLight.png" id="5_cx7xr"]
+[ext_resource type="Script" path="res://Animation/Items/Animations/FlickerAnimation.gd" id="6_umvoq"]
 
 [sub_resource type="Animation" id="2"]
 resource_name = "Flicker"

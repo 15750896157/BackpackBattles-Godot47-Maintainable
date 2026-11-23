@@ -4,13 +4,13 @@
  "items": {
   "Anvil": {
    "root_name": "Anvil",
-   "script": "res://Items/Exclusive/Anvil.gd",
+   "script": "res://Art/Items/Exclusive/Anvil.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Anvil.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Anvil.png",
     "position": [
      0.0,
      0.0
@@ -139,13 +139,13 @@
   },
   "Axe": {
    "root_name": "Axe",
-   "script": "res://Items/Exclusive/Axe.gd",
+   "script": "res://Art/Items/Exclusive/Axe.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Axe.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Axe.png",
     "position": [
      26.0,
      0.0
@@ -256,13 +256,13 @@
   },
   "BagofStones": {
    "root_name": "Bag of Stones",
-   "script": "res://Items/BagofStones.gd",
+   "script": "res://Art/Items/BagofStones.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/BagofStones.png",
+    "texture": "res://Art/Items/Sprites/BagofStones.png",
     "position": [
      0.0,
      0.0
@@ -329,13 +329,13 @@
   },
   "Battery": {
    "root_name": "Battery",
-   "script": "res://Items/Exclusive/Battery.gd",
+   "script": "res://Art/Items/Exclusive/Battery.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Battery.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Battery.png",
     "position": [
      0.0,
      0.0
@@ -455,7 +455,7 @@
       },
       "show_behind_parent": true,
       "material": {
-       "res": "res://Items/Exclusive/Materials/BatteryLightning.material"
+       "res": "res://Art/Items/Exclusive/Materials/BatteryLightning.material"
       },
       "position": {
        "vec2": [
@@ -478,13 +478,13 @@
       "randomness": 0.91,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/BatteryDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/BatteryDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/LineParticle2.png"
+       "res": "res://Art/Assets/Particles/LineParticle2.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -493,13 +493,13 @@
   },
   "BerserkerBag": {
    "root_name": "Berserker Bag",
-   "script": "res://Items/Exclusive/BerserkerBag.gd",
+   "script": "res://Art/Items/Exclusive/BerserkerBag.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/DuffleBag.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/DuffleBag.png",
     "position": [
      -4.0,
      0.0
@@ -591,7 +591,7 @@
      2.222,
      2.222
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       -1,
@@ -641,7 +641,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -674,13 +674,13 @@
   },
   "BionicArmor": {
    "root_name": "Bionic Armor",
-   "script": "res://Items/Exclusive/BionicArmor.gd",
+   "script": "res://Art/Items/Exclusive/BionicArmor.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/BionicArmor.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/BionicArmor.png",
     "position": [
      0.0,
      0.0
@@ -843,13 +843,13 @@
       "lifetime": 2.42,
       "speed_scale": 1.2,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/SunShieldDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/SunShieldDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Shine1.png"
+       "res": "res://Art/Assets/Shine1.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "BionicArmorAnim",
@@ -863,13 +863,13 @@
   },
   "BloodAmulet": {
    "root_name": "Blood Amulet",
-   "script": "res://Items/BloodAmulet.gd",
+   "script": "res://Art/Items/BloodAmulet.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/BloodAmulet.png",
+    "texture": "res://Art/Items/Sprites/BloodAmulet.png",
     "position": [
      0.0,
      0.0
@@ -950,13 +950,13 @@
       "speed_scale": 0.79,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Particles/BloodAmuletDragParticles.tres"
+       "res": "res://Art/Items/Particles/BloodAmuletDragParticles.tres"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "BloodAmuletAnim",
@@ -971,13 +971,13 @@
   },
   "BoxofRiches": {
    "root_name": "Box of Riches",
-   "script": "res://Items/BoxofRiches.gd",
+   "script": "res://Art/Items/BoxofRiches.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/BoxofRiches.png",
+    "texture": "res://Art/Items/Sprites/BoxofRiches.png",
     "position": [
      10.0,
      0.0
@@ -1069,13 +1069,13 @@
       "amount": 6,
       "lifetime": 1.22,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/BoxofRichesDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/BoxofRichesDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -1084,13 +1084,13 @@
   },
   "BurningBanner": {
    "root_name": "Burning Banner",
-   "script": "res://Items/Exclusive/BurningBanner.gd",
+   "script": "res://Art/Items/Exclusive/BurningBanner.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/BurningBanner.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/BurningBanner.png",
     "position": [
      0.0,
      0.0
@@ -1259,13 +1259,13 @@
       "lifetime": 0.27,
       "speed_scale": 0.36,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/BurningBladeDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/BurningBladeDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/FireParticle2.png"
+       "res": "res://Art/Assets/Particles/FireParticle2.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -1278,13 +1278,13 @@
   },
   "BurningCoal": {
    "root_name": "Burning Coal",
-   "script": "res://Items/BurningCoal.gd",
+   "script": "res://Art/Items/BurningCoal.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/BurningCoal.png",
+    "texture": "res://Art/Items/Sprites/BurningCoal.png",
     "position": [
      0.0,
      0.0
@@ -1387,13 +1387,13 @@
       "explosiveness": 0.12,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Particles/BurningCoalDragParticles.material"
+       "res": "res://Art/Items/Particles/BurningCoalDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/SparkParticle1.png"
+       "res": "res://Art/Assets/Particles/SparkParticle1.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "TorchLight",
@@ -1435,13 +1435,13 @@
   },
   "BurningTorch": {
    "root_name": "Burning Torch",
-   "script": "res://Items/BurningTorch.gd",
+   "script": "res://Art/Items/BurningTorch.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/BurningTorch.png",
+    "texture": "res://Art/Items/Sprites/BurningTorch.png",
     "position": [
      0.0,
      -7.0
@@ -1548,7 +1548,7 @@
       },
       "show_behind_parent": true,
       "material": {
-       "res": "res://Items/Particles/RubyEggMaterial.material"
+       "res": "res://Art/Items/Particles/RubyEggMaterial.material"
       },
       "position": {
        "vec2": [
@@ -1561,13 +1561,13 @@
       "lifetime": 0.27,
       "speed_scale": 0.29,
       "process_material": {
-       "res": "res://Items/Particles/BurningTorchParticles.material"
+       "res": "res://Art/Items/Particles/BurningTorchParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/FireParticle2.png"
+       "res": "res://Art/Assets/Particles/FireParticle2.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "TorchLight",
@@ -1589,13 +1589,13 @@
   },
   "Cauldron": {
    "root_name": "Cauldron",
-   "script": "res://Items/Exclusive/Cauldron.gd",
+   "script": "res://Art/Items/Exclusive/Cauldron.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Cauldron.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Cauldron.png",
     "position": [
      0.0,
      0.0
@@ -1723,13 +1723,13 @@
       "speed_scale": 0.9,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/CauldronDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/CauldronDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Light/RingLight.png"
+       "res": "res://Art/Assets/Light/RingLight.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -1740,13 +1740,13 @@
   },
   "Chainsaw": {
    "root_name": "Chainsaw",
-   "script": "res://Items/Exclusive/Chainsaw.gd",
+   "script": "res://Art/Items/Exclusive/Chainsaw.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Chainsaw0.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Chainsaw0.png",
     "position": [
      2.0,
      -99.0
@@ -1879,13 +1879,13 @@
   },
   "ClawsofAttack": {
    "root_name": "Claws of Attack",
-   "script": "res://Items/ClawsofAttack.gd",
+   "script": "res://Art/Items/ClawsofAttack.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/ClawsofAttack.png",
+    "texture": "res://Art/Items/Sprites/ClawsofAttack.png",
     "position": [
      4.0,
      0.0
@@ -1960,13 +1960,13 @@
   },
   "Cog": {
    "root_name": "Cog",
-   "script": "res://Items/Exclusive/Cog.gd",
+   "script": "res://Art/Items/Exclusive/Cog.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Cog.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Cog.png",
     "position": [
      0.0,
      0.0
@@ -2075,13 +2075,13 @@
   },
   "Coil": {
    "root_name": "Coil",
-   "script": "res://Items/Exclusive/Coil.gd",
+   "script": "res://Art/Items/Exclusive/Coil.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Coil.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Coil.png",
     "position": [
      1.0,
      0.0
@@ -2167,13 +2167,13 @@
   },
   "CursedHairComb": {
    "root_name": "Cursed Hair Comb",
-   "script": "res://Items/CursedHairComb.gd",
+   "script": "res://Art/Items/CursedHairComb.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/VampiricHairComb.png",
+    "texture": "res://Art/Items/Sprites/VampiricHairComb.png",
     "position": [
      0.0,
      0.0
@@ -2312,10 +2312,10 @@
        "res": "res://PvE/Items/Particles/CursedHairComb_mat10.tres"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "CursedHairCombAnim",
@@ -2330,13 +2330,13 @@
   },
   "CustomerCard": {
    "root_name": "Customer Card",
-   "script": "res://Items/CustomerCard.gd",
+   "script": "res://Art/Items/CustomerCard.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/CustomerCard.png",
+    "texture": "res://Art/Items/Sprites/CustomerCard.png",
     "position": [
      0.0,
      0.0
@@ -2409,13 +2409,13 @@
   },
   "Dagger": {
    "root_name": "Dagger",
-   "script": "res://Items/Dagger.gd",
+   "script": "res://Art/Items/Dagger.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Dagger.png",
+    "texture": "res://Art/Items/Sprites/Dagger.png",
     "position": [
      -1.75,
      -2.43696
@@ -2516,7 +2516,7 @@
   },
   "DemonicFlask": {
    "root_name": "Demonic Flask",
-   "script": "res://Items/DemonicFlask.gd",
+   "script": "res://Art/Items/DemonicFlask.gd",
    "root_props": {
     "potionColor": [
      0.564706,
@@ -2530,7 +2530,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Flask4.png",
+    "texture": "res://Art/Items/Sprites/Flask4.png",
     "position": [
      1.0,
      0.0
@@ -2614,7 +2614,7 @@
    "extra_nodes": [
     {
      "name": "BottleOfBooze",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -2626,7 +2626,7 @@
        ]
       },
       "material": {
-       "res": "res://Shader/DemonicFlask.material"
+       "res": "res://Art/Shader/DemonicFlask.material"
       },
       "position": {
        "vec2": [
@@ -2636,7 +2636,7 @@
       },
       "rotation": 0.0,
       "texture": {
-       "res": "res://Items/Masks/Flask4_Mask.png"
+       "res": "res://Art/Items/Masks/Flask4_Mask.png"
       },
       "backForce": 3.2,
       "baseFoaminess": 0.0624,
@@ -2660,7 +2660,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Sprites/Flask4_Overlay.png"
+       "res": "res://Art/Items/Sprites/Flask4_Overlay.png"
       }
      }
     }
@@ -2672,7 +2672,7 @@
   },
   "DivinePotion": {
    "root_name": "Divine Potion",
-   "script": "res://Items/Exclusive/DivinePotion.gd",
+   "script": "res://Art/Items/Exclusive/DivinePotion.gd",
    "root_props": {
     "potionColor": [
      1.0,
@@ -2686,7 +2686,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/HolyPotion_flask.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/HolyPotion_flask.png",
     "position": [
      0.0,
      -1.0
@@ -2770,7 +2770,7 @@
    "extra_nodes": [
     {
      "name": "BottleOfBooze",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -2782,7 +2782,7 @@
        ]
       },
       "material": {
-       "res": "res://Items/Exclusive/Materials/DivinePotion.material"
+       "res": "res://Art/Items/Exclusive/Materials/DivinePotion.material"
       },
       "position": {
        "vec2": [
@@ -2798,7 +2798,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Sprites/Masks/HolyPotion_mask.png"
+       "res": "res://Art/Items/Exclusive/Sprites/Masks/HolyPotion_mask.png"
       },
       "friction": 0.966,
       "backForce": 3.4,
@@ -2824,7 +2824,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Sprites/HolyPotion_overlay.png"
+       "res": "res://Art/Items/Exclusive/Sprites/HolyPotion_overlay.png"
       }
      }
     }
@@ -2837,13 +2837,13 @@
   },
   "DoubleAxe": {
    "root_name": "Double Axe",
-   "script": "res://Items/Exclusive/DoubleAxe.gd",
+   "script": "res://Art/Items/Exclusive/DoubleAxe.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/DoubleAxe.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/DoubleAxe.png",
     "position": [
      0.0,
      -4.0
@@ -3001,13 +3001,13 @@
   },
   "DragonscaleArmor": {
    "root_name": "Dragonscale Armor",
-   "script": "res://Items/Exclusive/DragonscaleArmor.gd",
+   "script": "res://Art/Items/Exclusive/DragonscaleArmor.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/DragonscaleArmor.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/DragonscaleArmor.png",
     "position": [
      0.0,
      0.0
@@ -3116,13 +3116,13 @@
   },
   "EngineerBag2": {
    "root_name": "Engineer Bag 2",
-   "script": "res://Items/Exclusive/EngineerBag2.gd",
+   "script": "res://Art/Items/Exclusive/EngineerBag2.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/BoxofCogs.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/BoxofCogs.png",
     "position": [
      0.0,
      0.0
@@ -3272,7 +3272,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       -1,
@@ -3319,7 +3319,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "visible": false,
@@ -3352,13 +3352,13 @@
   },
   "FlyAgaric": {
    "root_name": "Fly Agaric",
-   "script": "res://Items/FlyAgaric.gd",
+   "script": "res://Art/Items/FlyAgaric.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/FlyAgaric.png",
+    "texture": "res://Art/Items/Sprites/FlyAgaric.png",
     "position": [
      -1.75,
      -0.43696
@@ -3470,13 +3470,13 @@
   },
   "Generator": {
    "root_name": "Generator",
-   "script": "res://Items/Exclusive/Generator.gd",
+   "script": "res://Art/Items/Exclusive/Generator.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Generator.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Generator.png",
     "position": [
      0.0,
      -2.0
@@ -3628,7 +3628,7 @@
       },
       "show_behind_parent": true,
       "material": {
-       "res": "res://Items/Exclusive/Materials/BatteryLightning.material"
+       "res": "res://Art/Items/Exclusive/Materials/BatteryLightning.material"
       },
       "position": {
        "vec2": [
@@ -3648,13 +3648,13 @@
       "speed_scale": 1.48,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/BatteryDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/BatteryDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/LineParticle2.png"
+       "res": "res://Art/Assets/Particles/LineParticle2.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -3663,13 +3663,13 @@
   },
   "Halberd": {
    "root_name": "Halberd",
-   "script": "res://Items/Exclusive/Halberd.gd",
+   "script": "res://Art/Items/Exclusive/Halberd.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Halberd.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Halberd.png",
     "position": [
      38.0,
      3.0
@@ -3864,7 +3864,7 @@
        ]
       },
       "texture": {
-       "res": "res://CharacterClasses/Pyromancer/Skins/Normal/Default/Flame.png"
+       "res": "res://Art/CharacterClasses/Pyromancer/Skins/Normal/Default/Flame.png"
       }
      }
     },
@@ -3880,13 +3880,13 @@
   },
   "Hammer": {
    "root_name": "Hammer",
-   "script": "res://Items/Hammer.gd",
+   "script": "res://Art/Items/Hammer.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Hammer.png",
+    "texture": "res://Art/Items/Sprites/Hammer.png",
     "position": [
      0.0,
      -15.0
@@ -4015,13 +4015,13 @@
   },
   "HealingHerbs": {
    "root_name": "Healing Herbs",
-   "script": "res://Items/HealingHerbs.gd",
+   "script": "res://Art/Items/HealingHerbs.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/HealingHerbs.png",
+    "texture": "res://Art/Items/Sprites/HealingHerbs.png",
     "position": [
      3.0,
      0.0
@@ -4086,7 +4086,7 @@
   },
   "HealthPotion": {
    "root_name": "Health Potion",
-   "script": "res://Items/HealthPotion.gd",
+   "script": "res://Art/Items/HealthPotion.gd",
    "root_props": {
     "potionColor": [
      0.945098,
@@ -4100,7 +4100,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Flask1.png",
+    "texture": "res://Art/Items/Sprites/Flask1.png",
     "position": [
      0.25,
      -0.43696
@@ -4184,7 +4184,7 @@
    "extra_nodes": [
     {
      "name": "BottleOfBooze",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -4196,7 +4196,7 @@
        ]
       },
       "material": {
-       "res": "res://Shader/HealthPotion.material"
+       "res": "res://Art/Shader/HealthPotion.material"
       },
       "position": {
        "vec2": [
@@ -4206,7 +4206,7 @@
       },
       "rotation": 0.0,
       "texture": {
-       "res": "res://Items/Masks/HealthPotionMask.png"
+       "res": "res://Art/Items/Masks/HealthPotionMask.png"
       },
       "friction": 0.98,
       "baseFoaminess": 0.0624,
@@ -4229,7 +4229,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Sprites/Flask1_Overlay.png"
+       "res": "res://Art/Items/Sprites/Flask1_Overlay.png"
       }
      }
     }
@@ -4241,13 +4241,13 @@
   },
   "HeroSword": {
    "root_name": "Hero Sword",
-   "script": "res://Items/HeroSword.gd",
+   "script": "res://Art/Items/HeroSword.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/HeroSword.png",
+    "texture": "res://Art/Items/Sprites/HeroSword.png",
     "position": [
      2.0,
      0.0
@@ -4404,13 +4404,13 @@
       "lifetime": 0.86,
       "speed_scale": 0.67,
       "process_material": {
-       "res": "res://Items/Particles/HeroSwordDragParticles.material"
+       "res": "res://Art/Items/Particles/HeroSwordDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -4420,7 +4420,7 @@
   },
   "HeroicPotion": {
    "root_name": "Heroic Potion",
-   "script": "res://Items/HeroicPotion.gd",
+   "script": "res://Art/Items/HeroicPotion.gd",
    "root_props": {
     "potionColor": [
      0.964706,
@@ -4434,7 +4434,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Flask5.png",
+    "texture": "res://Art/Items/Sprites/Flask5.png",
     "position": [
      0.0,
      0.0
@@ -4518,7 +4518,7 @@
    "extra_nodes": [
     {
      "name": "BottleOfBooze",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -4540,7 +4540,7 @@
       },
       "rotation": 0.0,
       "texture": {
-       "res": "res://Items/Masks/Flask5_Mask.png"
+       "res": "res://Art/Items/Masks/Flask5_Mask.png"
       },
       "backForce": 3.4,
       "baseFoaminess": 0.0624,
@@ -4564,7 +4564,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Sprites/Flask5_Overlay.png"
+       "res": "res://Art/Items/Sprites/Flask5_Overlay.png"
       }
      }
     }
@@ -4578,13 +4578,13 @@
   },
   "Holdall": {
    "root_name": "Holdall",
-   "script": "res://Items/Exclusive/Holdall.gd",
+   "script": "res://Art/Items/Exclusive/Holdall.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Holdall.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Holdall.png",
     "position": [
      0.0,
      0.0
@@ -4676,7 +4676,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       -1,
@@ -4726,7 +4726,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -4753,7 +4753,7 @@
   },
   "Laboratory": {
    "root_name": "Laboratory",
-   "script": "res://Items/Exclusive/Laboratory.gd",
+   "script": "res://Art/Items/Exclusive/Laboratory.gd",
    "root_props": {
     "rotation": -6.27446
    },
@@ -4762,7 +4762,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Laboratory.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Laboratory.png",
     "position": [
      10.0,
      -8.0
@@ -4896,7 +4896,7 @@
    "extra_nodes": [
     {
      "name": "Fluid",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "material": {
@@ -4910,7 +4910,7 @@
       },
       "rotation": 0.0,
       "texture": {
-       "res": "res://Items/Exclusive/Sprites/Laboratory_Mask.png"
+       "res": "res://Art/Items/Exclusive/Sprites/Laboratory_Mask.png"
       },
       "friction": 0.966,
       "backForce": 3.4,
@@ -4935,7 +4935,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Sprites/Laboratory_Front.png"
+       "res": "res://Art/Items/Exclusive/Sprites/Laboratory_Front.png"
       }
      }
     },
@@ -4966,13 +4966,13 @@
       "explosiveness": 0.28,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/LaboratoryDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/LaboratoryDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Light/RingLight.png"
+       "res": "res://Art/Assets/Light/RingLight.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -4981,13 +4981,13 @@
   },
   "LeatherArmor": {
    "root_name": "Leather Armor",
-   "script": "res://Items/LeatherArmor.gd",
+   "script": "res://Art/Items/LeatherArmor.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/LeatherArmor.png",
+    "texture": "res://Art/Items/Sprites/LeatherArmor.png",
     "position": [
      0.0,
      0.0
@@ -5118,13 +5118,13 @@
   },
   "LeatherBag": {
    "root_name": "Leather Bag",
-   "script": "res://Items/Bag.gd",
+   "script": "res://Art/Items/Bag.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/LeatherBag.png",
+    "texture": "res://Art/Items/Sprites/LeatherBag.png",
     "position": [
      -4.0,
      0.0
@@ -5206,7 +5206,7 @@
      2.5,
      2.5
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       -1,
@@ -5257,13 +5257,13 @@
   },
   "LuckyClover": {
    "root_name": "Lucky Clover",
-   "script": "res://Items/LuckyClover.gd",
+   "script": "res://Art/Items/LuckyClover.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/LuckyClover.png",
+    "texture": "res://Art/Items/Sprites/LuckyClover.png",
     "position": [
      0.0,
      0.0
@@ -5347,13 +5347,13 @@
   },
   "MagicMirror": {
    "root_name": "Magic Mirror",
-   "script": "res://Items/Exclusive/MagicMirror.gd",
+   "script": "res://Art/Items/Exclusive/MagicMirror.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/MagicMirror.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/MagicMirror.png",
     "position": [
      1.0,
      -1.5
@@ -5481,7 +5481,7 @@
       },
       "show_behind_parent": true,
       "material": {
-       "res": "res://Items/Exclusive/Particles/FrozenFlame.material"
+       "res": "res://Art/Items/Exclusive/Particles/FrozenFlame.material"
       },
       "position": {
        "vec2": [
@@ -5494,13 +5494,13 @@
       "lifetime": 0.59,
       "speed_scale": 0.3,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/FrozenFlameParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/FrozenFlameParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/Spot1.png"
+       "res": "res://Art/Assets/Particles/Spot1.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -5510,13 +5510,13 @@
   },
   "OilLamp": {
    "root_name": "Oil Lamp",
-   "script": "res://Items/Exclusive/OilLamp.gd",
+   "script": "res://Art/Items/Exclusive/OilLamp.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/OilLamp.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/OilLamp.png",
     "position": [
      0.25,
      -0.43696
@@ -5647,13 +5647,13 @@
       "lifetime": 0.27,
       "speed_scale": 0.36,
       "process_material": {
-       "res": "res://Items/Particles/FlameDragParticles.material"
+       "res": "res://Art/Items/Particles/FlameDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/FireParticle2.png"
+       "res": "res://Art/Assets/Particles/FireParticle2.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "TorchLight",
@@ -5673,13 +5673,13 @@
   },
   "PerfectAmethyst": {
    "root_name": "Perfect Amethyst",
-   "script": "res://Items/Gems/Amethyst.gd",
+   "script": "res://Art/Items/Gems/Amethyst.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Gems/Sprites/PerfectAmethyst.png",
+    "texture": "res://Art/Items/Gems/Sprites/PerfectAmethyst.png",
     "position": [
      0.0,
      0.0
@@ -5775,13 +5775,13 @@
   },
   "PerpetuumMobile": {
    "root_name": "Perpetuum Mobile",
-   "script": "res://Items/Exclusive/PerpetuumMobile.gd",
+   "script": "res://Art/Items/Exclusive/PerpetuumMobile.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/PerpetuumMobile.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/PerpetuumMobile.png",
     "position": [
      0.0,
      0.0
@@ -5901,17 +5901,17 @@
       "speed_scale": 0.69,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/PerpetuumMobileDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/PerpetuumMobileDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "SkillLight",
-     "scene": "res://Items/Animations/SkillLight.tscn",
+     "scene": "res://Animation/Items/Animations/SkillLight.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -5932,7 +5932,7 @@
   },
   "PestilenceFlask": {
    "root_name": "Pestilence Flask",
-   "script": "res://Items/PestilenceFlask.gd",
+   "script": "res://Art/Items/PestilenceFlask.gd",
    "root_props": {
     "potionColor": [
      0.192157,
@@ -5946,7 +5946,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Flask2.png",
+    "texture": "res://Art/Items/Sprites/Flask2.png",
     "position": [
      0.0,
      0.0
@@ -6021,7 +6021,7 @@
    "extra_nodes": [
     {
      "name": "BottleOfBooze",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -6033,7 +6033,7 @@
        ]
       },
       "material": {
-       "res": "res://Shader/PestilenceFlask.Material.tres"
+       "res": "res://Art/Shader/PestilenceFlask.Material.tres"
       },
       "position": {
        "vec2": [
@@ -6043,7 +6043,7 @@
       },
       "rotation": 0.0,
       "texture": {
-       "res": "res://Items/Masks/Flask2_Mask.png"
+       "res": "res://Art/Items/Masks/Flask2_Mask.png"
       },
       "offset": {
        "vec2": [
@@ -6072,7 +6072,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Sprites/Flask2_Overlay.png"
+       "res": "res://Art/Items/Sprites/Flask2_Overlay.png"
       },
       "offset": {
        "vec2": [
@@ -6100,7 +6100,7 @@
        ]
       },
       "texture": {
-       "res": "res://Assets/Buffs/Poison.png"
+       "res": "res://Art/Assets/Buffs/Poison.png"
       }
      }
     }
@@ -6112,13 +6112,13 @@
   },
   "Piggybank": {
    "root_name": "Piggybank",
-   "script": "res://Items/Piggybank.gd",
+   "script": "res://Art/Items/Piggybank.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Piggybank.png",
+    "texture": "res://Art/Items/Sprites/Piggybank.png",
     "position": [
      0.0,
      0.0
@@ -6214,13 +6214,13 @@
   },
   "PocketSand": {
    "root_name": "Pocket Sand",
-   "script": "res://Items/PocketSand.gd",
+   "script": "res://Art/Items/PocketSand.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/PocketSand.png",
+    "texture": "res://Art/Items/Sprites/PocketSand.png",
     "position": [
      0.0,
      -4.0
@@ -6302,10 +6302,10 @@
       "lifetime": 2.0,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Particles/PocketSandDragParticles.tres"
+       "res": "res://Art/Items/Particles/PocketSandDragParticles.tres"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -6316,13 +6316,13 @@
   },
   "PoisonDagger": {
    "root_name": "Poison Dagger",
-   "script": "res://Items/PoisonDagger.gd",
+   "script": "res://Art/Items/PoisonDagger.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/PoisonDagger.png",
+    "texture": "res://Art/Items/Sprites/PoisonDagger.png",
     "position": [
      -2.75,
      -1.43696
@@ -6446,13 +6446,13 @@
       "explosiveness": 0.16,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Particles/PoisonDaggerDragParticles.tres"
+       "res": "res://Art/Items/Particles/PoisonDaggerDragParticles.tres"
       },
       "texture": {
-       "res": "res://Assets/Particles/PoisonParticle.png"
+       "res": "res://Art/Assets/Particles/PoisonParticle.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -6463,13 +6463,13 @@
   },
   "PoisonIvy": {
    "root_name": "Poison Ivy",
-   "script": "res://Items/PoisonIvy.gd",
+   "script": "res://Art/Items/PoisonIvy.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/PoisonIvy.png",
+    "texture": "res://Art/Items/Sprites/PoisonIvy.png",
     "position": [
      0.0,
      2.0
@@ -6591,13 +6591,13 @@
       "speed_scale": 0.82,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Particles/PoisonIvyDragParticles.material"
+       "res": "res://Art/Items/Particles/PoisonIvyDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/SpikeParticle.png"
+       "res": "res://Art/Assets/Particles/SpikeParticle.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "ActivationParticles",
@@ -6619,13 +6619,13 @@
       "explosiveness": 0.84,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Particles/PoisonIvyActivationParticles.material"
+       "res": "res://Art/Items/Particles/PoisonIvyActivationParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/SpikeParticle.png"
+       "res": "res://Art/Assets/Particles/SpikeParticle.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "PoisonIvyAnim",
@@ -6639,13 +6639,13 @@
   },
   "Pot": {
    "root_name": "Pot",
-   "script": "res://Items/Exclusive/Pot.gd",
+   "script": "res://Art/Items/Exclusive/Pot.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Pot.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Pot.png",
     "position": [
      -1.0,
      0.0
@@ -6862,13 +6862,13 @@
       "explosiveness": 0.28,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/PotDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/PotDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Light/RingLight.png"
+       "res": "res://Art/Assets/Light/RingLight.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -6878,13 +6878,13 @@
   },
   "PuzzlebagL": {
    "root_name": "Puzzlebag L",
-   "script": "res://Items/Exclusive/PuzzlebagL.gd",
+   "script": "res://Art/Items/Exclusive/PuzzlebagL.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/PuzzlebagL.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/PuzzlebagL.png",
     "position": [
      4.0,
      -38.0
@@ -7004,7 +7004,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       1,
@@ -7031,7 +7031,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -7049,7 +7049,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Borders/PuzzlebagL_Border.png"
+       "res": "res://Art/Items/Exclusive/Borders/PuzzlebagL_Border.png"
       }
      }
     }
@@ -7060,13 +7060,13 @@
   },
   "PuzzlebagS": {
    "root_name": "Puzzlebag S",
-   "script": "res://Items/Exclusive/PuzzlebagS.gd",
+   "script": "res://Art/Items/Exclusive/PuzzlebagS.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/PuzzlebagS.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/PuzzlebagS.png",
     "position": [
      0.0,
      0.0
@@ -7182,7 +7182,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       0,
@@ -7209,7 +7209,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -7227,7 +7227,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Borders/PuzzlebagS_Border.png"
+       "res": "res://Art/Items/Exclusive/Borders/PuzzlebagS_Border.png"
       }
      }
     }
@@ -7238,13 +7238,13 @@
   },
   "PuzzlebagT": {
    "root_name": "Puzzlebag T",
-   "script": "res://Items/Exclusive/PuzzlebagT.gd",
+   "script": "res://Art/Items/Exclusive/PuzzlebagT.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/PuzzlebagT.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/PuzzlebagT.png",
     "position": [
      0.0,
      0.0
@@ -7364,7 +7364,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       0,
@@ -7391,7 +7391,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -7409,7 +7409,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Borders/PuzzlebagT_Border.png"
+       "res": "res://Art/Items/Exclusive/Borders/PuzzlebagT_Border.png"
       }
      }
     }
@@ -7420,13 +7420,13 @@
   },
   "PuzzlebagZ": {
    "root_name": "Puzzlebag Z",
-   "script": "res://Items/Exclusive/PuzzlebagZ.gd",
+   "script": "res://Art/Items/Exclusive/PuzzlebagZ.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/PuzzlebagZ.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/PuzzlebagZ.png",
     "position": [
      0.0,
      0.0
@@ -7544,7 +7544,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       -1,
@@ -7571,7 +7571,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -7589,7 +7589,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Borders/PuzzlebagS_Border.png"
+       "res": "res://Art/Items/Exclusive/Borders/PuzzlebagS_Border.png"
       },
       "flip_h": true
      }
@@ -7601,13 +7601,13 @@
   },
   "RegularSapphire": {
    "root_name": "Regular Sapphire",
-   "script": "res://Items/Gems/Sapphire.gd",
+   "script": "res://Art/Items/Gems/Sapphire.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Gems/Sprites/RegularSapphire.png",
+    "texture": "res://Art/Items/Gems/Sprites/RegularSapphire.png",
     "position": [
      0.0,
      0.0
@@ -7694,13 +7694,13 @@
   },
   "Repeater": {
    "root_name": "Repeater",
-   "script": "res://Items/Exclusive/Repeater.gd",
+   "script": "res://Art/Items/Exclusive/Repeater.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Repeater.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Repeater.png",
     "position": [
      0.0,
      0.0
@@ -7818,13 +7818,13 @@
       "randomness": 0.25,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/RepeaterDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/RepeaterDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot.png"
+       "res": "res://Art/Assets/Particles/GlowingDot.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -7833,13 +7833,13 @@
   },
   "Rope": {
    "root_name": "Rope",
-   "script": "res://Items/Exclusive/Rope.gd",
+   "script": "res://Art/Items/Exclusive/Rope.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Rope.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Rope.png",
     "position": [
      0.0,
      3.0
@@ -7931,7 +7931,7 @@
       "process_mode": 0,
       "one_shot": true
      },
-     "script": "res://Utility/MultiTimer.gd",
+     "script": "res://Code/Utility/MultiTimer.gd",
      "connections": [
       {
        "signal": "multi_timeout",
@@ -7946,13 +7946,13 @@
   },
   "Sandbag": {
    "root_name": "Sandbag",
-   "script": "res://Items/Exclusive/Sandbag.gd",
+   "script": "res://Art/Items/Exclusive/Sandbag.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/SirSand.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/SirSand.png",
     "position": [
      1.0,
      0.0
@@ -8033,10 +8033,10 @@
       "preprocess": 0.2,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/SandbagDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/SandbagDragParticles.material"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "BuffTimer",
@@ -8082,13 +8082,13 @@
       "emitting": false,
       "amount": 1,
       "process_material": {
-       "res": "res://Items/Particles/CapofResilienceAuraParticles.material"
+       "res": "res://Art/Items/Particles/CapofResilienceAuraParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Light/RingLight.png"
+       "res": "res://Art/Assets/Light/RingLight.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -8097,13 +8097,13 @@
   },
   "Scissorswords": {
    "root_name": "Scissorswords",
-   "script": "res://Items/Exclusive/Scissorswords.gd",
+   "script": "res://Art/Items/Exclusive/Scissorswords.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/ScissorSwords.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/ScissorSwords.png",
     "position": [
      0.0,
      0.0
@@ -8271,7 +8271,7 @@
        ]
       },
       "material": {
-       "res": "res://Shader/AdditiveCanvasItemMaterial.tres"
+       "res": "res://Art/Shader/AdditiveCanvasItemMaterial.tres"
       },
       "position": {
        "vec2": [
@@ -8281,7 +8281,7 @@
       },
       "rotation": 0.558505,
       "texture": {
-       "res": "res://Items/Sprites/Lightsaber_glow.png"
+       "res": "res://Art/Items/Sprites/Lightsaber_glow.png"
       }
      }
     },
@@ -8315,13 +8315,13 @@
       "lifetime": 0.7,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/ScissorSwordsDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/ScissorSwordsDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "BlindingLightTimer",
@@ -8369,13 +8369,13 @@
       "lifetime": 0.7,
       "speed_scale": 2.0,
       "process_material": {
-       "res": "res://Items/Particles/LightsaberActivationParticles.tres"
+       "res": "res://Art/Items/Particles/LightsaberActivationParticles.tres"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -8385,13 +8385,13 @@
   },
   "ShieldofValor": {
    "root_name": "Shield of Valor",
-   "script": "res://Items/ShieldofValor.gd",
+   "script": "res://Art/Items/ShieldofValor.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/ShieldofValor.png",
+    "texture": "res://Art/Items/Sprites/ShieldofValor.png",
     "position": [
      0.0,
      0.0
@@ -8582,13 +8582,13 @@
       "lifetime": 0.7,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Particles/HolyArmorDragParticles.tres"
+       "res": "res://Art/Items/Particles/HolyArmorDragParticles.tres"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -8598,13 +8598,13 @@
   },
   "SliceofBread": {
    "root_name": "Slice of Bread",
-   "script": "res://Items/Exclusive/SliceofBread.gd",
+   "script": "res://Art/Items/Exclusive/SliceofBread.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/SliceofBread.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/SliceofBread.png",
     "position": [
      0.0,
      0.0
@@ -8713,13 +8713,13 @@
   },
   "SmithingForDummies": {
    "root_name": "Smithing For Dummies",
-   "script": "res://Items/Exclusive/SmithingForDummies.gd",
+   "script": "res://Art/Items/Exclusive/SmithingForDummies.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/SmithingForDummies.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/SmithingForDummies.png",
     "position": [
      0.0,
      -0.13
@@ -8859,17 +8859,17 @@
       "explosiveness": 0.89,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/SmithingForDummiesDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/SmithingForDummiesDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/SparkParticle1.png"
+       "res": "res://Art/Assets/Particles/SparkParticle1.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "SkillLight",
-     "scene": "res://Items/Animations/SkillLight.tscn",
+     "scene": "res://Animation/Items/Animations/SkillLight.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -8890,13 +8890,13 @@
   },
   "Spear": {
    "root_name": "Spear",
-   "script": "res://Items/Spear.gd",
+   "script": "res://Art/Items/Spear.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Spear.png",
+    "texture": "res://Art/Items/Sprites/Spear.png",
     "position": [
      0.0,
      0.0
@@ -9038,13 +9038,13 @@
   },
   "SpikedShield": {
    "root_name": "Spiked Shield",
-   "script": "res://Items/SpikedShield.gd",
+   "script": "res://Art/Items/SpikedShield.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/SpikedShield.png",
+    "texture": "res://Art/Items/Sprites/SpikedShield.png",
     "position": [
      -1.0,
      0.0
@@ -9152,13 +9152,13 @@
   },
   "SpikedWall": {
    "root_name": "Spiked Wall",
-   "script": "res://Items/Exclusive/SpikedWall.gd",
+   "script": "res://Art/Items/Exclusive/SpikedWall.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/SpikeWall.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/SpikeWall.png",
     "position": [
      0.0,
      0.0
@@ -9299,13 +9299,13 @@
   },
   "SpiritBells": {
    "root_name": "Spirit Bells",
-   "script": "res://Items/Exclusive/SpiritBells.gd",
+   "script": "res://Art/Items/Exclusive/SpiritBells.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/SpiritBells.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/SpiritBells.png",
     "position": [
      0.0,
      5.5
@@ -9489,7 +9489,7 @@
        ]
       },
       "material": {
-       "res": "res://Items/Exclusive/Particles/TimeMelting.material"
+       "res": "res://Art/Items/Exclusive/Particles/TimeMelting.material"
       },
       "position": {
        "vec2": [
@@ -9502,13 +9502,13 @@
       "lifetime": 1.16,
       "speed_scale": 0.8,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/SpiritBellsDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/SpiritBellsDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot.png"
+       "res": "res://Art/Assets/Particles/GlowingDot.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "BuffTimer",
@@ -9517,7 +9517,7 @@
       "process_mode": 0,
       "one_shot": true
      },
-     "script": "res://Utility/MultiTimer.gd",
+     "script": "res://Code/Utility/MultiTimer.gd",
      "connections": [
       {
        "signal": "multi_timeout",
@@ -9561,13 +9561,13 @@
       "emitting": false,
       "amount": 1,
       "process_material": {
-       "res": "res://Items/Particles/CapofResilienceAuraParticles.material"
+       "res": "res://Art/Items/Particles/CapofResilienceAuraParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Light/RingLight.png"
+       "res": "res://Art/Assets/Light/RingLight.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -9577,13 +9577,13 @@
   },
   "SpringLoader": {
    "root_name": "Spring Loader",
-   "script": "res://Items/Exclusive/SpringLoader.gd",
+   "script": "res://Art/Items/Exclusive/SpringLoader.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Springloader_shield.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Springloader_shield.png",
     "position": [
      0.0,
      -60.0
@@ -9593,7 +9593,7 @@
      0.5
     ],
     "material": null,
-    "script": "res://Items/Exclusive/SpringloaderVisual.gd",
+    "script": "res://Art/Items/Exclusive/SpringloaderVisual.gd",
     "script_props": {
      "speed": 4.0,
      "accelFactor": 0.12,
@@ -9741,7 +9741,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Sprites/Springloader_spring.png"
+       "res": "res://Art/Items/Exclusive/Sprites/Springloader_spring.png"
       },
       "offset": {
        "vec2": [
@@ -9770,7 +9770,7 @@
        ]
       },
       "texture": {
-       "res": "res://Interface/VScrollbar.png"
+       "res": "res://PvE/UI/Common/VScrollbar.png"
       }
      }
     }
@@ -9782,13 +9782,13 @@
   },
   "StarofCourage": {
    "root_name": "Star of Courage",
-   "script": "res://Items/Exclusive/StarofCourage.gd",
+   "script": "res://Art/Items/Exclusive/StarofCourage.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/StarofCourage.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/StarofCourage.png",
     "position": [
      0.0,
      0.0
@@ -9886,13 +9886,13 @@
       "speed_scale": 0.79,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/StarofCourageDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/StarofCourageDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Star.png"
+       "res": "res://Art/Assets/Star.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "Glow",
@@ -9916,7 +9916,7 @@
        ]
       },
       "material": {
-       "res": "res://Shader/AdditiveCanvasItemMaterial.tres"
+       "res": "res://Art/Shader/AdditiveCanvasItemMaterial.tres"
       },
       "scale": {
        "vec2": [
@@ -9925,7 +9925,7 @@
        ]
       },
       "texture": {
-       "res": "res://Assets/Light/CircleLight.png"
+       "res": "res://Art/Assets/Light/CircleLight.png"
       }
      }
     }
@@ -9937,13 +9937,13 @@
   },
   "StoneArmor": {
    "root_name": "Stone Armor",
-   "script": "res://Items/Exclusive/StoneArmor.gd",
+   "script": "res://Art/Items/Exclusive/StoneArmor.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/StoneArmor.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/StoneArmor.png",
     "position": [
      0.0,
      0.0
@@ -10074,13 +10074,13 @@
   },
   "StoneBadge": {
    "root_name": "Stone Badge",
-   "script": "res://Items/Exclusive/StoneBadge.gd",
+   "script": "res://Art/Items/Exclusive/StoneBadge.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/StoneBadge.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/StoneBadge.png",
     "position": [
      0.0,
      0.0
@@ -10154,13 +10154,13 @@
       "speed_scale": 0.81,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/StoneBadgeDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/StoneBadgeDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot_small.png"
+       "res": "res://Art/Assets/Particles/GlowingDot_small.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "StoneBadgeAnim",
@@ -10176,7 +10176,7 @@
   },
   "StrongPestilenceFlask": {
    "root_name": "Strong Pestilence Flask",
-   "script": "res://Items/StrongPestilenceFlask.gd",
+   "script": "res://Art/Items/StrongPestilenceFlask.gd",
    "root_props": {
     "potionColor": [
      0.0588235,
@@ -10190,7 +10190,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/StrongPestilenceFlask_flask.png",
+    "texture": "res://Art/Items/Sprites/StrongPestilenceFlask_flask.png",
     "position": [
      1.0,
      0.0
@@ -10252,7 +10252,7 @@
    "extra_nodes": [
     {
      "name": "BottleOfBooze",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -10274,7 +10274,7 @@
       },
       "rotation": 0.0,
       "texture": {
-       "res": "res://Items/Masks/StrongPestilenceFlask_mask.png"
+       "res": "res://Art/Items/Masks/StrongPestilenceFlask_mask.png"
       },
       "offset": {
        "vec2": [
@@ -10303,7 +10303,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Sprites/StrongPestilenceFlask_overlay.png"
+       "res": "res://Art/Items/Sprites/StrongPestilenceFlask_overlay.png"
       },
       "offset": {
        "vec2": [
@@ -10332,7 +10332,7 @@
        ]
       },
       "texture": {
-       "res": "res://Assets/Buffs/Poison.png"
+       "res": "res://Art/Assets/Buffs/Poison.png"
       }
      }
     },
@@ -10343,7 +10343,7 @@
       "process_mode": 0,
       "one_shot": true
      },
-     "script": "res://Utility/MultiTimer.gd",
+     "script": "res://Code/Utility/MultiTimer.gd",
      "connections": [
       {
        "signal": "multi_timeout",
@@ -10359,13 +10359,13 @@
   },
   "ThorsHammer": {
    "root_name": "Thors Hammer",
-   "script": "res://Items/Exclusive/ThorsHammer.gd",
+   "script": "res://Art/Items/Exclusive/ThorsHammer.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/ThorsHammer.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/ThorsHammer.png",
     "position": [
      -2.0,
      -7.0
@@ -10529,7 +10529,7 @@
        ]
       },
       "material": {
-       "res": "res://Items/Exclusive/Particles/TimeMelting.material"
+       "res": "res://Art/Items/Exclusive/Particles/TimeMelting.material"
       },
       "position": {
        "vec2": [
@@ -10548,13 +10548,13 @@
       "speed_scale": 0.8,
       "local_coords": false,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/ThorsHammerDragParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/ThorsHammerDragParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot.png"
+       "res": "res://Art/Assets/Particles/GlowingDot.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "ThorsHammerAnim",
@@ -10573,13 +10573,13 @@
   },
   "TimeDilator": {
    "root_name": "Time Dilator",
-   "script": "res://Items/Exclusive/TimeDilator.gd",
+   "script": "res://Art/Items/Exclusive/TimeDilator.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/TimeDilator.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/TimeDilator.png",
     "position": [
      0.0,
      -0.13
@@ -10695,13 +10695,13 @@
       "emitting": false,
       "amount": 1,
       "process_material": {
-       "res": "res://Items/Particles/CapofResilienceAuraParticles.material"
+       "res": "res://Art/Items/Particles/CapofResilienceAuraParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Light/RingLight.png"
+       "res": "res://Art/Assets/Light/RingLight.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -10711,13 +10711,13 @@
   },
   "Toolbox": {
    "root_name": "Toolbox",
-   "script": "res://Items/Exclusive/Toolbox.gd",
+   "script": "res://Art/Items/Exclusive/Toolbox.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/UtilityPouch.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/UtilityPouch.png",
     "position": [
      0.0,
      0.0
@@ -10859,7 +10859,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       -1,
@@ -10922,7 +10922,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -10946,7 +10946,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Borders/Toolbox_Border.png"
+       "res": "res://Art/Items/Exclusive/Borders/Toolbox_Border.png"
       }
      }
     }
@@ -10957,7 +10957,7 @@
   },
   "VampiricPotion": {
    "root_name": "Vampiric Potion",
-   "script": "res://Items/Exclusive/VampiricPotion.gd",
+   "script": "res://Art/Items/Exclusive/VampiricPotion.gd",
    "root_props": {
     "potionColor": [
      0.913725,
@@ -10971,7 +10971,7 @@
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/VampiricPotion_flask.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/VampiricPotion_flask.png",
     "position": [
      0.0,
      0.0
@@ -11067,7 +11067,7 @@
    "extra_nodes": [
     {
      "name": "BottleOfBooze",
-     "scene": "res://Assets/BottleOfBooze.tscn",
+     "scene": "res://Art/Assets/BottleOfBooze.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -11079,7 +11079,7 @@
        ]
       },
       "material": {
-       "res": "res://Items/Exclusive/Materials/VampiricPotion.material"
+       "res": "res://Art/Items/Exclusive/Materials/VampiricPotion.material"
       },
       "position": {
        "vec2": [
@@ -11089,7 +11089,7 @@
       },
       "rotation": 0.0,
       "texture": {
-       "res": "res://Items/Exclusive/Sprites/Masks/VampiricPotion_mask.png"
+       "res": "res://Art/Items/Exclusive/Sprites/Masks/VampiricPotion_mask.png"
       },
       "friction": 0.9244,
       "foamDecay": 0.984,
@@ -11116,7 +11116,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Sprites/VampiricPotion_overlay.png"
+       "res": "res://Art/Items/Exclusive/Sprites/VampiricPotion_overlay.png"
       }
      }
     },
@@ -11139,7 +11139,7 @@
        ]
       },
       "texture": {
-       "res": "res://Assets/Buffs/Vampirism.png"
+       "res": "res://Art/Assets/Buffs/Vampirism.png"
       }
      }
     }
@@ -11154,13 +11154,13 @@
   },
   "VineweaveBasket": {
    "root_name": "Vineweave Basket",
-   "script": "res://Items/Exclusive/VineweaveBasket.gd",
+   "script": "res://Art/Items/Exclusive/VineweaveBasket.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/VineweaveBasket.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/VineweaveBasket.png",
     "position": [
      0.0,
      0.0
@@ -11267,7 +11267,7 @@
      2.0,
      2.0
     ],
-    "tile_set": "res://Compatibility/TileSets/d4ca8e3fe8e1f53a274b.tres",
+    "tile_set": "res://Art/TileSets/d4ca8e3fe8e1f53a274b.tres",
     "cells": [
      [
       -1,
@@ -11332,7 +11332,7 @@
    "extra_nodes": [
     {
      "name": "Border",
-     "scene": "res://Items/Tiles/BagBorder.tscn",
+     "scene": "res://Art/Items/Tiles/BagBorder.tscn",
      "parent": "Icon",
      "props": {
       "modulate": {
@@ -11350,7 +11350,7 @@
        ]
       },
       "texture": {
-       "res": "res://Items/Exclusive/Borders/Firepit_Border.png"
+       "res": "res://Art/Items/Exclusive/Borders/Firepit_Border.png"
       }
      }
     },
@@ -11374,13 +11374,13 @@
       "one_shot": true,
       "explosiveness": 0.45,
       "process_material": {
-       "res": "res://Items/Exclusive/Particles/VineweaveBasketSaleParticles.material"
+       "res": "res://Art/Items/Exclusive/Particles/VineweaveBasketSaleParticles.material"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot.png"
+       "res": "res://Art/Assets/Particles/GlowingDot.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     }
    ],
    "definition_ids": [
@@ -11389,13 +11389,13 @@
   },
   "WalrusTusk": {
    "root_name": "Walrus Tusk",
-   "script": "res://Items/WalrusTusk.gd",
+   "script": "res://Art/Items/WalrusTusk.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/WalrusTusk.png",
+    "texture": "res://Art/Items/Sprites/WalrusTusk.png",
     "position": [
      0.25,
      -0.43696
@@ -11482,13 +11482,13 @@
   },
   "Whetstone": {
    "root_name": "Whetstone",
-   "script": "res://Items/Whetstone.gd",
+   "script": "res://Art/Items/Whetstone.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/Whetstone.png",
+    "texture": "res://Art/Items/Sprites/Whetstone.png",
     "position": [
      0.0,
      0.0
@@ -11570,13 +11570,13 @@
   },
   "WoodenBuckler": {
    "root_name": "Wooden Buckler",
-   "script": "res://Items/WoodenBuckler.gd",
+   "script": "res://Art/Items/WoodenBuckler.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/WoodenBuckler.png",
+    "texture": "res://Art/Items/Sprites/WoodenBuckler.png",
     "position": [
      0.0,
      0.0
@@ -11675,13 +11675,13 @@
   },
   "Wrench": {
    "root_name": "Wrench",
-   "script": "res://Items/Exclusive/Wrench.gd",
+   "script": "res://Art/Items/Exclusive/Wrench.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Exclusive/Sprites/Wrench.png",
+    "texture": "res://Art/Items/Exclusive/Sprites/Wrench.png",
     "position": [
      0.0,
      0.0
@@ -11807,13 +11807,13 @@
   },
   "YggdrasilLeaf": {
    "root_name": "Yggdrasil Leaf",
-   "script": "res://Items/YggdrasilLeaf.gd",
+   "script": "res://Art/Items/YggdrasilLeaf.gd",
    "physics": {
     "friction": 0.73,
     "bounce": 0.7
    },
    "icon": {
-    "texture": "res://Items/Sprites/YggdrasilLeaf.png",
+    "texture": "res://Art/Items/Sprites/YggdrasilLeaf.png",
     "position": [
      0.0,
      0.0
@@ -11948,10 +11948,10 @@
        "res": "res://PvE/Items/Particles/YggdrasilLeaf_mat15.tres"
       },
       "texture": {
-       "res": "res://Assets/Particles/GlowingDot.png"
+       "res": "res://Art/Assets/Particles/GlowingDot.png"
       }
      },
-     "script": "res://Utility/AutoHideParticles.gd"
+     "script": "res://Code/Utility/AutoHideParticles.gd"
     },
     {
      "name": "YggdrasilLeafAnim",

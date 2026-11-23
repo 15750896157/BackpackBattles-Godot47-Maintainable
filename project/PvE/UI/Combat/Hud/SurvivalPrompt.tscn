@@ -1,0 +1,857 @@
+[gd_scene format=3 uid="uid://aa71nrdotarai"]
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://dosh4tem3u812" path="res://Art/Assets/Noise/Noise3.png" id="94"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://c2csheju6ddgp" path="res://Art/Assets/Particles/Spot1.png" id="95"]
+
+
+
+[ext_resource type="Material" uid="uid://imoyc55aghbq" path="res://Art/Shader/TextDissolveMaterial.tres" id="139"]
+
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://b4n8uhlaqc05i" path="res://PvE/UI/Combat/Hud/SurvivalButton.png" id="184"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://bkrc550l6x8vj" path="res://PvE/UI/Combat/Hud/CancelSurvivalButton.png" id="185"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://cbde3uxf3ijj" path="res://Art/Assets/SurvivalSkull.png" id="188"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://cmor430cqibbh" path="res://Art/Assets/SurvivalBones.png" id="190"]
+
+
+
+[ext_resource type="Script" uid="uid://bfi1u7fj6yx5n" path="res://PvE/UI/Common/ReactiveButton.gd" id="191"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://b0db8oy7s58x2" path="res://PvE/UI/Common/NextOptionArrow.png" id="244"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://d1nldfbsmte5o" path="res://PvE/UI/Combat/CombatLog/Play_playing.png" id="245"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://ckr2ds1yy8cru" path="res://PvE/UI/Combat/CombatLog/PlayFromStart_playing.png" id="246"]
+
+
+
+[ext_resource type="Script" uid="uid://dkfm41ytvypeq" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButton.gd" id="247"]
+
+
+
+[ext_resource type="Script" uid="uid://kwhpyuwjwr5" path="res://PvE/UI/Combat/CombatLog/CombatLogFilterButtonWithStylebox.gd" id="248"]
+
+
+
+[ext_resource type="Script" uid="uid://do60tnyf6l77b" path="res://Code/Utility/UndoStack.gd" id="249"]
+
+
+
+[ext_resource type="Script" uid="uid://cf4iwtvuhgx75" path="res://PvE/UI/Common/NonLocalizedControl.gd" id="250"]
+
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_130.tres" id="m7_shared_130"]
+
+
+
+[sub_resource type="Shader" id="134"]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+varying vec4 legacy_modulate;
+
+uniform sampler2D overlapGradient : repeat_disable, filter_linear;
+uniform sampler2D tex2 : repeat_enable, filter_linear;
+uniform vec2 scroll1 = vec2(0.2, -0.3);
+uniform vec2 scroll2 = vec2(0.1, -0.4);
+uniform float tex2_scale = 0.5;
+uniform float tex1_scale = 1.0;
+varying float particleId;
+
+void vertex(){
+	legacy_modulate = COLOR;
+	particleId = INSTANCE_CUSTOM.z;
+	
+}
+
+
+void fragment() {
+	COLOR = vec4(1.0);
+	
+	float adjustedTime = bb_shader_time + particleId * 11374.293247;
+	float tex1_intensity = texture(tex2, tex1_scale * (UV + adjustedTime * scroll1)).r;
+	float tex2_intensity = texture(tex2, tex2_scale * (UV + adjustedTime * scroll2)).r;
+	float mask = texture(TEXTURE,UV).r;
+	float intensity = tex1_intensity * tex2_intensity * mask * COLOR.a * legacy_modulate.a;
+	vec4 overlapColor = texture(overlapGradient, vec2(intensity * 2.0));
+	COLOR.a = 1.0; // already used in intensity
+	COLOR.rgb *= legacy_modulate.rgb;
+	COLOR *= overlapColor;
+
+}"
+
+
+
+[sub_resource type="Gradient" id="244"]
+offsets = PackedFloat32Array(0, 0.047619, 0.236)
+colors = PackedColorArray(0.783203, 0.486443, 0, 0, 1, 0.70623, 0.203125, 1, 1, 0.958958, 0.773438, 1)
+
+
+
+[sub_resource type="GradientTexture1D" id="245"]
+gradient = SubResource("244")
+width = 200
+
+
+
+[sub_resource type="ShaderMaterial" id="246"]
+shader = SubResource("134")
+shader_parameter/overlapGradient = SubResource("245")
+shader_parameter/tex2 = ExtResource("94")
+shader_parameter/scroll1 = Vector2(0.2, -0.6987)
+shader_parameter/scroll2 = Vector2(0.1, -0.3145)
+shader_parameter/tex2_scale = 0.5
+shader_parameter/tex1_scale = 1.0
+
+
+
+[sub_resource type="Gradient" id="247"]
+colors = PackedColorArray(0.873047, 0.873047, 0.873047, 0.92549, 1, 1, 1, 1)
+
+
+
+[sub_resource type="GradientTexture1D" id="248"]
+gradient = SubResource("247")
+width = 100
+
+
+
+[sub_resource type="Gradient" id="282"]
+offsets = PackedFloat32Array(0, 0.114286, 0.280952, 0.671429, 0.952381)
+colors = PackedColorArray(1, 1, 1, 0.192157, 1, 1, 1, 0.603922, 1, 1, 1, 1, 1, 1, 1, 0.117647, 1, 1, 1, 0)
+
+
+
+[sub_resource type="GradientTexture1D" id="139"]
+gradient = SubResource("282")
+width = 100
+
+
+
+[sub_resource type="Curve" id="283"]
+_limits = [0.0, 1.43, 0.0, 1.0]
+_data = [Vector2(0, 0.561443), 0.0, 0.772704, 0, 0, Vector2(1, 1.43), 1.71675, 0.0, 0, 0]
+point_count = 2
+
+
+
+[sub_resource type="CurveTexture" id="141"]
+width = 200
+curve = SubResource("283")
+
+
+
+[sub_resource type="ParticleProcessMaterial" id="249"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 0.65
+initial_velocity_min = 281.512
+initial_velocity_max = 365.6
+angular_velocity_min = -124.1
+angular_velocity_max = 124.1
+gravity = Vector3(0, 300, 0)
+scale_min = 0.12
+scale_max = 0.252
+scale_curve = SubResource("141")
+color_ramp = SubResource("139")
+color_initial_ramp = SubResource("248")
+anim_offset_max = 1.0
+
+
+
+[sub_resource type="FontVariation" id="254"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 25
+outline_size = 3
+outline_color = Color(0.0509804, 0.0588235, 0.219608, 1)
+
+
+
+[sub_resource type="FontVariation" id="255"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 25
+outline_size = 3
+outline_color = Color(0.137255, 0.0235294, 0.0235294, 1)
+
+
+
+[sub_resource type="Animation" id="253"]
+resource_name = "Cancel"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("TakeWin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-600, 844), Vector2(401, 844)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("StartSurvival:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1940, 842), Vector2(940, 842)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("SurvivalSkull:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(2.21914, 2.21914, -2),
+"update": 0,
+"values": [Vector2(0.652074, 0.652074), Vector2(0.652074, 0.652074), Vector2(2, 2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SurvivalSkull:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TakeWin:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StartSurvival:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TakeWin:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 2.2974, 1),
+"update": 0,
+"values": [Color(2, 2, 2, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("StartSurvival:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(2.46229, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("GPUParticles2D:emitting")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+
+[sub_resource type="Animation" id="250"]
+resource_name = "Confirm"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("TakeWin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-600, 844), Vector2(401, 844)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("StartSurvival:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1940, 842), Vector2(940, 842)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SurvivalSkull:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(2.21914, 2.21914, -2),
+"update": 0,
+"values": [Vector2(0.652074, 0.652074), Vector2(0.652074, 0.652074), Vector2(2, 2)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SurvivalSkull:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.6, 1),
+"transitions": PackedFloat32Array(1, 3.86374, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TakeWin:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StartSurvival:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TakeWin:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.2974, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("StartSurvival:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 2.46229, 1),
+"update": 0,
+"values": [Color(2, 2, 2, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("GPUParticles2D:emitting")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+
+[sub_resource type="Animation" id="251"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SurvivalSkull:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TakeWin:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StartSurvival:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GPUParticles2D:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+
+
+[sub_resource type="Animation" id="252"]
+resource_name = "Show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TakeWin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-600, 844), Vector2(401, 844)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StartSurvival:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1940, 842), Vector2(940, 842)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SurvivalSkull:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(-2, -2, 1),
+"update": 0,
+"values": [Vector2(1.2, 1.2), Vector2(1.2, 1.2), Vector2(0.652074, 0.652074)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SurvivalSkull:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TakeWin:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StartSurvival:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GPUParticles2D:emitting")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/9/type = "method"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("GPUParticles2D")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"restart"
+}]
+}
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u8efn"]
+_data = {
+&"Cancel": SubResource("253"),
+&"Confirm": SubResource("250"),
+&"RESET": SubResource("251"),
+&"Show": SubResource("252")
+}
+
+
+
+[sub_resource type="FontVariation" id="188"]
+base_font = ExtResource("23")
+spacing_top = -5
+script = ExtResource("LegacyFontMigration")
+size = 32
+outline_size = 4
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+[node name="SurvivalPrompt" type="Node2D" unique_id=1061008894]
+unique_name_in_owner = true
+visible = false
+
+
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=37480802]
+modulate = Color(1.4, 1.4, 1.4, 1)
+material = SubResource("246")
+position = Vector2(967, 971)
+emitting = false
+amount = 32
+texture = ExtResource("95")
+lifetime = 1.22
+speed_scale = 0.62
+process_material = SubResource("249")
+
+
+
+[node name="Label2" type="Label" parent="." unique_id=110002859]
+modulate = Color(1, 1, 1, 0)
+material = ExtResource("139")
+offset_left = 746.0
+offset_top = 799.0
+offset_right = 1192.0
+offset_bottom = 875.0
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("m7_shared_130")
+theme_override_font_sizes/font_size = 50
+text = "Choose wisely..."
+horizontal_alignment = 1
+script = ExtResource("182")
+translationKey = "UI_SurvivalChoice"
+
+
+
+[node name="TakeWin" type="TextureButton" parent="." unique_id=1706374343]
+material = ExtResource("139")
+offset_left = 401.0
+offset_top = 844.0
+offset_right = 986.0
+offset_bottom = 1076.0
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource("185")
+ignore_texture_size = true
+flip_h = true
+script = ExtResource("191")
+
+
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TakeWin" unique_id=1507405424]
+material = ExtResource("139")
+clip_contents = false
+layout_mode = 0
+offset_left = 82.0
+offset_top = 80.0
+offset_right = 501.0
+offset_bottom = 174.0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.0509804, 0.0588235, 0.219608, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = SubResource("254")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "test "
+scroll_active = false
+
+
+
+[node name="StartSurvival" type="TextureButton" parent="." unique_id=1239031900]
+material = ExtResource("139")
+offset_left = 940.0
+offset_top = 842.0
+offset_right = 1562.0
+offset_bottom = 1079.0
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource("184")
+ignore_texture_size = true
+script = ExtResource("191")
+
+
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StartSurvival" unique_id=837407300]
+material = ExtResource("139")
+clip_contents = false
+layout_mode = 0
+offset_left = 68.0
+offset_top = 65.0
+offset_right = 539.0
+offset_bottom = 175.0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.137255, 0.0235294, 0.0235294, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/normal_font = SubResource("255")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+scroll_active = false
+
+
+
+[node name="HealHint" type="RichTextLabel" parent="StartSurvival" unique_id=1036032171]
+material = ExtResource("139")
+clip_contents = false
+layout_mode = 0
+offset_left = 594.0
+offset_top = 81.75
+offset_right = 686.0
+offset_bottom = 142.75
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = ExtResource("m7_shared_130")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "+1"
+scroll_active = false
+
+
+
+[node name="Heart" type="Sprite2D" parent="StartSurvival/HealHint" unique_id=240917696]
+material = ExtResource("139")
+position = Vector2(79.0001, 28)
+scale = Vector2(0.476, 0.476)
+texture = ExtResource("67")
+
+
+
+[node name="SurvivalSkull" type="Sprite2D" parent="." unique_id=678943647]
+material = ExtResource("139")
+position = Vector2(959, 957)
+scale = Vector2(2, 2)
+texture = ExtResource("188")
+
+
+
+[node name="SurvivalBones" type="Sprite2D" parent="SurvivalSkull" unique_id=887824107]
+show_behind_parent = true
+position = Vector2(4.71205, 6.13417)
+scale = Vector2(0.917647, 1.09241)
+texture = ExtResource("190")
+flip_v = true
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1040383842]
+libraries/ = SubResource("AnimationLibrary_u8efn")

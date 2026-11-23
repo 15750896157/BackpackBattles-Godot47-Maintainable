@@ -3,7 +3,7 @@ extends RefCounted
 const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const SCREEN = preload("res://PvE/UI/LootScreen.tscn")
 const CARD = preload("res://PvE/UI/LootCard.tscn")
-const MODEL = preload("res://Runtime/ViewModel/LootVM.gd")
+const MODEL = preload("res://Code/Runtime/ViewModel/LootVM.gd")
 const INK = Color("513c26")
 
 static func show_page(page) -> void:
@@ -132,5 +132,6 @@ static func action(button: TextureButton, callback: Callable, caption: String, f
 static func label(parent: Control, path: String, value: String, size: int, color: Color = INK, outline: int = 0) -> void:
 	var node: Label = parent.get_node(path)
 	REF.bind_text(node, value, node.size, size, color, outline)
+	REF.center_label(node)
 	node.show()
 

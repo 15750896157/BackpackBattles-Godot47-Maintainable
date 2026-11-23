@@ -6,7 +6,7 @@ var owner
 var ui
 var section = "general"
 var return_to_selection = false
-const PREFERENCES_VM = preload("res://Runtime/ViewModel/PreferencesVM.gd")
+const PREFERENCES_VM = preload("res://Code/Runtime/ViewModel/PreferencesVM.gd")
 var model: PREFERENCES_VM
 
 func _init(host, shell):

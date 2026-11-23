@@ -1,0 +1,576 @@
+[gd_scene format=3 uid="uid://scsjjjnw3xcyg"]
+
+[ext_resource type="Texture2D" uid="uid://gsmsgkl7i4v4" path="res://PvE/UI/Inventory/BackpackButton.png" id="8"]
+
+
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+
+
+[ext_resource type="Script" uid="uid://capphkxb6hnre" path="res://PvE/UI/ItemLibrary/ItemLibraryButton.gd" id="39"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bnjbs5syuhk4v" path="res://Art/Assets/TitleScreen/ChineseItemSearch.png" id="91"]
+
+
+
+
+[ext_resource type="StyleBox" path="res://PvE/UI/Common/EmptyStylebox.tres" id="92"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bco0m2k5chfeh" path="res://Art/Assets/TitleScreen/ChineseWiki.png" id="111"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dcffy3i8ki8ek" path="res://Art/Assets/TitleScreen/ChineseItemSearch_hovered.png" id="118"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dcbjxsjuheddj" path="res://PvE/UI/Inventory/BackpackButton_hovered.png" id="120"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://c3cf02tajrxip" path="res://Art/Assets/TitleScreen/DiscordIcon2_hovered.png" id="124"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dq0u43x6u5xxa" path="res://Art/Assets/TitleScreen/DiscordIcon2.png" id="126"]
+
+
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="128"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://de610uuvae7yc" path="res://Art/Assets/Trophy_Slot.png" id="129"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://cysvxr38rbd6j" path="res://Art/Assets/TitleScreen/ChineseWiki_hovered.png" id="130"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://sgdam662gctu" path="res://PvE/UI/ItemLibrary/ItemLibraryButton.png" id="149"]
+
+
+
+
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
+
+
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bid2lgobuuvbs" path="res://Art/Assets/TitleScreen/YoutubeIcon2.png" id="193"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://b7xxf5qwkgax1" path="res://PvE/UI/Inventory/AnvilButton.png" id="196"]
+
+
+
+
+[ext_resource type="Script" uid="uid://d25usnhpgbcyw" path="res://PvE/UI/Title/RecipeBookButton.gd" id="197"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://ccytq0u5adbxk" path="res://Art/Assets/TitleScreen/ButtonPanel.png" id="203"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://1y6pho65pevb" path="res://Art/Assets/TitleScreen/YoutubeIcon2_hovered.png" id="204"]
+
+
+
+
+[ext_resource type="Script" uid="uid://dymiil2x8lcdy" path="res://PvE/UI/Wardrobe/WardrobeButton.gd" id="205"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://crh03kneq3w0" path="res://PvE/UI/Wardrobe/WardrobeButton_hovered.png" id="206"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://vte0nsp0dr3x" path="res://PvE/UI/Wardrobe/WardrobeButton.png" id="207"]
+
+
+
+
+[ext_resource type="Script" uid="uid://cskbteljyahkf" path="res://PvE/UI/Combat/Hud/TrophyCounter.gd" id="210"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://qexrtiw3hsvu" path="res://Art/Assets/TitleScreen/QQIcon.png" id="215"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://dueyak4v2a6a3" path="res://Art/Assets/TitleScreen/QQIcon_hovered.png" id="216"]
+
+
+
+
+[ext_resource type="Texture2D" uid="uid://bx7wxcpdciq8s" path="res://PvE/UI/Title/HistoryButton.png" id="256"]
+
+
+
+
+[ext_resource type="Script" uid="uid://ca1783n0vjex6" path="res://PvE/UI/Title/HistoryButton.gd" id="257"]
+
+
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_17.tres" id="m7_shared_17"]
+
+
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_80.tres" id="m7_shared_80"]
+
+
+
+
+[sub_resource type="PhysicsMaterial" id="149"]
+friction = 0.32
+bounce = 0.23
+
+
+
+
+[sub_resource type="FontVariation" id="329"]
+base_font = ExtResource("128")
+spacing_bottom = -16
+script = ExtResource("LegacyFontMigration")
+size = 23
+outline_size = 2
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+use_mipmaps = true
+
+
+
+
+[sub_resource type="FontVariation" id="165"]
+base_font = ExtResource("23")
+script = ExtResource("LegacyFontMigration")
+size = 30
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+
+[node name="ButtonsNode" type="Node2D" unique_id=1328499729]
+z_index = 1
+position = Vector2(0.0322266, 0)
+
+
+
+
+[node name="Panel2" type="Sprite2D" parent="." unique_id=1458658454]
+position = Vector2(1804.91, 451.5)
+scale = Vector2(0.907669, 1.07665)
+texture = ExtResource("203")
+
+
+
+
+[node name="RecipeBookButton" type="Button" parent="." unique_id=900053797]
+offset_left = 1720.0
+offset_top = 224.0
+offset_right = 1885.0
+offset_bottom = 328.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.27451, 0.211765, 0.14902, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_17")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/focus = ExtResource("92")
+icon = ExtResource("196")
+flat = true
+alignment = 2
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("197")
+
+
+
+
+[node name="RecipesLabel" type="Label" parent="." unique_id=1494349282]
+offset_left = 1744.0
+offset_top = 245.0
+offset_right = 1868.0
+offset_bottom = 282.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "Recipes"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_RecipeBook"
+
+
+
+
+[node name="HistoryButton" type="Button" parent="." unique_id=913346533]
+offset_left = 1724.0
+offset_top = 325.0
+offset_right = 1889.0
+offset_bottom = 433.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = ExtResource("92")
+icon = ExtResource("256")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("257")
+
+
+
+
+[node name="HistoryLabel" type="Label" parent="." unique_id=883242986]
+offset_left = 1729.0
+offset_top = 371.0
+offset_right = 1885.0
+offset_bottom = 408.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "History"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_BuildHistory"
+
+
+
+
+[node name="ItemLibraryButton" type="Button" parent="." unique_id=1841445310]
+offset_left = 1714.0
+offset_top = 114.0
+offset_right = 1892.0
+offset_bottom = 223.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_outline_color = Color(0.27451, 0.211765, 0.14902, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_17")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/focus = ExtResource("92")
+icon = ExtResource("149")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("39")
+
+
+
+
+[node name="ItemsLabel" type="Label" parent="." unique_id=355672682]
+offset_left = 1712.0
+offset_top = 145.0
+offset_right = 1896.0
+offset_bottom = 182.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "Items"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_ItemLibrary"
+
+
+
+
+[node name="QQButton" type="TextureButton" parent="." unique_id=1515103766]
+modulate = Color(1.2, 1.2, 1.2, 0.823529)
+offset_left = 1772.0
+offset_top = 809.0
+offset_right = 1838.0
+offset_bottom = 871.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("215")
+texture_hover = ExtResource("216")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+
+
+[node name="YoutubeButton" type="TextureButton" parent="." unique_id=1825370203]
+modulate = Color(1.2, 1.2, 1.2, 0.745098)
+offset_left = 1812.0
+offset_top = 749.0
+offset_right = 1879.0
+offset_bottom = 812.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("193")
+texture_hover = ExtResource("204")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+
+
+[node name="DiscordButton" type="TextureButton" parent="." unique_id=305893819]
+modulate = Color(1.2, 1.2, 1.2, 0.823529)
+offset_left = 1724.0
+offset_top = 746.0
+offset_right = 1796.0
+offset_bottom = 815.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("126")
+texture_hover = ExtResource("124")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+
+
+[node name="WikiButton" type="TextureButton" parent="." unique_id=203443656]
+offset_left = 1712.0
+offset_top = 652.0
+offset_right = 1896.0
+offset_bottom = 750.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8")
+texture_hover = ExtResource("120")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("160")
+
+
+
+
+[node name="Label" type="Label" parent="WikiButton" unique_id=1773114259]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 9.0
+offset_right = 182.0
+offset_bottom = 78.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(88, 44)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.24, 0.15, 0.11, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "Community
+Wiki"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("182")
+translationKey = "BUTTON_Wiki"
+
+
+
+
+[node name="ChineseWikiButton" type="TextureButton" parent="." unique_id=110903511]
+visible = false
+offset_left = 1719.0
+offset_top = 656.0
+offset_right = 1885.0
+offset_bottom = 735.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("111")
+texture_hover = ExtResource("130")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("160")
+
+
+
+
+[node name="Label" type="Label" parent="ChineseWikiButton" unique_id=1276988573]
+layout_mode = 0
+offset_left = 90.4052
+offset_top = 3.0
+offset_right = 165.405
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(88, 44)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.24, 0.15, 0.11, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("329")
+theme_override_font_sizes/font_size = 23
+text = "中文
+WIKI"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+
+
+
+[node name="ChineseItemSearch" type="TextureButton" parent="." unique_id=230136149]
+visible = false
+offset_left = 1722.41
+offset_top = 744.0
+offset_right = 1879.41
+offset_bottom = 809.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("91")
+texture_hover = ExtResource("118")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("160")
+
+
+
+
+[node name="Label" type="Label" parent="ChineseItemSearch" unique_id=1844024359]
+layout_mode = 0
+offset_left = 60.9999
+offset_top = -12.0
+offset_right = 169.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(88, 44)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.24, 0.15, 0.11, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("329")
+theme_override_font_sizes/font_size = 23
+text = "道具查询"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+
+
+
+[node name="AboveBlackLayer" type="Node2D" parent="." unique_id=516754634]
+z_index = 1
+
+
+
+
+[node name="WardrobeButton" type="TextureButton" parent="AboveBlackLayer" unique_id=1020577222]
+offset_left = 1738.0
+offset_top = 438.0
+offset_right = 1880.0
+offset_bottom = 551.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("207")
+texture_hover = ExtResource("206")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("205")
+
+
+
+
+[node name="WardrobeLabel" type="Label" parent="AboveBlackLayer" unique_id=1000787693]
+unique_name_in_owner = true
+offset_left = 1731.0
+offset_top = 460.0
+offset_right = 1881.0
+offset_bottom = 532.0
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.24, 0.15, 0.11, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "Open Wardrobe"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_OpenWardrobe"
+
+
+
+
+[node name="Trophy" type="Sprite2D" parent="AboveBlackLayer" unique_id=788432303]
+position = Vector2(1802.5, 603.5)
+scale = Vector2(0.716311, 0.596386)
+texture = ExtResource("129")
+
+
+
+
+[node name="TrophyCounter" type="Label" parent="AboveBlackLayer" unique_id=1475001456]
+offset_left = 1736.0
+offset_top = 569.0
+offset_right = 1872.0
+offset_bottom = 619.0
+grow_horizontal = 0
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("165")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("210")

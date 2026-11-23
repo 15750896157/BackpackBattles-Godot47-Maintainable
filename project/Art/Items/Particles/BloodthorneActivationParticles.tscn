@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bh0krh8wlydak"]
+
+[ext_resource type="Material" path="res://Art/Items/Particles/BloodthorneActivationParticles.material" id="1_vpoto"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/GlowingDot_small.png" id="2_t85bv"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="3_ks8gt"]
+
+[node name="ActivationParticles" type="GPUParticles2D"]
+modulate = Color(3, 3, 3, 1)
+position = Vector2(0, 212)
+z_index = 2
+emitting = false
+amount = 11
+lifetime = 0.7
+one_shot = true
+speed_scale = 0.79
+explosiveness = 1.0
+local_coords = false
+process_material = ExtResource("1_vpoto")
+texture = ExtResource("2_t85bv")
+script = ExtResource("3_ks8gt")

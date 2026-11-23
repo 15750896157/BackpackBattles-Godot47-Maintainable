@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://Code/Core/Main.tscn" id="1_cregq"]
+[ext_resource type="Script" path="res://PvE/tests/ClassRegistryQA.gd" id="2_cregq"]
+
+[node name="Main" instance=ExtResource("1_cregq")]
+
+[node name="ClassRegistryQA" type="Node" parent="."]
+script = ExtResource("2_cregq")

@@ -1,0 +1,107 @@
+{
+  "format": 1,
+  "shared": [
+    "res://Art/Items/Shadow.tscn",
+    "res://PvE/UI/Tooltips/CommonTooltip.tscn",
+    "res://PvE/UI/Tooltips/RareTooltip.tscn",
+    "res://PvE/UI/Tooltips/EpicTooltip.tscn",
+    "res://PvE/UI/Tooltips/LegendaryTooltip.tscn",
+    "res://PvE/UI/Tooltips/GodlyTooltip.tscn",
+    "res://PvE/UI/Tooltips/UniqueTooltip.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimation.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimationSecondary.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimationTertiary.tscn",
+    "res://PvE/UI/Inventory/AffectedStarAnimationLightning.tscn",
+    "res://Art/Items/Exclusive/Animations/CanAffectVisual.tscn",
+    "res://PvE/UI/Inventory/GlobalAffectVisual.tscn",
+    "res://PvE/UI/Feedback/DustParticles.tscn"
+  ],
+  "shop": [
+    "res://PvE/UI/Inventory/DropParticles.tscn",
+    "res://PvE/UI/Inventory/ItemSparks.tscn",
+    "res://PvE/UI/Inventory/ItemHoverSparks.tscn",
+    "res://PvE/UI/Inventory/ItemRotationSparks.tscn",
+    "res://PvE/UI/Tooltips/RecipeTooltip.tscn",
+    "res://PvE/UI/Tooltips/BuildIntoRecipesTooltip.tscn"
+  ],
+  "all": {
+    "shadowScene": [
+      "res://Art/Items/Shadow.tscn"
+    ],
+    "dropParticlesScene": [
+      "res://PvE/UI/Inventory/DropParticles.tscn"
+    ],
+    "tooltipScenes": [
+      "res://PvE/UI/Tooltips/CommonTooltip.tscn",
+      "res://PvE/UI/Tooltips/RareTooltip.tscn",
+      "res://PvE/UI/Tooltips/EpicTooltip.tscn",
+      "res://PvE/UI/Tooltips/LegendaryTooltip.tscn",
+      "res://PvE/UI/Tooltips/GodlyTooltip.tscn",
+      "res://PvE/UI/Tooltips/UniqueTooltip.tscn"
+    ],
+    "recipeTooltip": [
+      "res://PvE/UI/Tooltips/RecipeTooltip.tscn"
+    ],
+    "dustParticles": [
+      "res://PvE/UI/Feedback/DustParticles.tscn"
+    ],
+    "sparksScene": [
+      "res://PvE/UI/Inventory/ItemSparks.tscn"
+    ],
+    "hoverSparksScene": [
+      "res://PvE/UI/Inventory/ItemHoverSparks.tscn"
+    ],
+    "rotationSparksScene": [
+      "res://PvE/UI/Inventory/ItemRotationSparks.tscn"
+    ],
+    "typeTransformationParticles": [
+      "res://Art/Items/Particles/DarkTransformationParticles.tscn",
+      "res://Art/Items/Particles/HolyTransformationParticles.tscn"
+    ],
+    "craftingBondScene": [
+      "res://Art/Items/CraftingBond.tscn"
+    ],
+    "catalystBondScene": [
+      "res://Art/Items/CatalystBond.tscn"
+    ],
+    "craftingLabelScene": [
+      "res://PvE/UI/Inventory/CraftingProgressLabel.tscn"
+    ],
+    "craftingReadyAnimation": [
+      "res://Animation/Items/Animations/CraftingReadyAnimation.tscn"
+    ],
+    "craftedAnimation": [
+      "res://Animation/Items/Animations/CraftedAnimation.tscn"
+    ],
+    "catalystReadyAnimation": [
+      "res://Animation/Items/Animations/CatalystReadyAnimation.tscn"
+    ],
+    "lockLabelScene": [
+      "res://PvE/UI/Inventory/CraftingLockLabel.tscn"
+    ],
+    "affectedAnis": [
+      "res://PvE/UI/Inventory/AffectedStarAnimation.tscn",
+      "res://PvE/UI/Inventory/AffectedStarAnimationSecondary.tscn",
+      "res://PvE/UI/Inventory/AffectedStarAnimationTertiary.tscn",
+      "res://PvE/UI/Inventory/AffectedStarAnimationLightning.tscn"
+    ],
+    "globalAffectVisual": [
+      "res://PvE/UI/Inventory/GlobalAffectVisual.tscn"
+    ],
+    "canAffectVisual": [
+      "res://Art/Items/Exclusive/Animations/CanAffectVisual.tscn"
+    ],
+    "buildIntoRecipesTooltipScene": [
+      "res://PvE/UI/Tooltips/BuildIntoRecipesTooltip.tscn"
+    ],
+    "outOfStaminaLabelScene": [
+      "res://PvE/UI/Combat/Hud/OutOfStaminaLabel.tscn"
+    ],
+    "fuseParticlesScene1": [
+      "res://Art/Shader/ItemsFusingParticles.tscn"
+    ],
+    "fuseParticlesScene2": [
+      "res://Art/Shader/ItemFuseParticles.tscn"
+    ]
+  }
+}

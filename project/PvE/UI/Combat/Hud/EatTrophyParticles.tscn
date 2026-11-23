@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dr5hjxoqtb3pc"]
+
+[ext_resource type="Material" path="res://PvE/UI/Combat/Hud/EatTrophyParticles.material" id="1_4fe24"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/GlowingDot.png" id="2_t0fsx"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="3_2jlll"]
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+modulate = Color(1.8, 1.6, 1, 1)
+position = Vector2(1715, 836)
+rotation = -0.460767
+emitting = false
+amount = 12
+lifetime = 0.75
+one_shot = true
+explosiveness = 0.89
+process_material = ExtResource("1_4fe24")
+texture = ExtResource("2_t0fsx")
+script = ExtResource("3_2jlll")

@@ -4,9 +4,10 @@ extends Node
 # Rules and native presentation remain separate from the flat touch UI.
 # This distribution has one authoritative ruleset. Scene entry APIs remain stable.
 const enabled: bool = true
+const ClassRegistry = preload("res://PvE/ClassRegistry.gd")
 const HUD_LAYER = preload("res://PvE/UI/HudLayer.gd")
-const HUD_VM = preload("res://Runtime/ViewModel/HudVM.gd")
-const COMBAT_LOG_VM = preload("res://Runtime/ViewModel/CombatLogVM.gd")
+const HUD_VM = preload("res://Code/Runtime/ViewModel/HudVM.gd")
+const COMBAT_LOG_VM = preload("res://Code/Runtime/ViewModel/CombatLogVM.gd")
 var combat_log_vm: COMBAT_LOG_VM
 var flow
 var db
@@ -21,13 +22,13 @@ var popup_epoch: int = 0
 var combat_loading: bool = false
 var entering_shop: bool = false
 var route_prompt_key: String = ""
-var scenery = preload("res://Runtime/Loading/SceneResidency.gd").new()
+var scenery = preload("res://Code/Runtime/Loading/SceneResidency.gd").new()
 var residency_clock: float = 0.0
 var render_pending: bool = false
 var render_queued: bool = false
 var native_battle_ready: bool = false
 var native_phase: int = 1
-var combat_vm := preload("res://Runtime/ViewModel/CombatVM.gd").new()
+var combat_vm := preload("res://Code/Runtime/ViewModel/CombatVM.gd").new()
 var hud_layer: HUD_LAYER
 var hud_vm: HUD_VM
 var overlay: CanvasLayer
@@ -87,7 +88,7 @@ func initialize_native():
 	# LegacyFont's compatibility binder forces its stored 24px size onto every
 	# control. A native font variation keeps each reference label's authored size.
 	ui_font = FontVariation.new()
-	ui_font.base_font = load("res://Assets/Fonts/YaHei-Regular.ttc")
+	ui_font.base_font = load("res://UI/Fonts/YaHei-Regular.ttc")
 	ui_font.variation_embolden = 0.5
 	while not is_instance_valid(loading_screen.root):await get_tree().process_frame
 	preferences = load("res://PvE/NativePreferences.gd").new(self)
@@ -101,7 +102,7 @@ func initialize_native():
 	add_child(art)
 	await menus.prepare_icons()
 	Game.randomCharacter = false
-	if Game.curClass not in [Game.Classes_Full.Berserker, Game.Classes_Full.Reaper]: Game.instanceCharacter(Game.Classes_Full.Berserker)
+	if not Game.isClassUnlocked(Game.curClass): Game.instanceCharacter(ClassRegistry.index_of("Berserker"))
 	if enabled and SceneRouter.ENABLED:
 		var routes = preload("res://PvE/NativeSceneRoutes.gd").new(self)
 		var install_error: Error = await routes.install()
@@ -169,6 +170,7 @@ func button(text: String, action: Callable, parent: Node = null, disabled: bool 
 	if parent == null: parent = popup_content
 	var node = Button.new()
 	node.text = text
+	node.alignment = HORIZONTAL_ALIGNMENT_CENTER
 	node.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	node.custom_minimum_size = Vector2(0, 60)
 	node.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -180,7 +182,7 @@ func button(text: String, action: Callable, parent: Node = null, disabled: bool 
 	node.disabled = disabled
 	node.set_meta("pve_initial_disabled", disabled)
 	node.pressed.connect(func():
-		Sound.playSound(load("res://Assets/Sound/Thud5.wav"), -15)
+		Sound.playSound(load("res://Audio/Sound/Thud5.wav"), -15)
 		action.call())
 	parent.add_child(node)
 	return node
@@ -259,7 +261,7 @@ func notice(key: String):
 
 func perform(result: Dictionary):
 	if not result.get("ok", false): notice(str(result.get("error", "ui.generic_error")))
-	else: Sound.playSound(load("res://Assets/Sound/Thud5.wav"), -12)
+	else: Sound.playSound(load("res://Audio/Sound/Thud5.wav"), -12)
 
 func request_render():
 	render_pending = true
@@ -410,7 +412,7 @@ func finish_switch_to_combat():
 func prepare_native_opponent(current: Callable, phase: int = 1) -> bool:
 	var node: Dictionary = flow.run.current_node
 	var enemy = db.get_row("enemy_builds", str(node.get("enemy_id", "")))
-	var character = Game.Classes_Full.Reaper if str(enemy.get("archetype_id", "")) in ["venom_brewer", "ember_runner"] else Game.Classes_Full.Berserker
+	var character = ClassRegistry.index_of("Reaper") if str(enemy.get("archetype_id", "")) in ["venom_brewer", "ember_runner"] else ClassRegistry.index_of("Berserker")
 	if not await AssetStream.prepare_actor(character, false, "actor-enemy", false) or not current.call():
 		return false
 	Game.freeOpponent()
@@ -440,7 +442,7 @@ func activate_native_combat():
 	Game.pve_prepare_combat()
 	Game.PLAYER.set_physics_process(false)
 	Game.OPPONENT.set_physics_process(false)
-	Sound.playSound(load("res://Assets/Sound/Drumroll.ogg"))
+	Sound.playSound(load("res://Audio/Sound/Drumroll.ogg"))
 	native_battle_ready = not restoring_result
 	_apply_timeline()
 
@@ -495,7 +497,9 @@ func set_native_run_context():
 
 func prepare_native_player(current: Callable) -> bool:
 	# Archer uses the existing native carrier; its rules and art come from PvE.
-	var role = Game.Classes_Full.Reaper if flow.run.character_id == "alchemist" else Game.Classes_Full.Berserker
+	# 角色 id 走注册表查职业序号；查不到或职业未启用时沿用军械师（与旧行为一致）。
+	var role = ClassRegistry.index_for_art_key(str(flow.run.character_id))
+	if role < 0 or not Game.isClassUnlocked(role): role = ClassRegistry.index_of("Berserker")
 	var catalogue = preload("res://PvE/Art/SuppliedArt.gd")
 	var expected_portrait = catalogue.actor_path(catalogue.player_key(role))
 	var portrait_changed = not is_instance_valid(Game.PLAYER.sprite) or Game.PLAYER.sprite.get_meta("new_art_path", "") != expected_portrait
@@ -628,7 +632,7 @@ func _play_events():
 		if event.type == "BOSS_PHASE":
 			native_phase = int(event.get("value", 2))
 			bridge.render_build(Game.OPPONENT, enemy_build(flow.run.current_node, native_phase), Item.Owner.Opponent)
-			Sound.playSound(load("res://Assets/Sound/LevelUp1.ogg"))
+			Sound.playSound(load("res://Audio/Sound/LevelUp1.ogg"))
 		elif event.type == "ITEM_ACTIVATED":
 			for item in actor.INVENTORY.getItems():
 				if str(item.get_meta("pve_uid", "")) == str(event.get("source_uid", event.get("source", ""))):
@@ -641,7 +645,7 @@ func _play_events():
 			if not bool(preferences.values.reduce_effects): Util.spawnNumberLabel(Game.EventType.CriticalDamage if bool(event.get("critical", false)) else Game.EventType.DealDamage, target.randDmgNumberPos(), target.randDmgNumberDir(), int(ceil(float(event.value))))
 			var now = Time.get_ticks_msec() / 1000.0
 			if now - last_audio_tick >= 0.08:
-				Sound.playSound(load("res://Assets/Sound/Impact.ogg"), -15)
+				Sound.playSound(load("res://Audio/Sound/Impact.ogg"), -15)
 				last_audio_tick = now
 
 func _update_native_cooldowns():
@@ -715,7 +719,7 @@ func show_battle_result():
 		if is_instance_valid(Game.OPPONENT):
 			if won: Game.PLAYER.win(); Game.OPPONENT.lose()
 			else: Game.PLAYER.lose(); Game.OPPONENT.win()
-		Sound.playSound(load("res://Assets/Sound/Victory.mp3" if won else "res://Assets/Sound/Fanfare_loss.mp3"))
+		Sound.playSound(load("res://Audio/Sound/Victory.mp3" if won else "res://Audio/Sound/Fanfare_loss.mp3"))
 	flow.mark_tutorial("view_combat_result")
 	menus.runs.result()
 

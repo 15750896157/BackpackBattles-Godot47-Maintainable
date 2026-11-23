@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ekp10s4cyaru"]
+
+[ext_resource type="Material" path="res://Art/Shader/StorageboxLandParticles.material" id="1_3bu06"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/Dust1.png" id="2_yo8cw"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="3_6l8sv"]
+
+[node name="DustParticles" type="GPUParticles2D"]
+modulate = Color(1, 1, 1, 0.721569)
+z_index = -1
+emitting = false
+amount = 10
+lifetime = 1.49
+one_shot = true
+speed_scale = 1.2
+explosiveness = 0.98
+process_material = ExtResource("1_3bu06")
+texture = ExtResource("2_yo8cw")
+script = ExtResource("3_6l8sv")

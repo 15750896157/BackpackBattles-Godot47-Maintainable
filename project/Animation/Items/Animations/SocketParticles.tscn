@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cdy7hdxmph7y0"]
+
+[ext_resource type="Material" path="res://Art/Shader/SocketParticles.tres" id="1_mp6re"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/GlowingDot_small.png" id="2_ws2lw"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="3_mbo4s"]
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+emitting = false
+amount = 13
+lifetime = 0.5
+one_shot = true
+preprocess = 0.05
+speed_scale = 1.2
+explosiveness = 0.79
+process_material = ExtResource("1_mp6re")
+texture = ExtResource("2_ws2lw")
+script = ExtResource("3_mbo4s")

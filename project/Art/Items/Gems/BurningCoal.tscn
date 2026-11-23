@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://bwa24y3c4u5j8"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Gems/Gem.tscn" id="1_by5ae"]
+[ext_resource type="Script" path="res://Art/Items/BurningCoal.gd" id="2_fx5al"]
+[ext_resource type="Texture2D" path="res://Art/Items/Sprites/BurningCoal.png" id="3_y7epf"]
+[ext_resource type="Material" path="res://Art/Items/Particles/BurningCoalDragParticles.material" id="4_a7718"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Particles/SparkParticle1.png" id="5_i0hvg"]
+[ext_resource type="Script" path="res://Code/Utility/AutoHideParticles.gd" id="6_8yl1i"]
+[ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="7_y63ss"]
+[ext_resource type="Texture2D" path="res://Art/Items/Sprites/TorchLight.png" id="8_nc6hw"]
+[ext_resource type="Script" path="res://Animation/Items/Animations/FlickerAnimation.gd" id="9_rjkq3"]
+
+[sub_resource type="PhysicsMaterial" id="11"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[sub_resource type="Shader" id="10"]
+code = "shader_type canvas_item;
+
+uniform float progress : hint_range(-1, 2) = 0.5;
+uniform vec2 direction = vec2(0, 1);
+
+void fragment() {
+	COLOR = texture(TEXTURE, UV);
+	COLOR.rgb *= 1.0 + 0.5 * smoothstep(progress - 0.05, progress + 0.05, dot(UV, direction));
+}"
+
+[sub_resource type="ShaderMaterial" id="12"]
+resource_local_to_scene = true
+shader = SubResource("10")
+shader_parameter/progress = 0.245
+shader_parameter/direction = Vector2(-1, 0)
+
+[sub_resource type="Animation" id="15"]
+resource_name = "Flicker"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0988339, 0.20456),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.698039), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="16"]
+length = 0.001
+
+[sub_resource type="Animation" id="13"]
+resource_name = "CorruptedSparkle"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Icon:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.4, 5),
+"transitions": PackedFloat32Array(-2, 1, -2),
+"update": 0,
+"values": [Color(1.5, 1.5, 1.5, 0.9), Color(1.5, 1.5, 1.5, 0.9), Color(2.3, 2.3, 2.3, 0.9)]
+}
+
+[sub_resource type="Animation" id="14"]
+resource_name = "NoSparkle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Icon:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-2),
+"update": 0,
+"values": [Color(1, 1, 1, 0.901961)]
+}
+
+[node name="Burning Coal" instance=ExtResource("1_by5ae")]
+physics_material_override = SubResource("11")
+script = ExtResource("2_fx5al")
+
+[node name="Icon" parent="." index="1"]
+material = SubResource("12")
+texture = ExtResource("3_y7epf")
+
+[node name="SpecificDragParticles" type="GPUParticles2D" parent="Icon" index="1"]
+modulate = Color(3, 3, 3, 1)
+show_behind_parent = true
+scale = Vector2(2, 2)
+emitting = false
+lifetime = 0.72
+speed_scale = 1.2
+explosiveness = 0.12
+local_coords = false
+process_material = ExtResource("4_a7718")
+texture = ExtResource("5_i0hvg")
+script = ExtResource("6_8yl1i")
+
+[node name="TorchLight" type="Sprite2D" parent="Icon" index="2"]
+self_modulate = Color(1, 1, 1, 0.737255)
+material = ExtResource("7_y63ss")
+position = Vector2(-2, 0)
+texture = ExtResource("8_nc6hw")
+flip_h = true
+
+[node name="FlickerAnimation" type="AnimationPlayer" parent="Icon/TorchLight" index="0"]
+anims/Flicker = SubResource("15")
+anims/RESET = SubResource("16")
+script = ExtResource("9_rjkq3")
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(0, 21)
+
+[node name="CollisionPolygon2D" parent="." index="5"]
+polygon = PackedVector2Array(3, -19, -10, -12, -17, 3, -11, 16, 3, 18, 14, 10, 18, -7, 13, -16)
+
+[node name="GemAnimation" parent="." index="8"]
+autoplay = "NoSparkle"
+anims/CorruptedSparkle = SubResource("13")
+anims/NoSparkle = SubResource("14")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bvwc4388kfebc"]
+
+[ext_resource type="Material" path="res://PvE/UI/Combat/Hud/Spikes.material" id="1_8ap00"]
+[ext_resource type="Material" path="res://PvE/UI/Combat/Hud/SpikesParticles.material" id="2_u0lqy"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Buffs/Spikes2.png" id="3_tvha8"]
+[ext_resource type="Script" path="res://Code/Utility/PooledScene.gd" id="4_md6yy"]
+
+[node name="Particles" type="GPUParticles2D"]
+modulate = Color(4, 4, 4, 0.243137)
+material = ExtResource("1_8ap00")
+position = Vector2(14, -17)
+z_index = 1
+emitting = false
+amount = 1
+lifetime = 0.84
+one_shot = true
+explosiveness = 0.1
+local_coords = false
+process_material = ExtResource("2_u0lqy")
+texture = ExtResource("3_tvha8")
+script = ExtResource("4_md6yy")

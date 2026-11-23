@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="背包"
-run/main_scene="res://Core/Main.tscn"
+run/main_scene="res://Code/Core/Main.tscn"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="BackpackBattles_Local47_PvE"
 config/features=PackedStringArray("4.7", "GL Compatibility")
@@ -29,31 +29,31 @@ buses/default_bus_layout="uid://csuum7oc6bqgu"
 
 [autoload]
 
-ShaderClock="*res://Compatibility/ShaderClock.gd"
-FontSizeBinder="*res://Compatibility/FontSizeBinder.gd"
-LocalServices="*res://LocalServices/LocalStore.gd"
-Steam="*res://LocalServices/LocalSteam.gd"
+ShaderClock="*res://Code/Compatibility/ShaderClock.gd"
+FontSizeBinder="*res://Code/Compatibility/FontSizeBinder.gd"
+LocalServices="*res://Code/LocalServices/LocalStore.gd"
+Steam="*res://Code/LocalServices/LocalSteam.gd"
 ControllerIcons="*res://addons/controller_icons/ControllerIcons.gd"
-Util="*res://Utility/Util.gd"
-AssetStream="*res://Runtime/Loading/AssetStream.gd"
-SteamHelper="*res://Utility/SteamHelper.gd"
-Settings="*res://Utility/Settings.gd"
-InputMapping="*res://Interface/Options/InputMapping.gd"
+Util="*res://Code/Utility/Util.gd"
+AssetStream="*res://Code/Runtime/Loading/AssetStream.gd"
+SteamHelper="*res://Code/Utility/SteamHelper.gd"
+Settings="*res://Code/Utility/Settings.gd"
+InputMapping="*res://PvE/UI/Settings/InputMapping/InputMapping.gd"
 SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
-ItemBook="*res://Sheets/ItemBook.gd"
-SkinBook="*res://Utility/SkinBook.gd"
-Game="*res://Core/Game.gd"
-ObjectPool="*res://Utility/ObjectPool.gd"
-RunDatabase="*res://Core/RunDatabase.gd"
-Sound="*res://Utility/Sound.tscn"
-CrazySDK="*res://Utility/CrazySDK.gd"
-CraftingManager="*res://Core/CraftingManager.gd"
-MaterialCompiler="*res://Utility/MaterialCompiler.gd"
-EventBus="*res://Utility/EventBus.gd"
-CustomRules="*res://Utility/CustomRules.gd"
-InputBlocker="*res://Interface/InputBlocker.tscn"
+ItemBook="*res://Data/Sheets/ItemBook.gd"
+SkinBook="*res://Code/Utility/SkinBook.gd"
+Game="*res://Code/Core/Game.gd"
+ObjectPool="*res://Code/Utility/ObjectPool.gd"
+RunDatabase="*res://Code/Core/RunDatabase.gd"
+Sound="*res://Code/Utility/Sound.tscn"
+CrazySDK="*res://Code/Utility/CrazySDK.gd"
+CraftingManager="*res://Code/Core/CraftingManager.gd"
+MaterialCompiler="*res://Code/Utility/MaterialCompiler.gd"
+EventBus="*res://Code/Utility/EventBus.gd"
+CustomRules="*res://Code/Utility/CustomRules.gd"
+InputBlocker="*res://PvE/UI/Feedback/InputBlocker/InputBlocker.tscn"
 Expedition="*res://PvE/NativeExpedition.gd"
-SceneRouter="*res://Runtime/Scene/SceneRouter.gd"
+SceneRouter="*res://Code/Runtime/Scene/SceneRouter.gd"
 _mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
 
 [debug]
@@ -72,9 +72,10 @@ gdscript/warnings/unused_argument=false
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=3
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="canvas_items"
-mouse_cursor/custom_image="res://Assets/Cursor/Cursor_default_small.png"
+mouse_cursor/custom_image="res://Art/Assets/Cursor/Cursor_default_small.png"
 mouse_cursor/custom_image_hotspot=Vector2(20, 25)
 
 [editor_plugins]
@@ -84,13 +85,283 @@ enabled=PackedStringArray()
 [file_customization]
 
 folder_colors={
+"res://Animation/": "yellow",
+"res://Animation/Items//": "yellow",
+"res://Animation/Items/Animations//": "yellow",
 "res://Art/": "green",
-"res://Assets/": "teal",
-"res://Atlases/": "blue",
-"res://CharacterClasses/": "purple",
-"res://Compatibility/": "pink",
-"res://Core/": "pink",
-"res://PvE/": "green"
+"res://Art/20261022//": "green",
+"res://Art/Assets//": "green",
+"res://Art/Assets/Buffs//": "green",
+"res://Art/Assets/Character//": "green",
+"res://Art/Assets/Chestnut//": "green",
+"res://Art/Assets/Cursor//": "green",
+"res://Art/Assets/Decoration//": "green",
+"res://Art/Assets/GoldCoin2.png[//": "green",
+"res://Art/Assets/GoldCoin2.png[/img][//": "green",
+"res://Art/Assets/Leagues//": "green",
+"res://Art/Assets/Light//": "green",
+"res://Art/Assets/Noise//": "green",
+"res://Art/Assets/Particles//": "green",
+"res://Art/Assets/Shop//": "green",
+"res://Art/Assets/Shop/Shopkeeper//": "green",
+"res://Art/Assets/TitleScreen//": "green",
+"res://Art/Assets/Trophy.png[//": "green",
+"res://Art/Atlases//": "green",
+"res://Art/CharacterClasses//": "green",
+"res://Art/CharacterClasses/Adventurer//": "green",
+"res://Art/CharacterClasses/Animations//": "green",
+"res://Art/CharacterClasses/Berserker//": "green",
+"res://Art/CharacterClasses/Berserker/Skins//": "green",
+"res://Art/CharacterClasses/Berserker/Skins/Normal//": "green",
+"res://Art/CharacterClasses/Berserker/Skins/Normal/Default//": "green",
+"res://Art/CharacterClasses/Engineer//": "green",
+"res://Art/CharacterClasses/Mage//": "green",
+"res://Art/CharacterClasses/NotUnlocked//": "green",
+"res://Art/CharacterClasses/Pyromancer//": "green",
+"res://Art/CharacterClasses/Pyromancer/Skins//": "green",
+"res://Art/CharacterClasses/Pyromancer/Skins/Normal//": "green",
+"res://Art/CharacterClasses/Pyromancer/Skins/Normal/Default//": "green",
+"res://Art/CharacterClasses/Ranger//": "green",
+"res://Art/CharacterClasses/Ranger/Skins//": "green",
+"res://Art/CharacterClasses/Ranger/Skins/Normal//": "green",
+"res://Art/CharacterClasses/Ranger/Skins/Normal/Default//": "green",
+"res://Art/CharacterClasses/Reaper//": "green",
+"res://Art/CharacterClasses/Reaper/Skins//": "green",
+"res://Art/CharacterClasses/Reaper/Skins/Normal//": "green",
+"res://Art/CharacterClasses/Reaper/Skins/Normal/Default//": "green",
+"res://Art/Items//": "green",
+"res://Art/Items/Exclusive//": "green",
+"res://Art/Items/Exclusive/Animations//": "green",
+"res://Art/Items/Exclusive/Borders//": "green",
+"res://Art/Items/Exclusive/Chess//": "green",
+"res://Art/Items/Exclusive/Materials//": "green",
+"res://Art/Items/Exclusive/Particles//": "green",
+"res://Art/Items/Exclusive/Sprites//": "green",
+"res://Art/Items/Exclusive/Sprites/Masks//": "green",
+"res://Art/Items/Gems//": "green",
+"res://Art/Items/Gems/Sprites//": "green",
+"res://Art/Items/Masks//": "green",
+"res://Art/Items/Materials//": "green",
+"res://Art/Items/Particles//": "green",
+"res://Art/Items/Sprites//": "green",
+"res://Art/Items/Tiles//": "green",
+"res://Art/Mobile20261027//": "green",
+"res://Art/Polish20261022//": "green",
+"res://Art/Reference20261102//": "green",
+"res://Art/Shader//": "green",
+"res://Art/Supplied20261028//": "green",
+"res://Art/Supplied20261028/actors//": "green",
+"res://Art/Supplied20261028/backgrounds//": "green",
+"res://Art/Supplied20261028/items//": "green",
+"res://Art/Supplied20261028/status//": "green",
+"res://Art/Supplied20261028/ui//": "green",
+"res://Art/Supplied20261102//": "green",
+"res://Art/Supplied20261102/actors//": "green",
+"res://Art/Supplied20261102/bags//": "green",
+"res://Art/Supplied20261102/bg//": "green",
+"res://Art/Supplied20261102/hud//": "green",
+"res://Art/Supplied20261102/items//": "green",
+"res://Art/Supplied20261102/shop//": "green",
+"res://Art/Supplied20261102/status//": "green",
+"res://Art/Supplied20261102/ui//": "green",
+"res://Art/Supplied20261109//": "green",
+"res://Art/Supplied20261109/actors//": "green",
+"res://Art/Supplied20261109/status//": "green",
+"res://Art/Supplied20261109/ui//": "green",
+"res://Art/Supplied20261113//": "green",
+"res://Art/TileSets//": "green",
+"res://Art/Touch20261027//": "green",
+"res://Audio/": "red",
+"res://Audio/Runtime//": "red",
+"res://Audio/Sound//": "red",
+"res://Audio/Sound/BGM//": "red",
+"res://Audio/Sound/Furcifer//": "red",
+"res://Code/": "blue",
+"res://Code/Compatibility//": "blue",
+"res://Code/Core//": "blue",
+"res://Code/LocalServices//": "blue",
+"res://Code/Runtime//": "blue",
+"res://Code/Runtime/Behavior//": "blue",
+"res://Code/Runtime/Behavior/Assets//": "blue",
+"res://Code/Runtime/Behavior/Assets/Decoration//": "blue",
+"res://Code/Runtime/Behavior/CharacterClasses//": "blue",
+"res://Code/Runtime/Behavior/Compatibility//": "blue",
+"res://Code/Runtime/Behavior/Core//": "blue",
+"res://Code/Runtime/Behavior/Features//": "blue",
+"res://Code/Runtime/Behavior/Features/Assets//": "blue",
+"res://Code/Runtime/Behavior/Features/Assets/Decoration//": "blue",
+"res://Code/Runtime/Behavior/Features/Core//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/BuildHistory//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/Combat//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/CombatLog//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/CombatTimer//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/DamageMeter//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/DamageNumbers//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/Inventory//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/Lobbies//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/Options//": "blue",
+"res://Code/Runtime/Behavior/Features/Interface/Wardrobe//": "blue",
+"res://Code/Runtime/Behavior/Features/Items//": "blue",
+"res://Code/Runtime/Behavior/Features/Items/Animations//": "blue",
+"res://Code/Runtime/Behavior/Features/Items/Exclusive//": "blue",
+"res://Code/Runtime/Behavior/Features/Items/Exclusive/Animations//": "blue",
+"res://Code/Runtime/Behavior/Features/Items/Exclusive/Chess//": "blue",
+"res://Code/Runtime/Behavior/Features/Items/Gems//": "blue",
+"res://Code/Runtime/Behavior/Features/Items/Tiles//": "blue",
+"res://Code/Runtime/Behavior/Features/LocalServices//": "blue",
+"res://Code/Runtime/Behavior/Features/Shader//": "blue",
+"res://Code/Runtime/Behavior/Features/Sheets//": "blue",
+"res://Code/Runtime/Behavior/Features/Utility//": "blue",
+"res://Code/Runtime/Behavior/Game//": "blue",
+"res://Code/Runtime/Behavior/Interface//": "blue",
+"res://Code/Runtime/Behavior/Interface/BuildHistory//": "blue",
+"res://Code/Runtime/Behavior/Interface/Combat//": "blue",
+"res://Code/Runtime/Behavior/Interface/CombatTimer//": "blue",
+"res://Code/Runtime/Behavior/Interface/DamageMeter//": "blue",
+"res://Code/Runtime/Behavior/Interface/DamageNumbers//": "blue",
+"res://Code/Runtime/Behavior/Interface/Lobbies//": "blue",
+"res://Code/Runtime/Behavior/Interface/Options//": "blue",
+"res://Code/Runtime/Behavior/Interface/Tooltips//": "blue",
+"res://Code/Runtime/Behavior/Interface/Wardrobe//": "blue",
+"res://Code/Runtime/Behavior/Items//": "blue",
+"res://Code/Runtime/Behavior/Items/Exclusive//": "blue",
+"res://Code/Runtime/Behavior/Items/Gems//": "blue",
+"res://Code/Runtime/Behavior/LocalServices//": "blue",
+"res://Code/Runtime/Behavior/Sheets//": "blue",
+"res://Code/Runtime/Behavior/Utility//": "blue",
+"res://Code/Runtime/Callbacks//": "blue",
+"res://Code/Runtime/Callbacks/Compatibility//": "blue",
+"res://Code/Runtime/Callbacks/Core//": "blue",
+"res://Code/Runtime/Callbacks/Interface//": "blue",
+"res://Code/Runtime/Callbacks/Interface/Combat//": "blue",
+"res://Code/Runtime/Callbacks/Interface/CombatLog//": "blue",
+"res://Code/Runtime/Callbacks/Interface/DamageMeter//": "blue",
+"res://Code/Runtime/Callbacks/Interface/ItemLibrary//": "blue",
+"res://Code/Runtime/Callbacks/Interface/Lobbies//": "blue",
+"res://Code/Runtime/Callbacks/Interface/Options//": "blue",
+"res://Code/Runtime/Callbacks/Interface/Tooltips//": "blue",
+"res://Code/Runtime/Callbacks/Items//": "blue",
+"res://Code/Runtime/Callbacks/Items/Animations//": "blue",
+"res://Code/Runtime/Callbacks/Items/Exclusive//": "blue",
+"res://Code/Runtime/Callbacks/Items/Exclusive/Animations//": "blue",
+"res://Code/Runtime/Callbacks/Utility//": "blue",
+"res://Code/Runtime/Collections//": "blue",
+"res://Code/Runtime/Compatibility//": "blue",
+"res://Code/Runtime/Compatibility/Scenes//": "blue",
+"res://Code/Runtime/Compatibility/Scenes/Resources//": "blue",
+"res://Code/Runtime/Events//": "blue",
+"res://Code/Runtime/Loading//": "blue",
+"res://Code/Runtime/Loading/Scenes//": "blue",
+"res://Code/Runtime/Random//": "blue",
+"res://Code/Runtime/Scene//": "blue",
+"res://Code/Runtime/Serialization//": "blue",
+"res://Code/Runtime/UI//": "blue",
+"res://Code/Runtime/ViewModel//": "blue",
+"res://Code/Utility//": "blue",
+"res://Data/": "gray",
+"res://Data/Sheets//": "gray",
+"res://Data/Sheets/CSV//": "gray",
+"res://PvE/": "green",
+"res://PvE/Art/": "teal",
+"res://PvE/Items/": "blue",
+"res://PvE/Items/Anims//": "blue",
+"res://PvE/Items/Particles//": "blue",
+"res://PvE/Rules/": "purple",
+"res://PvE/Rules/app//": "purple",
+"res://PvE/Rules/combat//": "purple",
+"res://PvE/Rules/content//": "purple",
+"res://PvE/Rules/content/compiled//": "purple",
+"res://PvE/Rules/content/definitions//": "purple",
+"res://PvE/Rules/content/tables//": "purple",
+"res://PvE/Rules/content/tables/tools//": "purple",
+"res://PvE/Rules/core//": "purple",
+"res://PvE/Rules/inventory//": "purple",
+"res://PvE/Rules/persistence//": "purple",
+"res://PvE/Rules/platform//": "purple",
+"res://PvE/Rules/run//": "purple",
+"res://PvE/Rules/tools//": "purple",
+"res://PvE/UI//": "blue",
+"res://PvE/tests//": "green",
+"res://PvE/tests/fixtures//": "green",
+"res://PvE/tests/fixtures/router//": "green",
+"res://UI/": "purple",
+"res://UI/Fonts//": "purple",
+"res://UI/Fonts/Localized//": "purple",
+"res://PvE/UI/BuildHistory//": "purple",
+"res://PvE/UI/Feedback/InputBlocker//": "purple",
+"res://PvE/UI/Settings/InputMapping//": "purple",
+"res://PvE/UI/Combat/Hud//": "purple",
+"res://PvE/UI/Combat/Hud/StatIcons//": "purple",
+"res://PvE/UI/Combat/CombatLog//": "purple",
+"res://PvE/UI/Combat/CombatTimer//": "purple",
+"res://PvE/UI/Combat/DamageMeter//": "purple",
+"res://PvE/UI/Combat/DamageMeter/Plot//": "purple",
+"res://PvE/UI/Feedback/DamageNumbers//": "purple",
+"res://PvE/UI/Feedback/PopupMessage//": "purple",
+"res://PvE/UI/Feedback/ClickParticles//": "purple",
+"res://PvE/UI/Feedback/CoinParticles//": "purple",
+"res://PvE/UI/Combat/NameBanners//": "purple",
+"res://PvE/UI/Cursor//": "purple",
+"res://PvE/UI/Inventory//": "purple",
+"res://PvE/UI/Shop//": "purple",
+"res://PvE/UI/ItemLibrary//": "purple",
+"res://PvE/UI/Lobbies//": "purple",
+"res://PvE/UI/Options//": "purple",
+"res://PvE/UI/Tooltips//": "purple",
+"res://PvE/UI/Tooltips/AffectsInside.png[//": "purple",
+"res://PvE/UI/Tooltips/AffectsInside.png[/img][//": "purple",
+"res://PvE/UI/Tooltips/CoinIcon.png[//": "purple",
+"res://PvE/UI/Tooltips/Icon_Melee.png[//": "purple",
+"res://PvE/UI/Tooltips/Icon_Ranged.png[//": "purple",
+"res://PvE/UI/Tooltips/Icon_Ranged.png[/img][//": "purple",
+"res://PvE/UI/Tooltips/Icon_Treasure.png[//": "purple",
+"res://PvE/UI/Wardrobe//": "purple",
+"res://addons/": "pink",
+"res://addons/.godot_ai_update//": "pink",
+"res://addons/.godot_ai_update/backup//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/clients//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/custom_tools//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/debugger//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/dock_panels//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/export//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/handlers//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/runtime//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/testing//": "pink",
+"res://addons/.godot_ai_update/backup/4.2.1/utils//": "pink",
+"res://addons/controller_icons//": "pink",
+"res://addons/controller_icons/assets//": "pink",
+"res://addons/controller_icons/assets/key//": "pink",
+"res://addons/controller_icons/assets/luna//": "pink",
+"res://addons/controller_icons/assets/mouse//": "pink",
+"res://addons/controller_icons/assets/ouya//": "pink",
+"res://addons/controller_icons/assets/positional//": "pink",
+"res://addons/controller_icons/assets/ps3//": "pink",
+"res://addons/controller_icons/assets/ps4//": "pink",
+"res://addons/controller_icons/assets/ps5//": "pink",
+"res://addons/controller_icons/assets/ps5/r2.png[//": "pink",
+"res://addons/controller_icons/assets/ps5/r2.png[/img][//": "pink",
+"res://addons/controller_icons/assets/stadia//": "pink",
+"res://addons/controller_icons/assets/steam//": "pink",
+"res://addons/controller_icons/assets/steamdeck//": "pink",
+"res://addons/controller_icons/assets/switch//": "pink",
+"res://addons/controller_icons/assets/xbox360//": "pink",
+"res://addons/controller_icons/assets/xboxone//": "pink",
+"res://addons/controller_icons/assets/xboxseries//": "pink",
+"res://addons/controller_icons/example//": "pink",
+"res://addons/controller_icons/objects//": "pink",
+"res://addons/godot_ai//": "pink",
+"res://addons/godot_ai/clients//": "pink",
+"res://addons/godot_ai/custom_tools//": "pink",
+"res://addons/godot_ai/debugger//": "pink",
+"res://addons/godot_ai/dock_panels//": "pink",
+"res://addons/godot_ai/export//": "pink",
+"res://addons/godot_ai/handlers//": "pink",
+"res://addons/godot_ai/runtime//": "pink",
+"res://addons/godot_ai/testing//": "pink",
+"res://addons/godot_ai/utils//": "pink",
+"res://addons/silent_wolf//": "pink"
 }
 
 [gui]
@@ -541,7 +812,7 @@ pve_prev_region={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://Sheets/CSV/Keywords.en.translation", "res://Sheets/CSV/Dialog.en.translation", "res://Sheets/CSV/Items.en.translation", "res://Sheets/CSV/Interface.en.translation", "res://Sheets/CSV/Interface.ja.translation", "res://Sheets/CSV/Keywords.ja.translation", "res://Sheets/CSV/Dialog.ja.translation", "res://Sheets/CSV/Items.ja.translation", "res://Sheets/CSV/Dialog.ko.translation", "res://Sheets/CSV/Interface.ko.translation", "res://Sheets/CSV/Items.ko.translation", "res://Sheets/CSV/Keywords.ko.translation", "res://Sheets/CSV/Dialog.de.translation", "res://Sheets/CSV/Interface.de.translation", "res://Sheets/CSV/Items.de.translation", "res://Sheets/CSV/Keywords.de.translation", "res://Sheets/CSV/Flavor.de.translation", "res://Sheets/CSV/Flavor.en.translation", "res://Sheets/CSV/Flavor.ja.translation", "res://Sheets/CSV/Flavor.ko.translation", "res://Sheets/CSV/Dialog.es.translation", "res://Sheets/CSV/Dialog.fr.translation", "res://Sheets/CSV/Dialog.pt_BR.translation", "res://Sheets/CSV/Dialog.ru.translation", "res://Sheets/CSV/ExclusiveItems.es.translation", "res://Sheets/CSV/ExclusiveItems.fr.translation", "res://Sheets/CSV/ExclusiveItems.pt_BR.translation", "res://Sheets/CSV/ExclusiveItems.ru.translation", "res://Sheets/CSV/Flavor.es.translation", "res://Sheets/CSV/Flavor.fr.translation", "res://Sheets/CSV/Flavor.pt_BR.translation", "res://Sheets/CSV/Flavor.ru.translation", "res://Sheets/CSV/Interface.es.translation", "res://Sheets/CSV/Interface.fr.translation", "res://Sheets/CSV/Interface.pt_BR.translation", "res://Sheets/CSV/Interface.ru.translation", "res://Sheets/CSV/Items.es.translation", "res://Sheets/CSV/Items.fr.translation", "res://Sheets/CSV/Items.pt_BR.translation", "res://Sheets/CSV/Items.ru.translation", "res://Sheets/CSV/Keywords.es.translation", "res://Sheets/CSV/Keywords.fr.translation", "res://Sheets/CSV/Keywords.pt_BR.translation", "res://Sheets/CSV/Keywords.ru.translation", "res://Sheets/CSV/Dialog.zh_Hans_CN.translation", "res://Sheets/CSV/Dialog.zh_Hant_TW.translation", "res://Sheets/CSV/ExclusiveItems.zh_Hans_CN.translation", "res://Sheets/CSV/ExclusiveItems.zh_Hant_TW.translation", "res://Sheets/CSV/Flavor.zh_Hans_CN.translation", "res://Sheets/CSV/Flavor.zh_Hant_TW.translation", "res://Sheets/CSV/Interface.zh_Hans_CN.translation", "res://Sheets/CSV/Interface.zh_Hant_TW.translation", "res://Sheets/CSV/Items.zh_Hans_CN.translation", "res://Sheets/CSV/Items.zh_Hant_TW.translation", "res://Sheets/CSV/Keywords.zh_Hans_CN.translation", "res://Sheets/CSV/Keywords.zh_Hant_TW.translation", "res://Sheets/CSV/Full.de.translation", "res://Sheets/CSV/Full.en.translation", "res://Sheets/CSV/Full.es.translation", "res://Sheets/CSV/Full.fr.translation", "res://Sheets/CSV/Full.ja.translation", "res://Sheets/CSV/Full.ko.translation", "res://Sheets/CSV/Full.pt_BR.translation", "res://Sheets/CSV/Full.ru.translation", "res://Sheets/CSV/Full.zh_Hans_CN.translation", "res://Sheets/CSV/Full.zh_Hant_TW.translation")
+locale/translations=PackedStringArray("res://Data/Sheets/CSV/Keywords.en.translation", "res://Data/Sheets/CSV/Dialog.en.translation", "res://Data/Sheets/CSV/Items.en.translation", "res://Data/Sheets/CSV/Interface.en.translation", "res://Data/Sheets/CSV/Interface.ja.translation", "res://Data/Sheets/CSV/Keywords.ja.translation", "res://Data/Sheets/CSV/Dialog.ja.translation", "res://Data/Sheets/CSV/Items.ja.translation", "res://Data/Sheets/CSV/Dialog.ko.translation", "res://Data/Sheets/CSV/Interface.ko.translation", "res://Data/Sheets/CSV/Items.ko.translation", "res://Data/Sheets/CSV/Keywords.ko.translation", "res://Data/Sheets/CSV/Dialog.de.translation", "res://Data/Sheets/CSV/Interface.de.translation", "res://Data/Sheets/CSV/Items.de.translation", "res://Data/Sheets/CSV/Keywords.de.translation", "res://Data/Sheets/CSV/Flavor.de.translation", "res://Data/Sheets/CSV/Flavor.en.translation", "res://Data/Sheets/CSV/Flavor.ja.translation", "res://Data/Sheets/CSV/Flavor.ko.translation", "res://Data/Sheets/CSV/Dialog.es.translation", "res://Data/Sheets/CSV/Dialog.fr.translation", "res://Data/Sheets/CSV/Dialog.pt_BR.translation", "res://Data/Sheets/CSV/Dialog.ru.translation", "res://Data/Sheets/CSV/ExclusiveItems.es.translation", "res://Data/Sheets/CSV/ExclusiveItems.fr.translation", "res://Data/Sheets/CSV/ExclusiveItems.pt_BR.translation", "res://Data/Sheets/CSV/ExclusiveItems.ru.translation", "res://Data/Sheets/CSV/Flavor.es.translation", "res://Data/Sheets/CSV/Flavor.fr.translation", "res://Data/Sheets/CSV/Flavor.pt_BR.translation", "res://Data/Sheets/CSV/Flavor.ru.translation", "res://Data/Sheets/CSV/Interface.es.translation", "res://Data/Sheets/CSV/Interface.fr.translation", "res://Data/Sheets/CSV/Interface.pt_BR.translation", "res://Data/Sheets/CSV/Interface.ru.translation", "res://Data/Sheets/CSV/Items.es.translation", "res://Data/Sheets/CSV/Items.fr.translation", "res://Data/Sheets/CSV/Items.pt_BR.translation", "res://Data/Sheets/CSV/Items.ru.translation", "res://Data/Sheets/CSV/Keywords.es.translation", "res://Data/Sheets/CSV/Keywords.fr.translation", "res://Data/Sheets/CSV/Keywords.pt_BR.translation", "res://Data/Sheets/CSV/Keywords.ru.translation", "res://Data/Sheets/CSV/Dialog.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Dialog.zh_Hant_TW.translation", "res://Data/Sheets/CSV/ExclusiveItems.zh_Hans_CN.translation", "res://Data/Sheets/CSV/ExclusiveItems.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Flavor.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Flavor.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Interface.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Interface.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Items.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Items.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Keywords.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Keywords.zh_Hant_TW.translation", "res://Data/Sheets/CSV/Full.de.translation", "res://Data/Sheets/CSV/Full.en.translation", "res://Data/Sheets/CSV/Full.es.translation", "res://Data/Sheets/CSV/Full.fr.translation", "res://Data/Sheets/CSV/Full.ja.translation", "res://Data/Sheets/CSV/Full.ko.translation", "res://Data/Sheets/CSV/Full.pt_BR.translation", "res://Data/Sheets/CSV/Full.ru.translation", "res://Data/Sheets/CSV/Full.zh_Hans_CN.translation", "res://Data/Sheets/CSV/Full.zh_Hant_TW.translation")
 
 [layer_names]
 

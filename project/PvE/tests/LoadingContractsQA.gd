@@ -123,7 +123,7 @@ func run_tests():
 	check(not is_instance_valid(Game.wardrobe), "wardrobe not constructed at startup")
 	await reveal_contracts()
 
-	var path = "res://Items/LeatherBag.tscn"
+	var path = "res://Art/Items/LeatherBag.tscn"
 	check(not AssetStream.resources.has(path), "cancellation fixture starts after title transition and decoration cleanup")
 	var cancelled = {"done": false}
 	load_probe([path], "qa-cancel", cancelled)

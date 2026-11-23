@@ -1,0 +1,647 @@
+[gd_scene format=3 uid="uid://sezwqhnssjkze"]
+
+[ext_resource type="Texture2D" uid="uid://cjoukh2vs0q3u" path="res://PvE/UI/Shop/DiceButton_disabled.png" id="18"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="31"]
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Title/LoadoutButton.tscn" id="37"]
+
+
+[ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="64"]
+
+
+[ext_resource type="Texture2D" uid="uid://dlbxd7foyxc15" path="res://PvE/UI/Shop/DiceButton.png" id="79"]
+
+
+[ext_resource type="Texture2D" uid="uid://bjguag7epaaih" path="res://Art/Assets/Particles/GlowingDot_small.png" id="116"]
+
+
+[ext_resource type="Script" uid="uid://bebhm5l726i66" path="res://Code/Utility/AutoHideParticles.gd" id="121"]
+
+
+[ext_resource type="Texture2D" uid="uid://c7l4w5t4ii31o" path="res://Art/Assets/TitleScreen/PyromancerIcon_disabled.png" id="122"]
+
+
+[ext_resource type="Texture2D" uid="uid://nnrjw0ug35re" path="res://Art/Assets/Light/CircleLight.png" id="123"]
+
+
+[ext_resource type="Texture2D" uid="uid://crwhrrprfvhg0" path="res://Art/Assets/TitleScreen/BerserkerIcon_disabled.png" id="125"]
+
+
+[ext_resource type="Texture2D" uid="uid://2uyj6cb55lgs" path="res://Art/Assets/Particles/GlowingDot.png" id="134"]
+
+
+[ext_resource type="Texture2D" uid="uid://dfaktr0xav66w" path="res://Art/Assets/TitleScreen/AdventurerIcon_disabled.png" id="141"]
+
+
+[ext_resource type="Texture2D" uid="uid://crj0v8khv27hq" path="res://Art/Assets/TitleScreen/RangerIcon_hovered.png" id="156"]
+
+
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
+
+
+[ext_resource type="Texture2D" uid="uid://d4n2vswrpgsi0" path="res://Art/Assets/TitleScreen/PyromancerIcon_hovered.png" id="171"]
+
+
+[ext_resource type="Texture2D" uid="uid://l5ce10vedwgt" path="res://Art/Assets/TitleScreen/BerserkerIcon.png" id="176"]
+
+
+[ext_resource type="Texture2D" uid="uid://de6lq7h70ky4b" path="res://Art/Assets/TitleScreen/ReaperIcon.png" id="177"]
+
+
+[ext_resource type="Texture2D" uid="uid://glhobthueame" path="res://Art/Assets/TitleScreen/PyromancerIcon.png" id="178"]
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+[ext_resource type="Texture2D" uid="uid://dvsrxxpt7ttvj" path="res://Art/Assets/TitleScreen/RangerIcon.png" id="186"]
+
+
+[ext_resource type="Texture2D" uid="uid://dhhdu67sqfstk" path="res://Art/Assets/TitleScreen/ReaperIcon_hovered.png" id="187"]
+
+
+[ext_resource type="Texture2D" uid="uid://c8pgp73wloo0t" path="res://Art/Assets/TitleScreen/BerserkerIcon_hovered.png" id="192"]
+
+
+[ext_resource type="Texture2D" uid="uid://bi5n6b8q5owur" path="res://Art/Assets/TitleScreen/ReaperIcon_disabled.png" id="202"]
+
+
+[ext_resource type="Texture2D" uid="uid://ba1h2jee8ky2d" path="res://Art/Assets/TitleScreen/RangerIcon_disabled.png" id="220"]
+
+
+[ext_resource type="Material" path="res://Art/Items/Particles/SkullBadgeParticles.material" id="223"]
+
+
+[ext_resource type="Material" path="res://Art/Items/Particles/LeafBadgeParticles.material" id="224"]
+
+
+[ext_resource type="Material" path="res://Art/Items/Particles/WolfBadgeParticles.material" id="225"]
+
+
+[ext_resource type="Material" path="res://Art/Items/Particles/FlameBadgeParticles.material" id="226"]
+
+
+[ext_resource type="Texture2D" uid="uid://cega880obc2ec" path="res://Art/Assets/TitleScreen/AdventurerIcon.png" id="232"]
+
+
+[ext_resource type="Texture2D" uid="uid://d0qp4lrhcuyny" path="res://Art/Assets/TitleScreen/AdventurerIcon_hovered.png" id="234"]
+
+
+[ext_resource type="Texture2D" uid="uid://1nt80mjn7gsu" path="res://Art/Assets/TitleScreen/ClassPanel2.png" id="242"]
+
+
+[ext_resource type="Texture2D" uid="uid://2a1ymexdjs3x" path="res://Art/Assets/TitleScreen/MageIcon.png" id="251"]
+
+
+[ext_resource type="Material" path="res://Art/Shader/RainbowShiftOutline.material" id="252"]
+
+
+[ext_resource type="Texture2D" uid="uid://brykjkljnka7t" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="253"]
+
+
+[ext_resource type="Texture2D" uid="uid://y5xfjqld1qvi" path="res://PvE/UI/Shop/DiceButton_outline.png" id="254"]
+
+
+[ext_resource type="Texture2D" uid="uid://babrlcerwswpa" path="res://Art/Assets/TitleScreen/MageIcon_hovered.png" id="258"]
+
+
+[ext_resource type="Texture2D" uid="uid://c318paeuirojt" path="res://Art/Assets/TitleScreen/MageIcon_disabled.png" id="260"]
+
+
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/MagicBadgeDragParticles.material" id="265"]
+
+
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Particles/TwineBadgeDragParticles.material" id="266"]
+
+
+[ext_resource type="Texture2D" uid="uid://ivfc4rl66lri" path="res://Art/Assets/TitleScreen/EngineerIcon_disabled.png" id="279"]
+
+
+[ext_resource type="Texture2D" uid="uid://d0y6d2ufwi4a8" path="res://Art/Assets/TitleScreen/EngineerIcon_hovered.png" id="280"]
+
+
+[ext_resource type="Texture2D" uid="uid://c0n0fof8wlkcb" path="res://Art/Assets/TitleScreen/EngineerIcon.png" id="281"]
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_80.tres" id="m7_shared_80"]
+
+
+[sub_resource type="Gradient" id="60"]
+offsets = PackedFloat32Array(0, 0.144385, 0.540107, 1)
+colors = PackedColorArray(0.0705882, 0.0705882, 0.0705882, 0, 0.433594, 0.433594, 0.433594, 0.737255, 0.766113, 0.766113, 0.766113, 0.552941, 1, 1, 1, 0)
+
+
+[sub_resource type="GradientTexture1D" id="360"]
+gradient = SubResource("60")
+width = 50
+
+
+[sub_resource type="Curve" id="62"]
+_data = [Vector2(0, 0.130682), 0.0, 1.28656, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+
+[sub_resource type="CurveTexture" id="361"]
+width = 50
+curve = SubResource("62")
+
+
+[sub_resource type="ParticleProcessMaterial" id="64"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 16.54
+initial_velocity_min = 107.2869
+initial_velocity_max = 228.27
+angular_velocity_min = -102.58
+angular_velocity_max = 102.58
+gravity = Vector3(0, -98, 0)
+scale_min = 0.58
+scale_max = 0.6766
+scale_curve = SubResource("361")
+color_ramp = SubResource("360")
+
+
+[sub_resource type="FontVariation" id="79"]
+base_font = ExtResource("31")
+spacing_bottom = -5
+script = ExtResource("LegacyFontMigration")
+size = 33
+outline_size = 3
+outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
+
+
+[sub_resource type="Gradient" id="349"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.104839, 0.205645, 0.322581, 0.439516, 0.568548, 0.677419, 0.798387, 0.91129, 1)
+colors = PackedColorArray(0.988235, 0.921569, 0.443137, 1, 0.982422, 0.558818, 0.218742, 1, 0.983401, 0.290596, 0.256523, 1, 0.988281, 0.386047, 0.90124, 1, 0.853134, 0.511719, 1, 1, 0.53606, 0.602832, 0.998047, 1, 0.386887, 0.828179, 0.900391, 1, 0.349197, 0.898438, 0.402834, 1, 0.765867, 0.988281, 0.32621, 1, 0.988235, 0.921569, 0.443137, 1)
+
+
+[sub_resource type="GradientTexture1D" id="350"]
+gradient = SubResource("349")
+width = 100
+
+
+[sub_resource type="ParticleProcessMaterial" id="351"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 18.13
+direction = Vector3(0, -1, 0)
+spread = 180.0
+initial_velocity_min = 21.645
+initial_velocity_max = 55.5
+gravity = Vector3(0, -60, 0)
+scale_min = 1.051
+scale_max = 1.1
+color_ramp = ExtResource("253")
+color_initial_ramp = SubResource("350")
+
+
+[sub_resource type="FontVariation" id="348"]
+base_font = ExtResource("23")
+spacing_top = -3
+spacing_bottom = -3
+script = ExtResource("LegacyFontMigration")
+size = 24
+outline_size = 5
+outline_color = Color(0.184314, 0.113725, 0.0862745, 1)
+
+
+[node name="AboveBlackLayer" type="Node2D" unique_id=1518656576]
+z_index = 3
+
+
+[node name="Class" type="Node2D" parent="." unique_id=1596657795]
+visible = false
+z_index = -3
+position = Vector2(0, 0.843201)
+
+
+[node name="Panel" type="Sprite2D" parent="Class" unique_id=857058688]
+position = Vector2(1052, 959)
+scale = Vector2(0.942559, 1)
+texture = ExtResource("242")
+
+
+[node name="Label6" type="Label" parent="Class" unique_id=1540315088]
+offset_left = 719.0
+offset_top = 813.0
+offset_right = 971.0
+offset_bottom = 861.0
+grow_horizontal = 2
+pivot_offset = Vector2(130, 21.5085)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "Switch Class"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_SwitchClass"
+
+
+[node name="ClassButtons" type="Node2D" parent="Class" unique_id=200501940]
+
+
+[node name="Ranger" type="TextureButton" parent="Class/ClassButtons" unique_id=1651852422]
+offset_left = 696.0
+offset_top = 871.0
+offset_right = 781.0
+offset_bottom = 956.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("186")
+texture_hover = ExtResource("156")
+texture_disabled = ExtResource("220")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Ranger" unique_id=2125895651]
+visible = false
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(50, 46.0001)
+scale = Vector2(0.55, 0.473)
+emitting = false
+amount = 13
+texture = ExtResource("116")
+lifetime = 0.5
+preprocess = 0.1
+speed_scale = 0.55
+process_material = ExtResource("224")
+script = ExtResource("121")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Ranger" unique_id=652552996]
+visible = false
+modulate = Color(1, 1, 1, 0.972663)
+self_modulate = Color(0.619608, 1, 0.317647, 0.27451)
+material = ExtResource("64")
+position = Vector2(47, 48)
+rotation = -0.808087
+scale = Vector2(0.317, 0.368)
+texture = ExtResource("123")
+
+
+[node name="Reaper" type="TextureButton" parent="Class/ClassButtons" unique_id=1407151700]
+offset_left = 696.0
+offset_top = 956.5
+offset_right = 781.0
+offset_bottom = 1041.5
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("177")
+texture_hover = ExtResource("187")
+texture_disabled = ExtResource("202")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Reaper" unique_id=927839665]
+visible = false
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(46, 43.0001)
+scale = Vector2(0.767, 0.701)
+emitting = false
+amount = 12
+texture = ExtResource("116")
+lifetime = 0.5
+preprocess = 0.1
+speed_scale = 0.43
+process_material = ExtResource("223")
+script = ExtResource("121")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Reaper" unique_id=1717266640]
+visible = false
+modulate = Color(1, 1, 1, 0.957743)
+self_modulate = Color(0.694118, 0.305882, 0.972549, 0.364706)
+material = ExtResource("64")
+position = Vector2(47, 45)
+scale = Vector2(0.2775, 0.38375)
+texture = ExtResource("123")
+
+
+[node name="Pyromancer" type="TextureButton" parent="Class/ClassButtons" unique_id=300120059]
+offset_left = 781.0
+offset_top = 871.0
+offset_right = 866.0
+offset_bottom = 956.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("178")
+texture_hover = ExtResource("171")
+texture_disabled = ExtResource("122")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Pyromancer" unique_id=839878100]
+visible = false
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(45, 54.0001)
+scale = Vector2(0.664, 0.636)
+emitting = false
+amount = 11
+texture = ExtResource("116")
+lifetime = 0.5
+preprocess = 0.1
+speed_scale = 0.6
+process_material = ExtResource("226")
+script = ExtResource("121")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Pyromancer" unique_id=224652448]
+visible = false
+modulate = Color(1, 1, 1, 0.568602)
+self_modulate = Color(0.901961, 0.419608, 0.215686, 0.639216)
+material = ExtResource("64")
+position = Vector2(47.75, 48.2501)
+scale = Vector2(0.30125, 0.35875)
+texture = ExtResource("123")
+
+
+[node name="Berserker" type="TextureButton" parent="Class/ClassButtons" unique_id=1514645339]
+offset_left = 781.0
+offset_top = 956.5
+offset_right = 866.0
+offset_bottom = 1041.5
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("176")
+texture_hover = ExtResource("192")
+texture_disabled = ExtResource("125")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Berserker" unique_id=23098526]
+visible = false
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(44, 46.0001)
+scale = Vector2(0.773, 0.758)
+emitting = false
+amount = 12
+texture = ExtResource("116")
+lifetime = 0.5
+preprocess = 0.1
+speed_scale = 0.52
+process_material = ExtResource("225")
+script = ExtResource("121")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Berserker" unique_id=1665587257]
+visible = false
+modulate = Color(1, 1, 1, 0.6)
+self_modulate = Color(0.188235, 0.513726, 0.780392, 0.835294)
+material = ExtResource("64")
+position = Vector2(45, 47)
+scale = Vector2(0.306875, 0.306875)
+texture = ExtResource("123")
+
+
+[node name="Mage" type="TextureButton" parent="Class/ClassButtons" unique_id=523159327]
+offset_left = 865.5
+offset_top = 871.0
+offset_right = 950.5
+offset_bottom = 956.001
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("251")
+texture_hover = ExtResource("258")
+texture_disabled = ExtResource("260")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Mage" unique_id=616010420]
+visible = false
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(44, 46.0001)
+scale = Vector2(0.773, 0.758)
+emitting = false
+amount = 12
+texture = ExtResource("116")
+lifetime = 0.5
+preprocess = 0.1
+speed_scale = 0.52
+process_material = ExtResource("265")
+script = ExtResource("121")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Mage" unique_id=1699496274]
+visible = false
+modulate = Color(1, 1, 1, 0.6)
+self_modulate = Color(0.231373, 0.321569, 0.988235, 0.835294)
+material = ExtResource("64")
+position = Vector2(45, 47)
+scale = Vector2(0.306875, 0.306875)
+texture = ExtResource("123")
+
+
+[node name="Adventurer" type="TextureButton" parent="Class/ClassButtons" unique_id=1190426133]
+offset_left = 865.5
+offset_top = 956.0
+offset_right = 950.5
+offset_bottom = 1041.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("232")
+texture_hover = ExtResource("234")
+texture_disabled = ExtResource("141")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Adventurer" unique_id=2100827244]
+visible = false
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(44, 46.0001)
+scale = Vector2(0.773, 0.758)
+emitting = false
+amount = 12
+texture = ExtResource("116")
+lifetime = 0.5
+preprocess = 0.1
+speed_scale = 0.52
+process_material = ExtResource("266")
+script = ExtResource("121")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Adventurer" unique_id=1004327806]
+visible = false
+modulate = Color(1, 1, 1, 0.6)
+self_modulate = Color(0.780392, 0.623529, 0.188235, 0.835294)
+material = ExtResource("64")
+position = Vector2(45, 47)
+scale = Vector2(0.306875, 0.306875)
+texture = ExtResource("123")
+
+
+[node name="Engineer" type="TextureButton" parent="Class/ClassButtons" unique_id=860430345]
+offset_left = 951.0
+offset_top = 915.0
+offset_right = 1031.0
+offset_bottom = 995.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("281")
+texture_hover = ExtResource("280")
+texture_disabled = ExtResource("279")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Engineer" unique_id=1884702788]
+visible = false
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(44, 46.0001)
+scale = Vector2(0.773, 0.758)
+emitting = false
+amount = 12
+texture = ExtResource("116")
+lifetime = 0.5
+preprocess = 0.1
+speed_scale = 0.52
+process_material = ExtResource("266")
+script = ExtResource("121")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Engineer" unique_id=1550291116]
+visible = false
+modulate = Color(1, 1, 1, 0.6)
+self_modulate = Color(0.780392, 0.623529, 0.188235, 0.835294)
+material = ExtResource("64")
+position = Vector2(45, 47)
+scale = Vector2(0.306875, 0.306875)
+texture = ExtResource("123")
+
+
+[node name="Random" type="TextureButton" parent="Class/ClassButtons" unique_id=920312640]
+material = ExtResource("252")
+offset_left = 994.0
+offset_top = 790.0
+offset_right = 1061.0
+offset_bottom = 857.0
+mouse_default_cursor_shape = 2
+toggle_mode = true
+texture_normal = ExtResource("79")
+texture_pressed = ExtResource("254")
+texture_hover = ExtResource("254")
+texture_disabled = ExtResource("18")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("160")
+
+
+[node name="Glow" type="Sprite2D" parent="Class/ClassButtons/Random" unique_id=1306647604]
+visible = false
+modulate = Color(1, 1, 1, 0.6)
+self_modulate = Color(0.188235, 0.513726, 0.780392, 0.835294)
+material = ExtResource("64")
+position = Vector2(45, 47)
+scale = Vector2(0.306875, 0.306875)
+texture = ExtResource("123")
+
+
+[node name="Particles" type="GPUParticles2D" parent="Class/ClassButtons/Random" unique_id=1122536032]
+modulate = Color(2, 2, 2, 1)
+show_behind_parent = true
+position = Vector2(32, 28)
+scale = Vector2(1.5, 1.5)
+emitting = false
+amount = 22
+texture = ExtResource("134")
+lifetime = 0.8
+process_material = SubResource("351")
+script = ExtResource("121")
+
+
+[node name="Loadouts" type="Node2D" parent="Class" unique_id=1548290684]
+
+
+[node name="Label6" type="Label" parent="Class/Loadouts" unique_id=1133562402]
+offset_left = 1066.0
+offset_top = 814.0
+offset_right = 1401.0
+offset_bottom = 862.0
+pivot_offset = Vector2(142, 21.5085)
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "Choose Loadout"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_Loadout"
+
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Class/Loadouts" unique_id=1342605260]
+offset_left = 1048.0
+offset_top = 882.0
+offset_right = 1286.0
+offset_bottom = 1058.0
+
+
+[node name="LoadoutButton" parent="Class/Loadouts/VBoxContainer" unique_id=810198529 instance=ExtResource("37")]
+layout_mode = 2
+
+
+[node name="LoadoutButton2" parent="Class/Loadouts/VBoxContainer" unique_id=1468797298 instance=ExtResource("37")]
+layout_mode = 2
+text = "Loadout 2"
+
+
+[node name="LoadoutButton3" parent="Class/Loadouts/VBoxContainer" unique_id=1929039260 instance=ExtResource("37")]
+layout_mode = 2
+text = "Loadout 3"
+
+
+[node name="RandomHint" type="RichTextLabel" parent="Class/Loadouts" unique_id=539769857]
+clip_contents = false
+offset_left = 691.0
+offset_top = 728.0
+offset_right = 1375.0
+offset_bottom = 772.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 0.84745, 0.0917969, 1)
+theme_override_colors/font_outline_color = Color(0.184314, 0.113725, 0.0862745, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = SubResource("348")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Your class and loadout will be randomly chosen."
+scroll_active = false
+script = ExtResource("182")
+translationKey = "HINT_RandomClass"
+prefix = "[center][wave amp=25 freq=2]"

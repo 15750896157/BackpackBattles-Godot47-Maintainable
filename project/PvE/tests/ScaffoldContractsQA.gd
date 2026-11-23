@@ -53,7 +53,7 @@ func run_tests():
 		await finish(0 if value.is_empty() else 2)
 		return
 	check(get_node_or_null("/root/SceneRouter")==SceneRouter,"SceneRouter autoload exists")
-	var disabled_router = preload("res://Runtime/Scene/RouterKernel.gd").new()
+	var disabled_router = preload("res://Code/Runtime/Scene/RouterKernel.gd").new()
 	add_child(disabled_router)
 	check(disabled_router.change_scene(&"title") == ERR_UNAVAILABLE,"independent SceneRouter instance starts disabled")
 	check(disabled_router.current_screen_id==&"","current screen starts empty")

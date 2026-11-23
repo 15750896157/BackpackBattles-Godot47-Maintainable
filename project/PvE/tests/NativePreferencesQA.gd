@@ -278,7 +278,7 @@ func check_wardrobe_lifetime() -> void:
 	check(await wait_for(finished_build, 25.0), "native wardrobe opens and builds its actual skin rows")
 	if not is_instance_valid(Game.wardrobe): return
 	var wardrobe = Game.wardrobe
-	check(wardrobe.scene_file_path == "res://Interface/Wardrobe/Wardrobe.tscn"
+	check(wardrobe.scene_file_path == "res://PvE/UI/Wardrobe/Wardrobe.tscn"
 		and wardrobe.selectedSkins.size() == Game.SkinSlot.size(), "original scene has a selection for each slot")
 	await snapshot("wardrobe")
 	var alternate: int = Game.Classes_Full.Reaper if original_class == Game.Classes_Full.Berserker else Game.Classes_Full.Berserker
@@ -358,7 +358,7 @@ func run_tests():
 	if stage == "write": await run_write()
 	else: await run_reopen()
 	Expedition.close_popup()
-	save_json(output.path_join(stage + "-report.json"), {"stage": stage, "checks": checks, "failures": failures, "engine": Engine.get_version_info().string, "entry": "res://Core/Main.tscn", "save_path": Expedition.flow.saves.base_path, "evidence": evidence})
+	save_json(output.path_join(stage + "-report.json"), {"stage": stage, "checks": checks, "failures": failures, "engine": Engine.get_version_info().string, "entry": "res://Code/Core/Main.tscn", "save_path": Expedition.flow.saves.base_path, "evidence": evidence})
 	print("NATIVE_PREFERENCES_QA " + JSON.stringify({"stage": stage, "checks": checks, "failures": failures}))
 	Game._begin_shutdown()
 	await AssetStream.drain()

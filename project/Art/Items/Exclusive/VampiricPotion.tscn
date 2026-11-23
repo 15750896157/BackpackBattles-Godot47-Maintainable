@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://7wgme72icleq"]
+
+[ext_resource type="PackedScene" path="res://Art/Items/Item.tscn" id="1_jkwxg"]
+[ext_resource type="Script" path="res://Art/Items/Exclusive/VampiricPotion.gd" id="2_gdgwy"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/VampiricPotion_flask.png" id="3_xpio3"]
+[ext_resource type="PackedScene" path="res://Art/Assets/BottleOfBooze.tscn" id="4_j6fsh"]
+[ext_resource type="Material" path="res://Art/Items/Exclusive/Materials/VampiricPotion.material" id="5_7tj2w"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/Masks/VampiricPotion_mask.png" id="6_gtxsr"]
+[ext_resource type="Texture2D" path="res://Art/Items/Exclusive/Sprites/VampiricPotion_overlay.png" id="7_1bb6r"]
+[ext_resource type="Texture2D" path="res://Art/Assets/Buffs/Vampirism.png" id="8_xcguc"]
+
+[sub_resource type="PhysicsMaterial" id="1"]
+resource_local_to_scene = true
+friction = 0.73
+bounce = 0.7
+
+[sub_resource type="Shader" id="10"]
+code = "shader_type canvas_item;
+
+uniform float progress : hint_range(-1, 2) = 0.5;
+uniform vec2 direction = vec2(0, 1);
+
+void fragment() {
+	COLOR = texture(TEXTURE, UV);
+	COLOR.rgb *= 1.0 + 0.5 * smoothstep(progress - 0.05, progress + 0.05, dot(UV, direction));
+}"
+
+[sub_resource type="ShaderMaterial" id="11"]
+resource_local_to_scene = true
+shader = SubResource("10")
+shader_parameter/progress = 0.245
+shader_parameter/direction = Vector2(-1, 0)
+
+[sub_resource type="Curve" id="83"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Vampiric Potion" instance=ExtResource("1_jkwxg")]
+physics_material_override = SubResource("1")
+script = ExtResource("2_gdgwy")
+potionColor = Color(0.913725, 0, 0.105882, 1)
+
+[node name="CollisionMap" parent="." index="0"]
+position = Vector2(40, 0)
+format = 2
+layer_0/tile_data = PackedInt32Array(-1, 3, 0, 65535, 3, 0)
+
+[node name="Icon" parent="." index="1"]
+material = SubResource("11")
+scale = Vector2(0.5, 0.47)
+texture = ExtResource("3_xpio3")
+
+[node name="BottleOfBooze" parent="Icon" index="0" instance=ExtResource("4_j6fsh")]
+modulate = Color(1.2, 1.2, 1.2, 1)
+material = ExtResource("5_7tj2w")
+position = Vector2(0.194002, 5.87097)
+rotation = 0.0
+texture = ExtResource("6_gtxsr")
+friction = 0.9244
+foamDecay = 0.984
+backForce = 5.0
+baseFoaminess = 0.068
+maxFoaminess = 1.1
+rotationFoam = 0.04
+baseScroll = 0.007
+levelModification = -0.074
+levelCurve = SubResource("83")
+
+[node name="Flask1Overlay" type="Sprite2D" parent="Icon" index="1"]
+position = Vector2(-0.5, 0.87392)
+texture = ExtResource("7_1bb6r")
+
+[node name="Sockets" parent="Icon" index="2"]
+scale = Vector2(2, 2.12766)
+
+[node name="Vampirism" type="Sprite2D" parent="Icon" index="3"]
+visible = false
+position = Vector2(9.53674e-07, 35.5556)
+scale = Vector2(0.315359, 0.31536)
+texture = ExtResource("8_xcguc")
+
+[node name="CollisionPolygon2D" parent="ClickArea" index="0"]
+polygon = PackedVector2Array(-40, -80, 40, -80, 40, 80, -40, 80)
+
+[node name="BottomCenter" parent="." index="3"]
+position = Vector2(-1, 76)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="5"]
+visible = false
+polygon = PackedVector2Array(-9, -76, -12, -35, -28, -28, -24, -7, -27, 22, -11, 53, -19, 76, 18, 76, 9, 53, 27, 22, 25, -6, 27, -29, 11, -35, 8, -76)

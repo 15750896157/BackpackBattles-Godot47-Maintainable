@@ -21,7 +21,8 @@ static func ui_path(key: String) -> String:
 
 static func player_key(character_class: int = -1) -> String:
 	if Expedition.active and not Expedition.flow.run.is_empty(): return str(Expedition.flow.run.character_id)
-	return "alchemist" if character_class == Game.Classes_Full.Reaper else "archer" if character_class == Game.Classes_Full.Ranger else "armorer"
+	var art_key = load("res://PvE/ClassRegistry.gd").art_key_for_index(character_class)
+	return art_key if not art_key.is_empty() else "armorer"
 
 static func actor_path(key: String) -> String:
 	return CURRENT.actor_path(key)

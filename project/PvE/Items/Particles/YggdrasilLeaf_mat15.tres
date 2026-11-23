@@ -1,5 +1,5 @@
 [gd_resource type="ParticleProcessMaterial" load_steps=5 format=3]
-[ext_resource type="Texture2D" path="res://Shader/VerySmoothFadeGradient.tres" id="5_bqow1"]
+[ext_resource type="Texture2D" path="res://Art/Shader/VerySmoothFadeGradient.tres" id="5_bqow1"]
 
 [sub_resource type="Gradient" id="13"]
 offsets = PackedFloat32Array(0.0229358, 0.606936, 1)

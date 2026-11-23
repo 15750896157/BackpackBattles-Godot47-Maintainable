@@ -6,7 +6,7 @@ const SCREEN = preload("res://PvE/UI/RouteScreen.gd")
 const LEGACY = preload("res://PvE/UI/RouteLayout.gd")
 const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const ENEMY_ART = preload("res://PvE/Art/NewArtCatalog.gd")
-const ShopVM = preload("res://Runtime/ViewModel/ShopVM.gd")
+const ShopVM = preload("res://Code/Runtime/ViewModel/ShopVM.gd")
 
 static func mount(page, model: ShopVM, root: Control, ticket: int) -> bool:
 	var owner = page.owner

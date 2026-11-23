@@ -1,0 +1,861 @@
+[gd_scene format=3 uid="uid://qy140sgpsymcy"]
+
+[ext_resource type="Texture2D" uid="uid://c0jwelhye670e" path="res://Art/Assets/Trophy.png" id="9"]
+
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Bold.ttc" id="23"]
+
+
+
+[ext_resource type="FontFile" path="res://UI/Fonts/YaHei-Regular.ttc" id="31"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://bod0c2qixsrea" path="res://Art/Assets/TitleScreen/Title.png" id="35"]
+
+
+
+[ext_resource type="Material" path="res://Art/Shader/AdditiveCanvasItemMaterial.tres" id="64"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://v3uockslbycp" path="res://Art/Assets/TitleScreen/RankedBanner.png" id="65"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://bfycplonhislf" path="res://Art/Assets/Watch.png" id="66"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://8nl6qlrdo5jw" path="res://Art/Assets/Heart.png" id="67"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://g1wmombr5guo" path="res://Art/Assets/Light/ContinueBanner_hovered.png" id="69"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://chvmx2t3v3kcd" path="res://Art/Assets/TitleScreen/UnrankedBanner.png" id="70"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://d2nkhkmvk1omu" path="res://Art/Assets/Light/RankedBanner_hovered.png" id="71"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://b62ybs0qkmr7b" path="res://Art/Assets/Light/UnrankedBanner_hovered.png" id="72"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://cu0s2p4unuj06" path="res://Art/Assets/shadow.png" id="77"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://dlbxd7foyxc15" path="res://PvE/UI/Shop/DiceButton.png" id="79"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://camwo6eou1odc" path="res://Art/Assets/TitleScreen/ConcedeBanner.png" id="96"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://b5mcvqvmki050" path="res://Art/Assets/TitleScreen/ContinueBanner_CustomUnranked.png" id="151"]
+
+
+
+[ext_resource type="PackedScene" path="res://PvE/UI/Lobbies/CustomRulesIcon.tscn" id="152"]
+
+
+
+[ext_resource type="Script" uid="uid://dgpedlih6bvjv" path="res://PvE/UI/Common/FocusGrabbingTextureButton.gd" id="160"]
+
+
+
+[ext_resource type="Script" uid="uid://bp3des6r71mlt" path="res://Code/Utility/LocalizedControl.gd" id="182"]
+
+
+
+[ext_resource type="Script" uid="uid://d0iepeje2mun3" path="res://PvE/UI/Common/BlackLayer.gd" id="219"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://bkxp2j6lj7av0" path="res://Art/Shader/RainbowIntenseGradientTexture.tres" id="283"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://b8uxs1kyowhhg" path="res://Art/Assets/TitleScreen/RankedBannerBorder.png" id="284"]
+
+
+
+[ext_resource type="Texture2D" uid="uid://grwjhovxx4fm" path="res://Art/Assets/TitleScreen/UnrankedBannerBorder.png" id="310"]
+
+
+
+[ext_resource type="Script" uid="uid://b5kjabs2tkf46" path="res://Code/Compatibility/LegacyFont.gd" id="LegacyFontMigration"]
+
+
+
+[ext_resource type="FontVariation" path="res://Code/Runtime/Compatibility/Scenes/Resources/SharedFontVariation_80.tres" id="m7_shared_80"]
+
+
+
+[sub_resource type="StyleBoxEmpty" id="66"]
+
+
+
+[sub_resource type="Gradient" id="60"]
+offsets = PackedFloat32Array(0, 0.144385, 0.540107, 1)
+colors = PackedColorArray(0.0705882, 0.0705882, 0.0705882, 0, 0.433594, 0.433594, 0.433594, 0.737255, 0.766113, 0.766113, 0.766113, 0.552941, 1, 1, 1, 0)
+
+
+
+[sub_resource type="GradientTexture1D" id="360"]
+gradient = SubResource("60")
+width = 50
+
+
+
+[sub_resource type="Curve" id="62"]
+_data = [Vector2(0, 0.130682), 0.0, 1.28656, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+
+
+[sub_resource type="CurveTexture" id="361"]
+width = 50
+curve = SubResource("62")
+
+
+
+[sub_resource type="ParticleProcessMaterial" id="64"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 1.0
+angle_max = 720.0
+direction = Vector3(0, -1, 0)
+spread = 16.54
+initial_velocity_min = 107.2869
+initial_velocity_max = 228.27
+angular_velocity_min = -102.58
+angular_velocity_max = 102.58
+gravity = Vector3(0, -98, 0)
+scale_min = 0.58
+scale_max = 0.6766
+scale_curve = SubResource("361")
+color_ramp = SubResource("360")
+
+
+
+[sub_resource type="Shader" id="455"]
+code = "shader_type canvas_item;
+global uniform float bb_shader_time;
+
+uniform sampler2D gradient : repeat_disable, filter_linear;
+uniform float speed : hint_range(0.1,10,0.01) = 1.0;
+uniform float frequency : hint_range(0,100,0.01) = 1.0;
+uniform float threshold : hint_range(0, 1, 0.01) = 0.3;
+uniform float fade : hint_range(0, 4, 0.01) = 2;
+uniform vec4 maskColor : source_color;
+
+void fragment(){
+	COLOR = texture(TEXTURE, UV);
+	float difToMaskColor = maskColor.g - COLOR.g;
+	if (difToMaskColor < threshold) {
+		float ONE = 1.0;
+		float offset = modf(UV.y * frequency + bb_shader_time * speed, ONE);
+		float f = clamp((threshold - difToMaskColor) *fade, 0 , 1);
+		//f = 1.0;
+		vec3 gradientS = texture(gradient, vec2(offset)).rgb;
+		//COLOR.rgb = gradientS * 1.6 * f;
+		
+		COLOR.rgb += gradientS;
+		
+	}
+	
+}"
+
+
+
+[sub_resource type="ShaderMaterial" id="456"]
+shader = SubResource("455")
+shader_parameter/gradient = ExtResource("283")
+shader_parameter/speed = 0.27
+shader_parameter/frequency = 0.89
+shader_parameter/threshold = 0.77
+shader_parameter/fade = 0.0
+shader_parameter/maskColor = Color(1, 0.588235, 0, 1)
+
+
+
+[sub_resource type="FontVariation" id="79"]
+base_font = ExtResource("31")
+spacing_bottom = -5
+script = ExtResource("LegacyFontMigration")
+size = 33
+outline_size = 3
+outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
+
+
+
+[sub_resource type="Animation" id="441"]
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shadow:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.47),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ConcedeButton:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [0.0, 15.7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ConcedeButton:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Vector2(-260, -164), Vector2(-226, 100)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ConcedeButton:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2.07053, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ConcedeLabel:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.17, 0.5),
+"transitions": PackedFloat32Array(1.23114, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1.2, 1.2, 1.2, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ConcedeButton:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../Continue:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 300)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../Continue:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../Continue/ContinueButton:disabled")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+
+
+[sub_resource type="Animation" id="153"]
+resource_name = "Hide"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Continue:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+
+
+[sub_resource type="Animation" id="152"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shadow:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ConcedeButton:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ConcedeButton:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-260, -164)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ConcedeButton:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ConcedeLabel:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Continue:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ConcedeButton:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../Continue/ContinueButton:disabled")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("../Continue:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("../Continue:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4218y"]
+_data = {
+&"Concede": SubResource("441"),
+&"Hide": SubResource("153"),
+&"RESET": SubResource("152")
+}
+
+
+
+[sub_resource type="FontVariation" id="328"]
+base_font = ExtResource("23")
+spacing_top = -3
+spacing_bottom = -3
+script = ExtResource("LegacyFontMigration")
+size = 30
+outline_size = 3
+outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+
+
+
+[node name="TitleNode" type="Node2D" unique_id=68432594]
+z_index = 2
+position = Vector2(0, -0.889038)
+
+
+
+[node name="RankedBannerHovered" type="Sprite2D" parent="." unique_id=1238824313]
+unique_name_in_owner = true
+visible = false
+modulate = Color(1, 0.329412, 0.329412, 0.607843)
+material = ExtResource("64")
+position = Vector2(738, 451.471)
+scale = Vector2(0.817221, 0.752361)
+texture = ExtResource("71")
+
+
+
+[node name="RankedButton" type="TextureButton" parent="." unique_id=1432935437]
+unique_name_in_owner = true
+offset_left = 627.0
+offset_top = 288.0
+offset_right = 860.0
+offset_bottom = 592.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("65")
+ignore_texture_size = true
+script = ExtResource("160")
+
+
+
+[node name="RandomBorder" type="Sprite2D" parent="RankedButton" unique_id=1745405193]
+material = SubResource("456")
+position = Vector2(117, 152.389)
+scale = Vector2(1.69118, 1.525)
+texture = ExtResource("284")
+
+
+
+[node name="RankedLabel" type="Label" parent="." unique_id=2064462268]
+custom_minimum_size = Vector2(180, 200)
+offset_left = 646.0
+offset_top = 328.0
+offset_right = 826.0
+offset_bottom = 528.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.883043, 0.589844, 1)
+theme_override_colors/font_shadow_color = Color(0.168627, 0.027451, 0.027451, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("79")
+theme_override_font_sizes/font_size = 33
+text = "New
+Ranked
+Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_Ranked"
+maxSize = 180.0
+
+
+
+[node name="UnrankedBannerHovered" type="Sprite2D" parent="." unique_id=583983766]
+unique_name_in_owner = true
+modulate = Color(0.329412, 0.592157, 1, 0.780392)
+material = ExtResource("64")
+position = Vector2(959, 434.546)
+scale = Vector2(0.763314, 0.752426)
+texture = ExtResource("72")
+
+
+
+[node name="UnrankedButton" type="TextureButton" parent="." unique_id=1682799667]
+unique_name_in_owner = true
+offset_left = 842.0
+offset_top = 289.0
+offset_right = 1075.0
+offset_bottom = 592.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("70")
+ignore_texture_size = true
+script = ExtResource("160")
+
+
+
+[node name="RandomBorder" type="Sprite2D" parent="UnrankedButton" unique_id=1497188855]
+material = SubResource("456")
+position = Vector2(115.809, 151.889)
+scale = Vector2(1.67416, 1.45631)
+texture = ExtResource("310")
+
+
+
+[node name="UnrankedLabel" type="Label" parent="." unique_id=883452100]
+custom_minimum_size = Vector2(178, 200)
+offset_left = 864.0
+offset_top = 331.0
+offset_right = 1042.0
+offset_bottom = 531.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.883043, 0.589844, 1)
+theme_override_colors/font_shadow_color = Color(0.168627, 0.027451, 0.027451, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("79")
+theme_override_font_sizes/font_size = 33
+text = "New
+Unranked
+Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_Unranked"
+maxSize = 175.0
+
+
+
+[node name="Concede" type="Node2D" parent="." unique_id=2039658939]
+position = Vector2(928, 624)
+
+
+
+[node name="Blocker" type="Control" parent="Concede" unique_id=1396472563]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -315.0
+offset_top = -373.0
+offset_right = 157.0
+offset_bottom = -9.0
+
+
+
+[node name="Shadow" type="Sprite2D" parent="Concede" unique_id=1573401694]
+modulate = Color(1, 1, 1, 0.415686)
+position = Vector2(-84, -113.596)
+scale = Vector2(6.56627, 7.7)
+texture = ExtResource("77")
+
+
+
+[node name="ConcedeButton" type="TextureButton" parent="Concede" unique_id=395459706]
+unique_name_in_owner = true
+offset_left = -260.0
+offset_top = -164.0
+offset_right = 97.0
+offset_bottom = -6.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("96")
+ignore_texture_size = true
+script = ExtResource("160")
+
+
+
+[node name="ConcedeBannerHovered" type="Sprite2D" parent="Concede/ConcedeButton" unique_id=1389438869]
+unique_name_in_owner = true
+modulate = Color(0.937255, 0.819608, 0.321569, 0.403922)
+show_behind_parent = true
+material = ExtResource("64")
+position = Vector2(180.5, 87)
+scale = Vector2(1.27795, 0.334862)
+texture = ExtResource("69")
+
+
+
+[node name="ConcedeLabel" type="Label" parent="Concede" unique_id=427388829]
+unique_name_in_owner = true
+offset_left = -239.0
+offset_top = -115.0
+offset_right = 81.0
+offset_bottom = -35.0
+theme_override_colors/font_color = Color(1, 0.945098, 0.807843, 1)
+theme_override_colors/font_shadow_color = Color(0.168627, 0.027451, 0.027451, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("m7_shared_80")
+theme_override_font_sizes/font_size = 24
+text = "Concede Active Game 
+(Ranking +5)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Concede" unique_id=268080566]
+libraries/ = SubResource("AnimationLibrary_4218y")
+
+
+
+[node name="Continue" type="Node2D" parent="." unique_id=859194441]
+
+
+
+[node name="ContinueButton" type="TextureButton" parent="Continue" unique_id=1873402311]
+unique_name_in_owner = true
+offset_left = 610.0
+offset_top = 289.0
+offset_right = 1088.0
+offset_bottom = 515.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("151")
+ignore_texture_size = true
+script = ExtResource("160")
+
+
+
+[node name="ContinueBannerHovered" type="Sprite2D" parent="Continue/ContinueButton" unique_id=180219229]
+unique_name_in_owner = true
+visible = false
+modulate = Color(0.321569, 0.937255, 0.47451, 0.458824)
+show_behind_parent = true
+material = ExtResource("64")
+position = Vector2(229, 109.856)
+scale = Vector2(1.62538, 0.51901)
+texture = ExtResource("69")
+
+
+
+[node name="Label5" type="Label" parent="Continue" unique_id=1428833126]
+offset_left = 656.0
+offset_top = 360.0
+offset_right = 1032.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(1, 0.883043, 0.589844, 1)
+theme_override_colors/font_shadow_color = Color(0.168627, 0.027451, 0.027451, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.0196078, 0.0196078, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("79")
+theme_override_font_sizes/font_size = 33
+text = "Continue Game"
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("182")
+translationKey = "BUTTON_Continue"
+
+
+
+[node name="Heart" type="Sprite2D" parent="Continue" unique_id=1760235415]
+position = Vector2(916, 440)
+scale = Vector2(0.299295, 0.299295)
+texture = ExtResource("67")
+
+
+
+[node name="Watch" type="Sprite2D" parent="Continue" unique_id=1224942536]
+position = Vector2(737.983, 437.416)
+scale = Vector2(0.404492, 0.376915)
+texture = ExtResource("66")
+offset = Vector2(4.98666, -13.2263)
+
+
+
+[node name="Trophy" type="Sprite2D" parent="Continue" unique_id=526059293]
+position = Vector2(832.044, 438.659)
+scale = Vector2(0.361318, 0.361318)
+texture = ExtResource("9")
+
+
+
+[node name="LastRunRound" type="Label" parent="Continue" unique_id=1431982360]
+unique_name_in_owner = true
+offset_left = 760.0
+offset_top = 426.0
+offset_right = 798.0
+offset_bottom = 465.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("328")
+theme_override_font_sizes/font_size = 30
+text = "3"
+horizontal_alignment = 1
+
+
+
+[node name="LastRunWins" type="Label" parent="Continue" unique_id=1030980621]
+unique_name_in_owner = true
+offset_left = 845.0
+offset_top = 427.0
+offset_right = 889.0
+offset_bottom = 466.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("328")
+theme_override_font_sizes/font_size = 30
+text = "3"
+horizontal_alignment = 1
+
+
+
+[node name="LastRunTries" type="Label" parent="Continue" unique_id=786768054]
+unique_name_in_owner = true
+offset_left = 935.0
+offset_top = 426.0
+offset_right = 978.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(1, 0.92549, 0.831373, 1)
+theme_override_colors/font_shadow_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_colors/font_outline_color = Color(0.235294, 0.14902, 0.113725, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = SubResource("328")
+theme_override_font_sizes/font_size = 30
+text = "3"
+horizontal_alignment = 1
+
+
+
+[node name="CustomRulesIcon" parent="Continue" unique_id=1342718087 instance=ExtResource("152")]
+offset_left = 981.0
+offset_top = 409.0
+offset_right = 1036.0
+offset_bottom = 464.0
+
+
+
+[node name="Title" type="Sprite2D" parent="." unique_id=293073182]
+position = Vector2(963, 197)
+scale = Vector2(0.669548, 0.669548)
+texture = ExtResource("35")
+
+
+
+[node name="BlackLayer" type="ColorRect" parent="." unique_id=260902684]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+focus_mode = 2
+color = Color(0, 0, 0, 0.611765)
+script = ExtResource("219")
