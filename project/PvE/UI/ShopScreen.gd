@@ -3,7 +3,8 @@ extends Control
 
 signal menu_requested(action: StringName)
 
-const ShopVM = preload("res://Runtime/ViewModel/ShopVM.gd")
+const ShopVM = preload("res://Code/Runtime/ViewModel/ShopVM.gd")
+const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const ART_KEYS = ["codex", "refresh", "coin", "battle", "settings", "plate1", "price", "sale",
 	"class_badge", "plate2", "plate3", "health", "stamina", "previous", "next"]
 const SCENERY_KEYS = ["shelf", "merchant", "table", "storage_mat", "sell"]
@@ -104,8 +105,9 @@ func _apply_art() -> void:
 	for label in _labels:
 		label.add_theme_font_override("font", _font)
 		# The original shop lays out each label at its base size before applying UI scaling.
-		label.add_theme_font_size_override("font_size", int(label.get_meta("art_font_size")))
+		label.add_theme_font_size_override("font_size", REF.font_step(int(label.get_meta("art_font_size"))))
 		label.size = label.size.max(label.get_combined_minimum_size())
+		REF.center_label(label)
 
 func price_badge(index: int) -> Dictionary:
 	return _prices[index].duplicate()
@@ -123,8 +125,10 @@ func refresh_display() -> void:
 	if _model == null or not is_inside_tree() or not is_node_ready():
 		return
 	var state := _model.snapshot()
-	if state.mode != "SHOP_PREPARE":
-		hide()
+	# Event and rest pages share the shop carrier, so the overlay steps aside for them
+	# and must come back once the flow returns to the shop.
+	visible = state.mode == "SHOP_PREPARE"
+	if not visible:
 		return
 	var host: Dictionary = _read_display.call()
 	var chinese := str(host.locale).begins_with("zh")
@@ -148,6 +152,33 @@ func refresh_display() -> void:
 	$StaminaCaption.text = "耐力" if chinese else "Stamina"
 	for label in _labels:
 		_fit_label(label, float(host.ui_scale))
+	_layout_start_battle()
+
+## The hanging sign carries two lines ("battle" + stage number). They used to be
+## two hand-placed labels; centre them as one block inside the button instead.
+func _layout_start_battle() -> void:
+	var host: Button = $ArtStartBattle
+	if host.size.y <= 0.0: return
+	var caption: Label = host.get_node("StageCaption")
+	var number: Label = host.get_node("StageNumber")
+	var caption_size := caption.get_theme_font_size("font_size")
+	var number_size := number.get_theme_font_size("font_size")
+	if not caption.has_theme_font_size_override("font_size"): caption_size = int(caption.get_meta("art_font_size", 36))
+	if not number.has_theme_font_size_override("font_size"): number_size = int(number.get_meta("art_font_size", 27))
+	var caption_height := _font.get_height(caption_size)
+	var number_height := _font.get_height(number_size)
+	var gap := 2.0
+	# Account for the visual-centre lift of both lines so the *visible* block is
+	# exactly centred, not just the two label boxes.
+	var top := (host.size.y - caption_height - gap - number_height + REF.caption_lift(caption_size) + REF.caption_lift(number_size)) * 0.5
+	caption.position = Vector2(0, top)
+	caption.size = Vector2(host.size.x, caption_height)
+	number.position = Vector2(0, top + caption_height + gap)
+	number.size = Vector2(host.size.x, number_height)
+	caption.set_meta("caption_lift", 0.0)
+	number.set_meta("caption_lift", 0.0)
+	REF.center_label(caption)
+	REF.center_label(number)
 
 func _stage_caption(state: Dictionary, chinese: bool) -> String:
 	if state.route_pending:
@@ -187,7 +218,9 @@ func _fit_label(label: Label, scale_factor: float) -> void:
 		if width <= label.size.x - 6 and _font.get_height(font_size) * lines.size() <= label.size.y:
 			break
 		font_size -= 1
-	label.add_theme_font_size_override("font_size", font_size)
+	var snapped := int(REF.font_step(font_size))
+	label.add_theme_font_size_override("font_size", snapped if snapped <= font_size else font_size)
+	REF.center_label(label)
 
 func _feedback(button: TextureButton, tint: Color) -> void:
 	if not button.disabled:
