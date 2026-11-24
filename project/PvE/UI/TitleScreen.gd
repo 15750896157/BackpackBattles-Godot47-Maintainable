@@ -9,6 +9,9 @@ const ART_KEYS = [
 ]
 const HOVER_TINT := Color(1.08, 1.06, 1.0)
 const PRESS_TINT := Color(0.82, 0.82, 0.82)
+## Match the outline baked into the title logo, without any drop shadow.
+const TITLE_OUTLINE_COLOR := Color("5c3223")
+const TITLE_OUTLINE_SIZE := 12
 
 var _model: TitleVM
 var _art: Dictionary
@@ -110,6 +113,11 @@ func _set_caption(button: TextureButton, caption: String) -> void:
 		size -= 1
 	var snapped := int(REF.font_step(size))
 	label.add_theme_font_size_override("font_size", snapped if snapped <= size else size)
+	label.add_theme_color_override("font_outline_color", TITLE_OUTLINE_COLOR)
+	label.add_theme_constant_override("outline_size", TITLE_OUTLINE_SIZE)
+	label.add_theme_color_override("font_shadow_color", Color.TRANSPARENT)
+	label.add_theme_constant_override("shadow_offset_x", 0)
+	label.add_theme_constant_override("shadow_offset_y", 0)
 	label.text = caption
 	REF.center_label(label)
 	button.set_meta("action_caption", caption)

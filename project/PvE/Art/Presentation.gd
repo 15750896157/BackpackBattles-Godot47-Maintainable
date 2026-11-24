@@ -353,7 +353,7 @@ func _layout_combat():
 	for index in 2:
 		var actor = Game.PLAYER if index == 0 else Game.OPPONENT
 		if not is_instance_valid(actor): continue
-		var target := routed_combat.grid_origin(index) if is_instance_valid(routed_combat) else Vector2(32 if index == 0 else 1175, 86)
+		var target := routed_combat.grid_origin(index) if is_instance_valid(routed_combat) else Vector2(32 if index == 0 else 1305, 86)
 		_move_inventory(actor.INVENTORY, target)
 		actor.INVENTORY.scale = Vector2.ONE*grid_scale()
 		actor.INVENTORY.z_index = 20

@@ -12,7 +12,6 @@ static func shop(art):
 	art.picture("storage_mat",shop_rect(Rect2(456,893,1165,266)),art.scenery).name="StorageCloth"
 	art.picture("sell",shop_rect(Rect2(162,886,302,237)),art.scenery)
 	art.button("codex",shop_rect(Rect2(463,807,243,119)),art.open_book)
-	art.button("journey",shop_rect(Rect2(1736,465,100,140)),art.open_intel)
 	art.button("refresh",shop_rect(Rect2(799,-97,122,322)),art._refresh_shop)
 	REF.picture(art.ui,"coin",shop_rect(Rect2(819,88,27,27)))
 	art.text("",shop_rect(Rect2(846,86,35,36)),art.ui,29,Color("fff4d1")).name = "RefreshCost"

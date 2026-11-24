@@ -25,16 +25,6 @@ ignore_texture_size = true
 stretch_mode = 5
 metadata/shop_texture = "codex"
 
-[node name="Action_journey" type="TextureButton" parent="."]
-offset_left = 1716.333740234375
-offset_top = 447.19500732421875
-offset_right = 1815.200927734375
-offset_bottom = 581.8343505859375
-mouse_default_cursor_shape = 2
-ignore_texture_size = true
-stretch_mode = 5
-metadata/shop_texture = "journey"
-
 [node name="Action_refresh" type="TextureButton" parent="."]
 offset_left = 789.948486328125
 offset_top = -93.28583526611328

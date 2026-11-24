@@ -136,7 +136,7 @@ stretch_mode = 5
 position = Vector2(32, 86)
 
 [node name="EnemyGrid" type="Marker2D" parent="."]
-position = Vector2(1175, 86)
+position = Vector2(1305, 86)
 
 [connection signal="pressed" from="CombatPausePlay" to="." method="_on_pause_play"]
 [connection signal="pressed" from="CombatPauseTarget" to="." method="_on_pause_play"]

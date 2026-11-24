@@ -12,7 +12,7 @@ var rest_scale: float = 1.0
 var full_texture: Texture2D
 var shop_texture: Texture2D
 var art_key = ""
-var appearance = {"tint":Color.WHITE,"scale":1.0}
+var appearance = {"tint":Color.WHITE}
 const CATALOG = preload("res://PvE/Art/SuppliedArt.gd")
 @onready var body: Sprite2D = $Body
 @onready var character = get_parent().get_parent().get_parent()
@@ -27,10 +27,11 @@ func _ready():
 	shop_texture = AssetStream.resources.get(CATALOG.shop_actor_path(art_key))
 	body.texture = full_texture
 	set_meta("new_art_path", path)
-	var factor = 420.0 / body.texture.get_height()
+	# 怪物立绘使用贴图原始像素大小，不做缩放；玩家立绘仍按 420 的高度适配。
+	var factor = 1.0 if character.playerId == Character.ID.OPPONENT else 420.0 / body.texture.get_height()
 	rest_scale = factor
 	body.scale = Vector2.ONE * factor
-	body.position = Vector2(-body.texture.get_width() * factor * 0.5, -420)
+	body.position = Vector2(-body.texture.get_width() * factor * 0.5, -body.texture.get_height() * factor)
 	# These supplied enemies are already painted facing the player's side.
 	body.flip_h = false
 	last_health = character.getCurrentHealth()
@@ -82,9 +83,9 @@ func _process(delta):
 	position += Vector2((sin(clock * 70.0) * 5.0 * impact + sin(attack_motion * PI) * (18.0 if character.playerId == Character.ID.PLAYER else -18.0)) if not reduced else 0.0, wave - (sin(bounce * PI) * 15.0 if not reduced else 0.0))
 	var height = 450.0 if combat else (420.0 if art_key == "armorer" else 390.0) if Game.state == Game.State.Shop else 430.0
 	if character.playerId == Character.ID.OPPONENT:
-		height = float({"bat":195,"goblin":290,"snake":250,"mummy":350,"lava_snail":230,"moss_golem":330,"hermit_crab":270,"sand_lizard":250,"lava_golem":370,"werewolf":340,"antlion":330,"boss":390,"final_boss":430}.get(art_key,355))
+		# 怪物按贴图原始像素大小显示，不再按高度表或外观倍率缩放。
+		height = float(body.texture.get_height())
 		if enemy_art() == "bat": position.y -= 65.0
-		height *= float(appearance.scale)
 	var factor = height / body.texture.get_height()
 	rest_scale = factor
 	var facing = 1.0 if character.playerId == Character.ID.PLAYER else -1.0
