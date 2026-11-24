@@ -32,7 +32,7 @@ const UI={
 	"slider_fill":"ui/ui_btn_primary.png","slider_base":"ui/ui_bar_track.png","slider_knob":"ui/ui_icon_diamond.png","ornament":"ui/ui_divider.png",
 	"shop":"shop/shop_vignette.png","sell":"shop/shop_sell_scroll.png","refresh":"shop/shop_refresh_bell.png",
 	"merchant":"shop/shop_merchant.png","codex":"shop/shop_codex.png","journey":"shop/shop_enemy_intel.png",
-	"price":"shop/shop_price_tag.png","sale":"shop/shop_dot.png","cell":"ui/ui_cell_filled.png","cell_empty":"ui/ui_cell_empty.png",
+	"price":"shop/shop_price_tag.png","sale":"shop/shop_dot.png","cell":"ui/ui_cell_filled.png","cell_empty":"ui/ui_cell_empty.png","cell_slot":"ui/ui_cell_slot.png",
 	"bag2":"bags/bag_02.png","bag4":"bags/bag_04.png","bag6_vertical":"bags/bag_06.png","bag9":"bags/bag_09_square.png","bag9_wide":"bags/bag_09_wide.png",
 	"name":"hud/hud_name_banner.png","play":"hud/hud_icon_play.png","pause":"hud/hud_icon_pause.png","shadow":"hud/hud_actor_shadow.png",
 	"health":"hud/hud_label_health.png","stamina":"hud/hud_label_stamina.png","plate1":"hud/hud_plate_life.png","plate2":"hud/hud_plate_status.png","plate3":"hud/hud_plate_stamina.png",
@@ -63,7 +63,13 @@ static func status_path(key:String)->String:
 static func shop_actor_path(key:String)->String:
 	return ROOT+"shop/shop_hero_"+str({"armorer":"warrior","archer":"archer","alchemist":"mage"}.get(key,"warrior"))+".png"
 static func enemy_key(node:Dictionary)->String:
-	if node.get("type","")=="boss":return "final_boss" if int(Expedition.flow.run.get("act",1))>=3 else "boss"
+	if node.get("type","")=="boss":
+		# 每个 Boss 使用独立立绘，避免所有章节共用同一张通用 Boss 图导致名称与形象不符。
+		match str(node.get("boss_id","")):
+			"boss_iron_beast":return "lava_golem"
+			"boss_cinder_engine":return "fire_knight"
+			"boss_star_regent":return "final_boss"
+		return "final_boss" if int(Expedition.flow.run.get("act",1))>=3 else "boss"
 	var enemy=Expedition.db.get_row("enemy_builds",str(node.get("enemy_id","")))
 	var archetype=str(enemy.get("archetype_id",""));var chapter=int(Expedition.flow.run.get("act",1))
 	match archetype:
@@ -79,12 +85,11 @@ static func enemy_key(node:Dictionary)->String:
 		"counter_wall":return "hermit_crab"
 	return "sand_lizard" if chapter==2 else "skeleton"
 static func enemy_variant(node:Dictionary)->Dictionary:
-	# Presentation only: distinguish shared silhouettes without changing combat
-	# data, global RNG, contour or facing direction.
+	# Presentation only: distinguish shared silhouettes by tint without changing
+	# combat data, global RNG, contour or facing direction. 立绘尺寸保持贴图原始大小。
 	var enemy=Expedition.db.get_row("enemy_builds",str(node.get("enemy_id","")))
 	var archetype=str(enemy.get("archetype_id",""))
-	if node.get("type","")=="boss" and int(Expedition.flow.run.get("act",1))==2:return {"tint":Color(0.84,0.93,1.0),"scale":1.10}
-	if archetype=="field_mender":return {"tint":Color(1.0,0.91,0.78),"scale":1.08}
-	if archetype=="counter_wall":return {"tint":Color(0.84,0.91,1.0),"scale":0.92}
-	if archetype=="toxic_guard":return {"tint":Color(0.85,0.93,0.81),"scale":1.08}
-	return {"tint":Color.WHITE,"scale":1.0}
+	if archetype=="field_mender":return {"tint":Color(1.0,0.91,0.78)}
+	if archetype=="counter_wall":return {"tint":Color(0.84,0.91,1.0)}
+	if archetype=="toxic_guard":return {"tint":Color(0.85,0.93,0.81)}
+	return {"tint":Color.WHITE}
