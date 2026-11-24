@@ -24,7 +24,9 @@ func hideSocket():
 		sprite.hide()
 
 func showSocket():
-
+	# 已换新美术的物品：老圆环是按旧图标的位置摆的，套在新图标上会错位，所以不再显示。
+	if item != null and item.has_meta("supplied_art_path"):
+		return
 	sprite.show()
 
 func isAvailable() -> bool:
