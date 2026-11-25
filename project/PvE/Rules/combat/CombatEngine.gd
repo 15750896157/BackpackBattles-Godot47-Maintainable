@@ -64,7 +64,7 @@ func simulate(player_snapshot: Dictionary, enemy_snapshot: Dictionary, seed: int
 					var key = _stats_key(int(actor.side), str(id))
 					item_stats[key].stamina_starvation = _number(float(item_stats[key].stamina_starvation) + step)
 				if float(item.cooldown) > 0.0:
-					var speed = (1.0 + statuses.value(actor, "haste")) * (1.0 - minf(float(_rule("slow_cap", 0.5)), statuses.value(actor, "slow")))
+					var speed = (1.0 + statuses.value(actor, "haste")) * (1.0 - minf(float(_rule("slow_cap", 0.5)), statuses.value(actor, "slow") + statuses.value(actor, "cold")))
 					item.progress = _number(float(item.progress) + step * maxf(0.0, speed))
 					if float(item.progress) + 0.000001 >= _cooldown(actor, item) and tick >= int(item.retry_tick):
 						var event = _event(actor.side, id, "activate", _priority("cooldown_ready"), {"trigger": "cooldown_ready"})
@@ -641,10 +641,10 @@ func _cooldown(actor: Dictionary, item: Dictionary) -> float:
 	return maxf(float(_rule("minimum_cooldown_seconds", 0.5)), float(item.cooldown) * maxf(0.01, 1.0 + _modifier_sum(actor, item, "cooldown_pct")))
 
 func _crit_chance(actor: Dictionary, item: Dictionary) -> float:
-	return clampf(float(actor.crit_chance) + _modifier_sum(actor, item, "crit_chance"), 0.0, float(_rule("crit_chance_cap", 0.75)))
+	return clampf(float(actor.crit_chance) + _modifier_sum(actor, item, "crit_chance") + statuses.value(actor, "luck"), 0.0, float(_rule("crit_chance_cap", 0.75)))
 
 func _raw_damage(actor: Dictionary, item: Dictionary, base: float, critical: bool) -> float:
-	var amount = maxf(0.0, maxf(0.0, base) + _modifier_sum(actor, item, "damage_flat")) * float(actor.damage_scalar)
+	var amount = maxf(0.0, maxf(0.0, base) + _modifier_sum(actor, item, "damage_flat") + statuses.value(actor, "empower") + statuses.value(actor, "heat")) * float(actor.damage_scalar)
 	if critical: amount *= float(actor.crit_multiplier)
 	return floor(amount)
 

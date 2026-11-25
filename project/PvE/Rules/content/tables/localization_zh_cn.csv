@@ -742,3 +742,11 @@ item.legacy_banana.name,香蕉
 item.legacy_banana.desc,每 5 秒：恢复 4 点生命和 1 点耐力。
 item.legacy_whetstone2.name,强化磨刀石
 item.legacy_whetstone2.desc,战斗开始时：相邻的武器攻击力 +1。
+status.empower.name,强化
+status.empower.desc,强化：每层为攻击增加 1 点固定伤害。
+status.heat.name,热量
+status.heat.desc,热量：每层为攻击增加 1 点固定伤害。
+status.luck.name,幸运
+status.luck.desc,幸运：每层提高 3% 暴击率。
+status.cold.name,寒冷
+status.cold.desc,寒冷：每层降低 4% 冷却推进速度。

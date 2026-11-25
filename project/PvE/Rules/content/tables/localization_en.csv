@@ -742,3 +742,11 @@ item.legacy_banana.name,Banana
 item.legacy_banana.desc,Every 5s: heal 4 and restore 1 stamina.
 item.legacy_whetstone2.name,Whetstone2
 item.legacy_whetstone2.desc,Start of battle: adjacent weapons gain 1 damage.
+status.empower.name,Empower
+status.empower.desc,Empower: each stack adds 1 flat damage to attacks.
+status.heat.name,Heat
+status.heat.desc,Heat: each stack adds 1 flat damage to attacks.
+status.luck.name,Luck
+status.luck.desc,Luck: each stack grants 3% critical chance.
+status.cold.name,Cold
+status.cold.desc,Cold: each stack reduces cooldown progress speed by 4%.
