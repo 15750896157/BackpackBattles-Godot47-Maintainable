@@ -19,9 +19,6 @@ func run_tests():
 	await settle();await shot("01b-enemy-intel")
 	var overlay = Expedition.panel.find_child("EnemyIntelOverlay",true,false)
 	check(overlay != null,"enemy intel opens as a second-level overlay")
-	if overlay != null:
-		overlay._switch("build")
-		await settle();await shot("01c-enemy-bag")
 	var intel: Control = Expedition.panel.find_child("Ref_intel_paper",true,false)
 	var grids: Array = Expedition.panel.find_children("*","Control",true,false).filter(func(node): return node.has_meta("pve_build_grid"))
 	check(intel != null and grids.size() == 1 and intel.get_global_rect().encloses(grids[0].get_global_rect()),"enemy intel shows the actual backpack inside the new parchment")
