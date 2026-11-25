@@ -529,7 +529,7 @@ func drop_item(item) -> int:
 	if Game.SELLBOX.isHovered():
 		result = {"ok": false, "error": "missing_item"} if was_shop else _flow().sell(uid)
 		drop_result = Item.DropResult.Sold
-	elif Game.STORAGEBOX.isHovered():
+	elif _storage_drop_hovered(item):
 		var storage_slot = _storage_drop_slot(item)
 		var occupant = _storage_occupant(uid, storage_slot)
 		if was_shop:
@@ -636,13 +636,30 @@ func place_storage_view(item, index: int):
 	var center = Vector2(item.get_meta("pve_anchor")) + Vector2(item.get_meta("pve_size")) * 0.5
 	item.global_position += Game.STORAGEBOX.pve_slot_rect(index).get_center() - item.to_global(center)
 
+func _storage_drop_points(item) -> Array:
+	# The cursor is what the player aims with; the dragged item's origin and
+	# visual center follow at a grab offset, so all three are accepted in turn.
+	var points = [item.get_global_mouse_position(), item.global_position]
+	if item.has_meta("pve_anchor") and item.has_meta("pve_size"):
+		var center = Vector2(item.get_meta("pve_anchor")) + Vector2(item.get_meta("pve_size")) * 0.5
+		points.append(item.to_global(center))
+	return points
+
+func _storage_drop_hovered(item) -> bool:
+	var rects = [Game.STORAGEBOX.getStorageRect()]
+	if Game.STORAGEBOX.has_meta("art_storage_slots"):
+		var slots: Array = Game.STORAGEBOX.get_meta("art_storage_slots")
+		if not slots.is_empty(): rects.append(slots[0].merge(slots[slots.size() - 1]))
+	for point in _storage_drop_points(item):
+		for rect in rects:
+			if rect.has_point(point): return true
+	return false
+
 func _storage_drop_slot(item) -> int:
-	if not item.has_meta("pve_anchor") or not item.has_meta("pve_size"): return -1
 	var capacity = int(_flow().run.build.get("storage_capacity", 2))
-	var center = Vector2(item.get_meta("pve_anchor")) + Vector2(item.get_meta("pve_size")) * 0.5
-	var point = item.to_global(center)
-	for slot in range(capacity):
-		if Game.STORAGEBOX.pve_slot_rect(slot).has_point(point): return slot
+	for point in _storage_drop_points(item):
+		for slot in range(capacity):
+			if Game.STORAGEBOX.pve_slot_rect(slot).has_point(point): return slot
 	return -1
 
 func _storage_occupant(dragged_uid: String, slot: int) -> String:
