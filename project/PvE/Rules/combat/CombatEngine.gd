@@ -32,6 +32,7 @@ var event_hash: HashingContext
 var consumed_events: int = 0
 var final_damage_type: String = ""
 var rng_purpose_counts: Dictionary = {}
+var effect_uses: Dictionary = {}
 
 func _init(content = null): db = content
 
@@ -230,6 +231,7 @@ func _reset(seed: int) -> void:
 	fatigue_started = false
 	final_damage_type = ""
 	rng_purpose_counts = {}
+	effect_uses = {}
 	queue = QueueClass.new(db)
 	statuses = StatusClass.new(db)
 	resolver = ResolverClass.new(db)
@@ -545,7 +547,8 @@ func gain_armor(event: Dictionary, target_side: int, amount: float) -> void:
 func destroy_armor(event: Dictionary, target_side: int, amount: float) -> void:
 	var actor: Dictionary = actors[target_side]
 	var removed = floor(amount)
-	removed = float(actor.armor) if removed <= 0.0 else minf(float(actor.armor), removed)
+	if removed <= 0.0: return
+	removed = minf(float(actor.armor), removed)
 	actor.armor = _number(maxf(0.0, float(actor.armor) - removed))
 	log_event(event, "ARMOR_DESTROYED", target_side, removed)
 
@@ -667,6 +670,14 @@ func _roll(domain: String, instance_id: String) -> float:
 func random_index(domain: String, key: String, size: int) -> int:
 	if size <= 0: return -1
 	return mini(size - 1, int(floor(_roll(domain, key) * size)))
+
+func effect_allowed(effect_id: String, limit: int) -> bool:
+	if limit <= 0: return true
+	return int(effect_uses.get(effect_id, 0)) < limit
+
+func mark_effect(effect_id: String) -> void:
+	if effect_id.is_empty(): return
+	effect_uses[effect_id] = int(effect_uses.get(effect_id, 0)) + 1
 
 func _priority(trigger) -> int:
 	var row = db.get_row("trigger_templates", str(trigger)) if db != null else {}

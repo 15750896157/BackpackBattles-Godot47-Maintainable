@@ -17,6 +17,9 @@ func resolve(engine, event: Dictionary) -> bool:
 	var raw = params.get("value", params.get("amount", 0))
 	var amount = float(raw) if str(raw).is_valid_float() else 0.0
 	var duration = float(params.get("duration", 0.0))
+	var effect_id = str(row.get("id", ""))
+	var limit = int(params.get("limit", 0))
+	if not engine.effect_allowed(effect_id, limit): return false
 	for target in targets:
 		if engine.finished: break
 		match kind:
@@ -73,4 +76,5 @@ func resolve(engine, event: Dictionary) -> bool:
 			_:
 				engine.log_event(event, "INVALID_EFFECT", int(target.side), 0, {"effect_type": kind})
 				return false
+	engine.mark_effect(effect_id)
 	return true
