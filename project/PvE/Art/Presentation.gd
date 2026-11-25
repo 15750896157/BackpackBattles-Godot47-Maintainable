@@ -1,8 +1,8 @@
 extends Node
 ## Presentation only: authoritative rules, item shapes and saves are untouched.
 const ROOT = "res://Art/20261022/"
-const SHOP_KEYS = ["merchant", "shelf", "table", "storage_mat", "cell", "sell", "refresh", "price", "sale", "name", "plate1", "plate2", "plate3", "health", "stamina", "class_badge"]
-const COMBAT_KEYS = ["name", "plate1", "plate2", "plate3", "health", "stamina", "play", "pause", "timeline_base", "timeline_fill", "shadow", "cell"]
+const SHOP_KEYS = ["merchant", "shelf", "table", "storage_mat", "cell", "cell_slot", "sell", "refresh", "price", "sale", "name", "plate1", "plate2", "plate3", "health", "stamina", "class_badge"]
+const COMBAT_KEYS = ["name", "plate1", "plate2", "plate3", "health", "stamina", "play", "pause", "timeline_base", "timeline_fill", "shadow", "cell", "cell_slot"]
 const OFFERS = [Vector2(182,224), Vector2(490,224), Vector2(102,540), Vector2(365,540), Vector2(663,540)]
 const EXTRA = "res://Art/Polish20261022/"
 const CATALOG = preload("res://PvE/Art/SuppliedArt.gd")
@@ -92,7 +92,7 @@ func use_routed_title(screen: Control) -> void:
 
 func combat_screen_paths() -> Array:
 	var paths: Array = []
-	for key in COMBAT_SCREEN.ART_KEYS + ["shadow", "cell", "cell_empty", "board_guide"]:
+	for key in COMBAT_SCREEN.ART_KEYS + ["shadow", "cell", "cell_slot", "cell_empty", "board_guide"]:
 		paths.append(_art_path(key))
 	for key in STATUS_BADGES.ICONS.values():
 		var path: String = CATALOG.status_path(key)
@@ -165,7 +165,7 @@ func _rebuild(kind: String):
 	var keys = SHOP_KEYS if kind == "shop" else COMBAT_KEYS
 	var paths: Array = []
 	for key in keys: paths.append(_art_path(key))
-	for key in ["intel","table","shelf_top","shelf_bottom","cell_empty","board_guide","stamina_regen","cooldown","settings","journey","codex","battle","coin"]: paths.append(_art_path(key))
+	for key in ["intel","table","shelf_top","shelf_bottom","cell","cell_slot","cell_empty","board_guide","stamina_regen","cooldown","settings","journey","codex","battle","coin"]: paths.append(_art_path(key))
 	for key in CATALOG.STATUS.values(): paths.append(CATALOG.status_path(key))
 	if not await AssetStream.prepare(paths, "art-ui") or ticket != epoch: return
 	ui = Control.new(); ui.name = "SuppliedArtHUD"; ui.mouse_filter = Control.MOUSE_FILTER_IGNORE; layer.add_child(ui)
@@ -377,17 +377,40 @@ func grid_scale()->float:
 	return 0.8 if Expedition.db.release_run(Expedition.flow.run) else 1.0
 
 func _update_board(inventory, build: Dictionary):
-	inventory.tilemap.modulate.a = 0.0
+	inventory.tilemap.visible = false
 	var board = inventory.get_node_or_null("SuppliedGrid")
 	if board == null and texture("cell") != null:
-		board = Node2D.new(); board.set_script(board_script); board.name = "SuppliedGrid"; board.z_index = 0; inventory.add_child(board)
-		board.cell_texture = texture("cell")
-		board.empty_texture = texture("cell_empty")
+		board = Node2D.new(); board.set_script(board_script); board.name = "SuppliedGrid"; inventory.add_child(board)
 	if board != null:
-		board.guide_texture = texture("board_guide") if Expedition.db.release_run(Expedition.flow.run) else null
+		board.slot_texture = texture("cell_slot")
+		board.filled_texture = texture("cell")
+		board.empty_texture = texture("cell_empty")
 		board.configure(build)
+		board.z_index = _board_depth(inventory)
 	if inventory.character == Game.PLAYER and inventory.get_node_or_null("SuppliedHover") == null:
 		var hover = Node2D.new(); hover.name = "SuppliedHover"; hover.set_script(preload("res://PvE/Art/Hover.gd")); hover.z_index = 100; inventory.add_child(hover)
+
+func _board_depth(inventory) -> int:
+	# 层级自下而上：背包 → 9x7 网格与方块 → 物品。
+	# 物品放回后由 Item.resetZ() 复位成 z_index=1、背包是 -2，因此这一层夹在两者之间，
+	# 物品复位也不会再被方块盖住。
+	var lowest_item := 0
+	var highest_bag := 0
+	var has_item := false
+	var has_bag := false
+	for item in inventory.getItems():
+		if not is_instance_valid(item): continue
+		var depth: int = Util.getGlobalZ(item)
+		if item.isBag():
+			highest_bag = maxi(highest_bag, depth) if has_bag else depth
+			has_bag = true
+		else:
+			lowest_item = mini(lowest_item, depth) if has_item else depth
+			has_item = true
+	var target := 0
+	if has_item: target = lowest_item - 1
+	if has_bag: target = maxi(target, highest_bag + 1)
+	return target - Util.getGlobalZ(inventory)
 
 func _refresh_data():
 	if Expedition.flow.run.is_empty(): return
