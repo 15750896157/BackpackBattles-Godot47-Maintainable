@@ -808,3 +808,133 @@ item.legacy_bloodthorne.name,Bloodthorne
 item.legacy_bloodthorne.desc,"Every 1.6s deal 6 damage; with Regeneration, consume 1 for 1 Lifesteal and 1 Thorns."
 item.legacy_greatsword.name,Greatsword
 item.legacy_greatsword.desc,Every 5s deal 45 physical damage.
+item.legacy_thornbloom.name,Thornbloom
+item.legacy_thornbloom.desc,Every 2.1s deal 9 damage; on hit gain 1 Thorns and possibly 1 Empower.
+item.legacy_winged_boots.name,Winged Boots
+item.legacy_winged_boots.desc,"First time below 70% health: gain 1 Empower, cleanse 20 debuffs, and gain 10 Evasion for 8s."
+item.legacy_wolf_badge.name,Wolf Badge
+item.legacy_wolf_badge.desc,First time below 50% health: gain 9 Haste and 6 Fortified for 5.5s.
+item.legacy_gingerbread_man.name,Gingerbread Man
+item.legacy_gingerbread_man.desc,Start: +40 max health; every 3s gain 1 Empower and 1 Regeneration.
+item.legacy_pumpkin.name,Pumpkin
+item.legacy_pumpkin.desc,Every 5s deal 9 physical damage and apply 4 Cold (approximating stun).
+item.legacy_artifact_stone_death.name,Artifact Stone Death
+item.legacy_artifact_stone_death.desc,Once per combat: deal 8 true damage and gain 8% crit chance.
+item.legacy_pop.name,Pop
+item.legacy_pop.desc,Every 1.5s deal 3 physical damage.
+item.legacy_snowcake.name,Snowcake
+item.legacy_snowcake.desc,"Every 2.1s apply 1 Cold; if the enemy already has Cold, deal 10 true damage."
+item.legacy_poison_shortbow.name,Poison Shortbow
+item.legacy_poison_shortbow.desc,"Every 1.7s deal 7 physical damage, apply 2 Poison and 1 random debuff."
+item.legacy_critwood_staff.name,Critwood Staff
+item.legacy_critwood_staff.desc,Every 1.8s deal 10 physical damage and gain 50% crit chance for 1.6s.
+item.legacy_vampiric_collar.name,Vampiric Collar
+item.legacy_vampiric_collar.desc,Start of battle: gain 3 Lifesteal.
+item.legacy_holy_collar.name,Holy Collar
+item.legacy_holy_collar.desc,Start of battle: gain 1 Luck and 1 Regeneration.
+item.legacy_piercing_arrow.name,Piercing Arrow
+item.legacy_piercing_arrow.desc,Start: gain 10% crit chance; every 4s destroy 15 enemy armor.
+item.legacy_bowl_of_treats.name,Bowl of Treats
+item.legacy_bowl_of_treats.desc,Every 4s gain 2 random buffs and 6 Haste.
+item.legacy_death_scythe.name,Death Scythe
+item.legacy_death_scythe.desc,Every 1.4s deal 8 physical damage and apply 2 Poison; if the enemy is poisoned gain 65% crit for 4s.
+item.legacy_staff_of_unhealing.name,Staff of Unhealing
+item.legacy_staff_of_unhealing.desc,Every 2s heal self 15 and deal 8 true damage to the enemy.
+item.legacy_cursed_dagger.name,Cursed Dagger
+item.legacy_cursed_dagger.desc,Every 2.8s deal 6 physical damage and apply 2 random debuffs.
+item.legacy_strong_demonic_flask.name,Strong Demonic Flask
+item.legacy_strong_demonic_flask.desc,Every 10s: deal 6 true damage and reduce enemy healing by 30% for 3s.
+item.legacy_strong_vampiric_potion.name,Strong Vampiric Potion
+item.legacy_strong_vampiric_potion.desc,Every 10s gain 5 Lifesteal.
+item.legacy_phoenix.name,Phoenix
+item.legacy_phoenix.desc,Every 2.5s deal 17 physical damage and take 3 true damage.
+item.legacy_burning_sword.name,Burning Sword
+item.legacy_burning_sword.desc,Every 1.6s deal 3 physical damage and gain 1 Heat; at 7 Heat gain +1 damage.
+item.legacy_sun_armor.name,Sun Armor
+item.legacy_sun_armor.desc,Start: gain 20 armor; every 3s consume 1 Heat to heal 12 and cleanse 2 debuffs.
+item.legacy_sun_shield.name,Sun Shield
+item.legacy_sun_shield.desc,When you gain armor deal 4 true damage; when damaged gain 4 Fortified for 2s.
+item.legacy_staff_of_fire.name,Staff of Fire
+item.legacy_staff_of_fire.desc,Every 1.8s deal 19 physical damage and consume 2 Heat.
+item.legacy_spell_scroll_frostbolt.name,Spell Scroll Frostbolt
+item.legacy_spell_scroll_frostbolt.desc,Every 3s deal 5 physical damage and apply 4 Cold for 3s.
+item.legacy_sapphire_whelp.name,Sapphire Whelp
+item.legacy_sapphire_whelp.desc,"Start: gain 6 stamina; every 2.1s deal 8 damage, gain 10 armor and 1 random buff."
+item.legacy_spiked_staff.name,Spiked Staff
+item.legacy_spiked_staff.desc,Every 1.8s deal 11 physical damage and gain 2 Empower and 5 Thorns.
+item.legacy_wolf_emblem.name,Wolf Emblem
+item.legacy_wolf_emblem.desc,Start: gain 10% crit; every 2.3s if armor >= 10 gain 1 Empower.
+item.legacy_brass_knuckles.name,Brass Knuckles
+item.legacy_brass_knuckles.desc,Every 2.6s deal 4 physical damage and apply 3 Cold; first hit grants 10% crit.
+item.legacy_badger_rune.name,Badger Rune
+item.legacy_badger_rune.desc,Start: attack 3% faster and gain 2 Fortified.
+item.legacy_tiger_rune.name,Tiger Rune
+item.legacy_tiger_rune.desc,Start: gain 1 Lifesteal and 5 armor.
+item.legacy_spicy_banana.name,Spicy Banana
+item.legacy_spicy_banana.desc,Every 3s gain 2 Heat and heal 3.
+item.legacy_smelly_barrier.name,Smelly Barrier
+item.legacy_smelly_barrier.desc,Start: gain 6 armor and apply 1 Poison to the enemy.
+item.legacy_stoned.name,Stoned
+item.legacy_stoned.desc,Start: gain 10 armor and 6 Fortified.
+item.legacy_heavy_drinking.name,Heavy Drinking
+item.legacy_heavy_drinking.desc,Every 10s gain 1 random buff.
+item.legacy_power_of_the_moon.name,Power of the Moon
+item.legacy_power_of_the_moon.desc,Start: +20 max health; every 4s apply 2 Cold to the enemy.
+item.legacy_hardwood.name,Hardwood
+item.legacy_hardwood.desc,Start: adjacent weapons gain +3 damage and gain 8 armor.
+item.legacy_acorn_ace.name,Acorn Ace
+item.legacy_acorn_ace.desc,Start: gain 10 stamina.
+item.legacy_solaris.name,Solaris
+item.legacy_solaris.desc,Every 3s gain 1 Heat and 8 armor.
+item.legacy_wand.name,Wand
+item.legacy_wand.desc,"Every 3.3s: gain 1 Luck and Regeneration for 10s, plus 1 Empower."
+item.legacy_spell_scroll_ice.name,Spell Scroll Ice
+item.legacy_spell_scroll_ice.desc,Every 3s: apply 1 Cold to the enemy for 3s and gain 2 armor.
+item.legacy_spell_scroll_nature.name,Spell Scroll Nature
+item.legacy_spell_scroll_nature.desc,Every 3s: spend 1 stamina to gain 4 stamina.
+item.legacy_spell_scroll_dark.name,Spell Scroll Dark
+item.legacy_spell_scroll_dark.desc,Every 3s: apply 1 Cold for 10s (approximating Blind).
+item.legacy_prismatic_wand.name,Prismatic Wand
+item.legacy_prismatic_wand.desc,"Every 4.5s: spend 5 stamina, gain 1 Luck and Regeneration for 20s, plus 5 Empower."
+item.legacy_boomerang.name,Boomerang
+item.legacy_boomerang.desc,Every 2s deal 3 physical damage and gain 1 Empower.
+item.legacy_big_bloodthorne.name,Big Bloodthorne
+item.legacy_big_bloodthorne.desc,"Every 5s deal 45 physical damage, gain 6 Lifesteal and 5 Thorns."
+item.legacy_heart_shield.name,Heart Shield
+item.legacy_heart_shield.desc,Start: gain 30 armor; when damaged gain 1 Regeneration.
+item.legacy_charge_splitter.name,Charge Splitter
+item.legacy_charge_splitter.desc,"Every 5s: gain 30 armor, 1 Luck for 2s and 1 Heat."
+item.legacy_poison_grenade.name,Poison Grenade
+item.legacy_poison_grenade.desc,Every 10s: apply 5 Poison to the enemy and gain 1 Luck for 5s.
+item.legacy_bismuth_cube.name,Bismuth Cube
+item.legacy_bismuth_cube.desc,Start: gain 2 random buffs.
+item.legacy_chrome_cube.name,Chrome Cube
+item.legacy_chrome_cube.desc,Start: +20 max health and 7 Wound (35% reduced healing).
+item.legacy_plastic_cube.name,Plastic Cube
+item.legacy_plastic_cube.desc,Start: all cooldowns 75% slower; every 8s gain 10 Thorns.
+item.legacy_arcane_boots.name,Arcane Boots
+item.legacy_arcane_boots.desc,"Start: spend 2 stamina to gain 30 armor, 3 Luck and 2 Empower."
+item.legacy_critical_poison.name,Critical Poison
+item.legacy_critical_poison.desc,On crit: apply 2 Poison to the enemy.
+item.legacy_burning_spikes.name,Burning Spikes
+item.legacy_burning_spikes.desc,Start: gain 5 Thorns and 2 Heat.
+item.legacy_spin_to_win.name,Spin to Win
+item.legacy_spin_to_win.desc,"Every 3.8s: gain 2 Heat, 3 Luck, 3 Regeneration and 4 stamina."
+item.legacy_bewitchment.name,Bewitchment
+item.legacy_bewitchment.desc,Every 2.5s: spend 1 stamina to apply 2 Poison and 1 Cold.
+item.legacy_chess_master.name,Chess Master
+item.legacy_chess_master.desc,Start: all cooldowns 40% faster.
+item.legacy_speak_with_animals.name,Speak with Animals
+item.legacy_speak_with_animals.desc,Every 3s gain 1 gold (approximating sale bonus).
+item.legacy_seal_the_deal.name,Seal the Deal
+item.legacy_seal_the_deal.desc,"Every 5.2s: gain 1 gold, 3 Lifesteal, 3 Thorns and 1 Luck for 2s."
+item.legacy_wisp.name,Wisp
+item.legacy_wisp.desc,Start: +20 max health; every 12.5s gain 1 Luck and Regeneration for 10s.
+item.legacy_war_scythe.name,War Scythe
+item.legacy_war_scythe.desc,Start: +10% crit; every 1.4s deal 12 physical damage and apply 3 Poison.
+item.legacy_cupcake_dragon.name,Cupcake Dragon
+item.legacy_cupcake_dragon.desc,"Every 2.1s deal 7 physical damage, apply 1 Burn and gain 1 random buff."
+item.legacy_wand_of_dissonance.name,Wand of Dissonance
+item.legacy_wand_of_dissonance.desc,Every 2.9s deal 8 physical damage and gain 1 Luck and Regeneration for 3s.
+item.legacy_amulet_of_light.name,Amulet of Light
+item.legacy_amulet_of_light.desc,Start: +6 max health and 1 Regeneration.

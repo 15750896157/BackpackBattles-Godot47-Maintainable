@@ -12696,6 +12696,2644 @@
         "material": ""
       },
       "template": "ItemBase"
+    },
+    "legacy_thornbloom": {
+      "name": "Thornbloom",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_thornbloom",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_winged_boots": {
+      "name": "Winged Boots",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Shoes",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_winged_boots",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shoes",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_wolf_badge": {
+      "name": "Wolf Badge",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_wolf_badge",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_gingerbread_man": {
+      "name": "Gingerbread Man",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Food",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_gingerbread_man",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Food",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pumpkin": {
+      "name": "Pumpkin",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pumpkin",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_artifact_stone_death": {
+      "name": "Artifact Stone Death",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_artifact_stone_death",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pop": {
+      "name": "Pop",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pop",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_snowcake": {
+      "name": "Snowcake",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Food",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_snowcake",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Food",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_poison_shortbow": {
+      "name": "Poison Shortbow",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_poison_shortbow",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "1.7",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_critwood_staff": {
+      "name": "Critwood Staff",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_critwood_staff",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "1.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_vampiric_collar": {
+      "name": "Vampiric Collar",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_vampiric_collar",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_holy_collar": {
+      "name": "Holy Collar",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_holy_collar",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_piercing_arrow": {
+      "name": "Piercing Arrow",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_piercing_arrow",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_bowl_of_treats": {
+      "name": "Bowl of Treats",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Food",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_bowl_of_treats",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Food",
+        "cd": "4",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_death_scythe": {
+      "name": "Death Scythe",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_death_scythe",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "1.4",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_staff_of_unhealing": {
+      "name": "Staff of Unhealing",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_staff_of_unhealing",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Weapon",
+        "cd": "2",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_cursed_dagger": {
+      "name": "Cursed Dagger",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_cursed_dagger",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "2.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_strong_demonic_flask": {
+      "name": "Strong Demonic Flask",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_strong_demonic_flask",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "cd": "10",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_strong_vampiric_potion": {
+      "name": "Strong Vampiric Potion",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Potion",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_strong_vampiric_potion",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Potion",
+        "cd": "10",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_phoenix": {
+      "name": "Phoenix",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_phoenix",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "2.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_burning_sword": {
+      "name": "Burning Sword",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_burning_sword",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "1.6",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_sun_armor": {
+      "name": "Sun Armor",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Armor",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_sun_armor",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Armor",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_sun_shield": {
+      "name": "Sun Shield",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Shield",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_sun_shield",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shield",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_staff_of_fire": {
+      "name": "Staff of Fire",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_staff_of_fire",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "1.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_spell_scroll_frostbolt": {
+      "name": "Spell Scroll Frostbolt",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Spell",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_spell_scroll_frostbolt",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Spell",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_sapphire_whelp": {
+      "name": "Sapphire Whelp",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_sapphire_whelp",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_spiked_staff": {
+      "name": "Spiked Staff",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_spiked_staff",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "1.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_wolf_emblem": {
+      "name": "Wolf Emblem",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_wolf_emblem",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "2.3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_brass_knuckles": {
+      "name": "Brass Knuckles",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_brass_knuckles",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "2.6",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_badger_rune": {
+      "name": "Badger Rune",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Gem",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_badger_rune",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Gem",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_tiger_rune": {
+      "name": "Tiger Rune",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Gem",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_tiger_rune",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Gem",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_spicy_banana": {
+      "name": "Spicy Banana",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_spicy_banana",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_smelly_barrier": {
+      "name": "Smelly Barrier",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_smelly_barrier",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_stoned": {
+      "name": "Stoned",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_stoned",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_heavy_drinking": {
+      "name": "Heavy Drinking",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_heavy_drinking",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "10",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_power_of_the_moon": {
+      "name": "Power of the Moon",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_power_of_the_moon",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_hardwood": {
+      "name": "Hardwood",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_hardwood",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_acorn_ace": {
+      "name": "Acorn Ace",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_acorn_ace",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_solaris": {
+      "name": "Solaris",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_solaris",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_wand": {
+      "name": "Wand",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_wand",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "3.3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_spell_scroll_ice": {
+      "name": "Spell Scroll Ice",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Spell",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_spell_scroll_ice",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Spell",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_spell_scroll_nature": {
+      "name": "Spell Scroll Nature",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Spell",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_spell_scroll_nature",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Spell",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_spell_scroll_dark": {
+      "name": "Spell Scroll Dark",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Spell",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_spell_scroll_dark",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Spell",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_prismatic_wand": {
+      "name": "Prismatic Wand",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_prismatic_wand",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "4.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_boomerang": {
+      "name": "Boomerang",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_boomerang",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "2",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_big_bloodthorne": {
+      "name": "Big Bloodthorne",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_big_bloodthorne",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_heart_shield": {
+      "name": "Heart Shield",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Shield",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_heart_shield",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shield",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_charge_splitter": {
+      "name": "Charge Splitter",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_charge_splitter",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_poison_grenade": {
+      "name": "Poison Grenade",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_poison_grenade",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "10",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_bismuth_cube": {
+      "name": "Bismuth Cube",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_bismuth_cube",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chrome_cube": {
+      "name": "Chrome Cube",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chrome_cube",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_plastic_cube": {
+      "name": "Plastic Cube",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_plastic_cube",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_arcane_boots": {
+      "name": "Arcane Boots",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Shoes",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_arcane_boots",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Shoes",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_critical_poison": {
+      "name": "Critical Poison",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_critical_poison",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_burning_spikes": {
+      "name": "Burning Spikes",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_burning_spikes",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_spin_to_win": {
+      "name": "Spin to Win",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_spin_to_win",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "3.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_bewitchment": {
+      "name": "Bewitchment",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_bewitchment",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "2.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_master": {
+      "name": "Chess Master",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_master",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_speak_with_animals": {
+      "name": "Speak with Animals",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_speak_with_animals",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_seal_the_deal": {
+      "name": "Seal the Deal",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Skill",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_seal_the_deal",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Skill",
+        "cd": "5.2",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_wisp": {
+      "name": "Wisp",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Gem",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_wisp",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Gem",
+        "cd": "12.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_war_scythe": {
+      "name": "War Scythe",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_war_scythe",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "1.4",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_cupcake_dragon": {
+      "name": "Cupcake Dragon",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_cupcake_dragon",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_wand_of_dissonance": {
+      "name": "Wand of Dissonance",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_wand_of_dissonance",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "2.9",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_amulet_of_light": {
+      "name": "Amulet of Light",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_amulet_of_light",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
     }
   },
   "roles": {
