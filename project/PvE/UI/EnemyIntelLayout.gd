@@ -13,6 +13,14 @@ static func show_page(page, node: Dictionary, phase: int) -> void:
 	var portrait_path: String = page.portrait_path(node)
 	var art_paths := REF.paths(KEYS) + [portrait_path]
 	if from_route: art_paths.append(REF.path("route_background"))
+	# 旧路线画布已被 clear_popup 移除；新画布若空着等资源，会露出一帧主菜单。
+	# 从路线页进来时先铺一层纯色底，等资源就绪后再画正式背景与情报纸。
+	if from_route and is_instance_valid(root):
+		var hold := ColorRect.new()
+		hold.size = root.size
+		hold.color = Color(0.04,0.03,0.02)
+		hold.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		root.add_child(hold)
 	if not await AssetStream.prepare(art_paths, "popup"):
 		if is_instance_valid(root) and epoch == owner.popup_epoch:
 			owner.close_popup()
