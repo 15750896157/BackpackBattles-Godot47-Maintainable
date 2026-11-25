@@ -15,3 +15,5 @@ advance_cooldown,effect.advance_cooldown.name,seconds,true
 gain_gold,effect.gain_gold.name,amount,false
 free_refresh,effect.free_refresh.name,count,false
 max_health,effect.max_health.name,amount,false
+destroy_armor,effect.destroy_armor.name,amount,true
+random_status,effect.random_status.name,polarity|stacks,true

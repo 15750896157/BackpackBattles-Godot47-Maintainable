@@ -766,3 +766,45 @@ item.legacy_bloody_dagger.name,Bloody Dagger
 item.legacy_bloody_dagger.desc,Every 2.1s deal 6 physical damage; each hit grants 1 Lifesteal (max 5 per combat); heal 4 once per combat while you have Lifesteal.
 item.legacy_chain_whip.name,Chain Whip
 item.legacy_chain_whip.desc,Every 2.4s deal 6 physical damage; on hit remove 2 buff stacks from the opponent.
+status.evasion.name,Evasion
+status.evasion.desc,Each stack grants 5% dodge chance until it expires.
+status.wound.name,Wound
+status.wound.desc,Each stack reduces healing received by 5%.
+effect.destroy_armor.name,Destroy Armor
+effect.random_status.name,Random Status
+item.legacy_stone.name,Stone
+item.legacy_stone.desc,Can be thrown once per combat: on hit destroy 4 armor.
+item.legacy_broom.name,Broom
+item.legacy_broom.desc,Every 1.7s deal 3 physical damage and apply 2 Cold (approximating Blind).
+item.legacy_amulet_unidentified.name,Amulet Unidentified
+item.legacy_amulet_unidentified.desc,Every 8s gain 1 random buff (approximating the original on-buy random effect).
+item.legacy_amulet_of_darkness.name,Amulet of Darkness
+item.legacy_amulet_of_darkness.desc,Every 6s deal 7 true damage and apply 1 random debuff.
+item.legacy_amulet_of_agility.name,Amulet of Agility
+item.legacy_amulet_of_agility.desc,Start of battle: gain 10 Haste for 1s.
+item.legacy_amulet_of_alchemy.name,Amulet of Alchemy
+item.legacy_amulet_of_alchemy.desc,Start of battle: gain 3 random buffs.
+item.legacy_shell_totem.name,Shell Totem
+item.legacy_shell_totem.desc,"Every 3.6s: above 70% health gain 8 Empower, otherwise heal 8."
+item.legacy_hungry_blade.name,Hungry Blade
+item.legacy_hungry_blade.desc,Start: gain 1 Lifesteal; every 1.6s deal 5 damage and consume 1 Regeneration for 1 Lifesteal.
+item.legacy_lightsaber.name,Lightsaber
+item.legacy_lightsaber.desc,"Every 1.5s deal 10 damage; with 3 Regeneration, consume them to apply 4 Cold for 6s."
+item.legacy_spectral_dagger.name,Spectral Dagger
+item.legacy_spectral_dagger.desc,Every 2.5s deal 8 true damage (approximating mana-fueled armor ignore).
+item.legacy_serpent_staff.name,Serpent Staff
+item.legacy_serpent_staff.desc,Every 1.8s deal 11 physical damage and apply 2 Poison.
+item.legacy_pandamonium.name,Pandamonium
+item.legacy_pandamonium.desc,Every 2s deal 10 physical damage and apply 1 Poison.
+item.legacy_crossblades.name,Crossblades
+item.legacy_crossblades.desc,Start: +10 own damage; every 1.4s deal 9 physical damage.
+item.legacy_corrupted_armor.name,Corrupted Armor
+item.legacy_corrupted_armor.desc,Start: gain 15 armor; every 2.4s cleanse 1 negative stack.
+item.legacy_stone_shoes.name,Stone Shoes
+item.legacy_stone_shoes.desc,"First time below 70% health: gain 1 Luck, 1 Empower, 15 armor and 9 Fortified for 7s."
+item.legacy_heart_container.name,Heart Container
+item.legacy_heart_container.desc,Every 3s gain 1 Regeneration.
+item.legacy_bloodthorne.name,Bloodthorne
+item.legacy_bloodthorne.desc,"Every 1.6s deal 6 damage; with Regeneration, consume 1 for 1 Lifesteal and 1 Thorns."
+item.legacy_greatsword.name,Greatsword
+item.legacy_greatsword.desc,Every 5s deal 45 physical damage.
