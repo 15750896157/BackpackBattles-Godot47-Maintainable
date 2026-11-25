@@ -1,6 +1,6 @@
-[gd_resource type="ShaderMaterial" format=3]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bo5b1vcafkiqf"]
 
-[ext_resource type="Texture2D" path="res://Assets/EdgeMask.png" id="1_3gffj"]
+[ext_resource type="Texture2D" uid="uid://cr038pd0huahf" path="res://Assets/EdgeMask.png" id="1_3gffj"]
 
 [sub_resource type="Shader" id="405"]
 code = "shader_type canvas_item;

@@ -2,6 +2,21 @@ extends RefCounted
 ## Supplied journey PSD composition; all enemy and reward facts stay live.
 const REF=preload("res://PvE/UI/ReferenceCanvas.gd")
 const KEYS=["route_background","route_card","route_card_elite","route_motif","route_tab","route_tab_danger","route_tab_elite","route_threat","route_warning","route_go","settings","back","route_coin","camp_heart","route_header_chip","route_reward_slot","possible_rewards_zh","codex"]
+static var _trim_cache:Dictionary={}
+static func trim_to_art(source:Texture2D)->Texture2D:
+	# Route cards must show the monster itself, not the padded source canvas:
+	# crop the transparent border and let the existing fit-to-frame stretch scale it.
+	if source==null:return null
+	var key=source.resource_path if not source.resource_path.is_empty() else str(source.get_instance_id())
+	if _trim_cache.has(key):return _trim_cache[key]
+	var result:Texture2D=source
+	var image=source.get_image()
+	if image!=null:
+		var used=image.get_used_rect()
+		if used.size.x>0 and used.size.y>0 and used!=Rect2i(Vector2i.ZERO,image.get_size()):
+			var atlas=AtlasTexture.new();atlas.atlas=source;atlas.region=Rect2(Vector2(used.position),Vector2(used.size));result=atlas
+	_trim_cache[key]=result
+	return result
 static func show_page(page):
 	var owner=page.owner;var ui=page.ui
 	var root=ui.open_canvas("ROUTE_SELECT",ui.words("征战旅途","Journey"))
@@ -28,7 +43,7 @@ static func show_page(page):
 		REF.picture(root,tab,Rect2(left+120,158,254,104))
 		REF.text(root,owner.t(node.name_key),Rect2(left+130,170,234,50),37)
 		REF.text(root,owner.enemy_name(node) if node.type.ends_with("combat") or node.type=="boss" else ui.words("补给与抉择","Supplies & choices"),Rect2(left+125,222,244,33),22)
-		var actor=TextureRect.new();actor.name="RoutePortrait_"+str(index);actor.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;actor.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;actor.texture=page.portrait(node);actor.position=Vector2(left+85,297);actor.size=Vector2(350,314);actor.mouse_filter=Control.MOUSE_FILTER_IGNORE;root.add_child(actor)
+		var actor=TextureRect.new();actor.name="RoutePortrait_"+str(index);actor.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;actor.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;actor.texture=trim_to_art(page.portrait(node));actor.position=Vector2(left+85,297);actor.size=Vector2(350,314);actor.mouse_filter=Control.MOUSE_FILTER_IGNORE;root.add_child(actor)
 		actor.modulate=preload("res://PvE/Art/NewArtCatalog.gd").enemy_variant(node).tint
 		REF.picture(root,"route_threat",Rect2(left+108,639,291,40))
 		var enemy=owner.db.get_row("enemy_builds",str(node.get("enemy_id","")))

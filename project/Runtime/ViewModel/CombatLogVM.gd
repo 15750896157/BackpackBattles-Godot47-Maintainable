@@ -47,9 +47,9 @@ func statistics() -> Array[Dictionary]:
 		var items: Array[String] = []
 		var sums := Vector3.ZERO
 		for data in entries:
-			var name := _combat_source_label({"source": data.get("instance_id", ""), "source_side": side}, result)
+			var name := _combat_source_label({"source": data.get("instance_id", ""), "source_side": side}, result).replace("·", " ")
 			sums += Vector3(float(data.get("damage", 0)),float(data.get("healing", 0)),float(data.get("armor", 0)))
-			items.append("%s · %s %.1f · %s %.1f · %s %.1f · %s %d" % [
+			items.append("%s   %s %.1f   %s %.1f   %s %.1f   %s %d" % [
 				name, _translate.call("native.damage"), float(data.get("damage", 0)),
 				_translate.call("native.healing"), float(data.get("healing", 0)),
 				_translate.call("native.armor"), float(data.get("armor", 0)),
@@ -75,7 +75,7 @@ func statistics() -> Array[Dictionary]:
 			stamina_text = _translate.call("native.starvation", {"seconds": snappedf(float(starvation[side]), 0.1)})
 		sides.append({
 			"heading": _translate.call("native.player_side" if side == 0 else "native.enemy_side"),
-			"summary": "%s %.1f  ·  %s %.1f  ·  %s %.1f" % [
+			"summary": "%s %.1f     %s %.1f     %s %.1f" % [
 				_translate.call("native.damage"),sums.x,_translate.call("native.healing"),sums.y,_translate.call("native.armor"),sums.z],
 			"items": items, "statuses": statuses, "has_totals": not totals.is_empty(),
 			"totals_heading": _translate.call("native.status_totals_heading"), "stamina": stamina_text,

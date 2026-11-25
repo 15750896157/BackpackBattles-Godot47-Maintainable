@@ -102,16 +102,16 @@ func populate():
 		else:owner.detail_views.fill_icon(weakref(image),entry.id,owner.popup_epoch)
 		if not entry.known:image.modulate=Color(0.16,0.14,0.11)
 		if entry.known: draw_badge(card,entry)
-		var title=REF.text(card,entry.title,Rect2(16,48,410 if use_rows else 272,39),25)
-		title.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-		if use_rows: title.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
-		REF.text(card, model.subtitle(category, entry), Rect2(12,91 if use_rows else 241,414 if use_rows else 280,32),20,Color("70502f")).horizontal_alignment=HORIZONTAL_ALIGNMENT_LEFT
+		if category!="characters":
+			var title=REF.text(card,entry.title,Rect2(16,48,410 if use_rows else 272,39),25)
+			title.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+			if use_rows: title.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+			REF.text(card, model.subtitle(category, entry), Rect2(12,91 if use_rows else 241,414 if use_rows else 280,32),20,Color("70502f")).horizontal_alignment=HORIZONTAL_ALIGNMENT_LEFT
 	page_buttons(body, result.count, populate)
 	if not selected.is_empty():show_detail(selected)
 	else:REF.text(body,ui.words("暂无符合条件的内容","No matching entries"),Rect2(938,440,540,150),28)
 func filters():
 	if category=="characters":
-		REF.text(body,ui.words("英雄 · 旅途伙伴","Heroes · Expedition companions"),Rect2(207,222,620,54),27)
 		return
 	filter_button(ui.words("已发现" if only_seen else "全部条目","Discovered" if only_seen else "All entries"),Rect2(207,207,186,50),func():only_seen=not only_seen;only_available=false;page=0;populate(),"BookSeenFilter")
 	var context := model.snapshot()
@@ -134,13 +134,23 @@ func show_detail(entry:Dictionary):
 		portrait.position=Vector2(1002,233);portrait.size=Vector2(389,371)
 		if not entry.known:portrait.modulate=Color(0.12,0.10,0.08)
 		REF.picture(body,"detail_title",Rect2(913,181,400,54),true)
-		REF.text(body,entry.title,Rect2(922,181,390,54),32)
+		var act_id := str(entry.data.get("act_id", ""))
+		if not act_id.is_empty():
+			var level := int(act_id.trim_prefix("act_"))
+			var numerals := ["一","二","三","四","五","六","七","八","九"]
+			var zh := "第%s关" % (numerals[level-1] if level>=1 and level<=numerals.size() else str(level))
+			var tag := REF.text(body,ui.words(zh,"Level %d"%level),Rect2(930,181,372,54),27)
+			tag.horizontal_alignment=HORIZONTAL_ALIGNMENT_LEFT
+		REF.text(body,entry.title,Rect2(924,650,553,54),32)
 		REF.picture(body,"hero_description",Rect2(924,711,553,151),true)
-		detail=make_column(Rect2(937,724,524,123))
+		detail=make_column(Rect2(937,758,524,123))
 		if entry.known:
 			var snapshot: Dictionary = owner.detail_views.enemy_snapshot(enemy_node(entry.data))
-			if snapshot.get("ok",false):REF.text(body,"HP  %s   ◆  %s" % [snapshot.base_stats.max_health,snapshot.base_stats.stamina_max],Rect2(932,650,533,50),25)
-			ui.text_pages(detail,owner.menus.journey.ability_text(enemy_node(entry.data)),514,118,21)
+			if snapshot.get("ok",false):REF.text(body,"HP  %s   ◆  %s" % [snapshot.base_stats.max_health,snapshot.base_stats.stamina_max],Rect2(932,714,533,42),25)
+			var deck=ui.text_pages(detail,owner.menus.journey.ability_text(enemy_node(entry.data)),514,118,21)
+			# Only lift the page-number row down so it lines up with the left page
+			# buttons; the text stays top-aligned and its pagination is unchanged.
+			deck.label.custom_minimum_size.y=158
 		else:ui.text_pages(detail,ui.words("在远征中遭遇后记录","Recorded after an encounter"),514,118,24)
 		return
 	if category=="characters":
@@ -182,7 +192,7 @@ func draw_badge(card: Control, entry: Dictionary) -> void:
 		key = "badge_red" if boss else "badge_blue"
 		caption = ui.words("首领","Boss") if boss else ui.words("敌人","Enemy")
 	elif category == "characters":
-		caption = ui.words("英雄","Hero")
+		caption = entry.title
 	else:
 		var rarity := str(entry.definition.get("rarity","common"))
 		key = "badge_green" if not entry.candidate.is_empty() else "badge_purple" if rarity == "legendary" else "badge_blue" if rarity == "rare" else "badge_gold"

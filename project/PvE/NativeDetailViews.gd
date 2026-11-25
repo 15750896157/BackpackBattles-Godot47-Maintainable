@@ -51,7 +51,7 @@ func grid(build: Dictionary, parent: Node, empty_tile: Texture2D = null) -> Cont
 			tile.texture = empty_tile if empty_tile != null and not occupied else tile_texture
 			tile.position = Vector2(x, y) * 62
 			tile.size = Vector2(60,60) if empty_tile != null else Vector2(62,62)
-			tile.modulate = Color(1,1,1,0.55) if empty_tile != null else Color(1,1,1,0.38) if occupied else Color(0.25, 0.25, 0.25, 0.12)
+			tile.modulate = Color(0.25, 0.25, 0.25, 0.55) if empty_tile != null and occupied else Color(1,1,1,0.55) if empty_tile != null else Color(1,1,1,0.38) if occupied else Color(0.25, 0.25, 0.25, 0.12)
 			tile.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			canvas.add_child(tile)
 	if empty_tile != null:
