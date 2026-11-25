@@ -150,3 +150,5 @@ supply_wrath_crest,item.supply_wrath_crest.name,item.supply_wrath_crest.desc,pub
 wooden_sword,item.wooden_sword.name,item.wooden_sword.desc,public,common,3,1,release_item_1x2,weapon,1.4,1,true,false,2,res://Art/Items/Sprites/WoodenSword.png,res://Animation/Items/Animations/ItemAnimation.tscn
 legacy_pan,item.legacy_pan.name,item.legacy_pan.desc,public,common,4,1,release_item_1x2,weapon,2.2,2,false,false,8,res://Art/Supplied20261102/items/item_codex.png,res://PvE/Items/ItemBase.tscn
 legacy_forging_hammer,item.legacy_forging_hammer.name,item.legacy_forging_hammer.desc,public,common,3,1,release_item_1x2,weapon,3.5,0,false,false,3,res://Art/Supplied20261102/items/item_codex.png,res://PvE/Items/ItemBase.tscn
+legacy_banana,item.legacy_banana.name,item.legacy_banana.desc,public,common,3,1,shape_1,healing|stamina,5,0,false,false,3,res://Art/Supplied20261102/items/item_codex.png,res://PvE/Items/ItemBase.tscn
+legacy_whetstone2,item.legacy_whetstone2.name,item.legacy_whetstone2.desc,public,rare,4,1,shape_1,weapon|spatial,0,0,false,false,3,res://Art/Supplied20261102/items/item_codex.png,res://PvE/Items/ItemBase.tscn

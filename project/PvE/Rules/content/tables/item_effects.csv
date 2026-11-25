@@ -151,3 +151,6 @@ supply_wrath_crest_effect_1,supply_wrath_crest,1,combat_start,0,target_has_tag,h
 wooden_sword_effect_1,wooden_sword,1,cooldown_ready,0,always,,none,enemy,physical_damage,value:2,1
 legacy_pan_effect_1,legacy_pan,1,cooldown_ready,0,always,,none,enemy,physical_damage,value:6,1
 legacy_forging_hammer_effect_1,legacy_forging_hammer,1,cooldown_ready,0,always,,none,enemy,physical_damage,value:4,1
+legacy_banana_effect_1,legacy_banana,1,cooldown_ready,0,always,,none,self,heal,value:4,1
+legacy_banana_effect_2,legacy_banana,2,cooldown_ready,0,always,,none,self,gain_stamina,value:1,1
+legacy_whetstone2_effect_1,legacy_whetstone2,1,combat_start,0,target_has_tag,weapon,adjacent_4,spatial_targets,modify_damage_flat,value:1,1

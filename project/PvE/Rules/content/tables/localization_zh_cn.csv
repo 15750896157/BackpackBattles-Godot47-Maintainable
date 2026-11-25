@@ -738,3 +738,7 @@ item.legacy_pan.name,平底锅
 item.legacy_pan.desc,每 2.2 秒：造成 6 点物理伤害。消耗 2 耐力。
 item.legacy_forging_hammer.name,锻造锤
 item.legacy_forging_hammer.desc,每 3.5 秒：造成 4 点物理伤害。消耗 0 耐力。
+item.legacy_banana.name,香蕉
+item.legacy_banana.desc,每 5 秒：恢复 4 点生命和 1 点耐力。
+item.legacy_whetstone2.name,强化磨刀石
+item.legacy_whetstone2.desc,战斗开始时：相邻的武器攻击力 +1。

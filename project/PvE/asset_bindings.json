@@ -11494,6 +11494,84 @@
         "material": "Metal"
       },
       "template": "ItemBase"
+    },
+    "legacy_banana": {
+      "name": "Banana",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Food",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_banana",
+      "kind": "item",
+      "reason": "B 批登记：原版无独立美术，先用通用占位图；效果按原版回血/回耐映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Food",
+        "p1": "4:heal",
+        "cd": "5",
+        "material": "Squishy"
+      },
+      "template": "ItemBase"
+    },
+    "legacy_whetstone2": {
+      "name": "Whetstone2",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_whetstone2",
+      "kind": "item",
+      "reason": "B 批登记：原版无独立美术，先用通用占位图；效果按原版武器加伤映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "p1": "1:dam",
+        "material": "Stone",
+        "tag": "weapon"
+      },
+      "template": "ItemBase"
     }
   },
   "roles": {

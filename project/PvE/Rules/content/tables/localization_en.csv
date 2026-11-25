@@ -738,3 +738,7 @@ item.legacy_pan.name,Pan
 item.legacy_pan.desc,Every 2.2s: deal 6 physical damage. Costs 2 stamina.
 item.legacy_forging_hammer.name,Forging Hammer
 item.legacy_forging_hammer.desc,Every 3.5s: deal 4 physical damage. Costs 0 stamina.
+item.legacy_banana.name,Banana
+item.legacy_banana.desc,Every 5s: heal 4 and restore 1 stamina.
+item.legacy_whetstone2.name,Whetstone2
+item.legacy_whetstone2.desc,Start of battle: adjacent weapons gain 1 damage.
