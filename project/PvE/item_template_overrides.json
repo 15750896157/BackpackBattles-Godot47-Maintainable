@@ -20245,6 +20245,6721 @@
    "definition_ids": [
     "legacy_amulet_of_light"
    ]
+  },
+  "Goobert": {
+   "root_name": "Goobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_goobert"
+   ]
+  },
+  "Shelly": {
+   "root_name": "Shelly",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_shelly"
+   ]
+  },
+  "RubyEgg": {
+   "root_name": "RubyEgg",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_ruby_egg"
+   ]
+  },
+  "Jynxtorquilla": {
+   "root_name": "Jynxtorquilla",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_jynx_torquilla"
+   ]
+  },
+  "BloodGoobert": {
+   "root_name": "BloodGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_blood_goobert"
+   ]
+  },
+  "SteelGoobert": {
+   "root_name": "SteelGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_steel_goobert"
+   ]
+  },
+  "Wolpertinger": {
+   "root_name": "Wolpertinger",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_wolpertinger"
+   ]
+  },
+  "LightGoobert": {
+   "root_name": "LightGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_light_goobert"
+   ]
+  },
+  "KingGoobert": {
+   "root_name": "KingGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_king_goobert"
+   ]
+  },
+  "ParadiseBirb": {
+   "root_name": "ParadiseBirb",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_paradise_birb"
+   ]
+  },
+  "Cubert": {
+   "root_name": "Cubert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_cubert"
+   ]
+  },
+  "Ghost": {
+   "root_name": "Ghost",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_ghost"
+   ]
+  },
+  "Cthulhu": {
+   "root_name": "Cthulhu",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_cthulhu"
+   ]
+  },
+  "LittleMimic": {
+   "root_name": "LittleMimic",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_little_mimic"
+   ]
+  },
+  "CarrotGoobert": {
+   "root_name": "CarrotGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_carrot_goobert"
+   ]
+  },
+  "Snowmaster": {
+   "root_name": "Snowmaster",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_snowmaster"
+   ]
+  },
+  "RainbowGoobertRanger": {
+   "root_name": "RainbowGoobertRanger",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rainbow_goobert_ranger"
+   ]
+  },
+  "Rat": {
+   "root_name": "Rat",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rat"
+   ]
+  },
+  "Squirrel": {
+   "root_name": "Squirrel",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_squirrel"
+   ]
+  },
+  "Hedgehog": {
+   "root_name": "Hedgehog",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_hedgehog"
+   ]
+  },
+  "RatChef": {
+   "root_name": "RatChef",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rat_chef"
+   ]
+  },
+  "HyperHedgehog": {
+   "root_name": "HyperHedgehog",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_hyper_hedgehog"
+   ]
+  },
+  "Toad": {
+   "root_name": "Toad",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_toad"
+   ]
+  },
+  "PoisonGoobert": {
+   "root_name": "PoisonGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_poison_goobert"
+   ]
+  },
+  "Crow": {
+   "root_name": "Crow",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_crow"
+   ]
+  },
+  "PoisonFrog": {
+   "root_name": "PoisonFrog",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_poison_frog"
+   ]
+  },
+  "RainbowGoobert": {
+   "root_name": "RainbowGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rainbow_goobert"
+   ]
+  },
+  "Snake": {
+   "root_name": "Snake",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_snake"
+   ]
+  },
+  "ChiliGoobert": {
+   "root_name": "ChiliGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_chili_goobert"
+   ]
+  },
+  "FireShelly": {
+   "root_name": "FireShelly",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_fire_shelly"
+   ]
+  },
+  "RainbowGoobertPyromancer": {
+   "root_name": "RainbowGoobertPyromancer",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rainbow_goobert_pyromancer"
+   ]
+  },
+  "FriendlyFire": {
+   "root_name": "FriendlyFire",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_friendly_fire"
+   ]
+  },
+  "EmeraldEgg": {
+   "root_name": "EmeraldEgg",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_emerald_egg"
+   ]
+  },
+  "SapphireEgg": {
+   "root_name": "SapphireEgg",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_sapphire_egg"
+   ]
+  },
+  "AmethystEgg": {
+   "root_name": "AmethystEgg",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_amethyst_egg"
+   ]
+  },
+  "CheeseGoobert": {
+   "root_name": "CheeseGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_cheese_goobert"
+   ]
+  },
+  "RainbowGoobertBerserker": {
+   "root_name": "RainbowGoobertBerserker",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rainbow_goobert_berserker"
+   ]
+  },
+  "WisdomPuppy": {
+   "root_name": "WisdomPuppy",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_wisdom_puppy"
+   ]
+  },
+  "PowerPuppy": {
+   "root_name": "PowerPuppy",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_power_puppy"
+   ]
+  },
+  "ArmoredWisdomPuppy": {
+   "root_name": "ArmoredWisdomPuppy",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_armored_wisdom_puppy"
+   ]
+  },
+  "ArmoredPowerPuppy": {
+   "root_name": "ArmoredPowerPuppy",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_armored_power_puppy"
+   ]
+  },
+  "Goobling": {
+   "root_name": "Goobling",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_goobling"
+   ]
+  },
+  "CatSpirit": {
+   "root_name": "CatSpirit",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_cat_spirit"
+   ]
+  },
+  "OwlSpirit": {
+   "root_name": "OwlSpirit",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_owl_spirit"
+   ]
+  },
+  "BadgerSpirit": {
+   "root_name": "BadgerSpirit",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_badger_spirit"
+   ]
+  },
+  "CupcakeGoobert": {
+   "root_name": "CupcakeGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_cupcake_goobert"
+   ]
+  },
+  "RainbowGoobertMage": {
+   "root_name": "RainbowGoobertMage",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rainbow_goobert_mage"
+   ]
+  },
+  "EvilHat": {
+   "root_name": "EvilHat",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_evil_hat"
+   ]
+  },
+  "BroccoliGoobert": {
+   "root_name": "BroccoliGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_broccoli_goobert"
+   ]
+  },
+  "RainbowGoobertAdventurer": {
+   "root_name": "RainbowGoobertAdventurer",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rainbow_goobert_adventurer"
+   ]
+  },
+  "MercuryElemental": {
+   "root_name": "MercuryElemental",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_mercury_elemental"
+   ]
+  },
+  "Turtle": {
+   "root_name": "Turtle",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_turtle"
+   ]
+  },
+  "ToastGoobert": {
+   "root_name": "ToastGoobert",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_toast_goobert"
+   ]
+  },
+  "RainbowGoobertEngineer": {
+   "root_name": "RainbowGoobertEngineer",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_rainbow_goobert_engineer"
+   ]
+  },
+  "Robodog": {
+   "root_name": "Robodog",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_robodog"
+   ]
+  },
+  "MechaBat": {
+   "root_name": "MechaBat",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_mecha_bat"
+   ]
+  },
+  "FrogPrince": {
+   "root_name": "FrogPrince",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_frog_prince"
+   ]
+  },
+  "ThornElemental": {
+   "root_name": "ThornElemental",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_thorn_elemental"
+   ]
+  },
+  "Sloth": {
+   "root_name": "Sloth",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_pet_sloth"
+   ]
+  },
+  "BookofBasics": {
+   "root_name": "BookofBasics",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_book_of_basics"
+   ]
+  },
+  "BookofNature": {
+   "root_name": "BookofNature",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_book_of_nature"
+   ]
+  },
+  "BookofDarkness": {
+   "root_name": "BookofDarkness",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_book_of_darkness"
+   ]
+  },
+  "BookofLight": {
+   "root_name": "BookofLight",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_book_of_light"
+   ]
+  },
+  "BookofIce": {
+   "root_name": "BookofIce",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_book_of_ice"
+   ]
+  },
+  "BookofIceNew": {
+   "root_name": "BookofIceNew",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_book_of_ice_new"
+   ]
+  },
+  "TheLovers": {
+   "root_name": "TheLovers",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_the_lovers"
+   ]
+  },
+  "AceofSpades": {
+   "root_name": "AceofSpades",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_ace_of_spades"
+   ]
+  },
+  "Reverse": {
+   "root_name": "Reverse",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_reverse"
+   ]
+  },
+  "WhiteEyesBlueDragon": {
+   "root_name": "WhiteEyesBlueDragon",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_white_eyes_blue_dragon"
+   ]
+  },
+  "TheFool": {
+   "root_name": "TheFool",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_the_fool"
+   ]
+  },
+  "HoloFireLizard": {
+   "root_name": "HoloFireLizard",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_holo_fire_lizard"
+   ]
+  },
+  "Joker": {
+   "root_name": "Joker",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_joker"
+   ]
+  },
+  "DarkestLotus": {
+   "root_name": "DarkestLotus",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_card_darkest_lotus"
+   ]
+  },
+  "WhitePawn": {
+   "root_name": "WhitePawn",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_white_pawn"
+   ]
+  },
+  "BlackPawn": {
+   "root_name": "BlackPawn",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_black_pawn"
+   ]
+  },
+  "WhiteKnight": {
+   "root_name": "WhiteKnight",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_white_knight"
+   ]
+  },
+  "BlackKnight": {
+   "root_name": "BlackKnight",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_black_knight"
+   ]
+  },
+  "WhiteBishop": {
+   "root_name": "WhiteBishop",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_white_bishop"
+   ]
+  },
+  "BlackBishop": {
+   "root_name": "BlackBishop",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_black_bishop"
+   ]
+  },
+  "WhiteRook": {
+   "root_name": "WhiteRook",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_white_rook"
+   ]
+  },
+  "BlackRook": {
+   "root_name": "BlackRook",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_black_rook"
+   ]
+  },
+  "WhiteQueen": {
+   "root_name": "WhiteQueen",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_white_queen"
+   ]
+  },
+  "BlackQueen": {
+   "root_name": "BlackQueen",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_black_queen"
+   ]
+  },
+  "WhiteKing": {
+   "root_name": "WhiteKing",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_white_king"
+   ]
+  },
+  "BlackKing": {
+   "root_name": "BlackKing",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_chess_black_king"
+   ]
   }
  }
 }

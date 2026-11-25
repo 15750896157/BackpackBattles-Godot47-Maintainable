@@ -938,3 +938,173 @@ item.legacy_wand_of_dissonance.name,Wand of Dissonance
 item.legacy_wand_of_dissonance.desc,Every 2.9s deal 8 physical damage and gain 1 Luck and Regeneration for 3s.
 item.legacy_amulet_of_light.name,Amulet of Light
 item.legacy_amulet_of_light.desc,Start: +6 max health and 1 Regeneration.
+item.legacy_pet_goobert.name,Goobert
+item.legacy_pet_goobert.desc,Per 5 adjacent item activations: heal 9.
+item.legacy_pet_shelly.name,Shelly
+item.legacy_pet_shelly.desc,Every 13s: cleanse 6 debuffs and heal 40.
+item.legacy_pet_ruby_egg.name,Ruby Egg
+item.legacy_pet_ruby_egg.desc,Start: gain 4 Heat and 3 Resistance.
+item.legacy_pet_jynx_torquilla.name,Jynx torquilla
+item.legacy_pet_jynx_torquilla.desc,Every 3s: remove 1 Luck from the enemy.
+item.legacy_pet_blood_goobert.name,Blood Goobert
+item.legacy_pet_blood_goobert.desc,Start: gain 5 Lifesteal; each adjacent activation deals 10 physical damage.
+item.legacy_pet_steel_goobert.name,Steel Goobert
+item.legacy_pet_steel_goobert.desc,Start: gain 16 armor; each adjacent activation grants +2 damage.
+item.legacy_pet_wolpertinger.name,Wolpertinger
+item.legacy_pet_wolpertinger.desc,Every 5s: gain 3 random buffs.
+item.legacy_pet_light_goobert.name,Light Goobert
+item.legacy_pet_light_goobert.desc,Per 6 adjacent activations: heal 25 and apply 7 Cold for 3s.
+item.legacy_pet_king_goobert.name,King Goobert
+item.legacy_pet_king_goobert.desc,"Per 6 adjacent activations: heal 35, gain 3 random buffs and 4 stamina."
+item.legacy_pet_paradise_birb.name,Paradise Birb
+item.legacy_pet_paradise_birb.desc,Every 2.7s: heal 7 and gain 1 random buff.
+item.legacy_pet_cubert.name,Cubert
+item.legacy_pet_cubert.desc,Per 6 adjacent activations: gain 1 Regeneration and 1 Empower.
+item.legacy_pet_ghost.name,Ghost
+item.legacy_pet_ghost.desc,Every 3s: heal 12 and deal 3 true damage to the enemy.
+item.legacy_pet_cthulhu.name,Cthulhu
+item.legacy_pet_cthulhu.desc,Every 2.7s: deal 10 true damage and gain 1 Lifesteal.
+item.legacy_pet_little_mimic.name,Little Mimic
+item.legacy_pet_little_mimic.desc,Every 6s: gain 3 random buffs.
+item.legacy_pet_carrot_goobert.name,Carrot Goobert
+item.legacy_pet_carrot_goobert.desc,Per 6 adjacent activations: cleanse 4 debuffs and gain 2 Empower for 8s.
+item.legacy_pet_snowmaster.name,Snowmaster
+item.legacy_pet_snowmaster.desc,Every 1.3s: apply 1 Cold to the enemy for 10s and gain 1 Empower.
+item.legacy_pet_rainbow_goobert_ranger.name,Rainbow Goobert Ranger
+item.legacy_pet_rainbow_goobert_ranger.desc,"Per 9 adjacent activations: heal 40, gain 20 armor, 2 Lifesteal, 2 Empower and apply 3 Cold."
+item.legacy_pet_rat.name,Rat
+item.legacy_pet_rat.desc,Every 3.3s: deal 5 physical damage and apply 1 Poison and 1 Cold.
+item.legacy_pet_squirrel.name,Squirrel
+item.legacy_pet_squirrel.desc,Every 4s: gain 1 random buff.
+item.legacy_pet_hedgehog.name,Hedgehog
+item.legacy_pet_hedgehog.desc,Every 5s: deal 10 physical damage and gain 3 Thorns; first time below 70% health gain 25 armor.
+item.legacy_pet_rat_chef.name,Rat Chef
+item.legacy_pet_rat_chef.desc,Start: gain 2 Regeneration; every 7s gain 2 stamina and 1 Empower.
+item.legacy_pet_hyper_hedgehog.name,Hyper Hedgehog
+item.legacy_pet_hyper_hedgehog.desc,"Every 5s: deal 12 physical damage, gain 4 Thorns and 1 Empower; first time below 70% health gain 35 armor."
+item.legacy_pet_toad.name,Toad
+item.legacy_pet_toad.desc,"Every 3.8s: heal 12, gain 1 Luck and 1 stamina."
+item.legacy_pet_poison_goobert.name,Poison Goobert
+item.legacy_pet_poison_goobert.desc,Per 5 adjacent activations: heal 10 and apply 4 Poison.
+item.legacy_pet_crow.name,Crow
+item.legacy_pet_crow.desc,Every 3s: remove 1 Luck from the enemy and gain 1 Luck.
+item.legacy_pet_poison_frog.name,Poison Frog
+item.legacy_pet_poison_frog.desc,Every 2.1s: apply 2 Poison and gain 1 stamina.
+item.legacy_pet_rainbow_goobert.name,Rainbow Goobert
+item.legacy_pet_rainbow_goobert.desc,"Per 9 adjacent activations: heal 40, gain 20 armor and 3 Lifesteal; apply 4 Cold and 3 Poison."
+item.legacy_pet_snake.name,Snake
+item.legacy_pet_snake.desc,Start: gain 4 Luck and 20 max health; every 2.2s apply 2 Poison.
+item.legacy_pet_chili_goobert.name,Chili Goobert
+item.legacy_pet_chili_goobert.desc,Per 6 adjacent activations: heal 16 and gain 2 Heat.
+item.legacy_pet_fire_shelly.name,Fire Shelly
+item.legacy_pet_fire_shelly.desc,"Every 12s: cleanse 6 debuffs, heal 40 and gain 2 Heat."
+item.legacy_pet_rainbow_goobert_pyromancer.name,Rainbow Goobert Pyromancer
+item.legacy_pet_rainbow_goobert_pyromancer.desc,"Per 9 adjacent activations: heal 40, gain 20 armor, 2 Lifesteal, 4 Heat and apply 4 Cold."
+item.legacy_pet_friendly_fire.name,Friendly Fire
+item.legacy_pet_friendly_fire.desc,Every 2.9s gain 2 Heat; at 20 Heat gain 5 Luck (once).
+item.legacy_pet_emerald_egg.name,Emerald Egg
+item.legacy_pet_emerald_egg.desc,Start: gain 3 Luck.
+item.legacy_pet_sapphire_egg.name,Sapphire Egg
+item.legacy_pet_sapphire_egg.desc,Start: gain 6 stamina.
+item.legacy_pet_amethyst_egg.name,Amethyst Egg
+item.legacy_pet_amethyst_egg.desc,Start: gain 4 random debuffs.
+item.legacy_pet_cheese_goobert.name,Cheese Goobert
+item.legacy_pet_cheese_goobert.desc,Per 5 adjacent activations: +22 max health and 2 random buffs.
+item.legacy_pet_rainbow_goobert_berserker.name,Rainbow Goobert Berserker
+item.legacy_pet_rainbow_goobert_berserker.desc,"Per 9 adjacent activations: +40 max health, 20 armor, 2 Lifesteal, 2 random buffs and 4 Cold."
+item.legacy_pet_wisdom_puppy.name,Wisdom Puppy
+item.legacy_pet_wisdom_puppy.desc,Every 4s: gain 10 armor and cleanse 6 Cold.
+item.legacy_pet_power_puppy.name,Power Puppy
+item.legacy_pet_power_puppy.desc,Every 3.2s: gain 2 random buffs.
+item.legacy_pet_armored_wisdom_puppy.name,Armored Wisdom Puppy
+item.legacy_pet_armored_wisdom_puppy.desc,Every 4s: gain 14 armor and cleanse 6 Cold.
+item.legacy_pet_armored_power_puppy.name,Armored Power Puppy
+item.legacy_pet_armored_power_puppy.desc,Every 2.8s: gain 2 random buffs.
+item.legacy_pet_goobling.name,Goobling
+item.legacy_pet_goobling.desc,Per 3 adjacent activations: heal 4.
+item.legacy_pet_cat_spirit.name,Cat Spirit
+item.legacy_pet_cat_spirit.desc,"Every 2.1s: gain 1 Luck, 1 Empower and +10% crit."
+item.legacy_pet_owl_spirit.name,Owl Spirit
+item.legacy_pet_owl_spirit.desc,Every 3.2s: gain 2 stamina.
+item.legacy_pet_badger_spirit.name,Badger Spirit
+item.legacy_pet_badger_spirit.desc,Every 5s: heal 20 and gain +20 max health.
+item.legacy_pet_cupcake_goobert.name,Cupcake Goobert
+item.legacy_pet_cupcake_goobert.desc,Per 6 adjacent activations: heal 35 and gain 2 random buffs.
+item.legacy_pet_rainbow_goobert_mage.name,Rainbow Goobert Mage
+item.legacy_pet_rainbow_goobert_mage.desc,"Per 9 adjacent activations: heal 40, gain 20 armor, 2 Lifesteal, 2 random buffs and 3 Cold."
+item.legacy_pet_evil_hat.name,Evil Hat
+item.legacy_pet_evil_hat.desc,Every 3s: gain 2 random buffs and 1 Regeneration; apply 3 Wound.
+item.legacy_pet_broccoli_goobert.name,Broccoli Goobert
+item.legacy_pet_broccoli_goobert.desc,Per 6 adjacent activations: gain 3 Luck and 3 Regeneration.
+item.legacy_pet_rainbow_goobert_adventurer.name,Rainbow Goobert Adventurer
+item.legacy_pet_rainbow_goobert_adventurer.desc,"Per 9 adjacent activations: heal 40, gain 20 armor, 2 Lifesteal, 2 Regeneration and 3 Cold."
+item.legacy_pet_mercury_elemental.name,Mercury Elemental
+item.legacy_pet_mercury_elemental.desc,"Every 4.5s: gain 50 armor, 1 stamina and apply 2 Poison."
+item.legacy_pet_turtle.name,Turtle
+item.legacy_pet_turtle.desc,Every 13s: gain 60 armor and 7 Fortified for 7s.
+item.legacy_pet_toast_goobert.name,Toast Goobert
+item.legacy_pet_toast_goobert.desc,Per 6 adjacent activations: gain 2 stamina and 3 Regeneration.
+item.legacy_pet_rainbow_goobert_engineer.name,Rainbow Goobert Engineer
+item.legacy_pet_rainbow_goobert_engineer.desc,"Per 9 adjacent activations: heal 40, gain 20 armor, 2 Lifesteal, 1 Regeneration and 3 Cold."
+item.legacy_pet_robodog.name,Robodog
+item.legacy_pet_robodog.desc,Every 1.9s: gain 1 Luck and 1 Heat.
+item.legacy_pet_mecha_bat.name,Mecha Bat
+item.legacy_pet_mecha_bat.desc,Every 3s: gain 3 Lifesteal and 1 Luck for 10s.
+item.legacy_pet_frog_prince.name,Frog Prince
+item.legacy_pet_frog_prince.desc,"Every 2.6s: gain 1 stamina, 5 Luck and heal 20."
+item.legacy_pet_thorn_elemental.name,Thorn Elemental
+item.legacy_pet_thorn_elemental.desc,Every 3s: gain 3 Thorns.
+item.legacy_pet_sloth.name,Sloth
+item.legacy_pet_sloth.desc,Every 25s: gain 3 random buffs.
+item.legacy_book_of_basics.name,Book of Basics
+item.legacy_book_of_basics.desc,Every 5s: spend 1 stamina for +8 max health.
+item.legacy_book_of_nature.name,Book of Nature
+item.legacy_book_of_nature.desc,"Every 2.3s: gain 1 Regeneration, 1 Luck and 2 Thorns."
+item.legacy_book_of_darkness.name,Book of Darkness
+item.legacy_book_of_darkness.desc,Every 2.6s: gain 3 stamina and apply 1 Cold.
+item.legacy_book_of_light.name,Book of Light
+item.legacy_book_of_light.desc,Every 3s: spend 1 stamina to heal 12 and gain 1 Regeneration.
+item.legacy_book_of_ice.name,Book of Ice
+item.legacy_book_of_ice.desc,Every 2.8s: spend 1 stamina to apply 2 Cold.
+item.legacy_book_of_ice_new.name,Book of Ice New
+item.legacy_book_of_ice_new.desc,Every 3s: spend 1 stamina to apply 2 Cold.
+item.legacy_card_the_lovers.name,The Lovers
+item.legacy_card_the_lovers.desc,Every 1.5s: deal 7 physical damage and gain 2 Regeneration.
+item.legacy_card_ace_of_spades.name,Ace of Spades
+item.legacy_card_ace_of_spades.desc,Every 1.5s: gain 2 Luck and 3 Thorns.
+item.legacy_card_reverse.name,Reverse
+item.legacy_card_reverse.desc,Every 1.5s: cleanse 3 own debuffs and remove 3 enemy buffs.
+item.legacy_card_white_eyes_blue_dragon.name,White-Eyes Blue Dragon
+item.legacy_card_white_eyes_blue_dragon.desc,Every 1.5s: gain 12 armor and apply 4 Cold.
+item.legacy_card_the_fool.name,The Fool
+item.legacy_card_the_fool.desc,Every 1.5s: gain 1 Empower.
+item.legacy_card_holo_fire_lizard.name,Holo Fire Lizard
+item.legacy_card_holo_fire_lizard.desc,Every 1.5s: deal 12 physical damage and gain 4 Heat.
+item.legacy_card_joker.name,Joker
+item.legacy_card_joker.desc,Every 1.5s: gain 2 random buffs and 2 stamina.
+item.legacy_card_darkest_lotus.name,Darkest Lotus
+item.legacy_card_darkest_lotus.desc,Every 1.5s: gain 4 stamina and remove 3 enemy buffs.
+item.legacy_chess_white_pawn.name,White Pawn
+item.legacy_chess_white_pawn.desc,Start: gain 1 Luck and 2 Regeneration.
+item.legacy_chess_black_pawn.name,Black Pawn
+item.legacy_chess_black_pawn.desc,Start: gain 3 stamina and apply 2 Poison.
+item.legacy_chess_white_knight.name,White Knight
+item.legacy_chess_white_knight.desc,Start: cooldowns 10% faster and gain 2 stamina.
+item.legacy_chess_black_knight.name,Black Knight
+item.legacy_chess_black_knight.desc,Start: gain 3 Lifesteal and 2 stamina.
+item.legacy_chess_white_bishop.name,White Bishop
+item.legacy_chess_white_bishop.desc,Start: cleanse 10 debuffs.
+item.legacy_chess_black_bishop.name,Black Bishop
+item.legacy_chess_black_bishop.desc,Start: apply 4 Wound and destroy 5 armor.
+item.legacy_chess_white_rook.name,White Rook
+item.legacy_chess_white_rook.desc,Start: gain 35 armor and 3 Fortified for 3s.
+item.legacy_chess_black_rook.name,Black Rook
+item.legacy_chess_black_rook.desc,Start: gain 3 Thorns and 10% crit.
+item.legacy_chess_white_queen.name,White Queen
+item.legacy_chess_white_queen.desc,Start: gain 8 Heat.
+item.legacy_chess_black_queen.name,Black Queen
+item.legacy_chess_black_queen.desc,Start: gain 4 random buffs.
+item.legacy_chess_white_king.name,White King
+item.legacy_chess_white_king.desc,Start: gain 1 Empower and 2 random buffs.
+item.legacy_chess_black_king.name,Black King
+item.legacy_chess_black_king.desc,Start: cooldowns 10% faster and remove 2 enemy buffs.

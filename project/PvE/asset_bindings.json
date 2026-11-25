@@ -15334,6 +15334,3236 @@
         "material": ""
       },
       "template": "ItemBase"
+    },
+    "legacy_pet_goobert": {
+      "name": "Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_shelly": {
+      "name": "Shelly",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_shelly",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "13",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_ruby_egg": {
+      "name": "Ruby Egg",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_ruby_egg",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_jynx_torquilla": {
+      "name": "Jynx torquilla",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_jynx_torquilla",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_blood_goobert": {
+      "name": "Blood Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_blood_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_steel_goobert": {
+      "name": "Steel Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_steel_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_wolpertinger": {
+      "name": "Wolpertinger",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_wolpertinger",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_light_goobert": {
+      "name": "Light Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_light_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_king_goobert": {
+      "name": "King Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_king_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_paradise_birb": {
+      "name": "Paradise Birb",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_paradise_birb",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.7",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_cubert": {
+      "name": "Cubert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_cubert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_ghost": {
+      "name": "Ghost",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_ghost",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_cthulhu": {
+      "name": "Cthulhu",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_cthulhu",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.7",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_little_mimic": {
+      "name": "Little Mimic",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_little_mimic",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "6",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_carrot_goobert": {
+      "name": "Carrot Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_carrot_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_snowmaster": {
+      "name": "Snowmaster",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_snowmaster",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "1.3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rainbow_goobert_ranger": {
+      "name": "Rainbow Goobert Ranger",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rainbow_goobert_ranger",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rat": {
+      "name": "Rat",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rat",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3.3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_squirrel": {
+      "name": "Squirrel",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_squirrel",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "4",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_hedgehog": {
+      "name": "Hedgehog",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_hedgehog",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rat_chef": {
+      "name": "Rat Chef",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rat_chef",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "7",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_hyper_hedgehog": {
+      "name": "Hyper Hedgehog",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_hyper_hedgehog",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_toad": {
+      "name": "Toad",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_toad",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_poison_goobert": {
+      "name": "Poison Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_poison_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_crow": {
+      "name": "Crow",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_crow",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_poison_frog": {
+      "name": "Poison Frog",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_poison_frog",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rainbow_goobert": {
+      "name": "Rainbow Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rainbow_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_snake": {
+      "name": "Snake",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_snake",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.2",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_chili_goobert": {
+      "name": "Chili Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_chili_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_fire_shelly": {
+      "name": "Fire Shelly",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_fire_shelly",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "12",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rainbow_goobert_pyromancer": {
+      "name": "Rainbow Goobert Pyromancer",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rainbow_goobert_pyromancer",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_friendly_fire": {
+      "name": "Friendly Fire",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_friendly_fire",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.9",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_emerald_egg": {
+      "name": "Emerald Egg",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_emerald_egg",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_sapphire_egg": {
+      "name": "Sapphire Egg",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_sapphire_egg",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_amethyst_egg": {
+      "name": "Amethyst Egg",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_amethyst_egg",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_cheese_goobert": {
+      "name": "Cheese Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_cheese_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rainbow_goobert_berserker": {
+      "name": "Rainbow Goobert Berserker",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rainbow_goobert_berserker",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_wisdom_puppy": {
+      "name": "Wisdom Puppy",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_wisdom_puppy",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "4",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_power_puppy": {
+      "name": "Power Puppy",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_power_puppy",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3.2",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_armored_wisdom_puppy": {
+      "name": "Armored Wisdom Puppy",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_armored_wisdom_puppy",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "4",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_armored_power_puppy": {
+      "name": "Armored Power Puppy",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_armored_power_puppy",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_goobling": {
+      "name": "Goobling",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_goobling",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_cat_spirit": {
+      "name": "Cat Spirit",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_cat_spirit",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_owl_spirit": {
+      "name": "Owl Spirit",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_owl_spirit",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3.2",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_badger_spirit": {
+      "name": "Badger Spirit",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_badger_spirit",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_cupcake_goobert": {
+      "name": "Cupcake Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_cupcake_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rainbow_goobert_mage": {
+      "name": "Rainbow Goobert Mage",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rainbow_goobert_mage",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_evil_hat": {
+      "name": "Evil Hat",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_evil_hat",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_broccoli_goobert": {
+      "name": "Broccoli Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_broccoli_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rainbow_goobert_adventurer": {
+      "name": "Rainbow Goobert Adventurer",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rainbow_goobert_adventurer",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_mercury_elemental": {
+      "name": "Mercury Elemental",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_mercury_elemental",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "4.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_turtle": {
+      "name": "Turtle",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_turtle",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "13",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_toast_goobert": {
+      "name": "Toast Goobert",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_toast_goobert",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_rainbow_goobert_engineer": {
+      "name": "Rainbow Goobert Engineer",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_rainbow_goobert_engineer",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_robodog": {
+      "name": "Robodog",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_robodog",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "1.9",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_mecha_bat": {
+      "name": "Mecha Bat",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_mecha_bat",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_frog_prince": {
+      "name": "Frog Prince",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_frog_prince",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "2.6",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_thorn_elemental": {
+      "name": "Thorn Elemental",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_thorn_elemental",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_pet_sloth": {
+      "name": "Sloth",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Pet",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pet_sloth",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Pet",
+        "cd": "25",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_book_of_basics": {
+      "name": "Book of Basics",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Book",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_book_of_basics",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Book",
+        "cd": "5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_book_of_nature": {
+      "name": "Book of Nature",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Book",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_book_of_nature",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Book",
+        "cd": "2.3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_book_of_darkness": {
+      "name": "Book of Darkness",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Book",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_book_of_darkness",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Book",
+        "cd": "2.6",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_book_of_light": {
+      "name": "Book of Light",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Book",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_book_of_light",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Book",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_book_of_ice": {
+      "name": "Book of Ice",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Book",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_book_of_ice",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Book",
+        "cd": "2.8",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_book_of_ice_new": {
+      "name": "Book of Ice New",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Book",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_book_of_ice_new",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Book",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_the_lovers": {
+      "name": "The Lovers",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_the_lovers",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_ace_of_spades": {
+      "name": "Ace of Spades",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_ace_of_spades",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_reverse": {
+      "name": "Reverse",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_reverse",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_white_eyes_blue_dragon": {
+      "name": "White-Eyes Blue Dragon",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_white_eyes_blue_dragon",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_the_fool": {
+      "name": "The Fool",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_the_fool",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_holo_fire_lizard": {
+      "name": "Holo Fire Lizard",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_holo_fire_lizard",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_joker": {
+      "name": "Joker",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_joker",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_card_darkest_lotus": {
+      "name": "Darkest Lotus",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Card",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_card_darkest_lotus",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Card",
+        "cd": "1.5",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_white_pawn": {
+      "name": "White Pawn",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_white_pawn",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_black_pawn": {
+      "name": "Black Pawn",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_black_pawn",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_white_knight": {
+      "name": "White Knight",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_white_knight",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_black_knight": {
+      "name": "Black Knight",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_black_knight",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_white_bishop": {
+      "name": "White Bishop",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_white_bishop",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_black_bishop": {
+      "name": "Black Bishop",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_black_bishop",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_white_rook": {
+      "name": "White Rook",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_white_rook",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_black_rook": {
+      "name": "Black Rook",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_black_rook",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_white_queen": {
+      "name": "White Queen",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_white_queen",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_black_queen": {
+      "name": "Black Queen",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_black_queen",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_white_king": {
+      "name": "White King",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_white_king",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chess_black_king": {
+      "name": "Black King",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Chess Piece",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chess_black_king",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Chess Piece",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
     }
   },
   "roles": {

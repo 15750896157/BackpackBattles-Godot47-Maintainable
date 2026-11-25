@@ -938,3 +938,173 @@ item.legacy_wand_of_dissonance.name,不谐魔杖
 item.legacy_wand_of_dissonance.desc,每 2.9 秒造成 8 点物理伤害，并获得 1 层幸运与再生（3 秒）。
 item.legacy_amulet_of_light.name,光辉护符
 item.legacy_amulet_of_light.desc,战斗开始时最大生命 +6，并获得 1 层再生。
+item.legacy_pet_goobert.name,黏黏
+item.legacy_pet_goobert.desc,相邻物品每激活 5 次：治疗 9 点。
+item.legacy_pet_shelly.name,贝壳精灵
+item.legacy_pet_shelly.desc,每 13 秒：净化 6 层负面状态并治疗 40 点。
+item.legacy_pet_ruby_egg.name,红宝石龙蛋
+item.legacy_pet_ruby_egg.desc,战斗开始时获得 4 层炽热与 3 层抗性。
+item.legacy_pet_jynx_torquilla.name,歪脖鸟
+item.legacy_pet_jynx_torquilla.desc,每 3 秒：移除敌人 1 层幸运。
+item.legacy_pet_blood_goobert.name,血之黏黏
+item.legacy_pet_blood_goobert.desc,战斗开始时获得 5 层吸血；相邻物品每次激活造成 10 点物理伤害。
+item.legacy_pet_steel_goobert.name,钢之黏黏
+item.legacy_pet_steel_goobert.desc,战斗开始时获得 16 点护甲；相邻物品每次激活使你伤害 +2。
+item.legacy_pet_wolpertinger.name,鹿角翼兔
+item.legacy_pet_wolpertinger.desc,每 5 秒：获得 3 层随机增益。
+item.legacy_pet_light_goobert.name,光之黏黏
+item.legacy_pet_light_goobert.desc,相邻物品每激活 6 次：治疗 25 点并对敌人施加 7 层寒冷（3 秒）。
+item.legacy_pet_king_goobert.name,黏黏王
+item.legacy_pet_king_goobert.desc,相邻物品每激活 6 次：治疗 35 点、获得 3 层随机增益与 4 点耐力。
+item.legacy_pet_paradise_birb.name,天堂鸟
+item.legacy_pet_paradise_birb.desc,每 2.7 秒：治疗 7 点并获得 1 层随机增益。
+item.legacy_pet_cubert.name,方块精灵
+item.legacy_pet_cubert.desc,相邻物品每激活 6 次：获得 1 层再生与 1 层强化。
+item.legacy_pet_ghost.name,幽灵
+item.legacy_pet_ghost.desc,每 3 秒：治疗 12 点，并对敌人造成 3 点真实伤害。
+item.legacy_pet_cthulhu.name,克苏鲁
+item.legacy_pet_cthulhu.desc,每 2.7 秒：造成 10 点真实伤害并获得 1 层吸血。
+item.legacy_pet_little_mimic.name,小宝箱怪
+item.legacy_pet_little_mimic.desc,每 6 秒：获得 3 层随机增益。
+item.legacy_pet_carrot_goobert.name,萝卜头黏黏
+item.legacy_pet_carrot_goobert.desc,相邻物品每激活 6 次：净化 4 层负面状态并获得 2 层强化（8 秒）。
+item.legacy_pet_snowmaster.name,雪之主人
+item.legacy_pet_snowmaster.desc,每 1.3 秒：对敌人施加 1 层寒冷（10 秒）并获得 1 层强化。
+item.legacy_pet_rainbow_goobert_ranger.name,彩虹究极布丁黏黏
+item.legacy_pet_rainbow_goobert_ranger.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 2 层强化，并对敌人施加 3 层寒冷。
+item.legacy_pet_rat.name,老鼠
+item.legacy_pet_rat.desc,每 3.3 秒：造成 5 点物理伤害，并施加 1 层中毒与 1 层寒冷。
+item.legacy_pet_squirrel.name,松鼠
+item.legacy_pet_squirrel.desc,每 4 秒：获得 1 层随机增益。
+item.legacy_pet_hedgehog.name,刺猬
+item.legacy_pet_hedgehog.desc,每 5 秒：造成 10 点物理伤害并获得 3 层尖刺；生命首次低于 70% 时获得 25 点护甲。
+item.legacy_pet_rat_chef.name,厨师鼠
+item.legacy_pet_rat_chef.desc,战斗开始时获得 2 层再生；每 7 秒获得 2 点耐力与 1 层强化。
+item.legacy_pet_hyper_hedgehog.name,超级刺猬
+item.legacy_pet_hyper_hedgehog.desc,每 5 秒：造成 12 点物理伤害、获得 4 层尖刺与 1 层强化；生命首次低于 70% 时获得 35 点护甲。
+item.legacy_pet_toad.name,蟾蜍
+item.legacy_pet_toad.desc,每 3.8 秒：治疗 12 点、获得 1 层幸运与 1 点耐力。
+item.legacy_pet_poison_goobert.name,剧毒黏黏
+item.legacy_pet_poison_goobert.desc,相邻物品每激活 5 次：治疗 10 点并对敌人施加 4 层中毒。
+item.legacy_pet_crow.name,乌鸦
+item.legacy_pet_crow.desc,每 3 秒：移除敌人 1 层幸运，并获得 1 层幸运。
+item.legacy_pet_poison_frog.name,毒蛙
+item.legacy_pet_poison_frog.desc,每 2.1 秒：对敌人施加 2 层中毒并获得 1 点耐力。
+item.legacy_pet_rainbow_goobert.name,彩虹超级至尊黏黏
+item.legacy_pet_rainbow_goobert.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲与 3 层吸血，并对敌人施加 4 层寒冷与 3 层中毒。
+item.legacy_pet_snake.name,蛇
+item.legacy_pet_snake.desc,战斗开始时获得 4 层幸运与 20 点最大生命；每 2.2 秒对敌人施加 2 层中毒。
+item.legacy_pet_chili_goobert.name,辣椒黏黏
+item.legacy_pet_chili_goobert.desc,相邻物品每激活 6 次：治疗 16 点并获得 2 层炽热。
+item.legacy_pet_fire_shelly.name,火焰贝壳精灵
+item.legacy_pet_fire_shelly.desc,每 12 秒：净化 6 层负面状态、治疗 40 点并获得 2 层炽热。
+item.legacy_pet_rainbow_goobert_pyromancer.name,彩虹布丁火焰法师
+item.legacy_pet_rainbow_goobert_pyromancer.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 4 层炽热，并对敌人施加 4 层寒冷。
+item.legacy_pet_friendly_fire.name,友军火力
+item.legacy_pet_friendly_fire.desc,每 2.9 秒获得 2 层炽热；炽热达到 20 层时获得 5 层幸运（一次）。
+item.legacy_pet_emerald_egg.name,翡翠龙蛋
+item.legacy_pet_emerald_egg.desc,战斗开始时获得 3 层幸运。
+item.legacy_pet_sapphire_egg.name,蓝宝石龙蛋
+item.legacy_pet_sapphire_egg.desc,战斗开始时获得 6 点耐力。
+item.legacy_pet_amethyst_egg.name,紫水晶龙蛋
+item.legacy_pet_amethyst_egg.desc,战斗开始时获得 4 层随机负面状态。
+item.legacy_pet_cheese_goobert.name,奶酪黏黏
+item.legacy_pet_cheese_goobert.desc,相邻物品每激活 5 次：最大生命 +22 并获得 2 层随机增益。
+item.legacy_pet_rainbow_goobert_berserker.name,彩虹布丁狂战士
+item.legacy_pet_rainbow_goobert_berserker.desc,相邻物品每激活 9 次：最大生命 +40、获得 20 点护甲、2 层吸血与 2 层随机增益，并对敌人施加 4 层寒冷。
+item.legacy_pet_wisdom_puppy.name,智慧小狗
+item.legacy_pet_wisdom_puppy.desc,每 4 秒：获得 10 点护甲并净化 6 层寒冷。
+item.legacy_pet_power_puppy.name,力量小狗
+item.legacy_pet_power_puppy.desc,每 3.2 秒：获得 2 层随机增益。
+item.legacy_pet_armored_wisdom_puppy.name,重甲智慧小狗
+item.legacy_pet_armored_wisdom_puppy.desc,每 4 秒：获得 14 点护甲并净化 6 层寒冷。
+item.legacy_pet_armored_power_puppy.name,重甲力量小狗
+item.legacy_pet_armored_power_puppy.desc,每 2.8 秒：获得 2 层随机增益。
+item.legacy_pet_goobling.name,小黏黏
+item.legacy_pet_goobling.desc,相邻物品每激活 3 次：治疗 4 点。
+item.legacy_pet_cat_spirit.name,猫之精魂
+item.legacy_pet_cat_spirit.desc,每 2.1 秒：获得 1 层幸运与 1 层强化，暴击率 +10%。
+item.legacy_pet_owl_spirit.name,枭之精魂
+item.legacy_pet_owl_spirit.desc,每 3.2 秒：获得 2 点耐力。
+item.legacy_pet_badger_spirit.name,獾之精魂
+item.legacy_pet_badger_spirit.desc,每 5 秒：治疗 20 点并使最大生命 +20。
+item.legacy_pet_cupcake_goobert.name,纸杯蛋糕黏黏
+item.legacy_pet_cupcake_goobert.desc,相邻物品每激活 6 次：治疗 35 点并获得 2 层随机增益。
+item.legacy_pet_rainbow_goobert_mage.name,彩虹布丁法师
+item.legacy_pet_rainbow_goobert_mage.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 2 层随机增益，并对敌人施加 3 层寒冷。
+item.legacy_pet_evil_hat.name,邪恶魔帽
+item.legacy_pet_evil_hat.desc,每 3 秒：获得 2 层随机增益与 1 层再生，并对敌人施加 3 层创伤。
+item.legacy_pet_broccoli_goobert.name,西兰花黏黏
+item.legacy_pet_broccoli_goobert.desc,相邻物品每激活 6 次：获得 3 层幸运与 3 层再生。
+item.legacy_pet_rainbow_goobert_adventurer.name,彩虹布丁冒险家
+item.legacy_pet_rainbow_goobert_adventurer.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 2 层再生，并对敌人施加 3 层寒冷。
+item.legacy_pet_mercury_elemental.name,水银元素
+item.legacy_pet_mercury_elemental.desc,每 4.5 秒：获得 50 点护甲、1 点耐力，并对敌人施加 2 层中毒。
+item.legacy_pet_turtle.name,乌龟
+item.legacy_pet_turtle.desc,每 13 秒：获得 60 点护甲与 7 层坚固（7 秒）。
+item.legacy_pet_toast_goobert.name,吐司黏黏
+item.legacy_pet_toast_goobert.desc,相邻物品每激活 6 次：获得 2 点耐力与 3 层再生。
+item.legacy_pet_rainbow_goobert_engineer.name,彩虹布丁工程师
+item.legacy_pet_rainbow_goobert_engineer.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 1 层再生，并对敌人施加 3 层寒冷。
+item.legacy_pet_robodog.name,机器狗
+item.legacy_pet_robodog.desc,每 1.9 秒：获得 1 层幸运与 1 层炽热。
+item.legacy_pet_mecha_bat.name,机械蝙蝠
+item.legacy_pet_mecha_bat.desc,每 3 秒：获得 3 层吸血与 1 层幸运（10 秒）。
+item.legacy_pet_frog_prince.name,青蛙王子
+item.legacy_pet_frog_prince.desc,每 2.6 秒：获得 1 点耐力、5 层幸运并治疗 20 点。
+item.legacy_pet_thorn_elemental.name,荆棘元素
+item.legacy_pet_thorn_elemental.desc,每 3 秒：获得 3 层尖刺。
+item.legacy_pet_sloth.name,树懒
+item.legacy_pet_sloth.desc,每 25 秒：获得 3 层随机增益。
+item.legacy_book_of_basics.name,基础之书
+item.legacy_book_of_basics.desc,每 5 秒：消耗 1 点耐力，最大生命 +8。
+item.legacy_book_of_nature.name,自然之书
+item.legacy_book_of_nature.desc,每 2.3 秒：获得 1 层再生、1 层幸运与 2 层尖刺。
+item.legacy_book_of_darkness.name,黑暗之书
+item.legacy_book_of_darkness.desc,每 2.6 秒：获得 3 点耐力，并对敌人施加 1 层寒冷。
+item.legacy_book_of_light.name,光明之书
+item.legacy_book_of_light.desc,每 3 秒：消耗 1 点耐力，治疗 12 点并获得 1 层再生。
+item.legacy_book_of_ice.name,寒冰之书
+item.legacy_book_of_ice.desc,每 2.8 秒：消耗 1 点耐力，对敌人施加 2 层寒冷。
+item.legacy_book_of_ice_new.name,寒冰之书·新
+item.legacy_book_of_ice_new.desc,每 3 秒：消耗 1 点耐力，对敌人施加 2 层寒冷。
+item.legacy_card_the_lovers.name,恋人
+item.legacy_card_the_lovers.desc,每 1.5 秒：造成 7 点物理伤害并获得 2 层再生（近似原版揭示效果）。
+item.legacy_card_ace_of_spades.name,黑桃A
+item.legacy_card_ace_of_spades.desc,每 1.5 秒：获得 2 层幸运与 3 层尖刺。
+item.legacy_card_reverse.name,逆转
+item.legacy_card_reverse.desc,每 1.5 秒：净化自身 3 层负面状态，并移除敌人 3 层正面状态。
+item.legacy_card_white_eyes_blue_dragon.name,白眼青龙
+item.legacy_card_white_eyes_blue_dragon.desc,每 1.5 秒：获得 12 点护甲并对敌人施加 4 层寒冷。
+item.legacy_card_the_fool.name,愚者
+item.legacy_card_the_fool.desc,每 1.5 秒：获得 1 层强化。
+item.legacy_card_holo_fire_lizard.name,大火龙
+item.legacy_card_holo_fire_lizard.desc,每 1.5 秒：造成 12 点物理伤害并获得 4 层炽热。
+item.legacy_card_joker.name,小丑
+item.legacy_card_joker.desc,每 1.5 秒：获得 2 层随机增益与 2 点耐力。
+item.legacy_card_darkest_lotus.name,黑暗莲花
+item.legacy_card_darkest_lotus.desc,每 1.5 秒：获得 4 点耐力，并移除敌人 3 层正面状态。
+item.legacy_chess_white_pawn.name,白兵
+item.legacy_chess_white_pawn.desc,战斗开始时获得 1 层幸运与 2 层再生。
+item.legacy_chess_black_pawn.name,黑兵
+item.legacy_chess_black_pawn.desc,战斗开始时获得 3 点耐力并对敌人施加 2 层中毒。
+item.legacy_chess_white_knight.name,白马
+item.legacy_chess_white_knight.desc,战斗开始时冷却加快 10%，并获得 2 点耐力。
+item.legacy_chess_black_knight.name,黑马
+item.legacy_chess_black_knight.desc,战斗开始时获得 3 层吸血与 2 点耐力。
+item.legacy_chess_white_bishop.name,白象
+item.legacy_chess_white_bishop.desc,战斗开始时净化 10 层负面状态。
+item.legacy_chess_black_bishop.name,黑象
+item.legacy_chess_black_bishop.desc,战斗开始时对敌人施加 4 层创伤并摧毁 5 点护甲。
+item.legacy_chess_white_rook.name,白车
+item.legacy_chess_white_rook.desc,战斗开始时获得 35 点护甲与 3 层坚固（3 秒）。
+item.legacy_chess_black_rook.name,黑车
+item.legacy_chess_black_rook.desc,战斗开始时获得 3 层尖刺与 10% 暴击率。
+item.legacy_chess_white_queen.name,白后
+item.legacy_chess_white_queen.desc,战斗开始时获得 8 层炽热。
+item.legacy_chess_black_queen.name,黑后
+item.legacy_chess_black_queen.desc,战斗开始时获得 4 层随机增益。
+item.legacy_chess_white_king.name,白王
+item.legacy_chess_white_king.desc,战斗开始时获得 1 层强化与 2 层随机增益。
+item.legacy_chess_black_king.name,黑王
+item.legacy_chess_black_king.desc,战斗开始时冷却加快 10%，并移除敌人 2 层正面状态。
