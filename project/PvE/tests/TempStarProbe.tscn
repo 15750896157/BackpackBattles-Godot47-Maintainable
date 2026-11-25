@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://Code/Core/Main.tscn" id="1_2wcgv"]
+[ext_resource type="Script" path="res://PvE/tests/TempStarProbe.gd" id="2_1f6xq"]
+
+[node name="Main" instance=ExtResource("1_2wcgv")]
+
+[node name="TempStarProbe" type="Node" parent="."]
+script = ExtResource("2_1f6xq")
