@@ -76,7 +76,7 @@ window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://Art/Assets/Cursor/Cursor_default_small.png"
-mouse_cursor/custom_image_hotspot=Vector2(20, 25)
+mouse_cursor/custom_image_hotspot=Vector2(17, 21)
 
 [editor_plugins]
 
