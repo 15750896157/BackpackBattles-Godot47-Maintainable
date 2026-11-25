@@ -13,8 +13,8 @@ func run_tests():
 	check(Expedition.current_page=="ROUTE_SELECT","new journey opens the shared parchment route page")
 	check(Expedition.panel.find_child("RouteChoice_0",true,false)!=null,"new journey provides direct route targets")
 	for card in Expedition.panel.find_children("RouteChoice_*","Button",true,false):
-		var content: Node = card.get_child(0) if card.get_child_count()>0 else null
-		var portrait: TextureRect = content.get_child(0) as TextureRect if content!=null and content.get_child_count()>0 else null
+		# RouteChoice 是无子节点的透明按钮；立绘是卡根/页根下同序号的 RoutePortrait_N 兄弟节点。
+		var portrait: TextureRect = card.get_parent().get_node_or_null("RoutePortrait_"+str(card.get_meta("route_index"))) as TextureRect
 		check(portrait!=null and portrait.texture!=null,"route card shows its enemy portrait: "+card.name)
 	var route_before: Array = Expedition.flow.run.route_candidates.duplicate(true)
 	var opponent: Dictionary = route_before.filter(func(node): return str(node.type).ends_with("combat") or node.type == "boss")[0]
