@@ -289,6 +289,15 @@ func create_run(role: String, loadout: String, difficulty: String, seed: int, co
 		perform(result)
 	return result
 
+func end_run():
+	if not initialized: return
+	var result = flow.end_run()
+	perform(result)
+	if not result.ok: return
+	# Native title observes the run save and refreshes in place; the legacy
+	# presentation rebuilds the title page through the usual return path.
+	if native_routes == null: await return_to_title()
+
 func continue_run(_mode: int = 0):
 	if not initialized: return
 	if native_routes != null:
@@ -685,7 +694,9 @@ func render_state(force: bool = false, settling_route: bool = false):
 		elif not settling_route: start_round()
 		if not flow.run.pending_rewards.is_empty(): show_pending()
 		elif current_page == "CRAFTING" and not force and not transitioned: show_crafting()
-		elif transitioned or force or current_page == "PENDING": close_popup()
+		elif (transitioned or force or current_page == "PENDING") and Game.state == Game.State.Shop:
+			# 切到商店时云幕盖满前不关旧页，否则会露出垫在下面的主菜单。
+			close_popup()
 		prompt_route_when_ready(view_epoch)
 		return
 	if state == "COMBAT_RUNNING":
@@ -701,8 +712,20 @@ func render_state(force: bool = false, settling_route: bool = false):
 func update_tutorial_hint():
 	if tutorial_hint != null: tutorial_hint.text = ""; tutorial_hint.hide()
 
+var route_mount_pending := false
+
 func show_routes():
-	menus.journey.choose_route()
+	if route_mount_pending: return
+	route_mount_pending = true
+	await menus.journey.choose_route()
+	route_mount_pending = false
+
+func settle_route_mount(seconds: float = 12.0) -> bool:
+	# 标题切换时等选路页真正挂好再揭幕，避免先露出主菜单。
+	var deadline := Time.get_ticks_msec() + int(seconds * 1000.0)
+	while route_mount_pending and Time.get_ticks_msec() < deadline:
+		await get_tree().process_frame
+	return not route_mount_pending
 
 func show_enemy(node: Dictionary):
 	if flow.screen_state == "SHOP_PREPARE": flow.mark_tutorial("view_enemy")
@@ -813,4 +836,22 @@ func _notification(what: int):
 
 func _input(event: InputEvent):
 	if initialized and preferences.capture_action != "" and preferences.capture(event): get_viewport().set_input_as_handled()
+	if _book_rotate(event): return
 	_block_menu_scroll(event)
+
+## 图鉴里复用商店的旋转操作：滚轮或 Q / E，动作和音效与商店一致。
+func _book_rotate(event: InputEvent) -> bool:
+	if not initialized or panel == null or not panel.visible: return false
+	if current_page not in ["CODEX", "CRAFTING"]: return false
+	if menus == null or menus.library == null or not is_instance_valid(menus.library.root): return false
+	if event is InputEventKey and event.echo: return false
+	var clockwise := false
+	if event.is_action_pressed("rotate_right") or event.is_action_pressed("rotate_right_button"):
+		clockwise = true
+	elif event.is_action_pressed("rotate_left") or event.is_action_pressed("rotate_left_button"):
+		clockwise = false
+	else:
+		return false
+	if not menus.library.rotate_blueprint(clockwise): return false
+	get_viewport().set_input_as_handled()
+	return true

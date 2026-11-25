@@ -186,6 +186,24 @@ func go_main_menu() -> Dictionary:
 	changed.emit()
 	return {"ok": saved, "error": "" if saved else "save_write_failed"}
 
+func end_run() -> Dictionary:
+	# End the current expedition without starting a new one. The run stays on
+	# disk as RUN_RESULT so it is no longer resumable but is still archived when
+	# the next confirmed run replaces it.
+	if run.is_empty():
+		var loaded = saves.load_save("run")
+		if not loaded.ok: return {"ok": true, "error": "", "committed_in_memory": true}
+		run = loaded.data
+	if run.is_empty(): return {"ok": true, "error": "", "committed_in_memory": true}
+	var previous_state = str(run.get("state", ""))
+	if previous_state == "RUN_RESULT": return {"ok": true, "error": "", "committed_in_memory": true}
+	run.state = "RUN_RESULT"
+	screen_state = "MAIN_MENU"
+	var saved = _save()
+	if not saved: run.state = previous_state
+	changed.emit()
+	return {"ok": saved, "error": "" if saved else "save_write_failed", "committed_in_memory": true}
+
 func choose_route(index: int) -> Dictionary:
 	var prepared_shop = screen_state == "SHOP_PREPARE" and bool(run.get("route_pending", false))
 	if screen_state != "ROUTE_SELECT" and not prepared_shop: return _fail("wrong_state")

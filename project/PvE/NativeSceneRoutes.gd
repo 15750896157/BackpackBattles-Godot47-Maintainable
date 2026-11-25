@@ -141,6 +141,7 @@ func _can_interact() -> bool:
 func _title_action(action: StringName) -> void:
 	match action:
 		&"new_run": owner.menus.runs.new_setup()
+		&"end_run": owner.end_run()
 		&"continue_run": owner.continue_run()
 		&"settings": owner.show_settings()
 		&"codex": owner.show_codex()
@@ -176,6 +177,8 @@ func _activate_shop(carrier: Node2D, options: Dictionary):
 	else:
 		Game.PLAYER.combatToShop()
 	Game.state = Game.State.Shop
+	# 云幕盖满后再关旧弹层，避免转场途中露出下面的主菜单。
+	owner.close_popup()
 	Game.canSwitchToCombat = false
 	shop_presentation.activate(int(options.epoch))
 	Game.emit_signal("pre_shop_opened_from_title" if from_title else "pre_shop_opened_from_combat")
@@ -243,6 +246,9 @@ func _settle(options: Dictionary, current: Callable, kind: StringName) -> bool:
 		Game.emit_signal("shop_opened")
 	elif kind == &"title" and not bool(options.get("initial", false)):
 		owner.render_state(true, true)
+		# 选路页要挂载完成才允许揭幕，否则会先露出主菜单再突兀出现选路页。
+		if owner.flow.screen_state == "ROUTE_SELECT" and not await owner.settle_route_mount():
+			return false
 	var deadline := Time.get_ticks_msec() + READY_TIMEOUT_MS
 	while _owns(options, current) and Time.get_ticks_msec() < deadline:
 		if owner.art._reveal_target_ready(str(kind)):

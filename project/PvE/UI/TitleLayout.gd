@@ -22,4 +22,4 @@ static func build(root: Control):
 	begin.name = "TitleStart"
 	REF.button(root,"button_blue",Rect2(786,691,348,79),Game.quit,Expedition.bilingual("退出游戏","Exit game"),48).name = "TitleExit"
 	if not saved.is_empty():
-		REF.button(root,"button_red",Rect2(751,785,418,79),Expedition.menus.runs.new_setup,Expedition.bilingual("结束当前对决","New expedition"),48).name = "TitleNewRun"
+		REF.button(root,"button_red",Rect2(751,785,418,79),Expedition.end_run,Expedition.bilingual("结束当前对决","New expedition"),48).name = "TitleNewRun"

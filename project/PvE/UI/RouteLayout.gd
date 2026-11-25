@@ -60,7 +60,7 @@ static func reward_intentions(owner,node:Dictionary)->Array:
 		var title=str(names.get(reward.reward_type,words.call("奖励","Reward")))
 		if title not in labels:labels.append(title)
 	return labels.slice(0,4)
-static func header(root:Control,owner,back_key: String = "back"):
+static func header(root:Control,owner,back_key: String = "back",with_codex: bool = true):
 	REF.picture(root,"route_header_chip",Rect2(89,43,126,39),true)
 	REF.picture(root,"route_header_chip",Rect2(230,43,148,39),true)
 	REF.picture(root,"route_coin",Rect2(75,42,39,39));REF.text(root,str(int(owner.flow.run.gold)),Rect2(120,43,95,39),26,Color("fff0cd"),2)
@@ -71,4 +71,4 @@ static func header(root:Control,owner,back_key: String = "back"):
 		REF.text(root,owner.bilingual("可先整理商店 · 开战前须选定路线","Shop first · Choose a route before battle"),Rect2(450,954,980,45),28,Color("ffe7bf"),2)
 	else:REF.button(root,back_key,Rect2(52,938,117,86),owner.return_to_title).name="JourneyReturn"
 	REF.button(root,"settings",Rect2(1822,14,59,59),owner.show_settings).name="JourneySettings"
-	REF.button(root,"codex",Rect2(1550,930,216,106),owner.show_codex).name="JourneyCodex"
+	if with_codex:REF.button(root,"codex",Rect2(1550,930,216,106),owner.show_codex).name="JourneyCodex"

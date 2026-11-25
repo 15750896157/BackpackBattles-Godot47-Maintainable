@@ -61,17 +61,6 @@ expand_mode = 1
 stretch_mode = 5
 metadata/reference_rect = Rect2(235, 578, 463, 504)
 
-[node name="TitleHand" type="TextureRect" parent="."]
-visible = false
-offset_left = 1160.0
-offset_top = 615.0
-offset_right = 1295.0
-offset_bottom = 750.0
-mouse_filter = 2
-expand_mode = 1
-stretch_mode = 5
-metadata/reference_rect = Rect2(1160, 615, 135, 135)
-
 [node name="TitleStart" type="TextureButton" parent="."]
 offset_left = 786.0
 offset_top = 595.0

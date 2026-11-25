@@ -3,9 +3,9 @@ const REF=preload("res://PvE/UI/ReferenceCanvas.gd")
 static func show_page(page):
 	var owner=page.owner;var ui=page.ui
 	var root=ui.open_canvas("REST",owner.t("ui.rest"));var ticket=owner.popup_epoch
-	if not await AssetStream.prepare(REF.paths(["camp","window","route_coin","camp_heart","route_header_chip","camp_back","settings","codex"]),"popup") or ticket!=owner.popup_epoch:return
+	if not await AssetStream.prepare(REF.paths(["camp","window","route_coin","camp_heart","route_header_chip","camp_back","settings"]),"popup") or ticket!=owner.popup_epoch:return
 	REF.picture(root,"camp",Rect2(0,0,1920,1080),true).name="RestCampArt"
-	preload("res://PvE/UI/RouteLayout.gd").header(root,owner,"camp_back")
+	preload("res://PvE/UI/RouteLayout.gd").header(root,owner,"camp_back",false)
 	REF.text(root,owner.bilingual("营地休整","Camp"),Rect2(710,113,500,70),42,Color("ffdf9f"),2)
 	var panels:Array=[]
 	for left in [145,1240]:

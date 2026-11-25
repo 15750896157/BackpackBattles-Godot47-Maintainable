@@ -382,9 +382,9 @@ func _update_board(inventory, build: Dictionary):
 	if board == null and texture("cell") != null:
 		board = Node2D.new(); board.set_script(board_script); board.name = "SuppliedGrid"; inventory.add_child(board)
 	if board != null:
-		board.slot_texture = texture("cell_slot")
-		board.filled_texture = texture("cell")
+		board.cell_texture = texture("cell")
 		board.empty_texture = texture("cell_empty")
+		board.guide_texture = texture("board_guide") if Expedition.db.release_run(Expedition.flow.run) else null
 		board.configure(build)
 		board.z_index = _board_depth(inventory)
 	if inventory.character == Game.PLAYER and inventory.get_node_or_null("SuppliedHover") == null:

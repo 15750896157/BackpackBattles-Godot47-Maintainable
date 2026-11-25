@@ -4,6 +4,7 @@ var cells: Array = []
 var effects: Dictionary = {}
 var turn = 0
 var known = true
+var art: Sprite2D
 func configure(id: String, rotation: int, discovered: bool, occupied_cells: Array, affected_cells: Dictionary):
 	turn = rotation
 	known = discovered
@@ -24,8 +25,18 @@ func fill_art(id: String, epoch: int, base_cells: Array):
 	var icon=Sprite2D.new();icon.texture=image;icon.scale=Vector2.ONE*float(layout.factor)*step/80.0
 	icon.position=(Vector2(layout.origin).rotated(angle)/80.0-minimum+Vector2(Vector2i((7-rotated_bounds.x)/2,(7-rotated_bounds.y)/2)))*step
 	icon.rotation=angle
+	icon.name="BlueprintIcon"
 	if not known:icon.modulate=Color(0.12,0.10,0.08)
+	if is_instance_valid(art):art.queue_free()
+	art=icon
 	add_child(icon)
+## Shop-style turn: the artwork swings 90 degrees, then the sheet refreshes.
+func spin(clockwise:bool,done:Callable):
+	if not is_instance_valid(art):
+		done.call_deferred();return
+	var tween=art.create_tween().set_ignore_time_scale(true)
+	tween.tween_property(art,"rotation",art.rotation+(PI*0.5 if clockwise else -PI*0.5),0.18).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	tween.finished.connect(func():done.call_deferred())
 func _draw():
 	if cells.is_empty():return
 	var bounds=Vector2i.ZERO
@@ -37,6 +48,7 @@ func _draw():
 			var p=Vector2i(x,y)-offset;var occupied=cells.has(p)
 			var rect=Rect2(Vector2(x,y)*step+Vector2(2,2),Vector2.ONE*(step-4))
 			var style=StyleBoxFlat.new();style.set_corner_radius_all(5);style.set_border_width_all(1)
-			style.bg_color=Color("715034") if occupied else Color(0.46,0.34,0.19,0.10)
+			style.bg_color=Color("5a3d24",0.92) if occupied else Color(0.96,0.87,0.66,0.55)
 			if effects.has(p) and known:style.bg_color=Color(0.27,0.54,0.31,0.42)
-			style.border_color=Color(0.32,0.23,0.13,0.35);draw_style_box(style,rect)
+			style.border_color=Color(0.32,0.23,0.13,0.35) if occupied else Color(0.45,0.33,0.18,0.26)
+			draw_style_box(style,rect)
