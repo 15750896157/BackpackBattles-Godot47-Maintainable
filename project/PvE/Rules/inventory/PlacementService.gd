@@ -63,8 +63,11 @@ func validate(build: Dictionary) -> Dictionary:
 		return _error("storage_full", "仓库空间不足。")
 	var seen: Dictionary = {}
 	var occupied: Dictionary = {"bags": {}, "items": {}}
+	var storage_slots: Dictionary = {}
 	for layer in ["bags", "items", "storage"]:
-		for entry in build.get(layer, []):
+		var entries = build.get(layer, [])
+		for entry_index in range(entries.size()):
+			var entry = entries[entry_index]
 			var uid = str(entry.get("uid", ""))
 			if uid.is_empty() or seen.has(uid):
 				return _error("duplicate_uid", "物品实例编号重复或缺失。", uid)
@@ -77,6 +80,12 @@ func validate(build: Dictionary) -> Dictionary:
 			if not rotations(entry).has(int(entry.get("rotation", 0))):
 				return _error("rotation", "该形状不支持此朝向。", uid)
 			if layer == "storage":
+				var slot = int(entry.get("slot", entry_index))
+				if slot < 0 or slot >= capacity:
+					return _error("storage_slot", "仓库槽位超出容量。", uid)
+				if storage_slots.has(slot):
+					return _error("storage_slot_occupied", "仓库槽位已被占用。", uid)
+				storage_slots[slot] = true
 				continue
 			if (layer == "bags") != (def.get("kind") == "bag"):
 				return _error("wrong_layer", "物品位于错误的逻辑层。", uid)
@@ -139,20 +148,25 @@ func auto_place(build: Dictionary, entry: Dictionary) -> Dictionary:
 					return _commit(build, result)
 	return _error("no_placement", "没有可完整放下此物品的位置。", str(entry.get("uid", "")))
 
-func store(build: Dictionary, entry: Dictionary) -> Dictionary:
+func store(build: Dictionary, entry: Dictionary, slot: int = -1) -> Dictionary:
 	var candidate = build.duplicate(true)
 	var old = find(candidate, str(entry.get("uid", "")))
 	if not old.is_empty():
 		candidate[old.layer].remove_at(old.index)
-	candidate.storage.append(entry.duplicate(true))
+	var placed = entry.duplicate(true)
+	if slot >= 0:
+		placed["slot"] = slot
+	else:
+		placed.erase("slot")
+	candidate.storage.append(placed)
 	return _commit(build, _validated_candidate(candidate))
 
-func remove(build: Dictionary, uid: String, to_storage: bool = false) -> Dictionary:
+func remove(build: Dictionary, uid: String, to_storage: bool = false, slot: int = -1) -> Dictionary:
 	var found = find(build, uid)
 	if found.is_empty():
 		return _error("missing_item", "找不到物品。", uid)
 	if to_storage:
-		return store(build, found.entry)
+		return store(build, found.entry, slot)
 	var candidate = build.duplicate(true)
 	candidate[found.layer].remove_at(found.index)
 	var result = _validated_candidate(candidate)
@@ -179,6 +193,10 @@ func swap(build: Dictionary, first_uid: String, second_uid: String) -> Dictionar
 	var a = first.entry.duplicate(true)
 	var b = second.entry.duplicate(true)
 	if first.layer == "storage" and second.layer == "storage":
+		var a_slot = int(a.get("slot", first.index))
+		var b_slot = int(b.get("slot", second.index))
+		a["slot"] = b_slot
+		b["slot"] = a_slot
 		candidate.storage[first.index] = b
 		candidate.storage[second.index] = a
 	elif first.layer == "storage" or second.layer == "storage":
@@ -189,8 +207,11 @@ func swap(build: Dictionary, first_uid: String, second_uid: String) -> Dictionar
 		var replacement = stored.entry.duplicate(true)
 		replacement["x"] = placed.entry.x
 		replacement["y"] = placed.entry.y
+		replacement.erase("slot")
+		var boxed = placed.entry.duplicate(true)
+		boxed["slot"] = int(stored.entry.get("slot", stored.index))
 		candidate[placed.layer][placed.index] = replacement
-		candidate.storage[stored.index] = placed.entry.duplicate(true)
+		candidate.storage[stored.index] = boxed
 	else:
 		a["x"] = second.entry.x
 		a["y"] = second.entry.y
