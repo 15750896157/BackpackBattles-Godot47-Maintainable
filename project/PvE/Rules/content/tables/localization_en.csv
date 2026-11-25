@@ -750,3 +750,19 @@ status.luck.name,Luck
 status.luck.desc,Luck: each stack grants 3% critical chance.
 status.cold.name,Cold
 status.cold.desc,Cold: each stack reduces cooldown progress speed by 4%.
+item.legacy_hero_longsword.name,Hero Longsword
+item.legacy_hero_longsword.desc,Start of battle: adjacent weapons gain +3 damage.
+item.legacy_snow_stick.name,Snow Stick
+item.legacy_snow_stick.desc,On hit: inflict 3 Cold on the enemy and 2 Cold on yourself.
+item.legacy_bomb.name,Bomb
+item.legacy_bomb.desc,After 12s: consume all your buffs and deal 30 true damage to the enemy.
+item.legacy_leather_helm.name,Leather Helm
+item.legacy_leather_helm.desc,Start of battle: gain 6 Fortified for 3s (about 24% physical reduction).
+item.legacy_twine.name,Twine
+item.legacy_twine.desc,Start of battle: +2 max health.
+item.legacy_bow_and_arrow.name,Bow and Arrow
+item.legacy_bow_and_arrow.desc,"Every 3s deal 7 physical damage; each hit grants +1 damage to itself, up to +7."
+item.legacy_bloody_dagger.name,Bloody Dagger
+item.legacy_bloody_dagger.desc,Every 2.1s deal 6 physical damage; each hit grants 1 Lifesteal (max 5 per combat); heal 4 once per combat while you have Lifesteal.
+item.legacy_chain_whip.name,Chain Whip
+item.legacy_chain_whip.desc,Every 2.4s deal 6 physical damage; on hit remove 2 buff stacks from the opponent.

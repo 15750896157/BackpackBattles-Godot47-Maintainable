@@ -750,3 +750,19 @@ status.luck.name,幸运
 status.luck.desc,幸运：每层提高 3% 暴击率。
 status.cold.name,寒冷
 status.cold.desc,寒冷：每层降低 4% 冷却推进速度。
+item.legacy_hero_longsword.name,英雄长剑
+item.legacy_hero_longsword.desc,战斗开始时：相邻武器获得 +3 伤害。
+item.legacy_snow_stick.name,雪棍
+item.legacy_snow_stick.desc,击中时：对敌人施加 3 层寒冷，并对自己施加 2 层寒冷。
+item.legacy_bomb.name,炸弹
+item.legacy_bomb.desc,12 秒后：消耗自身全部增益，对敌人造成 30 点真实伤害。
+item.legacy_leather_helm.name,坚韧头盔
+item.legacy_leather_helm.desc,战斗开始时：3 秒内获得 6 层坚固（约 24% 物理减伤）。
+item.legacy_twine.name,细绳
+item.legacy_twine.desc,战斗开始时：最大生命 +2。
+item.legacy_bow_and_arrow.name,弓箭
+item.legacy_bow_and_arrow.desc,每 3 秒造成 7 点物理伤害；每次命中自身伤害 +1，最多 +7。
+item.legacy_bloody_dagger.name,吸血匕首
+item.legacy_bloody_dagger.desc,每 2.1 秒造成 6 点物理伤害；每次击中获得 1 层吸血（每场最多 5 层），有吸血时恢复 4 点生命（每场一次）。
+item.legacy_chain_whip.name,锁链鞭
+item.legacy_chain_whip.desc,每 2.4 秒造成 6 点物理伤害；击中时移除对手 2 层增益。

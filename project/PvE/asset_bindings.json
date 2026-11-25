@@ -11572,6 +11572,358 @@
         "tag": "weapon"
       },
       "template": "ItemBase"
+    },
+    "legacy_hero_longsword": {
+      "name": "Hero Longsword",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_hero_longsword",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "1.6",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_snow_stick": {
+      "name": "Snow Stick",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_snow_stick",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_bomb": {
+      "name": "Bomb",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_bomb",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "12",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_leather_helm": {
+      "name": "Leather Helm",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Helmet",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_leather_helm",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Helmet",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_twine": {
+      "name": "Twine",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_twine",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_bow_and_arrow": {
+      "name": "Bow and Arrow",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Ranged Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_bow_and_arrow",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Ranged Weapon",
+        "cd": "3",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_bloody_dagger": {
+      "name": "Bloody Dagger",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_bloody_dagger",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "2.1",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_chain_whip": {
+      "name": "Chain Whip",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_chain_whip",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "cd": "2.4",
+        "material": ""
+      },
+      "template": "ItemBase"
     }
   },
   "roles": {

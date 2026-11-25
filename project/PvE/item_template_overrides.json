@@ -12410,6 +12410,740 @@
    "definition_ids": [
     "legacy_whetstone2"
    ]
+  },
+  "HeroLongsword": {
+   "root_name": "HeroLongsword",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     7.0,
+     -6.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "definition_ids": [
+    "legacy_hero_longsword"
+   ]
+  },
+  "SnowStick": {
+   "root_name": "SnowStick",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     7.0,
+     -6.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "definition_ids": [
+    "legacy_snow_stick"
+   ]
+  },
+  "Bomb": {
+   "root_name": "Bomb",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_bomb"
+   ]
+  },
+  "LeatherHelm": {
+   "root_name": "LeatherHelm",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     7.0,
+     -6.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "definition_ids": [
+    "legacy_leather_helm"
+   ]
+  },
+  "Twine": {
+   "root_name": "Twine",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_twine"
+   ]
+  },
+  "BowandArrow": {
+   "root_name": "BowandArrow",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     7.0,
+     -6.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "definition_ids": [
+    "legacy_bow_and_arrow"
+   ]
+  },
+  "BloodyDagger": {
+   "root_name": "BloodyDagger",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     7.0,
+     -6.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "definition_ids": [
+    "legacy_bloody_dagger"
+   ]
+  },
+  "ChainWhip": {
+   "root_name": "ChainWhip",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     0.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ],
+     [
+      -1,
+      1,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -80,
+    40,
+    -80,
+    40,
+    80,
+    -40,
+    80
+   ],
+   "bottom_center": [
+    0.0,
+    75.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     7.0,
+     -6.0
+    ],
+    "polygon": [
+     -32,
+     -72,
+     -12,
+     -55,
+     -3,
+     -9,
+     -19,
+     9,
+     -15,
+     73,
+     7,
+     78,
+     19,
+     64,
+     5,
+     63,
+     8,
+     32,
+     22,
+     30,
+     8,
+     15,
+     22,
+     2,
+     13,
+     -35,
+     -11,
+     -67
+    ]
+   },
+   "definition_ids": [
+    "legacy_chain_whip"
+   ]
   }
  }
 }
