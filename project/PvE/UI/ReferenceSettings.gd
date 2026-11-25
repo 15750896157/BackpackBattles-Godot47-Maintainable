@@ -30,8 +30,9 @@ func show_page(target: String = "general"):
 	owner.back_action = close_page
 	if section == "general": main_sheet(content)
 	else: advanced_sheet(content)
-	REF.button(content,"button_blue",Rect2(1170,752,240,55),func():show_page("advanced" if section == "general" else "general"),ui.words("更多设置" if section == "general" else "基本设置","More settings" if section == "general" else "Basic settings"),25).name = "SettingsNextSheet"
-	REF.button(content,"button",Rect2(365,752,220,55),owner.show_ui_guide,ui.words("界面教程","UI guide"),25).name = "SettingsGuide"
+	# 底部两按钮与上方设置板边框对齐：左板左缘 x=338、右板右缘 x=1395（按钮贴图按宽度适配，rect 边即可见边）。
+	REF.button(content,"button_blue",Rect2(1155,752,240,55),func():show_page("advanced" if section == "general" else "general"),ui.words("更多设置" if section == "general" else "基本设置","More settings" if section == "general" else "Basic settings"),25).name = "SettingsNextSheet"
+	REF.button(content,"button",Rect2(338,752,220,55),owner.show_ui_guide,ui.words("界面教程","UI guide"),25).name = "SettingsGuide"
 	if owner.active:
 		var save = REF.button(content,"button",Rect2(650,752,380,55),owner.return_to_title,ui.words("保存并返回主页","Save and return"),25)
 		save.name = "SaveAndExit";save.set_meta("action_caption",owner.t("ui.save_menu"))
