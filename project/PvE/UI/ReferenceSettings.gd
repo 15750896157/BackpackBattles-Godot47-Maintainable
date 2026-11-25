@@ -34,10 +34,10 @@ func show_page(target: String = "general"):
 	REF.button(content,"button_blue",Rect2(1155,752,240,55),func():show_page("advanced" if section == "general" else "general"),ui.words("更多设置" if section == "general" else "基本设置","More settings" if section == "general" else "Basic settings"),25).name = "SettingsNextSheet"
 	REF.button(content,"button",Rect2(338,752,220,55),owner.show_ui_guide,ui.words("界面教程","UI guide"),25).name = "SettingsGuide"
 	if owner.active:
-		var save = REF.button(content,"button",Rect2(650,752,380,55),owner.return_to_title,ui.words("保存并返回主页","Save and return"),25)
+		var save = REF.button(content,"button",Rect2(690,752,380,55),owner.return_to_title,ui.words("保存并返回主页","Save and return"),25)
 		save.name = "SaveAndExit";save.set_meta("action_caption",owner.t("ui.save_menu"))
 	elif return_to_selection and section == "advanced":
-		REF.button(content,"button",Rect2(650,752,380,55),func():owner.menus.runs.seed_value=Time.get_ticks_usec()&0xffffffff,ui.words("换一张地图","Shuffle map"),25).name="ShuffleSeed"
+		REF.button(content,"button",Rect2(690,752,380,55),func():owner.menus.runs.seed_value=Time.get_ticks_usec()&0xffffffff,ui.words("换一张地图","Shuffle map"),25).name="ShuffleSeed"
 	REF.fade_in(root)
 func close_page():
 	if return_to_selection:owner.menus.runs.new_setup()
