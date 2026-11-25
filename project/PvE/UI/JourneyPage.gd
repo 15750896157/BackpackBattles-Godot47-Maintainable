@@ -12,24 +12,18 @@ func portrait_path(node:Dictionary)->String:
 func portrait(node:Dictionary)->Texture2D:
 	return load(portrait_path(node))
 func choose_route():
-	# 选角后的第一次选路必须三个角色观感统一，一律走共享羊皮纸页；
-	# 只有战后（route_pending）的选路提示才继续用原生卡片页。
-	if bool(owner.flow.run.get("route_pending",false)):
-		if owner.native_routes != null:
-			# 选路页必须在云幕下挂载完成，揭幕第一眼就该是选路页。
-			await _open_editable_route()
-		else:
-			preload("res://PvE/UI/RouteLayout.gd").show_page(self)
+	if owner.native_routes != null:
+		# 选路页必须在云幕下挂载完成，揭幕第一眼就该是选路页。
+		await _open_editable_route()
 		return
-	_show_shared_route_page()
-
-func _show_shared_route_page() -> void:
+	if owner.db.release_run(owner.flow.run) or bool(owner.flow.run.get("route_pending",false)):
+		preload("res://PvE/UI/RouteLayout.gd").show_page(self)
+		return
 	ui.open("ROUTE_SELECT",ui.words("选择路线","Choose route"))
 	var choices=ui.row()
 	for index in owner.flow.run.route_candidates.size():
 		var node=owner.flow.run.route_candidates[index];var column=ui.column(choices)
 		var card=ui.card(column,owner.enemy_name(node) if node.type.ends_with("combat") or node.type=="boss" else owner.t(node.name_key),portrait(node),func():owner.perform(owner.flow.choose_route(index)),owner.t(node.name_key))
-		card.name="RouteChoice_"+str(index)
 		card.set_meta("route_index",index);card.custom_minimum_size.y=265
 		var badges=ui.row(column)
 		for reward in owner.db.rows("reward_entries"):

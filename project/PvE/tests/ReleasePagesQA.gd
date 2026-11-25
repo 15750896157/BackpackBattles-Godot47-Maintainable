@@ -10,12 +10,9 @@ func run_tests():
 	for row in Expedition.db.rows("tutorial_steps"):Expedition.flow.profile_service.profile.tutorial_completed.append(row.id)
 	Expedition.create_run("archer","archer_precision","tutorial",1431,true)
 	await settle();await shot("01-new-route")
-	check(Expedition.current_page=="ROUTE_SELECT","new journey opens the shared parchment route page")
-	check(Expedition.panel.find_child("RouteChoice_0",true,false)!=null,"new journey provides direct route targets")
-	for card in Expedition.panel.find_children("RouteChoice_*","Button",true,false):
-		var content: Node = card.get_child(0) if card.get_child_count()>0 else null
-		var portrait: TextureRect = content.get_child(0) as TextureRect if content!=null and content.get_child_count()>0 else null
-		check(portrait!=null and portrait.texture!=null,"route card shows its enemy portrait: "+card.name)
+	check(Expedition.panel.find_child("RouteGo_0",true,false)!=null,"new journey provides direct prepare targets")
+	for portrait in Expedition.panel.find_children("RoutePortrait_*","TextureRect",true,false):
+		check(portrait.size==Vector2(350,314),"route portrait stays inside authored bounds: "+portrait.name)
 	var route_before: Array = Expedition.flow.run.route_candidates.duplicate(true)
 	var opponent: Dictionary = route_before.filter(func(node): return str(node.type).ends_with("combat") or node.type == "boss")[0]
 	Expedition.menus.journey.show_page(opponent)
