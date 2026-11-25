@@ -1108,3 +1108,7 @@ item.legacy_chess_white_king.name,白王
 item.legacy_chess_white_king.desc,战斗开始时获得 1 层强化与 2 层随机增益。
 item.legacy_chess_black_king.name,黑王
 item.legacy_chess_black_king.desc,战斗开始时冷却加快 10%，并移除敌人 2 层正面状态。
+item.legacy_shepherds_crook.name,牧羊杖
+item.legacy_shepherds_crook.desc,战斗开始时相邻物品伤害 +2，并获得 7 层抗性；每次获得增益时 35% 概率保护（以抗性近似）。
+item.legacy_present.name,礼物
+item.legacy_present.desc,每 1.7 秒获得 1 层随机增益（原版无描述文本，按 gain=Buff 推断）。

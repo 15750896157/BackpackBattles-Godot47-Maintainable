@@ -18564,6 +18564,82 @@
         "material": ""
       },
       "template": "ItemBase"
+    },
+    "legacy_shepherds_crook": {
+      "name": "Shepherds Crook",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_shepherds_crook",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "0",
+        "material": ""
+      },
+      "template": "ItemBase"
+    },
+    "legacy_present": {
+      "name": "Present",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Accessory",
+      "native_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "native_cell_count": 1,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_present",
+      "kind": "item",
+      "reason": "C 批登记：原版无独立美术，先用通用占位图；效果按原版 DESCR 映射",
+      "planned_shape_id": "shape_1",
+      "planned_shape": [
+        [
+          0,
+          0
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Accessory",
+        "cd": "1.7",
+        "material": ""
+      },
+      "template": "ItemBase"
     }
   },
   "roles": {

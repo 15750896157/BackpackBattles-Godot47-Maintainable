@@ -26960,6 +26960,164 @@
    "definition_ids": [
     "legacy_chess_black_king"
    ]
+  },
+  "ShepherdsCrook": {
+   "root_name": "ShepherdsCrook",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_shepherds_crook"
+   ]
+  },
+  "Present": {
+   "root_name": "Present",
+   "script": "res://Art/Items/Item.gd",
+   "physics": {
+    "friction": 0.73,
+    "bounce": 0.7
+   },
+   "icon": {
+    "texture": "res://Art/Supplied20261102/items/item_codex.png",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "scale": [
+     0.5,
+     0.5
+    ],
+    "material": null
+   },
+   "collision_map": {
+    "position": [
+     40.0,
+     40.0
+    ],
+    "cells": [
+     [
+      -1,
+      0,
+      3
+     ]
+    ]
+   },
+   "sockets_scale": [
+    2.0,
+    2.0
+   ],
+   "click_polygon": [
+    -40,
+    -40,
+    40,
+    -40,
+    40,
+    40,
+    -40,
+    40
+   ],
+   "bottom_center": [
+    0.0,
+    34.0
+   ],
+   "body_collision": {
+    "type": "polygon",
+    "position": [
+     0.0,
+     0.0
+    ],
+    "polygon": [
+     -21,
+     -29,
+     -25,
+     0,
+     -5,
+     19,
+     -21,
+     35,
+     -7,
+     38,
+     25,
+     9,
+     33,
+     -18,
+     12,
+     -36
+    ]
+   },
+   "definition_ids": [
+    "legacy_present"
+   ]
   }
  }
 }

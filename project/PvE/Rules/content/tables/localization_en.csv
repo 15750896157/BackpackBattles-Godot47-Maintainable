@@ -1108,3 +1108,7 @@ item.legacy_chess_white_king.name,White King
 item.legacy_chess_white_king.desc,Start: gain 1 Empower and 2 random buffs.
 item.legacy_chess_black_king.name,Black King
 item.legacy_chess_black_king.desc,Start: cooldowns 10% faster and remove 2 enemy buffs.
+item.legacy_shepherds_crook.name,Shepherds Crook
+item.legacy_shepherds_crook.desc,Start: adjacent items gain +2 damage and gain 7 Resistance (approximating buff protection).
+item.legacy_present.name,Present
+item.legacy_present.desc,Every 1.7s gain 1 random buff (original has no description text; inferred from gain=Buff).

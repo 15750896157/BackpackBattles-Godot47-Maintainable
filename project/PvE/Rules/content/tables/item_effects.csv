@@ -535,3 +535,6 @@ legacy_chess_white_king_effect_1,legacy_chess_white_king,1,combat_start,0,always
 legacy_chess_white_king_effect_2,legacy_chess_white_king,2,combat_start,0,always,,none,self,random_status,polarity:positive|stacks:2,1
 legacy_chess_black_king_effect_1,legacy_chess_black_king,1,combat_start,0,always,,none,self,modify_cooldown_pct,value:-0.1,1
 legacy_chess_black_king_effect_2,legacy_chess_black_king,2,combat_start,0,always,,none,enemy,remove_status,status_id:positive|stacks:2,1
+legacy_shepherds_crook_effect_1,legacy_shepherds_crook,1,combat_start,0,always,,adjacent_4,spatial_targets,modify_damage_flat,value:2,1
+legacy_shepherds_crook_effect_2,legacy_shepherds_crook,2,combat_start,0,always,,none,self,apply_status,value:resistance:7,1
+legacy_present_effect_1,legacy_present,1,cooldown_ready,0,always,,none,self,random_status,polarity:positive|stacks:1,1
