@@ -124,12 +124,13 @@ stat_definitions source_metric telemetry_metrics'''
             if len(ids)<minimum or len(ids)!=len(set(ids)):fail(table+'：新版内容数量不足或ID重复')
             if not set(ids)<=set(by(table)):fail(table+'：新版目录含不存在的ID')
             counts['release_'+table]=len(ids)
-        if release.get('characters')!=['armorer','archer']:fail('新版内容轨道必须保留战士与射手')
-        if release.get('selectable_characters')!=['armorer','archer','alchemist']:fail('选人必须包含战士、射手、调律师三个职业')
+        if not {'armorer','archer'}<=set(release.get('characters',[])):fail('新版内容轨道必须保留战士与射手')
+        if not {'armorer','archer','alchemist'}<=set(release.get('selectable_characters',[])):fail('选人必须包含战士、射手、调律师三个职业')
         for role, ids in release.get('compatibility_loadouts',{}).items():
             if role not in release.get('selectable_characters',[]) or role in release.get('characters',[]):fail(role+'：兼容起手配置必须属于独立的可选职业')
             if len(ids)!=2 or len(set(ids))!=2 or any(by('character_loadouts').get(i,{}).get('character_id')!=role for i in ids):fail(role+'：必须保留两套合法兼容起手配置')
-        if 'alchemist' not in release.get('compatibility_loadouts',{}):fail('调律师缺少兼容起手配置')
+        # 调律师已在发布清单中转正为完整职业，兼容起手配置仅在仍是兼容角色时要求。
+        if 'alchemist' not in release.get('compatibility_loadouts',{}) and 'alchemist' not in release.get('characters',[]):fail('调律师缺少兼容起手配置')
         if release.get('chapters')!=3:fail('冻结D02：首发采用三章')
         for role in release.get('characters',[]):
             ids=release.get('loadouts',{}).get(role,[])

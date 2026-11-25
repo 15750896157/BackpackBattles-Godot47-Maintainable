@@ -730,3 +730,11 @@ loadout.warrior_blades.name,轻刃起手
 loadout.warrior_guard.name,护甲起手
 loadout.archer_precision.name,迅弓起手
 loadout.archer_embers.name,余烬起手
+item.wooden_sword.name,木剑
+item.wooden_sword.desc,每 1.4 秒：造成 2 点物理伤害。消耗 1 耐力。
+bag.bag_protective_purse.name,守护钱包
+bag.bag_protective_purse.desc,守护钱包提供 4 个有效格；战斗开始时获得 5 点护甲。
+item.legacy_pan.name,平底锅
+item.legacy_pan.desc,每 2.2 秒：造成 6 点物理伤害。消耗 2 耐力。
+item.legacy_forging_hammer.name,锻造锤
+item.legacy_forging_hammer.desc,每 3.5 秒：造成 4 点物理伤害。消耗 0 耐力。

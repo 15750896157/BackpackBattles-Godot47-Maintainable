@@ -1290,7 +1290,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "4e4731ebe471cb6e1d4f3a5b9c143412cce052d0c892d40d76ebf441bf8d2187",
+      "scene_sha256": "736832b2787581425a7a31a42c5e3a1f7b42abebe96ad41e6b75e52e2d0dac30",
       "definition_id": "clockwork_spring",
       "kind": "item",
       "reason": "原弹簧装置，有独立弹簧与护盾组合精灵",
@@ -6445,7 +6445,7 @@
       ],
       "material_refs": [],
       "animation": null,
-      "scene_sha256": "4e4731ebe471cb6e1d4f3a5b9c143412cce052d0c892d40d76ebf441bf8d2187",
+      "scene_sha256": "736832b2787581425a7a31a42c5e3a1f7b42abebe96ad41e6b75e52e2d0dac30",
       "definition_id": "clockwork_spring",
       "kind": "item",
       "reason": "原弹簧装置，有独立弹簧与护盾组合精灵",
@@ -11258,6 +11258,241 @@
         "p5": ""
       },
       "png_sha256": "18f370c7d691af01dab7548c5427c2818e3dfc2ca2a998e68510d2292f2ed78c",
+      "template": "ItemBase"
+    },
+    "wooden_sword": {
+      "name": "Wooden Sword",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Items/Sprites/WoodenSword.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Items/Sprites/WoodenSword.png"
+      ],
+      "material_refs": [],
+      "animation": "res://Animation/Items/Animations/ItemAnimation.tscn",
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "f4ae35b28ca02c8f830869da00e182d8e6268d37ee1faa777c5de34bf928f74c",
+      "definition_id": "wooden_sword",
+      "kind": "item",
+      "reason": "原版木剑只有独立图标与挥砍动画，无专属场景；用基础物品场景承载原图",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "1",
+        "maxDam": "3",
+        "cd": "1.4",
+        "staminaCost": "1",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "template": "ItemBase"
+    },
+    "bag_protective_purse": {
+      "name": "Leather Bag",
+      "scene": "res://Art/Items/LeatherBag.tscn",
+      "png": "res://Art/Supplied20261102/bags/bag_09_wide.png",
+      "native_type": "Bag",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "native_cell_count": 4,
+      "all_icon_textures": [
+        "res://Art/Items/Sprites/LeatherBag.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "35f9664472605fceda9b0f14183bc10f5ae8991c14f3e965c83fcb880b5eb1d1",
+      "definition_id": "bag_protective_purse",
+      "kind": "bag",
+      "reason": "原版守护钱包无独立美术，先用现有皮袋图占位（待补图）",
+      "planned_shape_id": "release_2x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shape_exact": false,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Bag",
+        "extraTypes": "",
+        "tags": "",
+        "gain": "",
+        "use": "",
+        "remove": "",
+        "minDam": "",
+        "maxDam": "",
+        "cd": "",
+        "staminaCost": "",
+        "block": "",
+        "p1": "",
+        "p2": "",
+        "p3": "",
+        "p4": "",
+        "p5": ""
+      },
+      "png_sha256": "18f370c7d691af01dab7548c5427c2818e3dfc2ca2a998e68510d2292f2ed78c",
+      "template": "ItemBase"
+    },
+    "legacy_pan": {
+      "name": "Pan",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_pan",
+      "kind": "item",
+      "reason": "B 批登记：原版无独立美术，先用通用占位图；效果按原版伤害/冷却/耐力映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "minDam": "5",
+        "maxDam": "6",
+        "cd": "2.2",
+        "staminaCost": "2",
+        "accuracy": "85",
+        "tags": "",
+        "material": "Metal"
+      },
+      "template": "ItemBase"
+    },
+    "legacy_forging_hammer": {
+      "name": "Forging Hammer",
+      "scene": "res://PvE/Items/ItemBase.tscn",
+      "png": "res://Art/Supplied20261102/items/item_codex.png",
+      "native_type": "Melee Weapon",
+      "native_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "native_cell_count": 2,
+      "all_icon_textures": [
+        "res://Art/Supplied20261102/items/item_codex.png"
+      ],
+      "material_refs": [],
+      "animation": null,
+      "scene_sha256": "6867a9bb3096389dc2dc4bbd12710d5741ccf4ceecfe9d926991eed8bd03f176",
+      "png_sha256": "12e370cc86d84c05dbbe8ce05a19a62513ed4cf2bfaa54a8d9aa73d6ff06f3e7",
+      "definition_id": "legacy_forging_hammer",
+      "kind": "item",
+      "reason": "B 批登记：原版无独立美术，先用通用占位图；效果按原版伤害/冷却/耐力映射",
+      "planned_shape_id": "release_item_1x2",
+      "planned_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "shape_exact": true,
+      "rendering": "original_descriptor_scene",
+      "original_mechanic": {
+        "type": "Melee Weapon",
+        "minDam": "2",
+        "maxDam": "5",
+        "cd": "3.5",
+        "staminaCost": "0",
+        "accuracy": "95",
+        "tags": "",
+        "material": "Metal"
+      },
       "template": "ItemBase"
     }
   },

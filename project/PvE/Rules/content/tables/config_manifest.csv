@@ -7,15 +7,15 @@ condition_templates.csv,0.2.1,5,12,id,触发条件模板。首发条件组合只
 effect_templates.csv,0.2.1,6,16,id,通用效果模板。运行时由 EffectResolver 统一解释。
 rarities.csv,0.2.1,7,3,id,首发三档稀有度与内容制作边界。
 statuses.csv,0.2.1,8,10,id,持续状态配置。护甲与净化是即时战斗资源/效果，不在本表。
-items.csv,0.2.1,9,148,id,普通物品主定义。表现资源路径是待美术生产的稳定占位引用。
-item_effects.csv,0.2.1,10,149,id,物品触发器、条件、空间目标和效果明细。一个物品可通过追加行拥有第二效果。
+items.csv,0.2.1,9,151,id,普通物品主定义。表现资源路径是待美术生产的稳定占位引用。
+item_effects.csv,0.2.1,10,152,id,物品触发器、条件、空间目标和效果明细。一个物品可通过追加行拥有第二效果。
 characters.csv,0.2.1,11,3,id,首发角色基础属性。
 character_passives.csv,0.2.1,12,3,id,角色常驻被动，全部使用通用触发和效果解释器。
 character_archetypes.csv,0.2.1,13,8,id,六种核心流派及商店倾向标签。
 character_loadouts.csv,0.2.1,14,8,id,每个角色两套开局配置。
 starting_build_items.csv,0.2.1,15,16,loadout_id|instance_id,开局普通物品的关系型布局。最终合法性由 Godot PlacementService 校验。
 bag_shapes.csv,0.2.1,16,14,id,背包提供有效格的形状模板。
-bags.csv,0.2.1,17,18,id,背包层配置。开局背包价格为 0 且不进入商店。
+bags.csv,0.2.1,17,19,id,背包层配置。开局背包价格为 0 且不进入商店。
 recipes.csv,0.2.1,18,42,id,双材料、手动确认、最多两级的配方主表。
 recipe_ingredients.csv,0.2.1,19,84,recipe_id|slot,配方材料明细。
 game_rules.csv,0.2.1,20,25,key,全局规则常量，不应散落在代码中。
@@ -53,5 +53,5 @@ tutorial_steps.csv,0.2.1,51,16,id,首局分段教学。非阻塞步骤允许玩�
 achievements.csv,0.2.1,52,20,id,Steam 成就与本地统计映射。Steam API 名称发布后不得修改。
 telemetry_metrics.csv,0.2.1,53,24,id,统计与平衡观测指标。release 默认仅保存在本地存档，不自动上传。
 stat_definitions.csv,0.2.1,54,19,id,由本地采集指标聚合得到的档案与单局统计定义，供成就和界面查询。
-localization_zh_cn.csv,0.2.1,55,731,key,简体中文文本。
-localization_en.csv,0.2.1,56,731,key,英文文本。
+localization_zh_cn.csv,0.2.1,55,739,key,简体中文文本。
+localization_en.csv,0.2.1,56,739,key,英文文本。

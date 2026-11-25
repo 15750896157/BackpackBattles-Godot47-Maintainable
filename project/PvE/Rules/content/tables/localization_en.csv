@@ -730,3 +730,11 @@ loadout.warrior_blades.name,Light blades
 loadout.warrior_guard.name,Armored start
 loadout.archer_precision.name,Swift bow
 loadout.archer_embers.name,Ember start
+item.wooden_sword.name,Wooden Sword
+item.wooden_sword.desc,Every 1.4s: deal 2 physical damage. Costs 1 stamina.
+bag.bag_protective_purse.name,Protective Purse
+bag.bag_protective_purse.desc,Provides 4 cells; gain 5 armor at combat start.
+item.legacy_pan.name,Pan
+item.legacy_pan.desc,Every 2.2s: deal 6 physical damage. Costs 2 stamina.
+item.legacy_forging_hammer.name,Forging Hammer
+item.legacy_forging_hammer.desc,Every 3.5s: deal 4 physical damage. Costs 0 stamina.
