@@ -1,22 +1,14 @@
 [gd_scene format=3 uid="uid://ceqbfojhtcuqn"]
 
 [ext_resource type="Environment" uid="uid://5vhlv7i5rk1h" path="res://default_env.tres" id="11"]
-
-[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/PlayerMotion.tres" id="m7_library_PlayerMotion"]
-
-[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/LegacyScreenTransitions.tres" id="m7_library_LegacyScreenTransitions"]
-
-[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/ShortcutAnimations.tres" id="m7_library_ShortcutAnimations"]
-
-[ext_resource type="AnimationLibrary" path="res://Code/Runtime/Compatibility/Scenes/Resources/StartupAnimations.tres" id="m7_library_StartupAnimations"]
-
-[ext_resource type="PackedScene" path="res://PvE/UI/Combat/CombatRoot.tscn" id="m7_scene_LegacyCombat"]
-
-[ext_resource type="PackedScene" path="res://PvE/UI/Shop/ShopRoot.tscn" id="m7_scene_LegacyShop"]
-
-[ext_resource type="PackedScene" path="res://PvE/UI/Title/TitleScreenRoot.tscn" id="m7_scene_LegacyTitle"]
-
-[ext_resource type="PackedScene" path="res://PvE/UI/Combat/Hud/HudRoot.tscn" id="m7_scene_LegacyUI"]
+[ext_resource type="AnimationLibrary" uid="uid://c4dy8kkq8b5jd" path="res://Code/Runtime/Compatibility/Scenes/Resources/LegacyScreenTransitions.tres" id="m7_library_LegacyScreenTransitions"]
+[ext_resource type="AnimationLibrary" uid="uid://d2n3jqywxuysg" path="res://Code/Runtime/Compatibility/Scenes/Resources/PlayerMotion.tres" id="m7_library_PlayerMotion"]
+[ext_resource type="AnimationLibrary" uid="uid://0bolo7phi3xi" path="res://Code/Runtime/Compatibility/Scenes/Resources/ShortcutAnimations.tres" id="m7_library_ShortcutAnimations"]
+[ext_resource type="AnimationLibrary" uid="uid://bht8omds5olj4" path="res://Code/Runtime/Compatibility/Scenes/Resources/StartupAnimations.tres" id="m7_library_StartupAnimations"]
+[ext_resource type="PackedScene" uid="uid://bgtmfyxoly67j" path="res://PvE/UI/Combat/CombatRoot.tscn" id="m7_scene_LegacyCombat"]
+[ext_resource type="PackedScene" uid="uid://dn1c06bimnowv" path="res://PvE/UI/Shop/ShopRoot.tscn" id="m7_scene_LegacyShop"]
+[ext_resource type="PackedScene" uid="uid://suirmol54q6x" path="res://PvE/UI/Title/TitleScreenRoot.tscn" id="m7_scene_LegacyTitle"]
+[ext_resource type="PackedScene" uid="uid://cva37wvq42ycc" path="res://PvE/UI/Combat/Hud/HudRoot.tscn" id="m7_scene_LegacyUI"]
 
 [node name="Main" type="Node2D" unique_id=2047487197]
 
@@ -47,9 +39,3 @@ libraries/ = ExtResource("m7_library_ShortcutAnimations")
 
 [node name="SplashscreenAnimation" type="AnimationPlayer" parent="." unique_id=709594107]
 libraries/ = ExtResource("m7_library_StartupAnimations")
-
-[connection signal="pressed" from="Combat/CombatLogButtonNode/CombatLogButton" to="UI/CombatLog/CombatLog" method="onButtonPressed"]
-
-[connection signal="pressed" from="UI/SurvivalPrompt/TakeWin" to="Combat" method="cancelSurvivalMode"]
-
-[connection signal="pressed" from="UI/SurvivalPrompt/StartSurvival" to="Combat" method="startSurvivalMode"]

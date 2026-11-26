@@ -1,6 +1,6 @@
-file,schema_version,load_order,row_count,primary_key_hint,description
+﻿file,schema_version,load_order,row_count,primary_key_hint,description
 tags.csv,0.2.1,1,25,id,物品、敌人和流派共用的标签字典。
-item_shapes.csv,0.2.1,2,12,id,普通物品形状模板。相对坐标使用 x:y，列表使用竖线分隔。
+item_shapes.csv,0.2.1,2,23,id,普通物品形状模板。相对坐标使用 x:y，列表使用竖线分隔。
 spatial_templates.csv,0.2.1,3,11,id,首发允许使用的空间关系模板。
 trigger_templates.csv,0.2.1,4,11,id,战斗事件触发器模板。
 condition_templates.csv,0.2.1,5,12,id,触发条件模板。首发条件组合只支持全部满足。
