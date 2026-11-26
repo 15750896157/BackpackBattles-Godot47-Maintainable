@@ -7,7 +7,7 @@ const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const SCREEN_PATH = "res://PvE/UI/ShopScreen.tscn"
 const SCENERY_PATH = "res://PvE/UI/ShopScenery.tscn"
 const SCOPE = "art-routed-shop"
-const SHARED_KEYS = ["cell", "cell_empty", "board_guide"]
+const SHARED_KEYS = ["cell", "cell_empty", "cell_slot", "board_guide"]
 
 var owner: Node
 var _epoch := -1

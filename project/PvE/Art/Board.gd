@@ -1,45 +1,40 @@
 extends Node2D
-## Display cells only. Placement validation still reads authoritative bag cells.
+## 只负责显示格子；放置校验仍然读取权威的背包格数据。
+## 层级自下而上：背包 → 9x7 网格（ui_cell_slot）→ 空位/占用方块 → 物品。
 var build: Dictionary = {}
-var cell_texture: Texture2D
+## 第三层：有物品的背包位使用这张方块。
+var filled_texture: Texture2D
+## 第三层：空背包位使用这张方块。
 var empty_texture: Texture2D
-var guide_texture: Texture2D
+## 第二层：9x7 网格底图，铺在背包上方、方块下方。
+var slot_texture: Texture2D
+## 背包实际占用的格子；方块只画在这些格子上。
 var active_cells: Dictionary = {}
 var occupied_cells: Dictionary = {}
-var showing_empty = false
-var seams: Dictionary = {}
 var specials:Array=[]
-func _process(_delta):
-	var value = is_instance_valid(Game.draggedItem) and Game.draggedItem.isBag()
-	if value != showing_empty: showing_empty = value; queue_redraw()
 func configure(data: Dictionary):
 	if data == build: return
 	build = data.duplicate(true)
 	active_cells.clear()
+	occupied_cells.clear()
 	for bag in build.get("bags", []):
 		for cell in Expedition.flow.placement.cells(bag): active_cells[Vector2i(cell)] = true
-	occupied_cells.clear()
-	for item in build.get("items", []):
-		for cell in Expedition.flow.placement.cells(item): occupied_cells[Vector2i(cell)] = true
+	for entry in build.get("items", []):
+		for cell in Expedition.flow.placement.cells(entry): occupied_cells[Vector2i(cell)] = true
 	specials=Expedition.flow.spatial.special_cells(build)
 	queue_redraw()
 func _draw():
-	if cell_texture == null: return
-	for y in int(build.get("height", 7)):
-		for x in int(build.get("width", 9)):
-			var active = active_cells.has(Vector2i(x, y))
-			var placed = occupied_cells.has(Vector2i(x, y))
-			var tile = Rect2(Vector2(x,y)*80.0+Vector2(3,3),Vector2(74,74))
-			if not active and not showing_empty:
-				if guide_texture != null:
-					draw_texture_rect(guide_texture,tile,false,Color(1,1,1,0.21))
-				continue
-			# 已放置物品的格子深色，口袋内的空格浅色；口袋外保持透明。
-			var image=cell_texture if placed else empty_texture
-			var alpha=0.40 if placed else (0.22 if active else 0.15)
-			if image!=null:draw_texture_rect(image,tile,false,Color(1,1,1,alpha))
-			# Fine translucent seams reveal the leather instead of a white tile fill.
-			draw_style_box(_seam(placed),tile)
+	# 第二层：9x7 网格盖在背包上，贴图按原始像素落在每个格子里，不做缩放。
+	if slot_texture != null:
+		var slot_offset = _offset(slot_texture)
+		for y in int(build.get("height", 7)):
+			for x in int(build.get("width", 9)):
+				draw_texture(slot_texture, Vector2(x, y) * 80.0 + slot_offset)
+	# 第三层：只在背包占用的格子上贴方块——有物品用占用方块，空位用空位方块。
+	for cell in active_cells.keys():
+		var image: Texture2D = filled_texture if occupied_cells.has(cell) else empty_texture
+		if image == null: continue
+		draw_texture(image, Vector2(cell) * 80.0 + _offset(image))
 	for special in specials:
 		var rect=Rect2(Vector2(special.cell)*80.0+Vector2(5,5),Vector2(70,70))
 		draw_rect(rect,Color(1,0.78,0.3,0.42),false,2)
@@ -50,11 +45,6 @@ func _draw():
 				points.append(rect.position+Vector2(12,12)+Vector2(cos(angle),sin(angle))*(9 if index%2==0 else 4))
 			draw_colored_polygon(points,Color(1,0.85,0.34,0.72))
 
-func _seam(active: bool) -> StyleBoxFlat:
-	if seams.has(active): return seams[active]
-	var seam = StyleBoxFlat.new()
-	seam.bg_color = Color(0.24,0.17,0.10,0.025) if active else Color(0.72,0.61,0.40,0.045)
-	seam.border_color = Color(0.88,0.76,0.51,0.20) if active else Color(0.75,0.66,0.48,0.24)
-	seam.set_border_width_all(1); seam.set_corner_radius_all(5)
-	seams[active] = seam
-	return seam
+func _offset(texture: Texture2D) -> Vector2:
+	# 80 单位格子里居中摆放，贴图尺寸原样保留。
+	return (Vector2(80, 80) - texture.get_size()) * 0.5
