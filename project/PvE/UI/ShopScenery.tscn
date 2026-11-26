@@ -39,7 +39,7 @@ offset_right = 1920.0
 offset_bottom = 1093.4638671875
 mouse_filter = 2
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 0
 metadata/shop_texture = "table"
 
 [node name="StorageCloth" type="TextureRect" parent="."]
