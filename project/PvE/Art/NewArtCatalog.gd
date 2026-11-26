@@ -52,7 +52,7 @@ const ITEMS={
 static func item_path(id:String)->String:
 	if Expedition.db!=null:
 		var configured=str(Expedition.db.get_row("items",id).get("icon_ref",""))
-		if configured.begins_with(ROOT):return configured
+		if configured.begins_with(ROOT) or configured.begins_with("res://Art/Supplied20261126/"):return configured
 	return ROOT+"items/item_"+ITEMS[id]+".png" if ITEMS.has(id) else ""
 static func actor_path(key:String)->String:
 	if key=="fire_knight":return LATEST+"fire_knight.png"
