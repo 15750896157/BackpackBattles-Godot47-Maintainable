@@ -116,6 +116,8 @@ func _eligible(run: Dictionary) -> Array:
 	for row in db.rows("items"):
 		# 物品池只按归属过滤：公共物品人人可见，职业专属只对本人开放。
 		# 包内带 shop_all_classes 的背包会让所有职业物品进入商店。
+		# 带 hold 标签的物品属于未上线角色，暂不进入任何池。
+		if "hold" in db.list_values(str(row.get("tags", ""))): continue
 		if bool(row.get("shop_enabled", false)) and not bool(row.get("crafted_only", false)) and int(row.get("chapter_min", 1)) <= int(run.get("act", 1)) and (all_classes or str(row.get("owner_pool", "public")) in ["public", str(run.get("character_id", ""))]):
 			row["kind"] = "item"
 			result.append(row)

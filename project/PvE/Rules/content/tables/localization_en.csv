@@ -1122,3 +1122,5 @@ bag.bag_box_of_prosperity.desc,"Provides 4 cells; on shop entry, if this bag hol
 bag.bag_portable_altar.desc,Provides 4 cells; gain 1 Empower at combat start.
 bag.bag_scholar_bag.desc,Provides 6 cells; restore 5 stamina at combat start.
 bag.bag_of_giving.desc,Provides 6 cells; the shop offers items of all classes.
+tag.hold.name,On hold
+tag.hold.desc,Class not released yet; excluded from shop and reward pools.

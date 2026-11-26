@@ -1122,3 +1122,5 @@ bag.bag_box_of_prosperity.desc,提供 4 个有效格；进店时若包内有 2 �
 bag.bag_portable_altar.desc,提供 4 个有效格；战斗开始时获得 1 层强化。
 bag.bag_scholar_bag.desc,提供 6 个有效格；战斗开始时恢复 5 点耐力。
 bag.bag_of_giving.desc,提供 6 个有效格；商店会提供所有职业的物品。
+tag.hold.name,暂不上线
+tag.hold.desc,所属角色尚未上线，暂不进入商店与奖励池。
