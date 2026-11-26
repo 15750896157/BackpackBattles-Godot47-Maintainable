@@ -382,7 +382,8 @@ func _update_board(inventory, build: Dictionary):
 	if board == null and texture("cell") != null:
 		board = Node2D.new(); board.set_script(board_script); board.name = "SuppliedGrid"; inventory.add_child(board)
 	if board != null:
-		board.slot_texture = texture("cell_slot")
+		# 对手背包后面不铺 9x7 网格底图，只保留背包自身的方块。
+		board.slot_texture = null if inventory.character == Game.OPPONENT else texture("cell_slot")
 		board.filled_texture = texture("cell")
 		board.empty_texture = texture("cell_empty")
 		board.configure(build)
