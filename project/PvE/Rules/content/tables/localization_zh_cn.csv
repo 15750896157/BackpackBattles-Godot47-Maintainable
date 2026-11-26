@@ -730,3 +730,397 @@ loadout.warrior_blades.name,轻刃起手
 loadout.warrior_guard.name,护甲起手
 loadout.archer_precision.name,迅弓起手
 loadout.archer_embers.name,余烬起手
+item.wooden_sword.name,木剑
+item.wooden_sword.desc,每 1.4 秒：造成 2 点物理伤害。消耗 1 耐力。
+bag.bag_protective_purse.name,守护钱包
+bag.bag_protective_purse.desc,守护钱包提供 4 个有效格；战斗开始时获得 5 点护甲。
+item.legacy_pan.name,平底锅
+item.legacy_pan.desc,每 2.2 秒：造成 6 点物理伤害。消耗 2 耐力。
+item.legacy_forging_hammer.name,锻造锤
+item.legacy_forging_hammer.desc,每 3.5 秒：造成 4 点物理伤害。消耗 0 耐力。
+item.legacy_banana.name,香蕉
+item.legacy_banana.desc,每 5 秒：恢复 4 点生命和 1 点耐力。
+item.legacy_whetstone2.name,强化磨刀石
+item.legacy_whetstone2.desc,战斗开始时：相邻的武器攻击力 +1。
+status.empower.name,强化
+status.empower.desc,强化：每层为攻击增加 1 点固定伤害。
+status.heat.name,热量
+status.heat.desc,热量：每层为攻击增加 1 点固定伤害。
+status.luck.name,幸运
+status.luck.desc,幸运：每层提高 3% 暴击率。
+status.cold.name,寒冷
+status.cold.desc,寒冷：每层降低 4% 冷却推进速度。
+item.legacy_hero_longsword.name,英雄长剑
+item.legacy_hero_longsword.desc,战斗开始时：相邻武器获得 +3 伤害。
+item.legacy_snow_stick.name,雪棍
+item.legacy_snow_stick.desc,击中时：对敌人施加 3 层寒冷，并对自己施加 2 层寒冷。
+item.legacy_bomb.name,炸弹
+item.legacy_bomb.desc,12 秒后：消耗自身全部增益，对敌人造成 30 点真实伤害。
+item.legacy_leather_helm.name,坚韧头盔
+item.legacy_leather_helm.desc,战斗开始时：3 秒内获得 6 层坚固（约 24% 物理减伤）。
+item.legacy_twine.name,细绳
+item.legacy_twine.desc,战斗开始时：最大生命 +2。
+item.legacy_bow_and_arrow.name,弓箭
+item.legacy_bow_and_arrow.desc,每 3 秒造成 7 点物理伤害；每次命中自身伤害 +1，最多 +7。
+item.legacy_bloody_dagger.name,吸血匕首
+item.legacy_bloody_dagger.desc,每 2.1 秒造成 6 点物理伤害；每次击中获得 1 层吸血（每场最多 5 层），有吸血时恢复 4 点生命（每场一次）。
+item.legacy_chain_whip.name,锁链鞭
+item.legacy_chain_whip.desc,每 2.4 秒造成 6 点物理伤害；击中时移除对手 2 层增益。
+status.evasion.name,闪避
+status.evasion.desc,每层提供 5% 闪避几率，持续到时间结束。
+status.wound.name,创伤
+status.wound.desc,每层使受到的治疗降低 5%。
+effect.destroy_armor.name,摧毁护甲
+effect.random_status.name,随机状态
+item.legacy_stone.name,石头
+item.legacy_stone.desc,每场战斗只能投掷一次：命中后摧毁 4 点护甲。
+item.legacy_broom.name,扫把
+item.legacy_broom.desc,每 1.7 秒造成 3 点物理伤害，并施加 2 层寒冷（以寒冷近似原版致盲）。
+item.legacy_amulet_unidentified.name,未鉴定护符
+item.legacy_amulet_unidentified.desc,每 8 秒获得 1 层随机增益（近似原版购买时随机效果）。
+item.legacy_amulet_of_darkness.name,黑暗护符
+item.legacy_amulet_of_darkness.desc,每 6 秒造成 7 点真实伤害并施加 1 层随机负面状态。
+item.legacy_amulet_of_agility.name,迅捷护符
+item.legacy_amulet_of_agility.desc,战斗开始时获得 10 层急速，持续 1 秒。
+item.legacy_amulet_of_alchemy.name,炼金护符
+item.legacy_amulet_of_alchemy.desc,战斗开始时获得 3 层随机增益。
+item.legacy_shell_totem.name,贝壳图腾
+item.legacy_shell_totem.desc,每 3.6 秒：生命高于 70% 时获得 8 层强化，否则治疗 8 点。
+item.legacy_hungry_blade.name,饥饿之刃
+item.legacy_hungry_blade.desc,战斗开始时获得 1 层吸血；每 1.6 秒造成 5 点伤害，若有恢复则消耗 1 层恢复换取 1 层吸血。
+item.legacy_lightsaber.name,光剑
+item.legacy_lightsaber.desc,每 1.5 秒造成 10 点伤害；若身上有 3 层恢复，则消耗 3 层并施加 4 层寒冷，持续 6 秒。
+item.legacy_spectral_dagger.name,幽灵匕首
+item.legacy_spectral_dagger.desc,每 2.5 秒造成 8 点真实伤害（近似原版消耗法力无视护甲）。
+item.legacy_serpent_staff.name,蛇杖
+item.legacy_serpent_staff.desc,每 1.8 秒造成 11 点物理伤害并施加 2 层中毒。
+item.legacy_pandamonium.name,腐败熊猫之锅
+item.legacy_pandamonium.desc,每 2 秒造成 10 点物理伤害并施加 1 层中毒。
+item.legacy_crossblades.name,十字剑
+item.legacy_crossblades.desc,战斗开始时自身伤害 +10；每 1.4 秒造成 9 点物理伤害。
+item.legacy_corrupted_armor.name,腐败护甲
+item.legacy_corrupted_armor.desc,战斗开始时获得 15 点护甲；每 2.4 秒净化 1 层负面状态。
+item.legacy_stone_shoes.name,石鞋
+item.legacy_stone_shoes.desc,生命首次低于 70% 时：获得 1 层幸运、1 层强化、15 点护甲，并在 7 秒内获得 9 层坚固。
+item.legacy_heart_container.name,心之容器
+item.legacy_heart_container.desc,每 3 秒获得 1 层恢复。
+item.legacy_bloodthorne.name,血棘
+item.legacy_bloodthorne.desc,每 1.6 秒造成 6 点伤害；若身上有恢复，则消耗 1 层恢复获得 1 层吸血与 1 层尖刺。
+item.legacy_greatsword.name,笨重巨剑
+item.legacy_greatsword.desc,每 5 秒造成 45 点物理伤害。
+item.legacy_thornbloom.name,荆棘花
+item.legacy_thornbloom.desc,每 2.1 秒造成 9 点伤害；命中获得 1 层尖刺，并有几率获得 1 层强化。
+item.legacy_winged_boots.name,飞翼靴
+item.legacy_winged_boots.desc,生命首次低于 70% 时：获得 1 层强化、净化 20 层负面，并获得 10 层闪避（约 50%），持续 8 秒。
+item.legacy_wolf_badge.name,狼徽章
+item.legacy_wolf_badge.desc,生命首次低于 50% 时：5.5 秒内获得 9 层急速与 6 层坚固。
+item.legacy_gingerbread_man.name,姜饼杰瑞
+item.legacy_gingerbread_man.desc,战斗开始时最大生命 +40；每 3 秒获得 1 层强化与 1 层恢复。
+item.legacy_pumpkin.name,南瓜头
+item.legacy_pumpkin.desc,每 5 秒造成 9 点物理伤害并施加 4 层寒冷（以寒冷近似原版眩晕）。
+item.legacy_artifact_stone_death.name,死亡石
+item.legacy_artifact_stone_death.desc,每场战斗一次：造成 8 点真实伤害，并获得 8% 暴击率。
+item.legacy_pop.name,汽水
+item.legacy_pop.desc,每 1.5 秒造成 3 点物理伤害。
+item.legacy_snowcake.name,雪糕
+item.legacy_snowcake.desc,每 2.1 秒施加 1 层寒冷；若敌人已有寒冷，额外造成 10 点真实伤害。
+item.legacy_poison_shortbow.name,毒短弓
+item.legacy_poison_shortbow.desc,每 1.7 秒造成 7 点物理伤害，施加 2 层中毒与 1 层随机负面状态。
+item.legacy_critwood_staff.name,暴击法杖
+item.legacy_critwood_staff.desc,每 1.8 秒造成 10 点物理伤害，并在 1.6 秒内获得 50% 暴击率。
+item.legacy_vampiric_collar.name,吸血项圈
+item.legacy_vampiric_collar.desc,战斗开始时获得 3 层吸血。
+item.legacy_holy_collar.name,圣光项圈
+item.legacy_holy_collar.desc,战斗开始时获得 1 层幸运与 1 层恢复。
+item.legacy_piercing_arrow.name,穿甲箭
+item.legacy_piercing_arrow.desc,战斗开始时获得 10% 暴击率；每 4 秒摧毁敌人 15 点护甲。
+item.legacy_bowl_of_treats.name,零食碗
+item.legacy_bowl_of_treats.desc,每 4 秒获得 2 层随机增益，并获得 6 层急速。
+item.legacy_death_scythe.name,死神镰刀
+item.legacy_death_scythe.desc,每 1.4 秒造成 8 点物理伤害并施加 2 层中毒；敌人已中毒时获得 65% 暴击率，持续 4 秒。
+item.legacy_staff_of_unhealing.name,不愈法杖
+item.legacy_staff_of_unhealing.desc,每 2 秒治疗自身 15 点，并对敌人造成 8 点真实伤害。
+item.legacy_cursed_dagger.name,诅咒匕首
+item.legacy_cursed_dagger.desc,每 2.8 秒造成 6 点物理伤害，并施加 2 层随机负面状态。
+item.legacy_strong_demonic_flask.name,强力恶魔烧瓶
+item.legacy_strong_demonic_flask.desc,每 10 秒：造成 6 点真实伤害，并使敌人受到的治疗降低 30%，持续 3 秒。
+item.legacy_strong_vampiric_potion.name,强效吸血药水
+item.legacy_strong_vampiric_potion.desc,每 10 秒获得 5 层吸血。
+item.legacy_phoenix.name,凤凰
+item.legacy_phoenix.desc,每 2.5 秒造成 17 点物理伤害，并对自己造成 3 点真实伤害。
+item.legacy_burning_sword.name,燃烧之剑
+item.legacy_burning_sword.desc,每 1.6 秒造成 3 点物理伤害并获得 1 层炽热；炽热达到 7 层时自身伤害 +1。
+item.legacy_sun_armor.name,太阳护甲
+item.legacy_sun_armor.desc,战斗开始时获得 20 点护甲；每 3 秒消耗 1 层炽热，治疗 12 点并净化 2 层负面状态。
+item.legacy_sun_shield.name,太阳盾
+item.legacy_sun_shield.desc,获得护甲时对敌人造成 4 点真实伤害；受到伤害时获得 4 层坚固，持续 2 秒。
+item.legacy_staff_of_fire.name,火焰法杖
+item.legacy_staff_of_fire.desc,每 1.8 秒造成 19 点物理伤害，并消耗 2 层炽热。
+item.legacy_spell_scroll_frostbolt.name,寒冰箭卷轴
+item.legacy_spell_scroll_frostbolt.desc,每 3 秒造成 5 点物理伤害，并施加 4 层寒冷，持续 3 秒。
+item.legacy_sapphire_whelp.name,蓝宝石幼龙
+item.legacy_sapphire_whelp.desc,战斗开始时获得 6 点耐力；每 2.1 秒造成 8 点物理伤害、获得 10 点护甲与 1 层随机增益。
+item.legacy_spiked_staff.name,尖刺法杖
+item.legacy_spiked_staff.desc,每 1.8 秒造成 11 点物理伤害，并获得 2 层强化与 5 层尖刺。
+item.legacy_wolf_emblem.name,狼之徽记
+item.legacy_wolf_emblem.desc,战斗开始时获得 10% 暴击率；每 2.3 秒若护甲不少于 10 点则获得 1 层强化。
+item.legacy_brass_knuckles.name,黄铜指虎
+item.legacy_brass_knuckles.desc,每 2.6 秒造成 4 点物理伤害并施加 3 层寒冷；首次命中额外获得 10% 暴击率。
+item.legacy_badger_rune.name,獾之符文
+item.legacy_badger_rune.desc,战斗开始时攻击速度提高 3%，并获得 2 层坚固。
+item.legacy_tiger_rune.name,虎之符文
+item.legacy_tiger_rune.desc,战斗开始时获得 1 层吸血与 5 点护甲。
+item.legacy_spicy_banana.name,辣香蕉
+item.legacy_spicy_banana.desc,每 3 秒获得 2 层炽热，并治疗自身 3 点。
+item.legacy_smelly_barrier.name,臭味屏障
+item.legacy_smelly_barrier.desc,战斗开始时获得 6 点护甲，并对敌人施加 1 层中毒。
+item.legacy_stoned.name,石化
+item.legacy_stoned.desc,战斗开始时获得 10 点护甲与 6 层坚固。
+item.legacy_heavy_drinking.name,豪饮
+item.legacy_heavy_drinking.desc,每 10 秒获得 1 层随机增益。
+item.legacy_power_of_the_moon.name,月之力
+item.legacy_power_of_the_moon.desc,战斗开始时最大生命 +20；每 4 秒对敌人施加 2 层寒冷。
+item.legacy_hardwood.name,硬木
+item.legacy_hardwood.desc,战斗开始时相邻武器伤害 +3，并获得 8 点护甲。
+item.legacy_acorn_ace.name,橡果王牌
+item.legacy_acorn_ace.desc,战斗开始时获得 10 点耐力。
+item.legacy_solaris.name,日耀
+item.legacy_solaris.desc,每 3 秒获得 1 层炽热与 8 点护甲。
+item.legacy_wand.name,魔杖
+item.legacy_wand.desc,每 3.3 秒：获得 1 层幸运与再生（10 秒），并额外获得 1 层强化。
+item.legacy_spell_scroll_ice.name,寒冰卷轴
+item.legacy_spell_scroll_ice.desc,每 3 秒：对敌人施加 1 层寒冷（3 秒），并获得 2 点护甲。
+item.legacy_spell_scroll_nature.name,自然卷轴
+item.legacy_spell_scroll_nature.desc,每 3 秒：消耗 1 点耐力，获得 4 点耐力。
+item.legacy_spell_scroll_dark.name,黑暗卷轴
+item.legacy_spell_scroll_dark.desc,每 3 秒：对敌人施加 1 层寒冷（10 秒），以寒冷近似原版致盲减速。
+item.legacy_prismatic_wand.name,棱彩魔杖
+item.legacy_prismatic_wand.desc,每 4.5 秒：消耗 5 点耐力，获得 1 层幸运与再生（20 秒），并额外获得 5 层强化。
+item.legacy_boomerang.name,回力镖
+item.legacy_boomerang.desc,每 2 秒造成 3 点物理伤害，并获得 1 层强化。
+item.legacy_big_bloodthorne.name,巨型血棘
+item.legacy_big_bloodthorne.desc,每 5 秒造成 45 点物理伤害，并获得 6 层吸血与 5 层尖刺。
+item.legacy_heart_shield.name,心之盾
+item.legacy_heart_shield.desc,战斗开始时获得 30 点护甲；受到伤害时获得 1 层再生。
+item.legacy_charge_splitter.name,电荷分裂器
+item.legacy_charge_splitter.desc,每 5 秒：获得 30 点护甲、1 层幸运（2 秒）与 1 层炽热。
+item.legacy_poison_grenade.name,毒气手雷
+item.legacy_poison_grenade.desc,每 10 秒：对敌人施加 5 层中毒，并获得 1 层幸运（5 秒）。
+item.legacy_bismuth_cube.name,铋晶方块
+item.legacy_bismuth_cube.desc,战斗开始时获得 2 层随机增益。
+item.legacy_chrome_cube.name,铬晶方块
+item.legacy_chrome_cube.desc,战斗开始时最大生命 +20，并获得 7 层创伤（受到的治疗降低 35%）。
+item.legacy_plastic_cube.name,塑胶方块
+item.legacy_plastic_cube.desc,战斗开始时所有物品冷却变慢 75%；每 8 秒获得 10 层尖刺。
+item.legacy_arcane_boots.name,奥术之靴
+item.legacy_arcane_boots.desc,战斗开始时消耗 2 点耐力，获得 30 点护甲、3 层幸运与 2 层强化。
+item.legacy_critical_poison.name,暴击之毒
+item.legacy_critical_poison.desc,暴击时对敌人施加 2 层中毒。
+item.legacy_burning_spikes.name,燃烧尖刺
+item.legacy_burning_spikes.desc,战斗开始时获得 5 层尖刺与 2 层炽热。
+item.legacy_spin_to_win.name,旋转取胜
+item.legacy_spin_to_win.desc,每 3.8 秒：获得 2 层炽热、3 层幸运、3 层再生与 4 点耐力。
+item.legacy_bewitchment.name,蛊惑
+item.legacy_bewitchment.desc,每 2.5 秒：消耗 1 点耐力，对敌人施加 2 层中毒与 1 层寒冷。
+item.legacy_chess_master.name,棋手
+item.legacy_chess_master.desc,战斗开始时所有物品冷却加快 40%。
+item.legacy_speak_with_animals.name,动物交谈
+item.legacy_speak_with_animals.desc,每 3 秒获得 1 金币（近似原版出售价加成）。
+item.legacy_seal_the_deal.name,达成交易
+item.legacy_seal_the_deal.desc,每 5.2 秒：获得 1 金币、3 层吸血、3 层尖刺与 1 层幸运（2 秒）。
+item.legacy_wisp.name,鬼火
+item.legacy_wisp.desc,战斗开始时最大生命 +20；每 12.5 秒获得 1 层幸运与再生（10 秒）。
+item.legacy_war_scythe.name,战争巨镰
+item.legacy_war_scythe.desc,战斗开始时暴击率 +10%；每 1.4 秒造成 12 点物理伤害并施加 3 层中毒。
+item.legacy_cupcake_dragon.name,纸杯蛋糕龙
+item.legacy_cupcake_dragon.desc,每 2.1 秒造成 7 点物理伤害、施加 1 层灼烧，并获得 1 层随机增益。
+item.legacy_wand_of_dissonance.name,不谐魔杖
+item.legacy_wand_of_dissonance.desc,每 2.9 秒造成 8 点物理伤害，并获得 1 层幸运与再生（3 秒）。
+item.legacy_amulet_of_light.name,光辉护符
+item.legacy_amulet_of_light.desc,战斗开始时最大生命 +6，并获得 1 层再生。
+item.legacy_pet_goobert.name,黏黏
+item.legacy_pet_goobert.desc,相邻物品每激活 5 次：治疗 9 点。
+item.legacy_pet_shelly.name,贝壳精灵
+item.legacy_pet_shelly.desc,每 13 秒：净化 6 层负面状态并治疗 40 点。
+item.legacy_pet_ruby_egg.name,红宝石龙蛋
+item.legacy_pet_ruby_egg.desc,战斗开始时获得 4 层炽热与 3 层抗性。
+item.legacy_pet_jynx_torquilla.name,歪脖鸟
+item.legacy_pet_jynx_torquilla.desc,每 3 秒：移除敌人 1 层幸运。
+item.legacy_pet_blood_goobert.name,血之黏黏
+item.legacy_pet_blood_goobert.desc,战斗开始时获得 5 层吸血；相邻物品每次激活造成 10 点物理伤害。
+item.legacy_pet_steel_goobert.name,钢之黏黏
+item.legacy_pet_steel_goobert.desc,战斗开始时获得 16 点护甲；相邻物品每次激活使你伤害 +2。
+item.legacy_pet_wolpertinger.name,鹿角翼兔
+item.legacy_pet_wolpertinger.desc,每 5 秒：获得 3 层随机增益。
+item.legacy_pet_light_goobert.name,光之黏黏
+item.legacy_pet_light_goobert.desc,相邻物品每激活 6 次：治疗 25 点并对敌人施加 7 层寒冷（3 秒）。
+item.legacy_pet_king_goobert.name,黏黏王
+item.legacy_pet_king_goobert.desc,相邻物品每激活 6 次：治疗 35 点、获得 3 层随机增益与 4 点耐力。
+item.legacy_pet_paradise_birb.name,天堂鸟
+item.legacy_pet_paradise_birb.desc,每 2.7 秒：治疗 7 点并获得 1 层随机增益。
+item.legacy_pet_cubert.name,方块精灵
+item.legacy_pet_cubert.desc,相邻物品每激活 6 次：获得 1 层再生与 1 层强化。
+item.legacy_pet_ghost.name,幽灵
+item.legacy_pet_ghost.desc,每 3 秒：治疗 12 点，并对敌人造成 3 点真实伤害。
+item.legacy_pet_cthulhu.name,克苏鲁
+item.legacy_pet_cthulhu.desc,每 2.7 秒：造成 10 点真实伤害并获得 1 层吸血。
+item.legacy_pet_little_mimic.name,小宝箱怪
+item.legacy_pet_little_mimic.desc,每 6 秒：获得 3 层随机增益。
+item.legacy_pet_carrot_goobert.name,萝卜头黏黏
+item.legacy_pet_carrot_goobert.desc,相邻物品每激活 6 次：净化 4 层负面状态并获得 2 层强化（8 秒）。
+item.legacy_pet_snowmaster.name,雪之主人
+item.legacy_pet_snowmaster.desc,每 1.3 秒：对敌人施加 1 层寒冷（10 秒）并获得 1 层强化。
+item.legacy_pet_rainbow_goobert_ranger.name,彩虹究极布丁黏黏
+item.legacy_pet_rainbow_goobert_ranger.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 2 层强化，并对敌人施加 3 层寒冷。
+item.legacy_pet_rat.name,老鼠
+item.legacy_pet_rat.desc,每 3.3 秒：造成 5 点物理伤害，并施加 1 层中毒与 1 层寒冷。
+item.legacy_pet_squirrel.name,松鼠
+item.legacy_pet_squirrel.desc,每 4 秒：获得 1 层随机增益。
+item.legacy_pet_hedgehog.name,刺猬
+item.legacy_pet_hedgehog.desc,每 5 秒：造成 10 点物理伤害并获得 3 层尖刺；生命首次低于 70% 时获得 25 点护甲。
+item.legacy_pet_rat_chef.name,厨师鼠
+item.legacy_pet_rat_chef.desc,战斗开始时获得 2 层再生；每 7 秒获得 2 点耐力与 1 层强化。
+item.legacy_pet_hyper_hedgehog.name,超级刺猬
+item.legacy_pet_hyper_hedgehog.desc,每 5 秒：造成 12 点物理伤害、获得 4 层尖刺与 1 层强化；生命首次低于 70% 时获得 35 点护甲。
+item.legacy_pet_toad.name,蟾蜍
+item.legacy_pet_toad.desc,每 3.8 秒：治疗 12 点、获得 1 层幸运与 1 点耐力。
+item.legacy_pet_poison_goobert.name,剧毒黏黏
+item.legacy_pet_poison_goobert.desc,相邻物品每激活 5 次：治疗 10 点并对敌人施加 4 层中毒。
+item.legacy_pet_crow.name,乌鸦
+item.legacy_pet_crow.desc,每 3 秒：移除敌人 1 层幸运，并获得 1 层幸运。
+item.legacy_pet_poison_frog.name,毒蛙
+item.legacy_pet_poison_frog.desc,每 2.1 秒：对敌人施加 2 层中毒并获得 1 点耐力。
+item.legacy_pet_rainbow_goobert.name,彩虹超级至尊黏黏
+item.legacy_pet_rainbow_goobert.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲与 3 层吸血，并对敌人施加 4 层寒冷与 3 层中毒。
+item.legacy_pet_snake.name,蛇
+item.legacy_pet_snake.desc,战斗开始时获得 4 层幸运与 20 点最大生命；每 2.2 秒对敌人施加 2 层中毒。
+item.legacy_pet_chili_goobert.name,辣椒黏黏
+item.legacy_pet_chili_goobert.desc,相邻物品每激活 6 次：治疗 16 点并获得 2 层炽热。
+item.legacy_pet_fire_shelly.name,火焰贝壳精灵
+item.legacy_pet_fire_shelly.desc,每 12 秒：净化 6 层负面状态、治疗 40 点并获得 2 层炽热。
+item.legacy_pet_rainbow_goobert_pyromancer.name,彩虹布丁火焰法师
+item.legacy_pet_rainbow_goobert_pyromancer.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 4 层炽热，并对敌人施加 4 层寒冷。
+item.legacy_pet_friendly_fire.name,友军火力
+item.legacy_pet_friendly_fire.desc,每 2.9 秒获得 2 层炽热；炽热达到 20 层时获得 5 层幸运（一次）。
+item.legacy_pet_emerald_egg.name,翡翠龙蛋
+item.legacy_pet_emerald_egg.desc,战斗开始时获得 3 层幸运。
+item.legacy_pet_sapphire_egg.name,蓝宝石龙蛋
+item.legacy_pet_sapphire_egg.desc,战斗开始时获得 6 点耐力。
+item.legacy_pet_amethyst_egg.name,紫水晶龙蛋
+item.legacy_pet_amethyst_egg.desc,战斗开始时获得 4 层随机负面状态。
+item.legacy_pet_cheese_goobert.name,奶酪黏黏
+item.legacy_pet_cheese_goobert.desc,相邻物品每激活 5 次：最大生命 +22 并获得 2 层随机增益。
+item.legacy_pet_rainbow_goobert_berserker.name,彩虹布丁狂战士
+item.legacy_pet_rainbow_goobert_berserker.desc,相邻物品每激活 9 次：最大生命 +40、获得 20 点护甲、2 层吸血与 2 层随机增益，并对敌人施加 4 层寒冷。
+item.legacy_pet_wisdom_puppy.name,智慧小狗
+item.legacy_pet_wisdom_puppy.desc,每 4 秒：获得 10 点护甲并净化 6 层寒冷。
+item.legacy_pet_power_puppy.name,力量小狗
+item.legacy_pet_power_puppy.desc,每 3.2 秒：获得 2 层随机增益。
+item.legacy_pet_armored_wisdom_puppy.name,重甲智慧小狗
+item.legacy_pet_armored_wisdom_puppy.desc,每 4 秒：获得 14 点护甲并净化 6 层寒冷。
+item.legacy_pet_armored_power_puppy.name,重甲力量小狗
+item.legacy_pet_armored_power_puppy.desc,每 2.8 秒：获得 2 层随机增益。
+item.legacy_pet_goobling.name,小黏黏
+item.legacy_pet_goobling.desc,相邻物品每激活 3 次：治疗 4 点。
+item.legacy_pet_cat_spirit.name,猫之精魂
+item.legacy_pet_cat_spirit.desc,每 2.1 秒：获得 1 层幸运与 1 层强化，暴击率 +10%。
+item.legacy_pet_owl_spirit.name,枭之精魂
+item.legacy_pet_owl_spirit.desc,每 3.2 秒：获得 2 点耐力。
+item.legacy_pet_badger_spirit.name,獾之精魂
+item.legacy_pet_badger_spirit.desc,每 5 秒：治疗 20 点并使最大生命 +20。
+item.legacy_pet_cupcake_goobert.name,纸杯蛋糕黏黏
+item.legacy_pet_cupcake_goobert.desc,相邻物品每激活 6 次：治疗 35 点并获得 2 层随机增益。
+item.legacy_pet_rainbow_goobert_mage.name,彩虹布丁法师
+item.legacy_pet_rainbow_goobert_mage.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 2 层随机增益，并对敌人施加 3 层寒冷。
+item.legacy_pet_evil_hat.name,邪恶魔帽
+item.legacy_pet_evil_hat.desc,每 3 秒：获得 2 层随机增益与 1 层再生，并对敌人施加 3 层创伤。
+item.legacy_pet_broccoli_goobert.name,西兰花黏黏
+item.legacy_pet_broccoli_goobert.desc,相邻物品每激活 6 次：获得 3 层幸运与 3 层再生。
+item.legacy_pet_rainbow_goobert_adventurer.name,彩虹布丁冒险家
+item.legacy_pet_rainbow_goobert_adventurer.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 2 层再生，并对敌人施加 3 层寒冷。
+item.legacy_pet_mercury_elemental.name,水银元素
+item.legacy_pet_mercury_elemental.desc,每 4.5 秒：获得 50 点护甲、1 点耐力，并对敌人施加 2 层中毒。
+item.legacy_pet_turtle.name,乌龟
+item.legacy_pet_turtle.desc,每 13 秒：获得 60 点护甲与 7 层坚固（7 秒）。
+item.legacy_pet_toast_goobert.name,吐司黏黏
+item.legacy_pet_toast_goobert.desc,相邻物品每激活 6 次：获得 2 点耐力与 3 层再生。
+item.legacy_pet_rainbow_goobert_engineer.name,彩虹布丁工程师
+item.legacy_pet_rainbow_goobert_engineer.desc,相邻物品每激活 9 次：治疗 40 点、获得 20 点护甲、2 层吸血与 1 层再生，并对敌人施加 3 层寒冷。
+item.legacy_pet_robodog.name,机器狗
+item.legacy_pet_robodog.desc,每 1.9 秒：获得 1 层幸运与 1 层炽热。
+item.legacy_pet_mecha_bat.name,机械蝙蝠
+item.legacy_pet_mecha_bat.desc,每 3 秒：获得 3 层吸血与 1 层幸运（10 秒）。
+item.legacy_pet_frog_prince.name,青蛙王子
+item.legacy_pet_frog_prince.desc,每 2.6 秒：获得 1 点耐力、5 层幸运并治疗 20 点。
+item.legacy_pet_thorn_elemental.name,荆棘元素
+item.legacy_pet_thorn_elemental.desc,每 3 秒：获得 3 层尖刺。
+item.legacy_pet_sloth.name,树懒
+item.legacy_pet_sloth.desc,每 25 秒：获得 3 层随机增益。
+item.legacy_book_of_basics.name,基础之书
+item.legacy_book_of_basics.desc,每 5 秒：消耗 1 点耐力，最大生命 +8。
+item.legacy_book_of_nature.name,自然之书
+item.legacy_book_of_nature.desc,每 2.3 秒：获得 1 层再生、1 层幸运与 2 层尖刺。
+item.legacy_book_of_darkness.name,黑暗之书
+item.legacy_book_of_darkness.desc,每 2.6 秒：获得 3 点耐力，并对敌人施加 1 层寒冷。
+item.legacy_book_of_light.name,光明之书
+item.legacy_book_of_light.desc,每 3 秒：消耗 1 点耐力，治疗 12 点并获得 1 层再生。
+item.legacy_book_of_ice.name,寒冰之书
+item.legacy_book_of_ice.desc,每 2.8 秒：消耗 1 点耐力，对敌人施加 2 层寒冷。
+item.legacy_book_of_ice_new.name,寒冰之书·新
+item.legacy_book_of_ice_new.desc,每 3 秒：消耗 1 点耐力，对敌人施加 2 层寒冷。
+item.legacy_card_the_lovers.name,恋人
+item.legacy_card_the_lovers.desc,每 1.5 秒：造成 7 点物理伤害并获得 2 层再生（近似原版揭示效果）。
+item.legacy_card_ace_of_spades.name,黑桃A
+item.legacy_card_ace_of_spades.desc,每 1.5 秒：获得 2 层幸运与 3 层尖刺。
+item.legacy_card_reverse.name,逆转
+item.legacy_card_reverse.desc,每 1.5 秒：净化自身 3 层负面状态，并移除敌人 3 层正面状态。
+item.legacy_card_white_eyes_blue_dragon.name,白眼青龙
+item.legacy_card_white_eyes_blue_dragon.desc,每 1.5 秒：获得 12 点护甲并对敌人施加 4 层寒冷。
+item.legacy_card_the_fool.name,愚者
+item.legacy_card_the_fool.desc,每 1.5 秒：获得 1 层强化。
+item.legacy_card_holo_fire_lizard.name,大火龙
+item.legacy_card_holo_fire_lizard.desc,每 1.5 秒：造成 12 点物理伤害并获得 4 层炽热。
+item.legacy_card_joker.name,小丑
+item.legacy_card_joker.desc,每 1.5 秒：获得 2 层随机增益与 2 点耐力。
+item.legacy_card_darkest_lotus.name,黑暗莲花
+item.legacy_card_darkest_lotus.desc,每 1.5 秒：获得 4 点耐力，并移除敌人 3 层正面状态。
+item.legacy_chess_white_pawn.name,白兵
+item.legacy_chess_white_pawn.desc,战斗开始时获得 1 层幸运与 2 层再生。
+item.legacy_chess_black_pawn.name,黑兵
+item.legacy_chess_black_pawn.desc,战斗开始时获得 3 点耐力并对敌人施加 2 层中毒。
+item.legacy_chess_white_knight.name,白马
+item.legacy_chess_white_knight.desc,战斗开始时冷却加快 10%，并获得 2 点耐力。
+item.legacy_chess_black_knight.name,黑马
+item.legacy_chess_black_knight.desc,战斗开始时获得 3 层吸血与 2 点耐力。
+item.legacy_chess_white_bishop.name,白象
+item.legacy_chess_white_bishop.desc,战斗开始时净化 10 层负面状态。
+item.legacy_chess_black_bishop.name,黑象
+item.legacy_chess_black_bishop.desc,战斗开始时对敌人施加 4 层创伤并摧毁 5 点护甲。
+item.legacy_chess_white_rook.name,白车
+item.legacy_chess_white_rook.desc,战斗开始时获得 35 点护甲与 3 层坚固（3 秒）。
+item.legacy_chess_black_rook.name,黑车
+item.legacy_chess_black_rook.desc,战斗开始时获得 3 层尖刺与 10% 暴击率。
+item.legacy_chess_white_queen.name,白后
+item.legacy_chess_white_queen.desc,战斗开始时获得 8 层炽热。
+item.legacy_chess_black_queen.name,黑后
+item.legacy_chess_black_queen.desc,战斗开始时获得 4 层随机增益。
+item.legacy_chess_white_king.name,白王
+item.legacy_chess_white_king.desc,战斗开始时获得 1 层强化与 2 层随机增益。
+item.legacy_chess_black_king.name,黑王
+item.legacy_chess_black_king.desc,战斗开始时冷却加快 10%，并移除敌人 2 层正面状态。
+item.legacy_shepherds_crook.name,牧羊杖
+item.legacy_shepherds_crook.desc,战斗开始时相邻物品伤害 +2，并获得 7 层抗性；每次获得增益时 35% 概率保护（以抗性近似）。
+item.legacy_present.name,礼物
+item.legacy_present.desc,每 1.7 秒获得 1 层随机增益（原版无描述文本，按 gain=Buff 推断）。
+bag.bag_potion_belt.name,魔药腰带
+bag.bag_box_of_prosperity.name,财富之盒
+bag.bag_portable_altar.name,便携祭坛
+bag.bag_scholar_bag.name,魔法学院袋
+bag.bag_of_giving.name,给予之袋
+bag.bag_potion_belt.desc,提供 4 个有效格。
+bag.bag_box_of_prosperity.desc,提供 4 个有效格；进店时若包内有 2 件或以上传说物品，生成 1 颗碎裂宝石。
+bag.bag_portable_altar.desc,提供 4 个有效格；战斗开始时获得 1 层强化。
+bag.bag_scholar_bag.desc,提供 6 个有效格；战斗开始时恢复 5 点耐力。
+bag.bag_of_giving.desc,提供 6 个有效格；商店会提供所有职业的物品。
+tag.hold.name,暂不上线
+tag.hold.desc,所属角色尚未上线，暂不进入商店与奖励池。

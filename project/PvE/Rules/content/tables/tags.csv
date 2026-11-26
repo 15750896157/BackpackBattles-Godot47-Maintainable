@@ -23,3 +23,4 @@ focused_build,tag.focused_build.name,tag.focused_build.desc,intel
 ranged,tag.ranged.name,tag.ranged.desc,support
 material,tag.material.name,tag.material.desc,support
 elite_loot,tag.elite_loot.name,tag.elite_loot.desc,support
+hold,tag.hold.name,tag.hold.desc,mechanic

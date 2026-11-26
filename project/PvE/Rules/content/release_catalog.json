@@ -111,7 +111,8 @@
     "toxin_bottle",
     "transfusion_tube",
     "venom_distiller",
-    "wildfire_alembic"
+    "wildfire_alembic",
+    "wooden_sword"
   ],
   "bags": [
     "bag_release_journey",
@@ -121,7 +122,8 @@
     "bag_release_herbal",
     "bag_release_armor",
     "bag_release_transport",
-    "bag_release_supply"
+    "bag_release_supply",
+    "bag_protective_purse"
   ],
   "recipes": [
     "recipe_supply_iron_longsword",

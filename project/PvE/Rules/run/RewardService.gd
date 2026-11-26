@@ -52,6 +52,7 @@ func content_pool(run: Dictionary, type: String, params: Dictionary) -> Array:
 			elif owner == "public": owners = ["public"]
 			if row.owner_pool not in owners: continue
 			var tags: Array = db.list_values(row.tags)
+			if "hold" in tags: continue
 			if "elite_loot" in tags and run.get("current_node",{}).get("type","")!="elite_combat":continue
 			var filter = str(params.get("tag", ""))
 			if not filter.is_empty():
