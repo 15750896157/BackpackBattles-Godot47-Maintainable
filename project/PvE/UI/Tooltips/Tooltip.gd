@@ -24,12 +24,18 @@ var triggerColor_html = Util.triggerColor.to_html(false)
 @onready var nameLabel = get_node_or_null("VBoxContainer/Name")
 
 const Y_OFFSET = 0
+const MOUSE_OFFSET = Vector2(32, 32)
 @export var Y_BORDER = 120
 var MARGIN = 8
 @export var SCREEN_MARGIN = Vector2.ZERO
+var follow_mouse: bool = false
 
 func _ready():
 	hide()
+
+func _process(_delta):
+	if follow_mouse:
+		align(Vector2.ZERO, Vector2.ZERO, Alignment.Top)
 
 func updateSize():
 	return load("res://Code/Runtime/Behavior/Interface/Tooltips/TooltipBehavior.gd").updateSize(self)

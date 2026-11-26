@@ -1,6 +1,6 @@
-[gd_resource type="ParticleProcessMaterial" format=3]
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://wbjrb4ea40qo"]
 
-[ext_resource type="Texture2D" path="res://Art/Shader/SmoothFadeGradient.tres" id="1"]
+[ext_resource type="Texture2D" uid="uid://dxqvjl7y1sdv" path="res://Art/Shader/SmoothFadeGradient.tres" id="1"]
 
 [sub_resource type="Gradient" id="259"]
 colors = PackedColorArray(1, 1, 1, 0.396078, 1, 1, 1, 1)

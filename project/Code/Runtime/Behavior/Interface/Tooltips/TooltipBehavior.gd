@@ -5,7 +5,17 @@ const Receiver = preload("res://PvE/UI/Tooltips/Tooltip.gd")
 static func align(subject: Receiver, toolPos: Vector2, toolSize: Vector2, alignment):
 	if not subject.is_inside_tree(): return
 
-	subject.global_position = toolPos + Vector2(toolSize.x + subject.MARGIN, subject.Y_OFFSET)
+	# 跟随鼠标时以光标为锚点，浮窗贴在光标右下角
+	var anchorPos := toolPos
+	var offsetX := float(subject.MARGIN)
+	var offsetY := float(subject.Y_OFFSET)
+	if subject.follow_mouse:
+		anchorPos = subject.get_global_mouse_position()
+		toolSize = Vector2.ZERO
+		offsetX = subject.MOUSE_OFFSET.x
+		offsetY = subject.MOUSE_OFFSET.y
+
+	subject.global_position = anchorPos + Vector2(toolSize.x + offsetX, offsetY)
 
 	var viewportRect = subject.get_viewport_rect()
 	var cameraTopLeft = viewportRect.position
@@ -15,10 +25,10 @@ static func align(subject: Receiver, toolPos: Vector2, toolSize: Vector2, alignm
 		rightMargin = 450
 
 	if (subject.global_position.x + subject.size.x >= cameraBottomRight.x - rightMargin):
-		subject.global_position.x = toolPos.x - subject.size.x - subject.MARGIN
+		subject.global_position.x = anchorPos.x - subject.size.x - offsetX
 		subject.global_position.x = max(subject.global_position.x, - 7)
 
-	if alignment == subject.Alignment.Center:
+	if alignment == subject.Alignment.Center and not subject.follow_mouse:
 		subject.global_position.y -= (subject.size.y - toolSize.y) / 2
 
 	var highestRectY = cameraTopLeft.y + subject.SCREEN_MARGIN.y

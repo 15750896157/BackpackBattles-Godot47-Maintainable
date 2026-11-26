@@ -280,9 +280,10 @@ static func respondToHover(subject: Receiver):
 
 			Game.tooltipsNode.add_child(subject.tooltip)
 			subject.tooltip.setItem(subject)
+			# 商店商品的浮窗统一跟随光标右下角，不再固定在商品旁
+			if ownerType_ == subject.Owner.Shop:
+				subject.tooltip.follow_mouse = true
 			if reference_shop:
-				# The reference places the parchment above the right-hand workspace.
-				tooltipPos = Vector2(1173 - toolsize.x - subject.tooltip.MARGIN,213)
 				subject.tooltip.forceUpdatePosition(tooltipPos, toolsize, ToolTip.Alignment.Top)
 			else:
 				subject.tooltip.forceUpdatePosition(tooltipPos, toolsize)

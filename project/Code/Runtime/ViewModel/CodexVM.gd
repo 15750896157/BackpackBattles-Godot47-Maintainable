@@ -93,7 +93,7 @@ func subtitle(category: String, entry: Dictionary) -> String:
 	if not entry.known:
 		return _words.call("探索远征以记录", "Discover on an expedition")
 	if category == "enemies":
-		return _words.call("敌方构筑与能力", "Enemy build & abilities")
+		return ""
 	if category == "characters":
 		return _words.call("可选英雄", "Playable hero") if entry.id in _flow.db.release_catalog.characters else _words.call("旧版角色", "Legacy hero")
 	return _translate.call("rarity." + str(entry.definition.get("rarity", "common")) + ".name") + "  ·  " + str(_cells(entry.id, 0).size()) + _words.call(" 格", " cells")

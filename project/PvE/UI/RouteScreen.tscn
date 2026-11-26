@@ -69,7 +69,7 @@ vertical_alignment = 1
 theme_override_colors/font_color = Color(1, 0.9411764705882353, 0.803921568627451, 1)
 theme_override_constants/outline_size = 2
 metadata/route_text = "gold"
-metadata/route_font_size = 26
+metadata/route_font_size = 24
 
 [node name="Heart" type="TextureRect" parent="."]
 offset_left = 219.0
@@ -92,7 +92,7 @@ vertical_alignment = 1
 theme_override_colors/font_color = Color(1, 0.9411764705882353, 0.803921568627451, 1)
 theme_override_constants/outline_size = 2
 metadata/route_text = "health"
-metadata/route_font_size = 26
+metadata/route_font_size = 24
 
 [node name="Act" type="Label" parent="."]
 offset_left = 395.0
@@ -105,7 +105,7 @@ vertical_alignment = 1
 theme_override_colors/font_color = Color(1, 0.8784313725490196, 0.6862745098039216, 1)
 theme_override_constants/outline_size = 2
 metadata/route_text = "act"
-metadata/route_font_size = 25
+metadata/route_font_size = 24
 
 [node name="Back" type="TextureButton" parent="."]
 offset_left = 52.0
