@@ -41,6 +41,13 @@ static func paths(keys: Array) -> Array:
 static func texture(key: String) -> Texture2D:
 	return AssetStream.resources.get(path(key))
 
+## 品质药丸：图鉴卡片与物品提示框共用同一张底图与字色。
+static func rarity_badge(rarity: String) -> String:
+	return "badge_purple" if rarity == "legendary" else "badge_blue" if rarity == "rare" else "badge_gold"
+
+static func badge_ink(key: String) -> Color:
+	return Color("fff7d6") if key in ["badge_red","badge_purple"] else INK
+
 static func picture(parent: Node, key: String, rect: Rect2, exact: bool = false) -> TextureRect:
 	var node = TextureRect.new()
 	node.name = "Ref_" + key

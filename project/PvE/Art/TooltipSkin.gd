@@ -1,5 +1,6 @@
 extends RefCounted
 const ART = "res://Art/Supplied20261109/"
+const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 const PROPERTY_ICON = {
 	Item.Stat.MaxDamage: "attack", Item.Stat.StaminaCost: "stamina",
 	Item.Stat.Cooldown: "cooldown_boost", Item.Stat.CritChance: "crit",
@@ -10,6 +11,7 @@ const EFFECT_ICON = {
 }
 static var skin: Texture2D
 static var divider: Texture2D
+static var badges: Dictionary = {}
 
 static func apply(subject):
 	if not Expedition.enabled: return
@@ -24,6 +26,10 @@ static func apply(subject):
 	for node in subject.toReturn:
 		if node is TextureRect and node.scene_file_path == "res://PvE/UI/Tooltips/TooltipDivider.tscn":
 			node.texture = divider
+		elif node.scene_file_path == "res://PvE/UI/Tooltips/ClassIcon.tscn":
+			node.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+			# 精灵右缘在 42.5，原宽度会让图标压到药丸左边框上
+			node.custom_minimum_size.x = 54
 	var definition = Expedition.flow.placement.definition(str(subject.item.get_meta("pve_definition_id","")))
 	if not definition.is_empty(): subject.nameLabel.text = "[center]"+Expedition.t(str(definition.name_key))+"[/center]"
 	subject.triggerColor_html = Color("78400c").to_html(false)
@@ -63,7 +69,22 @@ static func apply(subject):
 			var icons := "  ".join(symbols.map(func(icon): return Util.imageToBbcode(stat_path(icon),30)))
 			if not subject.descrLabel.text.begins_with(icons):
 				subject.descrLabel.text = icons + "\n" + subject.descrLabel.text
-	subject.rarityLabel.add_theme_color_override("font_color",Game.rarityColors[subject.item.getRarity()].darkened(0.60))
+	apply_rarity_badge(subject,str(definition.get("rarity","common")))
+
+## 品质改为与图鉴卡片同款的药丸：同一张底图、同一套字色。
+static func apply_rarity_badge(subject,rarity: String) -> void:
+	var key: String = REF.rarity_badge(rarity)
+	if not badges.has(key):
+		var style := StyleBoxTexture.new()
+		style.texture = load(ART+"ui/"+key+".png")
+		style.set_texture_margin_all(9)
+		style.content_margin_left = 16
+		style.content_margin_right = 16
+		style.content_margin_top = 2
+		style.content_margin_bottom = 2
+		badges[key] = style
+	subject.rarityLabel.add_theme_stylebox_override("normal",badges[key])
+	subject.rarityLabel.add_theme_color_override("font_color",REF.badge_ink(key))
 
 static func stat_path(key: String) -> String:
 	return ART+"status/"+key+".png"
