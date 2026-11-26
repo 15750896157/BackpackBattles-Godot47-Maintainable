@@ -26,10 +26,6 @@ static func apply(subject):
 	for node in subject.toReturn:
 		if node is TextureRect and node.scene_file_path == "res://PvE/UI/Tooltips/TooltipDivider.tscn":
 			node.texture = divider
-		elif node.scene_file_path == "res://PvE/UI/Tooltips/ClassIcon.tscn":
-			node.size_flags_vertical = Control.SIZE_SHRINK_CENTER
-			# 精灵右缘在 42.5，原宽度会让图标压到药丸左边框上
-			node.custom_minimum_size.x = 54
 	var definition = Expedition.flow.placement.definition(str(subject.item.get_meta("pve_definition_id","")))
 	if not definition.is_empty(): subject.nameLabel.text = "[center]"+Expedition.t(str(definition.name_key))+"[/center]"
 	subject.triggerColor_html = Color("78400c").to_html(false)
