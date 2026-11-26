@@ -113,7 +113,7 @@ func run_tests():
 	check(Expedition.hud_layer.get_instance_id() == hud_id and Expedition.overlay.get_instance_id() == dialog_id, "same HUD and dialog shell survive entering shop")
 	check(Expedition.status.text == Expedition.t("ui.run_header", {"act": int(Expedition.flow.run.act), "step": int(Expedition.flow.run.step), "hp": ceili(float(Expedition.flow.run.health)), "max_hp": ceili(float(Expedition.flow.run.max_health)), "gold": int(Expedition.flow.run.gold)}), "HUD observes the authoritative run header")
 	check(Game.STORAGEBOX.has_meta("art_storage_slots"),"storage uses squares painted on the supplied cloth")
-	check(not is_instance_valid(Game.STORAGEBOX.pve_slot_root) or Game.STORAGEBOX.pve_slot_root.get_child_count()==0,"no added storage grid or numeric labels")
+	check(not is_instance_valid(Game.STORAGEBOX.pve_slot_root) or Game.STORAGEBOX.pve_slot_root.get_children().all(func(child):return child is ColorRect),"no added storage grid or numeric labels")
 	var offer: Item = Game.shopSceneNode.slots[0].item
 	if is_instance_valid(offer):
 		offer.gainFocus()

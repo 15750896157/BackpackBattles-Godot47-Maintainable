@@ -31,12 +31,30 @@ static func pve_slot_rect(subject: Receiver, index: int) -> Rect2:
 static func pve_refresh_slots(subject: Receiver, build: Dictionary):
 	var capacity = int(build.storage_capacity)
 	if subject.has_meta("art_storage_slots"):
-		# The supplied cloth contains the slot artwork; do not add tiles or digits.
-		subject.pve_capacity=capacity
-		if is_instance_valid(subject.pve_slot_root):
-			subject.pve_slot_root.hide()
-			for child in subject.pve_slot_root.get_children():subject.pve_slot_root.remove_child(child);child.queue_free()
+		var slots: Array = subject.get_meta("art_storage_slots")
+		# The supplied cloth paints four equal squares; dim the ones beyond the
+		# current capacity so players can tell which slots are actually usable.
+		if not is_instance_valid(subject.pve_slot_root):
+			subject.pve_slot_root = Node2D.new()
+			subject.pve_slot_root.name = "ArtStorageDim"
+			subject.add_child(subject.pve_slot_root)
+			subject.pve_slot_root.top_level = true
+			subject.pve_slot_root.global_position = Vector2.ZERO
+			subject.pve_slot_root.z_as_relative = false
+			subject.pve_slot_root.z_index = Util.getGlobalZ(subject)
+		subject.pve_slot_root.visible = Game.state == Game.State.Shop
 		subject.get_node("StorageShakeButton/Storagebox/Label").hide()
+		if capacity == subject.pve_capacity: return
+		subject.pve_capacity = capacity
+		for child in subject.pve_slot_root.get_children(): child.queue_free()
+		for index in range(capacity, slots.size()):
+			var rect: Rect2 = slots[index]
+			var dim = ColorRect.new()
+			dim.color = Color(0.05, 0.03, 0.02, 0.62)
+			dim.position = rect.position
+			dim.size = rect.size
+			dim.mouse_filter = Control.MOUSE_FILTER_IGNORE
+			subject.pve_slot_root.add_child(dim)
 		return
 	# Keep the original localized chest caption above its fixed slots, leaving
 	# the shared bottom tutorial band free and avoiding the stored icon bounds.

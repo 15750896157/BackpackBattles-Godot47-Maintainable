@@ -30,7 +30,8 @@ func run_tests():
 			var origin=Game.PLAYER.INVENTORY.cellToGlobalPos(Vector2.ZERO)
 			check(is_equal_approx(Game.PLAYER.INVENTORY.cellToGlobalPos(Vector2.RIGHT).distance_to(origin),64.0),"new grid horizontal spacing is 64 presentation pixels")
 			check(is_equal_approx(Game.PLAYER.INVENTORY.cellToGlobalPos(Vector2.DOWN).distance_to(origin),64.0),"new grid vertical spacing is 64 presentation pixels")
-			check(Game.STORAGEBOX.has_meta("art_storage_slots") and (not is_instance_valid(Game.STORAGEBOX.pve_slot_root) or Game.STORAGEBOX.pve_slot_root.get_child_count()==0),"cloth storage never adds a second grid")
+			var grid_free:bool=not is_instance_valid(Game.STORAGEBOX.pve_slot_root) or Game.STORAGEBOX.pve_slot_root.get_children().all(func(child):return child is ColorRect)
+			check(Game.STORAGEBOX.has_meta("art_storage_slots") and grid_free,"cloth storage never adds a second grid")
 			for slot in Expedition.flow.run.shop.slots:
 				if slot.get("kind","")=="bag":check(Expedition.db.release_contains("bags",slot.definition_id),"shop bag belongs to the release bag pool")
 				else:
