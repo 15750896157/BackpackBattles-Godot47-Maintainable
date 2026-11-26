@@ -32,6 +32,7 @@ var event_hash: HashingContext
 var consumed_events: int = 0
 var final_damage_type: String = ""
 var rng_purpose_counts: Dictionary = {}
+var effect_uses: Dictionary = {}
 
 func _init(content = null): db = content
 
@@ -64,7 +65,7 @@ func simulate(player_snapshot: Dictionary, enemy_snapshot: Dictionary, seed: int
 					var key = _stats_key(int(actor.side), str(id))
 					item_stats[key].stamina_starvation = _number(float(item_stats[key].stamina_starvation) + step)
 				if float(item.cooldown) > 0.0:
-					var speed = (1.0 + statuses.value(actor, "haste")) * (1.0 - minf(float(_rule("slow_cap", 0.5)), statuses.value(actor, "slow")))
+					var speed = (1.0 + statuses.value(actor, "haste")) * (1.0 - minf(float(_rule("slow_cap", 0.5)), statuses.value(actor, "slow") + statuses.value(actor, "cold")))
 					item.progress = _number(float(item.progress) + step * maxf(0.0, speed))
 					if float(item.progress) + 0.000001 >= _cooldown(actor, item) and tick >= int(item.retry_tick):
 						var event = _event(actor.side, id, "activate", _priority("cooldown_ready"), {"trigger": "cooldown_ready"})
@@ -230,6 +231,7 @@ func _reset(seed: int) -> void:
 	fatigue_started = false
 	final_damage_type = ""
 	rng_purpose_counts = {}
+	effect_uses = {}
 	queue = QueueClass.new(db)
 	statuses = StatusClass.new(db)
 	resolver = ResolverClass.new(db)
@@ -476,6 +478,9 @@ func damage(event: Dictionary, target_side: int, base: float, kind: String, stat
 	var item = source(side, str(event.source_id))
 	var critical = false
 	var amount = maxf(0.0, base)
+	if kind == "physical_damage" and statuses.value(target, "evasion") > 0.0 and _roll("dodge", str(target_side)) < statuses.value(target, "evasion"):
+		log_event(event, "DODGED", target_side, 0, {"trigger_source_id": event.source_id})
+		return
 	if status_id.is_empty():
 		if kind == "physical_damage":
 			critical = _roll("critical", str(event.source_id)) < _crit_chance(attacker, item)
@@ -517,7 +522,7 @@ func heal(event: Dictionary, target_side: int, base: float, lifesteal: bool = fa
 	var source_actor: Dictionary = actors[int(event.side)]
 	var item = source(event.side, event.source_id)
 	var power = 0.0 if lifesteal or scaled_stacks else _modifier_sum(source_actor, item, "status_power")
-	var reduction = minf(0.95, fatigue_count * float(_rule("fatigue_healing_reduction_per_tick", 0.08)))
+	var reduction = minf(0.95, fatigue_count * float(_rule("fatigue_healing_reduction_per_tick", 0.08)) + statuses.value(actor, "wound"))
 	var amount = maxf(0.0, floor(base * maxf(0.0, 1.0 + power) * (1.0 - reduction)))
 	var actual = minf(maxf(0.0, float(actor.max_health) - float(actor.health)), amount)
 	actor.health = _number(minf(float(actor.max_health), float(actor.health) + actual))
@@ -538,6 +543,14 @@ func gain_armor(event: Dictionary, target_side: int, amount: float) -> void:
 	if item_stats.has(key): item_stats[key].armor += amount
 	log_event(event, "ARMOR_GAINED", target_side, amount)
 	if amount > 0.0: _emit_trigger("armor_gained", target_side, event, {"armor": amount, "trigger_source_id": event.source_id})
+
+func destroy_armor(event: Dictionary, target_side: int, amount: float) -> void:
+	var actor: Dictionary = actors[target_side]
+	var removed = floor(amount)
+	if removed <= 0.0: return
+	removed = minf(float(actor.armor), removed)
+	actor.armor = _number(maxf(0.0, float(actor.armor) - removed))
+	log_event(event, "ARMOR_DESTROYED", target_side, removed)
 
 func gain_stamina(event: Dictionary, target_side: int, amount: float) -> void:
 	var actor: Dictionary = actors[target_side]
@@ -641,10 +654,10 @@ func _cooldown(actor: Dictionary, item: Dictionary) -> float:
 	return maxf(float(_rule("minimum_cooldown_seconds", 0.5)), float(item.cooldown) * maxf(0.01, 1.0 + _modifier_sum(actor, item, "cooldown_pct")))
 
 func _crit_chance(actor: Dictionary, item: Dictionary) -> float:
-	return clampf(float(actor.crit_chance) + _modifier_sum(actor, item, "crit_chance"), 0.0, float(_rule("crit_chance_cap", 0.75)))
+	return clampf(float(actor.crit_chance) + _modifier_sum(actor, item, "crit_chance") + statuses.value(actor, "luck"), 0.0, float(_rule("crit_chance_cap", 0.75)))
 
 func _raw_damage(actor: Dictionary, item: Dictionary, base: float, critical: bool) -> float:
-	var amount = maxf(0.0, maxf(0.0, base) + _modifier_sum(actor, item, "damage_flat")) * float(actor.damage_scalar)
+	var amount = maxf(0.0, maxf(0.0, base) + _modifier_sum(actor, item, "damage_flat") + statuses.value(actor, "empower")) * float(actor.damage_scalar)
 	if critical: amount *= float(actor.crit_multiplier)
 	return floor(amount)
 
@@ -653,6 +666,18 @@ func _roll(domain: String, instance_id: String) -> float:
 	rng_purpose_counts[purpose] = int(rng_purpose_counts.get(purpose, 0)) + 1
 	rng_state = (rng_state * 48271) % 2147483647
 	return float(rng_state) / 2147483647.0
+
+func random_index(domain: String, key: String, size: int) -> int:
+	if size <= 0: return -1
+	return mini(size - 1, int(floor(_roll(domain, key) * size)))
+
+func effect_allowed(effect_id: String, limit: int) -> bool:
+	if limit <= 0: return true
+	return int(effect_uses.get(effect_id, 0)) < limit
+
+func mark_effect(effect_id: String) -> void:
+	if effect_id.is_empty(): return
+	effect_uses[effect_id] = int(effect_uses.get(effect_id, 0)) + 1
 
 func _priority(trigger) -> int:
 	var row = db.get_row("trigger_templates", str(trigger)) if db != null else {}

@@ -17,11 +17,15 @@ func resolve(engine, event: Dictionary) -> bool:
 	var raw = params.get("value", params.get("amount", 0))
 	var amount = float(raw) if str(raw).is_valid_float() else 0.0
 	var duration = float(params.get("duration", 0.0))
+	var effect_id = str(row.get("id", ""))
+	var limit = int(params.get("limit", 0))
+	if not engine.effect_allowed(effect_id, limit): return false
 	for target in targets:
 		if engine.finished: break
 		match kind:
 			"physical_damage", "true_damage": engine.damage(event, int(target.side), amount, kind, "")
 			"gain_armor": engine.gain_armor(event, int(target.side), amount)
+			"destroy_armor": engine.destroy_armor(event, int(target.side), amount)
 			"heal": engine.heal(event, int(target.side), amount)
 			"gain_stamina": engine.gain_stamina(event, int(target.side), amount)
 			"apply_status":
@@ -35,6 +39,16 @@ func resolve(engine, event: Dictionary) -> bool:
 					id = str(event.get("payload", {}).get("status_id", ""))
 					count = maxi(1, int(floor(float(event.get("payload", {}).get("stacks", 0)) * float(params.repeat_pct))))
 				engine.apply_status(event, int(target.side), id, count, duration, not params.has("repeat_pct"))
+			"random_status":
+				var polarity = str(params.get("polarity", "positive"))
+				var pool: Array = []
+				if engine.db != null:
+					for status_row in engine.db.rows("statuses"):
+						if str(status_row.get("polarity", "")) == polarity:
+							pool.append(str(status_row.get("id", "")))
+				if pool.is_empty(): return false
+				var pick = engine.random_index("random_status", str(event.root_id), pool.size())
+				engine.apply_status(event, int(target.side), str(pool[pick]), int(params.get("stacks", 1)), duration, true)
 			"remove_status":
 				var id = str(params.get("status_id", "negative"))
 				var removed = engine.statuses.remove(engine.actors[int(target.side)], id, int(params.get("stacks", amount)))
@@ -62,4 +76,5 @@ func resolve(engine, event: Dictionary) -> bool:
 			_:
 				engine.log_event(event, "INVALID_EFFECT", int(target.side), 0, {"effect_type": kind})
 				return false
+	engine.mark_effect(effect_id)
 	return true

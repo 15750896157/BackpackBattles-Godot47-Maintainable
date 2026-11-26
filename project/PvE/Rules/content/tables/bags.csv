@@ -17,3 +17,9 @@ bag_release_herbal,bag.bag_release_herbal.name,bag.bag_release_herbal.desc,commo
 bag_release_armor,bag.bag_release_armor.name,bag.bag_release_armor.desc,common,4,1,release_2x2,enhanced_cell,0:0,target_tag:armor|armor_on_start:3,shop,5,res://Art/Supplied20261102/bags/bag_04.png
 bag_release_transport,bag.bag_release_transport.name,bag.bag_release_transport.desc,rare,7,2,release_3x3,star_cell,1:1,cooldown_pct:-0.05,shop,8,res://Art/Supplied20261102/bags/bag_09_square.png
 bag_release_supply,bag.bag_release_supply.name,bag.bag_release_supply.desc,rare,7,2,release_3x3,enhanced_cell,1:1,damage_flat:1,shop,8,res://Art/Supplied20261102/bags/bag_09_wide.png
+bag_protective_purse,bag.bag_protective_purse.name,bag.bag_protective_purse.desc,legendary,2,1,release_2x2,star_cell,1:1,armor_on_start:5,shop,8,res://Art/Supplied20261102/bags/bag_09_wide.png
+bag_potion_belt,bag.bag_potion_belt.name,bag.bag_potion_belt.desc,legendary,5,2,release_2x2,none,,,legacy,6,res://Art/Supplied20261102/bags/bag_09_wide.png
+bag_box_of_prosperity,bag.bag_box_of_prosperity.name,bag.bag_box_of_prosperity.desc,legendary,5,2,release_2x2,none,,shop_gem_on_enter:2,legacy,6,res://Art/Supplied20261102/bags/bag_09_wide.png
+bag_portable_altar,bag.bag_portable_altar.name,bag.bag_portable_altar.desc,legendary,8,3,release_2x2,bag_cell,,status_on_start:empower:1,legacy,9,res://Art/Supplied20261102/bags/bag_09_wide.png
+bag_scholar_bag,bag.bag_scholar_bag.name,bag.bag_scholar_bag.desc,legendary,16,3,release_2x3,bag_cell,,stamina_on_start:5,legacy,10,res://Art/Items/Exclusive/Sprites/Holdall.png
+bag_of_giving,bag.bag_of_giving.name,bag.bag_of_giving.desc,legendary,16,3,release_2x3,none,,shop_all_classes:1,legacy,9,res://Art/Items/Exclusive/Sprites/Holdall.png

@@ -31,12 +31,13 @@ func apply(actor: Dictionary, id: String, amount: int, duration: float, tick: in
 func remove(actor: Dictionary, id: String, amount: int) -> int:
 	var removed = 0
 	var keys: Array = [id]
-	if id.is_empty() or id == "negative":
+	if id.is_empty() or id == "negative" or id == "positive":
 		keys = actor.statuses.keys()
 		keys.sort()
 	for key in keys:
 		if not actor.statuses.has(key): continue
 		if (id.is_empty() or id == "negative") and str(definition(key).get("polarity", "")) != "negative": continue
+		if id == "positive" and str(definition(key).get("polarity", "")) != "positive": continue
 		var current = int(actor.statuses[key].stacks)
 		var taking = mini(current, maxi(0, amount - removed))
 		actor.statuses[key].stacks = current - taking

@@ -135,6 +135,10 @@ func _build(build: Dictionary, stats: Dictionary, owner_id: String, character_id
 					var effect_id = bag_id + ":" + str(pair[0])
 					if not snapshot.bag_effects.any(func(v): return str(v.id) == effect_id):
 						snapshot.bag_effects.append({"id": effect_id, "phase": int(entry.get("phase", 1)), "trigger_id": "combat_start", "effect_type": pair[1], "effect_params": "value:" + str(params[pair[0]]), "target_selector": "self", "condition_id": "always", "chain_depth_cost": 1})
+			if params.has("status_on_start"):
+				var status_id = bag_id + ":status_on_start:" + str(params["status_on_start"])
+				if not snapshot.bag_effects.any(func(v): return str(v.id) == status_id):
+					snapshot.bag_effects.append({"id": status_id, "phase": int(entry.get("phase", 1)), "trigger_id": "combat_start", "effect_type": "apply_status", "effect_params": "value:" + str(params["status_on_start"]), "target_selector": "self", "condition_id": "always", "chain_depth_cost": 1})
 		snapshot.items.append(item)
 		snapshot.resolved_spatial_links.append({"instance_id": uid, "relations": derived[uid].relations})
 	snapshot.items.sort_custom(func(a, b): return _item_before(a, b))

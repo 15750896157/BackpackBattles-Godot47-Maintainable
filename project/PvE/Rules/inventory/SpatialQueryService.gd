@@ -38,6 +38,13 @@ func special_cells(build: Dictionary, uid: String = "") -> Array:
 		var def = db.get_row("bags", str(bag.definition_id))
 		var raw = db.shape(str(def.get("shape_id", "")), true)
 		var rotated = placement.rotate_cells(raw, int(bag.get("rotation", 0)))
+		var cell_type = str(def.get("special_cell_type", "none"))
+		if cell_type == "bag_cell":
+			for point in rotated:
+				var whole = point + Vector2i(int(bag.x), int(bag.y))
+				if uid.is_empty() or filter_cells.has(whole):
+					result.append({"cell": whole, "bag_uid": str(bag.uid), "type": cell_type, "effect": str(def.get("special_effect", "")), "stackable": bool(def.get("special_stackable", false))})
+			continue
 		for token in str(def.get("special_cells", "")).split("|", false):
 			var parts = token.split(":")
 			if parts.size() != 2:

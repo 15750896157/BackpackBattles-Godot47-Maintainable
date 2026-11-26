@@ -14,7 +14,7 @@ func run_tests():
 	check(catalogue.characters==["armorer","archer","alchemist"],"new content tracks cover every playable profession")
 	check(catalogue.selectable_characters==["armorer","archer","alchemist"],"selection restores all three existing professions")
 	check(Expedition.db.starting_loadouts("alchemist").size()==2,"restored alchemist has both existing loadouts")
-	check(catalogue.items.size()>=60 and catalogue.bags.size()==8 and catalogue.recipes.size()>=18,"release scope satisfies frozen minimums")
+	check(catalogue.items.size()>=60 and catalogue.bags.size()>=8 and catalogue.recipes.size()>=18,"release scope satisfies frozen minimums")
 	for row in Expedition.db.rows("tutorial_steps"):Expedition.flow.profile_service.profile.tutorial_completed.append(row.id)
 	for role in catalogue.characters:
 		for loadout in catalogue.loadouts[role]:

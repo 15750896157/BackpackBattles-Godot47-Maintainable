@@ -36,6 +36,7 @@ func _draw():
 		if image == null: continue
 		draw_texture(image, Vector2(cell) * 80.0 + _offset(image))
 	for special in specials:
+		if str(special.type) == "bag_cell": continue
 		var rect=Rect2(Vector2(special.cell)*80.0+Vector2(5,5),Vector2(70,70))
 		draw_rect(rect,Color(1,0.78,0.3,0.42),false,2)
 		if special.type=="star_cell":

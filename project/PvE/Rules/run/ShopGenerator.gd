@@ -83,6 +83,8 @@ func generate(run: Dictionary, refresh: bool = false) -> Dictionary:
 	shop["discount_slot"] = promo
 	shop["detected_archetype"] = detected_archetype(run)
 	run["shop"] = shop
+	if not refresh:
+		_apply_container_entry(run, rng)
 	if not run.has("rng"):
 		run["rng"] = {}
 	run.rng["shop"] = rng.state
@@ -110,9 +112,13 @@ func detected_archetype(run: Dictionary) -> String:
 
 func _eligible(run: Dictionary) -> Array:
 	var result: Array = []
+	var all_classes = _shop_all_classes(run)
 	for row in db.rows("items"):
 		# 物品池只按归属过滤：公共物品人人可见，职业专属只对本人开放。
-		if bool(row.get("shop_enabled", false)) and not bool(row.get("crafted_only", false)) and int(row.get("chapter_min", 1)) <= int(run.get("act", 1)) and (str(row.get("owner_pool", "public")) in ["public", str(run.get("character_id", ""))]):
+		# 包内带 shop_all_classes 的背包会让所有职业物品进入商店。
+		# 带 hold 标签的物品属于未上线角色，暂不进入任何池。
+		if "hold" in db.list_values(str(row.get("tags", ""))): continue
+		if bool(row.get("shop_enabled", false)) and not bool(row.get("crafted_only", false)) and int(row.get("chapter_min", 1)) <= int(run.get("act", 1)) and (all_classes or str(row.get("owner_pool", "public")) in ["public", str(run.get("character_id", ""))]):
 			row["kind"] = "item"
 			result.append(row)
 	for row in db.rows("bags"):
@@ -224,3 +230,47 @@ func _has_bag(slots: Array) -> bool:
 func _standard_visit(run: Dictionary) -> bool:
 	var node = run.get("current_node", {})
 	return str(node.get("node_type", node.get("type", "standard"))) != "merchant"
+
+func _shop_all_classes(run: Dictionary) -> bool:
+	for bag in run.get("build", {}).get("bags", []):
+		var def = db.get_row("bags", str(bag.get("definition_id", "")))
+		if not str(def.get("special_effect", "")).is_empty() and db.parse_params(def.special_effect).has("shop_all_classes"):
+			return true
+	return false
+
+func _apply_container_entry(run: Dictionary, rng: DeterministicRNG) -> void:
+	var build = run.get("build", {})
+	var bag_entries: Array = build.get("bags", [])
+	var item_entries: Array = build.get("items", [])
+	if bag_entries.is_empty() or item_entries.is_empty():
+		return
+	var gem_pool = _shop_gem_pool()
+	if gem_pool.is_empty():
+		return
+	var spatial = SpatialQueryService.new(db)
+	for bag in bag_entries:
+		var def = db.get_row("bags", str(bag.get("definition_id", "")))
+		var params = db.parse_params(def.get("special_effect", ""))
+		var threshold = int(params.get("shop_gem_on_enter", 0))
+		if threshold <= 0:
+			continue
+		var rarity = str(params.get("shop_gem_rarity", "legendary"))
+		var count = 0
+		for entry in item_entries:
+			var row = db.get_row("items", str(entry.get("definition_id", "")))
+			if str(row.get("rarity", "")) != rarity:
+				continue
+			if spatial.bag_owners(build, str(entry.get("uid", ""))).has(str(bag.get("uid", ""))):
+				count += 1
+		if count < threshold:
+			continue
+		if not run.has("pending_rewards"):
+			run["pending_rewards"] = []
+		run.pending_rewards.append({"kind": "item", "definition_id": gem_pool[rng.next_int() % gem_pool.size()], "source": "container", "type": "pending_item"})
+
+func _shop_gem_pool() -> Array:
+	var pool: Array = []
+	for id in ["supply_gem_blue", "supply_gem_green", "supply_gem_purple", "supply_gem_red", "supply_gem_yellow"]:
+		if not db.get_row("items", id).is_empty():
+			pool.append(id)
+	return pool

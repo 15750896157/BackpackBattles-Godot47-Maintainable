@@ -156,10 +156,17 @@ func bag(id: String, language: String = "zh_CN") -> String:
 	if row.is_empty(): return _b("未知物品", "Unknown item", language)
 	var shape = db.get_row("bag_shapes", str(row.shape_id))
 	var text = _b("提供%s个有效格。", "Provides %s usable cells.", language) % _n(shape.get("cell_count", 0))
-	if str(row.special_cell_type) == "none": return text
-	text += _b("强化格仅影响覆盖该格的物品。", "Enhanced cells affect only items covering them.", language) if row.special_cell_type == "enhanced_cell" else _b("星位影响同包内覆盖星位或其四向相邻的物品。", "Stars affect same-bag items covering or orthogonally adjacent to the star.", language)
-	var effects: Array = []; var params = _params(row.special_effect)
-	if params.has("target_tag"):text+=_b("仅对%s类物品生效。", "Applies only to %s items. ",language)%term("tags",str(params.target_tag),language)
+	var scope = ""
+	match str(row.special_cell_type):
+		"enhanced_cell": scope = _b("强化格仅影响覆盖该格的物品。", "Enhanced cells affect only items covering them.", language)
+		"star_cell": scope = _b("星位影响同包内覆盖星位或其四向相邻的物品。", "Stars affect same-bag items covering or orthogonally adjacent to the star.", language)
+		"bag_cell":
+			if not str(row.special_effect).is_empty():
+				scope = _b("本包内所有物品均受下列加成影响。", "All items inside this bag receive the following bonuses.", language)
+	var effects: Array = []; var shop_effects: Array = []; var params = _params(row.special_effect)
+	if not scope.is_empty():
+		text += scope
+		if params.has("target_tag"):text+=_b("仅对%s类物品生效。", "Applies only to %s items. ",language)%term("tags",str(params.target_tag),language)
 	for key in params:
 		match key:
 			"cooldown_pct": effects.append(_b("冷却时间%s", "cooldown duration %s", language) % _signed(params[key], true))
@@ -168,7 +175,17 @@ func bag(id: String, language: String = "zh_CN") -> String:
 			"status_power": effects.append(_b("状态与直接治疗强度%s", "status and direct-healing power %s", language) % _signed(params[key], true))
 			"armor_on_start": effects.append(_b("战斗开始获得%s护甲（每个背包一次）", "gain %s armor at combat start (once per bag)", language) % _n(params[key]))
 			"stamina_on_start": effects.append(_b("战斗开始恢复%s耐力，不超过上限", "restore %s stamina at combat start, capped by maximum", language) % _n(params[key]))
-	return text + _b("加成：", " Bonus: ", language) + _b("、", "; ", language).join(effects) + _b("。同类特殊格加成默认不叠加。", ". Matching special-cell bonuses do not stack by default.", language)
+			"status_on_start":
+				var sp = str(params[key]).split(":", true, 1)
+				effects.append(_b("战斗开始获得%s层%s（每个背包一次）", "gain %s %s at combat start (once per bag)", language) % [_n(sp[1] if sp.size() > 1 else 1), term("statuses", sp[0], language)])
+			"shop_all_classes": shop_effects.append(_b("商店会提供所有职业的物品", "the shop offers items of all classes", language))
+			"shop_gem_on_enter": shop_effects.append(_b("进店时若包内有%s件或以上传说物品，生成1颗碎裂宝石", "on shop entry, if this bag holds %s or more legendary items, generate a chipped gemstone", language) % _n(params[key]))
+	var effect_text = _b("、", "; ", language).join(effects)
+	if not effect_text.is_empty():
+		text += _b("加成：", " Bonus: ", language) + effect_text + _b("。同类特殊格加成默认不叠加。", ". Matching special-cell bonuses do not stack by default.", language)
+	if not shop_effects.is_empty():
+		text += _b("效果：", " Effect: ", language) + _b("、", "; ", language).join(shop_effects) + _b("。", ".", language)
+	return text
 
 func affix(value, language: String = "zh_CN") -> String:
 	var row = value if value is Dictionary else db.get_row("encounter_affixes", str(value))
