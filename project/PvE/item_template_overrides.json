@@ -4748,7 +4748,9 @@
     }
    ],
    "definition_ids": [
-    "bag_tool_roll"
+    "bag_tool_roll",
+    "bag_scholar_bag",
+    "bag_of_giving"
    ]
   },
   "Laboratory": {
@@ -5253,7 +5255,10 @@
     "bag_release_supply",
     "bag_release_transport",
     "bag_release_weapon",
-    "bag_protective_purse"
+    "bag_protective_purse",
+    "bag_potion_belt",
+    "bag_box_of_prosperity",
+    "bag_portable_altar"
    ]
   },
   "LuckyClover": {

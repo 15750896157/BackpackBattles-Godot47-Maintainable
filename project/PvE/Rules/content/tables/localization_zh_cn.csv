@@ -1112,3 +1112,13 @@ item.legacy_shepherds_crook.name,牧羊杖
 item.legacy_shepherds_crook.desc,战斗开始时相邻物品伤害 +2，并获得 7 层抗性；每次获得增益时 35% 概率保护（以抗性近似）。
 item.legacy_present.name,礼物
 item.legacy_present.desc,每 1.7 秒获得 1 层随机增益（原版无描述文本，按 gain=Buff 推断）。
+bag.bag_potion_belt.name,魔药腰带
+bag.bag_box_of_prosperity.name,财富之盒
+bag.bag_portable_altar.name,便携祭坛
+bag.bag_scholar_bag.name,魔法学院袋
+bag.bag_of_giving.name,给予之袋
+bag.bag_potion_belt.desc,提供 4 个有效格。
+bag.bag_box_of_prosperity.desc,提供 4 个有效格；进店时若包内有 2 件或以上传说物品，生成 1 颗碎裂宝石。
+bag.bag_portable_altar.desc,提供 4 个有效格；战斗开始时获得 1 层强化。
+bag.bag_scholar_bag.desc,提供 6 个有效格；战斗开始时恢复 5 点耐力。
+bag.bag_of_giving.desc,提供 6 个有效格；商店会提供所有职业的物品。

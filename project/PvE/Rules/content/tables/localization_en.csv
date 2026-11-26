@@ -1112,3 +1112,13 @@ item.legacy_shepherds_crook.name,Shepherds Crook
 item.legacy_shepherds_crook.desc,Start: adjacent items gain +2 damage and gain 7 Resistance (approximating buff protection).
 item.legacy_present.name,Present
 item.legacy_present.desc,Every 1.7s gain 1 random buff (original has no description text; inferred from gain=Buff).
+bag.bag_potion_belt.name,Potion Belt
+bag.bag_box_of_prosperity.name,Box of Prosperity
+bag.bag_portable_altar.name,Portable Altar
+bag.bag_scholar_bag.name,Scholar Bag
+bag.bag_of_giving.name,Bag of Giving
+bag.bag_potion_belt.desc,Provides 4 cells.
+bag.bag_box_of_prosperity.desc,"Provides 4 cells; on shop entry, if this bag holds 2 or more legendary items, generate a chipped gemstone."
+bag.bag_portable_altar.desc,Provides 4 cells; gain 1 Empower at combat start.
+bag.bag_scholar_bag.desc,Provides 6 cells; restore 5 stamina at combat start.
+bag.bag_of_giving.desc,Provides 6 cells; the shop offers items of all classes.
