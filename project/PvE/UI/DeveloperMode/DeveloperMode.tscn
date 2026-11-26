@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdevmode0altn01"]
+
+[ext_resource type="Script" path="res://PvE/UI/DeveloperMode/DeveloperMode.gd" id="1_devmode"]
+
+[node name="DeveloperMode" type="CanvasLayer"]
+layer = 200
+script = ExtResource("1_devmode")

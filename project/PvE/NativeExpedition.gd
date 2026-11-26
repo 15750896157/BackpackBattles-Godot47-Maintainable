@@ -806,12 +806,25 @@ func show_journey():
 func show_codex():
 	menus.library.show_page()
 
+## 开发者模式：Alt+N 打开/关闭。仅在本地调试使用，界面场景见 PvE/UI/DeveloperMode。
+func toggle_developer_mode():
+	var existing = get_tree().get_first_node_in_group("developer_mode")
+	if existing != null:
+		existing.queue_free()
+		return
+	add_child((load("res://PvE/UI/DeveloperMode/DeveloperMode.tscn") as PackedScene).instantiate())
+
 func _block_menu_scroll(event:InputEvent):
 	if not initialized or panel==null or not panel.visible:return
 	if (event is InputEventMouseButton and event.button_index in [MOUSE_BUTTON_WHEEL_UP,MOUSE_BUTTON_WHEEL_DOWN,MOUSE_BUTTON_WHEEL_LEFT,MOUSE_BUTTON_WHEEL_RIGHT]) or event is InputEventPanGesture:
 		get_viewport().set_input_as_handled()
 
 func _unhandled_input(event: InputEvent):
+	if event is InputEventKey and event.pressed and not event.echo and event.alt_pressed and (event.keycode == KEY_N or event.physical_keycode == KEY_N):
+		toggle_developer_mode()
+		get_viewport().set_input_as_handled()
+		return
+	if get_tree().get_first_node_in_group("developer_mode") != null: return
 	if not initialized: return
 	if preferences.capture_action != "":
 		if preferences.capture(event): get_viewport().set_input_as_handled()
@@ -839,6 +852,7 @@ func _notification(what: int):
 	if what == NOTIFICATION_WM_CLOSE_REQUEST and flow != null: flow._save()
 
 func _input(event: InputEvent):
+	if get_tree().get_first_node_in_group("developer_mode") != null: return
 	if initialized and preferences.capture_action != "" and preferences.capture(event): get_viewport().set_input_as_handled()
 	if _book_rotate(event): return
 	_block_menu_scroll(event)
