@@ -56,7 +56,10 @@ func show_page(node:Dictionary={},phase:int=1):
 	var selected=node if not node.is_empty() else owner.flow.run.get("current_node",{})
 	if selected.is_empty() and not owner.flow.run.get("route_candidates",[]).is_empty():selected=owner.flow.run.route_candidates[0]
 	if owner.native_routes != null and not selected.is_empty() and (str(selected.get("type","")).ends_with("combat") or selected.get("type","") == "boss"):
-		preload("res://PvE/UI/EnemyIntelLayout.gd").show_page(self,selected,phase)
+		if owner.current_page == "ROUTE_SELECT":
+			preload("res://PvE/UI/EnemyIntelOverlay.gd").open(self,selected,phase)
+		else:
+			preload("res://PvE/UI/EnemyIntelLayout.gd").show_page(self,selected,phase)
 		return
 	ui.open("INTEL",ui.words("敌情与路线","Journey"))
 	var controls=ui.row()

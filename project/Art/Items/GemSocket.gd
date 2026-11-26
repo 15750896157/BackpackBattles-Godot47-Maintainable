@@ -7,7 +7,7 @@ var item = null
 var gem = null
 
 func _ready() -> void :
-	hideSocket()
+	sprite.hide()
 	Util.eassert(visible)
 
 func isEmpty() -> bool:
@@ -20,12 +20,12 @@ func getItem():
 	return item
 
 func hideSocket():
-	if isEmpty():
-		sprite.hide()
+	sprite.hide()
 
 func showSocket():
-
-	sprite.show()
+	# 旧版插槽圆环是按旧图标的位置摆的，套在新美术和新界面上会错位；
+	# 拿起宝石、磨刀石这类可镶嵌物时，它会在所有可插槽物品上成片冒出来，所以统一不再显示。
+	sprite.hide()
 
 func isAvailable() -> bool:
 	return ((item.ownerType == Item.Owner.PlayerInventory or

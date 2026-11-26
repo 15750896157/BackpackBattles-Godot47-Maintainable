@@ -20,11 +20,14 @@ func run_tests():
 	var opponent: Dictionary = route_before.filter(func(node): return str(node.type).ends_with("combat") or node.type == "boss")[0]
 	Expedition.menus.journey.show_page(opponent)
 	await settle();await shot("01b-enemy-intel")
+	var overlay = Expedition.panel.find_child("EnemyIntelOverlay",true,false)
+	check(overlay != null,"enemy intel opens as a second-level overlay")
 	var intel: Control = Expedition.panel.find_child("Ref_intel_paper",true,false)
 	var grids: Array = Expedition.panel.find_children("*","Control",true,false).filter(func(node): return node.has_meta("pve_build_grid"))
 	check(intel != null and grids.size() == 1 and intel.get_global_rect().encloses(grids[0].get_global_rect()),"enemy intel shows the actual backpack inside the new parchment")
 	check(Expedition.flow.run.route_candidates == route_before,"opening enemy intel does not choose a route")
-	Expedition.view_return()
+	if overlay != null:
+		overlay.close()
 	await settle()
 	Expedition.flow.choose_route(0);await settle()
 	var profile=Expedition.flow.profile_service.profile

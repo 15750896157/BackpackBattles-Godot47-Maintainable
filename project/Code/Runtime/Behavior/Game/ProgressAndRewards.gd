@@ -99,7 +99,8 @@ static func changeCursorSize(subject: Receiver, newSize: float):
 
 	for i in subject.cursors.size():
 
-		var unscaledImg: Image = subject.cursors[i]
+		var source = subject.cursors[i]
+		var unscaledImg: Image = source.get_image() if source is Texture2D else source
 		var scaledImgTex: ImageTexture = subject.scaledCursors[i]
 		var scaledImg: Image = scaledImgTex.get_image()
 		scaledImg.copy_from(unscaledImg)

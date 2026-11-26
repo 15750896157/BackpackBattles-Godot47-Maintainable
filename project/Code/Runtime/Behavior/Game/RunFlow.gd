@@ -382,11 +382,8 @@ static func _ready(subject: Receiver) -> void :
 			subject.WRITE_OUT_STATE = true
 
 	for c in subject.cursors:
-		var c2 = ImageTexture.new()
-		var img = Image.new()
-		img.copy_from(c)
-		c2 = ImageTexture.create_from_image(img)
-		subject.scaledCursors.push_back(c2)
+		var img: Image = c.get_image() if c is Texture2D else (c as Image).duplicate()
+		subject.scaledCursors.push_back(ImageTexture.create_from_image(img))
 
 	# Local builds use dedicated QA scenes instead of missing legacy debug windows.
 

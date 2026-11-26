@@ -60,6 +60,7 @@ func _disconnect_model() -> void:
 
 func _ready() -> void:
 	for side in [$PlayerHud, $EnemyHud]:
+		_restore_packed_layout(side)
 		_sides.append({
 			"name": side.get_node("NameCaption"),
 			"health": side.get_node("HealthBar"),
@@ -77,6 +78,27 @@ func _ready() -> void:
 	if _model != null:
 		_apply_art()
 		_render()
+
+# Workaround (2026-11-24): in exported builds the engine drops the stored
+# offsets of children belonging to an editable sub-instance (the enemy HUD),
+# piling its parts up at (0,0). The packed scene records stay correct, so the
+# layout is re-applied from them: base scene first, then this scene's overrides.
+func _restore_packed_layout(side: Control) -> void:
+	for child in side.get_children():
+		if not child is Control:
+			continue
+		for source in [[side.scene_file_path, "./"], [scene_file_path, "./%s/" % side.name]]:
+			if source[0] == null or not load(source[0]) is PackedScene:
+				continue
+			var state: SceneState = (load(source[0]) as PackedScene).get_state()
+			var path := String(source[1]) + String(child.name)
+			for index in state.get_node_count():
+				if str(state.get_node_path(index)) != path:
+					continue
+				for prop in state.get_node_property_count(index):
+					var key := str(state.get_node_property_name(index, prop))
+					if key.begins_with("offset_") or key.begins_with("anchor_") or key.begins_with("grow_"):
+						child.set(key, state.get_node_property_value(index, prop))
 
 func _apply_art() -> void:
 	for side in [$PlayerHud, $EnemyHud]:

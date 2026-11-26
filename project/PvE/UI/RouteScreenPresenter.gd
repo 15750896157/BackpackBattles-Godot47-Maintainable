@@ -56,8 +56,10 @@ static func mount(page, model: ShopVM, root: Control, ticket: int) -> bool:
 				model.choose_route(index))
 	screen.intel_requested.connect(func(index: int):
 		if _current(owner, root, ticket):
+			var node: Dictionary = candidates[index]
 			page.section = "abilities"
-			page.show_page(candidates[index]))
+			if str(node.get("type", "")).ends_with("combat") or str(node.get("type", "")) == "boss":
+				preload("res://PvE/UI/EnemyIntelOverlay.gd").open(page, node))
 	screen.back_requested.connect(func():
 		if _current(owner, root, ticket):
 			if snapshot.route_pending:

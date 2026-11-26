@@ -188,6 +188,8 @@ func button(text: String, action: Callable, parent: Node = null, disabled: bool 
 	return node
 
 func clear_popup(title: String):
+	for overlay in get_tree().get_nodes_in_group("enemy_intel_overlay"):
+		overlay.queue_free()
 	menus.shell.reset_canvas()
 	popup_epoch += 1
 	if bridge != null: bridge.footprint_layout.pictures.clear()
@@ -231,6 +233,8 @@ func close_popup():
 	if panel == null: return
 	transitions.close_popup()
 	menus.shell.reset_canvas()
+	for overlay in get_tree().get_nodes_in_group("enemy_intel_overlay"):
+		overlay.queue_free()
 	panel.hide()
 	modal_shield.hide()
 	InputBlocker.deactivate(InputBlocker.Source.Expedition, false)
