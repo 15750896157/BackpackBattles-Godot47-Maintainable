@@ -19,11 +19,15 @@ func choose_route():
 	if owner.db.release_run(owner.flow.run) or bool(owner.flow.run.get("route_pending",false)):
 		preload("res://PvE/UI/RouteLayout.gd").show_page(self)
 		return
+	_show_shared_route_page()
+
+func _show_shared_route_page() -> void:
 	ui.open("ROUTE_SELECT",ui.words("选择路线","Choose route"))
 	var choices=ui.row()
 	for index in owner.flow.run.route_candidates.size():
 		var node=owner.flow.run.route_candidates[index];var column=ui.column(choices)
 		var card=ui.card(column,owner.enemy_name(node) if node.type.ends_with("combat") or node.type=="boss" else owner.t(node.name_key),portrait(node),func():owner.perform(owner.flow.choose_route(index)),owner.t(node.name_key))
+		card.name="RouteChoice_"+str(index)
 		card.set_meta("route_index",index);card.custom_minimum_size.y=265
 		var badges=ui.row(column)
 		for reward in owner.db.rows("reward_entries"):

@@ -284,11 +284,11 @@ func draw_badge(card: Control, entry: Dictionary) -> void:
 		caption = ui.words("英雄","Hero")
 	else:
 		var rarity := str(entry.definition.get("rarity","common"))
-		key = "badge_green" if not entry.candidate.is_empty() else "badge_purple" if rarity == "legendary" else "badge_blue" if rarity == "rare" else "badge_gold"
+		key = "badge_green" if not entry.candidate.is_empty() else REF.rarity_badge(rarity)
 		caption = owner.t("rarity."+rarity+".name")
 	var extent := Rect2(13,10,116,37)
 	REF.picture(card,key,extent,true)
-	REF.text(card,caption,extent,19,Color("fff7d6") if key in ["badge_red","badge_purple"] else REF.INK)
+	REF.text(card,caption,extent,19,REF.badge_ink(key))
 
 func craft_detail(entry: Dictionary, ingredients: Array):
 	var epoch: int = owner.popup_epoch

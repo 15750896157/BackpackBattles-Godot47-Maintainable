@@ -30,37 +30,39 @@ func show_page(target: String = "general"):
 	owner.back_action = close_page
 	if section == "general": main_sheet(content)
 	else: advanced_sheet(content)
-	REF.button(content,"button_blue",Rect2(1170,752,240,55),func():show_page("advanced" if section == "general" else "general"),ui.words("更多设置" if section == "general" else "基本设置","More settings" if section == "general" else "Basic settings"),25).name = "SettingsNextSheet"
-	REF.button(content,"button",Rect2(365,752,220,55),owner.show_ui_guide,ui.words("界面教程","UI guide"),25).name = "SettingsGuide"
+	# 底部两按钮与上方设置板边框对齐：左板左缘 x=351、右板右缘 x=1408（按钮贴图按宽度适配，rect 边即可见边）。
+	REF.button(content,"button_blue",Rect2(1168,752,240,55),func():show_page("advanced" if section == "general" else "general"),ui.words("更多设置" if section == "general" else "基本设置","More settings" if section == "general" else "Basic settings"),25).name = "SettingsNextSheet"
+	REF.button(content,"button",Rect2(351,752,220,55),owner.show_ui_guide,ui.words("界面教程","UI guide"),25).name = "SettingsGuide"
 	if owner.active:
-		var save = REF.button(content,"button",Rect2(650,752,380,55),owner.return_to_title,ui.words("保存并返回主页","Save and return"),25)
+		var save = REF.button(content,"button",Rect2(690,752,380,55),owner.return_to_title,ui.words("保存并返回主页","Save and return"),25)
 		save.name = "SaveAndExit";save.set_meta("action_caption",owner.t("ui.save_menu"))
 	elif return_to_selection and section == "advanced":
-		REF.button(content,"button",Rect2(650,752,380,55),func():owner.menus.runs.seed_value=Time.get_ticks_usec()&0xffffffff,ui.words("换一张地图","Shuffle map"),25).name="ShuffleSeed"
+		REF.button(content,"button",Rect2(690,752,380,55),func():owner.menus.runs.seed_value=Time.get_ticks_usec()&0xffffffff,ui.words("换一张地图","Shuffle map"),25).name="ShuffleSeed"
 	REF.fade_in(root)
 func close_page():
 	if return_to_selection:owner.menus.runs.new_setup()
 	else:owner.view_return()
 func main_sheet(root: Control):
-	REF.picture(root,"settings_plate",Rect2(338,404,518,268),true)
-	REF.picture(root,"settings_plate",Rect2(877,404,518,268),true)
-	REF.text(root,ui.words("画面","Display"),Rect2(526,433,145,62),42)
-	REF.text(root,ui.words("声音","Sound"),Rect2(1062,433,145,62),42)
+	# 两块设置板关于窗口中心 879.5 对称：左右留白各 74，板间距 21。
+	REF.picture(root,"settings_plate",Rect2(351,404,518,268),true)
+	REF.picture(root,"settings_plate",Rect2(890,404,518,268),true)
+	REF.text(root,ui.words("画面","Display"),Rect2(539,433,145,62),42)
+	REF.text(root,ui.words("声音","Sound"),Rect2(1075,433,145,62),42)
 	for index in 2:
 		var full = index == 0
 		var selected = (model.snapshot().window_mode == "fullscreen") == full
 		var y = 508 + index*56
-		if selected: REF.picture(root,"highlight",Rect2(414,y,355,40),true)
-		REF.text(root,ui.words("全屏模式" if full else "窗口模式","Full screen" if full else "Windowed"),Rect2(422,y-3,236,45),31).horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
-		REF.picture(root,"checkbox",Rect2(731,y+1,35,35))
-		if selected: REF.picture(root,"check",Rect2(731,y-3,41,39))
-		var action = REF.zone(root,Rect2(413,y-7,360,54),func():
+		if selected: REF.picture(root,"highlight",Rect2(427,y,355,40),true)
+		REF.text(root,ui.words("全屏模式" if full else "窗口模式","Full screen" if full else "Windowed"),Rect2(435,y-3,236,45),31).horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+		REF.picture(root,"checkbox",Rect2(744,y+1,35,35))
+		if selected: REF.picture(root,"check",Rect2(744,y-3,41,39))
+		var action = REF.zone(root,Rect2(426,y-7,360,54),func():
 			if not root.is_inside_tree(): return
 			model.set_option("window_mode", "fullscreen" if full else "windowed")
 			show_page())
 		action.name = "Fullscreen" if full else "Windowed"
-	slider(root,"music",ui.words("音乐音量","Music"),Rect2(1062,512,277,34),Vector2(927,500))
-	slider(root,"ui",ui.words("音效音量","Effects"),Rect2(1062,568,277,34),Vector2(927,556))
+	slider(root,"music",ui.words("音乐音量","Music"),Rect2(1075,512,277,34),Vector2(940,500))
+	slider(root,"ui",ui.words("音效音量","Effects"),Rect2(1075,568,277,34),Vector2(940,556))
 func slider(root: Control,key: String,title: String,rect: Rect2,heading: Vector2):
 	REF.text(root,title,Rect2(heading,Vector2(126,52)),30)
 	var control = HSlider.new(); control.name = "Volume_"+key

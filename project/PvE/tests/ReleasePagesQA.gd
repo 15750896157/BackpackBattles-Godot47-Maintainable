@@ -10,9 +10,12 @@ func run_tests():
 	for row in Expedition.db.rows("tutorial_steps"):Expedition.flow.profile_service.profile.tutorial_completed.append(row.id)
 	Expedition.create_run("archer","archer_precision","tutorial",1431,true)
 	await settle();await shot("01-new-route")
-	check(Expedition.panel.find_child("RouteGo_0",true,false)!=null,"new journey provides direct prepare targets")
-	for portrait in Expedition.panel.find_children("RoutePortrait_*","TextureRect",true,false):
-		check(portrait.size==Vector2(350,314),"route portrait stays inside authored bounds: "+portrait.name)
+	check(Expedition.current_page=="ROUTE_SELECT","new journey opens the shared parchment route page")
+	check(Expedition.panel.find_child("RouteChoice_0",true,false)!=null,"new journey provides direct route targets")
+	for card in Expedition.panel.find_children("RouteChoice_*","Button",true,false):
+		# RouteChoice 是无子节点的透明按钮；立绘是卡根/页根下同序号的 RoutePortrait_N 兄弟节点。
+		var portrait: TextureRect = card.get_parent().get_node_or_null("RoutePortrait_"+str(card.get_meta("route_index"))) as TextureRect
+		check(portrait!=null and portrait.texture!=null,"route card shows its enemy portrait: "+card.name)
 	var route_before: Array = Expedition.flow.run.route_candidates.duplicate(true)
 	var opponent: Dictionary = route_before.filter(func(node): return str(node.type).ends_with("combat") or node.type == "boss")[0]
 	Expedition.menus.journey.show_page(opponent)
@@ -50,6 +53,18 @@ func run_tests():
 			for panel in Expedition.panel.find_children("RestChoicePanel_*","TextureRect",true,false):
 				if panel.get_global_rect().encloses(rect):contained=true
 			check(contained,"camp action fits its actual parchment panel")
+	# 营地休息后会重新回到商店；覆盖层在弹层期间被隐藏，返回时必须恢复显示，
+	# 否则商店只剩底图与原生货架（价格、金币、刷新、开战、生命条全部消失）。
+	var shop_screen = Expedition.art.routed_shop
+	var rest_row: Dictionary = Expedition.db.rows("rest_actions")[0]
+	Expedition.flow.event_choice(str(rest_row.id))
+	await settle()
+	check(Expedition.flow.screen_state == "ROUTE_SELECT", "rest action leads to route selection")
+	Expedition.flow.choose_route(0)
+	await settle()
+	check(Expedition.flow.screen_state == "SHOP_PREPARE", "route after rest returns to the shop")
+	check(is_instance_valid(shop_screen) and shop_screen.visible, "shop overlay is visible again after resting")
+	await shot("04-shop-after-rest")
 	await Expedition.return_to_title();await settle()
 	var file=FileAccess.open(output.path_join("release-pages-report.json"),FileAccess.WRITE)
 	file.store_string(JSON.stringify({"ok":failures.is_empty(),"checks":checks,"failures":failures},"\t"));file.close()
