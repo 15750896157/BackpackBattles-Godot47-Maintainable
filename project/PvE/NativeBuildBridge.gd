@@ -139,7 +139,7 @@ func render_build(character, build: Dictionary, owner: int):
 				item.occupiedCells.clear()
 				item.setFaceDirectionInstant(0)
 				Game.STORAGEBOX.addItem(item)
-				place_storage_view(item, build.storage.find(entry))
+				place_storage_view(item, int(entry.get("slot", build.storage.find(entry))))
 				item.makeGrabbable(true)
 			else:
 				Util.reparentNode(item, inventory.itemNode)
@@ -449,14 +449,21 @@ func affected_cells(item, color: int, inventory) -> Dictionary:
 			if point not in result[tile]: result[tile].append(point)
 	return result
 
-func _buy_to_storage(index: int) -> Dictionary:
+func _buy_to_storage(index: int, slot: int = -1, occupant: String = "") -> Dictionary:
 	var before = _flow().run.duplicate(true)
 	var draft = before.duplicate(true)
 	var bought = _flow().economy.buy(draft, index)
 	if not bought.ok: return bought
-	if not bought.stored:
-		var stored = _flow().placement.remove(draft.build, str(bought.entry.uid), true)
+	if occupant != "":
+		# The drop landed on an occupied storage slot: exchange with its item.
+		var swapped = _flow().placement.swap(draft.build, str(bought.entry.uid), occupant)
+		if not swapped.ok: return swapped
+	elif not bought.stored:
+		var stored = _flow().placement.remove(draft.build, str(bought.entry.uid), true, slot)
 		if not stored.ok: return stored
+	elif slot >= 0:
+		var relocated = _flow().placement.remove(draft.build, str(bought.entry.uid), true, slot)
+		if not relocated.ok: return relocated
 	_flow().run.clear()
 	_flow().run.merge(draft, true)
 	_flow().edit_history.record(before, _flow().run)
@@ -482,7 +489,7 @@ func _restore_native(item):
 			if item not in Game.STORAGEBOX.items: Game.STORAGEBOX.addItem(item)
 			fit_native_visual(item, true)
 			item.setFaceDirectionInstant(0)
-			place_storage_view(item, int(found.index))
+			place_storage_view(item, int(found.entry.get("slot", found.index)))
 			item.makeGrabbable(true)
 		else:
 			var inventory = Game.PLAYER.INVENTORY
@@ -522,8 +529,15 @@ func drop_item(item) -> int:
 	if Game.SELLBOX.isHovered():
 		result = {"ok": false, "error": "missing_item"} if was_shop else _flow().sell(uid)
 		drop_result = Item.DropResult.Sold
-	elif Game.STORAGEBOX.isHovered():
-		result = _buy_to_storage(index) if was_shop else _flow().edit("store", uid)
+	elif _storage_drop_hovered(item):
+		var storage_slot = _storage_drop_slot(item)
+		var occupant = _storage_occupant(uid, storage_slot)
+		if was_shop:
+			result = _buy_to_storage(index, storage_slot, occupant)
+		elif occupant != "":
+			result = _flow().edit("swap", uid, {"other_uid": occupant})
+		else:
+			result = _flow().edit("store", uid, {"slot": storage_slot})
 		drop_result = Item.DropResult.AddedToStorageBox
 	else:
 		if not was_shop and item.isBag() and item.ownerType == Item.Owner.PlayerInventory:
@@ -621,3 +635,38 @@ func place_storage_view(item, index: int):
 	item.makeNonRigidBody()
 	var center = Vector2(item.get_meta("pve_anchor")) + Vector2(item.get_meta("pve_size")) * 0.5
 	item.global_position += Game.STORAGEBOX.pve_slot_rect(index).get_center() - item.to_global(center)
+
+func _storage_drop_points(item) -> Array:
+	# The cursor is what the player aims with; the dragged item's origin and
+	# visual center follow at a grab offset, so all three are accepted in turn.
+	var points = [item.get_global_mouse_position(), item.global_position]
+	if item.has_meta("pve_anchor") and item.has_meta("pve_size"):
+		var center = Vector2(item.get_meta("pve_anchor")) + Vector2(item.get_meta("pve_size")) * 0.5
+		points.append(item.to_global(center))
+	return points
+
+func _storage_drop_hovered(item) -> bool:
+	var rects = [Game.STORAGEBOX.getStorageRect()]
+	if Game.STORAGEBOX.has_meta("art_storage_slots"):
+		var slots: Array = Game.STORAGEBOX.get_meta("art_storage_slots")
+		if not slots.is_empty(): rects.append(slots[0].merge(slots[slots.size() - 1]))
+	for point in _storage_drop_points(item):
+		for rect in rects:
+			if rect.has_point(point): return true
+	return false
+
+func _storage_drop_slot(item) -> int:
+	var capacity = int(_flow().run.build.get("storage_capacity", 2))
+	for point in _storage_drop_points(item):
+		for slot in range(capacity):
+			if Game.STORAGEBOX.pve_slot_rect(slot).has_point(point): return slot
+	return -1
+
+func _storage_occupant(dragged_uid: String, slot: int) -> String:
+	if slot < 0: return ""
+	var storage = _flow().run.build.get("storage", [])
+	for entry_index in range(storage.size()):
+		var entry = storage[entry_index]
+		if str(entry.get("uid", "")) == dragged_uid: continue
+		if int(entry.get("slot", entry_index)) == slot: return str(entry.get("uid", ""))
+	return ""

@@ -332,10 +332,11 @@ func _layout_shop():
 		for index in Game.STORAGEBOX.items.size():
 			var item=Game.STORAGEBOX.items[index]
 			if not is_instance_valid(item) or item.dragged:continue
-			var size=Game.STORAGEBOX.pve_slot_rect(index).size
+			var entry_slot:int=int(item.get_meta("pve_entry",{}).get("slot",index))
+			var size=Game.STORAGEBOX.pve_slot_rect(entry_slot).size
 			if item.get_meta("cloth_slot_size",Vector2.ZERO)!=size:
 				Expedition.bridge.fit_native_visual(item,true);item.set_meta("cloth_slot_size",size)
-			Expedition.bridge.place_storage_view(item,index)
+			Expedition.bridge.place_storage_view(item,entry_slot)
 	var sell_center = Vector2(309, 966)
 	var sell_size = Vector2(298, 228)
 	Game.SELLBOX.global_position = sell_center
