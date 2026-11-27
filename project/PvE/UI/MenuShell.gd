@@ -6,6 +6,9 @@ var owner
 var textures: Dictionary = {}
 var pager
 var canvas: Control
+## 全屏画布切换时暂存的上一张画布：新页内容还在异步加载的空窗里，
+## 空画布会露出垫在弹窗下面的主菜单载体（选路页点图鉴尤其明显）。
+var canvas_under: Control = null
 const REF = preload("res://PvE/UI/ReferenceCanvas.gd")
 func _init(host): owner = host
 func words(zh: String, en: String) -> String: return owner.bilingual(zh,en)
@@ -31,10 +34,12 @@ func reset_canvas():
 	if is_instance_valid(canvas):
 		owner.panel.remove_child(canvas); canvas.queue_free()
 	canvas = null
+	if is_instance_valid(canvas_under): canvas_under.hide()
 	owner.panel.position = Vector2(110,20); owner.panel.size = Vector2(1700,1040)
 	owner.panel.add_theme_stylebox_override("panel",owner.ui_theme.get_stylebox("panel","PanelContainer"))
 	owner.popup_scroll.get_parent().show()
 func open_canvas(page: String, title: String, template: PackedScene = null) -> Control:
+	_stash_under()
 	open(page,title)
 	clear(owner.menu_header); clear(owner.menu_nav)
 	if owner.transitions.popup_tween != null and owner.transitions.popup_tween.is_valid(): owner.transitions.popup_tween.kill()
@@ -48,7 +53,47 @@ func open_canvas(page: String, title: String, template: PackedScene = null) -> C
 	canvas.size = Vector2(1920,1080)
 	canvas.mouse_filter = Control.MOUSE_FILTER_STOP
 	owner.panel.add_child(canvas)
+	_restore_under(page)
 	return canvas
+## 把当前全屏画布暂存到遮罩之下作过渡背景，选路页才算值得保留；
+## 其余页面被替换时照旧由 reset_canvas 销毁。
+func _stash_under() -> void:
+	var under := canvas
+	if is_instance_valid(under) and owner.current_page == "ROUTE_SELECT":
+		canvas = null
+		if is_instance_valid(canvas_under): canvas_under.queue_free()
+		canvas_under = under
+		canvas_under.set_meta("route_canvas_run", str(owner.flow.run.get("run_id","")))
+		owner.panel.remove_child(canvas_under)
+		owner.overlay.add_child(canvas_under)
+		owner.overlay.move_child(canvas_under, 0)
+		canvas_under.position = Vector2.ZERO; canvas_under.size = Vector2(1920,1080)
+	elif not _under_reusable():
+		if is_instance_valid(canvas_under): canvas_under.queue_free()
+		canvas_under = null
+## 暂存的选路页只在同一次远征的选路状态下还有过渡价值。
+func _under_reusable() -> bool:
+	return is_instance_valid(canvas_under) and owner.flow != null \
+		and owner.flow.screen_state == "ROUTE_SELECT" \
+		and canvas_under.get_meta("route_canvas_run","") == str(owner.flow.run.get("run_id",""))
+func _restore_under(page: String) -> void:
+	if not _under_reusable():
+		if is_instance_valid(canvas_under): canvas_under.queue_free()
+		canvas_under = null
+		return
+	owner.overlay.move_child(canvas_under, 0)
+	canvas_under.show()
+	if page == "ROUTE_SELECT":
+		# 重新挂载选路页：等新页真正画出内容、淡入结束后再撤掉旧页。
+		var under := canvas_under
+		canvas.child_entered_tree.connect(func(_child): _retire_under(under), CONNECT_ONE_SHOT)
+func _retire_under(under: Control) -> void:
+	var tree: SceneTree = owner.get_tree()
+	if tree == null: return
+	await tree.create_timer(0.3, true, false, true).timeout
+	if is_instance_valid(under) and under == canvas_under:
+		canvas_under = null
+		under.queue_free()
 func chrome(title: String):
 	if pager!=null:pager.reset()
 	for parent in [owner.menu_header,owner.menu_nav]: clear(parent)

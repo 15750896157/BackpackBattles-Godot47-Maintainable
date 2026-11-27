@@ -178,12 +178,6 @@ static func _set_pve_identity(subject: Receiver):
 	var rarity = Expedition.db.get_row("rarities", str(definition.get("rarity", "common")))
 	subject.rarityLabel.text = Expedition.t(str(rarity.name_key))
 	subject.rarityLabel.set("theme_override_colors/font_color", Game.rarityColors[subject.item.getRarity()].lightened(0.6))
-	var class_icon = ObjectPool.instantiate(subject.classIconScene)
-	subject.toReturn.push_back(class_icon)
-	var owner_pool = str(definition.get("owner_pool", "public"))
-	class_icon.setClass(Game.Classes_Full.Berserker if owner_pool == "armorer" else Game.Classes_Full.Ranger if owner_pool == "archer" else Game.Classes_Full.Reaper if owner_pool == "alchemist" else -1)
-	subject.hboxContainer.add_child(class_icon)
-	subject.hboxContainer.move_child(class_icon, 1)
 	var tags = PackedStringArray()
 	for tag_id in Expedition.db.list_values(definition.get("tags", "")):
 		var tag = Expedition.db.get_row("tags", str(tag_id))
