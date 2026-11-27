@@ -26,7 +26,7 @@ static func initDefaults(subject: Receiver):
 	subject.defaults[subject.Setting.fps_limit] = 144
 	subject.defaults[subject.Setting.reduce_fps_unfocused] = true
 	subject.defaults[subject.Setting.software_cursor] = false
-	subject.defaults[subject.Setting.cursor_size] = 0.5
+	subject.defaults[subject.Setting.cursor_size] = 1.0
 	subject.defaults[subject.Setting.cursor_speed] = 1.0
 	subject.defaults[subject.Setting.bgm_muted] = false
 	subject.defaults[subject.Setting.sfx_muted] = false
